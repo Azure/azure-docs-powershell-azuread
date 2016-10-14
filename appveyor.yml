@@ -6,6 +6,18 @@ build_script:
   - ps: |
       Write-Host "Begin processing files"
 
+      function set_or_update_metadata ($header, $new_header, $key, $value, $overwrite=$false)
+      {
+        if($header -match "$key[\s\S].*" -and $overwrite)
+        {
+          $new_header = $new_header.replace($matches[0], $key + ': ' + $value)
+        }
+        else
+        {
+          $new_header = $new_header + $key + ': ' + $value + "`r`n"
+        }
+        return $new_header
+      }
       # assume there is only one root folder in source repo
       if((Get-ChildItem $env:APPVEYOR_BUILD_FOLDER -Directory).count -ne 1)
       {
@@ -19,7 +31,7 @@ build_script:
 
       foreach($file in $files)
       {
-        if(!((Get-Content $file | Out-String) -match $pattern))
+        if((Get-Content $file | Out-String) -notmatch $pattern)
         {
           continue
         }
@@ -28,30 +40,20 @@ build_script:
         $new_header = $matches[1]
 
         #metadata: updated_at
-        $date = [datetime](Get-ItemProperty -Path $file -Name LastWriteTime).lastwritetime
+        $date = git log --pretty=format:%cd -n 1 --date=iso $file
+        $new_header = set_or_update_metadata $header $new_header 'updated_at' (Get-Date $date -format g) $true
 
-        if($header -match 'updated_at[\s\S].*')
-        {
-          $new_header = $new_header.replace($matches[0], 'updated_at: ' + (Get-Date $date -format g))
-        }
-        else
-        {
-          $new_header = $new_header + 'updated_at: ' + (Get-Date $date -format g) + "`r`n"
-        }
         #metadata: ms.date
-        if($header -match 'ms.date[\s\S].*')
-        {
-          $new_header = $new_header.replace($matches[0], 'ms.date: ' + (Get-Date $date -format d))
-        }
-        else
-        {
-          $new_header = $new_header + 'ms.date: ' + (Get-Date $date -format d) + "`r`n"
-        }
-        Set-Content $file (Get-Content $file | Out-String).replace($header, $new_header) -NoNewline
-        
-        (Get-Content $file | Out-String) -match $pattern | out-null
-        $header = $matches[1]
-        $new_header = $matches[1]
+        $new_header = set_or_update_metadata $header $new_header 'ms.date' (Get-Date $date -format d) $true
+
+        #metadata: content_git_url
+        $file_rel_path = (Get-Item $file | Resolve-Path -Relative)       
+        $content_git_url = (New-Object System.Uri ('https://github.com/' + $env:APPVEYOR_REPO_NAME + '/blob/' + $env:APPVEYOR_REPO_BRANCH + '/' + $file_rel_path)).AbsoluteUri
+        $new_header = set_or_update_metadata $header $new_header 'content_git_url' $content_git_url  $true
+
+        #metadata: gitcommit
+        $git_commit_url = (New-object System.Uri ('https://github.com/' + $env:APPVEYOR_REPO_NAME + '/blob/' + (git rev-list -1 HEAD $file) + '/' + $file_rel_path)).AbsoluteUri
+        $new_header = set_or_update_metadata $header $new_header 'gitcommit' $git_commit_url  $true
 
         #metadata: ms.topic
         $topic_type = 'reference'
@@ -59,51 +61,25 @@ build_script:
         {
           $topic_type = 'conceptual'
         }
-        
-        if($header -match 'ms.topic[\s\S].*')
-        {
-          $new_header = $new_header.replace($matches[0], 'ms.topic: ' + $topic_type)
-        }
-        else
-        {
-          $new_header = $new_header + 'ms.topic: ' + $topic_type + "`r`n"
-        }
-        
-        #metadata: source_repo
-        if($header -match 'source_repo[\s\S].*')
-        {
-          $new_header = $new_header.replace($matches[0], 'source_repo: ' + $env:source_repo)
-        }
-        else
-        {
-          $new_header = $new_header + 'source_repo: ' + $env:source_repo + "`r`n"
-        }
+        $new_header = set_or_update_metadata $header $new_header 'ms.topic' $topic_type $true
 
-        #metadata: source_branch        
-        if($header -match 'source_branch[\s\S].*')
-        {
-          $new_header = $new_header.replace($matches[0], 'source_branch: ' + $env:source_branch)
-        }
-        else
-        {
-          $new_header = $new_header + 'source_branch: ' + $env:source_branch + "`r`n"
-        }
+        #metadata: ms.prod
+        $new_header = set_or_update_metadata $header $new_header 'ms.prod' $env:prod
 
-        #metadata: gitcommit
-        $commit_id = (git rev-list -1 HEAD $file)
-        $rel_path = Get-Item $file | Resolve-Path -Relative
-        $git_commit_path = $env:source_repo + '/blob/' + $commit_id + '/' + $rel_path
-        $git_commit_url = (New-object System.Uri $git_commit_path).AbsoluteUri
+        #metadata: ms.service
+        $new_header = set_or_update_metadata $header $new_header 'ms.service' $env:service
+
+        #metadata: ms.technology
+        $new_header = set_or_update_metadata $header $new_header 'ms.technology' $env:technology
         
-        if($header -match 'gitcommit[\s\S].*')
-        {
-        
-          $new_header = $new_header.replace($matches[0], 'gitcommit: ' + $git_commit_url)
-        }
-        else
-        {
-          $new_header = $new_header + 'gitcommit: ' + $git_commit_url + "`r`n"
-        }
+        #metadata: author
+        $new_header = set_or_update_metadata $header $new_header 'author' $env:author
+
+        #metadata: keywords
+        $new_header = set_or_update_metadata $header $new_header 'keywords' $env:keywords
+
+        #metadata: manager
+        $new_header = set_or_update_metadata $header $new_header 'manager' $env:manager
 
         #filter invalid characters
         if($header -match '{{' -or $header -match '}}')
@@ -190,9 +166,9 @@ build_script:
 on_success:
   - git clone -q --branch=%target_branch% %content_repo% %TEMP%\Azure
   - ps: |
+      # overwrite filds but not delete modules due to multiple repos input
       $source = Split-Path -Path (Get-ChildItem $env:APPVEYOR_BUILD_FOLDER -Directory | Select-Object FullName -last 1).FullName -Leaf
-      $folders = Get-ChildItem $env:APPVEYOR_BUILD_FOLDER\$source -Directory | Select-Object FullName
-      foreach($folder in $folders)
+      foreach($folder in (Get-ChildItem $env:APPVEYOR_BUILD_FOLDER\$source -Directory | Select-Object FullName))
       {
         $folder_name = Split-Path -Path $folder.FullName -Leaf
         $target = Join-Path $env:TEMP\Azure $env:target_folder\$folder_name
@@ -218,7 +194,7 @@ on_success:
 
       # add content to global toc
       $global_toc = Join-Path $env:TEMP\Azure $env:target_folder\toc.yml
-      if(!Test-Path $global_toc)
+      if(!(Test-Path $global_toc))
       {
         New-Item $global_toc
       }
@@ -227,11 +203,55 @@ on_success:
         Add-Content -Path $global_toc -Value ("- name: " + $source)
         Add-Content -Path $global_toc -Value ("  tocHref: " + $source + "\toc.yml")
       }
+  - ps: |
+      # update breadcrumb.json if there is newly added project (always add as level 3 node)
+
+      $ErrorActionPreference = 'Stop'
+      $source = Split-Path -Path (Get-ChildItem $env:APPVEYOR_BUILD_FOLDER -Directory | Select-Object FullName -last 1).FullName -Leaf
+      $breadcrumb_path = Join-Path $env:TEMP\Azure $env:target_folder\breadcrumb.json
+      $breadcrumb = (Get-Content -Raw $breadcrumb_path) | ConvertFrom-Json
+      $children = $breadcrumb.children
+      if($children -ne $null)
+      {
+        $new_node = $true
+        foreach($c in $children.children)
+        {
+          if($c.href -match $source)
+          {
+            $new_node = $false
+            break
+          }
+        }
+
+        if($new_node)
+        {
+          Write-Host 'updating breadcrumb'
+          $new_child = New-Object PSObject -Property @{
+            href = ($children[0].href + $source + "/")
+            homepage = ($children[0].href + $source + "/")
+            toc_title = $source
+            level = 3
+          }
+
+          if($children.children -eq $null)
+          {
+            $children | Add-Member -MemberType NoteProperty -Name children -value @($new_child)
+          }
+          else
+          {
+            $children.children += $new_child
+          }
+
+          # powershell read json array(one object array) issue, have to insert array mark manually
+          Set-Content $breadcrumb_path ('[' + ($breadcrumb | ConvertTo-Json -Depth 5) + ']') -NoNewline
+          Write-Host 'updating breadcrumb completed'
+        }
+      }
   - cd %TEMP%\Azure
   - git config --global credential.helper store
   - ps: Add-Content "$env:USERPROFILE\.git-credentials" "https://$($env:github_access_token):x-oauth-basic@github.com`n"
   - git config --global user.email %email%
   - git config --global user.name %name%
   - git add -A
-  - git commit -m "commit from appveyor"
+  - git commit -m "Triggered by appveyor, update azuread docs."
   - git push origin %target_branch%
