@@ -1,6 +1,6 @@
 environment:
   github_access_token:
-    secure: XgRTP/48Tcb8jdBahG9aZEhKeu2qBc5gCugjShWkT+zNqcQihEtKIIonzPaGcUV+
+    secure: JSOJKfdgXW09TdfN75l84f7+22GElWNgPo1Vab449RFYe8+BEbO/btueR3g0qldG
 
 build_script:
   - ps: |
@@ -201,7 +201,7 @@ on_success:
       if(!((Get-Content $global_toc | Out-String) -match $source))
       {
         Add-Content -Path $global_toc -Value ("- name: " + $source)
-        Add-Content -Path $global_toc -Value ("  tocHref: " + $source + "\toc.yml")
+        Add-Content -Path $global_toc -Value ("  tocHref: " + $source + "/toc.yml")
       }
   - ps: |
       # update breadcrumb.json if there is newly added project (always add as level 3 node)
