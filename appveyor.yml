@@ -5,32 +5,31 @@ environment:
 build_script:
   - ps: |
       Write-Host "Begin processing files"
-
-      function set_or_update_metadata ($header, $new_header, $key, $value, $overwrite=$false)
-      {
-        if($header -match "$key[\s\S].*" -and $overwrite)
-        {
-          $new_header = $new_header.replace($matches[0], $key + ': ' + $value)
-        }
-        else
-        {
-          $new_header = $new_header + $key + ': ' + $value + "`r`n"
-        }
-        return $new_header
-      }
       # assume there is only one root folder in source repo
       if((Get-ChildItem $env:APPVEYOR_BUILD_FOLDER -Directory).count -ne 1)
       {
         $host.SetShouldExit(-1)
       }
+
       $root_folder = (Get-ChildItem $env:APPVEYOR_BUILD_FOLDER -Directory | Select-Object FullName -last 1).FullName
       $files = Get-ChildItem -Path $root_folder -Recurse | where {$_.extension -eq $env:extension} | % { $_.FullName }
-      $pattern = '^(?s)\s*[-]{3}(.*?)[-]{3}\r?\n'
-
-      Write-Host "Found " $files.count "Files"
-
-      foreach($file in $files)
-      {
+      $script_block = {
+        param($file)
+        $pattern = '^(?s)\s*[-]{3}(.*?)[-]{3}\r?\n'
+        
+        function set_or_update_metadata ($header, $new_header, $key, $value, $overwrite=$false)
+        {
+          if($header -match "$key[\s\S].*" -and $overwrite)
+          {
+            $new_header = $new_header.replace($matches[0], $key + ': ' + $value)
+          }
+          if($header -notmatch "$key[\s\S].*")
+          {
+            $new_header = $new_header + $key + ': ' + $value + "`r`n"
+          }
+          return $new_header
+        }
+        
         if((Get-Content $file | Out-String) -notmatch $pattern)
         {
           continue
@@ -39,23 +38,20 @@ build_script:
         $header = $matches[1]
         $new_header = $matches[1]
 
-        #metadata: updated_at
+        # set or update metadata
         $date = git log --pretty=format:%cd -n 1 --date=iso $file
         $new_header = set_or_update_metadata $header $new_header 'updated_at' (Get-Date $date -format g) $true
 
-        #metadata: ms.date
         $new_header = set_or_update_metadata $header $new_header 'ms.date' (Get-Date $date -format d) $true
 
-        #metadata: content_git_url
-        $file_rel_path = (Get-Item $file | Resolve-Path -Relative)       
+        Set-Location $env:APPVEYOR_BUILD_FOLDER
+        $file_rel_path = (Get-Item $file | Resolve-Path -Relative)
         $content_git_url = (New-Object System.Uri ('https://github.com/' + $env:APPVEYOR_REPO_NAME + '/blob/' + $env:APPVEYOR_REPO_BRANCH + '/' + $file_rel_path)).AbsoluteUri
         $new_header = set_or_update_metadata $header $new_header 'content_git_url' $content_git_url  $true
 
-        #metadata: gitcommit
-        $git_commit_url = (New-object System.Uri ('https://github.com/' + $env:APPVEYOR_REPO_NAME + '/blob/' + (git rev-list -1 HEAD $file) + '/' + $file_rel_path)).AbsoluteUri
+        $git_commit_url = (New-Object System.Uri ('https://github.com/' + $env:APPVEYOR_REPO_NAME + '/blob/' + (git rev-list -1 HEAD $file) + '/' + $file_rel_path)).AbsoluteUri
         $new_header = set_or_update_metadata $header $new_header 'gitcommit' $git_commit_url  $true
 
-        #metadata: ms.topic
         $topic_type = 'reference'
         if($header -match 'Module Name')
         {
@@ -63,34 +59,41 @@ build_script:
         }
         $new_header = set_or_update_metadata $header $new_header 'ms.topic' $topic_type $true
 
-        #metadata: ms.prod
         $new_header = set_or_update_metadata $header $new_header 'ms.prod' $env:prod
-
-        #metadata: ms.service
         $new_header = set_or_update_metadata $header $new_header 'ms.service' $env:service
-
-        #metadata: ms.technology
         $new_header = set_or_update_metadata $header $new_header 'ms.technology' $env:technology
-        
-        #metadata: author
         $new_header = set_or_update_metadata $header $new_header 'author' $env:author
-
-        #metadata: keywords
         $new_header = set_or_update_metadata $header $new_header 'keywords' $env:keywords
-
-        #metadata: manager
         $new_header = set_or_update_metadata $header $new_header 'manager' $env:manager
 
-        #filter invalid characters
+        # filter invalid characters
         if($header -match '{{' -or $header -match '}}')
         {
           $new_header = $new_header.replace('{{', '').replace('}}', '')
         }
-        
-        #update file
+
         Set-Content $file (Get-Content $file | Out-String).replace($header, $new_header) -NoNewline
       }
-      Write-Host 'Finish processing files.'
+      $MaxThreads = 8
+      $RunspacePool = [RunspaceFactory ]::CreateRunspacePool(1, $MaxThreads)
+      $RunspacePool.Open()
+      $Jobs = @()
+      $files | % {
+          $Job = [powershell]::Create().AddScript($script_block).AddArgument($_)
+          $Job.RunspacePool = $RunspacePool
+          $Jobs += New-Object PSObject -Property @{
+            RunNum = $_
+            Pipe = $Job
+            Result = $Job.BeginInvoke()
+          }
+        }
+
+      Write-Host "Waiting..."
+      Do
+      {
+        Start-Sleep -Seconds 1
+      } While ($Jobs.Result.IsCompleted -contains $false)
+      Write-Host "Processing files completed!"
   - ps: |
       function GetToc
       {
@@ -108,15 +111,16 @@ build_script:
           Remove-Item $toc_path
         }
         New-Item $toc_path
+        Write-Host "constructing toc..."
         foreach($subFolder in (Get-ChildItem $root_folder -Directory | Select-Object FullName))
         {
           DoGetToc $subFolder.FullName $root_folder_name $toc_path $env.extension 0
         }
+        Write-Host "constructing toc completed."
       }
 
       function global:DoGetToc($folderPath, $root_folder_name, $toc_path, $extension, $level)
       {
-        Write-Host "constructing toc in $folderPath"
         $pre = ""
 
         for($i=0;$i -lt $level;$i++)
@@ -125,7 +129,12 @@ build_script:
         }
 
         Add-Content -Path $toc_path -Value ($pre + "- name: " + (Split-Path -Path $folderPath -Leaf))
-        $sub_folders = Get-ChildItem $folderPath -Directory | Select-Object FullName
+        $index = Get-ChildItem $folderPath | Where-Object {$_.Name -eq 'index.md'} | select -ExpandProperty FullName
+        if($index -ne $null)
+        {
+          Add-Content -Path $toc_path -Value ($pre + "  href: " + (Get-Item $index | Resolve-Path -Relative).replace('\' + $root_folder_name, '.'))
+        }
+        $sub_folders = Get-ChildItem $folderPath -Directory
 
         if($sub_folders -eq $null)
         {
@@ -156,6 +165,10 @@ build_script:
         else
         {
           Add-Content -Path $toc_path -Value ($pre + "  items:")
+          if($sub_folders[0].Name -match 'v\d(.\d)*')
+          {
+            $sub_folders = $sub_folders | Sort-Object -Property Name -Descending
+          }
           foreach($sub_folder in $sub_folders)
           {
             DoGetToc $sub_folder.FullName $root_folder_name $toc_path $extension ($level+1)
@@ -176,7 +189,7 @@ on_success:
         {
           Remove-Item $target -Recurse -Force
         }
-        Copy-Item -Path $env:APPVEYOR_BUILD_FOLDER\$source\$folder_name -Destination $target -recurse -Force
+        Copy-Item $env:APPVEYOR_BUILD_FOLDER\$source\$folder_name $target -recurse -Force
       }
 
       $toc_folder = Join-Path $env:TEMP\Azure $env:target_folder\$source
@@ -188,9 +201,16 @@ on_success:
 
       # copy project toc
       New-Item $toc_folder -type Directory
-      $toc = Join-Path $toc_folder 'toc.yml'      
-      Copy-item (Join-Path $env:APPVEYOR_BUILD_FOLDER\$source "toc.yml") $toc
+      $toc = Join-Path $toc_folder 'toc.yml'
+      Copy-item (Join-Path $env:APPVEYOR_BUILD_FOLDER\$source "toc.yml") $toc_folder
       Set-Content $toc (Get-Content $toc | Out-String).replace('\', '/') -NoNewline
+      
+      # copy project index
+      $index = Join-Path $env:APPVEYOR_BUILD_FOLDER\$source "index.md"
+      if(Test-Path $index)
+      {
+        Copy-item $index $toc_folder
+      }
 
       # add content to global toc
       $global_toc = Join-Path $env:TEMP\Azure $env:target_folder\toc.yml
@@ -201,6 +221,10 @@ on_success:
       if(!((Get-Content $global_toc | Out-String) -match $source))
       {
         Add-Content -Path $global_toc -Value ("- name: " + $source)
+        if($index)
+        {
+          Add-Content -Path $global_toc -Value ("  href: " + $source + "/index.md")
+        }
         Add-Content -Path $global_toc -Value ("  tocHref: " + $source + "/toc.yml")
       }
   - ps: |
@@ -227,8 +251,8 @@ on_success:
         {
           Write-Host 'updating breadcrumb'
           $new_child = New-Object PSObject -Property @{
-            href = ($children[0].href + $source + "/")
-            homepage = ($children[0].href + $source + "/")
+            href = $children[0].href + $source + "/"
+            homepage = $children[0].href + $source + "/"
             toc_title = $source
             level = 3
           }
