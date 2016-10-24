@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
-online version: .\Enable-MsolDevice.md
+online version: ./Enable-MsolDevice.md
 schema: 2.0.0
 ms.assetid: 58F7425A-3F73-4CAF-851D-972214E870AC
 ---
@@ -133,10 +133,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Enable-MsolDevice](.\Enable-MsolDevice.md)
+[Enable-MsolDevice](./Enable-MsolDevice.md)
 
-[Get-MsolDevice](.\Get-MsolDevice.md)
+[Get-MsolDevice](./Get-MsolDevice.md)
 
-[Remove-MsolDevice](.\Remove-MsolDevice.md)
+[Remove-MsolDevice](./Remove-MsolDevice.md)
 
 

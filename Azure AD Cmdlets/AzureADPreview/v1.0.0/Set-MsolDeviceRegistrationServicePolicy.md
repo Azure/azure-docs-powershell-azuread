@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
-online version: .\Get-MsolDeviceRegistrationServicePolicy.md
+online version: ./Get-MsolDeviceRegistrationServicePolicy.md
 schema: 2.0.0
 ms.assetid: 3DF291FC-2A4E-4493-8C1E-BFE2977B5F15
 ---
@@ -141,6 +141,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-MsolDeviceRegistrationServicePolicy](.\Get-MsolDeviceRegistrationServicePolicy.md)
+[Get-MsolDeviceRegistrationServicePolicy](./Get-MsolDeviceRegistrationServicePolicy.md)
 
 

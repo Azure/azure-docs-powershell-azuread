@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
-online version: .\Set-MsolDeviceRegistrationServicePolicy.md
+online version: ./Set-MsolDeviceRegistrationServicePolicy.md
 schema: 2.0.0
 ms.assetid: 65F06302-DB2D-4507-86B9-752471F47030
 ---
@@ -52,6 +52,6 @@ If the value is selected, the allowed users are specified in the value of the ot
 
 ## RELATED LINKS
 
-[Set-MsolDeviceRegistrationServicePolicy](.\Set-MsolDeviceRegistrationServicePolicy.md)
+[Set-MsolDeviceRegistrationServicePolicy](./Set-MsolDeviceRegistrationServicePolicy.md)
 
 

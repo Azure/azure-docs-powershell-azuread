@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
-online version: .\Get-MsolDirSyncFeatures.md
+online version: ./Get-MsolDirSyncFeatures.md
 schema: 2.0.0
 ms.assetid: E4C5910F-B006-43F5-8765-E1185A9D0BBE
 ---
@@ -114,6 +114,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-MsolDirSyncFeatures](.\Get-MsolDirSyncFeatures.md)
+[Get-MsolDirSyncFeatures](./Get-MsolDirSyncFeatures.md)
 
 

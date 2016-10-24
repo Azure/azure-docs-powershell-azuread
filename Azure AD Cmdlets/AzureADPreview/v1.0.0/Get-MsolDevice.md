@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
-online version: .\Disable-MsolDevice.md
+online version: ./Disable-MsolDevice.md
 schema: 2.0.0
 ms.assetid: B11640A7-18C4-475A-B6BE-D16957C4F58C
 ---
@@ -212,10 +212,10 @@ The value could be one of the following: Authenticated, Compliant, Managed.
 
 ## RELATED LINKS
 
-[Disable-MsolDevice](.\Disable-MsolDevice.md)
+[Disable-MsolDevice](./Disable-MsolDevice.md)
 
-[Enable-MsolDevice](.\Enable-MsolDevice.md)
+[Enable-MsolDevice](./Enable-MsolDevice.md)
 
-[Remove-MsolDevice](.\Remove-MsolDevice.md)
+[Remove-MsolDevice](./Remove-MsolDevice.md)
 
 

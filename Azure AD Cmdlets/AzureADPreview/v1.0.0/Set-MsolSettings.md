@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
-online version: .\Get-MsolSettings.md
+online version: ./Get-MsolSettings.md
 schema: 2.0.0
 ms.assetid: 31E47047-4159-488C-9C8A-ED3369268375
 ---
@@ -164,10 +164,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-MsolSettings](.\Get-MsolSettings.md)
+[Get-MsolSettings](./Get-MsolSettings.md)
 
-[New-MsolSettings](.\New-MsolSettings.md)
+[New-MsolSettings](./New-MsolSettings.md)
 
-[Remove-MsolSettings](.\Remove-MsolSettings.md)
+[Remove-MsolSettings](./Remove-MsolSettings.md)
 
 
