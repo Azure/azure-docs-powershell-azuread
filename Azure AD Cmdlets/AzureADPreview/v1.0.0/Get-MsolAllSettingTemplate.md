@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
-online version: .\Get-MsolSettingTemplate.md
+online version: ./Get-MsolSettingTemplate.md
 schema: 2.0.0
 ms.assetid: 0F14F9F7-1780-4CB2-9362-415A361463BE
 ---
@@ -50,10 +50,10 @@ This value should be used when updating setting.
 
 ## RELATED LINKS
 
-[Get-MsolSettingTemplate](.\Get-MsolSettingTemplate.md)
+[Get-MsolSettingTemplate](./Get-MsolSettingTemplate.md)
 
-[Get-MsolAllSettings](.\Get-MsolAllSettings.md)
+[Get-MsolAllSettings](./Get-MsolAllSettings.md)
 
-[Get-MsolSettings](.\Get-MsolSettings.md)
+[Get-MsolSettings](./Get-MsolSettings.md)
 
 

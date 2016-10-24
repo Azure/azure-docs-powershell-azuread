@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
-online version: .\Disable-MsolDevice.md
+online version: ./Disable-MsolDevice.md
 schema: 2.0.0
 ms.assetid: 73C147BE-82EC-484F-B2F3-EC684AA7B52C
 ---
@@ -147,10 +147,10 @@ This cmdlet does not generate any output.
 
 ## RELATED LINKS
 
-[Disable-MsolDevice](.\Disable-MsolDevice.md)
+[Disable-MsolDevice](./Disable-MsolDevice.md)
 
-[Enable-MsolDevice](.\Enable-MsolDevice.md)
+[Enable-MsolDevice](./Enable-MsolDevice.md)
 
-[Get-MsolDevice](.\Get-MsolDevice.md)
+[Get-MsolDevice](./Get-MsolDevice.md)
 
 
