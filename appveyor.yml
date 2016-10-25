@@ -20,9 +20,8 @@ on_success:
   - ps: .\update_content_repo.ps1
   - cd %TEMP%\Azure
   - git config --global credential.helper store
-  - ps: Add-Content "$env:USERPROFILE\.git-credentials" "https://$($env:github_access_token):x-oauth-basic@github.com`n"
+  - ps: ac "$env:USERPROFILE\.git-credentials" "https://$($env:github_access_token):x-oauth-basic@github.com`n"
   - git config --global user.email %email%
   - git config --global user.name %name%
   - git add -A
-  - git commit -m "Triggered by appveyor, update azuread docs."
-  - git push origin %target_branch%
+  - git diff --quiet --exit-code --cached || git commit -m "Update azure powershell azuread docs." && git push origin %TARGET_BRANCH% && appveyor AddMessage "Document Updated"
