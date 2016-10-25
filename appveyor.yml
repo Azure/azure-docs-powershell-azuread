@@ -20,6 +20,7 @@ on_success:
   - ps: .\update_content_repo.ps1
   - cd %TEMP%\Azure
   - git config --global credential.helper store
+  - git config core.safecrlf false
   - ps: ac "$env:USERPROFILE\.git-credentials" "https://$($env:github_access_token):x-oauth-basic@github.com`n"
   - git config --global user.email %email%
   - git config --global user.name %name%
