@@ -1,10 +1,10 @@
 branches:
   only:
     - master
+    - live
 environment:
   github_access_token:
     secure: JSOJKfdgXW09TdfN75l84f7+22GElWNgPo1Vab449RFYe8+BEbO/btueR3g0qldG
-
 before_build:
   - git clone -q https://github.com/Visual-Studio-China/ci-scripts.git %TEMP%\scripts
 build_script:
@@ -15,14 +15,14 @@ build_script:
   - ps: .\process_files_and_toc.ps1
 test: off
 on_success:
-  - git clone -q --branch=%target_branch% %content_repo% %TEMP%\Azure
+  - git clone -q --branch=%APPVEYOR_REPO_BRANCH% %content_repo% %TEMP%\Azure
   - cd %TEMP%\scripts
   - ps: .\update_content_repo.ps1
   - cd %TEMP%\Azure
   - git config --global credential.helper store
   - git config core.safecrlf false
   - ps: ac "$env:USERPROFILE\.git-credentials" "https://$($env:github_access_token):x-oauth-basic@github.com`n"
-  - git config --global user.email %email%
-  - git config --global user.name %name%
+  - ps: git config --global user.email (git --no-pager log -1 --pretty=format:"%ae")
+  - ps: git config --global user.name (git --no-pager log -1 --pretty=format:"%an")
   - git add -A
-  - git diff --quiet --exit-code --cached || git commit -m "Update azure powershell azuread docs." && git push origin %TARGET_BRANCH% && appveyor AddMessage "Document Updated"
+  - git diff --quiet --exit-code --cached || git commit -m "Update azure powershell azuread docs." && git push origin %APPVEYOR_REPO_BRANCH% && appveyor AddMessage "Document Updated"
