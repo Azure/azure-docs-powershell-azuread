@@ -9,7 +9,7 @@ ms.assetid: BB86A603-6CD9-4299-89B8-30A2B4A011A0
 
 # AzureActiveDirectory Module
 ## Description
-{{Manually Enter Description Here}}
+You can use the Azure Active Directory Module for Windows PowerShell cmdlets for Azure AD administrative tasks such as user management, domain management and for configuring single sign-on. This topic includes information about how to install these cmdlets for use with your directory.
 
 ## AzureActiveDirectory Cmdlets
 ### [Disable-MsolDevice](./Disable-MsolDevice.md)
