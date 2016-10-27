@@ -9,7 +9,7 @@ ms.assetid: 7D9D9507-ADE5-45BD-97F8-0CCCDA3D3B58
 
 # AzureActiveDirectory Module
 ## Description
-{{Manually Enter Description Here}}
+You can use the Azure Active Directory PowerShell Module Version 2.0 for Azure AD administrative tasks such as user management, domain management and for configuring single sign-on. These topics are related to using the version of Azure Active Directory released to preview June 30, 2016. The cmdlets listed here are different than the MSOL cmdlets which are part of Azure Active Directory Version 1.0.
 
 ## AzureActiveDirectory Cmdlets
 ### [Add-AzureADAdministrativeUnitMember](./Add-AzureADAdministrativeUnitMember.md)
