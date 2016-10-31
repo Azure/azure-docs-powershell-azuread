@@ -8,7 +8,7 @@ ms.assetid: C2254A89-1700-4321-99FD-529E481705A3
 # Add-AzureADAdministrativeUnitMember
 
 ## SYNOPSIS
-Add an administrativeUnit member
+The **Add-AzureADAdministrativeUnitMember** cmdlet adds an administrativeUnit member.
 
 ## SYNTAX
 
