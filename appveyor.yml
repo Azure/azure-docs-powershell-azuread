@@ -22,7 +22,5 @@ on_success:
   - git config --global credential.helper store
   - git config core.safecrlf false
   - ps: ac "$env:USERPROFILE\.git-credentials" "https://$($env:github_access_token):x-oauth-basic@github.com`n"
-  - ps: git config --global user.email (git --no-pager log -1 --pretty=format:"%ae")
-  - ps: git config --global user.name (git --no-pager log -1 --pretty=format:"%an")
   - git add -A
-  - git diff --quiet --exit-code --cached || git commit -m "Update azure powershell azuread docs." && git push origin %APPVEYOR_REPO_BRANCH% && appveyor AddMessage "Document Updated"
+  - git diff --quiet --exit-code --cached || git commit --author="VSC CI Service <vscavu@microsoft.com>" -m "Update azure powershell azuread docs." && git push origin %APPVEYOR_REPO_BRANCH%
