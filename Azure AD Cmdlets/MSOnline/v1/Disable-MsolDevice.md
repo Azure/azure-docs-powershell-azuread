@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
-online version: ./Enable-MsolDevice.md
+online version: 
 schema: 2.0.0
 ms.assetid: 58F7425A-3F73-4CAF-851D-972214E870AC
 ---

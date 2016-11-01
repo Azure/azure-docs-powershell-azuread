@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
-online version: ./Disable-MsolDevice.md
+online version: 
 schema: 2.0.0
 ms.assetid: 73C147BE-82EC-484F-B2F3-EC684AA7B52C
 ---
