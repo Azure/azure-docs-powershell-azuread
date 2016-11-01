@@ -95,5 +95,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-<a href="https://github.com/Azure/azure-docs-powershell-azuread/blob/master/Azure%20AD%20Cmdlets/AzureAD/v2/Get-AzureADAdministrativeUnitMember.md" title="example">Get-AzureADAdministrativeUnitMember</a><br>
-<a href="https://github.com/Azure/azure-docs-powershell-azuread/blob/master/Azure%20AD%20Cmdlets/AzureAD/v2/Remove-AzureADAdministrativeUnitMember.md" title="example">Remove-AzureADAdministrativeUnitMember</a><br>
+[Get-AzureADAdministrativeUnitMember](.\Get-AzureADAdministrativeUnitmember)
+[Remove-AzureADAdministrativeUnitMember](.\Remove-AzureADAdministrativeUnitMember)
