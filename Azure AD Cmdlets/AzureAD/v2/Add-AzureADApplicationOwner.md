@@ -105,6 +105,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-AzureADApplicationOwner](.\Get-AzureADApplicationOwner)<br>
+[Get-AzureADApplicationOwner](.\Get-AzureADApplicationOwner)
+
 [Remove-AzureADApplicationOwner](.\Remove-AzureADApplicationOwner)
 
