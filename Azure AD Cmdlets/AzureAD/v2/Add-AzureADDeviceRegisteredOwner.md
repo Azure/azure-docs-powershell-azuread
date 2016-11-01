@@ -8,7 +8,7 @@ ms.assetid: 31B92E0F-E46C-4371-8AC9-6C2B497C979B
 # Add-AzureADDeviceRegisteredOwner
 
 ## SYNOPSIS
-
+Adds a registered owner for a device.
 ## SYNTAX
 
 ```
@@ -16,17 +16,13 @@ Add-AzureADDeviceRegisteredOwner -ObjectId <String> -RefObjectId <String> [<Comm
 ```
 
 ## DESCRIPTION
-
+The **Add-AzureADDeviceRegisteredOwner** cmdlet adds a registerd owner for an Azure Active Directory device.
 ## EXAMPLES
-
-### 1:
-```
-PS C:\>
-```
 
 ## PARAMETERS
 
 ### -ObjectId
+Specifies the object ID. 
 ```yaml
 Type: String
 Parameter Sets: (All)
@@ -40,6 +36,7 @@ Accept wildcard characters: False
 ```
 
 ### -RefObjectId
+
 ```yaml
 Type: String
 Parameter Sets: (All)
@@ -62,5 +59,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-
-
+[Get-AzureADDeviceRegisteredOwner](.\Get-AzureADDeviceRegisteredOwner)<br>
+[Remove-AzureADDeviceRegisteredOwner](.\Remove-AzureADDeviceRegisteredOwner)
