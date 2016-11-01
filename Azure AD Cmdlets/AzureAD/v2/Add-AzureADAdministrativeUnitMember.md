@@ -19,18 +19,11 @@ Add-AzureADAdministrativeUnitMember -ObjectId <String> -RefObjectId <String>
 
 ## DESCRIPTION
 The **Add-AzureADAdministrativeUnitMember** cmdlet adds an Active Directory administrative unit member.
-## EXAMPLES
-
-### 
-```
-PS C:\>
-```
 
 ## PARAMETERS
 
 ### -ObjectId
 Specifies the unique ID of an administrative unit in Azure Active Directory.
-
 ```yaml
 Type: String
 Parameter Sets: (All)
@@ -45,7 +38,6 @@ Accept wildcard characters: False
 
 ### -RefObjectId
 Specifies the unique ID of the specific Azure Active Directory object that will be assigned as owner/manager/member.
-
 ```yaml
 Type: String
 Parameter Sets: (All)
@@ -59,7 +51,15 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-@{Text=}```yaml
+Specifies how this cmdlet responds to an information event.
+The acceptable values for this parameter are:
+* Continue
+* Ignore
+* Inquire
+* SilentlyContinue
+* Stop
+* Suspend
+```yaml
 Type: ActionPreference
 Parameter Sets: (All)
 Aliases: infa
@@ -72,7 +72,8 @@ Accept wildcard characters: False
 ```
 
 ### -InformationVariable
-@{Text=}```yaml
+Specifies a variable in which to store an information event message.
+```yaml
 Type: String
 Parameter Sets: (All)
 Aliases: iv
@@ -94,5 +95,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-
-
+<a href="https://github.com/Azure/azure-docs-powershell-azuread/blob/master/Azure%20AD%20Cmdlets/AzureAD/v2/Get-AzureADAdministrativeUnitMember.md" title="example">Get-AzureADAdministrativeUnitMember</a><br>
+<a href="https://github.com/Azure/azure-docs-powershell-azuread/blob/master/Azure%20AD%20Cmdlets/AzureAD/v2/Remove-AzureADAdministrativeUnitMember.md" title="example">Remove-AzureADAdministrativeUnitMember</a><br>
