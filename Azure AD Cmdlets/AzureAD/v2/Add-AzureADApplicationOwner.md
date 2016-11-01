@@ -18,7 +18,7 @@ Add-AzureADApplicationOwner -ObjectId <String> -RefObjectId <String> [-Informati
 ```
 
 ## DESCRIPTION
-The Add-AzureADApplicationOwner cmdlet adds an owner to an Azure Active Directory application.
+The **Add-AzureADApplicationOwner** cmdlet adds an owner to an Azure Active Directory application.
 
 ## EXAMPLES
 
