@@ -8,7 +8,7 @@ ms.assetid: 5BEB9DBE-CEB2-45EA-9F3F-BCB68E7CB857
 # Remove-AzureADAdministrativeUnit
 
 ## SYNOPSIS
-Delete an administrativeUnit by objectId.
+Removes an administrative unit.
 
 ## SYNTAX
 
@@ -18,18 +18,12 @@ Remove-AzureADAdministrativeUnit -ObjectId <String> [-InformationAction <ActionP
 ```
 
 ## DESCRIPTION
-
-## EXAMPLES
-
-### 1:
-```
-PS C:\>
-```
+The **Remove-AzureADAdministrativeUnit** cmdlet removes an administrative unit from Azure Active Directory.
 
 ## PARAMETERS
 
 ### -ObjectId
-The unique idenfier of an administrative unit in Azure Active Directory
+Specifies the ID of an administrative unit in Active Directory.
 
 ```yaml
 Type: String
@@ -44,7 +38,16 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-@{Text=}```yaml
+Specifies how this cmdlet responds to an information event.
+The acceptable values for this parameter are:
+* Continue
+* Ignore
+* Inquire
+* SilentlyContinue
+* Stop
+* Suspend
+
+```yaml
 Type: ActionPreference
 Parameter Sets: (All)
 Aliases: infa
@@ -57,7 +60,8 @@ Accept wildcard characters: False
 ```
 
 ### -InformationVariable
-@{Text=}```yaml
+Specifies a variable in which to store an information event message.
+```yaml
 Type: String
 Parameter Sets: (All)
 Aliases: iv
@@ -79,5 +83,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-
-
+[Add-AzureADAdministrativeUnit](.\Add-AzureADAdministrativeUnit)<br>
+[Get-AzureADAdministrativeUnit](.\Get-AzureADAdministrativeUnit)
