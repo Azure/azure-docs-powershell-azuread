@@ -8,7 +8,7 @@ ms.assetid: C2254A89-1700-4321-99FD-529E481705A3
 # Add-AzureADAdministrativeUnitMember
 
 ## SYNOPSIS
-The **Add-AzureADAdministrativeUnitMember** cmdlet adds an administrativeUnit member.
+Adds an administrative unit member.
 
 ## SYNTAX
 
@@ -18,10 +18,10 @@ Add-AzureADAdministrativeUnitMember -ObjectId <String> -RefObjectId <String>
 ```
 
 ## DESCRIPTION
-
+The **Add-AzureADAdministrativeUnitMember** cmdlet adds an Active Directory administrative unit member.
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### 
 ```
 PS C:\>
 ```
@@ -29,7 +29,7 @@ PS C:\>
 ## PARAMETERS
 
 ### -ObjectId
-The unique idenfier of an administrative unit in Azure Active Directory
+Specifies the unique ID of an administrative unit in Azure Active Directory.
 
 ```yaml
 Type: String
@@ -44,7 +44,7 @@ Accept wildcard characters: False
 ```
 
 ### -RefObjectId
-The unique identifier of the specific Azure Active Directory object that will be assigned as owner/manager/member
+Specifies the unique ID of the specific Azure Active Directory object that will be assigned as owner/manager/member.
 
 ```yaml
 Type: String
