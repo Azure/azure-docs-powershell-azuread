@@ -23,7 +23,7 @@ The **Add-AzureADAdministrativeUnitMember** cmdlet adds an Active Directory admi
 ## PARAMETERS
 
 ### -ObjectId
-Specifies the unique ID of an administrative unit in Azure Active Directory.
+Specifies the ID of an Active Directory administrative unit.
 ```yaml
 Type: String
 Parameter Sets: (All)
