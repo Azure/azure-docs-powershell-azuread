@@ -1,4 +1,4 @@
-a---
+---
 external help file: Microsoft.Open.AzureADBeta.Graph.PowerShell.dll-Help.xml
 online version: 
 schema: 2.0.0
