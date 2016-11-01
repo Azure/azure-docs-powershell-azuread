@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
-online version: 58f7425a-3f73-4caf-851d-972214e870ac
+online version: 
 schema: 2.0.0
 ms.assetid: 174960FD-00BB-461F-B8C9-DDA519E24F00
 ---

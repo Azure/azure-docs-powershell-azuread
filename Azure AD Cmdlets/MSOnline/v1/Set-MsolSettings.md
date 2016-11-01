@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
-online version: ./Get-MsolSettings.md
+online version: 
 schema: 2.0.0
 ms.assetid: 31E47047-4159-488C-9C8A-ED3369268375
 ---

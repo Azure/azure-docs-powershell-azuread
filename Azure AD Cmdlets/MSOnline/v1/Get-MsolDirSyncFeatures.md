@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
-online version: ./Get-MsolDirSyncConfiguration.md
+online version: 
 schema: 2.0.0
 ms.assetid: F2ED75F9-4313-418D-8B3A-EED1DE39B9DB
 ---
