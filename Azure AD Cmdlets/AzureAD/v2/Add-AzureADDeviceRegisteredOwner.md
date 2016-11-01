@@ -36,7 +36,7 @@ Accept wildcard characters: False
 ```
 
 ### -RefObjectId
-
+Specifies the ID of the Active Directory object to add.
 ```yaml
 Type: String
 Parameter Sets: (All)
