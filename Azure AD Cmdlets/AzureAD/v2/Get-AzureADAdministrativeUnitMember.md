@@ -1,4 +1,4 @@
----
+a---
 external help file: Microsoft.Open.AzureADBeta.Graph.PowerShell.dll-Help.xml
 online version: 
 schema: 2.0.0
@@ -8,7 +8,7 @@ ms.assetid: C05871A7-998C-48AC-BCEB-4CD916E86767
 # Get-AzureADAdministrativeUnitMember
 
 ## SYNOPSIS
-Gets administrative unit members.
+Gets a member of an administrative unit.
 
 ## SYNTAX
 
@@ -18,7 +18,7 @@ Get-AzureADAdministrativeUnitMember -ObjectId <String> [-InformationAction <Acti
 ```
 
 ## DESCRIPTION
-The **Get-AzureADAdministrativeUnitMember** cmdlet gets members of an Active Directory administrative unit.
+The **Get-AzureADAdministrativeUnitMember** cmdlet gets a member of an Active Directory administrative unit.
 
 
 ## PARAMETERS
