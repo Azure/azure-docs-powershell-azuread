@@ -8,9 +8,6 @@ environment:
 before_build:
   - git clone -q https://github.com/Visual-Studio-China/ci-scripts.git %TEMP%\scripts
 build_script:
-  - ps: $global:root_path = (ls $env:APPVEYOR_BUILD_FOLDER -dir | select -First 1).FullName
-  - ps: $global:root_name = Split-Path $global:root_path -Leaf
-  - ps: $global:toc_path = Join-Path $global:root_path "toc.yml"
   - cd %TEMP%\scripts
   - ps: .\process_files_and_toc.ps1
 test: off
