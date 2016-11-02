@@ -18,7 +18,7 @@ Add-AzureADGroupOwner -ObjectId <String> -RefObjectId <String> [-InformationActi
 ```
 
 ## DESCRIPTION
-The **Add-AzureADGroupOwner** adds an owner to an Azure Active Directory group.
+The **Add-AzureADGroupOwner** cmdlet adds an owner to an Azure Active Directory group.
 
 ## EXAMPLES
 
