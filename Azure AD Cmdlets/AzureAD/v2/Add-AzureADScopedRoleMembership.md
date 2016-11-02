@@ -8,7 +8,7 @@ ms.assetid: B505822C-4BAA-4EC5-BB0A-128C093930C6
 # Add-AzureADScopedRoleMembership
 
 ## SYNOPSIS
-Add a scopedRoleMembership to an administrativeUnit
+Adds a scoped role membership to an administrative unit.
 
 ## SYNTAX
 
@@ -18,18 +18,12 @@ Add-AzureADScopedRoleMembership -ObjectId <String> [-AdministrativeUnitObjectId 
 ```
 
 ## DESCRIPTION
-
-## EXAMPLES
-
-### 1:
-```
-PS C:\>
-```
+The **Add-AzureADScopedRoleMembership** cmdlet adds a scoped role membership to an administrative unit.
 
 ## PARAMETERS
 
 ### -AdministrativeUnitObjectId
-@{Text=}
+Specifies the ID of an admininstrative unit.
 
 ```yaml
 Type: String
@@ -44,7 +38,7 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-@{Text=}
+
 
 ```yaml
 Type: String
@@ -59,8 +53,7 @@ Accept wildcard characters: False
 ```
 
 ### -RoleMemberInfo
-@{Text=}
-
+Specifies a **RoleMemberInfo** object. 
 ```yaml
 Type: RoleMemberInfo
 Parameter Sets: (All)
@@ -74,8 +67,6 @@ Accept wildcard characters: False
 ```
 
 ### -RoleObjectId
-@{Text=}
-
 ```yaml
 Type: String
 Parameter Sets: (All)
@@ -98,5 +89,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-AzureADScopedRoleMembership](.\Get-AzureADScopedRoleMembership)
 
+[Remove-AzureADScopedRoleMembership](.\Remove-AzureADScopedRoleMembership)
 
