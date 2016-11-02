@@ -8,7 +8,7 @@ ms.assetid: 944E709A-0F66-485C-86E4-1CB4C998C71D
 # Get-AzureADDeviceRegisteredUser
 
 ## SYNOPSIS
-
+Gets a registered user.
 ## SYNTAX
 
 ```
@@ -16,17 +16,12 @@ Get-AzureADDeviceRegisteredUser -ObjectId <String> [-Top <Int32>] [<CommonParame
 ```
 
 ## DESCRIPTION
-
-## EXAMPLES
-
-### 1:
-```
-PS C:\>
-```
+The **Get-AzureADDeviceRegisteredUser** cmdlet gets a registered user for an Azure Active Directory device.
 
 ## PARAMETERS
 
 ### -ObjectId
+Specifies an object ID.
 ```yaml
 Type: String
 Parameter Sets: (All)
@@ -62,5 +57,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Add-AzureADDeviceRegisteredUser](.\Add-AzureADDeviceRegisteredUser)
 
-
+[Remove-AzureADDeviceRegisteredUser](.\Remove-AzureADDeviceRegisteredUser)

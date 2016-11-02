@@ -8,7 +8,7 @@ ms.assetid: 2CFAF4EB-D639-4B11-8A1F-6D011BBE4ACA
 # Add-AzureADDeviceRegisteredUser
 
 ## SYNOPSIS
-
+Adds a registered user for a device.
 ## SYNTAX
 
 ```
@@ -16,13 +16,8 @@ Add-AzureADDeviceRegisteredUser -ObjectId <String> -RefObjectId <String> [<Commo
 ```
 
 ## DESCRIPTION
+The **Add-AzureADDeviceRegisteredUser** cmdlet adds a registered user for an Azure Active Directory device.
 
-## EXAMPLES
-
-### 1:
-```
-PS C:\>
-```
 
 ## PARAMETERS
 
@@ -62,5 +57,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-AzureADDeviceRegisteredUser](.\Get-AzureADDeviceRegisteredUser)
 
-
+[Remove-AzureADDeviceRegisteredUser](.\Remove-AzureADDeviceRegisteredUser)
