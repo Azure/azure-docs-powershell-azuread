@@ -83,5 +83,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Add-AzureADAdministrativeUnit](.\Add-AzureADAdministrativeUnit)<br>
+[Add-AzureADAdministrativeUnit](.\Add-AzureADAdministrativeUnit)
+
 [Get-AzureADAdministrativeUnit](.\Get-AzureADAdministrativeUnit)
