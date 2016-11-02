@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.Custom.dll-Help.xml
-online version: 
+online version:
 schema: 2.0.0
 ms.assetid: 59B49FB7-4743-4D76-9C08-4416D862BEE3
 ---
@@ -8,7 +8,7 @@ ms.assetid: 59B49FB7-4743-4D76-9C08-4416D862BEE3
 # Remove-AzureADApplicationKeyCredential
 
 ## SYNOPSIS
-Remove a key credential from an application
+Removes a key credential from an application.
 
 ## SYNTAX
 
@@ -18,23 +18,25 @@ Remove-AzureADApplicationKeyCredential -ObjectId <String> -KeyId <String>
 ```
 
 ## DESCRIPTION
+The **Remove-AzureADApplicationKeyCredential** cmdlet removes a key credential from an application.
 
 ## EXAMPLES
 
-### 1:
+### Example 1: Remove a key credential
+```PowerShell
+PS C:\> Remove-AzureADApplicationKeyCredential -ObjectId "3ddd22e7-a150-4bb3-b100-e410dea1cb84" -KeyId "6aa971c6-3040-45df-87ed-581c8c09ff2b"
 ```
-PS C:\>
-```
+This command removes the specified key credential from the specified application.
 
 ## PARAMETERS
 
 ### -ObjectId
-The unique identifier of the application in Azure Active Directory
+Specifies a unique ID of an application in Azure Active Directory.
 
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -44,12 +46,12 @@ Accept wildcard characters: False
 ```
 
 ### -KeyId
-@{Text=}
+Specifies a custom key ID.
 
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -108,4 +110,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
+[Get-AzureADApplicationKeyCredential](.\Get-AzureADApplicationKeyCredential.md)
 
+[New-AzureADApplicationKeyCredential](.\New-AzureADApplicationKeyCredential.md)

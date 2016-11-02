@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.Custom.dll-Help.xml
-online version: 
+online version:
 schema: 2.0.0
 ms.assetid: 306B2B21-9B1C-4388-B3D6-419CDE02C75C
 ---
@@ -8,7 +8,7 @@ ms.assetid: 306B2B21-9B1C-4388-B3D6-419CDE02C75C
 # Get-AzureADApplicationKeyCredential
 
 ## SYNOPSIS
-Het an application's key credentials
+Gets the key credentials for an application.
 
 ## SYNTAX
 
@@ -18,23 +18,25 @@ Get-AzureADApplicationKeyCredential -ObjectId <String> [-InformationAction <Acti
 ```
 
 ## DESCRIPTION
+The **Get-AzureADApplicationKeyCredential** cmdlet gets the key credentials for an application.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### Example 1: Get key credentials
+```PowerShell
+PS C:\> Get-AzureADApplicationKeyCredential -ObjectId "3ddd22e7-a150-4bb3-b100-e410dea1cb84"
 ```
-PS C:\>Get-AzureADApplicationKeyCredential -ObjectId 3ddd22e7-a150-4bb3-b100-e410dea1cb84
-```
+This command gets the key credentials for the specified application.
 
 ## PARAMETERS
 
 ### -ObjectId
-The objectID of the application for which to get the key credential
+Specifies a unique ID of an application in Azure Active Directory for which to get key credentials
 
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -93,4 +95,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
+[New-AzureADApplicationKeyCredential](.\New-AzureADApplicationKeyCredential.md)
 
+[Remove-AzureADApplicationKeyCredential](.\Remove-AzureADApplicationKeyCredential.md)

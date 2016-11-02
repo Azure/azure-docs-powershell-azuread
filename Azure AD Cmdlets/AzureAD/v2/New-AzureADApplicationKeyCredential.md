@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.Custom.dll-Help.xml
-online version: 
+online version:
 schema: 2.0.0
 ms.assetid: 3C1BC855-0B50-4B1D-9D72-25A5E346F09D
 ---
@@ -8,7 +8,7 @@ ms.assetid: 3C1BC855-0B50-4B1D-9D72-25A5E346F09D
 # New-AzureADApplicationKeyCredential
 
 ## SYNOPSIS
-Create a new key credential for an application
+Creates a key credential for an application.
 
 ## SYNTAX
 
@@ -19,15 +19,13 @@ New-AzureADApplicationKeyCredential -ObjectId <String> [-CustomKeyIdentifier <St
 ```
 
 ## DESCRIPTION
+The **New-AzureADApplicationKeyCredential** cmdlet creates a key credential for an application.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
-```
-PS C:\>New-AzureADApplicationKeyCredential -ObjectId 3ddd22e7-a150-4bb3-b100-e410dea1cb84
-```
-
-Output:
+### Example 1: Create a key for an application
+```PowerShell
+PS C:\> New-AzureADApplicationKeyCredential -ObjectId "3ddd22e7-a150-4bb3-b100-e410dea1cb84"
 
 CustomKeyIdentifier :
 EndDate             : 9/28/2017 3:49:03 PM
@@ -36,16 +34,20 @@ StartDate           : 9/28/2016 3:49:03 PM
 Type                : Symmetric
 Usage               : Sign
 Value               : {3, 63, 112, 132...}
+```
+
+This command creates a key for the specified application.
+
 
 ## PARAMETERS
 
 ### -ObjectId
-The unique identifier of an application in Azure Active Directory
+Specifies a unique ID of an application in Azure Active Directory.
 
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -55,12 +57,12 @@ Accept wildcard characters: False
 ```
 
 ### -CustomKeyIdentifier
-@{Text=}
+Specifies a custom key ID.
 
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -70,12 +72,12 @@ Accept wildcard characters: False
 ```
 
 ### -StartDate
-@{Text=}
+Specifies the time when the key becomes valid as a **DateTime** object.
 
 ```yaml
 Type: DateTime
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -85,12 +87,12 @@ Accept wildcard characters: False
 ```
 
 ### -EndDate
-@{Text=}
+Specifies the time when the key becomes invalid as a **DateTime** object.
 
 ```yaml
 Type: DateTime
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -100,12 +102,12 @@ Accept wildcard characters: False
 ```
 
 ### -Type
-@{Text=}
+Specifies the type of the key.
 
 ```yaml
 Type: KeyType
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -115,12 +117,12 @@ Accept wildcard characters: False
 ```
 
 ### -Usage
-@{Text=}
+Specifies the key usage.
 
 ```yaml
 Type: KeyUsage
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -130,12 +132,12 @@ Accept wildcard characters: False
 ```
 
 ### -Value
-@{Text=}
+Specifies the value for the key.
 
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -194,4 +196,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
+[Get-AzureADApplicationKeyCredential](.\Get-AzureADApplicationKeyCredential.md)
 
+[Remove-AzureADApplicationKeyCredential](.\Remove-AzureADApplicationKeyCredential.md)

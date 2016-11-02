@@ -99,6 +99,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[New-AzureADApplicationExtensionProperty](.\New-AzureADApplicationExtensionProperty)
+[New-AzureADApplicationExtensionProperty](.\New-AzureADApplicationExtensionProperty.md)
 
-[Remove-AzureADApplicationExtensionProperty](.\Remove-AzureADApplicationExtensionProperty)
+[Remove-AzureADApplicationExtensionProperty](.\Remove-AzureADApplicationExtensionProperty.md)
