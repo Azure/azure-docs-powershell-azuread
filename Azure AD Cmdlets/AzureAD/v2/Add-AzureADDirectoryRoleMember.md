@@ -8,7 +8,7 @@ ms.assetid: 652D7268-D620-4A4C-AAF7-E5D553FE5F09
 # Add-AzureADDirectoryRoleMember
 
 ## SYNOPSIS
-Add a member to a directory role
+Adds a member to a directory role.
 
 ## SYNTAX
 
@@ -18,18 +18,18 @@ Add-AzureADDirectoryRoleMember -ObjectId <String> -RefObjectId <String> [-Inform
 ```
 
 ## DESCRIPTION
-
+The **Add-AzureADDirectoryRoleMember** cmdlet adds a member to an Azure Active Directory role.
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### Example 1: Add a member to an Active Directory role
 ```
 PS C:\>Add-AzureADDirectoryRoleMember -ObjectId 019ea7a2-1613-47c9-81cb-20ba35b1ae48 -RefObjectId c13dd34a-492b-4561-b171-40fcce2916c5
 ```
-
+This command adds a member to an Active Directory role.
 ## PARAMETERS
 
 ### -ObjectId
-The unique identifier of a directory role in Azure Active Directory (ObjectId)
+Specifies the ID of a directory role in Azure Active Directory.
 
 ```yaml
 Type: String
@@ -44,7 +44,7 @@ Accept wildcard characters: False
 ```
 
 ### -RefObjectId
-The unique identifier of the specific Azure Active Directory object that will be assigned as owner/manager/member
+Specifies the ID of the Azure Active Directory object to assign as owner/manager/member.
 
 ```yaml
 Type: String
@@ -59,9 +59,7 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -107,5 +105,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-AzureADDirectoryRoleMember](.\Get-ServiceFabricCluster)
 
+[Remove-AzureADDirectoryRoleMember](.\Remove-ServiceFabricCluster)
 
