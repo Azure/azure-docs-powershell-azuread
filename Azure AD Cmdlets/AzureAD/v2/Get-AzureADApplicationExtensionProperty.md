@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
-online version: 
+online version:
 schema: 2.0.0
 ms.assetid: 174EC629-F240-47FD-B603-87F4419ACD14
 ---
@@ -8,7 +8,7 @@ ms.assetid: 174EC629-F240-47FD-B603-87F4419ACD14
 # Get-AzureADApplicationExtensionProperty
 
 ## SYNOPSIS
-Get group extension properties
+Gets application extension properties.
 
 ## SYNTAX
 
@@ -18,29 +18,30 @@ Get-AzureADApplicationExtensionProperty -ObjectId <String> [-InformationAction <
 ```
 
 ## DESCRIPTION
+The **Get-AzureADApplicationExtensionProperty** cmdlet gets application extension properties in Azure Active Directory.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
-```
-PS C:\>Get-AzureADApplicationExtensionProperty -ObjectId 3ddd22e7-a150-4bb3-b100-e410dea1cb84
-```
-
-Output:
+### Example 1: Get extension properties
+```PowerShell
+PS C:\>Get-AzureADApplicationExtensionProperty -ObjectId "3ddd22e7-a150-4bb3-b100-e410dea1cb84"
 
 ObjectId                             Name                                                    TargetObjects
 --------                             ----                                                    -------------
 344ed560-f8e7-410e-ab9f-c795a7df5c36 extension_36ee4c6c081240a2b820b22ebd02bce3_NewAttribute {}
+```
+
+This command gets the extension properties for the specified application in Azure Active Directory.
 
 ## PARAMETERS
 
 ### -ObjectId
-The unique idenfier of an application in Azure Active Directory
+Specifies the unique ID of an application in Azure Active Directory.
 
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -98,5 +99,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[New-AzureADApplicationExtensionProperty](.\New-AzureADApplicationExtensionProperty.md)
 
-
+[Remove-AzureADApplicationExtensionProperty](.\Remove-AzureADApplicationExtensionProperty.md)
