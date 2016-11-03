@@ -59,7 +59,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Add-AzureADDeviceRegisteredUser](.\Add-AzureADDeviceRegisteredUser)
+[Add-AzureADDeviceRegisteredUser](./Add-AzureADDeviceRegisteredUser)
 
-[Get-AzureADDeviceRegisteredUser](.\Get-AzureADDeviceRegisteredUser)
+[Get-AzureADDeviceRegisteredUser](./Get-AzureADDeviceRegisteredUser)
 
