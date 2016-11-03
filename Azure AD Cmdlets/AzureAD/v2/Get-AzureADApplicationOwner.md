@@ -23,15 +23,16 @@ The **Get-AzureADApplicationOwner** cmdlet get an owner of an Azure Active Direc
 ## EXAMPLES
 
 ### Example 1: Get the owner of an application
-```
-PS C:\>Get-AzureADApplicationOwner -ObjectId 3ddd22e7-a150-4bb3-b100-e410dea1cb84
+```PowerShell
+PS C:\>Get-AzureADApplicationOwner -ObjectId "3ddd22e7-a150-4bb3-b100-e410dea1cb84"
+
+ObjectId                             ObjectType
+--------                             ----------
+c13dd34a-492b-4561-b171-40fcce2916c5 User
 ```
 This command gets the owner of an application.
-Output:
 
-    ObjectId                             ObjectType
-    --------                             ----------
-    c13dd34a-492b-4561-b171-40fcce2916c5 User
+
 
 ## PARAMETERS
 
