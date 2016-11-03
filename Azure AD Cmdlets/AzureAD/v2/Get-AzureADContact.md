@@ -8,7 +8,7 @@ ms.assetid: 393B2C82-CB87-4892-872E-6E6285DFF955
 # Get-AzureADContact
 
 ## SYNOPSIS
-Retrieves a specific contact from Azure Active Directory
+Gets a  contact from Azure Active Directory.
 
 ## SYNTAX
 
@@ -25,18 +25,12 @@ Get-AzureADContact -ObjectId <String> [-InformationAction <ActionPreference>] [-
 ```
 
 ## DESCRIPTION
-
-## EXAMPLES
-
-### 1:
-```
-PS C:\>
-```
+The **Get-AzureADContact** cmdlet gets a contact from Azure Active Directory.
 
 ## PARAMETERS
 
 ### -ObjectId
-The unique identifier of a contact in Azure Active Directory (ObjectId)
+Specifies the ID of a contact in Azure Active Directory.
 
 ```yaml
 Type: String
@@ -75,7 +69,7 @@ Accept wildcard characters: False
 ```
 
 ### -InformationVariable
-Specifies an information variable.
+Specifies a variable in which to store an information event message.
 
 ```yaml
 Type: String
@@ -90,7 +84,7 @@ Accept wildcard characters: False
 ```
 
 ### -Top
-The maximum number of records to return.
+Specifies the maximum number of records to return.
 
 ```yaml
 Type: Int32
@@ -105,8 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -Filter
-The oData v3.0 filter statement. 
-Controls which objects are returned.
+Specifies an oData v3.0 filter statement. This parameter controls which objects are returned.
 
 ```yaml
 Type: String
@@ -131,4 +124,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-
+[Remove-AzureADContact](./Remove-AzureADContact.md)  
+[Set-AzureADContact](./Set-AzureADContact.md)
