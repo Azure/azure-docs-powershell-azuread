@@ -8,7 +8,7 @@ ms.assetid: 5751DBA5-57F8-47C6-954D-9D4B026CE662
 # Get-AzureADContract
 
 ## SYNOPSIS
-Retrieves a specific contract from Azure Active Directory
+Gets a contract.
 
 ## SYNTAX
 
@@ -25,18 +25,12 @@ Get-AzureADContract -ObjectId <String> [-InformationAction <ActionPreference>] [
 ```
 
 ## DESCRIPTION
-
-## EXAMPLES
-
-### 1:
-```
-PS C:\>
-```
+The **Get-AzureADContract** cmdlet gets a contract from Azure Active Directory.
 
 ## PARAMETERS
 
 ### -ObjectId
-The unique identifier of a contract in Azure Active Directory (ObjectId)
+Specifies the ID of a contract.
 
 ```yaml
 Type: String
@@ -90,7 +84,7 @@ Accept wildcard characters: False
 ```
 
 ### -Top
-The maximum number of records to return.
+Specifies the maximum number of records to return.
 
 ```yaml
 Type: Int32
@@ -105,8 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -Filter
-The oData v3.0 filter statement. 
-Controls which objects are returned.
+Specifies an oData v3.0 filter statement. This parameter controls which objects are returned.
 
 ```yaml
 Type: String
