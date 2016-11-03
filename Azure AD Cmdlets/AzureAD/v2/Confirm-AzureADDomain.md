@@ -8,7 +8,7 @@ ms.assetid: 120268ED-E28B-434B-8EC2-313D3C3517B9
 # Confirm-AzureADDomain
 
 ## SYNOPSIS
-Validate the ownership of the domain.
+Validate the ownership of a domain.
 
 ## SYNTAX
 
@@ -18,20 +18,12 @@ Confirm-AzureADDomain -Name <String> [-InformationAction <ActionPreference>] [-I
 ```
 
 ## DESCRIPTION
-
-## EXAMPLES
-
-### 1:
-```
-PS C:\>
-```
+The **Confirm-AzureADDomain** cmdlet validates the ownership of an Azure Active Directory domain.
 
 ## PARAMETERS
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -53,7 +45,7 @@ Accept wildcard characters: False
 ```
 
 ### -InformationVariable
-Specifies an information variable.
+Specifies a variable in which to store an information event message.
 
 ```yaml
 Type: String
@@ -68,6 +60,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
+Specifies the name of the domain.
 ```yaml
 Type: String
 Parameter Sets: (All)
@@ -90,5 +83,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-AzureADDomain](.\Get-AzureADDomain)
+
+[New-AzureADDomain](.\New-AzureADDomain)
+
+[Remove-AzureADDomain](.\Remove-AzureADDomain)
+
+[Set-AzureADDomain](.\Set-AzureADDomain)
 
 
