@@ -169,9 +169,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[New-AzureADApplication](.\New-AzureADApplication)  
-[Remove-AzureADApplication](.\Remove-AzureADApplication)  
-[Set-AzureADApplication](.\Set-AzureADApplication)
+[New-AzureADApplication](./New-AzureADApplication)  
+[Remove-AzureADApplication](./Remove-AzureADApplication)  
+[Set-AzureADApplication](./Set-AzureADApplication)
 
 
 
