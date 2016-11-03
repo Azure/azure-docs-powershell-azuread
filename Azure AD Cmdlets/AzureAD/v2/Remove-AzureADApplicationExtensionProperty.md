@@ -110,6 +110,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-AzureADApplicationExtensionProperty](.\Get-AzureADApplicationExtensionProperty.md)
+[Get-AzureADApplicationExtensionProperty](./Get-AzureADApplicationExtensionProperty.md)
 
-[New-AzureADApplicationExtensionProperty](.\New-AzureADApplicationExtensionProperty.md)
+[New-AzureADApplicationExtensionProperty](./New-AzureADApplicationExtensionProperty.md)
