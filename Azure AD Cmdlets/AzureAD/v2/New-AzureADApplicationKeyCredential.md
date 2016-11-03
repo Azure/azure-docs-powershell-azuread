@@ -196,6 +196,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADApplicationKeyCredential](.\Get-AzureADApplicationKeyCredential.md)
+[Get-AzureADApplicationKeyCredential](./Get-AzureADApplicationKeyCredential.md)
 
 [Remove-AzureADApplicationKeyCredential](.\Remove-AzureADApplicationKeyCredential.md)
