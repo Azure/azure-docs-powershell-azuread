@@ -20,7 +20,7 @@ Add-AzureADServicePrincipalPolicy -ObjectId <String> -RefObjectId <String>
 The **Add-AzureADServicePrincipalPolicy** cmdlet adds a service principal policy.
 ## EXAMPLES
 
-### Example 1: Add a service principal policy.
+### Example 1: Add a service principal policy
 ```
 PS C:\>Add-AzureADServicePrincipalPolicy -ObjectId <object id of service principal> -RefObjectId <object id of policy>
 ```
