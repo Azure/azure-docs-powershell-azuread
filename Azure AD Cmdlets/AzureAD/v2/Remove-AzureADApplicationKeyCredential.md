@@ -110,6 +110,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADApplicationKeyCredential](.\Get-AzureADApplicationKeyCredential.md)
+[Get-AzureADApplicationKeyCredential](./Get-AzureADApplicationKeyCredential.md)
 
-[New-AzureADApplicationKeyCredential](.\New-AzureADApplicationKeyCredential.md)
+[New-AzureADApplicationKeyCredential](./New-AzureADApplicationKeyCredential.md)
