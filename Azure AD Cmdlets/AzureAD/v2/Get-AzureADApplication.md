@@ -36,16 +36,18 @@ The **Get-AzureADApplication** cmdlet gets an Azure Active Directory application
 ## EXAMPLES
 
 ### Example 1: Get an application by display name
-```
+```PowerShell
 PS C:\>Get-AzureADApplication -Filter "DisplayName eq 'TestName'"
+
+ObjectId                             AppId                                DisplayName
+--------                             -----                                -----------
+3ddd22e7-a150-4bb3-b100-e410dea1cb84 36ee4c6c-0812-40a2-b820-b22ebd02bce3 TestName
 ```
 This command gets an application by its display name.
 
-Output:
 
-    ObjectId                             AppId                                DisplayName
-    --------                             -----                                -----------
-    3ddd22e7-a150-4bb3-b100-e410dea1cb84 36ee4c6c-0812-40a2-b820-b22ebd02bce3 TestName
+
+
 
 ### Example 2: Get an application by ID
 ```
