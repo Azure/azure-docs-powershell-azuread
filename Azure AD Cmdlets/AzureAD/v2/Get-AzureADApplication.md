@@ -39,6 +39,8 @@ The **Get-AzureADApplication** cmdlet gets an Azure Active Directory application
 ```
 PS C:\>Get-AzureADApplication -Filter "DisplayName eq 'TestName'"
 ```
+This command gets an application by its display name.
+
 Output:
 
     ObjectId                             AppId                                DisplayName
