@@ -41,9 +41,9 @@ PS C:\>Get-AzureADApplication -Filter "DisplayName eq 'TestName'"
 ```
 Output:
 
-ObjectId                             AppId                                DisplayName
---------                             -----                                -----------
-3ddd22e7-a150-4bb3-b100-e410dea1cb84 36ee4c6c-0812-40a2-b820-b22ebd02bce3 TestName
+    ObjectId                             AppId                                DisplayName
+    --------                             -----                                -----------
+    3ddd22e7-a150-4bb3-b100-e410dea1cb84 36ee4c6c-0812-40a2-b820-b22ebd02bce3 TestName
 
 ### Example 2: Get an application by ID
 ```
