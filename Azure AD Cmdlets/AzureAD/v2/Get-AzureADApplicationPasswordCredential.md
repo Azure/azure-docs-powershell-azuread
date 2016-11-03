@@ -8,7 +8,7 @@ ms.assetid: 5F3B0266-B5CD-4CAB-B22D-BDEA4C78E3B1
 # Get-AzureADApplicationPasswordCredential
 
 ## SYNOPSIS
-Get and application's password credentials
+Gets the password credential for an application.
 
 ## SYNTAX
 
@@ -18,21 +18,21 @@ Get-AzureADApplicationPasswordCredential -ObjectId <String> [-InformationAction 
 ```
 
 ## DESCRIPTION
+The **Get-AzureADApplicationPasswordCredential** cmdlet gets the password credentials for an Azure Active Directory application.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
-```
+### Example 1:
+```PowerShell
 PS C:\>New-AzureADApplicationPasswordCredential -ObjectId 3ddd22e7-a150-4bb3-b100-e410dea1cb84
-```
-
-Output:
 
 CustomKeyIdentifier :
 EndDate             : 9/28/2017 3:57:10 PM
 KeyId               :
 StartDate           : 9/28/2016 3:57:10 PM
 Value               : ZJ0V1Yg4cp4eWIey9DrYspqVdX1pdvY437P/ueGxVLU=
+
+```
 
 ## PARAMETERS
 
