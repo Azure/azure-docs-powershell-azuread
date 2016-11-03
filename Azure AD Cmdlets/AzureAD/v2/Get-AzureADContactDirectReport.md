@@ -8,7 +8,7 @@ ms.assetid: 041BAC4C-2588-471C-9358-BC9199B37503
 # Get-AzureADContactDirectReport
 
 ## SYNOPSIS
-Get the contact's direct reports.
+Get the direct reports for a contact.
 
 ## SYNTAX
 
@@ -18,18 +18,12 @@ Get-AzureADContactDirectReport -ObjectId <String> [-Top <Int32>] [-InformationAc
 ```
 
 ## DESCRIPTION
-
-## EXAMPLES
-
-### 1:
-```
-PS C:\>
-```
+The **Get-AzureADContactDirectReport** cmdlet gets the direct reports for a contact.
 
 ## PARAMETERS
 
 ### -ObjectId
-The unique identifier of a contact in Azure Active Directory (ObjectId)
+Specifies the ID of a contact in Azure Active Directory.
 
 ```yaml
 Type: String
@@ -44,7 +38,7 @@ Accept wildcard characters: False
 ```
 
 ### -Top
-The maximum number of records to return.
+Specifies the maximum number of records to return.
 
 ```yaml
 Type: Int32
