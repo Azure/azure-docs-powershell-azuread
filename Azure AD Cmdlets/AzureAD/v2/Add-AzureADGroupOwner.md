@@ -106,8 +106,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-AzureADGroupOwner](.\Get-AzureADGroupOwner)
+[Get-AzureADGroupOwner](./Get-AzureADGroupOwner)
 
-[Remove-AzureADGroupOwner](.\Remove-AzureADGroupOwner)
+[Remove-AzureADGroupOwner](./Remove-AzureADGroupOwner)
 
 
