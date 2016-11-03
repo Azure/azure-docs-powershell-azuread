@@ -8,7 +8,7 @@ ms.assetid: 3719960D-7A77-414E-A20C-812B527F27AB
 # Enable-AzureADDirectoryRole
 
 ## SYNOPSIS
-Activates an existing directory role in Azure Active Directory
+Activates an existing directory role in Azure Active Directory.
 
 ## SYNTAX
 
@@ -18,19 +18,12 @@ Enable-AzureADDirectoryRole -DirectoryRole <DirectoryRole> [-InformationAction <
 ```
 
 ## DESCRIPTION
-
-## EXAMPLES
-
-### 1:
-```
-PS C:\>
-```
+The **Enable-AzureADDirectoryRole** cmdlet activates an existing directory role in Azure Active Directory.
 
 ## PARAMETERS
 
 ### -DirectoryRole
-Azure active directory role. 
-Only the roleTemplateId is required.
+Specifies an Azure Active Directory role. Only the roleTemplateId is required.
 
 ```yaml
 Type: DirectoryRole
@@ -45,9 +38,7 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -69,7 +60,7 @@ Accept wildcard characters: False
 ```
 
 ### -InformationVariable
-Specifies an information variable.
+Specifies a variable in which to store an information event message.
 
 ```yaml
 Type: String
@@ -93,5 +84,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-AzureADDirectoryRole](.\Get-AzureADDirectoryRole)
 
 
