@@ -8,7 +8,7 @@ ms.assetid: 22D71474-34F5-4646-BB68-A929B211D283
 # Add-AzureADServicePrincipalOwner
 
 ## SYNOPSIS
-Add an owner to a service principal
+Adds an owner to a service principal.
 
 ## SYNTAX
 
@@ -18,18 +18,13 @@ Add-AzureADServicePrincipalOwner -ObjectId <String> -RefObjectId <String>
 ```
 
 ## DESCRIPTION
+The **Add-AzureADServicePrincipalOwner** cmdlet adds an owner to a service principal in Azure Active Directory.
 
-## EXAMPLES
-
-### 1:
-```
-PS C:\>
-```
 
 ## PARAMETERS
 
 ### -ObjectId
-The unique idenfier of an service principal in Azure Active Directory
+Specifies the ID of a service principal in Active Directory.
 
 ```yaml
 Type: String
@@ -44,7 +39,7 @@ Accept wildcard characters: False
 ```
 
 ### -RefObjectId
-The unique identifier of the specific Azure Active Directory object that will be assigned as owner/manager/member
+Specifies the ID of the Active Directory object to assign as owner/manager/member.
 
 ```yaml
 Type: String
@@ -59,9 +54,7 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -83,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### -InformationVariable
-Specifies an information variable.
+Specifies a variable in which to store an information event message.
 
 ```yaml
 Type: String
@@ -107,5 +100,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-AzureADServicePrincipalOwner](.\Get-AzureADServicePrincipalOwner)
 
+[Remove-AzureADServicePrincipalOwner](.\Remove-AzureADServicePrincipalOwner)
 
