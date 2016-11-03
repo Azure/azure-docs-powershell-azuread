@@ -8,7 +8,7 @@ ms.assetid: 45AD85CB-E30B-412B-945E-64187DD0E9BA
 # Get-AzureADContactManager
 
 ## SYNOPSIS
-Retrieves the manager of a contact from Azure Active Directory
+Gets the manager of a contact.
 
 ## SYNTAX
 
@@ -18,18 +18,12 @@ Get-AzureADContactManager -ObjectId <String> [-InformationAction <ActionPreferen
 ```
 
 ## DESCRIPTION
-
-## EXAMPLES
-
-### 1:
-```
-PS C:\>
-```
+The **Get-AzureADContactManager** cmdlet gets the manager of a contact in Azure Active Directory.
 
 ## PARAMETERS
 
 ### -ObjectId
-The unique identifier of a contact in Azure Active Directory (ObjectId)
+Specifies the ID of a contact in Azure Active Directory.
 
 ```yaml
 Type: String
@@ -92,5 +86,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Remove-AzureADContactManager](./Remove-AzureADContactManager)  
+[Set-AzureADContactManager](./Set-AzureADContactManager)
 
 
