@@ -8,7 +8,7 @@ ms.assetid: FC0F8815-DEEC-4672-81A1-68A1095E5543
 # Get-AzureADApplication
 
 ## SYNOPSIS
-Get an application by objectId
+Gets an application.
 
 ## SYNTAX
 
@@ -31,37 +31,36 @@ Get-AzureADApplication -ObjectId <String> [-InformationAction <ActionPreference>
 ```
 
 ## DESCRIPTION
+The **Get-AzureADApplication** cmdlet gets an Azure Active Directory application.
 
 ## EXAMPLES
 
-### --------------------------  Example 1  --------------------------
+### Example 1: Get an application by display name
 ```
 PS C:\>Get-AzureADApplication -Filter "DisplayName eq 'TestName'"
 ```
-
 Output:
 
 ObjectId                             AppId                                DisplayName
 --------                             -----                                -----------
 3ddd22e7-a150-4bb3-b100-e410dea1cb84 36ee4c6c-0812-40a2-b820-b22ebd02bce3 TestName
 
-### --------------------------  Example 2  --------------------------
+### Example 2: Get an application by ID
 ```
 PS C:\>Get-AzureADApplication -Filter "AppId eq 'ed192e92-84d4-4baf-997d-1e190a81f28e'"
 ```
-
-Get application by application id
+This command gets an application by its ID.
 
 Output:
 
-ObjectId                             AppId                                DisplayName
---------                             -----                                -----------
-ed192e92-84d4-4baf-997d-1e190a81f28e 36ee4c6c-0812-40a2-b820-b22ebd02bce3 MyNewApp
+    ObjectId                             AppId                                DisplayName
+                             
+    ed192e92-84d4-4baf-997d-1e190a81f28e 36ee4c6c-0812-40a2-b820-b22ebd02bce3 MyNewApp
 
 ## PARAMETERS
 
 ### -ObjectId
-The unique idenfier of an application in Azure Active Directory
+Specifies the ID of an application in Azure Active Directory.
 
 ```yaml
 Type: String
@@ -76,9 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -100,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -InformationVariable
-Specifies an information variable.
+Specifies a variable in which to store an information event message.
 
 ```yaml
 Type: String
@@ -115,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -Top
-The maximum number of records to return.
+Specifies the maximum number of records to return.
 
 ```yaml
 Type: Int32
@@ -130,8 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -Filter
-The oData v3.0 filter statement. 
-Controls which objects are returned.
+Specifies an oData v3.0 filter statement. This parameter controls which objects are returned.
 
 ```yaml
 Type: String
@@ -146,6 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -SearchString
+Specifies a search string.
 ```yaml
 Type: String
 Parameter Sets: GetVague
@@ -168,5 +165,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[New-AzureADApplication](.\New-AzureADApplication)  
+[Remove-AzureADApplication](.\Remove-AzureADApplication)  
+[Set-AzureADApplication](.\Set-AzureADApplication)
+
+
 
 
