@@ -8,7 +8,7 @@ ms.assetid: DB181096-FF93-4C1E-9E08-884E8162DAB7
 # Get-AzureADContactMembership
 
 ## SYNOPSIS
-Get contact memberships.
+Get a contact membership.
 
 ## SYNTAX
 
