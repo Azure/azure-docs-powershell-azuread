@@ -8,7 +8,7 @@ ms.assetid: C6B7A2E6-1C8E-4E8E-AF21-24999DF81310
 # Add-AzureADServicePrincipalPolicy
 
 ## SYNOPSIS
-
+Adds a service principal policy.
 ## SYNTAX
 
 ```
@@ -17,10 +17,10 @@ Add-AzureADServicePrincipalPolicy -ObjectId <String> -RefObjectId <String>
 ```
 
 ## DESCRIPTION
-
+The **Add-AzureADServicePrincipalPolicy** cmdlet adds a service principal policy.
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### Example 1: Add a service principal policy.
 ```
 PS C:\>Add-AzureADServicePrincipalPolicy -ObjectId <object id of service principal> -RefObjectId <object id of policy>
 ```
@@ -28,7 +28,7 @@ PS C:\>Add-AzureADServicePrincipalPolicy -ObjectId <object id of service princip
 ## PARAMETERS
 
 ### -ObjectId
-The object Id of the Application
+Specifies the object Id of the application.
 
 ```yaml
 Type: String
@@ -43,7 +43,7 @@ Accept wildcard characters: False
 ```
 
 ### -RefObjectId
-The object Id of the Policy
+Specifies the object Id of the policy.
 
 ```yaml
 Type: String
@@ -58,9 +58,7 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -82,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -InformationVariable
-Specifies an information variable.
+Specifies a variable in which to store an information event message.
 
 ```yaml
 Type: String
@@ -106,5 +104,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-AzureADServicePrincipalPolicy](.\Get-AzureADServicePrincipalPolicy)
+
+[Remove-AzureADServicePrincipalPolicy](.\Remove-AzureADServicePrincipalPolicy)
 
 
