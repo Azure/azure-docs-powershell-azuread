@@ -8,7 +8,7 @@ ms.assetid: 1EC5BEED-D45D-4938-B279-795075D05542
 # Disconnect-AzureAD
 
 ## SYNOPSIS
-Disconnects the current session from an Azure AD tenant
+Disconnects the current session from an Azure Active Directory tenant.
 
 ## SYNTAX
 
@@ -18,20 +18,12 @@ Disconnect-AzureAD [-InformationAction <ActionPreference>] [-InformationVariable
 ```
 
 ## DESCRIPTION
-
-## EXAMPLES
-
-### 1:
-```
-PS C:\>
-```
+The **Disconnect-AzureAD** cmdlet disconnects the current session from an Azure Active Directory tenant.
 
 ## PARAMETERS
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -53,7 +45,7 @@ Accept wildcard characters: False
 ```
 
 ### -InformationVariable
-Specifies an information variable.
+Specifies a variable in which to store an information event message.
 
 ```yaml
 Type: String
@@ -110,4 +102,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
+[Connect-AzureAD](.\Connect-AzureAD)
 
