@@ -8,7 +8,7 @@ ms.assetid: A5EF9C25-E0D9-432F-A528-81534A01F444
 # Connect-AzureAD
 
 ## SYNOPSIS
-Connect with an authenticated account to use Azure Active Directory cmdlet requests.
+Connects with an authenticated account to use Active Directory cmdlet requests.
 
 ## SYNTAX
 
@@ -34,49 +34,54 @@ Connect-AzureAD [-AzureEnvironmentName <EnvironmentName>] [-TenantId <String>] -
 ```
 
 ## DESCRIPTION
-The Connect-AzureAD cmdlet connects an authenticated  account to use for Azure Active Directory cmdlet requests.
+The **Connect-AzureAD** cmdlet connects an authenticated account to use for Azure Active Directory cmdlet requests.
 
 You can use this authenticated account only with Azure Active Directory cmdlets.
 
 ## EXAMPLES
 
-### --------------------------  Example 1  --------------------------
+### Example 1: Connect a PowerShell session to a tenant
 ```
-PS C:\>Connect-AzureAD -Confirm
+PS C:\> Connect-AzureAD -Confirm
 ```
 
-This will connect your current PowerShell session to an AzureAD tenant.
-The command will prompt for a username and password for the tenant you want to connect to.
-The -Confirm parameter will bring up the prompt for confirmation. 
+This command connects the current PowerShell session to an Azure Active Directory tenant.
+The command prompts you for a username and password for the tenant you want to connect to.
+The *Confirm* parameter prompts you for confirmation. 
 
 If multi-factor authentication is enabled for your credentials, you must log in using the interactive option or use service principal authentication.
 
-### --------------------------  Example 2  --------------------------
+### Example 2: Connect a session using a variable
 ```
-PS C:\>$Credential = Get-Credential
+PS C:\> $Credential = Get-Credential
 PS C:\> Connect-AzureAD -Credential $Credential
 ```
 
 The first command gets the user credentials, and then stores them in the $Credential variable.
 
-The second command connect your current PowerShell session with the credentials in $Credential.
+The second command connects the current PowerShell session using the credentials in $Credential.
 
-This account authenticates with AzureAD using organizational ID credentials.
-You cannot use multi-factor authentication or Microsoft account credentials to run AzureAD cmdlets with this account.
+This account authenticates with Azure Active Directory using organizational ID credentials.
+You cannot use multi-factor authentication or Microsoft account credentials to run Azure Active Directory cmdlets with this account.
 
-### --------------------------  Example 3  --------------------------
+### Example 3: Connect a session as a service principal
 ```
 PS C:\> Connect-AzureAD -TenantId "xxxx-xxxx-xxxx-xxxx" -ApplicationId "xxxx-xxxx-xxxx-xxxx" -CertificateThumbprint "xxxx-xxxx-xxxx-xxxx"
 ```
 
-The command authenticate you to AzureAD as a service principal.
+This command authenticates the user to Azure Active Directory as a service principal.
 
 ## PARAMETERS
 
 ### -AzureEnvironmentName
-Specifies the Azure environment.
-Valid values are: AzureCloud, AzureChinaCloud, AzureUSGovernment and AzureGermanyCloud.
-The default is AzureCloud.
+Specifies the name of the Azure environment. The acceptable values for this parameter are: 
+
+- AzureCloud
+- AzureChinaCloud
+- AzureUSGovernment 
+- AzureGermanyCloud
+
+The default value is AzureCloud.
 
 ```yaml
 Type: EnvironmentName
@@ -91,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.Prompts you for confirmation before running the cmdlet.
+Prompts you for confirmation before running the cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -106,10 +111,11 @@ Accept wildcard characters: False
 ```
 
 ### -TenantId
-Specifies a tenant.
+Specifies the ID of a tenant.
+
 If you do not specify this parameter, the account is authenticated for all available tenants.
 
-You must specify the Tenant parameter to authenticate as a service principal or using Microsoft account.
+You must specify the *TenantId* parameter to authenticate as a service principal or when using Microsoft account.
 
 ```yaml
 Type: String
@@ -136,10 +142,10 @@ Accept wildcard characters: False
 ```
 
 ### -Credential
-Specifies a PSCredential object.
-For more information about the PSCredential object, type Get-Help Get-Credential.
+Specifies a **PSCredential** object.
+For more information about the **PSCredential** object, type Get-Help Get-Credential.
 
-The PSCredential object provides the user ID and password for organizational ID credentials.
+The **PSCredential** object provides the user ID and password for organizational ID credentials.
 
 ```yaml
 Type: PSCredential
@@ -154,9 +160,14 @@ Accept wildcard characters: False
 ```
 
 ### -LogLevel
-Specifies the log level.
-Valid values are Info, Error, Warning, None.
-Default level is Info.
+Specifies the log level. The accdeptable values for this parameter are: 
+
+- Info
+- Error
+- Warning
+- None
+
+The default value is Info.
 
 ```yaml
 Type: LogLevel
@@ -171,9 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -195,7 +204,7 @@ Accept wildcard characters: False
 ```
 
 ### -InformationVariable
-Specifies an information variable.
+Specifies a variable in which to store an information event message.
 
 ```yaml
 Type: String
@@ -210,7 +219,7 @@ Accept wildcard characters: False
 ```
 
 ### -CertificateThumbprint
-Secret for service principal credentials.
+Specifies the certificate thumbprint of a digital public key X.509 certificate of a user account that has permission to perform this action. 
 
 ```yaml
 Type: String
@@ -225,7 +234,7 @@ Accept wildcard characters: False
 ```
 
 ### -ApplicationId
-Application ID of the service principal.
+Specifies the application ID of the service principal.
 
 ```yaml
 Type: String
@@ -240,7 +249,7 @@ Accept wildcard characters: False
 ```
 
 ### -AadAccessToken
-Specifies a AAD Graph access token.
+Specifies a Azure Active Directory Graph access token.
 
 ```yaml
 Type: String
@@ -255,7 +264,7 @@ Accept wildcard characters: False
 ```
 
 ### -MsAccessToken
-Specifies a MS Graph access token.
+Specifies a Microsoft Graph access token.
 
 ```yaml
 Type: String
@@ -270,7 +279,7 @@ Accept wildcard characters: False
 ```
 
 ### -AccountId
-You must specify UPN of the user when authenticate with user access token.
+Specifies the ID of an account. You must specify the UPN of the user when authenticating with a user access token.
 
 ```yaml
 Type: String
@@ -286,8 +295,8 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
-The cmdlet is not run.Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
+
 
 ```yaml
 Type: SwitchParameter
@@ -312,4 +321,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
+[Disconnet-AzureAD](.\Disconnect-AzureAD)
 
