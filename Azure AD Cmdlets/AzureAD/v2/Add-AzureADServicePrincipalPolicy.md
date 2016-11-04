@@ -104,8 +104,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-AzureADServicePrincipalPolicy](./Get-AzureADServicePrincipalPolicy)
+[Get-AzureADServicePrincipalPolicy](./Get-AzureADServicePrincipalPolicy.md)
 
-[Remove-AzureADServicePrincipalPolicy](./Remove-AzureADServicePrincipalPolicy)
+[Remove-AzureADServicePrincipalPolicy](./Remove-AzureADServicePrincipalPolicy.md)
 
 
