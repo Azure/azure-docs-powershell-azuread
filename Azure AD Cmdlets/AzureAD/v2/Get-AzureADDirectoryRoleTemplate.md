@@ -8,7 +8,7 @@ ms.assetid: 186B4EE1-A85A-45C0-B480-ABB4FBEF9AE0
 # Get-AzureADDirectoryRoleTemplate
 
 ## SYNOPSIS
-Gets directory role templates in Azure Active Directory
+Gets directory role templates.
 
 ## SYNTAX
 ```
