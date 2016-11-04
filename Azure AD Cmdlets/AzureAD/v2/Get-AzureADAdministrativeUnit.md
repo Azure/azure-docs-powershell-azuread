@@ -123,8 +123,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[New-AzureADAdministrativeUnit](./New-AzureADAdministrativeUnit)
+[New-AzureADAdministrativeUnit](./New-AzureADAdministrativeUnit.md)
 
-[Remove-AzureADAdministrativeUnit](./Remove-AzureADAdministrativeUnit)
+[Remove-AzureADAdministrativeUnit](./Remove-AzureADAdministrativeUnit.md)
 
-[Set-AzureADAdministrativeUnit](./Set-AzureADAdministrativeUnit)
+[Set-AzureADAdministrativeUnit](./Set-AzureADAdministrativeUnit.md)
