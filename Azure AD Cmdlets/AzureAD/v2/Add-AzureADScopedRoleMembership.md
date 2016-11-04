@@ -89,7 +89,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-AzureADScopedRoleMembership](./Get-AzureADScopedRoleMembership)
+[Get-AzureADScopedRoleMembership](./Get-AzureADScopedRoleMembership.md)
 
-[Remove-AzureADScopedRoleMembership](./Remove-AzureADScopedRoleMembership)
+[Remove-AzureADScopedRoleMembership](./Remove-AzureADScopedRoleMembership.md)
 
