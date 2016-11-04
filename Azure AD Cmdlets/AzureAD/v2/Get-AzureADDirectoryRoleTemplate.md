@@ -8,25 +8,21 @@ ms.assetid: 186B4EE1-A85A-45C0-B480-ABB4FBEF9AE0
 # Get-AzureADDirectoryRoleTemplate
 
 ## SYNOPSIS
-Retrieves a list of directory role templates in Azure Active Directory
+Gets directory role templates in Azure Active Directory
 
 ## SYNTAX
-
 ```
 Get-AzureADDirectoryRoleTemplate [-InformationAction <ActionPreference>] [-InformationVariable <String>]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-
+The **Get-AzureADDirectoryRoleTemplate** cmdlet gets directory role templates in Azure Active Directory (AD).
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
-```
+### Example 1: Get role templates
+```PowerShell
 PS C:\>Get-AzureADDirectoryRoleTemplate
-```
-
-Output: 
 
 ObjectId                             DisplayName                             Description
 --------                             -----------                             -----------
@@ -63,13 +59,12 @@ e8611ab8-c189-46e8-94e1-60213ab1f814 Privileged Role Administrator           Pri
 5c4f9dcd-47dc-4cf7-8c9a-9e4207cbfc91 Customer LockBox Access Approver        Customer LockBox Access Approver has approval access to user data requests.
 44367163-eba1-44c3-98af-f5787879f96a CRM Service Administrator               CRM Service Administrator has full access in the CRM Service.
 a9ea8996-122f-4c74-9520-8edcd192826c Power BI Service Administrator          Full access in the Power BI Service.
-
+```
+This command gets the role templates in Azure AD.
 ## PARAMETERS
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
