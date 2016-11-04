@@ -105,7 +105,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-AzureADDirectoryRoleMember](./Get-ServiceFabricCluster.md)
+[Get-AzureADDirectoryRoleMember](./Get-AzureADDirectoryRoleMember.md)
 
-[Remove-AzureADDirectoryRoleMember](./Remove-ServiceFabricCluster.md)
+[Remove-AzureADDirectoryRoleMember](./Remove-AzureADDirectoryRoleMember.md)
 
