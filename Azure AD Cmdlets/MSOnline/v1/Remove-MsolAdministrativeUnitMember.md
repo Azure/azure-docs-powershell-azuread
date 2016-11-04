@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
-online version: 
+online version:
 schema: 2.0.0
 ms.assetid: DE61C6A6-8503-4FD6-8EDD-C9AAEB62A882
 ---
@@ -22,32 +22,31 @@ The Remove-MsolAdministrativeUnitMember cmdlet is used to remove a member from a
 
 ## EXAMPLES
 
-### --------------------------  Example 1  --------------------------
-@{paragraph=PS C:\\\>}
-
-
+### Example 1: Remove a member from an administrative unit
 
 ```
-$au = Get-MsolAdministrativeUnit -searchstring "West Coast"
-          $user = Get-MsolUser -UserPrincipalName "user@contoso.com"
-          Remove-MsolAdministrativeUnitMember  -AdministrativeUnitObjectId $au.ObjectId -AdministrativeUnitMemberObjectId $user.ObjectId
+PS C:\> $AdminstrativeUnit = Get-MsolAdministrativeUnit -SearchString "West Coast"
+PS C:\> $User = Get-MsolUser -UserPrincipalName "davidchew@contoso.com"
+PS C:\> Remove-MsolAdministrativeUnitMember  -AdministrativeUnitObjectId $AdminstrativeUnit.ObjectId -AdministrativeUnitMemberObjectId $User.ObjectId
 ```
 
-Description
+The first command gets an administrative unit that matches a search string by using the [Get-MsolAdministrativeUnit](./Get-MsolAdministrativeUnit.md) cmdlet.
+The command stores the administrative unit in the $AdminstrativeUnit variable.
 
------------
+The second command gets a user for the user principal name davidchew@contoso.com by using the [Get-MsolUser](./Get-MsolUser.md) cmdlet.
+The command stores the user in the $User variable.
 
-This command removes member user@contoso.com from the administrative unit "West Coast".
+The final command removes the member in $User from the administrative unit in $AdminstrativeUnit.
 
 ## PARAMETERS
 
 ### -AdministrativeUnitObjectId
-AdministrativeUnitMemberObjectId
+Specifies the unique object ID of the administrative unit on which this cmdlet operates.
 
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -57,12 +56,12 @@ Accept wildcard characters: False
 ```
 
 ### -AdministrativeUnitMemberObjectId
-The ID of the administrative unit to remove members from.
+Specifies the unique object ID of the member to remove from the administrative unit.
 
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -72,14 +71,14 @@ Accept wildcard characters: False
 ```
 
 ### -TenantId
-The unique ID of the tenant to perform the operation on.
-If this is not provided then the value will default to the tenant of the current user.
-This parameter is only applicable to partner users.
+Specifies the unique ID of the tenant on which to perform the operation.
+The default value is the tenant of the current user.
+This parameter applies only to partner users.
 
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -98,5 +97,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Add-MsolAdministrativeUnitMember](./Add-MsolAdministrativeUnitMember.md)
 
+[Get-MsolAdministrativeUnit](./Get-MsolAdministrativeUnit.md)
 
+[Get-MsolAdministrativeUnitMember](./Get-MsolAdministrativeUnitMember.md)
+
+[Get-MsolUser](./Get-MsolUser.md)

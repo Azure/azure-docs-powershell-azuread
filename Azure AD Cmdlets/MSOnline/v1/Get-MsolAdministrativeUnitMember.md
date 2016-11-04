@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
-online version: 
+online version:
 schema: 2.0.0
 ms.assetid: F432C01F-578C-47DE-A3FA-9CCAA42F4814
 ---
@@ -8,7 +8,7 @@ ms.assetid: F432C01F-578C-47DE-A3FA-9CCAA42F4814
 # Get-MsolAdministrativeUnitMember
 
 ## SYNOPSIS
-Retrieves the members of the specified administrative unit.
+Gets members of an administrative unit.
 
 ## SYNTAX
 
@@ -25,35 +25,31 @@ Get-MsolAdministrativeUnitMember [-AdministrativeUnitObjectId <Guid>] [-All] [-T
 ```
 
 ## DESCRIPTION
-The Get-MsolAdministrativeUnitMember cmdlet is used to retrieve the members of the specified administrative unit.
+The **Get-MsolAdministrativeUnitMember** cmdlet gets members of an administrative unit.
 
 ## EXAMPLES
 
-### --------------------------  Example 1  --------------------------
-@{paragraph=PS C:\\\>}
-
-
+### Example 1:
 
 ```
-$au = Get-MsolAdministrativeUnit -searchstring "West Coast"
-          Get-MsolAdministrativeUnitMember -AdministrativeUnitObjectId $au.ObjectId
+PS C:\> $AdminstrativeUnit = Get-MsolAdministrativeUnit -searchstring "West Coast"
+PS C:\> Get-MsolAdministrativeUnitMember -AdministrativeUnitObjectId $AdminstrativeUnit.ObjectId
 ```
 
-Description
+The first command gets an administrative unit that matches a search string by using the [Get-MsolAdministrativeUnit](./Get-MsolAdministrativeUnit.md) cmdlet.
+The command stores the administrative unit in the $AdminstrativeUnit variable.
 
------------
-
-In this example, the command will return all members of the administrative unit "West Coast".
+The second command returns all members of the administrative unit in $AdminstrativeUnit.
 
 ## PARAMETERS
 
 ### -AdministrativeUnitObjectId
-The ID of the administrative unit to retrieve members for.
+Specifies the unique object ID of the administrative unit on which this cmdlet operates.
 
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -63,12 +59,12 @@ Accept wildcard characters: False
 ```
 
 ### -MaxResults
-The maximum number of results returned for a search result.
+Specifies the maximum number of results that this cmdlet returns.
 
 ```yaml
 Type: Int32
 Parameter Sets: ListAdministrativeUnitMembers__0
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -78,14 +74,14 @@ Accept wildcard characters: False
 ```
 
 ### -TenantId
-The unique ID of the tenant to perform the operation on.
-If this is not provided, then the value will default to the tenant of the current user.
-This parameter is only applicable to partner users.
+Specifies the unique ID of the tenant on which to perform the operation.
+The default value is the tenant of the current user.
+This parameter applies only to partner users.
 
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -95,13 +91,13 @@ Accept wildcard characters: False
 ```
 
 ### -All
-If present then all results will be returned. 
-Cannot be used with the MaxResults parameter.
+Indicates that this cmdlet returns all results that it finds.
+Do not specify this parameter and the _MaxResults_ parameter.
 
 ```yaml
 Type: SwitchParameter
 Parameter Sets: All__0
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -118,13 +114,17 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Online.Administration.AdministrativeUnitMember
-For this cmdlet, each output object will include the following:
-            DisplayName: The display name of the administrative unit member.
-            EmailAddress: The user principal name of the administrative unit member.
-            ObjectId: The unique ID of the administrative unit member.
+This this cmdlet returns objects that contain the following:
+
+* DisplayName. The display name of the administrative unit member.
+* EmailAddress. The user principal name of the administrative unit member.
+* ObjectId. The unique ID of the administrative unit member.
 
 ## NOTES
 
 ## RELATED LINKS
+[Add-MsolAdministrativeUnitMember](./Add-MsolAdministrativeUnitMember.md)
 
+[Get-MsolAdministrativeUnit](./Get-MsolAdministrativeUnit.md)
 
+[Remove-MsolAdministrativeUnitMember](./Remove-MsolAdministrativeUnitMember.md)
