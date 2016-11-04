@@ -86,7 +86,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Remove-AzureADContactManager](./Remove-AzureADContactManager)  
-[Set-AzureADContactManager](./Set-AzureADContactManager)
+[Remove-AzureADContactManager](./Remove-AzureADContactManager.md)  
+[Set-AzureADContactManager](./Set-AzureADContactManager.md)
 
 
