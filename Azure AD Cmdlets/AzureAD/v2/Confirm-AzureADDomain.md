@@ -83,12 +83,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-AzureADDomain](./Get-AzureADDomain)
+[Get-AzureADDomain](./Get-AzureADDomain.md)
 
-[New-AzureADDomain](./New-AzureADDomain)
+[New-AzureADDomain](./New-AzureADDomain.md)
 
-[Remove-AzureADDomain](./Remove-AzureADDomain)
+[Remove-AzureADDomain](./Remove-AzureADDomain.md)
 
-[Set-AzureADDomain](./Set-AzureADDomain)
+[Set-AzureADDomain](./Set-AzureADDomain.md)
 
 
