@@ -8,7 +8,7 @@ ms.assetid: BE5F502D-BDD9-4D72-8F9A-BAFA0463EE41
 # Get-AzureADGroupAppRoleAssignment
 
 ## SYNOPSIS
-Get group application role assignments.
+Gets a group application role assignment.
 
 ## SYNTAX
 
@@ -18,18 +18,12 @@ Get-AzureADGroupAppRoleAssignment -ObjectId <String> [-Top <Int32>] [-Informatio
 ```
 
 ## DESCRIPTION
-
-## EXAMPLES
-
-### 1:
-```
-PS C:\>
-```
+The **Get-AzureADGroupAppRoleAssignment** cmdlet gets a group application role assignment in Azure Active Directory (AD).
 
 ## PARAMETERS
 
 ### -ObjectId
-The unique identifier of a group in Azure Active Directory (ObjectId)
+Specifies the ID of a group in Azure AD.
 
 ```yaml
 Type: String
@@ -44,7 +38,7 @@ Accept wildcard characters: False
 ```
 
 ### -Top
-The maximum number of records to return.
+Specifies the maximum number of records to return.
 
 ```yaml
 Type: Int32
@@ -59,9 +53,7 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -107,5 +99,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-
+[New-AzureADGroupAppRoleAssignment](./New-AzureADGroupAppRoleAssignment.md)  
+[Remove-AzureADGroupAppRoleAssignment](./Remove-AzureADGroupAppRoleAssignment.md)
 
