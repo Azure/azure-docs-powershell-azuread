@@ -8,7 +8,7 @@ ms.assetid: CAA240EC-E380-4CDB-A1CC-56BBD28DFB82
 # Get-AzureADDirectoryRole
 
 ## SYNOPSIS
-Retrieves a specific directory role from Azure Active Directory
+Gets a directory role.
 
 ## SYNTAX
 
@@ -25,26 +25,20 @@ Get-AzureADDirectoryRole -ObjectId <String> [-InformationAction <ActionPreferenc
 ```
 
 ## DESCRIPTION
-
+The **Get-AzureADDirectoryRole** cmdlet gets a directory role from Azure Active Directory (AD).
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
-```
-PS C:\>Get-AzureADDirectoryRole -ObjectId 019ea7a2-1613-47c9-81cb-20ba35b1ae48
-```
-
-Output:
+### Example 1: Get a directory role by ID
+```PowerShell
+PS C:\>Get-AzureADDirectoryRole -ObjectId "019ea7a2-1613-47c9-81cb-20ba35b1ae48"
 
 ObjectId                             DisplayName                        Description
 --------                             -----------                        -----------
 019ea7a2-1613-47c9-81cb-20ba35b1ae48 Company Administrator              Company Administrator role has full access to perform any operation in the company scope.
-
-### -------------------------- EXAMPLE 2 --------------------------
 ```
+### Example 2: Get all directory roles
+```PowerShell
 PS C:\>Get-AzureADDirectoryRole
-```
-
-Output:
 
 ObjectId                             DisplayName                        Description
 --------                             -----------                        -----------
@@ -57,11 +51,11 @@ ObjectId                             DisplayName                        Descript
 8f8a1cf4-d535-4ccd-8552-7267c7ee0a88 Helpdesk Administrator             Helpdesk Administrator has access to perform common helpdesk related tasks.
 b89a48d4-7595-48d0-bb36-69fe4b220668 Device Administrators              Device Administrators
 d96eb2b3-0970-4827-8f26-6008efd86511 Security Administrator             Security Administrator allows ability to read and manage security configuration and reports.
-
+```
 ## PARAMETERS
 
 ### -ObjectId
-The unique identifier of a directory role in Azure Active Directory (ObjectId)
+Specifies the ID of a directory role in Azure AD.
 
 ```yaml
 Type: String
@@ -124,5 +118,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-
+[Enable-AzureADDirectoryRole](./Enable-AzureADDirectoryRole.md)
 
