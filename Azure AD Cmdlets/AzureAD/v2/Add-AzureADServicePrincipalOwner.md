@@ -100,7 +100,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-AzureADServicePrincipalOwner](./Get-AzureADServicePrincipalOwner)
+[Get-AzureADServicePrincipalOwner](./Get-AzureADServicePrincipalOwner.md)
 
-[Remove-AzureADServicePrincipalOwner](./Remove-AzureADServicePrincipalOwner)
+[Remove-AzureADServicePrincipalOwner](./Remove-AzureADServicePrincipalOwner.md)
 
