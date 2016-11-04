@@ -95,6 +95,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-AzureADAdministrativeUnitMember](./Get-AzureADAdministrativeUnitmember.md)
+[Get-AzureADAdministrativeUnitMember](./Get-AzureADAdministrativeUnitMember.md)
 
 [Remove-AzureADAdministrativeUnitMember](./Remove-AzureADAdministrativeUnitMember.md)
