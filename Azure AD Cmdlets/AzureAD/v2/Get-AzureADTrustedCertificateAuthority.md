@@ -8,7 +8,7 @@ ms.assetid: 48304207-E7EC-4436-A15C-C9F428E8E98C
 # Get-AzureADTrustedCertificateAuthority
 
 ## SYNOPSIS
-
+Gets the trusted certificate authority.
 ## SYNTAX
 
 ```
@@ -17,18 +17,12 @@ Get-AzureADTrustedCertificateAuthority [-TrustedIssuer <String>] [-TrustedIssuer
 ```
 
 ## DESCRIPTION
-
-## EXAMPLES
-
-### 1:
-```
-PS C:\>
-```
+The **Get-AzureADTrustedCertificateAuthority** cmdlet gets the trusted certificate authority in Azure Active Directory (AD).
 
 ## PARAMETERS
 
 ### -TrustedIssuer
-@{Text=}
+Specifies a trusted issuer.
 
 ```yaml
 Type: String
@@ -43,7 +37,7 @@ Accept wildcard characters: False
 ```
 
 ### -TrustedIssuerSki
-@{Text=}
+
 
 ```yaml
 Type: String
@@ -58,9 +52,7 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -106,5 +98,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[New-AzureADTrustedCertificateAuthority](./New-AzureADTrustedCertificateAuthority.md)
 
+[Remove-AzureADTrustedCertificateAuthority](./Remove-AzureADTrustedCertificateAuthority.md)
+
+[Set-AzureADTrustedCertificateAuthority](./Set-AzureADTrustedCertificateAuthority.md)
 

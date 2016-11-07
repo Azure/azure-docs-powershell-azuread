@@ -8,7 +8,7 @@ ms.assetid: 800AD06B-DDC3-4594-A339-4135A525155F
 # Get-AzureADTenantDetail
 
 ## SYNOPSIS
-Retrieves the details of a tenant in Azure Active Directory
+Gets the details of a tenant.
 
 ## SYNTAX
 
@@ -18,24 +18,22 @@ Get-AzureADTenantDetail [-Top <Int32>] [-InformationAction <ActionPreference>] [
 ```
 
 ## DESCRIPTION
-
+The **Get-AzureADTenantDetail** cmdlet gets the details of a tenant in Azure Active Directory (AD).
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
-```
+### Example 1: Get details for a tenant
+```PowerShell
 PS C:\>Get-AzureADTenantDetail
-```
-
-Output:
 
 ObjectId                             DisplayName            VerifiedDomains
 --------                             -----------            ---------------
 85b5ff1e-0402-400c-9e3c-0f9e965325d1 Coho Vineyard & Winery {class VerifiedDomain {...
+```
 
 ## PARAMETERS
 
 ### -Top
-The maximum number of records to return.
+Specifies the maximum number of records to return.
 
 ```yaml
 Type: Int32
@@ -50,9 +48,7 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore

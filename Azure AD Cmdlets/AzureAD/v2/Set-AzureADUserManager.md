@@ -8,7 +8,7 @@ ms.assetid: B218B2D5-04BF-4957-9902-1DBE75C746E4
 # Set-AzureADUserManager
 
 ## SYNOPSIS
-Updates the user's manager in Azure Active Directory
+Updates a user's manager.
 
 ## SYNTAX
 
@@ -18,18 +18,18 @@ Set-AzureADUserManager -ObjectId <String> -RefObjectId <String> [-InformationAct
 ```
 
 ## DESCRIPTION
-
+The **Set-AzureADUserManager** cmdlet update the manager for a user in Azure Active Directory (AD).
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### Example 1: Update a user's manager
+```PowerShell
+PS C:\>Set-AzureADUserManager -ObjectId "df19e8e6-2ad7-453e-87f5-037f6529ae16" -RefObjectId "df19e8e6-2ad7-453e-87f5-037f6529ae16"
 ```
-PS C:\>Set-AzureADUserManager -ObjectId df19e8e6-2ad7-453e-87f5-037f6529ae16 -RefObjectId df19e8e6-2ad7-453e-87f5-037f6529ae16
-```
-
+This command update's the manager for the specified user.
 ## PARAMETERS
 
 ### -ObjectId
-The unique identifier of a user in Azure Active Directory (UPN or ObjectId)
+Specifies the ID (as a UPN or ObjectId) of a user in Azure AD. 
 
 ```yaml
 Type: String
@@ -44,7 +44,7 @@ Accept wildcard characters: False
 ```
 
 ### -RefObjectId
-The unique identifier of the specific Azure Active Directory object that will be assigned as owner/manager/member
+Specifies the ID of the Azure AD object to assign as owner/manager/member.
 
 ```yaml
 Type: String
@@ -59,9 +59,7 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -107,5 +105,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-AzureADUserManager](./Get-AzureADUserManager.md)
 
+[Remove-AzureADUserManager](./Remove-AzureADUserManager.md)
 

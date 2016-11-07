@@ -8,7 +8,7 @@ ms.assetid: DFEF698C-93D2-4D67-A8B2-4A1D3ADDCBBA
 # Set-AzureADUserExtension
 
 ## SYNOPSIS
-
+Sets a user extension.
 ## SYNTAX
 
 ### SetSingle
@@ -25,17 +25,12 @@ Set-AzureADUserExtension -ObjectId <String>
 ```
 
 ## DESCRIPTION
-
-## EXAMPLES
-
-### 1:
-```
-PS C:\>
-```
+The **Set-AzureADUserExtension** cmdlet sets a user extension in Azure Active Directory (AD).
 
 ## PARAMETERS
 
 ### -ExtensionName
+Specifies the name of an extension.
 ```yaml
 Type: String
 Parameter Sets: SetSingle
@@ -49,6 +44,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExtensionNameValues
+Specifies extension name values.
 ```yaml
 Type: System.Collections.Generic.Dictionary`2[System.String,System.String]
 Parameter Sets: SetMultiple
@@ -62,6 +58,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExtensionValue
+Specifies an extension value.
 ```yaml
 Type: String
 Parameter Sets: SetSingle
@@ -75,6 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
+Specifies the ID of an object.
 ```yaml
 Type: String
 Parameter Sets: (All)
@@ -97,5 +95,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-AzureADUserExtension](./Get-AzureADUserExtension.md)
 
+[Remove-AzureADUserExtension](./Remove-AzureADUserExtension.md)
 

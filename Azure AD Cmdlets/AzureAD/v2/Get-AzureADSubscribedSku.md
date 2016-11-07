@@ -8,7 +8,7 @@ ms.assetid: 0E1A27BF-2CD9-43CD-851D-D1F09484CDE3
 # Get-AzureADSubscribedSku
 
 ## SYNOPSIS
-Retrieves a list of subscribed skus (subscriptions) to Microsoft services.
+Gets subscribed SKUs to Microsoft services.
 
 ## SYNTAX
 
@@ -18,15 +18,12 @@ Get-AzureADSubscribedSku [-InformationAction <ActionPreference>] [-InformationVa
 ```
 
 ## DESCRIPTION
-
+The **Get-AzureADSubscribedSku** cmdlet gets subscribed SKUs to Microsoft services.
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
-```
+### Example 1: Get subscribed SKUs
+```PowerShell
 PS C:\>Get-AzureADSubscribedSku
-```
-
-Output:
 
 ObjectId                                                                  SkuPartNumber         PrepaidUnits                                                             ConsumedUnits
 --------                                                                  -------------         ------------                                                             -------------
@@ -34,13 +31,12 @@ ObjectId                                                                  SkuPar
 6
 85b5ff1e-0402-400c-9e3c-0f9e965325d1_f245ecc8-75af-4f8e-b61f-27d8114de5f3 O365_BUSINESS_PREMIUM class LicenseUnitsDetail {... 
 24
-
+```
+This command gets subscribed SKUs.
 ## PARAMETERS
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
