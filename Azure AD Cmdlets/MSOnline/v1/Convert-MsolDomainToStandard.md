@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Online.Identity.Federation.PowerShell.dll-Help.xml
-online version: 
+online version:
 schema: 2.0.0
 ms.assetid: 959CE65E-2BC3-466D-A1E2-B9B01D9AD0EE
 ---
@@ -8,7 +8,7 @@ ms.assetid: 959CE65E-2BC3-466D-A1E2-B9B01D9AD0EE
 # Convert-MsolDomainToStandard
 
 ## SYNOPSIS
-Converts the domain from using single sign-on (also known as identity federation) to using standard authentication.
+Converts the domain from using single sign-on to using standard authentication.
 
 ## SYNTAX
 
@@ -18,7 +18,7 @@ Convert-MsolDomainToStandard -PasswordFile <String> -SkipUserConversion <Boolean
 ```
 
 ## DESCRIPTION
-The Convert-MsolDomainToStandard cmdlet converts the specified domain from single sign-on (also known as identity federation) to standard authentication.
+The **Convert-MsolDomainToStandard** cmdlet converts the specified domain from single sign-on (also known as identity federation) to standard authentication.
 This process also removes the relying party trust settings in the Active Directory Federation Services 2.0 server and Microsoft Online.
 After the conversion, this cmdlet will convert all existing users from single sign-on to standard authentication.
 Any existing user who was configured for single sign-on will be given a new temporary password as part of the conversion process.
@@ -33,7 +33,7 @@ The domain name to convert from single sign-on (also known as identity federatio
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -48,7 +48,7 @@ The file where converted users' user names and temporary passwords will be recor
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -64,7 +64,7 @@ Administrators can run the cmdlet again to convert users at a later date.
 ```yaml
 Type: Boolean
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -113,5 +113,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-
-

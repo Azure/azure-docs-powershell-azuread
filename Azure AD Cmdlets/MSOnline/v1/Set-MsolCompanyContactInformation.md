@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
-online version: 
+online version:
 schema: 2.0.0
 ms.assetid: 7B30E5B5-27F3-41C3-9AFE-E2ACB4BAF8BA
 ---
@@ -23,9 +23,9 @@ This includes email addresses for marketing and technical notifications about Mi
 
 ## EXAMPLES
 
-### Example 1: 
+### Example 1:
 ```
-Set-MsolCompanyContactInformation -TechnicalNotificationEmail tech@contoso.com
+PS C:\> Set-MsolCompanyContactInformation -TechnicalNotificationEmail tech@contoso.com
 
           None
 ```
@@ -44,7 +44,7 @@ Company-level marketing information contact email address.
 ```yaml
 Type: String[]
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -59,7 +59,7 @@ Company-level technical information contact email address.
 ```yaml
 Type: String[]
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -69,14 +69,14 @@ Accept wildcard characters: False
 ```
 
 ### -TenantId
-The unique ID of the tenant to perform the operation on.
-If this is not provided then the value will default to the tenant of the current user.
-This parameter is only applicable to partner users.
+Specifies the unique ID of the tenant on which to perform the operation.
+The default value is the tenant of the current user.
+This parameter applies only to partner users.
 
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -95,5 +95,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-
-

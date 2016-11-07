@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
-online version: 
+online version:
 schema: 2.0.0
 ms.assetid: D1BC57E1-276A-4DDE-9923-227BCAA59985
 ---
@@ -23,9 +23,9 @@ Two settings are required, the first is to indicate the length of time that a pa
 
 ## EXAMPLES
 
-### Example 1: 
+### Example 1:
 ```
-Set-MsolPasswordPolicy -ValidityPeriod 60 -NotificationDays 14
+PS C:\> Set-MsolPasswordPolicy -ValidityPeriod 60 -NotificationDays 14
 ```
 
 Description
@@ -34,9 +34,9 @@ Description
 
 This command updates the tenant so that all users passwords will expire after 60 days and that the users will receive notification of 14 days prior to that expiry.
 
-### Example 2: 
+### Example 2:
 ```
-Set-MsolPasswordPolicy -ValidityPeriod 60 -NotificationDays 14 -DomainName contoso.com
+PS C:\> Set-MsolPasswordPolicy -ValidityPeriod 60 -NotificationDays 14 -DomainName contoso.com
 ```
 
 Description
@@ -53,7 +53,7 @@ The fully qualified domain to apply policies to.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -68,7 +68,7 @@ Specifies the number of days before the password expiration date that will trigg
 ```yaml
 Type: UInt32
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -83,7 +83,7 @@ Specifies the length of time that a password is valid before it must be changed.
 ```yaml
 Type: UInt32
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -117,5 +117,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-
-

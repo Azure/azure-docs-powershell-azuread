@@ -8,7 +8,7 @@ ms.assetid: A5A10B0B-7C64-4778-8B42-EB073E2ADA92
 # Connect-MsolService
 
 ## SYNOPSIS
-Initiates a connection with Microsoft Azure Active Directory.
+Initiates a connection with Azure Active Directory.
 
 ## SYNTAX
 
@@ -29,7 +29,7 @@ Connect-MsolService [-AdGraphAccessToken <String>] [-MsGraphAccessToken <String>
 ```
 
 ## DESCRIPTION
-The Connect-MsolService cmdlet will attempt to initiate a connection to Microsoft Azure Active Directory.
+The **Connect-MsolService** cmdlet attempts to initiate a connection to Azure Active Directory.
 The caller must provide their credential (a PSCredential object), or specify the CurrentCredentials switch to use the credentials of the currently logged in user.
 
         This cmdlet may return a warning or error if the version of the module being used is out of date.
@@ -39,13 +39,7 @@ The caller must provide their credential (a PSCredential object), or specify the
 ### Example 1:
 ```
 PS C:\> Connect-MsolService
-
-          None
 ```
-
-Description
-
------------
 
 This command attempts to initiate a connection with Microsoft Azure Active Directory.
 Since no credential is provided, the user will be prompted to enter their username and password.
@@ -53,13 +47,7 @@ Since no credential is provided, the user will be prompted to enter their userna
 ### Example 2:
 ```
 PS C:\> Connect-MsolService -Credential $cred -AzureEnvironment AzureChinaCloud
-
-          None
 ```
-
-Description
-
------------
 
 This command attempts to initiate a connection to AzureChinaCloud with Microsoft Azure Active Directory using the credential provided.
 The credential must be of the type PSCredential (typically retrieved through the Get-Credential cmdlet).

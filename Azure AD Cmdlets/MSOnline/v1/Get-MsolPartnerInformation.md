@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
-online version: 
+online version:
 schema: 2.0.0
 ms.assetid: C304F948-A8BB-4E5E-97B0-EB9B84025AD5
 ---
@@ -23,14 +23,14 @@ This cmdlet should only be used for partner tenants.
 ## PARAMETERS
 
 ### -TenantId
-The unique ID of the tenant to perform the operation on.
-If this is not provided, then the value will default to the tenant of the current user.
-This parameter is only applicable to partner users.
+Specifies the unique ID of the tenant on which to perform the operation.
+The default value is the tenant of the current user.
+This parameter applies only to partner users.
 
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -68,5 +68,3 @@ The cmdlet will return the following company level information:
 ## NOTES
 
 ## RELATED LINKS
-
-

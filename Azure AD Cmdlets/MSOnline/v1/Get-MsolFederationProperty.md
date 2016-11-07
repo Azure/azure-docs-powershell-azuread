@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Online.Identity.Federation.PowerShell.dll-Help.xml
-online version: 
+online version:
 schema: 2.0.0
 ms.assetid: D7479CDA-88DF-4B4E-9F2D-688C7371893E
 ---
@@ -17,7 +17,7 @@ Get-MsolFederationProperty [-SupportMultipleDomain] -DomainName <String> [<Commo
 ```
 
 ## DESCRIPTION
-The Get-MSOLFederationProperty cmdlet gets key settings from both the Active Directory Federation Services 2.0 server and Microsoft Online.
+The **Get-MSOLFederationProperty** cmdlet gets key settings from both the Active Directory Federation Services 2.0 server and Microsoft Online.
 You can use this information to troubleshoot authentication problems caused by mismatched settings between the Active Directory Federation Services 2.0 server and Microsoft Online.
 
 ## PARAMETERS
@@ -28,7 +28,7 @@ The domain name for which the properties from both the Active Directory Federati
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -43,7 +43,7 @@ Accept wildcard characters: False
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -62,5 +62,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-
-

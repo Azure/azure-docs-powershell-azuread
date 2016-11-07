@@ -17,29 +17,23 @@ Get-MsolCompanyInformation [-TenantId <Guid>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The Get-MsolCompanyInformation cmdlet will retrieve company-level information.
+The **Get-MsolCompanyInformation** cmdlet gets company-level information.
 
 ## EXAMPLES
 
 ### Example 1:
 ```
 PS C:\> Get-MsolCompanyInformation
-
-          Returns company level information.
 ```
-
-Description
-
------------
 
 This command returns company level information.
 
 ## PARAMETERS
 
 ### -TenantId
-The unique ID of the tenant to perform the operation on.
-If this is not provided then the value will default to the tenant of the current user.
-This parameter is only applicable to partner users.
+Specifies the unique ID of the tenant on which to perform the operation.
+The default value is the tenant of the current user.
+This parameter applies only to partner users.
 
 ```yaml
 Type: Guid
@@ -63,56 +57,56 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Online.Administration.CompanyInformation
 This cmdlet returns the following company level information:
 
-            AuthorizedServiceInstances: A list of the services for this company.
+* AuthorizedServiceInstances. A list of the services for this company.
 
-            City: The company's city.
+* City. The company's city.
 
-            CompanyType: What type of company this is (can be partner or regular tenant).
+* CompanyType. What type of company this is (can be partner or regular tenant).
 
-            Country: The company's country.
+* Country. The company's country.
 
-            CountryLetterCode: The two letter code for the company's country.
+* CountryLetterCode. The two letter code for the company's country.
 
-            DapEnabled: For partners, whether or not this partner had delegated administrator privileges.
+* DapEnabled. For partners, whether or not this partner had delegated administrator privileges.
 
-            DirectorySynchronizationEnabled: When true, this company has directory synchronization turned on.
+* DirectorySynchronizationEnabled. When true, this company has directory synchronization turned on.
 
-            DirSyncServiceAccount: The UserPrincipalName of the Global Administrator that is configured for directory synchronization.
+* DirSyncServiceAccount. The UserPrincipalName of the Global Administrator that is configured for directory synchronization.
 
-            DisplayName: The display name of this company.
+* DisplayName. The display name of this company.
 
-            InitialDomain: The initial domain of this company (companyname.onmicrosoft.com).
+* InitialDomain. The initial domain of this company (companyname.onmicrosoft.com).
 
-            LastDirSyncTime: The last time that directory synchronization was run for this company.
+* LastDirSyncTime. The last time that directory synchronization was run for this company.
 
-            LastPasswordSyncTime: The last time that password sync request was received for the company.
+* LastPasswordSyncTime. The last time that password sync request was received for the company.
 
-            PasswordSynchronizationEnabled: When true, this company has password synchronization turned on.
+* PasswordSynchronizationEnabled. When true, this company has password synchronization turned on.
 
-            MarketingNotificationEmails: The email address to send marketing notifications to.
+* MarketingNotificationEmails. The email address to send marketing notifications to.
 
-            ObjectId: The unique ID for the company.
+* ObjectId. The unique ID for the company.
 
-            PostalCode: The company's postal location.
+* PostalCode. The company's postal location.
 
-            PreferredLanguage: The default language for the company.
+* PreferredLanguage. The default language for the company.
 
-            State: The company's state.
+* State. The company's state.
 
-            Street: The company's street address.
+* Street. The company's street address.
 
-            TechnicalNotificationEmails: The email address to send important notifications to.
+* TechnicalNotificationEmails. The email address to send important notifications to.
 This includes any directory synchronization notifications.
 
-            TelephoneNumber: The telephone number for the company.
+* TelephoneNumber. The telephone number for the company.
 
-            UsersPermissionToCreateGroupsEnabled: The setting to allow users permission to create groups.
+* UsersPermissionToCreateGroupsEnabled. The setting to allow users permission to create groups.
 
-            UsersPermissionToCreateLOBAppsEnabled: The setting to allow users to create LOB applications.
+* UsersPermissionToCreateLOBAppsEnabled. The setting to allow users to create LOB applications.
 
-            UsersPermissionToReadOtherUsersEnabled: The setting to allow users to read other users.
+* UsersPermissionToReadOtherUsersEnabled. The setting to allow users to read other users.
 
-            UsersPermissionToUserConsentToAppEnabled: The setting to allow users to user consent to applications.
+* UsersPermissionToUserConsentToAppEnabled. The setting to allow users to user consent to applications.
 
 ## NOTES
 

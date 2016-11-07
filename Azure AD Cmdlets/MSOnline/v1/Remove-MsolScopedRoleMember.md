@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
-online version: 
+online version:
 schema: 2.0.0
 ms.assetid: 3F433D19-5A6D-4940-A9B3-4ED3C0C6C485
 ---
@@ -28,10 +28,10 @@ The Remove-MsolScopedRoleMember cmdlet is used to remove a user from an administ
 
 
 ```
-$westcoastau = Get-MsolAdministrativeUnit -searchstring "West Coast"
-          $uaadmin = Get-MsolRole -RoleName "User Account Administrator"
-          $admin1 = Get-MsolUser -UserPrincipalName user@contoso.com
-          Remove-MsolScopedRoleMember -RoleObjectId $uaadmin.ObjectId -AdministrativeUnitObjectId $westcoastau.ObjectId -RoleMemberObjectId $admin1.ObjectId
+PS C:\> $westcoastau = Get-MsolAdministrativeUnit -searchstring "West Coast"
+PS C:\> $uaadmin = Get-MsolRole -RoleName "User Account Administrator"
+PS C:\> $admin1 = Get-MsolUser -UserPrincipalName user@contoso.com
+PS C:\> Remove-MsolScopedRoleMember -RoleObjectId $uaadmin.ObjectId -AdministrativeUnitObjectId $westcoastau.ObjectId -RoleMemberObjectId $admin1.ObjectId
 ```
 
 Description
@@ -49,7 +49,7 @@ Only users can be added to a role (adding a security group is not supported).
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -64,7 +64,7 @@ The object ID of the administrative unit.
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -81,7 +81,7 @@ Either -RoleMemberUserPrincipalName or -RoleMemberObjectId must be specified.
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -97,7 +97,7 @@ Either -RoleMemberUserPrincipalName or -RoleMemberObjectId must be specified.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -114,7 +114,7 @@ This parameter is only applicable to partner users.
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -133,5 +133,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-
-

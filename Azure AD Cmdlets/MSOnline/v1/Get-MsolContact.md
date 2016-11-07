@@ -30,7 +30,7 @@ Get-MsolContact [-HasErrorsOnly <Boolean>] [-SearchString <String>] [-All] [-Ten
 ```
 
 ## DESCRIPTION
-The Get-MsolContact cmdlet can be used to retrieve a contact object, or list of contacts.
+The **Get-MsolContact** cmdlet can be used to retrieve a contact object, or list of contacts.
 A single contact will be retrieved if the ObjectId is used.
 
 ## EXAMPLES
@@ -38,26 +38,13 @@ A single contact will be retrieved if the ObjectId is used.
 ### Example 1:
 ```
 PS C:\> Get-MsolContact -ObjectId <id>
-
-          Returns the contact object.
 ```
-
-Description
-
------------
-
 This command retrieves a contact.
 
 ### Example 2:
 ```
 PS C:\> Get-MsolContact -SearchString "Melissa"
-
-          Returns a list of contacts.
 ```
-
-Description
-
------------
 
 This command retrieves a list of contacts with a display name or email address starting with 'Melissa'.
 
@@ -142,9 +129,9 @@ Accept wildcard characters: False
 ```
 
 ### -TenantId
-The unique ID of the tenant to perform the operation on.
-If this is not provided, then the value will default to the tenant of the current user.
-This parameter is only applicable to partner users.
+Specifies the unique ID of the tenant on which to perform the operation.
+The default value is the tenant of the current user.
+This parameter applies only to partner users.
 
 ```yaml
 Type: Guid
@@ -168,43 +155,43 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Online.Administration.Contact
 This cmdlet returns contact objects, which include the following information:
 
-            City: The contact's city.
+* City. The contact's city.
 
-            Country: The contact's country.
+* Country. The contact's country.
 
-            Department: The contact's department.
+* Department. The contact's department.
 
-            DisplayName: The contact's display name.
+* DisplayName. The contact's display name.
 
-            Fax: The contact's fax number.
+* Fax. The contact's fax number.
 
-            FirstName: The contact's first name.
+* FirstName. The contact's first name.
 
-            LastDirSyncTime: Returns the date and time of the last sync (only returned from contacts synced with Active Directory synchronization).
+* LastDirSyncTime. Returns the date and time of the last sync (only returned from contacts synced with Active Directory synchronization).
 
-            LastName: The contact's last name.
+* LastName. The contact's last name.
 
-            MobilePhone: The contact's mobile phone number.
+* MobilePhone. The contact's mobile phone number.
 
-            ObjectId: The unique ID of the contact.
+* ObjectId. The unique ID of the contact.
 
-            Office: The contact's office number.
+* Office. The contact's office number.
 
-            Phone Number: The contact's phone number.
+* Phone Number. The contact's phone number.
 
-            Postal Code: The contact's postal code.
+* Postal Code. The contact's postal code.
 
-            Proxy Addresses - the proxy addresses associated with this contact.
+* Proxy Addresses. The proxy addresses associated with this contact.
 
-            State: The contact's state.
+* State. The contact's state.
 
-            StreetAddress: The contact's street address.
+* StreetAddress. The contact's street address.
 
-            Title: The contact's title.
+* Title. The contact's title.
 
-            UserPrincipalName: The user ID of the contact.
+* UserPrincipalName. The user ID of the contact.
 
-            ValidationStatus: Whether or not the contact has any errors.
+* ValidationStatus. Whether or not the contact has any errors.
 
 ## NOTES
 

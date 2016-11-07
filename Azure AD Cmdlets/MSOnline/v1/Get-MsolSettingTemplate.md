@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
-online version: 
+online version:
 schema: 2.0.0
 ms.assetid: 4A83B1B7-7B08-4983-9E41-BD873F8DB2F8
 ---
@@ -23,7 +23,7 @@ The **Get-MsolSettingTemplate** cmdlet gets a directory setting template.
 
 ### Example 1: Get a directory setting template
 ```
-PS C:\>Get-MsolSettingTemplate -TemplateId "566F7EA7-7BF1-4F4A-AF23-A1B46DBD46D6"
+PS C:\> Get-MsolSettingTemplate -TemplateId "566F7EA7-7BF1-4F4A-AF23-A1B46DBD46D6"
 ```
 
 This command gets a directory setting template with the specified template ID.
@@ -36,7 +36,7 @@ Specifies the template ID associated with the directory setting template that th
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -53,16 +53,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Online.Administration.SettingTemplate
-This cmdlet returns a directory setting template that contains the following information: 
+This cmdlet returns a directory setting template that contains the following information:
 
 - Id: The unique string ID of the directory setting template.
-This value should be used when updating setting. 
-- DisplayName: The name of the setting template. 
-- Description: The description of the setting template. 
+This value should be used when updating setting.
+- DisplayName: The name of the setting template.
+- Description: The description of the setting template.
 - Values: The name value pair that describes setting template detail.
 
 ## NOTES
 
 ## RELATED LINKS
-
-

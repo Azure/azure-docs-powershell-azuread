@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
-online version: 
+online version:
 schema: 2.0.0
 ms.assetid: 85A8F5D8-EDF3-4B49-A806-C95280EE370A
 ---
@@ -17,14 +17,14 @@ Get-MsolPasswordPolicy -DomainName <String> [-TenantId <Guid>] [<CommonParameter
 ```
 
 ## DESCRIPTION
-The Get-MsolPasswordPolicy cmdlet can be used to retrieve the values associated with the Password Expiry window or Password Expiry Notification window for a tenant or specified domain. 
+The Get-MsolPasswordPolicy cmdlet can be used to retrieve the values associated with the Password Expiry window or Password Expiry Notification window for a tenant or specified domain.
 When a domain name is specified, it must be a verified domain for the company.
 
 ## EXAMPLES
 
-### Example 1: 
+### Example 1:
 ```
-Get-MsolPasswordPolicy
+PS C:\> Get-MsolPasswordPolicy
 
           Returns the password policy.
 ```
@@ -35,9 +35,9 @@ Description
 
 Returns the password policy for the tenant.
 
-### Example 2: 
+### Example 2:
 ```
-Get-MsolPasswordPolicy -DomainName contoso.com
+PS C:\> Get-MsolPasswordPolicy -DomainName contoso.com
 
           Returns the password policy.
 ```
@@ -56,7 +56,7 @@ The fully qualified name of the domain to be retrieved.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -71,7 +71,7 @@ Accept wildcard characters: False
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -99,5 +99,3 @@ A null value indicates the default of 14 days will be used.
 ## NOTES
 
 ## RELATED LINKS
-
-

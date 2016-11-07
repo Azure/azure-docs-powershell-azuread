@@ -35,7 +35,7 @@ In order to give the user access to services, assign a license by using the _Lic
 
 ### Example 1: Create a user
 ```
-New-MsolUser -UserPrincipalName "davidchew@contoso.com" -DisplayName "David Chew" -FirstName "David" -LastName "Chew"
+PS C:\> New-MsolUser -UserPrincipalName "davidchew@contoso.com" -DisplayName "David Chew" -FirstName "David" -LastName "Chew"
 ```
 
 This command creates a user.
@@ -44,14 +44,14 @@ A random password is generated for the user.
 
 ### Example 2: Create a user and assign a license
 ```
-New-MsolUser -UserPrincipalName "davidchew@contoso.com" -DisplayName "David Chew" -FirstName "David" -LastName "Chew" -UsageLocation "US" -LicenseAssignment "Contoso:BPOS_Standard"
+PS C:\> New-MsolUser -UserPrincipalName "davidchew@contoso.com" -DisplayName "David Chew" -FirstName "David" -LastName "Chew" -UsageLocation "US" -LicenseAssignment "Contoso:BPOS_Standard"
 ```
 
 This command creates a new user and assigns a license.
 
 ### Example 3: Create a user and a preferred data location
 ```
-New-MsolUser -UserPrincipalName "davidchew@contoso.onmicrosoft.com" -DisplayName "David" -PreferredDataLocation "EUR"
+PS C:\> New-MsolUser -UserPrincipalName "davidchew@contoso.onmicrosoft.com" -DisplayName "David" -PreferredDataLocation "EUR"
 ```
 
 This command creates a user whose user principal name is jdavidchew@contoso.onmicrosoft.com, display name is David, and preferred data location is EUR.

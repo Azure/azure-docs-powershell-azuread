@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
-online version: 
+online version:
 schema: 2.0.0
 ms.assetid: 2FE0B98E-77B0-4122-A5D0-3ED553F83B36
 ---
@@ -30,7 +30,7 @@ The **New-MsolSettings** cmdlet creates a directory setting.
 
 ### Example 1: Add a directory setting
 ```
-PS C:\>$Template = (Get-MsolAllSettingTemplate)[0] 
+PS C:\> $Template = (Get-MsolAllSettingTemplate)[0]
 PS C:\> $Settings = $Template.CreateSettingsObject() New-MsolSetting -SettingsObject $Settings
 ```
 
@@ -40,7 +40,7 @@ The second command adds a directory setting stored in the variable named $Settin
 
 ### Example 2: Add a directory setting to a specific target type
 ```
-PS C:\>$Template = (Get-MsolAllSettingTemplate)[0] 
+PS C:\> $Template = (Get-MsolAllSettingTemplate)[0] 
 PS C:\> $Settings = $template.CreateSettingsObject() New-MsolSetting -SettingsObject $Settings -TargetType Groups -TargetObjectId
 ```
 
@@ -57,7 +57,7 @@ Specifies the **SettingsObject** that contains necessary information to create a
 ```yaml
 Type: Settings
 Parameter Sets: None
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -69,7 +69,7 @@ Accept wildcard characters: False
 ```yaml
 Type: Settings
 Parameter Sets: Scope
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -93,7 +93,7 @@ The acceptable values for this parameter are:
 ```yaml
 Type: TargetType
 Parameter Sets: Scope
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -109,7 +109,7 @@ If you do not specify a value, the cmdlet associates the object ID with the tena
 ```yaml
 Type: String
 Parameter Sets: Scope
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -134,5 +134,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Remove-MsolSettings](./Remove-MsolSettings.md)
 
 [Set-MsolSettings](./Set-MsolSettings.md)
-
-

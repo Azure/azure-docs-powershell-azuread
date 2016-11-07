@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
-online version: 
+online version:
 schema: 2.0.0
 ms.assetid: 430D359B-200B-4EA6-A6B7-D347A0264CC9
 ---
@@ -32,9 +32,9 @@ The Get-MsolRole cmdlet can be used to retrieve a list of administrator roles.
 
 ## EXAMPLES
 
-### Example 1: 
+### Example 1:
 ```
-Get-MsolRole
+PS C:\> Get-MsolRole
 
           Returns a list of role objects.
 ```
@@ -53,7 +53,7 @@ The ObjectId of the role to retrieve.
 ```yaml
 Type: Guid
 Parameter Sets: GetRole__0
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -68,7 +68,7 @@ The name of the role to retrieve.
 ```yaml
 Type: String
 Parameter Sets: GetRoleByName__0
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -78,14 +78,14 @@ Accept wildcard characters: False
 ```
 
 ### -TenantId
-The unique ID of the tenant to perform the operation on.
-If this is not provided then the value will default to the tenant of the current user.
-This parameter is only applicable to partner users.
+Specifies the unique ID of the tenant on which to perform the operation.
+The default value is the tenant of the current user.
+This parameter applies only to partner users.
 
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -117,5 +117,3 @@ For this cmdlet, each output object will include the following fields:
 ## NOTES
 
 ## RELATED LINKS
-
-

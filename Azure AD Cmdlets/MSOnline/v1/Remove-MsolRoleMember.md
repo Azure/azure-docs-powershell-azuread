@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
-online version: 
+online version:
 schema: 2.0.0
 ms.assetid: 54F95D25-05CB-4AC9-A11A-4BF3E734CA4F
 ---
@@ -29,9 +29,9 @@ The Remove-MsolRoleMember cmdlet is used to remove a user from an administrator 
 
 ## EXAMPLES
 
-### Example 1: 
+### Example 1:
 ```
-Remove-MsolRoleMember -RoleName "Company Administrator" -RoleMemberType User -RoleMemberEmailAddress user@contoso.com
+PS C:\> Remove-MsolRoleMember -RoleName "Company Administrator" -RoleMemberType User -RoleMemberEmailAddress user@contoso.com
 ```
 
 Description
@@ -51,7 +51,7 @@ Either RoleMemberEmailAddress or RoleMemberObjectId should be provided.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -68,7 +68,7 @@ Either RoleMemberEmailAddress
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -83,7 +83,7 @@ The type of role of the member (User or Group) to remove.
 ```yaml
 Type: RoleMemberType
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -100,7 +100,7 @@ Either RoleName or RoleObjectId should be
 ```yaml
 Type: String
 Parameter Sets: RemoveRoleMembersByRoleName__0
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -116,7 +116,7 @@ Either RoleName or RoleObjectId should be provided.
 ```yaml
 Type: Guid
 Parameter Sets: RemoveRoleMembers__0
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -126,14 +126,14 @@ Accept wildcard characters: False
 ```
 
 ### -TenantId
-The unique ID of the tenant to perform the operation on.
-If this is not provided then the value will default to the tenant of the current user.
-This parameter is only applicable to partner users.
+Specifies the unique ID of the tenant on which to perform the operation.
+The default value is the tenant of the current user.
+This parameter applies only to partner users.
 
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -152,5 +152,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-
-

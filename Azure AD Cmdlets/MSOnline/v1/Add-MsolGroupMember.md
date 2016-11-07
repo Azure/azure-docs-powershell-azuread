@@ -18,7 +18,7 @@ Add-MsolGroupMember -GroupObjectId <Guid> [-GroupMemberType <GroupMemberType>] [
 ```
 
 ## DESCRIPTION
-The Add-MsolGroupMember cmdlet is used to add members to a security group.
+The **Add-MsolGroupMember** cmdlet adds members to a security group.
 The new members can be either users or other security groups.
 
 ## EXAMPLES
@@ -26,13 +26,7 @@ The new members can be either users or other security groups.
 ### Example 1:
 ```
 PS C:\> Add-MsolGroupMember -groupObjectid <id> -groupmemberType "User" -groupMemberObjectId <id>
-
-          None
 ```
-
-Description
-
------------
 
 This command adds a user to a security group.
 
@@ -84,9 +78,9 @@ Accept wildcard characters: False
 ```
 
 ### -TenantId
-The unique ID of the tenant to perform the operation on.
-If this is not provided then the value will default to the tenant of the current user.
-This parameter is only applicable to partner users.
+Specifies the unique ID of the tenant on which to perform the operation.
+The default value is the tenant of the current user.
+This parameter applies only to partner users.
 
 ```yaml
 Type: Guid

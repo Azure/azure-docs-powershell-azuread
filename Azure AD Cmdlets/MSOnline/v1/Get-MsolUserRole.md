@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
-online version: 
+online version:
 schema: 2.0.0
 ms.assetid: 13C8D948-E093-45E7-A5B5-BC38FAFCCEC7
 ---
@@ -28,9 +28,9 @@ This cmdlet will also return roles that the user is a member of through security
 
 ## EXAMPLES
 
-### Example 1: 
+### Example 1:
 ```
-Get-MsolUserRole -UserPrincipalName user@contoso.com
+PS C:\> Get-MsolUserRole -UserPrincipalName user@contoso.com
 
           Returns a list of roles.
 ```
@@ -49,7 +49,7 @@ The ID of the user to retrieve roles for.
 ```yaml
 Type: Guid
 Parameter Sets: ListRolesForUser__0
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -66,7 +66,7 @@ This parameter is only applicable to partner users.
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -81,7 +81,7 @@ The user ID of the user to retrieve roles for.
 ```yaml
 Type: String
 Parameter Sets: ListRolesForUserByUpn__0
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -100,5 +100,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-
-

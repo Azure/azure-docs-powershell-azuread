@@ -17,7 +17,7 @@ Get-MsolCompanyAllowedDataLocation [-TenantId <Guid>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The Get-MsolCompanyAllowedDataLocation cmdlet can be used to retrieve all the current allowed data locations of a company from Azure Active Directory.
+The **Get-MsolCompanyAllowedDataLocation** cmdlet can be used to retrieve all the current allowed data locations of a company from Azure Active Directory.
 If a company has not opted in the multinational feature or has no allowed data locations, then the cmdlet will return an empty list.
 
 ## EXAMPLES
@@ -25,22 +25,16 @@ If a company has not opted in the multinational feature or has no allowed data l
 ### Example 1:
 ```
 PS C:\> Get-MsolCompanyAllowedDataLocation
-
-          Returns all the current allowed data locations of a company from Azure Active Directory.
 ```
-
-Description
-
------------
 
 This command returns all the current allowed data locations of a company from Azure Active Directory.
 
 ## PARAMETERS
 
 ### -TenantId
-The unique ID of the tenant to perform the operation on.
-If this is not provided then the value will default to the tenant of the current user.
-This parameter is only applicable to partner users.
+Specifies the unique ID of the tenant on which to perform the operation.
+The default value is the tenant of the current user.
+This parameter applies only to partner users.
 
 ```yaml
 Type: Guid

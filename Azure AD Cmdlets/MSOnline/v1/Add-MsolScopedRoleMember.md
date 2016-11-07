@@ -18,27 +18,19 @@ Add-MsolScopedRoleMember -RoleObjectId <Guid> -AdministrativeUnitObjectId <Guid>
 ```
 
 ## DESCRIPTION
-The Add-MsolScopedRoleMember cmdlet is used to add a member to an administrative unit-scoped role.
+The **Add-MsolScopedRoleMember** cmdlet adds a member to an administrative unit-scoped role.
 
 ## EXAMPLES
 
-### --------------------------  Example 1  --------------------------
-@{paragraph=PS C:\\\>}
-
-
-
+### Example 1:
 ```
 PS C:\> $westcoastau = Get-MsolAdministrativeUnit -searchstring "West Coast"
 PS C:\> $uaadmin = Get-MsolRole -RoleName "User Account Administrator"
-PS C:\> $admin1 = Get-MsolUser -UserPrincipalName user@contoso.com
+PS C:\> $admin1 = Get-MsolUser -UserPrincipalName "elisadaugherty@contoso.com"
 PS C:\> Add-MsolScopedRoleMember -RoleObjectId $uaadmin.ObjectId -AdministrativeUnitObjectId $westcoastau.ObjectId -RoleMemberObjectId $admin1.ObjectId
 ```
 
-Description
-
------------
-
-In this example, user@contoso.com is added as a member to the "User Account Administrator" role scoped for administrative unit "West Coast".
+In this example, elisadaugherty@contoso.com is added as a member to the "User Account Administrator" role scoped for administrative unit "West Coast".
 
 ## PARAMETERS
 
@@ -107,9 +99,9 @@ Accept wildcard characters: False
 ```
 
 ### -TenantId
-The unique ID of the tenant to perform the operation on.
-If this is not provided, then the value will default to the tenant of the current user.
-This parameter is only applicable to partner users.
+Specifies the unique ID of the tenant on which to perform the operation.
+The default value is the tenant of the current user.
+This parameter applies only to partner users.
 
 ```yaml
 Type: Guid

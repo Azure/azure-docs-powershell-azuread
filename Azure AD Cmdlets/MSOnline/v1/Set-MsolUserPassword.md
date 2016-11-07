@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
-online version: 
+online version:
 schema: 2.0.0
 ms.assetid: FE736AD3-BE42-47C0-A41A-05E01D1DD7A9
 ---
@@ -25,14 +25,14 @@ Set-MsolUserPassword [-NewPassword <String>] [-ForceChangePassword <Boolean>]
 ```
 
 ## DESCRIPTION
-The Set-MsolUserPassword cmdlet is used to change the password of a user. 
+The Set-MsolUserPassword cmdlet is used to change the password of a user.
 This cmdlet can only be used for users with standard identities.
 
 ## EXAMPLES
 
-### Example 1: 
+### Example 1:
 ```
-Set-MsolUserPassword -UserPrincipalName user@contoso.com
+PS C:\> Set-MsolUserPassword -UserPrincipalName user@contoso.com
 
           Returns the user's new password.
 ```
@@ -41,13 +41,13 @@ Description
 
 -----------
 
-This command resets the password for user@contoso.com. 
+This command resets the password for user@contoso.com.
 A random password will be generated.
 The user will be required to reset the password on next sign in.
 
-### Example 2: 
+### Example 2:
 ```
-Set-MsolUserPassword -userPrincipalName user@consoso.com -NewPassword "pa$$word"
+PS C:\> Set-MsolUserPassword -userPrincipalName user@consoso.com -NewPassword "pa$$word"
 
           Returns the user's new password.
 ```
@@ -56,7 +56,7 @@ Description
 
 -----------
 
-This command resets the password for user@contoso.com. 
+This command resets the password for user@contoso.com.
 The user will be required to reset the password on next sign in.
 
 ## PARAMETERS
@@ -67,7 +67,7 @@ When true, the user will be required to change their password the next time they
 ```yaml
 Type: Boolean
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -91,7 +91,7 @@ If the user is set to require a strong password, then all of the following rules
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -106,7 +106,7 @@ The unique ID of the user to set the password for.
 ```yaml
 Type: Guid
 Parameter Sets: ResetUserPassword__0
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -123,7 +123,7 @@ This parameter is only applicable to partner users.
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -138,7 +138,7 @@ The user ID of the user to set the password for.
 ```yaml
 Type: String
 Parameter Sets: ResetUserPasswordByUpn__0
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -153,7 +153,7 @@ Accept wildcard characters: False
 ```yaml
 Type: Boolean
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -172,5 +172,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-
-

@@ -32,14 +32,14 @@ Deleted users remain in the Deleted users view for 30 days.
 
 ### Example 1: Restore a user
 ```
-Restore-MsolUser -UserPrincipalName "davidchew@contoso.com"
+PS C:\> Restore-MsolUser -UserPrincipalName "davidchew@contoso.com"
 ```
 
 This command restores the user "davidchew@contoso.com" from the Deleted users container to the Active users container.
 
 ### Example 2: Restore a user and remove conflicts
 ```
-Restore-MsolUser -UserPrincipalName "davidchew@contoso.com" -AutoReconcileProxyConflicts
+PS C:\> Restore-MsolUser -UserPrincipalName "davidchew@contoso.com" -AutoReconcileProxyConflicts
 ```
 
 This command restores the user davidchew@contoso.com from the Deleted users container to the Active users container, removing any conflicting proxy addresses.
@@ -47,7 +47,7 @@ Use this option if restore fails due to proxy conflicts.
 
 ### Example 3:
 ```
-Restore-MsolUser -UserPrincipalName "davidchew@contoso.com" -NewUserPrincipalName "davidchew02@contoso.com"
+PS C:\> Restore-MsolUser -UserPrincipalName "davidchew@contoso.com" -NewUserPrincipalName "davidchew02@contoso.com"
 ```
 
 

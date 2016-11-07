@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
-online version: 
+online version:
 schema: 2.0.0
 ms.assetid: D777B598-B7CC-445E-9F7A-4E21D79BBE39
 ---
@@ -21,9 +21,9 @@ The Remove-MsolContact cmdlet is used to delete a contact from Microsoft Azure A
 
 ## EXAMPLES
 
-### Example 1: 
+### Example 1:
 ```
-Remove-MsolContact -objectid <id> -force
+PS C:\> Remove-MsolContact -objectid <id> -force
 
           None
 ```
@@ -42,7 +42,7 @@ Used to bypass onscreen confirmation.
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -57,7 +57,7 @@ The unique ID of the contact to remove.
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -74,7 +74,7 @@ This parameter is only applicable to partner users.
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -93,5 +93,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-
-

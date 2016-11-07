@@ -36,7 +36,7 @@ Update the licenses, password, and User Principal Name for a user by using the [
 
 ### Example 1: Block credential for a user
 ```
-Set-MsolUser -UserPrincipalName "davidchew@contoso.com" -BlockCredential $True
+PS C:\> Set-MsolUser -UserPrincipalName "davidchew@contoso.com" -BlockCredential $True
 ```
 
 This command sets block credential to $Tue for a user, which blocks them from being able to sign in.
@@ -44,14 +44,14 @@ This cannot be done for a synced user.
 
 ### Example 2:
 ```
-Set-MsolUser -UserPrincipalName "davidchew@contoso.com" -DisplayName "David Chew" -Title "Manager" -Department "Finance"
+PS C:\> Set-MsolUser -UserPrincipalName "davidchew@contoso.com" -DisplayName "David Chew" -Title "Manager" -Department "Finance"
 ```
 
 This command updates the display name for the specified user.
 
 ### Example 3: Set the location of a user
 ```
-Set-MsolUser -UserPrincipalName "davidchew@contoso.com" -UsageLocation "CA"
+PS C:\> Set-MsolUser -UserPrincipalName "davidchew@contoso.com" -UsageLocation "CA"
 ```
 
 This command sets the location country of a user.
@@ -60,7 +60,7 @@ This can be set for synced users as well as managed users.
 
 ### Example 4: Set the preferred data location
 ```
-Set-MsolUser -UserPrincipalName "davidchew@contoso.com" -PreferredDataLocation "EUR"
+PS C:\> Set-MsolUser -UserPrincipalName "davidchew@contoso.com" -PreferredDataLocation "EUR"
 ```
 
 This command sets the preferred data location property of a user whose user principal name is davidchew@contoso.com to EUR.

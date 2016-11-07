@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
-online version: 
+online version:
 schema: 2.0.0
 ms.assetid: C38ED8D1-68B3-4D78-8386-20F6FC87A167
 ---
@@ -29,12 +29,9 @@ The Get-MsolRoleMember cmdlet is used to retrieve all members of the specified r
 
 ## EXAMPLES
 
-### Example 1: 
+### Example 1:
 ```
-$role = Get-MsolRole -RoleName "Company Administrator"
-          Get-MsolRoleMember -RoleObjectId $role.ObjectId
-
-          Returns a list of role member objects.
+PS C:\> $role = Get-MsolRole -RoleName "Company Administrator"
 ```
 
 Description
@@ -46,13 +43,13 @@ This command returns all the members of the specified role.
 ## PARAMETERS
 
 ### -All
-If present then all results will be returned. 
+If present then all results will be returned.
 Cannot be used with MaxResults parameter.
 
 ```yaml
 Type: SwitchParameter
 Parameter Sets: All__0
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -68,7 +65,7 @@ If not specified, 250 results will be returned.
 ```yaml
 Type: Int32
 Parameter Sets: ListRoleMembers__0
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -83,7 +80,7 @@ The ID of the role to retrieve members for.
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -99,7 +96,7 @@ Only objects with a display name or email address starting with this string will
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -109,14 +106,14 @@ Accept wildcard characters: False
 ```
 
 ### -TenantId
-The unique ID of the tenant to perform the operation on.
-If this is not provided, then the value will default to the tenant of the current user.
-This parameter is only applicable to partner users.
+Specifies the unique ID of the tenant on which to perform the operation.
+The default value is the tenant of the current user.
+This parameter applies only to partner users.
 
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -131,7 +128,7 @@ Accept wildcard characters: False
 ```yaml
 Type: String[]
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -170,5 +167,3 @@ Currently only "User" is supported.
 ## NOTES
 
 ## RELATED LINKS
-
-

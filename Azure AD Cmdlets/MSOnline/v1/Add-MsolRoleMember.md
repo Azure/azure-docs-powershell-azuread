@@ -25,23 +25,17 @@ Add-MsolRoleMember [-RoleMemberType <RoleMemberType>] [-RoleMemberObjectId <Guid
 ```
 
 ## DESCRIPTION
-This cmdlet is used to add a member to a role.
+The **Add-MsolRoleMember** cmdlet is used to add a member to a role.
 Currently, only Users and ServicePrincipals can be added to a role (adding a security group is not supported).
 
 ## EXAMPLES
 
 ### Example 1:
 ```
-PS C:\> Add-MsolRoleMember -RoleName "Company Administrator" -RoleMemberEmailAddress "user@contoso.com"
-
-          None
+PS C:\> Add-MsolRoleMember -RoleName "Company Administrator" -RoleMemberEmailAddress "elisadaugherty@contoso.com"
 ```
 
-Description
-
------------
-
-This command adds user@contoso.com to the Company Administrator role.
+This command adds elisadaugherty@contoso.com to the Company Administrator role.
 To get the list of values for RoleName, use the Get-MsolRole cmdlet.
 
 ## PARAMETERS
@@ -132,9 +126,9 @@ Accept wildcard characters: False
 ```
 
 ### -TenantId
-The unique ID of the tenant to perform the operation on.
-If this is not provided, then the value will default to the tenant of the current user.
-This parameter is only applicable to partner users.
+Specifies the unique ID of the tenant on which to perform the operation.
+The default value is the tenant of the current user.
+This parameter applies only to partner users.
 
 ```yaml
 Type: Guid

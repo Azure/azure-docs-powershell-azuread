@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
-online version: 
+online version:
 schema: 2.0.0
 ms.assetid: 171F9F72-AD52-48CF-9E6E-553EEDD6B2D3
 ---
@@ -35,9 +35,9 @@ The Get-MsolServicePrincipalCredential cmdlet can be used to retrieve a list of 
 
 ## EXAMPLES
 
-### Example 1: 
+### Example 1:
 ```
-Get-MsolServicePrincipalCredential -ServicePrincipalName "MyApp/myApp.com"
+PS C:\> Get-MsolServicePrincipalCredential -ServicePrincipalName "MyApp/myApp.com"
 
           Returns a list of credentials associated with the "MyApp/myApp.com" service principal.
 ```
@@ -57,7 +57,7 @@ The application ID associated with the service principal credentials to retrieve
 ```yaml
 Type: Guid
 Parameter Sets: ListServicePrincipalCredentialsByAppPrincipalId__0
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -72,7 +72,7 @@ The object ID associated with the service principal credentials to retrieve.
 ```yaml
 Type: Guid
 Parameter Sets: ListServicePrincipalCredentials__0
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -83,13 +83,13 @@ Accept wildcard characters: False
 
 ### -ServicePrincipalName
 The unique name of the service principal to retrieve credentials from.
-            An SPN must use one of the following formats "appName" or "appName/hostname" or be a valid URL. 
+            An SPN must use one of the following formats "appName" or "appName/hostname" or be a valid URL.
 AppName represents the name of the application and hostname represents the URI authority for the application.
 
 ```yaml
 Type: String
 Parameter Sets: ListServicePrincipalCredentialsBySpn__0
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -106,7 +106,7 @@ This parameter is only applicable to partner users.
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -121,7 +121,7 @@ Accept wildcard characters: False
 ```yaml
 Type: Boolean
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -142,7 +142,7 @@ Retrieves the list of credentials associated with a service principal.
 Each service principal contains the following information:
 
             Type - The type of service principal credential (Asymmetric/Symmetric/Password).
-            Value - The value of the credential. 
+            Value - The value of the credential.
 If the credential type is certificate, this represents the base 64 encoded certificate.
 If credential type is symmetric, it represents an AES key.
             KeyGroupId - The identifier reserved for internal use.
@@ -154,5 +154,3 @@ If credential type is symmetric, it represents an AES key.
 ## NOTES
 
 ## RELATED LINKS
-
-

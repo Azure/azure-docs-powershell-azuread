@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
-online version: 
+online version:
 schema: 2.0.0
 ms.assetid: 4E3EE703-F105-449D-B74E-8C4B70E63A90
 ---
@@ -31,9 +31,9 @@ If the company exists and the partner has access to this company, then the corre
 
 ## EXAMPLES
 
-### Example 1: 
+### Example 1:
 ```
-Get-MsolPartnerContract -DomainName contoso.com
+PS C:\> Get-MsolPartnerContract -DomainName contoso.com
 
           Returns a contract object.
 ```
@@ -42,7 +42,7 @@ Description
 
 -----------
 
-This command returns the contract for the tenant owning the domain consoso.com. 
+This command returns the contract for the tenant owning the domain consoso.com.
 The caller must have privileges to act on behalf of contoso.com.
 
 ## PARAMETERS
@@ -54,7 +54,7 @@ This must be the full name of a verified domain.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -71,7 +71,7 @@ If this parameter is provided, the tenant ID must correspond to a partner compan
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -86,7 +86,7 @@ Accept wildcard characters: False
 ```yaml
 Type: SwitchParameter
 Parameter Sets: All__0
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -101,7 +101,7 @@ Accept wildcard characters: False
 ```yaml
 Type: Int32
 Parameter Sets: ListPartnerContracts__0
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 ```yaml
 Type: PartnerContractSearchKey
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -137,5 +137,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-
-

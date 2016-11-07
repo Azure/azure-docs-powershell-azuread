@@ -47,7 +47,7 @@ Specify the _ObjectId_ or _UserPrincipalName_ parameter to get a specific user.
 
 ### Example 1: Get all users
 ```
-Get-MsolUser
+PS C:\> Get-MsolUser
 ```
 
 This command retrieves all users in the company.
@@ -55,35 +55,35 @@ It displays up to the default value of 500 results.
 
 ### Example 2: Get enabled users
 ```
-Get-MsolUser -EnabledFilter EnabledOnly -MaxResults 2000
+PS C:\> Get-MsolUser -EnabledFilter EnabledOnly -MaxResults 2000
 ```
 
 This command gets up to 2000 enabled users.
 
 ### Example 3: Get a user by UPN
 ```
-Get-MsolUser -UserPrincipalName "davidchew@contoso.com"
+PS C:\> Get-MsolUser -UserPrincipalName "davidchew@contoso.com"
 ```
 
 This command retrieves the user with the UPN davidchew@contoso.com.
 
 ### Example 4: Get a user by object ID
 ```
-Get-MsolUser -ObjectId 81701046-cb37-439b-90ce-2afd9630af7d
+PS C:\> Get-MsolUser -ObjectId 81701046-cb37-439b-90ce-2afd9630af7d
 ```
 
 This command retrieves a user that has the specified object ID.
 
 ### Example 5: Get users by search String
 ```
-Get-MsolUser -SearchString "David"
+PS C:\> Get-MsolUser -SearchString "David"
 ```
 
 This command retrieves a list of users with David in the display name or email address.
 
 ### Example 6: Get preferred data location of a user
 ```
-Get-MsolUser -UserPrincipalName "davidchew@contoso.onmicrosoft.com" | Select PreferredDataLocation
+PS C:\> Get-MsolUser -UserPrincipalName "davidchew@contoso.onmicrosoft.com" | Select PreferredDataLocation
 ```
 
 This command returns the preferred data location of a user.

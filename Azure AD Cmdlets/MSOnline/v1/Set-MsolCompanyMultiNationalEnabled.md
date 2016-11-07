@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
-online version: 
+online version:
 schema: 2.0.0
 ms.assetid: 5AA049F5-BA10-437E-BE0C-E7E66CA795E9
 ---
@@ -24,9 +24,9 @@ Note that disabling/opting out from the multinational feature for a service type
 
 ## EXAMPLES
 
-### Example 1: 
+### Example 1:
 ```
-Set-MsolCompanyMultiNationalEnabled -ServiceType MicrosoftCommunicationsOnline -Enable $True
+PS C:\> Set-MsolCompanyMultiNationalEnabled -ServiceType MicrosoftCommunicationsOnline -Enable $True
 
           None
 ```
@@ -45,7 +45,7 @@ The service type to enable the multinational feature.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -60,7 +60,7 @@ Whether to enable or disable the multinational feature for a service type for a 
 ```yaml
 Type: Boolean
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -77,7 +77,7 @@ This parameter is only applicable to partner users.
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -96,4 +96,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-

@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
-online version: 
+online version:
 schema: 2.0.0
 ms.assetid: 16B61372-E804-41E7-9B03-8752A76DD2CB
 ---
@@ -35,9 +35,9 @@ The Get-MsolScopedRoleMember cmdlet is used to the retrieve members of the speci
 
 
 ```
-$westcoastau = Get-MsolAdministrativeUnit -searchstring "West Coast"
-          $uaadmin = Get-MsolRole -RoleName "User Account Administrator"
-          Get-MsolScopedRoleMember -RoleObjectId $uaadmin.ObjectId -AdministrativeUnitObjectId $westcoastau.ObjectId
+PS C:\> $westcoastau = Get-MsolAdministrativeUnit -searchstring "West Coast"
+PS C:\> $uaadmin = Get-MsolRole -RoleName "User Account Administrator"
+PS C:\> Get-MsolScopedRoleMember -RoleObjectId $uaadmin.ObjectId -AdministrativeUnitObjectId $westcoastau.ObjectId
 ```
 
 Description
@@ -54,7 +54,7 @@ The role whose scoped members should be returned.
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -70,7 +70,7 @@ Omit this parameter to find administrators for all administrative units.
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -85,7 +85,7 @@ The maximum number of results returned for a search result.
 ```yaml
 Type: Int32
 Parameter Sets: ListRoleScopedMembers__0
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -95,14 +95,14 @@ Accept wildcard characters: False
 ```
 
 ### -TenantId
-The unique ID of the tenant to perform the operation on.
-If this is not provided, then the value will default to the tenant of the current user.
-This parameter is only applicable to partner users.
+Specifies the unique ID of the tenant on which to perform the operation.
+The default value is the tenant of the current user.
+This parameter applies only to partner users.
 
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -112,13 +112,13 @@ Accept wildcard characters: False
 ```
 
 ### -All
-If present then all results will be returned. 
+If present then all results will be returned.
 Cannot be used with the MaxResults parameter.
 
 ```yaml
 Type: SwitchParameter
 Parameter Sets: All__0
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -143,5 +143,3 @@ For this cmdlet, each output object will include the following:
 ## NOTES
 
 ## RELATED LINKS
-
-

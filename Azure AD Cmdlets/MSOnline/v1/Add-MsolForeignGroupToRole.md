@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
-online version: 
+online version:
 schema: 2.0.0
 ms.assetid: B5D447B0-4C83-42D7-8162-1E95AF02EDA2
 ---
@@ -18,7 +18,7 @@ Add-MsolForeignGroupToRole -ForeignGroupObjectId <Guid> -ForeignCompanyObjectId 
 ```
 
 ## DESCRIPTION
-The Add-MsolForeignGroupToRole cmdlet is used to add a security group from a partner tenant to the specified role in this tenant.
+The **Add-MsolForeignGroupToRole** cmdlet adds a security group from a partner tenant to the specified role in this tenant.
 
 ## PARAMETERS
 
@@ -28,7 +28,7 @@ The object ID of the partner tenant that contains the group to add.
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -43,7 +43,7 @@ The object ID of the group in the partner tenant to add.
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -58,7 +58,7 @@ The object ID of the role to add the group to.
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -68,14 +68,14 @@ Accept wildcard characters: False
 ```
 
 ### -TenantId
-The unique ID of the tenant to perform the operation on. 
-If this is not provided then it will default to the tenant of the current user. 
-This parameter is only applicable to partner users.
+Specifies the unique ID of the tenant on which to perform the operation.
+The default value is the tenant of the current user.
+This parameter applies only to partner users.
 
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -94,5 +94,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-
-

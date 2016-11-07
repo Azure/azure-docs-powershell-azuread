@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
-online version: 
+online version:
 schema: 2.0.0
 ms.assetid: 31E47047-4159-488C-9C8A-ED3369268375
 ---
@@ -30,9 +30,9 @@ The **Set-MsolSettings** cmdlet updates a directory setting in Azure Active Dire
 
 ### Example 1: Update values for a directory setting
 ```
-PS C:\>$OrginSetting = (Get-MsolAllSettings)[0] 
-PS C:\> $Value = $OrginSetting.GetSettingsValue() 
-PS C:\> $Value["UsageGuidelinesUrl"] = "https://www.contoso.com" 
+PS C:\> $OrginSetting = (Get-MsolAllSettings)[0]
+PS C:\> $Value = $OrginSetting.GetSettingsValue()
+PS C:\> $Value["UsageGuidelinesUrl"] = "https://www.contoso.com"
 PS C:\> Set-MsolSettings -SettingId $OriginSetting.Id -SettingsValue $Value
 ```
 
@@ -44,9 +44,9 @@ The fourth command then uses the **Set-MsolSettings** cmdlet to update the direc
 
 ### Example 2: Update values for a directory setting of a specific group ID
 ```
-PS C:\>$OrginSetting = (Get-MsolAllSettings -TargetType Groups -TargetObjectId "Group011")[0]
-PS C:\> $Value = $OrginSetting.GetSettingsValue() 
-PS C:\> $Value["UsageGuidelinesUrl"] = "https://www.contoso.com" 
+PS C:\> $OrginSetting = (Get-MsolAllSettings -TargetType Groups -TargetObjectId "Group011")[0]
+PS C:\> $Value = $OrginSetting.GetSettingsValue()
+PS C:\> $Value["UsageGuidelinesUrl"] = "https://www.contoso.com"
 PS C:\> Set-MsolSettings -SettingId $OriginSetting.Id -SettingsValue $Value -TargetType Groups -TargetObjectId "Group011"
 ```
 
@@ -73,7 +73,7 @@ The acceptable values for this parameter are:
 ```yaml
 Type: TargetType
 Parameter Sets: Scope
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -89,7 +89,7 @@ If you do not specify a value, this cmdlet associates the directory setting with
 ```yaml
 Type: String
 Parameter Sets: Scope
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -104,7 +104,7 @@ Specifies the setting ID associated with the directory setting that this cmdlet 
 ```yaml
 Type: String
 Parameter Sets: None
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 ```yaml
 Type: String
 Parameter Sets: Scope
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -132,7 +132,7 @@ This operation overwrites the existing setting.
 ```yaml
 Type: SettingsValue
 Parameter Sets: None
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 ```yaml
 Type: SettingsValue
 Parameter Sets: Scope
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -169,5 +169,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [New-MsolSettings](./New-MsolSettings.md)
 
 [Remove-MsolSettings](./Remove-MsolSettings.md)
-
-

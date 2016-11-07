@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
-online version: 
+online version:
 schema: 2.0.0
 ms.assetid: D6A8C6DA-B071-473D-8618-E1618D42024F
 ---
@@ -30,9 +30,9 @@ This cmdlet can be used to move a user between a federated and standard domain, 
 
 ## EXAMPLES
 
-### Example 1: 
+### Example 1:
 ```
-Set-MsolUserPrincipalName -UserPrincipalName user@contoso.com -NewUserPrincipalName johns@contoso.com
+PS C:\> Set-MsolUserPrincipalName -UserPrincipalName user@contoso.com -NewUserPrincipalName johns@contoso.com
 
           None
 ```
@@ -52,7 +52,7 @@ This is required if moving the user from a standard to a federated identity doma
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -68,7 +68,7 @@ This is required if moving the user from a federated to a standard identity doma
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -83,7 +83,7 @@ The new user ID of the user.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -98,7 +98,7 @@ The ObjectId of the user to update.
 ```yaml
 Type: Guid
 Parameter Sets: ChangeUserPrincipalName__0
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -108,14 +108,14 @@ Accept wildcard characters: False
 ```
 
 ### -TenantId
-The unique ID of the tenant to perform the operation on.
-If this is not provided then the value will default to the tenant of the current user.
-This parameter is only applicable to partner users.
+Specifies the unique ID of the tenant on which to perform the operation.
+The default value is the tenant of the current user.
+This parameter applies only to partner users.
 
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -130,7 +130,7 @@ The original user ID of the user to update.
 ```yaml
 Type: String
 Parameter Sets: ChangeUserPrincipalNameByUpn__0
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -149,5 +149,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-
-

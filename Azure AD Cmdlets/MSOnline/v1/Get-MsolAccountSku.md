@@ -17,29 +17,23 @@ Get-MsolAccountSku [-TenantId <Guid>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The Get-MsolAccountSku will return all the SKUs that the company owns.
+The **Get-MsolAccountSku** cmdlet returns all the SKUs that the company owns.
 
 ## EXAMPLES
 
 ### Example 1:
 ```
 PS C:\> Get-MsolAccountSku
-
-          Returns a list of SKUs.
 ```
-
-Description
-
------------
 
 This command returns a list of SKUs.
 
 ## PARAMETERS
 
 ### -TenantId
-The unique ID of the tenant to perform the operation on.
-If this is not provided then the value will default to the tenant of the current user.
-This parameter is only applicable to partner users.
+Specifies the unique ID of the tenant on which to perform the operation.
+The default value is the tenant of the current user.
+This parameter applies only to partner users.
 
 ```yaml
 Type: Guid

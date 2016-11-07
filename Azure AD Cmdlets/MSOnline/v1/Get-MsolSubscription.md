@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
-online version: 
+online version:
 schema: 2.0.0
 ms.assetid: 0633C5AB-EA9A-4B55-959D-26611F16AB43
 ---
@@ -28,9 +28,9 @@ When assigning licenses to users, the Get-MsolAccountSku API should be used inst
 
 ## EXAMPLES
 
-### Example 1: 
+### Example 1:
 ```
-Get-MsolSubscription
+PS C:\> Get-MsolSubscription
 
           Returns a list of subscriptions.
 ```
@@ -39,7 +39,7 @@ Description
 
 -----------
 
-This command retrieves a list of company subscriptions. 
+This command retrieves a list of company subscriptions.
 For license assignment,  the Get-MsolAccountSKU cmdlet should be used instead.
 
 ## PARAMETERS
@@ -50,7 +50,7 @@ The object ID of the subscription to retrieve.
 ```yaml
 Type: Guid
 Parameter Sets: GetSubscription__0
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -60,14 +60,14 @@ Accept wildcard characters: False
 ```
 
 ### -TenantId
-The unique ID of the tenant to perform the operation on.
-If this is not provided then the value will default to the tenant of the current user.
-This parameter is only applicable to partner users.
+Specifies the unique ID of the tenant on which to perform the operation.
+The default value is the tenant of the current user.
+This parameter applies only to partner users.
 
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -107,5 +107,3 @@ For this cmdlet, each output object will include the following:
 ## NOTES
 
 ## RELATED LINKS
-
-

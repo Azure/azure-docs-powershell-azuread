@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
-online version: 
+online version:
 schema: 2.0.0
 ms.assetid: 8D9F4A29-671A-468A-9B20-B985DF1B4EC2
 ---
@@ -24,9 +24,9 @@ This cmdlet disables specific service plans when assigning a user a license usin
 
 ## EXAMPLES
 
-### Example 1: 
+### Example 1:
 ```
-New-MsolLicenseOption -AccountSkuId Contoso:BPOS_STANDARD -DisabledPlans EXCHANGE_STANDARD
+PS C:\> New-MsolLicenseOption -AccountSkuId Contoso:BPOS_STANDARD -DisabledPlans EXCHANGE_STANDARD
 
           Returns a License Option object.
 ```
@@ -35,7 +35,7 @@ Description
 
 -----------
 
-This command creates a license options object. 
+This command creates a license options object.
 This can be used for the license options parameter in New-MsolUser or Set-MsolUserLicense.
 
 ## PARAMETERS
@@ -46,7 +46,7 @@ The license (AccountSkuID) for these options.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -61,7 +61,7 @@ A list of service plans to disable when assigning this license to the user.
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -80,5 +80,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-
-

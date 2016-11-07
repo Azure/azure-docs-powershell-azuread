@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
-online version: 
+online version:
 schema: 2.0.0
 ms.assetid: 2874711E-96F5-43E8-8D90-332C65A85FB5
 ---
@@ -21,9 +21,9 @@ The Set-MsolDirSyncEnabled cmdlet is used to turn directory synchronization on o
 
 ## EXAMPLES
 
-### Example 1: 
+### Example 1:
 ```
-Set-MsolDirSyncEnabled -EnableDirsync $true
+PS C:\> Set-MsolDirSyncEnabled -EnableDirsync $true
 
           None
 ```
@@ -42,7 +42,7 @@ When true, directory synchronization will be turned on for your company.
 ```yaml
 Type: Boolean
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -59,7 +59,7 @@ This parameter is only applicable to partner users.
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -74,7 +74,7 @@ Accept wildcard characters: False
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -93,5 +93,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-
-

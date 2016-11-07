@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Online.Identity.Federation.PowerShell.dll-help.xml
-online version: 
+online version:
 schema: 2.0.0
 ms.assetid: 165F509D-D91E-4BE5-AF22-72112C1C3AB7
 ---
@@ -8,7 +8,7 @@ ms.assetid: 165F509D-D91E-4BE5-AF22-72112C1C3AB7
 # Convert-MsolDomainToFederated
 
 ## SYNOPSIS
-Converts the domain from using standard authentication to using single sign-on (also known as identity federation).
+Converts the domain from using standard authentication to using single sign-on.
 
 ## SYNTAX
 
@@ -18,7 +18,7 @@ Convert-MsolDomainToFederated [-SupportMultipleDomain] -DomainName <String> [-Wh
 ```
 
 ## DESCRIPTION
-The Convert-MSOLDomainToFederated cmdlet converts the specified domain from standard authentication to single sign-on (also known as identity federation), including configuring the relying party trust settings between the Active Directory Federation Services 2.0 server and Microsoft Online.
+The **Convert-MSOLDomainToFederated** cmdlet converts the specified domain from standard authentication to single sign-on (also known as identity federation), including configuring the relying party trust settings between the Active Directory Federation Services 2.0 server and Microsoft Online.
 As part of converting a domain from standard authentication to single sign-on, each user must also be converted.
 This conversion happens automatically the next time a user signs in; no action is required by the administrator.
 
@@ -30,7 +30,7 @@ The name of the domain to convert to single sign-on (also known as identity fede
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -45,7 +45,7 @@ Accept wildcard characters: False
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -94,5 +94,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-
-

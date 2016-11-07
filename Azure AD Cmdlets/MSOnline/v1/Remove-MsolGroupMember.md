@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
-online version: 
+online version:
 schema: 2.0.0
 ms.assetid: 6771683C-F5D9-48C4-9591-DC6692407ACA
 ---
@@ -23,11 +23,11 @@ This member can be either a user or a group.
 
 ## EXAMPLES
 
-### Example 1: 
+### Example 1:
 ```
-$groupId = Get-MsolGroup -searchString MyGroup
-          $userid = get-msoluser -userPrincipalName user@contoso.com
-          Remove-MsoLGroupMember -groupObjectId $groupid -GroupMemberType User -groupmemberobjectid $userid
+PS C:\> $groupId = Get-MsolGroup -searchString MyGroup
+PS C:\> $userid = get-msoluser -userPrincipalName user@contoso.com
+PS C:\> Remove-MsoLGroupMember -groupObjectId $groupid -GroupMemberType User -groupmemberobjectid $userid
 ```
 
 Description
@@ -44,7 +44,7 @@ The object ID of the member (User or Group) to remove from the group.
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -59,7 +59,7 @@ The type of member (User or Group) to remove from the group.
 ```yaml
 Type: GroupMemberType
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -74,7 +74,7 @@ The ID of the group to remove members from.
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -91,7 +91,7 @@ This parameter is only applicable to partner users.
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -110,5 +110,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-
-

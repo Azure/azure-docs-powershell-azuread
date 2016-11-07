@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
-online version: 
+online version:
 schema: 2.0.0
 ms.assetid: E4C5910F-B006-43F5-8765-E1185A9D0BBE
 ---
@@ -34,7 +34,7 @@ These features cannot be disabled once they are enabled.
 
 ### Example 1: Enable a feature for the tenant
 ```
-PS C:\>Set-MsolDirSyncFeature -Feature EnableSoftMatchOnUpn -Enable $True
+PS C:\> Set-MsolDirSyncFeature -Feature EnableSoftMatchOnUpn -Enable $True
 ```
 
 This command enables the SoftMatchOnUpn feature for the tenant.
@@ -47,7 +47,7 @@ Specifies the directory synchronization features to turn on or off.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -62,7 +62,7 @@ Indicates whether the specified feature will be turned on for the company.
 ```yaml
 Type: Boolean
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -79,7 +79,7 @@ This parameter is only applicable to partner users.
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -94,7 +94,7 @@ Forces the command to run without asking for user confirmation.
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -115,5 +115,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [Get-MsolDirSyncFeatures](./Get-MsolDirSyncFeatures.md)
-
-

@@ -8,7 +8,7 @@ ms.assetid: 20C36069-42AE-4B9C-A64B-ECAF5C3B6252
 # Get-MsolDomain
 
 ## SYNOPSIS
-Gets a domain in Azure Active Directory.
+Retrieves a domain Microsoft Azure Active Directory.
 
 ## SYNTAX
 
@@ -24,39 +24,54 @@ Get-MsolDomain -DomainName <String> [-TenantId <Guid>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The Get-MsolDomain cmdlet gets company domains in Azure Active Directory.
+The Get-MsolDomain cmdlet is used to retrieve company domains.
 
 ## EXAMPLES
 
-### Example 1: Get all domains for a company.
-
+### -------------------------- EXAMPLE 1 --------------------------
 ```
 PS C:\> Get-Domain
+
+          Returns a list of company domains.
 ```
 
-This command retrieves all domains for the company, including verified and unverified domains.
+Description
 
-### Example 2: Get a domain
+-----------
 
+This command retrieves all domains for the company (verified or unverified).
+
+### -------------------------- EXAMPLE 2 --------------------------
 ```
-PS C:\> Get-Domain -Name "contoso.com"
+PS C:\> Get-Domain -Name contoso.com
+
+          Returns a domain name.
 ```
+
+Description
+
+-----------
 
 This command retrieves the contoso.com domain.
 
-### Example 3: Get verified domains
-
+### -------------------------- EXAMPLE 3 --------------------------
 ```
 PS C:\> Get-Domain -Status Verified
+
+          Returns a list of verified company domains.
 ```
 
-This command returns verified company domains.
+Description
+
+-----------
+
+This command returns a list of verified company domains .
 
 ## PARAMETERS
 
 ### -Authentication
-Specifies an authentication type.
-This cmdlet returns only domains that have this authentication type.
+The filter for the specified authentication type.
+If provided, only domains with the authentication type will be returned.
 
 ```yaml
 Type: DomainAuthenticationType
@@ -71,8 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -Capability
-Specifies domain capability.
-This cmdlet returns only domains that have the specified capability assigned.
+The filter for domains that have the specified capability assigned.
 
 ```yaml
 Type: DomainCapabilities
@@ -87,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -DomainName
-Specifies the fully qualified domain name of the domain to return.
+The fully qualified domain name to retrieve.
 
 ```yaml
 Type: String
@@ -102,9 +116,8 @@ Accept wildcard characters: False
 ```
 
 ### -Status
-Specifies domain status.
-Valid values are: Verified, Unverified, and PendingDeletion.
-This cmdlet returns only domains that have the specified status.
+The filter to return only domains with the specified status.
+Valid values are Verified, Unverified, and PendingDeletion.
 
 ```yaml
 Type: DomainStatus
@@ -122,7 +135,6 @@ Accept wildcard characters: False
 Specifies the unique ID of the tenant on which to perform the operation.
 The default value is the tenant of the current user.
 This parameter applies only to partner users.
-
 
 ```yaml
 Type: Guid
@@ -144,27 +156,26 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Online.Administration.Domain
-This cmdlet returns domain objects that include the following information:
+Each domain returned will include the following information:
 
-* Authentication. The authentication type of the domain, which is managed or federated.
-* Capabilities. The capabilities assigned to the domain.
-These can be SharePoint, Email, or OfficeCommunicationsOnline.
+            Authentication: The authentication type of the domain (managed or federated).
+
+            Capabilities: The capabilities assigned to the domain.
+These can be SharePoint, email, or OfficeCommunicationsOnline.
 A domain with SharePoint capability cannot be used for other capabilities.
-* IsDefault. This is the default domain that is used for user creation.
+
+            IsDefault: This is the default domain that is used for user creation.
 There is only one default domain per company.
-* IsInitial. Whether or not this is the initial domain created by Azure Active Directory (\[companyname\].onmicrosoft.com).
-* Name. The full name of the domain.
-* RootDomain. For subdomains, this represents the root domain.
+
+            IsInitial: Whether or not this is the initial domain created by Microsoft Azure Active Directory (\[companyname\].onmicrosoft.com).
+
+            Name: The full name of the domain.
+
+            RootDomain: For subdomains, this represents the root domain.
 Only root domains need to be verified, and all subdomains will be automatically verified.
-* Status. The status of the domain, which is verified or unverified.
+
+            Status: The status of the domain (verified or unverified).
 
 ## NOTES
 
 ## RELATED LINKS
-[Confirm-MsolDomain](./Confirm-MsolDomain.md)
-
-[New-MsolDomain](./New-MsolDomain.md)
-
-[Remove-MsolDomain](./Remove-MsolDomain.md)
-
-[Set-MsolDomain](./Set-MsolDomain.md)

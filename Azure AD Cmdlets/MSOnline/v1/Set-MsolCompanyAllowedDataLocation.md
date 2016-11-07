@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
-online version: 
+online version:
 schema: 2.0.0
 ms.assetid: 326AC6B3-327F-4A2C-9018-C969949606A0
 ---
@@ -22,9 +22,9 @@ The Set-MsolCompanyAllowedDataLocation cmdlet will attempt to set an allowed dat
 
 ## EXAMPLES
 
-### Example 1: 
+### Example 1:
 ```
-Set-MsolCompanyAllowedDataLocation -ServiceType MicrosoftCommunicationsOnline -Location EUR
+PS C:\> Set-MsolCompanyAllowedDataLocation -ServiceType MicrosoftCommunicationsOnline -Location EUR
 
           None
 ```
@@ -43,7 +43,7 @@ The service type of the allowed data location to set.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -60,7 +60,7 @@ Otherwise, an error will be returned.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -76,7 +76,7 @@ Note there is exactly one default allowed data location per service type.
 ```yaml
 Type: Boolean
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -92,7 +92,7 @@ In v1, specify a valid DNS domain FQDN.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -107,7 +107,7 @@ Whether to overwrite an existing allowed data location if one already exists for
 ```yaml
 Type: Boolean
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -124,7 +124,7 @@ This parameter is only applicable to partner users.
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -143,4 +143,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-
