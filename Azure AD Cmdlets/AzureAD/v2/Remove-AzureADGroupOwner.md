@@ -18,18 +18,18 @@ Remove-AzureADGroupOwner -ObjectId <String> -OwnerId <String> [-InformationActio
 ```
 
 ## DESCRIPTION
-
+The **Remove-AzureADGroupOwner** cmdlet removes an owner from a group in Azure Active Directory (AD).
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
-```
-PS C:\>Remove-AzureADGroupOwner -ObjectId 62438306-7c37-4638-a72d-0ee8d9217680 -OwnerId 0a1068c0-dbb6-4537-9db3-b48f3e31dd76
+### Example 1: Remove an owner
+```PowerShell
+PS C:\>Remove-AzureADGroupOwner -ObjectId "62438306-7c37-4638-a72d-0ee8d9217680" -OwnerId "0a1068c0-dbb6-4537-9db3-b48f3e31dd76"
 ```
 
 ## PARAMETERS
 
 ### -ObjectId
-The unique identifier of a group in Azure Active Directory (ObjectId)
+Specifies the ID of a group in Azure AD.
 
 ```yaml
 Type: String
@@ -44,7 +44,7 @@ Accept wildcard characters: False
 ```
 
 ### -OwnerId
-The unique identifier of the object specific Azure Active Directory object
+Specifies the ID of an owner.
 
 ```yaml
 Type: String
@@ -107,5 +107,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-
+[Add-AzureADGroupOwner](./Add-AzureADGroupOwner.md)  
+[Get-AzureADGroupOwner](./Get-AzureADGroupOwner.md)
 
