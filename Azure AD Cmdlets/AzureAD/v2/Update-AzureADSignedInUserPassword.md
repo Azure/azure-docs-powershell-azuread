@@ -8,7 +8,7 @@ ms.assetid: 8959FA62-5E06-4C57-90CC-985F7467BC59
 # Update-AzureADSignedInUserPassword
 
 ## SYNOPSIS
-Updates the password for the signed in user in Azure AD
+Updates the password for the current user.
 
 ## SYNTAX
 
