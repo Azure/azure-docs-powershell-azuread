@@ -30,7 +30,7 @@ This can include adding a new license, removing a license, updating the license 
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### Example 1: 
 ```
 Set-MsolUserLicense -UserPrincipalName user@contoso.com -AddLicenses "Contoso:ENTERPRISEPACK"
 
@@ -43,7 +43,7 @@ Description
 
 This command adds the Office 365 for enterprises license to the user.
 
-### -------------------------- EXAMPLE 2 --------------------------
+### Example 2: 
 ```
 Set-MsolUserLicense -UserPrincipalName user@contoso.com -RemoveLicenses "contoso:ENTERPRISEPACK"
 
@@ -57,7 +57,7 @@ Description
 This command removes the Office 365 for enterprises license from the user. 
 This may result in the user's data being removed from each service.
 
-### -------------------------- EXAMPLE 3 --------------------------
+### Example 3: 
 ```
 Set-MsolUserLicense -UserPrincipalName user@contoso.com -AddLicenses "contoso:DESKLESS" -RemoveLicenses "contoso:ENTERPRISEPACK"
 

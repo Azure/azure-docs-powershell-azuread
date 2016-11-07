@@ -22,7 +22,7 @@ The Get-MsolDomainVerificationDns cmdlet is used to return the DNS records that 
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### Example 1: 
 ```
 Get-MsolDomainVerificationDNS -DomainName contoso.com
 

@@ -23,7 +23,7 @@ The new members can be either users or other security groups.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### Example 1: 
 ```
 Add-MsolGroupMember -groupObjectid <id> -groupmemberType "User" -groupMemberObjectId <id>
 

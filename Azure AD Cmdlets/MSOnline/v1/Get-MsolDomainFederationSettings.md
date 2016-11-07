@@ -22,7 +22,7 @@ Use the Get-MSOLFederationProperty cmdlet to get settings for both Microsoft Azu
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### Example 1: 
 ```
 Get-MsolDomainFederationSettings -DomainName contoso.com
 

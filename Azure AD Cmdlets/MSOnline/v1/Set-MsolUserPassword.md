@@ -30,7 +30,7 @@ This cmdlet can only be used for users with standard identities.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### Example 1: 
 ```
 Set-MsolUserPassword -UserPrincipalName user@contoso.com
 
@@ -45,7 +45,7 @@ This command resets the password for user@contoso.com.
 A random password will be generated.
 The user will be required to reset the password on next sign in.
 
-### -------------------------- EXAMPLE 2 --------------------------
+### Example 2: 
 ```
 Set-MsolUserPassword -userPrincipalName user@consoso.com -NewPassword "pa$$word"
 

@@ -21,7 +21,7 @@ The Set-MsolDirSyncEnabled cmdlet is used to turn directory synchronization on o
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### Example 1: 
 ```
 Set-MsolDirSyncEnabled -EnableDirsync $true
 

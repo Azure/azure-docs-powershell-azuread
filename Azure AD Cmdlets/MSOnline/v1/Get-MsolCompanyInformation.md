@@ -21,7 +21,7 @@ The Get-MsolCompanyInformation cmdlet will retrieve company-level information.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### Example 1: 
 ```
 Get-MsolCompanyInformation
 

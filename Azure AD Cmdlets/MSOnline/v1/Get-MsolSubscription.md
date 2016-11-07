@@ -28,7 +28,7 @@ When assigning licenses to users, the Get-MsolAccountSku API should be used inst
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### Example 1: 
 ```
 Get-MsolSubscription
 

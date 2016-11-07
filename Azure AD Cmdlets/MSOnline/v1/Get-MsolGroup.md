@@ -37,7 +37,7 @@ This cmdlet can be used to return a single group (if ObjectId is passed in), or 
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### Example 1: 
 ```
 Get-MsolGroup -ObjectId <guid>
 
@@ -50,7 +50,7 @@ Description
 
 This command returns the group object with the corresponding ID.
 
-### -------------------------- EXAMPLE 2 --------------------------
+### Example 2: 
 ```
 Get-MsolGroup
 
@@ -63,7 +63,7 @@ Description
 
 This command returns the entire set of groups for the tenant (up to 250).
 
-### -------------------------- EXAMPLE 3 --------------------------
+### Example 3: 
 ```
 Get-MsolGroup -isAgentRole -UserPrincipalName user@contoso.com
 

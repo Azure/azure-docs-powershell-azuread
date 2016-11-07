@@ -22,7 +22,7 @@ If a company has not opted in the multinational feature or has no allowed data l
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### Example 1: 
 ```
 Get-MsolCompanyAllowedDataLocation
 

@@ -21,7 +21,7 @@ The Get-MsolAccountSku will return all the SKUs that the company owns.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### Example 1: 
 ```
 Get-MsolAccountSku
 

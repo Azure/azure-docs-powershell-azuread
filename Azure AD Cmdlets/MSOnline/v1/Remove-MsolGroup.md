@@ -21,7 +21,7 @@ The Remove-MsolGroup cmdlet is used to delete a group from Microsoft Azure Activ
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### Example 1: 
 ```
 $groupId = Get-MsolGroup -searchString "MyGroup"
           Remove-MsolGroup -objectid $groupId

@@ -23,7 +23,7 @@ This includes email addresses for marketing and technical notifications about Mi
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### Example 1: 
 ```
 Set-MsolCompanyContactInformation -TechnicalNotificationEmail tech@contoso.com
 

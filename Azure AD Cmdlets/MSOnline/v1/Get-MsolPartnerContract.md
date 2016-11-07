@@ -31,7 +31,7 @@ If the company exists and the partner has access to this company, then the corre
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### Example 1: 
 ```
 Get-MsolPartnerContract -DomainName contoso.com
 

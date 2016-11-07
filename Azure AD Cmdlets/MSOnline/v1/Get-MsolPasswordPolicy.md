@@ -22,7 +22,7 @@ When a domain name is specified, it must be a verified domain for the company.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### Example 1: 
 ```
 Get-MsolPasswordPolicy
 
@@ -35,7 +35,7 @@ Description
 
 Returns the password policy for the tenant.
 
-### -------------------------- EXAMPLE 2 --------------------------
+### Example 2: 
 ```
 Get-MsolPasswordPolicy -DomainName contoso.com
 

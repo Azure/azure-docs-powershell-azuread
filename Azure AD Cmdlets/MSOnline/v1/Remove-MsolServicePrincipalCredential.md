@@ -36,7 +36,7 @@ The credential to be removed is identified by its key ID.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### Example 1: 
 ```
 Remove-MsolServicePrincipalCredential -KeyIds @("19805a93-e9dd-4c63-8afd-88ed91f33546") -ServicePrincipalName "MyApp2/myApp.com"
 ```

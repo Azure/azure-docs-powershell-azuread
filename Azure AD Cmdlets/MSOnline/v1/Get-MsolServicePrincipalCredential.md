@@ -35,7 +35,7 @@ The Get-MsolServicePrincipalCredential cmdlet can be used to retrieve a list of 
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### Example 1: 
 ```
 Get-MsolServicePrincipalCredential -ServicePrincipalName "MyApp/myApp.com"
 

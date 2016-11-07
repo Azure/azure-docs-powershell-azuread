@@ -23,7 +23,7 @@ Two settings are required, the first is to indicate the length of time that a pa
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### Example 1: 
 ```
 Set-MsolPasswordPolicy -ValidityPeriod 60 -NotificationDays 14
 ```
@@ -34,7 +34,7 @@ Description
 
 This command updates the tenant so that all users passwords will expire after 60 days and that the users will receive notification of 14 days prior to that expiry.
 
-### -------------------------- EXAMPLE 2 --------------------------
+### Example 2: 
 ```
 Set-MsolPasswordPolicy -ValidityPeriod 60 -NotificationDays 14 -DomainName contoso.com
 ```

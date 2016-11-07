@@ -29,7 +29,7 @@ The Remove-MsolRoleMember cmdlet is used to remove a user from an administrator 
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### Example 1: 
 ```
 Remove-MsolRoleMember -RoleName "Company Administrator" -RoleMemberType User -RoleMemberEmailAddress user@contoso.com
 ```

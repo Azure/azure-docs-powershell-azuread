@@ -21,7 +21,7 @@ The Remove-MsolContact cmdlet is used to delete a contact from Microsoft Azure A
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### Example 1: 
 ```
 Remove-MsolContact -objectid <id> -force
 

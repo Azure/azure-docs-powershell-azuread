@@ -26,7 +26,7 @@ Use Get-MsolCompanyInformation to read the current values of these settings.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### Example 1: 
 ```
 Set-MsolCompanySettings -SelfServePasswordResetEnabled $true
 ```

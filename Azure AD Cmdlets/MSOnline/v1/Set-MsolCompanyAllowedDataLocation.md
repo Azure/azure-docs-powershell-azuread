@@ -22,7 +22,7 @@ The Set-MsolCompanyAllowedDataLocation cmdlet will attempt to set an allowed dat
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### Example 1: 
 ```
 Set-MsolCompanyAllowedDataLocation -ServiceType MicrosoftCommunicationsOnline -Location EUR
 

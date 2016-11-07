@@ -30,7 +30,7 @@ Currently, only Users and ServicePrincipals can be added to a role (adding a sec
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### Example 1: 
 ```
 Add-MsolRoleMember -RoleName "Company Administrator" -RoleMemberEmailAddress "user@contoso.com"
 

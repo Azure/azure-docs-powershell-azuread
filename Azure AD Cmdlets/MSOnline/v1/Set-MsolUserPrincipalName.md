@@ -30,7 +30,7 @@ This cmdlet can be used to move a user between a federated and standard domain, 
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### Example 1: 
 ```
 Set-MsolUserPrincipalName -UserPrincipalName user@contoso.com -NewUserPrincipalName johns@contoso.com
 

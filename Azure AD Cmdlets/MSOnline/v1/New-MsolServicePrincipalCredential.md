@@ -39,7 +39,7 @@ The service principal is identified by supplying either the object ID, appPrinci
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### Example 1: 
 ```
 New-MsolServicePrincipalCredential -ServicePrincipalName "MyApp/myApp.com"
 
@@ -53,7 +53,7 @@ Description
 This command adds a credential (or a key) object to an existing service principal.
 In this example, a symmetric key is generated for this credential and added to the service principal using the service principal name value of "MyApp/myApp.com".
 
-### -------------------------- EXAMPLE 2 --------------------------
+### Example 2: 
 ```
 $cer = New-Object System.Security.Cryptography.X509Certificates.X509Certificate
           $cer.Import("C:\myapp.cer")
@@ -71,7 +71,7 @@ Description
 This command adds a credential (or a key) object to an existing service principal.
 In this example, the supplied base64 encoded public X509 certificate ("myapp.cer") is added to the service principal using the service principal name value of "MyApp/myApp.com".
 
-### -------------------------- EXAMPLE 3 --------------------------
+### Example 3: 
 ```
 New-MsolServicePrincipalCredential -AppPrincipalId  -Type asymmetric -Value $credValue
 

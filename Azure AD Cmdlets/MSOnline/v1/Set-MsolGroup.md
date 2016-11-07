@@ -22,7 +22,7 @@ The Set-MsolGroup cmdlet is used to update the properties of a security group.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### Example 1: 
 ```
 $groupid = Get-MsolGroup -searchstring MyGroup
           Set-MsolGroup -objectid $groupId -Description "My Group"

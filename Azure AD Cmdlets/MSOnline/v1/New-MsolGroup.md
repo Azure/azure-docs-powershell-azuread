@@ -22,7 +22,7 @@ The New-MsolGroup cmdlet is used to add a new security group to Microsoft Azure 
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### Example 1: 
 ```
 New-MsolGroup -DisplayName "MyGroup" -Description "My test group"
 

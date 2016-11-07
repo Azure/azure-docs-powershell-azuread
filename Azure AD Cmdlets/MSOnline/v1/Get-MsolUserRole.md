@@ -28,7 +28,7 @@ This cmdlet will also return roles that the user is a member of through security
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### Example 1: 
 ```
 Get-MsolUserRole -UserPrincipalName user@contoso.com
 

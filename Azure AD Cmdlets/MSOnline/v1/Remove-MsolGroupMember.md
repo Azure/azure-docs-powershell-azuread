@@ -23,7 +23,7 @@ This member can be either a user or a group.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### Example 1: 
 ```
 $groupId = Get-MsolGroup -searchString MyGroup
           $userid = get-msoluser -userPrincipalName user@contoso.com

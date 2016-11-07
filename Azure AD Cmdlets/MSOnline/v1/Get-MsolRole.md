@@ -32,7 +32,7 @@ The Get-MsolRole cmdlet can be used to retrieve a list of administrator roles.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### Example 1: 
 ```
 Get-MsolRole
 

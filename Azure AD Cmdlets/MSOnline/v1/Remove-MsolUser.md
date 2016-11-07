@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
-online version: 
+online version:
 schema: 2.0.0
 ms.assetid: CF0916CC-7239-438D-87F7-BF39B733B77F
 ---
@@ -8,7 +8,7 @@ ms.assetid: CF0916CC-7239-438D-87F7-BF39B733B77F
 # Remove-MsolUser
 
 ## SYNOPSIS
-Removes a user from Microsoft Azure Active Directory.
+Removes a user from Azure Active Directory.
 
 ## SYNTAX
 
@@ -24,64 +24,46 @@ Remove-MsolUser [-RemoveFromRecycleBin] [-Force] -UserPrincipalName <String> [-T
 ```
 
 ## DESCRIPTION
-The Remove-MsolUser cmdlet is used to remove a user from Microsoft Azure Active Directory.
-This cmdlet will delete the user, their licenses, and any other associated data.
+The **Remove-MsolUser** cmdlet is used to remove a user from Azure Active Directory.
+This cmdlet deletes the user, their licenses, and any other associated data.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### Example 1: Remove a user
 ```
-Remove-MsolUser -UserPrincipalName user@contoso.com
-
-          None
+Remove-MsolUser -UserPrincipalName "davidchew@contoso.com"
 ```
 
-Description
+This command removes the user davidchew@contoso.com from Azure Active Directory.
+If the user has any licenses, the cmdlet removes these.
+The command prompts you to confirm the operation.
 
------------
-
-This command removes user@contoso.com from Microsoft Azure Active Directory. 
-If the user has any licenses these will be removed as well. 
-A confirmation prompt will be output to the screen to confirm the operation.
-
-### -------------------------- EXAMPLE 2 --------------------------
+### Example 2:Remove a user without confirmation
 ```
-Remove-MsolUser -UserPrincipalName user@contoso.com -force
-
-          None
+Remove-MsolUser -UserPrincipalName "davidchew@contoso.com" -Force
 ```
 
-Description
+This command removes davidchew@contoso.com from Azure Active Directory.
+If the user has any licenses, the cmdlet removes these.
 
------------
-
-This command removes user@contoso.com from Microsoft Azure Active Directory. 
-If the user has any licenses these will be removed as well.
-
-### -------------------------- EXAMPLE 3 --------------------------
+### Example 3:
 ```
-Remove-MsolUser -UserPrincipalName user@contoso.com -RemoveFromRecycleBin
-
-          None
+Remove-MsolUser -UserPrincipalName "davidchew@contoso.com" -RemoveFromRecycleBin
 ```
 
-Description
-
------------
-
-This command removes user@contoso.com from the Microsoft Azure Active Directory recycle bin.
-A confirmation prompt will be output to the screen to confirm the operation. 
-This command will permanently remove the user with no opportunity to recover the user.
+This command removes davidchew@contoso.com from the Azure Active Directory recycle bin.
+The command prompts you to confirm the operation.
+This command permanently removes the user.
 
 ## PARAMETERS
 
 ### -Force
-Used to bypass onscreen confirmation.
+Indicates that this cmdlet does not prompt you for confirmation.
 
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -91,12 +73,12 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-The object ID of the user to remove.
+Specifies the unique object ID of the user to remove.
 
 ```yaml
 Type: Guid
 Parameter Sets: RemoveUser__0
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -106,14 +88,14 @@ Accept wildcard characters: False
 ```
 
 ### -RemoveFromRecycleBin
-Used to permanently remove a deleted user from the recycle bin.
-This operation, which can only be applied to deleted users, will permanently delete the user from Microsoft Azure Active Directory.
-Once this operation has been completed, you will not be able to use the Restore-MsolUser command to recover the user.
+Indicates that this cmdlet permanently removes a deleted user from the recycle bin.
+This operation which can be applied only to deleted users.
+When this operation has been completed, you will not be able to recover the user by using the [Restore-MsolUser](./Restore-MsolUser.md) cmdlet.
 
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -123,14 +105,14 @@ Accept wildcard characters: False
 ```
 
 ### -TenantId
-The unique ID of the tenant to perform the operation on.
-If this is not provided then the value will default to the tenant of the current user.
-This parameter is only applicable to partner users.
+Specifies the unique ID of the tenant on which to perform the operation.
+The default value is the tenant of the current user.
+This parameter applies only to partner users.
 
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -140,12 +122,12 @@ Accept wildcard characters: False
 ```
 
 ### -UserPrincipalName
-The user ID of the user to remove.
+Specifies the user principal name of the user to remove.
 
 ```yaml
 Type: String
 Parameter Sets: RemoveUserByUpn__0
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -164,5 +146,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-MsolUser](./Get-MsolUser.md)
 
+[New-MsolUser](./New-MsolUser.md)
 
+[Restore-MsolUser](./Restore-MsolUser.md)
+
+[Set-MsolUser](./Set-MsolUser.md)

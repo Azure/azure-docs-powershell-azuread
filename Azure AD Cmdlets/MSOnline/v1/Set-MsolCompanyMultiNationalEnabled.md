@@ -24,7 +24,7 @@ Note that disabling/opting out from the multinational feature for a service type
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### Example 1: 
 ```
 Set-MsolCompanyMultiNationalEnabled -ServiceType MicrosoftCommunicationsOnline -Enable $True
 

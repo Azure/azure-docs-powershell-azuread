@@ -36,7 +36,7 @@ The caller must provide their credential (a PSCredential object), or specify the
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### Example 1: 
 ```
 Connect-MsolService
 
@@ -50,7 +50,7 @@ Description
 This command attempts to initiate a connection with Microsoft Azure Active Directory. 
 Since no credential is provided, the user will be prompted to enter their username and password.
 
-### -------------------------- EXAMPLE 2 --------------------------
+### Example 2: 
 ```
 Connect-MsolService -Credential $cred -AzureEnvironment AzureChinaCloud
 

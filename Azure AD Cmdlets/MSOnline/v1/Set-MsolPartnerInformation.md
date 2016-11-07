@@ -24,7 +24,7 @@ These properties can be viewed by all tenants that the partner has access to.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### Example 1: 
 ```
 Set-MsolPartnerInformation -PartnerHelpUrl "http://www.help.com"
 

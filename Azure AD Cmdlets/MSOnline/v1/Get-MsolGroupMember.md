@@ -30,7 +30,7 @@ The members can be either users or groups.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### Example 1: 
 ```
 Get-MsolGroupMember -groupObjectid <id>
 

@@ -35,7 +35,7 @@ A single contact will be retrieved if the ObjectId is used.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### Example 1: 
 ```
 Get-MsolContact -ObjectId <id>
 
@@ -48,7 +48,7 @@ Description
 
 This command retrieves a contact.
 
-### -------------------------- EXAMPLE 2 --------------------------
+### Example 2: 
 ```
 Get-MsolContact -SearchString "Melissa"
 

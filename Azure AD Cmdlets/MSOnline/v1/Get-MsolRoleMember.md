@@ -29,7 +29,7 @@ The Get-MsolRoleMember cmdlet is used to retrieve all members of the specified r
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### Example 1: 
 ```
 $role = Get-MsolRole -RoleName "Company Administrator"
           Get-MsolRoleMember -RoleObjectId $role.ObjectId
