@@ -17,18 +17,12 @@ Get-AzureADPolicyAppliedObject -ObjectId <String> [-InformationAction <ActionPre
 ```
 
 ## DESCRIPTION
-
-## EXAMPLES
-
-### -------------------------- EXAMPLE 1 --------------------------
-```
-PS C:\>Get-AzureADPolicyAppliedObject -ObjectId <object id of policy>
-```
+The **Get-AzureADPolicyAppliedObject** cmdlet gets a policy-applied object from Azure Active Directory (AD).
 
 ## PARAMETERS
 
 ### -ObjectId
-The object Id of the Policy you would like to get
+Specifies the ID of the policy object to get.
 
 ```yaml
 Type: String
@@ -43,9 +37,7 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore

@@ -8,7 +8,7 @@ ms.assetid: FF1EF8E7-1372-42D8-966C-19FBE9603F5B
 # Get-AzureADDirectorySetting
 
 ## SYNOPSIS
-Retrieves a directory setting from Azure Active Directory.
+Gets a directory setting.
 
 ## SYNTAX
 
@@ -25,18 +25,12 @@ Get-AzureADDirectorySetting -ObjectId <String> [-InformationAction <ActionPrefer
 ```
 
 ## DESCRIPTION
-
-## EXAMPLES
-
-### 1:
-```
-PS C:\>
-```
+The **Get-AzureADDirectorySetting** cmdlet gets a directory setting from Azure Active Directory (AD).
 
 ## PARAMETERS
 
 ### -ObjectId
-The unique identifier of a settings in Azure Active Directory
+Specifies the ID of a directory in Azure AD.
 
 ```yaml
 Type: String
@@ -51,9 +45,7 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -90,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -Top
-The maximum number of records to return.
+Specifies the maximum number of records to return.
 
 ```yaml
 Type: Int32
@@ -114,5 +106,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-
+[New-AzureADDirectorySetting](./New-AzureADDirectorySetting.md)
+[Remove-AzureADDirectorySetting](./Remove-AzureADDirectorySetting.md)
+[Set-AzureADDirectorySetting](./Set-AzureADDirectorySetting.md)
 

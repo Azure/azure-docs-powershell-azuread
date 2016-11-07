@@ -8,7 +8,7 @@ ms.assetid: D1D9AB94-8FEE-44D9-A4A3-F023905A5717
 # Get-AzureADServiceAppRoleAssignment
 
 ## SYNOPSIS
-Get service principal application role assignments.
+Gets a service principal application role assignment.
 
 ## SYNTAX
 
@@ -18,18 +18,12 @@ Get-AzureADServiceAppRoleAssignment -ObjectId <String> [-Top <Int32>] [-Informat
 ```
 
 ## DESCRIPTION
-
-## EXAMPLES
-
-### 1:
-```
-PS C:\>
-```
+The **Get-AzureADServiceAppRoleAssignment** cmdlet gets a role assignment for a service principal application in Azure Active Directory (AD).
 
 ## PARAMETERS
 
 ### -ObjectId
-The unique idenfier of an service principal in Azure Active Directory
+Specifies the ID of a service principal in Azure AD.
 
 ```yaml
 Type: String
@@ -59,9 +53,7 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -107,5 +99,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[New-AzureADServiceAppRoleAssignment](./New-AzureADServiceAppRoleAssignment.md)
 
+[Remove-AzureADServiceAppRoleAssignment](./Remove-AzureADServiceAppRoleAssignment.md)
 

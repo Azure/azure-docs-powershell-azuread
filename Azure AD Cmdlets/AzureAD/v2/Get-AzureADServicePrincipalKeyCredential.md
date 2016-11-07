@@ -8,7 +8,7 @@ ms.assetid: 9E9EE157-A923-4643-8DA5-E1A27EFB61E0
 # Get-AzureADServicePrincipalKeyCredential
 
 ## SYNOPSIS
-Get a service principal's key credentials
+Get key credentials for a service principal.
 
 ## SYNTAX
 
@@ -18,18 +18,12 @@ Get-AzureADServicePrincipalKeyCredential -ObjectId <String> [-InformationAction 
 ```
 
 ## DESCRIPTION
-
-## EXAMPLES
-
-### 1:
-```
-PS C:\>
-```
+The **Get-AzureADServicePrincipalKeyCredential** cmdlet gets the key credentials for a service principal in Azure Active Directory (AD).
 
 ## PARAMETERS
 
 ### -ObjectId
-The objectID of the application for which to get the password credential
+Specifies the ID of the application for which to get the password credential.
 
 ```yaml
 Type: String
@@ -44,9 +38,7 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -92,5 +84,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[New-AzureADServicePrincipalKeyCredential](./New-AzureADServicePrincipalKeyCredential.md)
 
+[Remove-AzureADServicePrincipalKeyCredential](./Remove-AzureADServicePrincipalKeyCredential.md)
 

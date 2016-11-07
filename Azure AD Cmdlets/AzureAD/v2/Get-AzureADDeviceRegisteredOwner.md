@@ -57,6 +57,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Add-AzureADDeviceRegisteredOwner](./Add-AzureADDeviceRegisteredOwner.md)  
+[Add-AzureADDeviceRegisteredOwner](./Add-AzureADDeviceRegisteredOwner.md)
 [Remove-AzureADDeviceRegisteredOwner](./Remove-AzureADDeviceRegisteredOwner.md)
 

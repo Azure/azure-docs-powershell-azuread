@@ -8,7 +8,7 @@ ms.assetid: 5655BF04-B245-4D0E-9AD9-AAAA1A6B048D
 # Get-AzureADPolicy
 
 ## SYNOPSIS
-
+Gets a policy.
 ## SYNTAX
 
 ### GetQuery (Default)
@@ -23,20 +23,12 @@ Get-AzureADPolicy -ObjectId <String> [-InformationAction <ActionPreference>] [-I
 ```
 
 ## DESCRIPTION
-
-## EXAMPLES
-
-### -------------------------- EXAMPLE 1 --------------------------
-```
-PS C:\>Get-AzureADPolicy
-```
+The **Get-AzureADPolicy** cmdlet gets a policy in Azure Active Directory (AD).
 
 ## PARAMETERS
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -73,7 +65,7 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-\[Optional\] The object Id of the Policy you would like to get
+\[Optional\] Specifies the ID of the policy object to get.
 
 ```yaml
 Type: String
@@ -97,5 +89,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[New-AzureADPolicy](./New-AzureADPolicy.md)
 
+[Remove-AzureADPolicy](./Remove-AzureADPolicy.md)
+
+[Set-AzureADPolicy](./Set-AzureADPolicy.md)
 

@@ -8,7 +8,7 @@ ms.assetid: BBFC4A72-1D35-4E9F-9B8A-F558E4D0E150
 # Get-AzureADDirectorySettingTemplate
 
 ## SYNOPSIS
-Retrieves directory setting template from Azure Active Directory.
+Gets a directory setting template.
 
 ## SYNTAX
 
@@ -18,18 +18,12 @@ Get-AzureADDirectorySettingTemplate [-ObjectId <String>] [-InformationAction <Ac
 ```
 
 ## DESCRIPTION
-
-## EXAMPLES
-
-### 1:
-```
-PS C:\>
-```
+The **Get-AzureADDirectorySettingTemplate** cmdlet gets a directory setting template from Azure Active Directory (AD).
 
 ## PARAMETERS
 
 ### -ObjectId
-The unique identifier of a setting template in Azure Active Directory
+Specifies the ID of a setting template in Azure AD.
 
 ```yaml
 Type: String
@@ -44,9 +38,7 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore

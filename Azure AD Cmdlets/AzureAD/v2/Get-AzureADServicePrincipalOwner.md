@@ -8,7 +8,7 @@ ms.assetid: 6E35C951-ABD7-4376-B749-122B541FC332
 # Get-AzureADServicePrincipalOwner
 
 ## SYNOPSIS
-Get owners of a service principal.
+Get the owner of a service principal.
 
 ## SYNTAX
 
@@ -18,18 +18,12 @@ Get-AzureADServicePrincipalOwner -ObjectId <String> [-Top <Int32>] [-Information
 ```
 
 ## DESCRIPTION
-
-## EXAMPLES
-
-### 1:
-```
-PS C:\>
-```
+The **Get-AzureADServicePrincipalOwner** cmdlet gets the owners of a service principal in Azure Active Directory (AD).
 
 ## PARAMETERS
 
 ### -ObjectId
-The unique idenfier of an service principal in Azure Active Directory
+Specifies the ID of a service principal in Azure AD.
 
 ```yaml
 Type: String
@@ -44,7 +38,7 @@ Accept wildcard characters: False
 ```
 
 ### -Top
-The maximum number of records to return.
+Specifies the maximum number of records to return.
 
 ```yaml
 Type: Int32
@@ -59,9 +53,7 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -107,5 +99,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Add-AzureADServicePrincipalOwner](./Add-AzureADServicePrincipalOwner.md)
+
+[Remove-AzureADServicePrincipalOwner](./Remove-AzureADServicePrincipalOwner.md)
+
 
 

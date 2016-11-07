@@ -8,7 +8,7 @@ ms.assetid: 7ED60BB8-1968-412C-ACDF-923DB66F3DE4
 # Get-AzureADOAuth2PermissionGrant
 
 ## SYNOPSIS
-Get a list of all oAuth2PermissionGrants granted by users within the directory.
+Gets **OAuth2PermissionGrant** entities.
 
 ## SYNTAX
 
@@ -18,18 +18,12 @@ Get-AzureADOAuth2PermissionGrant [-Top <Int32>] [-InformationAction <ActionPrefe
 ```
 
 ## DESCRIPTION
-
-## EXAMPLES
-
-### 1:
-```
-PS C:\>
-```
+The **Get-AzureADOAuth2PermissionGrant** cmdlet gets **OAuth2PermissionGrant** entities in Azure Active Directory (AD).
 
 ## PARAMETERS
 
 ### -Top
-The maximum number of records to return.
+Specifies the maximum number of records to return.
 
 ```yaml
 Type: Int32
@@ -44,9 +38,7 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -92,5 +84,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-
+[Remove-AzureADOAuth2PermissionGrant](./Remove-AzureADOAuth2PermissionGrant.md)
 

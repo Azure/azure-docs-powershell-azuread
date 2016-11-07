@@ -8,7 +8,7 @@ ms.assetid: DCED77C4-3206-40A8-A5CA-7A08B9EBA1CF
 # Get-AzureADServicePrincipalOAuth2PermissionGrant
 
 ## SYNOPSIS
-Get the list of the oAuth2PermissionGrants that a user granted this service principal.
+Gets an oAuth2PermissionGrant object.
 
 ## SYNTAX
 
@@ -18,18 +18,12 @@ Get-AzureADServicePrincipalOAuth2PermissionGrant -ObjectId <String> [-Top <Int32
 ```
 
 ## DESCRIPTION
-
-## EXAMPLES
-
-### 1:
-```
-PS C:\>
-```
+The **Get-AzureADServicePrincipalOAuth2PermissionGrant** cmdlet gets an **oAuth2PermissionGrant** object for a service principal in Azure Active Directory (AD).
 
 ## PARAMETERS
 
 ### -ObjectId
-The unique idenfier of an service principal in Azure Active Directory
+Specifies the ID of a service principal in Azure AD.
 
 ```yaml
 Type: String
@@ -44,7 +38,7 @@ Accept wildcard characters: False
 ```
 
 ### -Top
-The maximum number of records to return.
+Specifies the maximum number of records to return.
 
 ```yaml
 Type: Int32
@@ -59,9 +53,7 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore

@@ -8,7 +8,7 @@ ms.assetid: 04497A4E-E281-4FB5-98D5-102039F15692
 # Get-AzureADDomain
 
 ## SYNOPSIS
-Get an domain by objectId
+Gets a domain.
 
 ## SYNTAX
 
@@ -24,20 +24,11 @@ Get-AzureADDomain -Name <String> [-InformationAction <ActionPreference>] [-Infor
 ```
 
 ## DESCRIPTION
-
-## EXAMPLES
-
-### 1:
-```
-PS C:\>
-```
-
+The **Get-AzureADDomain** cmdlet gets a domain in Azure Active Directory (AD).
 ## PARAMETERS
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -74,6 +65,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
+Specifies the name of a domain.
 ```yaml
 Type: String
 Parameter Sets: GetById
@@ -96,5 +88,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Confirm-AzureADDomain](./Confirm-AzureADDomain.md)
+[New-AzureADDomain](./New-AzureADDomain.md)
+[Remove-AzureADDomain](./Remove-AzureADDomain.md)
+[Set-AzureADDomain](./Set-AzureADDomain.md)
 
 

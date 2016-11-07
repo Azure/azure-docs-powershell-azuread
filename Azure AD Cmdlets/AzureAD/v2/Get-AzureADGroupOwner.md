@@ -8,7 +8,7 @@ ms.assetid: 626B58EC-3CBB-452B-BE80-0A70B01E4555
 # Get-AzureADGroupOwner
 
 ## SYNOPSIS
-Get owners of a group.
+Gets an owner of a group.
 
 ## SYNTAX
 
@@ -18,24 +18,22 @@ Get-AzureADGroupOwner -ObjectId <String> [-Top <Int32>] [-InformationAction <Act
 ```
 
 ## DESCRIPTION
-
+The **Get-AzureADGroupOwner** cmdlet gets an owner of a group in Azure Active Directory (AD).
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
-```
-PS C:\>Get-AzureADGroupOwner -ObjectId 62438306-7c37-4638-a72d-0ee8d9217680
-```
-
-Output:
+### Example 1: Get a group owner by ID
+```PowerShell
+PS C:\>Get-AzureADGroupOwner -ObjectId "62438306-7c37-4638-a72d-0ee8d9217680"
 
 ObjectId                             ObjectType
 --------                             ----------
 0a1068c0-dbb6-4537-9db3-b48f3e31dd76 User
-
+```
+This command gets the specified group owner.
 ## PARAMETERS
 
 ### -ObjectId
-The unique identifier of a group in Azure Active Directory (ObjectId)
+Specifies the ID of a group in Azure AD.
 
 ```yaml
 Type: String
@@ -50,7 +48,7 @@ Accept wildcard characters: False
 ```
 
 ### -Top
-The maximum number of records to return.
+Specifies the maximum number of records to return.
 
 ```yaml
 Type: Int32
@@ -65,9 +63,7 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -113,5 +109,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Add-AzureADGroupOwner](./Add-AzureADGroupOwner.md)
 
+[Remove-AzureADGroupOwner](./Remove-AzureADGroupOwner.md)
 
