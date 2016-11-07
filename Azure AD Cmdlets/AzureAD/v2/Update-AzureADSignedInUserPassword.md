@@ -18,18 +18,18 @@ Update-AzureADSignedInUserPassword -CurrentPassword <SecureString> -NewPassword 
 ```
 
 ## DESCRIPTION
-
+The **Update-AzureADSignedInUserPassword** cmdlet updates the password for the current user in Azure Active Directory (AD).
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### Example 1: Update a password
 ```
 PS C:\>Update-AzureADSignedInUserPassword -CurrentPassword $CurrentPassword -NewPassword $NewPassword
 ```
-
+This command updates the password for the current user.
 ## PARAMETERS
 
 ### -CurrentPassword
-The current password of the signed in user
+Specifies the current password of the current user.
 
 ```yaml
 Type: SecureString
@@ -44,7 +44,7 @@ Accept wildcard characters: False
 ```
 
 ### -NewPassword
-The new password of the signed in user
+Specifies the new password for the current user.
 
 ```yaml
 Type: SecureString
@@ -59,9 +59,7 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
