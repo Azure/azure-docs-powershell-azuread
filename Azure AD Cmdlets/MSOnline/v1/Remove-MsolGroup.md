@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
-online version: 
+online version:
 schema: 2.0.0
 ms.assetid: E748C8B0-B3F1-4BF5-8296-C2C2E8C54FB0
 ---
@@ -21,9 +21,9 @@ The Remove-MsolGroup cmdlet is used to delete a group from Microsoft Azure Activ
 
 ## EXAMPLES
 
-### Example 1: 
+### Example 1:
 ```
-$groupId = Get-MsolGroup -searchString "MyGroup"
+PS C:\> $groupId = Get-MsolGroup -searchString "MyGroup"
           Remove-MsolGroup -objectid $groupId
 ```
 
@@ -41,7 +41,7 @@ Used to bypass onscreen confirmation.
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -56,7 +56,7 @@ The unique ID of the group to remove.
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -73,7 +73,7 @@ This parameter is only applicable to partner users.
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -92,5 +92,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-
-

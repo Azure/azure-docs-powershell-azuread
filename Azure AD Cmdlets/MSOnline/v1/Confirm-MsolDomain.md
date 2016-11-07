@@ -36,7 +36,7 @@ There may be a delay of 15 to 60 minutes between when the DNS update is made and
 ### Example 1: Verify a domain
 
 ```
-PS C:\> Confirm-MsolDomain -DomainName "contoso.com"
+PS C:\> PS C:\> Confirm-MsolDomain -DomainName "contoso.com"
 ```
 
 This command attempts to verify the domain contoso.com.

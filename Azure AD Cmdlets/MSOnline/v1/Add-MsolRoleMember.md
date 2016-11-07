@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
-online version: 
+online version:
 schema: 2.0.0
 ms.assetid: A14A0302-406A-4417-AF11-A6CF19B22101
 ---
@@ -25,14 +25,14 @@ Add-MsolRoleMember [-RoleMemberType <RoleMemberType>] [-RoleMemberObjectId <Guid
 ```
 
 ## DESCRIPTION
-This cmdlet is used to add a member to a role. 
+This cmdlet is used to add a member to a role.
 Currently, only Users and ServicePrincipals can be added to a role (adding a security group is not supported).
 
 ## EXAMPLES
 
-### Example 1: 
+### Example 1:
 ```
-Add-MsolRoleMember -RoleName "Company Administrator" -RoleMemberEmailAddress "user@contoso.com"
+PS C:\> Add-MsolRoleMember -RoleName "Company Administrator" -RoleMemberEmailAddress "user@contoso.com"
 
           None
 ```
@@ -55,7 +55,7 @@ Either RoleMemberEmailAddress or RoleMemberObjectId should be provided.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -72,7 +72,7 @@ Either RoleMemberEmailAddress or RoleMemberObjectId should be provided.
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -82,13 +82,13 @@ Accept wildcard characters: False
 ```
 
 ### -RoleMemberType
-The type of role of the member (User, Group or ServicePrincipal) to add. 
+The type of role of the member (User, Group or ServicePrincipal) to add.
 Currently only Users and ServicePrincipals can be added to Roles.
 
 ```yaml
 Type: RoleMemberType
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -105,7 +105,7 @@ Either RoleName or RoleObjectId should be provided.
 ```yaml
 Type: String
 Parameter Sets: AddRoleMembersByRoleName__0
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -122,7 +122,7 @@ Either RoleName or RoleObjectId should be provided.
 ```yaml
 Type: Guid
 Parameter Sets: AddRoleMembers__0
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -139,7 +139,7 @@ This parameter is only applicable to partner users.
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -158,5 +158,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-
-

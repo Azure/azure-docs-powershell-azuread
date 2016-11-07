@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
-online version: 
+online version:
 schema: 2.0.0
 ms.assetid: BFC8C1EC-B14D-45C6-8F11-E128E22C13A8
 ---
@@ -37,9 +37,9 @@ This cmdlet can be used to return a single group (if ObjectId is passed in), or 
 
 ## EXAMPLES
 
-### Example 1: 
+### Example 1:
 ```
-Get-MsolGroup -ObjectId <guid>
+PS C:\> Get-MsolGroup -ObjectId <guid>
 
           None
 ```
@@ -50,9 +50,9 @@ Description
 
 This command returns the group object with the corresponding ID.
 
-### Example 2: 
+### Example 2:
 ```
-Get-MsolGroup
+PS C:\> Get-MsolGroup
 
           None
 ```
@@ -63,9 +63,9 @@ Description
 
 This command returns the entire set of groups for the tenant (up to 250).
 
-### Example 3: 
+### Example 3:
 ```
-Get-MsolGroup -isAgentRole -UserPrincipalName user@contoso.com
+PS C:\> Get-MsolGroup -isAgentRole -UserPrincipalName user@contoso.com
 
           None
 ```
@@ -74,19 +74,19 @@ Description
 
 -----------
 
-This command returns the agent groups that a user is a member of. 
+This command returns the agent groups that a user is a member of.
 This only applies for companies that have partner privileges.
 
 ## PARAMETERS
 
 ### -All
-If present then all results will be returned. 
+If present then all results will be returned.
 Cannot be used with MaxResults parameter.
 
 ```yaml
 Type: SwitchParameter
 Parameter Sets: All__0
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -102,7 +102,7 @@ Valid values are Security, MailEnabledSecurity, and DistributionList.
 ```yaml
 Type: GroupType
 Parameter Sets: ListGroups__0, All__0
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -117,7 +117,7 @@ The filter for only groups with validation errors.
 ```yaml
 Type: SwitchParameter
 Parameter Sets: ListGroups__0, All__0
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -133,7 +133,7 @@ Used by partners only.
 ```yaml
 Type: SwitchParameter
 Parameter Sets: ListGroups__0, All__0
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -149,7 +149,7 @@ If not specified, 250 results will be returned.
 ```yaml
 Type: Int32
 Parameter Sets: ListGroups__0
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -164,7 +164,7 @@ The unique ID of the group to retrieve.
 ```yaml
 Type: Guid
 Parameter Sets: GetGroup__0
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -180,7 +180,7 @@ Only groups with a display name or email address starting with this string will 
 ```yaml
 Type: String
 Parameter Sets: ListGroups__0, All__0
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -197,7 +197,7 @@ This parameter is only applicable to partner users.
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -214,7 +214,7 @@ This parameter must be used along with IsAgentRole.
 ```yaml
 Type: Guid
 Parameter Sets: ListGroups__0, All__0
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -231,7 +231,7 @@ This must be used along with IsAgentRole.
 ```yaml
 Type: String
 Parameter Sets: ListGroups__0, All__0
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -246,7 +246,7 @@ Accept wildcard characters: False
 ```yaml
 Type: Boolean
 Parameter Sets: ListGroups__0, All__0
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -279,7 +279,7 @@ This is not returned for security groups.
             GroupType: The group's type.
 Types can be SecurityGroup, DistributionList or MailEnabledSecurityGroup.
 
-            IsSystem: Whether or not this group is a system group (created by Microsoft Azure Active Directory). 
+            IsSystem: Whether or not this group is a system group (created by Microsoft Azure Active Directory).
 These groups cannot be updated or removed.
 
             LastDirSyncTime: The date and time that the group was last synched.
@@ -295,5 +295,3 @@ These groups cannot be updated or removed.
 ## NOTES
 
 ## RELATED LINKS
-
-

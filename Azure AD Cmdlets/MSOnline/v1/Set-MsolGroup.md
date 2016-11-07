@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
-online version: 
+online version:
 schema: 2.0.0
 ms.assetid: 1D23EC9E-30E3-4B23-82E8-6B5C91F523A4
 ---
@@ -22,10 +22,10 @@ The Set-MsolGroup cmdlet is used to update the properties of a security group.
 
 ## EXAMPLES
 
-### Example 1: 
+### Example 1:
 ```
-$groupid = Get-MsolGroup -searchstring MyGroup
-          Set-MsolGroup -objectid $groupId -Description "My Group"
+PS C:\> $groupid = Get-MsolGroup -searchstring MyGroup
+PS C:\> Set-MsolGroup -objectid $groupId -Description "My Group"
 ```
 
 Description
@@ -42,7 +42,7 @@ The description of the group.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -57,7 +57,7 @@ The display name of the group.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -72,7 +72,7 @@ The owner of the group.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -87,7 +87,7 @@ The ObjectId of the group to update.
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -104,7 +104,7 @@ This parameter is only applicable to partner users.
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -123,5 +123,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-
-

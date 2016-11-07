@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
-online version: 
+online version:
 schema: 2.0.0
 ms.assetid: 93C48D95-DB26-4F76-8078-CF845E9BCC8D
 ---
@@ -35,9 +35,9 @@ A single contact will be retrieved if the ObjectId is used.
 
 ## EXAMPLES
 
-### Example 1: 
+### Example 1:
 ```
-Get-MsolContact -ObjectId <id>
+PS C:\> Get-MsolContact -ObjectId <id>
 
           Returns the contact object.
 ```
@@ -48,9 +48,9 @@ Description
 
 This command retrieves a contact.
 
-### Example 2: 
+### Example 2:
 ```
-Get-MsolContact -SearchString "Melissa"
+PS C:\> Get-MsolContact -SearchString "Melissa"
 
           Returns a list of contacts.
 ```
@@ -64,13 +64,13 @@ This command retrieves a list of contacts with a display name or email address s
 ## PARAMETERS
 
 ### -All
-If present then all results will be returned. 
+If present then all results will be returned.
 Cannot be used with MaxResults parameter.
 
 ```yaml
 Type: SwitchParameter
 Parameter Sets: All__0
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -85,7 +85,7 @@ The filter for only contacts with validation errors.
 ```yaml
 Type: Boolean
 Parameter Sets: ListContacts__0, All__0
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -101,7 +101,7 @@ If not specified, 500 results will be returned.
 ```yaml
 Type: Int32
 Parameter Sets: ListContacts__0
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -116,7 +116,7 @@ The unique ID of the contact to retrieve.
 ```yaml
 Type: Guid
 Parameter Sets: GetContact__0
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -132,7 +132,7 @@ Only contacts with a display name or email address starting with this string wil
 ```yaml
 Type: String
 Parameter Sets: ListContacts__0, All__0
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -149,7 +149,7 @@ This parameter is only applicable to partner users.
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -209,5 +209,3 @@ This cmdlet returns contact objects, which include the following information:
 ## NOTES
 
 ## RELATED LINKS
-
-

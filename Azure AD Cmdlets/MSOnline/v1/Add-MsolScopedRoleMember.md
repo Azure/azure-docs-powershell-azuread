@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
-online version: 
+online version:
 schema: 2.0.0
 ms.assetid: 23EB4FFD-3A68-47C5-B6A6-C70482B173AF
 ---
@@ -28,10 +28,10 @@ The Add-MsolScopedRoleMember cmdlet is used to add a member to an administrative
 
 
 ```
-$westcoastau = Get-MsolAdministrativeUnit -searchstring "West Coast"
-          $uaadmin = Get-MsolRole -RoleName "User Account Administrator"
-          $admin1 = Get-MsolUser -UserPrincipalName user@contoso.com
-          Add-MsolScopedRoleMember -RoleObjectId $uaadmin.ObjectId -AdministrativeUnitObjectId $westcoastau.ObjectId -RoleMemberObjectId $admin1.ObjectId
+PS C:\> $westcoastau = Get-MsolAdministrativeUnit -searchstring "West Coast"
+PS C:\> $uaadmin = Get-MsolRole -RoleName "User Account Administrator"
+PS C:\> $admin1 = Get-MsolUser -UserPrincipalName user@contoso.com
+PS C:\> Add-MsolScopedRoleMember -RoleObjectId $uaadmin.ObjectId -AdministrativeUnitObjectId $westcoastau.ObjectId -RoleMemberObjectId $admin1.ObjectId
 ```
 
 Description
@@ -49,7 +49,7 @@ Only users can be added to a role (adding a security group is not supported).
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -64,7 +64,7 @@ The object ID of the administrative unit.
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -81,7 +81,7 @@ Only users can be added to a role (adding a security group is not supported).
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -97,7 +97,7 @@ Only users can be added to a role (adding a security group is not supported).
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -114,7 +114,7 @@ This parameter is only applicable to partner users.
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -133,5 +133,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-
-

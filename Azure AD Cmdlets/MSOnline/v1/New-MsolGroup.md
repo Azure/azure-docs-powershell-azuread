@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
-online version: 
+online version:
 schema: 2.0.0
 ms.assetid: 046485AB-D8CC-4DBB-9129-B987A91188CF
 ---
@@ -22,9 +22,9 @@ The New-MsolGroup cmdlet is used to add a new security group to Microsoft Azure 
 
 ## EXAMPLES
 
-### Example 1: 
+### Example 1:
 ```
-New-MsolGroup -DisplayName "MyGroup" -Description "My test group"
+PS C:\> New-MsolGroup -DisplayName "MyGroup" -Description "My test group"
 
           Returns a group object.
 ```
@@ -43,7 +43,7 @@ The description of the group.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -58,7 +58,7 @@ The display name of the group.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -73,7 +73,7 @@ The owner of the group.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -90,7 +90,7 @@ This parameter is only applicable to partner users.
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -112,5 +112,3 @@ Will return the new group that was created.
 ## NOTES
 
 ## RELATED LINKS
-
-

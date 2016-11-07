@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
-online version: 
+online version:
 schema: 2.0.0
 ms.assetid: 843652E4-266F-4F05-A1C5-8E8EBC86241D
 ---
@@ -21,9 +21,9 @@ The Get-MsolAccountSku will return all the SKUs that the company owns.
 
 ## EXAMPLES
 
-### Example 1: 
+### Example 1:
 ```
-Get-MsolAccountSku
+PS C:\> Get-MsolAccountSku
 
           Returns a list of SKUs.
 ```
@@ -44,7 +44,7 @@ This parameter is only applicable to partner users.
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -94,5 +94,3 @@ Only SKUs with target class=user are assignable.
 ## NOTES
 
 ## RELATED LINKS
-
-

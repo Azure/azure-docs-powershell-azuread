@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
-online version: 
+online version:
 schema: 2.0.0
 ms.assetid: A5A10B0B-7C64-4778-8B42-EB073E2ADA92
 ---
@@ -29,16 +29,16 @@ Connect-MsolService [-AdGraphAccessToken <String>] [-MsGraphAccessToken <String>
 ```
 
 ## DESCRIPTION
-The Connect-MsolService cmdlet will attempt to initiate a connection to Microsoft Azure Active Directory. 
+The Connect-MsolService cmdlet will attempt to initiate a connection to Microsoft Azure Active Directory.
 The caller must provide their credential (a PSCredential object), or specify the CurrentCredentials switch to use the credentials of the currently logged in user.
 
         This cmdlet may return a warning or error if the version of the module being used is out of date.
 
 ## EXAMPLES
 
-### Example 1: 
+### Example 1:
 ```
-Connect-MsolService
+PS C:\> Connect-MsolService
 
           None
 ```
@@ -47,12 +47,12 @@ Description
 
 -----------
 
-This command attempts to initiate a connection with Microsoft Azure Active Directory. 
+This command attempts to initiate a connection with Microsoft Azure Active Directory.
 Since no credential is provided, the user will be prompted to enter their username and password.
 
-### Example 2: 
+### Example 2:
 ```
-Connect-MsolService -Credential $cred -AzureEnvironment AzureChinaCloud
+PS C:\> Connect-MsolService -Credential $cred -AzureEnvironment AzureChinaCloud
 
           None
 ```
@@ -61,7 +61,7 @@ Description
 
 -----------
 
-This command attempts to initiate a connection to AzureChinaCloud with Microsoft Azure Active Directory using the credential provided. 
+This command attempts to initiate a connection to AzureChinaCloud with Microsoft Azure Active Directory using the credential provided.
 The credential must be of the type PSCredential (typically retrieved through the Get-Credential cmdlet).
 
 ## PARAMETERS
@@ -72,7 +72,7 @@ The credential to use for connecting to Microsoft Azure Active Directory.
 ```yaml
 Type: PSCredential
 Parameter Sets: Credential
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -102,7 +102,7 @@ The MS Graph access token to use for connecting to Microsoft Azure Active Direct
 ```yaml
 Type: String
 Parameter Sets: AccessToken
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -118,7 +118,7 @@ Possible values are AzureCloud, AzureChinaCloud, AzureGermanyCloud and USGovernm
 ```yaml
 Type: AzureEnvironment
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -137,5 +137,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-
-

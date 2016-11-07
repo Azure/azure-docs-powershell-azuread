@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
-online version: 
+online version:
 schema: 2.0.0
 ms.assetid: BC3EA621-0115-4312-B856-02AC82DB9F4E
 ---
@@ -21,9 +21,9 @@ The Get-MsolCompanyInformation cmdlet will retrieve company-level information.
 
 ## EXAMPLES
 
-### Example 1: 
+### Example 1:
 ```
-Get-MsolCompanyInformation
+PS C:\> Get-MsolCompanyInformation
 
           Returns company level information.
 ```
@@ -44,7 +44,7 @@ This parameter is only applicable to partner users.
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -117,5 +117,3 @@ This includes any directory synchronization notifications.
 ## NOTES
 
 ## RELATED LINKS
-
-

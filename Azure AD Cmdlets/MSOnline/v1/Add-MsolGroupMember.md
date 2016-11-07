@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
-online version: 
+online version:
 schema: 2.0.0
 ms.assetid: CCADA679-CABC-4B55-A717-DFD43E7A9191
 ---
@@ -23,9 +23,9 @@ The new members can be either users or other security groups.
 
 ## EXAMPLES
 
-### Example 1: 
+### Example 1:
 ```
-Add-MsolGroupMember -groupObjectid <id> -groupmemberType "User" -groupMemberObjectId <id>
+PS C:\> Add-MsolGroupMember -groupObjectid <id> -groupmemberType "User" -groupMemberObjectId <id>
 
           None
 ```
@@ -44,7 +44,7 @@ The object ID of the member (User or Group) to add to the group.
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -59,7 +59,7 @@ The type of member (User or Group) to add to the group.
 ```yaml
 Type: GroupMemberType
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -74,7 +74,7 @@ The ID of the group to add members to.
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -91,7 +91,7 @@ This parameter is only applicable to partner users.
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -110,5 +110,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-
-
