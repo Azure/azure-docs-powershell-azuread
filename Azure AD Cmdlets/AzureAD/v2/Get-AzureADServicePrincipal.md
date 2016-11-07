@@ -8,7 +8,7 @@ ms.assetid: 8EAAE8EA-44D5-4B28-A940-28085547083A
 # Get-AzureADServicePrincipal
 
 ## SYNOPSIS
-Get a service principal by objectId
+Gets a service principal.
 
 ## SYNTAX
 
@@ -31,18 +31,12 @@ Get-AzureADServicePrincipal -ObjectId <String> [-InformationAction <ActionPrefer
 ```
 
 ## DESCRIPTION
-
-## EXAMPLES
-
-### 1:
-```
-PS C:\>
-```
+The **Get-AzureADServicePrincipal** cmdlet gets a service principal in Azure Active Directory (AD).
 
 ## PARAMETERS
 
 ### -ObjectId
-The unique idenfier of an service principal in Azure Active Directory
+Specifies the ID of a service principal in Azure AD.
 
 ```yaml
 Type: String
@@ -57,9 +51,7 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -96,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -Top
-The maximum number of records to return.
+Specifies the maximum number of records to return.
 
 ```yaml
 Type: Int32
@@ -111,8 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -Filter
-The oData v3.0 filter statement. 
-Controls which objects are returned.
+Specifies an oData v3.0 filter statement. This parameter controls which objects are returned.
 
 ```yaml
 Type: String
@@ -127,6 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -SearchString
+Specifies a search string.
 ```yaml
 Type: String
 Parameter Sets: GetVague
@@ -149,5 +141,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Remove-AzureADServicePrincipal](./Remove-AzureADServicePrincipal.md)
 
+[Set-AzureADServicePrincipal](./Set-AzureADServicePrincipal.md)
 
