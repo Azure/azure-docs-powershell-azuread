@@ -99,6 +99,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[New-AzureADGroupAppRoleAssignment](./New-AzureADGroupAppRoleAssignment.md)  
+[New-AzureADGroupAppRoleAssignment](./New-AzureADGroupAppRoleAssignment.md)
 [Remove-AzureADGroupAppRoleAssignment](./Remove-AzureADGroupAppRoleAssignment.md)
 

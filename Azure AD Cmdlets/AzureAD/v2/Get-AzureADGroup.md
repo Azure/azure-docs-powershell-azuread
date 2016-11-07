@@ -178,8 +178,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[New-AzureADGroup](./New-AzureADGroup.md)  
-[Remove-AzureADGroup](./Remove-AzureADGroup.md)  
+[New-AzureADGroup](./New-AzureADGroup.md)
+[Remove-AzureADGroup](./Remove-AzureADGroup.md)
 [Set-AzureADGroup](./Set-AzureADGroup.md)
 
 

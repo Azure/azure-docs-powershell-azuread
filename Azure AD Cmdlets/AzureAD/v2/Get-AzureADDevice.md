@@ -169,8 +169,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[New-AzureADDevice](./New-AzureADDevice.md)  
-[Remove-AzureADDevice](./Remove-AzureADDevice.md)  
+[New-AzureADDevice](./New-AzureADDevice.md)
+[Remove-AzureADDevice](./Remove-AzureADDevice.md)
 [Set-AzureADDevice](./Set-AzureADDevice.md)
 
 

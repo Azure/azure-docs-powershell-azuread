@@ -124,5 +124,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Remove-AzureADContact](./Remove-AzureADContact.md)  
+[Remove-AzureADContact](./Remove-AzureADContact.md)
 [Set-AzureADContact](./Set-AzureADContact.md)

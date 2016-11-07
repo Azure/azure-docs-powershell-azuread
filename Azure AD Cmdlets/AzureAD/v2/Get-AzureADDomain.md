@@ -88,9 +88,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Confirm-AzureADDomain](./Confirm-AzureADDomain.md)  
-[New-AzureADDomain](./New-AzureADDomain.md)  
-[Remove-AzureADDomain](./Remove-AzureADDomain.md)  
+[Confirm-AzureADDomain](./Confirm-AzureADDomain.md)
+[New-AzureADDomain](./New-AzureADDomain.md)
+[Remove-AzureADDomain](./Remove-AzureADDomain.md)
 [Set-AzureADDomain](./Set-AzureADDomain.md)
 
 

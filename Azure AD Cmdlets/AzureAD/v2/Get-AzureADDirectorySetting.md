@@ -106,7 +106,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[New-AzureADDirectorySetting](./New-AzureADDirectorySetting.md)  
-[Remove-AzureADDirectorySetting](./Remove-AzureADDirectorySetting.md)  
+[New-AzureADDirectorySetting](./New-AzureADDirectorySetting.md)
+[Remove-AzureADDirectorySetting](./Remove-AzureADDirectorySetting.md)
 [Set-AzureADDirectorySetting](./Set-AzureADDirectorySetting.md)
 

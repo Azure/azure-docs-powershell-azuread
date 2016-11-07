@@ -98,6 +98,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Add-AzureADDirectoryRoleMember](./Add-AzureADDirectoryRoleMember.md)  
+[Add-AzureADDirectoryRoleMember](./Add-AzureADDirectoryRoleMember.md)
 [Remove-AzureADDirectoryRoleMember](./Remove-AzureADDirectoryRoleMember.md)
 
