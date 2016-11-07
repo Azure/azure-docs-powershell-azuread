@@ -22,7 +22,7 @@ The **Update-AzureADSignedInUserPassword** cmdlet updates the password for the c
 ## EXAMPLES
 
 ### Example 1: Update a password
-```
+```PowerShell
 PS C:\>Update-AzureADSignedInUserPassword -CurrentPassword $CurrentPassword -NewPassword $NewPassword
 ```
 This command updates the password for the current user.
