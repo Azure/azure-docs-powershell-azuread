@@ -8,7 +8,7 @@ ms.assetid: C4E796AF-54F5-4DC9-BFDD-55B6C8EBA4FA
 # Get-AzureADServiceConfigurationRecord
 
 ## SYNOPSIS
-Get serviceConfigurationRecords
+Gets a service configuration record.
 
 ## SYNTAX
 
@@ -18,20 +18,12 @@ Get-AzureADServiceConfigurationRecord -Name <String> [-InformationAction <Action
 ```
 
 ## DESCRIPTION
-
-## EXAMPLES
-
-### 1:
-```
-PS C:\>
-```
+The **Get-AzureADServiceConfigurationRecord** cmdlet gets a service configuration record in Azure Active Directory (AD).
 
 ## PARAMETERS
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -68,6 +60,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
+Specifies the name of the service configuration record to get.
 ```yaml
 Type: String
 Parameter Sets: (All)
