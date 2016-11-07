@@ -17,18 +17,18 @@ Get-AzureADServicePrincipalPolicy -ObjectId <String> [-InformationAction <Action
 ```
 
 ## DESCRIPTION
-
+The **Get-AzureADServicePrincipalPolicy** cmdlet gets the policy of a service principal in Azure Active Directory (AD).
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### Example 1: Get a policy
+```PowerShell
+PS C:\>Get-AzureADServicePrincipalPolicy -ObjectId "<object id of service principal>"
 ```
-PS C:\>Get-AzureADServicePrincipalPolicy -ObjectId <object id of service principal>
-```
-
+This command get the policy for the specified service principal.
 ## PARAMETERS
 
 ### -ObjectId
-The object Id of the Service principal
+Specifies the ID of a service principal.
 
 ```yaml
 Type: String
@@ -43,9 +43,7 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -91,5 +89,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Add-AzureADServicePrincipalPolicy](./Add-AzureADServicePrincipalPolicy.md)
 
+[Remove-AzureADServicePrincipalPolicy](./Remove-AzureADServicePrincipalPolicy.md)
 
