@@ -8,7 +8,7 @@ ms.assetid: 8959FA62-5E06-4C57-90CC-985F7467BC59
 # Update-AzureADSignedInUserPassword
 
 ## SYNOPSIS
-Updates the password for the current user.
+Updates the password for the signed-in user.
 
 ## SYNTAX
 
@@ -18,18 +18,18 @@ Update-AzureADSignedInUserPassword -CurrentPassword <SecureString> -NewPassword 
 ```
 
 ## DESCRIPTION
-The **Update-AzureADSignedInUserPassword** cmdlet updates the password for the current user in Azure Active Directory (AD).
+The **Update-AzureADSignedInUserPassword** cmdlet updates the password for the signed-in user in Azure Active Directory (AD).
 ## EXAMPLES
 
 ### Example 1: Update a password
 ```PowerShell
 PS C:\>Update-AzureADSignedInUserPassword -CurrentPassword $CurrentPassword -NewPassword $NewPassword
 ```
-This command updates the password for the current user.
+This command updates the password for the signed-in user.
 ## PARAMETERS
 
 ### -CurrentPassword
-Specifies the current password of the current user.
+Specifies the current password of the signed-in user.
 
 ```yaml
 Type: SecureString
@@ -44,7 +44,7 @@ Accept wildcard characters: False
 ```
 
 ### -NewPassword
-Specifies the new password for the current user.
+Specifies the new password for the signed-in user.
 
 ```yaml
 Type: SecureString
