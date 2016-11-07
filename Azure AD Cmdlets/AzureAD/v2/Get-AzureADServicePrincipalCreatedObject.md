@@ -8,7 +8,7 @@ ms.assetid: 677D76C2-6088-4374-8C6C-3BAC7B625BCE
 # Get-AzureADServicePrincipalCreatedObject
 
 ## SYNOPSIS
-Get objects created by the service principal.
+Get objects created by a service principal.
 
 ## SYNTAX
 
@@ -18,18 +18,12 @@ Get-AzureADServicePrincipalCreatedObject -ObjectId <String> [-Top <Int32>]
 ```
 
 ## DESCRIPTION
-
-## EXAMPLES
-
-### 1:
-```
-PS C:\>
-```
+The **Get-AzureADServicePrincipalCreatedObject** cmdlet gets an object created by a service principal in Azure Active Directory (AD).
 
 ## PARAMETERS
 
 ### -ObjectId
-The unique idenfier of an service principal in Azure Active Directory
+Specifies the ID of a service principal in Azure AD.
 
 ```yaml
 Type: String
@@ -44,7 +38,7 @@ Accept wildcard characters: False
 ```
 
 ### -Top
-The maximum number of records to return.
+Specifies the maximum number of records to return.
 
 ```yaml
 Type: Int32
@@ -59,9 +53,7 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
