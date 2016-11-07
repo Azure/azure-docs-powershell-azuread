@@ -8,7 +8,7 @@ ms.assetid: 142C8CA5-58AC-4D47-98D5-B3FB7E6A37C7
 # Get-AzureADScopedRoleMembership
 
 ## SYNOPSIS
-Retrieves a specific ScopedRoleMemberships from AdministrativeUnit
+Gets a scoped role membership from an administrative unit.
 
 ## SYNTAX
 
@@ -17,19 +17,13 @@ Get-AzureADScopedRoleMembership -ObjectId <String> [-ScopedRoleMembershipId <Str
 ```
 
 ## DESCRIPTION
+The **Get-AzureADScopedRoleMembership** cmdlet gets a scoped role membership from an administrative unit in Azure Active Directory (AD).
 
-## EXAMPLES
-
-### 1:
-```
-PS C:\>
-```
 
 ## PARAMETERS
 
 ### -ObjectId
-@{Text=}
-
+Specifies the ID of an object.
 ```yaml
 Type: String
 Parameter Sets: (All)
@@ -43,7 +37,7 @@ Accept wildcard characters: False
 ```
 
 ### -ScopedRoleMembershipId
-@{Text=}
+Specifies the ID of a scoped role membership.
 
 ```yaml
 Type: String
@@ -67,5 +61,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Add-AzureADScopedRoleMembership](./Add-AzureADScopedRoleMembership.md)
 
+[Remove-AzureADScopedRoleMembership](./Remove-AzureADScopedRoleMembership.md)
 
