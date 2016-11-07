@@ -8,7 +8,7 @@ ms.assetid: F1CEBDF4-5AF8-4AFC-AA1F-D36CEC381D04
 # Get-AzureADObjectSetting
 
 ## SYNOPSIS
-Retrieves a object setting from Azure Active Directory.
+Gets an object setting.
 
 ## SYNTAX
 
@@ -25,18 +25,12 @@ Get-AzureADObjectSetting -TargetType <String> -TargetObjectId <String> -ObjectId
 ```
 
 ## DESCRIPTION
-
-## EXAMPLES
-
-### 1:
-```
-PS C:\>
-```
+The **Get-AzureADObjectSetting** cmdlet gets an object from Azure Active Directory (AD).
 
 ## PARAMETERS
 
 ### -TargetType
-object type name of directory object that will be assigned settings
+Specifies the target type. 
 
 ```yaml
 Type: String
@@ -51,7 +45,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetObjectId
-object id of directory object that will be assigned settings
+Specifies the ID of the target object.
 
 ```yaml
 Type: String
@@ -66,7 +60,7 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-The unique identifier of a settings in Azure Active Directory
+Specifies the ID of a settings object. 
 
 ```yaml
 Type: String
@@ -120,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -Top
-The maximum number of records to return.
+Specifies the maximum number of records to return.
 
 ```yaml
 Type: Int32
@@ -144,5 +138,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[New-AzureADObjectSetting](./New-AzureADObjectSetting.md)
 
+[Remove-AzureADObjectSetting](./Remove-AzureADObjectSetting.md)
+
+[Set-AzureADObjectSetting](./Set-AzureADObjectSetting.md)
 
