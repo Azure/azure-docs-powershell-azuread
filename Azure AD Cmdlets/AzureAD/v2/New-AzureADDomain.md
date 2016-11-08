@@ -8,7 +8,7 @@ ms.assetid: 29A39191-9E64-4983-8C89-B9A6C574E621
 # New-AzureADDomain
 
 ## SYNOPSIS
-Create a new domain in Azure Active Directory
+Creates a domain.
 
 ## SYNTAX
 
@@ -19,13 +19,7 @@ New-AzureADDomain [-InformationAction <ActionPreference>] [-InformationVariable 
 ```
 
 ## DESCRIPTION
-
-## EXAMPLES
-
-### 1:
-```
-PS C:\>
-```
+The **New-AzureADDomain** cmdlet creates a domain in Azure Active Directory (AD).
 
 ## PARAMETERS
 
@@ -69,7 +63,6 @@ Accept wildcard characters: False
 ```
 
 ### -IsDefault
-@{Text=}
 
 ```yaml
 Type: Boolean
@@ -84,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-The name of the new domain
+Specifies the name of the domain.
 
 ```yaml
 Type: String
@@ -99,7 +92,6 @@ Accept wildcard characters: False
 ```
 
 ### -SupportedServices
-@{Text=}
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
@@ -123,5 +115,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Confirm-AzureADDomain](./Confirm-AzureADDomain.md)
+
+[Get-AzureADDomain](./Get-AzureADDomain.md)
+
+[Remove-AzureADDomain](./Remove-AzureADDomain.md)
+
+[Set-AzureADDomain](./Set-AzureADDomain.md)
 
 

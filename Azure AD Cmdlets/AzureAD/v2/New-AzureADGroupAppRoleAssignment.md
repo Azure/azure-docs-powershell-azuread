@@ -18,18 +18,12 @@ New-AzureADGroupAppRoleAssignment -ObjectId <String> [-InformationAction <Action
 ```
 
 ## DESCRIPTION
-
-## EXAMPLES
-
-### 1:
-```
-PS C:\>
-```
+The **New-AzureADGroupAppRoleAssignment** cmdlet assigns a group of users to an application role in Azure Active Directory (AD).
 
 ## PARAMETERS
 
 ### -ObjectId
-The unique identifier of a group in Azure Active Directory (ObjectId)
+Specifies the ID of a user (as a UPN or ObjectId) in Azure AD.
 
 ```yaml
 Type: String
@@ -83,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-@{Text=}
+Specifies the ID.
 
 ```yaml
 Type: String
@@ -98,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrincipalId
-@{Text=}
+Specifies the principal ID.
 
 ```yaml
 Type: String
@@ -113,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-@{Text=}
+Specifies the resource ID.
 
 ```yaml
 Type: String
@@ -137,5 +131,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-AzureADGroupAppRoleAssignment](./Get-AzureADGroupAppRoleAssignment.md)
+
+[Remove-AzureADGroupAppRoleAssignment](./Remove-AzureADGroupAppRoleAssignment.md)
 
 

@@ -8,7 +8,7 @@ ms.assetid: 9DEA1FE5-FE78-431F-9D12-53C349812A81
 # Remove-AzureADAdministrativeUnitMember
 
 ## SYNOPSIS
-Removes an administrativeUnit member.
+Removes an administrative unit member.
 
 ## SYNTAX
 
@@ -18,18 +18,12 @@ Remove-AzureADAdministrativeUnitMember -ObjectId <String> -MemberId <String>
 ```
 
 ## DESCRIPTION
-
-## EXAMPLES
-
-### 1:
-```
-PS C:\>
-```
+The **Remove-AzureADAdministrativeUnitMember** cmdlet removes an administrative unit member in Azure Active Directory (AD).
 
 ## PARAMETERS
 
 ### -ObjectId
-The unique idenfier of an administrative unit in Azure Active Directory
+Specifies the ID of an administrative unit in Azure AD.
 
 ```yaml
 Type: String
@@ -44,7 +38,7 @@ Accept wildcard characters: False
 ```
 
 ### -MemberId
-The unique identifier of the object specific Azure Active Directory object
+Specifies the ID of the administrative unit member.
 
 ```yaml
 Type: String
@@ -107,5 +101,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Add-AzureADAdministrativeUnitMember](./Add-AzureADAdministrativeUnitMember.md)
+
+[Remove-AzureADAdministrativeUnitMember](./Remove-AzureADAdministrativeUnitMember.md)
 
 

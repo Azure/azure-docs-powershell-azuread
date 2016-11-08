@@ -8,7 +8,7 @@ ms.assetid: D3B591A4-A99D-4D2D-90E2-D4CE016C4589
 # New-AzureADApplicationPasswordCredential
 
 ## SYNOPSIS
-Create a new password credential for an application
+Creates a password credential for an application.
 
 ## SYNTAX
 
@@ -19,26 +19,23 @@ New-AzureADApplicationPasswordCredential -ObjectId <String> [-CustomKeyIdentifie
 ```
 
 ## DESCRIPTION
-
+The **New-AzureADApplicationPasswordCredential** cmdlet creates a password credential for an application in Azure Active Directory (AD).
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
-```
-PS C:\>New-AzureADApplicationPasswordCredential -ObjectId 3ddd22e7-a150-4bb3-b100-e410dea1cb84
-```
-
-Output:
+### Example 1: Create a password credential
+```PowerShell
+PS C:\>New-AzureADApplicationPasswordCredential -ObjectId "3ddd22e7-a150-4bb3-b100-e410dea1cb84"
 
 CustomKeyIdentifier :
 EndDate             : 9/28/2017 3:57:10 PM
 KeyId               :
 StartDate           : 9/28/2016 3:57:10 PM
 Value               : ZJ0V1Yg4cp4eWIey9DrYspqVdX1pdvY437P/ueGxVLU=
-
+```
 ## PARAMETERS
 
 ### -ObjectId
-The unique identifier of an application in Azure Active Directory
+Specifies the ID of a user in Azure AD.
 
 ```yaml
 Type: String
@@ -53,7 +50,6 @@ Accept wildcard characters: False
 ```
 
 ### -CustomKeyIdentifier
-@{Text=}
 
 ```yaml
 Type: String
@@ -68,7 +64,6 @@ Accept wildcard characters: False
 ```
 
 ### -StartDate
-@{Text=}
 
 ```yaml
 Type: DateTime
@@ -83,7 +78,6 @@ Accept wildcard characters: False
 ```
 
 ### -EndDate
-@{Text=}
 
 ```yaml
 Type: DateTime
@@ -98,7 +92,6 @@ Accept wildcard characters: False
 ```
 
 ### -Value
-@{Text=}
 
 ```yaml
 Type: String
@@ -113,9 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -161,5 +152,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-AzureADApplicationPasswordCredential](./Get-AzureADApplicationPasswordCredential.md)
+
+[Remove-AzureADApplicationPasswordCredential](./Remove-AzureADApplicationPasswordCredential.md)
 
 

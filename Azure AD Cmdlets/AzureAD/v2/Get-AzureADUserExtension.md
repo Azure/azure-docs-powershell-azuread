@@ -8,7 +8,7 @@ ms.assetid: 98A2D6B6-FBE5-420F-BA31-94161FBACEDF
 # Get-AzureADUserExtension
 
 ## SYNOPSIS
-
+Gets a user extension.
 ## SYNTAX
 
 ```
@@ -16,17 +16,12 @@ Get-AzureADUserExtension -ObjectId <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-
-## EXAMPLES
-
-### 1:
-```
-PS C:\>
-```
+The **Get-AzureADUserExtension** cmdlet gets a user extension in Azure Active Directory (AD).
 
 ## PARAMETERS
 
 ### -ObjectId
+Specifies the ID of an object.
 ```yaml
 Type: String
 Parameter Sets: (All)
@@ -49,5 +44,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Remove-AzureADUserExtension](./Remove-AzureADUserExtension.md)
 
+[Set-AzureADUserExtension](./Set-AzureADUserExtension.md)
 

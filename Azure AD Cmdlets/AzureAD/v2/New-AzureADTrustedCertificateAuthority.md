@@ -8,7 +8,7 @@ ms.assetid: C19B638B-9511-4828-B5AD-D177ECF9D5C0
 # New-AzureADTrustedCertificateAuthority
 
 ## SYNOPSIS
-
+Creates a trusted certificate authority.
 ## SYNTAX
 
 ```
@@ -17,18 +17,11 @@ New-AzureADTrustedCertificateAuthority -CertificateAuthorityInformation <Certifi
 ```
 
 ## DESCRIPTION
-
-## EXAMPLES
-
-### 1:
-```
-PS C:\>
-```
+The **New-AzureADTrustedCertificateAuthority** cmdlet creates a trusted certificate authority in Azure Active Directory (AD).
 
 ## PARAMETERS
 
 ### -CertificateAuthorityInformation
-@{Text=}
 
 ```yaml
 Type: CertificateAuthorityInformation
@@ -43,9 +36,7 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -91,5 +82,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-AzureADTrustedCertificateAuthority](./Get-AzureADTrustedCertificateAuthority.md)
+
+[Remove-AzureADTrustedCertificateAuthority](./Remove-AzureADTrustedCertificateAuthority.md)
+
+[Set-AzureADTrustedCertificateAuthority](./Set-AzureADTrustedCertificateAuthority.md)
 
 

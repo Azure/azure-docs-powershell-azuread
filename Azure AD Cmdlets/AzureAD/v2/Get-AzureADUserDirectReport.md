@@ -18,24 +18,22 @@ Get-AzureADUserDirectReport -ObjectId <String> [-Top <Int32>] [-InformationActio
 ```
 
 ## DESCRIPTION
-
+The **Get-AzureADUserDirectReport** cmdlet gets the direct reports for a user in Azure Active Directory (AD).
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
-```
-PS C:\>Get-AzureADUserDirectReport -ObjectId df19e8e6-2ad7-453e-87f5-037f6529ae16
-```
-
-Output:
+### Example 1: Get a user's direct reports
+```PowerShell
+PS C:\>Get-AzureADUserDirectReport -ObjectId "df19e8e6-2ad7-453e-87f5-037f6529ae16"
 
 ObjectId                             ObjectType
 --------                             ----------
 5e8b0f4d-2cd4-4e17-9467-b0f6a5c0c4d0 User
-
+```
+This command gets the direct report for the specified user.
 ## PARAMETERS
 
 ### -ObjectId
-The unique identifier of a user in Azure Active Directory (UPN or ObjectId)
+Specifies the ID of a user in Azure Active Directory (UPN or ObjectId)
 
 ```yaml
 Type: String
@@ -50,7 +48,7 @@ Accept wildcard characters: False
 ```
 
 ### -Top
-The maximum number of records to return.
+Specifies the maximum number of records to return.
 
 ```yaml
 Type: Int32
@@ -65,9 +63,7 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore

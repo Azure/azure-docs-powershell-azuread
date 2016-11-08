@@ -18,15 +18,12 @@ Get-AzureADUserMembership -ObjectId <String> [-Top <Int32>] [-InformationAction 
 ```
 
 ## DESCRIPTION
-
+The **Get-AzureADUserMembership** cmdlet gets user memberships in Azure Active Directory (AD).
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
-```
-PS C:\>Get-AzureADUserMembership  -ObjectId df19e8e6-2ad7-453e-87f5-037f6529ae16
-```
-
-Output:
+### Example 1: Get user memberships
+```PowerShell
+PS C:\>Get-AzureADUserMembership  -ObjectId "df19e8e6-2ad7-453e-87f5-037f6529ae16"
 
 ObjectId                             ObjectType
 --------                             ----------
@@ -42,11 +39,12 @@ d96eb2b3-0970-4827-8f26-6008efd86511 Role
 0e6cf869-82ca-4647-b330-420b9a6f8ef7 Group
 78045c26-218e-46fb-94b6-1a47320da153 Group
 093fc0e2-1d6e-4a1b-9bf8-effa0196f1f7 Group
-
+```
+This command gets the memberships for the specified user.
 ## PARAMETERS
 
 ### -ObjectId
-The unique identifier of a user in Azure Active Directory (UPN or ObjectId)
+Specifies the ID of a user (as a UPN or ObjectId) in Azure AD. 
 
 ```yaml
 Type: String
@@ -61,7 +59,7 @@ Accept wildcard characters: False
 ```
 
 ### -Top
-The maximum number of records to return.
+Specifies the maximum number of records to return.
 
 ```yaml
 Type: Int32
@@ -76,9 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore

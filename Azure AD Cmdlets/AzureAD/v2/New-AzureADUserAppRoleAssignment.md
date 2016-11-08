@@ -8,7 +8,7 @@ ms.assetid: 3B666786-2620-4E80-9A36-552B942A9F7C
 # New-AzureADUserAppRoleAssignment
 
 ## SYNOPSIS
-Assign a user to an application role.
+Assigns a user to an application role.
 
 ## SYNTAX
 
@@ -18,18 +18,18 @@ New-AzureADUserAppRoleAssignment -ObjectId <String> [-InformationAction <ActionP
 ```
 
 ## DESCRIPTION
-
+The **New-AzureADUserAppRoleAssignment** cmdlet assigns a user to an application role in Azure Active Directory (AD).
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
-```
+### Example 1: Assign a user to an application role
+```PowerShell
 PS C:\>New-AzureADUserAppRoleAssignment -ObjectId $user.ObjectId -PrincipalId $user.ObjectId -ResourceId $ServicePrincipal.ObjectId -Id $Role.Id
 ```
-
+This command assigns a user to an application role.
 ## PARAMETERS
 
 ### -ObjectId
-The unique identifier of a user in Azure Active Directory (UPN or ObjectId)
+Specifies the ID of a user (as a UPN or ObjectId) in Azure AD.
 
 ```yaml
 Type: String
@@ -44,9 +44,7 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -83,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-@{Text=}
+Specifies an ID.
 
 ```yaml
 Type: String
@@ -98,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrincipalId
-@{Text=}
+
 
 ```yaml
 Type: String
@@ -113,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-@{Text=}
+Specifies a resource ID.
 
 ```yaml
 Type: String
@@ -137,5 +135,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-AzureADUserAppRoleAssignment](./Get-AzureADUserAppRoleAssignment.md)
 
-
+[Remove-AzureADUserAppRoleAssignment](./Remove-AzureADUserAppRoleAssignment.md)
