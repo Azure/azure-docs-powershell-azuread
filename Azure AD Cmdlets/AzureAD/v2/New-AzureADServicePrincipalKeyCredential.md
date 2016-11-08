@@ -19,18 +19,18 @@ New-AzureADServicePrincipalKeyCredential -ObjectId <String> [-CustomKeyIdentifie
 ```
 
 ## DESCRIPTION
-
+The **New-AzureADServicePrincipalKeyCredential** cmdlet creates a key credential for a service principal in Azure Active Directory (AD).
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
-```
+### Example 1: Create a key credential
+```PowerShell
 PS C:\>New-AzureADServicePrincipalKeyCredential
 ```
-
+This command creates a key credential for a service principal.
 ## PARAMETERS
 
 ### -ObjectId
-@{Text=}
+Specifies an object ID.
 
 ```yaml
 Type: String
@@ -45,7 +45,7 @@ Accept wildcard characters: False
 ```
 
 ### -CustomKeyIdentifier
-@{Text=}
+
 
 ```yaml
 Type: String
@@ -60,7 +60,7 @@ Accept wildcard characters: False
 ```
 
 ### -StartDate
-@{Text=}
+
 
 ```yaml
 Type: DateTime
@@ -75,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -EndDate
-@{Text=}
+
 
 ```yaml
 Type: DateTime
@@ -90,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -Type
-@{Text=}
+
 
 ```yaml
 Type: KeyType
@@ -105,7 +105,6 @@ Accept wildcard characters: False
 ```
 
 ### -Usage
-@{Text=}
 
 ```yaml
 Type: KeyUsage
@@ -120,7 +119,6 @@ Accept wildcard characters: False
 ```
 
 ### -Value
-@{Text=}
 
 ```yaml
 Type: String
@@ -135,9 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -183,5 +179,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-AzureADServicePrincipalKeyCredential](./Get-AzureADServicePrincipalKeyCredential.md)
 
-
+[Remove-AzureADServicePrincipalKeyCredential](./Remove-AzureADServicePrincipalKeyCredential.md)
