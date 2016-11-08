@@ -41,7 +41,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-AzureADApplicationPasswordCredentialParameter Sets: (All)
+Parameter Sets: (All)
 Aliases: 
 
 Required: True
