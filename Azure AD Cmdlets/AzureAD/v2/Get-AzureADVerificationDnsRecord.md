@@ -8,7 +8,7 @@ ms.assetid: 2F441A35-AE17-4863-A62B-044713316A0B
 # Get-AzureADVerificationDnsRecord
 
 ## SYNOPSIS
-Get verificationDnsRecords
+Gets a verification DNS record.
 
 ## SYNTAX
 
@@ -18,20 +18,12 @@ Get-AzureADVerificationDnsRecord -Name <String> [-InformationAction <ActionPrefe
 ```
 
 ## DESCRIPTION
-
-## EXAMPLES
-
-### 1:
-```
-PS C:\>
-```
+The **Get-AzureADVerificationDnsRecord** cmdlet gets a verification DNS record in Azure Active Directory (AD). 
 
 ## PARAMETERS
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -68,6 +60,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
+Specifies the name of the verification DNS record to get.
 ```yaml
 Type: String
 Parameter Sets: (All)
