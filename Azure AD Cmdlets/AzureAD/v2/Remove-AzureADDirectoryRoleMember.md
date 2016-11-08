@@ -8,7 +8,7 @@ ms.assetid: 26DDC7C2-8ABF-40A8-84D2-25A4E95BB4D7
 # Remove-AzureADDirectoryRoleMember
 
 ## SYNOPSIS
-Removes a specific member of a directory role.
+Removes a member of a directory role.
 
 ## SYNTAX
 
@@ -18,18 +18,18 @@ Remove-AzureADDirectoryRoleMember -ObjectId <String> -MemberId <String> [-Inform
 ```
 
 ## DESCRIPTION
-
+The **Remove-AzureADDirectoryRoleMember** cmdlet removes a member from a directory role in Azure Active Directory (AD).
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### Example 1: Remove a member from a directory role
+```PowerShell
+PS C:\>Remove-AzureADDirectoryRoleMember -ObjectId "019ea7a2-1613-47c9-81cb-20ba35b1ae48" -MemberId "c13dd34a-492b-4561-b171-40fcce2916c5"
 ```
-PS C:\>Remove-AzureADDirectoryRoleMember -ObjectId 019ea7a2-1613-47c9-81cb-20ba35b1ae48 -MemberId c13dd34a-492b-4561-b171-40fcce2916c5
-```
-
+This command removes the specified member from the specified role.
 ## PARAMETERS
 
 ### -ObjectId
-The unique identifier of a directory role in Azure Active Directory (ObjectId)
+Specifies the object ID of a directory role in Azure AD.
 
 ```yaml
 Type: String
@@ -44,7 +44,7 @@ Accept wildcard characters: False
 ```
 
 ### -MemberId
-The unique identifier of the object specific Azure Active Directory object
+Specifies the object ID of a role member.
 
 ```yaml
 Type: String
@@ -59,9 +59,7 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -107,5 +105,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Add-AzureADDirectoryRoleMember](./Add-AzureADDirectoryRoleMember.md)
 
-
+[Get-AzureADDirectoryRoleMember](./Get-AzureADDirectoryRoleMember.md)
