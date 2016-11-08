@@ -8,7 +8,7 @@ ms.assetid: 7DC1958A-D7DE-44AF-A5B1-9C90ABF0B89A
 # New-AzureADServicePrincipal
 
 ## SYNOPSIS
-Create a new application in Azure Active Directory
+Creates a service principal.
 
 ## SYNTAX
 
@@ -28,17 +28,15 @@ New-AzureADServicePrincipal [-InformationAction <ActionPreference>] [-Informatio
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### Example 1: Create a service principal
+```PowerShell
+PS C:\>New-AzureADServicePrincipal -AccountEnabled $true -AppId $MyApp.AppId -AppRoleAssignmentRequired $true -DisplayName $App
 ```
-PS C:\>New-AzureADServicePrincipal -AccountEnabled true -AppId $MyApp.AppId -AppRoleAssignmentRequired $true -DisplayName $App
-```
-
+This command creates a service principal.
 ## PARAMETERS
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -75,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -AccountEnabled
-@{Text=}
+
 
 ```yaml
 Type: String
@@ -90,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -AppId
-@{Text=}
+
 
 ```yaml
 Type: String
@@ -105,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -AppRoleAssignmentRequired
-@{Text=}
+Indicates whether an application role assignment is required.
 
 ```yaml
 Type: Boolean
@@ -120,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-@{Text=}
+Specifies the display name.
 
 ```yaml
 Type: String
@@ -135,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -ErrorUrl
-@{Text=}
+Specifies the error URL.
 
 ```yaml
 Type: String
@@ -150,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -Homepage
-@{Text=}
+Specifies the home page.
 
 ```yaml
 Type: String
@@ -165,7 +163,6 @@ Accept wildcard characters: False
 ```
 
 ### -KeyCredentials
-@{Text=}
 
 ```yaml
 Type: System.Collections.Generic.List`1[Microsoft.Open.AzureAD.Model.KeyCredential]
@@ -180,8 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### -LogoutUrl
-@{Text=}
-
+Specifies the logout URL.
 ```yaml
 Type: String
 Parameter Sets: (All)
@@ -195,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### -PasswordCredentials
-@{Text=}
+Specifies password credentials.
 
 ```yaml
 Type: System.Collections.Generic.List`1[Microsoft.Open.AzureAD.Model.PasswordCredential]
@@ -210,7 +206,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublisherName
-@{Text=}
+Specifies the publisher name.
 
 ```yaml
 Type: String
@@ -225,7 +221,6 @@ Accept wildcard characters: False
 ```
 
 ### -ReplyUrl
-@{Text=}
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
@@ -240,7 +235,6 @@ Accept wildcard characters: False
 ```
 
 ### -SamlMetadataUrl
-@{Text=}
 
 ```yaml
 Type: String
@@ -255,7 +249,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServicePrincipalNames
-@{Text=}
+Specifies an array of service principal names.
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
@@ -270,7 +264,6 @@ Accept wildcard characters: False
 ```
 
 ### -Tags
-@{Text=}
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
@@ -294,5 +287,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-AzureADServicePrincipal](./Get-AzureADServicePrincipal.md)
 
+[Remove-AzureADServicePrincipal](./Remove-AzureADServicePrincipal.md)
 
+[Set-AzureADServicePrincipal](./Set-AzureADServicePrincipal.md)
