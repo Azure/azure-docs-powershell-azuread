@@ -8,7 +8,7 @@ ms.assetid: A5DDAF58-A04C-4B8F-8AFE-A491387ABCB0
 # New-AzureADUser
 
 ## SYNOPSIS
-Create a new user in Azure Active Directory
+Creates an AD user.
 
 ## SYNTAX
 
