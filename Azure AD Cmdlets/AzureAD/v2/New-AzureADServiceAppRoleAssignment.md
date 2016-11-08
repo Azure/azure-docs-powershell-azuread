@@ -8,7 +8,7 @@ ms.assetid: 35D6752C-1503-412C-84D0-3775EC30CE13
 # New-AzureADServiceAppRoleAssignment
 
 ## SYNOPSIS
-Assign a service principal to an application role.
+Assigns a service principal to an application role.
 
 ## SYNTAX
 
@@ -18,18 +18,12 @@ New-AzureADServiceAppRoleAssignment -ObjectId <String> [-InformationAction <Acti
 ```
 
 ## DESCRIPTION
-
-## EXAMPLES
-
-### 1:
-```
-PS C:\>
-```
+The **New-AzureADServiceAppRoleAssignment** cmdlet assigns a service principal to an application role in Azure Active Directory (AD).
 
 ## PARAMETERS
 
 ### -ObjectId
-The unique idenfier of an service principal in Azure Active Directory
+Specifies the ID of a service principal in Azure AD.
 
 ```yaml
 Type: String
@@ -44,9 +38,7 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -83,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-@{Text=}
+Specifies the ID.
 
 ```yaml
 Type: String
@@ -98,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrincipalId
-@{Text=}
+Specifies a principal ID.
 
 ```yaml
 Type: String
@@ -113,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-@{Text=}
+Specifies a resource ID.
 
 ```yaml
 Type: String
@@ -137,5 +129,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-AzureADServiceAppRoleAssignment](./Get-AzureADServiceAppRoleAssignment.md)
 
-
+[Remove-AzureADServiceAppRoleAssignment](./Remove-AzureADServiceAppRoleAssignment.md)
