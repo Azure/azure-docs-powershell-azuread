@@ -8,7 +8,7 @@ ms.assetid: 7B6691DA-D534-4425-B85E-9EC7EA729ED2
 # New-AzureADAdministrativeUnit
 
 ## SYNOPSIS
-Create a new administrativeUnit in Azure Active Directory
+Creates an administrative unit.
 
 ## SYNTAX
 
@@ -18,20 +18,12 @@ New-AzureADAdministrativeUnit [-InformationAction <ActionPreference>] [-Informat
 ```
 
 ## DESCRIPTION
-
-## EXAMPLES
-
-### 1:
-```
-PS C:\>
-```
+The **New-AzureADAdministrativeUnit** cmdlet creates an administrative unit in Azure Active Directory (AD).
 
 ## PARAMETERS
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -68,7 +60,7 @@ Accept wildcard characters: False
 ```
 
 ### -Description
-The description of the new administrative unit
+Specifies a description for the new administrative unit.
 
 ```yaml
 Type: String
@@ -83,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-The display name of the new administrative unit
+Specifies the display name of the new administrative unit.
 
 ```yaml
 Type: String
@@ -107,5 +99,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-AzureADAdministrativeUnit](./Get-AzureADAdministrativeUnit.md)
+
+[Remove-AzureADAdministrativeUnit](./Remove-AzureADAdministrativeUnit.md)
+
+[Set-AzureADAdministrativeUnit](./Set-AzureADAdministrativeUnit.md)
 
 
