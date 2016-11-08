@@ -8,7 +8,7 @@ ms.assetid: 5DCD4EAF-A3D8-49CE-8392-A0F3AE61B86C
 # Remove-AzureADDevice
 
 ## SYNOPSIS
-Deletes a specific device in Azure Active Directory
+Deletes a device.
 
 ## SYNTAX
 
@@ -18,18 +18,19 @@ Remove-AzureADDevice -ObjectId <String> [-InformationAction <ActionPreference>] 
 ```
 
 ## DESCRIPTION
+The **Remove-AzureADDevice** cmdlet removes a device from Azure Active Directory (AD).
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### Example 1: Remove a device
+```PowerShell
+PS C:\>Remove-AzureADDevice -ObjectId "99a1915d-298f-42d1-93ae-71646b85e2fa"
 ```
-PS C:\>Remove-AzureADDevice -ObjectId 99a1915d-298f-42d1-93ae-71646b85e2fa
-```
-
+This command removes the specified device.
 ## PARAMETERS
 
 ### -ObjectId
-The unique identifier of a device in Azure Active Directory (ObjectId)
+Specifies the object ID of a device in Azure AD.
 
 ```yaml
 Type: String
@@ -44,9 +45,7 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -92,5 +91,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-AzureADDevice](./Get-AzureADDevice.md)
 
+[New-AzureADDevice](./New-AzureADDevice.md)
 
+[Set-AzureADDevice](./Set-AzureADDevice.md)
