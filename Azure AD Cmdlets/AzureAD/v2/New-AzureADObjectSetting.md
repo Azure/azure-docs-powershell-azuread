@@ -8,7 +8,7 @@ ms.assetid: 24E6DD2A-A1A1-42D2-8564-F0A92AA0C49F
 # New-AzureADObjectSetting
 
 ## SYNOPSIS
-Creates a settings object in Azure Active Directory.
+Creates a settings object.
 
 ## SYNTAX
 
@@ -18,18 +18,12 @@ New-AzureADObjectSetting -TargetType <String> -TargetObjectId <String> -Director
 ```
 
 ## DESCRIPTION
-
-## EXAMPLES
-
-### 1:
-```
-PS C:\>
-```
+The **New-AzureADObjectSetting** cmdlet creates a settings object in Azure Active Directory (AD).
 
 ## PARAMETERS
 
 ### -TargetType
-object type name of directory object that will be assigned settings
+Specifies the type of the directory object to which to assign settings.
 
 ```yaml
 Type: String
@@ -44,7 +38,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetObjectId
-object id of directory object that will be assigned settings
+Specifies the ID of directory object to which to assign settings.
 
 ```yaml
 Type: String
@@ -59,7 +53,7 @@ Accept wildcard characters: False
 ```
 
 ### -DirectorySetting
-New settings
+Specifies the new settings.
 
 ```yaml
 Type: DirectorySetting
@@ -122,5 +116,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-AzureADObjectSetting](./Get-AzureADObjectSetting.md)
 
+[Remove-AzureADObjectSetting](./Remove-AzureADObjectSetting.md)
 
+[Set-AzureADObjectSetting](./Set-AzureADObjectSetting.md)
