@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
-online version: 
+online version:
 schema: 2.0.0
 ms.assetid: 0E9207E0-65AB-4965-B282-C8FE5E13F1E4
 ---
@@ -23,17 +23,18 @@ Set-MsolDomainFederationSettings -DomainName <String> [-SigningCertificate <Stri
 ```
 
 ## DESCRIPTION
-The Set-MsolDomainFederationSettings cmdlet is used to update the settings of a single sign-on domain.
+The **Set-MsolDomainFederationSettings** cmdlet is used to update the settings of a single sign-on domain.
+Single sign-on is also known as identity federation.
 
 ## PARAMETERS
 
 ### -ActiveLogOnUri
-A URL that specifies the end point used by active clients when authenticating with domains set up for single sign-on (also known as identity federation) in Microsoft Azure Active Directory.
+Specifies the URL of the end point used by active clients when authenticating with domains set up for single sign-on in Azure Active Directory.
 
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -43,12 +44,12 @@ Accept wildcard characters: False
 ```
 
 ### -DomainName
-The fully qualified domain name (FQDN) to update.
+Specifies the fully qualified domain name (FQDN) to update.
 
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -58,13 +59,13 @@ Accept wildcard characters: False
 ```
 
 ### -FederationBrandName
-The name of the string value shown to users when signing in to Microsoft Azure Active Directory.
-We recommend that customers use something that is familiar to users such as "Contoso Inc."
+Specifies the name of the string value shown to users when signing in to Azure Active Directory.
+We recommend that you use something that is familiar to users, like your company name, such as Contoso Inc.
 
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -74,12 +75,12 @@ Accept wildcard characters: False
 ```
 
 ### -IssuerUri
-The unique identifier of the domain in the Microsoft Azure Active Directory Identity platform derived from the federation server.
+Specifies the URI of the domain in the Azure Active Directory Identity platform derived from the federation server.
 
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -89,12 +90,12 @@ Accept wildcard characters: False
 ```
 
 ### -LogOffUri
-The URL clients are redirected to when they sign out of Microsoft Azure Active Directory services.
+Specifies the URL clients are redirected to when they sign out of Azure Active Directory services.
 
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -109,7 +110,7 @@ The URL that specifies the metadata exchange end point used for authentication f
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -124,7 +125,7 @@ The next token signing certificate that will be used to sign tokens when the pri
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -134,12 +135,12 @@ Accept wildcard characters: False
 ```
 
 ### -PassiveLogOnUri
-The URL that web-based clients will be directed to when signing in to Microsoft Azure Active Directory services.
+The URL that web-based clients will be directed to when signing in to Azure Active Directory services.
 
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -149,12 +150,12 @@ Accept wildcard characters: False
 ```
 
 ### -SigningCertificate
-The current certificate used to sign tokens passed to the Microsoft Azure Active Directory Identity platform.
+The current certificate used to sign tokens passed to the Azure Active Directory Identity platform.
 
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -171,7 +172,7 @@ This parameter is only applicable to partner users.
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -186,7 +187,7 @@ Indicates whether the IDP STS supports MFA.
 ```yaml
 Type: Boolean
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -201,7 +202,7 @@ Indicates the default authentication method that should be used when an applicat
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -216,7 +217,7 @@ The OpenID Connect Discovery Endpoint of the federated IDP STS.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -231,7 +232,7 @@ Accept wildcard characters: False
 ```yaml
 Type: AuthenticationProtocol
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -246,7 +247,7 @@ Accept wildcard characters: False
 ```yaml
 Type: PromptLoginBehavior
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -261,7 +262,7 @@ Accept wildcard characters: False
 ```yaml
 Type: SigningCertificateUpdateStatus
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -280,5 +281,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-
-

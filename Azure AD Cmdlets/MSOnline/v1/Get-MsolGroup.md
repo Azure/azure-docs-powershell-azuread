@@ -94,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -HasErrorsOnly
-Indicates that this cmdlet returns for only groups that have validation errors.
+Indicates that this cmdlet returns only groups that have validation errors.
 
 ```yaml
 Type: SwitchParameter

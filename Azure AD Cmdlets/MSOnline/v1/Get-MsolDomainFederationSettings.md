@@ -17,8 +17,8 @@ Get-MsolDomainFederationSettings -DomainName <String> [-TenantId <Guid>] [<Commo
 ```
 
 ## DESCRIPTION
-The **Get-MsolDomainFederationSettings** cmdlet gets key settings from Microsoft Azure Active Directory.
-Use the [Get-MsolFederationProperty](./Get-MsolFederationProperty.md) cmdlet to get settings for both Microsoft Azure Active Directory and the Active Directory Federation Services server.
+The **Get-MsolDomainFederationSettings** cmdlet gets key settings from Azure Active Directory.
+Use the [Get-MsolFederationProperty](./Get-MsolFederationProperty.md) cmdlet to get settings for both Azure Active Directory and the Active Directory Federation Services server.
 
 ## EXAMPLES
 

@@ -67,11 +67,10 @@ PS C:\> New-MsolServicePrincipalCredential -AppPrincipalId  -Type asymmetric -Va
 This command registers an on-premises Exchange Server so that communications between the Exchange Server and Microsoft Azure Active Directory services such as Office 365 can occur.
 This example assumes that $credValue contains the base64 encoded public X509 certificate used to represent the on-premises Exchange server.
 The well known IDs for Office 365 servers are:
-```
-Exchange: 00000002-0000-0ff1-ce00-000000000000
-SharePoint: 00000003-0000-0ff1-ce00-000000000000
-Lync: 00000004-0000-0ff1-ce00-000000000000
-```
+
+* Exchange: 00000002-0000-0ff1-ce00-000000000000
+* SharePoint: 00000003-0000-0ff1-ce00-000000000000
+* Lync: 00000004-0000-0ff1-ce00-000000000000
 
 ## PARAMETERS
 

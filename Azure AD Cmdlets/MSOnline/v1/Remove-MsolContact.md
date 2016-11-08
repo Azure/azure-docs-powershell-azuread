@@ -8,7 +8,7 @@ ms.assetid: D777B598-B7CC-445E-9F7A-4E21D79BBE39
 # Remove-MsolContact
 
 ## SYNOPSIS
-Removes a contact from Microsoft Azure Active Directory.
+Removes a contact from Azure Active Directory.
 
 ## SYNTAX
 
@@ -17,27 +17,21 @@ Remove-MsolContact -ObjectId <Guid> [-Force] [-TenantId <Guid>] [<CommonParamete
 ```
 
 ## DESCRIPTION
-The Remove-MsolContact cmdlet is used to delete a contact from Microsoft Azure Active Directory.
+The **Remove-MsolContact** cmdlet deletes a contact from Azure Active Directory.
 
 ## EXAMPLES
 
-### Example 1:
+### Example 1: Remove a contact
 ```
-PS C:\> Remove-MsolContact -objectid <id> -force
-
-          None
+PS C:\> Remove-MsolContact -ObjectId 40c4ca1a-4e15-40ad-b0bd-abeca4bcafcd -Force
 ```
 
-Description
-
------------
-
-This command removes a contact from the directory.
+This command removes a contact from the Azure Active Directory.
 
 ## PARAMETERS
 
 ### -Force
-Used to bypass onscreen confirmation.
+Indicates that this cmdlet does not prompt you for confirmation.
 
 ```yaml
 Type: SwitchParameter
@@ -52,7 +46,7 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-The unique ID of the contact to remove.
+Specifies the unique ID of the contact to remove.
 
 ```yaml
 Type: Guid
@@ -67,9 +61,9 @@ Accept wildcard characters: False
 ```
 
 ### -TenantId
-The unique ID of the tenant to perform the operation on.
-If this is not provided then the value will default to the tenant of the current user.
-This parameter is only applicable to partner users.
+Specifies the unique ID of the tenant on which to perform the operation.
+The default value is the tenant of the current user.
+This parameter applies only to partner users.
 
 ```yaml
 Type: Guid
@@ -93,3 +87,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-MsolContact](./Get-MsolContact.md)

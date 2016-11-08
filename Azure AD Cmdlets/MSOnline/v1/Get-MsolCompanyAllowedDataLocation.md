@@ -8,7 +8,7 @@ ms.assetid: 85832284-6D5C-4003-BE79-DA7D985B9056
 # Get-MsolCompanyAllowedDataLocation
 
 ## SYNOPSIS
-Retrieves all the current allowed data locations of a company from Azure Active Directory.
+Get the current allowed data locations of a company from Azure Active Directory.
 
 ## SYNTAX
 
@@ -17,12 +17,12 @@ Get-MsolCompanyAllowedDataLocation [-TenantId <Guid>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The **Get-MsolCompanyAllowedDataLocation** cmdlet can be used to retrieve all the current allowed data locations of a company from Azure Active Directory.
-If a company has not opted in the multinational feature or has no allowed data locations, then the cmdlet will return an empty list.
+The **Get-MsolCompanyAllowedDataLocation** cmdlet gets all the current allowed data locations of a company from Azure Active Directory.
+If a company has not opted in the multinational feature or has no allowed data locations, the cmdlet returns an empty list.
 
 ## EXAMPLES
 
-### Example 1:
+### Example 1: Get current allowed data locations
 ```
 PS C:\> Get-MsolCompanyAllowedDataLocation
 ```
@@ -62,3 +62,4 @@ If a company has not opted in the multinational feature or has no allowed data l
 ## NOTES
 
 ## RELATED LINKS
+[Set-MsolCompanyAllowedDataLocation](./Set-MsolCompanyAllowedDataLocation.md)

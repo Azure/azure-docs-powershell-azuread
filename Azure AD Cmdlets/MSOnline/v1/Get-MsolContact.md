@@ -8,7 +8,7 @@ ms.assetid: 93C48D95-DB26-4F76-8078-CF845E9BCC8D
 # Get-MsolContact
 
 ## SYNOPSIS
-Retrieves a contact from Microsoft Azure Active Directory.
+Gets contacts from Azure Active Directory.
 
 ## SYNTAX
 
@@ -30,29 +30,30 @@ Get-MsolContact [-HasErrorsOnly <Boolean>] [-SearchString <String>] [-All] [-Ten
 ```
 
 ## DESCRIPTION
-The **Get-MsolContact** cmdlet can be used to retrieve a contact object, or list of contacts.
-A single contact will be retrieved if the ObjectId is used.
+The **Get-MsolContact** cmdlet gets a contact object or list of contacts.
+Specify the _ObjectId_ parameter to get a single contact.
 
 ## EXAMPLES
 
-### Example 1:
+### Example 1: Get a contact
 ```
-PS C:\> Get-MsolContact -ObjectId <id>
+PS C:\> Get-MsolContact -ObjectId adc41dc7-4130-4215-adfb-2403bc9f844e
 ```
+
 This command retrieves a contact.
 
-### Example 2:
+### Example 2: Get contacts that match a string
 ```
-PS C:\> Get-MsolContact -SearchString "Melissa"
+PS C:\> Get-MsolContact -SearchString "Patti"
 ```
 
-This command retrieves a list of contacts with a display name or email address starting with 'Melissa'.
+This command retrieves a list of contacts with a display name or email address starting with Patti.
 
 ## PARAMETERS
 
 ### -All
-If present then all results will be returned.
-Cannot be used with MaxResults parameter.
+Indicates that this cmdlet returns all results that it finds.
+Do not specify this parameter and the _MaxResults_ parameter.
 
 ```yaml
 Type: SwitchParameter
@@ -67,7 +68,7 @@ Accept wildcard characters: False
 ```
 
 ### -HasErrorsOnly
-The filter for only contacts with validation errors.
+Indicates that this cmdlet returns contacts that have validation errors.
 
 ```yaml
 Type: Boolean
@@ -82,8 +83,8 @@ Accept wildcard characters: False
 ```
 
 ### -MaxResults
-The maximum number of results returned for a search.
-If not specified, 500 results will be returned.
+Specifies the maximum number of results that this cmdlet returns.
+The default value is 500.
 
 ```yaml
 Type: Int32
@@ -98,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-The unique ID of the contact to retrieve.
+Specifies the unique object ID of the contact to get.
 
 ```yaml
 Type: Guid
@@ -113,8 +114,8 @@ Accept wildcard characters: False
 ```
 
 ### -SearchString
-The string to search on.
-Only contacts with a display name or email address starting with this string will be returned.
+Specifies a string.
+This cmdlet returns contacts with a display name or email address that start with this string.
 
 ```yaml
 Type: String
@@ -196,3 +197,4 @@ This cmdlet returns contact objects, which include the following information:
 ## NOTES
 
 ## RELATED LINKS
+[Remove-MsolContact](./Remove-MsolContact.md)
