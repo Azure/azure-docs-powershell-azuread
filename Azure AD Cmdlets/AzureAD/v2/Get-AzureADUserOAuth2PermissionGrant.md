@@ -8,7 +8,7 @@ ms.assetid: 4E853AB1-5885-4A12-AA3B-0D85B61E54D3
 # Get-AzureADUserOAuth2PermissionGrant
 
 ## SYNOPSIS
-Get the list of the oAuth2PermissionGrants that the user granted applications.
+Gets an **oAuth2PermissionGrant** object.
 
 ## SYNTAX
 
@@ -18,18 +18,12 @@ Get-AzureADUserOAuth2PermissionGrant -ObjectId <String> [-Top <Int32>] [-Informa
 ```
 
 ## DESCRIPTION
-
-## EXAMPLES
-
-### 1:
-```
-PS C:\>
-```
+The **Get-AzureADUserOAuth2PermissionGrant** cmdlet gets an **oAuth2PermissionGrant** object for the specified user in Azure Active Directory (AD).
 
 ## PARAMETERS
 
 ### -ObjectId
-The unique identifier of a user in Azure Active Directory (UPN or ObjectId)
+Specifies the ID (as a UPN or ObjectId) of a user in Azure AD. 
 
 ```yaml
 Type: String
@@ -44,7 +38,7 @@ Accept wildcard characters: False
 ```
 
 ### -Top
-The maximum number of records to return.
+Specifies the maximum number of records to return.
 
 ```yaml
 Type: Int32
@@ -59,9 +53,7 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
