@@ -8,7 +8,7 @@ ms.assetid: EAD7BC01-298D-427D-A0AF-5610021D1BE8
 # Remove-AzureADApplicationPasswordCredential
 
 ## SYNOPSIS
-Remove a password credential from an application
+Removes a password credential from an application.
 
 ## SYNTAX
 
@@ -18,18 +18,12 @@ Remove-AzureADApplicationPasswordCredential -ObjectId <String> -KeyId <String>
 ```
 
 ## DESCRIPTION
-
-## EXAMPLES
-
-### 1:
-```
-PS C:\>
-```
+The **Remove-AzureADApplicationPasswordCredential** cmdlet removes a password credential from an application in Azure Active Directory (AD).
 
 ## PARAMETERS
 
 ### -ObjectId
-The unique identifier of the application in Azure Active Directory
+Specifies the ID of the application in Azure AD.
 
 ```yaml
 Type: String
@@ -44,11 +38,10 @@ Accept wildcard characters: False
 ```
 
 ### -KeyId
-@{Text=}
 
 ```yaml
 Type: String
-Parameter Sets: (All)
+AzureADApplicationPasswordCredentialParameter Sets: (All)
 Aliases: 
 
 Required: True
@@ -107,5 +100,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-AzureADApplicationPasswordCredential](./Get-AzureADApplicationPasswordCredential.md)
 
-
+[Remove-AzureADApplicationPasswordCredential](./Remove-AzureADApplicationPasswordCredential.md)
