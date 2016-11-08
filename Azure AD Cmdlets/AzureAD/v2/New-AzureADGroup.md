@@ -8,7 +8,7 @@ ms.assetid: A81910CC-FC86-414D-B79D-B09892732DC1
 # New-AzureADGroup
 
 ## SYNOPSIS
-Create a new group in Azure Active Directory
+Creates a group.
 
 ## SYNTAX
 
@@ -19,20 +19,17 @@ New-AzureADGroup [-InformationAction <ActionPreference>] [-InformationVariable <
 ```
 
 ## DESCRIPTION
-
+The **New-AzureADGroup** cmdlet creates a group in Azure Active Directory (AD).
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
-```
+### Example 1: Create a group
+```PowerShell
 PS C:\>New-AzureADGroup -DisplayName "My new group" -MailEnabled $false -SecurityEnabled $true -MailNickName "NotSet"
-```
-
-Output:
 
 ObjectId                             DisplayName  Description
 --------                             -----------  -----------
 11fa5e1e-737c-40c5-835e-416ae3959606 My new group
-
+```
 ## PARAMETERS
 
 ### -InformationAction
@@ -75,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -Description
-@{Text=}
+Specifies a description of the group.
 
 ```yaml
 Type: String
@@ -90,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-The name of the new group
+Specifies the display name of the group.
 
 ```yaml
 Type: String
@@ -105,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -MailEnabled
-@{Text=}
+Indicates whether mail is enabled.
 
 ```yaml
 Type: Boolean
@@ -120,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -MailNickName
-@{Text=}
+Specifies a nickname for mail.
 
 ```yaml
 Type: String
@@ -135,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -SecurityEnabled
-@{Text=}
+Indicates whether the group is security-enabled.
 
 ```yaml
 Type: Boolean
@@ -159,5 +156,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-AzureADGroup](./Get-AzureADGroup.md)
+
+[Remove-AzureADGroup](./Remove-AzureADGroup.md)
+
+[Set-AzureADGroup](./Set-AzureADGroup.md)
 
 
