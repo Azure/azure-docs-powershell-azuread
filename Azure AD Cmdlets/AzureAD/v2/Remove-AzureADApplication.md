@@ -18,18 +18,18 @@ Remove-AzureADApplication -ObjectId <String> [-InformationAction <ActionPreferen
 ```
 
 ## DESCRIPTION
-
+The **Remove-AzureADApplication** cmdlet removes the specified application from Azure Active Directory (AD).
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### Example 1: Remove an application
+```PowerShell
+PS C:\>Remove-AzureADApplication -ObjectId "acd10942-5747-4385-8824-4c5d5fa904f9"
 ```
-PS C:\>Remove-AzureADApplication -ObjectId acd10942-5747-4385-8824-4c5d5fa904f9
-```
-
+This command removes the specified application.
 ## PARAMETERS
 
 ### -ObjectId
-The unique idenfier of an application in Azure Active Directory
+Specifies the ID of an application in Azure AD.
 
 ```yaml
 Type: String
@@ -47,6 +47,7 @@ Accept wildcard characters: False
 Specifies how this cmdlet responds to an information event.
 
 The acceptable values for this parameter are:
+
 
 - Continue
 - Ignore
@@ -92,5 +93,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-AzureADApplication](./Get-AzureADApplication.md)
 
+[New-AzureADApplication](./New-AzureADApplication.md)
 
+[Set-AzureADApplication](./Set-AzureADApplication.md)
