@@ -8,7 +8,7 @@ ms.assetid: 8F7770B8-E39E-45F9-AE8E-B03883B77756
 # New-AzureADServicePrincipalPasswordCredential
 
 ## SYNOPSIS
-Create a new password credential for a service principal
+Creates a password credential for a service principal.
 
 ## SYNTAX
 
@@ -19,19 +19,12 @@ New-AzureADServicePrincipalPasswordCredential -ObjectId <String> [-CustomKeyIden
 ```
 
 ## DESCRIPTION
-
-## EXAMPLES
-
-### 1:
-```
-PS C:\>
-```
+The **New-AzureADServicePrincipalPasswordCredential** cmdlet creates a password credential for a service principal in Azure Active Directory (AD).
 
 ## PARAMETERS
 
 ### -ObjectId
-@{Text=}
-
+Specifies an object ID.
 ```yaml
 Type: String
 Parameter Sets: (All)
@@ -45,7 +38,6 @@ Accept wildcard characters: False
 ```
 
 ### -CustomKeyIdentifier
-@{Text=}
 
 ```yaml
 Type: String
@@ -60,7 +52,6 @@ Accept wildcard characters: False
 ```
 
 ### -StartDate
-@{Text=}
 
 ```yaml
 Type: DateTime
@@ -75,7 +66,6 @@ Accept wildcard characters: False
 ```
 
 ### -EndDate
-@{Text=}
 
 ```yaml
 Type: DateTime
@@ -90,7 +80,6 @@ Accept wildcard characters: False
 ```
 
 ### -Value
-@{Text=}
 
 ```yaml
 Type: String
@@ -105,9 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -153,5 +140,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-AzureADServicePrincipalPasswordCredential](./Get-AzureADServicePrincipalPasswordCredential.md)
+
+[Remove-AzureADServicePrincipalPasswordCredential](./Remove-AzureADServicePrincipalPasswordCredential.md)
 
 
