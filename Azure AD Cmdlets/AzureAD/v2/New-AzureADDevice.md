@@ -8,7 +8,7 @@ ms.assetid: 0DF2C468-53D8-4BC5-AFC8-7E8EDF38C347
 # New-AzureADDevice
 
 ## SYNOPSIS
-Create a new device in Azure Active Directory
+Creates a device.
 
 ## SYNTAX
 
@@ -23,26 +23,22 @@ New-AzureADDevice [-InformationAction <ActionPreference>] [-InformationVariable 
 ```
 
 ## DESCRIPTION
+The **New-AzureADDevice** cmdlet creates a device in Azure Active Directory (AD).
+##EXAMPLES
 
-## EXAMPLES
-
-### -------------------------- EXAMPLE 1 --------------------------
-```
+### Example 1: Create a device
+```PowerShell
 PS C:\>New-AzureADDevice -AccountEnabled $true -DisplayName "My new device" -AlternativeSecurityIds $altsecid -DeviceId $guid -DeviceOSType "OS/2" -DeviceOSVersion "9.3"
-```
-
-Output:
 
 ObjectId                             DeviceId                             DisplayName
 --------                             --------                             -----------
 99a1915d-298f-42d1-93ae-71646b85e2fa 5547679b-809d-4e2c-9820-3c4401a573a8 My new device
-
+```
+This command creates a new device.
 ## PARAMETERS
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -79,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -AccountEnabled
-@{Text=}
+Indicates whether the account is enabled.
 
 ```yaml
 Type: Boolean
@@ -94,7 +90,6 @@ Accept wildcard characters: False
 ```
 
 ### -AlternativeSecurityIds
-@{Text=}
 
 ```yaml
 Type: System.Collections.Generic.List`1[Microsoft.Open.AzureAD.Model.AlternativeSecurityId]
@@ -109,7 +104,6 @@ Accept wildcard characters: False
 ```
 
 ### -ApproximateLastLogonTimeStamp
-@{Text=}
 
 ```yaml
 Type: DateTime
@@ -124,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeviceId
-@{Text=}
+Specifies the ID of the device.
 
 ```yaml
 Type: String
@@ -139,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeviceObjectVersion
-@{Text=}
+Specifies the object version of the device.
 
 ```yaml
 Type: Int32
@@ -154,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeviceOSType
-The Operating System type of the new device
+Specifies the operating system type of the new device.
 
 ```yaml
 Type: String
@@ -169,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeviceOSVersion
-@{Text=}
+Specifies the operating system version of the new device.
 
 ```yaml
 Type: String
@@ -184,7 +178,6 @@ Accept wildcard characters: False
 ```
 
 ### -DevicePhysicalIds
-@{Text=}
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
@@ -199,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-The display name of the new device
+Specifies the display name of the new device.
 
 ```yaml
 Type: String
@@ -214,7 +207,6 @@ Accept wildcard characters: False
 ```
 
 ### -IsCompliant
-@{Text=}
 
 ```yaml
 Type: Boolean
@@ -229,7 +221,6 @@ Accept wildcard characters: False
 ```
 
 ### -IsManaged
-@{Text=}
 
 ```yaml
 Type: Boolean
@@ -253,5 +244,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-AzureADDevice](./Get-AzureADDevice.md)
+
+[Remove-AzureADDevice](./Remove-AzureADDevice.md)
+
+[Set-AzureADDevice](./Set-AzureADDevice.md)
 
 
