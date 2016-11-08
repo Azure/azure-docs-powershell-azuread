@@ -23,9 +23,9 @@ The new members can be either users or other security groups.
 
 ## EXAMPLES
 
-### Example 1:
+### Example 1: Add a user to a security group
 ```
-PS C:\> Add-MsolGroupMember -groupObjectid <id> -groupmemberType "User" -groupMemberObjectId <id>
+PS C:\> Add-MsolGroupMember -GroupObjectId 62f684d7-9ab1-4abc-a543-2257e085bdc6 -GroupMemberType User -GroupMemberObjectId bbb55777-d5aa-499d-abbf-353d4523049f
 ```
 
 This command adds a user to a security group.
@@ -33,7 +33,7 @@ This command adds a user to a security group.
 ## PARAMETERS
 
 ### -GroupMemberObjectId
-The object ID of the member (User or Group) to add to the group.
+Specifies the unique object ID of the user or group to add to the group.
 
 ```yaml
 Type: Guid
@@ -48,7 +48,8 @@ Accept wildcard characters: False
 ```
 
 ### -GroupMemberType
-The type of member (User or Group) to add to the group.
+Specifies the type of member to add to the group.
+Valid values are: User and Group.
 
 ```yaml
 Type: GroupMemberType
@@ -63,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -GroupObjectId
-The ID of the group to add members to.
+Specifies the unique ID of the group to which to add members.
 
 ```yaml
 Type: Guid
@@ -104,3 +105,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-MsolGroupMember](./Get-MsolGroupMember.md)
+
+[Remove-MsolGroupMember](./Remove-MsolGroupMember.md)

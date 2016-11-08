@@ -25,28 +25,22 @@ Remove-MsolRoleMember [-RoleMemberType <RoleMemberType>] [-RoleMemberObjectId <G
 ```
 
 ## DESCRIPTION
-The Remove-MsolRoleMember cmdlet is used to remove a user from an administrator role.
+The **Remove-MsolRoleMember** cmdlet removes a user from an administrator role.
 
 ## EXAMPLES
 
-### Example 1:
+### Example 1: Remove a member from an administrator role
 ```
-PS C:\> Remove-MsolRoleMember -RoleName "Company Administrator" -RoleMemberType User -RoleMemberEmailAddress user@contoso.com
+PS C:\> Remove-MsolRoleMember -RoleName "Company Administrator" -RoleMemberType User -RoleMemberEmailAddress "elisadaugherty@contoso.com"
 ```
 
-Description
-
------------
-
-Will remove user@contoso.com from the Company Administrator role.
+This command removes elisadaugherty@contoso.com from the Company Administrator role.
 
 ## PARAMETERS
 
 ### -RoleMemberEmailAddress
-The object ID of the member (User or Group) to remove.
-For users, this should be the
-            user ID.
-Either RoleMemberEmailAddress or RoleMemberObjectId should be provided.
+Specifies the member remove add.
+Specify either the _RoleMemberEmailAddress_ or _RoleMemberObjectId_ parameter.
 
 ```yaml
 Type: String
@@ -61,9 +55,8 @@ Accept wildcard characters: False
 ```
 
 ### -RoleMemberObjectId
-The object ID of the member (User or Group) to remove.
-Either RoleMemberEmailAddress
-            or RoleMemberObjectId should be provided.
+Specifies the unique object ID of the member to remove.
+Specify either _RoleMemberEmailAddress_ or _RoleMemberObjectId_.
 
 ```yaml
 Type: Guid
@@ -78,7 +71,7 @@ Accept wildcard characters: False
 ```
 
 ### -RoleMemberType
-The type of role of the member (User or Group) to remove.
+Specifies the type of role of the member to remove.
 
 ```yaml
 Type: RoleMemberType
@@ -93,9 +86,8 @@ Accept wildcard characters: False
 ```
 
 ### -RoleName
-The name of the role to remove members from.
-Either RoleName or RoleObjectId should be
-            provided.
+Specifies the name of the role from which to remove members.
+Specify either the _RoleName_ or _RoleObjectId_ parameter.
 
 ```yaml
 Type: String
@@ -110,8 +102,8 @@ Accept wildcard characters: False
 ```
 
 ### -RoleObjectId
-The role to remove members from.
-Either RoleName or RoleObjectId should be provided.
+Specifies the unique ID of the role from which to remove members.
+Specify either _RoleName_ or _RoleObjectId_.
 
 ```yaml
 Type: Guid
@@ -152,3 +144,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Add-MsolRoleMember](./Add-MsolRoleMember.md)
+
+[Get-MsolRoleMember](./Get-MsolRoleMember.md)

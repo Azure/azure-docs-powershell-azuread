@@ -8,7 +8,7 @@ ms.assetid: A14A0302-406A-4417-AF11-A6CF19B22101
 # Add-MsolRoleMember
 
 ## SYNOPSIS
-Adds a member to an existing administrator role.
+Adds a member to an administrator role.
 
 ## SYNTAX
 
@@ -25,26 +25,25 @@ Add-MsolRoleMember [-RoleMemberType <RoleMemberType>] [-RoleMemberObjectId <Guid
 ```
 
 ## DESCRIPTION
-The **Add-MsolRoleMember** cmdlet is used to add a member to a role.
-Currently, only Users and ServicePrincipals can be added to a role (adding a security group is not supported).
+The **Add-MsolRoleMember** cmdlet is used to add a member to an administrator role.
+Currently, only users and service principals can be added to a role.
+Adding a security group is not supported.
 
 ## EXAMPLES
 
-### Example 1:
+### Example 1: Add a member to an administrator role
 ```
 PS C:\> Add-MsolRoleMember -RoleName "Company Administrator" -RoleMemberEmailAddress "elisadaugherty@contoso.com"
 ```
 
 This command adds elisadaugherty@contoso.com to the Company Administrator role.
-To get the list of values for RoleName, use the Get-MsolRole cmdlet.
+To get the list of values for the _RoleName_ parameter, use the [Get-MsolRole](./Get-MsolRole.md) cmdlet.
 
 ## PARAMETERS
 
 ### -RoleMemberEmailAddress
-The object ID of the member to add.
-For users, this should be the user ID.
-Only users can be added to a role (adding a security group is not supported).
-Either RoleMemberEmailAddress or RoleMemberObjectId should be provided.
+Specifies the member to add.
+Specify either the _RoleMemberEmailAddress_ or _RoleMemberObjectId_ parameter.
 
 ```yaml
 Type: String
@@ -59,9 +58,8 @@ Accept wildcard characters: False
 ```
 
 ### -RoleMemberObjectId
-The object ID of the member to add.
-Only users can be added to a role (adding a security group is not supported).
-Either RoleMemberEmailAddress or RoleMemberObjectId should be provided.
+Specifies the unique object ID of the member to add.
+Specify either _RoleMemberEmailAddress_ or _RoleMemberObjectId_.
 
 ```yaml
 Type: Guid
@@ -76,8 +74,9 @@ Accept wildcard characters: False
 ```
 
 ### -RoleMemberType
-The type of role of the member (User, Group or ServicePrincipal) to add.
-Currently only Users and ServicePrincipals can be added to Roles.
+Specifies the type of role of the member to add.
+Valid values are: User and ServicePrincipal.
+Group is not currently supported.
 
 ```yaml
 Type: RoleMemberType
@@ -92,9 +91,8 @@ Accept wildcard characters: False
 ```
 
 ### -RoleName
-The name of the role to add members to.
-Only users can be added to a role (adding a security group is not supported).
-Either RoleName or RoleObjectId should be provided.
+Specifies the name of the role to which to add members.
+Specify either the _RoleName_ or _RoleObjectId_ parameter.
 
 ```yaml
 Type: String
@@ -109,9 +107,8 @@ Accept wildcard characters: False
 ```
 
 ### -RoleObjectId
-The role to add members to.
-Only users can be added to a role (adding a security group is not supported).
-Either RoleName or RoleObjectId should be provided.
+Specifies the unique ID of the role to which to add members.
+Specify either _RoleName_ or _RoleObjectId_.
 
 ```yaml
 Type: Guid
@@ -152,3 +149,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-MsolRole](./Get-MsolRole.md)
+
+[Get-MsolRoleMember](./Get-MsolRoleMember.md)
+
+[Remove-MsolRoleMember](./Remove-MsolRoleMember.md)

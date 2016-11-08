@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Online.Identity.Federation.PowerShell.dll-Help.xml
-online version: 
+online version:
 schema: 2.0.0
 ms.assetid: 623D0291-0C85-422F-BC47-43D019839C16
 ---
@@ -8,7 +8,7 @@ ms.assetid: 623D0291-0C85-422F-BC47-43D019839C16
 # New-MsolFederatedDomain
 
 ## SYNOPSIS
-Adds a new single sign-on domain (also known as identity-federated domain) to Microsoft Online Services and establishes the relying party trust between the Active Directory Federation Services 2.0 server and Microsoft Online.
+Adds a new single sign-on domain to Microsoft Online Services and establishes the relying party trust.
 
 ## SYNTAX
 
@@ -17,18 +17,19 @@ New-MsolFederatedDomain [-SupportMultipleDomain] -DomainName <String> [-WhatIf] 
 ```
 
 ## DESCRIPTION
-The Add-MSOLFederatedDomain cmdlet adds a new single sign-on domain (also known as identity-federated domain) to Microsoft Online Services and configures the relying party trust settings between the on-premises Active Directory Federation Services 2.0 server and Microsoft Online.
+The **New-MsolFederatedDomain** cmdlet adds a new single sign-on domain to Microsoft Online Services and configures the relying party trust settings between the on-premises Active Directory Federation Services 2.0 server and Microsoft Online.
+A single sign-on domain is also known as identity-federated domain.
 Due to domain verification requirements, you may need to run this cmdlet several times in order to complete the process of adding the new single sign-on domain.
 
 ## PARAMETERS
 
 ### -DomainName
-The name of the new single sign-on domain (also known as identity-federated domain) to create in Microsoft Online.
+Specifies the name of the new single sign-on domain to create in Microsoft Online.
 
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -39,11 +40,10 @@ Accept wildcard characters: False
 
 ### -SupportMultipleDomain
 
-
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -53,7 +53,7 @@ Accept wildcard characters: False
 ```
 
 ### -Confirm
-Prompts you for confirmation before executing the command.
+Prompts you for confirmation before running the command.
 
 ```yaml
 Type: SwitchParameter
@@ -68,7 +68,8 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Describes what would happen if you executed the command without actually executing the command.
+Shows what would happen if the cmdlet runs.
+The cmdlet is not run.
 
 ```yaml
 Type: SwitchParameter
@@ -92,5 +93,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Remove-MsolFederatedDomain](./Remove-MsolFederatedDomain.md)
 
-
+[Update-MsolFederatedDomain](./Update-MsolFederatedDomain.md)

@@ -18,28 +18,23 @@ Remove-MsolGroupMember -GroupObjectId <Guid> [-GroupMemberType <GroupMemberType>
 ```
 
 ## DESCRIPTION
-The Remove-MsolGroupMember cmdlet is used to remove a member from a security group.
+The **Remove-MsolGroupMember** cmdlet is used to remove a member from a security group.
 This member can be either a user or a group.
 
 ## EXAMPLES
 
 ### Example 1:
 ```
-PS C:\> $groupId = Get-MsolGroup -searchString MyGroup
-PS C:\> $userid = get-msoluser -userPrincipalName user@contoso.com
-PS C:\> Remove-MsoLGroupMember -groupObjectId $groupid -GroupMemberType User -groupmemberobjectid $userid
+PS C:\> $GroupId = Get-MsolGroup -SearchString "MyGroup"
+PS C:\> $UserId = Get-MsolUser -UserPrincipalName "evannarvaez@contoso.com"
+PS C:\> Remove-MsoLGroupMember -GroupObjectId $GroupId -GroupMemberType User -GroupmemberObjectId $UserId
 ```
-
-Description
-
------------
-
-Will remove user@contoso.com from MyGroup.
+This example removes the user evannarvaez@contoso.com from the group named MyGroup.
 
 ## PARAMETERS
 
 ### -GroupMemberObjectId
-The object ID of the member (User or Group) to remove from the group.
+Specifies the unique object ID of the user or group to remove from the group.
 
 ```yaml
 Type: Guid
@@ -54,7 +49,8 @@ Accept wildcard characters: False
 ```
 
 ### -GroupMemberType
-The type of member (User or Group) to remove from the group.
+Specifies the type of member to remove from the group.
+Valid values are: User and Group.
 
 ```yaml
 Type: GroupMemberType
@@ -69,7 +65,7 @@ Accept wildcard characters: False
 ```
 
 ### -GroupObjectId
-The ID of the group to remove members from.
+Specifies the unique ID of the group from which to remove members.
 
 ```yaml
 Type: Guid
@@ -84,9 +80,9 @@ Accept wildcard characters: False
 ```
 
 ### -TenantId
-The unique ID of the tenant to perform the operation on.
-If this is not provided then the value will default to the tenant of the current user.
-This parameter is only applicable to partner users.
+Specifies the unique ID of the tenant on which to perform the operation.
+The default value is the tenant of the current user.
+This parameter applies only to partner users.
 
 ```yaml
 Type: Guid
@@ -110,3 +106,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Add-MsolGroupMember](./Add-MsolGroupMember.md)
+
+[Get-MsolGroupMember](./Get-MsolGroupMember.md)

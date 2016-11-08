@@ -74,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -Confirm
-Prompts you for confirmation before executing the command.
+Prompts you for confirmation before running the command.
 
 ```yaml
 Type: SwitchParameter
@@ -89,7 +89,8 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Describes what would happen if you executed the command without actually executing the command.
+Shows what would happen if the cmdlet runs.
+The cmdlet is not run.
 
 ```yaml
 Type: SwitchParameter

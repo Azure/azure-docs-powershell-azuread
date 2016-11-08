@@ -32,7 +32,7 @@ The **Get-MsolAdministrativeUnitMember** cmdlet gets members of an administrativ
 ### Example 1:
 
 ```
-PS C:\> $AdminstrativeUnit = Get-MsolAdministrativeUnit -searchstring "West Coast"
+PS C:\> $AdminstrativeUnit = Get-MsolAdministrativeUnit -SearchString "West Coast"
 PS C:\> Get-MsolAdministrativeUnitMember -AdministrativeUnitObjectId $AdminstrativeUnit.ObjectId
 ```
 

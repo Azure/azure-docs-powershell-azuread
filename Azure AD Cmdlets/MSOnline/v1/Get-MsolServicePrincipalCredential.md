@@ -8,7 +8,7 @@ ms.assetid: 171F9F72-AD52-48CF-9E6E-553EEDD6B2D3
 # Get-MsolServicePrincipalCredential
 
 ## SYNOPSIS
-Retrieves a list of credentials associated with a service principal.
+Gets credentials associated with a service principal.
 
 ## SYNTAX
 
@@ -31,28 +31,22 @@ Get-MsolServicePrincipalCredential -ReturnKeyValues <Boolean> -ServicePrincipalN
 ```
 
 ## DESCRIPTION
-The Get-MsolServicePrincipalCredential cmdlet can be used to retrieve a list of credentials associated with a service principal.
+The **Get-MsolServicePrincipalCredential** cmdlet gets credentials that are associated with a service principal.
 
 ## EXAMPLES
 
-### Example 1:
+### Example 1: Get credential properties
 ```
 PS C:\> Get-MsolServicePrincipalCredential -ServicePrincipalName "MyApp/myApp.com"
-
-          Returns a list of credentials associated with the "MyApp/myApp.com" service principal.
 ```
 
-Description
-
------------
-
-This command will retrieve all of the credential properties (but not the credential value) associated with the service principal name (SPN) "MyApp/myApp.com".
+This command gets all the credential properties, except the credential value, that are associated with the service principal name (SPN) MyApp/myApp.com.
 An SPN must follow the format appClass/hostname, where appClass represents the application class ("MyApp") and hostname represents the hostname for the application (myApp.com).
 
 ## PARAMETERS
 
 ### -AppPrincipalId
-The application ID associated with the service principal credentials to retrieve.
+Specifies the application ID of the service principal for which to get credentials.
 
 ```yaml
 Type: Guid
@@ -67,7 +61,7 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-The object ID associated with the service principal credentials to retrieve.
+Specifies the unique object ID of the service principal for which to get credentials.
 
 ```yaml
 Type: Guid
@@ -82,9 +76,15 @@ Accept wildcard characters: False
 ```
 
 ### -ServicePrincipalName
-The unique name of the service principal to retrieve credentials from.
-            An SPN must use one of the following formats "appName" or "appName/hostname" or be a valid URL.
-AppName represents the name of the application and hostname represents the URI authority for the application.
+Specifies the name of the service principal from which to get credentials.
+An SPN must use one of the following formats:
+
+* `appName`
+* `appName/hostname`
+* a valid URL
+
+AppName represents the name of the application.
+Hostname represents the URI authority for the application.
 
 ```yaml
 Type: String
@@ -99,9 +99,9 @@ Accept wildcard characters: False
 ```
 
 ### -TenantId
-The unique ID of the tenant to perform the operation on.
-If this is not provided, then the value will default to the tenant of the current user.
-This parameter is only applicable to partner users.
+Specifies the unique ID of the tenant on which to perform the operation.
+The default value is the tenant of the current user.
+This parameter applies only to partner users.
 
 ```yaml
 Type: Guid
@@ -116,6 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReturnKeyValues
+Indicates whether this cmdlet returns key values.
 
 
 ```yaml
@@ -138,19 +139,22 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Online.Administration.ServicePrincipalCredential[]
-Retrieves the list of credentials associated with a service principal.
-Each service principal contains the following information:
+This cmdlet returns the credentials that are associated with a service principal.
+Each returned object contains the following information:
 
-            Type - The type of service principal credential (Asymmetric/Symmetric/Password).
-            Value - The value of the credential.
-If the credential type is certificate, this represents the base 64 encoded certificate.
-If credential type is symmetric, it represents an AES key.
-            KeyGroupId - The identifier reserved for internal use.
-            KeyId - The unique identifier of the key.
-            StartDate - The effective start date of the credential usage.
-            EndDate - The effective end date of the credential usage.
-            Usage  - Specifies if the credential is used to "sign" or "verify" a token.
+* Type. The type of service principal credential (Asymmetric/Symmetric/Password).
+* Value. The value of the credential.
+  * If the credential type is certificate, this represents the base 64 encoded certificate.
+  * If credential type is symmetric, it represents an AES key.
+* KeyGroupId. The identifier reserved for internal use.
+* KeyId. The unique identifier of the key.
+* StartDate. The effective start date of the credential usage.
+* EndDate. The effective end date of the credential usage.
+* Usage . Specifies if the credential is used to "sign" or "verify" a token.
 
 ## NOTES
 
 ## RELATED LINKS
+[New-MsolServicePrincipalCredential](./New-MsolServicePrincipalCredential.md)
+
+[Remove-MsolServicePrincipalCredential](./Remove-MsolServicePrincipalCredential.md)

@@ -18,33 +18,26 @@ Remove-MsolScopedRoleMember -RoleObjectId <Guid> -AdministrativeUnitObjectId <Gu
 ```
 
 ## DESCRIPTION
-The Remove-MsolScopedRoleMember cmdlet is used to remove a user from an administrative unit-scoped role.
+The **Remove-MsolScopedRoleMember** cmdlet removes a user from an administrative unit-scoped role.
 
 ## EXAMPLES
 
-### --------------------------  Example 1  --------------------------
-@{paragraph=PS C:\\\>}
-
-
+### Example 1: Remove a member from an administrative unit-scoped role
 
 ```
-PS C:\> $westcoastau = Get-MsolAdministrativeUnit -searchstring "West Coast"
-PS C:\> $uaadmin = Get-MsolRole -RoleName "User Account Administrator"
-PS C:\> $admin1 = Get-MsolUser -UserPrincipalName user@contoso.com
-PS C:\> Remove-MsolScopedRoleMember -RoleObjectId $uaadmin.ObjectId -AdministrativeUnitObjectId $westcoastau.ObjectId -RoleMemberObjectId $admin1.ObjectId
+PS C:\> $WestCoastAu = Get-MsolAdministrativeUnit -SearchString "West Coast"
+PS C:\> $UaAdmin = Get-MsolRole -RoleName "User Account Administrator"
+PS C:\> $Admin01 = Get-MsolUser -UserPrincipalName "elisadaugherty@contoso.com"
+PS C:\> Remove-MsolScopedRoleMember -RoleObjectId $UaAdmin.ObjectId -AdministrativeUnitObjectId $WestCoastAu.ObjectId -RoleMemberObjectId $Admin01.ObjectId
 ```
 
-Description
-
------------
-
-In the following example, user@contoso.com is removed (no longer a member) from the "User Account Administrator" role scoped for administrative unit "West Coast".
+The example removes elisadaugherty@contoso.com from the User Account Administrator role scoped for the administrative unit named West Coast.
+After this example, the user is no longer a member of the role.
 
 ## PARAMETERS
 
 ### -RoleObjectId
-The object ID of the role to remove members from.
-Only users can be added to a role (adding a security group is not supported).
+Specifies the unique object ID of the role from which to remove members.
 
 ```yaml
 Type: Guid
@@ -59,7 +52,7 @@ Accept wildcard characters: False
 ```
 
 ### -AdministrativeUnitObjectId
-The object ID of the administrative unit.
+Specifies the unique object ID of the administrative unit.
 
 ```yaml
 Type: Guid
@@ -74,9 +67,8 @@ Accept wildcard characters: False
 ```
 
 ### -RoleMemberObjectId
-The object ID of the member to remove.
-For users, this should be the user ID.
-Either -RoleMemberUserPrincipalName or -RoleMemberObjectId must be specified.
+Specifies the unique object ID of the member to remove from the role scoped to the administrative unit.
+Specify either the _RoleMemberUserPrincipalName_ or _RoleMemberObjectId_ parameter.
 
 ```yaml
 Type: Guid
@@ -91,8 +83,8 @@ Accept wildcard characters: False
 ```
 
 ### -RoleMemberUserPrincipalName
-The user principal name of the role member to remove.
-Either -RoleMemberUserPrincipalName or -RoleMemberObjectId must be specified.
+Specifies the user principal name of the member to remove.
+Specify either _RoleMemberUserPrincipalName_ or _RoleMemberObjectId_.
 
 ```yaml
 Type: String
@@ -107,9 +99,9 @@ Accept wildcard characters: False
 ```
 
 ### -TenantId
-The unique ID of the tenant to perform the operation on.
-If this is not provided, then the value will default to the tenant of the current user.
-This parameter is only applicable to partner users.
+Specifies the unique ID of the tenant on which to perform the operation.
+The default value is the tenant of the current user.
+This parameter applies only to partner users.
 
 ```yaml
 Type: Guid
@@ -133,3 +125,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Add-MsolScopedRoleMember](./Add-MsolScopedRoleMember.md)
+
+[Get-MsolAdministrativeUnit](./Get-MsolAdministrativeUnit.md)
+
+[Get-MsolRole](./Get-MsolRole.md)
+
+[Get-MsolUser](./Get-MsolUser.md)
+
+[Get-MsolScopedRoleMember](./Get-MsolScopedRoleMember.md)
