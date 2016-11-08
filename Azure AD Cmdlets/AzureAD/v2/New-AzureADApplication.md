@@ -8,7 +8,7 @@ ms.assetid: 235D5FBC-E726-4F95-8BBD-454E8180576A
 # New-AzureADApplication
 
 ## SYNOPSIS
-Create a new application in Azure Active Directory
+Creates an application.
 
 ## SYNTAX
 
@@ -29,26 +29,22 @@ New-AzureADApplication [-InformationAction <ActionPreference>] [-InformationVari
 ```
 
 ## DESCRIPTION
-
+The **New-AzureADApplication** cmdlet creates an application in Azure Active Directory (AD).
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
-```
+### Example 1: Create an application
+```PowerShell
 PS C:\>New-AzureADApplication -DisplayName "My new application"  -IdentifierUris "http://mynewapp.contoso.com"
-```
-
-Output:
 
 ObjectId                             AppId                                DisplayName
 --------                             -----                                -----------
 acd10942-5747-4385-8824-4c5d5fa904f9 b5fecfab-0ea2-4fd1-8570-b2c41b3d5149 My new application
-
+```
+This command creates an application in Azure AD.
 ## PARAMETERS
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -85,7 +81,6 @@ Accept wildcard characters: False
 ```
 
 ### -AppRoles
-@{Text=}
 
 ```yaml
 Type: System.Collections.Generic.List`1[Microsoft.Open.AzureAD.Model.AppRole]
@@ -100,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -AvailableToOtherTenants
-Is this application available in other tenants?
+Indicates whether this application is available in other tenants.
 
 ```yaml
 Type: Boolean
@@ -115,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-The display name of the new application
+Specifies the display name of the application.
 
 ```yaml
 Type: String
@@ -130,8 +125,6 @@ Accept wildcard characters: False
 ```
 
 ### -ErrorUrl
-@{Text=}
-
 ```yaml
 Type: String
 Parameter Sets: (All)
@@ -145,8 +138,6 @@ Accept wildcard characters: False
 ```
 
 ### -Homepage
-@{Text=}
-
 ```yaml
 Type: String
 Parameter Sets: (All)
@@ -160,8 +151,6 @@ Accept wildcard characters: False
 ```
 
 ### -IdentifierUris
-@{Text=}
-
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
 Parameter Sets: (All)
@@ -175,8 +164,6 @@ Accept wildcard characters: False
 ```
 
 ### -KeyCredentials
-@{Text=}
-
 ```yaml
 Type: System.Collections.Generic.List`1[Microsoft.Open.AzureAD.Model.KeyCredential]
 Parameter Sets: (All)
@@ -190,8 +177,6 @@ Accept wildcard characters: False
 ```
 
 ### -KnownClientApplications
-@{Text=}
-
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
 Parameter Sets: (All)
@@ -205,8 +190,6 @@ Accept wildcard characters: False
 ```
 
 ### -LogoutUrl
-@{Text=}
-
 ```yaml
 Type: String
 Parameter Sets: (All)
@@ -220,8 +203,6 @@ Accept wildcard characters: False
 ```
 
 ### -MainLogo
-@{Text=}
-
 ```yaml
 Type: Byte[]
 Parameter Sets: (All)
@@ -235,8 +216,6 @@ Accept wildcard characters: False
 ```
 
 ### -Oauth2AllowImplicitFlow
-@{Text=}
-
 ```yaml
 Type: Boolean
 Parameter Sets: (All)
@@ -250,7 +229,6 @@ Accept wildcard characters: False
 ```
 
 ### -Oauth2AllowUrlPathMatching
-@{Text=}
 
 ```yaml
 Type: Boolean
@@ -265,7 +243,6 @@ Accept wildcard characters: False
 ```
 
 ### -Oauth2Permissions
-@{Text=}
 
 ```yaml
 Type: System.Collections.Generic.List`1[Microsoft.Open.AzureAD.Model.OAuth2Permission]
@@ -280,8 +257,6 @@ Accept wildcard characters: False
 ```
 
 ### -OAuth2RequiredPostResponse
-@{Text=}
-
 ```yaml
 Type: Boolean
 Parameter Sets: (All)
@@ -295,8 +270,6 @@ Accept wildcard characters: False
 ```
 
 ### -PasswordCredentials
-@{Text=}
-
 ```yaml
 Type: System.Collections.Generic.List`1[Microsoft.Open.AzureAD.Model.PasswordCredential]
 Parameter Sets: (All)
@@ -310,8 +283,6 @@ Accept wildcard characters: False
 ```
 
 ### -PublicClient
-@{Text=}
-
 ```yaml
 Type: Boolean
 Parameter Sets: (All)
@@ -325,8 +296,6 @@ Accept wildcard characters: False
 ```
 
 ### -ReplyUrls
-@{Text=}
-
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
 Parameter Sets: (All)
@@ -340,8 +309,6 @@ Accept wildcard characters: False
 ```
 
 ### -RequiredResourceAccess
-@{Text=}
-
 ```yaml
 Type: System.Collections.Generic.List`1[Microsoft.Open.AzureAD.Model.RequiredResourceAccess]
 Parameter Sets: (All)
@@ -355,8 +322,6 @@ Accept wildcard characters: False
 ```
 
 ### -SamlMetadataUrl
-@{Text=}
-
 ```yaml
 Type: String
 Parameter Sets: (All)
@@ -379,5 +344,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-AzureADApplication](./Get-AzureADApplication.md)
+
+[Remove-AzureADApplication](./Remove-AzureADApplication.md)
+
+[Set-AzureADApplication](./Set-AzureADApplication.md)
 
 
