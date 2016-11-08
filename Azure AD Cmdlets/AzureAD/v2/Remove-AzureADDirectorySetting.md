@@ -18,18 +18,12 @@ Remove-AzureADDirectorySetting [-Confirm] [-ObjectId <String>] [-InformationActi
 ```
 
 ## DESCRIPTION
-
-## EXAMPLES
-
-### 1:
-```
-PS C:\>
-```
+The **Remove-AzureADDirectorySetting** cmdlet removes a directory setting from Azure Active Directory (AD).
 
 ## PARAMETERS
 
 ### -ObjectId
-The unique identifier of a settings in Azure Active Directory
+Specifies the object ID of a settings object in Azure AD.
 
 ```yaml
 Type: String
@@ -44,9 +38,7 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -107,5 +99,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-AzureADDirectorySetting](./Get-AzureADDirectorySetting.md)
 
+[New-AzureADDirectorySetting](./New-AzureADDirectorySetting.md)
 
+[Set-AzureADDirectorySetting](./Set-AzureADDirectorySetting.md)
