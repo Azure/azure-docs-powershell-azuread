@@ -8,7 +8,7 @@ ms.assetid: C304F948-A8BB-4E5E-97B0-EB9B84025AD5
 # Get-MsolPartnerInformation
 
 ## SYNOPSIS
-Retrieves company-level information for partners.
+Gets company-level information for partners.
 
 ## SYNTAX
 
@@ -17,7 +17,7 @@ Get-MsolPartnerInformation [-TenantId <Guid>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The Get-MsolPartnerInformation cmdlet is used to retrieve partner-specific information.
+The **Get-MsolPartnerInformation** cmdlet gets partner-specific information.
 This cmdlet should only be used for partner tenants.
 
 ## PARAMETERS
@@ -47,24 +47,25 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ###  
-The cmdlet will return the following company level information:
+This cmdlet returns the following company level information:
 
-            CompanyType - The type of this company (can be partner or regular tenant)
+* CompanyType. The type of this company (can be partner or regular tenant).
 
-            DapEnabled - flag to determine if the partner has delegated admin privlidges.
+* DapEnabled. Whether the partner has delegated admin privileges.
 
-            PartnerCompanyName - the name of the company
+* PartnerCompanyName. The name of the company.
 
-            PartnerSupportTelephones - Support Telephone numbers for the partner.
+* PartnerSupportTelephones. Support Telephone numbers for the partner.
 
-            PartnerSupportEmails - Support E-Mail address for the partner.
+* PartnerSupportEmails. Support E-Mail address for the partner.
 
-            PartnerCommerceUrl - URL for the partner's commerce web site.
+* PartnerCommerceUrl. URL for the partner's commerce web site.
 
-            PartnerSupportUrl - URL for the Partner's support website.
+* PartnerSupportUrl. URL for the Partner's support website.
 
-            PartnerHelpUrl - URL for the partner's help web site.
+* PartnerHelpUrl. URL for the partner's help web site.
 
 ## NOTES
 
 ## RELATED LINKS
+[Set-MsolPartnerInformation](./Set-MsolPartnerInformation.md)

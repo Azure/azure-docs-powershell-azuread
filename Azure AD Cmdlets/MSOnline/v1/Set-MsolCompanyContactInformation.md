@@ -18,28 +18,22 @@ Set-MsolCompanyContactInformation [-TechnicalNotificationEmails <String[]>]
 ```
 
 ## DESCRIPTION
-The Set-MsolCompanyContactInformation cmdlet is used to set company-level contact preferences.
-This includes email addresses for marketing and technical notifications about Microsoft Azure Active Directory.
+The **Set-MsolCompanyContactInformation** cmdlet sets company-level contact preferences.
+This includes email addresses for marketing and technical notifications about Azure Active Directory.
 
 ## EXAMPLES
 
-### Example 1:
+### Example 1: Sets contact email address
 ```
-PS C:\> Set-MsolCompanyContactInformation -TechnicalNotificationEmail tech@contoso.com
-
-          None
+PS C:\> Set-MsolCompanyContactInformation -TechnicalNotificationEmail "tech@contoso.com"
 ```
 
-Description
-
------------
-
-This command sets contact email addresses for the company.
+This command sets contact email address for the company.
 
 ## PARAMETERS
 
 ### -MarketingNotificationEmails
-Company-level marketing information contact email address.
+Specifies company-level marketing information contact email address.
 
 ```yaml
 Type: String[]
@@ -54,7 +48,7 @@ Accept wildcard characters: False
 ```
 
 ### -TechnicalNotificationEmails
-Company-level technical information contact email address.
+Specifies company-level technical information contact email address.
 
 ```yaml
 Type: String[]

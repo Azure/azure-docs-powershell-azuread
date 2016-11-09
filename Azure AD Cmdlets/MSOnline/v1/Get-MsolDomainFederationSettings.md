@@ -8,7 +8,7 @@ ms.assetid: 14330E4B-4E9C-4A11-8A11-47222B149052
 # Get-MsolDomainFederationSettings
 
 ## SYNOPSIS
-Retrieves settings for a federated domain.
+Gets key settings for a federated domain.
 
 ## SYNTAX
 
@@ -17,22 +17,22 @@ Get-MsolDomainFederationSettings -DomainName <String> [-TenantId <Guid>] [<Commo
 ```
 
 ## DESCRIPTION
-The **Get-MsolDomainFederationSettings** cmdlet gets key settings from Azure Active Directory.
+The **Get-MsolDomainFederationSettings** cmdlet gets key settings for a federated domain from Azure Active Directory.
 Use the [Get-MsolFederationProperty](./Get-MsolFederationProperty.md) cmdlet to get settings for both Azure Active Directory and the Active Directory Federation Services server.
 
 ## EXAMPLES
 
-### Example 1:
+### Example 1: Return federation settings
 ```
-PS C:\> Get-MsolDomainFederationSettings -DomainName contoso.com
+PS C:\> Get-MsolDomainFederationSettings -DomainName "contoso.com"
 ```
 
-Returns the federation settings for contoso.com.
+This command returns the federation settings for contoso.com.
 
 ## PARAMETERS
 
 ### -DomainName
-The fully qualified domain name to retrieve.
+Specifies the fully qualified domain name to retrieve.
 
 ```yaml
 Type: String
@@ -85,3 +85,6 @@ This cmdlet returns the following settings:
 ## NOTES
 
 ## RELATED LINKS
+[Get-MsolFederationProperty](./Get-MsolFederationProperty.md)
+
+[Set-MsolDomainFederationSettings](./Set-MsolDomainFederationSettings.md)

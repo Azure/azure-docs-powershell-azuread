@@ -8,7 +8,7 @@ ms.assetid: 20D3AFFB-C7B5-40C4-8379-CE115EC668FC
 # Get-MsolDomainVerificationDns
 
 ## SYNOPSIS
-Retrieves a list of records to configure a domain.
+Gets DNS records necessary to verify a domain.
 
 ## SYNTAX
 
@@ -18,21 +18,21 @@ Get-MsolDomainVerificationDns -DomainName <String> [-Mode <DomainVerificationMod
 ```
 
 ## DESCRIPTION
-The **Get-MsolDomainVerificationDns** cmdlet is used to return the DNS records that need to be set to verify a domain.
+The **Get-MsolDomainVerificationDns** cmdlet gets the DNS records that need to be set to verify a domain.
 
 ## EXAMPLES
 
-### Example 1:
+### Example 1: Get DNS records that need to be set verify ownership of a domain
 ```
-PS C:\> Get-MsolDomainVerificationDNS -DomainName contoso.com
+PS C:\> Get-MsolDomainVerificationDNS -DomainName "contoso.com"
 ```
 
-This command retrieves the DNS records that need to be set in order to verify ownership of contoso.com.
+This command gets the DNS records that need to be set in order to verify ownership of contoso.com.
 
 ## PARAMETERS
 
 ### -DomainName
-The fully qualified domain name to retrieve.
+Specifies the fully qualified domain name to retrieve.
 
 ```yaml
 Type: String
@@ -47,8 +47,8 @@ Accept wildcard characters: False
 ```
 
 ### -Mode
-The domain verification mode to use when verifying this domain.
-Possible values for Mode are DnsMXRecord and DnsTxtRecord.
+Specifies the domain verification mode to use when verifying this domain.
+Valid values are: DnsMXRecord and DnsTxtRecord.
 
 ```yaml
 Type: DomainVerificationMode

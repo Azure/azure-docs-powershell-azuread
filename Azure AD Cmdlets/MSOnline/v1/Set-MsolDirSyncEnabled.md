@@ -8,7 +8,7 @@ ms.assetid: 2874711E-96F5-43E8-8D90-332C65A85FB5
 # Set-MsolDirSyncEnabled
 
 ## SYNOPSIS
-Used to de-/activate Directory Sync for this tenant.
+Turns directory synchronization on or off for a company.
 
 ## SYNTAX
 
@@ -17,27 +17,21 @@ Set-MsolDirSyncEnabled -EnableDirSync <Boolean> [-Force] [-TenantId <Guid>] [<Co
 ```
 
 ## DESCRIPTION
-The Set-MsolDirSyncEnabled cmdlet is used to turn directory synchronization on or off for a company.
+The **Set-MsolDirSyncEnabled** cmdlet turns directory synchronization on or off for a company.
 
 ## EXAMPLES
 
-### Example 1:
+### Example 1: Turn on directory synchronization
 ```
-PS C:\> Set-MsolDirSyncEnabled -EnableDirsync $true
-
-          None
+PS C:\> Set-MsolDirSyncEnabled -EnableDirsync $True
 ```
-
-Description
-
------------
 
 This command turns on directory synchronization for a company.
 
 ## PARAMETERS
 
 ### -EnableDirSync
-When true, directory synchronization will be turned on for your company.
+Specifies whether to turn on directory synchronization on for your company.
 
 ```yaml
 Type: Boolean
@@ -52,9 +46,9 @@ Accept wildcard characters: False
 ```
 
 ### -TenantId
-The unique ID of the tenant to perform the operation on.
-If this is not provided then the value will default to the tenant of the current user.
-This parameter is only applicable to partner users.
+Specifies the unique ID of the tenant on which to perform the operation.
+The default value is the tenant of the current user.
+This parameter applies only to partner users.
 
 ```yaml
 Type: Guid
@@ -69,7 +63,7 @@ Accept wildcard characters: False
 ```
 
 ### -Force
-
+Forces the command to run without asking for user confirmation.
 
 ```yaml
 Type: SwitchParameter

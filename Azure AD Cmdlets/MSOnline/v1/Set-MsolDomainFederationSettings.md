@@ -105,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -MetadataExchangeUri
-The URL that specifies the metadata exchange end point used for authentication from rich client applications such as Lync Online.
+Specifies the URL of the metadata exchange end point used for authentication from rich client applications such as Lync Online.
 
 ```yaml
 Type: String
@@ -120,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -NextSigningCertificate
-The next token signing certificate that will be used to sign tokens when the primary signing certificate expires.
+Specifies the next token signing certificate that to use to sign tokens when the primary signing certificate expires.
 
 ```yaml
 Type: String
@@ -135,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassiveLogOnUri
-The URL that web-based clients will be directed to when signing in to Azure Active Directory services.
+Specifies the URL that web-based clients are directed to when signing in to Azure Active Directory services.
 
 ```yaml
 Type: String
@@ -150,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -SigningCertificate
-The current certificate used to sign tokens passed to the Azure Active Directory Identity platform.
+Specifies the current certificate used to sign tokens passed to the Azure Active Directory Identity platform.
 
 ```yaml
 Type: String
@@ -165,9 +165,10 @@ Accept wildcard characters: False
 ```
 
 ### -TenantId
-The unique ID of the tenant to perform the operation on.
-If this is not provided, then the value will default to the tenant of the current user.
-This parameter is only applicable to partner users.
+Specifies the unique ID of the tenant on which to perform the operation.
+The default value is the tenant of the current user.
+This parameter applies only to partner users.
+
 
 ```yaml
 Type: Guid
@@ -197,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultInteractiveAuthenticationMethod
-Indicates the default authentication method that should be used when an application requires the user to have interactive login.
+Specifies the default authentication method that should be used when an application requires the user to have interactive login.
 
 ```yaml
 Type: String
@@ -212,7 +213,7 @@ Accept wildcard characters: False
 ```
 
 ### -OpenIdConnectDiscoveryEndpoint
-The OpenID Connect Discovery Endpoint of the federated IDP STS.
+Specifies the OpenID Connect Discovery Endpoint of the federated IDP STS.
 
 ```yaml
 Type: String
@@ -227,6 +228,7 @@ Accept wildcard characters: False
 ```
 
 ### -PreferredAuthenticationProtocol
+Specifies the preferred authentication protocol.
 
 
 ```yaml
@@ -242,7 +244,7 @@ Accept wildcard characters: False
 ```
 
 ### -PromptLoginBehavior
-
+Specifies the prompt login behavior.
 
 ```yaml
 Type: PromptLoginBehavior
@@ -257,7 +259,7 @@ Accept wildcard characters: False
 ```
 
 ### -SigningCertificateUpdateStatus
-
+Specifies the update status of the signing certificate.
 
 ```yaml
 Type: SigningCertificateUpdateStatus
@@ -281,3 +283,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-MsolDomainFederationSettings](./Get-MsolDomainFederationSettings.md)

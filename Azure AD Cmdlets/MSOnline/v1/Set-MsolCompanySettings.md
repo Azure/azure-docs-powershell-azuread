@@ -21,21 +21,17 @@ Set-MsolCompanySettings [-SelfServePasswordResetEnabled <Boolean>]
 ```
 
 ## DESCRIPTION
-The Set-MsolCompanySettings cmdlet is used to set company-level configuration settings.
-Use Get-MsolCompanyInformation to read the current values of these settings.
+The **Set-MsolCompanySettings** cmdlet is used to set company-level configuration settings.
+Use [Get-MsolCompanyInformation](./Get-MsolCompanyInformation.md) to read the current values of these settings.
 
 ## EXAMPLES
 
-### Example 1:
+### Example 1: Turns on the self-serve password reset feature
 ```
-PS C:\> Set-MsolCompanySettings -SelfServePasswordResetEnabled $true
+PS C:\> Set-MsolCompanySettings -SelfServePasswordResetEnabled $True
 ```
 
-Description
-
------------
-
-Turns on the self-serve password reset feature for all users in the company.
+This command turns on the self-serve password reset feature for all users in the company.
 
 ## PARAMETERS
 
@@ -58,7 +54,7 @@ Accept wildcard characters: False
 ### -UsersPermissionToCreateGroupsEnabled
 Indicates whether to allow users to create groups.
 This setting is applied company-wide.
-Set to False to disable users' ability to create groups.
+Set to $False to disable users' ability to create groups.
 
 ```yaml
 Type: Boolean
@@ -125,7 +121,7 @@ Accept wildcard characters: False
 ### -UsersPermissionToReadOtherUsersEnabled
 Indicates whether to allow users to view the profile info of other users in their company.
 This setting is applied company-wide.
-Set to False to disable users' ability to use the Azure AD module for Windows PowerShell to access user information for their organization.
+Set to $False to disable users' ability to use the Azure AD module for Windows PowerShell to access user information for their organization.
 
 ```yaml
 Type: Boolean
@@ -142,7 +138,7 @@ Accept wildcard characters: False
 ### -UsersPermissionToUserConsentToAppEnabled
 Indicates whether to allow users to consent to apps that require access to their cloud user data, such as directory user profile or Office 365 mail and OneDrive for business.
 This setting is applied company-wide.
-Set to False to disable users' ability to grant consent to applications.
+Set to $False to disable users' ability to grant consent to applications.
 
 ```yaml
 Type: Boolean
@@ -158,7 +154,7 @@ Accept wildcard characters: False
 
 ### -DefaultUsageLocation
 When assigning licenses to Microsoft products this value will be applied to the User.UsageLocation attribute if none is present.
-If the default value is null then the location value for the tenant is used.
+If the default value is $Null then the location value for the tenant is used.
 
 ```yaml
 Type: String
@@ -199,3 +195,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-MsolCompanyInformation](./Get-MsolCompanyInformation.md)

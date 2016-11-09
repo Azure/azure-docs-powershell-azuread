@@ -23,13 +23,15 @@ Set-MsolDomainAuthentication -DomainName <String> -Authentication <DomainAuthent
 ```
 
 ## DESCRIPTION
-The Set-MsolDomainAuthentication cmdlet is used to change the domain authentication between standard identity and single-sign on.
-This cmdlet will only update the settings in Microsoft Azure Active Directory; typically the Convert-MsolDomainToStandard or Convert-MsolDomainToFederated should be used instead.
+The **Set-MsolDomainAuthentication** cmdlet changes the domain authentication between standard identity and single-sign on.
+This cmdlet update only the settings in Azure Active Directory.
+Typically, the [Convert-MsolDomainToStandard](./Convert-MsolDomainToStandard.md) or [Convert-MsolDomainToFederated](./Convert-MsolDomainToFederated.md) cmdlet should be used instead.
 
 ## PARAMETERS
 
 ### -ActiveLogOnUri
-A URL that specifies the end point used by active clients when authenticating with domains set up for single sign-on (also known as identity federation) in Microsoft Azure Active Directory.
+Specifies the URL of the end point used by active clients when authenticating with domains set up for single sign-on in Azure Active Directory.
+Single sign-on is also known as identity federation.
 
 ```yaml
 Type: String
@@ -44,8 +46,9 @@ Accept wildcard characters: False
 ```
 
 ### -Authentication
-The authentication type (managed/federated) of the domain.
-All users created on this domain will have this authentication type.
+Specifies the authentication type of the domain.
+Valid values are: managed and federated.
+All users created on this domain have this authentication type.
 
 ```yaml
 Type: DomainAuthenticationType
@@ -60,7 +63,7 @@ Accept wildcard characters: False
 ```
 
 ### -DomainName
-The fully qualified domain name (FQDN) to update.
+Specifies the fully qualified domain name (FQDN) to update.
 
 ```yaml
 Type: String
@@ -75,8 +78,8 @@ Accept wildcard characters: False
 ```
 
 ### -FederationBrandName
-The name of the string value shown to users when signing in to Microsoft Azure Active Directory services.
-We recommend that customers user something that is familiar to them, such as "Contoso, Inc."
+Specifies the name of the string value shown to users when signing in to Azure Active Directory services.
+We recommend that customers use something that is familiar to them, like their company name, such as Contoso, Inc.
 
 ```yaml
 Type: String
@@ -91,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -IssuerUri
-The unique identifier of the domain in the Microsoft Azure Active Directory identity platform derived from the federation server.
+Specifies the URI of the domain in the Azure Active Directory identity platform derived from the federation server.
 
 ```yaml
 Type: String
@@ -106,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -LogOffUri
-The URL clients are redirected to when they sign out of Microsoft Azure Active Directory services.
+Specifies the URL that clients are redirected to when they sign out of Azure Active Directory services.
 
 ```yaml
 Type: String
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -MetadataExchangeUri
-The URL that specifies the metadata exchange end point used for authentication from rich client applications such as Lync Online.
+Specifies the URL of the metadata exchange end point used for authentication from rich client applications such as Lync Online.
 
 ```yaml
 Type: String
@@ -136,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -NextSigningCertificate
-The next token signing certificate that will be used to sign tokens when the primary signing certificate expires.
+Specifies the next token signing certificate that is used to sign tokens when the primary signing certificate expires.
 
 ```yaml
 Type: String
@@ -151,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassiveLogOnUri
-The URL that web-based clients will be directed to when signing in to Microsoft Azure Active Directory services.
+Specifies the URL that web-based clients are directed to when signing in to Azure Active Directory services.
 
 ```yaml
 Type: String
@@ -166,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -SigningCertificate
-The current certificate used to sign tokens passed to the Microsoft Azure Active Directory Identity platform.
+Specifies the current certificate used to sign tokens passed to the Azure Active Directory Identity platform.
 
 ```yaml
 Type: String
@@ -213,7 +216,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultInteractiveAuthenticationMethod
-Indicates the default authentication method that should be used when an application requires the user to have interactive login.
+Specifies the default authentication method that should be used when an application requires the user to have interactive login.
 
 ```yaml
 Type: String
@@ -228,7 +231,7 @@ Accept wildcard characters: False
 ```
 
 ### -OpenIdConnectDiscoveryEndpoint
-The OpenID Connect Discovery Endpoint of the federated IDP STS.
+Specifies the OpenID Connect Discovery Endpoint of the federated IDP STS.
 
 ```yaml
 Type: String
@@ -243,7 +246,7 @@ Accept wildcard characters: False
 ```
 
 ### -PreferredAuthenticationProtocol
-
+Specifies the preferred authentication protocol.
 
 ```yaml
 Type: AuthenticationProtocol
@@ -258,7 +261,7 @@ Accept wildcard characters: False
 ```
 
 ### -PromptLoginBehavior
-
+Specifies the prompt log-in behavior.
 
 ```yaml
 Type: PromptLoginBehavior
@@ -273,7 +276,7 @@ Accept wildcard characters: False
 ```
 
 ### -SigningCertificateUpdateStatus
-
+Specifies the update status of the signing certificate.
 
 ```yaml
 Type: SigningCertificateUpdateStatus
@@ -297,3 +300,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Convert-MsolDomainToFederated](./Convert-MsolDomainToFederated.md)
+
+[Convert-MsolDomainToStandard](./Convert-MsolDomainToStandard.md)

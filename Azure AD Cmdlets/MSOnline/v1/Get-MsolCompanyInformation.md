@@ -8,7 +8,7 @@ ms.assetid: BC3EA621-0115-4312-B856-02AC82DB9F4E
 # Get-MsolCompanyInformation
 
 ## SYNOPSIS
-Retrieves company-level information.
+Gets company-level information.
 
 ## SYNTAX
 
@@ -21,12 +21,12 @@ The **Get-MsolCompanyInformation** cmdlet gets company-level information.
 
 ## EXAMPLES
 
-### Example 1:
+### Example 1: Get company-level information
 ```
 PS C:\> Get-MsolCompanyInformation
 ```
 
-This command returns company level information.
+This command gets company-level information.
 
 ## PARAMETERS
 
