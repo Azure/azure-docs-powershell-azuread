@@ -18,7 +18,7 @@ Remove-AzureADGroupMember -ObjectId <String> -MemberId <String> [-InformationAct
 ```
 
 ## DESCRIPTION
-The Remove-AzureADGroupMember cmdlet removes a member from a group in Azure Active Directory (AD).
+The **Remove-AzureADGroupMember** cmdlet removes a member from a group in Azure Active Directory (AD).
 ## EXAMPLES
 
 ### Example 1: Remove a member
