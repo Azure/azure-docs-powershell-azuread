@@ -18,18 +18,18 @@ Remove-AzureADGroupMember -ObjectId <String> -MemberId <String> [-InformationAct
 ```
 
 ## DESCRIPTION
-
+The Remove-AzureADGroupMember cmdlet removes a member from a group in Azure Active Directory (AD).
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### Example 1: Remove a member
+```PowerShell
+PS C:\>Remove-AzureADGroupMember -ObjectId "62438306-7c37-4638-a72d-0ee8d9217680" -MemberId "0a1068c0-dbb6-4537-9db3-b48f3e31dd76"
 ```
-PS C:\>Remove-AzureADGroupMember -ObjectId 62438306-7c37-4638-a72d-0ee8d9217680 -MemberId 0a1068c0-dbb6-4537-9db3-b48f3e31dd76
-```
-
+This command removes the specified member from the specified group.
 ## PARAMETERS
 
 ### -ObjectId
-The unique identifier of a group in Azure Active Directory (ObjectId)
+Specifies the object ID of a group in Azure AD.
 
 ```yaml
 Type: String
@@ -44,7 +44,7 @@ Accept wildcard characters: False
 ```
 
 ### -MemberId
-The unique identifier of the object specific Azure Active Directory object
+Specifies the ID of the member to remove.
 
 ```yaml
 Type: String
@@ -59,9 +59,7 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -107,5 +105,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Add-AzureADGroupMember](./Add-AzureADGroupMember.md)
 
-
+[Get-AzureADGroupMember](./Get-AzureADGroupMember.md)
