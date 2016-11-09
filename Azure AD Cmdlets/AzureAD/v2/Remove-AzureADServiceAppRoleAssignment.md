@@ -8,7 +8,7 @@ ms.assetid: 064EB674-91C6-406D-B218-BD1CE3C459CF
 # Remove-AzureADServiceAppRoleAssignment
 
 ## SYNOPSIS
-Delete a service principal application role assignment.
+Removes a service principal application role assignment.
 
 ## SYNTAX
 
@@ -18,18 +18,12 @@ Remove-AzureADServiceAppRoleAssignment -ObjectId <String> -AppRoleAssignmentId <
 ```
 
 ## DESCRIPTION
-
-## EXAMPLES
-
-### 1:
-```
-PS C:\>
-```
+The **Remove-AzureADServiceAppRoleAssignment** cmdlet removes a service principal application role assignment in Azure Active Directory (AD).
 
 ## PARAMETERS
 
 ### -ObjectId
-The unique idenfier of an service principal in Azure Active Directory
+Specifies the ID of a service principal in Azure AD.
 
 ```yaml
 Type: String
@@ -44,7 +38,7 @@ Accept wildcard characters: False
 ```
 
 ### -AppRoleAssignmentId
-The unique identifier of the object specific Azure Active Directory object
+Specifies the ID of the application role assignment.
 
 ```yaml
 Type: String
@@ -59,9 +53,7 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -107,5 +99,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-AzureADServiceAppRoleAssignment](./Get-AzureADServiceAppRoleAssignment.md)
 
-
+[New-AzureADServiceAppRoleAssignment](./New-AzureADServiceAppRoleAssignment.md)
