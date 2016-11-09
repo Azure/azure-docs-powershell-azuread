@@ -8,7 +8,7 @@ ms.assetid: 937A2A6D-2DF5-43A5-8D2B-8555420254FB
 # Remove-AzureADScopedRoleMembership
 
 ## SYNOPSIS
-Removes a scopedRoleMembership.
+Removes a scoped role membership.
 
 ## SYNTAX
 
@@ -17,18 +17,12 @@ Remove-AzureADScopedRoleMembership -ObjectId <String> -ScopedRoleMembershipId <S
 ```
 
 ## DESCRIPTION
-
-## EXAMPLES
-
-### 1:
-```
-PS C:\>
-```
+The **Remove-AzureADScopedRoleMembership** cmdlet removes a scoped role membership from Azure Active Directory (AD).
 
 ## PARAMETERS
 
 ### -ObjectId
-@{Text=}
+Specifies an object ID.
 
 ```yaml
 Type: String
@@ -43,7 +37,7 @@ Accept wildcard characters: False
 ```
 
 ### -ScopedRoleMembershipId
-@{Text=}
+Specifies the ID of the scoped role membership to remove.
 
 ```yaml
 Type: String
@@ -67,5 +61,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Add-AzureADScopedRoleMembership](./Add-AzureADScopedRoleMembership.md)
 
-
+[Get-AzureADScopedRoleMembership](./Get-AzureADScopedRoleMembership.md)

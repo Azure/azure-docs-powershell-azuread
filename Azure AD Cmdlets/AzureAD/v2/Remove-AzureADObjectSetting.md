@@ -18,18 +18,12 @@ Remove-AzureADObjectSetting [-Confirm] -TargetType <String> -TargetObjectId <Str
 ```
 
 ## DESCRIPTION
-
-## EXAMPLES
-
-### 1:
-```
-PS C:\>
-```
+The **Remove-AzureADObjectSetting** cmdlet removes object settings in Azure Active Directory (AD).
 
 ## PARAMETERS
 
 ### -TargetType
-object type name of directory object that will be assigned settings
+Specifies the target type.
 
 ```yaml
 Type: String
@@ -44,7 +38,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetObjectId
-object id of directory object that will be assigned settings
+Specifies the object ID of the target. 
 
 ```yaml
 Type: String
@@ -59,7 +53,7 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-The unique identifier of a settings in Azure Active Directory
+Specfies the ID of a settings object in Azure AD.
 
 ```yaml
 Type: String
@@ -74,9 +68,7 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -137,5 +129,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-AzureADObjectSetting](./Get-AzureADObjectSetting.md)
+
+[New-AzureADObjectSetting](./New-AzureADObjectSetting.md)
+
+[Set-AzureADObjectSetting](./Set-AzureADObjectSetting.md)
 
 

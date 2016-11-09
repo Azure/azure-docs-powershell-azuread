@@ -8,7 +8,7 @@ ms.assetid: D74563F0-14B9-43BD-8C3C-BC46CD505407
 # Remove-AzureADPolicy
 
 ## SYNOPSIS
-
+Removes a policy.
 ## SYNTAX
 
 ```
@@ -17,18 +17,18 @@ Remove-AzureADPolicy -ObjectId <String> [-InformationAction <ActionPreference>] 
 ```
 
 ## DESCRIPTION
-
+The **Remove-AzureADPolicy** cmdlet removes a policy from Azure Active Directory (AD).
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### Example 1: Remove a policy
+```PowerShell
+PS C:\>Remove-AzureADPolicy -ObjectId *<objectID>*.
 ```
-PS C:\>Remove-AzureADPolicy -ObjectId
-```
-
+This command removes the specified policy.
 ## PARAMETERS
 
 ### -ObjectId
-The object Id of the Policy
+Specifies the object ID of the policy to remove.
 
 ```yaml
 Type: String
@@ -43,9 +43,7 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -91,5 +89,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-AzureADPolicy](./Get-AzureADPolicy.md)
 
+[New-AzureADPolicy](./New-AzureADPolicy.md)
 
+[Set-AzureADPolicy](./Set-AzureADPolicy.md)
