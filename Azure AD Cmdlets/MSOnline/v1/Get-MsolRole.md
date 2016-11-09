@@ -8,7 +8,7 @@ ms.assetid: 430D359B-200B-4EA6-A6B7-D347A0264CC9
 # Get-MsolRole
 
 ## SYNOPSIS
-Retrieves administrator roles.
+Gets administrator roles.
 
 ## SYNTAX
 
@@ -28,27 +28,21 @@ Get-MsolRole -RoleName <String> [-TenantId <Guid>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The Get-MsolRole cmdlet can be used to retrieve a list of administrator roles.
+The **Get-MsolRole** cmdlet gets a list of administrator roles.
 
 ## EXAMPLES
 
-### Example 1:
+### Example 1: Gets administrator roles for the company
 ```
 PS C:\> Get-MsolRole
-
-          Returns a list of role objects.
 ```
 
-Description
-
------------
-
-This command retrieves administrator roles for the company.
+This command gets administrator roles for the company.
 
 ## PARAMETERS
 
 ### -ObjectId
-The ObjectId of the role to retrieve.
+Specifies the unique object ID of the role to retrieve.
 
 ```yaml
 Type: Guid
@@ -63,7 +57,7 @@ Accept wildcard characters: False
 ```
 
 ### -RoleName
-The name of the role to retrieve.
+Specifies the name of the role to retrieve.
 
 ```yaml
 Type: String
@@ -102,17 +96,17 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Online.Administration.Role
-For this cmdlet, each output object will include the following fields:
+This cmdlet returns role objects that contain the following fields:
 
-            Description: A description of the role.
+* Description. A description of the role.
 
-            IsEnabled: Whether or not the role is enabled.
+* IsEnabled. Whether or not the role is enabled.
 
-            IsSystem: Whether or not the role was created by Microsoft Azure Active Directory.
+* IsSystem. Whether or not the role was created by Azure Active Directory.
 
-            Name: The name of the role.
+* Name. The name of the role.
 
-            ObjectId: The unique ID of the role.
+* ObjectId. The unique ID of the role.
 
 ## NOTES
 

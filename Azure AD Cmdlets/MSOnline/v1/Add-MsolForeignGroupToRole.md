@@ -8,7 +8,7 @@ ms.assetid: B5D447B0-4C83-42D7-8162-1E95AF02EDA2
 # Add-MsolForeignGroupToRole
 
 ## SYNOPSIS
-Adds the specified group from a partner tenant to a Role in this tenant.
+Adds a security group from a partner tenant to a Role in this tenant.
 
 ## SYNTAX
 
@@ -23,7 +23,7 @@ The **Add-MsolForeignGroupToRole** cmdlet adds a security group from a partner t
 ## PARAMETERS
 
 ### -ForeignCompanyObjectId
-The object ID of the partner tenant that contains the group to add.
+Specifies the object ID of the partner tenant that contains the group to add.
 
 ```yaml
 Type: Guid
@@ -38,7 +38,7 @@ Accept wildcard characters: False
 ```
 
 ### -ForeignGroupObjectId
-The object ID of the group in the partner tenant to add.
+Specifies the unique object ID of the group in the partner tenant to add.
 
 ```yaml
 Type: Guid
@@ -53,7 +53,7 @@ Accept wildcard characters: False
 ```
 
 ### -RoleObjectId
-The object ID of the role to add the group to.
+Specifies the unique object ID of the role to which to add the group.
 
 ```yaml
 Type: Guid

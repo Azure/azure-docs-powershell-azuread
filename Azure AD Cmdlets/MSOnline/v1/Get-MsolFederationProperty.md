@@ -8,7 +8,8 @@ ms.assetid: D7479CDA-88DF-4B4E-9F2D-688C7371893E
 # Get-MsolFederationProperty
 
 ## SYNOPSIS
-For the specified domain, displays the properties of the Active Directory Federation Services 2.0 server and Microsoft Online.
+
+Displays the properties of the Active Directory Federation Services 2.0 server and Microsoft Online.
 
 ## SYNTAX
 
@@ -23,7 +24,7 @@ You can use this information to troubleshoot authentication problems caused by m
 ## PARAMETERS
 
 ### -DomainName
-The domain name for which the properties from both the Active Directory Federation Services 2.0 server and Microsoft Online will be displayed.
+Specifies the domain name for which the properties from both the Active Directory Federation Services 2.0 server and Microsoft Online are displayed.
 
 ```yaml
 Type: String

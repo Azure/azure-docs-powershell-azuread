@@ -8,7 +8,7 @@ ms.assetid: CED5BB55-E2BA-4400-9777-6589B6B29355
 # Get-MsolUser
 
 ## SYNOPSIS
-gets users from Azure Active Directory.
+Gets users from Azure Active Directory.
 
 ## SYNTAX
 

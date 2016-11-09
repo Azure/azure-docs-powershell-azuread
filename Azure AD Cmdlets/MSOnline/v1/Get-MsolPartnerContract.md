@@ -8,7 +8,7 @@ ms.assetid: 4E3EE703-F105-449D-B74E-8C4B70E63A90
 # Get-MsolPartnerContract
 
 ## SYNOPSIS
-Retrieves a list of contracts for a partner.
+Gets a list of contracts for a partner.
 
 ## SYNTAX
 
@@ -25,30 +25,27 @@ Get-MsolPartnerContract [-DomainName <String>] [-SearchKey <PartnerContractSearc
 ```
 
 ## DESCRIPTION
-The Get-MsolPartnerContract cmdlet should only be used by partners, as it is used to retrieve a list of contracts for a partner.
-The input to this cmdlet should be a domain to look up, which must be verified for the tenant.
-If the company exists and the partner has access to this company, then the corresponding contract will be returned.
+The **Get-MsolPartnerContract** cmdlet gets a list of contracts for a partner.
+Therefore, this cmldet should only be used by partners.
+
+Specify a domain to look up.
+This domain must be verified for the tenant.
+If the company exists and the partner has access to this company, this cmdlet returns the corresponding contract.
 
 ## EXAMPLES
 
-### Example 1:
+### Example 1: Return contract for a tenant
 ```
-PS C:\> Get-MsolPartnerContract -DomainName contoso.com
-
-          Returns a contract object.
+PS C:\> Get-MsolPartnerContract -DomainName "contoso.com"
 ```
-
-Description
-
------------
 
 This command returns the contract for the tenant owning the domain consoso.com.
-The caller must have privileges to act on behalf of contoso.com.
+To run this command, you must have privileges to act on behalf of contoso.com.
 
 ## PARAMETERS
 
 ### -DomainName
-The domain to search for.
+Specifies the domain to search for.
 This must be the full name of a verified domain.
 
 ```yaml
@@ -64,9 +61,9 @@ Accept wildcard characters: False
 ```
 
 ### -TenantId
-The tenant of the partner to retrieve contracts for.
-If this is not provided, then the value will default to the tenant of the current user.
-If this parameter is provided, the tenant ID must correspond to a partner company.
+Specifies the unique ID of the tenant on which to perform the operation.
+The default value is the tenant of the current user.
+This parameter applies only to partner users.
 
 ```yaml
 Type: Guid
@@ -81,7 +78,8 @@ Accept wildcard characters: False
 ```
 
 ### -All
-
+Indicates that this cmdlet returns all results that it finds.
+Do not specify this parameter and the _MaxResults_ parameter.
 
 ```yaml
 Type: SwitchParameter
@@ -96,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxResults
-
+Specifies the maximum number of results that this cmdlet returns.
 
 ```yaml
 Type: Int32
@@ -111,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -SearchKey
-
+Specifies a search key.
 
 ```yaml
 Type: PartnerContractSearchKey

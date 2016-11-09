@@ -8,7 +8,7 @@ ms.assetid: A5A10B0B-7C64-4778-8B42-EB073E2ADA92
 # Connect-MsolService
 
 ## SYNOPSIS
-Initiates a connection with Azure Active Directory.
+Initiates a connection to Azure Active Directory.
 
 ## SYNTAX
 
@@ -30,32 +30,34 @@ Connect-MsolService [-AdGraphAccessToken <String>] [-MsGraphAccessToken <String>
 
 ## DESCRIPTION
 The **Connect-MsolService** cmdlet attempts to initiate a connection to Azure Active Directory.
-The caller must provide their credential (a PSCredential object), or specify the CurrentCredentials switch to use the credentials of the currently logged in user.
+You must specify a credential, as a **PSCredential** object, or specify the _CurrentCredentials_ parameter to use the credentials of the current user.
 
-        This cmdlet may return a warning or error if the version of the module being used is out of date.
+This cmdlet may return a warning or error if the version of the module is out of date.
 
 ## EXAMPLES
 
-### Example 1:
+### Example 1: Initiate a connection
 ```
 PS C:\> Connect-MsolService
 ```
 
-This command attempts to initiate a connection with Microsoft Azure Active Directory.
-Since no credential is provided, the user will be prompted to enter their username and password.
+This command attempts to initiate a connection with Azure Active Directory.
+Since no credential is provided, the cmdlet prompts you to enter your username and password.
 
-### Example 2:
+### Example 2: Initiate a connection by using a credential object
 ```
-PS C:\> Connect-MsolService -Credential $cred -AzureEnvironment AzureChinaCloud
+PS C:\> Connect-MsolService -Credential $Credential -AzureEnvironment AzureChinaCloud
 ```
 
-This command attempts to initiate a connection to AzureChinaCloud with Microsoft Azure Active Directory using the credential provided.
-The credential must be of the type PSCredential (typically retrieved through the Get-Credential cmdlet).
+This command attempts to initiate a connection to AzureChinaCloud with Azure Active Directory using the credential provided.
+The credential must be of the type **PSCredential**.
+To obtain a credential object, use the **Get-Credential** cmdlet.
 
 ## PARAMETERS
 
 ### -Credential
-The credential to use for connecting to Microsoft Azure Active Directory.
+Specifies the credential to use to connect to Azure Active Directory.
+To obtain a **PSCredential** object, use the **Get-Credential** cmdlet.
 
 ```yaml
 Type: PSCredential
@@ -70,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -AdGraphAccessToken
-The AD Graph access token to use for connecting to Microsoft Azure Active Directory.
+Specifies the AD Graph access token to use to connect to Azure Active Directory.
 
 ```yaml
 Type: String
@@ -85,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -MsGraphAccessToken
-The MS Graph access token to use for connecting to Microsoft Azure Active Directory.
+Specifies the MS Graph access token to use to connect to Azure Active Directory.
 
 ```yaml
 Type: String
@@ -100,8 +102,13 @@ Accept wildcard characters: False
 ```
 
 ### -AzureEnvironment
-The deployment type to use for connecting to Microsoft Azure Active Directory in different region.
-Possible values are AzureCloud, AzureChinaCloud, AzureGermanyCloud and USGovernment.
+Specifies the deployment type to use to connect to Azure Active Directory in different region.
+Valid values are:
+
+* AzureCloud
+* AzureChinaCloud
+* AzureGermanyCloud
+* USGovernment
 
 ```yaml
 Type: AzureEnvironment

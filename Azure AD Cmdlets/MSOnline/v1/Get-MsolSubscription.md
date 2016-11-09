@@ -8,7 +8,7 @@ ms.assetid: 0633C5AB-EA9A-4B55-959D-26611F16AB43
 # Get-MsolSubscription
 
 ## SYNOPSIS
-Retrieves subscriptions.
+Gets subscriptions.
 
 ## SYNTAX
 
@@ -23,29 +23,23 @@ Get-MsolSubscription -SubscriptionId <Guid> [-TenantId <Guid>] [<CommonParameter
 ```
 
 ## DESCRIPTION
-The Get-MsolSubscription cmdlet returns all the subscriptions that the company has purchased.
-When assigning licenses to users, the Get-MsolAccountSku API should be used instead.
+The **Get-MsolSubscription** cmdlet gets all the subscriptions that the company has purchased.
+When assigning licenses to users, the [Get-MsolAccountSku](./Get-MsolAccountSku.md) cmdlet should be used instead.
 
 ## EXAMPLES
 
-### Example 1:
+### Example 1: Gets a list of company subscriptions
 ```
 PS C:\> Get-MsolSubscription
-
-          Returns a list of subscriptions.
 ```
 
-Description
-
------------
-
-This command retrieves a list of company subscriptions.
-For license assignment,  the Get-MsolAccountSKU cmdlet should be used instead.
+This command gets a list of company subscriptions.
+For license assignment,  the [Get-MsolAccountSku](./Get-MsolAccountSku.md) cmdlet should be used instead.
 
 ## PARAMETERS
 
 ### -SubscriptionId
-The object ID of the subscription to retrieve.
+Specifies the unique object ID of the subscription to retrieve.
 
 ```yaml
 Type: Guid
@@ -84,26 +78,27 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Online.Administration.Subscription
-For this cmdlet, each output object will include the following:
+This cmdlet returns subscription objects that contain the following information:
 
-            DateCreated: The date that this subscription was created.
+* DateCreated. The date that this subscription was created.
 
-            NextLifecycleDate: The date of the next lifecycle event for this subscription.
+* NextLifecycleDate. The date of the next lifecycle event for this subscription.
 
-            ObjectId: The unique ID of this subscription.
+* ObjectId. The unique ID of this subscription.
 
-            OcpSubscriptionId: The ID of this subscription in the commerce system.
+* OcpSubscriptionId. The ID of this subscription in the commerce system.
 
-            ServiceStatus: The provisioning status of each service associated with this subscription.
+* ServiceStatus. The provisioning status of each service associated with this subscription.
 
-            SkuId: The object ID of the SKU associated with this subscription.
+* SkuId. The object ID of the SKU associated with this subscription.
 
-            SkuPartNumber: The SKU associated with this subscription.
+* SkuPartNumber. The SKU associated with this subscription.
 
-            Status: The status of this subscription (Enabled, Expired, or Suspended).
+* Status. The status of this subscription (Enabled, Expired, or Suspended).
 
-            TotalLicenses: The number of seats included in this subscription.
+* TotalLicenses. The number of seats included in this subscription.
 
 ## NOTES
 
 ## RELATED LINKS
+[Get-MsolAccountSku](./Get-MsolAccountSku.md)
