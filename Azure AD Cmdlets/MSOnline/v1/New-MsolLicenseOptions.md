@@ -8,8 +8,7 @@ ms.assetid: 8D9F4A29-671A-468A-9B20-B985DF1B4EC2
 # New-MsolLicenseOptions
 
 ## SYNOPSIS
-Creates a new License Options object.
-This object is used when assigning licenses through Add-MSOLUser and Set-MsolUserLicense cmdlets.
+Creates a License Options object.
 
 ## SYNTAX
 
@@ -19,29 +18,23 @@ New-MsolLicenseOptions -AccountSkuId <String>
 ```
 
 ## DESCRIPTION
-The New-MsolLicenseOptions cmdlet creates a new License Options object.
-This cmdlet disables specific service plans when assigning a user a license using the Add-MsolUser and Set-MsolUserLicense cmdlets.
+The **New-MsolLicenseOptions** cmdlet creates a License Options object.
+This cmdlet disables specific service plans when assigning a user a license using the [Add-MsolUser](./Add-MsolUser.md) and [Set-MsolUserLicense](./Set-MsolUserLicense.md) cmdlets.
 
 ## EXAMPLES
 
 ### Example 1:
 ```
 PS C:\> New-MsolLicenseOption -AccountSkuId Contoso:BPOS_STANDARD -DisabledPlans EXCHANGE_STANDARD
-
-          Returns a License Option object.
 ```
 
-Description
-
------------
-
 This command creates a license options object.
-This can be used for the license options parameter in New-MsolUser or Set-MsolUserLicense.
+This object can be used for the license options parameter in the [New-MsolUser](./New-MsolUser.md) or [Set-MsolUserLicense](./Set-MsolUserLicense.md) cmdlets.
 
 ## PARAMETERS
 
 ### -AccountSkuId
-The license (AccountSkuID) for these options.
+Specifies the license, or account SKU ID, for these options.
 
 ```yaml
 Type: String
@@ -56,7 +49,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisabledPlans
-A list of service plans to disable when assigning this license to the user.
+Specifies a list of service plans to disable when assigning this license to the user.
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
@@ -80,3 +73,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Add-MsolUser](./Add-MsolUser.md)
+
+[New-MsolUser](./New-MsolUser.md)
+
+[Set-MsolUserLicense](./Set-MsolUserLicense.md) 

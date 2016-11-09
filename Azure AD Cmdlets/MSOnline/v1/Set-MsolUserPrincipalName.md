@@ -25,28 +25,22 @@ Set-MsolUserPrincipalName -NewUserPrincipalName <String> [-ImmutableId <String>]
 ```
 
 ## DESCRIPTION
-The Set-MsolUserPrincipalName cmdlet is used to change the User Principal Name (user ID) of a user.
-This cmdlet can be used to move a user between a federated and standard domain, which will result in their authentication type changing to that of the target domain.
+The **Set-MsolUserPrincipalName** cmdlet changes the User Principal Name, or user ID, of a user.
+This cmdlet can be used to move a user between a federated and standard domain, which results in their authentication type changing to that of the target domain.
 
 ## EXAMPLES
 
 ### Example 1:
 ```
-PS C:\> Set-MsolUserPrincipalName -UserPrincipalName user@contoso.com -NewUserPrincipalName johns@contoso.com
-
-          None
+PS C:\> Set-MsolUserPrincipalName -UserPrincipalName "davidc@contoso.com" -NewUserPrincipalName "davidchew@contoso.com"
 ```
 
-Description
-
------------
-
-This command renames user@contoso.com to johns@contoso.com.
+This command renames davidc@contoso.com to davidchew@contoso.com.
 
 ## PARAMETERS
 
 ### -ImmutableId
-The immutable ID of the user's federated identity.
+Specifies the immutable ID of the user's federated identity.
 This is required if moving the user from a standard to a federated identity domain.
 
 ```yaml
@@ -62,7 +56,7 @@ Accept wildcard characters: False
 ```
 
 ### -NewPassword
-The new password for the user.
+Specifies the new password for the user.
 This is required if moving the user from a federated to a standard identity domain.
 
 ```yaml
@@ -78,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -NewUserPrincipalName
-The new user ID of the user.
+Specifies the new user ID of the user.
 
 ```yaml
 Type: String
@@ -93,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-The ObjectId of the user to update.
+Specifies the unique object ID of the user to update.
 
 ```yaml
 Type: Guid
@@ -125,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserPrincipalName
-The original user ID of the user to update.
+Specifies the original user ID of the user to update.
 
 ```yaml
 Type: String
@@ -149,3 +143,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Set-MsolUserLicense](./Set-MsolUserLicense.md)
+
+[Set-MsolUserPassword](./Set-MsolUserPassword.md)

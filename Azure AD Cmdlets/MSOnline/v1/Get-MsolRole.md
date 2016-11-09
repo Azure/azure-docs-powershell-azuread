@@ -32,7 +32,7 @@ The **Get-MsolRole** cmdlet gets a list of administrator roles.
 
 ## EXAMPLES
 
-### Example 1: Gets administrator roles for the company
+### Example 1: Get administrator roles for the company
 ```
 PS C:\> Get-MsolRole
 ```

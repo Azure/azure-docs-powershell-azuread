@@ -8,7 +8,7 @@ ms.assetid: 728230E1-6984-49F8-B153-B73A7724EF5A
 # Redo-MsolProvisionUser
 
 ## SYNOPSIS
-The Redo-MsolProvisionUser cmdlet can be used to retry the provisioning of a user object in Microsoft Azure Active Directory when a previous attempt to create the user object resulted in a validation error.
+Retries the provisioning of a user object in Azure Active Directory.
 
 ## SYNTAX
 
@@ -17,11 +17,12 @@ Redo-MsolProvisionUser -ObjectId <Guid> [-TenantId <Guid>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
+The **Redo-MsolProvisionUser** cmdlet retries the provisioning of a user object in Azure Active Directory when a previous attempt to create the user object resulted in a validation error.
 
 ## PARAMETERS
 
 ### -ObjectId
-The ObjectId of the user to retrieve.
+Specifies the unique object ID associated with the user object on which to retry provisioning.
 
 ```yaml
 Type: Guid
@@ -62,3 +63,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Redo-MsolProvisionContact](./Redo-MsolProvisionContact.md)
+
+[Redo-MsolProvisionGroup](./Redo-MsolProvisionGroup.md)

@@ -8,7 +8,7 @@ ms.assetid: 8892BB76-AA57-4A21-B03B-61D3201D8B7A
 # Redo-MsolProvisionContact
 
 ## SYNOPSIS
-The Redo-MsolProvisionContact cmdlet can be used to retry the provisioning of a contact object in Microsoft Azure Active Directory when a previous attempt to create the contact object resulted in a validation error.
+Retries the provisioning of a contact object in Azure Active Directory.
 
 ## SYNTAX
 
@@ -17,11 +17,13 @@ Redo-MsolProvisionContact -ObjectId <Guid> [-TenantId <Guid>] [<CommonParameters
 ```
 
 ## DESCRIPTION
+The **Redo-MsolProvisionContact** cmdlet retries the provisioning of a contact object in Azure Active Directory when a previous attempt to create the contact object resulted in a validation error.
+
 
 ## PARAMETERS
 
 ### -ObjectId
-The ObjectId associated with the contact object to retry provisioning on.
+Specifies the unique object ID associated with the contact object on which to retry provisioning.
 
 ```yaml
 Type: Guid
@@ -62,3 +64,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Redo-MsolProvisionGroup](./Redo-MsolProvisionGroup.md)
+
+[Redo-MsolProvisionUser](./Redo-MsolProvisionUser.md)
