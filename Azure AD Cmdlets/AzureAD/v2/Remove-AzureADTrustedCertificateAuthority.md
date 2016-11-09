@@ -8,7 +8,7 @@ ms.assetid: 51B0B9EC-8A74-4C48-A6CE-2FA005A0B3F0
 # Remove-AzureADTrustedCertificateAuthority
 
 ## SYNOPSIS
-
+Removes a trusted certificate authority.
 ## SYNTAX
 
 ```
@@ -17,18 +17,11 @@ Remove-AzureADTrustedCertificateAuthority -CertificateAuthorityInformation <Cert
 ```
 
 ## DESCRIPTION
-
-## EXAMPLES
-
-### 1:
-```
-PS C:\>
-```
+The **Remove-AzureADTrustedCertificateAuthority** cmdlet removes a trusted certificate authority from Azure Active Directory (AD).
 
 ## PARAMETERS
 
 ### -CertificateAuthorityInformation
-@{Text=}
 
 ```yaml
 Type: CertificateAuthorityInformation
@@ -43,9 +36,7 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -91,5 +82,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-AzureADTrustedCertificateAuthority](./Get-AzureADTrustedCertificateAuthority.md)
 
+[New-AzureADTrustedCertificateAuthority](./New-AzureADTrustedCertificateAuthority.md)
 
+[Set-AzureADTrustedCertificateAuthority](./Set-AzureADTrustedCertificateAuthority.md)
