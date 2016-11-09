@@ -20,15 +20,15 @@ Remove-AzureADServicePrincipalPolicy -ObjectId <String> -PolicyId <String>
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
-```
+### Example 1: Remove a service principal policy
+```PowerShell
 PS C:\>Remove-AzureADApplicationPolicy -ObjectId <object id of application> -PolicyId <object id of policy>
 ```
-
+This command removes a service principal policy.
 ## PARAMETERS
 
 ### -ObjectId
-The object Id of the Application
+Specifies the object ID of an application.
 
 ```yaml
 Type: String
@@ -43,7 +43,7 @@ Accept wildcard characters: False
 ```
 
 ### -PolicyId
-The ObjectId of Policy
+Specifies the object ID of a policy.
 
 ```yaml
 Type: String
@@ -58,9 +58,7 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -106,5 +104,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Add-AzureADServicePrincipalPolicy](./Add-AzureADServicePrincipalPolicy.md)
 
-
+[Get-AzureADServicePrincipalPolicy](./Get-AzureADServicePrincipalPolicy.md)
