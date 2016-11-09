@@ -8,7 +8,7 @@ ms.assetid: 80D775B6-1EA6-4F54-A727-A981B0CBC3A1
 # Set-AzureADAdministrativeUnit
 
 ## SYNOPSIS
-Updates a specific administrativeUnit in Azure Active Directory
+Updates an administrative unit.
 
 ## SYNTAX
 
@@ -18,18 +18,12 @@ Set-AzureADAdministrativeUnit -ObjectId <String> [-InformationAction <ActionPref
 ```
 
 ## DESCRIPTION
-
-## EXAMPLES
-
-### 1:
-```
-PS C:\>
-```
+The **Set-AzureADAdministrativeUnit** cmdlet updates an administrative unit in Azure Active Directory (AD).
 
 ## PARAMETERS
 
 ### -ObjectId
-The unique idenfier of an administrative unit in Azure Active Directory
+Specifies the ID of an administrative unit in Azure AD.
 
 ```yaml
 Type: String
@@ -44,9 +38,7 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -83,8 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -Description
-@{Text=}
-
+Specifies a description.
 ```yaml
 Type: String
 Parameter Sets: (All)
@@ -98,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-@{Text=}
+Specifies a display name.
 
 ```yaml
 Type: String
@@ -122,5 +113,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-AzureADAdministrativeUnit](./Get-AzureADAdministrativeUnit.md)
 
+[New-AzureADAdministrativeUnit](./New-AzureADAdministrativeUnit.md)
 
+[Remove-AzureADAdministrativeUnit](./Remove-AzureADAdministrativeUnit.md)
