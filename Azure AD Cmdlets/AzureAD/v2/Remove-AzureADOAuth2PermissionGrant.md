@@ -8,7 +8,7 @@ ms.assetid: E02E6FAA-5FE3-4EDC-8BCA-75342557F3D5
 # Remove-AzureADOAuth2PermissionGrant
 
 ## SYNOPSIS
-Delete an oAuth2PermissionGrant.
+Removes an oAuth2PermissionGrant.
 
 ## SYNTAX
 
@@ -18,18 +18,12 @@ Remove-AzureADOAuth2PermissionGrant -ObjectId <String> [-InformationAction <Acti
 ```
 
 ## DESCRIPTION
-
-## EXAMPLES
-
-### 1:
-```
-PS C:\>
-```
+The **Remove-AzureADOAuth2PermissionGrant** cmdlet removes an **oAuth2PermissionGrant** object in Azure Active Directory (AD).
 
 ## PARAMETERS
 
 ### -ObjectId
-The unique identifier of an oAuth2PermissionGrant in Azure Active Directory
+Specifies the ID of an **oAuth2PermissionGrant** object in Azure AD.
 
 ```yaml
 Type: String
@@ -44,9 +38,7 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -92,5 +84,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-
-
+[Get-AzureADOAuth2PermissionGrant](./Get-AzureADOAuth2PermissionGrant.md)
