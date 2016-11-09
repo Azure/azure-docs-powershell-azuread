@@ -8,7 +8,7 @@ ms.assetid: 3FA60E42-BD4A-40C9-B3FC-CEE205E7DB4D
 # Select-AzureADGroupIdsServicePrincipalIsMemberOf
 
 ## SYNOPSIS
-From a list of groups Ids select those that the service principal is a member of.
+Selects the groups in which a service principal is a member.
 
 ## SYNTAX
 
@@ -19,18 +19,12 @@ Select-AzureADGroupIdsServicePrincipalIsMemberOf -ObjectId <String>
 ```
 
 ## DESCRIPTION
-
-## EXAMPLES
-
-### 1:
-```
-PS C:\>
-```
+The **Select-AzureADGroupIdsServicePrincipalIsMemberOf** cmdlet selects the groups in which a service principal is a member in Azure Active Directory (AD).
 
 ## PARAMETERS
 
 ### -ObjectId
-The unique idenfier of an service principal in Azure Active Directory
+Specifies the ID of a service principal in Azure AD.
 
 ```yaml
 Type: String
@@ -45,7 +39,7 @@ Accept wildcard characters: False
 ```
 
 ### -GroupIdsForMembershipCheck
-A list of groups object ids.
+Specifies an array of group object IDs.
 
 ```yaml
 Type: GroupIdsForMembershipCheck
@@ -60,9 +54,7 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore

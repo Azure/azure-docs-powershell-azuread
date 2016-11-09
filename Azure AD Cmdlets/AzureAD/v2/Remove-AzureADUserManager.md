@@ -8,7 +8,7 @@ ms.assetid: 0D0A1E28-96E7-4139-908D-13C426D8065E
 # Remove-AzureADUserManager
 
 ## SYNOPSIS
-Deletes the user's manager in Azure Active Directory
+Removes a user's manager.
 
 ## SYNTAX
 
@@ -18,18 +18,12 @@ Remove-AzureADUserManager -ObjectId <String> [-InformationAction <ActionPreferen
 ```
 
 ## DESCRIPTION
-
-## EXAMPLES
-
-### 1:
-```
-PS C:\>
-```
+The **Remove-AzureADUserManager** cmdlet removes a user's manager in Azure Active Directory (AD).
 
 ## PARAMETERS
 
 ### -ObjectId
-The unique identifier of a user in Azure Active Directory (UPN or ObjectId)
+Specifies the ID of a user (as a UPN or ObjectId) in Azure AD.
 
 ```yaml
 Type: String
@@ -44,9 +38,7 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -92,5 +84,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-AzureADUserManager](./Get-AzureADUserManager.md)
 
-
+[Set-AzureADUserManager](./Set-AzureADUserManager.md)

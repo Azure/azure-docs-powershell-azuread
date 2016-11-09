@@ -8,7 +8,7 @@ ms.assetid: 7B6DBC7D-8143-47E3-A045-A76F93692099
 # Select-AzureADGroupIdsGroupIsMemberOf
 
 ## SYNOPSIS
-From a list of groups Ids select those that the group is a member of.
+Gets group IDs that a group is a member of.
 
 ## SYNTAX
 
@@ -19,18 +19,13 @@ Select-AzureADGroupIdsGroupIsMemberOf -ObjectId <String>
 ```
 
 ## DESCRIPTION
+The **Select-AzureADGroupIdsGroupIsMemberOf** cmdlet gets the groups that a specified group is a member of in Azure Active Directory (AD).
 
-## EXAMPLES
-
-### 1:
-```
-PS C:\>
-```
 
 ## PARAMETERS
 
 ### -ObjectId
-The unique identifier of a group in Azure Active Directory (ObjectId)
+Specifies the ID of a group in Azure AD.
 
 ```yaml
 Type: String
@@ -45,7 +40,7 @@ Accept wildcard characters: False
 ```
 
 ### -GroupIdsForMembershipCheck
-A list of groups object ids.
+Specifies an array of group object IDs.
 
 ```yaml
 Type: GroupIdsForMembershipCheck
@@ -60,9 +55,7 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -108,5 +101,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-
 
