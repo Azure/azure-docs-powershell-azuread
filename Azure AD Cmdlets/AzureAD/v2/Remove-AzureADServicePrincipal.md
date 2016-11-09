@@ -8,7 +8,7 @@ ms.assetid: 2354DE41-1B2A-4CEE-A3F6-59A6FB28563A
 # Remove-AzureADServicePrincipal
 
 ## SYNOPSIS
-Delete an application by objectId.
+Removes a service principal.
 
 ## SYNTAX
 
@@ -18,18 +18,12 @@ Remove-AzureADServicePrincipal -ObjectId <String> [-InformationAction <ActionPre
 ```
 
 ## DESCRIPTION
-
-## EXAMPLES
-
-### 1:
-```
-PS C:\>
-```
+The **Remove-AzureADServicePrincipal** cmdlet removes a service principal in Azure Active Directory (AD).
 
 ## PARAMETERS
 
 ### -ObjectId
-The unique idenfier of an service principal in Azure Active Directory
+Specifies the ID of a service principal in Azure AD.
 
 ```yaml
 Type: String
@@ -44,9 +38,7 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -92,5 +84,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-AzureADServicePrincipal](./Get-AzureADServicePrincipal.md)
 
+[New-AzureADServicePrincipal](./New-AzureADServicePrincipal.md)
 
+[Set-AzureADServicePrincipal](./Set-AzureADServicePrincipal.md)
