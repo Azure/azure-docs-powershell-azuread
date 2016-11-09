@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
-online version: 
+online version:
 schema: 2.0.0
 ms.assetid: 73C147BE-82EC-484F-B2F3-EC684AA7B52C
 ---
@@ -29,7 +29,7 @@ The **Remove-MsolDevice** cmdlet removes a device object from Azure Active Direc
 
 ### Example 1: Remove a device by device ID with confirmation
 ```
-PS C:\>Remove-MsolDevice -DeviceId "1aa200c4-bdfb-42b5-9a1e-5f1bafbe4274"
+PS C:\> Remove-MsolDevice -DeviceId "1aa200c4-bdfb-42b5-9a1e-5f1bafbe4274"
 ```
 
 This command removes the device with DeviceId 1aa200c4-bdfb-42b5-9a1e-5f1bafbe4274 from Azure Active Directory.
@@ -37,7 +37,7 @@ Since the command does not use the *Force* parameter, the user is prompted for c
 
 ### Example 2: Remove a device by device ID
 ```
-PS C:\>Remove-MsolDevice -DeviceId "1aa200c4-bdfb-42b5-9a1e-5f1bafbe4274" -Force
+PS C:\> Remove-MsolDevice -DeviceId "1aa200c4-bdfb-42b5-9a1e-5f1bafbe4274" -Force
 ```
 
 This command removes the device with DeviceId 1aa200c4-bdfb-42b5-9a1e-5f1bafbe4274 from Azure Active Directory.
@@ -45,7 +45,7 @@ Since the command uses the *Force* parameter, the user is not prompted for confi
 
 ### Example 3: Remove a device by object ID
 ```
-PS C:\>Remove-MsolDevice -ObjectId "1aa200c4-bdfb-42b5-9a1e-5f1bafbe4274"
+PS C:\> Remove-MsolDevice -ObjectId "1aa200c4-bdfb-42b5-9a1e-5f1bafbe4274"
 ```
 
 This command removes the device with ObjectId 1aa200c4-bdfb-42b5-9a1e-5f1bafbe4274 from Azure Active Directory.
@@ -58,7 +58,7 @@ Specifies the device ID of the device that this cmdlet removes.
 ```yaml
 Type: Guid
 Parameter Sets: RemoveDeviceByDeviceId
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -73,7 +73,7 @@ Forces the command to run without asking for user confirmation.
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -88,7 +88,7 @@ Specifies the unique object ID of the device that this cmdlet removes.
 ```yaml
 Type: Guid
 Parameter Sets: RemoveDeviceByObjectId
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.Prompts you for confirmation before running the cmdlet.
+Prompts you for confirmation before running the command.
 
 ```yaml
 Type: SwitchParameter
@@ -114,7 +114,6 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
-The cmdlet is not run.Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
@@ -152,5 +151,3 @@ This cmdlet does not generate any output.
 [Enable-MsolDevice](./Enable-MsolDevice.md)
 
 [Get-MsolDevice](./Get-MsolDevice.md)
-
-

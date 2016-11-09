@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
-online version: 
+online version:
 schema: 2.0.0
 ms.assetid: BFC8C1EC-B14D-45C6-8F11-E128E22C13A8
 ---
@@ -8,7 +8,7 @@ ms.assetid: BFC8C1EC-B14D-45C6-8F11-E128E22C13A8
 # Get-MsolGroup
 
 ## SYNOPSIS
-Retrieves a group from Microsoft Azure Active Directory.
+Gets groups from Azure Active Directory.
 
 ## SYNTAX
 
@@ -32,61 +32,43 @@ Get-MsolGroup [-UserObjectId <Guid>] [-IsAgentRole] [-UserPrincipalName <String>
 ```
 
 ## DESCRIPTION
-The Get-MsolGroup cmdlet is used to retrieve groups from Microsoft Azure Active Directory.
-This cmdlet can be used to return a single group (if ObjectId is passed in), or to search within all groups.
+The **Get-MsolGroup** cmdlet gets groups from Azure Active Directory.
+This cmdlet can be used to return a single group, if you specify the _ObjectId_ parameter, or to search within all groups.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### Example 1: Get a group by using an ID
 ```
-Get-MsolGroup -ObjectId <guid>
-
-          None
+PS C:\> Get-MsolGroup -ObjectId af407072-7ae1-4b07-a0ca-6634b7396054
 ```
 
-Description
+This command returns the group object that has the specified ID.
 
------------
-
-This command returns the group object with the corresponding ID.
-
-### -------------------------- EXAMPLE 2 --------------------------
+### Example 2: Get all groups
 ```
-Get-MsolGroup
-
-          None
+PS C:\> Get-MsolGroup
 ```
 
-Description
+This command returns the entire set of groups for the tenant, up to the default 250 results.
 
------------
-
-This command returns the entire set of groups for the tenant (up to 250).
-
-### -------------------------- EXAMPLE 3 --------------------------
+### Example 3: Get a group by using a user principal name
 ```
-Get-MsolGroup -isAgentRole -UserPrincipalName user@contoso.com
-
-          None
+PS C:\> Get-MsolGroup -isAgentRole -UserPrincipalName "pattifuller@contoso.com"
 ```
 
-Description
-
------------
-
-This command returns the agent groups that a user is a member of. 
+This command returns the agent groups that a user is a member of.
 This only applies for companies that have partner privileges.
 
 ## PARAMETERS
 
 ### -All
-If present then all results will be returned. 
-Cannot be used with MaxResults parameter.
+Indicates that this cmdlet returns all results that it finds.
+Do not specify this parameter and the _MaxResults_ parameter.
 
 ```yaml
 Type: SwitchParameter
 Parameter Sets: All__0
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -96,13 +78,13 @@ Accept wildcard characters: False
 ```
 
 ### -GroupType
-The filter to return only groups of the specified type.
+Specifies the type of groups to get.
 Valid values are Security, MailEnabledSecurity, and DistributionList.
 
 ```yaml
 Type: GroupType
 Parameter Sets: ListGroups__0, All__0
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -112,12 +94,12 @@ Accept wildcard characters: False
 ```
 
 ### -HasErrorsOnly
-The filter for only groups with validation errors.
+Indicates that this cmdlet returns only groups that have validation errors.
 
 ```yaml
 Type: SwitchParameter
 Parameter Sets: ListGroups__0, All__0
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -127,13 +109,13 @@ Accept wildcard characters: False
 ```
 
 ### -IsAgentRole
-The filter for only agent groups.
-Used by partners only.
+Specifies that this cmdlet returns only agent groups.
+This value applies only to partner users.
 
 ```yaml
 Type: SwitchParameter
 Parameter Sets: ListGroups__0, All__0
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -143,13 +125,13 @@ Accept wildcard characters: False
 ```
 
 ### -MaxResults
-The maximum number of results returned for a search.
-If not specified, 250 results will be returned.
+Specifies the maximum number of results that this cmdlet returns.
+The default value is 250.
 
 ```yaml
 Type: Int32
 Parameter Sets: ListGroups__0
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -159,12 +141,12 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-The unique ID of the group to retrieve.
+Specifies the unique object ID of the group to get.
 
 ```yaml
 Type: Guid
 Parameter Sets: GetGroup__0
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -174,13 +156,13 @@ Accept wildcard characters: False
 ```
 
 ### -SearchString
-The string to search on.
-Only groups with a display name or email address starting with this string will be returned.
+Specifies a string.
+This cmdlet returns security groups that have a display name that start with this string.
 
 ```yaml
 Type: String
 Parameter Sets: ListGroups__0, All__0
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -190,14 +172,14 @@ Accept wildcard characters: False
 ```
 
 ### -TenantId
-The unique ID of the tenant to perform the operation on.
-If this is not provided, then the value will default to the tenant of the current user.
-This parameter is only applicable to partner users.
+Specifies the unique ID of the tenant on which to perform the operation.
+The default value is the tenant of the current user.
+This parameter applies only to partner users.
 
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -207,14 +189,14 @@ Accept wildcard characters: False
 ```
 
 ### -UserObjectId
-The unique ID of a user.
-If provided, only groups that this user belongs to will be returned.
-This parameter must be used along with IsAgentRole.
+Specifies the unique ID of a user.
+This cmdlet returns security groups to which this user belongs.
+This parameter must be used along with the _IsAgentRole_ parameter.
 
 ```yaml
 Type: Guid
 Parameter Sets: ListGroups__0, All__0
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -224,14 +206,14 @@ Accept wildcard characters: False
 ```
 
 ### -UserPrincipalName
-The user ID of a user.
-If provided, only groups that this user belongs to will be returned.
-This must be used along with IsAgentRole.
+Specifies the user principal name of a user.
+This cmdlet returns security groups to which this user belongs.
+This parameter must be used along with the _IsAgentRole_ parameter.
 
 ```yaml
 Type: String
 Parameter Sets: ListGroups__0, All__0
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -241,12 +223,13 @@ Accept wildcard characters: False
 ```
 
 ### -HasLicenseErrorsOnly
+Specifies whether this cmdlet returns only security groups that have license errors.
 
 
 ```yaml
 Type: Boolean
 Parameter Sets: ListGroups__0, All__0
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -263,37 +246,40 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Online.Administration.Group
-This cmdlet, returns a list of groups, which include the following information:
+This cmdlet returns a list of groups, which include the following information:
 
-            CommonName: The group's common name.
+* CommonName. The group's common name.
 
-            Description: A description of the group.
+* Description. A description of the group.
 
-            DisplayName: The group's display name.
+* DisplayName. The group's display name.
 
-            EmailAddress: The group's email addresses.
+* EmailAddress. The group's email addresses.
 This is not returned for security groups.
 
-            Errors: A list of errors for the group.
+* Errors. A list of errors for the group.
 
-            GroupType: The group's type.
+* GroupType. The group's type.
 Types can be SecurityGroup, DistributionList or MailEnabledSecurityGroup.
 
-            IsSystem: Whether or not this group is a system group (created by Microsoft Azure Active Directory). 
+* IsSystem. Whether or not this group is a system group (created by Azure Active Directory).
 These groups cannot be updated or removed.
 
-            LastDirSyncTime: The date and time that the group was last synched.
+* LastDirSyncTime. The date and time that the group was last synched.
 
-            ManagedBy: The owner of the group.
+* ManagedBy. The owner of the group.
 
-            ObjectId: The group's unique object ID.
+* ObjectId. The group's unique object ID.
 
-            Proxy Addresses - the proxy addresses associated with this group (for mail-enabled groups only).
+* Proxy Addresses. The proxy addresses associated with this group (for mail-enabled groups only).
 
-            ValidationStatus: Whether or not the group has any errors.
+* ValidationStatus. Whether or not the group has any errors.
 
 ## NOTES
 
 ## RELATED LINKS
+[New-MsolGroup](./New-MsolGroup.md)
 
+[Remove-MsolGroup](./Remove-MsolGroup.md)
 
+[Set-MsolGroup](./Set-MsolGroup.md)

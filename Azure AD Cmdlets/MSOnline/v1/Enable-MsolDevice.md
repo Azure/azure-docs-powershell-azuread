@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
-online version: 
+online version:
 schema: 2.0.0
 ms.assetid: 5810982A-C9A8-4A13-BE28-5D9CB053DB1A
 ---
@@ -51,7 +51,7 @@ Specifies the device ID of the device that this cmdlet enables.
 ```yaml
 Type: Guid
 Parameter Sets: EnableDeviceByDeviceId
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -66,7 +66,7 @@ Forces the command to run without asking for user confirmation.
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -81,7 +81,7 @@ Specifies the unique object ID of the device that this cmdlet enables.
 ```yaml
 Type: Guid
 Parameter Sets: EnableDeviceByObjectId
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -91,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.Prompts you for confirmation before running the cmdlet.
+Prompts you for confirmation before running the command.
 
 ```yaml
 Type: SwitchParameter
@@ -107,7 +107,6 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Shows what would happen if the cmdlet runs.
-The cmdlet is not run.Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
@@ -141,5 +140,3 @@ This cmdlet does not generate any output.
 [Get-MsolDevice](./Get-MsolDevice.md)
 
 [Remove-MsolDevice](./Remove-MsolDevice.md)
-
-

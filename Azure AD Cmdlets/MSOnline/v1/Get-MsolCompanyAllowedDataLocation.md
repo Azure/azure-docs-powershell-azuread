@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
-online version: 
+online version:
 schema: 2.0.0
 ms.assetid: 85832284-6D5C-4003-BE79-DA7D985B9056
 ---
@@ -8,7 +8,7 @@ ms.assetid: 85832284-6D5C-4003-BE79-DA7D985B9056
 # Get-MsolCompanyAllowedDataLocation
 
 ## SYNOPSIS
-Retrieves all the current allowed data locations of a company from Azure Active Directory.
+Get the current allowed data locations of a company from Azure Active Directory.
 
 ## SYNTAX
 
@@ -17,35 +17,29 @@ Get-MsolCompanyAllowedDataLocation [-TenantId <Guid>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The Get-MsolCompanyAllowedDataLocation cmdlet can be used to retrieve all the current allowed data locations of a company from Azure Active Directory.
-If a company has not opted in the multinational feature or has no allowed data locations, then the cmdlet will return an empty list.
+The **Get-MsolCompanyAllowedDataLocation** cmdlet gets all the current allowed data locations of a company from Azure Active Directory.
+If a company has not opted in the multinational feature or has no allowed data locations, the cmdlet returns an empty list.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### Example 1: Get current allowed data locations
 ```
-Get-MsolCompanyAllowedDataLocation
-
-          Returns all the current allowed data locations of a company from Azure Active Directory.
+PS C:\> Get-MsolCompanyAllowedDataLocation
 ```
-
-Description
-
------------
 
 This command returns all the current allowed data locations of a company from Azure Active Directory.
 
 ## PARAMETERS
 
 ### -TenantId
-The unique ID of the tenant to perform the operation on.
-If this is not provided then the value will default to the tenant of the current user.
-This parameter is only applicable to partner users.
+Specifies the unique ID of the tenant on which to perform the operation.
+The default value is the tenant of the current user.
+This parameter applies only to partner users.
 
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -68,4 +62,4 @@ If a company has not opted in the multinational feature or has no allowed data l
 ## NOTES
 
 ## RELATED LINKS
-
+[Set-MsolCompanyAllowedDataLocation](./Set-MsolCompanyAllowedDataLocation.md)

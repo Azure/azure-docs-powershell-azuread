@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
-online version: 
+online version:
 schema: 2.0.0
 ms.assetid: 20D3AFFB-C7B5-40C4-8379-CE115EC668FC
 ---
@@ -8,7 +8,7 @@ ms.assetid: 20D3AFFB-C7B5-40C4-8379-CE115EC668FC
 # Get-MsolDomainVerificationDns
 
 ## SYNOPSIS
-Retrieves a list of records to configure a domain.
+Gets DNS records necessary to verify a domain.
 
 ## SYNTAX
 
@@ -18,32 +18,26 @@ Get-MsolDomainVerificationDns -DomainName <String> [-Mode <DomainVerificationMod
 ```
 
 ## DESCRIPTION
-The Get-MsolDomainVerificationDns cmdlet is used to return the DNS records that need to be set to verify a domain.
+The **Get-MsolDomainVerificationDns** cmdlet gets the DNS records that need to be set to verify a domain.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### Example 1: Get DNS records that need to be set verify ownership of a domain
 ```
-Get-MsolDomainVerificationDNS -DomainName contoso.com
-
-          Returns the DNS record.
+PS C:\> Get-MsolDomainVerificationDNS -DomainName "contoso.com"
 ```
 
-Description
-
------------
-
-This command retrieves the DNS records that need to be set in order to verify ownership of contoso.com.
+This command gets the DNS records that need to be set in order to verify ownership of contoso.com.
 
 ## PARAMETERS
 
 ### -DomainName
-The fully qualified domain name to retrieve.
+Specifies the fully qualified domain name to retrieve.
 
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -53,13 +47,13 @@ Accept wildcard characters: False
 ```
 
 ### -Mode
-The domain verification mode to use when verifying this domain.
-Possible values for Mode are DnsMXRecord and DnsTxtRecord.
+Specifies the domain verification mode to use when verifying this domain.
+Valid values are: DnsMXRecord and DnsTxtRecord.
 
 ```yaml
 Type: DomainVerificationMode
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -69,14 +63,14 @@ Accept wildcard characters: False
 ```
 
 ### -TenantId
-The unique ID of the tenant to perform the operation on.
-If this is not provided then the value will default to the tenant of the current user.
-This parameter is only applicable to partner users.
+Specifies the unique ID of the tenant on which to perform the operation.
+The default value is the tenant of the current user.
+This parameter applies only to partner users.
 
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -98,5 +92,3 @@ This cmdlet returns details about the DNS records required to verify a domain.
 ## NOTES
 
 ## RELATED LINKS
-
-

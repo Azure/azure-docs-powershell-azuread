@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
-online version: 
+online version:
 schema: 2.0.0
 ms.assetid: 87C2C236-9B82-45D1-BD68-6B118033064C
 ---
@@ -8,7 +8,7 @@ ms.assetid: 87C2C236-9B82-45D1-BD68-6B118033064C
 # Get-MsolAdministrativeUnit
 
 ## SYNOPSIS
-Retrieves administrative units from Azure AD.
+Gets administrative units from Azure Active Directory.
 
 ## SYNTAX
 
@@ -30,65 +30,44 @@ Get-MsolAdministrativeUnit [-UserObjectId <Guid>] [-UserPrincipalName <String>] 
 ```
 
 ## DESCRIPTION
-The Get-MsolAdministrativeUnit cmdlet is used to retrieve administrative units from Azure AD.
+The **Get-MsolAdministrativeUnit** cmdlet gets administrative units from Azure Active Directory.
 
 ## EXAMPLES
 
-### --------------------------  Example 1  --------------------------
-@{paragraph=PS C:\\\>}
-
-
+### Example 1: Get all administrative units
 
 ```
-Get-MsolAdministrativeUnit
+PS C:\> Get-MsolAdministrativeUnit
 ```
-
-Description
-
------------
 
 This command gets all of the administrative units in the tenant of the currently authenticated user.
 
-### --------------------------  Example 2  --------------------------
-@{paragraph=PS C:\\\>}
-
-
+### Example 2: Get an administrative unit by name
 
 ```
-Get-MsolAdministrativeUnit -SearchString "West Coast"
+PS C:\> Get-MsolAdministrativeUnit -SearchString "West Coast"
 ```
 
-Description
+This command get the administrative unit called West Coast.
 
------------
-
-This command retrieves the administrative unit called "West Coast".
-
-### --------------------------  Example 3  --------------------------
-@{paragraph=PS C:\\\>}
-
-
+### Example 3: Get an administrative unit by user principal name
 
 ```
-Get-MsolAdministrativeUnit -UserPrincipalName "user1@contoso.com"
+Get-MsolAdministrativeUnit -UserPrincipalName "pattifuller@contoso.com"
 ```
 
-Description
-
------------
-
-This command gets the administrative units in which user1@contoso.com is a member.
+This command gets the administrative units in which pattifuller@contoso.com is a member.
 
 ## PARAMETERS
 
 ### -UserObjectId
-The unique ID of a user.
-If provided, only administrative units that this user belongs to will be returned.
+Specifies the unique ID of a user.
+This cmdlet returns administrative units to which this user belongs.
 
 ```yaml
 Type: Guid
 Parameter Sets: ListAdministrativeUnits__0, All__0
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -98,13 +77,13 @@ Accept wildcard characters: False
 ```
 
 ### -UserPrincipalName
-The user principal name of a user.
-If provided, only administrative units that this user belongs to will be returned.
+Specifies a user principal name.
+This cmdlet returns administrative units to which this user belongs.
 
 ```yaml
 Type: String
 Parameter Sets: ListAdministrativeUnits__0, All__0
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -114,13 +93,13 @@ Accept wildcard characters: False
 ```
 
 ### -SearchString
-The string to search on.
-Only administrative units with a display name starting with this string will be returned.
+Specifies a string.
+This cmdlet returns administrative units that have a display name that start with this string.
 
 ```yaml
 Type: String
 Parameter Sets: ListAdministrativeUnits__0, All__0
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -130,12 +109,12 @@ Accept wildcard characters: False
 ```
 
 ### -MaxResults
-The maximum number of results returned.
+Specifies the maximum number of results that this cmdlet returns.
 
 ```yaml
 Type: Int32
 Parameter Sets: ListAdministrativeUnits__0
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -145,14 +124,14 @@ Accept wildcard characters: False
 ```
 
 ### -TenantId
-The unique ID of the tenant to perform the operation on.
-If this is not provided, then the value will default to the tenant of the current user.
-This parameter is only applicable to partner users.
+Specifies the unique ID of the tenant on which to perform the operation.
+The default value is the tenant of the current user.
+This parameter applies only to partner users.
 
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -162,12 +141,12 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-The unique ID of the administrative unit to retrieve.
+Specifies the unique ID of an administrative unit to return.
 
 ```yaml
 Type: Guid
 Parameter Sets: GetAdministrativeUnit__0
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -177,13 +156,13 @@ Accept wildcard characters: False
 ```
 
 ### -All
-If present then all results will be returned. 
-Cannot be used with the MaxResults parameter.
+Indicates that this cmdlet returns all results that it finds.
+Do not specify this parameter and the _MaxResults_ parameter.
 
 ```yaml
 Type: SwitchParameter
 Parameter Sets: All__0
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -202,5 +181,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[New-MsolAdministrativeUnit](./New-MsolAdministrativeUnit.md)
 
+[Remove-MsolAdministrativeUnit](./Remove-MsolAdministrativeUnit.md)
 
+[Set-MsolAdministrativeUnit](./Set-MsolAdministrativeUnit.md)

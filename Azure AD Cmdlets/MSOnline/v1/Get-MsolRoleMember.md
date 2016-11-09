@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
-online version: 
+online version:
 schema: 2.0.0
 ms.assetid: C38ED8D1-68B3-4D78-8386-20F6FC87A167
 ---
@@ -8,7 +8,7 @@ ms.assetid: C38ED8D1-68B3-4D78-8386-20F6FC87A167
 # Get-MsolRoleMember
 
 ## SYNOPSIS
-Retrieves all members of the specified role.
+Gets members of a role.
 
 ## SYNTAX
 
@@ -25,34 +25,28 @@ Get-MsolRoleMember [-RoleObjectId <Guid>] [-MemberObjectTypes <String[]>] [-Sear
 ```
 
 ## DESCRIPTION
-The Get-MsolRoleMember cmdlet is used to retrieve all members of the specified role.
+The Get-MsolRoleMember cmdlet gets members of the specified role.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### Example 1: Get members of a role
 ```
-$role = Get-MsolRole -RoleName "Company Administrator"
-          Get-MsolRoleMember -RoleObjectId $role.ObjectId
-
-          Returns a list of role member objects.
+PS C:\> $RoleMembers = Get-MsolRole -RoleName "Company Administrator"
 ```
-
-Description
-
------------
 
 This command returns all the members of the specified role.
+The command stores the results in the $RoleMembers variable.
 
 ## PARAMETERS
 
 ### -All
-If present then all results will be returned. 
-Cannot be used with MaxResults parameter.
+Indicates that this cmdlet returns all results that it finds.
+Do not specify this parameter and the _MaxResults_ parameter.
 
 ```yaml
 Type: SwitchParameter
 Parameter Sets: All__0
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -62,13 +56,13 @@ Accept wildcard characters: False
 ```
 
 ### -MaxResults
-The maximum number of results returned for a search result.
-If not specified, 250 results will be returned.
+Specifies the maximum number of results that this cmdlet returns.
+The default value is 250.
 
 ```yaml
 Type: Int32
 Parameter Sets: ListRoleMembers__0
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -78,12 +72,12 @@ Accept wildcard characters: False
 ```
 
 ### -RoleObjectId
-The ID of the role to retrieve members for.
+Specifies the unique ID of the role from which to remove members.
 
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -93,13 +87,14 @@ Accept wildcard characters: False
 ```
 
 ### -SearchString
+Specifies a string.
+This cmdlet returns objects with a display name or email address that start with this string.
 The string to search on.
-Only objects with a display name or email address starting with this string will be returned.
 
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -109,14 +104,14 @@ Accept wildcard characters: False
 ```
 
 ### -TenantId
-The unique ID of the tenant to perform the operation on.
-If this is not provided, then the value will default to the tenant of the current user.
-This parameter is only applicable to partner users.
+Specifies the unique ID of the tenant on which to perform the operation.
+The default value is the tenant of the current user.
+This parameter applies only to partner users.
 
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -126,12 +121,12 @@ Accept wildcard characters: False
 ```
 
 ### -MemberObjectTypes
-
+Specifies an array of member object types.
 
 ```yaml
 Type: String[]
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -148,27 +143,28 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Online.Administation.RoleMember
-For this cmdlet, each RoleMember object will include the following:
+This cmdlet returns role member objects that contain the following information:
 
-            DisplayName: The display name of the role member.
+* DisplayName. The display name of the role member.
 
-            EmailAddress: The email address of the role member.
+* EmailAddress. The email address of the role member.
 
-            IsLicensed: Whether or not the user is licensed.
+* IsLicensed. Whether or not the user is licensed.
 
-            LastDirSyncTime: The date and time that this member was last synced.
+* LastDirSyncTime. The date and time that this member was last synced.
 
-            ObjectId: The unique ID of the member.
+* ObjectId. The unique ID of the member.
 
-            OverallProvisioningStatus: The provisioning status of this user.
+* OverallProvisioningStatus. The provisioning status of this user.
 
-            RoleMemberType; The type of role member.
+* RoleMemberType. The type of role member.
 Currently only "User" is supported.
 
-            ValidationStatus: Whether or not there are any errors with this group member.
+* ValidationStatus. Whether or not there are any errors with this group member.
 
 ## NOTES
 
 ## RELATED LINKS
+[Add-MsolRoleMember](./Add-MsolRoleMember.md)
 
-
+[Remove-MsolRoleMember](./Remove-MsolRoleMember.md)

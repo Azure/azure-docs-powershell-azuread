@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Online.Identity.Federation.PowerShell.dll-help.xml
-online version: 
+online version:
 schema: 2.0.0
 ms.assetid: 165F509D-D91E-4BE5-AF22-72112C1C3AB7
 ---
@@ -8,7 +8,7 @@ ms.assetid: 165F509D-D91E-4BE5-AF22-72112C1C3AB7
 # Convert-MsolDomainToFederated
 
 ## SYNOPSIS
-Converts the domain from using standard authentication to using single sign-on (also known as identity federation).
+Converts the domain from using standard authentication to using single sign-on.
 
 ## SYNTAX
 
@@ -18,19 +18,23 @@ Convert-MsolDomainToFederated [-SupportMultipleDomain] -DomainName <String> [-Wh
 ```
 
 ## DESCRIPTION
-The Convert-MSOLDomainToFederated cmdlet converts the specified domain from standard authentication to single sign-on (also known as identity federation), including configuring the relying party trust settings between the Active Directory Federation Services 2.0 server and Microsoft Online.
+The **Convert-MSOLDomainToFederated** cmdlet converts the specified domain from standard authentication to single sign-on.
+This includes configuring the relying party trust settings between the Active Directory Federation Services 2.0 server and Microsoft Online.
+Single sign-on is also known as identity federation.
+
 As part of converting a domain from standard authentication to single sign-on, each user must also be converted.
-This conversion happens automatically the next time a user signs in; no action is required by the administrator.
+This conversion happens automatically the next time a user signs in.
+No action is required by the administrator.
 
 ## PARAMETERS
 
 ### -DomainName
-The name of the domain to convert to single sign-on (also known as identity federation).
+Specifies the name of the domain to convert to single sign-on.
 
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -45,7 +49,7 @@ Accept wildcard characters: False
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -55,7 +59,7 @@ Accept wildcard characters: False
 ```
 
 ### -Confirm
-Prompts you for confirmation before executing the command.
+Prompts you for confirmation before running the command.
 
 ```yaml
 Type: SwitchParameter
@@ -70,7 +74,8 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Describes what would happen if you executed the command without actually executing the command.
+Shows what would happen if the cmdlet runs.
+The cmdlet is not run.
 
 ```yaml
 Type: SwitchParameter
@@ -94,5 +99,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-
-
+[Convert-MsolDomainToStandard](./Convert-MsolDomainToStandard.md)

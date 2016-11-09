@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
-online version: 
+online version:
 schema: 2.0.0
 ms.assetid: B44214C0-6CFA-4169-8E09-8C4065DFAB2E
 ---
@@ -8,7 +8,7 @@ ms.assetid: B44214C0-6CFA-4169-8E09-8C4065DFAB2E
 # Remove-MsolDomain
 
 ## SYNOPSIS
-Removes a domain from Microsoft Azure Active Directory.
+Removes a domain from Azure Active Directory.
 
 ## SYNTAX
 
@@ -17,34 +17,30 @@ Remove-MsolDomain -DomainName <String> [-Force] [-TenantId <Guid>] [<CommonParam
 ```
 
 ## DESCRIPTION
-The Remove-MsolDomain cmdlet is used to delete a domain from Microsoft Azure Active Directory.
-The domain being deleted must be empty; that is, there cannot be any users or groups with email addresses in this domain.
+The **Remove-MsolDomain** cmdlet is used to delete a domain from Azure Active Directory.
+The domain being deleted must be empty.
+There cannot be any users or groups with email addresses in this domain.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### Example 1: Remove a domain
+
 ```
-Remove-MsolDomain -DomainName contoso.com -force
-
-          None
+PS C:\> Remove-MsolDomain -DomainName "contoso.com" -Force
 ```
 
-Description
-
------------
-
-This command attempts to remove the domain contoso.com. 
-This operation will fail if there are any users or groups that reference the domain.
+This command attempts to remove the domain contoso.com without prompting you for confirmation.
+This operation fails if there are any users or groups that reference the domain.
 
 ## PARAMETERS
 
 ### -DomainName
-The fully qualified domain name (FQDN) to remove.
+Specifies the fully qualified domain name (FQDN) of the domain to remove.
 
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -54,12 +50,12 @@ Accept wildcard characters: False
 ```
 
 ### -Force
-Used to bypass onscreen confirmation.
+Indicates that this cmdlet does not prompt you for confirmation.
 
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -69,14 +65,15 @@ Accept wildcard characters: False
 ```
 
 ### -TenantId
-The unique ID of the tenant to perform the operation on.
-If this is not provided then the value will default to the tenant of the current user.
-This parameter is only applicable to partner users.
+Specifies the unique ID of the tenant on which to perform the operation.
+The default value is the tenant of the current user.
+This parameter applies only to partner users.
+
 
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -95,5 +92,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Confirm-MsolDomain](./Confirm-MsolDomain.md)
 
+[Get-MsolDomain](./Get-MsolDomain.md)
 
+[New-MsolDomain](./New-MsolDomain.md)
+
+[Set-MsolDomain](./Set-MsolDomain.md)

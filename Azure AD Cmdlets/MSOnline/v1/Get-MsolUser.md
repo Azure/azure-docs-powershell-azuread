@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
-online version: 
+online version:
 schema: 2.0.0
 ms.assetid: CED5BB55-E2BA-4400-9777-6589B6B29355
 ---
@@ -8,7 +8,7 @@ ms.assetid: CED5BB55-E2BA-4400-9777-6589B6B29355
 # Get-MsolUser
 
 ## SYNOPSIS
-Retrieves a user from Microsoft Azure Active Directory.
+Gets users from Azure Active Directory.
 
 ## SYNTAX
 
@@ -40,110 +40,64 @@ Get-MsolUser [-ReturnDeletedUsers] [-City <String>] [-Country <String>] [-Depart
 ```
 
 ## DESCRIPTION
-The Get-MsolUser cmdlet can be used to retrieve an individual user, or list of users.
-An individual user will be retrieved if the ObjectId or UserPrincipalName parameter is used.
+The **Get-MsolUser** cmdlet gets an individual user or list of users.
+Specify the _ObjectId_ or _UserPrincipalName_ parameter to get a specific user.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### Example 1: Get all users
 ```
-Get-MsolUser
-
-          Returns a list of users.
+PS C:\> Get-MsolUser
 ```
 
-Description
+This command retrieves all users in the company.
+It displays up to the default value of 500 results.
 
------------
-
-This command retrieves all users in the company (up to 500 results).
-
-### -------------------------- EXAMPLE 2 --------------------------
+### Example 2: Get enabled users
 ```
-Get-MsolUser -EnabledFilter EnabledOnly -MaxResults 2000
-
-          Returns a list of users.
+PS C:\> Get-MsolUser -EnabledFilter EnabledOnly -MaxResults 2000
 ```
 
-Description
+This command gets up to 2000 enabled users.
 
------------
-
-This command retrieves a list of enabled users (up to 2000 results).
-
-### -------------------------- EXAMPLE 3 --------------------------
+### Example 3: Get a user by UPN
 ```
-Get-MsolUser -UserPrincipalName johns@contoso.com
-
-          Returns a user object.
+PS C:\> Get-MsolUser -UserPrincipalName "davidchew@contoso.com"
 ```
 
-Description
+This command retrieves the user with the UPN davidchew@contoso.com.
 
------------
-
-This command retrieves the user with the UPN johns@contoso.com
-
-### -------------------------- EXAMPLE 4 --------------------------
+### Example 4: Get a user by object ID
 ```
-Get-MsolUser -ObjectId <guid>
-
-          Returns a user object.
+PS C:\> Get-MsolUser -ObjectId 81701046-cb37-439b-90ce-2afd9630af7d
 ```
 
-Description
+This command retrieves a user that has the specified object ID.
 
------------
-
-This command retrieves a user with the corresponding object ID.
-
-### -------------------------- EXAMPLE 5 --------------------------
+### Example 5: Get users by search String
 ```
-Get-MsolUser -SearchString "Tim"
-
-          Returns a user object.
+PS C:\> Get-MsolUser -SearchString "David"
 ```
 
-Description
+This command retrieves a list of users with David in the display name or email address.
 
------------
-
-This command retrieves a list of users with "Tim" in the display name or email address (up to 500 results).
-
-### -------------------------- EXAMPLE 6 --------------------------
+### Example 6: Get preferred data location of a user
 ```
-Get-MsolUser -EnabledFilter EnabledOnly -MaxResults 2000
-
-          None
+PS C:\> Get-MsolUser -UserPrincipalName "davidchew@contoso.onmicrosoft.com" | Select PreferredDataLocation
 ```
-
-Description
-
------------
-
-This command retrieves a list of enabled users (up to 2000 results).
-
-### -------------------------- EXAMPLE 7 --------------------------
-```
-Get-MsolUser -UserPrincipalName john@contoso.onmicrosoft.com | Select PreferredDataLocation
-```
-
-Description
-
------------
 
 This command returns the preferred data location of a user.
 
 ## PARAMETERS
 
 ### -All
-If present, then all results will be returned.
-Cannot be used with MaxResults parameter.
+Indicates that this cmdlet returns all results.
+Do not specify together with the _MaxResults_ parameter.
 
 ```yaml
 Type: SwitchParameter
 Parameter Sets: All__0
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -153,12 +107,12 @@ Accept wildcard characters: False
 ```
 
 ### -City
-The city to filter results on.
+Specifies the city to filter results on.
 
 ```yaml
 Type: String
 Parameter Sets: ListUsers__0, All__0
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -168,12 +122,12 @@ Accept wildcard characters: False
 ```
 
 ### -Country
-The country to filter results on.
+Specifies the country to filter results on.
 
 ```yaml
 Type: String
 Parameter Sets: ListUsers__0, All__0
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -183,12 +137,12 @@ Accept wildcard characters: False
 ```
 
 ### -Department
-The department to filter results on.
+Specifies the department to filter results on.
 
 ```yaml
 Type: String
 Parameter Sets: ListUsers__0, All__0
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -198,14 +152,14 @@ Accept wildcard characters: False
 ```
 
 ### -DomainName
-The domain to filter results on.
+Specifies the domain to filter results on.
 This must be a verified domain for the company.
-All users with an email address (primary or secondary) on this domain will be returned.
+All users with an email address, primary or secondary, on this domain is returned.
 
 ```yaml
 Type: String
 Parameter Sets: ListUsers__0, All__0
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -215,13 +169,13 @@ Accept wildcard characters: False
 ```
 
 ### -EnabledFilter
-The filter for enabled (or disabled) users.
-Possible values are All, EnabledOnly, and DisabledOnly.
+Specifies the filter for enabled or disabled users.
+Valid values are All, EnabledOnly, and DisabledOnly.
 
 ```yaml
 Type: UserEnabledFilter
 Parameter Sets: ListUsers__0, All__0
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -231,12 +185,12 @@ Accept wildcard characters: False
 ```
 
 ### -HasErrorsOnly
-The filter for only users with validation errors.
+Inidates that this cmdlet returns only users that have validation errors.
 
 ```yaml
 Type: SwitchParameter
 Parameter Sets: ListUsers__0, All__0
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -246,12 +200,12 @@ Accept wildcard characters: False
 ```
 
 ### -LicenseReconciliationNeededOnly
-The filter for only users that require license reconciliation.
+Indicates that this cmdlet filter for only users that require license reconciliation.
 
 ```yaml
 Type: SwitchParameter
 Parameter Sets: ListUsers__0, All__0
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -261,13 +215,13 @@ Accept wildcard characters: False
 ```
 
 ### -MaxResults
-The maximum number of results returned for a search result.
-If not specified, 500 results will be returned.
+Specifies the maximum number of results that this cmdlet returns.
+The default value is 500.
 
 ```yaml
 Type: Int32
 Parameter Sets: ListUsers__0
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -277,12 +231,12 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-The unique ID of the user to retrieve.
+Specifies the unique object ID of the user to get.
 
 ```yaml
 Type: Guid
 Parameter Sets: GetUser__0
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -292,12 +246,12 @@ Accept wildcard characters: False
 ```
 
 ### -ReturnDeletedUsers
-If set, only users in the recycling bin will be deleted.
+Indicates that this cmdlet returns only users in the recycling bin.
 
 ```yaml
 Type: SwitchParameter
 Parameter Sets: ListUsers__0, All__0
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -309,7 +263,7 @@ Accept wildcard characters: False
 ```yaml
 Type: SwitchParameter
 Parameter Sets: GetUser__0, GetUserByUpn__0
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -319,13 +273,12 @@ Accept wildcard characters: False
 ```
 
 ### -SearchString
-The string to search for users.
-Only users with an email address or display name starting with this string will be returned.
+Specifies a string to match email address or display name starting with this string.
 
 ```yaml
 Type: String
 Parameter Sets: ListUsers__0, All__0
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -335,12 +288,12 @@ Accept wildcard characters: False
 ```
 
 ### -State
-The filter for the user's state.
+Specifies the filter for the state of the user.
 
 ```yaml
 Type: String
 Parameter Sets: ListUsers__0, All__0
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -350,12 +303,12 @@ Accept wildcard characters: False
 ```
 
 ### -Synchronized
-The filter for only users who are synchronized through Microsoft Azure Active Directory Sync.
+Indicates that this cmdlet returns only users who are synchronized through Azure Active Directory Sync.
 
 ```yaml
 Type: SwitchParameter
 Parameter Sets: ListUsers__0, All__0
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -365,14 +318,14 @@ Accept wildcard characters: False
 ```
 
 ### -TenantId
-The unique ID of the tenant to perform the operation on.
-If this is not provided, then the value will default to the tenant of the current user.
-This parameter is only applicable to partner users.
+Specifies the unique ID of the tenant on which to perform the operation.
+The default value is the tenant of the current user.
+This parameter applies only to partner users.
 
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -382,12 +335,12 @@ Accept wildcard characters: False
 ```
 
 ### -Title
-The filter for the user's title.
+Speicifies the filter for the title of the user.
 
 ```yaml
 Type: String
 Parameter Sets: ListUsers__0, All__0
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -397,12 +350,12 @@ Accept wildcard characters: False
 ```
 
 ### -UnlicensedUsersOnly
-The filter for only users who are not assigned a license.
+Indicates that this cmdlet returns only users who are not assigned a license.
 
 ```yaml
 Type: SwitchParameter
 Parameter Sets: ListUsers__0, All__0
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -412,13 +365,13 @@ Accept wildcard characters: False
 ```
 
 ### -UsageLocation
-The filter for the country where the services are consumed by the user.
-This must be a two-letter country code.
+Specifies the filter for the country where the services are consumed by the user.
+Specify a two-letter country code.
 
 ```yaml
 Type: String
 Parameter Sets: ListUsers__0, All__0
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -428,12 +381,12 @@ Accept wildcard characters: False
 ```
 
 ### -UserPrincipalName
-The user ID of the user to retrieve.
+Speicifies the user ID of the user to retrieve.
 
 ```yaml
 Type: String
 Parameter Sets: GetUserByUpn__0
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -452,83 +405,88 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Online.Administration.User
 This cmdlet returns user objects, which include the following information:
 
-            AlternateEmailAddresses: Alternate email address of the user (external to Microsoft Azure Active Directory).
+* AlternateEmailAddresses. Alternate email address of the user (external to Azure Active Directory).
 
-            BlockCredential: Whether or not the user is able to sign in.
+* BlockCredential. Whether or not the user is able to sign in.
 
-            City: The user's city.
+* City. The user's city.
 
-            Country: The user's country.
+* Country. The user's country.
 
-            Department: The user's department.
+* Department. The user's department.
 
-            DisplayName: The user's display name.
+* DisplayName. The user's display name.
 
-            Errors: An array of errors.
+* Errors. An array of errors.
 These are validation errors that may result in loss of services.
 
-            Fax: The user's fax number.
+* Fax. The user's fax number.
 
-            FirstName: The user's first name.
+* FirstName. The user's first name.
 
-            ImmutableID: Only returned for federated users.
-This is the ID that is required to be federated with Microsoft Azure Active Directory.
+* ImmutableID. Only returned for federated users.
+This is the ID that is required to be federated with Azure Active Directory.
 
-            isBlackBerryUser: Returns whether or not the user has a BlackBerry device.
+* isBlackBerryUser. Returns whether or not the user has a BlackBerry device.
 
-            isLicensed: Whether or not the user has any licenses assigned.
+* isLicensed. Whether or not the user has any licenses assigned.
 
-            LastDirSyncTime: The date and time of the last directory synchronization (only returned from users synced with Microsoft Azure Active Directory through Active Directory synchronization).
+* LastDirSyncTime. The date and time of the last directory synchronization (only returned from users synced with Azure Active Directory through Active Directory synchronization).
 
-            LastPasswordChangeTimestamp: The most recent time at which a password change for the user was registered in Microsoft Azure Active Directory.
+* LastPasswordChangeTimestamp. The most recent time at which a password change for the user was registered in Azure Active Directory.
 
-            LastName: The user's last name.
+* LastName. The user's last name.
 
-            LicenseReconciliationNeeded: Whether or not the user currently has a mailbox without a license.
+* LicenseReconciliationNeeded. Whether or not the user currently has a mailbox without a license.
 In this case, the user should be licensed with 30 days to avoid losing their mailbox.
 
-            Licenses: A list of the user's licenses.
+* Licenses. A list of the user's licenses.
 
-            LiveID: The user's unique login ID.
+* LiveID. The user's unique login ID.
 
-            MobilePhone: The user's mobile phone number.
+* MobilePhone. The user's mobile phone number.
 
-            ObjectId: The user's unique ID.
+* ObjectId. The user's unique ID.
 
-            Office: The user's office number.
+* Office. The user's office number.
 
-            OverallProvisioningStatus: Whether or not the user has been provisioned for their services.
+* OverallProvisioningStatus. Whether or not the user has been provisioned for their services.
 
-            PasswordNeverExpires: Whether the user's password should be forced to change every 90 days.
+* PasswordNeverExpires. Whether the user's password should be forced to change every 90 days.
 
-            Phone Number: The user's phone number.
+* Phone Number. The user's phone number.
 
-            Postal Code: The user's postal code.
+* Postal Code. The user's postal code.
 
-            Preferred Data Location: The user's preferred data location.
+* Preferred Data Location. The user's preferred data location.
 
-            Preferred Language: The user's preferred language.
+* Preferred Language. The user's preferred language.
 
-            Proxy Addresses - the proxy addresses associated with this user.
+* Proxy Addresses. The proxy addresses associated with this user.
 
-            State: The user's state.
+* State. The user's state.
 
-            StreetAddress: The user's street address.
+* StreetAddress. The user's street address.
 
-            StrongPasswordRequired: Whether the user is required to set a strong password when they change their password.
+* StrongPasswordRequired. Whether the user is required to set a strong password when they change their password.
 Strong passwords are recommended.
 
-            Title: The user's title.
+* Title. The user's title.
 
-            UsageLocation: The country where the services are consumed by the user.
+* UsageLocation. The country where the services are consumed by the user.
 This must be a two letter country code.
 
-            UserPrincipalName: The user ID of the user.
+* UserPrincipalName. The user ID of the user.
 
-            ValidationStatus: Whether or not the user has any errors.
+* ValidationStatus. Whether or not the user has any errors.
 
 ## NOTES
 
 ## RELATED LINKS
+[New-MsolUser](./New-MsolUser.md)
 
+[Remove-MsolUser](./Remove-MsolUser.md)
 
+[Restore-MsolUser](./Restore-MsolUser.md)
+
+[Set-MsolUser](./Set-MsolUser.md)

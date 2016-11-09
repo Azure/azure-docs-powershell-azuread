@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
-online version: 
+online version:
 schema: 2.0.0
 ms.assetid: 2874711E-96F5-43E8-8D90-332C65A85FB5
 ---
@@ -8,7 +8,7 @@ ms.assetid: 2874711E-96F5-43E8-8D90-332C65A85FB5
 # Set-MsolDirSyncEnabled
 
 ## SYNOPSIS
-Used to de-/activate Directory Sync for this tenant.
+Turns directory synchronization on or off for a company.
 
 ## SYNTAX
 
@@ -17,32 +17,26 @@ Set-MsolDirSyncEnabled -EnableDirSync <Boolean> [-Force] [-TenantId <Guid>] [<Co
 ```
 
 ## DESCRIPTION
-The Set-MsolDirSyncEnabled cmdlet is used to turn directory synchronization on or off for a company.
+The **Set-MsolDirSyncEnabled** cmdlet turns directory synchronization on or off for a company.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### Example 1: Turn on directory synchronization
 ```
-Set-MsolDirSyncEnabled -EnableDirsync $true
-
-          None
+PS C:\> Set-MsolDirSyncEnabled -EnableDirsync $True
 ```
-
-Description
-
------------
 
 This command turns on directory synchronization for a company.
 
 ## PARAMETERS
 
 ### -EnableDirSync
-When true, directory synchronization will be turned on for your company.
+Specifies whether to turn on directory synchronization on for your company.
 
 ```yaml
 Type: Boolean
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -52,14 +46,14 @@ Accept wildcard characters: False
 ```
 
 ### -TenantId
-The unique ID of the tenant to perform the operation on.
-If this is not provided then the value will default to the tenant of the current user.
-This parameter is only applicable to partner users.
+Specifies the unique ID of the tenant on which to perform the operation.
+The default value is the tenant of the current user.
+This parameter applies only to partner users.
 
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -69,12 +63,12 @@ Accept wildcard characters: False
 ```
 
 ### -Force
-
+Forces the command to run without asking for user confirmation.
 
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -93,5 +87,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-
-

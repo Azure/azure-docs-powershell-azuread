@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
-online version: 
+online version:
 schema: 2.0.0
 ms.assetid: 23EB4FFD-3A68-47C5-B6A6-C70482B173AF
 ---
@@ -18,38 +18,31 @@ Add-MsolScopedRoleMember -RoleObjectId <Guid> -AdministrativeUnitObjectId <Guid>
 ```
 
 ## DESCRIPTION
-The Add-MsolScopedRoleMember cmdlet is used to add a member to an administrative unit-scoped role.
+The **Add-MsolScopedRoleMember** cmdlet adds a member to an administrative unit-scoped role.
 
 ## EXAMPLES
 
-### --------------------------  Example 1  --------------------------
-@{paragraph=PS C:\\\>}
-
-
-
+### Example 1: Add a member to an administrative unit-scoped role
 ```
-$westcoastau = Get-MsolAdministrativeUnit -searchstring "West Coast"
-          $uaadmin = Get-MsolRole -RoleName "User Account Administrator"
-          $admin1 = Get-MsolUser -UserPrincipalName user@contoso.com
-          Add-MsolScopedRoleMember -RoleObjectId $uaadmin.ObjectId -AdministrativeUnitObjectId $westcoastau.ObjectId -RoleMemberObjectId $admin1.ObjectId
+PS C:\> $WestCoastAu = Get-MsolAdministrativeUnit -SearchString "West Coast"
+PS C:\> $UaAdmin = Get-MsolRole -RoleName "User Account Administrator"
+PS C:\> $Admin01 = Get-MsolUser -UserPrincipalName "elisadaugherty@contoso.com"
+PS C:\> Add-MsolScopedRoleMember -RoleObjectId $UaAdmin.ObjectId -AdministrativeUnitObjectId $WestCoastAu.ObjectId -RoleMemberObjectId $Admin01.ObjectId
 ```
 
-Description
-
------------
-
-In this example, user@contoso.com is added as a member to the "User Account Administrator" role scoped for administrative unit "West Coast".
+This example adds elisadaugherty@contoso.com as a member to the User Account Administrator role scoped for the administrative unit named West Coast.
 
 ## PARAMETERS
 
 ### -RoleObjectId
-The object ID of the role to add members to.
-Only users can be added to a role (adding a security group is not supported).
+Specifies the unique object ID of the role to which to add members.
+You can add only users to a role.
+Adding a security group is not supported.
 
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -59,12 +52,12 @@ Accept wildcard characters: False
 ```
 
 ### -AdministrativeUnitObjectId
-The object ID of the administrative unit.
+Specifies the unique object ID of the administrative unit.
 
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -74,14 +67,14 @@ Accept wildcard characters: False
 ```
 
 ### -RoleMemberObjectId
-The object ID of the member to add to the role scoped to the administrative unit.
-For users, this should be the user ID.
-Only users can be added to a role (adding a security group is not supported).
+Specifies the unique object ID of the member to add to the role scoped to the administrative unit.
+For users, specify a user ID.
+You can add only users to a role.
 
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -91,13 +84,13 @@ Accept wildcard characters: False
 ```
 
 ### -RoleMemberUserPrincipalName
-The user principal name of the member to add.
-Only users can be added to a role (adding a security group is not supported).
+Specifies the user principal name of the member to add.
+You can add only users to a role.
 
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -107,14 +100,14 @@ Accept wildcard characters: False
 ```
 
 ### -TenantId
-The unique ID of the tenant to perform the operation on.
-If this is not provided, then the value will default to the tenant of the current user.
-This parameter is only applicable to partner users.
+Specifies the unique ID of the tenant on which to perform the operation.
+The default value is the tenant of the current user.
+This parameter applies only to partner users.
 
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -133,5 +126,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-MsolAdministrativeUnit](./Get-MsolAdministrativeUnit.md)
 
+[Get-MsolRole](./Get-MsolRole.md)
 
+[Get-MsolScopedRoleMember](./Get-MsolScopedRoleMember.md)
+
+[Get-MsolUser](./Get-MsolUser.md)
+
+[Remove-MsolScopedRoleMember](./Remove-MsolScopedRoleMember.md)

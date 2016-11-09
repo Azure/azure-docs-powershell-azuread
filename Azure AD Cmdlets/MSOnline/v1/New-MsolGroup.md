@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
-online version: 
+online version:
 schema: 2.0.0
 ms.assetid: 046485AB-D8CC-4DBB-9129-B987A91188CF
 ---
@@ -8,7 +8,7 @@ ms.assetid: 046485AB-D8CC-4DBB-9129-B987A91188CF
 # New-MsolGroup
 
 ## SYNOPSIS
-Adds a new group to the Microsoft Azure Active Directory.
+Adds a new group to the Azure Active Directory.
 
 ## SYNTAX
 
@@ -18,32 +18,26 @@ New-MsolGroup [-DisplayName <String>] [-Description <String>] [-ManagedBy <Strin
 ```
 
 ## DESCRIPTION
-The New-MsolGroup cmdlet is used to add a new security group to Microsoft Azure Active Directory.
+The **New-MsolGroup** cmdlet adds a new security group to Azure Active Directory.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### Example 1: Create a security group
 ```
-New-MsolGroup -DisplayName "MyGroup" -Description "My test group"
-
-          Returns a group object.
+PS C:\> New-MsolGroup -DisplayName "MyGroup" -Description "My test group"
 ```
 
-Description
-
------------
-
-This command creates a new security group called "MyGroup"
+This command creates a security group called MyGroup.
 
 ## PARAMETERS
 
 ### -Description
-The description of the group.
+Specifies a description of the group.
 
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -53,12 +47,12 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-The display name of the group.
+Specifies a display name of the group.
 
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -68,12 +62,12 @@ Accept wildcard characters: False
 ```
 
 ### -ManagedBy
-The owner of the group.
+Specifies the owner of the group.
 
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -83,14 +77,14 @@ Accept wildcard characters: False
 ```
 
 ### -TenantId
-The unique ID of the tenant to perform the operation on.
-If this is not provided then the value will default to the tenant of the current user.
-This parameter is only applicable to partner users.
+Specifies the unique ID of the tenant on which to perform the operation.
+The default value is the tenant of the current user.
+This parameter applies only to partner users.
 
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -112,5 +106,8 @@ Will return the new group that was created.
 ## NOTES
 
 ## RELATED LINKS
+[Get-MsolGroup](./Get-MsolGroup.md)
 
+[Remove-MsolGroup](./Remove-MsolGroup.md)
 
+[Set-MsolGroup](./Set-MsolGroup.md)

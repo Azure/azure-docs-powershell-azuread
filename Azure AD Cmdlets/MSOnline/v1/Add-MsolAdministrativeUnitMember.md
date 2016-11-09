@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-help.xml
-online version: 
+online version:
 schema: 2.0.0
 ms.assetid: 35904FF0-8D74-4FD7-BB31-44DCAEAFF6BF
 ---
@@ -18,36 +18,37 @@ Add-MsolAdministrativeUnitMember -AdministrativeUnitObjectId <Guid> [-Administra
 ```
 
 ## DESCRIPTION
-The Add-MsolAdministrativeUnitMember cmdlet is used to add a member to an administrative unit.
+The **Add-MsolAdministrativeUnitMember** cmdlet adds a member to an administrative unit.
 
 ## EXAMPLES
 
-### --------------------------  Example 1  --------------------------
-@{paragraph=PS C:\\\>}
-
-
+### Example 1: Add a member to an administrative unit
 
 ```
-$au = Get-MsolAdministrativeUnit -searchstring "West Coast"
-          $user = Get-MsolUser -UserPrincipalName "user@contoso.com"
-          Add-MsolAdministrativeUnitMember -AdministrativeUnitObjectId $au.ObjectId -AdministrativeUnitMemberObjectId $user.ObjectId
+PS C:\> $AdminstrativeUnit  = Get-MsolAdministrativeUnit -SearchString "West Coast"
+PS C:\> $User = Get-MsolUser -UserPrincipalName "davidchew@contoso.com"
+PS C:\> Add-MsolAdministrativeUnitMember -AdministrativeUnitObjectId $AdminstrativeUnit.ObjectId -AdministrativeUnitMemberObjectId $User.ObjectId
 ```
 
-Description
+The first command gets an administrative unit that matches a search string by using the [Get-MsolAdministrativeUnit](./Get-MsolAdministrativeUnit.md) cmdlet.
+The command stores the administrative unit in the $AdminstrativeUnit variable.
 
------------
+The second command gets a user for the user principal name davidchew@contoso.com by using the [Get-MsolUser](./Get-MsolUser.md) cmdlet.
+The command stores the user in the $User variable.
 
-In this example, user@contoso.com is added to the administrative unit "West Coast".
+The final command adds the user in $User to the administrative unit in $AdminstrativeUnit.
+Both are identified by ObjectId.
+
 
 ## PARAMETERS
 
 ### -AdministrativeUnitObjectId
-The object ID of the administrative unit.
+Specifies the unique object ID of the administrative unit on which this cmdlet operates.
 
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -57,12 +58,12 @@ Accept wildcard characters: False
 ```
 
 ### -AdministrativeUnitMemberObjectId
-The object ID of the member to add to the administrative unit.
+Specifies the unique object ID of the member to add to the administrative unit.
 
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -72,14 +73,14 @@ Accept wildcard characters: False
 ```
 
 ### -TenantId
-The unique ID of the tenant to perform the operation on.
-If this is not provided then the value will default to the tenant of the current user.
-This parameter is only applicable to partner users.
+Specifies the unique ID of the tenant on which to perform the operation.
+The default value is the tenant of the current user.
+This parameter applies only to partner users.
 
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -98,5 +99,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-MsolAdministrativeUnit](./Get-MsolAdministrativeUnit.md)
 
+[Get-MsolAdministrativeUnitMember](./Get-MsolAdministrativeUnitMember.md)
 
+[Get-MsolUser](./Get-MsolUser.md)
+
+[Remove-MsolAdministrativeUnitMember](./Remove-MsolAdministrativeUnitMember.md)

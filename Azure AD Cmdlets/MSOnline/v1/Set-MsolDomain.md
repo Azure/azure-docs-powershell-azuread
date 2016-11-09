@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
-online version: 
+online version:
 schema: 2.0.0
 ms.assetid: 750DB368-6EC8-45AC-B3E8-A4D53E6284D7
 ---
@@ -8,7 +8,7 @@ ms.assetid: 750DB368-6EC8-45AC-B3E8-A4D53E6284D7
 # Set-MsolDomain
 
 ## SYNOPSIS
-Updates the settings of a domain.
+modifies settings of a domain.
 
 ## SYNTAX
 
@@ -17,31 +17,28 @@ Set-MsolDomain [-Name <String>] [-IsDefault] [-TenantId <Guid>] [<CommonParamete
 ```
 
 ## DESCRIPTION
-The Set-MsolDomain cmdlet is used to update settings for a domain.
-Using this cmdlet, the default domain can be changed, or the capabilities (Email, Sharepoint, OfficeCommunicationsOnline) can be changed.
+The **Set-MsolDomain** cmdlet modifies settings for a domain.
+This cmdlet can change the default domain.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### Example 1: Make a domain into the default domain
+
 ```
-set-msoldomain -name example.com -IsDefault
+PS C:\> Set-MsolDomain -Name "contoso.com" -IsDefault
 ```
 
-Description
-
------------
-
-Will set example.com as the default domain for this company.
+This command sets contoso.com as the default domain.
 
 ## PARAMETERS
 
 ### -IsDefault
-A switch parameter to make this domain the default domain.
+Indicates that this cmdlet makes the domain into the default domain.
 
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -51,12 +48,12 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-The name of the domain to update.
+Specifies the name of the domain to modify.
 
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -66,14 +63,15 @@ Accept wildcard characters: False
 ```
 
 ### -TenantId
-The unique ID of the tenant to perform the operation on.
-If this is not provided then the value will default to the tenant of the current user.
-This parameter is only applicable to partner users.
+Specifies the unique ID of the tenant on which to perform the operation.
+The default value is the tenant of the current user.
+This parameter applies only to partner users.
+
 
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -92,5 +90,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Confirm-MsolDomain](./Confirm-MsolDomain.md)
 
+[Get-MsolDomain](./Get-MsolDomain.md)
 
+[New-MsolDomain](./New-MsolDomain.md)
+
+[Remove-MsolDomain](./Remove-MsolDomain.md)

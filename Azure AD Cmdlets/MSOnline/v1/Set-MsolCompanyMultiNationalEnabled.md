@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
-online version: 
+online version:
 schema: 2.0.0
 ms.assetid: 5AA049F5-BA10-437E-BE0C-E7E66CA795E9
 ---
@@ -18,34 +18,30 @@ Set-MsolCompanyMultiNationalEnabled -ServiceType <String> -Enable <Boolean> [-Te
 ```
 
 ## DESCRIPTION
-The Set-MsolCompanyMultiNationalEnabled cmdlet will attempt to enable the multinational feature for a service type for a company in v1.
-Note that disabling/opting out from the multinational feature for a service type is not supported in v1.
-      This cmdlet will return an error with the failure reason if the multinational feature for a service type cannot be enabled for a company.
+The **Set-MsolCompanyMultiNationalEnabled** cmdlet attempts to enable the multinational feature for a service type for a company in v1.
+This cmdlet returns an error with the failure reason if the multinational feature for a service type cannot be enabled for a company.
+
+Disabling or opting out from the multinational feature for a service type is not supported in v1.
+
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### Example 1: Attempt to enable the multinational feature for a service
 ```
-Set-MsolCompanyMultiNationalEnabled -ServiceType MicrosoftCommunicationsOnline -Enable $True
-
-          None
+PS C:\> Set-MsolCompanyMultiNationalEnabled -ServiceType "MicrosoftCommunicationsOnline" -Enable $True
 ```
-
-Description
-
------------
-
-This command attempts to enable the multinational feature for the MicrosoftCommunicationsOnline (a.k.a., Skype for Business) service type for a company.
+This command attempts to enable the multinational feature for the MicrosoftCommunicationsOnline service type for a company.
+The Microsoft communications online service type is also known as Skype for Business.
 
 ## PARAMETERS
 
 ### -ServiceType
-The service type to enable the multinational feature.
+Specifies the service type for which to enable the multinational feature.
 
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -55,12 +51,12 @@ Accept wildcard characters: False
 ```
 
 ### -Enable
-Whether to enable or disable the multinational feature for a service type for a company.
+Indicates whether to enable or disable the multinational feature for a service type for a company.
 
 ```yaml
 Type: Boolean
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -70,14 +66,14 @@ Accept wildcard characters: False
 ```
 
 ### -TenantId
-The unique ID of the tenant to perform the operation on.
-If this is not provided then the value will default to the tenant of the current user.
-This parameter is only applicable to partner users.
+Specifies the unique ID of the tenant on which to perform the operation.
+The default value is the tenant of the current user.
+This parameter applies only to partner users.
 
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -96,4 +92,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-

@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
-online version: 
+online version:
 schema: 2.0.0
 ms.assetid: E748C8B0-B3F1-4BF5-8296-C2C2E8C54FB0
 ---
@@ -8,7 +8,7 @@ ms.assetid: E748C8B0-B3F1-4BF5-8296-C2C2E8C54FB0
 # Remove-MsolGroup
 
 ## SYNOPSIS
-Removes a group from Microsoft Azure Active Directory.
+Removes a group from Azure Active Directory.
 
 ## SYNTAX
 
@@ -17,31 +17,28 @@ Remove-MsolGroup -ObjectId <Guid> [-Force] [-TenantId <Guid>] [<CommonParameters
 ```
 
 ## DESCRIPTION
-The Remove-MsolGroup cmdlet is used to delete a group from Microsoft Azure Active Directory.
+The **Remove-MsolGroup cmdlet** deletes a group from Azure Active Directory.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### Example 1: Remove a security group
 ```
-$groupId = Get-MsolGroup -searchString "MyGroup"
-          Remove-MsolGroup -objectid $groupId
+PS C:\> $GroupId = Get-MsolGroup -SearchString "MyGroup"
+PS C:\> Remove-MsolGroup -objectid $GroupId
 ```
 
-Description
-
------------
-
-Will remove the group "MyGroup" from the directory.
+The first command gets the security group that matches the string MyGroup, and then stores it in the $GroupId variable.
+The second command removes the group in $GroupId.
 
 ## PARAMETERS
 
 ### -Force
-Used to bypass onscreen confirmation.
+Indicates that this cmdlet does not prompt you for confirmation.
 
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -51,12 +48,12 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-The unique ID of the group to remove.
+Specifies the unique object ID of the group to remove.
 
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -66,14 +63,14 @@ Accept wildcard characters: False
 ```
 
 ### -TenantId
-The unique ID of the tenant to perform the operation on.
-If this is not provided then the value will default to the tenant of the current user.
-This parameter is only applicable to partner users.
+Specifies the unique ID of the tenant on which to perform the operation.
+The default value is the tenant of the current user.
+This parameter applies only to partner users.
 
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -92,5 +89,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-MsolGroup](./Get-MsolGroup.md)
 
+[New-MsolGroup](./New-MsolGroup.md)
 
+[Set-MsolGroup](./Set-MsolGroup.md)

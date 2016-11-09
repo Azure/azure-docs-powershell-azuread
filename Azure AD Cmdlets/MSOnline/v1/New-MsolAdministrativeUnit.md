@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
-online version: 
+online version:
 schema: 2.0.0
 ms.assetid: D0D10A71-D935-4D24-B671-F8E0A5D8979D
 ---
@@ -18,34 +18,27 @@ New-MsolAdministrativeUnit [-DisplayName <String>] [-Description <String>] [-Ten
 ```
 
 ## DESCRIPTION
-The New-MsolAdministrativeUnit cmdlet adds a new administrative unit to Azure Active Directory.
+The **New-MsolAdministrativeUnit** cmdlet adds a new administrative unit to Azure Active Directory.
 
 ## EXAMPLES
 
-### --------------------------  Example 1  --------------------------
-@{paragraph=PS C:\\\>}
-
-
+### Example 1: Create an administrative unit
 
 ```
-New-MsolAdministrativeUnit -DisplayName "West Coast" -Description "West Coast region"
+PS C:\> New-MsolAdministrativeUnit -DisplayName "West Coast" -Description "West Coast region"
 ```
 
-Description
-
------------
-
-This command creates a new administrative unit called "West Coast" that has a description "West Coast region".
+This command creates a administrative unit called West Coast that has a description of West Coast region.
 
 ## PARAMETERS
 
 ### -DisplayName
-The display name of the administrative unit.
+Specifies a display name for the administrative unit.
 
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -55,12 +48,12 @@ Accept wildcard characters: False
 ```
 
 ### -Description
-The description of the administrative unit.
+Specifies a description for the administrative unit.
 
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -70,14 +63,14 @@ Accept wildcard characters: False
 ```
 
 ### -TenantId
-The unique ID of the tenant to perform the operation on.
-If this is not provided then the value will default to the tenant of the current user.
-This parameter is only applicable to partner users.
+Specifies the unique ID of the tenant on which to perform the operation.
+The default value is the tenant of the current user.
+This parameter applies only to partner users.
 
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -99,5 +92,8 @@ Will return the new administrative unit that was created.
 ## NOTES
 
 ## RELATED LINKS
+[Get-MsolAdministrativeUnit](./Get-MsolAdministrativeUnit.md)
 
+[Remove-MsolAdministrativeUnit](./Remove-MsolAdministrativeUnit.md)
 
+[Set-MsolAdministrativeUnit](./Set-MsolAdministrativeUnit.md)

@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
-online version: 
+online version:
 schema: 2.0.0
 ms.assetid: 0A3B58FA-9320-4E23-90AA-A75842492AC9
 ---
@@ -25,61 +25,44 @@ Set-MsolUserLicense [-LicenseOptions <LicenseOption[]>] -UserPrincipalName <Stri
 ```
 
 ## DESCRIPTION
-The Set-MsolUserLicense cmdlet can be used to adjust the licenses for a user.
+The **Set-MsolUserLicense** cmdlet updates the license assignment for a user.
 This can include adding a new license, removing a license, updating the license options, or any combination of these actions.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### Example 1: Add a license to a user
 ```
-Set-MsolUserLicense -UserPrincipalName user@contoso.com -AddLicenses "Contoso:ENTERPRISEPACK"
-
-          None
+PS C:\> Set-MsolUserLicense -UserPrincipalName "davidchew@contoso.com" -AddLicenses "Contoso:ENTERPRISEPACK"
 ```
 
-Description
+This command adds the Office 365 for Enterprises license to the user.
 
------------
-
-This command adds the Office 365 for enterprises license to the user.
-
-### -------------------------- EXAMPLE 2 --------------------------
+### Example 2: Remove a license from a user
 ```
-Set-MsolUserLicense -UserPrincipalName user@contoso.com -RemoveLicenses "contoso:ENTERPRISEPACK"
-
-          None
+PS C:\> Set-MsolUserLicense -UserPrincipalName "davidchew@contoso.com" -RemoveLicenses "contoso:ENTERPRISEPACK"
 ```
 
-Description
-
------------
-
-This command removes the Office 365 for enterprises license from the user. 
+This command removes the Office 365 for Enterprises license from the user.
 This may result in the user's data being removed from each service.
 
-### -------------------------- EXAMPLE 3 --------------------------
+### Example 3: Replace one license with another
 ```
-Set-MsolUserLicense -UserPrincipalName user@contoso.com -AddLicenses "contoso:DESKLESS" -RemoveLicenses "contoso:ENTERPRISEPACK"
-
-          None
+PS C:\> Set-MsolUserLicense -UserPrincipalName "davidchew@contoso.com" -AddLicenses "contoso:DESKLESS" -RemoveLicenses "contoso:ENTERPRISEPACK"
 ```
 
-Description
-
------------
-
-This command replaces the Office 365 for enterprises license with an Office 365 Deskless license. 
-This will be done in one single operation (so the user will not end up in an intermediate state where the Office 365 for enterprises license is removed without Office 365 Deskless being added).
+This command replaces the Office 365 for Enterprises license with an Office 365 Deskless license.
+These changes are made in one single operation.
+Therefore, the user does not end up in an intermediate state where the Office 365 for Enterprises license is removed without Office 365 Deskless being added.
 
 ## PARAMETERS
 
 ### -AddLicenses
-A list of licenses to assign to the user.
+Specifies an array of licenses to assign to the user.
 
 ```yaml
 Type: String[]
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -89,13 +72,13 @@ Accept wildcard characters: False
 ```
 
 ### -LicenseOptions
-Any license- or SKU-specific settings.
+Specifies an array of license- or SKU-specific settings.
 Used to disable individual services when assigning a license.
 
 ```yaml
 Type: LicenseOption[]
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -105,12 +88,12 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-The unique ID of the user to update licenses for.
+Specifies the unique object ID of the user for which to update licenses.
 
 ```yaml
 Type: Guid
 Parameter Sets: SetUserLicenses__0
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -120,12 +103,12 @@ Accept wildcard characters: False
 ```
 
 ### -RemoveLicenses
-A list of licenses to remove from the user.
+Specifies an array of licenses to remove from the user.
 
 ```yaml
 Type: String[]
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -135,14 +118,14 @@ Accept wildcard characters: False
 ```
 
 ### -TenantId
-The unique ID of the tenant to perform the operation on.
-If this is not provided then the value will default to the tenant of the current user.
-This parameter is only applicable to partner users.
+Specifies the unique ID of the tenant on which to perform the operation.
+The default value is the tenant of the current user.
+This parameter applies only to partner users.
 
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -152,12 +135,12 @@ Accept wildcard characters: False
 ```
 
 ### -UserPrincipalName
-The user ID of the user to update.
+Specifies the user principal name of the user to update.
 
 ```yaml
 Type: String
 Parameter Sets: SetUserLicensesByUpn__0
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -176,5 +159,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Set-MsolUserPassword](./Set-MsolUserPassword.md)
 
-
+[Set-MsolUserPrincipalName](./Set-MsolUserPrincipalName.md)

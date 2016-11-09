@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
-online version: 
+online version:
 schema: 2.0.0
 ms.assetid: AD722FB5-9280-479F-8CDA-2A4572FDCA4F
 ---
@@ -30,34 +30,30 @@ Remove-MsolServicePrincipalCredential -KeyIds <Guid[]> -AppPrincipalId <Guid> [-
 ```
 
 ## DESCRIPTION
-The Remove-MsolServicePrincipalCredential cmdlet can be used to remove a credential key from a service principal in the case of a compromise or as part of credential key rollover expiration.
+The **Remove-MsolServicePrincipalCredential** cmdlet removes a credential key from a service principal in the case of a compromise or as part of credential key rollover expiration.
 The service principal is identified by supplying either the object ID, application ID, or service principal name (SPN).
 The credential to be removed is identified by its key ID.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### Example 1: Remove a credential from a service principal
 ```
-Remove-MsolServicePrincipalCredential -KeyIds @("19805a93-e9dd-4c63-8afd-88ed91f33546") -ServicePrincipalName "MyApp2/myApp.com"
+PS C:\> Remove-MsolServicePrincipalCredential -KeyIds @("19805a93-e9dd-4c63-8afd-88ed91f33546") -ServicePrincipalName "MyApp2/myApp.com"
 ```
-
-Description
-
------------
 
 This command removes a credential key from a service principal.
-In this example, the key ID "19805a93-e9dd-4c63-8afd-88ed91f33546" will be removed from the service principal associated with the service principal name "MyApp2/myApp.com".
-To show a list of key IDs associated with a service principal, use the Get-MsolServicePrincipalCredential cmdlet.
+In this example, the key ID 19805a93-e9dd-4c63-8afd-88ed91f33546 is removed from the service principal associated with the service principal name MyApp2/myApp.com.
+To show a list of key IDs associated with a service principal, use the [Get-MsolServicePrincipalCredential](./Get-MsolServicePrincipalCredential.md) cmdlet.
 
 ## PARAMETERS
 
 ### -AppPrincipalId
-The application ID associated with the service principal to remove the credential from.
+Specifies the application ID of the service principal from which to remove the credential.
 
 ```yaml
 Type: Guid
 Parameter Sets: RemoveServicePrincipalCredentialsByAppPrincipalId__0
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -67,13 +63,13 @@ Accept wildcard characters: False
 ```
 
 ### -KeyIds
-Specifies the list of credential keys to be removed.
-The list of key IDs for a service principal can be obtained using the Get-MsolServicePrincipalCredential cmdlet.
+Specifies an array of unique IDs of credential keys to remove.
+The key IDs for a service principal can be obtained by using the [Get-MsolServicePrincipalCredential](./Get-MsolServicePrincipalCredential.md) cmdlet.
 
 ```yaml
 Type: Guid[]
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -83,12 +79,12 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-The object ID of the service principal to remove the credential from.
+Specifies the unique object ID of the service principal from which to remove the credential.
 
 ```yaml
 Type: Guid
 Parameter Sets: RemoveServicePrincipalCredentials__0
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -98,14 +94,20 @@ Accept wildcard characters: False
 ```
 
 ### -ServicePrincipalName
-The unique name of the service principal to add the credential to.
-            An SPN must use one of the following formats "appName" or "appName/hostname" or be a valid URL. 
-AppName represents the name of the application and hostname represents the URI authority for the application.
+Specifies the name of the service principal from which to remove the credential.
+An SPN must use one of the following formats:
+
+* `appName`
+* `appName/hostname`
+* a valid URL
+
+AppName represents the name of the application.
+Hostname represents the URI authority for the application.
 
 ```yaml
 Type: String
 Parameter Sets: RemoveServicePrincipalCredentialsBySpn__0
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -115,14 +117,14 @@ Accept wildcard characters: False
 ```
 
 ### -TenantId
-The unique ID of the tenant to perform the operation on.
-If this is not provided, then the value will default to the tenant of the current user.
-This parameter is only applicable to partner users.
+Specifies the unique ID of the tenant on which to perform the operation.
+The default value is the tenant of the current user.
+This parameter applies only to partner users.
 
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -141,5 +143,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-MsolServicePrincipalCredential](./Get-MsolServicePrincipalCredential.md)
 
-
+[New-MsolServicePrincipalCredential](./New-MsolServicePrincipalCredential.md)

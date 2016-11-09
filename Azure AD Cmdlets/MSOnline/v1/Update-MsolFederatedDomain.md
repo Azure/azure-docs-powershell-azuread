@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Online.Identity.Federation.PowerShell.dll-Help.xml
-online version: 
+online version:
 schema: 2.0.0
 ms.assetid: 3433FAB9-DA26-483D-BE3C-406FD0C0F746
 ---
@@ -18,20 +18,22 @@ Update-MsolFederatedDomain [-SupportMultipleDomain] -DomainName <String> [-WhatI
 ```
 
 ## DESCRIPTION
-The Update-MSOLFederatedDomain cmdlet changes settings in both the Active Directory Federation Services 2.0 server and Microsoft Online.
+The **Update-MsolFederatedDomain** cmdlet changes settings in both the Active Directory Federation Services 2.0 server and Microsoft Online.
+A single sign-on domain is also known as identity-federated domain.
+
 It is necessary to run this cmdlet whenever the URLs or certificate information within Active Directory Federation Services 2.0 change due to configuration changes or through regular maintenance of the certificates, such as when a certificate is about to expire.
 This cmdlet should also be run when changes occur in Microsoft Online.
-To confirm that the information in the two systems is correct, the Get-MSOLFederationProperty cmdlet can be used to retrieve the settings.
+To confirm that the information in the two systems is correct, the [Get-MSOLFederationProperty](./Get-MSOLFederationProperty.md) cmdlet can be used to retrieve the settings.
 
 ## PARAMETERS
 
 ### -DomainName
-The single sign-on domain (also known as identity-federated domain) that needs updating.
+Specifies the name of the single sign-on domain to update.
 
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -41,7 +43,7 @@ Accept wildcard characters: False
 ```
 
 ### -Confirm
-Prompts you for confirmation before executing the command.
+Prompts you for confirmation before running the command.
 
 ```yaml
 Type: SwitchParameter
@@ -56,7 +58,8 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Describes what would happen if you executed the command without actually executing the command.
+Shows what would happen if the cmdlet runs.
+The cmdlet is not run.
 
 ```yaml
 Type: SwitchParameter
@@ -76,7 +79,7 @@ Accept wildcard characters: False
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -95,5 +98,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-MSOLFederationProperty](./Get-MSOLFederationProperty.md)
 
+[New-MsolFederatedDomain](./New-MsolFederatedDomain.md)
 
+[Remove-MsolFederatedDomain](./Remove-MsolFederatedDomain.md)

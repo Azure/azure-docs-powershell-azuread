@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
-online version: 
+online version:
 schema: 2.0.0
 ms.assetid: CC0818E5-CAAD-4066-A736-4E41CE9E7C27
 ---
@@ -27,10 +27,6 @@ Get-MsolUserByStrongAuthentication [-RoleObjectId <Guid>] [-Requirements <Strong
 
 ## EXAMPLES
 
-### 1:
-```
-PS C:\>
-```
 
 ## PARAMETERS
 
@@ -38,7 +34,7 @@ PS C:\>
 ```yaml
 Type: SwitchParameter
 Parameter Sets: All__0
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -51,7 +47,7 @@ Accept wildcard characters: False
 ```yaml
 Type: Int32
 Parameter Sets: ListUsersByStrongAuthentication__0
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -64,7 +60,7 @@ Accept wildcard characters: False
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -77,7 +73,7 @@ Accept wildcard characters: False
 ```yaml
 Type: StrongAuthenticationRequirement[]
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -90,7 +86,7 @@ Accept wildcard characters: False
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -103,7 +99,7 @@ Accept wildcard characters: False
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -116,7 +112,7 @@ Accept wildcard characters: False
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -135,5 +131,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-
-

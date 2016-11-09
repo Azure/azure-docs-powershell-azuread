@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
-online version: 
+online version:
 schema: 2.0.0
 ms.assetid: 1D23EC9E-30E3-4B23-82E8-6B5C91F523A4
 ---
@@ -18,31 +18,28 @@ Set-MsolGroup [-ObjectId <Guid>] [-DisplayName <String>] [-Description <String>]
 ```
 
 ## DESCRIPTION
-The Set-MsolGroup cmdlet is used to update the properties of a security group.
+The **Set-MsolGroup** cmdlet updates the properties of a security group.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### Example 1: Modify a group
 ```
-$groupid = Get-MsolGroup -searchstring MyGroup
-          Set-MsolGroup -objectid $groupId -Description "My Group"
+PS C:\> $GroupId = Get-MsolGroup -SearchString "MyGroup"
+PS C:\> Set-MsolGroup -ObjectId $GroupId -Description "My Group"
 ```
 
-Description
-
------------
-
-Updates the description for MyGroup.
+The first command gets the security group that matches the string MyGroup, and then stores it in the $GroupId variable.
+The second command modifies the group in $GroupId.
 
 ## PARAMETERS
 
 ### -Description
-The description of the group.
+Specifies a description of the group.
 
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -52,12 +49,12 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-The display name of the group.
+Specifies a display name of the group.
 
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -67,12 +64,12 @@ Accept wildcard characters: False
 ```
 
 ### -ManagedBy
-The owner of the group.
+Specifies the owner of the group.
 
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -82,12 +79,12 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-The ObjectId of the group to update.
+Specifies the unique object ID of the group to update.
 
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -97,14 +94,14 @@ Accept wildcard characters: False
 ```
 
 ### -TenantId
-The unique ID of the tenant to perform the operation on.
-If this is not provided then the value will default to the tenant of the current user.
-This parameter is only applicable to partner users.
+Specifies the unique ID of the tenant on which to perform the operation.
+The default value is the tenant of the current user.
+This parameter applies only to partner users.
 
 ```yaml
 Type: Guid
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -123,5 +120,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-MsolGroup](./Get-MsolGroup.md)
 
+[New-MsolGroup](./New-MsolGroup.md)
 
+[Remove-MsolGroup](./Remove-MsolGroup.md)
