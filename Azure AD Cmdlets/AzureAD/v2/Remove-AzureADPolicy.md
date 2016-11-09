@@ -8,7 +8,7 @@ ms.assetid: D74563F0-14B9-43BD-8C3C-BC46CD505407
 # Remove-AzureADPolicy
 
 ## SYNOPSIS
-
+Removes a policy.
 ## SYNTAX
 
 ```
