@@ -8,7 +8,7 @@ ms.assetid: A57C8BFC-4E69-444D-8B9E-65D4767F8364
 # Remove-AzureADUserAppRoleAssignment
 
 ## SYNOPSIS
-Delete a user application role assignment.
+Removes a user application role assignment.
 
 ## SYNTAX
 
@@ -18,18 +18,12 @@ Remove-AzureADUserAppRoleAssignment -ObjectId <String> -AppRoleAssignmentId <Str
 ```
 
 ## DESCRIPTION
-
-## EXAMPLES
-
-### 1:
-```
-PS C:\>
-```
+The **Remove-AzureADUserAppRoleAssignment** cmdlet removes a user application role assignment in Azure Active Directory (AD).
 
 ## PARAMETERS
 
 ### -ObjectId
-The unique identifier of a user in Azure Active Directory (UPN or ObjectId)
+Specifies the ID (as a UPN or ObjectId) of a user in Azure AD.
 
 ```yaml
 Type: String
@@ -44,7 +38,7 @@ Accept wildcard characters: False
 ```
 
 ### -AppRoleAssignmentId
-The unique identifier of the object specific Azure Active Directory object
+Specifies the ID of an application role assignment.
 
 ```yaml
 Type: String
@@ -59,9 +53,7 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -107,5 +99,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-AzureADUserAppRoleAssignment](./Get-AzureADUserAppRoleAssignment.md)
 
-
+[New-AzureADUserAppRoleAssignment](./New-AzureADUserAppRoleAssignment.md)
