@@ -8,7 +8,7 @@ ms.assetid: 75F2C609-19BB-4E07-8E76-4AF00C028A2A
 # Remove-AzureADServicePrincipalPasswordCredential
 
 ## SYNOPSIS
-Remove a password from a service principal
+Removes a password credential from a service principal.
 
 ## SYNTAX
 
@@ -18,18 +18,13 @@ Remove-AzureADServicePrincipalPasswordCredential -ObjectId <String> -KeyId <Stri
 ```
 
 ## DESCRIPTION
+The **Remove-AzureADServicePrincipalPasswordCredential** cmdlet removes a password credential from a service principal in Azure Active Directory (AD).
 
-## EXAMPLES
-
-### 1:
-```
-PS C:\>
-```
 
 ## PARAMETERS
 
 ### -ObjectId
-The unique identifier of the application in Azure Active Directory
+Specifies the ID of an application in Azure AD.
 
 ```yaml
 Type: String
@@ -44,7 +39,6 @@ Accept wildcard characters: False
 ```
 
 ### -KeyId
-@{Text=}
 
 ```yaml
 Type: String
@@ -59,9 +53,7 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -107,5 +99,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-AzureADServicePrincipalPasswordCredential](./Get-AzureADServicePrincipalPasswordCredential.md)
 
-
+[New-AzureADServicePrincipalPasswordCredential](./New-AzureADServicePrincipalPasswordCredential.md)
