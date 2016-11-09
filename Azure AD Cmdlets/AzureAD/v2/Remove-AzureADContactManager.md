@@ -8,7 +8,7 @@ ms.assetid: CB0C4658-FF1F-46D4-AD62-8C2FA7E72BCA
 # Remove-AzureADContactManager
 
 ## SYNOPSIS
-Deletes the contact's manager in Azure Active Directory
+Removes a contact's manager.
 
 ## SYNTAX
 
@@ -18,18 +18,12 @@ Remove-AzureADContactManager -ObjectId <String> [-InformationAction <ActionPrefe
 ```
 
 ## DESCRIPTION
-
-## EXAMPLES
-
-### 1:
-```
-PS C:\>
-```
+The **Remove-AzureADContactManager** cmdlet removes a contact's manager in Azure Active Directory (AD).
 
 ## PARAMETERS
 
 ### -ObjectId
-The unique identifier of a contact in Azure Active Directory (ObjectId)
+Specifies the object ID of a contact in Azure AD.
 
 ```yaml
 Type: String
@@ -44,9 +38,7 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -92,5 +84,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-AzureADContactManager](./Get-AzureADContactManager.md)
 
-
+[Set-AzureADContactManager](./Set-AzureADContactManager.md)

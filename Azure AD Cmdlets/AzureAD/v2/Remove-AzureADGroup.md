@@ -8,7 +8,7 @@ ms.assetid: D495C18D-D65F-4D9E-8A04-C478D1C0F97C
 # Remove-AzureADGroup
 
 ## SYNOPSIS
-Delete a group by objectId.
+Removes a group.
 
 ## SYNTAX
 
@@ -18,18 +18,18 @@ Remove-AzureADGroup -ObjectId <String> [-InformationAction <ActionPreference>] [
 ```
 
 ## DESCRIPTION
-
+The **Remove-AzureADGroup** cmdlet removes a group from Azure Active Directory (AD).
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### Example 1: Remove a group
+```PowerShell
+PS C:\>Remove-AzureADGroup -ObjectId "11fa5e1e-737c-40c5-835e-416ae3959606"
 ```
-PS C:\>Remove-AzureADGroup -ObjectId 11fa5e1e-737c-40c5-835e-416ae3959606
-```
-
+This command removes the specified group from Azure AD.
 ## PARAMETERS
 
 ### -ObjectId
-The unique identifier of a group in Azure Active Directory (ObjectId)
+Specifies the object ID of a group in Azure AD.
 
 ```yaml
 Type: String
@@ -44,9 +44,7 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -92,5 +90,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-AzureADGroup](./Get-AzureADGroup.md)
 
+[New-AzureADGroup](./New-AzureADGroup.md)
 
+[Set-AzureADGroup](./Set-AzureADGroup.md)

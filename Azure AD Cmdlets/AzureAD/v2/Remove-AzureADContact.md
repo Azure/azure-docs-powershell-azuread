@@ -8,7 +8,7 @@ ms.assetid: 184FB919-C19D-4EC0-8278-72750B223734
 # Remove-AzureADContact
 
 ## SYNOPSIS
-Deletes a specific contact in Azure Active Directory
+Removes a contact.
 
 ## SYNTAX
 
@@ -18,18 +18,12 @@ Remove-AzureADContact -ObjectId <String> [-InformationAction <ActionPreference>]
 ```
 
 ## DESCRIPTION
-
-## EXAMPLES
-
-### 1:
-```
-PS C:\>
-```
+The **Remove-AzureADContact** removes a contact from Azure Active Directory (AD).
 
 ## PARAMETERS
 
 ### -ObjectId
-The unique identifier of a contact in Azure Active Directory (ObjectId)
+Specifies the object ID of a contact in Azure AD.
 
 ```yaml
 Type: String
@@ -44,9 +38,7 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -92,5 +84,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-AzureADContact](./Get-AzureADContact.md)
+
+[Set-AzureADContact](./Set-AzureADContact.md)
 
 

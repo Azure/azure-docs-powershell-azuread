@@ -18,18 +18,18 @@ Remove-AzureADApplicationOwner -ObjectId <String> -OwnerId <String> [-Informatio
 ```
 
 ## DESCRIPTION
-
+The **Remove-AzureADApplicationOwner** cmdlet removes an owner from an application in Azure Active Directory (AD).
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### Example 1: Remove an owner from an application
+```PowerShell
+PS C:\>Remove-AzureADApplicationOwner -ObjectId "3ddd22e7-a150-4bb3-b100-e410dea1cb84" -OwnerId "c13dd34a-492b-4561-b171-40fcce2916c5"
 ```
-PS C:\>Remove-AzureADApplicationOwner -ObjectId 3ddd22e7-a150-4bb3-b100-e410dea1cb84 -OwnerId c13dd34a-492b-4561-b171-40fcce2916c5
-```
-
+This command removes the owner from the specified application.
 ## PARAMETERS
 
 ### -ObjectId
-The unique idenfier of an application in Azure Active Directory
+Specifies the ID of an application in Azure AD.
 
 ```yaml
 Type: String
@@ -44,7 +44,7 @@ Accept wildcard characters: False
 ```
 
 ### -OwnerId
-The unique identifier of the object specific Azure Active Directory object
+Specifies the ID of the owner.
 
 ```yaml
 Type: String
@@ -107,5 +107,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Add-AzureADApplicationOwner](./Add-AzureADApplicationOwner.md)
 
-
+[Get-AzureADApplicationOwner](./Get-AzureADApplicationOwner.md)

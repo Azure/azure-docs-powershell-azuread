@@ -8,7 +8,7 @@ ms.assetid: CAD38E2B-DC2D-440F-A51F-1CF9060FF62A
 # Remove-AzureADDomain
 
 ## SYNOPSIS
-Delete an domain by objectId.
+Removes a domain.
 
 ## SYNTAX
 
@@ -18,20 +18,12 @@ Remove-AzureADDomain -Name <String> [-InformationAction <ActionPreference>] [-In
 ```
 
 ## DESCRIPTION
-
-## EXAMPLES
-
-### 1:
-```
-PS C:\>
-```
+The **Remove-AzureADDomain** cmdlet removes a domain from Azure Active Directory (AD).
 
 ## PARAMETERS
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -68,6 +60,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
+Specifies the name of the domain to remove.
 ```yaml
 Type: String
 Parameter Sets: (All)
@@ -90,5 +83,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Confirm-AzureADDomain](./Confirm-AzureADDomain.md)
 
+[Get-AzureADDomain](./Get-AzureADDomain.md)
 
+[New-AzureADDomain](./New-AzureADDomain.md)
+
+[Set-AzureADDomain](./Set-AzureADDomain.md)

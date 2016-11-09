@@ -8,7 +8,7 @@ ms.assetid: B6BE96C3-7409-4AE2-AF70-823BEF4BFC62
 # Remove-AzureADDeviceRegisteredOwner
 
 ## SYNOPSIS
-
+Removes the registered owner of a device.
 ## SYNTAX
 
 ```
@@ -16,17 +16,12 @@ Remove-AzureADDeviceRegisteredOwner -ObjectId <String> -OwnerId <String> [<Commo
 ```
 
 ## DESCRIPTION
-
-## EXAMPLES
-
-### 1:
-```
-PS C:\>
-```
+The **Remove-AzureADDeviceRegisteredOwner** cmdlet removes the registered owner of a device in Azure Active Directory (AD).
 
 ## PARAMETERS
 
 ### -ObjectId
+Specifies an object ID.
 ```yaml
 Type: String
 Parameter Sets: (All)
@@ -40,6 +35,7 @@ Accept wildcard characters: False
 ```
 
 ### -OwnerId
+Specifies an owner ID.
 ```yaml
 Type: String
 Parameter Sets: (All)
@@ -62,5 +58,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Add-AzureADDeviceRegisteredOwner](./Add-AzureADDeviceRegisteredOwner.md)
 
-
+[Get-AzureADDeviceRegisteredOwner](./Get-AzureADDeviceRegisteredOwner.md)
