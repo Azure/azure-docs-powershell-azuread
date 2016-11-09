@@ -8,7 +8,8 @@ ms.assetid: 66D77613-4992-463D-B318-E2D53B14AED4
 # Select-AzureADGroupIdsUserIsMemberOf
 
 ## SYNOPSIS
-From a list of groups Ids select those that the user is a member of.
+Selects the groups that a user is a member of.
+
 
 ## SYNTAX
 
@@ -19,18 +20,12 @@ Select-AzureADGroupIdsUserIsMemberOf -ObjectId <String>
 ```
 
 ## DESCRIPTION
-
-## EXAMPLES
-
-### 1:
-```
-PS C:\>
-```
+The **Select-AzureADGroupIdsUserIsMemberOf** cmdlet selects the groups that a user is a member of in Azure Actve Directory (AD).
 
 ## PARAMETERS
 
 ### -ObjectId
-The unique identifier of a user in Azure Active Directory (UPN or ObjectId)
+Specifies the ID of a user (as a UPN or ObjectId) in Azure AD.
 
 ```yaml
 Type: String
@@ -45,7 +40,7 @@ Accept wildcard characters: False
 ```
 
 ### -GroupIdsForMembershipCheck
-A list of groups object ids.
+Specifies an array of group object IDs.
 
 ```yaml
 Type: GroupIdsForMembershipCheck
@@ -60,9 +55,7 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
