@@ -8,7 +8,7 @@ ms.assetid: 92AA880E-6C9D-4234-86D3-239CA64E245E
 # Remove-AzureADUser
 
 ## SYNOPSIS
-Deletes a specific user in Azure Active Directory
+Removes a user.
 
 ## SYNTAX
 
@@ -18,20 +18,20 @@ Remove-AzureADUser -ObjectId <String> [-InformationAction <ActionPreference>] [-
 ```
 
 ## DESCRIPTION
-
+The **Remove-AzureADUser** cmdlet removes a user in Azure Active Directory (AD).
 ## EXAMPLES
 
-### --------------------------  Example 1  --------------------------
+### Example 1: Remove a user
+```PowerShell
+PS C:\>Remove-AzureADUser -ObjectId "TestUser@example.com"
 ```
-PS C:\>Remove-AzureADUser -ObjectId TestUser@example.com
-```
+This command removes the specified user in Azure AD.
 
-Delete a specific user in current directory.
 
 ## PARAMETERS
 
 ### -ObjectId
-The unique identifier of a user in Azure Active Directory (UPN or ObjectId)
+Specifies the ID of a user (as a UPN or ObjectId) in Azure AD.
 
 ```yaml
 Type: String
@@ -46,9 +46,7 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -94,5 +92,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-AzureADUser](./Get-AzureADUser.md)
 
+[New-AzureADUser](./New-AzureADUser.md)
 
+[Set-AzureADUser](./Set-AzureADUser.md)
