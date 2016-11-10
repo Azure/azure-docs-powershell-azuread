@@ -8,7 +8,7 @@ ms.assetid: 62E1C992-D456-4C2B-B8FD-7AA7F6648CE2
 # Set-AzureADContactManager
 
 ## SYNOPSIS
-Updates the contact's manager in Azure Active Directory
+Updates the manager for a contact.
 
 ## SYNTAX
 
@@ -18,18 +18,13 @@ Set-AzureADContactManager -ObjectId <String> -RefObjectId <String> [-Information
 ```
 
 ## DESCRIPTION
+The **Set-AzureADContactManager** cmdlet updates the manager of a contact in Azure Active Directory (AD).
 
-## EXAMPLES
-
-### 1:
-```
-PS C:\>
-```
 
 ## PARAMETERS
 
 ### -ObjectId
-The unique identifier of a contact in Azure Active Directory (ObjectId)
+Specifies the object ID of a contact in Azure AD.
 
 ```yaml
 Type: String
@@ -44,7 +39,7 @@ Accept wildcard characters: False
 ```
 
 ### -RefObjectId
-The unique identifier of the specific Azure Active Directory object that will be assigned as owner/manager/member
+Specifies the ID of the object to assign as manager.
 
 ```yaml
 Type: String
@@ -59,9 +54,7 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -107,5 +100,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-AzureADContactManager](./Get-AzureADContactManager.md)
 
-
+[Remove-AzureADContactManager](./Remove-AzureADContactManager.md)
