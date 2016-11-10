@@ -8,7 +8,7 @@ ms.assetid: 1575D032-020F-4471-A408-2487C93940AF
 # Set-AzureADPolicy
 
 ## SYNOPSIS
-
+Updates a policy.
 ## SYNTAX
 
 ```
