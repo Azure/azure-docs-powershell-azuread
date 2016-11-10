@@ -29,7 +29,7 @@ The **Get-MsolAdministrativeUnitMember** cmdlet gets members of an administrativ
 
 ## EXAMPLES
 
-### Example 1:
+### Example 1: Get members of an administrative unit
 
 ```
 PS C:\> $AdminstrativeUnit = Get-MsolAdministrativeUnit -SearchString "West Coast"

@@ -23,7 +23,7 @@ This member can be either a user or a group.
 
 ## EXAMPLES
 
-### Example 1:
+### Example 1: Remove a user from a group
 ```
 PS C:\> $GroupId = Get-MsolGroup -SearchString "MyGroup"
 PS C:\> $UserId = Get-MsolUser -UserPrincipalName "evannarvaez@contoso.com"

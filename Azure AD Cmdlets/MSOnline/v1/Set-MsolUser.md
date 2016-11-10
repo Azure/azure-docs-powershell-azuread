@@ -42,7 +42,7 @@ PS C:\> Set-MsolUser -UserPrincipalName "davidchew@contoso.com" -BlockCredential
 This command sets block credential to $Tue for a user, which blocks them from being able to sign in.
 This cannot be done for a synced user.
 
-### Example 2:
+### Example 2: Update display name
 ```
 PS C:\> Set-MsolUser -UserPrincipalName "davidchew@contoso.com" -DisplayName "David Chew" -Title "Manager" -Department "Finance"
 ```

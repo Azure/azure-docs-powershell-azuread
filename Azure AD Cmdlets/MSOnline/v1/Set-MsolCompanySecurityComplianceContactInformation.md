@@ -25,7 +25,7 @@ The contact is used for notification purposes.
 
 ## EXAMPLES
 
-### Example 1:
+### Example 1: Set contact information
 ```
 Set-MsolCompanySecurityComplianceContactInformation -SecurityComplianceNotificationEmails "EvanNarvaez@contoso.com", "ElisaDaugherty@contoso.com" -SecuritComplianceNotificationPhones "555-555-0012","555-555-0199"
 ```

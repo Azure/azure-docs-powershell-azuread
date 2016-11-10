@@ -143,7 +143,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Online.Administration.GroupMember
-This cmldet returns objects that contain the following information:
+This cmdlet returns objects that contain the following information:
 
 * CommonName. The common name of the group.
 
