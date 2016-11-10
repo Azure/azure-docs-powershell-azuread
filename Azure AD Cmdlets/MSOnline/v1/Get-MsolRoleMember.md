@@ -25,7 +25,7 @@ Get-MsolRoleMember [-RoleObjectId <Guid>] [-MemberObjectTypes <String[]>] [-Sear
 ```
 
 ## DESCRIPTION
-The Get-MsolRoleMember cmdlet gets members of the specified role.
+The **Get-MsolRoleMember** cmdlet gets members of the specified role.
 
 ## EXAMPLES
 

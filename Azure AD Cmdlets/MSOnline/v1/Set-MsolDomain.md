@@ -8,7 +8,7 @@ ms.assetid: 750DB368-6EC8-45AC-B3E8-A4D53E6284D7
 # Set-MsolDomain
 
 ## SYNOPSIS
-modifies settings of a domain.
+Modifies settings of a domain.
 
 ## SYNTAX
 

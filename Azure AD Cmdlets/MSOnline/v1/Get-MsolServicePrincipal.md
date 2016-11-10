@@ -38,7 +38,7 @@ Get-MsolServicePrincipal [-SearchString <String>] [-All] [-TenantId <Guid>] [<Co
 ```
 
 ## DESCRIPTION
-The Get-MsolServicePrincipal cmdlet gets a service principal or a list of service principals from Azure Active Directory.
+The **Get-MsolServicePrincipal** cmdlet gets a service principal or a list of service principals from Azure Active Directory.
 
 ## EXAMPLES
 
