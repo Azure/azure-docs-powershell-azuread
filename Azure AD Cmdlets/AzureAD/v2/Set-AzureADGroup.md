@@ -19,18 +19,19 @@ Set-AzureADGroup -ObjectId <String> [-InformationAction <ActionPreference>] [-In
 ```
 
 ## DESCRIPTION
+The **Set-AzureADGroup** cmdlet updates a group in Azure Active Directory (AD).
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### Example 1: Update a group
+```PowerShell
+PS C:\>Set-AzureADGroup -ObjectId "11fa5e1e-737c-40c5-835e-416ae3959606" -Description "This is my new group"
 ```
-PS C:\>Set-AzureADGroup -ObjectId 11fa5e1e-737c-40c5-835e-416ae3959606 -Description "This is my new group"
-```
-
+This command updates the specfied group in Azure AD.
 ## PARAMETERS
 
 ### -ObjectId
-The unique identifier of a group in Azure Active Directory (ObjectId)
+Specifies the object ID of a group.
 
 ```yaml
 Type: String
@@ -45,9 +46,7 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -84,8 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### -Description
-@{Text=}
-
+Specfies a description.
 ```yaml
 Type: String
 Parameter Sets: (All)
@@ -99,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-@{Text=}
+Specifies a display name.
 
 ```yaml
 Type: String
@@ -114,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -MailEnabled
-@{Text=}
+Indicates whether mail is enabled.
 
 ```yaml
 Type: Boolean
@@ -129,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -MailNickName
-@{Text=}
+Specifies a nickname for the mail.
 
 ```yaml
 Type: String
@@ -144,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -SecurityEnabled
-@{Text=}
+Indicates whether security is enabled.
 
 ```yaml
 Type: Boolean
@@ -168,5 +166,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-AzureADGroup](./Get-AzureADGroup.md)
 
+[New-AzureADGroup](./New-AzureADGroup.md)
 
+[Remove-AzureADGroup](./Remove-AzureADGroup.md)
