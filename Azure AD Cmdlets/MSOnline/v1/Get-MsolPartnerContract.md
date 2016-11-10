@@ -26,7 +26,7 @@ Get-MsolPartnerContract [-DomainName <String>] [-SearchKey <PartnerContractSearc
 
 ## DESCRIPTION
 The **Get-MsolPartnerContract** cmdlet gets a list of contracts for a partner.
-Therefore, this cmldet should only be used by partners.
+Therefore, this cmdlet should only be used by partners.
 
 Specify a domain to look up.
 This domain must be verified for the tenant.

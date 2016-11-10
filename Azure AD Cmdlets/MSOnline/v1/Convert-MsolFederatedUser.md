@@ -24,7 +24,7 @@ A new password must be provided for the user.
 
 ## EXAMPLES
 
-### Example 1:
+### Example 1: Convert a federated user
 ```
 PS C:\> Convert-MsolFederatedUser -UserPrincipalName "pattifuller@contoso.com"
 ```

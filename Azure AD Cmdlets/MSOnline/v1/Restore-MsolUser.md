@@ -45,11 +45,10 @@ PS C:\> Restore-MsolUser -UserPrincipalName "davidchew@contoso.com" -AutoReconci
 This command restores the user davidchew@contoso.com from the Deleted users container to the Active users container, removing any conflicting proxy addresses.
 Use this option if restore fails due to proxy conflicts.
 
-### Example 3:
+### Example 3: Restore a user
 ```
 PS C:\> Restore-MsolUser -UserPrincipalName "davidchew@contoso.com" -NewUserPrincipalName "davidchew02@contoso.com"
 ```
-
 
 This command restores the user davidchew@contoso.com from the Deleted users container to the Active users container as davidchew02@contoso.com.
 Use this option if restore fails due to a user principal name conflict.

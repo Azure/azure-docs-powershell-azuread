@@ -57,7 +57,7 @@ PS C:\> Get-MsolServicePrincipal -ServicePrincipalName "MyApp"
 This command gets all the existing service principals that have a service principal name that starts with MyApp.
 This is an exact match of the **appClass** portion of the service principal name up to the forward slash.
 
-### Example 3:
+### Example 3: Get a service principal
 ```
 PS C:\> Get-MsolServicePrincipal -AppPrincipalId 5e964d2f-e384-4292-ae55-dd24c89cc53b
 ```

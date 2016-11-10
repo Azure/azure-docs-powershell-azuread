@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
-online version: 
+online version:
 schema: 2.0.0
 ms.assetid: 4955285A-6FE5-46E2-AFFC-8B1798AE8F2A
 ---
@@ -28,7 +28,7 @@ PS C:\>Get-MsolAllSettings
 
 This command gets a list of directory settings
 
-### Example 2:
+### Example 2: Get directory settings
 ```
 PS C:\>Get-MsolAllSettings -TargetType Groups -TargetObjectId "Group001"
 ```
@@ -51,7 +51,7 @@ The acceptable values for this parameter are:
 ```yaml
 Type: TargetType
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -66,7 +66,7 @@ Specifies the object ID that setting objects are associated with, if this value 
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -89,5 +89,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-MsolSettings](./Get-MsolSettings.md)
 
 [Get-MsolAllSettingTemplate](./Get-MsolAllSettingTemplate.md)
-
-

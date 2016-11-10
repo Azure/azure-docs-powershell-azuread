@@ -38,7 +38,7 @@ This command removes the user davidchew@contoso.com from Azure Active Directory.
 If the user has any licenses, the cmdlet removes these.
 The command prompts you to confirm the operation.
 
-### Example 2:Remove a user without confirmation
+### Example 2: Remove a user without confirmation
 ```
 Remove-MsolUser -UserPrincipalName "davidchew@contoso.com" -Force
 ```
@@ -46,7 +46,7 @@ Remove-MsolUser -UserPrincipalName "davidchew@contoso.com" -Force
 This command removes davidchew@contoso.com from Azure Active Directory.
 If the user has any licenses, the cmdlet removes these.
 
-### Example 3:
+### Example 3: Remove a user from the Recycle Bin
 ```
 Remove-MsolUser -UserPrincipalName "davidchew@contoso.com" -RemoveFromRecycleBin
 ```
