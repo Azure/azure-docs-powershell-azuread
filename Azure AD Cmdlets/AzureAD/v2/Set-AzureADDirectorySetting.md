@@ -18,18 +18,13 @@ Set-AzureADDirectorySetting [-ObjectId <String>] -DirectorySetting <DirectorySet
 ```
 
 ## DESCRIPTION
+The **Set-AzureADDirectorySetting** cmdlet updates a directory setting in Azure Active Directory (AD).
 
-## EXAMPLES
-
-### 1:
-```
-PS C:\>
-```
 
 ## PARAMETERS
 
 ### -ObjectId
-The unique identifier of a settings in Azure Active Directory
+Specifies the ID of a settings object in Azure AD.
 
 ```yaml
 Type: String
@@ -44,7 +39,7 @@ Accept wildcard characters: False
 ```
 
 ### -DirectorySetting
-Update settings.
+Specifies the directory settings.
 
 ```yaml
 Type: DirectorySetting
@@ -59,9 +54,7 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -107,5 +100,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-AzureADDirectorySetting](./Get-AzureADDirectorySetting.md)
 
+[New-AzureADDirectorySetting](./New-AzureADDirectorySetting.md)
 
+[Remove-AzureADDirectorySetting](./Remove-AzureADDirectorySetting.md)
