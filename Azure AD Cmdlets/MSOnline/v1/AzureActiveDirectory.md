@@ -124,7 +124,7 @@ Verifies a custom domain.
 
 
 ### [Confirm-MsolEmailVerifiedDomain](./Confirm-MsolEmailVerifiedDomain.md)
-
+Confirms ownership of an unmanaged tenant.
 
 
 ### [Connect-MsolService](./Connect-MsolService.md)
@@ -436,7 +436,7 @@ Enables the multinational feature for a service type for a company with Azure Ac
 
 
 ### [Set-MsolCompanySecurityComplianceContactInformation](./Set-MsolCompanySecurityComplianceContactInformation.md)
-
+Sets company-level security and compliance contact preferences.
 
 
 ### [Set-MsolCompanySettings](./Set-MsolCompanySettings.md)
