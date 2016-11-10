@@ -28,7 +28,7 @@ New-MsolUser [-ImmutableId <String>] [-UserPrincipalName <String>] [-BlockCreden
 ```
 
 ## DESCRIPTION
-The New-MsolUser cmdlet creates a user in Azure Active Directory.
+The **New-MsolUser** cmdlet creates a user in Azure Active Directory.
 In order to give the user access to services, assign a license by using the _LicenseAssignment_ parameter.
 
 ## EXAMPLES

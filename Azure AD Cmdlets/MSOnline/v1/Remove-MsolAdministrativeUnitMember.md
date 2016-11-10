@@ -18,7 +18,7 @@ Remove-MsolAdministrativeUnitMember -AdministrativeUnitObjectId <Guid>
 ```
 
 ## DESCRIPTION
-The Remove-MsolAdministrativeUnitMember cmdlet is used to remove a member from an administrative unit.
+The **Remove-MsolAdministrativeUnitMember** cmdlet is used to remove a member from an administrative unit.
 
 ## EXAMPLES
 
