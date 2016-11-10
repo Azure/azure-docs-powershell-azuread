@@ -8,7 +8,7 @@ ms.assetid: 53B15037-19DD-4253-B998-D968DA05F2AC
 # Set-AzureADDomain
 
 ## SYNOPSIS
-Updates a specific domain in Azure Active Directory
+Updates a domain.
 
 ## SYNTAX
 
@@ -19,20 +19,13 @@ Set-AzureADDomain -Name <String> [-InformationAction <ActionPreference>] [-Infor
 ```
 
 ## DESCRIPTION
+The **Set-AzureADDomain** cmdlet updates a domain in Azure Active Directory (AD).
 
-## EXAMPLES
-
-### 1:
-```
-PS C:\>
-```
 
 ## PARAMETERS
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -69,7 +62,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsDefault
-@{Text=}
+
 
 ```yaml
 Type: Boolean
@@ -84,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-@{Text=}
+Specifies a name.
 
 ```yaml
 Type: String
@@ -99,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -SupportedServices
-@{Text=}
+Specifies an array of supported services.
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
@@ -123,5 +116,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Confirm-AzureADDomain](./Confirm-AzureADDomain.md)
 
+[Get-AzureADDomain](./Get-AzureADDomain.md)
 
+[New-AzureADDomain](./New-AzureADDomain.md)
+
+[Remove-AzureADDomain](./Remove-AzureADDomain.md)
