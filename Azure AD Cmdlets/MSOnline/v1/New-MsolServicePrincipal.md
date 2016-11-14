@@ -8,7 +8,7 @@ ms.assetid: 90C7E9B8-165A-4628-8399-F71F371FBB42
 # New-MsolServicePrincipal
 
 ## SYNOPSIS
-Add a service principal to Azure Active Directory.
+Adds a service principal to Azure Active Directory.
 
 ## SYNTAX
 
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 
 ### -Addresses
 Specifies the of addresses used by the application.
-Use the [New-MsolServicePrincipalAddress](./New-MsolServicePrincipalAddress.md) cmdlet to help create the Addresses list object.
+Use the [New-MsolServicePrincipalAddresses](./New-MsolServicePrincipalAddresses.md) cmdlet to help create the Addresses list object.
 
 ```yaml
 Type: RedirectUri[]
@@ -281,7 +281,7 @@ If credential type is symmetric, it represents an AES key.
 ## RELATED LINKS
 [Get-MsolServicePrincipal](./Get-MsolServicePrincipal.md)
 
-[New-MsolServicePrincipalAddress](./New-MsolServicePrincipalAddress.md)
+[New-MsolServicePrincipalAddresses](./New-MsolServicePrincipalAddresses.md)
 
 [Remove-MsolServicePrincipal](./Remove-MsolServicePrincipal.md)
 

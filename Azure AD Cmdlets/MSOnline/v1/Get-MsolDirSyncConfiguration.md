@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
-online version: 
+online version:
 schema: 2.0.0
 ms.assetid: 174960FD-00BB-461F-B8C9-DDA519E24F00
 ---
@@ -8,6 +8,7 @@ ms.assetid: 174960FD-00BB-461F-B8C9-DDA519E24F00
 # Get-MsolDirSyncConfiguration
 
 ## SYNOPSIS
+Gets the directory synchronization settings.
 
 ## SYNTAX
 
@@ -16,6 +17,7 @@ Get-MsolDirSyncConfiguration [-TenantId <Guid>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
+The **Get-MsolDirSyncConfiguration** cmdlet gets the directory synchronization settings.
 
 ## EXAMPLES
 
@@ -23,6 +25,10 @@ Get-MsolDirSyncConfiguration [-TenantId <Guid>] [<CommonParameters>]
 ## PARAMETERS
 
 ### -TenantId
+Specifies the unique ID of the tenant on which to perform the operation.
+The default value is the tenant of the current user.
+This parameter applies only to partner users.
+
 ```yaml
 Type: Guid
 Parameter Sets: (All)
@@ -45,3 +51,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Set-MsolDirSyncConfiguration](./Set-MsolDirSyncConfiguration.md)
