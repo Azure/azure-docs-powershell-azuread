@@ -192,7 +192,7 @@ Gets an individual device, or a list of devices.
 
 
 ### [Get-MsolDirSyncConfiguration](./Get-MsolDirSyncConfiguration.md)
-
+Gets the directory synchronization settings.
 
 
 ### [Get-MsolDirSyncFeatures](./Get-MsolDirSyncFeatures.md)
@@ -280,7 +280,7 @@ Gets users from Azure Active Directory.
 
 
 ### [Get-MsolUserByStrongAuthentication](./Get-MsolUserByStrongAuthentication.md)
-
+Gets users based on strong authentication type.
 
 
 ### [Get-MsolUserRole](./Get-MsolUserRole.md)
@@ -308,11 +308,11 @@ Creates a License Options object.
 
 
 ### [New-MsolServicePrincipal](./New-MsolServicePrincipal.md)
-Add a new service principal to the Microsoft Azure Active Directory.
+Adds a service principal to Azure Active Directory.
 
 
 ### [New-MsolServicePrincipalAddresses](./New-MsolServicePrincipalAddresses.md)
-
+Creates a service principal address.
 
 
 ### [New-MsolServicePrincipalCredential](./New-MsolServicePrincipalCredential.md)
@@ -328,7 +328,7 @@ Creates a user in Azure Active Directory.
 
 
 ### [New-MsolWellKnownGroup](./New-MsolWellKnownGroup.md)
-
+Creates a well-known group.
 
 
 ### [Redo-MsolProvisionContact](./Redo-MsolProvisionContact.md)
@@ -352,7 +352,7 @@ Removes a member from an administrative unit.
 
 
 ### [Remove-MsolApplicationPassword](./Remove-MsolApplicationPassword.md)
-
+Removes a password for an application.
 
 
 ### [Remove-MsolContact](./Remove-MsolContact.md)
@@ -372,7 +372,7 @@ Removes a single sign-on domain from the domains in Microsoft Online.
 
 
 ### [Remove-MsolForeignGroupFromRole](./Remove-MsolForeignGroupFromRole.md)
-
+Removes a security group from a partner tenant.
 
 
 ### [Remove-MsolGroup](./Remove-MsolGroup.md)
@@ -408,7 +408,7 @@ Removes a user from Microsoft Azure Active Directory.
 
 
 ### [Reset-MsolStrongAuthenticationMethodByUpn](./Reset-MsolStrongAuthenticationMethodByUpn.md)
-
+Resets the strong authentication method by using a user principal name.
 
 
 ### [Restore-MsolUser](./Restore-MsolUser.md)
@@ -448,7 +448,7 @@ Sets the Azure Active Directory device registration service settings.
 
 
 ### [Set-MsolDirSyncConfiguration](./Set-MsolDirSyncConfiguration.md)
-
+Modifies the directory synchronization settings.
 
 
 ### [Set-MsolDirSyncEnabled](./Set-MsolDirSyncEnabled.md)
