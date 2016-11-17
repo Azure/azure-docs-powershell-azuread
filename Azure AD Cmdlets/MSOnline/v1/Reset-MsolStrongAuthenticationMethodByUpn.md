@@ -8,6 +8,7 @@ ms.assetid: 9591963E-EC38-4F32-B4B9-C27873780C26
 # Reset-MsolStrongAuthenticationMethodByUpn
 
 ## SYNOPSIS
+Resets the strong authentication method by using a user principal name.
 
 ## SYNTAX
 
@@ -16,6 +17,7 @@ Reset-MsolStrongAuthenticationMethodByUpn -UserPrincipalName <String> [-TenantId
 ```
 
 ## DESCRIPTION
+The **Reset-MsolStrongAuthenticationMethodByUpn** cmdlet resets the strong authentication method by using a user principal name.
 
 ## EXAMPLES
 
@@ -23,6 +25,10 @@ Reset-MsolStrongAuthenticationMethodByUpn -UserPrincipalName <String> [-TenantId
 ## PARAMETERS
 
 ### -TenantId
+Specifies the unique ID of the tenant on which to perform the operation.
+The default value is the tenant of the current user.
+This parameter applies only to partner users.
+
 ```yaml
 Type: Guid
 Parameter Sets: (All)
@@ -36,6 +42,8 @@ Accept wildcard characters: False
 ```
 
 ### -UserPrincipalName
+Specifies the user principal name for which to reset the strong authentication method.
+
 ```yaml
 Type: String
 Parameter Sets: (All)

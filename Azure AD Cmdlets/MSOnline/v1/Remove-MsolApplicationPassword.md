@@ -8,6 +8,7 @@ ms.assetid: 13ECD260-8B3D-4D47-9109-86DDFC235C92
 # Remove-MsolApplicationPassword
 
 ## SYNOPSIS
+Removes a password for an application.
 
 ## SYNTAX
 
@@ -17,6 +18,8 @@ Remove-MsolApplicationPassword -UserPrincipalName <String> -PasswordId <String> 
 ```
 
 ## DESCRIPTION
+The **Remove-MsolApplicationPassword** cmdlet removes a password for an application.
+
 
 ## EXAMPLES
 
@@ -24,6 +27,8 @@ Remove-MsolApplicationPassword -UserPrincipalName <String> -PasswordId <String> 
 ## PARAMETERS
 
 ### -PasswordId
+Specifies the ID of the password to remove.
+
 ```yaml
 Type: String
 Parameter Sets: (All)
@@ -37,6 +42,10 @@ Accept wildcard characters: False
 ```
 
 ### -TenantId
+Specifies the unique ID of the tenant on which to perform the operation.
+The default value is the tenant of the current user.
+This parameter applies only to partner users.
+
 ```yaml
 Type: Guid
 Parameter Sets: (All)
@@ -50,6 +59,8 @@ Accept wildcard characters: False
 ```
 
 ### -UserPrincipalName
+Specifies the user principal name for which to remove a password.
+
 ```yaml
 Type: String
 Parameter Sets: (All)

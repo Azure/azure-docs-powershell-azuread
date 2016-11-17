@@ -8,6 +8,7 @@ ms.assetid: 629EE8A1-A6F9-4923-94FC-C371CA0F4D5C
 # New-MsolWellKnownGroup
 
 ## SYNOPSIS
+Creates a well-known group.
 
 ## SYNTAX
 
@@ -16,6 +17,7 @@ New-MsolWellKnownGroup -WellKnownGroupName <String> [-TenantId <Guid>] [<CommonP
 ```
 
 ## DESCRIPTION
+The **New-MsolWellKnownGroup** cmdlet creates a well-known group.
 
 ## EXAMPLES
 
@@ -23,6 +25,10 @@ New-MsolWellKnownGroup -WellKnownGroupName <String> [-TenantId <Guid>] [<CommonP
 ## PARAMETERS
 
 ### -TenantId
+Specifies the unique ID of the tenant on which to perform the operation.
+The default value is the tenant of the current user.
+This parameter applies only to partner users.
+
 ```yaml
 Type: Guid
 Parameter Sets: (All)
@@ -36,6 +42,8 @@ Accept wildcard characters: False
 ```
 
 ### -WellKnownGroupName
+Specifies a name for the well-known group. 
+
 ```yaml
 Type: String
 Parameter Sets: (All)
