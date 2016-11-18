@@ -8,5 +8,5 @@ For developers, AzureAD lets you focus on building your application by making it
 
 Module | Description
 ------ | -----------
-[AzureAD](./AzureAD/v2/AzureActiveDirectory.md) | Azure Active Directory PowerShell v2
-[MSOnline](./MSOnline/v1/AzureActiveDirectory.md)| Azure Active Directory PowerShell v1
+[AzureAD](https://docs.microsoft.com/en-us/powershell/azuread/v2/azureactivedirectory) | Azure Active Directory PowerShell v2
+[MSOnline](https://docs.microsoft.com/en-us/powershell/msonline/v1/azureactivedirectory)| Azure Active Directory PowerShell v1
