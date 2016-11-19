@@ -1,15 +1,14 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+ms.assetid: 66D77613-4992-463D-B318-E2D53B14AED4
 online version: 
 schema: 2.0.0
-ms.assetid: 66D77613-4992-463D-B318-E2D53B14AED4
 ---
 
 # Select-AzureADGroupIdsUserIsMemberOf
 
 ## SYNOPSIS
 Selects the groups that a user is a member of.
-
 
 ## SYNTAX
 
@@ -22,22 +21,9 @@ Select-AzureADGroupIdsUserIsMemberOf -ObjectId <String>
 ## DESCRIPTION
 The **Select-AzureADGroupIdsUserIsMemberOf** cmdlet selects the groups that a user is a member of in Azure Actve Directory (AD).
 
+## EXAMPLES
+
 ## PARAMETERS
-
-### -ObjectId
-Specifies the ID of a user (as a UPN or ObjectId) in Azure AD.
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases: 
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByPropertyName, ByValue)
-Accept wildcard characters: False
-```
 
 ### -GroupIdsForMembershipCheck
 Specifies an array of group object IDs.
@@ -91,6 +77,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ObjectId
+Specifies the ID of a user (as a UPN or ObjectId) in Azure AD.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: 
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName, ByValue)
+Accept wildcard characters: False
+```
+
 ### CommonParameters
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
@@ -101,5 +102,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-
 

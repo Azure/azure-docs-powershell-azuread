@@ -1,8 +1,8 @@
 ---
 external help file: Microsoft.Open.Azure.AD.CommonLibrary.dll-Help.xml
+ms.assetid: A5EF9C25-E0D9-432F-A528-81534A01F444
 online version: 
 schema: 2.0.0
-ms.assetid: A5EF9C25-E0D9-432F-A528-81534A01F444
 ---
 
 # Connect-AzureAD
@@ -73,6 +73,51 @@ This command authenticates the user to Azure Active Directory as a service princ
 
 ## PARAMETERS
 
+### -AadAccessToken
+Specifies a Azure Active Directory Graph access token.
+
+```yaml
+Type: String
+Parameter Sets: AccessToken
+Aliases: 
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AccountId
+Specifies the ID of an account. You must specify the UPN of the user when authenticating with a user access token.
+
+```yaml
+Type: String
+Parameter Sets: AccessToken
+Aliases: 
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ApplicationId
+Specifies the application ID of the service principal.
+
+```yaml
+Type: String
+Parameter Sets: ServicePrincipalCertificate
+Aliases: 
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -AzureEnvironmentName
 Specifies the name of the Azure environment. The acceptable values for this parameter are: 
 
@@ -95,44 +140,13 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: False
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -TenantId
-Specifies the ID of a tenant.
-
-If you do not specify this parameter, the account is authenticated for all available tenants.
-
-You must specify the *TenantId* parameter to authenticate as a service principal or when using Microsoft account.
-
-```yaml
-Type: String
-Parameter Sets: User, AccessToken
-Aliases: Domain
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
+### -CertificateThumbprint
+Specifies the certificate thumbprint of a digital public key X.509 certificate of a user account that has permission to perform this action. 
 
 ```yaml
 Type: String
 Parameter Sets: ServicePrincipalCertificate
-Aliases: Domain
+Aliases: 
 
 Required: True
 Position: Named
@@ -150,28 +164,6 @@ The **PSCredential** object provides the user ID and password for organizational
 ```yaml
 Type: PSCredential
 Parameter Sets: User
-Aliases: 
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -LogLevel
-Specifies the log level. The accdeptable values for this parameter are: 
-
-- Info
-- Error
-- Warning
-- None
-
-The default value is Info.
-
-```yaml
-Type: LogLevel
-Parameter Sets: (All)
 Aliases: 
 
 Required: False
@@ -218,45 +210,22 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -CertificateThumbprint
-Specifies the certificate thumbprint of a digital public key X.509 certificate of a user account that has permission to perform this action. 
+### -LogLevel
+Specifies the log level. The accdeptable values for this parameter are: 
+
+- Info
+- Error
+- Warning
+- None
+
+The default value is Info.
 
 ```yaml
-Type: String
-Parameter Sets: ServicePrincipalCertificate
+Type: LogLevel
+Parameter Sets: (All)
 Aliases: 
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ApplicationId
-Specifies the application ID of the service principal.
-
-```yaml
-Type: String
-Parameter Sets: ServicePrincipalCertificate
-Aliases: 
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -AadAccessToken
-Specifies a Azure Active Directory Graph access token.
-
-```yaml
-Type: String
-Parameter Sets: AccessToken
-Aliases: 
-
-Required: True
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -278,17 +247,48 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -AccountId
-Specifies the ID of an account. You must specify the UPN of the user when authenticating with a user access token.
+### -TenantId
+Specifies the ID of a tenant.
+
+If you do not specify this parameter, the account is authenticated for all available tenants.
+
+You must specify the *TenantId* parameter to authenticate as a service principal or when using Microsoft account.
 
 ```yaml
 Type: String
-Parameter Sets: AccessToken
-Aliases: 
+Parameter Sets: User, AccessToken
+Aliases: Domain
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+```yaml
+Type: String
+Parameter Sets: ServicePrincipalCertificate
+Aliases: Domain
 
 Required: True
 Position: Named
 Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

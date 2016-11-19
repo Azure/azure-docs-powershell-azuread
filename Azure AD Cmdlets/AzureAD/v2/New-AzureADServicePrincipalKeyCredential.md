@@ -1,8 +1,8 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.Custom.dll-Help.xml
+ms.assetid: D6EA0D4D-6643-4F11-A94C-2A71827C2774
 online version: 
 schema: 2.0.0
-ms.assetid: D6EA0D4D-6643-4F11-A94C-2A71827C2774
 ---
 
 # New-AzureADServicePrincipalKeyCredential
@@ -20,50 +20,21 @@ New-AzureADServicePrincipalKeyCredential -ObjectId <String> [-CustomKeyIdentifie
 
 ## DESCRIPTION
 The **New-AzureADServicePrincipalKeyCredential** cmdlet creates a key credential for a service principal in Azure Active Directory (AD).
+
 ## EXAMPLES
 
 ### Example 1: Create a key credential
-```PowerShell
+```
 PS C:\>New-AzureADServicePrincipalKeyCredential
 ```
+
 This command creates a key credential for a service principal.
+
 ## PARAMETERS
 
-### -ObjectId
-Specifies an object ID.
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases: 
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByPropertyName, ByValue)
-Accept wildcard characters: False
-```
-
 ### -CustomKeyIdentifier
-
-
 ```yaml
 Type: String
-Parameter Sets: (All)
-Aliases: 
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: True (ByPropertyName, ByValue)
-Accept wildcard characters: False
-```
-
-### -StartDate
-
-
-```yaml
-Type: DateTime
 Parameter Sets: (All)
 Aliases: 
 
@@ -75,53 +46,8 @@ Accept wildcard characters: False
 ```
 
 ### -EndDate
-
-
 ```yaml
 Type: DateTime
-Parameter Sets: (All)
-Aliases: 
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: True (ByPropertyName, ByValue)
-Accept wildcard characters: False
-```
-
-### -Type
-
-
-```yaml
-Type: KeyType
-Parameter Sets: (All)
-Aliases: 
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: True (ByPropertyName, ByValue)
-Accept wildcard characters: False
-```
-
-### -Usage
-
-```yaml
-Type: KeyUsage
-Parameter Sets: (All)
-Aliases: 
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: True (ByPropertyName, ByValue)
-Accept wildcard characters: False
-```
-
-### -Value
-
-```yaml
-Type: String
 Parameter Sets: (All)
 Aliases: 
 
@@ -169,6 +95,73 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ObjectId
+Specifies an object ID.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: 
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName, ByValue)
+Accept wildcard characters: False
+```
+
+### -StartDate
+```yaml
+Type: DateTime
+Parameter Sets: (All)
+Aliases: 
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName, ByValue)
+Accept wildcard characters: False
+```
+
+### -Type
+```yaml
+Type: KeyType
+Parameter Sets: (All)
+Aliases: 
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName, ByValue)
+Accept wildcard characters: False
+```
+
+### -Usage
+```yaml
+Type: KeyUsage
+Parameter Sets: (All)
+Aliases: 
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName, ByValue)
+Accept wildcard characters: False
+```
+
+### -Value
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: 
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName, ByValue)
+Accept wildcard characters: False
+```
+
 ### CommonParameters
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
@@ -179,6 +172,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+
 [Get-AzureADServicePrincipalKeyCredential](./Get-AzureADServicePrincipalKeyCredential.md)
 
 [Remove-AzureADServicePrincipalKeyCredential](./Remove-AzureADServicePrincipalKeyCredential.md)

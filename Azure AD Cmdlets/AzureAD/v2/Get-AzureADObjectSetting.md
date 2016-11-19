@@ -1,8 +1,8 @@
 ---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
+ms.assetid: F1CEBDF4-5AF8-4AFC-AA1F-D36CEC381D04
 online version: 
 schema: 2.0.0
-ms.assetid: F1CEBDF4-5AF8-4AFC-AA1F-D36CEC381D04
 ---
 
 # Get-AzureADObjectSetting
@@ -27,52 +27,9 @@ Get-AzureADObjectSetting -TargetType <String> -TargetObjectId <String> -ObjectId
 ## DESCRIPTION
 The **Get-AzureADObjectSetting** cmdlet gets an object from Azure Active Directory (AD).
 
+## EXAMPLES
+
 ## PARAMETERS
-
-### -TargetType
-Specifies the target type. 
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases: 
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByPropertyName, ByValue)
-Accept wildcard characters: False
-```
-
-### -TargetObjectId
-Specifies the ID of the target object.
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases: 
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByPropertyName, ByValue)
-Accept wildcard characters: False
-```
-
-### -ObjectId
-Specifies the ID of a settings object. 
-
-```yaml
-Type: String
-Parameter Sets: GetById
-Aliases: 
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByPropertyName, ByValue)
-Accept wildcard characters: False
-```
 
 ### -InformationAction
 Specifies how this cmdlet responds to an information event.
@@ -113,6 +70,51 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ObjectId
+Specifies the ID of a settings object. 
+
+```yaml
+Type: String
+Parameter Sets: GetById
+Aliases: 
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName, ByValue)
+Accept wildcard characters: False
+```
+
+### -TargetObjectId
+Specifies the ID of the target object.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: 
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName, ByValue)
+Accept wildcard characters: False
+```
+
+### -TargetType
+Specifies the target type. 
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: 
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName, ByValue)
+Accept wildcard characters: False
+```
+
 ### -Top
 Specifies the maximum number of records to return.
 
@@ -138,6 +140,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+
 [New-AzureADObjectSetting](./New-AzureADObjectSetting.md)
 
 [Remove-AzureADObjectSetting](./Remove-AzureADObjectSetting.md)

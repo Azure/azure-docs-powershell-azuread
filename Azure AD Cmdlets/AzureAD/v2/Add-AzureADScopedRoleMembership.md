@@ -1,8 +1,8 @@
 ---
 external help file: Microsoft.Open.AzureADBeta.Graph.PowerShell.dll-Help.xml
+ms.assetid: B505822C-4BAA-4EC5-BB0A-128C093930C6
 online version: 
 schema: 2.0.0
-ms.assetid: B505822C-4BAA-4EC5-BB0A-128C093930C6
 ---
 
 # Add-AzureADScopedRoleMembership
@@ -19,6 +19,8 @@ Add-AzureADScopedRoleMembership -ObjectId <String> [-AdministrativeUnitObjectId 
 
 ## DESCRIPTION
 The **Add-AzureADScopedRoleMembership** cmdlet adds a scoped role membership to an administrative unit.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -38,8 +40,6 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-
-
 ```yaml
 Type: String
 Parameter Sets: (All)
@@ -89,6 +89,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+
 [Get-AzureADScopedRoleMembership](./Get-AzureADScopedRoleMembership.md)
 
 [Remove-AzureADScopedRoleMembership](./Remove-AzureADScopedRoleMembership.md)

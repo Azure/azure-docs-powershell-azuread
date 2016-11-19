@@ -1,8 +1,8 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
-online version:
-schema: 2.0.0
 ms.assetid: 174EC629-F240-47FD-B603-87F4419ACD14
+online version: 
+schema: 2.0.0
 ---
 
 # Get-AzureADApplicationExtensionProperty
@@ -23,7 +23,7 @@ The **Get-AzureADApplicationExtensionProperty** cmdlet gets application extensio
 ## EXAMPLES
 
 ### Example 1: Get extension properties
-```PowerShell
+```
 PS C:\>Get-AzureADApplicationExtensionProperty -ObjectId "3ddd22e7-a150-4bb3-b100-e410dea1cb84"
 
 ObjectId                             Name                                                    TargetObjects
@@ -34,21 +34,6 @@ ObjectId                             Name                                       
 This command gets the extension properties for the specified application in Azure Active Directory.
 
 ## PARAMETERS
-
-### -ObjectId
-Specifies the unique ID of an application in Azure Active Directory.
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByPropertyName, ByValue)
-Accept wildcard characters: False
-```
 
 ### -InformationAction
 Specifies how this cmdlet responds to an information event.
@@ -89,6 +74,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ObjectId
+Specifies the unique ID of an application in Azure Active Directory.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: 
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName, ByValue)
+Accept wildcard characters: False
+```
+
 ### CommonParameters
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
@@ -99,6 +99,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+
 [New-AzureADApplicationExtensionProperty](./New-AzureADApplicationExtensionProperty.md)
 
 [Remove-AzureADApplicationExtensionProperty](./Remove-AzureADApplicationExtensionProperty.md)

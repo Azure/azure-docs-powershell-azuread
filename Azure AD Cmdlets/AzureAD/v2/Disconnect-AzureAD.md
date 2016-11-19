@@ -1,8 +1,8 @@
 ---
 external help file: Microsoft.Open.Azure.AD.CommonLibrary.dll-Help.xml
+ms.assetid: 1EC5BEED-D45D-4938-B279-795075D05542
 online version: 
 schema: 2.0.0
-ms.assetid: 1EC5BEED-D45D-4938-B279-795075D05542
 ---
 
 # Disconnect-AzureAD
@@ -19,6 +19,8 @@ Disconnect-AzureAD [-InformationAction <ActionPreference>] [-InformationVariable
 
 ## DESCRIPTION
 The **Disconnect-AzureAD** cmdlet disconnects the current session from an Azure Active Directory tenant.
+
+## EXAMPLES
 
 ## PARAMETERS
 

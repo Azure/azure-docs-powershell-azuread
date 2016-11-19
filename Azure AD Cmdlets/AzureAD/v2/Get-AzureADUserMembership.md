@@ -1,8 +1,8 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+ms.assetid: 18D86E76-31D1-4286-8950-8067FBAF005A
 online version: 
 schema: 2.0.0
-ms.assetid: 18D86E76-31D1-4286-8950-8067FBAF005A
 ---
 
 # Get-AzureADUserMembership
@@ -19,10 +19,11 @@ Get-AzureADUserMembership -ObjectId <String> [-Top <Int32>] [-InformationAction 
 
 ## DESCRIPTION
 The **Get-AzureADUserMembership** cmdlet gets user memberships in Azure Active Directory (AD).
+
 ## EXAMPLES
 
 ### Example 1: Get user memberships
-```PowerShell
+```
 PS C:\>Get-AzureADUserMembership  -ObjectId "df19e8e6-2ad7-453e-87f5-037f6529ae16"
 
 ObjectId                             ObjectType
@@ -40,38 +41,10 @@ d96eb2b3-0970-4827-8f26-6008efd86511 Role
 78045c26-218e-46fb-94b6-1a47320da153 Group
 093fc0e2-1d6e-4a1b-9bf8-effa0196f1f7 Group
 ```
+
 This command gets the memberships for the specified user.
+
 ## PARAMETERS
-
-### -ObjectId
-Specifies the ID of a user (as a UPN or ObjectId) in Azure AD. 
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases: 
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByPropertyName, ByValue)
-Accept wildcard characters: False
-```
-
-### -Top
-Specifies the maximum number of records to return.
-
-```yaml
-Type: Int32
-Parameter Sets: (All)
-Aliases: 
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: True (ByPropertyName, ByValue)
-Accept wildcard characters: False
-```
 
 ### -InformationAction
 Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
@@ -110,6 +83,36 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ObjectId
+Specifies the ID of a user (as a UPN or ObjectId) in Azure AD. 
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: 
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName, ByValue)
+Accept wildcard characters: False
+```
+
+### -Top
+Specifies the maximum number of records to return.
+
+```yaml
+Type: Int32
+Parameter Sets: (All)
+Aliases: 
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName, ByValue)
+Accept wildcard characters: False
+```
+
 ### CommonParameters
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
@@ -120,5 +123,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-
 

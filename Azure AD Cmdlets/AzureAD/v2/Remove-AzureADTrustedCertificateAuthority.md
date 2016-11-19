@@ -1,14 +1,15 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.Custom.dll-Help.xml
+ms.assetid: 51B0B9EC-8A74-4C48-A6CE-2FA005A0B3F0
 online version: 
 schema: 2.0.0
-ms.assetid: 51B0B9EC-8A74-4C48-A6CE-2FA005A0B3F0
 ---
 
 # Remove-AzureADTrustedCertificateAuthority
 
 ## SYNOPSIS
 Removes a trusted certificate authority.
+
 ## SYNTAX
 
 ```
@@ -19,10 +20,11 @@ Remove-AzureADTrustedCertificateAuthority -CertificateAuthorityInformation <Cert
 ## DESCRIPTION
 The **Remove-AzureADTrustedCertificateAuthority** cmdlet removes a trusted certificate authority from Azure Active Directory (AD).
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CertificateAuthorityInformation
-
 ```yaml
 Type: CertificateAuthorityInformation
 Parameter Sets: (All)
@@ -82,6 +84,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+
 [Get-AzureADTrustedCertificateAuthority](./Get-AzureADTrustedCertificateAuthority.md)
 
 [New-AzureADTrustedCertificateAuthority](./New-AzureADTrustedCertificateAuthority.md)

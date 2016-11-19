@@ -1,8 +1,8 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+ms.assetid: 5751DBA5-57F8-47C6-954D-9D4B026CE662
 online version: 
 schema: 2.0.0
-ms.assetid: 5751DBA5-57F8-47C6-954D-9D4B026CE662
 ---
 
 # Get-AzureADContract
@@ -27,17 +27,19 @@ Get-AzureADContract -ObjectId <String> [-InformationAction <ActionPreference>] [
 ## DESCRIPTION
 The **Get-AzureADContract** cmdlet gets a contract from Azure Active Directory.
 
+## EXAMPLES
+
 ## PARAMETERS
 
-### -ObjectId
-Specifies the ID of a contract.
+### -Filter
+Specifies an oData v3.0 filter statement. This parameter controls which objects are returned.
 
 ```yaml
 Type: String
-Parameter Sets: GetById
+Parameter Sets: GetQuery
 Aliases: 
 
-Required: True
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: True (ByPropertyName, ByValue)
@@ -83,26 +85,26 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Top
-Specifies the maximum number of records to return.
+### -ObjectId
+Specifies the ID of a contract.
 
 ```yaml
-Type: Int32
-Parameter Sets: GetQuery
+Type: String
+Parameter Sets: GetById
 Aliases: 
 
-Required: False
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
-### -Filter
-Specifies an oData v3.0 filter statement. This parameter controls which objects are returned.
+### -Top
+Specifies the maximum number of records to return.
 
 ```yaml
-Type: String
+Type: Int32
 Parameter Sets: GetQuery
 Aliases: 
 
@@ -123,5 +125,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-
 

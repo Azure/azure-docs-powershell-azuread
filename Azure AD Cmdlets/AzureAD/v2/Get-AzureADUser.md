@@ -1,8 +1,8 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+ms.assetid: 52681E27-7FE6-43CE-B2BF-8516C21E04CB
 online version: 
 schema: 2.0.0
-ms.assetid: 52681E27-7FE6-43CE-B2BF-8516C21E04CB
 ---
 
 # Get-AzureADUser
@@ -32,6 +32,7 @@ Get-AzureADUser -ObjectId <String> [-InformationAction <ActionPreference>] [-Inf
 
 ## DESCRIPTION
 The **Get-AzureADUser** cmdlet gets a user from Azure Active Directory (AD).
+
 ## EXAMPLES
 
 ### Example 1: Get ten users
@@ -45,19 +46,20 @@ This command gets ten users.
 ```
 PS C:\>Get-AzureADUser -ObjectId "testUpn@tenant.com"
 ```
+
 This command gets the specified user.
 
 ## PARAMETERS
 
-### -ObjectId
-Specifies the ID (as a UPN or ObjectId) of a user in Azure AD. 
+### -Filter
+Specifies an oData v3.0 filter statement. This parameter controls which objects are returned.
 
 ```yaml
 Type: String
-Parameter Sets: GetById
+Parameter Sets: GetQuery
 Aliases: 
 
-Required: True
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: True (ByPropertyName, ByValue)
@@ -101,30 +103,15 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Top
-Specifies the maximum number of records to return.
-
-```yaml
-Type: Int32
-Parameter Sets: GetQuery
-Aliases: 
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: True (ByPropertyName, ByValue)
-Accept wildcard characters: False
-```
-
-### -Filter
-Specifies an oData v3.0 filter statement. This parameter controls which objects are returned.
+### -ObjectId
+Specifies the ID (as a UPN or ObjectId) of a user in Azure AD. 
 
 ```yaml
 Type: String
-Parameter Sets: GetQuery
+Parameter Sets: GetById
 Aliases: 
 
-Required: False
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByPropertyName, ByValue)
@@ -145,6 +132,21 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
+### -Top
+Specifies the maximum number of records to return.
+
+```yaml
+Type: Int32
+Parameter Sets: GetQuery
+Aliases: 
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName, ByValue)
+Accept wildcard characters: False
+```
+
 ### CommonParameters
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
@@ -155,6 +157,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+
 [New-AzureADUser](./New-AzureADUser.md)
 
 [Remove-AzureADUser](./Remove-AzureADUser.md)

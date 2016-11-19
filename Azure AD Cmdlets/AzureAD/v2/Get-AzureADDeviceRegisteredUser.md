@@ -1,14 +1,15 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+ms.assetid: 944E709A-0F66-485C-86E4-1CB4C998C71D
 online version: 
 schema: 2.0.0
-ms.assetid: 944E709A-0F66-485C-86E4-1CB4C998C71D
 ---
 
 # Get-AzureADDeviceRegisteredUser
 
 ## SYNOPSIS
 Gets a registered user.
+
 ## SYNTAX
 
 ```
@@ -17,6 +18,8 @@ Get-AzureADDeviceRegisteredUser -ObjectId <String> [-Top <Int32>] [<CommonParame
 
 ## DESCRIPTION
 The **Get-AzureADDeviceRegisteredUser** cmdlet gets a registered user for an Azure Active Directory device.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -57,6 +60,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+
 [Add-AzureADDeviceRegisteredUser](./Add-AzureADDeviceRegisteredUser.md)
 
 [Remove-AzureADDeviceRegisteredUser](./Remove-AzureADDeviceRegisteredUser.md)

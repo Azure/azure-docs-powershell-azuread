@@ -1,8 +1,8 @@
 ---
 external help file: Microsoft.Open.AzureADBeta.Graph.PowerShell.dll-Help.xml
+ms.assetid: 2F441A35-AE17-4863-A62B-044713316A0B
 online version: 
 schema: 2.0.0
-ms.assetid: 2F441A35-AE17-4863-A62B-044713316A0B
 ---
 
 # Get-AzureADVerificationDnsRecord
@@ -19,6 +19,8 @@ Get-AzureADVerificationDnsRecord -Name <String> [-InformationAction <ActionPrefe
 
 ## DESCRIPTION
 The **Get-AzureADVerificationDnsRecord** cmdlet gets a verification DNS record in Azure Active Directory (AD). 
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -83,5 +85,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-
 

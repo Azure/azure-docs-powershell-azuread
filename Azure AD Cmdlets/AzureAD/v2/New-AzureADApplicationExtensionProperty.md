@@ -1,8 +1,8 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
-online version:
-schema: 2.0.0
 ms.assetid: B15F90ED-2F60-4401-89A2-89E3DD072519
+online version: 
+schema: 2.0.0
 ---
 
 # New-AzureADApplicationExtensionProperty
@@ -21,11 +21,10 @@ New-AzureADApplicationExtensionProperty -ObjectId <String> [-InformationAction <
 ## DESCRIPTION
 The **New-AzureADApplicationExtensionProperty** cmdlet creates an application extension property for an object in Azure Active Directory.
 
-
 ## EXAMPLES
 
 ### Example 1: Create an extension property
-```PowerShell
+```
 PS C:\>New-AzureADApplicationExtensionProperty -ObjectID "3ddd22e7-a150-4bb3-b100-e410dea1cb84" -DataType "string" -Name "NewAttribute"
 
 
@@ -38,18 +37,18 @@ This command creates an application extension property of the string type for th
 
 ## PARAMETERS
 
-### -ObjectId
-Specifies a unique ID of an application in Azure Active Directory.
+### -DataType
+Specifies the data type of the extension property.
 
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
-Required: True
+Required: False
 Position: Named
 Default value: None
-Accept pipeline input: True (ByPropertyName, ByValue)
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -92,13 +91,13 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -DataType
+### -Name
 Specifies the data type of the extension property.
 
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -107,18 +106,18 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Name
-Specifies the data type of the extension property.
+### -ObjectId
+Specifies a unique ID of an application in Azure Active Directory.
 
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
-Required: False
+Required: True
 Position: Named
 Default value: None
-Accept pipeline input: False
+Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
@@ -128,7 +127,7 @@ Specifies target objects.
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -147,6 +146,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+
 [Get-AzureADApplicationExtensionProperty](./Get-AzureADApplicationExtensionProperty.md)
 
 [Remove-AzureADApplicationExtensionProperty](./Remove-AzureADApplicationExtensionProperty.md)

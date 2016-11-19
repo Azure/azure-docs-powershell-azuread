@@ -1,14 +1,14 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
-online version: 
-schema: 2.0.0
 ms.assetid: 393B2C82-CB87-4892-872E-6E6285DFF955
+online version:
+schema: 2.0.0
 ---
 
 # Get-AzureADContact
 
 ## SYNOPSIS
-Gets a  contact from Azure Active Directory.
+Gets a contact from Azure Active Directory.
 
 ## SYNTAX
 
@@ -27,17 +27,19 @@ Get-AzureADContact -ObjectId <String> [-InformationAction <ActionPreference>] [-
 ## DESCRIPTION
 The **Get-AzureADContact** cmdlet gets a contact from Azure Active Directory.
 
+## EXAMPLES
+
 ## PARAMETERS
 
-### -ObjectId
-Specifies the ID of a contact in Azure Active Directory.
+### -Filter
+Specifies an oData v3.0 filter statement. This parameter controls which objects are returned.
 
 ```yaml
 Type: String
-Parameter Sets: GetById
-Aliases: 
+Parameter Sets: GetQuery
+Aliases:
 
-Required: True
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: True (ByPropertyName, ByValue)
@@ -83,28 +85,28 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Top
-Specifies the maximum number of records to return.
+### -ObjectId
+Specifies the ID of a contact in Azure Active Directory.
 
 ```yaml
-Type: Int32
-Parameter Sets: GetQuery
-Aliases: 
+Type: String
+Parameter Sets: GetById
+Aliases:
 
-Required: False
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
-### -Filter
-Specifies an oData v3.0 filter statement. This parameter controls which objects are returned.
+### -Top
+Specifies the maximum number of records to return.
 
 ```yaml
-Type: String
+Type: Int32
 Parameter Sets: GetQuery
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named

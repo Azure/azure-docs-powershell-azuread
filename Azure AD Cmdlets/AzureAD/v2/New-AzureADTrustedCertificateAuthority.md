@@ -1,14 +1,15 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.Custom.dll-Help.xml
+ms.assetid: C19B638B-9511-4828-B5AD-D177ECF9D5C0
 online version: 
 schema: 2.0.0
-ms.assetid: C19B638B-9511-4828-B5AD-D177ECF9D5C0
 ---
 
 # New-AzureADTrustedCertificateAuthority
 
 ## SYNOPSIS
 Creates a trusted certificate authority.
+
 ## SYNTAX
 
 ```
@@ -19,10 +20,11 @@ New-AzureADTrustedCertificateAuthority -CertificateAuthorityInformation <Certifi
 ## DESCRIPTION
 The **New-AzureADTrustedCertificateAuthority** cmdlet creates a trusted certificate authority in Azure Active Directory (AD).
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CertificateAuthorityInformation
-
 ```yaml
 Type: CertificateAuthorityInformation
 Parameter Sets: (All)
@@ -82,6 +84,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+
 [Get-AzureADTrustedCertificateAuthority](./Get-AzureADTrustedCertificateAuthority.md)
 
 [Remove-AzureADTrustedCertificateAuthority](./Remove-AzureADTrustedCertificateAuthority.md)

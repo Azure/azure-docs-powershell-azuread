@@ -1,8 +1,8 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+ms.assetid: 7ED60BB8-1968-412C-ACDF-923DB66F3DE4
 online version: 
 schema: 2.0.0
-ms.assetid: 7ED60BB8-1968-412C-ACDF-923DB66F3DE4
 ---
 
 # Get-AzureADOAuth2PermissionGrant
@@ -20,22 +20,9 @@ Get-AzureADOAuth2PermissionGrant [-Top <Int32>] [-InformationAction <ActionPrefe
 ## DESCRIPTION
 The **Get-AzureADOAuth2PermissionGrant** cmdlet gets **OAuth2PermissionGrant** entities in Azure Active Directory (AD).
 
+## EXAMPLES
+
 ## PARAMETERS
-
-### -Top
-Specifies the maximum number of records to return.
-
-```yaml
-Type: Int32
-Parameter Sets: (All)
-Aliases: 
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: True (ByPropertyName, ByValue)
-Accept wildcard characters: False
-```
 
 ### -InformationAction
 Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
@@ -74,6 +61,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Top
+Specifies the maximum number of records to return.
+
+```yaml
+Type: Int32
+Parameter Sets: (All)
+Aliases: 
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName, ByValue)
+Accept wildcard characters: False
+```
+
 ### CommonParameters
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
@@ -84,5 +86,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+
 [Remove-AzureADOAuth2PermissionGrant](./Remove-AzureADOAuth2PermissionGrant.md)
 

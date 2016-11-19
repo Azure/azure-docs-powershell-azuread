@@ -1,8 +1,8 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+ms.assetid: CAA240EC-E380-4CDB-A1CC-56BBD28DFB82
 online version: 
 schema: 2.0.0
-ms.assetid: CAA240EC-E380-4CDB-A1CC-56BBD28DFB82
 ---
 
 # Get-AzureADDirectoryRole
@@ -26,18 +26,20 @@ Get-AzureADDirectoryRole -ObjectId <String> [-InformationAction <ActionPreferenc
 
 ## DESCRIPTION
 The **Get-AzureADDirectoryRole** cmdlet gets a directory role from Azure Active Directory (AD).
+
 ## EXAMPLES
 
 ### Example 1: Get a directory role by ID
-```PowerShell
+```
 PS C:\>Get-AzureADDirectoryRole -ObjectId "019ea7a2-1613-47c9-81cb-20ba35b1ae48"
 
 ObjectId                             DisplayName                        Description
 --------                             -----------                        -----------
 019ea7a2-1613-47c9-81cb-20ba35b1ae48 Company Administrator              Company Administrator role has full access to perform any operation in the company scope.
 ```
+
 ### Example 2: Get all directory roles
-```PowerShell
+```
 PS C:\>Get-AzureADDirectoryRole
 
 ObjectId                             DisplayName                        Description
@@ -52,22 +54,8 @@ ObjectId                             DisplayName                        Descript
 b89a48d4-7595-48d0-bb36-69fe4b220668 Device Administrators              Device Administrators
 d96eb2b3-0970-4827-8f26-6008efd86511 Security Administrator             Security Administrator allows ability to read and manage security configuration and reports.
 ```
+
 ## PARAMETERS
-
-### -ObjectId
-Specifies the ID of a directory role in Azure AD.
-
-```yaml
-Type: String
-Parameter Sets: GetById
-Aliases: 
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByPropertyName, ByValue)
-Accept wildcard characters: False
-```
 
 ### -InformationAction
 Specifies how this cmdlet responds to an information event.
@@ -108,6 +96,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ObjectId
+Specifies the ID of a directory role in Azure AD.
+
+```yaml
+Type: String
+Parameter Sets: GetById
+Aliases: 
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName, ByValue)
+Accept wildcard characters: False
+```
+
 ### CommonParameters
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
@@ -118,5 +121,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+
 [Enable-AzureADDirectoryRole](./Enable-AzureADDirectoryRole.md)
 

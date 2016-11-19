@@ -1,8 +1,8 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+ms.assetid: 186B4EE1-A85A-45C0-B480-ABB4FBEF9AE0
 online version: 
 schema: 2.0.0
-ms.assetid: 186B4EE1-A85A-45C0-B480-ABB4FBEF9AE0
 ---
 
 # Get-AzureADDirectoryRoleTemplate
@@ -11,6 +11,7 @@ ms.assetid: 186B4EE1-A85A-45C0-B480-ABB4FBEF9AE0
 Gets directory role templates.
 
 ## SYNTAX
+
 ```
 Get-AzureADDirectoryRoleTemplate [-InformationAction <ActionPreference>] [-InformationVariable <String>]
  [<CommonParameters>]
@@ -18,10 +19,11 @@ Get-AzureADDirectoryRoleTemplate [-InformationAction <ActionPreference>] [-Infor
 
 ## DESCRIPTION
 The **Get-AzureADDirectoryRoleTemplate** cmdlet gets directory role templates in Azure Active Directory (AD).
+
 ## EXAMPLES
 
 ### Example 1: Get role templates
-```PowerShell
+```
 PS C:\>Get-AzureADDirectoryRoleTemplate
 
 ObjectId                             DisplayName                             Description
@@ -60,7 +62,9 @@ e8611ab8-c189-46e8-94e1-60213ab1f814 Privileged Role Administrator           Pri
 44367163-eba1-44c3-98af-f5787879f96a CRM Service Administrator               CRM Service Administrator has full access in the CRM Service.
 a9ea8996-122f-4c74-9520-8edcd192826c Power BI Service Administrator          Full access in the Power BI Service.
 ```
+
 This command gets the role templates in Azure AD.
+
 ## PARAMETERS
 
 ### -InformationAction
@@ -110,5 +114,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-
 

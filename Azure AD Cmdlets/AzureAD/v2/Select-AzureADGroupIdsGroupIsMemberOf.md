@@ -1,8 +1,8 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+ms.assetid: 7B6DBC7D-8143-47E3-A045-A76F93692099
 online version: 
 schema: 2.0.0
-ms.assetid: 7B6DBC7D-8143-47E3-A045-A76F93692099
 ---
 
 # Select-AzureADGroupIdsGroupIsMemberOf
@@ -21,23 +21,9 @@ Select-AzureADGroupIdsGroupIsMemberOf -ObjectId <String>
 ## DESCRIPTION
 The **Select-AzureADGroupIdsGroupIsMemberOf** cmdlet gets the groups that a specified group is a member of in Azure Active Directory (AD).
 
+## EXAMPLES
 
 ## PARAMETERS
-
-### -ObjectId
-Specifies the ID of a group in Azure AD.
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases: 
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByPropertyName, ByValue)
-Accept wildcard characters: False
-```
 
 ### -GroupIdsForMembershipCheck
 Specifies an array of group object IDs.
@@ -88,6 +74,21 @@ Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ObjectId
+Specifies the ID of a group in Azure AD.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: 
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 

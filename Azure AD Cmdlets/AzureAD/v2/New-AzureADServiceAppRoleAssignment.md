@@ -1,8 +1,8 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+ms.assetid: 35D6752C-1503-412C-84D0-3775EC30CE13
 online version: 
 schema: 2.0.0
-ms.assetid: 35D6752C-1503-412C-84D0-3775EC30CE13
 ---
 
 # New-AzureADServiceAppRoleAssignment
@@ -20,10 +20,12 @@ New-AzureADServiceAppRoleAssignment -ObjectId <String> [-InformationAction <Acti
 ## DESCRIPTION
 The **New-AzureADServiceAppRoleAssignment** cmdlet assigns a service principal to an application role in Azure Active Directory (AD).
 
+## EXAMPLES
+
 ## PARAMETERS
 
-### -ObjectId
-Specifies the ID of a service principal in Azure AD.
+### -Id
+Specifies the ID.
 
 ```yaml
 Type: String
@@ -33,7 +35,7 @@ Aliases:
 Required: True
 Position: Named
 Default value: None
-Accept pipeline input: True (ByPropertyName, ByValue)
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -74,8 +76,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Id
-Specifies the ID.
+### -ObjectId
+Specifies the ID of a service principal in Azure AD.
 
 ```yaml
 Type: String
@@ -85,7 +87,7 @@ Aliases:
 Required: True
 Position: Named
 Default value: None
-Accept pipeline input: False
+Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
@@ -129,6 +131,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+
 [Get-AzureADServiceAppRoleAssignment](./Get-AzureADServiceAppRoleAssignment.md)
 
 [Remove-AzureADServiceAppRoleAssignment](./Remove-AzureADServiceAppRoleAssignment.md)

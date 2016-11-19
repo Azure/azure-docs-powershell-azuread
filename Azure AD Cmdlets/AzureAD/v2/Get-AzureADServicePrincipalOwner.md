@@ -1,8 +1,8 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+ms.assetid: 6E35C951-ABD7-4376-B749-122B541FC332
 online version: 
 schema: 2.0.0
-ms.assetid: 6E35C951-ABD7-4376-B749-122B541FC332
 ---
 
 # Get-AzureADServicePrincipalOwner
@@ -20,37 +20,9 @@ Get-AzureADServicePrincipalOwner -ObjectId <String> [-Top <Int32>] [-Information
 ## DESCRIPTION
 The **Get-AzureADServicePrincipalOwner** cmdlet gets the owners of a service principal in Azure Active Directory (AD).
 
+## EXAMPLES
+
 ## PARAMETERS
-
-### -ObjectId
-Specifies the ID of a service principal in Azure AD.
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases: 
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByPropertyName, ByValue)
-Accept wildcard characters: False
-```
-
-### -Top
-Specifies the maximum number of records to return.
-
-```yaml
-Type: Int32
-Parameter Sets: (All)
-Aliases: 
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: True (ByPropertyName, ByValue)
-Accept wildcard characters: False
-```
 
 ### -InformationAction
 Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
@@ -89,6 +61,36 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ObjectId
+Specifies the ID of a service principal in Azure AD.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: 
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName, ByValue)
+Accept wildcard characters: False
+```
+
+### -Top
+Specifies the maximum number of records to return.
+
+```yaml
+Type: Int32
+Parameter Sets: (All)
+Aliases: 
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName, ByValue)
+Accept wildcard characters: False
+```
+
 ### CommonParameters
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
@@ -99,6 +101,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+
 [Add-AzureADServicePrincipalOwner](./Add-AzureADServicePrincipalOwner.md)
 
 [Remove-AzureADServicePrincipalOwner](./Remove-AzureADServicePrincipalOwner.md)

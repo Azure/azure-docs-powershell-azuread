@@ -1,14 +1,15 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.Custom.dll-Help.xml
+ms.assetid: DFEF698C-93D2-4D67-A8B2-4A1D3ADDCBBA
 online version: 
 schema: 2.0.0
-ms.assetid: DFEF698C-93D2-4D67-A8B2-4A1D3ADDCBBA
 ---
 
 # Set-AzureADUserExtension
 
 ## SYNOPSIS
 Sets a user extension.
+
 ## SYNTAX
 
 ### SetSingle
@@ -26,6 +27,8 @@ Set-AzureADUserExtension -ObjectId <String>
 
 ## DESCRIPTION
 The **Set-AzureADUserExtension** cmdlet sets a user extension in Azure Active Directory (AD).
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -95,6 +98,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+
 [Get-AzureADUserExtension](./Get-AzureADUserExtension.md)
 
 [Remove-AzureADUserExtension](./Remove-AzureADUserExtension.md)

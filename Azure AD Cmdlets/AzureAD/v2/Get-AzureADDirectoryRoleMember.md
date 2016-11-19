@@ -1,8 +1,8 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+ms.assetid: DD253761-F1BB-4EF1-B0CB-586C0040DECE
 online version: 
 schema: 2.0.0
-ms.assetid: DD253761-F1BB-4EF1-B0CB-586C0040DECE
 ---
 
 # Get-AzureADDirectoryRoleMember
@@ -19,10 +19,11 @@ Get-AzureADDirectoryRoleMember -ObjectId <String> [-InformationAction <ActionPre
 
 ## DESCRIPTION
 The **Get-AzureADDirectoryRoleMember** cmdlet gets the members of a directory role in Azure Active Directory (AD).
+
 ## EXAMPLES
 
 ### Example 1: Get members by role ID
-```PowerShell
+```
 PS C:\>Get-AzureADDirectoryRoleMember -ObjectId "019ea7a2-1613-47c9-81cb-20ba35b1ae48"
 
 ObjectId                             ObjectType
@@ -33,23 +34,10 @@ c13dd34a-492b-4561-b171-40fcce2916c5 User
 0558a23b-438a-48aa-8e30-5042e0746f69 User
 1fbae2b2-bb4b-48f9-bb38-83e9e1ad4bff User
 ```
+
 This command gets the members of the specified role.
+
 ## PARAMETERS
-
-### -ObjectId
-Specifies the ID of a directory role in Azure AD.
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases: 
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByPropertyName, ByValue)
-Accept wildcard characters: False
-```
 
 ### -InformationAction
 Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
@@ -88,6 +76,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ObjectId
+Specifies the ID of a directory role in Azure AD.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: 
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName, ByValue)
+Accept wildcard characters: False
+```
+
 ### CommonParameters
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
@@ -98,6 +101,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+
 [Add-AzureADDirectoryRoleMember](./Add-AzureADDirectoryRoleMember.md)
 [Remove-AzureADDirectoryRoleMember](./Remove-AzureADDirectoryRoleMember.md)
 
