@@ -1,8 +1,8 @@
 ---
 external help file: Microsoft.Open.AzureADBeta.Graph.PowerShell.dll-Help.xml
+ms.assetid: 53B15037-19DD-4253-B998-D968DA05F2AC
 online version: 
 schema: 2.0.0
-ms.assetid: 53B15037-19DD-4253-B998-D968DA05F2AC
 ---
 
 # Set-AzureADDomain
@@ -21,6 +21,7 @@ Set-AzureADDomain -Name <String> [-InformationAction <ActionPreference>] [-Infor
 ## DESCRIPTION
 The **Set-AzureADDomain** cmdlet updates a domain in Azure Active Directory (AD).
 
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -62,8 +63,6 @@ Accept wildcard characters: False
 ```
 
 ### -IsDefault
-
-
 ```yaml
 Type: Boolean
 Parameter Sets: (All)
@@ -116,6 +115,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+
 [Confirm-AzureADDomain](./Confirm-AzureADDomain.md)
 
 [Get-AzureADDomain](./Get-AzureADDomain.md)

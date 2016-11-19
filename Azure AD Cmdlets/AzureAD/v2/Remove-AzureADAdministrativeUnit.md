@@ -1,8 +1,8 @@
 ---
 external help file: Microsoft.Open.AzureADBeta.Graph.PowerShell.dll-Help.xml
+ms.assetid: 5BEB9DBE-CEB2-45EA-9F3F-BCB68E7CB857
 online version: 
 schema: 2.0.0
-ms.assetid: 5BEB9DBE-CEB2-45EA-9F3F-BCB68E7CB857
 ---
 
 # Remove-AzureADAdministrativeUnit
@@ -20,22 +20,9 @@ Remove-AzureADAdministrativeUnit -ObjectId <String> [-InformationAction <ActionP
 ## DESCRIPTION
 The **Remove-AzureADAdministrativeUnit** cmdlet removes an administrative unit from Azure Active Directory.
 
+## EXAMPLES
+
 ## PARAMETERS
-
-### -ObjectId
-Specifies the ID of an administrative unit in Active Directory.
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases: 
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByPropertyName, ByValue)
-Accept wildcard characters: False
-```
 
 ### -InformationAction
 Specifies how this cmdlet responds to an information event.
@@ -70,6 +57,21 @@ Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ObjectId
+Specifies the ID of an administrative unit in Active Directory.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: 
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 

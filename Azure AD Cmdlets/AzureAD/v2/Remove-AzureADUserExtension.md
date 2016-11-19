@@ -1,14 +1,15 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.Custom.dll-Help.xml
+ms.assetid: 2D1768D6-29D4-4985-ADD3-8308FF370DDC
 online version: 
 schema: 2.0.0
-ms.assetid: 2D1768D6-29D4-4985-ADD3-8308FF370DDC
 ---
 
 # Remove-AzureADUserExtension
 
 ## SYNOPSIS
 Removes a user extension.
+
 ## SYNTAX
 
 ### SetSingle
@@ -24,6 +25,8 @@ Remove-AzureADUserExtension -ObjectId <String>
 
 ## DESCRIPTION
 The **Remove-AzureADUserExtension** cmdlet removes a user extension from Azure Active Directory (AD).
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -79,6 +82,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+
 [Get-AzureADUserExtension](./Get-AzureADUserExtension.md)
 
 [Set-AzureADUserExtension](./Set-AzureADUserExtension.md)

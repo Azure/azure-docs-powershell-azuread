@@ -1,8 +1,8 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+ms.assetid: 8EAAE8EA-44D5-4B28-A940-28085547083A
 online version: 
 schema: 2.0.0
-ms.assetid: 8EAAE8EA-44D5-4B28-A940-28085547083A
 ---
 
 # Get-AzureADServicePrincipal
@@ -33,17 +33,19 @@ Get-AzureADServicePrincipal -ObjectId <String> [-InformationAction <ActionPrefer
 ## DESCRIPTION
 The **Get-AzureADServicePrincipal** cmdlet gets a service principal in Azure Active Directory (AD).
 
+## EXAMPLES
+
 ## PARAMETERS
 
-### -ObjectId
-Specifies the ID of a service principal in Azure AD.
+### -Filter
+Specifies an oData v3.0 filter statement. This parameter controls which objects are returned.
 
 ```yaml
 Type: String
-Parameter Sets: GetById
+Parameter Sets: GetQuery
 Aliases: 
 
-Required: True
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: True (ByPropertyName, ByValue)
@@ -87,30 +89,15 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Top
-Specifies the maximum number of records to return.
-
-```yaml
-Type: Int32
-Parameter Sets: GetQuery
-Aliases: 
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: True (ByPropertyName, ByValue)
-Accept wildcard characters: False
-```
-
-### -Filter
-Specifies an oData v3.0 filter statement. This parameter controls which objects are returned.
+### -ObjectId
+Specifies the ID of a service principal in Azure AD.
 
 ```yaml
 Type: String
-Parameter Sets: GetQuery
+Parameter Sets: GetById
 Aliases: 
 
-Required: False
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByPropertyName, ByValue)
@@ -131,6 +118,21 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
+### -Top
+Specifies the maximum number of records to return.
+
+```yaml
+Type: Int32
+Parameter Sets: GetQuery
+Aliases: 
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName, ByValue)
+Accept wildcard characters: False
+```
+
 ### CommonParameters
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
@@ -141,6 +143,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+
 [Remove-AzureADServicePrincipal](./Remove-AzureADServicePrincipal.md)
 
 [Set-AzureADServicePrincipal](./Set-AzureADServicePrincipal.md)

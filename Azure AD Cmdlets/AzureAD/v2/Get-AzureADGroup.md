@@ -1,8 +1,8 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+ms.assetid: E008C14D-91DE-4CD4-BB76-6D037BB747DB
 online version: 
 schema: 2.0.0
-ms.assetid: E008C14D-91DE-4CD4-BB76-6D037BB747DB
 ---
 
 # Get-AzureADGroup
@@ -36,7 +36,7 @@ The **Get-AzureADGroup** cmdlet gets a group in Azure Active Directory (AD).
 ## EXAMPLES
 
 ### Example 1: Get all groups
-```PowerShell
+```
 PS C:\>Get-AzureADGroup
 
 
@@ -61,26 +61,29 @@ Its members ...
 47a1bff5-f449-4bfc-8772-b1515c57fec5 ExchangeLegacyInterop                This group is for interoperability with Exchange 2003 servers within the same forest.
 This group should not be deleted.
 ```
+
 ### Example 2: Get groups that contain a search string
-```PowerShell
+```
 PS C:\>Get-AzureADGroup -SearchString "All"
 
 ObjectId                             DisplayName                                 Description
 --------                             -----------                                 -----------
 093fc0e2-1d6e-4a1b-9bf8-effa0196f1f7 All Users
 ```
+
 This command gets the groups that include the text All in their display names.
+
 ## PARAMETERS
 
-### -ObjectId
-The unique identifier of a group in Azure Active Directory (ObjectId)
+### -Filter
+Specifies an oData v3.0 filter statement. This parameter controls which objects are returned.
 
 ```yaml
 Type: String
-Parameter Sets: GetById
+Parameter Sets: GetQuery
 Aliases: 
 
-Required: True
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: True (ByPropertyName, ByValue)
@@ -124,30 +127,15 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Top
-Specifies the maximum number of records to return.
-
-```yaml
-Type: Int32
-Parameter Sets: GetQuery
-Aliases: 
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: True (ByPropertyName, ByValue)
-Accept wildcard characters: False
-```
-
-### -Filter
-Specifies an oData v3.0 filter statement. This parameter controls which objects are returned.
+### -ObjectId
+The unique identifier of a group in Azure Active Directory (ObjectId)
 
 ```yaml
 Type: String
-Parameter Sets: GetQuery
+Parameter Sets: GetById
 Aliases: 
 
-Required: False
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByPropertyName, ByValue)
@@ -168,6 +156,21 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
+### -Top
+Specifies the maximum number of records to return.
+
+```yaml
+Type: Int32
+Parameter Sets: GetQuery
+Aliases: 
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName, ByValue)
+Accept wildcard characters: False
+```
+
 ### CommonParameters
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
@@ -178,6 +181,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+
 [New-AzureADGroup](./New-AzureADGroup.md)
 [Remove-AzureADGroup](./Remove-AzureADGroup.md)
 [Set-AzureADGroup](./Set-AzureADGroup.md)

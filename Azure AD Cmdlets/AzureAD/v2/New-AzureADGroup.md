@@ -1,8 +1,8 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+ms.assetid: A81910CC-FC86-414D-B79D-B09892732DC1
 online version: 
 schema: 2.0.0
-ms.assetid: A81910CC-FC86-414D-B79D-B09892732DC1
 ---
 
 # New-AzureADGroup
@@ -20,17 +20,49 @@ New-AzureADGroup [-InformationAction <ActionPreference>] [-InformationVariable <
 
 ## DESCRIPTION
 The **New-AzureADGroup** cmdlet creates a group in Azure Active Directory (AD).
+
 ## EXAMPLES
 
 ### Example 1: Create a group
-```PowerShell
+```
 PS C:\>New-AzureADGroup -DisplayName "My new group" -MailEnabled $false -SecurityEnabled $true -MailNickName "NotSet"
 
 ObjectId                             DisplayName  Description
 --------                             -----------  -----------
 11fa5e1e-737c-40c5-835e-416ae3959606 My new group
 ```
+
 ## PARAMETERS
+
+### -Description
+Specifies a description of the group.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: 
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DisplayName
+Specifies the display name of the group.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: 
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
 
 ### -InformationAction
 Specifies how this cmdlet responds to an information event.
@@ -65,36 +97,6 @@ Parameter Sets: (All)
 Aliases: iv
 
 Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Description
-Specifies a description of the group.
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases: 
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -DisplayName
-Specifies the display name of the group.
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases: 
-
-Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -156,6 +158,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+
 [Get-AzureADGroup](./Get-AzureADGroup.md)
 
 [Remove-AzureADGroup](./Remove-AzureADGroup.md)

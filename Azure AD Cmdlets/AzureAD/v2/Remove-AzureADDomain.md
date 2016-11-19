@@ -1,8 +1,8 @@
 ---
 external help file: Microsoft.Open.AzureADBeta.Graph.PowerShell.dll-Help.xml
+ms.assetid: CAD38E2B-DC2D-440F-A51F-1CF9060FF62A
 online version: 
 schema: 2.0.0
-ms.assetid: CAD38E2B-DC2D-440F-A51F-1CF9060FF62A
 ---
 
 # Remove-AzureADDomain
@@ -19,6 +19,8 @@ Remove-AzureADDomain -Name <String> [-InformationAction <ActionPreference>] [-In
 
 ## DESCRIPTION
 The **Remove-AzureADDomain** cmdlet removes a domain from Azure Active Directory (AD).
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -83,6 +85,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+
 [Confirm-AzureADDomain](./Confirm-AzureADDomain.md)
 
 [Get-AzureADDomain](./Get-AzureADDomain.md)

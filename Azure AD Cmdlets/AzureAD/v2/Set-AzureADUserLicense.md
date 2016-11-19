@@ -1,8 +1,8 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+ms.assetid: A98FA4E7-3662-433C-A28D-CAF4D60592A1
 online version: 
 schema: 2.0.0
-ms.assetid: A98FA4E7-3662-433C-A28D-CAF4D60592A1
 ---
 
 # Set-AzureADUserLicense
@@ -20,22 +20,9 @@ Set-AzureADUserLicense -ObjectId <String> -AssignedLicenses <AssignedLicenses>
 ## DESCRIPTION
 The **Set-AzureADUserLicense** adds or removes licenses for a Microsoft online service to the list of assigned licenses for a user.
 
+## EXAMPLES
+
 ## PARAMETERS
-
-### -ObjectId
-Specifies the ID of a user (as a UPN or ObjectId) in Azure AD. 
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases: 
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByPropertyName, ByValue)
-Accept wildcard characters: False
-```
 
 ### -AssignedLicenses
 Specifies a list of licenses to assign or remove.
@@ -89,6 +76,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ObjectId
+Specifies the ID of a user (as a UPN or ObjectId) in Azure AD. 
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: 
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName, ByValue)
+Accept wildcard characters: False
+```
+
 ### CommonParameters
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
@@ -99,5 +101,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-
 

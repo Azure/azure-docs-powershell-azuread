@@ -1,8 +1,8 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+ms.assetid: 8846536B-3E57-4307-81C7-CCFFB2C6E5EC
 online version: 
 schema: 2.0.0
-ms.assetid: 8846536B-3E57-4307-81C7-CCFFB2C6E5EC
 ---
 
 # Set-AzureADGroup
@@ -24,24 +24,40 @@ The **Set-AzureADGroup** cmdlet updates a group in Azure Active Directory (AD).
 ## EXAMPLES
 
 ### Example 1: Update a group
-```PowerShell
+```
 PS C:\>Set-AzureADGroup -ObjectId "11fa5e1e-737c-40c5-835e-416ae3959606" -Description "This is my new group"
 ```
+
 This command updates the specfied group in Azure AD.
+
 ## PARAMETERS
 
-### -ObjectId
-Specifies the object ID of a group.
+### -Description
+Specfies a description.
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: 
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DisplayName
+Specifies a display name.
 
 ```yaml
 Type: String
 Parameter Sets: (All)
 Aliases: 
 
-Required: True
+Required: False
 Position: Named
 Default value: None
-Accept pipeline input: True (ByPropertyName, ByValue)
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -82,35 +98,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Description
-Specfies a description.
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases: 
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -DisplayName
-Specifies a display name.
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases: 
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -MailEnabled
 Indicates whether mail is enabled.
 
@@ -141,6 +128,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ObjectId
+Specifies the object ID of a group.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: 
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName, ByValue)
+Accept wildcard characters: False
+```
+
 ### -SecurityEnabled
 Indicates whether security is enabled.
 
@@ -166,6 +168,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+
 [Get-AzureADGroup](./Get-AzureADGroup.md)
 
 [New-AzureADGroup](./New-AzureADGroup.md)

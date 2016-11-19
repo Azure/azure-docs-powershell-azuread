@@ -1,8 +1,8 @@
 ---
 external help file: Microsoft.Open.AzureADBeta.Graph.PowerShell.dll-Help.xml
+ms.assetid: C4E796AF-54F5-4DC9-BFDD-55B6C8EBA4FA
 online version: 
 schema: 2.0.0
-ms.assetid: C4E796AF-54F5-4DC9-BFDD-55B6C8EBA4FA
 ---
 
 # Get-AzureADServiceConfigurationRecord
@@ -19,6 +19,8 @@ Get-AzureADServiceConfigurationRecord -Name <String> [-InformationAction <Action
 
 ## DESCRIPTION
 The **Get-AzureADServiceConfigurationRecord** cmdlet gets a service configuration record in Azure Active Directory (AD).
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -83,5 +85,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-
 

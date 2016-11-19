@@ -1,8 +1,8 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+ms.assetid: 3B666786-2620-4E80-9A36-552B942A9F7C
 online version: 
 schema: 2.0.0
-ms.assetid: 3B666786-2620-4E80-9A36-552B942A9F7C
 ---
 
 # New-AzureADUserAppRoleAssignment
@@ -19,17 +19,20 @@ New-AzureADUserAppRoleAssignment -ObjectId <String> [-InformationAction <ActionP
 
 ## DESCRIPTION
 The **New-AzureADUserAppRoleAssignment** cmdlet assigns a user to an application role in Azure Active Directory (AD).
+
 ## EXAMPLES
 
 ### Example 1: Assign a user to an application role
-```PowerShell
+```
 PS C:\>New-AzureADUserAppRoleAssignment -ObjectId $user.ObjectId -PrincipalId $user.ObjectId -ResourceId $ServicePrincipal.ObjectId -Id $Role.Id
 ```
+
 This command assigns a user to an application role.
+
 ## PARAMETERS
 
-### -ObjectId
-Specifies the ID of a user (as a UPN or ObjectId) in Azure AD.
+### -Id
+Specifies an ID.
 
 ```yaml
 Type: String
@@ -39,7 +42,7 @@ Aliases:
 Required: True
 Position: Named
 Default value: None
-Accept pipeline input: True (ByPropertyName, ByValue)
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -80,8 +83,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Id
-Specifies an ID.
+### -ObjectId
+Specifies the ID of a user (as a UPN or ObjectId) in Azure AD.
 
 ```yaml
 Type: String
@@ -91,13 +94,11 @@ Aliases:
 Required: True
 Position: Named
 Default value: None
-Accept pipeline input: False
+Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
 ### -PrincipalId
-
-
 ```yaml
 Type: String
 Parameter Sets: (All)
@@ -135,6 +136,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+
 [Get-AzureADUserAppRoleAssignment](./Get-AzureADUserAppRoleAssignment.md)
 
 [Remove-AzureADUserAppRoleAssignment](./Remove-AzureADUserAppRoleAssignment.md)

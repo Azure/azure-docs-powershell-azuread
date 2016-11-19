@@ -1,8 +1,8 @@
 ---
 external help file: Microsoft.Open.AzureADBeta.Graph.PowerShell.dll-Help.xml
+ms.assetid: 9DEA1FE5-FE78-431F-9D12-53C349812A81
 online version: 
 schema: 2.0.0
-ms.assetid: 9DEA1FE5-FE78-431F-9D12-53C349812A81
 ---
 
 # Remove-AzureADAdministrativeUnitMember
@@ -20,37 +20,9 @@ Remove-AzureADAdministrativeUnitMember -ObjectId <String> -MemberId <String>
 ## DESCRIPTION
 The **Remove-AzureADAdministrativeUnitMember** cmdlet removes an administrative unit member in Azure Active Directory (AD).
 
+## EXAMPLES
+
 ## PARAMETERS
-
-### -ObjectId
-Specifies the ID of an administrative unit in Azure AD.
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases: 
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByPropertyName, ByValue)
-Accept wildcard characters: False
-```
-
-### -MemberId
-Specifies the ID of the administrative unit member.
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases: 
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByPropertyName, ByValue)
-Accept wildcard characters: False
-```
 
 ### -InformationAction
 Specifies how this cmdlet responds to an information event.
@@ -91,6 +63,36 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -MemberId
+Specifies the ID of the administrative unit member.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: 
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName, ByValue)
+Accept wildcard characters: False
+```
+
+### -ObjectId
+Specifies the ID of an administrative unit in Azure AD.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: 
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName, ByValue)
+Accept wildcard characters: False
+```
+
 ### CommonParameters
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
@@ -101,6 +103,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+
 [Add-AzureADAdministrativeUnitMember](./Add-AzureADAdministrativeUnitMember.md)
 
 [Remove-AzureADAdministrativeUnitMember](./Remove-AzureADAdministrativeUnitMember.md)

@@ -1,14 +1,15 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.Custom.dll-Help.xml
+ms.assetid: E3628C6F-0F08-49DF-8A48-35E8FF4ABB65
 online version: 
 schema: 2.0.0
-ms.assetid: E3628C6F-0F08-49DF-8A48-35E8FF4ABB65
 ---
 
 # Set-AzureADTrustedCertificateAuthority
 
 ## SYNOPSIS
 Updates a trusted certificate authority.
+
 ## SYNTAX
 
 ```
@@ -19,6 +20,7 @@ Set-AzureADTrustedCertificateAuthority -CertificateAuthorityInformation <Certifi
 ## DESCRIPTION
 The **Set-AzureADTrustedCertificateAuthority** cmdlet updates a trusted certificate authority in Azure Active Directory (AD).
 
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -84,6 +86,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+
 [Get-AzureADTrustedCertificateAuthority](./Get-AzureADTrustedCertificateAuthority.md)
 
 [New-AzureADTrustedCertificateAuthority](./New-AzureADTrustedCertificateAuthority.md)

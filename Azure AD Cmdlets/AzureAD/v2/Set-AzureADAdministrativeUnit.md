@@ -1,8 +1,8 @@
 ---
 external help file: Microsoft.Open.AzureADBeta.Graph.PowerShell.dll-Help.xml
+ms.assetid: 80D775B6-1EA6-4F54-A727-A981B0CBC3A1
 online version: 
 schema: 2.0.0
-ms.assetid: 80D775B6-1EA6-4F54-A727-A981B0CBC3A1
 ---
 
 # Set-AzureADAdministrativeUnit
@@ -20,20 +20,36 @@ Set-AzureADAdministrativeUnit -ObjectId <String> [-InformationAction <ActionPref
 ## DESCRIPTION
 The **Set-AzureADAdministrativeUnit** cmdlet updates an administrative unit in Azure Active Directory (AD).
 
+## EXAMPLES
+
 ## PARAMETERS
 
-### -ObjectId
-Specifies the ID of an administrative unit in Azure AD.
+### -Description
+Specifies a description.
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: 
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DisplayName
+Specifies a display name.
 
 ```yaml
 Type: String
 Parameter Sets: (All)
 Aliases: 
 
-Required: True
+Required: False
 Position: Named
 Default value: None
-Accept pipeline input: True (ByPropertyName, ByValue)
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -74,32 +90,18 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Description
-Specifies a description.
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases: 
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -DisplayName
-Specifies a display name.
+### -ObjectId
+Specifies the ID of an administrative unit in Azure AD.
 
 ```yaml
 Type: String
 Parameter Sets: (All)
 Aliases: 
 
-Required: False
+Required: True
 Position: Named
 Default value: None
-Accept pipeline input: False
+Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
@@ -113,6 +115,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+
 [Get-AzureADAdministrativeUnit](./Get-AzureADAdministrativeUnit.md)
 
 [New-AzureADAdministrativeUnit](./New-AzureADAdministrativeUnit.md)

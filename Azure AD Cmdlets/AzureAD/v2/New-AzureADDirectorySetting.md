@@ -1,8 +1,8 @@
 ---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
+ms.assetid: 29AA4CF0-03E2-4896-BAA1-C964C05AF3D4
 online version: 
 schema: 2.0.0
-ms.assetid: 29AA4CF0-03E2-4896-BAA1-C964C05AF3D4
 ---
 
 # New-AzureADDirectorySetting
@@ -19,6 +19,8 @@ New-AzureADDirectorySetting -DirectorySetting <DirectorySetting> [-InformationAc
 
 ## DESCRIPTION
 The **New-AzureADDirectorySetting** cmdlet creates a directory settings object in Azure Active Directory (AD).
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -84,6 +86,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+
 [Get-AzureADDirectorySetting](./Get-AzureADDirectorySetting.md)
 
 [Remove-AzureADDirectorySetting](./Remove-AzureADDirectorySetting.md)

@@ -1,14 +1,15 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.Custom.dll-Help.xml
+ms.assetid: 98A2D6B6-FBE5-420F-BA31-94161FBACEDF
 online version: 
 schema: 2.0.0
-ms.assetid: 98A2D6B6-FBE5-420F-BA31-94161FBACEDF
 ---
 
 # Get-AzureADUserExtension
 
 ## SYNOPSIS
 Gets a user extension.
+
 ## SYNTAX
 
 ```
@@ -17,6 +18,8 @@ Get-AzureADUserExtension -ObjectId <String> [<CommonParameters>]
 
 ## DESCRIPTION
 The **Get-AzureADUserExtension** cmdlet gets a user extension in Azure Active Directory (AD).
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -44,6 +47,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+
 [Remove-AzureADUserExtension](./Remove-AzureADUserExtension.md)
 
 [Set-AzureADUserExtension](./Set-AzureADUserExtension.md)

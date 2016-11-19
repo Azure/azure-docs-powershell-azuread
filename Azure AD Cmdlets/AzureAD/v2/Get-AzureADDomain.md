@@ -1,8 +1,8 @@
 ---
 external help file: Microsoft.Open.AzureADBeta.Graph.PowerShell.dll-Help.xml
+ms.assetid: 04497A4E-E281-4FB5-98D5-102039F15692
 online version: 
 schema: 2.0.0
-ms.assetid: 04497A4E-E281-4FB5-98D5-102039F15692
 ---
 
 # Get-AzureADDomain
@@ -25,6 +25,9 @@ Get-AzureADDomain -Name <String> [-InformationAction <ActionPreference>] [-Infor
 
 ## DESCRIPTION
 The **Get-AzureADDomain** cmdlet gets a domain in Azure Active Directory (AD).
+
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -InformationAction
@@ -88,6 +91,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+
 [Confirm-AzureADDomain](./Confirm-AzureADDomain.md)
 [New-AzureADDomain](./New-AzureADDomain.md)
 [Remove-AzureADDomain](./Remove-AzureADDomain.md)
