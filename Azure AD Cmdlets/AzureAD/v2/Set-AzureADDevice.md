@@ -1,45 +1,57 @@
 ---
-external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
-ms.assetid: 9291E4E2-ECED-49D7-947A-40485128C06F
-online version: 
+external help file: azuread.help.xml
+online version: https://blogs.technet.microsoft.com/enterprisemobility/2016/07/18/azuread-certificate-based-authentication-for-ios-and-android-now-in-preview/
 schema: 2.0.0
 ---
 
 # Set-AzureADDevice
 
 ## SYNOPSIS
-Updates a device.
+Updates a specific device in Azure Active Directory
 
 ## SYNTAX
 
 ```
-Set-AzureADDevice -ObjectId <String> [-InformationAction <ActionPreference>] [-InformationVariable <String>]
- [-AccountEnabled <Boolean>]
- [-AlternativeSecurityIds <System.Collections.Generic.List`1[Microsoft.Open.AzureAD.Model.AlternativeSecurityId]>]
- [-ApproximateLastLogonTimeStamp <DateTime>] [-DeviceId <String>] [-DeviceObjectVersion <Int32>]
- [-DeviceOSType <String>] [-DeviceOSVersion <String>]
- [-DevicePhysicalIds <System.Collections.Generic.List`1[System.String]>] [-DisplayName <String>]
- [-IsCompliant <Boolean>] [-IsManaged <Boolean>] [<CommonParameters>]
+Set-AzureADDevice -ObjectId <String> [-AccountEnabled <Nullable`1[Boolean]>]
+ [-AlternativeSecurityIds <List`1[AlternativeSecurityId]>]
+ [-ApproximateLastLogonTimeStamp <Nullable`1[DateTime]>] [-DeviceId <String>]
+ [-DeviceObjectVersion <Nullable`1[Int32]>] [-DeviceOSType <String>] [-DeviceOSVersion <String>]
+ [-DevicePhysicalIds <List`1[String]>] [-DisplayName <String>] [-IsCompliant <Nullable`1[Boolean]>]
+ [-IsManaged <Nullable`1[Boolean]>]
 ```
 
 ## DESCRIPTION
-The **Set-AzureADDevice** cmdlet updates a device in Azure Active Directory (AD).
 
 ## EXAMPLES
 
-### Example 1: Update a device
+### Set a new display name for a device
 ```
-PS C:\>Set-AzureADDevice -ObjectId "99a1915d-298f-42d1-93ae-71646b85e2fa" -DisplayName "My OS/2 computer"
+$DeviceID = (Get-AzureADDevice -Top 1).ObjectId
+Set-AzureADDevice -ObjectId $DeviceId -DisplayName "My OS/2 computer"
 ```
-
-This command updates the specified device.
 
 ## PARAMETERS
 
-### -AccountEnabled
-Indicates whether the account is enabled.
+### -ObjectId
+The unique identifier of a device in Azure Active Directory (ObjectId)
+
 ```yaml
-Type: Boolean
+Type: String
+Parameter Sets: (All)
+Aliases: 
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue, ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -AccountEnabled
+@{Text=}
+
+```yaml
+Type: Nullable`1[Boolean]
 Parameter Sets: (All)
 Aliases: 
 
@@ -51,9 +63,10 @@ Accept wildcard characters: False
 ```
 
 ### -AlternativeSecurityIds
-Specifies alternative security IDs.
+@{Text=}
+
 ```yaml
-Type: System.Collections.Generic.List`1[Microsoft.Open.AzureAD.Model.AlternativeSecurityId]
+Type: List`1[AlternativeSecurityId]
 Parameter Sets: (All)
 Aliases: 
 
@@ -65,8 +78,10 @@ Accept wildcard characters: False
 ```
 
 ### -ApproximateLastLogonTimeStamp
+@{Text=}
+
 ```yaml
-Type: DateTime
+Type: Nullable`1[DateTime]
 Parameter Sets: (All)
 Aliases: 
 
@@ -78,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeviceId
-Specifies the device ID.
+@{Text=}
 
 ```yaml
 Type: String
@@ -93,10 +108,10 @@ Accept wildcard characters: False
 ```
 
 ### -DeviceObjectVersion
-Specifies the object version of the device.
+@{Text=}
 
 ```yaml
-Type: Int32
+Type: Nullable`1[Int32]
 Parameter Sets: (All)
 Aliases: 
 
@@ -108,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeviceOSType
-Specifies the operating system.
+@{Text=}
 
 ```yaml
 Type: String
@@ -123,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeviceOSVersion
-Specifies the operating sytem version.
+@{Text=}
 
 ```yaml
 Type: String
@@ -138,9 +153,10 @@ Accept wildcard characters: False
 ```
 
 ### -DevicePhysicalIds
-Specifies the physical ID.
+@{Text=}
+
 ```yaml
-Type: System.Collections.Generic.List`1[System.String]
+Type: List`1[String]
 Parameter Sets: (All)
 Aliases: 
 
@@ -152,7 +168,8 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-Specifies the display name.
+@{Text=}
+
 ```yaml
 Type: String
 Parameter Sets: (All)
@@ -165,48 +182,11 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -InformationAction
-Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
-
-- Continue
-- Ignore
-- Inquire
-- SilentlyContinue
-- Stop
-- Suspend
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: infa
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -InformationVariable
-Specifies an information variable.
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases: iv
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -IsCompliant
-Indicates whether the device is compliant.
+@{Text=}
 
 ```yaml
-Type: Boolean
+Type: Nullable`1[Boolean]
 Parameter Sets: (All)
 Aliases: 
 
@@ -218,10 +198,10 @@ Accept wildcard characters: False
 ```
 
 ### -IsManaged
-Indicates whether the device is managed.
+@{Text=}
 
 ```yaml
-Type: Boolean
+Type: Nullable`1[Boolean]
 Parameter Sets: (All)
 Aliases: 
 
@@ -232,24 +212,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ObjectId
-Specifies the object ID of a device in Azure AD.
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases: 
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByPropertyName, ByValue)
-Accept wildcard characters: False
-```
-
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
-
 ## INPUTS
 
 ## OUTPUTS
@@ -258,8 +220,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADDevice](./Get-AzureADDevice.md)
-
-[New-AzureADDevice](./New-AzureADDevice.md)
-
-[Remove-AzureADDevice](./Remove-AzureADDevice.md)

@@ -1,5 +1,5 @@
 ---
-external help file: AzureAD.Help.xml
+external help file: azuread.help.xml
 online version: 
 schema: 2.0.0
 ---

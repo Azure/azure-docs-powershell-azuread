@@ -1,6 +1,6 @@
 ---
-external help file: AzureAD.Help.xml
-online version: https://channel9.msdn.com/Series/Azure-Active-Directory-Videos-Demos/ManageAppsAzureADPowerShell
+external help file: azuread.help.xml
+online version: https://blogs.technet.microsoft.com/enterprisemobility/2016/07/18/azuread-certificate-based-authentication-for-ios-and-android-now-in-preview/
 schema: 2.0.0
 ---
 

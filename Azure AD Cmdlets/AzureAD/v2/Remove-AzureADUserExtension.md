@@ -1,65 +1,39 @@
 ---
-external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.Custom.dll-Help.xml
-ms.assetid: 2D1768D6-29D4-4985-ADD3-8308FF370DDC
-online version: 
+external help file: azuread.help.xml
+online version: https://blogs.technet.microsoft.com/enterprisemobility/2016/07/18/azuread-certificate-based-authentication-for-ios-and-android-now-in-preview/
 schema: 2.0.0
 ---
 
 # Remove-AzureADUserExtension
 
 ## SYNOPSIS
-Removes a user extension.
 
 ## SYNTAX
 
-### SetSingle
+### UNNAMED_PARAMETER_SET_1
 ```
-Remove-AzureADUserExtension -ObjectId <String> -ExtensionName <String> [<CommonParameters>]
+Remove-AzureADUserExtension -ObjectId <String> -ExtensionName <String>
 ```
 
-### SetMultiple
+### UNNAMED_PARAMETER_SET_2
 ```
-Remove-AzureADUserExtension -ObjectId <String>
- -ExtensionNames <System.Collections.Generic.List`1[System.String]> [<CommonParameters>]
+Remove-AzureADUserExtension -ObjectId <String> -ExtensionNames <List`1[String]>
 ```
 
 ## DESCRIPTION
-The **Remove-AzureADUserExtension** cmdlet removes a user extension from Azure Active Directory (AD).
 
 ## EXAMPLES
 
+### Example 1
+```
+
+```
+
 ## PARAMETERS
 
-### -ExtensionName
-Specifies the name of an extension.
-```yaml
-Type: String
-Parameter Sets: SetSingle
-Aliases: 
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByPropertyName, ByValue)
-Accept wildcard characters: False
-```
-
-### -ExtensionNames
-Specifies an array of extension names.
-```yaml
-Type: System.Collections.Generic.List`1[System.String]
-Parameter Sets: SetMultiple
-Aliases: 
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByPropertyName, ByValue)
-Accept wildcard characters: False
-```
-
 ### -ObjectId
-Specifies an object ID.
+@{Text=}
+
 ```yaml
 Type: String
 Parameter Sets: (All)
@@ -68,12 +42,39 @@ Aliases:
 Required: True
 Position: Named
 Default value: None
-Accept pipeline input: True (ByPropertyName, ByValue)
+Accept pipeline input: True (ByValue, ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+### -ExtensionName
+@{Text=}
+
+```yaml
+Type: String
+Parameter Sets: UNNAMED_PARAMETER_SET_1
+Aliases: 
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue, ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -ExtensionNames
+@{Text=}
+
+```yaml
+Type: List`1[String]
+Parameter Sets: UNNAMED_PARAMETER_SET_2
+Aliases: 
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue, ByPropertyName)
+Accept wildcard characters: False
+```
 
 ## INPUTS
 
@@ -83,6 +84,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADUserExtension](./Get-AzureADUserExtension.md)
-
-[Set-AzureADUserExtension](./Set-AzureADUserExtension.md)

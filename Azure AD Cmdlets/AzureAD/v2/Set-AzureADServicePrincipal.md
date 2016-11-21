@@ -1,38 +1,52 @@
 ---
-external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
-ms.assetid: 540A8E20-80C9-48D8-BE49-E1DA84FD3BF7
-online version: 
+external help file: azuread.help.xml
+online version: https://blogs.technet.microsoft.com/enterprisemobility/2016/07/18/azuread-certificate-based-authentication-for-ios-and-android-now-in-preview/
 schema: 2.0.0
 ---
 
 # Set-AzureADServicePrincipal
 
 ## SYNOPSIS
-Updates a service principal.
+Updates a service principal in Azure Active Directory
 
 ## SYNTAX
 
 ```
-Set-AzureADServicePrincipal -ObjectId <String> [-InformationAction <ActionPreference>]
- [-InformationVariable <String>] [-AccountEnabled <String>] [-AppId <String>]
- [-AppRoleAssignmentRequired <Boolean>] [-DisplayName <String>] [-ErrorUrl <String>] [-Homepage <String>]
- [-KeyCredentials <System.Collections.Generic.List`1[Microsoft.Open.AzureAD.Model.KeyCredential]>]
- [-LogoutUrl <String>]
- [-PasswordCredentials <System.Collections.Generic.List`1[Microsoft.Open.AzureAD.Model.PasswordCredential]>]
- [-PublisherName <String>] [-ReplyUrl <System.Collections.Generic.List`1[System.String]>]
- [-SamlMetadataUrl <String>] [-ServicePrincipalNames <System.Collections.Generic.List`1[System.String]>]
- [-Tags <System.Collections.Generic.List`1[System.String]>] [<CommonParameters>]
+Set-AzureADServicePrincipal -ObjectId <String> [-AccountEnabled <String>] [-AppId <String>]
+ [-AppRoleAssignmentRequired <Nullable`1[Boolean]>] [-DisplayName <String>] [-ErrorUrl <String>]
+ [-Homepage <String>] [-KeyCredentials <List`1[KeyCredential]>] [-LogoutUrl <String>]
+ [-PasswordCredentials <List`1[PasswordCredential]>] [-PublisherName <String>] [-ReplyUrl <List`1[String]>]
+ [-SamlMetadataUrl <String>] [-ServicePrincipalNames <List`1[String]>] [-Tags <List`1[String]>]
 ```
 
 ## DESCRIPTION
-The **Set-AzureADServicePrincipal** cmdlet updates a service principal in Azure Active Directory (AD).
 
 ## EXAMPLES
 
+### Disable the account of a service principal
+```
+Set-AzureADServicePrincipal -ObjectId 2e0d8ca7-57d1-4a87-9c2a-b3638a4cadbf -AccountEnabled $False
+```
+
 ## PARAMETERS
 
+### -ObjectId
+The unique idenfier of an service principal in Azure Active Directory
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: 
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue, ByPropertyName)
+Accept wildcard characters: False
+```
+
 ### -AccountEnabled
-Indicates whether the account is enabled.
+@{Text=}
 
 ```yaml
 Type: String
@@ -47,7 +61,7 @@ Accept wildcard characters: False
 ```
 
 ### -AppId
-Specifies the application ID.
+@{Text=}
 
 ```yaml
 Type: String
@@ -62,10 +76,10 @@ Accept wildcard characters: False
 ```
 
 ### -AppRoleAssignmentRequired
-Indicates whether an application role assignment is required.
+@{Text=}
 
 ```yaml
-Type: Boolean
+Type: Nullable`1[Boolean]
 Parameter Sets: (All)
 Aliases: 
 
@@ -77,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-Specifies the display name.
+@{Text=}
 
 ```yaml
 Type: String
@@ -92,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -ErrorUrl
-Specifies the error URL.
+@{Text=}
 
 ```yaml
 Type: String
@@ -107,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -Homepage
-Specifies the home page.
+@{Text=}
 
 ```yaml
 Type: String
@@ -121,48 +135,11 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -InformationAction
-Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
-
-- Continue
-- Ignore
-- Inquire
-- SilentlyContinue
-- Stop
-- Suspend
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: infa
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -InformationVariable
-Specifies an information variable.
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases: iv
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -KeyCredentials
-Specifies key credentials.
+@{Text=}
 
 ```yaml
-Type: System.Collections.Generic.List`1[Microsoft.Open.AzureAD.Model.KeyCredential]
+Type: List`1[KeyCredential]
 Parameter Sets: (All)
 Aliases: 
 
@@ -174,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -LogoutUrl
-Specifies the logout URL.
+@{Text=}
 
 ```yaml
 Type: String
@@ -188,26 +165,11 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ObjectId
-Specifeis the ID of a service principal in Azure AD.
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases: 
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByPropertyName, ByValue)
-Accept wildcard characters: False
-```
-
 ### -PasswordCredentials
-Specifies password credentials.
+@{Text=}
 
 ```yaml
-Type: System.Collections.Generic.List`1[Microsoft.Open.AzureAD.Model.PasswordCredential]
+Type: List`1[PasswordCredential]
 Parameter Sets: (All)
 Aliases: 
 
@@ -219,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublisherName
-Specifies the publisher name.
+@{Text=}
 
 ```yaml
 Type: String
@@ -234,10 +196,10 @@ Accept wildcard characters: False
 ```
 
 ### -ReplyUrl
-Specifies a reply URL.
+@{Text=}
 
 ```yaml
-Type: System.Collections.Generic.List`1[System.String]
+Type: List`1[String]
 Parameter Sets: (All)
 Aliases: 
 
@@ -249,6 +211,8 @@ Accept wildcard characters: False
 ```
 
 ### -SamlMetadataUrl
+@{Text=}
+
 ```yaml
 Type: String
 Parameter Sets: (All)
@@ -262,10 +226,10 @@ Accept wildcard characters: False
 ```
 
 ### -ServicePrincipalNames
-Specifies service principal names.
+@{Text=}
 
 ```yaml
-Type: System.Collections.Generic.List`1[System.String]
+Type: List`1[String]
 Parameter Sets: (All)
 Aliases: 
 
@@ -277,10 +241,10 @@ Accept wildcard characters: False
 ```
 
 ### -Tags
-Specifies an array of tags.
+@{Text=}
 
 ```yaml
-Type: System.Collections.Generic.List`1[System.String]
+Type: List`1[String]
 Parameter Sets: (All)
 Aliases: 
 
@@ -291,9 +255,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
-
 ## INPUTS
 
 ## OUTPUTS
@@ -302,8 +263,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADServicePrincipal](./Get-AzureADServicePrincipal.md)
-
-[New-AzureADServicePrincipal](./New-AzureADServicePrincipal.md)
-
-[Remove-AzureADServicePrincipal](./Remove-AzureADServicePrincipal.md)

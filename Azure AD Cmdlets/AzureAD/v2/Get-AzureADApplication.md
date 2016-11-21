@@ -1,6 +1,5 @@
 ---
-external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
-ms.assetid: FC0F8815-DEEC-4672-81A1-68A1095E5543
+external help file: azuread.help.xml
 online version: 
 schema: 2.0.0
 ---
@@ -8,157 +7,121 @@ schema: 2.0.0
 # Get-AzureADApplication
 
 ## SYNOPSIS
-Gets an application.
+Get an application by objectId
 
 ## SYNTAX
 
-### GetQuery (Default)
+### UNNAMED_PARAMETER_SET_1
 ```
-Get-AzureADApplication [-Top <Int32>] [-Filter <String>] [-InformationAction <ActionPreference>]
- [-InformationVariable <String>] [<CommonParameters>]
-```
-
-### GetVague
-```
-Get-AzureADApplication [-SearchString <String>] [-InformationAction <ActionPreference>]
- [-InformationVariable <String>] [<CommonParameters>]
+Get-AzureADApplication [-Top <Nullable`1[Int32]>] [-Filter <String>]
 ```
 
-### GetById
+### UNNAMED_PARAMETER_SET_2
 ```
-Get-AzureADApplication -ObjectId <String> [-InformationAction <ActionPreference>]
- [-InformationVariable <String>] [<CommonParameters>]
+Get-AzureADApplication [-SearchString <String>]
+```
+
+### UNNAMED_PARAMETER_SET_3
+```
+Get-AzureADApplication -ObjectId <String>
 ```
 
 ## DESCRIPTION
-The **Get-AzureADApplication** cmdlet gets an Azure Active Directory application.
 
 ## EXAMPLES
 
-### Example 1: Get an application by display name
+### Retrieve an application with a filter on display name
 ```
-PS C:\>Get-AzureADApplication -Filter "DisplayName eq 'TestName'"
+Get-AzureADApplication -Filter "DisplayName eq 'TestName'"
+
+Output:
 
 ObjectId                             AppId                                DisplayName
 --------                             -----                                -----------
 3ddd22e7-a150-4bb3-b100-e410dea1cb84 36ee4c6c-0812-40a2-b820-b22ebd02bce3 TestName
 ```
 
-This command gets an application by its display name.
-
-### Example 2: Get an application by ID
+### Retrieve an application by ObjectId
 ```
-PS C:\>Get-AzureADApplication -Filter "AppId eq 'ed192e92-84d4-4baf-997d-1e190a81f28e'"
-```
+$AppObjectId = (Get-AzureADApplication -top 1).objectId
+Get-AzureADApplication -ObjectId $AppObjectId
 
-This command gets an application by its ID.
 
 Output:
 
-    ObjectId                             AppId                                DisplayName
-    --------                             -----                                -----------  
-    ed192e92-84d4-4baf-997d-1e190a81f28e 36ee4c6c-0812-40a2-b820-b22ebd02bce3 MyNewApp
+ObjectId                             AppId                                DisplayName
+--------                             -----                                -----------
+ed192e92-84d4-4baf-997d-1e190a81f28e 36ee4c6c-0812-40a2-b820-b22ebd02bce3 MyNewApp
+```
 
 ## PARAMETERS
 
-### -Filter
-Specifies an oData v3.0 filter statement. This parameter controls which objects are returned.
+### -Top
+The maximum number of records to return.
+If no value is provided, 100 records are returned
 
 ```yaml
-Type: String
-Parameter Sets: GetQuery
+Type: Nullable`1[Int32]
+Parameter Sets: UNNAMED_PARAMETER_SET_1
 Aliases: 
 
 Required: False
 Position: Named
 Default value: None
-Accept pipeline input: True (ByPropertyName, ByValue)
+Accept pipeline input: True (ByValue, ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -InformationAction
-Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
+### -Filter
+The filter parameter can be used to filter returned objects of a cmdlet using an Odata filter statement.
+An example would be 
 
-- Continue
-- Ignore
-- Inquire
-- SilentlyContinue
-- Stop
-- Suspend
+Get-AzureADApplication -Filter "DisplayName eq 'TestName'"
 
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: infa
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -InformationVariable
-Specifies a variable in which to store an information event message.
+which would only return application objects for which the DisplayName equals "TestName".
 
 ```yaml
 Type: String
-Parameter Sets: (All)
-Aliases: iv
+Parameter Sets: UNNAMED_PARAMETER_SET_1
+Aliases: 
 
 Required: False
 Position: Named
 Default value: None
-Accept pipeline input: False
+Accept pipeline input: True (ByValue, ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -SearchString
+The SearchString parameter allows you to search for specific objects.
+This includes the DisplayName and Description attribute as well as addtional string attributes for an object
+
+```yaml
+Type: String
+Parameter Sets: UNNAMED_PARAMETER_SET_2
+Aliases: 
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue, ByPropertyName)
 Accept wildcard characters: False
 ```
 
 ### -ObjectId
-Specifies the ID of an application in Azure Active Directory.
+The unique idenfier of an application in Azure Active Directory
 
 ```yaml
 Type: String
-Parameter Sets: GetById
+Parameter Sets: UNNAMED_PARAMETER_SET_3
 Aliases: 
 
 Required: True
 Position: Named
 Default value: None
-Accept pipeline input: True (ByPropertyName, ByValue)
+Accept pipeline input: True (ByValue, ByPropertyName)
 Accept wildcard characters: False
 ```
-
-### -SearchString
-Specifies a search string.
-```yaml
-Type: String
-Parameter Sets: GetVague
-Aliases: 
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: True (ByPropertyName, ByValue)
-Accept wildcard characters: False
-```
-
-### -Top
-Specifies the maximum number of records to return.
-
-```yaml
-Type: Int32
-Parameter Sets: GetQuery
-Aliases: 
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: True (ByPropertyName, ByValue)
-Accept wildcard characters: False
-```
-
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -167,11 +130,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-
-[New-AzureADApplication](./New-AzureADApplication.md)
-[Remove-AzureADApplication](./Remove-AzureADApplication.md)
-[Set-AzureADApplication](./Set-AzureADApplication.md)
-
-
-
 

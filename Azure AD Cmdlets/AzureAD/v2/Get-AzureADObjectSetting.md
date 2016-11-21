@@ -1,81 +1,43 @@
 ---
-external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
-ms.assetid: F1CEBDF4-5AF8-4AFC-AA1F-D36CEC381D04
-online version: 
+external help file: azuread.help.xml
+online version: https://blogs.technet.microsoft.com/enterprisemobility/2016/07/18/azuread-certificate-based-authentication-for-ios-and-android-now-in-preview/
 schema: 2.0.0
 ---
 
 # Get-AzureADObjectSetting
 
 ## SYNOPSIS
-Gets an object setting.
+Retrieves a object setting from Azure Active Directory.
 
 ## SYNTAX
 
-### GetQuery (Default)
-```
-Get-AzureADObjectSetting -TargetType <String> -TargetObjectId <String> [-Top <Int32>]
- [-InformationAction <ActionPreference>] [-InformationVariable <String>] [<CommonParameters>]
-```
-
-### GetById
+### UNNAMED_PARAMETER_SET_1
 ```
 Get-AzureADObjectSetting -TargetType <String> -TargetObjectId <String> -ObjectId <String>
- [-InformationAction <ActionPreference>] [-InformationVariable <String>] [<CommonParameters>]
+```
+
+### UNNAMED_PARAMETER_SET_2
+```
+Get-AzureADObjectSetting -TargetType <String> -TargetObjectId <String> [-Top <Int32>]
 ```
 
 ## DESCRIPTION
-The **Get-AzureADObjectSetting** cmdlet gets an object from Azure Active Directory (AD).
 
 ## EXAMPLES
 
+### Example 1
+```
+
+```
+
 ## PARAMETERS
 
-### -InformationAction
-Specifies how this cmdlet responds to an information event.
-
-The acceptable values for this parameter are:
-
-- Continue
-- Ignore
-- Inquire
-- SilentlyContinue
-- Stop
-- Suspend
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: infa
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -InformationVariable
-Specifies an information variable.
+### -TargetType
+Object type name of directory object that will be assigned settings
 
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: iv
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ObjectId
-Specifies the ID of a settings object. 
-
-```yaml
-Type: String
-Parameter Sets: GetById
 Aliases: 
 
 Required: True
@@ -86,7 +48,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetObjectId
-Specifies the ID of the target object.
+ObjectId of a setting that will be assigned settings
 
 ```yaml
 Type: String
@@ -100,12 +62,12 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
-### -TargetType
-Specifies the target type. 
+### -ObjectId
+The unique identifier of a setting in Azure Active Directory
 
 ```yaml
 Type: String
-Parameter Sets: (All)
+Parameter Sets: UNNAMED_PARAMETER_SET_1
 Aliases: 
 
 Required: True
@@ -116,11 +78,12 @@ Accept wildcard characters: False
 ```
 
 ### -Top
-Specifies the maximum number of records to return.
+The maximum number of records to return.
+If no value is provided, 100 records are returned
 
 ```yaml
 Type: Int32
-Parameter Sets: GetQuery
+Parameter Sets: UNNAMED_PARAMETER_SET_2
 Aliases: 
 
 Required: False
@@ -130,20 +93,14 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
-
 ## INPUTS
 
 ## OUTPUTS
 
 ## NOTES
+Please note that this cmdlet is currently in Public Preview.
+While a cmdlet is in Public Preview we may still need to make changes to the cmdlet which could potentially cause unexpected effects.
+We discourage customers from using this cmdlet in a production environment.
 
 ## RELATED LINKS
-
-[New-AzureADObjectSetting](./New-AzureADObjectSetting.md)
-
-[Remove-AzureADObjectSetting](./Remove-AzureADObjectSetting.md)
-
-[Set-AzureADObjectSetting](./Set-AzureADObjectSetting.md)
 

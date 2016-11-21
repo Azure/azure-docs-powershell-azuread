@@ -1,6 +1,5 @@
 ---
-external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
-ms.assetid: 8212C7A5-3AA7-4E28-9F0C-D0C97F8AC08E
+external help file: azuread.help.xml
 online version: 
 schema: 2.0.0
 ---
@@ -8,23 +7,24 @@ schema: 2.0.0
 # Get-AzureADGroupMember
 
 ## SYNOPSIS
-Gets a member of a group.
+Get members of a group.
 
 ## SYNTAX
 
 ```
-Get-AzureADGroupMember -ObjectId <String> [-Top <Int32>] [-InformationAction <ActionPreference>]
- [-InformationVariable <String>] [<CommonParameters>]
+Get-AzureADGroupMember -ObjectId <String> [-Top <Nullable`1[Int32]>]
 ```
 
 ## DESCRIPTION
-The **Get-AzureADGroupMember** cmdlet gets a member of a group in Azure Active Directory (AD).
 
 ## EXAMPLES
 
-### Example 1: Get a group member by ID
+### Retrieve a group's members
 ```
-PS C:\>Get-AzureADGroupMember -ObjectId "62438306-7c37-4638-a72d-0ee8d9217680"
+$GroupId = (Get-AzureADGroup -Top 1).ObjectId
+Get-AzureADGroupMember -ObjectId $GroupId
+
+Output:
 
 ObjectId                             ObjectType
 --------                             ----------
@@ -33,45 +33,8 @@ ObjectId                             ObjectType
 
 ## PARAMETERS
 
-### -InformationAction
-Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
-
-- Continue
-- Ignore
-- Inquire
-- SilentlyContinue
-- Stop
-- Suspend
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: infa
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -InformationVariable
-Specifies an information variable.
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases: iv
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ObjectId
-Specifies the ID of a group in Azure AD.
+The unique identifier of a group in Azure Active Directory (ObjectId)
 
 ```yaml
 Type: String
@@ -81,27 +44,25 @@ Aliases:
 Required: True
 Position: Named
 Default value: None
-Accept pipeline input: True (ByPropertyName, ByValue)
+Accept pipeline input: True (ByValue, ByPropertyName)
 Accept wildcard characters: False
 ```
 
 ### -Top
-Specifies the maximum number of records to return.
+The maximum number of records to return.
+If no value is provided, 100 records are returned
 
 ```yaml
-Type: Int32
+Type: Nullable`1[Int32]
 Parameter Sets: (All)
 Aliases: 
 
 Required: False
 Position: Named
 Default value: None
-Accept pipeline input: True (ByPropertyName, ByValue)
+Accept pipeline input: True (ByValue, ByPropertyName)
 Accept wildcard characters: False
 ```
-
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -110,7 +71,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-
-[Add-AzureADGroupMember](./Add-AzureADGroupMember.md)
-[Remove-AzureADGroupMember](./Remove-AzureADGroupMember.md)
 

@@ -1,6 +1,5 @@
 ---
-external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
-ms.assetid: CAA240EC-E380-4CDB-A1CC-56BBD28DFB82
+external help file: azuread.help.xml
 online version: 
 schema: 2.0.0
 ---
@@ -8,39 +7,35 @@ schema: 2.0.0
 # Get-AzureADDirectoryRole
 
 ## SYNOPSIS
-Gets a directory role.
+Retrieves a specific directory role from Azure Active Directory
 
 ## SYNTAX
 
-### GetQuery (Default)
 ```
-Get-AzureADDirectoryRole [-InformationAction <ActionPreference>] [-InformationVariable <String>]
- [<CommonParameters>]
-```
-
-### GetById
-```
-Get-AzureADDirectoryRole -ObjectId <String> [-InformationAction <ActionPreference>]
- [-InformationVariable <String>] [<CommonParameters>]
+Get-AzureADDirectoryRole -ObjectId <String>
 ```
 
 ## DESCRIPTION
-The **Get-AzureADDirectoryRole** cmdlet gets a directory role from Azure Active Directory (AD).
 
 ## EXAMPLES
 
-### Example 1: Get a directory role by ID
+### Retrieve a directory role
 ```
-PS C:\>Get-AzureADDirectoryRole -ObjectId "019ea7a2-1613-47c9-81cb-20ba35b1ae48"
+$Roles = Get-AzureADDirectoryRole
+Get-AzureADDirectoryRole -ObjectId $Roles[0].ObjectId
+
+Output:
 
 ObjectId                             DisplayName                        Description
 --------                             -----------                        -----------
 019ea7a2-1613-47c9-81cb-20ba35b1ae48 Company Administrator              Company Administrator role has full access to perform any operation in the company scope.
 ```
 
-### Example 2: Get all directory roles
+### Retrieve all Roles from the directory
 ```
-PS C:\>Get-AzureADDirectoryRole
+Get-AzureADDirectoryRole
+
+Output:
 
 ObjectId                             DisplayName                        Description
 --------                             -----------                        -----------
@@ -57,62 +52,20 @@ d96eb2b3-0970-4827-8f26-6008efd86511 Security Administrator             Security
 
 ## PARAMETERS
 
-### -InformationAction
-Specifies how this cmdlet responds to an information event.
-
-The acceptable values for this parameter are:
-
-- Continue
-- Ignore
-- Inquire
-- SilentlyContinue
-- Stop
-- Suspend
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: infa
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -InformationVariable
-Specifies an information variable.
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases: iv
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ObjectId
-Specifies the ID of a directory role in Azure AD.
+The unique identifier of a directory role in Azure Active Directory (ObjectId)
 
 ```yaml
 Type: String
-Parameter Sets: GetById
+Parameter Sets: (All)
 Aliases: 
 
 Required: True
 Position: Named
 Default value: None
-Accept pipeline input: True (ByPropertyName, ByValue)
+Accept pipeline input: True (ByValue, ByPropertyName)
 Accept wildcard characters: False
 ```
-
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -121,6 +74,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-
-[Enable-AzureADDirectoryRole](./Enable-AzureADDirectoryRole.md)
 
