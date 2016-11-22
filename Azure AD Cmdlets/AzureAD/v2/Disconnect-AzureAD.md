@@ -24,10 +24,15 @@ Disconnect-AzureAD [-WhatIf] [-Confirm]
 Disconnect-AzureAD
 ```
 
+<<<<<<< 70634c76dd45e8ba886fa7b14411126a37fdce5c
 ## PARAMETERS
 
 ### -WhatIf
 @{Text=}
+=======
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
 
 ```yaml
 Type: SwitchParameter
@@ -41,8 +46,11 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
+
+### -WhatIf
+Shows what would happen if the cmdlet runs.
+The cmdlet is not run.
+
 
 ```yaml
 Type: SwitchParameter
@@ -63,4 +71,4 @@ Accept wildcard characters: False
 ## NOTES
 
 ## RELATED LINKS
-
+[Connect-AzureAD](./Connect-AzureAD.md)

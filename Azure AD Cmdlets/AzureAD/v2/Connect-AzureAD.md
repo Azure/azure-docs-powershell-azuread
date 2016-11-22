@@ -260,4 +260,4 @@ Accept wildcard characters: False
 ## NOTES
 
 ## RELATED LINKS
-
+[Disconnet-AzureAD](./Disconnect-AzureAD.md)
