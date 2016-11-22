@@ -1,29 +1,34 @@
 ---
-external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+external help file: azuread.help.xml
 online version: 
 schema: 2.0.0
-ms.assetid: 4E853AB1-5885-4A12-AA3B-0D85B61E54D3
 ---
 
 # Get-AzureADUserOAuth2PermissionGrant
 
 ## SYNOPSIS
-Gets an **oAuth2PermissionGrant** object.
+Get the list of the oAuth2PermissionGrants that the user granted applications.
 
 ## SYNTAX
 
 ```
-Get-AzureADUserOAuth2PermissionGrant -ObjectId <String> [-Top <Int32>] [-InformationAction <ActionPreference>]
- [-InformationVariable <String>] [<CommonParameters>]
+Get-AzureADUserOAuth2PermissionGrant -ObjectId <String> [-Top <Nullable`1[Int32]>]
 ```
 
 ## DESCRIPTION
-The **Get-AzureADUserOAuth2PermissionGrant** cmdlet gets an **oAuth2PermissionGrant** object for the specified user in Azure Active Directory (AD).
+
+## EXAMPLES
+
+### Retrieve the OAuth2 permission grants for a given user
+```
+$UserId = (Get-AzureADUser -Top 1).ObjectId
+Get-AzureADUserOAuth2PermissionGrant -ObjectId $UserId
+```
 
 ## PARAMETERS
 
 ### -ObjectId
-Specifies the ID (as a UPN or ObjectId) of a user in Azure AD. 
+The unique identifier of a user in Azure Active Directory (UPN or ObjectId)
 
 ```yaml
 Type: String
@@ -33,64 +38,25 @@ Aliases:
 Required: True
 Position: Named
 Default value: None
-Accept pipeline input: True (ByPropertyName, ByValue)
+Accept pipeline input: True (ByValue, ByPropertyName)
 Accept wildcard characters: False
 ```
 
 ### -Top
-Specifies the maximum number of records to return.
+The maximum number of records to return.
+If no value is provided, 100 records are returned
 
 ```yaml
-Type: Int32
+Type: Nullable`1[Int32]
 Parameter Sets: (All)
 Aliases: 
 
 Required: False
 Position: Named
 Default value: None
-Accept pipeline input: True (ByPropertyName, ByValue)
+Accept pipeline input: True (ByValue, ByPropertyName)
 Accept wildcard characters: False
 ```
-
-### -InformationAction
-Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
-
-- Continue
-- Ignore
-- Inquire
-- SilentlyContinue
-- Stop
-- Suspend
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: infa
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -InformationVariable
-Specifies an information variable.
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases: iv
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -99,5 +65,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-
 

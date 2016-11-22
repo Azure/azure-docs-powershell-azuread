@@ -1,91 +1,55 @@
 ---
-external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.Custom.dll-Help.xml
-online version:
+external help file: azuread.help.xml
+online version: 
 schema: 2.0.0
-ms.assetid: 306B2B21-9B1C-4388-B3D6-419CDE02C75C
 ---
 
 # Get-AzureADApplicationKeyCredential
 
 ## SYNOPSIS
-Gets the key credentials for an application.
+Het an application's key credentials
 
 ## SYNTAX
 
 ```
-Get-AzureADApplicationKeyCredential -ObjectId <String> [-InformationAction <ActionPreference>]
- [-InformationVariable <String>] [<CommonParameters>]
+Get-AzureADApplicationKeyCredential -ObjectId <String>
 ```
 
 ## DESCRIPTION
-The **Get-AzureADApplicationKeyCredential** cmdlet gets the key credentials for an application.
 
 ## EXAMPLES
 
-### Example 1: Get key credentials
-```PowerShell
-PS C:\> Get-AzureADApplicationKeyCredential -ObjectId "3ddd22e7-a150-4bb3-b100-e410dea1cb84"
+### Retrieve the key credential of an application by ObjectId
 ```
-This command gets the key credentials for the specified application.
+$AppId = (get-AzureADApplication -top 1).ObjectId
+Get-AzureADApplicationKeyCredential -ObjectId $AppId
+
+
+CustomKeyIdentifier : {84, 101, 115, 116}
+EndDate             : 11/7/2017 8:00:00 AM
+KeyId               : b1f2af40-bd38-485b-81a0-a7e0cba1aa4f
+StartDate           : 11/7/2016 8:00:00 AM
+Type                : Symmetric
+Usage               : Sign
+Value               :
+```
 
 ## PARAMETERS
 
 ### -ObjectId
-Specifies a unique ID of an application in Azure Active Directory for which to get key credentials
+The objectID of the application for which to get the key credential
 
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: True
 Position: Named
 Default value: None
-Accept pipeline input: True (ByPropertyName, ByValue)
+Accept pipeline input: True (ByValue, ByPropertyName)
 Accept wildcard characters: False
 ```
-
-### -InformationAction
-Specifies how this cmdlet responds to an information event.
-
-The acceptable values for this parameter are:
-
-- Continue
-- Ignore
-- Inquire
-- SilentlyContinue
-- Stop
-- Suspend
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: infa
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -InformationVariable
-Specifies an information variable.
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases: iv
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -95,6 +59,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[New-AzureADApplicationKeyCredential](./New-AzureADApplicationKeyCredential.md)
-
-[Remove-AzureADApplicationKeyCredential](./Remove-AzureADApplicationKeyCredential.md)

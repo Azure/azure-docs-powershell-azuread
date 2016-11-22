@@ -1,8 +1,7 @@
 ---
-external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
-online version: 
+external help file: azuread.help.xml
+online version: https://blogs.technet.microsoft.com/enterprisemobility/2016/07/18/azuread-certificate-based-authentication-for-ios-and-android-now-in-preview/
 schema: 2.0.0
-ms.assetid: 8846536B-3E57-4307-81C7-CCFFB2C6E5EC
 ---
 
 # Set-AzureADGroup
@@ -13,25 +12,24 @@ Updates a specific group in Azure Active Directory
 ## SYNTAX
 
 ```
-Set-AzureADGroup -ObjectId <String> [-InformationAction <ActionPreference>] [-InformationVariable <String>]
- [-Description <String>] [-DisplayName <String>] [-MailEnabled <Boolean>] [-MailNickName <String>]
- [-SecurityEnabled <Boolean>] [<CommonParameters>]
+Set-AzureADGroup -ObjectId <String> [-Description <String>] [-DisplayName <String>]
+ [-MailEnabled <Nullable`1[Boolean]>] [-MailNickName <String>] [-SecurityEnabled <Nullable`1[Boolean]>]
 ```
 
 ## DESCRIPTION
-The **Set-AzureADGroup** cmdlet updates a group in Azure Active Directory (AD).
 
 ## EXAMPLES
 
-### Example 1: Update a group
-```PowerShell
-PS C:\>Set-AzureADGroup -ObjectId "11fa5e1e-737c-40c5-835e-416ae3959606" -Description "This is my new group"
+### Set a new description for a group
 ```
-This command updates the specfied group in Azure AD.
+$GroupId = (Get-AzureADGroup -Top 1).ObjectId
+Set-AzureADGroup -ObjectId $GroupId -Description "This is my new group"
+```
+
 ## PARAMETERS
 
 ### -ObjectId
-Specifies the object ID of a group.
+The unique identifier of a group in Azure Active Directory (ObjectId)
 
 ```yaml
 Type: String
@@ -41,49 +39,13 @@ Aliases:
 Required: True
 Position: Named
 Default value: None
-Accept pipeline input: True (ByPropertyName, ByValue)
-Accept wildcard characters: False
-```
-
-### -InformationAction
-Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
-
-- Continue
-- Ignore
-- Inquire
-- SilentlyContinue
-- Stop
-- Suspend
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: infa
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -InformationVariable
-Specifies an information variable.
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases: iv
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
+Accept pipeline input: True (ByValue, ByPropertyName)
 Accept wildcard characters: False
 ```
 
 ### -Description
-Specfies a description.
+@{Text=}
+
 ```yaml
 Type: String
 Parameter Sets: (All)
@@ -97,7 +59,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-Specifies a display name.
+@{Text=}
 
 ```yaml
 Type: String
@@ -112,10 +74,10 @@ Accept wildcard characters: False
 ```
 
 ### -MailEnabled
-Indicates whether mail is enabled.
+@{Text=}
 
 ```yaml
-Type: Boolean
+Type: Nullable`1[Boolean]
 Parameter Sets: (All)
 Aliases: 
 
@@ -127,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -MailNickName
-Specifies a nickname for the mail.
+@{Text=}
 
 ```yaml
 Type: String
@@ -142,10 +104,10 @@ Accept wildcard characters: False
 ```
 
 ### -SecurityEnabled
-Indicates whether security is enabled.
+@{Text=}
 
 ```yaml
-Type: Boolean
+Type: Nullable`1[Boolean]
 Parameter Sets: (All)
 Aliases: 
 
@@ -156,9 +118,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
-
 ## INPUTS
 
 ## OUTPUTS
@@ -166,8 +125,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-AzureADGroup](./Get-AzureADGroup.md)
 
-[New-AzureADGroup](./New-AzureADGroup.md)
-
-[Remove-AzureADGroup](./Remove-AzureADGroup.md)

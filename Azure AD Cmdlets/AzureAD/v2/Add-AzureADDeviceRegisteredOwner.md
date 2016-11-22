@@ -1,28 +1,36 @@
 ---
-external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+external help file: azuread.help.xml
 online version: 
 schema: 2.0.0
-ms.assetid: 31B92E0F-E46C-4371-8AC9-6C2B497C979B
 ---
 
 # Add-AzureADDeviceRegisteredOwner
 
 ## SYNOPSIS
-Adds a registered owner for a device.
+Add an owner to a device
+
 ## SYNTAX
 
 ```
-Add-AzureADDeviceRegisteredOwner -ObjectId <String> -RefObjectId <String> [<CommonParameters>]
+Add-AzureADDeviceRegisteredOwner -ObjectId <String> -RefObjectId <String>
 ```
 
 ## DESCRIPTION
-The **Add-AzureADDeviceRegisteredOwner** cmdlet adds a registerd owner for an Azure Active Directory device.
+
 ## EXAMPLES
+
+### Add a user as an owner of a device
+```
+$User = get-azureaduser -top 1
+$Device = Get-AzureADDevice -top 1
+Add-AzureADDeviceRegisteredOwner -ObjectId $Device.ObjectId -RefObjectId $User.ObjectId
+```
 
 ## PARAMETERS
 
 ### -ObjectId
-Specifies the object ID. 
+The unique identifier of the device
+
 ```yaml
 Type: String
 Parameter Sets: (All)
@@ -31,12 +39,13 @@ Aliases:
 Required: True
 Position: Named
 Default value: None
-Accept pipeline input: True (ByPropertyName, ByValue)
+Accept pipeline input: True (ByValue, ByPropertyName)
 Accept wildcard characters: False
 ```
 
 ### -RefObjectId
-Specifies the ID of the Active Directory object to add.
+The unique identifier of the specific Azure Active Directory object that will be assigned as owner
+
 ```yaml
 Type: String
 Parameter Sets: (All)
@@ -45,12 +54,9 @@ Aliases:
 Required: True
 Position: Named
 Default value: None
-Accept pipeline input: True (ByPropertyName, ByValue)
+Accept pipeline input: True (ByValue, ByPropertyName)
 Accept wildcard characters: False
 ```
-
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -59,6 +65,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-AzureADDeviceRegisteredOwner](./Get-AzureADDeviceRegisteredOwner.md)
 
-[Remove-AzureADDeviceRegisteredOwner](./Remove-AzureADDeviceRegisteredOwner.md)

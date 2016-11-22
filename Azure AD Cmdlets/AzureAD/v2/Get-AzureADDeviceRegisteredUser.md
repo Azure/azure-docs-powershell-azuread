@@ -1,27 +1,37 @@
 ---
-external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+external help file: azuread.help.xml
 online version: 
 schema: 2.0.0
-ms.assetid: 944E709A-0F66-485C-86E4-1CB4C998C71D
 ---
 
 # Get-AzureADDeviceRegisteredUser
 
 ## SYNOPSIS
-Gets a registered user.
+Get users that are marked as users on the device.
+
 ## SYNTAX
 
 ```
-Get-AzureADDeviceRegisteredUser -ObjectId <String> [-Top <Int32>] [<CommonParameters>]
+Get-AzureADDeviceRegisteredUser -ObjectId <String> [-Top <Nullable`1[Int32]>]
 ```
 
 ## DESCRIPTION
-The **Get-AzureADDeviceRegisteredUser** cmdlet gets a registered user for an Azure Active Directory device.
+
+## EXAMPLES
+
+### Retrieve the registered users of a device
+```
+$DevId = (get-azureaddevice -top 1).objectid
+Get-AzureADDeviceRegisteredUser -ObjectId $DevId
+```
+
+This example retrieves the registered user of a device
 
 ## PARAMETERS
 
 ### -ObjectId
-Specifies an object ID.
+The unique identifier of the device
+
 ```yaml
 Type: String
 Parameter Sets: (All)
@@ -30,25 +40,25 @@ Aliases:
 Required: True
 Position: Named
 Default value: None
-Accept pipeline input: True (ByPropertyName, ByValue)
+Accept pipeline input: True (ByValue, ByPropertyName)
 Accept wildcard characters: False
 ```
 
 ### -Top
+The maximum number of records to return.
+If no value is provided, 100 records are returned
+
 ```yaml
-Type: Int32
+Type: Nullable`1[Int32]
 Parameter Sets: (All)
 Aliases: 
 
 Required: False
 Position: Named
 Default value: None
-Accept pipeline input: True (ByPropertyName, ByValue)
+Accept pipeline input: True (ByValue, ByPropertyName)
 Accept wildcard characters: False
 ```
-
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -57,6 +67,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Add-AzureADDeviceRegisteredUser](./Add-AzureADDeviceRegisteredUser.md)
 
-[Remove-AzureADDeviceRegisteredUser](./Remove-AzureADDeviceRegisteredUser.md)
