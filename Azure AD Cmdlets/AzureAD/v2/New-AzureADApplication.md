@@ -349,5 +349,3 @@ Accept wildcard characters: False
 
 [https://docs.microsoft.com/en-us/powershell/azuread/v2/new-azureadapplication](https://docs.microsoft.com/en-us/powershell/azuread/v2/new-azureadapplication)
 
-[]()
-

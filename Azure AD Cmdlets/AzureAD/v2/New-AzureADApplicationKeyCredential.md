@@ -166,6 +166,3 @@ Accept wildcard characters: False
 ## RELATED LINKS
 
 [This cmdlet uses the adal library in azure Active Directory. To learn more about ADAL, please follow this link:](http://www.cloudidentity.com/blog/2013/09/12/active-directory-authentication-library-adal-v1-for-net-general-availability/)
-
-[]()
-
