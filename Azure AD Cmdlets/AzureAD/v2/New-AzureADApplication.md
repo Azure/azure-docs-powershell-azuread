@@ -346,6 +346,10 @@ Accept wildcard characters: False
 ## NOTES
 
 ## RELATED LINKS
-
 [https://docs.microsoft.com/en-us/powershell/azuread/v2/new-azureadapplication](https://docs.microsoft.com/en-us/powershell/azuread/v2/new-azureadapplication)
 
+[Get-AzureADApplication](./Get-AzureADApplication.md)
+
+[Remove-AzureADApplication](./Remove-AzureADApplication.md)
+
+[Set-AzureADApplication](./Set-AzureADApplication.md)
