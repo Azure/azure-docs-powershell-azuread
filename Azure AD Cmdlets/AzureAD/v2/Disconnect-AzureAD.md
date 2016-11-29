@@ -24,12 +24,8 @@ Disconnect-AzureAD [-WhatIf] [-Confirm]
 Disconnect-AzureAD
 ```
 
-<<<<<<< 70634c76dd45e8ba886fa7b14411126a37fdce5c
 ## PARAMETERS
 
-### -WhatIf
-@{Text=}
-=======
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
