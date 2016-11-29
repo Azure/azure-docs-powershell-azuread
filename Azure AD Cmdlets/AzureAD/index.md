@@ -1,6 +1,6 @@
 # Azure Active Directory 
 
-You can use the Azure Active Directory PowerShell Module Version 2.0 for Azure AD administrative tasks such as user management, domain management and for configuring single sign-on. These topics are related to using the version of Azure Active Directory released to preview June 30, 2016. The cmdlets listed here are different than the MSOL cmdlets which are part of Azure Active Directory Version 1.0.
+You can use the Azure Active Directory PowerShell Module Version 2.0 for Azure AD administrative tasks such as user management, domain management and for configuring single sign-on. The cmdlets listed here are different than the MSOL cmdlets which are part of Azure Active Directory Version 1.0.
 
 The Azure AD PowerShell Version 2 module has two versions: a Public preview version and a general Availability version. It is not recommended to use the Public Preview version for production scenarios.
 
