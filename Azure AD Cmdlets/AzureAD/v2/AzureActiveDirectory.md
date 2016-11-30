@@ -7,12 +7,12 @@ Locale: en-US
 ms.assetid: 7D9D9507-ADE5-45BD-97F8-0CCCDA3D3B58
 ---
 
-# AzureActiveDirectory Module
+# Azure Active Directory V2 Module
 
 ## Description
 This topic displays help topics for the Azure Active Directory module.
 
-## AzureActiveDirectory Cmdlets
+## Azure Active Directory V2 Cmdlets
 ### [Add-AzureADAdministrativeUnitMember](./Add-AzureADAdministrativeUnitMember.md)
 Add an administrativeUnit member
 
