@@ -18,6 +18,9 @@ Set-MsolCompanySecurityComplianceContactInformation [-SecurityComplianceNotifica
 ```
 
 ## DESCRIPTION
+This cmdlet is not in use by any online service, so please consider it deprecated.  
+For more information about how to properly configure security contact details in Azure Security Center, see [Provide security contact details in Azure Security Center](https://aka.ms/azuresecuritycontact).
+
 The **Set-MsolCompanySecurityComplianceContactInformation** cmdlet sets company-level security and compliance contact preferences.
 These preferences include email addresses and phone numbers of the tenant’s security and compliance contacts.
 The contact is used for notification purposes.
