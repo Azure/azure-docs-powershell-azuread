@@ -1,5 +1,6 @@
 ---
-external help file: azuread.help.xml
+external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+ms.assetid: 20B9B17F-DF19-4105-8D94-DEB9AE9E724B
 online version: 
 schema: 2.0.0
 ---
@@ -7,28 +8,67 @@ schema: 2.0.0
 # Get-AzureADUserAppRoleAssignment
 
 ## SYNOPSIS
-Get user application role assignments.
+Get a user application role assignment.
 
 ## SYNTAX
 
 ```
-Get-AzureADUserAppRoleAssignment -ObjectId <String> [-Top <Nullable`1[Int32]>]
+Get-AzureADUserAppRoleAssignment -ObjectId <String> [-Top <Int32>] [-InformationAction <ActionPreference>]
+ [-InformationVariable <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 
 ## EXAMPLES
 
-### Retrieve the Application role assignments of a user
+### Example 1: Get a user application role assignment
 ```
-$UserId = (Get-AzureADUser -Top 1).ObjectId
-Get-AzureADUserAppRoleAssignment -ObjectId $UserId
+PS C:\>Get-AzureADUserAppRoleAssignment
 ```
+
+This command gets a user application role assignment.
 
 ## PARAMETERS
 
+### -InformationAction
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
+
+- Continue
+- Ignore
+- Inquire
+- SilentlyContinue
+- Stop
+- Suspend
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: infa
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -InformationVariable
+Specifies an information variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: iv
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ObjectId
-The unique identifier of a user in Azure Active Directory (UPN or ObjectId)
+Specifies the ID of a user (as a UPN or ObjectId) in Azure Active Directory. 
 
 ```yaml
 Type: String
@@ -38,25 +78,27 @@ Aliases:
 Required: True
 Position: Named
 Default value: None
-Accept pipeline input: True (ByValue, ByPropertyName)
+Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
 ### -Top
-The maximum number of records to return.
-If no value is provided, 100 records are returned
+Specifies the maximum number of records to return.
 
 ```yaml
-Type: Nullable`1[Int32]
+Type: Int32
 Parameter Sets: (All)
 Aliases: 
 
 Required: False
 Position: Named
 Default value: None
-Accept pipeline input: True (ByValue, ByPropertyName)
+Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
+
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -65,4 +107,8 @@ Accept wildcard characters: False
 ## NOTES
 
 ## RELATED LINKS
+
+[New-AzureADUserAppRoleAssignment](./New-AzureADUserAppRoleAssignment.md)
+
+[Remove-AzureADUserAppRoleAssignment](./Remove-AzureADUserAppRoleAssignment.md)
 

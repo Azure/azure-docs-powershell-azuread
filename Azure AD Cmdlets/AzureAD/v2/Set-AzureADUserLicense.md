@@ -1,63 +1,31 @@
 ---
-external help file: azuread.help.xml
-online version: https://blogs.technet.microsoft.com/enterprisemobility/2016/07/18/azuread-certificate-based-authentication-for-ios-and-android-now-in-preview/
+external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+ms.assetid: A98FA4E7-3662-433C-A28D-CAF4D60592A1
+online version: 
 schema: 2.0.0
 ---
 
 # Set-AzureADUserLicense
 
 ## SYNOPSIS
-Add and remove one or more licenses for a Microsoft online service to the list of assigned licenses for the user.
+Adds or removes licenses for a Microsoft online service to the list of assigned licenses for a user.
 
 ## SYNTAX
 
 ```
 Set-AzureADUserLicense -ObjectId <String> -AssignedLicenses <AssignedLicenses>
+ [-InformationAction <ActionPreference>] [-InformationVariable <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
+The **Set-AzureADUserLicense** adds or removes licenses for a Microsoft online service to the list of assigned licenses for a user.
 
 ## EXAMPLES
 
-### Add a license to a user based on a template user
-```
-# Get the License SkuId from a template user that we want to apply to the new user 
-$licensedUser = Get-AzureADUser -ObjectId "TemplateUser@contoso.com"  
-# Get the new User we want to apply the license too 
-$user = Get-AzureADUser -ObjectId "newuser@contoso.com"  
-# Create the new License object 
-$license = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicense 
-$license.SkuId = $licensedUser.AssignedLicenses.SkuId 
-# Create the Licenses Table and add the license from above 
-$licenses = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicenses 
-$licenses.AddLicenses = $license 
-# Apply the license to the new user 
-Set-AzureADUserLicense -ObjectId $user.ObjectId -AssignedLicenses $licenses
-```
-
 ## PARAMETERS
 
-### -ObjectId
-The unique identifier of a user in Azure Active Directory (UPN or ObjectId)
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases: 
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue, ByPropertyName)
-Accept wildcard characters: False
-```
-
 ### -AssignedLicenses
-A list of licenses to be assigned and those to be removed.
-
-Note that this parameter takes a complex type as a value - to create this type, use the New-Object cmdlet, as in:
-
-$license = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicense
+Specifies a list of licenses to assign or remove.
 
 ```yaml
 Type: AssignedLicenses
@@ -67,9 +35,64 @@ Aliases:
 Required: True
 Position: Named
 Default value: None
-Accept pipeline input: True (ByValue, ByPropertyName)
+Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
+
+### -InformationAction
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
+
+- Continue
+- Ignore
+- Inquire
+- SilentlyContinue
+- Stop
+- Suspend
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: infa
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -InformationVariable
+Specifies an information variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: iv
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ObjectId
+Specifies the ID of a user (as a UPN or ObjectId) in Azure AD. 
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: 
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName, ByValue)
+Accept wildcard characters: False
+```
+
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

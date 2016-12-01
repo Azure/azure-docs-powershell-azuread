@@ -1,19 +1,18 @@
-# Azure Active Directory 
+# Azure Active Directory PowerShell Version 2
 
-You can use the Azure Active Directory PowerShell Module Version 2.0 for Azure AD administrative tasks such as user management, domain management and for configuring single sign-on. These topics are related to using the version of Azure Active Directory released to preview June 30, 2016. The cmdlets listed here are different than the MSOL cmdlets which are part of Azure Active Directory Version 1.0.
+You can use the Azure Active Directory PowerShell Module Version 2 for Azure AD administrative tasks such as user management, domain management and for configuring single sign-on. The cmdlets listed here are different than the MSOL cmdlets which are part of Azure Active Directory Version 1.0.
 
-You can use the Azure Active Directory PowerShell Module Version 2.0 for Azure AD administrative tasks such as user management, domain management and for configuring single sign-on.
-These topics are related to using the version of Azure Active Directory released to preview June 30, 2016.
-The cmdlets listed here are different than the MSOL cmdlets which are part of Azure Active Directory Version 1.0.
-
-Currently the release of the Azure AD PowerShell Version 2 module is in public preview.
-It is not recommended to use this version for production scenarios.
+The Azure AD PowerShell Version 2 module has two versions: a Public preview version and a General Availability version. It is not recommended to use the Public Preview version for production scenarios.
 
 
 ## Install the Azure AD Module
 
 The Azure AD Module is supported on the following Windows operating systems with the default version of Microsoft .NET Framework and Windows PowerShell: Windows 8.1, Windows 8, Windows 7, Windows Server 2012 R2, Windows Server 2012, or Windows Server 2008 R2.
+
 The Azure AD PowerShell Version 2 preview module can be downloaded from the PowerShell Gallery at the [AzureADPreview](https://www.powershellgallery.com/packages/AzureADPreview) page.
+
+The Azure AD PowerShell Version 2 General Availability module can be downloaded from the PowerShell Gallery at the [AzureAD](https://www.powershellgallery.com/packages/AzureAD) page. 
+
 For instructions on how to install the module, see [The PowerShell Gallery](https://msdn.microsoft.com/powershell/gallery/readme).
 Please ensure that you have followed these steps before installing the module on your computer.
 You can also access previous versions of the Azure AD module from the Microsoft Azure Active Directory PowerShell Module Version Release History on the TechNet Wiki.
@@ -24,7 +23,7 @@ You can also access previous versions of the Azure AD module from the Microsoft 
 You can check the version of the module you have installed on your computer by running this command:
 
 ```PowerShell
-PS C:\WINDOWS\system32> Get-Module AzureADdPreview
+PS C:\WINDOWS\system32> Get-Module AzureADPreview
 
 ModuleType Version Name                ExportedCommands
 ---------- ------- ----                ----------------
@@ -46,7 +45,7 @@ To do so, run the cmdlet **Connect-AzureAD** at the Windows PowerShell command p
 
 ```PowerShell
 $AzureAdCred = Get-Credential
-Connect-AzureADService -Credential $AzureAdCred
+Connect-AzureAD -Credential $AzureAdCred
 ```
 
 The first command prompts for credentials and stores them as $AzureAdCred.
@@ -55,11 +54,11 @@ The next command uses those credentials as $azureadcred to connect to the servic
 To connect to a specific environment of Azure Active Directory, use the _AzureEnvironment_ parameter, as follows:
 
 ```PowerShell
-Connect-AzureADService -AzureEnvironment "AzureGermanyCloud"
+Connect-AzureAD -AzureEnvironment "AzureGermanyCloud"
 ```
 
 This example connects your PowerShell session to the German AzureAD environment.
-See **Connect-AzureADService** for more information.
+See **Connect-AzureAD** for more information.
 
 
 ## More about Windows PowerShell

@@ -1,5 +1,6 @@
 ---
-external help file: azuread.help.xml
+external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+ms.assetid: E5E17FE9-67C1-463F-BC06-B3B6883D99AE
 online version: 
 schema: 2.0.0
 ---
@@ -7,44 +8,47 @@ schema: 2.0.0
 # Get-AzureADDevice
 
 ## SYNOPSIS
-Retrieves a specific device from Azure Active Directory
+Gets a device from Active Directory.
 
 ## SYNTAX
 
-### UNNAMED_PARAMETER_SET_1
+### GetQuery (Default)
 ```
-Get-AzureADDevice [-Top <Nullable`1[Int32]>] [-Filter <String>]
-```
-
-### UNNAMED_PARAMETER_SET_2
-```
-Get-AzureADDevice [-SearchString <String>]
+Get-AzureADDevice [-Top <Int32>] [-Filter <String>] [-InformationAction <ActionPreference>]
+ [-InformationVariable <String>] [<CommonParameters>]
 ```
 
-### UNNAMED_PARAMETER_SET_3
+### GetVague
 ```
-Get-AzureADDevice -ObjectId <String>
+Get-AzureADDevice [-SearchString <String>] [-InformationAction <ActionPreference>]
+ [-InformationVariable <String>] [<CommonParameters>]
+```
+
+### GetById
+```
+Get-AzureADDevice -ObjectId <String> [-InformationAction <ActionPreference>] [-InformationVariable <String>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
+The **Get-AzureADDevice** cmdlet gets a device from Azure Active Directory (AD).
 
 ## EXAMPLES
 
-### Retrieve a device based on ObjectId
+### Example 1: Get a device by ID
 ```
-$DeviceId = (Get-AzureADDevice -Top 1).ObjectId
-Get-AzureADDevice -ObjectId $DeviceId
+PS C:\>Get-AzureADDevice -ObjectId "3cb87a8f-0a41-4ca8-8910-e56cc00114a3"
 
 ObjectId                             DeviceId                             DisplayName
 --------                             --------                             -----------
 3cb87a8f-0a41-4ca8-8910-e56cc00114a3 48445467-033c-42ca-8e38-8d181db1d49c bastias_WindowsPhone_5/1/2016_12:53 PM
 ```
 
-### Retrieve all devices from your directory
-```
-Get-AzureADDevice
+This command gets the specified device.
 
-Output:
+### Example 2: Get all devices
+```
+PS C:\>Get-AzureADDevice
 
 ObjectId                             DeviceId                             DisplayName
 --------                             --------                             -----------
@@ -53,79 +57,110 @@ ObjectId                             DeviceId                             Displa
 d4fe7726-5966-431c-b3b8-cddc8fdb717d 293872f6-c006-4e6a-8629-07847c5ab078 New Device
 ```
 
-### Retrieve a device from the directory, filter on DeviceId
-```
-Get-AzureADDevice -Filter "deviceId eq guid'85e05cd0-bbc8-4765-bee6-1ebcb667ccef'"
-```
+This command gets all available devices.
 
 ## PARAMETERS
 
-### -Top
-The maximum number of records to return.
-If no value is provided, 100 records are returned
-
-```yaml
-Type: Nullable`1[Int32]
-Parameter Sets: UNNAMED_PARAMETER_SET_1
-Aliases: 
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue, ByPropertyName)
-Accept wildcard characters: False
-```
-
 ### -Filter
-The filter parameter can be used to filter returned objects of a cmdlet using an Odata filter statement.
-An example would be 
-
-Get-AzureADDevice -Filter "DisplayName eq 'TestName'"
-
-which would only return device objects for which the DisplayName equals "TestName".
+Specifies the oData v3.0 filter statement. This parameter controls which objects are returned.
 
 ```yaml
 Type: String
-Parameter Sets: UNNAMED_PARAMETER_SET_1
+Parameter Sets: GetQuery
 Aliases: 
 
 Required: False
 Position: Named
 Default value: None
-Accept pipeline input: True (ByValue, ByPropertyName)
+Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
-### -SearchString
-The SearchString parameter allows you to search for specific objects.
-This includes the DisplayName and Description attribute as well as addtional string attributes for an object
+### -InformationAction
+Specifies how this cmdlet responds to an information event.
+
+The acceptable values for this parameter are:
+
+- Continue
+- Ignore
+- Inquire
+- SilentlyContinue
+- Stop
+- Suspend
 
 ```yaml
-Type: String
-Parameter Sets: UNNAMED_PARAMETER_SET_2
-Aliases: 
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: infa
 
 Required: False
 Position: Named
 Default value: None
-Accept pipeline input: True (ByValue, ByPropertyName)
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -InformationVariable
+Specifies an information variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: iv
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
 ### -ObjectId
-The unique identifier of a device in Azure Active Directory (ObjectId)
+Specifies the ID of a device in Azure AD.
 
 ```yaml
 Type: String
-Parameter Sets: UNNAMED_PARAMETER_SET_3
+Parameter Sets: GetById
 Aliases: 
 
 Required: True
 Position: Named
 Default value: None
-Accept pipeline input: True (ByValue, ByPropertyName)
+Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
+
+### -SearchString
+Specifies a search string.
+```yaml
+Type: String
+Parameter Sets: GetVague
+Aliases: 
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName, ByValue)
+Accept wildcard characters: False
+```
+
+### -Top
+Specifies the maximum number of records to return.
+
+```yaml
+Type: Int32
+Parameter Sets: GetQuery
+Aliases: 
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName, ByValue)
+Accept wildcard characters: False
+```
+
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -134,4 +169,9 @@ Accept wildcard characters: False
 ## NOTES
 
 ## RELATED LINKS
+
+[New-AzureADDevice](./New-AzureADDevice.md)
+[Remove-AzureADDevice](./Remove-AzureADDevice.md)
+[Set-AzureADDevice](./Set-AzureADDevice.md)
+
 

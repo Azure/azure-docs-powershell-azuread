@@ -1,5 +1,6 @@
 ---
-external help file: azuread.help.xml
+external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+ms.assetid: 52681E27-7FE6-43CE-B2BF-8516C21E04CB
 online version: 
 schema: 2.0.0
 ---
@@ -7,124 +8,147 @@ schema: 2.0.0
 # Get-AzureADUser
 
 ## SYNOPSIS
-Retrieves a specific user from Azure Active Directory
+Gets a user.
 
 ## SYNTAX
 
-### UNNAMED_PARAMETER_SET_1
+### GetQuery (Default)
 ```
-Get-AzureADUser [-Top <Nullable`1[Int32]>] [-Filter <String>]
-```
-
-### UNNAMED_PARAMETER_SET_2
-```
-Get-AzureADUser [-SearchString <String>]
+Get-AzureADUser [-Top <Int32>] [-Filter <String>] [-InformationAction <ActionPreference>]
+ [-InformationVariable <String>] [<CommonParameters>]
 ```
 
-### UNNAMED_PARAMETER_SET_3
+### GetVague
 ```
-Get-AzureADUser -ObjectId <String>
+Get-AzureADUser [-SearchString <String>] [-InformationAction <ActionPreference>]
+ [-InformationVariable <String>] [<CommonParameters>]
+```
+
+### GetById
+```
+Get-AzureADUser -ObjectId <String> [-InformationAction <ActionPreference>] [-InformationVariable <String>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
+The **Get-AzureADUser** cmdlet gets a user from Azure Active Directory (AD).
 
 ## EXAMPLES
 
-### Get 10 users from your directory
+### Example 1: Get ten users
 ```
-Get-AzureADUser -Top 10
-```
-
-Return users from tenant that meets the requirement.
-
-### Retrieve a specific user from the directory, search by Object Id
-```
-$UserId = (Get-AzureADUser -Top 1).ObjectId
-Get-AzureADUser -ObjectId $UserId
+PS C:\>Get-AzureADUser -Top 10
 ```
 
-Return the specific user using user's Object Id.
+This command gets ten users.
 
-### Retrieve users from the directory, search with a search string
+### Example 2: Get a user by ID
 ```
-Get-AzureADUser -SearchString "New"
-
-ObjectId                             DisplayName UserPrincipalName                   UserType
---------                             ----------- -----------------                   --------
-5e8b0f4d-2cd4-4e17-9467-b0f6a5c0c4d0 New user    NewUser@drumkit.onmicrosoft.com     Member
-2b450b8e-1db6-42cb-a545-1b05eb8a358b New user    NewTestUser@drumkit.onmicrosoft.com Member
+PS C:\>Get-AzureADUser -ObjectId "testUpn@tenant.com"
 ```
 
-This cmdlet will return all users where the text provided in the -SearchString parameter appear the first characters in the DisplayName or userPrincipalName
+This command gets the specified user.
 
 ## PARAMETERS
 
-### -Top
-The maximum number of records to return.
-If no value is provided, 100 records are returned
-
-```yaml
-Type: Nullable`1[Int32]
-Parameter Sets: UNNAMED_PARAMETER_SET_1
-Aliases: 
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue, ByPropertyName)
-Accept wildcard characters: False
-```
-
 ### -Filter
-The filter parameter can be used to filter returned objects of a cmdlet using an Odata filter statement.
-An example would be 
-
-Get-AzureADUser -Filter "DisplayName eq 'TestName'"
-
-which would only return user objects for which the DisplayName equals "TestName".
+Specifies an oData v3.0 filter statement. This parameter controls which objects are returned.
 
 ```yaml
 Type: String
-Parameter Sets: UNNAMED_PARAMETER_SET_1
+Parameter Sets: GetQuery
 Aliases: 
 
 Required: False
 Position: Named
 Default value: None
-Accept pipeline input: True (ByValue, ByPropertyName)
+Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
-### -SearchString
-The SearchString parameter allows you to search for specific objects.
-This includes the DisplayName and Description attribute as well as addtional string attributes for an object
+### -InformationAction
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
+
+- Continue
+- Ignore
+- Inquire
+- SilentlyContinue
+- Stop
+- Suspend
 
 ```yaml
-Type: String
-Parameter Sets: UNNAMED_PARAMETER_SET_2
-Aliases: 
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: infa
 
 Required: False
 Position: Named
 Default value: None
-Accept pipeline input: True (ByValue, ByPropertyName)
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -InformationVariable
+Specifies an information variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: iv
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
 ### -ObjectId
-The unique identifier of a user in Azure Active Directory (UPN or ObjectId)
+Specifies the ID (as a UPN or ObjectId) of a user in Azure AD. 
 
 ```yaml
 Type: String
-Parameter Sets: UNNAMED_PARAMETER_SET_3
+Parameter Sets: GetById
 Aliases: 
 
 Required: True
 Position: Named
 Default value: None
-Accept pipeline input: True (ByValue, ByPropertyName)
+Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
+
+### -SearchString
+Specifies a search string.
+```yaml
+Type: String
+Parameter Sets: GetVague
+Aliases: 
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName, ByValue)
+Accept wildcard characters: False
+```
+
+### -Top
+Specifies the maximum number of records to return.
+
+```yaml
+Type: Int32
+Parameter Sets: GetQuery
+Aliases: 
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName, ByValue)
+Accept wildcard characters: False
+```
+
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -133,4 +157,11 @@ Accept wildcard characters: False
 ## NOTES
 
 ## RELATED LINKS
+
+[New-AzureADUser](./New-AzureADUser.md)
+
+[Remove-AzureADUser](./Remove-AzureADUser.md)
+
+[Set-AzureADUser](./Set-AzureADUser.md)
+
 
