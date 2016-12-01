@@ -1,30 +1,31 @@
 ---
-external help file: azuread.help.xml
-online version: http://www.cloudidentity.com/blog/2013/09/12/active-directory-authentication-library-adal-v1-for-net-general-availability/
+external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+ms.assetid: A81910CC-FC86-414D-B79D-B09892732DC1
+online version: 
 schema: 2.0.0
 ---
 
 # New-AzureADGroup
 
 ## SYNOPSIS
-Create a new group in Azure Active Directory
+Creates a group.
 
 ## SYNTAX
 
 ```
-New-AzureADGroup [-Description <String>] -DisplayName <String> -MailEnabled <Nullable`1[Boolean]>
- -MailNickName <String> -SecurityEnabled <Nullable`1[Boolean]>
+New-AzureADGroup [-InformationAction <ActionPreference>] [-InformationVariable <String>]
+ [-Description <String>] -DisplayName <String> -MailEnabled <Boolean> -MailNickName <String>
+ -SecurityEnabled <Boolean> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
+The **New-AzureADGroup** cmdlet creates a group in Azure Active Directory (AD).
 
 ## EXAMPLES
 
-### Create a new group
+### Example 1: Create a group
 ```
-New-AzureADGroup -DisplayName "My new group" -MailEnabled $false -SecurityEnabled $true -MailNickName "NotSet"
-
-Output:
+PS C:\>New-AzureADGroup -DisplayName "My new group" -MailEnabled $false -SecurityEnabled $true -MailNickName "NotSet"
 
 ObjectId                             DisplayName  Description
 --------                             -----------  -----------
@@ -34,7 +35,7 @@ ObjectId                             DisplayName  Description
 ## PARAMETERS
 
 ### -Description
-An optional description for the group.
+Specifies a description of the group.
 
 ```yaml
 Type: String
@@ -49,8 +50,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-The display name for the group.
-This property is required when a group is created and it cannot be cleared during updates.
+Specifies the display name of the group.
 
 ```yaml
 Type: String
@@ -64,14 +64,50 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -MailEnabled
-Specifies whether the group is mail-enabled.
-If the securityEnabled property is also true, the group is a mail-enabled security group; otherwise, the group is a Microsoft Exchange distribution group.
-Only (pure) security groups can be created using Azure AD PowerShell.
-For this reason, the property must be set false when creating a group and it cannot be updated using Azure AD PowerShell.
+### -InformationAction
+Specifies how this cmdlet responds to an information event.
+
+The acceptable values for this parameter are:
+
+- Continue
+- Ignore
+- Inquire
+- SilentlyContinue
+- Stop
+- Suspend
 
 ```yaml
-Type: Nullable`1[Boolean]
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: infa
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -InformationVariable
+Specifies an information variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: iv
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -MailEnabled
+Indicates whether mail is enabled.
+
+```yaml
+Type: Boolean
 Parameter Sets: (All)
 Aliases: 
 
@@ -83,8 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -MailNickName
-The mail alias for the group.
-This property must be specified when a group is created
+Specifies a nickname for mail.
 
 ```yaml
 Type: String
@@ -99,13 +134,10 @@ Accept wildcard characters: False
 ```
 
 ### -SecurityEnabled
-Specifies whether the group is a security group.
-If the mailEnabled property is also true, the group is a mail-enabled security group; otherwise it is a security group.
-Only (pure) security groups can be created using Azure AD PowerShell.
-For this reason, the property must be set true when creating a group
+Indicates whether the group is security-enabled.
 
 ```yaml
-Type: Nullable`1[Boolean]
+Type: Boolean
 Parameter Sets: (All)
 Aliases: 
 
@@ -116,6 +148,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+
 ## INPUTS
 
 ## OUTPUTS
@@ -123,4 +158,11 @@ Accept wildcard characters: False
 ## NOTES
 
 ## RELATED LINKS
+
+[Get-AzureADGroup](./Get-AzureADGroup.md)
+
+[Remove-AzureADGroup](./Remove-AzureADGroup.md)
+
+[Set-AzureADGroup](./Set-AzureADGroup.md)
+
 

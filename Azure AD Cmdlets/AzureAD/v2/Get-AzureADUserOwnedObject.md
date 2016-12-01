@@ -1,5 +1,6 @@
 ---
-external help file: azuread.help.xml
+external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+ms.assetid: 36DA56DE-7C38-4C67-844A-1407533A7DA3
 online version: 
 schema: 2.0.0
 ---
@@ -7,23 +8,23 @@ schema: 2.0.0
 # Get-AzureADUserOwnedObject
 
 ## SYNOPSIS
-Get objects owned by the user.
+Get objects owned by a user.
 
 ## SYNTAX
 
 ```
-Get-AzureADUserOwnedObject -ObjectId <String> [-Top <Nullable`1[Int32]>]
+Get-AzureADUserOwnedObject -ObjectId <String> [-Top <Int32>] [-InformationAction <ActionPreference>]
+ [-InformationVariable <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
+The **Get-AzureADUserOwnedObject** cmdlet gets objects owned by a user in Azure Active Directory (AD).
 
 ## EXAMPLES
 
-### Retrieve the objects that are owned by a given user
+### Example 1: Get objects owned by a user
 ```
-$UserId = (Get-AzureADUser -Top 1).ObjectId
-Get-AzureADUserOwnedObject -ObjectId $UserId
-Output:
+PS C:\>Get-AzureADUserOwnedObject -ObjectId "df19e8e6-2ad7-453e-87f5-037f6529ae16"
 
 ObjectId                             ObjectType
 --------                             ----------
@@ -37,10 +38,49 @@ ObjectId                             ObjectType
 a0dada57-89ef-4db8-9e5f-46cca3bf2398 Group
 ```
 
+This command gets objects owned by the specified user.
+
 ## PARAMETERS
 
+### -InformationAction
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
+
+- Continue
+- Ignore
+- Inquire
+- SilentlyContinue
+- Stop
+- Suspend
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: infa
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -InformationVariable
+Specifies an information variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: iv
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ObjectId
-The unique identifier of a user in Azure Active Directory (UPN or ObjectId)
+Specifies the ID of a user (as a UPN or ObjectId) in Azure AD. 
 
 ```yaml
 Type: String
@@ -50,25 +90,27 @@ Aliases:
 Required: True
 Position: Named
 Default value: None
-Accept pipeline input: True (ByValue, ByPropertyName)
+Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
 ### -Top
-The maximum number of records to return.
-If no value is provided, 100 records are returned
+Specifies the maximum number of records to return.
 
 ```yaml
-Type: Nullable`1[Int32]
+Type: Int32
 Parameter Sets: (All)
 Aliases: 
 
 Required: False
 Position: Named
 Default value: None
-Accept pipeline input: True (ByValue, ByPropertyName)
+Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
+
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

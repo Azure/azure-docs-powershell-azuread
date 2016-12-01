@@ -1,6 +1,6 @@
 ---
-external help file: azuread.help.xml
-online version: https://blogs.technet.microsoft.com/enterprisemobility/2016/07/18/azuread-certificate-based-authentication-for-ios-and-android-now-in-preview/
+external help file: AzureAD.Help.xml
+online version: https://go.microsoft.com/fwLink/?LinkID=519265&clcid=0x409
 schema: 2.0.0
 ---
 
@@ -173,9 +173,6 @@ System.Nullable\`1\[\[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, 
 ### System.Object
 
 ## NOTES
-Please note that this cmdlet is currently in Public Preview.
-While a cmdlet is in Public Preview we may still need to make changes to the cmdlet which could potentially cause unexpected effects.
-We discourage customers from using this cmdlet in a production environment.
 
 ## RELATED LINKS
 
