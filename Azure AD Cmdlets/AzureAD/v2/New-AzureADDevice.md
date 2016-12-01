@@ -1,47 +1,50 @@
 ---
-external help file: azuread.help.xml
-online version: http://www.cloudidentity.com/blog/2013/09/12/active-directory-authentication-library-adal-v1-for-net-general-availability/
+external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+ms.assetid: 0DF2C468-53D8-4BC5-AFC8-7E8EDF38C347
+online version: 
 schema: 2.0.0
 ---
 
 # New-AzureADDevice
 
 ## SYNOPSIS
-Create a new device in Azure Active Directory
+Creates a device.
 
 ## SYNTAX
 
 ```
-New-AzureADDevice -AccountEnabled <Nullable`1[Boolean]> -AlternativeSecurityIds <List`1[AlternativeSecurityId]>
- [-ApproximateLastLogonTimeStamp <Nullable`1[DateTime]>] -DeviceId <String>
- [-DeviceObjectVersion <Nullable`1[Int32]>] -DeviceOSType <String> -DeviceOSVersion <String>
- [-DevicePhysicalIds <List`1[String]>] -DisplayName <String> [-IsCompliant <Nullable`1[Boolean]>]
- [-IsManaged <Nullable`1[Boolean]>]
+New-AzureADDevice [-InformationAction <ActionPreference>] [-InformationVariable <String>]
+ -AccountEnabled <Boolean>
+ -AlternativeSecurityIds <System.Collections.Generic.List`1[Microsoft.Open.AzureAD.Model.AlternativeSecurityId]>
+ [-ApproximateLastLogonTimeStamp <DateTime>] -DeviceId <String> [-DeviceObjectVersion <Int32>]
+ -DeviceOSType <String> -DeviceOSVersion <String>
+ [-DevicePhysicalIds <System.Collections.Generic.List`1[System.String]>] -DisplayName <String>
+ [-IsCompliant <Boolean>] [-IsManaged <Boolean>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
+The **New-AzureADDevice** cmdlet creates a device in Azure Active Directory (AD).
 
 ## EXAMPLES
 
-### Create a new device object
+### Example 1: Create a device
 ```
-New-AzureADDevice -AccountEnabled $true -DisplayName "My new device" -AlternativeSecurityIds $altsecid -DeviceId $guid -DeviceOSType "OS/2" -DeviceOSVersion "9.3"
+PS C:\>New-AzureADDevice -AccountEnabled $true -DisplayName "My new device" -AlternativeSecurityIds $altsecid -DeviceId $guid -DeviceOSType "OS/2" -DeviceOSVersion "9.3"
 
-Output:
-
-
-ObjectId                             DeviceId                             DisplayName 
---------                             --------                             ----------- 
+ObjectId                             DeviceId                             DisplayName
+--------                             --------                             -----------
 99a1915d-298f-42d1-93ae-71646b85e2fa 5547679b-809d-4e2c-9820-3c4401a573a8 My new device
 ```
+
+This command creates a new device.
 
 ## PARAMETERS
 
 ### -AccountEnabled
-@{Text=}
+Indicates whether the account is enabled.
 
 ```yaml
-Type: Nullable`1[Boolean]
+Type: Boolean
 Parameter Sets: (All)
 Aliases: 
 
@@ -53,10 +56,8 @@ Accept wildcard characters: False
 ```
 
 ### -AlternativeSecurityIds
-Contains a collection of alternative security ID's associated with a device.
-
 ```yaml
-Type: List`1[AlternativeSecurityId]
+Type: System.Collections.Generic.List`1[Microsoft.Open.AzureAD.Model.AlternativeSecurityId]
 Parameter Sets: (All)
 Aliases: 
 
@@ -68,10 +69,8 @@ Accept wildcard characters: False
 ```
 
 ### -ApproximateLastLogonTimeStamp
-@{Text=}
-
 ```yaml
-Type: Nullable`1[DateTime]
+Type: DateTime
 Parameter Sets: (All)
 Aliases: 
 
@@ -83,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeviceId
-@{Text=}
+Specifies the ID of the device.
 
 ```yaml
 Type: String
@@ -98,10 +97,10 @@ Accept wildcard characters: False
 ```
 
 ### -DeviceObjectVersion
-@{Text=}
+Specifies the object version of the device.
 
 ```yaml
-Type: Nullable`1[Int32]
+Type: Int32
 Parameter Sets: (All)
 Aliases: 
 
@@ -113,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeviceOSType
-The Operating System type of the new device
+Specifies the operating system type of the new device.
 
 ```yaml
 Type: String
@@ -128,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeviceOSVersion
-The version of the operating system on the device
+Specifies the operating system version of the new device.
 
 ```yaml
 Type: String
@@ -143,10 +142,8 @@ Accept wildcard characters: False
 ```
 
 ### -DevicePhysicalIds
-@{Text=}
-
 ```yaml
-Type: List`1[String]
+Type: System.Collections.Generic.List`1[System.String]
 Parameter Sets: (All)
 Aliases: 
 
@@ -158,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-The display name of the new device
+Specifies the display name of the new device.
 
 ```yaml
 Type: String
@@ -172,11 +169,46 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -IsCompliant
-true if the device complies with Mobile Device Management (MDM) policies; otherwise, false.
+### -InformationAction
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
+
+- Continue
+- Ignore
+- Inquire
+- SilentlyContinue
+- Stop
+- Suspend
 
 ```yaml
-Type: Nullable`1[Boolean]
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: infa
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -InformationVariable
+Specifies an information variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: iv
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -IsCompliant
+```yaml
+Type: Boolean
 Parameter Sets: (All)
 Aliases: 
 
@@ -188,10 +220,8 @@ Accept wildcard characters: False
 ```
 
 ### -IsManaged
-true if the device is managed by a Mobile Device Management (MDM) app such as Intune; otherwise, false.
-
 ```yaml
-Type: Nullable`1[Boolean]
+Type: Boolean
 Parameter Sets: (All)
 Aliases: 
 
@@ -202,6 +232,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+
 ## INPUTS
 
 ## OUTPUTS
@@ -209,4 +242,11 @@ Accept wildcard characters: False
 ## NOTES
 
 ## RELATED LINKS
+
+[Get-AzureADDevice](./Get-AzureADDevice.md)
+
+[Remove-AzureADDevice](./Remove-AzureADDevice.md)
+
+[Set-AzureADDevice](./Set-AzureADDevice.md)
+
 
