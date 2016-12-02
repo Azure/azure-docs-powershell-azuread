@@ -106,3 +106,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 [Set-AzureADTrustedCertificateAuthority](./Set-AzureADTrustedCertificateAuthority.md)
 
+[Online help and examples for working with certificate authority](https://azure.microsoft.com/en-us/documentation/articles/active-directory-certificate-based-authentication-ios/) 
