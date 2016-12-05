@@ -21,6 +21,16 @@ The **Get-AzureADDeviceRegisteredOwner** cmdlet gets the registered owner of a d
 
 ## EXAMPLES
 
+### Example 1: Retrieve the registered owner of a device
+```
+PS C:\> $DevId = (Get-AzureADDevice -Top 1).ObjectId
+PS C:\> Get-AzureADDeviceRegisteredOwner -ObjectId $DevId
+```
+
+The first command gets the object ID of a device by using the [Get-AzureADDevice](./Get-AzureADDevice.md) cmdlet, and then stores it in the $DevId variable.  
+
+The second command gets the registered owner of the device in $DevId.
+
 ## PARAMETERS
 
 ### -ObjectId
@@ -62,5 +72,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [Add-AzureADDeviceRegisteredOwner](./Add-AzureADDeviceRegisteredOwner.md)
-[Remove-AzureADDeviceRegisteredOwner](./Remove-AzureADDeviceRegisteredOwner.md)
 
+[Get-AzureADDevice](./Get-AzureADDevice.md)
+
+[Remove-AzureADDeviceRegisteredOwner](./Remove-AzureADDeviceRegisteredOwner.md)

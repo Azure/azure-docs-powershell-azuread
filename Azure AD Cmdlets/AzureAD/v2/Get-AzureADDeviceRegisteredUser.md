@@ -21,6 +21,16 @@ The **Get-AzureADDeviceRegisteredUser** cmdlet gets a registered user for an Azu
 
 ## EXAMPLES
 
+### Example 1: Retrieve the registered users of a device
+```
+PS C:\> $DevId = (Get-AzureADDevice -Top 1).ObjectId
+PS C:\> Get-AzureADDeviceRegisteredUser -ObjectId $DevId
+```
+
+The first command gets the object ID of a device by using the [Get-AzureADDevice](./Get-AzureADDevice.md) cmdlet, and then stores it in the $DevId variable.  
+
+The second command gets the registered users of the device in $DevId.
+
 ## PARAMETERS
 
 ### -ObjectId

@@ -22,6 +22,18 @@ The **Get-AzureADUserOAuth2PermissionGrant** cmdlet gets an **oAuth2PermissionGr
 
 ## EXAMPLES
 
+### Example 1: Retrieve the OAuth2 permission grants for a user
+```
+PS C:\> $UserId = (Get-AzureADUser -Top 1).ObjectId
+PS C:\> Get-AzureADUserOAuth2PermissionGrant -ObjectId $UserId
+```
+
+The first command gets the ID of an Azure AD user by using the [Get-AzureADUser](./Get-AzureADUser.md) cmdlet. 
+The command stores the value in the $UserId variable.
+
+The second command gets the OAuth2 permission grants for the user identified by $UserId.
+ 
+
 ## PARAMETERS
 
 ### -InformationAction
@@ -102,3 +114,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
+[Get-AzureADUser](./Get-AzureADUser.md) 

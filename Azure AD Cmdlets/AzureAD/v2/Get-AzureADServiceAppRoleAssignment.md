@@ -22,6 +22,17 @@ The **Get-AzureADServiceAppRoleAssignment** cmdlet gets a role assignment for a 
 
 ## EXAMPLES
 
+### Example 1: Retrieve the application role assignments for a service principal
+```
+PS C:\> $ServicePrincipalId = (Get-AzureADServicePrincipal -Top 1).ObjectId
+PS C:\> Get-AzureADServiceAppRoleAssignment -ObjectId $ServicePrincipalId
+```
+
+The first command gets the ID of a service principal by using the [Get-AzureADServicePrincipal](./Get-AzureADServicePrincipal.md) cmdlet. 
+The command stores the ID in the $ServicePrincipalId variable.
+
+The second command gets the application role assignments for the service principal in identified by $ServicePrincipalId. 
+
 ## PARAMETERS
 
 ### -InformationAction
@@ -101,8 +112,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-AzureADServicePrincipal](./Get-AzureADServicePrincipal.md)
 
 [New-AzureADServiceAppRoleAssignment](./New-AzureADServiceAppRoleAssignment.md)
 
 [Remove-AzureADServiceAppRoleAssignment](./Remove-AzureADServiceAppRoleAssignment.md)
-

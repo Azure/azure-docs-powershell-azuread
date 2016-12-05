@@ -22,6 +22,33 @@ The **Set-AzureADUserLicense** adds or removes licenses for a Microsoft online s
 
 ## EXAMPLES
 
+### Example 1: Add a license to a user based on a template user
+```
+
+PS C:\> $LicensedUser = Get-AzureADUser -ObjectId "TemplateUser@contoso.com"  
+PS C:\> $User = Get-AzureADUser -ObjectId "User@contoso.com"  
+PS C:\> $License = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicense 
+PS C:\> $License.SkuId = $LicensedUser.AssignedLicenses.SkuId 
+PS C:\> $Licenses = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicenses 
+PS C:\> $Licenses.AddLicenses = $License 
+PS C:\> Set-AzureADUserLicense -ObjectId $User.ObjectId -AssignedLicenses $Licenses
+```
+
+The first command gets a user by using the [Get-AzureADUser](./Get-AzureADUser.md) cmdlet, and then stores it in the $LicensedUser variable.
+
+The second command gets another user by using **Get-AzureADUser**, and then stores it in the $User variable.
+
+The third command creates an **AssignedLicense** type, and then stores it in the $License variable.
+
+The fourth command set the **SkuId** property of $License to the same value as the **SkuId** property of $LicensedUser.
+
+The fifth commmand creates an **AssignedLicenses** object, and stores it in the $Licenses variable.
+
+The sixth command adds the license in $License to $Licenses.
+
+The final command assigns the licenses in $Licenses to the user in $User.
+The licenses in $Licenses includes $License from the third and fourth commands.
+
 ## PARAMETERS
 
 ### -AssignedLicenses
@@ -102,3 +129,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
+[Get-AzureADUser](./Get-AzureADUser.md) 

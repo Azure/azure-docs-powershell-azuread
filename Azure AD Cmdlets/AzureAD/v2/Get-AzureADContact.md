@@ -29,6 +29,17 @@ The **Get-AzureADContact** cmdlet gets a contact from Azure Active Directory.
 
 ## EXAMPLES
 
+### Example 1 Retrieve all contact objects in the directory
+```
+PS C:\> Get-AzureADContact
+
+ObjectId                             Mail                DisplayName
+--------                             ----                -----------
+b052db07-e7ec-4c0e-b481-a5ba550b9ee7 contact@contoso.com Contoso Contact
+```
+
+This command retrieves all contact objects in the directory.
+
 ## PARAMETERS
 
 ### -Filter

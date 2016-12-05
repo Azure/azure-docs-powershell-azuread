@@ -29,6 +29,13 @@ The **Get-AzureADContract** cmdlet gets a contract from Azure Active Directory.
 
 ## EXAMPLES
 
+### Example 1: Get all contracts in the directory
+```
+Get-AzureADContract
+```
+
+This command gets all contracts in the directory.
+
 ## PARAMETERS
 
 ### -Filter
@@ -125,4 +132,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-
