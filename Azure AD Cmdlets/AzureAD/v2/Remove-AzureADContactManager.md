@@ -1,34 +1,68 @@
 ---
-external help file: azuread.help.xml
-online version: https://blogs.technet.microsoft.com/enterprisemobility/2016/07/18/azuread-certificate-based-authentication-for-ios-and-android-now-in-preview/
+external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+ms.assetid: CB0C4658-FF1F-46D4-AD62-8C2FA7E72BCA
+online version: 
 schema: 2.0.0
 ---
 
 # Remove-AzureADContactManager
 
 ## SYNOPSIS
-Deletes the contact's manager in Azure Active Directory
+Removes a contact's manager.
 
 ## SYNTAX
 
 ```
-Remove-AzureADContactManager -ObjectId <String>
+Remove-AzureADContactManager -ObjectId <String> [-InformationAction <ActionPreference>]
+ [-InformationVariable <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
+The **Remove-AzureADContactManager** cmdlet removes a contact's manager in Azure Active Directory (AD).
 
 ## EXAMPLES
 
-### Removes the manager from a contact
-```
-$Contact = Get-AzureADContact -top 1
-Remove-AzureADContactManager -ObjectId $Contact.ObjectId
-```
-
 ## PARAMETERS
 
+### -InformationAction
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
+
+- Continue
+- Ignore
+- Inquire
+- SilentlyContinue
+- Stop
+- Suspend
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: infa
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -InformationVariable
+Specifies an information variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: iv
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ObjectId
-The unique identifier of a contact in Azure Active Directory (ObjectId)
+Specifies the object ID of a contact in Azure AD.
 
 ```yaml
 Type: String
@@ -38,9 +72,12 @@ Aliases:
 Required: True
 Position: Named
 Default value: None
-Accept pipeline input: True (ByValue, ByPropertyName)
+Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
+
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -50,3 +87,6 @@ Accept wildcard characters: False
 
 ## RELATED LINKS
 
+[Get-AzureADContactManager](./Get-AzureADContactManager.md)
+
+[Set-AzureADContactManager](./Set-AzureADContactManager.md)

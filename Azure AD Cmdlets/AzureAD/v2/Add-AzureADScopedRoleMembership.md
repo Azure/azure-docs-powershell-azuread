@@ -1,33 +1,31 @@
 ---
-external help file: azuread.help.xml
-online version: https://blogs.technet.microsoft.com/enterprisemobility/2016/07/18/azuread-certificate-based-authentication-for-ios-and-android-now-in-preview/
+external help file: Microsoft.Open.AzureADBeta.Graph.PowerShell.dll-Help.xml
+ms.assetid: B505822C-4BAA-4EC5-BB0A-128C093930C6
+online version: 
 schema: 2.0.0
 ---
 
 # Add-AzureADScopedRoleMembership
 
 ## SYNOPSIS
+Adds a scoped role membership to an administrative unit.
 
 ## SYNTAX
 
 ```
-Add-AzureADScopedRoleMembership [-AdministrativeUnitObjectId <String>] -ObjectId <String>
- [-RoleMemberInfo <RoleMemberInfo>] [-RoleObjectId <String>]
+Add-AzureADScopedRoleMembership -ObjectId <String> [-AdministrativeUnitObjectId <String>]
+ [-RoleObjectId <String>] [-RoleMemberInfo <RoleMemberInfo>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
+The **Add-AzureADScopedRoleMembership** cmdlet adds a scoped role membership to an administrative unit.
 
 ## EXAMPLES
-
-### Example 1
-```
-
-```
 
 ## PARAMETERS
 
 ### -AdministrativeUnitObjectId
-@{Text=}
+Specifies the ID of an admininstrative unit.
 
 ```yaml
 Type: String
@@ -42,8 +40,6 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-@{Text=}
-
 ```yaml
 Type: String
 Parameter Sets: (All)
@@ -57,8 +53,7 @@ Accept wildcard characters: False
 ```
 
 ### -RoleMemberInfo
-@{Text=}
-
+Specifies a **RoleMemberInfo** object. 
 ```yaml
 Type: RoleMemberInfo
 Parameter Sets: (All)
@@ -72,8 +67,6 @@ Accept wildcard characters: False
 ```
 
 ### -RoleObjectId
-@{Text=}
-
 ```yaml
 Type: String
 Parameter Sets: (All)
@@ -86,18 +79,18 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-## INPUTS
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
-### System.String
+## INPUTS
 
 ## OUTPUTS
 
-### System.Object
-
 ## NOTES
-Please note that this cmdlet is currently in Public Preview.
-While a cmdlet is in Public Preview we may still need to make changes to the cmdlet which could potentially cause unexpected effects.
-We discourage customers from using this cmdlet in a production environment.
 
 ## RELATED LINKS
+
+[Get-AzureADScopedRoleMembership](./Get-AzureADScopedRoleMembership.md)
+
+[Remove-AzureADScopedRoleMembership](./Remove-AzureADScopedRoleMembership.md)
 

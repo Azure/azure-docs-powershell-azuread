@@ -1,52 +1,36 @@
 ---
-external help file: azuread.help.xml
-online version: https://blogs.technet.microsoft.com/enterprisemobility/2016/07/18/azuread-certificate-based-authentication-for-ios-and-android-now-in-preview/
+external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+ms.assetid: F2E34C5B-EBB1-440B-B144-8CE176A9D7C9
+online version: 
 schema: 2.0.0
 ---
 
 # Set-AzureADContact
 
 ## SYNOPSIS
-Updates a specific contact in Azure Active Directory
+Updates a contact.
 
 ## SYNTAX
 
 ```
-Set-AzureADContact -ObjectId <String> [-City <String>] [-Country <String>] [-Department <String>]
- [-DisplayName <String>] [-FacsimilieTelephoneNumber <String>] [-GivenName <String>] [-JobTitle <String>]
- [-MailNickName <String>] [-Mobile <String>] [-PhysicalDeliveryOfficeName <String>] [-PostalCode <String>]
- [-ProvisioningErrors <List`1[ProvisioningError]>] [-State <String>] [-StreetAddress <String>]
- [-Surname <String>] [-TelephoneNumber <String>] [-ThumbnailPhoto <Byte[]>]
+Set-AzureADContact -ObjectId <String> [-InformationAction <ActionPreference>] [-InformationVariable <String>]
+ [-City <String>] [-Country <String>] [-Department <String>] [-DisplayName <String>]
+ [-FacsimilieTelephoneNumber <String>] [-GivenName <String>] [-JobTitle <String>] [-MailNickName <String>]
+ [-Mobile <String>] [-PhysicalDeliveryOfficeName <String>] [-PostalCode <String>]
+ [-ProvisioningErrors <System.Collections.Generic.List`1[Microsoft.Open.AzureAD.Model.ProvisioningError]>]
+ [-State <String>] [-StreetAddress <String>] [-Surname <String>] [-TelephoneNumber <String>]
+ [-ThumbnailPhoto <Byte[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
+The **Set-AzureADContact** cmdlet updates a contact in Azure Active Directory (AD).
 
 ## EXAMPLES
 
-### Example 1
-```
-
-```
-
 ## PARAMETERS
 
-### -ObjectId
-The unique identifier of a contact in Azure Active Directory (ObjectId)
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases: 
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue, ByPropertyName)
-Accept wildcard characters: False
-```
-
 ### -City
-@{Text=}
+Specifies the contact's city.
 
 ```yaml
 Type: String
@@ -61,7 +45,7 @@ Accept wildcard characters: False
 ```
 
 ### -Country
-@{Text=}
+Specifies the contact's country.
 
 ```yaml
 Type: String
@@ -76,7 +60,7 @@ Accept wildcard characters: False
 ```
 
 ### -Department
-@{Text=}
+Specifies the contact's department.
 
 ```yaml
 Type: String
@@ -91,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-@{Text=}
+Specifies the contact's display name.
 
 ```yaml
 Type: String
@@ -106,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -FacsimilieTelephoneNumber
-@{Text=}
+Specifies the contact's fax number.
 
 ```yaml
 Type: String
@@ -121,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -GivenName
-@{Text=}
+Specifies the contact's given name.
 
 ```yaml
 Type: String
@@ -135,8 +119,45 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -InformationAction
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
+
+- Continue
+- Ignore
+- Inquire
+- SilentlyContinue
+- Stop
+- Suspend
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: infa
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -InformationVariable
+Specifies an information variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: iv
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -JobTitle
-@{Text=}
+Specifies the contact's job title.
 
 ```yaml
 Type: String
@@ -151,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### -MailNickName
-@{Text=}
+Specifies the contact's mail nickname.
 
 ```yaml
 Type: String
@@ -166,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### -Mobile
-@{Text=}
+Specifies the contact's mobile phone number.
 
 ```yaml
 Type: String
@@ -180,8 +201,23 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ObjectId
+Specifies the object ID of a contact in Azure AD.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: 
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName, ByValue)
+Accept wildcard characters: False
+```
+
 ### -PhysicalDeliveryOfficeName
-@{Text=}
+Specifies the contact's physical delivery office name.
 
 ```yaml
 Type: String
@@ -196,7 +232,7 @@ Accept wildcard characters: False
 ```
 
 ### -PostalCode
-@{Text=}
+Specifies the contact's postal code.
 
 ```yaml
 Type: String
@@ -211,10 +247,8 @@ Accept wildcard characters: False
 ```
 
 ### -ProvisioningErrors
-@{Text=}
-
 ```yaml
-Type: List`1[ProvisioningError]
+Type: System.Collections.Generic.List`1[Microsoft.Open.AzureAD.Model.ProvisioningError]
 Parameter Sets: (All)
 Aliases: 
 
@@ -226,7 +260,7 @@ Accept wildcard characters: False
 ```
 
 ### -State
-@{Text=}
+Specifies the contact's state.
 
 ```yaml
 Type: String
@@ -241,7 +275,7 @@ Accept wildcard characters: False
 ```
 
 ### -StreetAddress
-@{Text=}
+Specifies the contact's street address.
 
 ```yaml
 Type: String
@@ -256,7 +290,7 @@ Accept wildcard characters: False
 ```
 
 ### -Surname
-@{Text=}
+Specifies the contact's surname.
 
 ```yaml
 Type: String
@@ -271,7 +305,7 @@ Accept wildcard characters: False
 ```
 
 ### -TelephoneNumber
-@{Text=}
+Specifies the contact's telephone number.
 
 ```yaml
 Type: String
@@ -286,7 +320,7 @@ Accept wildcard characters: False
 ```
 
 ### -ThumbnailPhoto
-@{Text=}
+Specifies the contact's thumbnail photo.
 
 ```yaml
 Type: Byte[]
@@ -300,6 +334,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+
 ## INPUTS
 
 ## OUTPUTS
@@ -308,3 +345,6 @@ Accept wildcard characters: False
 
 ## RELATED LINKS
 
+[Get-AzureADContact](./Get-AzureADContact.md)
+
+[Remove-AzureADContact](./Remove-AzureADContact.md)
