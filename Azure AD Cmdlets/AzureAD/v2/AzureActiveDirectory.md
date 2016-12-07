@@ -8,7 +8,9 @@ ms.assetid: 7D9D9507-ADE5-45BD-97F8-0CCCDA3D3B58
 ---
 # Azure Active Directory V2 PowerShell module
 ## Description
-These are the cmdlets in the Azure Active Directory V2 PowerShell module
+The Azure Active Directory version 2 PowerShell module can be downloaded from the PowerShell Gallery at the AzureAD page. For more detailed info on installation of the AzureAD cmdlets please see: [Azure Active Directory PowerShell version 2](https://github.com/Azure/azure-docs-powershell-azuread/blob/master/Azure%20AD%20Cmdlets/AzureAD/index.md).
+
+These are the cmdlets in the Azure Active Directory v2 PowerShell module.
 
 ## Azure Active Directory V2 PowerShell Cmdlets
 ### [Add-AzureADAdministrativeUnitMember](Add-AzureADAdministrativeUnitMember.md)
@@ -457,4 +459,3 @@ Sets the password of a user in Azure AD
 
 ### [Update-AzureADSignedInUserPassword](Update-AzureADSignedInUserPassword.md)
 Updates the password for the signed in user in Azure AD
-
