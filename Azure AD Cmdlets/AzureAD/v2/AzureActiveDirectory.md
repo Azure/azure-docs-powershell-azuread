@@ -8,7 +8,7 @@ ms.assetid: 7D9D9507-ADE5-45BD-97F8-0CCCDA3D3B58
 ---
 # Azure Active Directory V2 PowerShell module
 ## Description
-The Azure AD PowerShell Version 2 General Availability module can be downloaded from the PowerShell Gallery at the AzureAD page. For more detailed info on insatllation of the AzureAD cmdlets please see: [Azure Active Directory PowerShell Version 2](https://github.com/Azure/azure-docs-powershell-azuread/blob/master/Azure%20AD%20Cmdlets/AzureAD/index.md).
+The Azure Active Directory V2 PowerShell module can be downloaded from the PowerShell Gallery at the AzureAD page. For more detailed info on installation of the AzureAD cmdlets please see: [Azure Active Directory PowerShell Version 2](https://github.com/Azure/azure-docs-powershell-azuread/blob/master/Azure%20AD%20Cmdlets/AzureAD/index.md).
 
 These are the cmdlets in the Azure Active Directory V2 PowerShell module.
 
