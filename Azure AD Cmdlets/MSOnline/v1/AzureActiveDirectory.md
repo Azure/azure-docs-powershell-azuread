@@ -9,6 +9,9 @@ ms.assetid: BB86A603-6CD9-4299-89B8-30A2B4A011A0
 
 # AzureActiveDirectory Module
 ## Description
+There are two versions of the Azure Active Directory Module for Windows PowerShell available: a General Availability version and a Public Preview Version. The Public Preview version contains cmdlets that have not yet been released for General Availability.
+Select the version you want from the [Azure Active Directory Connection download page](http://connect.microsoft.com/site1164/Downloads/DownloadDetails.aspx?DownloadID=59185), download its .msi file, and click **Run** to run the installer package. For more detail info on installation of the AzureAD cmdlets please see: [Azure ActiveDirectory (MSOnline)](https://github.com/Azure/azure-docs-powershell-azuread/blob/master/Azure%20AD%20Cmdlets/MSOnline/index.md).
+
 This topic displays help topics for the Azure Active Directory MSOnline module.
 
 ## AzureActiveDirectory Cmdlets
@@ -349,7 +352,7 @@ Enables the multinational feature for a service type for a company with Azure Ac
 
 
 ### [Set-MsolCompanySecurityComplianceContactInformation](./Set-MsolCompanySecurityComplianceContactInformation.md)
-This cmdlet is not in use by any online service, so please consider it deprecated.  
+This cmdlet is not in use by any online service, so please consider it deprecated. 
 For more information about how to properly configure security contact details in Azure Security Center, see [Provide security contact details in Azure Security Center](https://aka.ms/azuresecuritycontact).
 
 Sets company-level security and compliance contact preferences.
