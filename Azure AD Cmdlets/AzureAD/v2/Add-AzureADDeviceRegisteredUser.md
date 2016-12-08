@@ -21,6 +21,21 @@ The **Add-AzureADDeviceRegisteredUser** cmdlet adds a registered user for an Azu
 
 ## EXAMPLES
 
+### Example 1: Add a user as a registered user
+```
+PS C:\> $User = Get-AzureADUser -Top 1
+PS C:\> $Device = Get-AzureADDevice -Top 1
+PS C:\> Add-AzureADDeviceRegisteredUser -ObjectId $Device.ObjectId -RefObjectId $User.ObjectId
+```
+
+The first command gets a user by using the [Get-AzureADUser](./Get-AzureADUser.md) cmdlet, and then stores it in the $User variable. 
+
+The second command gets a device by using the [Get-AzureADDevice](./Get-AzureADDevice.md) cmdlet, and then stores it in the $Device variable.
+
+The final command adds the user in $User as the registered user for the device in $Device. 
+Both parameters use the **ObjectId** property of specified object. 
+
+
 ## PARAMETERS
 
 ### -ObjectId
@@ -60,6 +75,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
+[Get-AzureADDevice](./Get-AzureADDevice.md)
+
 [Get-AzureADDeviceRegisteredUser](./Get-AzureADDeviceRegisteredUser.md)
+
+[Get-AzureADUser](./Get-AzureADUser.md)
 
 [Remove-AzureADDeviceRegisteredUser](./Remove-AzureADDeviceRegisteredUser.md)

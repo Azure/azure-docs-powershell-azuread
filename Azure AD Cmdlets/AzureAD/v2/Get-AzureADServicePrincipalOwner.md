@@ -22,6 +22,18 @@ The **Get-AzureADServicePrincipalOwner** cmdlet gets the owners of a service pri
 
 ## EXAMPLES
 
+### Example 1: Retrieve the owner of a service principal
+```
+PS C:\> $ServicePrincipalId = (Get-AzureADServicePrincipal -Top 1).ObjectId
+PS C:\> Get-AzureADServicePrincipalOwner -ObjectId $ServicePrincipalId
+```
+
+The first command gets the ID of a service principal by using the [Get-AzureADServicePrincipal](./Get-AzureADServicePrincipal.md) cmdlet. 
+The command stores the ID in the $ServicePrincipalId variable.
+
+The second command gets the owner of a service principal identified by $ServicePrincipalId.
+
+
 ## PARAMETERS
 
 ### -InformationAction
@@ -101,10 +113,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-
 [Add-AzureADServicePrincipalOwner](./Add-AzureADServicePrincipalOwner.md)
 
+[Get-AzureADServicePrincipal](./Get-AzureADServicePrincipal.md)
+
 [Remove-AzureADServicePrincipalOwner](./Remove-AzureADServicePrincipalOwner.md)
-
-
-

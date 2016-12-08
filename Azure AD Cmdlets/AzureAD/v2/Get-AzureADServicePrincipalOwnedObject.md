@@ -18,9 +18,20 @@ Get-AzureADServicePrincipalOwnedObject -ObjectId <String> [-Top <Int32>]
 ```
 
 ## DESCRIPTION
-The **Get-AzureADServicePrincipalOwnedObject** cmdlet gets an object that is owned by a service principal in Azure Active Directory (AD).
+The **Get-AzureADServicePrincipalOwnedObject** cmdlet gets an object that is owned by a service principal in Azure Active Directory (Azure AD).
 
 ## EXAMPLES
+
+### Example 1: Retrieve the owned objects of a service principal
+```
+PS C:\> $ServicePrincipalId = (Get-AzureADServicePrincipal -Top 1).ObjectId
+PS C:\> Get-AzureADServicePrincipalOwnedObject -ObjectId $ServicePrincipalId
+```
+
+The first command gets the ID of a service principal by using the [Get-AzureADServicePrincipal](./Get-AzureADServicePrincipal.md) cmdlet. 
+The command stores the ID in the $ServicePrincipalId variable.
+
+The second command gets the owned objects of a service principal identified by $ServicePrincipalId.
 
 ## PARAMETERS
 
@@ -101,4 +112,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-
+[Get-AzureADServicePrincipal](./Get-AzureADServicePrincipal.md)

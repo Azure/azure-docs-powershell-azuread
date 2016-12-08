@@ -22,7 +22,7 @@ The **Remove-AzureADApplicationExtensionProperty** cmdlet removes an application
 
 ## EXAMPLES
 
-### Example 1: Remove an extenion property
+### Example 1: Remove an extension property
 ```
 PS C:\> Remove-AzureADApplicationExtensionProperty -ObjectId "3ddd22e7-a150-4bb3-b100-e410dea1cb84" -ExtensionPropertyId "344ed560-f8e7-410e-ab9f-c79df5c36"
 ```

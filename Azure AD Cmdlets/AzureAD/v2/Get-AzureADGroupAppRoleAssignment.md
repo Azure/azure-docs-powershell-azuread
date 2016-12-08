@@ -22,6 +22,17 @@ The **Get-AzureADGroupAppRoleAssignment** cmdlet gets a group application role a
 
 ## EXAMPLES
 
+### Example 1: Retrieve application role assignments of a group
+```
+$GroupId = (Get-AzureADGroup -Top 1).ObjectId
+Get-AzureADGroupAppRoleAssignment -ObjectId $GroupId
+```
+
+The first command gets the object ID of a group by using the [Get-AzureADGroup](./Get-AzureADGroup.md) cmdlet.
+The command stores the ID in the $GroupId variable.
+
+The second command gets the application role assignments of the group in $GroupId.
+
 ## PARAMETERS
 
 ### -InformationAction
@@ -101,7 +112,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-AzureADGroup](./Get-AzureADGroup.md)
 
 [New-AzureADGroupAppRoleAssignment](./New-AzureADGroupAppRoleAssignment.md)
-[Remove-AzureADGroupAppRoleAssignment](./Remove-AzureADGroupAppRoleAssignment.md)
 
+[Remove-AzureADGroupAppRoleAssignment](./Remove-AzureADGroupAppRoleAssignment.md)

@@ -22,6 +22,17 @@ The **Get-AzureADContactManager** cmdlet gets the manager of a contact in Azure 
 
 ## EXAMPLES
 
+### Example 1: Get the manager of a contact
+```
+PS C:\> $Contact = Get-AzureADContact -Top 1
+PS C:\> Get-AzureADContactManager -ObjectId $Contact.ObjectId
+```
+
+The first command gets a contact by using the [Get-AzureADContact](./Get-AzureADContact.md) cmdlet, and then stores it in the $Contact variable.
+
+The second command gets the manager for $Contact.
+
+
 ## PARAMETERS
 
 ### -InformationAction
@@ -88,8 +99,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-AzureADContact](./Get-AzureADContact.md) 
 
 [Remove-AzureADContactManager](./Remove-AzureADContactManager.md)
+
 [Set-AzureADContactManager](./Set-AzureADContactManager.md)
-
-

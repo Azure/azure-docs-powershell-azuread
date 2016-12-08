@@ -23,10 +23,14 @@ Get-AzureADUserAppRoleAssignment -ObjectId <String> [-Top <Int32>] [-Information
 
 ### Example 1: Get a user application role assignment
 ```
-PS C:\>Get-AzureADUserAppRoleAssignment
+PS C:\> $UserId = (Get-AzureADUser -Top 1).ObjectId
+Get-AzureADUserAppRoleAssignment -ObjectId $UserId
 ```
 
-This command gets a user application role assignment.
+The first command gets the ID of an Azure AD user by using the [Get-AzureADUser](./Get-AzureADUser.md) cmdlet. 
+The command stores the value in the $UserId variable.
+
+The second command gets a user application role assignment for the user in $UserId.
 
 ## PARAMETERS
 
@@ -107,8 +111,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-AzureADUser](./Get-AzureADUser.md)
 
 [New-AzureADUserAppRoleAssignment](./New-AzureADUserAppRoleAssignment.md)
 
 [Remove-AzureADUserAppRoleAssignment](./Remove-AzureADUserAppRoleAssignment.md)
-

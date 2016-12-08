@@ -22,6 +22,17 @@ The **Remove-AzureADUserManager** cmdlet removes a user's manager in Azure Activ
 
 ## EXAMPLES
 
+### Example 1: Remove the manager of a user
+```
+PS C:\> $User = Get-AzureADUser -Top 1
+PS C:\> Remove-AzureADUserManager -ObjectId $User.ObjectId
+```
+
+The first command gets a user by using the [Get-AzureADUser](./Get-AzureADUser) cmdlet, and then stores it in the $User variable.
+
+The second command removes the user in $User.
+ 
+
 ## PARAMETERS
 
 ### -InformationAction

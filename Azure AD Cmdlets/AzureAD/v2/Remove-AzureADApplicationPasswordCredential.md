@@ -22,6 +22,20 @@ The **Remove-AzureADApplicationPasswordCredential** cmdlet removes a password cr
 
 ## EXAMPLES
 
+### Example 1: Remove an application password credential
+```
+PS C:\> $AppID = (Get-AzureADApplication -Top 1).objectId
+PS C:\> $KeyIDs = Get-AzureADApplicationPasswordCredential -ObjectId $AppId
+PS C:\> Remove-AzureADApplicationPasswordCredential -ObjectId $AppId -KeyId $KeyIds[0].KeyId
+```
+
+The first command gets the ID of an application by using the [Get-AzureADApplication](./Get-AzureADApplication.md) cmdlet, and then stores it in the $AppID variable.
+
+The second command gets the password credential for the application identified by $AppID by using the [Get-AzureADApplicationPasswordCredential](./ Get-AzureADApplicationPasswordCredential.md) cmdlet. 
+The command stores it in the $KeyId variable.
+
+The final command removes the application password credential for the application identified by $AppID.
+
 ## PARAMETERS
 
 ### -InformationAction
@@ -101,6 +115,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-AzureADApplication](./Get-AzureADApplication.md)
 
 [Get-AzureADApplicationPasswordCredential](./Get-AzureADApplicationPasswordCredential.md)
 

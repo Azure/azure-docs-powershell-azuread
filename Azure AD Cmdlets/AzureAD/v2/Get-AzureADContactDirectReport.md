@@ -22,6 +22,16 @@ The **Get-AzureADContactDirectReport** cmdlet gets the direct reports for a cont
 
 ## EXAMPLES
 
+### Example 1: Get the direct reports of a contact
+```
+PS C:\> $Contact = Get-AzureADContact -Top 1
+PS C:\> Get-AzureADContactDirectReport -ObjectId $Contact.ObjectId
+```
+
+The first command gets a contact by using the [Get-AzureADContact](./Get-AzureADContact.md) cmdlet, and then stores it in the $Contact variable.
+
+The second command gets the direct reports for $Contact.
+
 ## PARAMETERS
 
 ### -InformationAction
@@ -104,3 +114,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
+[Get-AzureADContact](./Get-AzureADContact.md)

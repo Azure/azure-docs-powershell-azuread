@@ -22,6 +22,20 @@ The **Get-AzureADContactMembership** cmdlet gets a contact membership in Azure A
 
 ## EXAMPLES
 
+### Example 1: Get the memberships of a contact
+```
+PS C:\> $Contact = Get-AzureADContact -Top 1
+PS C:\> Get-AzureADContactMembership -ObjectId $Contact.ObjectId
+
+ObjectId                             ObjectType
+--------                             ----------
+0015df25-808e-4715-9c24-a6929c25c201 Group
+```
+
+The first command gets a contact by using the [Get-AzureADContact](./Get-AzureADContact.md) cmdlet, and then stores it in the $Contact variable.
+
+The second command gets the memberships for $Contact.
+
 ## PARAMETERS
 
 ### -InformationAction
@@ -104,3 +118,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
+[Get-AzureADContact](./Get-AzureADContact.md)

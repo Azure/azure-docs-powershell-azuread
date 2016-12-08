@@ -1,13 +1,13 @@
 ---
-external help file: AzureAD.Help.xml
-online version: https://go.microsoft.com/fwLink/?LinkID=519265&clcid=0x409
+external help file: azuread.help.xml
+online version: 
 schema: 2.0.0
 ---
 
 # Set-AzureADMSGroup
 
 ## SYNOPSIS
-Set a group's attributes
+Changes attribute values on an Azure AD group.
 
 ## SYNTAX
 
@@ -19,45 +19,38 @@ Set-AzureADMSGroup [-Id <String>] [-Description <String>] [-DisplayName <String>
 ```
 
 ## DESCRIPTION
-This cmdlet is used to change  attribute values on a group.
+The **Set-AzureADMSGroup** cmdlet changes attribute values on an Azure Active Directory (Azure AD) group.
 
 ## EXAMPLES
 
-### Update the description of a group
+### Example 1: Update the description of a group
 ```
-Set-AzureADMSGroup -Id ce0a2213-bd57-4e2f-b9fa-408582e2e260 -description "Another group"
-```
-
-This cmdlet sets the description of the group with id ce0a2213-bd57-4e2f-b9fa-408582e2e260 to the value "Another group"
-
-
-This cmdlet has no output
-
-### Update the membership processing state of a group
-```
-Set-AzureADMSGroup -Id ce0a2213-bd57-4e2f-b9fa-408582e2e260 -MembershipRuleProcessingState "Paused"
+PS C:\> Set-AzureADMSGroup -Id "ce0a2213-bd57-4e2f-b9fa-408582e2e260" -Description "Contoso Group 12"
 ```
 
-This command sets the membership rule processing state of the group with Id ce0a2213-bd57-4e2f-b9fa-408582e2e260 to the value "Paused".
-Group members are no longer updates when the membership rule processing state is set to "Paused"
+This command changes the description of the group that has the specified ID to be Contoso Group 12.
 
-
-This cmdlet has no output
-
-### Set the dynamic membership rule on a group
+### Example 2: Update the membership processing state of a group
 ```
-Set-AzureADMSGroup -Id ce0a2213-bd57-4e2f-b9fa-408582e2e260 -MembershipRule "(user.department -eq ""Sales"")"
+PS C:\> Set-AzureADMSGroup -Id ce0a2213-bd57-4e2f-b9fa-408582e2e260 -MembershipRuleProcessingState "Paused"
 ```
 
-This cmdlet sets the membership rule of the group with Id ce0a2213-bd57-4e2f-b9fa-408582e2e260 to the value "(user.department -eq ""Sales"")"
+This command changes the membership rule processing state of the group that has the specified ID to be Paused.
+Group members are no longer updated when the membership rule processing state is Paused.
 
+### Example 3: Set the dynamic membership rule on a group
+```
+Set-AzureADMSGroup -Id "ce0a2213-bd57-4e2f-b9fa-408582e2e260" -MembershipRule "(user.department -eq ""Sales"")"
+```
 
-Please note the use of the double quotes inside the rule - these are converted to single quotes when the rule is set on the group.
+This command changes the membership rule of the group that has the specified ID to the value (user.department -eq ""Sales"").
+
+The sequence of two quotation marks in the rule are converted to single quotation marks when the rule is set on the group.
 
 ## PARAMETERS
 
 ### -Id
-The id of the group for which attribute values are set
+Specifies the ID of the group for which attribute values are modified.
 
 ```yaml
 Type: String
@@ -72,7 +65,7 @@ Accept wildcard characters: False
 ```
 
 ### -Description
-The description of the group
+Specifies a description for the group.
 
 ```yaml
 Type: String
@@ -87,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-The displayname of the group
+Specifies a display name for the group.
 
 ```yaml
 Type: String
@@ -102,8 +95,9 @@ Accept wildcard characters: False
 ```
 
 ### -MailEnabled
-Boolean value indicating whether or not this group is mail enabled.
-Note that creation of mail enabled groups is currently not possible in Azure AD
+Specifies whether this group is mail enabled.
+
+Currently, you cannot create mail enabled groups in Azure AD.
 
 ```yaml
 Type: Boolean
@@ -118,8 +112,8 @@ Accept wildcard characters: False
 ```
 
 ### -MailNickname
-The mail naickname of the group.
-This is a mandatory value even when Mailenabled is false
+Specifies a mail nickname for the group.
+If _MailEnabled_ is $False, you must specify a mail nickname.
 
 ```yaml
 Type: String
@@ -134,8 +128,8 @@ Accept wildcard characters: False
 ```
 
 ### -SecurityEnabled
-This parameter indicated that the group is security enabled.
-For security groups this value must be set to True
+Specifies whether the group is security enabled.
+For security groups, this value must be $True.
 
 ```yaml
 Type: Boolean
@@ -150,8 +144,8 @@ Accept wildcard characters: False
 ```
 
 ### -GroupTypes
-This parameter indicates that the group is a dynamic group. 
-To create a dynamic group, set this value to "DynamicMembership"
+Specifies that the group is a dynamic group. 
+To create a dynamic group, specify a value of DynamicMembership.
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
@@ -166,8 +160,9 @@ Accept wildcard characters: False
 ```
 
 ### -MembershipRule
-This parameter contains the membership rule for a dynamic group.
-Learn more about the rules you can use for dynamic groups here: https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/
+Specifies the membership rule for a dynamic group.
+
+For more information about the rules that you can use for dynamic groups, see [Using attributes to create advanced rules](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/).
 
 ```yaml
 Type: String
@@ -182,10 +177,12 @@ Accept wildcard characters: False
 ```
 
 ### -MembershipRuleProcessingState
-This parameter indicates the rule processing state.
-Set this to "Paused" to stop processing the group's rule.
-The members list will remain unchanged.
-Set this to "On" to process the rule.
+Specifies the rule processing state.
+The acceptable values for this parameter are:
+
+* On. Process the group rule.
+* Paused. Stop processing the group rule. 
+The members list remains unchanged.
 
 ```yaml
 Type: String
@@ -208,6 +205,15 @@ Accept wildcard characters: False
 ### System.Object
 
 ## NOTES
+This cmdlet is currently in Public Preview.
+While a cmdlet is in Public Preview, we may make changes to the cmdlet which could have unexpected effects.
+We recommend that you do not use this cmdlet in a production environment.
 
 ## RELATED LINKS
+[Get-AzureADMSGroup](./Get-AzureADMSGroup.md)
 
+[New-AzureADMSGroup](./New-AzureADMSGroup.md)
+
+[Remove-AzureADMSGroup](./Remove-AzureADMSGroup.md)
+
+[Using attributes to create advanced rules](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/)

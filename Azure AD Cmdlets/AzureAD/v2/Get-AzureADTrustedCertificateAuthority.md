@@ -22,6 +22,13 @@ The **Get-AzureADTrustedCertificateAuthority** cmdlet gets the trusted certifica
 
 ## EXAMPLES
 
+### Example 1: Retrieve the trusted certificate authorities that are defined in your directory
+```
+PS C:\> Get-AzureADTrustedCertificateAuthority
+```
+
+This command retrieve the trusted certificate authorities that are defined in your directory.
+
 ## PARAMETERS
 
 ### -InformationAction
@@ -106,3 +113,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 [Set-AzureADTrustedCertificateAuthority](./Set-AzureADTrustedCertificateAuthority.md)
 
+[Online help and examples for working with certificate authority](https://azure.microsoft.com/en-us/documentation/articles/active-directory-certificate-based-authentication-ios/) 
