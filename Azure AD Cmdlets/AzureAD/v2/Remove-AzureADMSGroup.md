@@ -1,13 +1,13 @@
 ---
-external help file: AzureAD.Help.xml
-online version: https://go.microsoft.com/fwLink/?LinkID=519265&clcid=0x409
+external help file: azuread.help.xml
+online version: 
 schema: 2.0.0
 ---
 
 # Remove-AzureADMSGroup
 
 ## SYNOPSIS
-This cmdlet removes a group from the directory
+Removes an Azure AD group.
 
 ## SYNTAX
 
@@ -16,24 +16,21 @@ Remove-AzureADMSGroup [-Id <String>]
 ```
 
 ## DESCRIPTION
-Use this cmdlet to remove a group from the directory
+The **Remove-AzureADMSGroup** cmdlet removes an Azure Active Directory (Azure AD) group.
 
 ## EXAMPLES
 
-### Remove a group
+### Example 1: Remove a group
 ```
-Remove-AzureADMSGroup -Id ce0a2213-bd57-4e2f-b9fa-408582e2e260
+PS C:\> Remove-AzureADMSGroup -Id "ce0a2213-bd57-4e2f-b9fa-408582e2e260"
 ```
 
-This cmdlet removes the group with Id ce0a2213-bd57-4e2f-b9fa-408582e2e260
-
-
-This cmdlet has no output
+This cmdlet removes the group that has the specified ID.
 
 ## PARAMETERS
 
 ### -Id
-The Id of the group that is removed from the directory
+Specifies the ID of the group that this cmdlet removes.
 
 ```yaml
 Type: String
@@ -56,6 +53,15 @@ Accept wildcard characters: False
 ### System.Object
 
 ## NOTES
+This cmdlet is currently in Public Preview.
+While a cmdlet is in Public Preview, we may make changes to the cmdlet which could have unexpected effects.
+We recommend that you do not use this cmdlet in a production environment.
 
 ## RELATED LINKS
+[Get-AzureADMSGroup](./Get-AzureADMSGroup.md)
 
+[New-AzureADMSGroup](./New-AzureADMSGroup.md)
+
+[Set-AzureADMSGroup](./Set-AzureADMSGroup.md)
+
+[Using attributes to create advanced rules](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/)

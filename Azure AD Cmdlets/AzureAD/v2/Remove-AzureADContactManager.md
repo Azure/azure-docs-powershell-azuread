@@ -22,6 +22,17 @@ The **Remove-AzureADContactManager** cmdlet removes a contact's manager in Azure
 
 ## EXAMPLES
 
+### Example 1: Remove the manager from a contact
+```
+PS C:\> $Contact = Get-AzureADContact -Top 1
+PS C:\> Remove-AzureADContactManager -ObjectId $Contact.ObjectId
+```
+
+The first command gets a contact by using the [Get-AzureADContact](./Get-AzureADContact) cmdlet, and then stores it in the $Contact variable.
+
+The second command removes the manager from the contact in $Contact.
+
+
 ## PARAMETERS
 
 ### -InformationAction

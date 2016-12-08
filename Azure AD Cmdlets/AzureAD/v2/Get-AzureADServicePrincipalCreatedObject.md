@@ -22,6 +22,17 @@ The **Get-AzureADServicePrincipalCreatedObject** cmdlet gets an object created b
 
 ## EXAMPLES
 
+### Example 1: Retrieve the objects that were created by a service principal
+```
+PS C:\> $ServicePrincipalId = (Get-AzureADServicePrincipal -Top 1).ObjectId
+PS C:\> Get-AzureADServicePrincipalCreatedObject -ObjectId $ServicePrincipalId
+```
+
+The first command gets the ID of a service principal by using the [Get-AzureADServicePrincipal](./Get-AzureADServicePrincipal.md) cmdlet. 
+The command stores the ID in the $ServicePrincipalId variable.
+
+The second command gets objects created by the service principal identified by $ServicePrincipalId. 
+
 ## PARAMETERS
 
 ### -InformationAction
@@ -101,4 +112,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-
+[Get-AzureADServicePrincipal](./Get-AzureADServicePrincipal.md)

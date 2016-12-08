@@ -22,6 +22,16 @@ The **Remove-AzureADContact** removes a contact from Azure Active Directory (AD)
 
 ## EXAMPLES
 
+### Example 1: Remove a contact
+```
+PS C:\> $Contact = Get-AzureADContact -Top 1
+PS C:\> Remove-AzureADContact -ObjectId $Contact.ObjectId
+```
+
+The first command gets a contact by using the [Get-AzureADContact](./Get-AzureADContact) cmdlet, and then stores it in the $Contact variable.
+
+The second command removes the contact in $Contact.
+
 ## PARAMETERS
 
 ### -InformationAction
@@ -90,5 +100,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-AzureADContact](./Get-AzureADContact.md)
 
 [Set-AzureADContact](./Set-AzureADContact.md)
-
-

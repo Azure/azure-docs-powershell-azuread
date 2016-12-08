@@ -1,5 +1,5 @@
 ---
-external help file: AzureAD.Help.xml
+external help file: azuread.help.xml
 online version: 
 schema: 2.0.0
 ---
@@ -7,7 +7,7 @@ schema: 2.0.0
 # Get-AzureADExtensionProperty
 
 ## SYNOPSIS
-A collection that contains the extension properties registered with the directory.
+Gets  extension properties registered with Azure AD.
 
 ## SYNTAX
 
@@ -16,13 +16,14 @@ Get-AzureADExtensionProperty [-IsSyncedFromOnPremises <Nullable`1[Boolean]>]
 ```
 
 ## DESCRIPTION
-A collection that contains the extension properties registered with the directory.
+The **Get-AzureADExtensionProperty** cmdlet gets a collection that contains the extension properties registered with Azure Active Directory (Azure AD) through Azure AD Connect. 
+You can get extension properties that are synced with on-premises Azure AD, those that are not synced with on-premises Azure AD, or both types. 
 
 ## EXAMPLES
 
-### Get all ExtensionProperties that have been synced from on premises AD throuhg Azure AD Connect
+### Example 1: Get extension properties synced from on-premises Azure AD 
 ```
-Get-AzureADExtensionProperty -IsSyncedFromOnPremises $true
+PS C:\> Get-AzureADExtensionProperty -IsSyncedFromOnPremises $True
 
 ObjectId                             Name                                                          TargetObjects
 --------                             ----                                                          -------------
@@ -31,13 +32,15 @@ b3c7b2c2-bb9a-4e30-a9fc-46adbe8c0899 extension_6e151e1a9cf44f8689a410023ac39235_
 9bf6f631-e6a6-41d1-b0a3-777f2acea2d1 extension_ed192e9284d44baf997d1e190a81f28e_extension_4A3UwDDC {User}
 ```
 
-Note: Specifying the IsSyncedFromOnPremises parameter will return only extension properties that have been synced from on-premises
+This command gets extension properties that have been synced from on-premises Azure AD. 
 
 ## PARAMETERS
 
 ### -IsSyncedFromOnPremises
-true to specify that only extension properties that are synced from the on-premises directory should be returned; false to specify that only extension properties that are not synced from the on-premises directory should be returned.
-If the parameter is omitted then all extension properties (both synced and non-synced) are returned.
+Specifies whether this cmdlet gets extension properties that are synced or not synced.
+- $True. Get extension properties that are synced from the on-premises Azure AD.
+- $False. Get extension properties that are not synced from the on-premises Azure AD.
+- No value. Get all extension properties.
 
 ```yaml
 Type: Nullable`1[Boolean]
@@ -58,4 +61,3 @@ Accept wildcard characters: False
 ## NOTES
 
 ## RELATED LINKS
-

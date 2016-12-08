@@ -18,9 +18,20 @@ Get-AzureADServicePrincipalMembership -ObjectId <String> [-Top <Int32>] [-Inform
 ```
 
 ## DESCRIPTION
-The **Get-AzureADServicePrincipalMembership** cmdlet gets the memberships of a service principal in Azure Active Directory (AD).
+The **Get-AzureADServicePrincipalMembership** cmdlet gets the memberships of a service principal in Azure Active Directory (Azure AD).
 
 ## EXAMPLES
+
+### Example 1: Retrieve the memberships of a service principal
+```
+PS C:\> $ServicePrincipalId = (Get-AzureADServicePrincipal -Top 1).ObjectId
+PS C:\> Get-AzureADServicePrincipalMembership -ObjectId $ServicePrincipalId
+```
+
+The first command gets the ID of a service principal by using the [Get-AzureADServicePrincipal](./Get-AzureADServicePrincipal.md) cmdlet. 
+The command stores the ID in the $ServicePrincipalId variable.
+
+The second command gets the memberships of a service principal identified by $ServicePrincipalId.
 
 ## PARAMETERS
 
@@ -101,4 +112,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-
+[Get-AzureADServicePrincipal](./Get-AzureADServicePrincipal.md)

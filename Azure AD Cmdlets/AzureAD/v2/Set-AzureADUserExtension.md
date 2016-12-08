@@ -26,9 +26,21 @@ Set-AzureADUserExtension -ObjectId <String>
 ```
 
 ## DESCRIPTION
-The **Set-AzureADUserExtension** cmdlet sets a user extension in Azure Active Directory (AD).
+The **Set-AzureADUserExtension** cmdlet sets a user extension in Azure Active Directory (Azure AD).
 
 ## EXAMPLES
+
+### Example 1: Set the value of an extension attribute for a user
+```
+PS C:\> $User = Get-AzureADUser -Top 1
+PS C:\> Set-AzureADUserExtension -ObjectId $User.ObjectId -ExtensionName extension_e5e29b8a85d941eab8d12162bd004528_extensionAttribute8 -ExtensionValue "New Value"
+```
+
+The first command gets a user by using the [Get-AzureADUser](./Get-AzureADUser.md) cmdlet, and then stores it in the $User variable.
+
+The second command  sets the value of the extension attribute that hast he specified name to the value New Value.
+You can get extension attribute names by using the [Get-AzureAdExtensionProperty](./Get-AzureAdExtensionProperty.md) cmdlet.
+
 
 ## PARAMETERS
 
@@ -99,7 +111,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
+[Get-AzureADUser](./Get-AzureADUser.md)
+
 [Get-AzureADUserExtension](./Get-AzureADUserExtension.md)
 
-[Remove-AzureADUserExtension](./Remove-AzureADUserExtension.md)
+[Get-AzureAdExtensionProperty](./Get-AzureAdExtensionProperty.md)
 
+[Remove-AzureADUserExtension](./Remove-AzureADUserExtension.md)

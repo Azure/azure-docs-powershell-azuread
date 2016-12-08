@@ -1,13 +1,13 @@
 ---
-external help file: AzureAD.Help.xml
-online version: https://channel9.msdn.com/Series/Azure-Active-Directory-Videos-Demos/ManageAppsAzureADPowerShell
+external help file: azuread.help.xml
+online version: 
 schema: 2.0.0
 ---
 
 # Revoke-AzureADSignedInUserAllRefreshToken
 
 ## SYNOPSIS
-Invalidates all of the currently signed in user's refresh tokens issued to applications (as well as session cookies in a user's browser), by resetting the refreshTokensValidFromDateTime user property to the current date-time
+Invalidates the refresh tokens issued to applications for the current user. 
 
 ## SYNTAX
 
@@ -16,13 +16,18 @@ Revoke-AzureADSignedInUserAllRefreshToken
 ```
 
 ## DESCRIPTION
+The **Revoke-AzureADSignedInUserAllRefreshToken** cmdlet invalidates the refresh tokens issued to applications for the current user. 
+The cmdlet also invalidates tokens issued to session cookies in a browser for the user. 
+The cmdlet operates by resetting the **refreshTokensValidFromDateTime** user property to the current date and time.
 
 ## EXAMPLES
 
-### Revoke the refresh tokens for the signed in user
+### Example 1: Revoke refresh tokens for the current user
 ```
-Revoke-AzureADSignedInUserAllRefreshTokens
+PS C:\> Revoke-AzureADSignedInUserAllRefreshToken
 ```
+
+This command revokes the tokens for the current user. 
 
 ## PARAMETERS
 
@@ -33,4 +38,6 @@ Revoke-AzureADSignedInUserAllRefreshTokens
 ## NOTES
 
 ## RELATED LINKS
+[Revoke-AzureADUserAllRefreshToken](./Revoke-AzureADUserAllRefreshToken.md)
 
+[#AzureAD: Certificate based authentication for iOS and Android now in preview!](https://blogs.technet.microsoft.com/enterprisemobility/2016/07/18/azuread-certificate-based-authentication-for-ios-and-android-now-in-preview/)

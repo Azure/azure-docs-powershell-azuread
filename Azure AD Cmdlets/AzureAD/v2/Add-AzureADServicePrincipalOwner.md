@@ -22,6 +22,19 @@ The **Add-AzureADServicePrincipalOwner** cmdlet adds an owner to a service princ
 
 ## EXAMPLES
 
+### Example 1: Add a user as an owner to a service principal
+```
+PS C:\> $ServicePrincipalId = (Get-AzureADServicePrincipal -Top 1).ObjectId
+PS C:\> $OwnerId = (Get-AzureADUser -Top 1).ObjectId
+PS C:\> Add-AzureADServicePrincipalOwner -ObjectId $ServicePrincipalId -RefObjectId -$OwnerId
+```
+
+The first command gets the object ID of a service principal by using the [Get-AzureADServicePrincipal](./Get-AzureADServicePrincipal.md) cmdlet, and then stores it in the $ServicePrincipalId variable. 
+
+The second command gets the object ID a user by using the [Get-AzureADUser](./Get-AzureADUser.md) cmdlet, and then stores it in the $OwnerId variable. 
+
+The final command adds the user specified by $OwnerId an owner to a service principal specified by $ServicePrincipalId.
+
 ## PARAMETERS
 
 ### -InformationAction
@@ -102,7 +115,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
+[Get-AzureADServicePrincipal](./Get-AzureADServicePrincipal.md)
+
 [Get-AzureADServicePrincipalOwner](./Get-AzureADServicePrincipalOwner.md)
 
-[Remove-AzureADServicePrincipalOwner](./Remove-AzureADServicePrincipalOwner.md)
+[Get-AzureADUser](./Get-AzureADUser.md)
 
+[Remove-AzureADServicePrincipalOwner](./Remove-AzureADServicePrincipalOwner.md)

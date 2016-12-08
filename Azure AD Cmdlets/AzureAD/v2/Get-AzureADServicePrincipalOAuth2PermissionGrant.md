@@ -22,6 +22,17 @@ The **Get-AzureADServicePrincipalOAuth2PermissionGrant** cmdlet gets an **oAuth2
 
 ## EXAMPLES
 
+### Example 1: Retrieve the OAuth2 permission grants of a service principal
+```
+PS C:\> ServicePrincipalId = (Get-AzureADServicePrincipal -Top 1).ObjectId
+PS C:\> Get-AzureADServicePrincipalOAuth2PermissionGrant -ObjectId $ServicePrincipalId
+```
+
+The first command gets the ID of a service principal by using the [Get-AzureADServicePrincipal](./Get-AzureADServicePrincipal.md) cmdlet. 
+The command stores the ID in the $ServicePrincipalId variable.
+
+The second command gets the OAuth2 permission grants of a service principal identified by $ServicePrincipalId. 
+
 ## PARAMETERS
 
 ### -InformationAction
@@ -101,4 +112,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-
+[Get-AzureADServicePrincipal](./Get-AzureADServicePrincipal.md)

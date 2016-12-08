@@ -22,6 +22,35 @@ The **Enable-AzureADDirectoryRole** cmdlet activates an existing directory role 
 
 ## EXAMPLES
 
+### Example 1: Enable a directory role
+```
+PS C:\> $InviterRole = Get-AzureADDirectoryRoleTemplate | Where-Object {$_.DisplayName -eq "Guest Inviter"}
+PS C:\> $InviterRole
+
+ObjectId                             DisplayName   Description
+--------                             -----------   -----------
+95e79109-95c0-4d8e-aee3-d01accf2d47b Guest Inviter Guest Inviter has access to invite guest users.
+
+PS C:\> $Role = New-Object Microsoft.Open.AzureAD.Model.DirectoryRole
+PS C:\> $Role.RoleTemplateId = $InviterRole.ObjectId
+PS C:\> Enable-AzureADDirectoryRole -DirectoryRole $Role
+
+ObjectId                             DisplayName   Description
+--------                             -----------   -----------
+03618579-3c16-4765-9539-86d9163ee3d9 Guest Inviter Guest Inviter has access to invite guest users.
+```
+
+The first command gets an inviter role that has the display name Guest Inviter by using the [Get-AzureADDirectoryRoleTemplate](./Get-AzureADDirectoryRoleTemplate.md) cmdlet. 
+The command stores Guest Inviter in the $InviterRole variable. 
+
+The second command displays the contents of $InviterRole.
+
+The third command creates a **DirectoryRole** object, and then stores it in the $Role variable.
+
+The forth command modifies the **RoleTemplateId** property of $Role to be the role in $InviterRole.
+
+The final command enables the directory role in $Role.
+
 ## PARAMETERS
 
 ### -DirectoryRole
@@ -89,4 +118,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 [Get-AzureADDirectoryRole](./Get-AzureADDirectoryRole.md)
 
-
+[Get-AzureADDirectoryRoleTemplate](./Get-AzureADDirectoryRoleTemplate.md)

@@ -124,6 +124,9 @@ A collection that contains the extension properties registered with the director
 ### [Get-AzureADGroup](Get-AzureADGroup.md)
 Get a group by objectId
 
+### [Get-AzureADExtensionProperty](/.Get-AzureADExtensionProperty.md) 
+Gets  extension properties registered with Azure AD. 
+
 ### [Get-AzureADGroupAppRoleAssignment](Get-AzureADGroupAppRoleAssignment.md)
 Get group application role assignments.
 
@@ -135,6 +138,9 @@ Get owners of a group.
 
 ### [Get-AzureADMSGroup](Get-AzureADMSGroup.md)
 Retrieves a group from the directory
+
+### [Get-AzureADMSGroup](./Get-AzureADMSGroup.md) 
+Gets information about groups in Azure AD. 
 
 ### [Get-AzureADOAuth2PermissionGrant](Get-AzureADOAuth2PermissionGrant.md)
 Get a list of all oAuth2PermissionGrants granted by users within the directory.
@@ -261,6 +267,9 @@ Assign a group of users to an application role.
 
 ### [New-AzureADMSInvitation](New-AzureADMSInvitation.md)
 
+### [New-AzureADMSGroup](./New-AzureADMSGroup) 
+Creates an Azure AD group. 
+
 ### [New-AzureADObjectSetting](New-AzureADObjectSetting.md)
 Creates a settings object in Azure Active Directory.
 
@@ -346,6 +355,9 @@ Removes an owner from a group.
 ### [Remove-AzureADMSGroup](Remove-AzureADMSGroup.md)
 This cmdlet removes a group from the directory
 
+### [Remove-AzureADMSGroup](./Remove-AzureADMSGroup.md) 
+Removes an Azure AD group. 
+
 ### [Remove-AzureADOAuth2PermissionGrant](Remove-AzureADOAuth2PermissionGrant.md)
 Delete an oAuth2PermissionGrant.
 
@@ -392,6 +404,12 @@ Invalidates all of the currently signed in user's refresh tokens issued to appli
 ### [Revoke-AzureADUserAllRefreshToken](Revoke-AzureADUserAllRefreshToken.md)
 Invalidates all of the user's refresh tokens issued to applications (as well as session cookies in a user's browser), by resetting the refreshTokensValidFromDateTime user property to the current date-time
 
+### [Revoke-AzureADSignedInUserAllRefreshToken](./Revoke-AzureADSignedInUserAllRefreshToken.md) 
+Invalidates the refresh tokens issued to applications for the current user.  
+
+### [Revoke-AzureADUserAllRefreshToken](./Revoke-AzureADUserAllRefreshToken.md) 
+Invalidates the refresh tokens issued to applications for a user. 
+
 ### [Select-AzureADGroupIdsContactIsMemberOf](Select-AzureADGroupIdsContactIsMemberOf.md)
 From a list of groups Ids select those that the contact is a member of.
 
@@ -430,6 +448,9 @@ Updates a specific group in Azure Active Directory
 
 ### [Set-AzureADMSGroup](Set-AzureADMSGroup.md)
 Set a group's attributes
+
+### [Set-AzureADMSGroup](./Set-AzureADMSGroup.md) 
+Changes attribute values on an Azure AD group. 
 
 ### [Set-AzureADObjectSetting](Set-AzureADObjectSetting.md)
 Updates settings in Azure Active Directory.

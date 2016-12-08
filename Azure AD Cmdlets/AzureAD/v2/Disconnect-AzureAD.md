@@ -22,6 +22,13 @@ The **Disconnect-AzureAD** cmdlet disconnects the current session from an Azure 
 
 ## EXAMPLES
 
+### Example 1: Disconnect your session from a tenant
+```
+PS C:\> Disconnect-AzureAD
+```
+
+This command disconnects your session from a tenant.
+
 ## PARAMETERS
 
 ### -InformationAction
@@ -105,4 +112,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [Connect-AzureAD](./Connect-AzureAD.md)
-
