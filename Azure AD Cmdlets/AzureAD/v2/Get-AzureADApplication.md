@@ -59,6 +59,10 @@ Output:
     --------                             -----                                -----------  
     ed192e92-84d4-4baf-997d-1e190a81f28e 36ee4c6c-0812-40a2-b820-b22ebd02bce3 MyNewApp
 
+### Retrieve an application by identifierUris
+```
+Get-AzureADApplication -Filter "identifierUris/any(uri:uri eq 'http://wingtips.wingtiptoysonline.com')"
+```
 ## PARAMETERS
 
 ### -Filter
