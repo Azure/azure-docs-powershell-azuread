@@ -25,7 +25,7 @@ This cmdlet disables specific service plans when assigning a user a license usin
 
 ### Example 1: Create license options object
 ```
-PS C:\> New-MsolLicenseOption -AccountSkuId Contoso:BPOS_STANDARD -DisabledPlans EXCHANGE_STANDARD
+PS C:\> New-MsolLicenseOptions -AccountSkuId Contoso:BPOS_STANDARD -DisabledPlans EXCHANGE_STANDARD
 ```
 
 This command creates a license options object.
