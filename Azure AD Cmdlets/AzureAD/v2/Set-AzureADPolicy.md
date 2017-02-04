@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
 ms.assetid: 1575D032-020F-4471-A408-2487C93940AF
 online version: 
 schema: 2.0.0
@@ -13,10 +13,10 @@ Updates a policy.
 ## SYNTAX
 
 ```
-Set-AzureADPolicy -ObjectId <String> [-InformationAction <ActionPreference>] [-InformationVariable <String>]
- [-AlternativeIdentifier <String>] [-Definition <System.Collections.Generic.List`1[System.String]>]
- [-DisplayName <String>] [-IsTenantDefault <Boolean>]
- [-KeyCredentials <System.Collections.Generic.List`1[Microsoft.Open.AzureAD.Model.KeyCredential]>]
+Set-AzureADPolicy [-ObjectId <String>] [-AlternativeIdentifier <String>]
+ [-Definition <System.Collections.Generic.List`1[System.String]>] [-DisplayName <String>]
+ [-IsOrganizationDefault <Boolean>]
+ [-KeyCredentials <System.Collections.Generic.List`1[Microsoft.Open.MSGraph.Model.KeyCredential]>]
  [-Type <String>] [<CommonParameters>]
 ```
 
@@ -80,45 +80,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -InformationAction
-Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
-
-- Continue
-- Ignore
-- Inquire
-- SilentlyContinue
-- Stop
-- Suspend
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: infa
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -InformationVariable
-Specifies an information variable.
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases: iv
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -IsTenantDefault
-Indicates whether the policy is the tenant's default policy.
+### -IsOrganizationDefault
+True if this policy is the organisational default
 
 ```yaml
 Type: Boolean
@@ -136,7 +99,7 @@ Accept wildcard characters: False
 Specifies the key credentials.
 
 ```yaml
-Type: System.Collections.Generic.List`1[Microsoft.Open.AzureAD.Model.KeyCredential]
+Type: System.Collections.Generic.List`1[Microsoft.Open.MSGraph.Model.KeyCredential]
 Parameter Sets: (All)
 Aliases: 
 
@@ -155,7 +118,7 @@ Type: String
 Parameter Sets: (All)
 Aliases: 
 
-Required: True
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: True (ByPropertyName, ByValue)

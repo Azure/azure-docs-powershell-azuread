@@ -13,18 +13,17 @@ Updates a user.
 ## SYNTAX
 
 ```
-Set-AzureADUser -ObjectId <String> [-InformationAction <ActionPreference>] [-InformationVariable <String>]
+Set-AzureADUser -ObjectId <String>
  [-ExtensionProperty <System.Collections.Generic.Dictionary`2[System.String,System.String]>]
- [-AccountEnabled <Boolean>]
- [-AssignedLicenses <System.Collections.Generic.List`1[Microsoft.Open.AzureAD.Model.AssignedLicense]>]
- [-City <String>] [-Country <String>] [-Department <String>] [-DisplayName <String>]
- [-FacsimilieTelephoneNumber <String>] [-GivenName <String>] [-ImmutableId <String>] [-JobTitle <String>]
- [-Mail <String>] [-MailNickName <String>] [-Mobile <String>]
- [-OtherMails <System.Collections.Generic.List`1[System.String]>] [-PasswordPolicies <String>]
- [-PasswordProfile <PasswordProfile>] [-PhysicalDeliveryOfficeName <String>] [-PostalCode <String>]
- [-PreferredLanguage <String>] [-State <String>] [-StreetAddress <String>] [-Surname <String>]
- [-TelephoneNumber <String>] [-ThumbnailPhoto <Byte[]>] [-UsageLocation <String>] [-UserPrincipalName <String>]
- [-UserType <String>] [<CommonParameters>]
+ [-AccountEnabled <Boolean>] [-City <String>] [-Country <String>] [-CreationType <String>]
+ [-Department <String>] [-DisplayName <String>] [-FacsimilieTelephoneNumber <String>] [-GivenName <String>]
+ [-IsCompromised <Boolean>] [-ImmutableId <String>] [-JobTitle <String>] [-MailNickName <String>]
+ [-Mobile <String>] [-OtherMails <System.Collections.Generic.List`1[System.String]>]
+ [-PasswordPolicies <String>] [-PasswordProfile <PasswordProfile>] [-PhysicalDeliveryOfficeName <String>]
+ [-PostalCode <String>] [-PreferredLanguage <String>] [-ShowInAddressList <Boolean>]
+ [-SignInNames <System.Collections.Generic.List`1[Microsoft.Open.AzureAD.Model.SignInName]>] [-State <String>]
+ [-StreetAddress <String>] [-Surname <String>] [-TelephoneNumber <String>] [-UsageLocation <String>]
+ [-UserPrincipalName <String>] [-UserType <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -57,20 +56,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -AssignedLicenses
-Specifies an array of assigned licenses.
-```yaml
-Type: System.Collections.Generic.List`1[Microsoft.Open.AzureAD.Model.AssignedLicense]
-Parameter Sets: (All)
-Aliases: 
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -City
 Specifies the user's city.
 ```yaml
@@ -87,6 +72,21 @@ Accept wildcard characters: False
 
 ### -Country
 Specifies the user's country.
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: 
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -CreationType
+Indicates whether the user account is a local account for an Azure Active Directory B2C tenant. Possible values are "LocalAccount" and null. When creating a local account, the property is required and you must set it to "LocalAccount". When creating a work or school account, do not specify the property or set it to null.
+
 ```yaml
 Type: String
 Parameter Sets: (All)
@@ -181,47 +181,11 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -InformationAction
-Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
-
-- Continue
-- Ignore
-- Inquire
-- SilentlyContinue
-- Stop
-- Suspend
+### -IsCompromised
+True if this user is compromised
 
 ```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: infa
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -InformationVariable
-Specifies an information variable.
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases: iv
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -JobTitle
-Specifies the user's job title.
-```yaml
-Type: String
+Type: Boolean
 Parameter Sets: (All)
 Aliases: 
 
@@ -232,9 +196,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Mail
-Specifies the user's email address.
-
+### -JobTitle
+Specifies the user's job title.
 ```yaml
 Type: String
 Parameter Sets: (All)
@@ -382,6 +345,36 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ShowInAddressList
+Set to True to show this user in the address list.
+
+```yaml
+Type: Boolean
+Parameter Sets: (All)
+Aliases: 
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -SignInNames
+The list of sign in names for this user
+
+```yaml
+Type: System.Collections.Generic.List`1[Microsoft.Open.AzureAD.Model.SignInName]
+Parameter Sets: (All)
+Aliases: 
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -State
 Specifies the user's state.
 
@@ -432,21 +425,6 @@ Specifies the user's telephone number.
 
 ```yaml
 Type: String
-Parameter Sets: (All)
-Aliases: 
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ThumbnailPhoto
-Specifies a thumbnail photo for the user.
-
-```yaml
-Type: Byte[]
 Parameter Sets: (All)
 Aliases: 
 

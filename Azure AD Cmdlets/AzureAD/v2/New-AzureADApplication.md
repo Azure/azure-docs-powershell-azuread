@@ -13,17 +13,19 @@ Creates an application.
 ## SYNTAX
 
 ```
-New-AzureADApplication [-InformationAction <ActionPreference>] [-InformationVariable <String>]
+New-AzureADApplication [-AddIns <System.Collections.Generic.List`1[Microsoft.Open.AzureAD.Model.AddIn]>]
  [-AppRoles <System.Collections.Generic.List`1[Microsoft.Open.AzureAD.Model.AppRole]>]
- [-AvailableToOtherTenants <Boolean>] -DisplayName <String> [-ErrorUrl <String>] [-Homepage <String>]
+ [-AvailableToOtherTenants <Boolean>] -DisplayName <String> [-ErrorUrl <String>]
+ [-GroupMembershipClaims <String>] [-Homepage <String>]
  [-IdentifierUris <System.Collections.Generic.List`1[System.String]>]
  [-KeyCredentials <System.Collections.Generic.List`1[Microsoft.Open.AzureAD.Model.KeyCredential]>]
  [-KnownClientApplications <System.Collections.Generic.List`1[System.String]>] [-LogoutUrl <String>]
- [-MainLogo <Byte[]>] [-Oauth2AllowImplicitFlow <Boolean>] [-Oauth2AllowUrlPathMatching <Boolean>]
+ [-Oauth2AllowImplicitFlow <Boolean>] [-Oauth2AllowUrlPathMatching <Boolean>]
  [-Oauth2Permissions <System.Collections.Generic.List`1[Microsoft.Open.AzureAD.Model.OAuth2Permission]>]
  [-OAuth2RequiredPostResponse <Boolean>]
  [-PasswordCredentials <System.Collections.Generic.List`1[Microsoft.Open.AzureAD.Model.PasswordCredential]>]
- [-PublicClient <Boolean>] [-ReplyUrls <System.Collections.Generic.List`1[System.String]>]
+ [-PublicClient <Boolean>] [-RecordConsentConditions <String>]
+ [-ReplyUrls <System.Collections.Generic.List`1[System.String]>]
  [-RequiredResourceAccess <System.Collections.Generic.List`1[Microsoft.Open.AzureAD.Model.RequiredResourceAccess]>]
  [-SamlMetadataUrl <String>] [<CommonParameters>]
 ```
@@ -46,7 +48,24 @@ This command creates an application in Azure AD.
 
 ## PARAMETERS
 
+### -AddIns
+Defines custom behavior that a consuming service can use to call an app in specific contexts. For example, applications that can render file streams may set the addIns property for its "FileHandler" functionality. This will let services like Office 365 call the application in the context of a document the user is working on.
+
+
+```yaml
+Type: System.Collections.Generic.List`1[Microsoft.Open.AzureAD.Model.AddIn]
+Parameter Sets: (All)
+Aliases: 
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -AppRoles
+The collection of application roles that an application may declare. These roles can be assigned to users, groups or service principals.
 ```yaml
 Type: System.Collections.Generic.List`1[Microsoft.Open.AzureAD.Model.AppRole]
 Parameter Sets: (All)
@@ -90,6 +109,24 @@ Accept wildcard characters: False
 ```
 
 ### -ErrorUrl
+The Error URL of this application
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: 
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -GroupMembershipClaims
+A bitmask that configures the "groups" claim issued in a user or OAuth 2.0 access token that the application expects. The bitmask values are: 0: None, 1: Security groups and Azure AD roles, 2: Reserved, and 4: Reserved. Setting the bitmask to 7 will get all of the security groups, distribution groups, and Azure AD directory roles that the signed-in user is a member of.
+
+
 ```yaml
 Type: String
 Parameter Sets: (All)
@@ -103,6 +140,8 @@ Accept wildcard characters: False
 ```
 
 ### -Homepage
+The URL to the application's homepage.
+
 ```yaml
 Type: String
 Parameter Sets: (All)
@@ -116,6 +155,10 @@ Accept wildcard characters: False
 ```
 
 ### -IdentifierUris
+User-defined URI(s) that uniquely identify a Web application within its Azure AD tenant, or within a verified custom domain (see "Domains" tab in the Azure classic portal) if the application is multi-tenant. 
+
+The first element is populated from the Web application's "APP ID URI” field if updated via the Azure classic portal (or respective Azure AD PowerShell cmdlet parameter). Additional URIs can be added via the application manifest; see Understanding the Azure AD Application Manifest for details. This collection is also used to populate the Web application's servicePrincipalNames collection. 
+
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
 Parameter Sets: (All)
@@ -128,44 +171,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -InformationAction
-Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
-
-- Continue
-- Ignore
-- Inquire
-- SilentlyContinue
-- Stop
-- Suspend
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: infa
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -InformationVariable
-Specifies an information variable.
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases: iv
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -KeyCredentials
+The collection of key credentials associated with the application
+
 ```yaml
 Type: System.Collections.Generic.List`1[Microsoft.Open.AzureAD.Model.KeyCredential]
 Parameter Sets: (All)
@@ -179,6 +187,8 @@ Accept wildcard characters: False
 ```
 
 ### -KnownClientApplications
+Client applications that are tied to this resource application. Consent to any of the known client applications will result in implicit consent to the resource application through a combined consent dialog (showing the OAuth permission scopes required by the client and the resource).
+
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
 Parameter Sets: (All)
@@ -192,6 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### -LogoutUrl
+The logout url for this application
 ```yaml
 Type: String
 Parameter Sets: (All)
@@ -204,20 +215,10 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -MainLogo
-```yaml
-Type: Byte[]
-Parameter Sets: (All)
-Aliases: 
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Oauth2AllowImplicitFlow
+Specifies whether this web application can request OAuth2.0 implicit flow tokens. The default is false.
+
+
 ```yaml
 Type: Boolean
 Parameter Sets: (All)
@@ -231,6 +232,8 @@ Accept wildcard characters: False
 ```
 
 ### -Oauth2AllowUrlPathMatching
+Specifies whether, as part of OAuth 2.0 token requests, Azure AD will allow path matching of the redirect URI against the application's replyUrls. The default is false.
+
 ```yaml
 Type: Boolean
 Parameter Sets: (All)
@@ -244,6 +247,8 @@ Accept wildcard characters: False
 ```
 
 ### -Oauth2Permissions
+The collection of OAuth 2.0 permission scopes that the web API (resource) application exposes to client applications. These permission scopes may be granted to client applications during consent.
+
 ```yaml
 Type: System.Collections.Generic.List`1[Microsoft.Open.AzureAD.Model.OAuth2Permission]
 Parameter Sets: (All)
@@ -257,6 +262,9 @@ Accept wildcard characters: False
 ```
 
 ### -OAuth2RequiredPostResponse
+Specifies whether, as part of OAuth 2.0 token requests, Azure AD will allow POST requests, as opposed to GET requests. The default is false, which specifies that only GET requests will be allowed.
+
+
 ```yaml
 Type: Boolean
 Parameter Sets: (All)
@@ -270,6 +278,8 @@ Accept wildcard characters: False
 ```
 
 ### -PasswordCredentials
+The collection of password credentials associated with the application.
+
 ```yaml
 Type: System.Collections.Generic.List`1[Microsoft.Open.AzureAD.Model.PasswordCredential]
 Parameter Sets: (All)
@@ -283,6 +293,8 @@ Accept wildcard characters: False
 ```
 
 ### -PublicClient
+Specifies whether this application is a public client (such as an installed application running on a mobile device). Default is false.
+
 ```yaml
 Type: Boolean
 Parameter Sets: (All)
@@ -295,7 +307,25 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -RecordConsentConditions
+Do not use. May be removed in future versions 
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: 
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ReplyUrls
+Specifies the URLs that user tokens are sent to for sign in, or the redirect URIs that OAuth 2.0 authorization codes and access tokens are sent to.
+
+
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
 Parameter Sets: (All)
@@ -309,6 +339,9 @@ Accept wildcard characters: False
 ```
 
 ### -RequiredResourceAccess
+
+Specifies resources that this application requires access to and the set of OAuth permission scopes and application roles that it needs under each of those resources. This pre-configuration of required resource access drives the consent experience.
+
 ```yaml
 Type: System.Collections.Generic.List`1[Microsoft.Open.AzureAD.Model.RequiredResourceAccess]
 Parameter Sets: (All)
@@ -322,6 +355,7 @@ Accept wildcard characters: False
 ```
 
 ### -SamlMetadataUrl
+The URL to the SAML metadata for the application.
 ```yaml
 Type: String
 Parameter Sets: (All)

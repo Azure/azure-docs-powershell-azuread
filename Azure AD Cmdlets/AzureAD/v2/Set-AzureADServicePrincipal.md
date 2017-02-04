@@ -13,15 +13,16 @@ Updates a service principal.
 ## SYNTAX
 
 ```
-Set-AzureADServicePrincipal -ObjectId <String> [-InformationAction <ActionPreference>]
- [-InformationVariable <String>] [-AccountEnabled <String>] [-AppId <String>]
+Set-AzureADServicePrincipal -ObjectId <String> [-AccountEnabled <String>]
+ [-AlternativeNames <System.Collections.Generic.List`1[System.String]>] [-AppId <String>]
  [-AppRoleAssignmentRequired <Boolean>] [-DisplayName <String>] [-ErrorUrl <String>] [-Homepage <String>]
  [-KeyCredentials <System.Collections.Generic.List`1[Microsoft.Open.AzureAD.Model.KeyCredential]>]
  [-LogoutUrl <String>]
  [-PasswordCredentials <System.Collections.Generic.List`1[Microsoft.Open.AzureAD.Model.PasswordCredential]>]
- [-PublisherName <String>] [-ReplyUrl <System.Collections.Generic.List`1[System.String]>]
+ [-PublisherName <String>] [-ReplyUrls <System.Collections.Generic.List`1[System.String]>]
  [-SamlMetadataUrl <String>] [-ServicePrincipalNames <System.Collections.Generic.List`1[System.String]>]
- [-Tags <System.Collections.Generic.List`1[System.String]>] [<CommonParameters>]
+ [-ServicePrincipalType <String>] [-Tags <System.Collections.Generic.List`1[System.String]>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -43,6 +44,21 @@ Indicates whether the account is enabled.
 
 ```yaml
 Type: String
+Parameter Sets: (All)
+Aliases: 
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AlternativeNames
+The alternative names for this service principal
+
+```yaml
+Type: System.Collections.Generic.List`1[System.String]
 Parameter Sets: (All)
 Aliases: 
 
@@ -128,43 +144,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -InformationAction
-Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
-
-- Continue
-- Ignore
-- Inquire
-- SilentlyContinue
-- Stop
-- Suspend
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: infa
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -InformationVariable
-Specifies an information variable.
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases: iv
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -KeyCredentials
 Specifies key credentials.
 
@@ -240,8 +219,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ReplyUrl
-Specifies a reply URL.
+### -ReplyUrls
+The URLs that user tokens are sent to for sign in with the associated application, or the redirect URIs that OAuth 2.0 authorization codes and access tokens are sent to for the associated application.
+
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
@@ -273,6 +253,21 @@ Specifies service principal names.
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
+Parameter Sets: (All)
+Aliases: 
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ServicePrincipalType
+The service principal type
+
+```yaml
+Type: String
 Parameter Sets: (All)
 Aliases: 
 

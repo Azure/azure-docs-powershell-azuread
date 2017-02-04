@@ -13,13 +13,12 @@ Updates a device.
 ## SYNTAX
 
 ```
-Set-AzureADDevice -ObjectId <String> [-InformationAction <ActionPreference>] [-InformationVariable <String>]
- [-AccountEnabled <Boolean>]
+Set-AzureADDevice -ObjectId <String> [-AccountEnabled <Boolean>]
  [-AlternativeSecurityIds <System.Collections.Generic.List`1[Microsoft.Open.AzureAD.Model.AlternativeSecurityId]>]
- [-ApproximateLastLogonTimeStamp <DateTime>] [-DeviceId <String>] [-DeviceObjectVersion <Int32>]
- [-DeviceOSType <String>] [-DeviceOSVersion <String>]
- [-DevicePhysicalIds <System.Collections.Generic.List`1[System.String]>] [-DisplayName <String>]
- [-IsCompliant <Boolean>] [-IsManaged <Boolean>] [<CommonParameters>]
+ [-ApproximateLastLogonTimeStamp <DateTime>] [-DeviceId <String>] [-DeviceMetadata <String>]
+ [-DeviceObjectVersion <Int32>] [-DeviceOSType <String>] [-DeviceOSVersion <String>]
+ [-DevicePhysicalIds <System.Collections.Generic.List`1[System.String]>] [-DeviceTrustType <String>]
+ [-DisplayName <String>] [-IsCompliant <Boolean>] [-IsManaged <Boolean>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -92,6 +91,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -DeviceMetadata
+The device metadata for this device
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: 
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -DeviceObjectVersion
 Specifies the object version of the device.
 
@@ -151,8 +165,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -DisplayName
-Specifies the display name.
+### -DeviceTrustType
+The device trust type
+
 ```yaml
 Type: String
 Parameter Sets: (All)
@@ -165,35 +180,12 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -InformationAction
-Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
-
-- Continue
-- Ignore
-- Inquire
-- SilentlyContinue
-- Stop
-- Suspend
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: infa
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -InformationVariable
-Specifies an information variable.
-
+### -DisplayName
+Specifies the display name.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: iv
+Aliases: 
 
 Required: False
 Position: Named
