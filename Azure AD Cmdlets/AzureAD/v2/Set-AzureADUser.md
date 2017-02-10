@@ -35,7 +35,7 @@ The **Set-AzureADUser** cmdlet updates a user in Azure Active Directory (AD).
 ```
 PS C:\> $user = Get-AzureADUser -ObjectId TestUser@example.com 
 PS C:\> $user.DisplayName = 'YetAnotherTestUser' 
-PS C:\> Set-AzureADUser -ObjectId TestUser@example.com -User $user
+PS C:\> Set-AzureADUser -ObjectId TestUser@example.com -Displayname $user.Displayname
 ```
 
 This command updates the specified user's property.
