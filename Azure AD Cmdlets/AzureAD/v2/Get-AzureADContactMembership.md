@@ -13,8 +13,7 @@ Get a contact membership.
 ## SYNTAX
 
 ```
-Get-AzureADContactMembership -ObjectId <String> [-Top <Int32>] [-InformationAction <ActionPreference>]
- [-InformationVariable <String>] [<CommonParameters>]
+Get-AzureADContactMembership -ObjectId <String> [-All <Boolean>] [-Top <Int32>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -38,42 +37,18 @@ The second command gets the memberships for $Contact.
 
 ## PARAMETERS
 
-### -InformationAction
-Specifies how this cmdlet responds to an information event.
-
-The acceptable values for this parameter are:
-
-- Continue
-- Ignore
-- Inquire
-- SilentlyContinue
-- Stop
-- Suspend
+### -All
+If true, return all memberships. If false, return the number of objects specified by the Top parameter
 
 ```yaml
-Type: ActionPreference
+Type: Boolean
 Parameter Sets: (All)
-Aliases: infa
+Aliases: 
 
 Required: False
 Position: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -InformationVariable
-Specifies an information variable.
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases: iv
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
+Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 

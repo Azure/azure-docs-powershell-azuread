@@ -7,18 +7,18 @@ schema: 2.0.0
 # Get-AzureADDeletedApplication
 
 ## SYNOPSIS
-{{Fill in the Synopsis}}
+Retrieves the list of previously deleted applications
 
 ## SYNTAX
 
 ### GetQuery (Default)
 ```
-Get-AzureADDeletedApplication [-All <Boolean>] [-Top <Int32>] [-Filter <String>]
+Get-AzureADDeletedApplication [-All <Boolean>] [-Top <Int32>] [-Filter <String>] [<CommonParameters>]
 ```
 
 ### GetVague
 ```
-Get-AzureADDeletedApplication [-SearchString <String>] [-All <Boolean>]
+Get-AzureADDeletedApplication [-SearchString <String>] [-All <Boolean>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -56,7 +56,7 @@ This example shows how an existing application was deleted and how the G-AzureAD
 ## PARAMETERS
 
 ### -All
-Retrieves all deleted applications
+If true, return all deleted applications. If false, return the number of objects specified by the Top parameter
 
 ```yaml
 Type: Boolean
@@ -115,12 +115,14 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+
 ## INPUTS
 
 ### System.String
 System.Nullable`1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
 System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
-
 
 ## OUTPUTS
 

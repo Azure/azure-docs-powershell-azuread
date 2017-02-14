@@ -14,20 +14,17 @@ Gets a group.
 
 ### GetQuery (Default)
 ```
-Get-AzureADGroup [-Top <Int32>] [-Filter <String>] [-InformationAction <ActionPreference>]
- [-InformationVariable <String>] [<CommonParameters>]
+Get-AzureADGroup [-All <Boolean>] [-Top <Int32>] [-Filter <String>] [<CommonParameters>]
 ```
 
 ### GetVague
 ```
-Get-AzureADGroup [-SearchString <String>] [-InformationAction <ActionPreference>]
- [-InformationVariable <String>] [<CommonParameters>]
+Get-AzureADGroup [-SearchString <String>] [-All <Boolean>] [<CommonParameters>]
 ```
 
 ### GetById
 ```
-Get-AzureADGroup -ObjectId <String> [-InformationAction <ActionPreference>] [-InformationVariable <String>]
- [<CommonParameters>]
+Get-AzureADGroup -ObjectId <String> [-All <Boolean>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -75,6 +72,21 @@ This command gets the groups that include the text All in their display names.
 
 ## PARAMETERS
 
+### -All
+If true, return all groups. If false, return the number of objects specified by the Top parameter
+
+```yaml
+Type: Boolean
+Parameter Sets: (All)
+Aliases: 
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName, ByValue)
+Accept wildcard characters: False
+```
+
 ### -Filter
 Specifies an oData v3.0 filter statement. This parameter controls which objects are returned.
 
@@ -87,43 +99,6 @@ Required: False
 Position: Named
 Default value: None
 Accept pipeline input: True (ByPropertyName, ByValue)
-Accept wildcard characters: False
-```
-
-### -InformationAction
-Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
-
-- Continue
-- Ignore
-- Inquire
-- SilentlyContinue
-- Stop
-- Suspend
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: infa
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -InformationVariable
-Specifies an information variable.
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases: iv
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

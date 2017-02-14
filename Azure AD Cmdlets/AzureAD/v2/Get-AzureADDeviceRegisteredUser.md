@@ -13,7 +13,7 @@ Gets a registered user.
 ## SYNTAX
 
 ```
-Get-AzureADDeviceRegisteredUser -ObjectId <String> [-Top <Int32>] [<CommonParameters>]
+Get-AzureADDeviceRegisteredUser -ObjectId <String> [-All <Boolean>] [-Top <Int32>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -32,6 +32,21 @@ The first command gets the object ID of a device by using the [Get-AzureADDevice
 The second command gets the registered users of the device in $DevId.
 
 ## PARAMETERS
+
+### -All
+If true, return all registered users. If false, return the number of objects specified by the Top parameter
+
+```yaml
+Type: Boolean
+Parameter Sets: (All)
+Aliases: 
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName, ByValue)
+Accept wildcard characters: False
+```
 
 ### -ObjectId
 Specifies an object ID.
