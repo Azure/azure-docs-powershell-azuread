@@ -250,7 +250,7 @@ Accept wildcard characters: False
 ### -TenantId
 Specifies the ID of a tenant.
 
-If you do not specify this parameter, the account is authenticated for all available tenants.
+If you do not specify this parameter, the account is authenticated with the home tenant.
 
 You must specify the *TenantId* parameter to authenticate as a service principal or when using Microsoft account.
 
