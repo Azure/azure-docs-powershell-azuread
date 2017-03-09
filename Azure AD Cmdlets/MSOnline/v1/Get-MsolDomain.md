@@ -30,21 +30,21 @@ The **Get-MsolDomain** cmdlet gets a company domains.
 
 ### Example 1: Get all domains for the company
 ```
-PS C:\> Get-Domain
+PS C:\> Get-MsolDomain
 ```
 
 This command retrieves all domains for the company, verified or unverified.
 
 ###  Example 2: Get a domain by name
 ```
-PS C:\> Get-Domain -Name "contoso.com"
+PS C:\> Get-MsolDomain -Name "contoso.com"
 ```
 
 This command retrieves the contoso.com domain.
 
 ###  Example 3: Get verified domains
 ```
-PS C:\> Get-Domain -Status Verified
+PS C:\> Get-MsolDomain -Status Verified
 ```
 
 This command returns a list of verified company domains.
