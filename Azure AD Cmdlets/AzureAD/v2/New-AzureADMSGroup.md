@@ -190,13 +190,19 @@ Accept wildcard characters: False
 
 ### -Visibility
 
-This parameter determines the visibility of the group. The parameter can take one of the following values:
+This parameter determines the visibility of the group's content and members list. This parameter can take one of the following values:
 
-"Public"
-"Private"
-"HiddenMembership" 
+"Public" - Anyone can view the contents of the group
+"Private" - Only members can view the content of the group
+"HiddenMembership" - Only members can view the content of the group and only members can view the members list of the group.
 
-If not value is provided, the default value will be "Public"
+If no value is provided, the default value will be "Public".
+
+Notes:
+
+1. This parameter is only valid for groups that have the groupType set to "Unified".
+2. If a group has this attribute set to "HiddenMembership" it cannot be changed later.
+3. Anyone can join a group that has this attribute set to "Public". If the attribute is set to Private or HiddenMembership, only owner(s) can add new members to the group and requests to join the group need approval of the owner(s).
 
 ```yaml
 Type: String
