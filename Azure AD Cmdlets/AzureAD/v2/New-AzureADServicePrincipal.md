@@ -31,10 +31,10 @@ New-AzureADServicePrincipal [-AccountEnabled <String>]
 
 ### Example 1: Create a service principal
 ```
-PS C:\>New-AzureADServicePrincipal -AccountEnabled $true -AppId $MyApp.AppId -AppRoleAssignmentRequired $true -DisplayName $App
+PS C:\>New-AzureADServicePrincipal -AccountEnabled $true -AppId $MyApp.AppId -AppRoleAssignmentRequired $true -DisplayName $App -Tags {WindowsAzureActiveDirectoryIntegratedApp}
 ```
 
-This command creates a service principal.
+This command creates a service principal. The tag "-Tags {WindowsAzureActiveDirectoryIntegratedApp}" is used to have this service principal show up in the list of Integrated Applicatins in the Admin Portal.
 
 ## PARAMETERS
 
@@ -266,7 +266,10 @@ Accept wildcard characters: False
 ```
 
 ### -Tags
-Tags linked to this service principal
+Tags linked to this service principal.
+
+Note that if you intend for this service principal to show up in the All Applications list in the admin portal, you need to set this value to {WindowsAzureActiveDirectoryIntegratedApp} 
+
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
 Parameter Sets: (All)
