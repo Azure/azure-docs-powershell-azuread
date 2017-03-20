@@ -22,17 +22,59 @@ The **New-AzureADUserAppRoleAssignment** cmdlet assigns a user to an application
 
 ## EXAMPLES
 
-### Example 1: Assign a user to an application role
-```
-PS C:\>New-AzureADUserAppRoleAssignment -ObjectId $user.ObjectId -PrincipalId $user.ObjectId -ResourceId $ServicePrincipal.ObjectId -Id $Role.Id
+### Example 1: Assign a user to an application without roles
 ```
 
-This command assigns a user to an application role.
+# Get AppId of the app to assign the user to
+
+$appId = Get-AzureADApplication -SearchString “<Your App's display name>”
+
+# Get the user to be added
+
+$user = Get-AzureADUser -searchstring "<You user's UPN>"
+
+# Get the service principal for the app you want to assign the user to
+
+$servicePrincipal = Get-AzureADServicePrincipal -Filter “appId eq ‘$appId'”
+
+# Create the user app role assignment
+
+New-AzureADUserAppRoleAssignment -ObjectId $user.ObjectId -PrincipalId $user.ObjectId -ResourceId $servicePrincipal.ObjectId -Id ([Guid]::Empty```
+
+This command assigns a user to and application that doesn;t have any roles.
+
+### Example 2: Assign a user to a specific role within an application
+
+`
+$username = "<You user's UPN>"
+$appname = "<Your App's display name>"
+$spo = Get-AzureADServicePrincipal -Filter "Displayname eq '$appname'"
+$user = Get-AzureADUser -ObjectId $username
+New-AzureADUserAppRoleAssignment -ObjectId $user.ObjectId -PrincipalId $user.ObjectId -ResourceId $spo.ObjectId -Id $spo.Approles[1].id`
+
+This cmdlet assigns to the specified user the application role of which the Id is specified with $spo.Approles[1].id. please refer to the description of the -Id parameter for more information on how to retrieve application roles for an application.
 
 ## PARAMETERS
 
 ### -Id
-Specifies an ID.
+The ID of the app role to assign. Provide an empty guid when creating a new app role assignement for an application that does not have any roles, or the Id of the role to assign to the user.
+
+You can retrieve the application's roles by examining the application object's AppRoles property:
+
+`Get-AzureadApplication -SearchString "<Your App's display name>" | select Approles | Fl`
+
+This cmdlet returns the list of roles that are defined in an application:
+
+`AppRoles : {class AppRole {
+             AllowedMemberTypes: System.Collections.Generic.List1[System.String]
+             Description: <description for this role>
+             DisplayName: <display name for this role>
+             Id: 97e244a2-6ccd-4312-9de6-ecb21884c9f7
+             IsEnabled: True
+             Value: <Value that will be transmitted as a claim in a token for this role>
+           }
+           }`
+
 
 ```yaml
 Type: String
@@ -84,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-Specifies the ID of a user (as a UPN or ObjectId) in Azure AD.
+Specifies the ID of the user (as a UPN or ObjectId) in Azure AD to which the new app role is to be assigned
 
 ```yaml
 Type: String
@@ -99,6 +141,8 @@ Accept wildcard characters: False
 ```
 
 ### -PrincipalId
+The object ID of the principal to which the new app role is assigned. When assigning a new role to a user provide the object ID of the user.
+
 ```yaml
 Type: String
 Parameter Sets: (All)
@@ -112,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Specifies a resource ID.
+The object ID of the Service Principal for the application to which the user role is assigned.
 
 ```yaml
 Type: String
