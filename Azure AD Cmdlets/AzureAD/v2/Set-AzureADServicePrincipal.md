@@ -280,6 +280,7 @@ Accept wildcard characters: False
 
 ### -Tags
 Specifies an array of tags.
+Note that if you intend for this service principal to show up in the All Applications list in the admin portal, you need to set this value to {WindowsAzureActiveDirectoryIntegratedApp} 
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
