@@ -31,10 +31,11 @@ The **New-AzureADUser** cmdlet creates a user in Azure Active Directory (AD).
 ## EXAMPLES
 
 ### Example 1: Create a user
-```
-$PasswordProfile = New-Object -TypeName Microsoft.Open.AzureAD.Model.PasswordProfile
-$PasswordProfile.Password = "<Password>"
-New-AzureADUser -DisplayName "New User" -PasswordProfile $PasswordProfile -UserPrincipalName "NewUser@contoso.com" -AccountEnabled $true -MailNickName "Newuser"
+	$PasswordProfile = New-Object -TypeName Microsoft.Open.AzureAD.Model.PasswordProfile
+
+	$PasswordProfile.Password = "Password"
+
+```New-AzureADUser -DisplayName "New User" -PasswordProfile $PasswordProfile -UserPrincipalName "NewUser@contoso.com" -AccountEnabled $true -MailNickName "Newuser"
 
 ObjectId                             DisplayName UserPrincipalName               UserType
 --------                             ----------- -----------------               --------
@@ -291,15 +292,15 @@ Accept wildcard characters: False
 ### -PasswordProfile
 Specifies the user's password profile. Note that the parameter type for this parameter is "PasswordProfile". in order to pass a parameter of this type, you first need to create a vairable in PowerShell with that type:
 
-```$PasswordProfile = New-Object -TypeName Microsoft.Open.AzureAD.Model.PasswordProfile```
+	$PasswordProfile = New-Object -TypeName Microsoft.Open.AzureAD.Model.PasswordProfile
 
 Then you can proceed to set the value of the password in this variable:
 
-```$PasswordProfile.Password = "<Password>```
+	$PasswordProfile.Password = "<Password>"
 
 And finally you can pass this variable to the cmdlet:
 
-```New-AzureADUser -PasswordProfile $PasswordProfile ...```
+	New-AzureADUser -PasswordProfile $PasswordProfile ...
 
 Other attributes that can be set in the PasswordProfile are
 

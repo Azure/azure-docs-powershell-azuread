@@ -31,7 +31,7 @@ $appId = Get-AzureADApplication -SearchString “<Your App's display name>”
 
 # Get the user to be added
 
-$user = Get-AzureADUser -searchstring "<You user's UPN>"
+$user = Get-AzureADUser -searchstring "<Your user's UPN>"
 
 # Get the service principal for the app you want to assign the user to
 
@@ -63,11 +63,11 @@ The ID of the app role to assign. Provide an empty guid when creating a new app 
 
 You can retrieve the application's roles by examining the application object's AppRoles property:
 
-```Get-AzureadApplication -SearchString "<Your App's display name>" | select Approles | Fl```
+	Get-AzureadApplication -SearchString "Your Application display name" | select Approles | Fl 
 
 This cmdlet returns the list of roles that are defined in an application:
 
-```AppRoles : {class AppRole {
+	AppRoles : {class AppRole {
              AllowedMemberTypes: System.Collections.Generic.List1[System.String]
              Description: <description for this role>
              DisplayName: <display name for this role>
@@ -76,7 +76,6 @@ This cmdlet returns the list of roles that are defined in an application:
              Value: <Value that will be transmitted as a claim in a token for this role>
            }
            }
-```
 
 
 ```yaml
