@@ -39,18 +39,20 @@ $servicePrincipal = Get-AzureADServicePrincipal -Filter “appId eq ‘$appId'�
 
 # Create the user app role assignment
 
-New-AzureADUserAppRoleAssignment -ObjectId $user.ObjectId -PrincipalId $user.ObjectId -ResourceId $servicePrincipal.ObjectId -Id ([Guid]::Empty```
+New-AzureADUserAppRoleAssignment -ObjectId $user.ObjectId -PrincipalId $user.ObjectId -ResourceId $servicePrincipal.ObjectId -Id ([Guid]::Empty)
+```
 
 This command assigns a user to and application that doesn;t have any roles.
 
 ### Example 2: Assign a user to a specific role within an application
 
-`
+```
 $username = "<You user's UPN>"
 $appname = "<Your App's display name>"
 $spo = Get-AzureADServicePrincipal -Filter "Displayname eq '$appname'"
 $user = Get-AzureADUser -ObjectId $username
-New-AzureADUserAppRoleAssignment -ObjectId $user.ObjectId -PrincipalId $user.ObjectId -ResourceId $spo.ObjectId -Id $spo.Approles[1].id`
+New-AzureADUserAppRoleAssignment -ObjectId $user.ObjectId -PrincipalId $user.ObjectId -ResourceId $spo.ObjectId -Id $spo.Approles[1].id
+```
 
 This cmdlet assigns to the specified user the application role of which the Id is specified with $spo.Approles[1].id. please refer to the description of the -Id parameter for more information on how to retrieve application roles for an application.
 
@@ -61,11 +63,11 @@ The ID of the app role to assign. Provide an empty guid when creating a new app 
 
 You can retrieve the application's roles by examining the application object's AppRoles property:
 
-`Get-AzureadApplication -SearchString "<Your App's display name>" | select Approles | Fl`
+```Get-AzureadApplication -SearchString "<Your App's display name>" | select Approles | Fl```
 
 This cmdlet returns the list of roles that are defined in an application:
 
-`AppRoles : {class AppRole {
+```AppRoles : {class AppRole {
              AllowedMemberTypes: System.Collections.Generic.List1[System.String]
              Description: <description for this role>
              DisplayName: <display name for this role>
@@ -73,7 +75,8 @@ This cmdlet returns the list of roles that are defined in an application:
              IsEnabled: True
              Value: <Value that will be transmitted as a claim in a token for this role>
            }
-           }`
+           }
+```
 
 
 ```yaml
