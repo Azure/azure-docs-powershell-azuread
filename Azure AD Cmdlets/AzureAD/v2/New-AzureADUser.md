@@ -32,7 +32,9 @@ The **New-AzureADUser** cmdlet creates a user in Azure Active Directory (AD).
 
 ### Example 1: Create a user
 ```
-PS C:\>New-AzureADUser -DisplayName "New user" -PasswordProfile $password -AccountEnabled $true -MailNickName "bpos" -UserPrincipalName "NewUser@contoso.com"
+$PasswordProfile = New-Object -TypeName Microsoft.Open.AzureAD.Model.PasswordProfile
+$PasswordProfile.Password = "<Password>"
+New-AzureADUser -DisplayName "New User" -PasswordProfile $PasswordProfile -UserPrincipalName "NewUser@contoso.com" -AccountEnabled $true -MailNickName "Newuser"
 
 ObjectId                             DisplayName UserPrincipalName               UserType
 --------                             ----------- -----------------               --------
@@ -272,7 +274,7 @@ Accept wildcard characters: False
 ```
 
 ### -PasswordPolicies
-Specifies the user's password policies.
+Specifies password policies for the user. This value is an enumeration with one possible value being "DisableStrongPassword", which allows weaker passwords than the default policy to be specified. "DisablePasswordExpiration" can also be specified. The two may be specified together; for example: "DisablePasswordExpiration, DisableStrongPassword".
 
 ```yaml
 Type: String
@@ -287,7 +289,23 @@ Accept wildcard characters: False
 ```
 
 ### -PasswordProfile
-Specifies the user's password profile.
+Specifies the user's password profile. Note that the parameter type for this parameter is "PasswordProfile". in order to pass a parameter of this type, you first need to create a vairable in PowerShell with that type:
+
+```$PasswordProfile = New-Object -TypeName Microsoft.Open.AzureAD.Model.PasswordProfile```
+
+Then you can proceed to set the value of the password in this variable:
+
+```$PasswordProfile.Password = "<Password>```
+
+And finally you can pass this variable to the cmdlet:
+
+```New-AzureADUser -PasswordProfile $PasswordProfile ...```
+
+Other attributes that can be set in the PasswordProfile are
+
+$PasswordProfile.EnforceChangePasswordPolicy - a boolean indicating that the change password policy is enababled or disabled for this user
+$PasswordProfile.ForceChangePasswordNextLogin - a boolean indicating that the user must change the password at the next sign in
+
 
 ```yaml
 Type: PasswordProfile
