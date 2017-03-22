@@ -194,7 +194,7 @@ This parameter determines the visibility of the group's content and members list
 
 "Public" - Anyone can view the contents of the group
 "Private" - Only members can view the content of the group
-"HiddenMembership" - Only members can view the content of the group and only members can view the members list of the group.
+"HiddenMembership" - Only members can view the content of the group and only members, owners, Global/Company Administrator, User Administrator and Helpdesk Administrators can view the members list of the group.
 
 If no value is provided, the default value will be "Public".
 
