@@ -13,7 +13,7 @@ Deletes settings in Azure Active Directory.
 ## SYNTAX
 
 ```
-Remove-AzureADObjectSetting [-Confirm] -TargetType <String> -TargetObjectId <String> [-ObjectId <String>]
+Remove-AzureADObjectSetting [-Confirm] -TargetType <String> -TargetObjectId <String> [-Id <String>]
  [-InformationAction <ActionPreference>] [-InformationVariable <String>] [<CommonParameters>]
 ```
 
@@ -61,7 +61,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ObjectId
+### -Id
 Specfies the ID of a settings object in Azure AD.
 
 ```yaml

@@ -23,7 +23,7 @@ Get-AzureADDirectorySetting -ObjectId <String> [-All <Boolean>] [<CommonParamete
 ```
 
 ## DESCRIPTION
-The **Get-AzureADDirectorySetting** cmdlet gets a directory setting from Azure Active Directory (AD).
+The Get-AzureADDirectorySetting cmdlet gets a directory setting from Azure Active Directory (AD).
 
 ## EXAMPLES
 
@@ -44,7 +44,7 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
-### -ObjectId
+### -Id
 Specifies the ID of a directory in Azure AD.
 
 ```yaml

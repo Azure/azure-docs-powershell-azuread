@@ -13,7 +13,7 @@ Deletes a directory setting in Azure Active Directory.
 ## SYNTAX
 
 ```
-Remove-AzureADDirectorySetting [-Confirm] [-ObjectId <String>] [-InformationAction <ActionPreference>]
+Remove-AzureADDirectorySetting [-Confirm] [-Id <String>] [-InformationAction <ActionPreference>]
  [-InformationVariable <String>] [<CommonParameters>]
 ```
 
@@ -61,7 +61,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ObjectId
+### -Id
 Specifies the object ID of a settings object in Azure AD.
 
 ```yaml

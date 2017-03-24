@@ -13,7 +13,7 @@ Updates a directory setting in Azure Active Directory.
 ## SYNTAX
 
 ```
-Set-AzureADDirectorySetting [-ObjectId <String>] -DirectorySetting <DirectorySetting>
+Set-AzureADDirectorySetting [-Id <String>] -DirectorySetting <DirectorySetting>
  [-InformationAction <ActionPreference>] [-InformationVariable <String>] [<CommonParameters>]
 ```
 
@@ -76,7 +76,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ObjectId
+### -Id
 Specifies the ID of a settings object in Azure AD.
 
 ```yaml

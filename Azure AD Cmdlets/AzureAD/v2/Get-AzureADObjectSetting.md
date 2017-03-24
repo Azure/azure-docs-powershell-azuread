@@ -20,12 +20,12 @@ Get-AzureADObjectSetting -TargetType <String> -TargetObjectId <String> [-All <Bo
 
 ### GetById
 ```
-Get-AzureADObjectSetting -TargetType <String> -TargetObjectId <String> -ObjectId <String> [-All <Boolean>]
+Get-AzureADObjectSetting -TargetType <String> -TargetObjectId <String> -Id <String> [-All <Boolean>]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The **Get-AzureADObjectSetting** cmdlet gets an object from Azure Active Directory (AD).
+The Get-AzureADObjectSetting cmdlet gets an object setting from Azure Active Directory (AD).
 
 ## EXAMPLES
 
@@ -46,7 +46,7 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
-### -ObjectId
+### -Id
 Specifies the ID of a settings object. 
 
 ```yaml

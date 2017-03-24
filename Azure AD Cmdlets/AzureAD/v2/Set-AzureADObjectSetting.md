@@ -13,7 +13,7 @@ Updates object settings.
 ## SYNTAX
 
 ```
-Set-AzureADObjectSetting -TargetType <String> -TargetObjectId <String> [-ObjectId <String>]
+Set-AzureADObjectSetting -TargetType <String> -TargetObjectId <String> [-Id <String>]
  -DirectorySetting <DirectorySetting> [-InformationAction <ActionPreference>] [-InformationVariable <String>]
  [<CommonParameters>]
 ```
@@ -26,7 +26,7 @@ The **Set-AzureADObjectSetting** cmdlet updates the settings for an object in Az
 ## PARAMETERS
 
 ### -DirectorySetting
-Specifies a **DirectorySetting** objet. 
+Specifies a **DirectorySetting** object. 
 
 ```yaml
 Type: DirectorySetting
@@ -77,7 +77,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ObjectId
+### -Id
 Specifies the ID of a settings object.
 
 ```yaml
