@@ -12,7 +12,7 @@ ms.assetid: BB86A603-6CD9-4299-89B8-30A2B4A011A0
 
 Note: this is the older MSOnline V1 PowerShell module for Azure Active Directory. Customers are encouraged to use the newer Azure Active Directory V2 PowerShell module instead of this module. For more information about the V2 module please see [Azure Active Directory V2 PowerShell](https://docs.microsoft.com/en-us/powershell/azuread/v2/azureactivedirectory).
 
-You can install the MSOnline V2 PowerShell module for Azure Active Directory from [this link](https://www.powershellgallery.com/packages/MSOnline).
+You can install the MSOnline V1 PowerShell module for Azure Active Directory from [this link](https://www.powershellgallery.com/packages/MSOnline).
 
 This topic displays help topics for the Azure Active Directory MSOnline module.
 
