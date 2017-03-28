@@ -3,7 +3,7 @@
         "azure-docs-powershell-azuread/Azure AD Cmdlets": {
             "AzureAD": {
                 "_displayName": "AzureAD",
-                "_version": "v2"
+                "_version": "2"
             }
         }
     },
@@ -11,7 +11,7 @@
         "azure-docs-powershell-azuread/Azure AD Cmdlets": {
             "MSOnline": {
                 "_displayName": "MSOnline",
-                "_version": "v1"
+                "_version": "1"
             }
         }
     }
