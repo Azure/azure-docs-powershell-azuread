@@ -1,23 +1,31 @@
 branches:
   only:
     - master
-    - live
+clone_folder: c:\projects\azure-docs-powershell-azuread
 environment:
+  nodejs_version: "6"
   github_access_token:
-    secure: JSOJKfdgXW09TdfN75l84f7+22GElWNgPo1Vab449RFYe8+BEbO/btueR3g0qldG
+    secure: DpN0M7pZDocpyv+muc15qHDKz9lMJ7Zr34aMC0HtOdeVkbTERuKkxq4WHAd3S33v
+
 before_build:
-  - git clone -q https://github.com/Visual-Studio-China/ci-scripts.git %TEMP%\scripts
-build_script:
-  - cd %TEMP%\scripts
-  - ps: .\process_files_and_toc.ps1
-test: off
-on_success:
-  - git clone -q --branch=%APPVEYOR_REPO_BRANCH% %content_repo% %TEMP%\Azure
-  - cd %TEMP%\scripts
-  - ps: .\update_content_repo.ps1
-  - cd %TEMP%\Azure
+  - set path=%programfiles(x86)%\Microsoft SDKs\TypeScript\2.2;%path%
+  - ps: Install-Product node $env:nodejs_version
   - git config --global credential.helper store
   - git config core.safecrlf false
   - ps: ac "$env:USERPROFILE\.git-credentials" "https://$($env:github_access_token):x-oauth-basic@github.com`n"
+  - git clone -q https://github.com/MicrosoftDocs/azure-psdocs-ciscripts.git c:\projects\ciscripts
+  - cd c:\projects\ciscripts
+  - git clone -q https://github.com/MicrosoftDocs/azure-psdocs-processing.git azure-psdocs-processing -b dev
+  - git clone -q https://github.com/Azure/azure-docs-powershell-azuread
+  - npm install
+  - npm install -g typescript
+  - tsc
+build_script:
+  - node ./out/index "azure-docs-powershell-azuread/Azure AD Cmdlets/mapping/monikerMapping.json" azure-psdocs-processing
+test: off
+on_success:
+  - cd azure-psdocs-processing
   - git add -A
-  - git diff --quiet --exit-code --cached || git commit --author="VSC CI Service <vscavu@microsoft.com>" -m "Update azure powershell azuread docs." && git push origin %APPVEYOR_REPO_BRANCH%
+  - git diff --quiet --exit-code --cached || git commit --author="VSC CI Service <vscavu@microsoft.com>" -m "Update azure powershell docs." && git push origin dev
+# on_finish:
+#  - ps: $blockRdp = $true; iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
