@@ -12,8 +12,15 @@ Gets a directory setting template.
 
 ## SYNTAX
 
+### GetQuery (Default)
 ```
-Get-AzureADDirectorySettingTemplate [-ObjectId <String>] [-InformationAction <ActionPreference>]
+Get-AzureADDirectorySettingTemplate [-InformationAction <ActionPreference>] [-InformationVariable <String>]
+ [<CommonParameters>]
+```
+
+### GetById
+```
+Get-AzureADDirectorySettingTemplate -Id <String> [-InformationAction <ActionPreference>]
  [-InformationVariable <String>] [<CommonParameters>]
 ```
 
@@ -61,15 +68,15 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ObjectId
-Specifies the ID of a setting template in Azure AD.
+### -Id
+The ID of the settings template you want to retrieve
 
 ```yaml
 Type: String
-Parameter Sets: (All)
+Parameter Sets: GetById
 Aliases: 
 
-Required: False
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByPropertyName, ByValue)

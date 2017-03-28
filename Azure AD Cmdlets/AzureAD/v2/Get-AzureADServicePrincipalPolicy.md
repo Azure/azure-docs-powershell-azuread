@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
 ms.assetid: D4C305FF-6005-4296-8B26-CFFCACFF9D2C
 online version: 
 schema: 2.0.0
@@ -12,7 +12,7 @@ schema: 2.0.0
 ## SYNTAX
 
 ```
-Get-AzureADServicePrincipalPolicy -ObjectId <String> [-InformationAction <ActionPreference>]
+Get-AzureADServicePrincipalPolicy -Id <String> [-InformationAction <ActionPreference>]
  [-InformationVariable <String>] [<CommonParameters>]
 ```
 
@@ -67,8 +67,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ObjectId
-Specifies the ID of a service principal.
+### -Id
+The ID of the Service Principal for which you want to retrieve the policy
 
 ```yaml
 Type: String

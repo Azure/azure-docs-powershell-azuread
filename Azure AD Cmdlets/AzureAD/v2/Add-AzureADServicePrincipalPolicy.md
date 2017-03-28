@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
 ms.assetid: C6B7A2E6-1C8E-4E8E-AF21-24999DF81310
 online version: 
 schema: 2.0.0
@@ -13,8 +13,8 @@ Adds a service principal policy.
 ## SYNTAX
 
 ```
-Add-AzureADServicePrincipalPolicy -ObjectId <String> -RefObjectId <String>
- [-InformationAction <ActionPreference>] [-InformationVariable <String>] [<CommonParameters>]
+Add-AzureADServicePrincipalPolicy -Id <String> -RefObjectId <String> [-InformationAction <ActionPreference>]
+ [-InformationVariable <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -66,8 +66,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ObjectId
-Specifies the object Id of the application.
+### -RefObjectId
+Specifies the object Id of the policy.
 
 ```yaml
 Type: String
@@ -81,8 +81,8 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
-### -RefObjectId
-Specifies the object Id of the policy.
+### -Id
+The ID of the Service Principal for which you need to set the policy
 
 ```yaml
 Type: String

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
 ms.assetid: 20303C1F-EB5F-4326-B522-2241D736ED4E
 online version: 
 schema: 2.0.0
@@ -13,7 +13,7 @@ Gets an application policy.
 ## SYNTAX
 
 ```
-Get-AzureADApplicationPolicy -ObjectId <String> [-InformationAction <ActionPreference>]
+Get-AzureADApplicationPolicy -Id <String> [-InformationAction <ActionPreference>]
  [-InformationVariable <String>] [<CommonParameters>]
 ```
 
@@ -70,8 +70,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ObjectId
-Specifies the ID of the application.
+### -Id
+The ID of the application for which you need to retrieve the policy
 
 ```yaml
 Type: String

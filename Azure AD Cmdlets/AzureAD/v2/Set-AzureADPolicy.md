@@ -13,7 +13,7 @@ Updates a policy.
 ## SYNTAX
 
 ```
-Set-AzureADPolicy [-ObjectId <String>] [-AlternativeIdentifier <String>]
+Set-AzureADPolicy -Id <String> [-AlternativeIdentifier <String>]
  [-Definition <System.Collections.Generic.List`1[System.String]>] [-DisplayName <String>]
  [-IsOrganizationDefault <Boolean>]
  [-KeyCredentials <System.Collections.Generic.List`1[Microsoft.Open.MSGraph.Model.KeyCredential]>]
@@ -110,21 +110,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ObjectId
-Specifies the object ID of a policy.
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases: 
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: True (ByPropertyName, ByValue)
-Accept wildcard characters: False
-```
-
 ### -Type
 Specifies the type of policy. For token lifetimes, use "TokenLifetimePolicy".
 
@@ -137,6 +122,21 @@ Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Id
+The Id pf the policy for which you want to set values.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: 
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 

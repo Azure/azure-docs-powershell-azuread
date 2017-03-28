@@ -12,10 +12,10 @@ Changes attribute values on an Azure AD group.
 ## SYNTAX
 
 ```
-Set-AzureADMSGroup [-Id <String>] [-Description <String>] [-DisplayName <String>] [-MailEnabled <Boolean>]
+Set-AzureADMSGroup -Id <String> [-Description <String>] [-DisplayName <String>] [-MailEnabled <Boolean>]
  [-MailNickname <String>] [-SecurityEnabled <Boolean>]
  [-GroupTypes <System.Collections.Generic.List`1[System.String]>] [-MembershipRule <String>]
- [-MembershipRuleProcessingState <String>]
+ [-MembershipRuleProcessingState <String>] [-Visibility <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -57,7 +57,7 @@ Type: String
 Parameter Sets: (All)
 Aliases: 
 
-Required: False
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByPropertyName, ByValue)
@@ -196,6 +196,35 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+This parameter determines the visibility of the group's content and members list. This parameter can take one of the following values:
+
+"Public" - Anyone can view the contents of the group
+"Private" - Only members can view the content of the group
+"HiddenMembership" - Only members can view the content of the group and only members, owners, Global/Company Administrator, User Administrator and Helpdesk Administrators can view the members list of the group.
+
+If no value is provided, the default value will be "Public".
+
+Notes:
+
+1. This parameter is only valid for groups that have the groupType set to "Unified".
+2. If a group has this attribute set to "HiddenMembership" it cannot be changed later.
+3. Anyone can join a group that has this attribute set to "Public". If the attribute is set to Private or HiddenMembership, only owner(s) can add new members to the group and requests to join the group need approval of the owner(s).
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: 
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+
 ## INPUTS
 
 ### System.String
@@ -210,6 +239,7 @@ While a cmdlet is in Public Preview, we may make changes to the cmdlet which cou
 We recommend that you do not use this cmdlet in a production environment.
 
 ## RELATED LINKS
+
 [Get-AzureADMSGroup](./Get-AzureADMSGroup.md)
 
 [New-AzureADMSGroup](./New-AzureADMSGroup.md)

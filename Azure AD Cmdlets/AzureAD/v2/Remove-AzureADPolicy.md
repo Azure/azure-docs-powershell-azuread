@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
 ms.assetid: D74563F0-14B9-43BD-8C3C-BC46CD505407
 online version: 
 schema: 2.0.0
@@ -13,7 +13,7 @@ Removes a policy.
 ## SYNTAX
 
 ```
-Remove-AzureADPolicy -ObjectId <String> [-InformationAction <ActionPreference>] [-InformationVariable <String>]
+Remove-AzureADPolicy -Id <String> [-InformationAction <ActionPreference>] [-InformationVariable <String>]
  [<CommonParameters>]
 ```
 
@@ -24,7 +24,7 @@ The **Remove-AzureADPolicy** cmdlet removes a policy from Azure Active Directory
 
 ### Example 1: Remove a policy
 ```
-PS C:\>Remove-AzureADPolicy -ObjectId *<objectID>*.
+PS C:\>Remove-AzureADPolicy -Id *<ID>*.
 ```
 
 This command removes the specified policy.
@@ -68,8 +68,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ObjectId
-Specifies the object ID of the policy to remove.
+### -Id
+The Id of the policy you want to remove
 
 ```yaml
 Type: String

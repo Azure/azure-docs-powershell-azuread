@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
 ms.assetid: 5655BF04-B245-4D0E-9AD9-AAAA1A6B048D
 online version: 
 schema: 2.0.0
@@ -19,7 +19,7 @@ Get-AzureADPolicy [-InformationAction <ActionPreference>] [-InformationVariable 
 
 ### GetById
 ```
-Get-AzureADPolicy -ObjectId <String> [-InformationAction <ActionPreference>] [-InformationVariable <String>]
+Get-AzureADPolicy -Id <String> [-InformationAction <ActionPreference>] [-InformationVariable <String>]
  [<CommonParameters>]
 ```
 
@@ -67,8 +67,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ObjectId
-\[Optional\] Specifies the ID of the policy object to get.
+### -Id
+The Id of the policy you want to retrieve
 
 ```yaml
 Type: String

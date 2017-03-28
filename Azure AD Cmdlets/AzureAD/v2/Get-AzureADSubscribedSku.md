@@ -12,9 +12,16 @@ Gets subscribed SKUs to Microsoft services.
 
 ## SYNTAX
 
+### GetQuery (Default)
 ```
 Get-AzureADSubscribedSku [-InformationAction <ActionPreference>] [-InformationVariable <String>]
  [<CommonParameters>]
+```
+
+### GetById
+```
+Get-AzureADSubscribedSku -ObjectId <String> [-InformationAction <ActionPreference>]
+ [-InformationVariable <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -72,6 +79,21 @@ Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ObjectId
+The object ID of the SKU
+
+```yaml
+Type: String
+Parameter Sets: GetById
+Aliases: 
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
