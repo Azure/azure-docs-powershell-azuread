@@ -15,7 +15,7 @@ before_build:
   - ps: ac "$env:USERPROFILE\.git-credentials" "https://$($env:github_access_token):x-oauth-basic@github.com`n"
   - git clone -q https://github.com/MicrosoftDocs/azure-psdocs-ciscripts.git c:\projects\ciscripts
   - cd c:\projects\ciscripts
-  - git clone -q https://github.com/MicrosoftDocs/azure-psdocs-processing.git azure-psdocs-processing -b dev
+  - git clone -q https://github.com/MicrosoftDocs/azure-psdocs-processing.git azure-psdocs-processing
   - git clone -q https://github.com/Azure/azure-docs-powershell-azuread
   - npm install
   - npm install -g typescript
@@ -26,6 +26,6 @@ test: off
 on_success:
   - cd azure-psdocs-processing
   - git add -A
-  - git diff --quiet --exit-code --cached || git commit --author="VSC CI Service <vscavu@microsoft.com>" -m "Update azure powershell docs." && git push origin dev
+  - git diff --quiet --exit-code --cached || git commit --author="VSC CI Service <vscavu@microsoft.com>" -m "Update azure powershell docs." && git push origin master
 # on_finish:
 #  - ps: $blockRdp = $true; iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
