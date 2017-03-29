@@ -10,6 +10,6 @@ Please refer to the below detailed description of the modules for a full list of
 
 Module | Description
 ------ | -----------
-[AzureAD](https://docs.microsoft.com/en-us/powershell/azuread/v2/azureactivedirectory) | Azure Active Directory PowerShell v2
-[MSOnline](https://docs.microsoft.com/en-us/powershell/msonline/v1/azureactivedirectory)| Azure Active Directory PowerShell v1
+[AzureAD](module/azuread) | Azure Active Directory PowerShell v2
+[MSOnline](module/msonline)| Azure Active Directory PowerShell v1
 
