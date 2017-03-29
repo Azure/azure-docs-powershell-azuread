@@ -104,7 +104,7 @@ Accept wildcard characters: False
 
 ### -MailNickname
 Specifies a mail nickname for the group.
-If MailEnabled is $False, you must specify a mail nickname.
+If MailEnabled is $False you must still specify a mail nickname.
 
 ```yaml
 Type: String
