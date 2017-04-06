@@ -28,7 +28,7 @@ Get-AzureADMSDeletedGroup [-All <Boolean>] [-Top <Int32>] [-Filter <String>]
 ```
 
 ## DESCRIPTION
-This cmdlet is used to retrieve the soft deleted groups in a directory. When a group is deleted it is initially soft deleted and can be recovered during the first 30 days after deletion. After 30 days the group is permanently deleted and can no longer be recovered. 
+This cmdlet is used to retrieve the soft deleted groups in a directory. When a group is deleted it is initially soft deleted and can be recovered during the first 30 days after deletion. After 30 days the group is permanently deleted and can no longer be recovered. Note that soft delete is currently only implemented for Unified Groups (a.k.a. Office 365 Groups).
 
 ## EXAMPLES
 
