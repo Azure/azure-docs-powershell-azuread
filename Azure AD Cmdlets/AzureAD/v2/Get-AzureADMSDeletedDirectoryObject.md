@@ -7,7 +7,7 @@ schema: 2.0.0
 # Get-AzureADMSDeletedDirectoryObject
 
 ## SYNOPSIS
-This cmdlet is used to retrieve a deleted directory object from the directory
+This cmdlet is used to retrieve a soft deleted directory object from the directory
 
 ## SYNTAX
 
@@ -16,7 +16,7 @@ Get-AzureADMSDeletedDirectoryObject -Id <String>
 ```
 
 ## DESCRIPTION
-This cmdlet is used to retrieve a deleted directory object from the directory
+This cmdlet is used to retrieve a soft deleted directory object from the directory. Note that soft delete for groups is currently only implemented for Unified Groups (a.k.a. Office 365 Groups).
 
 ## EXAMPLES
 
