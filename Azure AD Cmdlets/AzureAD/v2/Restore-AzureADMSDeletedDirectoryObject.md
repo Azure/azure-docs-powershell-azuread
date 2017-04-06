@@ -17,7 +17,7 @@ Restore-AzureADMSDeletedDirectoryObject -Id <String>
 
 ## DESCRIPTION
 This cmdlet is used to restore a previously deleted object. Currently, only restoring Group and Application objects is supported. 
-When a group or an application is deleted it is initially soft deleted and can be recovered during the first 30 days after deletion. After 30 days the deleted object is permanently deleted and can no longer be recovered. 
+When a group or an application is deleted it is initially soft deleted and can be recovered during the first 30 days after deletion. After 30 days the deleted object is permanently deleted and can no longer be recovered. Note that only Unified Groups (a.k.a. Office 365 Groups) can be restored. Security groups cannot be restored.
 
 ## EXAMPLES
 
