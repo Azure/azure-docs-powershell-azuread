@@ -38,13 +38,12 @@ $PasswordProfile = New-Object -TypeName Microsoft.Open.AzureAD.Model.PasswordPro
 $PasswordProfile.Password = "Password"
 ```
 
-```powershell
-New-AzureADUser -DisplayName "New User" -PasswordProfile $PasswordProfile -UserPrincipalName "NewUser@contoso.com" -AccountEnabled $true -MailNickName "Newuser"
+`New-AzureADUser -DisplayName "New User" -PasswordProfile $PasswordProfile -UserPrincipalName "NewUser@contoso.com" -AccountEnabled $true -MailNickName "Newuser"`
 
-ObjectId                             DisplayName UserPrincipalName               UserType
---------                             ----------- -----------------               --------
-5e8b0f4d-2cd4-4e17-9467-b0f6a5c0c4d0 New user    NewUser@contoso.com             Member
-```
+`ObjectId                             DisplayName UserPrincipalName               UserType`
+`--------                             ----------- -----------------               --------`
+`5e8b0f4d-2cd4-4e17-9467-b0f6a5c0c4d0 New user    NewUser@contoso.com             Member`
+
 
 This command creates a new user.
 
