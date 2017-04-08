@@ -10,11 +10,20 @@ Please note that we will begin to deprecate this module when the functionality o
 
 The Azure AD Module is supported on the following Windows operating systems with the default version of Microsoft .NET Framework and Windows PowerShell: Windows 8.1, Windows 8, Windows 7, Windows Server 2012 R2, Windows Server 2012, or Windows Server 2008 R2.
 
-There are two versions of the Azure Active Directory Module for Windows PowerShell available: a General Availability version and a Public Preview Version.
-The Public Preview version contains cmdlets that have not yet been released for General Availability.
+The easiest way to install the module is from the [PowerShell Gallery](https://www.powershellgallery.com/packages/MSOnline). You can install the module with the Install-Module cmdlet:
 
-Select the version you want from the [Azure Active Directory Connection download page](http://connect.microsoft.com/site1164/Downloads/DownloadDetails.aspx?DownloadID=59185), download its .msi file, and click **Run** to run the installer package.
+  Install-Module MSOnline
 
+You can also download the module from the [Azure Active Directory Connection download page](http://connect.microsoft.com/site1164/Downloads/DownloadDetails.aspx?DownloadID=59185), download its .msi file, and click **Run** to run the installer package.
+
+## MSOnline Public Preview module
+
+The MSOnline Public Preview release 1.1.130.0 is no longer available for download. If you are looking for the MSOL-Settings cmdlets to manage groups settings for Unified Groups, these are now available in the newer Azure AD PowerShell V2 Public Preview module, which can be found in the [Powershell Gallery for the Azure AD Preview module](https://www.powershellgallery.com/packages/AzureADPreview). You can install this module with the cmdlet
+
+  Install-Module AzureADPreview
+ 
+Note that the MSOL Settings cmdlets have been given a new name, more information about these cmdlets and how to use them can be found in [this article](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-accessmanagement-groups-settings-cmdlets).
+ 
 **Important**
 
 Effective October 20, 2014, the [Azure Active Directory Module for Windows PowerShell (32-bit version)](http://go.microsoft.com/fwlink/p/?linkid=236298) is discontinued.
