@@ -38,13 +38,13 @@ This will overwrite any previous settings.
 ```
 PS C:\> $a = @()
 PS C:\> $a = $a + (Get-MsolServicePrincipal -ServicePrincipalName "MyApp").Addresses
-PS C:\> $a = $a + (New-MsolServicePrincipalAddress -Value "myApp1.com")
-PS C:\> $a = $a + (New-MsolServicePrincipalAddress -Value "myApp2.com")
+PS C:\> $a = $a + (New-MsolServicePrincipalAddresses -Value "myApp1.com")
+PS C:\> $a = $a + (New-MsolServicePrincipalAddresses -Value "myApp2.com")
 PS C:\> Set-MsolServicePrincipal -AppPrincipalId $AppId -Addresses $a
 ```
 
 This command updates the addresses of a service principal.
-In this example, existing Addresses that were previously created ("myApp1.com", "myApp2.com") using the [New-MsolServicePrincipalAddress](./New-MsolServicePrincipalAddress.md) cmdlet, are associated with the service principal.
+In this example, existing Addresses that were previously created ("myApp1.com", "myApp2.com") using the [New-MsolServicePrincipalAddresses](./New-MsolServicePrincipalAddresses.md) cmdlet, are associated with the service principal.
 
 ## PARAMETERS
 
@@ -67,7 +67,7 @@ Accept wildcard characters: False
 Specifies the addresses list with which to update and overwrite the existing list.
 If you do not specify this parameter, the existing property is not updated.
 If you specify an empty list, the existing addresses are cleared.
-Use the [New-MsolServicePrincipalAddress](./New-MsolServicePrincipalAddress.md) cmdlet to help create the Addresses list object.
+Use the [New-MsolServicePrincipalAddress](./New-MsolServicePrincipalAddresses.md) cmdlet to help create the Addresses list object.
 
 ```yaml
 Type: RedirectUri[]
@@ -180,6 +180,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 [New-MsolServicePrincipal](./New-MsolServicePrincipal.md)
 
-[New-MsolServicePrincipalAddress](./New-MsolServicePrincipalAddress.md)
+[New-MsolServicePrincipalAddresses](./New-MsolServicePrincipalAddresses.md)
 
 [Remove-MsolServicePrincipal](./Remove-MsolServicePrincipal.md)
