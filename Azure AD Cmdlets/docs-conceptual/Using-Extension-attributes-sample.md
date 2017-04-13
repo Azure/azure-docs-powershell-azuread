@@ -1,3 +1,4 @@
+
 # Azure AD cmdlets for working with extension attributes
 
 ## About extension attributes
@@ -25,13 +26,19 @@ You can read more about extension properties in [this article.](https://msdn.mic
 
 In these examples we'll be using a user object and work with extension properties. We'll first find the ObjectId of the user so we can easily refer to it later:
 
-```powershell $UserId = (Get-AzureADUser -Searchstring <UPN of the user we're working with>).ObjectId ```
+```powershell 
+$UserId = (Get-AzureADUser -Searchstring <UPN of the user we're working with>).ObjectId 
+```
 
 ### Get all property values of a user
-```powershell (Get-AzureADUser -ObjectId $Userid).ToJson```
+```powershell 
+(Get-AzureADUser -ObjectId $Userid).ToJson
+```
 
 ### Get a user and show all extension properties
-```powershell Get-AzureADUser -ObjectId $UserID | Select -ExpandProperty ExtensionProperty```
+```powershell 
+Get-AzureADUser -ObjectId $UserID | Select -ExpandProperty ExtensionProperty
+```
 
 This cmdlet returns all extension properties of a user with their current values:
 
@@ -46,25 +53,35 @@ extension_e5e29b8a85d941eab8d12162bd004528_extensionAttribute13       Test
 
 ### Retrieve a the value of a specific extension property for a user
 
-```powershell (Get-AzureADUserExtension -ObjectId $UserId).get_item("extension_e5e29b8a85d941eab8d12162bd004528_wWWHomePage")```
+```powershell 
+(Get-AzureADUserExtension -ObjectId $UserId).get_item("extension_e5e29b8a85d941eab8d12162bd004528_wWWHomePage")
+```
 
 ### Retrieve all extension properties that are defined in your tenant
 
-```powershell Get-AzureADApplication | Get-AzureADApplicationExtensionProperty ```
+```powershell 
+Get-AzureADApplication | Get-AzureADApplicationExtensionProperty 
+```
 
 ### Create a new extension property
 
 Extension properties are always created for a specific application. If you just want to add generic properties to your directory, you can create a placeholder application:
 
-```powershell $MyApp = (New-AzureADApplication -DisplayName "My Properties Bag" -IdentifierUris "https://dummy").ObjectId ```
+```powershell 
+$MyApp = (New-AzureADApplication -DisplayName "My Properties Bag" -IdentifierUris "https://dummy").ObjectId 
+```
 
 Note that you need to create a service principal for this application in your directory as well, so you can create a new extension property:
 
-```powershell New-AzureADServicePrincipal -AppId (Get-AzureADApplication -SearchString "My Properties Bag").AppId ```
+```powershell 
+New-AzureADServicePrincipal -AppId (Get-AzureADApplication -SearchString "My Properties Bag").AppId 
+```
 
 Now we can use this application to create a new extension property:
 
-```powershell New-AzureADApplicationExtensionProperty -ObjectId $MyApp -Name "MyNewProperty" -DataType "String" -TargetObjects "User" ```
+```powershell 
+New-AzureADApplicationExtensionProperty -ObjectId $MyApp -Name "MyNewProperty" -DataType "String" -TargetObjects "User" 
+```
 
 When the cmdlet completes successfully it returns the new extension attribute object:
 
@@ -81,13 +98,17 @@ ObjectId                             Name                                       
 
 Using the extension property we used in the previous example, we can now assign a value to it:
 
-```powershell Set-AzureADUserExtension -ObjectId $UserId -ExtensionName "extension_0380f0f700c040b5aa577c9268940b53_MyNewProperty" -ExtensionValue "MyNewValue" ```
+```powershell 
+Set-AzureADUserExtension -ObjectId $UserId -ExtensionName "extension_0380f0f700c040b5aa577c9268940b53_MyNewProperty" -ExtensionValue "MyNewValue" 
+```
 
 ### Retrieving all extension attributes that are defined for your application
 
 You can retrieve the list of extension attributes that have been defined for your application:
 
-```powershell Get-AzureADApplicationExtensionProperty -ObjectId (Get-AzureADApplication -SearchString "My Properties Bag").ObjectId ```
+```powershell 
+Get-AzureADApplicationExtensionProperty -ObjectId (Get-AzureADApplication -SearchString "My Properties Bag").ObjectId 
+```
 
 This cmdlet returns the list of extension properties in your application:
 
@@ -101,4 +122,6 @@ ObjectId                             Name                                       
 
 If you no longer need an extension property, you can delete it:
 
-```powershell Remove-AzureADApplicationExtensionProperty -ObjectId (Get-AzureADApplication -SearchString "My Properties Bag").ObjectID -ExtensionPropertyId 91ec8ae5-6813-4453-afd7-31680a484892 ```
+```powershell 
+Remove-AzureADApplicationExtensionProperty -ObjectId (Get-AzureADApplication -SearchString "My Properties Bag").ObjectID -ExtensionPropertyId 91ec8ae5-6813-4453-afd7-31680a484892 
+```
