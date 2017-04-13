@@ -7,6 +7,7 @@
 ### [Managing Unified Groups settings using Powershell](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-accessmanagement-groups-settings-cmdlets)
 ### [Managing Role Based Access Control (RBAC)](https://docs.microsoft.com/en-us/azure/active-directory/role-based-access-control-manage-access-powershell)
 ### [Using extension attributes](using-extension-attributes-sample.md)
+### [Working with Administrative Units](Working-with-Administrative-Units.md)
 ## Powershell script snippets
 ### [Inviting guests in B2B](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-b2b-code-samples#powershell-example)
 ### [Creating a new user and setting the password](new-user-sample.md)
