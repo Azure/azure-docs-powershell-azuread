@@ -133,10 +133,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### System.Object
 
-## NOTES
-Please note that this cmdlet is currently in Public Preview.
-While a cmdlet is in Public Preview we may still need to make changes to the cmdlet which could potentially cause unexpected effects.
-We discourage customers from using this cmdlet in a production environment.
-
 ## RELATED LINKS
 
