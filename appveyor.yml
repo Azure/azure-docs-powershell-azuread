@@ -26,6 +26,6 @@ test: off
 on_success:
   - cd azure-psdocs-processing
   - git add -A
-  - git diff --quiet --exit-code --cached || git commit --author="VSC CI Service <vscavu@microsoft.com>" -m "Update azure powershell-azuread docs." && git pull origin master --rebase && git push origin master
+  - git diff --quiet --exit-code --cached || git commit --author="VSC CI Service <vscavu@microsoft.com>" -m "Update azure powershell-azuread docs." && git push origin %APPVEYOR_REPO_BRANCH%
 # on_finish:
 #  - ps: $blockRdp = $true; iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
