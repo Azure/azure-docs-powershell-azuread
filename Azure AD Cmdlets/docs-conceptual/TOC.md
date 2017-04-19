@@ -11,6 +11,8 @@
 ## [Creating a new user and setting the password](new-user-sample.md)
 ## [Assigning licenses to a user](Enabling-licenses-sample.md)
 ## [Connecting an Azure AD Powershell session with Service Principal credentials](signing-in-service-principal.md)
+# Frequently asked questions
+## [Where can I find the PowerShell log file?](PowerShell-logfile.md)
 # Videos
 ## [Manage dynamic groups with PowerShell](https://channel9.msdn.com/Series/Azure-Active-Directory-Videos-Demos/Managing-dynamic-groups-with-Azure-AD-PowerShell)
 #Read more
