@@ -3,20 +3,56 @@
 You can use the Azure Active Directory PowerShell Module Version 2 for Azure AD administrative tasks such as user management, domain management and for configuring single sign-on. The cmdlets listed here are different than the MSOL cmdlets which are part of Azure Active Directory Version 1.0.
 
 The Azure AD PowerShell Version 2 module has two versions: a Public preview version and a General Availability version. It is not recommended to use the Public Preview version for production scenarios.
-
-
-## Install the Azure AD Module
-
-The Azure AD Module is supported on the following Windows operating systems with the default version of Microsoft .NET Framework and Windows PowerShell: Windows 8.1, Windows 8, Windows 7, Windows Server 2012 R2, Windows Server 2012, or Windows Server 2008 R2.
-
 The Azure AD PowerShell Version 2 preview module can be downloaded from the PowerShell Gallery at the [AzureADPreview](https://www.powershellgallery.com/packages/AzureADPreview) page.
-
 The Azure AD PowerShell Version 2 General Availability module can be downloaded from the PowerShell Gallery at the [AzureAD](https://www.powershellgallery.com/packages/AzureAD) page. 
 
-For instructions on how to install the module, see [The PowerShell Gallery](https://msdn.microsoft.com/powershell/gallery/readme).
-Please ensure that you have followed these steps before installing the module on your computer.
-You can also access previous versions of the Azure AD module from the Microsoft Azure Active Directory PowerShell Module Version Release History on the TechNet Wiki.
+## Installing the Azure AD Module
 
+The Azure AD Module is supported on the following Windows operating systems with the default version of Microsoft .NET Framework and Windows PowerShell: Windows 8.1, Windows 8, Windows 7, Windows Server 2012 R2, Windows Server 2012, or Windows Server 2008 R2.
+
+If your computer has all the prerequisites for the installation, you can run
+
+```powershell
+Install-Module AzureAD
+```
+
+to install the General Availability version of the module on your computer. To install the public preview release, use
+
+```powershell
+Install-moduleAzureADPreview
+```
+
+Note that you cannot install both the preview version and the GA version on the same computer at the same time.
+
+### About the PowerShell Gallery
+The Azure AD module is distributed using the PowerShell gallery. Installing items from the Gallery requires the latest version of the PowerShellGet module, which is available in Windows 10, in Windows Management Framework (WMF) 5.0, or in the MSI-based installer (for PowerShell 3 and 4).
+- [**Get Windows 10**](http://go.microsoft.com/fwlink/?LinkID=624830&clcid=0x409),
+- [**Get WMF 5.0**](http://go.microsoft.com/fwlink/?LinkId=398175), or
+- [**Get MSI Installer**](http://go.microsoft.com/fwlink/?LinkID=746217&clcid=0x409)
+
+With the latest[PowerShellGet](http://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409)module, you can:
+
+- Search through items in the Gallery with    [**Find-Module**](http://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409)    and    [**Find-Script**](http://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409)
+- Save items to your system from the Gallery with    [**Save-Module**](http://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409)    and    [**Save-Script**](http://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409)
+- Install items from the Gallery with    [**Install-Module**](http://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409)    and    [**Install-Script**](http://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409)
+- Upload items to the Gallery with    [**Publish-Module**](http://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409)    and    [**Publish-Script**](http://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409)
+- Add your own custom repository with    [**Register-PSRepository**](http://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409)
+
+Check out the [Getting Started](psgallery/psgallery_gettingstarted.md) page for more information on how to use PowerShellGet commands with the Gallery. You can also run *Update-Help -Module PowerShellGet* to install local help for these commands.
+
+### Supported Operating Systems
+
+The **PowerShellGet** module requires **PowerShell 3.0 or newer**.
+Therefore, **PowerShellGet** requires one of the following operating systems:
+- Windows 10
+- Windows 8.1 Pro
+- Windows 8.1 Enterprise
+- Windows 7 SP1
+- Windows Server 2016 TP5
+- Windows Server 2012 R2
+- Windows Server 2008 R2 SP1
+
+**PowerShellGet** also  requires .NET Framework 4.5 or above. You can install .NET Framework 4.5 or above from [here](https://msdn.microsoft.com/en-us/library/5a4x27ek.aspx).
 
 ## Updating the Azure AD Module
 
@@ -36,7 +72,6 @@ To update the version of the Azure AD PowerShell module on your computer, re-run
 PS C:\WINDOWS\system32> Install-Module AzureADPreview
 ```
 This command checks the PowerShell gallery to see if a newer version is available and installs it on your computer if the version on the PowerShell Gallery is newer than the one installed on your computer.
-
 
 ## Connect to Azure AD
 
