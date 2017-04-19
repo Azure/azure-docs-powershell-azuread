@@ -1,6 +1,3 @@
-branches:
-  only:
-    - master
 clone_folder: c:\projects\azure-docs-powershell-azuread
 environment:
   nodejs_version: "6"
