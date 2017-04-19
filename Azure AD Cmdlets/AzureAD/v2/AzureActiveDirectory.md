@@ -8,11 +8,7 @@ ms.assetid: 7D9D9507-ADE5-45BD-97F8-0CCCDA3D3B58
 ---
 # Azure Active Directory V2 PowerShell module
 ## Description
-The Azure Active Directory version 2 PowerShell module can be downloaded and installed from the PowerShell Gallery, www.powershellgallery.com.  The gallery uses the PowerShellGet module.
-
-The PowerShellGet module requires PowerShell 3.0 or newer.
-
-Therefore, PowerShellGet requires one of the following operating systems:
+The Azure Active Directory version 2 PowerShell module can be downloaded and installed from the PowerShell Gallery, www.powershellgallery.com.  The gallery uses the PowerShellGet module. The PowerShellGet module requires PowerShell 3.0 or newer and requires one of the following operating systems:
 
 Windows 10
 Windows 8.1 Pro
@@ -22,10 +18,7 @@ Windows Server 2016 TP5
 Windows Server 2012 R2
 Windows Server 2008 R2 SP1
 
-PowerShellGet also requires .NET Framework 4.5 or above. You can install .NET Framework 4.5 or above from [here](https://www.microsoft.com/en-us/download/details.aspx?id=30653). 
-
-For more information, please refer to [this link](https://msdn.microsoft.com/powershell/gallery/readme)
-
+PowerShellGet also requires .NET Framework 4.5 or above. You can install .NET Framework 4.5 or above from [here](https://www.microsoft.com/en-us/download/details.aspx?id=30653). For more information, please refer to [this link](https://msdn.microsoft.com/powershell/gallery/readme)
 For more detailed info on installation of the AzureAD cmdlets please see: [Azure Active Directory PowerShell version 2](https://docs.microsoft.com/en-us/powershell/azuread/).
 
 These are the cmdlets in the Azure Active Directory v2 PowerShell module.
