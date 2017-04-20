@@ -15,6 +15,7 @@ Creates an Azure AD group.
 New-AzureADMSGroup [-Description <String>] -DisplayName <String> -MailEnabled <Boolean> -MailNickname <String>
  -SecurityEnabled <Boolean> [-GroupTypes <System.Collections.Generic.List`1[System.String]>]
  [-MembershipRule <String>] [-MembershipRuleProcessingState <String>] [-Visibility <String>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -189,7 +190,6 @@ Accept wildcard characters: False
 ```
 
 ### -Visibility
-
 This parameter determines the visibility of the group's content and members list. This parameter can take one of the following values:
 
 * "Public" - Anyone can view the contents of the group
@@ -215,6 +215,9 @@ Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
+
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -13,17 +13,17 @@ Sets the logo for an Application
 
 ### File (Default)
 ```
-Set-AzureADApplicationLogo [-ObjectId <String>] -FilePath <String>
+Set-AzureADApplicationLogo [-ObjectId <String>] -FilePath <String> [<CommonParameters>]
 ```
 
 ### Stream
 ```
-Set-AzureADApplicationLogo [-ObjectId <String>] -FileStream <Stream>
+Set-AzureADApplicationLogo [-ObjectId <String>] -FileStream <Stream> [<CommonParameters>]
 ```
 
 ### ByteArray
 ```
-Set-AzureADApplicationLogo [-ObjectId <String>] -ImageByteArray <Byte[]>
+Set-AzureADApplicationLogo [-ObjectId <String>] -ImageByteArray <Byte[]> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -100,12 +100,14 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+
 ## INPUTS
 
 ### System.String
 System.IO.Stream
 System.Byte[]
-
 
 ## OUTPUTS
 

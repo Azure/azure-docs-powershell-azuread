@@ -24,7 +24,6 @@ The **Set-AzureADUserLicense** adds or removes licenses for a Microsoft online s
 
 ### Example 1: Add a license to a user based on a template user
 ```
-
 PS C:\> $LicensedUser = Get-AzureADUser -ObjectId "TemplateUser@contoso.com"  
 PS C:\> $User = Get-AzureADUser -ObjectId "User@contoso.com"  
 PS C:\> $License = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicense 

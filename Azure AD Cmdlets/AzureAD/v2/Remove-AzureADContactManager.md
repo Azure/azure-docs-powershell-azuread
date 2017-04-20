@@ -32,7 +32,6 @@ The first command gets a contact by using the [Get-AzureADContact](./Get-AzureAD
 
 The second command removes the manager from the contact in $Contact.
 
-
 ## PARAMETERS
 
 ### -InformationAction

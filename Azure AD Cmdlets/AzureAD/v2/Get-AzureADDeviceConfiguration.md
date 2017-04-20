@@ -12,7 +12,7 @@ This cmdlet retrieves the device configuration object
 ## SYNTAX
 
 ```
-Get-AzureADDeviceConfiguration
+Get-AzureADDeviceConfiguration [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -38,10 +38,12 @@ This example shows the formatted list for the device configuration record that i
 
 ## PARAMETERS
 
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+
 ## INPUTS
 
 ### None
-
 
 ## OUTPUTS
 

@@ -22,7 +22,7 @@ New-AzureADApplication [-AddIns <System.Collections.Generic.List`1[Microsoft.Ope
  [-KnownClientApplications <System.Collections.Generic.List`1[System.String]>] [-LogoutUrl <String>]
  [-Oauth2AllowImplicitFlow <Boolean>] [-Oauth2AllowUrlPathMatching <Boolean>]
  [-Oauth2Permissions <System.Collections.Generic.List`1[Microsoft.Open.AzureAD.Model.OAuth2Permission]>]
- [-OAuth2RequiredPostResponse <Boolean>]
+ [-Oauth2RequirePostResponse <Boolean>]
  [-PasswordCredentials <System.Collections.Generic.List`1[Microsoft.Open.AzureAD.Model.PasswordCredential]>]
  [-PublicClient <Boolean>] [-RecordConsentConditions <String>]
  [-ReplyUrls <System.Collections.Generic.List`1[System.String]>]
@@ -157,7 +157,7 @@ Accept wildcard characters: False
 ### -IdentifierUris
 User-defined URI(s) that uniquely identify a Web application within its Azure AD tenant, or within a verified custom domain (see "Domains" tab in the Azure classic portal) if the application is multi-tenant. 
 
-The first element is populated from the Web application's "APP ID URI” field if updated via the Azure classic portal (or respective Azure AD PowerShell cmdlet parameter). Additional URIs can be added via the application manifest; see Understanding the Azure AD Application Manifest for details. This collection is also used to populate the Web application's servicePrincipalNames collection. 
+The first element is populated from the Web application's "APP ID URIâ€ field if updated via the Azure classic portal (or respective Azure AD PowerShell cmdlet parameter). Additional URIs can be added via the application manifest; see Understanding the Azure AD Application Manifest for details. This collection is also used to populate the Web application's servicePrincipalNames collection. 
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
@@ -261,22 +261,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -OAuth2RequiredPostResponse
-Specifies whether, as part of OAuth 2.0 token requests, Azure AD will allow POST requests, as opposed to GET requests. The default is false, which specifies that only GET requests will be allowed.
-
-
-```yaml
-Type: Boolean
-Parameter Sets: (All)
-Aliases: 
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -PasswordCredentials
 The collection of password credentials associated with the application.
 
@@ -339,7 +323,6 @@ Accept wildcard characters: False
 ```
 
 ### -RequiredResourceAccess
-
 Specifies resources that this application requires access to and the set of OAuth permission scopes and application roles that it needs under each of those resources. This pre-configuration of required resource access drives the consent experience.
 
 ```yaml
@@ -358,6 +341,21 @@ Accept wildcard characters: False
 The URL to the SAML metadata for the application.
 ```yaml
 Type: String
+Parameter Sets: (All)
+Aliases: 
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Oauth2RequirePostResponse
+{{Fill Oauth2RequirePostResponse Description}}
+
+```yaml
+Type: Boolean
 Parameter Sets: (All)
 Aliases: 
 

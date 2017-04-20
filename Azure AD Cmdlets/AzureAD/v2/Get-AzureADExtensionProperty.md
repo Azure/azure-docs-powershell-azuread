@@ -12,7 +12,7 @@ Gets  extension properties registered with Azure AD.
 ## SYNTAX
 
 ```
-Get-AzureADExtensionProperty [-IsSyncedFromOnPremises <Nullable`1[Boolean]>]
+Get-AzureADExtensionProperty [-IsSyncedFromOnPremises <Boolean>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -21,7 +21,7 @@ You can get extension properties that are synced with on-premises Azure AD, thos
 
 ## EXAMPLES
 
-### Example 1: Get extension properties synced from on-premises Azure AD 
+### Example 1: Get extension properties synced from on-premises Azure AD
 ```
 PS C:\> Get-AzureADExtensionProperty -IsSyncedFromOnPremises $True
 
@@ -43,7 +43,7 @@ Specifies whether this cmdlet gets extension properties that are synced or not s
 - No value. Get all extension properties.
 
 ```yaml
-Type: Nullable`1[Boolean]
+Type: Boolean
 Parameter Sets: (All)
 Aliases: 
 
@@ -54,6 +54,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+
 ## INPUTS
 
 ## OUTPUTS
@@ -61,3 +64,4 @@ Accept wildcard characters: False
 ## NOTES
 
 ## RELATED LINKS
+

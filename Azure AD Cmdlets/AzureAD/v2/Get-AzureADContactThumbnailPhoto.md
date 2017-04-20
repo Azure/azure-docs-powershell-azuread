@@ -13,6 +13,7 @@ Retrieves the thumbnail photo of a contact
 
 ```
 Get-AzureADContactThumbnailPhoto -ObjectId <String> [-FilePath <String>] [-FileName <String>] [-View <Boolean>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -60,7 +61,6 @@ Accept wildcard characters: False
 ```
 
 ### -FilePath
-
 When provided, the cmdlet will write a copy of the thumbnail photo to this file path using a random filename
 
 ```yaml
@@ -105,11 +105,13 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+
 ## INPUTS
 
 ### System.String
 System.Boolean
-
 
 ## OUTPUTS
 

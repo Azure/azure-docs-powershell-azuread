@@ -32,7 +32,6 @@ The first command gets a contact by using the [Get-AzureADContact](./Get-AzureAD
 
 The second command gets the manager for $Contact.
 
-
 ## PARAMETERS
 
 ### -InformationAction
@@ -99,6 +98,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+
 [Get-AzureADContact](./Get-AzureADContact.md) 
 
 [Remove-AzureADContactManager](./Remove-AzureADContactManager.md)

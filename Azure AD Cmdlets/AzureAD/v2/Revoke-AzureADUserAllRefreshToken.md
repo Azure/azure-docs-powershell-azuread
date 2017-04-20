@@ -12,7 +12,7 @@ Invalidates the refresh tokens issued to applications for a user.
 ## SYNTAX
 
 ```
-Revoke-AzureADUserAllRefreshToken -ObjectId <String>
+Revoke-AzureADUserAllRefreshToken -ObjectId <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -42,9 +42,12 @@ Aliases:
 Required: True
 Position: Named
 Default value: None
-Accept pipeline input: True (ByValue, ByPropertyName)
+Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
+
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -53,6 +56,7 @@ Accept wildcard characters: False
 ## NOTES
 
 ## RELATED LINKS
+
 [Revoke-AzureADSignedInUserAllRefreshToken](./Revoke-AzureADSignedInUserAllRefreshToken.md)
 
 [(#AzureAD: Certificate based authentication for iOS and Android now in preview!](https://blogs.technet.microsoft.com/enterprisemobility/2016/07/18/azuread-certificate-based-authentication-for-ios-and-android-now-in-preview/)

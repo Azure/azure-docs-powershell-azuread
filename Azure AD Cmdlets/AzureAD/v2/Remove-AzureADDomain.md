@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Open.AzureADBeta.Graph.PowerShell.dll-Help.xml
+external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
 ms.assetid: CAD38E2B-DC2D-440F-A51F-1CF9060FF62A
 online version: 
 schema: 2.0.0

@@ -13,7 +13,7 @@ Adds a scoped role membership to an administrative unit.
 ## SYNTAX
 
 ```
-Add-AzureADScopedRoleMembership -ObjectId <String>
+Add-AzureADScopedRoleMembership -ObjectId <String> [-AdministrativeUnitObjectId <String>]
  [-RoleObjectId <String>] [-RoleMemberInfo <RoleMemberInfo>] [<CommonParameters>]
 ```
 
@@ -23,22 +23,21 @@ The Add-AzureADScopedRoleMembership cmdlet adds a scoped role membership to an a
 ## EXAMPLES
 
 ### Example 1
-
 ```
-	$User = Get-AzureADUser -SearchString "The user that will be an admin on this unit"
+$User = Get-AzureADUser -SearchString "The user that will be an admin on this unit"
 	$Role = Get-AzureADDirectoryRole | Where-Object -Property DisplayName -EQ -Value "User Account Administrator"
 	$Unit = Get-AzureADAdministrativeUnit | Where-Object -Property DisplayName -Eq -Value "<The display name of the unit"
 	$RoleMember = New-Object -TypeName Microsoft.Open.AzureAD.Model.RoleMemberInfo
 	$RoleMember.ObjectId = $User.ObjectID
 	Add-AzureADScopedRoleMembership -ObjectId $unit.ObjectId -RoleObjectId $Role.ObjectId -RoleMemberInfo $RoleMember
 ```
+
 This cmdlet returns the Scope role membership object:
  
 
 	AdministrativeUnitObjectId           RoleObjectId
 	--------------------------           ------------
 	c9ab56cc-e349-4237-856e-cab03157a91e 526b7173-5a6e-49dc-88ec-b677a9093709
-
 
 ## PARAMETERS
 

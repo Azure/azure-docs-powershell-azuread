@@ -19,7 +19,7 @@ Get-AzureADDirectorySetting [-All <Boolean>] [-Top <Int32>] [<CommonParameters>]
 
 ### GetById
 ```
-Get-AzureADDirectorySetting -ObjectId <String> [-All <Boolean>] [<CommonParameters>]
+Get-AzureADDirectorySetting -Id <String> [-All <Boolean>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION

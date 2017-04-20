@@ -16,7 +16,7 @@ Updates a user.
 Set-AzureADUser -ObjectId <String>
  [-ExtensionProperty <System.Collections.Generic.Dictionary`2[System.String,System.String]>]
  [-AccountEnabled <Boolean>] [-City <String>] [-Country <String>] [-CreationType <String>]
- [-Department <String>] [-DisplayName <String>] [-FacsimilieTelephoneNumber <String>] [-GivenName <String>]
+ [-Department <String>] [-DisplayName <String>] [-FacsimileTelephoneNumber <String>] [-GivenName <String>]
  [-IsCompromised <Boolean>] [-ImmutableId <String>] [-JobTitle <String>] [-MailNickName <String>]
  [-Mobile <String>] [-OtherMails <System.Collections.Generic.List`1[System.String]>]
  [-PasswordPolicies <String>] [-PasswordProfile <PasswordProfile>] [-PhysicalDeliveryOfficeName <String>]
@@ -130,20 +130,6 @@ Accept wildcard characters: False
 ### -ExtensionProperty
 ```yaml
 Type: System.Collections.Generic.Dictionary`2[System.String,System.String]
-Parameter Sets: (All)
-Aliases: 
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -FacsimilieTelephoneNumber
-Specifies the user's fax number.
-```yaml
-Type: String
 Parameter Sets: (All)
 Aliases: 
 
@@ -464,6 +450,21 @@ Accept wildcard characters: False
 ```
 
 ### -UserType
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: 
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -FacsimileTelephoneNumber
+{{Fill FacsimileTelephoneNumber Description}}
+
 ```yaml
 Type: String
 Parameter Sets: (All)

@@ -13,7 +13,7 @@ Updates object settings.
 ## SYNTAX
 
 ```
-Set-AzureADObjectSetting -TargetType <String> -TargetObjectId <String> [-Id <String>]
+Set-AzureADObjectSetting -TargetType <String> -TargetObjectId <String> -Id <String>
  -DirectorySetting <DirectorySetting> [-InformationAction <ActionPreference>] [-InformationVariable <String>]
  [<CommonParameters>]
 ```
@@ -85,7 +85,7 @@ Type: String
 Parameter Sets: (All)
 Aliases: 
 
-Required: False
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByPropertyName, ByValue)

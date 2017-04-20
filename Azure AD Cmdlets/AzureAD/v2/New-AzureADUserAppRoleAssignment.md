@@ -24,10 +24,9 @@ The **New-AzureADUserAppRoleAssignment** cmdlet assigns a user to an application
 
 ### Example 1: Assign a user to an application without roles
 ```
-
 # Get AppId of the app to assign the user to
 
-$appId = Get-AzureADApplication -SearchString “<Your App's display name>”
+$appId = Get-AzureADApplication -SearchString â€œ<Your App's display name>â€
 
 # Get the user to be added
 
@@ -35,7 +34,7 @@ $user = Get-AzureADUser -searchstring "<Your user's UPN>"
 
 # Get the service principal for the app you want to assign the user to
 
-$servicePrincipal = Get-AzureADServicePrincipal -Filter “appId eq ‘$appId'”
+$servicePrincipal = Get-AzureADServicePrincipal -Filter â€œappId eq â€˜$appId'â€
 
 # Create the user app role assignment
 
@@ -45,7 +44,6 @@ New-AzureADUserAppRoleAssignment -ObjectId $user.ObjectId -PrincipalId $user.Obj
 This command assigns a user to and application that doesn;t have any roles.
 
 ### Example 2: Assign a user to a specific role within an application
-
 ```
 $username = "<You user's UPN>"
 $appname = "<Your App's display name>"

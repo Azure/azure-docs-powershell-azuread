@@ -45,7 +45,6 @@ The command stores the value in the $UserId variable.
 
 The second command retrieves all extension attributes that have a value assigned to them for the user identified by $UserId.
 
-
 ## PARAMETERS
 
 ### -ObjectId
@@ -72,6 +71,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+
 [Get-AzureADUser](./Get-AzureADUser.md)
 
 [Remove-AzureADUserExtension](./Remove-AzureADUserExtension.md)

@@ -35,7 +35,6 @@ The command stores it in the $User variable.
 
 The final command removes the user in $User from the device in $Device.
 
-
 ## PARAMETERS
 
 ### -ObjectId

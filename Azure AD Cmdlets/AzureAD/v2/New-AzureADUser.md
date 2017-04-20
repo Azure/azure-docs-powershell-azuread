@@ -15,7 +15,7 @@ Creates an AD user.
 ```
 New-AzureADUser [-ExtensionProperty <System.Collections.Generic.Dictionary`2[System.String,System.String]>]
  -AccountEnabled <Boolean> [-City <String>] [-Country <String>] [-CreationType <String>] [-Department <String>]
- -DisplayName <String> [-FacsimilieTelephoneNumber <String>] [-GivenName <String>] [-IsCompromised <Boolean>]
+ -DisplayName <String> [-FacsimileTelephoneNumber <String>] [-GivenName <String>] [-IsCompromised <Boolean>]
  [-ImmutableId <String>] [-JobTitle <String>] [-MailNickName <String>] [-Mobile <String>]
  [-OtherMails <System.Collections.Generic.List`1[System.String]>] [-PasswordPolicies <String>]
  -PasswordProfile <PasswordProfile> [-PhysicalDeliveryOfficeName <String>] [-PostalCode <String>]
@@ -31,8 +31,7 @@ The **New-AzureADUser** cmdlet creates a user in Azure Active Directory (AD).
 ## EXAMPLES
 
 ### Example 1: Create a user
-
-```powershell
+```
 $PasswordProfile = New-Object -TypeName Microsoft.Open.AzureAD.Model.PasswordProfile
 
 $PasswordProfile.Password = "Password"
@@ -140,26 +139,8 @@ Accept wildcard characters: False
 ```
 
 ### -ExtensionProperty
-
-
-
 ```yaml
 Type: System.Collections.Generic.Dictionary`2[System.String,System.String]
-Parameter Sets: (All)
-Aliases: 
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -FacsimilieTelephoneNumber
-Specifies the user's fax number.
-
-```yaml
-Type: String
 Parameter Sets: (All)
 Aliases: 
 
@@ -490,6 +471,21 @@ Accept wildcard characters: False
 
 ### -UserType
 A string value that can be used to classify user types in your directory, such as "Member" and "Guest".
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: 
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -FacsimileTelephoneNumber
+{{Fill FacsimileTelephoneNumber Description}}
 
 ```yaml
 Type: String

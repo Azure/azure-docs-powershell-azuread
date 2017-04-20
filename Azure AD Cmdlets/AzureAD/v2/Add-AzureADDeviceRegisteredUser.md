@@ -35,7 +35,6 @@ The second command gets a device by using the [Get-AzureADDevice](./Get-AzureADD
 The final command adds the user in $User as the registered user for the device in $Device. 
 Both parameters use the **ObjectId** property of specified object. 
 
-
 ## PARAMETERS
 
 ### -ObjectId

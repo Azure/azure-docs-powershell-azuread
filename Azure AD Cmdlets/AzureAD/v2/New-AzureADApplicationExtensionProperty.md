@@ -14,7 +14,7 @@ Creates an application extension property.
 
 ```
 New-AzureADApplicationExtensionProperty -ObjectId <String> [-InformationAction <ActionPreference>]
- [-InformationVariable <String>] [-DataType <String>] [-Name <String>]
+ [-InformationVariable <String>] [-Name <String>] [-DataType <String>]
  [-TargetObjects <System.Collections.Generic.List`1[System.String]>] [<CommonParameters>]
 ```
 

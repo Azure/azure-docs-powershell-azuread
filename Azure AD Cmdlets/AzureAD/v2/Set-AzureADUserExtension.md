@@ -41,7 +41,6 @@ The first command gets a user by using the [Get-AzureADUser](./Get-AzureADUser.m
 The second command  sets the value of the extension attribute that hast he specified name to the value New Value.
 You can get extension attribute names by using the [Get-AzureAdExtensionProperty](./Get-AzureAdExtensionProperty.md) cmdlet.
 
-
 ## PARAMETERS
 
 ### -ExtensionName

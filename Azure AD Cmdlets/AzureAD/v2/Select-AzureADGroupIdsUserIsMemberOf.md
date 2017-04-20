@@ -45,7 +45,6 @@ The final command gets the group membership of a group for a user identified by 
 This cmdlet returns an **oData** object.
 To find the groups this user is a member of, iterate through the **Value** attribute of the returned **oData** objects.
 
-
 ## PARAMETERS
 
 ### -GroupIdsForMembershipCheck
@@ -125,3 +124,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+

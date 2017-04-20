@@ -12,11 +12,11 @@ Connects with an authenticated account to use Active Directory cmdlet requests.
 
 ## SYNTAX
 
-### User (Default)
+### UserCredential (Default)
 ```
 Connect-AzureAD [-AzureEnvironmentName <EnvironmentName>] [-TenantId <String>] [-Credential <PSCredential>]
- [-LogLevel <LogLevel>] [-InformationAction <ActionPreference>] [-InformationVariable <String>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-AccountId <String>] [-LogLevel <LogLevel>] [-InformationAction <ActionPreference>]
+ [-InformationVariable <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ServicePrincipalCertificate
@@ -97,13 +97,9 @@ Add-AzureADDirectoryRoleMember -ObjectId 5997d714-c3b5-4d5b-9973-ec2f38fd49d5 -R
 $tenant=Get-AzureADTenantDetail
 # Now you can login to Azure PowerShell with your Service Principal and Certificate
 Connect-AzureAD -TenantId $tenant.ObjectId -ApplicationId  $sp.AppId -CertificateThumbprint $thumb
-
 ```
 
 This command authenticates the user to Azure Active Directory as a service principal.
-
-
-
 
 ## PARAMETERS
 
@@ -124,6 +120,18 @@ Accept wildcard characters: False
 
 ### -AccountId
 Specifies the ID of an account. You must specify the UPN of the user when authenticating with a user access token.
+
+```yaml
+Type: String
+Parameter Sets: UserCredential
+Aliases: 
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
 
 ```yaml
 Type: String
@@ -197,7 +205,7 @@ The **PSCredential** object provides the user ID and password for organizational
 
 ```yaml
 Type: PSCredential
-Parameter Sets: User
+Parameter Sets: UserCredential
 Aliases: 
 
 Required: False
@@ -290,8 +298,8 @@ You must specify the *TenantId* parameter to authenticate as a service principal
 
 ```yaml
 Type: String
-Parameter Sets: User, AccessToken
-Aliases: Domain
+Parameter Sets: UserCredential, AccessToken
+Aliases: Domain, TenantDomain
 
 Required: False
 Position: Named
@@ -303,7 +311,7 @@ Accept wildcard characters: False
 ```yaml
 Type: String
 Parameter Sets: ServicePrincipalCertificate
-Aliases: Domain
+Aliases: Domain, TenantDomain
 
 Required: True
 Position: Named

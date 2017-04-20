@@ -33,7 +33,6 @@ The command stores the ID in the $ServicePrincipalId variable.
 
 The second command gets the password credential of a service principal identified by $ServicePrincipalId.
 
-
 ## PARAMETERS
 
 ### -InformationAction
@@ -98,6 +97,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+
 [Get-AzureADServicePrincipal](./Get-AzureADServicePrincipal.md)
 
 [New-AzureADServicePrincipalPasswordCredential](./New-AzureADServicePrincipalPasswordCredential.md)

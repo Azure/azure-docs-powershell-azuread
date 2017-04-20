@@ -23,7 +23,7 @@ Set-AzureADApplication -ObjectId <String>
  [-KnownClientApplications <System.Collections.Generic.List`1[System.String]>] [-LogoutUrl <String>]
  [-Oauth2AllowImplicitFlow <Boolean>] [-Oauth2AllowUrlPathMatching <Boolean>]
  [-Oauth2Permissions <System.Collections.Generic.List`1[Microsoft.Open.AzureAD.Model.OAuth2Permission]>]
- [-OAuth2RequiredPostResponse <Boolean>]
+ [-Oauth2RequirePostResponse <Boolean>]
  [-PasswordCredentials <System.Collections.Generic.List`1[Microsoft.Open.AzureAD.Model.PasswordCredential]>]
  [-PublicClient <Boolean>] [-RecordConsentConditions <String>]
  [-ReplyUrls <System.Collections.Generic.List`1[System.String]>]
@@ -257,21 +257,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -OAuth2RequiredPostResponse
-Specifies whether, as part of OAuth 2.0 token requests, Azure AD will allow POST requests, as opposed to GET requests. The default is false, which specifies that only GET requests will be allowed.
-
-```yaml
-Type: Boolean
-Parameter Sets: (All)
-Aliases: 
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ObjectId
 Specifies the ID of an application in Azure AD.
 
@@ -363,6 +348,21 @@ Accept wildcard characters: False
 ### -SamlMetadataUrl
 ```yaml
 Type: String
+Parameter Sets: (All)
+Aliases: 
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Oauth2RequirePostResponse
+{{Fill Oauth2RequirePostResponse Description}}
+
+```yaml
+Type: Boolean
 Parameter Sets: (All)
 Aliases: 
 

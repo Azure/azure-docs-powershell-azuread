@@ -9,22 +9,21 @@ schema: 2.0.0
 ## SYNOPSIS
 This cmdlet is used to retrieve the soft deleted groups in a directory. 
 
-
 ## SYNTAX
+
+### GetQuery (Default)
+```
+Get-AzureADMSDeletedGroup [-All <Boolean>] [-Top <Int32>] [-Filter <String>] [<CommonParameters>]
+```
 
 ### GetVague
 ```
-Get-AzureADMSDeletedGroup [-SearchString <String>] [-All <Boolean>]
+Get-AzureADMSDeletedGroup [-SearchString <String>] [-All <Boolean>] [<CommonParameters>]
 ```
 
 ### GetById
 ```
-Get-AzureADMSDeletedGroup -Id <String> [-All <Boolean>]
-```
-
-### GetQuery
-```
-Get-AzureADMSDeletedGroup [-All <Boolean>] [-Top <Int32>] [-Filter <String>]
+Get-AzureADMSDeletedGroup -Id <String> [-All <Boolean>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -117,12 +116,14 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+
 ## INPUTS
 
 ### System.String
 System.Nullable`1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
 System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
-
 
 ## OUTPUTS
 

@@ -13,7 +13,7 @@ Updates a directory setting in Azure Active Directory.
 ## SYNTAX
 
 ```
-Set-AzureADDirectorySetting [-Id <String>] -DirectorySetting <DirectorySetting>
+Set-AzureADDirectorySetting -Id <String> -DirectorySetting <DirectorySetting>
  [-InformationAction <ActionPreference>] [-InformationVariable <String>] [<CommonParameters>]
 ```
 
@@ -84,7 +84,7 @@ Type: String
 Parameter Sets: (All)
 Aliases: 
 
-Required: False
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByPropertyName, ByValue)
