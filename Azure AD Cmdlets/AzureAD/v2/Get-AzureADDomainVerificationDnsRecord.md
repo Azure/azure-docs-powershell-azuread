@@ -17,7 +17,7 @@ Get-AzureADDomainVerificationDnsRecord -Name <String> [<CommonParameters>]
 
 ## DESCRIPTION
 Gets the domain's verification records from the verificationDnsRecords navigation property. 
-You canâ€™t use the domain with your Azure AD tenant until you have successfully verified that you own the domain. To verify the ownership of the domain, you need to first retrieve a set of domain verification records which you need to add to the zone file of the domain.
+You can ¢â‚¬â"¢t use the domain with your Azure AD tenant until you have successfully verified that you own the domain. To verify the ownership of the domain, you need to first retrieve a set of domain verification records which you need to add to the zone file of the domain.
 
 ## EXAMPLES
 
