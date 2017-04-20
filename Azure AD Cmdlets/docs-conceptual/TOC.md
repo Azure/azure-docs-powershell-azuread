@@ -15,6 +15,9 @@
 ## [Where can I find the PowerShell log file?](PowerShell-logfile.md)
 ## [How can I find which version of a module is installed on my computer?](Find-Module-version.md)
 ## [How can I install a previous version of a module?](Install-previous-version.md)
+# Troubleshooting
+## [Authentication issues](Authentication-issues.md)
+### [I get an error "\<your account> isn't in our system"](account-not-in-system-error.md)
 # Videos
 ## [Manage dynamic groups with PowerShell](https://channel9.msdn.com/Series/Azure-Active-Directory-Videos-Demos/Managing-dynamic-groups-with-Azure-AD-PowerShell)
 #Read more
