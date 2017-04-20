@@ -1,5 +1,6 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.Custom.dll-Help.xml
+ms.assetid: FFAE1502-E55E-46E2-BB77-632BAF9323B4
 online version: 
 schema: 2.0.0
 ---
@@ -13,11 +14,11 @@ Sets the password of a user.
 
 ```
 Set-AzureADUserPassword -ObjectId <String> -Password <SecureString> [-ForceChangePasswordNextLogin <Boolean>]
- [-EnforceChangePasswordPolicy <Boolean>]
+ [-EnforceChangePasswordPolicy <Boolean>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The Set-AzureADUserPassword cmdlet sets the password for a user in Azure Active Directory (AD).
+The **Set-AzureADUserPassword** cmdlet sets the password for a user in Azure Active Directory (AD).
 
 ## EXAMPLES
 
@@ -46,7 +47,7 @@ Accept wildcard characters: False
 ```
 
 ### -ForceChangePasswordNextLogin
-Forces a user to change their password during their next log in.
+Forces a user to change their password during their next log in. 
 
 ```yaml
 Type: Boolean
@@ -62,7 +63,6 @@ Accept wildcard characters: False
 
 ### -ObjectId
 Specifies the ID of an object.
-
 ```yaml
 Type: String
 Parameter Sets: (All)
@@ -76,8 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### -Password
-Specifies the password.
-
+Specifies the password. 
 ```yaml
 Type: SecureString
 Parameter Sets: (All)
@@ -89,6 +88,9 @@ Default value: None
 Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
+
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

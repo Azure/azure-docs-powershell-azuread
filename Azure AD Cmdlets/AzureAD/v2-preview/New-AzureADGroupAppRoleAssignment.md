@@ -1,5 +1,6 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+ms.assetid: B2EE39EC-3CD7-4F55-8D27-9E32E4E152C3
 online version: 
 schema: 2.0.0
 ---
@@ -13,20 +14,13 @@ Assign a group of users to an application role.
 
 ```
 New-AzureADGroupAppRoleAssignment -ObjectId <String> [-InformationAction <ActionPreference>]
- [-InformationVariable <String>] -Id <String> -PrincipalId <String> -ResourceId <String>
+ [-InformationVariable <String>] -Id <String> -PrincipalId <String> -ResourceId <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The New-AzureADGroupAppRoleAssignment cmdlet assigns a group of users to an application role in Azure Active Directory (AD).
+The **New-AzureADGroupAppRoleAssignment** cmdlet assigns a group of users to an application role in Azure Active Directory (AD).
 
 ## EXAMPLES
-
-### Example 1
-```
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
 
 ## PARAMETERS
 
@@ -129,6 +123,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+
 ## INPUTS
 
 ## OUTPUTS
@@ -137,9 +134,8 @@ Accept wildcard characters: False
 
 ## RELATED LINKS
 
-[Get-AzureADGroupAppRoleAssignment]()
+[Get-AzureADGroupAppRoleAssignment](./Get-AzureADGroupAppRoleAssignment.md)
 
-[Remove-AzureADGroupAppRoleAssignment]()
+[Remove-AzureADGroupAppRoleAssignment](./Remove-AzureADGroupAppRoleAssignment.md)
 
-[Managing applications in Azure Active Directory using PowerShell](https://channel9.msdn.com/Series/Azure-Active-Directory-Videos-Demos/ManageAppsAzureADPowerShell)
-
+[Managing applications in Azure Active Directory using PowerShell](https://channel9.msdn.com/Series/Azure-Active-Directory-Videos-Demos/ManageAppsAzureADPowerShell) 

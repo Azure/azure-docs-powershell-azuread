@@ -1,5 +1,6 @@
 ---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
+ms.assetid: 1575D032-020F-4471-A408-2487C93940AF
 online version: 
 schema: 2.0.0
 ---
@@ -16,11 +17,11 @@ Set-AzureADPolicy -Id <String> [-AlternativeIdentifier <String>]
  [-Definition <System.Collections.Generic.List`1[System.String]>] [-DisplayName <String>]
  [-IsOrganizationDefault <Boolean>]
  [-KeyCredentials <System.Collections.Generic.List`1[Microsoft.Open.MSGraph.Model.KeyCredential]>]
- [-Type <String>]
+ [-Type <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The Set-AzureADPolicy cmdlet sets a policy in Azure Active Directory (AD).
+The **Set-AzureADPolicy** cmdlet sets a policy in Azure Active Directory (AD).
 
 ## EXAMPLES
 
@@ -49,8 +50,8 @@ Accept wildcard characters: False
 ```
 
 ### -Definition
-Specifies the array of stringfied JSON that contains all the rules of the policy.
-For example -Definition @("{"TokenLifetimePolicy":{"Version":1,"MaxInactiveTime":"20:00:00"}}") .
+Specifies the array of stringfied JSON that contains all the rules of the policy. For example
+*-Definition @("{"TokenLifetimePolicy":{"Version":1,"MaxInactiveTime":"20:00:00"}}")*.
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
@@ -110,8 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -Type
-Specifies the type of policy.
-For token lifetimes, use "TokenLifetimePolicy".
+Specifies the type of policy. For token lifetimes, use "TokenLifetimePolicy".
 
 ```yaml
 Type: String
@@ -140,6 +140,9 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+
 ## INPUTS
 
 ## OUTPUTS
@@ -148,9 +151,8 @@ Accept wildcard characters: False
 
 ## RELATED LINKS
 
-[Get-AzureADPolicy]()
+[Get-AzureADPolicy](./Get-AzureADPolicy.md)
 
-[New-AzureADPolicy]()
+[New-AzureADPolicy](./New-AzureADPolicy.md)
 
-[Remove-AzureADPolicy]()
-
+[Remove-AzureADPolicy](./Remove-AzureADPolicy.md)

@@ -1,5 +1,6 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+ms.assetid: D495C18D-D65F-4D9E-8A04-C478D1C0F97C
 online version: 
 schema: 2.0.0
 ---
@@ -13,12 +14,11 @@ Removes a group.
 
 ```
 Remove-AzureADGroup -ObjectId <String> [-InformationAction <ActionPreference>] [-InformationVariable <String>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The Remove-AzureADGroup cmdlet removes a group from Azure Active Directory (AD).
-Note that a Unified Group can be restored withing 30 days after deletion using the Restore-AzureADMSDeletedDirectoryObject cmdlet.
-Security groups cannot be restored after deletion.
+The **Remove-AzureADGroup** cmdlet removes a group from Azure Active Directory (AD). Note that a Unified Group can be restored withing 30 days after deletion using the Restore-AzureADMSDeletedDirectoryObject cmdlet. Security groups cannot be restored after deletion.
 
 ## EXAMPLES
 
@@ -32,8 +32,7 @@ This command removes the specified group from Azure AD.
 ## PARAMETERS
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -84,6 +83,9 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+
 ## INPUTS
 
 ## OUTPUTS
@@ -92,9 +94,8 @@ Accept wildcard characters: False
 
 ## RELATED LINKS
 
-[Get-AzureADGroup]()
+[Get-AzureADGroup](./Get-AzureADGroup.md)
 
-[New-AzureADGroup]()
+[New-AzureADGroup](./New-AzureADGroup.md)
 
-[Set-AzureADGroup]()
-
+[Set-AzureADGroup](./Set-AzureADGroup.md)

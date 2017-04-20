@@ -1,5 +1,6 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+ms.assetid: DB181096-FF93-4C1E-9E08-884E8162DAB7
 online version: 
 schema: 2.0.0
 ---
@@ -12,11 +13,11 @@ Get a contact membership.
 ## SYNTAX
 
 ```
-Get-AzureADContactMembership -ObjectId <String> [-All <Boolean>] [-Top <Int32>]
+Get-AzureADContactMembership -ObjectId <String> [-All <Boolean>] [-Top <Int32>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The Get-AzureADContactMembership cmdlet gets a contact membership in Azure Active Directory.
+The **Get-AzureADContactMembership** cmdlet gets a contact membership in Azure Active Directory.
 
 ## EXAMPLES
 
@@ -30,15 +31,14 @@ ObjectId                             ObjectType
 0015df25-808e-4715-9c24-a6929c25c201 Group
 ```
 
-The first command gets a contact by using the Get-AzureADContact (./Get-AzureADContact.md)cmdlet, and then stores it in the $Contact variable.
+The first command gets a contact by using the [Get-AzureADContact](./Get-AzureADContact.md) cmdlet, and then stores it in the $Contact variable.
 
 The second command gets the memberships for $Contact.
 
 ## PARAMETERS
 
 ### -All
-If true, return all memberships.
-If false, return the number of objects specified by the Top parameter
+If true, return all memberships. If false, return the number of objects specified by the Top parameter
 
 ```yaml
 Type: Boolean
@@ -82,6 +82,9 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+
 ## INPUTS
 
 ## OUTPUTS
@@ -90,5 +93,4 @@ Accept wildcard characters: False
 
 ## RELATED LINKS
 
-[Get-AzureADContact]()
-
+[Get-AzureADContact](./Get-AzureADContact.md)

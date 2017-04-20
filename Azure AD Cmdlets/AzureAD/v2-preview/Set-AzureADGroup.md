@@ -1,5 +1,6 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+ms.assetid: 8846536B-3E57-4307-81C7-CCFFB2C6E5EC
 online version: 
 schema: 2.0.0
 ---
@@ -14,11 +15,11 @@ Updates a specific group in Azure Active Directory
 ```
 Set-AzureADGroup -ObjectId <String> [-InformationAction <ActionPreference>] [-InformationVariable <String>]
  [-Description <String>] [-DisplayName <String>] [-MailEnabled <Boolean>] [-MailNickName <String>]
- [-SecurityEnabled <Boolean>]
+ [-SecurityEnabled <Boolean>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The Set-AzureADGroup cmdlet updates a group in Azure Active Directory (AD).
+The **Set-AzureADGroup** cmdlet updates a group in Azure Active Directory (AD).
 
 ## EXAMPLES
 
@@ -33,7 +34,6 @@ This command updates the specfied group in Azure AD.
 
 ### -Description
 Specfies a description.
-
 ```yaml
 Type: String
 Parameter Sets: (All)
@@ -62,8 +62,7 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -159,6 +158,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+
 ## INPUTS
 
 ## OUTPUTS
@@ -167,9 +169,8 @@ Accept wildcard characters: False
 
 ## RELATED LINKS
 
-[Get-AzureADGroup]()
+[Get-AzureADGroup](./Get-AzureADGroup.md)
 
-[New-AzureADGroup]()
+[New-AzureADGroup](./New-AzureADGroup.md)
 
-[Remove-AzureADGroup]()
-
+[Remove-AzureADGroup](./Remove-AzureADGroup.md)

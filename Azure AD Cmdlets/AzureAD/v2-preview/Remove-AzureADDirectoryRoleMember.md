@@ -1,5 +1,6 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+ms.assetid: 26DDC7C2-8ABF-40A8-84D2-25A4E95BB4D7
 online version: 
 schema: 2.0.0
 ---
@@ -13,11 +14,11 @@ Removes a member of a directory role.
 
 ```
 Remove-AzureADDirectoryRoleMember -ObjectId <String> -MemberId <String> [-InformationAction <ActionPreference>]
- [-InformationVariable <String>]
+ [-InformationVariable <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The Remove-AzureADDirectoryRoleMember cmdlet removes a member from a directory role in Azure Active Directory (AD).
+The **Remove-AzureADDirectoryRoleMember** cmdlet removes a member from a directory role in Azure Active Directory (AD).
 
 ## EXAMPLES
 
@@ -31,8 +32,7 @@ This command removes the specified member from the specified role.
 ## PARAMETERS
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -98,6 +98,9 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+
 ## INPUTS
 
 ## OUTPUTS
@@ -106,7 +109,6 @@ Accept wildcard characters: False
 
 ## RELATED LINKS
 
-[Add-AzureADDirectoryRoleMember]()
+[Add-AzureADDirectoryRoleMember](./Add-AzureADDirectoryRoleMember.md)
 
-[Get-AzureADDirectoryRoleMember]()
-
+[Get-AzureADDirectoryRoleMember](./Get-AzureADDirectoryRoleMember.md)

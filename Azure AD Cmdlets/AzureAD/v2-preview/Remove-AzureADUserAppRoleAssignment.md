@@ -1,5 +1,6 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+ms.assetid: A57C8BFC-4E69-444D-8B9E-65D4767F8364
 online version: 
 schema: 2.0.0
 ---
@@ -13,20 +14,13 @@ Removes a user application role assignment.
 
 ```
 Remove-AzureADUserAppRoleAssignment -ObjectId <String> -AppRoleAssignmentId <String>
- [-InformationAction <ActionPreference>] [-InformationVariable <String>]
+ [-InformationAction <ActionPreference>] [-InformationVariable <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The Remove-AzureADUserAppRoleAssignment cmdlet removes a user application role assignment in Azure Active Directory (AD).
+The **Remove-AzureADUserAppRoleAssignment** cmdlet removes a user application role assignment in Azure Active Directory (AD).
 
 ## EXAMPLES
-
-### Example 1
-```
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
 
 ## PARAMETERS
 
@@ -46,8 +40,7 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -98,6 +91,9 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+
 ## INPUTS
 
 ## OUTPUTS
@@ -106,7 +102,6 @@ Accept wildcard characters: False
 
 ## RELATED LINKS
 
-[Get-AzureADUserAppRoleAssignment]()
+[Get-AzureADUserAppRoleAssignment](./Get-AzureADUserAppRoleAssignment.md)
 
-[New-AzureADUserAppRoleAssignment]()
-
+[New-AzureADUserAppRoleAssignment](./New-AzureADUserAppRoleAssignment.md)

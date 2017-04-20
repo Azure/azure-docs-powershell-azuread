@@ -12,13 +12,12 @@ Retrieve the domain verification DNS record for a domain
 ## SYNTAX
 
 ```
-Get-AzureADDomainVerificationDnsRecord -Name <String>
+Get-AzureADDomainVerificationDnsRecord -Name <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Gets the domain's verification records from the verificationDnsRecords navigation property. 
-You can't use the domain with your Azure AD tenant until you have successfully verified that you own the domain.
-To verify the ownership of the domain, you need to first retrieve a set of domain verification records which you need to add to the zone file of the domain.
+You canâ€™t use the domain with your Azure AD tenant until you have successfully verified that you own the domain. To verify the ownership of the domain, you need to first retrieve a set of domain verification records which you need to add to the zone file of the domain.
 
 ## EXAMPLES
 
@@ -50,6 +49,9 @@ Default value: None
 Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
+
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

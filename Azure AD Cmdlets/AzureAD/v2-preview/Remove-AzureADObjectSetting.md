@@ -1,5 +1,6 @@
 ---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
+ms.assetid: 81048EAD-48BE-4972-8942-8FA44F3D7979
 online version: 
 schema: 2.0.0
 ---
@@ -13,26 +14,18 @@ Deletes settings in Azure Active Directory.
 
 ```
 Remove-AzureADObjectSetting -TargetType <String> -TargetObjectId <String> -Id <String>
- [-InformationAction <ActionPreference>] [-InformationVariable <String>]
+ [-InformationAction <ActionPreference>] [-InformationVariable <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The Remove-AzureADObjectSetting cmdlet removes object settings in Azure Active Directory (AD).
+The **Remove-AzureADObjectSetting** cmdlet removes object settings in Azure Active Directory (AD).
 
 ## EXAMPLES
-
-### Example 1
-```
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
 
 ## PARAMETERS
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -84,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetObjectId
-Specifies the object ID of the target.
+Specifies the object ID of the target. 
 
 ```yaml
 Type: String
@@ -113,6 +106,9 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+
 ## INPUTS
 
 ## OUTPUTS
@@ -121,9 +117,10 @@ Accept wildcard characters: False
 
 ## RELATED LINKS
 
-[Get-AzureADObjectSetting]()
+[Get-AzureADObjectSetting](./Get-AzureADObjectSetting.md)
 
-[New-AzureADObjectSetting]()
+[New-AzureADObjectSetting](./New-AzureADObjectSetting.md)
 
-[Set-AzureADObjectSetting]()
+[Set-AzureADObjectSetting](./Set-AzureADObjectSetting.md)
+
 

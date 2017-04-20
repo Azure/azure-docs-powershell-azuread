@@ -1,5 +1,6 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+ms.assetid: 120268ED-E28B-434B-8EC2-313D3C3517B9
 online version: 
 schema: 2.0.0
 ---
@@ -13,25 +14,18 @@ Validate the ownership of a domain.
 
 ```
 Confirm-AzureADDomain -Name <String> [-InformationAction <ActionPreference>] [-InformationVariable <String>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The Confirm-AzureADDomain cmdlet validates the ownership of an Azure Active Directory domain.
+The **Confirm-AzureADDomain** cmdlet validates the ownership of an Azure Active Directory domain.
 
 ## EXAMPLES
-
-### Example 1
-```
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
 
 ## PARAMETERS
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -69,7 +63,6 @@ Accept wildcard characters: False
 
 ### -Name
 Specifies the name of the domain.
-
 ```yaml
 Type: String
 Parameter Sets: (All)
@@ -82,6 +75,9 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+
 ## INPUTS
 
 ## OUTPUTS
@@ -90,11 +86,12 @@ Accept wildcard characters: False
 
 ## RELATED LINKS
 
-[Get-AzureADDomain]()
+[Get-AzureADDomain](./Get-AzureADDomain.md)
 
-[New-AzureADDomain]()
+[New-AzureADDomain](./New-AzureADDomain.md)
 
-[Remove-AzureADDomain]()
+[Remove-AzureADDomain](./Remove-AzureADDomain.md)
 
-[Set-AzureADDomain]()
+[Set-AzureADDomain](./Set-AzureADDomain.md)
+
 

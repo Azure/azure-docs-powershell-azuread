@@ -1,5 +1,6 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+ms.assetid: A98FA4E7-3662-433C-A28D-CAF4D60592A1
 online version: 
 schema: 2.0.0
 ---
@@ -13,11 +14,11 @@ Adds or removes licenses for a Microsoft online service to the list of assigned 
 
 ```
 Set-AzureADUserLicense -ObjectId <String> -AssignedLicenses <AssignedLicenses>
- [-InformationAction <ActionPreference>] [-InformationVariable <String>]
+ [-InformationAction <ActionPreference>] [-InformationVariable <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The Set-AzureADUserLicense adds or removes licenses for a Microsoft online service to the list of assigned licenses for a user.
+The **Set-AzureADUserLicense** adds or removes licenses for a Microsoft online service to the list of assigned licenses for a user.
 
 ## EXAMPLES
 
@@ -32,15 +33,15 @@ PS C:\> $Licenses.AddLicenses = $License
 PS C:\> Set-AzureADUserLicense -ObjectId $User.ObjectId -AssignedLicenses $Licenses
 ```
 
-The first command gets a user by using the Get-AzureADUser (./Get-AzureADUser.md)cmdlet, and then stores it in the $LicensedUser variable.
+The first command gets a user by using the [Get-AzureADUser](./Get-AzureADUser.md) cmdlet, and then stores it in the $LicensedUser variable.
 
-The second command gets another user by using Get-AzureADUser , and then stores it in the $User variable.
+The second command gets another user by using **Get-AzureADUser**, and then stores it in the $User variable.
 
-The third command creates an AssignedLicense type, and then stores it in the $License variable.
+The third command creates an **AssignedLicense** type, and then stores it in the $License variable.
 
-The fourth command set the SkuId property of $License to the same value as the SkuId property of $LicensedUser.
+The fourth command set the **SkuId** property of $License to the same value as the **SkuId** property of $LicensedUser.
 
-The fifth commmand creates an AssignedLicenses object, and stores it in the $Licenses variable.
+The fifth commmand creates an **AssignedLicenses** object, and stores it in the $Licenses variable.
 
 The sixth command adds the license in $License to $Licenses.
 
@@ -65,8 +66,7 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-Specifies the ID of a user (as a UPN or ObjectId) in Azure AD.
+Specifies the ID of a user (as a UPN or ObjectId) in Azure AD. 
 
 ```yaml
 Type: String
@@ -117,6 +117,9 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+
 ## INPUTS
 
 ## OUTPUTS
@@ -125,5 +128,4 @@ Accept wildcard characters: False
 
 ## RELATED LINKS
 
-[Get-AzureADUser]()
-
+[Get-AzureADUser](./Get-AzureADUser.md) 

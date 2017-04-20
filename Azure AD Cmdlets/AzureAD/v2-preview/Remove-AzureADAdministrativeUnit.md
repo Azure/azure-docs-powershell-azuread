@@ -1,5 +1,6 @@
 ---
 external help file: Microsoft.Open.AzureADBeta.Graph.PowerShell.dll-Help.xml
+ms.assetid: 5BEB9DBE-CEB2-45EA-9F3F-BCB68E7CB857
 online version: 
 schema: 2.0.0
 ---
@@ -13,27 +14,20 @@ Removes an administrative unit.
 
 ```
 Remove-AzureADAdministrativeUnit -ObjectId <String> [-InformationAction <ActionPreference>]
- [-InformationVariable <String>]
+ [-InformationVariable <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The Remove-AzureADAdministrativeUnit cmdlet removes an administrative unit from Azure Active Directory.
+The **Remove-AzureADAdministrativeUnit** cmdlet removes an administrative unit from Azure Active Directory.
 
 ## EXAMPLES
-
-### Example 1
-```
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
 
 ## PARAMETERS
 
 ### -InformationAction
 Specifies how this cmdlet responds to an information event.
-The acceptable values for this parameter are: * Continue
-
+The acceptable values for this parameter are:
+* Continue
 * Ignore
 * Inquire
 * SilentlyContinue
@@ -54,7 +48,6 @@ Accept wildcard characters: False
 
 ### -InformationVariable
 Specifies a variable in which to store an information event message.
-
 ```yaml
 Type: String
 Parameter Sets: (All)
@@ -82,6 +75,9 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+
 ## INPUTS
 
 ## OUTPUTS
@@ -90,7 +86,7 @@ Accept wildcard characters: False
 
 ## RELATED LINKS
 
-[Get-AzureADAdministrativeUnit]()
+[Get-AzureADAdministrativeUnit](./Get-AzureADAdministrativeUnit.md)
 
-[Set-AzureADAdministrativeUnit]()
+[Set-AzureADAdministrativeUnit](./Set-AzureADAdministrativeUnit.md)
 

@@ -12,11 +12,11 @@ Removes an Azure AD group.
 ## SYNTAX
 
 ```
-Remove-AzureADMSGroup -Id <String>
+Remove-AzureADMSGroup -Id <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The Remove-AzureADMSGroup cmdlet removes an Azure Active Directory (Azure AD) group.
+The **Remove-AzureADMSGroup** cmdlet removes an Azure Active Directory (Azure AD) group.
 
 ## EXAMPLES
 
@@ -44,6 +44,9 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+
 ## INPUTS
 
 ### System.String
@@ -59,11 +62,10 @@ We recommend that you do not use this cmdlet in a production environment.
 
 ## RELATED LINKS
 
-[Get-AzureADMSGroup]()
+[Get-AzureADMSGroup](./Get-AzureADMSGroup.md)
 
-[New-AzureADMSGroup]()
+[New-AzureADMSGroup](./New-AzureADMSGroup.md)
 
-[Set-AzureADMSGroup]()
+[Set-AzureADMSGroup](./Set-AzureADMSGroup.md)
 
 [Using attributes to create advanced rules](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/)
-

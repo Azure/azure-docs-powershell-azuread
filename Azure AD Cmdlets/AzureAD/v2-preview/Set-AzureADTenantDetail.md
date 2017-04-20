@@ -15,7 +15,7 @@ Set contact details for a tenant
 Set-AzureADTenantDetail [-MarketingNotificationEmails <System.Collections.Generic.List`1[System.String]>]
  [-SecurityComplianceNotificationMails <System.Collections.Generic.List`1[System.String]>]
  [-SecurityComplianceNotificationPhones <System.Collections.Generic.List`1[System.String]>]
- [-TechnicalNotificationMails <System.Collections.Generic.List`1[System.String]>]
+ [-TechnicalNotificationMails <System.Collections.Generic.List`1[System.String]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -63,7 +63,7 @@ Accept wildcard characters: False
 ```
 
 ### -SecurityComplianceNotificationPhones
-The phone number(s) that are used for security compliance
+The phone number(s) that are used for security compliance 
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
@@ -91,6 +91,9 @@ Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
+
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -1,5 +1,6 @@
 ---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
+ms.assetid: FF1EF8E7-1372-42D8-966C-19FBE9603F5B
 online version: 
 schema: 2.0.0
 ---
@@ -13,12 +14,12 @@ Gets a directory setting.
 
 ### GetQuery (Default)
 ```
-Get-AzureADDirectorySetting [-All <Boolean>] [-Top <Int32>]
+Get-AzureADDirectorySetting [-All <Boolean>] [-Top <Int32>] [<CommonParameters>]
 ```
 
 ### GetById
 ```
-Get-AzureADDirectorySetting -Id <String> [-All <Boolean>]
+Get-AzureADDirectorySetting -Id <String> [-All <Boolean>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -26,18 +27,10 @@ The Get-AzureADDirectorySetting cmdlet gets a directory setting from Azure Activ
 
 ## EXAMPLES
 
-### Example 1
-```
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
-
 ## PARAMETERS
 
 ### -All
-If true, return all directory settings.
-If false, return the number of objects specified by the Top parameter
+If true, return all directory settings. If false, return the number of objects specified by the Top parameter
 
 ```yaml
 Type: Boolean
@@ -81,6 +74,9 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+
 ## INPUTS
 
 ## OUTPUTS
@@ -89,9 +85,7 @@ Accept wildcard characters: False
 
 ## RELATED LINKS
 
-[New-AzureADDirectorySetting]()
-
-[Remove-AzureADDirectorySetting]()
-
-[Set-AzureADDirectorySetting]()
+[New-AzureADDirectorySetting](./New-AzureADDirectorySetting.md)
+[Remove-AzureADDirectorySetting](./Remove-AzureADDirectorySetting.md)
+[Set-AzureADDirectorySetting](./Set-AzureADDirectorySetting.md)
 

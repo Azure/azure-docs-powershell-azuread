@@ -1,5 +1,6 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+ms.assetid: 6B318FF5-2DD5-485A-A4BA-C2E9F7CA1DEC
 online version: 
 schema: 2.0.0
 ---
@@ -13,11 +14,11 @@ Removes an owner from an application.
 
 ```
 Remove-AzureADApplicationOwner -ObjectId <String> -OwnerId <String> [-InformationAction <ActionPreference>]
- [-InformationVariable <String>]
+ [-InformationVariable <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The Remove-AzureADApplicationOwner cmdlet removes an owner from an application in Azure Active Directory (AD).
+The **Remove-AzureADApplicationOwner** cmdlet removes an owner from an application in Azure Active Directory (AD).
 
 ## EXAMPLES
 
@@ -99,6 +100,9 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+
 ## INPUTS
 
 ## OUTPUTS
@@ -107,7 +111,6 @@ Accept wildcard characters: False
 
 ## RELATED LINKS
 
-[Add-AzureADApplicationOwner]()
+[Add-AzureADApplicationOwner](./Add-AzureADApplicationOwner.md)
 
-[Get-AzureADApplicationOwner]()
-
+[Get-AzureADApplicationOwner](./Get-AzureADApplicationOwner.md)

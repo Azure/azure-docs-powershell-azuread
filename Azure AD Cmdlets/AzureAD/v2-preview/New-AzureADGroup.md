@@ -1,5 +1,6 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+ms.assetid: A81910CC-FC86-414D-B79D-B09892732DC1
 online version: 
 schema: 2.0.0
 ---
@@ -14,11 +15,11 @@ Creates a group.
 ```
 New-AzureADGroup [-InformationAction <ActionPreference>] [-InformationVariable <String>]
  [-Description <String>] -DisplayName <String> -MailEnabled <Boolean> -MailNickName <String>
- -SecurityEnabled <Boolean>
+ -SecurityEnabled <Boolean> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The New-AzureADGroup cmdlet creates a group in Azure Active Directory (AD).
+The **New-AzureADGroup** cmdlet creates a group in Azure Active Directory (AD).
 
 ## EXAMPLES
 
@@ -147,6 +148,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+
 ## INPUTS
 
 ## OUTPUTS
@@ -155,9 +159,10 @@ Accept wildcard characters: False
 
 ## RELATED LINKS
 
-[Get-AzureADGroup]()
+[Get-AzureADGroup](./Get-AzureADGroup.md)
 
-[Remove-AzureADGroup]()
+[Remove-AzureADGroup](./Remove-AzureADGroup.md)
 
-[Set-AzureADGroup]()
+[Set-AzureADGroup](./Set-AzureADGroup.md)
+
 

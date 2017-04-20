@@ -13,6 +13,7 @@ Retrieve the logo of an application
 
 ```
 Get-AzureADApplicationLogo -ObjectId <String> [-FilePath <String>] [-FileName <String>] [-View <Boolean>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -46,7 +47,7 @@ This example shows how to retrieve the application logo for an application that 
 ## PARAMETERS
 
 ### -FileName
-If provided, the application logo is copied to the file who's name is provided in this parameter
+If provided, the application logo is copied to the file who's name is provided in this parameter 
 
 ```yaml
 Type: String
@@ -104,6 +105,9 @@ Default value: None
 Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
+
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -1,5 +1,6 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+ms.assetid: DD253761-F1BB-4EF1-B0CB-586C0040DECE
 online version: 
 schema: 2.0.0
 ---
@@ -13,11 +14,11 @@ Gets members of a directory role.
 
 ```
 Get-AzureADDirectoryRoleMember -ObjectId <String> [-InformationAction <ActionPreference>]
- [-InformationVariable <String>]
+ [-InformationVariable <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The Get-AzureADDirectoryRoleMember cmdlet gets the members of a directory role in Azure Active Directory (AD).
+The **Get-AzureADDirectoryRoleMember** cmdlet gets the members of a directory role in Azure Active Directory (AD).
 
 ## EXAMPLES
 
@@ -39,8 +40,7 @@ This command gets the members of the specified role.
 ## PARAMETERS
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -91,6 +91,9 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+
 ## INPUTS
 
 ## OUTPUTS
@@ -99,7 +102,6 @@ Accept wildcard characters: False
 
 ## RELATED LINKS
 
-[Add-AzureADDirectoryRoleMember]()
-
-[Remove-AzureADDirectoryRoleMember]()
+[Add-AzureADDirectoryRoleMember](./Add-AzureADDirectoryRoleMember.md)
+[Remove-AzureADDirectoryRoleMember](./Remove-AzureADDirectoryRoleMember.md)
 

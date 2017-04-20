@@ -1,5 +1,6 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.Custom.dll-Help.xml
+ms.assetid: 5F3B0266-B5CD-4CAB-B22D-BDEA4C78E3B1
 online version: 
 schema: 2.0.0
 ---
@@ -13,11 +14,11 @@ Gets the password credential for an application.
 
 ```
 Get-AzureADApplicationPasswordCredential -ObjectId <String> [-InformationAction <ActionPreference>]
- [-InformationVariable <String>]
+ [-InformationVariable <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The Get-AzureADApplicationPasswordCredential cmdlet gets the password credentials for an Azure Active Directory application.
+The **Get-AzureADApplicationPasswordCredential** cmdlet gets the password credentials for an Azure Active Directory application.
 
 ## EXAMPLES
 
@@ -87,6 +88,9 @@ Default value: None
 Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
+
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -1,5 +1,6 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+ms.assetid: 540A8E20-80C9-48D8-BE49-E1DA84FD3BF7
 online version: 
 schema: 2.0.0
 ---
@@ -21,10 +22,11 @@ Set-AzureADServicePrincipal -ObjectId <String> [-AccountEnabled <String>]
  [-PublisherName <String>] [-ReplyUrls <System.Collections.Generic.List`1[System.String]>]
  [-SamlMetadataUrl <String>] [-ServicePrincipalNames <System.Collections.Generic.List`1[System.String]>]
  [-ServicePrincipalType <String>] [-Tags <System.Collections.Generic.List`1[System.String]>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The Set-AzureADServicePrincipal cmdlet updates a service principal in Azure Active Directory (Azure AD).
+The **Set-AzureADServicePrincipal** cmdlet updates a service principal in Azure Active Directory (Azure AD).
 
 ## EXAMPLES
 
@@ -220,6 +222,7 @@ Accept wildcard characters: False
 ### -ReplyUrls
 The URLs that user tokens are sent to for sign in with the associated application, or the redirect URIs that OAuth 2.0 authorization codes and access tokens are sent to for the associated application.
 
+
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
 Parameter Sets: (All)
@@ -233,8 +236,6 @@ Accept wildcard characters: False
 ```
 
 ### -SamlMetadataUrl
-@{Text=}
-
 ```yaml
 Type: String
 Parameter Sets: (All)
@@ -279,7 +280,7 @@ Accept wildcard characters: False
 
 ### -Tags
 Specifies an array of tags.
-Note that if you intend for this service principal to show up in the All Applications list in the admin portal, you need to set this value to {WindowsAzureActiveDirectoryIntegratedApp}
+Note that if you intend for this service principal to show up in the All Applications list in the admin portal, you need to set this value to {WindowsAzureActiveDirectoryIntegratedApp} 
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
@@ -293,6 +294,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+
 ## INPUTS
 
 ## OUTPUTS
@@ -301,9 +305,8 @@ Accept wildcard characters: False
 
 ## RELATED LINKS
 
-[Get-AzureADServicePrincipal]()
+[Get-AzureADServicePrincipal](./Get-AzureADServicePrincipal.md)
 
-[New-AzureADServicePrincipal]()
+[New-AzureADServicePrincipal](./New-AzureADServicePrincipal.md)
 
-[Remove-AzureADServicePrincipal]()
-
+[Remove-AzureADServicePrincipal](./Remove-AzureADServicePrincipal.md)

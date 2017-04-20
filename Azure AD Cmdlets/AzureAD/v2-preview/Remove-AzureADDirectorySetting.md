@@ -1,5 +1,6 @@
 ---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
+ms.assetid: 329E3820-C069-4F0F-8793-28AF37DCF7F1
 online version: 
 schema: 2.0.0
 ---
@@ -13,26 +14,18 @@ Deletes a directory setting in Azure Active Directory.
 
 ```
 Remove-AzureADDirectorySetting -Id <String> [-InformationAction <ActionPreference>]
- [-InformationVariable <String>]
+ [-InformationVariable <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The Remove-AzureADDirectorySetting cmdlet removes a directory setting from Azure Active Directory (AD).
+The **Remove-AzureADDirectorySetting** cmdlet removes a directory setting from Azure Active Directory (AD).
 
 ## EXAMPLES
-
-### Example 1
-```
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
 
 ## PARAMETERS
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -83,6 +76,9 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+
 ## INPUTS
 
 ## OUTPUTS
@@ -91,9 +87,8 @@ Accept wildcard characters: False
 
 ## RELATED LINKS
 
-[Get-AzureADDirectorySetting]()
+[Get-AzureADDirectorySetting](./Get-AzureADDirectorySetting.md)
 
-[New-AzureADDirectorySetting]()
+[New-AzureADDirectorySetting](./New-AzureADDirectorySetting.md)
 
-[Set-AzureADDirectorySetting]()
-
+[Set-AzureADDirectorySetting](./Set-AzureADDirectorySetting.md)

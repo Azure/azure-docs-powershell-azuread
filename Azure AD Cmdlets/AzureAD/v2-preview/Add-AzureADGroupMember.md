@@ -1,5 +1,6 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+ms.assetid: F5FFA4CF-0672-4645-8646-70153A01CB9C
 online version: 
 schema: 2.0.0
 ---
@@ -13,11 +14,11 @@ Adds a member to a group.
 
 ```
 Add-AzureADGroupMember -ObjectId <String> -RefObjectId <String> [-InformationAction <ActionPreference>]
- [-InformationVariable <String>]
+ [-InformationVariable <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The Add-AzureADGroupMember cmdlet adds a member to a group.
+The **Add-AzureADGroupMember** cmdlet adds a member to a group.
 
 ## EXAMPLES
 
@@ -31,8 +32,7 @@ This command adds a member to a group.
 ## PARAMETERS
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -98,6 +98,9 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+
 ## INPUTS
 
 ## OUTPUTS
@@ -106,7 +109,8 @@ Accept wildcard characters: False
 
 ## RELATED LINKS
 
-[Get-AzureADGroupMember]()
+[Get-AzureADGroupMember](./Get-AzureADGroupMember.md)
 
-[Remove-AzureADGroupMember]()
+[Remove-AzureADGroupMember](./Remove-AzureADGroupMember.md)
+
 

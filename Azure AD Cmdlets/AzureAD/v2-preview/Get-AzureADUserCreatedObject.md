@@ -1,5 +1,6 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+ms.assetid: 2AB8CC27-F872-4E3D-9972-A4E11BDD4B33
 online version: 
 schema: 2.0.0
 ---
@@ -12,11 +13,11 @@ Get objects created by the user.
 ## SYNTAX
 
 ```
-Get-AzureADUserCreatedObject -ObjectId <String> [-All <Boolean>] [-Top <Int32>]
+Get-AzureADUserCreatedObject -ObjectId <String> [-All <Boolean>] [-Top <Int32>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The Get-AzureADUserCreatedObject cmdlet gets objects created by a user in Azure Active Directory (AD).
+The **Get-AzureADUserCreatedObject** cmdlet gets objects created by a user in Azure Active Directory (AD).
 
 ## EXAMPLES
 
@@ -37,8 +38,7 @@ This command gets an object created by the specified user.
 ## PARAMETERS
 
 ### -All
-If true, return all objects created by this user.
-If false, return the number of objects specified by the Top parameter
+If true, return all objects created by this user. If false, return the number of objects specified by the Top parameter
 
 ```yaml
 Type: Boolean
@@ -53,7 +53,7 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-Specifies the ID (as a UPN or ObjectId) of a user in Azure AD.
+Specifies the ID (as a UPN or ObjectId) of a user in Azure AD. 
 
 ```yaml
 Type: String
@@ -81,6 +81,9 @@ Default value: None
 Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
+
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

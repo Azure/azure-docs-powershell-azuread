@@ -12,7 +12,7 @@ Gets the domain's service configuration records from the serviceConfigurationRec
 ## SYNTAX
 
 ```
-Get-AzureADDomainServiceConfigurationRecord -Name <String>
+Get-AzureADDomainServiceConfigurationRecord -Name <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -54,6 +54,9 @@ Default value: None
 Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
+
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -1,5 +1,6 @@
 ---
 external help file: Microsoft.Open.AzureADBeta.Graph.PowerShell.dll-Help.xml
+ms.assetid: 937A2A6D-2DF5-43A5-8D2B-8555420254FB
 online version: 
 schema: 2.0.0
 ---
@@ -12,20 +13,13 @@ Removes a scoped role membership.
 ## SYNTAX
 
 ```
-Remove-AzureADScopedRoleMembership -ObjectId <String> -ScopedRoleMembershipId <String>
+Remove-AzureADScopedRoleMembership -ObjectId <String> -ScopedRoleMembershipId <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The Remove-AzureADScopedRoleMembership cmdlet removes a scoped role membership from Azure Active Directory (AD).
+The **Remove-AzureADScopedRoleMembership** cmdlet removes a scoped role membership from Azure Active Directory (AD).
 
 ## EXAMPLES
-
-### Example 1
-```
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
 
 ## PARAMETERS
 
@@ -59,6 +53,9 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+
 ## INPUTS
 
 ## OUTPUTS
@@ -67,7 +64,6 @@ Accept wildcard characters: False
 
 ## RELATED LINKS
 
-[Add-AzureADScopedRoleMembership]()
+[Add-AzureADScopedRoleMembership](./Add-AzureADScopedRoleMembership.md)
 
-[Get-AzureADScopedRoleMembership]()
-
+[Get-AzureADScopedRoleMembership](./Get-AzureADScopedRoleMembership.md)

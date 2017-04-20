@@ -1,5 +1,6 @@
 ---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
+ms.assetid: 24E6DD2A-A1A1-42D2-8564-F0A92AA0C49F
 online version: 
 schema: 2.0.0
 ---
@@ -13,20 +14,13 @@ Creates a settings object.
 
 ```
 New-AzureADObjectSetting -TargetType <String> -TargetObjectId <String> -DirectorySetting <DirectorySetting>
- [-InformationAction <ActionPreference>] [-InformationVariable <String>]
+ [-InformationAction <ActionPreference>] [-InformationVariable <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The New-AzureADObjectSetting cmdlet creates a settings object in Azure Active Directory (AD).
+The **New-AzureADObjectSetting** cmdlet creates a settings object in Azure Active Directory (AD).
 
 ## EXAMPLES
-
-### Example 1
-```
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
 
 ## PARAMETERS
 
@@ -114,6 +108,9 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+
 ## INPUTS
 
 ## OUTPUTS
@@ -122,9 +119,8 @@ Accept wildcard characters: False
 
 ## RELATED LINKS
 
-[Get-AzureADObjectSetting]()
+[Get-AzureADObjectSetting](./Get-AzureADObjectSetting.md)
 
-[Remove-AzureADObjectSetting]()
+[Remove-AzureADObjectSetting](./Remove-AzureADObjectSetting.md)
 
-[Set-AzureADObjectSetting]()
-
+[Set-AzureADObjectSetting](./Set-AzureADObjectSetting.md)

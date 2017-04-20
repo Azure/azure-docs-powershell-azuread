@@ -1,5 +1,6 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+ms.assetid: 0E1A27BF-2CD9-43CD-851D-D1F09484CDE3
 online version: 
 schema: 2.0.0
 ---
@@ -14,16 +15,17 @@ Gets subscribed SKUs to Microsoft services.
 ### GetQuery (Default)
 ```
 Get-AzureADSubscribedSku [-InformationAction <ActionPreference>] [-InformationVariable <String>]
+ [<CommonParameters>]
 ```
 
 ### GetById
 ```
 Get-AzureADSubscribedSku -ObjectId <String> [-InformationAction <ActionPreference>]
- [-InformationVariable <String>]
+ [-InformationVariable <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The Get-AzureADSubscribedSku cmdlet gets subscribed SKUs to Microsoft services.
+The **Get-AzureADSubscribedSku** cmdlet gets subscribed SKUs to Microsoft services.
 
 ## EXAMPLES
 
@@ -44,8 +46,7 @@ This command gets subscribed SKUs.
 ## PARAMETERS
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -95,6 +96,9 @@ Default value: None
 Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
+
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

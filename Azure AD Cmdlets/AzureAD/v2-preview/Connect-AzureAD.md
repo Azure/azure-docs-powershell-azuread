@@ -1,5 +1,6 @@
 ---
 external help file: Microsoft.Open.Azure.AD.CommonLibrary.dll-Help.xml
+ms.assetid: A5EF9C25-E0D9-432F-A528-81534A01F444
 online version: 
 schema: 2.0.0
 ---
@@ -15,25 +16,25 @@ Connects with an authenticated account to use Active Directory cmdlet requests.
 ```
 Connect-AzureAD [-AzureEnvironmentName <EnvironmentName>] [-TenantId <String>] [-Credential <PSCredential>]
  [-AccountId <String>] [-LogLevel <LogLevel>] [-InformationAction <ActionPreference>]
- [-InformationVariable <String>] [-WhatIf] [-Confirm]
+ [-InformationVariable <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ServicePrincipalCertificate
 ```
 Connect-AzureAD [-AzureEnvironmentName <EnvironmentName>] -TenantId <String> -CertificateThumbprint <String>
  -ApplicationId <String> [-LogLevel <LogLevel>] [-InformationAction <ActionPreference>]
- [-InformationVariable <String>] [-WhatIf] [-Confirm]
+ [-InformationVariable <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### AccessToken
 ```
 Connect-AzureAD [-AzureEnvironmentName <EnvironmentName>] [-TenantId <String>] -AadAccessToken <String>
  [-MsAccessToken <String>] -AccountId <String> [-LogLevel <LogLevel>] [-InformationAction <ActionPreference>]
- [-InformationVariable <String>] [-WhatIf] [-Confirm]
+ [-InformationVariable <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The Connect-AzureAD cmdlet connects an authenticated account to use for Azure Active Directory cmdlet requests.
+The **Connect-AzureAD** cmdlet connects an authenticated account to use for Azure Active Directory cmdlet requests.
 
 You can use this authenticated account only with Azure Active Directory cmdlets.
 
@@ -46,7 +47,7 @@ PS C:\> Connect-AzureAD -Confirm
 
 This command connects the current PowerShell session to an Azure Active Directory tenant.
 The command prompts you for a username and password for the tenant you want to connect to.
-The Confirm parameter prompts you for confirmation.
+The *Confirm* parameter prompts you for confirmation. 
 
 If multi-factor authentication is enabled for your credentials, you must log in using the interactive option or use service principal authentication.
 
@@ -118,8 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -AccountId
-Specifies the ID of an account.
-You must specify the UPN of the user when authenticating with a user access token.
+Specifies the ID of an account. You must specify the UPN of the user when authenticating with a user access token.
 
 ```yaml
 Type: String
@@ -161,12 +161,11 @@ Accept wildcard characters: False
 ```
 
 ### -AzureEnvironmentName
-Specifies the name of the Azure environment.
-The acceptable values for this parameter are:
+Specifies the name of the Azure environment. The acceptable values for this parameter are: 
 
 - AzureCloud
 - AzureChinaCloud
-- AzureUSGovernment
+- AzureUSGovernment 
 - AzureGermanyCloud
 
 The default value is AzureCloud.
@@ -184,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### -CertificateThumbprint
-Specifies the certificate thumbprint of a digital public key X.509 certificate of a user account that has permission to perform this action.
+Specifies the certificate thumbprint of a digital public key X.509 certificate of a user account that has permission to perform this action. 
 
 ```yaml
 Type: String
@@ -199,10 +198,10 @@ Accept wildcard characters: False
 ```
 
 ### -Credential
-Specifies a PSCredential object.
-For more information about the PSCredential object, type Get-Help Get-Credential.
+Specifies a **PSCredential** object.
+For more information about the **PSCredential** object, type Get-Help Get-Credential.
 
-The PSCredential object provides the user ID and password for organizational ID credentials.
+The **PSCredential** object provides the user ID and password for organizational ID credentials.
 
 ```yaml
 Type: PSCredential
@@ -217,8 +216,7 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -255,8 +253,7 @@ Accept wildcard characters: False
 ```
 
 ### -LogLevel
-Specifies the log level.
-The accdeptable values for this parameter are:
+Specifies the log level. The accdeptable values for this parameter are: 
 
 - Info
 - Error
@@ -297,7 +294,7 @@ Specifies the ID of a tenant.
 
 If you do not specify this parameter, the account is authenticated with the home tenant.
 
-You must specify the TenantId parameter to authenticate as a service principal or when using Microsoft account.
+You must specify the *TenantId* parameter to authenticate as a service principal or when using Microsoft account.
 
 ```yaml
 Type: String
@@ -342,6 +339,7 @@ Accept wildcard characters: False
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
+
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
@@ -354,6 +352,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+
 ## INPUTS
 
 ## OUTPUTS
@@ -362,5 +363,5 @@ Accept wildcard characters: False
 
 ## RELATED LINKS
 
-[Disconnet-AzureAD]()
+[Disconnet-AzureAD](./Disconnect-AzureAD.md)
 

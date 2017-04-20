@@ -1,5 +1,6 @@
 ---
 external help file: Microsoft.Open.AzureADBeta.Graph.PowerShell.dll-Help.xml
+ms.assetid: B505822C-4BAA-4EC5-BB0A-128C093930C6
 online version: 
 schema: 2.0.0
 ---
@@ -13,7 +14,7 @@ Adds a scoped role membership to an administrative unit.
 
 ```
 Add-AzureADScopedRoleMembership -ObjectId <String> [-AdministrativeUnitObjectId <String>]
- [-RoleObjectId <String>] [-RoleMemberInfo <RoleMemberInfo>]
+ [-RoleObjectId <String>] [-RoleMemberInfo <RoleMemberInfo>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -32,8 +33,11 @@ $User = Get-AzureADUser -SearchString "The user that will be an admin on this un
 ```
 
 This cmdlet returns the Scope role membership object:
+ 
 
-AdministrativeUnitObjectId           RoleObjectId 	--------------------------           ------------ 	c9ab56cc-e349-4237-856e-cab03157a91e 526b7173-5a6e-49dc-88ec-b677a9093709
+	AdministrativeUnitObjectId           RoleObjectId
+	--------------------------           ------------
+	c9ab56cc-e349-4237-856e-cab03157a91e 526b7173-5a6e-49dc-88ec-b677a9093709
 
 ## PARAMETERS
 
@@ -53,8 +57,6 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-@{Text=}
-
 ```yaml
 Type: String
 Parameter Sets: (All)
@@ -68,8 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -RoleMemberInfo
-Specifies a RoleMemberInfo object.
-
+Specifies a **RoleMemberInfo** object. 
 ```yaml
 Type: RoleMemberInfo
 Parameter Sets: (All)
@@ -83,8 +84,6 @@ Accept wildcard characters: False
 ```
 
 ### -RoleObjectId
-@{Text=}
-
 ```yaml
 Type: String
 Parameter Sets: (All)
@@ -97,6 +96,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+
 ## INPUTS
 
 ## OUTPUTS
@@ -105,7 +107,7 @@ Accept wildcard characters: False
 
 ## RELATED LINKS
 
-[Get-AzureADScopedRoleMembership]()
+[Get-AzureADScopedRoleMembership](./Get-AzureADScopedRoleMembership.md)
 
-[Remove-AzureADScopedRoleMembership]()
+[Remove-AzureADScopedRoleMembership](./Remove-AzureADScopedRoleMembership.md)
 

@@ -1,5 +1,6 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+ms.assetid: 800AD06B-DDC3-4594-A339-4135A525155F
 online version: 
 schema: 2.0.0
 ---
@@ -12,11 +13,11 @@ Gets the details of a tenant.
 ## SYNTAX
 
 ```
-Get-AzureADTenantDetail [-All <Boolean>] [-Top <Int32>]
+Get-AzureADTenantDetail [-All <Boolean>] [-Top <Int32>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The Get-AzureADTenantDetail cmdlet gets the details of a tenant in Azure Active Directory (AD).
+The **Get-AzureADTenantDetail** cmdlet gets the details of a tenant in Azure Active Directory (AD).
 
 ## EXAMPLES
 
@@ -32,8 +33,7 @@ ObjectId                             DisplayName            VerifiedDomains
 ## PARAMETERS
 
 ### -All
-If true, return all tenant details.
-If false, return the number of objects specified by the Top parameter
+If true, return all tenant details. If false, return the number of objects specified by the Top parameter
 
 ```yaml
 Type: Boolean
@@ -61,6 +61,9 @@ Default value: None
 Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
+
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -1,5 +1,6 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.Custom.dll-Help.xml
+ms.assetid: 3C1BC855-0B50-4B1D-9D72-25A5E346F09D
 online version: 
 schema: 2.0.0
 ---
@@ -14,11 +15,11 @@ Creates a key credential for an application.
 ```
 New-AzureADApplicationKeyCredential -ObjectId <String> [-CustomKeyIdentifier <String>] [-StartDate <DateTime>]
  [-EndDate <DateTime>] [-Type <KeyType>] [-Usage <KeyUsage>] [-Value <String>]
- [-InformationAction <ActionPreference>] [-InformationVariable <String>]
+ [-InformationAction <ActionPreference>] [-InformationVariable <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The New-AzureADApplicationKeyCredential cmdlet creates a key credential for an application.
+The **New-AzureADApplicationKeyCredential** cmdlet creates a key credential for an application.
 
 ## EXAMPLES
 
@@ -36,7 +37,7 @@ Usage               : Sign
 Value               : {49, 50, 51}
 ```
 
-The first command gets the ID of an application by using the Get-AzureADApplication (./Get-AzureADApplication.md)cmdlet.
+The first command gets the ID of an application by using the [Get-AzureADApplication](./Get-AzureADApplication.md) cmdlet.
 The command stores it in the $AppId variable.
 
 The second command creates the application key credential for the application identified by $AppId.
@@ -75,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### -EndDate
-Specifies the time when the key becomes invalid as a DateTime object.
+Specifies the time when the key becomes invalid as a **DateTime** object.
 
 ```yaml
 Type: DateTime
@@ -144,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -StartDate
-Specifies the time when the key becomes valid as a DateTime object.
+Specifies the time when the key becomes valid as a **DateTime** object.
 
 ```yaml
 Type: DateTime
@@ -203,6 +204,9 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+
 ## INPUTS
 
 ## OUTPUTS
@@ -211,11 +215,10 @@ Accept wildcard characters: False
 
 ## RELATED LINKS
 
-[Get-AzureADApplication]()
+[Get-AzureADApplication](./Get-AzureADApplication.md) 
 
-[Get-AzureADApplicationKeyCredential]()
+[Get-AzureADApplicationKeyCredential](./Get-AzureADApplicationKeyCredential.md)
 
-[Remove-AzureADApplicationKeyCredential]()
+[Remove-AzureADApplicationKeyCredential](./Remove-AzureADApplicationKeyCredential.md)
 
 [This cmdlet uses the ADAL library in Azure Active Directory. To learn more about ADAL, please follow this link:](http://www.cloudidentity.com/blog/2013/09/12/active-directory-authentication-library-adal-v1-for-net-general-availability/)
-

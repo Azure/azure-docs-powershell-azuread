@@ -1,5 +1,6 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+ms.assetid: E008C14D-91DE-4CD4-BB76-6D037BB747DB
 online version: 
 schema: 2.0.0
 ---
@@ -13,21 +14,21 @@ Gets a group.
 
 ### GetQuery (Default)
 ```
-Get-AzureADGroup [-All <Boolean>] [-Top <Int32>] [-Filter <String>]
+Get-AzureADGroup [-All <Boolean>] [-Top <Int32>] [-Filter <String>] [<CommonParameters>]
 ```
 
 ### GetVague
 ```
-Get-AzureADGroup [-SearchString <String>] [-All <Boolean>]
+Get-AzureADGroup [-SearchString <String>] [-All <Boolean>] [<CommonParameters>]
 ```
 
 ### GetById
 ```
-Get-AzureADGroup -ObjectId <String> [-All <Boolean>]
+Get-AzureADGroup -ObjectId <String> [-All <Boolean>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The Get-AzureADGroup cmdlet gets a group in Azure Active Directory (AD).
+The **Get-AzureADGroup** cmdlet gets a group in Azure Active Directory (AD).
 
 ## EXAMPLES
 
@@ -72,8 +73,7 @@ This command gets the groups that include the text All in their display names.
 ## PARAMETERS
 
 ### -All
-If true, return all groups.
-If false, return the number of objects specified by the Top parameter
+If true, return all groups. If false, return the number of objects specified by the Top parameter
 
 ```yaml
 Type: Boolean
@@ -88,8 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -Filter
-Specifies an oData v3.0 filter statement.
-This parameter controls which objects are returned.
+Specifies an oData v3.0 filter statement. This parameter controls which objects are returned.
 
 ```yaml
 Type: String
@@ -120,7 +119,6 @@ Accept wildcard characters: False
 
 ### -SearchString
 Specifies a search string.
-
 ```yaml
 Type: String
 Parameter Sets: GetVague
@@ -148,6 +146,9 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+
 ## INPUTS
 
 ## OUTPUTS
@@ -156,9 +157,8 @@ Accept wildcard characters: False
 
 ## RELATED LINKS
 
-[New-AzureADGroup]()
+[New-AzureADGroup](./New-AzureADGroup.md)
+[Remove-AzureADGroup](./Remove-AzureADGroup.md)
+[Set-AzureADGroup](./Set-AzureADGroup.md)
 
-[Remove-AzureADGroup]()
-
-[Set-AzureADGroup]()
 

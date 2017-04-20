@@ -1,5 +1,6 @@
 ---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
+ms.assetid: C6B7A2E6-1C8E-4E8E-AF21-24999DF81310
 online version: 
 schema: 2.0.0
 ---
@@ -13,11 +14,11 @@ Adds a service principal policy.
 
 ```
 Add-AzureADServicePrincipalPolicy -Id <String> -RefObjectId <String> [-InformationAction <ActionPreference>]
- [-InformationVariable <String>]
+ [-InformationVariable <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The Add-AzureADServicePrincipalPolicy cmdlet adds a service principal policy.
+The **Add-AzureADServicePrincipalPolicy** cmdlet adds a service principal policy.
 
 ## EXAMPLES
 
@@ -29,8 +30,7 @@ PS C:\>Add-AzureADServicePrincipalPolicy -ObjectId <object id of service princip
 ## PARAMETERS
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -96,6 +96,9 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+
 ## INPUTS
 
 ## OUTPUTS
@@ -104,7 +107,8 @@ Accept wildcard characters: False
 
 ## RELATED LINKS
 
-[Get-AzureADServicePrincipalPolicy]()
+[Get-AzureADServicePrincipalPolicy](./Get-AzureADServicePrincipalPolicy.md)
 
-[Remove-AzureADServicePrincipalPolicy]()
+[Remove-AzureADServicePrincipalPolicy](./Remove-AzureADServicePrincipalPolicy.md)
+
 

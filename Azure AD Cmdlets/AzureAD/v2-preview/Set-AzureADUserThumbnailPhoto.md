@@ -13,17 +13,17 @@ Set the thumbnail photo for a user
 
 ### File (Default)
 ```
-Set-AzureADUserThumbnailPhoto [-ObjectId <String>] -FilePath <String>
+Set-AzureADUserThumbnailPhoto [-ObjectId <String>] -FilePath <String> [<CommonParameters>]
 ```
 
 ### Stream
 ```
-Set-AzureADUserThumbnailPhoto [-ObjectId <String>] -FileStream <Stream>
+Set-AzureADUserThumbnailPhoto [-ObjectId <String>] -FileStream <Stream> [<CommonParameters>]
 ```
 
 ### ByteArray
 ```
-Set-AzureADUserThumbnailPhoto [-ObjectId <String>] -ImageByteArray <Byte[]>
+Set-AzureADUserThumbnailPhoto [-ObjectId <String>] -ImageByteArray <Byte[]> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -57,7 +57,6 @@ Accept wildcard characters: False
 
 ### -FileStream
 A filestream that contains the user thumbnail photo
-
 ```yaml
 Type: Stream
 Parameter Sets: Stream
@@ -100,10 +99,14 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+
 ## INPUTS
 
 ### System.String
-System.IO.Stream System.Byte\[\]
+System.IO.Stream
+System.Byte[]
 
 ## OUTPUTS
 

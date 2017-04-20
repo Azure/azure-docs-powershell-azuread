@@ -1,5 +1,6 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.Custom.dll-Help.xml
+ms.assetid: 8F7770B8-E39E-45F9-AE8E-B03883B77756
 online version: 
 schema: 2.0.0
 ---
@@ -14,26 +15,17 @@ Creates a password credential for a service principal.
 ```
 New-AzureADServicePrincipalPasswordCredential -ObjectId <String> [-CustomKeyIdentifier <String>]
  [-StartDate <DateTime>] [-EndDate <DateTime>] [-Value <String>] [-InformationAction <ActionPreference>]
- [-InformationVariable <String>]
+ [-InformationVariable <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The New-AzureADServicePrincipalPasswordCredential cmdlet creates a password credential for a service principal in Azure Active Directory (AD).
+The **New-AzureADServicePrincipalPasswordCredential** cmdlet creates a password credential for a service principal in Azure Active Directory (AD).
 
 ## EXAMPLES
-
-### Example 1
-```
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
 
 ## PARAMETERS
 
 ### -CustomKeyIdentifier
-@{Text=}
-
 ```yaml
 Type: String
 Parameter Sets: (All)
@@ -47,8 +39,6 @@ Accept wildcard characters: False
 ```
 
 ### -EndDate
-@{Text=}
-
 ```yaml
 Type: DateTime
 Parameter Sets: (All)
@@ -62,8 +52,7 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -101,7 +90,6 @@ Accept wildcard characters: False
 
 ### -ObjectId
 Specifies an object ID.
-
 ```yaml
 Type: String
 Parameter Sets: (All)
@@ -115,8 +103,6 @@ Accept wildcard characters: False
 ```
 
 ### -StartDate
-@{Text=}
-
 ```yaml
 Type: DateTime
 Parameter Sets: (All)
@@ -130,8 +116,6 @@ Accept wildcard characters: False
 ```
 
 ### -Value
-@{Text=}
-
 ```yaml
 Type: String
 Parameter Sets: (All)
@@ -144,6 +128,9 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+
 ## INPUTS
 
 ## OUTPUTS
@@ -152,7 +139,8 @@ Accept wildcard characters: False
 
 ## RELATED LINKS
 
-[Get-AzureADServicePrincipalPasswordCredential]()
+[Get-AzureADServicePrincipalPasswordCredential](./Get-AzureADServicePrincipalPasswordCredential.md)
 
-[Remove-AzureADServicePrincipalPasswordCredential]()
+[Remove-AzureADServicePrincipalPasswordCredential](./Remove-AzureADServicePrincipalPasswordCredential.md)
+
 

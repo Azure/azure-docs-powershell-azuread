@@ -14,7 +14,7 @@ This cmdlet is used to invite a new external user to your directory
 ```
 New-AzureADMSInvitation [-InvitedUserDisplayName <String>] -InvitedUserEmailAddress <String>
  [-SendInvitationMessage <Boolean>] -InviteRedirectUrl <String>
- [-InvitedUserMessageInfo <InvitedUserMessageInfo>] [-InvitedUserType <String>]
+ [-InvitedUserMessageInfo <InvitedUserMessageInfo>] [-InvitedUserType <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -78,9 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -InvitedUserType
-The userType of the user being invited.
-By default, this is Guest.
-You can invite as Member if you're are company administrator.
+The userType of the user being invited. By default, this is Guest. You can invite as Member if you're are company administrator.
 
 ```yaml
 Type: String
@@ -124,6 +122,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+
 ## INPUTS
 
 ### None
@@ -133,9 +134,6 @@ Accept wildcard characters: False
 ### System.Object
 
 ## NOTES
-Please note that this cmdlet is currently in Public Preview.
-While a cmdlet is in Public Preview we may still need to make changes to the cmdlet which could potentially cause unexpected effects.
-We discourage customers from using this cmdlet in a production environment.
 
 ## RELATED LINKS
 

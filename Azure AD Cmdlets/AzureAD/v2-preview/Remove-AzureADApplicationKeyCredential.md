@@ -1,5 +1,6 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.Custom.dll-Help.xml
+ms.assetid: 59B49FB7-4743-4D76-9C08-4416D862BEE3
 online version: 
 schema: 2.0.0
 ---
@@ -13,11 +14,11 @@ Removes a key credential from an application.
 
 ```
 Remove-AzureADApplicationKeyCredential -ObjectId <String> -KeyId <String>
- [-InformationAction <ActionPreference>] [-InformationVariable <String>]
+ [-InformationAction <ActionPreference>] [-InformationVariable <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The Remove-AzureADApplicationKeyCredential cmdlet removes a key credential from an application.
+The **Remove-AzureADApplicationKeyCredential** cmdlet removes a key credential from an application.
 
 ## EXAMPLES
 
@@ -99,6 +100,9 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+
 ## INPUTS
 
 ## OUTPUTS
@@ -107,7 +111,6 @@ Accept wildcard characters: False
 
 ## RELATED LINKS
 
-[Get-AzureADApplicationKeyCredential]()
+[Get-AzureADApplicationKeyCredential](./Get-AzureADApplicationKeyCredential.md)
 
-[New-AzureADApplicationKeyCredential]()
-
+[New-AzureADApplicationKeyCredential](./New-AzureADApplicationKeyCredential.md)

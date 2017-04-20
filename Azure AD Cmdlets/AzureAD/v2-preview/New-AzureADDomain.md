@@ -1,5 +1,6 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+ms.assetid: 29A39191-9E64-4983-8C89-B9A6C574E621
 online version: 
 schema: 2.0.0
 ---
@@ -14,19 +15,13 @@ Creates a domain.
 ```
 New-AzureADDomain [-InformationAction <ActionPreference>] [-InformationVariable <String>]
  [-IsDefault <Boolean>] -Name <String> [-SupportedServices <System.Collections.Generic.List`1[System.String]>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The New-AzureADDomain cmdlet creates a domain in Azure Active Directory (AD).
+The **New-AzureADDomain** cmdlet creates a domain in Azure Active Directory (AD).
 
 ## EXAMPLES
-
-### Example 1
-```
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
 
 ## PARAMETERS
 
@@ -70,8 +65,6 @@ Accept wildcard characters: False
 ```
 
 ### -IsDefault
-@{Text=}
-
 ```yaml
 Type: Boolean
 Parameter Sets: (All)
@@ -100,8 +93,6 @@ Accept wildcard characters: False
 ```
 
 ### -SupportedServices
-@{Text=}
-
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
 Parameter Sets: (All)
@@ -114,6 +105,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+
 ## INPUTS
 
 ## OUTPUTS
@@ -122,11 +116,12 @@ Accept wildcard characters: False
 
 ## RELATED LINKS
 
-[Confirm-AzureADDomain]()
+[Confirm-AzureADDomain](./Confirm-AzureADDomain.md)
 
-[Get-AzureADDomain]()
+[Get-AzureADDomain](./Get-AzureADDomain.md)
 
-[Remove-AzureADDomain]()
+[Remove-AzureADDomain](./Remove-AzureADDomain.md)
 
-[Set-AzureADDomain]()
+[Set-AzureADDomain](./Set-AzureADDomain.md)
+
 

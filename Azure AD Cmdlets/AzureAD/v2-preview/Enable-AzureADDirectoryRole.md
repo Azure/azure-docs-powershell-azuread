@@ -1,5 +1,6 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+ms.assetid: 3719960D-7A77-414E-A20C-812B527F27AB
 online version: 
 schema: 2.0.0
 ---
@@ -13,11 +14,11 @@ Activates an existing directory role in Azure Active Directory.
 
 ```
 Enable-AzureADDirectoryRole [-InformationAction <ActionPreference>] [-InformationVariable <String>]
- [-RoleTemplateId <String>]
+ [-RoleTemplateId <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The Enable-AzureADDirectoryRole cmdlet activates an existing directory role in Azure Active Directory.
+The **Enable-AzureADDirectoryRole** cmdlet activates an existing directory role in Azure Active Directory.
 
 ## EXAMPLES
 
@@ -39,22 +40,21 @@ ObjectId                             DisplayName   Description
 03618579-3c16-4765-9539-86d9163ee3d9 Guest Inviter Guest Inviter has access to invite guest users.
 ```
 
-The first command gets an inviter role that has the display name Guest Inviter by using the Get-AzureADDirectoryRoleTemplate (./Get-AzureADDirectoryRoleTemplate.md)cmdlet. 
-The command stores Guest Inviter in the $InviterRole variable.
+The first command gets an inviter role that has the display name Guest Inviter by using the [Get-AzureADDirectoryRoleTemplate](./Get-AzureADDirectoryRoleTemplate.md) cmdlet. 
+The command stores Guest Inviter in the $InviterRole variable. 
 
 The second command displays the contents of $InviterRole.
 
-The third command creates a DirectoryRole object, and then stores it in the $Role variable.
+The third command creates a **DirectoryRole** object, and then stores it in the $Role variable.
 
-The forth command modifies the RoleTemplateId property of $Role to be the role in $InviterRole.
+The forth command modifies the **RoleTemplateId** property of $Role to be the role in $InviterRole.
 
 The final command enables the directory role in $Role.
 
 ## PARAMETERS
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -105,6 +105,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+
 ## INPUTS
 
 ## OUTPUTS
@@ -113,7 +116,6 @@ Accept wildcard characters: False
 
 ## RELATED LINKS
 
-[Get-AzureADDirectoryRole]()
+[Get-AzureADDirectoryRole](./Get-AzureADDirectoryRole.md)
 
-[Get-AzureADDirectoryRoleTemplate]()
-
+[Get-AzureADDirectoryRoleTemplate](./Get-AzureADDirectoryRoleTemplate.md)

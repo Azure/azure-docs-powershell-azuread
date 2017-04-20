@@ -1,5 +1,6 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+ms.assetid: 5751DBA5-57F8-47C6-954D-9D4B026CE662
 online version: 
 schema: 2.0.0
 ---
@@ -13,16 +14,16 @@ Gets a contract.
 
 ### GetQuery (Default)
 ```
-Get-AzureADContract [-All <Boolean>] [-Top <Int32>] [-Filter <String>]
+Get-AzureADContract [-All <Boolean>] [-Top <Int32>] [-Filter <String>] [<CommonParameters>]
 ```
 
 ### GetById
 ```
-Get-AzureADContract -ObjectId <String> [-All <Boolean>]
+Get-AzureADContract -ObjectId <String> [-All <Boolean>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The Get-AzureADContract cmdlet gets a contract from Azure Active Directory.
+The **Get-AzureADContract** cmdlet gets a contract from Azure Active Directory.
 
 ## EXAMPLES
 
@@ -36,8 +37,7 @@ This command gets all contracts in the directory.
 ## PARAMETERS
 
 ### -All
-If true, return all contracts.
-If false, return the number of objects specified by the Top parameter
+If true, return all contracts. If false, return the number of objects specified by the Top parameter
 
 ```yaml
 Type: Boolean
@@ -52,8 +52,7 @@ Accept wildcard characters: False
 ```
 
 ### -Filter
-Specifies an oData v3.0 filter statement.
-This parameter controls which objects are returned.
+Specifies an oData v3.0 filter statement. This parameter controls which objects are returned.
 
 ```yaml
 Type: String
@@ -96,6 +95,9 @@ Default value: None
 Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
+
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

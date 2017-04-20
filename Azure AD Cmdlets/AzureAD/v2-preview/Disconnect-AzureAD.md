@@ -1,5 +1,6 @@
 ---
 external help file: Microsoft.Open.Azure.AD.CommonLibrary.dll-Help.xml
+ms.assetid: 1EC5BEED-D45D-4938-B279-795075D05542
 online version: 
 schema: 2.0.0
 ---
@@ -13,10 +14,11 @@ Disconnects the current session from an Azure Active Directory tenant.
 
 ```
 Disconnect-AzureAD [-InformationAction <ActionPreference>] [-InformationVariable <String>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The Disconnect-AzureAD cmdlet disconnects the current session from an Azure Active Directory tenant.
+The **Disconnect-AzureAD** cmdlet disconnects the current session from an Azure Active Directory tenant.
 
 ## EXAMPLES
 
@@ -30,8 +32,7 @@ This command disconnects your session from a tenant.
 ## PARAMETERS
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -99,6 +100,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+
 ## INPUTS
 
 ## OUTPUTS
@@ -107,5 +111,4 @@ Accept wildcard characters: False
 
 ## RELATED LINKS
 
-[Connect-AzureAD]()
-
+[Connect-AzureAD](./Connect-AzureAD.md)

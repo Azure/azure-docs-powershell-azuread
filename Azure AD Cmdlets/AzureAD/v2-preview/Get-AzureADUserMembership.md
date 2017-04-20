@@ -1,5 +1,6 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+ms.assetid: 18D86E76-31D1-4286-8950-8067FBAF005A
 online version: 
 schema: 2.0.0
 ---
@@ -12,11 +13,11 @@ Get user memberships.
 ## SYNTAX
 
 ```
-Get-AzureADUserMembership -ObjectId <String> [-All <Boolean>] [-Top <Int32>]
+Get-AzureADUserMembership -ObjectId <String> [-All <Boolean>] [-Top <Int32>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The Get-AzureADUserMembership cmdlet gets user memberships in Azure Active Directory (AD).
+The **Get-AzureADUserMembership** cmdlet gets user memberships in Azure Active Directory (AD).
 
 ## EXAMPLES
 
@@ -45,8 +46,7 @@ This command gets the memberships for the specified user.
 ## PARAMETERS
 
 ### -All
-If true, return all memberships of this user.
-If false, return the number of objects specified by the Top parameter
+If true, return all memberships of this user. If false, return the number of objects specified by the Top parameter
 
 ```yaml
 Type: Boolean
@@ -61,7 +61,7 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-Specifies the ID of a user (as a UPN or ObjectId) in Azure AD.
+Specifies the ID of a user (as a UPN or ObjectId) in Azure AD. 
 
 ```yaml
 Type: String
@@ -89,6 +89,9 @@ Default value: None
 Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
+
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

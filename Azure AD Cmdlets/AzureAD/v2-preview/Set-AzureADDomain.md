@@ -1,5 +1,6 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+ms.assetid: 53B15037-19DD-4253-B998-D968DA05F2AC
 online version: 
 schema: 2.0.0
 ---
@@ -14,25 +15,18 @@ Updates a domain.
 ```
 Set-AzureADDomain -Name <String> [-InformationAction <ActionPreference>] [-InformationVariable <String>]
  [-IsDefault <Boolean>] [-SupportedServices <System.Collections.Generic.List`1[System.String]>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The Set-AzureADDomain cmdlet updates a domain in Azure Active Directory (AD).
+The **Set-AzureADDomain** cmdlet updates a domain in Azure Active Directory (AD).
 
 ## EXAMPLES
-
-### Example 1
-```
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
 
 ## PARAMETERS
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -69,8 +63,6 @@ Accept wildcard characters: False
 ```
 
 ### -IsDefault
-@{Text=}
-
 ```yaml
 Type: Boolean
 Parameter Sets: (All)
@@ -113,6 +105,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+
 ## INPUTS
 
 ## OUTPUTS
@@ -121,11 +116,10 @@ Accept wildcard characters: False
 
 ## RELATED LINKS
 
-[Confirm-AzureADDomain]()
+[Confirm-AzureADDomain](./Confirm-AzureADDomain.md)
 
-[Get-AzureADDomain]()
+[Get-AzureADDomain](./Get-AzureADDomain.md)
 
-[New-AzureADDomain]()
+[New-AzureADDomain](./New-AzureADDomain.md)
 
-[Remove-AzureADDomain]()
-
+[Remove-AzureADDomain](./Remove-AzureADDomain.md)

@@ -1,5 +1,6 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.Custom.dll-Help.xml
+ms.assetid: EAD7BC01-298D-427D-A0AF-5610021D1BE8
 online version: 
 schema: 2.0.0
 ---
@@ -13,11 +14,11 @@ Removes a password credential from an application.
 
 ```
 Remove-AzureADApplicationPasswordCredential -ObjectId <String> -KeyId <String>
- [-InformationAction <ActionPreference>] [-InformationVariable <String>]
+ [-InformationAction <ActionPreference>] [-InformationVariable <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The Remove-AzureADApplicationPasswordCredential cmdlet removes a password credential from an application in Azure Active Directory (AD).
+The **Remove-AzureADApplicationPasswordCredential** cmdlet removes a password credential from an application in Azure Active Directory (AD).
 
 ## EXAMPLES
 
@@ -28,9 +29,9 @@ PS C:\> $KeyIDs = Get-AzureADApplicationPasswordCredential -ObjectId $AppId
 PS C:\> Remove-AzureADApplicationPasswordCredential -ObjectId $AppId -KeyId $KeyIds[0].KeyId
 ```
 
-The first command gets the ID of an application by using the Get-AzureADApplication (./Get-AzureADApplication.md)cmdlet, and then stores it in the $AppID variable.
+The first command gets the ID of an application by using the [Get-AzureADApplication](./Get-AzureADApplication.md) cmdlet, and then stores it in the $AppID variable.
 
-The second command gets the password credential for the application identified by $AppID by using the Get-AzureADApplicationPasswordCredential (./ Get-AzureADApplicationPasswordCredential.md)cmdlet. 
+The second command gets the password credential for the application identified by $AppID by using the [Get-AzureADApplicationPasswordCredential](./ Get-AzureADApplicationPasswordCredential.md) cmdlet. 
 The command stores it in the $KeyId variable.
 
 The final command removes the application password credential for the application identified by $AppID.
@@ -77,8 +78,6 @@ Accept wildcard characters: False
 ```
 
 ### -KeyId
-@{Text=}
-
 ```yaml
 Type: String
 Parameter Sets: (All)
@@ -106,6 +105,9 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+
 ## INPUTS
 
 ## OUTPUTS
@@ -114,9 +116,8 @@ Accept wildcard characters: False
 
 ## RELATED LINKS
 
-[Get-AzureADApplication]()
+[Get-AzureADApplication](./Get-AzureADApplication.md)
 
-[Get-AzureADApplicationPasswordCredential]()
+[Get-AzureADApplicationPasswordCredential](./Get-AzureADApplicationPasswordCredential.md)
 
-[Remove-AzureADApplicationPasswordCredential]()
-
+[Remove-AzureADApplicationPasswordCredential](./Remove-AzureADApplicationPasswordCredential.md)

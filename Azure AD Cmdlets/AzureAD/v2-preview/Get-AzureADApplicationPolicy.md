@@ -1,5 +1,6 @@
 ---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
+ms.assetid: 20303C1F-EB5F-4326-B522-2241D736ED4E
 online version: 
 schema: 2.0.0
 ---
@@ -13,11 +14,11 @@ Gets an application policy.
 
 ```
 Get-AzureADApplicationPolicy -Id <String> [-InformationAction <ActionPreference>]
- [-InformationVariable <String>]
+ [-InformationVariable <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The Get-AzureADApplicationPolicy cmdlet gets an Azure Active Directory application policy.
+The **Get-AzureADApplicationPolicy** cmdlet gets an Azure Active Directory application policy.
 
 ## EXAMPLES
 
@@ -84,6 +85,9 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+
 ## INPUTS
 
 ## OUTPUTS
@@ -92,7 +96,7 @@ Accept wildcard characters: False
 
 ## RELATED LINKS
 
-[Add-AzureADApplicationPolicy]()
+[Add-AzureADApplicationPolicy](./Add-AzureADApplicationPolicy.md)
+[Remove-AzureADApplicationPolicy](./Remove-AzureADApplicationPolicy.md)
 
-[Remove-AzureADApplicationPolicy]()
 

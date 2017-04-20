@@ -1,5 +1,6 @@
 ---
 external help file: Microsoft.Open.AzureADBeta.Graph.PowerShell.dll-Help.xml
+ms.assetid: 9DEA1FE5-FE78-431F-9D12-53C349812A81
 online version: 
 schema: 2.0.0
 ---
@@ -13,20 +14,13 @@ Removes an administrative unit member.
 
 ```
 Remove-AzureADAdministrativeUnitMember -ObjectId <String> -MemberId <String>
- [-InformationAction <ActionPreference>] [-InformationVariable <String>]
+ [-InformationAction <ActionPreference>] [-InformationVariable <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The Remove-AzureADAdministrativeUnitMember cmdlet removes an administrative unit member in Azure Active Directory (AD).
+The **Remove-AzureADAdministrativeUnitMember** cmdlet removes an administrative unit member in Azure Active Directory (AD).
 
 ## EXAMPLES
-
-### Example 1
-```
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
 
 ## PARAMETERS
 
@@ -99,6 +93,9 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+
 ## INPUTS
 
 ## OUTPUTS
@@ -107,7 +104,8 @@ Accept wildcard characters: False
 
 ## RELATED LINKS
 
-[Add-AzureADAdministrativeUnitMember]()
+[Add-AzureADAdministrativeUnitMember](./Add-AzureADAdministrativeUnitMember.md)
 
-[Remove-AzureADAdministrativeUnitMember]()
+[Remove-AzureADAdministrativeUnitMember](./Remove-AzureADAdministrativeUnitMember.md)
+
 

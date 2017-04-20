@@ -1,5 +1,6 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+ms.assetid: 45C6B663-1AD4-4ED3-81BB-D2B79C67BC47
 online version: 
 schema: 2.0.0
 ---
@@ -12,11 +13,11 @@ Gets the owner of an application.
 ## SYNTAX
 
 ```
-Get-AzureADApplicationOwner -ObjectId <String> [-All <Boolean>] [-Top <Int32>]
+Get-AzureADApplicationOwner -ObjectId <String> [-All <Boolean>] [-Top <Int32>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The Get-AzureADApplicationOwner cmdlet get an owner of an Azure Active Directory application.
+The **Get-AzureADApplicationOwner** cmdlet get an owner of an Azure Active Directory application.
 
 ## EXAMPLES
 
@@ -34,8 +35,7 @@ This command gets the owner of an application.
 ## PARAMETERS
 
 ### -All
-If true, return all owners.
-If false, return the number of objects specified by the Top parameter
+If true, return all owners. If false, return the number of objects specified by the Top parameter
 
 ```yaml
 Type: Boolean
@@ -79,6 +79,9 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+
 ## INPUTS
 
 ## OUTPUTS
@@ -87,7 +90,6 @@ Accept wildcard characters: False
 
 ## RELATED LINKS
 
-[Add-AzureADApplicationOwner]()
-
-[Remove-AzureADApplicationOwner]()
+[Add-AzureADApplicationOwner](./Add-AzureADApplicationOwner.md)
+[Remove-AzureADApplicationOwner](./Remove-AzureADApplicationOwner.md)
 

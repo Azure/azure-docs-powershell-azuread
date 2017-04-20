@@ -1,5 +1,6 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+ms.assetid: 174EC629-F240-47FD-B603-87F4419ACD14
 online version: 
 schema: 2.0.0
 ---
@@ -13,11 +14,11 @@ Gets application extension properties.
 
 ```
 Get-AzureADApplicationExtensionProperty -ObjectId <String> [-InformationAction <ActionPreference>]
- [-InformationVariable <String>]
+ [-InformationVariable <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The Get-AzureADApplicationExtensionProperty cmdlet gets application extension properties in Azure Active Directory.
+The **Get-AzureADApplicationExtensionProperty** cmdlet gets application extension properties in Azure Active Directory.
 
 ## EXAMPLES
 
@@ -88,6 +89,9 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+
 ## INPUTS
 
 ## OUTPUTS
@@ -96,7 +100,6 @@ Accept wildcard characters: False
 
 ## RELATED LINKS
 
-[New-AzureADApplicationExtensionProperty]()
+[New-AzureADApplicationExtensionProperty](./New-AzureADApplicationExtensionProperty.md)
 
-[Remove-AzureADApplicationExtensionProperty]()
-
+[Remove-AzureADApplicationExtensionProperty](./Remove-AzureADApplicationExtensionProperty.md)

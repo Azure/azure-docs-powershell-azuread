@@ -1,5 +1,6 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+ms.assetid: B15F90ED-2F60-4401-89A2-89E3DD072519
 online version: 
 schema: 2.0.0
 ---
@@ -14,11 +15,11 @@ Creates an application extension property.
 ```
 New-AzureADApplicationExtensionProperty -ObjectId <String> [-InformationAction <ActionPreference>]
  [-InformationVariable <String>] [-Name <String>] [-DataType <String>]
- [-TargetObjects <System.Collections.Generic.List`1[System.String]>]
+ [-TargetObjects <System.Collections.Generic.List`1[System.String]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The New-AzureADApplicationExtensionProperty cmdlet creates an application extension property for an object in Azure Active Directory.
+The **New-AzureADApplicationExtensionProperty** cmdlet creates an application extension property for an object in Azure Active Directory.
 
 ## EXAMPLES
 
@@ -135,6 +136,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+
 ## INPUTS
 
 ## OUTPUTS
@@ -143,7 +147,6 @@ Accept wildcard characters: False
 
 ## RELATED LINKS
 
-[Get-AzureADApplicationExtensionProperty]()
+[Get-AzureADApplicationExtensionProperty](./Get-AzureADApplicationExtensionProperty.md)
 
-[Remove-AzureADApplicationExtensionProperty]()
-
+[Remove-AzureADApplicationExtensionProperty](./Remove-AzureADApplicationExtensionProperty.md)

@@ -1,5 +1,6 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+ms.assetid: 56657391-43D9-4939-B5AE-BB44EF00BE6E
 online version: 
 schema: 2.0.0
 ---
@@ -22,11 +23,11 @@ Set-AzureADUser -ObjectId <String>
  [-PostalCode <String>] [-PreferredLanguage <String>] [-ShowInAddressList <Boolean>]
  [-SignInNames <System.Collections.Generic.List`1[Microsoft.Open.AzureAD.Model.SignInName]>] [-State <String>]
  [-StreetAddress <String>] [-Surname <String>] [-TelephoneNumber <String>] [-UsageLocation <String>]
- [-UserPrincipalName <String>] [-UserType <String>]
+ [-UserPrincipalName <String>] [-UserType <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The Set-AzureADUser cmdlet updates a user in Azure Active Directory (AD).
+The **Set-AzureADUser** cmdlet updates a user in Azure Active Directory (AD).
 
 ## EXAMPLES
 
@@ -43,7 +44,6 @@ This command updates the specified user's property.
 
 ### -AccountEnabled
 Indicates whether the account is enabled.
-
 ```yaml
 Type: Boolean
 Parameter Sets: (All)
@@ -58,7 +58,6 @@ Accept wildcard characters: False
 
 ### -City
 Specifies the user's city.
-
 ```yaml
 Type: String
 Parameter Sets: (All)
@@ -73,7 +72,6 @@ Accept wildcard characters: False
 
 ### -Country
 Specifies the user's country.
-
 ```yaml
 Type: String
 Parameter Sets: (All)
@@ -87,10 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -CreationType
-Indicates whether the user account is a local account for an Azure Active Directory B2C tenant.
-Possible values are "LocalAccount" and null.
-When creating a local account, the property is required and you must set it to "LocalAccount".
-When creating a work or school account, do not specify the property or set it to null.
+Indicates whether the user account is a local account for an Azure Active Directory B2C tenant. Possible values are "LocalAccount" and null. When creating a local account, the property is required and you must set it to "LocalAccount". When creating a work or school account, do not specify the property or set it to null.
 
 ```yaml
 Type: String
@@ -106,7 +101,6 @@ Accept wildcard characters: False
 
 ### -Department
 Specifies the user's department.
-
 ```yaml
 Type: String
 Parameter Sets: (All)
@@ -121,7 +115,6 @@ Accept wildcard characters: False
 
 ### -DisplayName
 Specifies the user's display name.
-
 ```yaml
 Type: String
 Parameter Sets: (All)
@@ -135,8 +128,6 @@ Accept wildcard characters: False
 ```
 
 ### -ExtensionProperty
-@{Text=}
-
 ```yaml
 Type: System.Collections.Generic.Dictionary`2[System.String,System.String]
 Parameter Sets: (All)
@@ -151,7 +142,6 @@ Accept wildcard characters: False
 
 ### -GivenName
 Specifies the user's given name.
-
 ```yaml
 Type: String
 Parameter Sets: (All)
@@ -165,8 +155,6 @@ Accept wildcard characters: False
 ```
 
 ### -ImmutableId
-@{Text=}
-
 ```yaml
 Type: String
 Parameter Sets: (All)
@@ -196,7 +184,6 @@ Accept wildcard characters: False
 
 ### -JobTitle
 Specifies the user's job title.
-
 ```yaml
 Type: String
 Parameter Sets: (All)
@@ -435,8 +422,6 @@ Accept wildcard characters: False
 ```
 
 ### -UsageLocation
-@{Text=}
-
 ```yaml
 Type: String
 Parameter Sets: (All)
@@ -465,8 +450,6 @@ Accept wildcard characters: False
 ```
 
 ### -UserType
-@{Text=}
-
 ```yaml
 Type: String
 Parameter Sets: (All)
@@ -494,6 +477,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+
 ## INPUTS
 
 ## OUTPUTS
@@ -502,9 +488,8 @@ Accept wildcard characters: False
 
 ## RELATED LINKS
 
-[Get-AzureADUser]()
+[Get-AzureADUser](./Get-AzureADUser.md)
 
-[New-AzureADUser]()
+[New-AzureADUser](./New-AzureADUser.md)
 
-[Remove-AzureADUser]()
-
+[Remove-AzureADUser](./Get-AzureADUser.md)

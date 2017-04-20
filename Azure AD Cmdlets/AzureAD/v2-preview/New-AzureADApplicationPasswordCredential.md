@@ -1,5 +1,6 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.Custom.dll-Help.xml
+ms.assetid: D3B591A4-A99D-4D2D-90E2-D4CE016C4589
 online version: 
 schema: 2.0.0
 ---
@@ -14,11 +15,11 @@ Creates a password credential for an application.
 ```
 New-AzureADApplicationPasswordCredential -ObjectId <String> [-CustomKeyIdentifier <String>]
  [-StartDate <DateTime>] [-EndDate <DateTime>] [-Value <String>] [-InformationAction <ActionPreference>]
- [-InformationVariable <String>]
+ [-InformationVariable <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The New-AzureADApplicationPasswordCredential cmdlet creates a password credential for an application in Azure Active Directory (AD).
+The **New-AzureADApplicationPasswordCredential** cmdlet creates a password credential for an application in Azure Active Directory (AD).
 
 ## EXAMPLES
 
@@ -36,8 +37,6 @@ Value               : ZJ0V1Yg4cp4eWIey9DrYspqVdX1pdvY437P/ueGxVLU=
 ## PARAMETERS
 
 ### -CustomKeyIdentifier
-@{Text=}
-
 ```yaml
 Type: String
 Parameter Sets: (All)
@@ -51,8 +50,6 @@ Accept wildcard characters: False
 ```
 
 ### -EndDate
-@{Text=}
-
 ```yaml
 Type: DateTime
 Parameter Sets: (All)
@@ -66,8 +63,7 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -119,8 +115,6 @@ Accept wildcard characters: False
 ```
 
 ### -StartDate
-@{Text=}
-
 ```yaml
 Type: DateTime
 Parameter Sets: (All)
@@ -134,8 +128,6 @@ Accept wildcard characters: False
 ```
 
 ### -Value
-@{Text=}
-
 ```yaml
 Type: String
 Parameter Sets: (All)
@@ -148,6 +140,9 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+
 ## INPUTS
 
 ## OUTPUTS
@@ -156,7 +151,8 @@ Accept wildcard characters: False
 
 ## RELATED LINKS
 
-[Get-AzureADApplicationPasswordCredential]()
+[Get-AzureADApplicationPasswordCredential](./Get-AzureADApplicationPasswordCredential.md)
 
-[Remove-AzureADApplicationPasswordCredential]()
+[Remove-AzureADApplicationPasswordCredential](./Remove-AzureADApplicationPasswordCredential.md)
+
 

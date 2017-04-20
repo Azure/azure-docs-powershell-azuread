@@ -1,5 +1,6 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+ms.assetid: 2F1DA4E0-4D7C-4726-85AA-2493B0A3FDA8
 online version: 
 schema: 2.0.0
 ---
@@ -13,11 +14,11 @@ Removes an owner from a group.
 
 ```
 Remove-AzureADGroupOwner -ObjectId <String> -OwnerId <String> [-InformationAction <ActionPreference>]
- [-InformationVariable <String>]
+ [-InformationVariable <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The Remove-AzureADGroupOwner cmdlet removes an owner from a group in Azure Active Directory (AD).
+The **Remove-AzureADGroupOwner** cmdlet removes an owner from a group in Azure Active Directory (AD).
 
 ## EXAMPLES
 
@@ -97,6 +98,9 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+
 ## INPUTS
 
 ## OUTPUTS
@@ -105,7 +109,6 @@ Accept wildcard characters: False
 
 ## RELATED LINKS
 
-[Add-AzureADGroupOwner]()
-
-[Get-AzureADGroupOwner]()
+[Add-AzureADGroupOwner](./Add-AzureADGroupOwner.md)
+[Get-AzureADGroupOwner](./Get-AzureADGroupOwner.md)
 
