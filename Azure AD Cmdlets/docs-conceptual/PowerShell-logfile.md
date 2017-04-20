@@ -1,6 +1,6 @@
 #Where can I find the PowerShell log file?
 
-Azure AD PowerShell maintains a log file for diagnostic purposes. You can find this group here:
+Azure AD PowerShell maintains a log file for diagnostic purposes. You can find this file here:
 
 ```powershell
 C:\Users\<alias>\AppData\Local\Microsoft\AzureAD\Powershell\AzureADPowershell_<sessionStartTimeStamp>.log
