@@ -7,30 +7,22 @@ schema: 2.0.0
 # Get-AzureADServiceAppRoleAssignedTo
 
 ## SYNOPSIS
-{{Fill in the Synopsis}}
+Get the objects to which an application role is assigned
 
 ## SYNTAX
 
 ```
-Get-AzureADServiceAppRoleAssignedTo -ObjectId <String> [-All <Boolean>] [-Top <Int32>] [<CommonParameters>]
+Get-AzureADServiceAppRoleAssignedTo -ObjectId <String> [-All <Boolean>] [-Top <Int32>]
 ```
 
 ## DESCRIPTION
-{{Fill in the Description}}
+Get the objects to which an application role is assigned
 
-## EXAMPLES
-
-### Example 1
-```
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
 
 ## PARAMETERS
 
 ### -All
-{{Fill All Description}}
+$True if all objects need to be returned
 
 ```yaml
 Type: Boolean
@@ -45,7 +37,7 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-{{Fill ObjectId Description}}
+The Object ID of the Service Principal
 
 ```yaml
 Type: String
@@ -60,7 +52,7 @@ Accept wildcard characters: False
 ```
 
 ### -Top
-{{Fill Top Description}}
+The number of objects to return
 
 ```yaml
 Type: Int32
@@ -74,14 +66,12 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
-
 ## INPUTS
 
 ### System.String
 System.Nullable`1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
 System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+
 
 ## OUTPUTS
 

@@ -91,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -RoleTemplateId
-{{Fill RoleTemplateId Description}}
+The ID of the Role template to enable
 
 ```yaml
 Type: String

@@ -463,7 +463,7 @@ Accept wildcard characters: False
 ```
 
 ### -FacsimileTelephoneNumber
-{{Fill FacsimileTelephoneNumber Description}}
+The Facsimile TelephoneNumber of the user
 
 ```yaml
 Type: String
