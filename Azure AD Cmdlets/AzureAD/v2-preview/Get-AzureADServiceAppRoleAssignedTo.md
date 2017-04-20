@@ -7,7 +7,7 @@ schema: 2.0.0
 # Get-AzureADServiceAppRoleAssignedTo
 
 ## SYNOPSIS
-{{Fill in the Synopsis}}
+Get the objects to which an application role is assigned
 
 ## SYNTAX
 
@@ -16,21 +16,13 @@ Get-AzureADServiceAppRoleAssignedTo -ObjectId <String> [-All <Boolean>] [-Top <I
 ```
 
 ## DESCRIPTION
-{{Fill in the Description}}
+Get the objects to which an application role is assigned
 
-## EXAMPLES
-
-### Example 1
-```
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
 
 ## PARAMETERS
 
 ### -All
-{{Fill All Description}}
+$True if all objects need to be returned
 
 ```yaml
 Type: Boolean
@@ -45,7 +37,7 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-{{Fill ObjectId Description}}
+The Object ID of the Service Principal
 
 ```yaml
 Type: String
@@ -60,7 +52,7 @@ Accept wildcard characters: False
 ```
 
 ### -Top
-{{Fill Top Description}}
+The number of objects to return
 
 ```yaml
 Type: Int32

@@ -359,7 +359,7 @@ Accept wildcard characters: False
 ```
 
 ### -Oauth2RequirePostResponse
-{{Fill Oauth2RequirePostResponse Description}}
+Set theis to True if an Oauth2 Post response is required
 
 ```yaml
 Type: Boolean
