@@ -44,7 +44,7 @@
     "Get-AzureADDomainNameReference": "Domains",
     "Get-AzureADDomainServiceConfigurationRecord": "Domains",
     "Get-AzureADDomainVerificationDnsRecord": "Domains",
-    "Get-AzureADExtensionProperty": "Extentsion Properties",
+    "Get-AzureADExtensionProperty": "Extension Properties",
     "Get-AzureADGroup": "Groups",
     "Get-AzureADGroupAppRoleAssignment": "Groups",
     "Get-AzureADGroupMember": "Groups",
