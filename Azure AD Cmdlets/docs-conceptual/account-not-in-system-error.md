@@ -1,4 +1,4 @@
-# I get an error "\<your account> isn't in our system"
+# I get an error "\[your account>] isn't in our system"
 
 You can see this error message if the Connect-AzureAD cmdlet fails. There are several possible causes:
 
