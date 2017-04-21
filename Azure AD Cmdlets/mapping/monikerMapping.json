@@ -8,7 +8,7 @@
         }
     },
 {
-    "azureadps-2.0": {
+    "azureadps-2.0-preview": {
         "azure-docs-powershell-azuread/Azure AD Cmdlets": {
             "AzureAD": {
                 "_displayName": "AzureAD Preview",
