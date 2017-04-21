@@ -10,13 +10,13 @@ The Azure AD PowerShell Version 2 General Availability module can be downloaded 
 
 The Azure AD Module is supported on the following Windows operating systems with the default version of Microsoft .NET Framework and Windows PowerShell: Windows 8.1, Windows 8, Windows 7, Windows Server 2012 R2, Windows Server 2012, or Windows Server 2008 R2.
 
-If your computer has all the prerequisites for the installation, you can run
+If your computer has all the prerequisites for the installation, to install the General Availability version of the module on your computer you can run
 
 ```powershell
 Install-Module AzureAD
 ```
 
-to install the General Availability version of the module on your computer. To install the public preview release, use
+To install the public preview release, use
 
 ```powershell
 Install-module AzureADPreview
