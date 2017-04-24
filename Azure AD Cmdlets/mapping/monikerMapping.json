@@ -7,15 +7,15 @@
             }
         }
     },
-{
     "azureadps-2.0-preview": {
         "azure-docs-powershell-azuread/Azure AD Cmdlets": {
             "AzureAD": {
-                "_displayName": "AzureAD Preview",
+                "_displayName": "AzureADpreview",
                 "_version": "2-preview"
             }
         }
-    },    "azureadps-1.0": {
+    },    
+    "azureadps-1.0": {
         "azure-docs-powershell-azuread/Azure AD Cmdlets": {
             "MSOnline": {
                 "_displayName": "MSOnline",
