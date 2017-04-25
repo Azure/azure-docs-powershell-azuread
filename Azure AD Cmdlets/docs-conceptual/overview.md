@@ -10,6 +10,6 @@ Please refer to the below detailed description of the modules for a full list of
 
 Module | Description
 ------ | -----------
-[AzureAD](/powershell/module/azuread?view-azureadps-2.0) | Azure Active Directory PowerShell v2
-[MSOnline](/powershell/module/msonline?view-azureadps-1.0)| Azure Active Directory PowerShell v1
+[AzureAD](/powershell/module/azuread?view=azureadps-2.0) | Azure Active Directory PowerShell v2
+[MSOnline](/powershell/module/msonline?view=azureadps-1.0)| Azure Active Directory PowerShell v1
 
