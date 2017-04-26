@@ -11,7 +11,7 @@
         "azure-docs-powershell-azuread/Azure AD Cmdlets": {
             "AzureAD": {
                 "_displayName": "AzureADpreview",
-                "_version": "2-preview"
+                "_version": "2preview"
             }
         }
     },    
