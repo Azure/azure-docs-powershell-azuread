@@ -5,13 +5,9 @@ This topic includes information about how to install these cmdlets for use with 
 
 Please note that we will begin to deprecate this module when the functionality of this module is migrated to the newer [Azure Active Directory PowerShell V2 Module](https://docs.microsoft.com/en-us/powershell/azuread/v2/azureactivedirectory). We advise customers who are creating new PowerShell scripts to use the newer module instead of this module.
 
-
 ## Install the Azure AD Module
 
 The Azure AD Module is supported on the following Windows operating systems with the default version of Microsoft .NET Framework and Windows PowerShell: Windows 8.1, Windows 8, Windows 7, Windows Server 2012 R2, Windows Server 2012, or Windows Server 2008 R2.
-
-There are two versions of the Azure Active Directory Module for Windows PowerShell available: a General Availability version and a Public Preview Version.
-The Public Preview version contains cmdlets that have not yet been released for General Availability.
 
 Select the version you want from the [Azure Active Directory Connection download page](http://connect.microsoft.com/site1164/Downloads/DownloadDetails.aspx?DownloadID=59185), download its .msi file, and click **Run** to run the installer package.
 
