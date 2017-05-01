@@ -15,22 +15,23 @@ Connects with an authenticated account to use Active Directory cmdlet requests.
 ### UserCredential (Default)
 ```
 Connect-AzureAD [-AzureEnvironmentName <EnvironmentName>] [-TenantId <String>] [-Credential <PSCredential>]
- [-AccountId <String>] [-LogLevel <LogLevel>] [-InformationAction <ActionPreference>]
+ [-AccountId <String>] [-LogLevel <LogLevel>] [-LogFilePath <String>] [-InformationAction <ActionPreference>]
  [-InformationVariable <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ServicePrincipalCertificate
 ```
 Connect-AzureAD [-AzureEnvironmentName <EnvironmentName>] -TenantId <String> -CertificateThumbprint <String>
- -ApplicationId <String> [-LogLevel <LogLevel>] [-InformationAction <ActionPreference>]
+ -ApplicationId <String> [-LogLevel <LogLevel>] [-LogFilePath <String>] [-InformationAction <ActionPreference>]
  [-InformationVariable <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### AccessToken
 ```
 Connect-AzureAD [-AzureEnvironmentName <EnvironmentName>] [-TenantId <String>] -AadAccessToken <String>
- [-MsAccessToken <String>] -AccountId <String> [-LogLevel <LogLevel>] [-InformationAction <ActionPreference>]
- [-InformationVariable <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-MsAccessToken <String>] -AccountId <String> [-LogLevel <LogLevel>] [-LogFilePath <String>]
+ [-InformationAction <ActionPreference>] [-InformationVariable <String>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -348,6 +349,21 @@ Aliases: wi
 Required: False
 Position: Named
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -LogFilePath
+The path where the log file for this PowerShell session is written to. Provide a value here if you need to deviate from the default PowerShell log file location.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: 
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
