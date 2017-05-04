@@ -24,6 +24,7 @@
 ### [I get an error "\[your account] isn't in our system"](account-not-in-system-error.md)
 # Videos
 ## [Manage dynamic groups with PowerShell](https://channel9.msdn.com/Series/Azure-Active-Directory-Videos-Demos/Managing-dynamic-groups-with-Azure-AD-PowerShell)
+## [Managing applications with PowerShell](https://channel9.msdn.com/Series/Azure-Active-Directory-Videos-Demos/ManageAppsAzureADPowerShell)
 #Read more
 ## [Getting started with PowerShell](https://msdn.microsoft.com/powershell/scripting/getting-started/getting-started-with-windows-powershell)
 ## [PowerShell fundamental concepts](https://msdn.microsoft.com/en-us/powershell/scripting/getting-started/fundamental-concepts)
