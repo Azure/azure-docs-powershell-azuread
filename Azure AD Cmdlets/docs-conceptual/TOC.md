@@ -4,6 +4,7 @@
 # Using Azure AD PowerShell
 ## PowerShell Scenarios
 ### [Importing Data](importing-data.md)
+### [Recovering deleted data](recovering-deleted-data.md)
 ## Directory Features
 ### [Managing groups in Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-accessmanagement-groups-settings-v2-cmdlets)
 ### [Managing Unified Groups settings using Powershell](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-accessmanagement-groups-settings-cmdlets)
