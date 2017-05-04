@@ -32,6 +32,11 @@ Id                                   DisplayName     Description
 --                                   -----------     -----------
 822cda93-4d5b-4c60-86d9-5d395e37afb4 XSpeedTest1996A XSpeedTest1996A
 ```
+To recover all deleted Unified Groups you would use
+```powershell
+Get-AzureADMSDeletedGroup | Restore-AzureADMSDeletedDirectoryObject
+```
+The first cmdlet will retrieve the deleted unified groups in your directory, the second cmdlet will be executed for each deleted group and will restore the deleted groups.
 
 If you want to recover a deleted application object, you can use
 
