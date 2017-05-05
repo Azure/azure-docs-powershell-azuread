@@ -22,36 +22,35 @@ The **Set-AzureADUserLicense** adds or removes licenses for a Microsoft online s
 
 ## EXAMPLES
 
-### Example 1: Add a license to a user based on a template user
+### Example 1: Add or remove a license for a user
+
+```powershell
+# Create the objects we'll need to add and remove licenses
+$license = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicense
+$licenses = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicenses
+
+# Find the SkuID of the license we want to add - in this exmample we'll use the O365_BUSINESS_PREMIUM license
+$license.SkuId = (Get-AzureADSubscribedSku | Where-Object -Property SkuPartNumber -Value "O365_BUSINESS_PREMIUM" -EQ).SkuID
+
+# Set the OFFice license as the license we want to add in the $licenses object
+$licenses.AddLicenses = $license
+
+# Call the Set-AzureADUserLicense cmdlet to set the license.
+Set-AzureADUserLicense -ObjectId "Violeta.Collias@drumkit.onmicrosoft.com" -AssignedLicenses $licenses
+
+$Licenses.AddLicenses = @()
+$Licenses.RemoveLicenses =  (Get-AzureADSubscribedSku | Where-Object -Property SkuPartNumber -Value "O365_BUSINESS_PREMIUM" -EQ).SkuID
+Set-AzureADUserLicense -ObjectId "Violeta.Collias@drumkit.onmicrosoft.com" -AssignedLicenses $licenses 
 ```
-PS C:\> $LicensedUser = Get-AzureADUser -ObjectId "TemplateUser@contoso.com"  
-PS C:\> $User = Get-AzureADUser -ObjectId "User@contoso.com"  
-PS C:\> $License = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicense 
-PS C:\> $License.SkuId = $LicensedUser.AssignedLicenses.SkuId 
-PS C:\> $Licenses = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicenses 
-PS C:\> $Licenses.AddLicenses = $License 
-PS C:\> Set-AzureADUserLicense -ObjectId $User.ObjectId -AssignedLicenses $Licenses
-```
-
-The first command gets a user by using the [Get-AzureADUser](./Get-AzureADUser.md) cmdlet, and then stores it in the $LicensedUser variable.
-
-The second command gets another user by using **Get-AzureADUser**, and then stores it in the $User variable.
-
-The third command creates an **AssignedLicense** type, and then stores it in the $License variable.
-
-The fourth command set the **SkuId** property of $License to the same value as the **SkuId** property of $LicensedUser.
-
-The fifth commmand creates an **AssignedLicenses** object, and stores it in the $Licenses variable.
-
-The sixth command adds the license in $License to $Licenses.
-
-The final command assigns the licenses in $Licenses to the user in $User.
-The licenses in $Licenses includes $License from the third and fourth commands.
 
 ## PARAMETERS
 
 ### -AssignedLicenses
-Specifies a list of licenses to assign or remove.
+Specifies a list of licenses to assign or remove. This parameter takes an object of the type Microsoft.Open.AzureAD.Model.AssignedLicenses, as shown in the example above. This contains two attributes that we'll be using here: 
++ AddLicenses is list that contians objects of the type Microsoft.Open.AzureAD.Model.AssignedLicense
++ RemoveLicenses is a list that contains obejcts of the type String
+
+To add new licenses to a user, specify these in the AddLicenses property, to remove licenses add them to the list in the RemoveLicenses property. Licenses that are assigned to a user but are not mentioned in the RemoveLicenses or AddLicenses proeprties are not changed.
 
 ```yaml
 Type: AssignedLicenses
