@@ -4,7 +4,7 @@ Azure Active Directory PowerShell (Azure AD) is a module IT Pros commonly use to
 
 There are two versions of the Azure AD PowerShell module. The earlier version, the MSOnline module, implemented core functionality and you can still use this module today. The newer AzureAD V2 module implements the Graph API in PowerShell and provides access to newer functionality. 
 
-If you are developing new PowerShell scripts with Azure AD cmdlets we advise you to use the newer [Azure Active Directory PowerShell V2 cmdlets](/module/azuread?view-azureadps-2.0). We will begin deprecating the older MSOnline module when all of the functionality of that module has been migrated to the newer AzureAD module.
+If you are developing new PowerShell scripts with Azure AD cmdlets we advise you to use the newer [Azure Active Directory PowerShell V2 cmdlets](/powershell/module/azuread?view=azureadps-2.0). We will begin deprecating the older MSOnline module when all of the functionality of that module has been migrated to the newer AzureAD module.
 
 Please refer to the below detailed description of the modules for a full list of cmdlets and functionality.
 
