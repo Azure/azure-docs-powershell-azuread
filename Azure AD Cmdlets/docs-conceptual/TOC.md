@@ -22,7 +22,7 @@
 # Troubleshooting
 ## Authentication issues
 ### [I get an error "\[your account] isn't in our system"](account-not-in-system-error.md)
-## [Execution errors](Execution-errors.md)
+## [Execution errors]
 ### [I'm looking for a user or a group but PowerShell does not return the object](Cannot-find-object.md)
 # Videos
 ## [Manage dynamic groups with PowerShell](https://channel9.msdn.com/Series/Azure-Active-Directory-Videos-Demos/Managing-dynamic-groups-with-Azure-AD-PowerShell)
