@@ -1,4 +1,4 @@
----
+h---
 Module Name: AzureADPreview
 Module Guid: b433e830-b479-4f7f-9c80-9cc6c28e1b51
 Download Help Link: {{Please enter FwLink manually}}
@@ -9,7 +9,7 @@ ms.assetid: 7D9D9507-ADE5-45BD-97F8-0CCCDA3D3B58
 # Azure Active Directory V2 PowerShell Public Preview module
 ## Description
 
-The Azure Active Directory V2 PowerShell Public Preview module is provided for customer who want to explore the capabilities of those cmdlets in the Azure Active Directory PowerShell module that are released in public preview. WHile cmdlets are provided in preview we may still make changes to these cmdlets and we do not guarantee that these cmdlets will also be provided in a module for general Availability. It is discouraged to use cmdlets that are in public preview in a production environment.
+The Azure Active Directory V2 PowerShell Public Preview module is provided for customer who want to explore the capabilities of those cmdlets in the Azure Active Directory PowerShell module that are released in public preview. While cmdlets are provided in preview we may still make changes to these cmdlets and we do not guarantee that these cmdlets will also be provided in a module for general Availability. It is discouraged to use cmdlets that are in public preview in a production environment.
 
 ## Installation
 The Azure Active Directory version 2 PowerShell Public Preview module can be installed from the PowerShell Gallery, www.powershellgallery.com.  The gallery uses the PowerShellGet module. The PowerShellGet module requires PowerShell 3.0 or newer and requires one of the following operating systems:
