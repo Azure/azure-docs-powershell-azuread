@@ -3,11 +3,11 @@
 ## [Install the MSonline module](install-msonlinev1.md)
 # Using Azure AD PowerShell
 ## PowerShell Scenarios
-### [Importing Data](importing-data.md)
+### [Importing data](importing-data.md)
 ### [Recovering deleted data](recovering-deleted-data.md)
 ## Directory Features
-### [Managing groups in Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-accessmanagement-groups-settings-v2-cmdlets)
-### [Managing Unified Groups settings using Powershell](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-accessmanagement-groups-settings-cmdlets)
+### [Managing groups](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-accessmanagement-groups-settings-v2-cmdlets)
+### [Managing Unified Groups settings](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-accessmanagement-groups-settings-cmdlets)
 ### [Managing Role Based Access Control (RBAC)](https://docs.microsoft.com/en-us/azure/active-directory/role-based-access-control-manage-access-powershell)
 ### [Using extension attributes](using-extension-attributes-sample.md)
 ### [Working with Administrative Units](Working-with-Administrative-Units.md)
