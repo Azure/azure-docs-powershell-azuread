@@ -9,6 +9,8 @@
 ### [Managing groups](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-accessmanagement-groups-settings-v2-cmdlets)
 ### [Managing Unified Groups settings](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-accessmanagement-groups-settings-cmdlets)
 ### [Managing Role Based Access Control (RBAC)](https://docs.microsoft.com/en-us/azure/active-directory/role-based-access-control-manage-access-powershell)
+### [Working with licenses](working-with-licenses.md)
+### [List all Service Principal Application Role assignments](List-Service-principal-application-roles.md)
 ### [Using extension attributes](using-extension-attributes-sample.md)
 ### [Working with Administrative Units](Working-with-Administrative-Units.md)
 ### [Inviting guests in B2B](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-b2b-code-samples#powershell-example)
