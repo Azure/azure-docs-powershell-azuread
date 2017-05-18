@@ -100,7 +100,6 @@
     "Remove-AzureADGroupAppRoleAssignment": "Groups",
     "Remove-AzureADGroupMember": "Groups",
     "Remove-AzureADGroupOwner": "Groups",
-    "Remove-AzureADMSDeletedDirectoryObject": "Deleted Objects",
     "Remove-AzureADOAuth2PermissionGrant": "OAuth2",
     "Remove-AzureADServiceAppRoleAssignment": "Service Principals",
     "Remove-AzureADServicePrincipal": "Service Principals",
