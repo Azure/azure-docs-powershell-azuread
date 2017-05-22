@@ -15,7 +15,7 @@ $initialDomain = (Get-AzureADDomain)[0].Name
 $passwordProfile = New-Object -TypeName Microsoft.Open.AzureAD.Model.PasswordProfile -ArgumentList "Windows2000", $false
 for($i = 1; $i -le 2; $i++) {
     New-AzureADUser -UserPrincipalName "WestCoastUser$i@$initialDomain" -DisplayName "WestCoastUser$i" -PasswordProfile $passwordProfile -UsageLocation "US" -AccountEnabled $true -MailNickName "WestCoastUser$i"
-    New-AzureADUser -UserPrincipalName "EastCoastUser$i@$initialDomain" -DisplayName "EasCoastUser$i" -PasswordProfile $passwordProfile -UsageLocation "US" -AccountEnabled $true -MailNickName "WestCoastUser$i"
+    New-AzureADUser -UserPrincipalName "EastCoastUser$i@$initialDomain" -DisplayName "EastCoastUser$i" -PasswordProfile $passwordProfile -UsageLocation "US" -AccountEnabled $true -MailNickName "EastCoastUser$i"
 }
 
 #Create admins we'll assign later to manage the users in the AUs
