@@ -118,7 +118,6 @@
     "Select-AzureADGroupIdsGroupIsMemberOf": "Groups",
     "Select-AzureADGroupIdsServicePrincipalIsMemberOf": "Service Principals",
     "Select-AzureADGroupIdsUserIsMemberOf": "Users",
-    "Set-AzureADAdministrativeUnit": "Administrative Units",
     "Set-AzureADApplication": "Applications",
     "Set-AzureADApplicationLogo": "Applications",
     "Set-AzureADDevice": "Devices",
