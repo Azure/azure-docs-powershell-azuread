@@ -7,10 +7,9 @@ schema: 2.0.0
 
 # Add-AzureADApplicationPolicy
 
-**This cmdlet is currently not available**
 
 ## SYNOPSIS
-Adds an application policy.
+**The Add-AzureADApplicationPolicy cmdlet is not available at this time**.
 
 ## SYNTAX
 
