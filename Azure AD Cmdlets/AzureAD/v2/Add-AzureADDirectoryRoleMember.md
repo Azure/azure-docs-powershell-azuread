@@ -22,12 +22,41 @@ The **Add-AzureADDirectoryRoleMember** cmdlet adds a member to an Azure Active D
 
 ## EXAMPLES
 
-### Example 1: Add a member to an Active Directory role
+### Example 1: Add a member to an Active Directory role instance
 ```
 PS C:\>Add-AzureADDirectoryRoleMember -ObjectId 019ea7a2-1613-47c9-81cb-20ba35b1ae48 -RefObjectId c13dd34a-492b-4561-b171-40fcce2916c5
 ```
 
-This command adds a member to an Active Directory role.
+This example adds a member to an Active Directory role instance.
+
+### Example 2: Add a member to an Active Directory role instance
+```powershell
+# Fetch user to assign to role
+$roleMember = Get-AzureADUser -ObjectId "vincesm@msods.com"
+
+# Fetch User Account Administrator role instance
+$role = Get-AzureADDirectoryRole | Where-Object {$_.displayName -eq 'User Account Administrator'}
+
+# If role instance does not exist, instantiate it based on the role template
+if ($role -eq $null) {
+    # Instantiate an instance of the role template
+    $roleTemplate = Get-AzureADDirectoryRoleTemplate | Where-Object {$_.displayName -eq 'User Account Administrator'}
+    $role = New-Object Microsoft.Open.AzureAD.Model.DirectoryRole
+    $role.RoleTemplateId = $roleTemplate.ObjectId
+    Enable-AzureADDirectoryRole -DirectoryRole $role
+
+    # Fetch User Account Administrator role instance again
+    $role = Get-AzureADDirectoryRole | Where-Object {$_.displayName -eq 'User Account Administrator'}
+}
+
+# Add user to role
+Add-AzureADDirectoryRoleMember -ObjectId $role.ObjectId -RefObjectId $roleMember.ObjectId
+
+# Fetch role membership for role to confirm
+Get-AzureADDirectoryRoleMember -ObjectId $role.ObjectId | Get-AzureADUser
+```
+
+This example adds a member to an Active Directory role instance, instantiating the role instance first if it does not exist.
 
 ## PARAMETERS
 
