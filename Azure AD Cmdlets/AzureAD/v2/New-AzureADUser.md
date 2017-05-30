@@ -43,8 +43,30 @@ $PasswordProfile.Password = "Password"
 `--------                             ----------- -----------------               --------`
 `5e8b0f4d-2cd4-4e17-9467-b0f6a5c0c4d0 New user    NewUser@contoso.com             Member`
 
-
 This command creates a new user.
+
+>Note: If you want to provide a value for an extension attribute when creating a new user, you must provide a parameter of the type System.Collections.Generic.Dictionary. The below example shows how to do this.
+
+### Example 2: Create a user and set an extension attribute value
+
+```powershell
+$extension = New-Object "System.Collections.Generic.Dictionary``2[System.String,System.String]"
+$extension.Add("extension_954520ceef9548acb415647bf957468d_ShoeSize","10")
+$extension
+
+Key                                                 Value
+---                                                 -----
+extension_954520ceef9548acb415647bf957468d_ShoeSize 10
+
+New-AzureADUser -DisplayName "NewUser" -PasswordProfile $PasswordProfile -UserPrincipalName "NewUser@Contoso.com" -AccountEnabled $true -MailNickName "NewUser" -ExtensionProperty $extension
+
+ObjectId                             DisplayName UserPrincipalName                 UserType
+--------                             ----------- -----------------                 --------
+5e8b0f4d-2cd4-4e17-9467-b0f6a5c0c4d0 NewUser     NewUser@Contoso.com               Member
+```
+
+In the first step we create a new object called "$extension" with object type "System.Collections.Generic.Dictionary". In the next step we add the extensionattribute 's nameand value to the new object,and we display the object to see that we indeed created the correct obejct to serve as a parameter for the New-AzureADUser cmdlet.
+In the last step we create the new user and set the extension attribute value.
 
 ## PARAMETERS
 
