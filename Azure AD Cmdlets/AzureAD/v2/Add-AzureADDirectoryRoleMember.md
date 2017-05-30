@@ -41,9 +41,7 @@ $role = Get-AzureADDirectoryRole | Where-Object {$_.displayName -eq 'User Accoun
 if ($role -eq $null) {
     # Instantiate an instance of the role template
     $roleTemplate = Get-AzureADDirectoryRoleTemplate | Where-Object {$_.displayName -eq 'User Account Administrator'}
-    $role = New-Object Microsoft.Open.AzureAD.Model.DirectoryRole
-    $role.RoleTemplateId = $roleTemplate.ObjectId
-    Enable-AzureADDirectoryRole -DirectoryRole $role
+    Enable-AzureADDirectoryRole -RoleTemplateId $roleTemplate.ObjectId
 
     # Fetch User Account Administrator role instance again
     $role = Get-AzureADDirectoryRole | Where-Object {$_.displayName -eq 'User Account Administrator'}
