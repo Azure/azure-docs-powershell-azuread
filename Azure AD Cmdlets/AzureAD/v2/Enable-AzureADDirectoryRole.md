@@ -27,25 +27,14 @@ The **Enable-AzureADDirectoryRole** cmdlet activates an existing directory role 
 # Get Guest Inviter directory role template
 $roleTemplate = Get-AzureADDirectoryRoleTemplate | ? { $_.DisplayName -eq "Guest Inviter" }
 
-# Instantiate new DirectoryRole object
-$newRole = New-Object -TypeName "Microsoft.Open.AzureAD.Model.DirectoryRole"
-
-# Set templateId for role temaplate object to Guest Inviter objectId
-$newRole.RoleTemplateId = $roleTemplate.ObjectId
-
 # Enable an instance of the DirectoryRole template
-Enable-AzureADDirectoryRole -DirectoryRole $newRole
+Enable-AzureADDirectoryRole -RoleTemplateId $roleTemplate.ObjectId
 
 ```
 
-The first command gets an inviter role that has the display name Guest Inviter by using the [Get-AzureADDirectoryRoleTemplate](./Get-AzureADDirectoryRoleTemplate.md) cmdlet. 
-The command stores Guest Inviter in the $roleTemplate variable. 
+The first command gets an inviter role that has the display name Guest Inviter by using the [Get-AzureADDirectoryRoleTemplate](./Get-AzureADDirectoryRoleTemplate.md) cmdlet. The command stores Guest Inviter in the $roleTemplate variable. 
 
-The second command instantiates a new DirectoryRole object and stores it in $newRole.
-
-The third command sets the role template Id for $newRole to the guest inviter role template Id.
-
-The final command enables the directory role in $newRole.
+The second command instantiates an instance of the directory role in $roleTemplate.
 
 ## PARAMETERS
 
