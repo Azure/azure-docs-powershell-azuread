@@ -38,7 +38,16 @@ ObjectId                             DisplayName                        Descript
 019ea7a2-1613-47c9-81cb-20ba35b1ae48 Company Administrator              Company Administrator role has full access to perform any operation in the company scope.
 ```
 
-### Example 2: Get all directory roles
+### Example 2: Get a directory role by name
+```
+PS C:\>Get-AzureADDirectoryRole | Where-Object {$_.displayName -eq 'Security Reader'}
+
+ObjectId                             DisplayName     Description                                                             
+--------                             -----------     -----------                                                             
+5b3fe201-fa8b-4144-b6f1-875829ff7543 Security Reader Security Reader allows ability to read security information and reports.
+```
+
+### Example 3: Get all directory roles
 ```
 PS C:\>Get-AzureADDirectoryRole
 
