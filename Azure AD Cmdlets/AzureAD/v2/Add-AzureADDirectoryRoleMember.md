@@ -111,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -RefObjectId
-Specifies the ID of the Azure Active Directory object to assign as owner/manager/member.
+Specifies the ID of the Azure Active Directory object to assign as a member. Members can be users or service principals only.
 
 ```yaml
 Type: String
