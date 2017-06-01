@@ -19,7 +19,7 @@ New-MsolLicenseOptions -AccountSkuId <String>
 
 ## DESCRIPTION
 The **New-MsolLicenseOptions** cmdlet creates a License Options object.
-This cmdlet disables specific service plans when assigning a user a license using the [Add-MsolUser](./Add-MsolUser.md) and [Set-MsolUserLicense](./Set-MsolUserLicense.md) cmdlets.
+This cmdlet disables specific service plans when assigning a user a license using the [Set-MsolUserLicense](./Set-MsolUserLicense.md) cmdlet.
 
 ## EXAMPLES
 
@@ -73,7 +73,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Add-MsolUser](./Add-MsolUser.md)
 
 [New-MsolUser](./New-MsolUser.md)
 
