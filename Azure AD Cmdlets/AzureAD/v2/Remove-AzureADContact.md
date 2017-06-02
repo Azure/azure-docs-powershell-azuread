@@ -1,4 +1,4 @@
----
+r---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
 ms.assetid: 184FB919-C19D-4EC0-8278-72750B223734
 online version: 
@@ -28,7 +28,7 @@ PS C:\> $Contact = Get-AzureADContact -Top 1
 PS C:\> Remove-AzureADContact -ObjectId $Contact.ObjectId
 ```
 
-The first command gets a contact by using the [Get-AzureADContact](./Get-AzureADContact) cmdlet, and then stores it in the $Contact variable.
+The first command gets a contact by using the [Get-AzureADContract](./Get-AzureADContract) cmdlet, and then stores it in the $Contact variable.
 
 The second command removes the contact in $Contact.
 
@@ -97,6 +97,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADContact](./Get-AzureADContact.md)
+[Get-AzureADContact](./Get-AzureADContract.md)
 
 [Set-AzureADContact](./Set-AzureADContact.md)
