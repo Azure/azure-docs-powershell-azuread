@@ -28,7 +28,7 @@ PS C:\> $Contact = Get-AzureADContact -Top 1
 PS C:\> Remove-AzureADContact -ObjectId $Contact.ObjectId
 ```
 
-The first command gets a contact by using the [Get-AzureADContract](./Get-AzureADContract) cmdlet, and then stores it in the $Contact variable.
+The first command gets a contact by using the [Get-AzureADContract](./Get-AzureADContract.md) cmdlet, and then stores it in the $Contact variable.
 
 The second command removes the contact in $Contact.
 
