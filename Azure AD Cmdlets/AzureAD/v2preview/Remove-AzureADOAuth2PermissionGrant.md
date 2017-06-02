@@ -32,7 +32,7 @@ PS C:\> Remove-AzureADOAuth2PermissionGrant -ObjectId $SharePointOA2AllSitesRead
 The first command gets a service principal that matches the specified display name by using the [Get-AzureADServicePrincipal](./Get-AzureADServicePrincipal.md) cmdlet. 
 The command stores the result in the $SharePointSP variable.
 
-The second command gets certain permission grants by using the [Get-AzureADOAuth2PermissionGrant](./Get-AzureADOAuth2PermissionGrantmd) cmdlet. 
+The second command gets certain permission grants by using the [Get-AzureADOAuth2PermissionGrant](./Get-AzureADOAuth2PermissionGrant.md) cmdlet. 
 The command stores the result in the $SharePointOA2AllSitesRead variable.
 
 The final command removes the permission grant in $SharePointOA2AllSitesRead.
