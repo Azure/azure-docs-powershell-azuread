@@ -99,4 +99,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 [Get-AzureADContract](./Get-AzureADContract.md)
 
-[Set-AzureADContact](./Set-AzureADContact.md)
+[Set-AzureADContract](./Set-AzureADContract.md)
