@@ -16,7 +16,7 @@ Get-AzureADUserLicenseDetail -ObjectId <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-THis cmdlet retrieves license details for a user
+This cmdlet retrieves license details for a user
 
 ## EXAMPLES
 
