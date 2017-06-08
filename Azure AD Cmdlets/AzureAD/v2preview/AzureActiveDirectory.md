@@ -71,6 +71,9 @@ Connects with an authenticated account to use Active Directory cmdlet requests.
 ### [Disconnect-AzureAD](Disconnect-AzureAD.md)
 Disconnects the current session from an Azure Active Directory tenant.
 
+### [Get-AzureADCurrentSessionInfo](Get-AzureADCurrentSessionInfo.md)
+Returns information about the current PowerShell session.
+
 ### [Enable-AzureADDirectoryRole](Enable-AzureADDirectoryRole.md)
 Activates an existing directory role in Azure Active Directory.
 
@@ -81,7 +84,7 @@ Gets an administrative unit.
 Gets a member of an administrative unit.
 
 ### [Get-AzureADApplication](Get-AzureADApplication.md)
-Gets an application.
+Gets an application.Get-AzureADCurrentSessionInfo
 
 ### [Get-AzureADApplicationExtensionProperty](Get-AzureADApplicationExtensionProperty.md)
 Gets application extension properties.
