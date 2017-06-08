@@ -17,8 +17,7 @@
         "packageRoot": "Azure AD Cmdlets",
         "modules": {
             "docs-conceptual": {
-                "_type": "conceptual",
-                "_displayName": "conceptual"
+                "_type": "conceptual"
             },
             "AzureAD": {
                 "_displayName": "AzureADpreview",
@@ -31,8 +30,7 @@
         "packageRoot": "Azure AD Cmdlets",
         "modules": {
             "docs-conceptual": {
-                "_type": "conceptual",
-                "_displayName": "conceptual"
+                "_type": "conceptual"
             },
             "MSOnline": {
                 "_displayName": "MSOnline",

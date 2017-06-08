@@ -4,4 +4,9 @@ _site/
 .optemp/
 _themes*/
 
+_tmp_
+
 .openpublishing.buildcore.ps1
+_dependentPackages/
+_themes/
+.optemp/

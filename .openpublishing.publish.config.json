@@ -54,9 +54,7 @@
     }
   ],
   "monikerPath": [
-    "azureps-cmdlets-docs/ResourceManager/mapping/monikerMapping.json",
-    "azureps-cmdlets-docs/ServiceManagement/mapping/monikerMapping.json",
-    "azureps-cmdlets-docs/AzureStack/mapping/monikerMapping.json"
+    "Azure AD Cmdlets/mapping/monikerMapping.json"
   ],
   "need_generate_pdf_url_template": false,
   "dest": "_site"
