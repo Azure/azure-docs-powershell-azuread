@@ -1,0 +1,104 @@
+{
+  "build": {
+    "content": [
+      {
+        "files": [
+          "**/*.yml",
+          "**/*.md"
+        ],
+        "src": "azureadps-1.0",
+        "version": "azureadps-1.0",
+        "exclude": [
+          "docs-conceptual/**"
+        ],
+        "dest": "module"
+      },
+      {
+        "files": [
+          "**/*.yml",
+          "**/*.md"
+        ],
+        "src": "azureadps-1.0/docs-conceptual",
+        "version": "azureadps-1.0",
+        "dest": "azure"
+      },
+      {
+        "files": [
+          "**/*.yml",
+          "**/*.md"
+        ],
+        "src": "azureadps-2.0",
+        "version": "azureadps-2.0",
+        "exclude": [
+          "docs-conceptual/**"
+        ],
+        "dest": "module"
+      },
+      {
+        "files": [
+          "**/*.yml",
+          "**/*.md"
+        ],
+        "src": "azureadps-2.0/docs-conceptual",
+        "version": "azureadps-2.0",
+        "dest": "azure"
+      },
+      {
+        "files": [
+          "**/*.yml",
+          "**/*.md"
+        ],
+        "src": "azureadps-2.0-preview",
+        "version": "azureadps-2.0-preview",
+        "exclude": [
+          "docs-conceptual/**"
+        ],
+        "dest": "module"
+      },
+      {
+        "files": [
+          "**/*.yml",
+          "**/*.md"
+        ],
+        "src": "azureadps-2.0-preview/docs-conceptual",
+        "version": "azureadps-2.0-preview",
+        "dest": "azure"
+      }
+    ],
+    "versions": {
+      "azureadps-1.0": {
+        "dest": "azureadps-1.0"
+      },
+      "azureadps-2.0": {
+        "dest": "azureadps-2.0"
+      },
+      "azureadps-2.0-preview": {
+        "dest": "azureadps-2.0-preview"
+      }
+    },
+    "filemetadata": {
+      "ms.author": {
+        "azureadps/**/*.md": "rodejo"
+      },
+      "author": {
+        "azureadps/**/*.md": "RobdeJong"
+      },
+      "ms.manager": {
+        "azureadps/**/*.md": "kbrint"
+      },
+      "ms.service": {
+        "azureadps/**/*.md": "active-directory"
+      }
+    },
+    "globalMetadata": {
+      "showPowerShellPicker": "true",
+      "brand": "azure",
+      "searchScope": [
+        "Azure"
+      ],
+      "breadcrumb_path": "/powershell-with-plugin/bread/toc.json",
+      "ms.devlang": "powershell"
+    },
+    "dest": "azuread-with-plugin"
+  }
+}
