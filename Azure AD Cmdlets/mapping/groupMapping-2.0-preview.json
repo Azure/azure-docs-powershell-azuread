@@ -169,4 +169,5 @@
     "Set-AzureADUserPassword": "Users",
     "Set-AzureADUserThumbnailPhoto": "Users",
     "Update-AzureADSignedInUserPassword": "Users"
+    "Get-AzureADCurrentSessionInfo": "Connect to your directory"
 }
