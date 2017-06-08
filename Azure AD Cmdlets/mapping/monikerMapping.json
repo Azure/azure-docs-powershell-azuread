@@ -1,25 +1,42 @@
 {
     "azureadps-2.0": {
-        "azure-docs-powershell-azuread/Azure AD Cmdlets": {
+        "serviceMap": "Azure AD Cmdlets/mapping/groupMapping-2.0.json",
+        "packageRoot": "Azure AD Cmdlets",
+        "modules": {
+            "docs-conceptual": {
+                "_type": "conceptual"
+            },
             "AzureAD": {
                 "_displayName": "AzureAD",
-                "_version": "2"
+                "_version": "v2"
             }
         }
     },
     "azureadps-2.0-preview": {
-        "azure-docs-powershell-azuread/Azure AD Cmdlets": {
+        "serviceMap": "Azure AD Cmdlets/mapping/groupMapping-2.0-preview.json",
+        "packageRoot": "Azure AD Cmdlets",
+        "modules": {
+            "docs-conceptual": {
+                "_type": "conceptual",
+                "_displayName": "conceptual"
+            },
             "AzureAD": {
                 "_displayName": "AzureADpreview",
-                "_version": "2preview"
+                "_version": "v2preview"
             }
         }
-    },    
+    },
     "azureadps-1.0": {
-        "azure-docs-powershell-azuread/Azure AD Cmdlets": {
+        "serviceMap": "Azure AD Cmdlets/mapping/groupMapping-1.0.json",
+        "packageRoot": "Azure AD Cmdlets",
+        "modules": {
+            "docs-conceptual": {
+                "_type": "conceptual",
+                "_displayName": "conceptual"
+            },
             "MSOnline": {
                 "_displayName": "MSOnline",
-                "_version": "1"
+                "_version": "v1"
             }
         }
     }
