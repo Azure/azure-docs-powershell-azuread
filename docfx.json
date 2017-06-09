@@ -78,16 +78,24 @@
     },
     "filemetadata": {
       "ms.author": {
-        "azureadps/**/*.md": "rodejo"
+        "azureadps-1.0/**/*.md": "rodejo",
+        "azureadps-2.0/**/*.md": "rodejo",
+        "azureadps-2.0-preview/**/*.md": "rodejo"
       },
       "author": {
-        "azureadps/**/*.md": "RobdeJong"
+        "azureadps-1.0/**/*.md": "RobdeJong",
+        "azureadps-2.0/**/*.md": "RobdeJong",
+        "azureadps-2.0-preview/**/*.md": "RobdeJong"
       },
       "ms.manager": {
-        "azureadps/**/*.md": "kbrint"
+        "azureadps-1.0/**/*.md": "kbrint",
+        "azureadps-2.0/**/*.md": "kbrint",
+        "azureadps-2.0-preview/**/*.md": "kbrint"
       },
       "ms.service": {
-        "azureadps/**/*.md": "active-directory"
+        "azureadps-1.0/**/*.md": "active-directory",
+        "azureadps-2.0/**/*.md": "active-directory",
+        "azureadps-2.0-preview/**/*.md": "active-directory"
       }
     },
     "globalMetadata": {
