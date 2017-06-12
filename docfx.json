@@ -3,7 +3,14 @@
     "content": [
       {
         "files": [
-          "**/*.yml",
+          "toc.yml"
+        ],
+        "src": "azureadps-1.0",
+        "version": "azureadps-1.0",
+        "dest": "module/active-directory"
+      },
+      {
+        "files": [
           "**/*.md"
         ],
         "src": "azureadps-1.0",
@@ -20,11 +27,18 @@
         ],
         "src": "azureadps-1.0/docs-conceptual",
         "version": "azureadps-1.0",
-        "dest": "azure"
+        "dest": "azure/active-directory"
       },
       {
         "files": [
-          "**/*.yml",
+          "toc.yml"
+        ],
+        "src": "azureadps-2.0",
+        "version": "azureadps-2.0",
+        "dest": "module/active-directory"
+      },
+      {
+        "files": [
           "**/*.md"
         ],
         "src": "azureadps-2.0",
@@ -41,11 +55,18 @@
         ],
         "src": "azureadps-2.0/docs-conceptual",
         "version": "azureadps-2.0",
-        "dest": "azure"
+        "dest": "azure/active-directory"
       },
       {
         "files": [
-          "**/*.yml",
+          "toc.yml"
+        ],
+        "src": "azureadps-2.0-preview",
+        "version": "azureadps-2.0-preview",
+        "dest": "module/active-directory"
+      },
+      {
+        "files": [
           "**/*.md"
         ],
         "src": "azureadps-2.0-preview",
@@ -62,7 +83,7 @@
         ],
         "src": "azureadps-2.0-preview/docs-conceptual",
         "version": "azureadps-2.0-preview",
-        "dest": "azure"
+        "dest": "azure/active-directory"
       }
     ],
     "versions": {
