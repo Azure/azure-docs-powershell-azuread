@@ -168,5 +168,6 @@
     "Set-AzureADUserManager": "Users",
     "Set-AzureADUserPassword": "Users",
     "Set-AzureADUserThumbnailPhoto": "Users",
-    "Update-AzureADSignedInUserPassword": "Users"
+    "Update-AzureADSignedInUserPassword": "Users",
+    "Get-AzureADCurrentSessionInfo": "Connect to your directory"
 }

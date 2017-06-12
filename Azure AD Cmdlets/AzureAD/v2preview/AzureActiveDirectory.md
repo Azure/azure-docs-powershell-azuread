@@ -23,7 +23,7 @@ Windows Server 2012 R2
 Windows Server 2008 R2 SP1
 
 PowerShellGet also requires .NET Framework 4.5 or above. You can install .NET Framework 4.5 or above from [here](https://www.microsoft.com/en-us/download/details.aspx?id=30653). For more information, please refer to [this link](https://msdn.microsoft.com/powershell/gallery/readme)
-For more detailed info on installation of the AzureAD cmdlets please see: [Azure Active Directory PowerShell version 2](https://docs.microsoft.com/en-us/powershell/azuread/).
+For more detailed info on installation of the AzureAD cmdlets please see: [Azure Active Directory PowerShell version 2](https://docs.microsoft.com/en-us/powershell/azuread/).
 
 ## Azure Active Directory V2 PowerShell Public Preview module cmdlets
 
@@ -71,6 +71,9 @@ Connects with an authenticated account to use Active Directory cmdlet requests.
 ### [Disconnect-AzureAD](Disconnect-AzureAD.md)
 Disconnects the current session from an Azure Active Directory tenant.
 
+### [Get-AzureADCurrentSessionInfo](Get-AzureADCurrentSessionInfo.md)
+Returns information about the current PowerShell session.
+
 ### [Enable-AzureADDirectoryRole](Enable-AzureADDirectoryRole.md)
 Activates an existing directory role in Azure Active Directory.
 
@@ -81,7 +84,7 @@ Gets an administrative unit.
 Gets a member of an administrative unit.
 
 ### [Get-AzureADApplication](Get-AzureADApplication.md)
-Gets an application.
+Gets an application.Get-AzureADCurrentSessionInfo
 
 ### [Get-AzureADApplicationExtensionProperty](Get-AzureADApplicationExtensionProperty.md)
 Gets application extension properties.
