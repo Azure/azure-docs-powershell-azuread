@@ -1,0 +1,133 @@
+{
+  "build": {
+    "content": [
+      {
+        "files": [
+          "toc.yml"
+        ],
+        "src": "azureadps-1.0",
+        "version": "azureadps-1.0",
+        "dest": "module/active-directory"
+      },
+      {
+        "files": [
+          "**/*.md"
+        ],
+        "src": "azureadps-1.0",
+        "version": "azureadps-1.0",
+        "exclude": [
+          "docs-conceptual/**"
+        ],
+        "dest": "module"
+      },
+      {
+        "files": [
+          "**/*.yml",
+          "**/*.md"
+        ],
+        "src": "azureadps-1.0/docs-conceptual",
+        "version": "azureadps-1.0",
+        "dest": "azure/active-directory"
+      },
+      {
+        "files": [
+          "toc.yml"
+        ],
+        "src": "azureadps-2.0",
+        "version": "azureadps-2.0",
+        "dest": "module/active-directory"
+      },
+      {
+        "files": [
+          "**/*.md"
+        ],
+        "src": "azureadps-2.0",
+        "version": "azureadps-2.0",
+        "exclude": [
+          "docs-conceptual/**"
+        ],
+        "dest": "module"
+      },
+      {
+        "files": [
+          "**/*.yml",
+          "**/*.md"
+        ],
+        "src": "azureadps-2.0/docs-conceptual",
+        "version": "azureadps-2.0",
+        "dest": "azure/active-directory"
+      },
+      {
+        "files": [
+          "toc.yml"
+        ],
+        "src": "azureadps-2.0-preview",
+        "version": "azureadps-2.0-preview",
+        "dest": "module/active-directory"
+      },
+      {
+        "files": [
+          "**/*.md"
+        ],
+        "src": "azureadps-2.0-preview",
+        "version": "azureadps-2.0-preview",
+        "exclude": [
+          "docs-conceptual/**"
+        ],
+        "dest": "module"
+      },
+      {
+        "files": [
+          "**/*.yml",
+          "**/*.md"
+        ],
+        "src": "azureadps-2.0-preview/docs-conceptual",
+        "version": "azureadps-2.0-preview",
+        "dest": "azure/active-directory"
+      }
+    ],
+    "versions": {
+      "azureadps-1.0": {
+        "dest": "azureadps-1.0"
+      },
+      "azureadps-2.0": {
+        "dest": "azureadps-2.0"
+      },
+      "azureadps-2.0-preview": {
+        "dest": "azureadps-2.0-preview"
+      }
+    },
+    "filemetadata": {
+      "ms.author": {
+        "azureadps-1.0/**/*.md": "rodejo",
+        "azureadps-2.0/**/*.md": "rodejo",
+        "azureadps-2.0-preview/**/*.md": "rodejo"
+      },
+      "author": {
+        "azureadps-1.0/**/*.md": "RobdeJong",
+        "azureadps-2.0/**/*.md": "RobdeJong",
+        "azureadps-2.0-preview/**/*.md": "RobdeJong"
+      },
+      "ms.manager": {
+        "azureadps-1.0/**/*.md": "kbrint",
+        "azureadps-2.0/**/*.md": "kbrint",
+        "azureadps-2.0-preview/**/*.md": "kbrint"
+      },
+      "ms.service": {
+        "azureadps-1.0/**/*.md": "active-directory",
+        "azureadps-2.0/**/*.md": "active-directory",
+        "azureadps-2.0-preview/**/*.md": "active-directory"
+      }
+    },
+    "globalMetadata": {
+      "showPowerShellPicker": "true",
+      "brand": "azure",
+      "searchScope": [
+        "Azure"
+      ],
+      "breadcrumb_path": "/powershell-with-plugin/bread/toc.json",
+      "ms.devlang": "powershell"
+    },
+    "dest": "azuread-with-plugin"
+  }
+}
