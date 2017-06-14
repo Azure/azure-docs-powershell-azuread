@@ -69,14 +69,14 @@
     {
       "TopLevelTOC": "azureadps-1.0/toc.yml",
       "ConceptualTOC": "azureadps-1.0/docs-conceptual/toc.yml",
-      "ReferenceTOCUrl": "/powershell-with-plugin/module/active-directory/toc.json?view=azureadps-1.0",
-      "ConceptualTOCUrl": "/powershell-with-plugin/azure/active-directory/toc.json?view=azureadps-1.0"
+      "ReferenceTOCUrl": "/powershell/module/active-directory/toc.json?view=azureadps-1.0",
+      "ConceptualTOCUrl": "/powershell/azure/active-directory/toc.json?view=azureadps-1.0"
     },
     {
       "TopLevelTOC": "azureadps-2.0/toc.yml",
       "ConceptualTOC": "azureadps-2.0/docs-conceptual/toc.yml",
-      "ReferenceTOCUrl": "/powershell-with-plugin/module/active-directory/toc.json?view=azureadps-2.0",
-      "ConceptualTOCUrl": "/powershell-with-plugin/azure/active-directory/toc.json?view=azureadps-2.0"
+      "ReferenceTOCUrl": "/powershell/module/active-directory/toc.json?view=azureadps-2.0",
+      "ConceptualTOCUrl": "/powershell/azure/active-directory/toc.json?view=azureadps-2.0"
     },
     {
       "TopLevelTOC": "azureadps-2.0-preview/toc.yml",

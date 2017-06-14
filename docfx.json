@@ -125,7 +125,7 @@
       "searchScope": [
         "Azure"
       ],
-      "breadcrumb_path": "/powershell-with-plugin/bread/toc.json",
+      "breadcrumb_path": "/powershell/bread/toc.json",
       "ms.devlang": "powershell"
     },
     "dest": "azureps-azuread"
