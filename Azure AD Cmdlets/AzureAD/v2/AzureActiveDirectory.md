@@ -23,47 +23,10 @@ For more detailed info on installation of the AzureAD cmdlets please see: [Azure
 
 These are the cmdlets in the Azure Active Directory v2 PowerShell module.
 
-## Administrative Units
-
-### [Add-AzureADAdministrativeUnitMember](Add-AzureADAdministrativeUnitMember.md)
-Adds an administrative unit member.
-
-### [Add-AzureADScopedRoleMembership](Add-AzureADScopedRoleMembership.md)
-Adds a scoped role membership to an administrative unit.
-
-### [Get-AzureADAdministrativeUnit](Get-AzureADAdministrativeUnit.md)
-Gets an administrative unit.
-
-### [Get-AzureADAdministrativeUnitMember](Get-AzureADAdministrativeUnitMember.md)
-Gets a member of an administrative unit.
-
-### [Get-AzureADScopedRoleMembership](Get-AzureADScopedRoleMembership.md)
-Gets a scoped role membership from an administrative unit.
-
-### [New-AzureADAdministrativeUnit](New-AzureADAdministrativeUnit.md)
-Creates an administrative unit.
-
-### [Remove-AzureADAdministrativeUnit](Remove-AzureADAdministrativeUnit.md)
-Removes an administrative unit.
-
-### [Remove-AzureADAdministrativeUnitMember](Remove-AzureADAdministrativeUnitMember.md)
-Removes an administrative unit member.
-
-### [Remove-AzureADScopedRoleMembership](Remove-AzureADScopedRoleMembership.md)
-Removes a scoped role membership.
-
-### [Set-AzureADAdministrativeUnit](Set-AzureADAdministrativeUnit.md)
-Updates an administrative unit.
-
-
 ## Applications
 
 ### [Add-AzureADApplicationOwner](Add-AzureADApplicationOwner.md)
 Adds an owner to an application.
-
-### [Add-AzureADApplicationPolicy](Add-AzureADApplicationPolicy.md)
-Adds an application policy.
-
 
 ### [Get-AzureADApplication](Get-AzureADApplication.md)
 Gets an application.
@@ -82,9 +45,6 @@ Gets the owner of an application.
 
 ### [Get-AzureADApplicationPasswordCredential](Get-AzureADApplicationPasswordCredential.md)
 Gets the password credential for an application.
-
-### [Get-AzureADApplicationPolicy](Get-AzureADApplicationPolicy.md)
-Gets an application policy.
 
 ### [Get-AzureADApplicationServiceEndpoint](Get-AzureADApplicationServiceEndpoint.md)
 Retrieve the service endpoint of an application
@@ -206,17 +166,11 @@ Gets a member of a group.
 ### [Get-AzureADGroupOwner](Get-AzureADGroupOwner.md)
 Gets an owner of a group.
 
-### [Get-AzureADMSGroup](Get-AzureADMSGroup.md)
-Gets information about groups in Azure AD.
-
 ### [New-AzureADGroup](New-AzureADGroup.md)
 Creates a group.
 
 ### [New-AzureADGroupAppRoleAssignment](New-AzureADGroupAppRoleAssignment.md)
 Assign a group of users to an application role.
-
-### [New-AzureADMSGroup](New-AzureADMSGroup.md)
-Creates an Azure AD group.
 
 ### [Remove-AzureADGroup](Remove-AzureADGroup.md)
 Removes a group.
@@ -229,9 +183,6 @@ Removes a member from a group.
 
 ### [Remove-AzureADGroupOwner](Remove-AzureADGroupOwner.md)
 Removes an owner from a group.
-
-### [Remove-AzureADMSGroup](Remove-AzureADMSGroup.md)
-Removes an Azure AD group.
 
 ### [Select-AzureADGroupIdsContactIsMemberOf](Select-AzureADGroupIdsContactIsMemberOf.md)
 Get groups in which a contact is a member.
@@ -246,19 +197,13 @@ Selects the groups in which a service principal is a member.
 Selects the groups that a user is a member of.
 
 ### [Set-AzureADGroup](Set-AzureADGroup.md)
-Updates a specific group in Azure Active Directory
-
-### [Set-AzureADMSGroup](Set-AzureADMSGroup.md)
-Changes attribute values on an Azure AD group.
+Updates a specific group in Azure Active Directory.
 
 
 ## Service Principals
 
 ### [Add-AzureADServicePrincipalOwner](Add-AzureADServicePrincipalOwner.md)
 Adds an owner to a service principal.
-
-### [Add-AzureADServicePrincipalPolicy](Add-AzureADServicePrincipalPolicy.md)
-Adds a service principal policy.
 
 ### [Get-AzureADServiceAppRoleAssignment](Get-AzureADServiceAppRoleAssignment.md)
 Gets a service principal application role assignment.
@@ -286,9 +231,6 @@ Get the owner of a service principal.
 
 ### [Get-AzureADServicePrincipalPasswordCredential](Get-AzureADServicePrincipalPasswordCredential.md)
 Get credentials for a service principal.
-
-### [Get-AzureADServicePrincipalPolicy](Get-AzureADServicePrincipalPolicy.md)
-Get the service principal policy
 
 ### [New-AzureADServiceAppRoleAssignment](New-AzureADServiceAppRoleAssignment.md)
 Assigns a service principal to an application role.
@@ -383,23 +325,6 @@ Removes a contact's manager.
 ### [Get-AzureADContract](Get-AzureADContract.md)
 Gets a contract.
 
-## Directory Settings
-
-### [Get-AzureADDirectorySetting](Get-AzureADDirectorySetting.md)
-Gets a directory setting.
-
-### [Get-AzureADDirectorySettingTemplate](Get-AzureADDirectorySettingTemplate.md)
-Gets a directory setting template.
-
-### [New-AzureADDirectorySetting](New-AzureADDirectorySetting.md)
-Creates a directory settings object.
-
-### [Remove-AzureADDirectorySetting](Remove-AzureADDirectorySetting.md)
-Deletes a directory setting in Azure Active Directory.
-
-### [Set-AzureADDirectorySetting](Set-AzureADDirectorySetting.md)
-Updates a directory setting in Azure Active Directory.
-
 ## Extension Properties
 
 ### [Get-AzureADExtensionProperty](Get-AzureADExtensionProperty.md)
@@ -414,41 +339,10 @@ Gets OAuth2PermissionGrant entities.
 Removes an oAuth2PermissionGrant.
 
 
-
 ## Directory Objects
 
 ### [Get-AzureADObjectByObjectId](Get-AzureADObjectByObjectId.md)
-Retrieves the object(s) specified by the objectIds parameter 
-
-### [Get-AzureADObjectSetting](Get-AzureADObjectSetting.md)
-Gets an object setting.
-
-### [New-AzureADObjectSetting](New-AzureADObjectSetting.md)
-Creates a settings object.
-
-### [Remove-AzureADObjectSetting](Remove-AzureADObjectSetting.md)
-Deletes settings in Azure Active Directory.
-
-### [Set-AzureADObjectSetting](Set-AzureADObjectSetting.md)
-Updates object settings.
-
-
-# Policies
-
-### [Get-AzureADPolicy](Get-AzureADPolicy.md)
-Gets a policy.
-
-### [Get-AzureADPolicyAppliedObject](Get-AzureADPolicyAppliedObject.md)
-Get the objects to which a policy is applied
-
-### [New-AzureADPolicy](New-AzureADPolicy.md)
-Creates a policy.
-
-### [Remove-AzureADPolicy](Remove-AzureADPolicy.md)
-Removes a policy.
-
-### [Set-AzureADPolicy](Set-AzureADPolicy.md)
-Updates a policy.
+Retrieves the object(s) specified by the objectIds parameter.
 
 
 ## Licenses

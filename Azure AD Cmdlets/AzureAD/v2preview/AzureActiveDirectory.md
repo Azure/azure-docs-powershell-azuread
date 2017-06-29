@@ -209,9 +209,6 @@ Gets a policy.
 ### [Get-AzureADScopedRoleMembership](Get-AzureADScopedRoleMembership.md)
 Gets a scoped role membership from an administrative unit.
 
-### [Get-AzureADServiceAppRoleAssignedTo](Get-AzureADServiceAppRoleAssignedTo.md)
-{{Fill in the Synopsis}}
-
 ### [Get-AzureADServiceAppRoleAssignment](Get-AzureADServiceAppRoleAssignment.md)
 Gets a service principal application role assignment.
 
@@ -346,9 +343,6 @@ Creates a password credential for a service principal.
 
 ### [New-AzureADTrustedCertificateAuthority](New-AzureADTrustedCertificateAuthority.md)
 Creates a trusted certificate authority.
-
-### [New-AzureADUser](New-AzureADUser.md)
-Creates an AD user.
 
 ### [New-AzureADUserAppRoleAssignment](New-AzureADUserAppRoleAssignment.md)
 Assigns a user to an application role.
@@ -485,9 +479,6 @@ Selects the groups that a user is a member of.
 ### [Set-AzureADAdministrativeUnit](Set-AzureADAdministrativeUnit.md)
 Updates an administrative unit.
 
-### [Set-AzureADApplication](Set-AzureADApplication.md)
-Updates an application.
-
 ### [Set-AzureADApplicationLogo](Set-AzureADApplicationLogo.md)
 Sets the logo for an Application
 
@@ -503,9 +494,6 @@ Updates a domain.
 ### [Set-AzureADGroup](Set-AzureADGroup.md)
 Updates a specific group in Azure Active Directory
 
-### [Set-AzureADMSGroup](Set-AzureADMSGroup.md)
-{{Fill in the Synopsis}}
-
 ### [Set-AzureADObjectSetting](Set-AzureADObjectSetting.md)
 Updates object settings.
 
@@ -520,9 +508,6 @@ Set contact details for a tenant
 
 ### [Set-AzureADTrustedCertificateAuthority](Set-AzureADTrustedCertificateAuthority.md)
 Updates a trusted certificate authority.
-
-### [Set-AzureADUser](Set-AzureADUser.md)
-Updates a user.
 
 ### [Set-AzureADUserExtension](Set-AzureADUserExtension.md)
 Sets a user extension.
