@@ -58,6 +58,20 @@ ObjectId                             DisplayName UserPrincipalName              
 
 This cmdlet gets all users that match the value of *SearchString* against the first characters in **DisplayName** or **UserPrincipalName** .
 
+### Example 4: Get a user by userPrincipalName
+```
+PS C:\>Get-AzureADUser -Filter "userPrincipalName eq 'jondoe@contoso.com'"
+```
+
+This command gets the specified user.
+
+### Example 5: Get a user by userPrincipalName
+```
+PS C:\>Get-AzureADUser -Filter "startswith(Title,'Sales')"
+```
+
+This command gets all the users whos title starts with sales. ie Sales Manager and Sales Assistant.
+
 ## PARAMETERS
 
 ### -All
@@ -77,6 +91,7 @@ Accept wildcard characters: False
 
 ### -Filter
 Specifies an oData v3.0 filter statement. This parameter controls which objects are returned.
+Details on querying with oData can be found here. http://www.odata.org/documentation/odata-version-3-0/odata-version-3-0-core-protocol/#queryingcollections
 
 ```yaml
 Type: String
