@@ -23,7 +23,7 @@
 ## [How can I install a previous version of a module?](Install-previous-version.md)
 # Troubleshooting
 ## Authentication issues
-### [I get an error "\[your account] isn't in our system"](account-not-in-system-error.md)
+### [I get an error "[your account] isn't in our system"](account-not-in-system-error.md)
 ## Execution errors
 ### [I'm looking for a user or a group but PowerShell does not return the object](Cannot-find-object.md)
 # Videos
