@@ -1,4 +1,4 @@
-# How can I find the version of the Azure AD PowerShell module I'm using?
+﻿# How can I find the version of the Azure AD PowerShell module I'm using?
 
 To find the version of the Azure AD PowerShell module you have installed on your computer, you can use the command:
 

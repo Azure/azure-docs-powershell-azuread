@@ -1,8 +1,10 @@
----
+﻿---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
 online version:
 schema: 2.0.0
 ms.assetid: F0BE5738-B797-4F9E-B963-73155997618F
+ms.reviewer: rodejo
+ms.custom: Evergreen
 ---
 
 # Set-MsolUser

@@ -1,8 +1,10 @@
----
+﻿---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
 ms.assetid: 4AC32B4E-81B5-4C66-82D5-21B839DB71AC
 online version: 
 schema: 2.0.0
+ms.reviewer: rodejo
+ms.custom: Evergreen
 ---
 
 # New-AzureADPolicy

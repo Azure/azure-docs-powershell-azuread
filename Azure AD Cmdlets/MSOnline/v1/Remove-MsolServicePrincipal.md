@@ -1,8 +1,10 @@
----
+﻿---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
 online version:
 schema: 2.0.0
 ms.assetid: 87A60137-58ED-473B-9D1E-BB7C0CD8F8A2
+ms.reviewer: rodejo
+ms.custom: Evergreen
 ---
 
 # Remove-MsolServicePrincipal

@@ -1,8 +1,10 @@
----
+﻿---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
 online version:
 schema: 2.0.0
 ms.assetid: AD722FB5-9280-479F-8CDA-2A4572FDCA4F
+ms.reviewer: rodejo
+ms.custom: Evergreen
 ---
 
 # Remove-MsolServicePrincipalCredential

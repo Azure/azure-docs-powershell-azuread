@@ -1,4 +1,4 @@
-
+﻿
 # Azure AD cmdlets for working with extension attributes
 
 ## About extension attributes
@@ -87,6 +87,8 @@ When the cmdlet completes successfully it returns the new extension attribute ob
 
 ```powershell
 ObjectId                             Name                                                     TargetObjects
+ms.reviewer: rodejo
+ms.custom: Evergreen
 --------                             ----                                                     -------------
 91ec8ae5-6813-4453-afd7-31680a484892 extension_0380f0f700c040b5aa577c9268940b53_MyNewProperty {User}
 ```

@@ -1,8 +1,10 @@
----
+﻿---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
 online version:
 schema: 2.0.0
 ms.assetid: 20D3AFFB-C7B5-40C4-8379-CE115EC668FC
+ms.reviewer: rodejo
+ms.custom: Evergreen
 ---
 
 # Get-MsolDomainVerificationDns

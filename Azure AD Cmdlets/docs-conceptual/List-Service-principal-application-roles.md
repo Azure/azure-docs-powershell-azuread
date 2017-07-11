@@ -1,4 +1,4 @@
-# List all application role assignments for all service principals in your directory
+﻿# List all application role assignments for all service principals in your directory
 
 If you want to list all service principals that have access to applications in your directory you can use the below script. The script will get all service principals in your directory, then for each service principal retrieve the service principal's application role assignments and will list the application roles that are assigned to the service principal.
 ```powershell

@@ -1,8 +1,10 @@
----
+﻿---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
 ms.assetid: BBFC4A72-1D35-4E9F-9B8A-F558E4D0E150
 online version: 
 schema: 2.0.0
+ms.reviewer: rodejo
+ms.custom: Evergreen
 ---
 
 # Get-AzureADDirectorySettingTemplate

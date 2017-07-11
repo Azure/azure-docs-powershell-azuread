@@ -1,4 +1,4 @@
-# Creating a new user in Azure AD
+﻿# Creating a new user in Azure AD
 
 This example shows how you can create a new user in Azure AD. In this example we will create a new user called "Abby Brown" in a directory called "contoso.com".
 

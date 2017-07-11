@@ -1,8 +1,10 @@
----
+﻿---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
 online version:
 schema: 2.0.0
 ms.assetid: DE61C6A6-8503-4FD6-8EDD-C9AAEB62A882
+ms.reviewer: rodejo
+ms.custom: Evergreen
 ---
 
 # Remove-MsolAdministrativeUnitMember

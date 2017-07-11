@@ -1,8 +1,10 @@
----
+﻿---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
 online version:
 schema: 2.0.0
 ms.assetid: 93C48D95-DB26-4F76-8078-CF845E9BCC8D
+ms.reviewer: rodejo
+ms.custom: Evergreen
 ---
 
 # Get-MsolContact

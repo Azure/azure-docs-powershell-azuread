@@ -1,8 +1,10 @@
----
+﻿---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
 online version:
 schema: 2.0.0
 ms.assetid: 5AA049F5-BA10-437E-BE0C-E7E66CA795E9
+ms.reviewer: rodejo
+ms.custom: Evergreen
 ---
 
 # Set-MsolCompanyMultiNationalEnabled

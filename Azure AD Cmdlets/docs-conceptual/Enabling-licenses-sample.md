@@ -1,4 +1,4 @@
-# Assigning licenses to a user
+﻿# Assigning licenses to a user
 
 This example shows how to assign a license to a user. 
 

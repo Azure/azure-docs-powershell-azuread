@@ -1,8 +1,10 @@
----
+﻿---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
 online version:
 schema: 2.0.0
 ms.assetid: ACEA9C06-7619-4EAE-967D-280F982ECE7A
+ms.reviewer: rodejo
+ms.custom: Evergreen
 ---
 
 # New-MsolServicePrincipalAddresses

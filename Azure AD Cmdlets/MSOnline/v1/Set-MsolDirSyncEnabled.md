@@ -1,8 +1,10 @@
----
+﻿---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
 online version:
 schema: 2.0.0
 ms.assetid: 2874711E-96F5-43E8-8D90-332C65A85FB5
+ms.reviewer: rodejo
+ms.custom: Evergreen
 ---
 
 # Set-MsolDirSyncEnabled

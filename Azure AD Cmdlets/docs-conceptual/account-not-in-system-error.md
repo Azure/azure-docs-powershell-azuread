@@ -1,4 +1,4 @@
----
+﻿---
 title: PowerShell Account not in system troubleshooting | Microsoft Docs
 description: How to solve "Account not in system" errors.
 services: active-directory
@@ -10,8 +10,7 @@ ms.tgt_pltfrm: na
 ms.devlang: powershell
 ms.topic: article
 ms.date: 07/10/2017
-ms.author: sanketha
-ms.custom: posh-docs-conceptual, category=powershell
+ms.custom: category=powershell, Evergreen; iamfeature=PowerShell
 ms.reviewer: rodejo
 ---
 # I get an error "\[your account] isn't in our system"
