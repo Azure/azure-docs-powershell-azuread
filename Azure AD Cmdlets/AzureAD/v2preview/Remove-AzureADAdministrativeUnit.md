@@ -1,8 +1,10 @@
----
+﻿---
 external help file: Microsoft.Open.AzureADBeta.Graph.PowerShell.dll-Help.xml
 ms.assetid: 5BEB9DBE-CEB2-45EA-9F3F-BCB68E7CB857
 online version: 
 schema: 2.0.0
+ms.reviewer: rodejo
+ms.custom: iamfeature=PowerShell
 ---
 
 # Remove-AzureADAdministrativeUnit

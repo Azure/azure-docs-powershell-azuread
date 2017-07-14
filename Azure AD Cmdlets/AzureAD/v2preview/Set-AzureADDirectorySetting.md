@@ -1,8 +1,10 @@
----
+﻿---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
 ms.assetid: 96F47B05-3D04-4298-9C60-03B60B8AD6AF
 online version: 
 schema: 2.0.0
+ms.reviewer: rodejo
+ms.custom: iamfeature=PowerShell
 ---
 
 # Set-AzureADDirectorySetting

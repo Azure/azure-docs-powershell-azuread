@@ -1,3 +1,17 @@
+---
+services: active-directory
+documentationcenter: ''
+
+ms.service: active-directory
+ms.workload: identity
+ms.tgt_pltfrm: na
+ms.devlang: powershell
+ms.topic: article
+ms.date: 07/10/2017
+ms.author: rodejo
+ms.custom: posh-docs-conceptual
+ms.reviewer: rodejo
+---
 # List all application role assignments for all service principals in your directory
 
 If you want to list all service principals that have access to applications in your directory you can use the below script. The script will get all service principals in your directory, then for each service principal retrieve the service principal's application role assignments and will list the application roles that are assigned to the service principal.

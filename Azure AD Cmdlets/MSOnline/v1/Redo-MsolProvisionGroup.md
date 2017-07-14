@@ -1,8 +1,10 @@
----
+﻿---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
 online version:
 schema: 2.0.0
 ms.assetid: 06BF30D6-67C6-4368-B42F-EE842FCF6C81
+ms.reviewer: rodejo
+ms.custom: iamfeature=PowerShell
 ---
 
 # Redo-MsolProvisionGroup
