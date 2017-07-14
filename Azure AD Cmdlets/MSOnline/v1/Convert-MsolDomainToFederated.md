@@ -1,8 +1,10 @@
----
+﻿---
 external help file: Microsoft.Online.Identity.Federation.PowerShell.dll-help.xml
 online version:
 schema: 2.0.0
 ms.assetid: 165F509D-D91E-4BE5-AF22-72112C1C3AB7
+ms.reviewer: rodejo
+ms.custom: iamfeature=PowerShell
 ---
 
 # Convert-MsolDomainToFederated

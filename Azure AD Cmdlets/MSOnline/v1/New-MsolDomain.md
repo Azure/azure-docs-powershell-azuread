@@ -1,8 +1,10 @@
----
+﻿---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
 online version:
 schema: 2.0.0
 ms.assetid: 013C6697-E78E-4882-840B-CC0595C452DA
+ms.reviewer: rodejo
+ms.custom: iamfeature=PowerShell
 ---
 
 # New-MsolDomain

@@ -1,10 +1,12 @@
----
+﻿---
 Module Name: AzureADPreview
 Module Guid: b433e830-b479-4f7f-9c80-9cc6c28e1b51
 Download Help Link: {{Please enter FwLink manually}}
 Help Version: {{Please enter version of help manually (X.X.X.X) format}}
 Locale: en-US
 ms.assetid: 7D9D9507-ADE5-45BD-97F8-0CCCDA3D3B58
+ms.reviewer: rodejo
+ms.custom: iamfeature=PowerShell
 ---
 # Azure Active Directory V2 PowerShell Public Preview module
 ## Description

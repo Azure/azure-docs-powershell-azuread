@@ -1,3 +1,17 @@
+---
+services: active-directory
+documentationcenter: ''
+
+ms.service: active-directory
+ms.workload: identity
+ms.tgt_pltfrm: na
+ms.devlang: powershell
+ms.topic: article
+ms.date: 07/10/2017
+ms.author: rodejo
+ms.custom: posh-docs-conceptual
+ms.reviewer: rodejo
+---
 # Where can I find the PowerShell log file?
 
 Azure AD PowerShell maintains a log file for diagnostic purposes. You can find this file here:
