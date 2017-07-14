@@ -1,8 +1,10 @@
----
+﻿---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
 online version:
 schema: 2.0.0
 ms.assetid: 74BD0C15-D7F3-40CE-8D53-4C6C8E3BAA5F
+ms.reviewer: rodejo
+ms.custom: Evergreen
 ---
 
 # Restore-MsolUser

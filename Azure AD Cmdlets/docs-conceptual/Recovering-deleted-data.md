@@ -1,4 +1,4 @@
-# Recovering deleted data
+﻿# Recovering deleted data
 If you have accidentally deleted data from your directory there may be some options for recovering the lost data using PowerShell. You can recover deleted Applications and deleted Unified Groups in the first 30 days after deletion. This article describes how to do that.
 
 ## Finding deleted Unified groups
@@ -44,6 +44,8 @@ If you want to recover a deleted application object, you can use
 Restore-AzureADDeletedApplication -ObjectId 9a7d49c5-42ee-47a3-bad7-17cae5bb8f26
 
 ObjectId                             AppId                                DisplayName
+ms.reviewer: rodejo
+ms.custom: Evergreen
 --------                             -----                                -----------
 9a7d49c5-42ee-47a3-bad7-17cae5bb8f26 7dba6cec-ffd5-40af-ba40-1eb158574b5a My Properties Bag
 ```

@@ -1,8 +1,10 @@
----
+﻿---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
 online version:
 schema: 2.0.0
 ms.assetid: CC0818E5-CAAD-4066-A736-4E41CE9E7C27
+ms.reviewer: rodejo
+ms.custom: Evergreen
 ---
 
 # Get-MsolUserByStrongAuthentication

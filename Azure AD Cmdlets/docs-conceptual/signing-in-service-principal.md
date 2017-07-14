@@ -1,4 +1,4 @@
-
+﻿
 # Using a Service Principal to connect to a directory in PowerShell
 
 This example describes how you can use a Service Principal to connect to your directory from within PowerShell. You would use this approach if you wanted to run an unattended script, as from Windows Scheduled tasks.

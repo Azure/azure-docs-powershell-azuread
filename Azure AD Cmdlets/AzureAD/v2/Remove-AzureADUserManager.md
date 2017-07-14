@@ -1,8 +1,10 @@
----
+﻿---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
 ms.assetid: 0D0A1E28-96E7-4139-908D-13C426D8065E
 online version: 
 schema: 2.0.0
+ms.reviewer: rodejo
+ms.custom: Evergreen
 ---
 
 # Remove-AzureADUserManager

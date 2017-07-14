@@ -1,4 +1,4 @@
-# Azure Active Directory PowerShell
+﻿# Azure Active Directory PowerShell
 
 Azure Active Directory PowerShell (Azure AD) is a module IT Pros commonly use to manage their Azure Active Directory. The cmdlets in the Azure AD module enable you to retrieve data from the directory, create new objects in the directory, update existing objects, remove objects, as well as configure the directory and its features.
 

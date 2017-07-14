@@ -1,8 +1,10 @@
----
+﻿---
 external help file: Microsoft.Online.Identity.Federation.PowerShell.dll-Help.xml
 online version:
 schema: 2.0.0
 ms.assetid: 623D0291-0C85-422F-BC47-43D019839C16
+ms.reviewer: rodejo
+ms.custom: Evergreen
 ---
 
 # New-MsolFederatedDomain

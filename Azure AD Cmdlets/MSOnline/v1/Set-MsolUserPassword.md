@@ -1,8 +1,10 @@
----
+﻿---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
 online version:
 schema: 2.0.0
 ms.assetid: FE736AD3-BE42-47C0-A41A-05E01D1DD7A9
+ms.reviewer: rodejo
+ms.custom: Evergreen
 ---
 
 # Set-MsolUserPassword

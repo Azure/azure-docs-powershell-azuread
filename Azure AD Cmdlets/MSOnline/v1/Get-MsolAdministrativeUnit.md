@@ -1,8 +1,10 @@
----
+﻿---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
 online version:
 schema: 2.0.0
 ms.assetid: 87C2C236-9B82-45D1-BD68-6B118033064C
+ms.reviewer: rodejo
+ms.custom: Evergreen
 ---
 
 # Get-MsolAdministrativeUnit

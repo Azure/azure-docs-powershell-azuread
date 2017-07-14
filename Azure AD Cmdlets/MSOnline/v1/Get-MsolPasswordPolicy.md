@@ -1,8 +1,10 @@
----
+﻿---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
 online version:
 schema: 2.0.0
 ms.assetid: 85A8F5D8-EDF3-4B49-A806-C95280EE370A
+ms.reviewer: rodejo
+ms.custom: Evergreen
 ---
 
 # Get-MsolPasswordPolicy

@@ -1,4 +1,4 @@
-# Importing data into my directory
+﻿# Importing data into my directory
 There are several ways you can use PowerShell to import data into your directory, but the most commonly used method is to use a CSV file. This file can either be manually created, for example using Excel, or it can be exported from an existing data source such as a SQL database or an HR application. Here are some common scenarios for import data into Azure Active Directory:
 
 ## Bulk creation of new users

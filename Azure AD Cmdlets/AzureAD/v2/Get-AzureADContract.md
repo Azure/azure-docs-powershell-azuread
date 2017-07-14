@@ -1,8 +1,10 @@
----
+﻿---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
 ms.assetid: 5751DBA5-57F8-47C6-954D-9D4B026CE662
 online version: 
 schema: 2.0.0
+ms.reviewer: rodejo
+ms.custom: Evergreen
 ---
 
 # Get-AzureADContract

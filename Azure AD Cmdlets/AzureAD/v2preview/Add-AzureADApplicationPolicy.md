@@ -1,8 +1,10 @@
----
+﻿---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
 ms.assetid: 1E76B8D2-A7DF-49EE-8E22-6BFEE24A8B7F
 online version: 
 schema: 2.0.0
+ms.reviewer: rodejo
+ms.custom: Evergreen
 ---
 
 # Add-AzureADApplicationPolicy

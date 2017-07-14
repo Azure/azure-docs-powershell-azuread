@@ -1,8 +1,10 @@
----
+﻿---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
 online version:
 schema: 2.0.0
 ms.assetid: D777B598-B7CC-445E-9F7A-4E21D79BBE39
+ms.reviewer: rodejo
+ms.custom: Evergreen
 ---
 
 # Remove-MsolContact

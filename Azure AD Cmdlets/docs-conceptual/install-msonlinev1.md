@@ -1,4 +1,4 @@
-# Azure ActiveDirectory (MSOnline)
+﻿# Azure ActiveDirectory (MSOnline)
 
 You can use the Azure Active Directory Module for Windows PowerShell cmdlets for Azure AD administrative tasks such as user management, domain management and for configuring single sign-on.
 This topic includes information about how to install these cmdlets for use with your directory.

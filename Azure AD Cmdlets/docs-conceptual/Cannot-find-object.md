@@ -1,4 +1,4 @@
-# I'm looking for a user or a group but PowerShell does not return the object
+﻿# I'm looking for a user or a group but PowerShell does not return the object
 Sometimes you are trying to find an object, for instance a group or a user, but PowerShell does not return the object you are looking for. However, you are sure it exists, perhaps because it shows up in the portal, or perhaps because you just created it yourself. 
 What is happening here and how can we fix this?
 

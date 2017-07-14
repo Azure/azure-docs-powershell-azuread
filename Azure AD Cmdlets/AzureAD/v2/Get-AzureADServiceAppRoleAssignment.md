@@ -1,8 +1,10 @@
----
+﻿---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
 ms.assetid: D1D9AB94-8FEE-44D9-A4A3-F023905A5717
 online version: 
 schema: 2.0.0
+ms.reviewer: rodejo
+ms.custom: Evergreen
 ---
 
 # Get-AzureADServiceAppRoleAssignment

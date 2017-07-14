@@ -1,8 +1,10 @@
----
+﻿---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
 online version: 
 schema: 2.0.0
 ms.assetid: FF8B1BBA-6FF1-4739-A554-B83079EA4FEC
+ms.reviewer: rodejo
+ms.custom: Evergreen
 ---
 
 # Get-MsolDirSyncProvisioningError

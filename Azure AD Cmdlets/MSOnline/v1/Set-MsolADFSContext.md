@@ -1,8 +1,10 @@
----
+﻿---
 external help file: Microsoft.Online.Identity.Federation.PowerShell.dll-Help.xml
 online version:
 schema: 2.0.0
 ms.assetid: 0BCF8D45-6F60-42BD-81A0-EE3F3709AF7E
+ms.reviewer: rodejo
+ms.custom: Evergreen
 ---
 
 # Set-MsolADFSContext

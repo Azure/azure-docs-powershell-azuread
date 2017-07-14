@@ -1,4 +1,4 @@
-# Where can I find the PowerShell log file?
+﻿# Where can I find the PowerShell log file?
 
 Azure AD PowerShell maintains a log file for diagnostic purposes. You can find this file here:
 

@@ -1,8 +1,10 @@
----
+﻿---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
 online version:
 schema: 2.0.0
 ms.assetid: 843652E4-266F-4F05-A1C5-8E8EBC86241D
+ms.reviewer: rodejo
+ms.custom: Evergreen
 ---
 
 # Get-MsolAccountSku

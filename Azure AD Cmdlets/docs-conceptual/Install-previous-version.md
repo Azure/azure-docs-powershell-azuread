@@ -1,4 +1,4 @@
-# How can I install a previous version of a module?
+﻿# How can I install a previous version of a module?
 
 > note: You need to be signed in with an administrator account on your computer to perform these actions
 

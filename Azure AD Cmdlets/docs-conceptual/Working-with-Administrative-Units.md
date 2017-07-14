@@ -1,4 +1,3 @@
-
 # Working with Administrative Units
 
 Here are some demo scripts that you can use to learn how to use Azure AD PowerShell to work with Administrative Units. These scripts form a complete demo - You'll setup a demo environment for Administrative Units in your directory, see how to create and populate Administrative Units as a Global Admin and assign roles to delegated admins, and you'll see the effects of your actions when you sign in as a delegated admin, and finally there is a cleanup script to clean up all the object we created in this demo.

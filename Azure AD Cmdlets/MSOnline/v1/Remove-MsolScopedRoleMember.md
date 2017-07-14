@@ -1,8 +1,10 @@
----
+﻿---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
 online version:
 schema: 2.0.0
 ms.assetid: 3F433D19-5A6D-4940-A9B3-4ED3C0C6C485
+ms.reviewer: rodejo
+ms.custom: Evergreen
 ---
 
 # Remove-MsolScopedRoleMember

@@ -1,8 +1,10 @@
----
+﻿---
 external help file: Microsoft.Online.Identity.Federation.PowerShell.dll-Help.xml
 online version:
 schema: 2.0.0
 ms.assetid: 59811DE6-DD0A-4F11-B16D-842EB397F5EE
+ms.reviewer: rodejo
+ms.custom: Evergreen
 ---
 
 # Remove-MsolFederatedDomain
