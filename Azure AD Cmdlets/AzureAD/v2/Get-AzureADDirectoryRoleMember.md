@@ -39,6 +39,14 @@ c13dd34a-492b-4561-b171-40fcce2916c5 User
 
 This command gets the members of the specified role.
 
+### Example 2: Get members by role name
+```
+PS C:\>$role = Get-AzureADDirectoryRole | Where-Object {$_.displayName -eq 'Company Administrator'}
+PS C:\>Get-AzureADDirectoryRoleMember -ObjectId $role.ObjectId | Get-AzureADUser
+```
+
+This example fetches the members for the specified role name, and pipes the output to Get-AzureADUser to fetch DisplayName and UPN.
+
 ## PARAMETERS
 
 ### -InformationAction

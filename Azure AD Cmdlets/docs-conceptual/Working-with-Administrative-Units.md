@@ -1,4 +1,4 @@
-﻿# Working with Administrative Units
+# Working with Administrative Units
 
 Here are some demo scripts that you can use to learn how to use Azure AD PowerShell to work with Administrative Units. These scripts form a complete demo - You'll setup a demo environment for Administrative Units in your directory, see how to create and populate Administrative Units as a Global Admin and assign roles to delegated admins, and you'll see the effects of your actions when you sign in as a delegated admin, and finally there is a cleanup script to clean up all the object we created in this demo.
 
@@ -15,7 +15,7 @@ $initialDomain = (Get-AzureADDomain)[0].Name
 $passwordProfile = New-Object -TypeName Microsoft.Open.AzureAD.Model.PasswordProfile -ArgumentList "Windows2000", $false
 for($i = 1; $i -le 2; $i++) {
     New-AzureADUser -UserPrincipalName "WestCoastUser$i@$initialDomain" -DisplayName "WestCoastUser$i" -PasswordProfile $passwordProfile -UsageLocation "US" -AccountEnabled $true -MailNickName "WestCoastUser$i"
-    New-AzureADUser -UserPrincipalName "EastCoastUser$i@$initialDomain" -DisplayName "EasCoastUser$i" -PasswordProfile $passwordProfile -UsageLocation "US" -AccountEnabled $true -MailNickName "WestCoastUser$i"
+    New-AzureADUser -UserPrincipalName "EastCoastUser$i@$initialDomain" -DisplayName "EastCoastUser$i" -PasswordProfile $passwordProfile -UsageLocation "US" -AccountEnabled $true -MailNickName "EastCoastUser$i"
 }
 
 #Create admins we'll assign later to manage the users in the AUs
@@ -24,6 +24,16 @@ New-AzureADUser -UserPrincipalName "WestCoastHelpdeskAdmin@$initialDomain" -Disp
 New-AzureADUser -UserPrincipalName "EastCoastUserAdmin@$initialDomain" -DisplayName "EastCoastUserAdmin" -PasswordProfile $passwordProfile -UsageLocation "US" -AccountEnabled $true -MailNickName "EastCoastUserAdmin"
 New-AzureADUser -UserPrincipalName "EastCoastHelpdeskAdmin@$initialDomain" -DisplayName "EastCoastPasswordAdmin" -PasswordProfile $passwordProfile -UsageLocation "US" -AccountEnabled $true -MailNickName "EastCoastPasswordAdmin"
 New-AzureADUser -UserPrincipalName "MobileUserAdmin@$initialDomain" -DisplayName "MobileUserAdmin" -PasswordProfile $passwordProfile -UsageLocation "US" -AccountEnabled $true -MailNickName "MobileUserAdmin"
+
+# Enable the Helpdesk Administrator Role
+$helpDeskAdminRole = New-Object Microsoft.Open.AzureAD.Model.DirectoryRole
+$helpDeskAdminRole.RoleTemplateId = "729827e3-9c14-49f7-bb1b-9608f156bbb8"
+Enable-AzureADDirectoryRole -DirectoryRole $helpDeskAdminRole
+
+# Enable the User Account Administrator Role
+$userAdminAdminRole = New-Object Microsoft.Open.AzureAD.Model.DirectoryRole
+$userAdminAdminRole.RoleTemplateId = "fe930be7-5e62-47db-91af-98c3a49a38b1"
+Enable-AzureADDirectoryRole -DirectoryRole $userAdminAdminRole
 
 ```
 

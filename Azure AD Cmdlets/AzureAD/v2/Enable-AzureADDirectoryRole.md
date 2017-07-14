@@ -16,7 +16,7 @@ Activates an existing directory role in Azure Active Directory.
 
 ```
 Enable-AzureADDirectoryRole [-InformationAction <ActionPreference>] [-InformationVariable <String>]
- [-RoleTemplateId <String>] [<CommonParameters>]
+ [-DirectoryRole <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -26,31 +26,17 @@ The **Enable-AzureADDirectoryRole** cmdlet activates an existing directory role 
 
 ### Example 1: Enable a directory role
 ```
-# Retrieve the Template Role object for the Guest Inviter role 
-$InviterRole = Get-AzureADDirectoryRoleTemplate | Where-Object {$_.DisplayName -eq "Guest Inviter"}
+# Get Guest Inviter directory role template
+$roleTemplate = Get-AzureADDirectoryRoleTemplate | ? { $_.DisplayName -eq "Guest Inviter" }
 
-# Inspect the $Inveoter variable to make sure we found the correct template role
-$InviterRole
-
-ObjectId                             DisplayName   Description
---------                             -----------   -----------
-95e79109-95c0-4d8e-aee3-d01accf2d47b Guest Inviter Guest Inviter has access to invite guest users.
-
-# Enable the Inviter Role
-Enable-AzureADDirectoryRole -RoleTemplateId $InviterRole.ObjectId
-
-ObjectId                             DisplayName   Description
---------                             -----------   -----------
-03618579-3c16-4765-9539-86d9163ee3d9 Guest Inviter Guest Inviter has access to invite guest users.
+# Enable an instance of the DirectoryRole template
+Enable-AzureADDirectoryRole -RoleTemplateId $roleTemplate.ObjectId
 
 ```
 
-The first command gets an inviter role that has the display name Guest Inviter by using the [Get-AzureADDirectoryRoleTemplate](./Get-AzureADDirectoryRoleTemplate.md) cmdlet. 
-The command stores Guest Inviter in the $InviterRole variable. 
+The first command gets an inviter role that has the display name Guest Inviter by using the [Get-AzureADDirectoryRoleTemplate](./Get-AzureADDirectoryRoleTemplate.md) cmdlet. The command stores Guest Inviter in the $roleTemplate variable. 
 
-The second command displays the contents of $InviterRole.
-
-The final command enables the directory role in $InviterRole.
+The second command instantiates an instance of the directory role in $roleTemplate.
 
 ## PARAMETERS
 

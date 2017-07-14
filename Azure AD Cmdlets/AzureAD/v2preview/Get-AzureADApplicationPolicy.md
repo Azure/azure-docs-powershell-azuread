@@ -26,7 +26,7 @@ The **Get-AzureADApplicationPolicy** cmdlet gets an Azure Active Directory appli
 
 ### Example 1: Get an application policy
 ```
-PS C:\>Get-AzureADApplicationPolicy -ObjectId "<object id of application>"
+PS C:\>Get-AzureADApplicationPolicy -Id "<object id of application>"
 ```
 
 This command gets the specified application policy.

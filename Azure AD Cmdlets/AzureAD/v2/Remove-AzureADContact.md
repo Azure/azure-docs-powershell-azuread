@@ -30,7 +30,7 @@ PS C:\> $Contact = Get-AzureADContact -Top 1
 PS C:\> Remove-AzureADContact -ObjectId $Contact.ObjectId
 ```
 
-The first command gets a contact by using the [Get-AzureADContact](./Get-AzureADContact) cmdlet, and then stores it in the $Contact variable.
+The first command gets a contact by using the [Get-AzureADContract](./Get-AzureADContract.md) cmdlet, and then stores it in the $Contact variable.
 
 The second command removes the contact in $Contact.
 
@@ -99,6 +99,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADContact](./Get-AzureADContact.md)
+[Get-AzureADContract](./Get-AzureADContract.md)
 
-[Set-AzureADContact](./Set-AzureADContact.md)

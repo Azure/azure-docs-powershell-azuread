@@ -30,7 +30,7 @@ PS C:\> $User = Get-AzureADUser -Top 1
 PS C:\> Remove-AzureADUserManager -ObjectId $User.ObjectId
 ```
 
-The first command gets a user by using the [Get-AzureADUser](./Get-AzureADUser) cmdlet, and then stores it in the $User variable.
+The first command gets a user by using the [Get-AzureADUser](./Get-AzureADUser.md) cmdlet, and then stores it in the $User variable.
 
 The second command removes the user in $User.
  

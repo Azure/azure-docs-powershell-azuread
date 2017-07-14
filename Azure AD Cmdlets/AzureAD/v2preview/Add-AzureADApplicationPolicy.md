@@ -9,8 +9,9 @@ ms.custom: Evergreen
 
 # Add-AzureADApplicationPolicy
 
+
 ## SYNOPSIS
-Adds an application policy.
+**The Add-AzureADApplicationPolicy cmdlet is not available at this time**.
 
 ## SYNTAX
 

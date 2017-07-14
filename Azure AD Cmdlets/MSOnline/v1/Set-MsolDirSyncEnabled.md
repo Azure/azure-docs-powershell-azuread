@@ -21,6 +21,8 @@ Set-MsolDirSyncEnabled -EnableDirSync <Boolean> [-Force] [-TenantId <Guid>] [<Co
 ## DESCRIPTION
 The **Set-MsolDirSyncEnabled** cmdlet turns directory synchronization on or off for a company.
 
+>Note: It may take 72 hours for deactivation to be completed. The time depends on the number of objects that are in your cloud service subscription account.
+
 ## EXAMPLES
 
 ### Example 1: Turn on directory synchronization

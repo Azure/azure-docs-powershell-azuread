@@ -25,7 +25,7 @@ The **Get-AzureADServicePrincipalPolicy** cmdlet gets the policy of a service pr
 
 ### Example 1: Get a policy
 ```
-PS C:\>Get-AzureADServicePrincipalPolicy -ObjectId "<object id of service principal>"
+PS C:\>Get-AzureADServicePrincipalPolicy -Id "<object id of service principal>"
 ```
 
 This command get the policy for the specified service principal.
