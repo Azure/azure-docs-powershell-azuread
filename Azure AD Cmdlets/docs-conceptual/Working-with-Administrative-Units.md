@@ -27,14 +27,27 @@ New-AzureADUser -UserPrincipalName "EastCoastHelpdeskAdmin@$initialDomain" -Disp
 New-AzureADUser -UserPrincipalName "MobileUserAdmin@$initialDomain" -DisplayName "MobileUserAdmin" -PasswordProfile $passwordProfile -UsageLocation "US" -AccountEnabled $true -MailNickName "MobileUserAdmin"
 
 # Enable the Helpdesk Administrator Role
-$helpDeskAdminRole = New-Object Microsoft.Open.AzureAD.Model.DirectoryRole
-$helpDeskAdminRole.RoleTemplateId = "729827e3-9c14-49f7-bb1b-9608f156bbb8"
-Enable-AzureADDirectoryRole -DirectoryRole $helpDeskAdminRole
+$haRole = "Helpdesk Administrator"
+$role = Get-AzureADDirectoryRole | Where-Object {$_.displayName -eq $haRole}
+if ($role -eq $null) {
+    # Instantiate an instance of the role template
+    $roleTemplate = Get-AzureADDirectoryRoleTemplate | Where-Object {$_.displayName -eq $haRole}
+    Enable-AzureADDirectoryRole -RoleTemplateId $roleTemplate.ObjectId
+
+    $role = Get-AzureADDirectoryRole | Where-Object {$_.displayName -eq $haRole}
+}
 
 # Enable the User Account Administrator Role
-$userAdminAdminRole = New-Object Microsoft.Open.AzureAD.Model.DirectoryRole
-$userAdminAdminRole.RoleTemplateId = "fe930be7-5e62-47db-91af-98c3a49a38b1"
-Enable-AzureADDirectoryRole -DirectoryRole $userAdminAdminRole
+$uaaRole = "User Account Administrator"
+
+$role = Get-AzureADDirectoryRole | Where-Object {$_.displayName -eq $uaaRole}
+if ($role -eq $null) {
+    # Instantiate an instance of the role template
+    $roleTemplate = Get-AzureADDirectoryRoleTemplate | Where-Object {$_.displayName -eq $uaaRole}
+    Enable-AzureADDirectoryRole -RoleTemplateId $roleTemplate.ObjectId
+
+    $role = Get-AzureADDirectoryRole | Where-Object {$_.displayName -eq $uaaRole}
+}
 
 ```
 
