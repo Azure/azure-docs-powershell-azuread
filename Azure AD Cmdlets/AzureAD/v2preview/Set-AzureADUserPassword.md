@@ -3,6 +3,8 @@ external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.Custom.dll-Help.xm
 ms.assetid: FFAE1502-E55E-46E2-BB77-632BAF9323B4
 online version: 
 schema: 2.0.0
+ms.reviewer: rodejo
+ms.custom: iamfeature=PowerShell
 ---
 
 # Set-AzureADUserPassword

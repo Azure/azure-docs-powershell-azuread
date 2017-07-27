@@ -3,6 +3,8 @@ external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.Custom.dll-Help.xm
 ms.assetid: AB894D03-378C-4F96-87C2-54FA2C7476B3
 online version: 
 schema: 2.0.0
+ms.reviewer: rodejo
+ms.custom: iamfeature=PowerShell
 ---
 
 # Remove-AzureADServicePrincipalKeyCredential

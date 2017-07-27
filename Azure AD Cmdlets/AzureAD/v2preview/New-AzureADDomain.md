@@ -3,6 +3,8 @@ external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
 ms.assetid: 29A39191-9E64-4983-8C89-B9A6C574E621
 online version: 
 schema: 2.0.0
+ms.reviewer: rodejo
+ms.custom: iamfeature=PowerShell
 ---
 
 # New-AzureADDomain

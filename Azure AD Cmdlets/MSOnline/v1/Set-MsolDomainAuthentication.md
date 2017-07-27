@@ -1,8 +1,10 @@
----
+﻿---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
 online version:
 schema: 2.0.0
 ms.assetid: 7428E3E3-B66F-4EBF-9566-B5B2C9BC5DE1
+ms.reviewer: rodejo
+ms.custom: iamfeature=PowerShell
 ---
 
 # Set-MsolDomainAuthentication

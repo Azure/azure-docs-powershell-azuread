@@ -1,3 +1,17 @@
+---
+services: active-directory
+documentationcenter: ''
+
+ms.service: active-directory
+ms.workload: identity
+ms.tgt_pltfrm: na
+ms.devlang: powershell
+ms.topic: article
+ms.date: 07/10/2017
+ms.author: rodejo
+ms.custom: posh-docs-conceptual
+ms.reviewer: rodejo
+---
 # How can I install a previous version of a module?
 
 > note: You need to be signed in with an administrator account on your computer to perform these actions

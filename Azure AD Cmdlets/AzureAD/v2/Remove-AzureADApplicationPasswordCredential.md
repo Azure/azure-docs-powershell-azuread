@@ -1,8 +1,10 @@
----
+﻿---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.Custom.dll-Help.xml
 ms.assetid: EAD7BC01-298D-427D-A0AF-5610021D1BE8
 online version: 
 schema: 2.0.0
+ms.reviewer: rodejo
+ms.custom: iamfeature=PowerShell
 ---
 
 # Remove-AzureADApplicationPasswordCredential

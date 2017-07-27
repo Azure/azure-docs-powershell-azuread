@@ -3,6 +3,8 @@ external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
 ms.assetid: B4D81173-942E-4A7D-AFD2-543ECB31CC2E
 online version: 
 schema: 2.0.0
+ms.reviewer: rodejo
+ms.custom: iamfeature=PowerShell
 ---
 
 # Remove-AzureADServicePrincipalOwner

@@ -1,8 +1,10 @@
----
+﻿---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
 online version:
 schema: 2.0.0
 ms.assetid: F4F91C75-9E62-4855-A82F-3DF87FC33C4F
+ms.reviewer: rodejo
+ms.custom: iamfeature=PowerShell
 ---
 
 # Confirm-MsolEmailVerifiedDomain

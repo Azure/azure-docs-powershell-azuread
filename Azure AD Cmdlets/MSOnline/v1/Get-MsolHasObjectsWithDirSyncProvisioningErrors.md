@@ -1,8 +1,10 @@
----
+﻿---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
 online version:
 schema: 2.0.0
 ms.assetid: 942BEF56-1526-4E08-B4A8-4B187C98BD77
+ms.reviewer: rodejo
+ms.custom: iamfeature=PowerShell
 ---
 
 # Get-MsolHasObjectsWithDirSyncProvisioningErrors

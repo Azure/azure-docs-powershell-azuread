@@ -1,8 +1,10 @@
----
+﻿---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
 online version:
 schema: 2.0.0
 ms.assetid: A41324CE-63FC-4802-8589-344C52732E49
+ms.reviewer: rodejo
+ms.custom: iamfeature=PowerShell
 ---
 
 # Set-MsolCompanySettings

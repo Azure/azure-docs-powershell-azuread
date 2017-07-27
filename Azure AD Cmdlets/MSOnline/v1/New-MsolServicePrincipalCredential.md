@@ -1,8 +1,10 @@
----
+﻿---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
 online version:
 schema: 2.0.0
 ms.assetid: 67573FFF-F6B6-4681-A96C-05BB5874F9FB
+ms.reviewer: rodejo
+ms.custom: iamfeature=PowerShell
 ---
 
 # New-MsolServicePrincipalCredential

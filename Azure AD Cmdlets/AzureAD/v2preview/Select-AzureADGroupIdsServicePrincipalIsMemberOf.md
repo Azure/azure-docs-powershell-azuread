@@ -3,6 +3,8 @@ external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
 ms.assetid: 3FA60E42-BD4A-40C9-B3FC-CEE205E7DB4D
 online version: 
 schema: 2.0.0
+ms.reviewer: rodejo
+ms.custom: iamfeature=PowerShell
 ---
 
 # Select-AzureADGroupIdsServicePrincipalIsMemberOf

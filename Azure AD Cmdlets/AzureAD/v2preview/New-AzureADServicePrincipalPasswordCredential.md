@@ -3,6 +3,8 @@ external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.Custom.dll-Help.xm
 ms.assetid: 8F7770B8-E39E-45F9-AE8E-B03883B77756
 online version: 
 schema: 2.0.0
+ms.reviewer: rodejo
+ms.custom: iamfeature=PowerShell
 ---
 
 # New-AzureADServicePrincipalPasswordCredential

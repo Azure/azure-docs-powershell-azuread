@@ -3,6 +3,8 @@ external help file: Microsoft.Open.Azure.AD.CommonLibrary.dll-Help.xml
 ms.assetid: 1EC5BEED-D45D-4938-B279-795075D05542
 online version: 
 schema: 2.0.0
+ms.reviewer: rodejo
+ms.custom: iamfeature=PowerShell
 ---
 
 # Disconnect-AzureAD

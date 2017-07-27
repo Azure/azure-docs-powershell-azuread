@@ -1,8 +1,10 @@
----
+﻿---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
 ms.assetid: 27EA6A45-9227-4E87-AC85-0A6C4B2AE620
 online version: 
 schema: 2.0.0
+ms.reviewer: rodejo
+ms.custom: iamfeature=PowerShell
 ---
 
 # Add-AzureADApplicationOwner

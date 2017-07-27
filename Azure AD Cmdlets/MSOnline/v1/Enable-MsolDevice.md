@@ -1,8 +1,10 @@
----
+﻿---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
 online version:
 schema: 2.0.0
 ms.assetid: 5810982A-C9A8-4A13-BE28-5D9CB053DB1A
+ms.reviewer: rodejo
+ms.custom: iamfeature=PowerShell
 ---
 
 # Enable-MsolDevice

@@ -1,8 +1,10 @@
----
+﻿---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
 ms.assetid: FD2AE118-42DC-4DA4-A705-17972ECCA1E7
 online version: 
 schema: 2.0.0
+ms.reviewer: rodejo
+ms.custom: iamfeature=PowerShell
 ---
 
 # Remove-AzureADGroupMember
