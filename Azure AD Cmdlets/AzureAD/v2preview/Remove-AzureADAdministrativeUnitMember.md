@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Open.AzureADBeta.Graph.PowerShell.dll-Help.xml
 ms.assetid: 9DEA1FE5-FE78-431F-9D12-53C349812A81
 online version: 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
 online version: 
 schema: 2.0.0

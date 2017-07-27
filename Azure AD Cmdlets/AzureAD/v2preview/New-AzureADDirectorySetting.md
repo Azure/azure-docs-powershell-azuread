@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
 ms.assetid: 29AA4CF0-03E2-4896-BAA1-C964C05AF3D4
 online version: 

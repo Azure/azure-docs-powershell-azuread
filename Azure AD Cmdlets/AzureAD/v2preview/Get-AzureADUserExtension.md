@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.Custom.dll-Help.xml
 ms.assetid: 98A2D6B6-FBE5-420F-BA31-94161FBACEDF
 online version: 
