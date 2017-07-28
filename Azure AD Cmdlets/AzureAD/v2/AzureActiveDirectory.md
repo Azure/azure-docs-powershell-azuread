@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: AzureAD
 Module Guid: b433e830-b479-4f7f-9c80-9cc6c28e1b51
 Download Help Link: {{Please enter FwLink manually}}
