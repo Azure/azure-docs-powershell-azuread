@@ -1,10 +1,10 @@
 ---
 external help file: Microsoft.Open.Azure.AD.CommonLibrary.dll-Help.xml
 ms.assetid: A5EF9C25-E0D9-432F-A528-81534A01F444
+ms.custom: iamfeature=PowerShell
+ms.reviewer: rodejo
 online version: 
 schema: 2.0.0
-ms.reviewer: rodejo
-ms.custom: iamfeature=PowerShell
 ---
 
 # Connect-AzureAD

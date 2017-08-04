@@ -1,10 +1,10 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
 ms.assetid: C27027E1-A314-4EF2-82F2-396524334B99
+ms.custom: iamfeature=PowerShell
+ms.reviewer: rodejo
 online version: 
 schema: 2.0.0
-ms.reviewer: rodejo
-ms.custom: iamfeature=PowerShell
 ---
 
 # Get-AzureADUserManager

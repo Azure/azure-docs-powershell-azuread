@@ -1,10 +1,10 @@
 ---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
 ms.assetid: 5655BF04-B245-4D0E-9AD9-AAAA1A6B048D
+ms.custom: iamfeature=PowerShell
+ms.reviewer: rodejo
 online version: 
 schema: 2.0.0
-ms.reviewer: rodejo
-ms.custom: iamfeature=PowerShell
 ---
 
 # Get-AzureADPolicy

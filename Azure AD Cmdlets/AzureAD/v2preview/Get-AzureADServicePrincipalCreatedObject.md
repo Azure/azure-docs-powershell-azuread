@@ -1,10 +1,10 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
 ms.assetid: 677D76C2-6088-4374-8C6C-3BAC7B625BCE
+ms.custom: iamfeature=PowerShell
+ms.reviewer: rodejo
 online version: 
 schema: 2.0.0
-ms.reviewer: rodejo
-ms.custom: iamfeature=PowerShell
 ---
 
 # Get-AzureADServicePrincipalCreatedObject

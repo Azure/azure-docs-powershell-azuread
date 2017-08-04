@@ -1,10 +1,10 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.Custom.dll-Help.xml
 ms.assetid: C19B638B-9511-4828-B5AD-D177ECF9D5C0
+ms.custom: iamfeature=PowerShell
+ms.reviewer: rodejo
 online version: 
 schema: 2.0.0
-ms.reviewer: rodejo
-ms.custom: iamfeature=PowerShell
 ---
 
 # New-AzureADTrustedCertificateAuthority

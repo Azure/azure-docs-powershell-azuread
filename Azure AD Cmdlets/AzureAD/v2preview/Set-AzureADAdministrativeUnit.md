@@ -1,10 +1,10 @@
 ---
 external help file: Microsoft.Open.AzureADBeta.Graph.PowerShell.dll-Help.xml
 ms.assetid: 80D775B6-1EA6-4F54-A727-A981B0CBC3A1
+ms.custom: iamfeature=PowerShell
+ms.reviewer: rodejo
 online version: 
 schema: 2.0.0
-ms.reviewer: rodejo
-ms.custom: iamfeature=PowerShell
 ---
 
 # Set-AzureADAdministrativeUnit

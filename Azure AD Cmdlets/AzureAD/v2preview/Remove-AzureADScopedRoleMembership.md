@@ -1,10 +1,10 @@
 ---
 external help file: Microsoft.Open.AzureADBeta.Graph.PowerShell.dll-Help.xml
 ms.assetid: 937A2A6D-2DF5-43A5-8D2B-8555420254FB
+ms.custom: iamfeature=PowerShell
+ms.reviewer: rodejo
 online version: 
 schema: 2.0.0
-ms.reviewer: rodejo
-ms.custom: iamfeature=PowerShell
 ---
 
 # Remove-AzureADScopedRoleMembership
