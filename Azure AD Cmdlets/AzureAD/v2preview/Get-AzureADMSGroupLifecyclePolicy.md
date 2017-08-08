@@ -13,12 +13,12 @@ Retrieves the properties and relationships of a groupLifecyclePolicies object in
 
 ### GetQuery (Default)
 ```
-Get-AzureADMSGroupLifecyclePolicy [-All <Boolean>]
+Get-AzureADMSGroupLifecyclePolicy [<CommonParameters>]
 ```
 
 ### GetById
 ```
-Get-AzureADMSGroupLifecyclePolicy -Id <String> [-All <Boolean>]
+Get-AzureADMSGroupLifecyclePolicy -Id <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -35,21 +35,6 @@ This command retrieves the group expiration settings configured for the tenant
 
 ## PARAMETERS
 
-### -All
-Get all groupLifecyclePolicies objects in Azure Active Directory
-
-```yaml
-Type: Boolean
-Parameter Sets: (All)
-Aliases: 
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: True (ByPropertyName, ByValue)
-Accept wildcard characters: False
-```
-
 ### -Id
 Specifies the ID of a groupLifecyclePolicies object in Azure Active Directory
 
@@ -65,11 +50,13 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+
 ## INPUTS
 
 ### System.String
 System.Nullable`1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
-
 
 ## OUTPUTS
 
