@@ -1,10 +1,10 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
 ms.assetid: 3719960D-7A77-414E-A20C-812B527F27AB
+ms.custom: iamfeature=PowerShell
+ms.reviewer: rodejo
 online version: 
 schema: 2.0.0
-ms.reviewer: rodejo
-ms.custom: iamfeature=PowerShell
 ---
 
 # Enable-AzureADDirectoryRole
@@ -42,7 +42,6 @@ Enable-AzureADDirectoryRole -RoleTemplateId $InviterRole.ObjectId
 ObjectId                             DisplayName   Description
 --------                             -----------   -----------
 03618579-3c16-4765-9539-86d9163ee3d9 Guest Inviter Guest Inviter has access to invite guest users.
-
 ```
 
 The first command gets an inviter role that has the display name Guest Inviter by using the [Get-AzureADDirectoryRoleTemplate](./Get-AzureADDirectoryRoleTemplate.md) cmdlet. 

@@ -1,10 +1,10 @@
 ---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
 ms.assetid: 24E6DD2A-A1A1-42D2-8564-F0A92AA0C49F
+ms.custom: iamfeature=PowerShell
+ms.reviewer: rodejo
 online version: 
 schema: 2.0.0
-ms.reviewer: rodejo
-ms.custom: iamfeature=PowerShell
 ---
 
 # New-AzureADObjectSetting
