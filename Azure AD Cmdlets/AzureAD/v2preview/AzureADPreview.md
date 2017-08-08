@@ -35,6 +35,9 @@ Adds a member to a group.
 ### [Add-AzureADGroupOwner](Add-AzureADGroupOwner.md)
 Adds an owner to a group.
 
+### [Add-AzureADMSLifecyclePolicyGroup](Add-AzureADMSLifecyclePolicyGroup.md)
+Adds a group to a lifecycle policy
+
 ### [Add-AzureADScopedRoleMembership](Add-AzureADScopedRoleMembership.md)
 Adds a scoped role membership to an administrative unit.
 
@@ -173,6 +176,12 @@ This cmdlet is used to retrieve the soft deleted groups in a directory.
 ### [Get-AzureADMSGroup](Get-AzureADMSGroup.md)
 Gets information about groups in Azure AD.
 
+### [Get-AzureADMSGroupLifecyclePolicy](Get-AzureADMSGroupLifecyclePolicy.md)
+Retrieves the properties and relationships of a groupLifecyclePolicies object in Azure Active Directory
+
+### [Get-AzureADMSLifecyclePolicyGroup](Get-AzureADMSLifecyclePolicyGroup.md)
+Retrieves the lifecycle policy object to which a group belongs.
+
 ### [Get-AzureADOAuth2PermissionGrant](Get-AzureADOAuth2PermissionGrant.md)
 Gets **OAuth2PermissionGrant** entities.
 
@@ -305,6 +314,9 @@ Assign a group of users to an application role.
 ### [New-AzureADMSGroup](New-AzureADMSGroup.md)
 Creates an Azure AD group.
 
+### [New-AzureADMSGroupLifecyclePolicy](New-AzureADMSGroupLifecyclePolicy.md)
+Creates a new groupLifecyclePolicy
+
 ### [New-AzureADMSInvitation](New-AzureADMSInvitation.md)
 This cmdlet is used to invite a new external user to your directory
 
@@ -401,6 +413,12 @@ This cmdlet is used to permanently delete a previously deleted directory object
 ### [Remove-AzureADMSGroup](Remove-AzureADMSGroup.md)
 Removes an Azure AD group.
 
+### [Remove-AzureADMSGroupLifecyclePolicy](Remove-AzureADMSGroupLifecyclePolicy.md)
+Deletes a groupLifecyclePolicies object
+
+### [Remove-AzureADMSLifecyclePolicyGroup](Remove-AzureADMSLifecyclePolicyGroup.md)
+Removes a group from a lifecycle policy
+
 ### [Remove-AzureADOAuth2PermissionGrant](Remove-AzureADOAuth2PermissionGrant.md)
 Removes an oAuth2PermissionGrant.
 
@@ -445,6 +463,9 @@ Removes a user extension.
 
 ### [Remove-AzureADUserManager](Remove-AzureADUserManager.md)
 Removes a user's manager.
+
+### [Reset-AzureADMSLifeCycleGroup](Reset-AzureADMSLifeCycleGroup.md)
+Renews a group by updating the RenewedDateTime property on a group to the current DateTime.
 
 ### [Restore-AzureADDeletedApplication](Restore-AzureADDeletedApplication.md)
 Restores a previously deleted application
@@ -493,6 +514,9 @@ Updates a specific group in Azure Active Directory
 
 ### [Set-AzureADMSGroup](Set-AzureADMSGroup.md)
 {{Fill in the Synopsis}}
+
+### [Set-AzureADMSGroupLifecyclePolicy](Set-AzureADMSGroupLifecyclePolicy.md)
+Updates a specific group Lifecycle Policy in Azure Active Directory
 
 ### [Set-AzureADObjectSetting](Set-AzureADObjectSetting.md)
 Updates object settings.
