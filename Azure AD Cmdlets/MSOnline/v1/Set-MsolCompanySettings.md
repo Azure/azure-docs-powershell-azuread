@@ -54,9 +54,9 @@ Accept wildcard characters: False
 ```
 
 ### -UsersPermissionToCreateGroupsEnabled
-Indicates whether to allow users to create groups.
+Indicates whether to allow users to create security groups.
 This setting is applied company-wide.
-Set to $False to disable users' ability to create groups.
+Set to $False to disable users' ability to create security groups.
 
 ```yaml
 Type: Boolean
