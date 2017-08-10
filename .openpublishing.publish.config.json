@@ -25,8 +25,7 @@
       ],
       "customized_tasks": {
         "docset_prebuild": [
-          "_dependentPackages/Microsoft.OpenPublishing.AzurePSPlugin/tools/Restructure.ps1",
-          "_dependentPackages/CommonPlugins/tools/JoinTOC.ps1"
+          "_dependentPackages/Microsoft.OpenPublishing.AzurePSPlugin/tools/Restructure.ps1"
         ]
       }
     }
@@ -52,8 +51,8 @@
     {
       "id": "Microsoft.OpenPublishing.AzurePSPlugin",
       "path_to_root": "_dependentPackages/Microsoft.OpenPublishing.AzurePSPlugin",
-      "version": "latest",
-      "nuget_feed": "https://www.myget.org/F/op/api/v2"
+      "version": "latest-prerelease",
+      "nuget_feed": "https://www.myget.org/F/op-dev/api/v2"
     },
     {
       "id": "Microsoft.OpenPublishing.CommonPlugins",
@@ -65,26 +64,6 @@
   ],
   "monikerPath": [
     "Azure AD Cmdlets/mapping/monikerMapping.json"
-  ],
-  "JoinTOCPlugin": [
-    {
-      "TopLevelTOC": "azureadps-1.0/toc.yml",
-      "ConceptualTOC": "azureadps-1.0/docs-conceptual/toc.yml",
-      "ReferenceTOCUrl": "/powershell/module/active-directory/toc.json?view=azureadps-1.0",
-      "ConceptualTOCUrl": "/powershell/azure/active-directory/toc.json?view=azureadps-1.0"
-    },
-    {
-      "TopLevelTOC": "azureadps-2.0/toc.yml",
-      "ConceptualTOC": "azureadps-2.0/docs-conceptual/toc.yml",
-      "ReferenceTOCUrl": "/powershell/module/active-directory/toc.json?view=azureadps-2.0",
-      "ConceptualTOCUrl": "/powershell/azure/active-directory/toc.json?view=azureadps-2.0"
-    },
-    {
-      "TopLevelTOC": "azureadps-2.0-preview/toc.yml",
-      "ConceptualTOC": "azureadps-2.0-preview/docs-conceptual/toc.yml",
-      "ReferenceTOCUrl": "/powershell/module/active-directory/toc.json?view=azureadps-2.0-preview",
-      "ConceptualTOCUrl": "/powershell/azure/active-directory/toc.json?view=azureadps-2.0-preview"
-    }
   ],
   "need_generate_pdf_url_template": false,
   "dest": "_site"
