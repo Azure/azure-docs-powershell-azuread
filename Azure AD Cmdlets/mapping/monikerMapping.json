@@ -3,7 +3,7 @@
         "serviceMap": "Azure AD Cmdlets/mapping/groupMapping-2.0.json",
         "packageRoot": "Azure AD Cmdlets",
         "conceptualTocUrl": "/powershell/azure/active-directory/toc.json",
-        "referenceTocUrl": "powershell/module/azuread/toc.json",
+        "referenceTocUrl": "/powershell/module/azuread/toc.json",
         "modules": {
             "docs-conceptual": {
                 "_type": "conceptual"
