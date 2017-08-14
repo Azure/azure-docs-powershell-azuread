@@ -19,9 +19,13 @@ New-AzureADGroup [-InformationAction <ActionPreference>] [-InformationVariable <
  [-Description <String>] -DisplayName <String> -MailEnabled <Boolean> -MailNickName <String>
  -SecurityEnabled <Boolean> [<CommonParameters>]
 ```
->Note: 
 
-Groups with the following highly privileged email aliases can only be created by an Azure AD global administrator. 
+## DESCRIPTION
+The **New-AzureADGroup** cmdlet creates a group in Azure Active Directory (AD).
+
+Note: 
+
+Groups with the following highly privileged email aliases can only be created by an Azure AD global administrator:
 
 * abuse 
 * admin 
@@ -34,9 +38,6 @@ Groups with the following highly privileged email aliases can only be created by
 * security 
 * ssl-admin 
 * webmaster 
-
-## DESCRIPTION
-The **New-AzureADGroup** cmdlet creates a group in Azure Active Directory (AD).
 
 ## EXAMPLES
 
