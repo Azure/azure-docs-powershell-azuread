@@ -10,7 +10,7 @@ ms.custom: iamfeature=PowerShell
 # New-AzureADGroup
 
 ## SYNOPSIS
-Creates a group.
+This cmdlet can be used to create a group.
 
 ## SYNTAX
 
@@ -22,6 +22,22 @@ New-AzureADGroup [-InformationAction <ActionPreference>] [-InformationVariable <
 
 ## DESCRIPTION
 The **New-AzureADGroup** cmdlet creates a group in Azure Active Directory (AD).
+
+Note: 
+
+Groups with the following highly privileged email aliases can only be created by an Azure AD global administrator:
+
+* abuse 
+* admin 
+* administrator 
+* hostmaster 
+* majordomo 
+* postmaster 
+* root 
+* secure 
+* security 
+* ssl-admin 
+* webmaster 
 
 ## EXAMPLES
 

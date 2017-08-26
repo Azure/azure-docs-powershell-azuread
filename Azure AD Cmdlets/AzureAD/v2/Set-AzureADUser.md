@@ -42,6 +42,13 @@ PS C:\> Set-AzureADUser -ObjectId TestUser@example.com -Displayname $user.Displa
 
 This command updates the specified user's property.
 
+### Example 2: Set Password Policy on search of users
+```
+PS C:\> Get-AzureADUser -SearchString "Test" | Set-AzureADUser -PasswordPolicies DisablePasswordExpiration
+```
+
+This command gets a list of AD Users and sets the password policie to disable the expiration
+
 ## PARAMETERS
 
 ### -AccountEnabled
