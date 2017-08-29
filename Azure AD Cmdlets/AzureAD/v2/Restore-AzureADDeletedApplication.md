@@ -22,8 +22,7 @@ Restore-AzureADDeletedApplication -ObjectId <String>
 ## DESCRIPTION
 This cmdlet restores a previously deleted application
 
-[!NOTE]
-Restoring the application will not restore the service principal. Once the application is restored, you will need to create a new service principal for the tenant.
+**Note:** Restoring the application will not restore the service principal. Once the application is restored, you will need to create a new service principal for the tenant.
 
 ## EXAMPLES
 
