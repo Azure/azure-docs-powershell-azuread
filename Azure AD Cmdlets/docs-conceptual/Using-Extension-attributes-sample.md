@@ -46,12 +46,12 @@ $UserId = (Get-AzureADUser -Searchstring <UPN of the user we're working with>).O
 
 ### Get all property values of a user
 ```powershell 
-(Get-AzureADUser -ObjectId $Userid).ToJson
+(Get-AzureADUser -ObjectId $UserId).ToJson()
 ```
 
 ### Get a user and show all extension properties
 ```powershell 
-Get-AzureADUser -ObjectId $UserID | Select -ExpandProperty ExtensionProperty
+Get-AzureADUser -ObjectId $UserId | Select -ExpandProperty ExtensionProperty
 ```
 
 This cmdlet returns all extension properties of a user with their current values:
