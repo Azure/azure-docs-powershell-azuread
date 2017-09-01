@@ -52,7 +52,7 @@ Specifies a list of licenses to assign or remove. This parameter takes an object
 + AddLicenses is list that contians objects of the type Microsoft.Open.AzureAD.Model.AssignedLicense
 + RemoveLicenses is a list that contains obejcts of the type String
 
-To add new licenses to a user, specify these in the AddLicenses property, to remove licenses add them to the list in the RemoveLicenses property. Licenses that are assigned to a user but are not mentioned in the RemoveLicenses or AddLicenses proeprties are not changed.
+To add new licenses to a user, specify these in the AddLicenses property, to remove licenses add them to the list in the RemoveLicenses property. Licenses that are assigned to a user but are not mentioned in the RemoveLicenses or AddLicenses properties are not changed.
 
 ```yaml
 Type: AssignedLicenses
