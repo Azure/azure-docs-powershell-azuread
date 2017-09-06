@@ -31,10 +31,10 @@ The **Set-AzureADUserLicense** adds or removes licenses for a Microsoft online s
 $license = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicense
 $licenses = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicenses
 
-# Find the SkuID of the license we want to add - in this exmample we'll use the O365_BUSINESS_PREMIUM license
+# Find the SkuID of the license we want to add - in this example we'll use the O365_BUSINESS_PREMIUM license
 $license.SkuId = (Get-AzureADSubscribedSku | Where-Object -Property SkuPartNumber -Value "O365_BUSINESS_PREMIUM" -EQ).SkuID
 
-# Set the OFFice license as the license we want to add in the $licenses object
+# Set the Office license as the license we want to add in the $licenses object
 $licenses.AddLicenses = $license
 
 # Call the Set-AzureADUserLicense cmdlet to set the license.
@@ -49,8 +49,8 @@ Set-AzureADUserLicense -ObjectId "Violeta.Collias@drumkit.onmicrosoft.com" -Assi
 
 ### -AssignedLicenses
 Specifies a list of licenses to assign or remove. This parameter takes an object of the type Microsoft.Open.AzureAD.Model.AssignedLicenses, as shown in the example above. This contains two attributes that we'll be using here: 
-+ AddLicenses is list that contians objects of the type Microsoft.Open.AzureAD.Model.AssignedLicense
-+ RemoveLicenses is a list that contains obejcts of the type String
++ AddLicenses is list that contains objects of the type Microsoft.Open.AzureAD.Model.AssignedLicense
++ RemoveLicenses is a list that contains objects of the type String
 
 To add new licenses to a user, specify these in the AddLicenses property, to remove licenses add them to the list in the RemoveLicenses property. Licenses that are assigned to a user but are not mentioned in the RemoveLicenses or AddLicenses properties are not changed.
 
