@@ -27,7 +27,7 @@ The **New-AzureADServiceAppRoleAssignment** cmdlet assigns a service principal t
 ## PARAMETERS
 
 ### -Id
-Specifies the ID.
+The role id that was assigned to the principal. This role must be declared by the target resource application resourceId in its appRoles property. Where the resource does not declare any permissions, a default id (zero GUID) must be specified.
 
 ```yaml
 Type: String
@@ -79,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-Specifies the ID of a service principal in Azure AD.
+The ID of the user (as a UserPrincipalName or ObjectId) in Azure AD to be assigned to the app role.
 
 ```yaml
 Type: String
@@ -94,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrincipalId
-Specifies a principal ID.
+The unique identifier (objectId) for the principal being granted the access.
 
 ```yaml
 Type: String
@@ -109,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Specifies a resource ID.
+The unique identifier (objectId) for the target resource (service principal) for which the assignment was made.
 
 ```yaml
 Type: String
