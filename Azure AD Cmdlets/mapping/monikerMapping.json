@@ -30,7 +30,7 @@
         }
     },
     "azureadps-1.0": {
-        "serviceMap": "Azure AD Cmdlets/mapping/groupMapping-1.0.json",
+        "serviceMap": "Azure AD Cmdlets/v1/mapping/groupMapping-1.0.json",
         "packageRoot": "Azure AD Cmdlets",
         "conceptualTocUrl": "/powershell/azure/active-directory/toc.json",
         "referenceTocUrl": "/powershell/module/active-directory/toc.json",
