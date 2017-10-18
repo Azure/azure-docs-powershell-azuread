@@ -10,7 +10,6 @@
             },
             "AzureAD": {
                 "_displayName": "AzureAD",
-                "_version":
             }
         }
     },
@@ -25,7 +24,6 @@
             },
             "AzureAD": {
                 "_displayName": "AzureADpreview",
-                "_version": 
             }
         }
     },
