@@ -10,6 +10,7 @@
             },
             "AzureAD": {
                 "_displayName": "AzureAD",
+                "version": "v2"
             }
         }
     },
@@ -24,6 +25,7 @@
             },
             "AzureAD": {
                 "_displayName": "AzureADpreview",
+                "version": "v2preview"
             }
         }
     },
@@ -34,7 +36,8 @@
         "referenceTocUrl": "/powershell/module/active-directory/toc.json",
         "modules": {
             "docs-conceptual": {
-                "_type": "conceptual"
+                "_type": "conceptual",
+                "version": "v1"
             },
             "MSOnline": {
                 "_displayName": "MSOnline",
