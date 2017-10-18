@@ -37,7 +37,7 @@
         "modules": {
             "docs-conceptual": {
                 "_type": "conceptual",
-                "version": "v1"
+                "version": "v1.0"
             },
             "MSOnline": {
                 "_displayName": "MSOnline",
