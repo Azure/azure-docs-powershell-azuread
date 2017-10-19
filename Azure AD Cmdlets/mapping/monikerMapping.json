@@ -10,7 +10,7 @@
             },
             "AzureAD": {
                 "_displayName": "AzureAD",
-                "version": "v2"
+                "_version": "v2"
             }
         }
     },
@@ -25,7 +25,7 @@
             },
             "AzureAD": {
                 "_displayName": "AzureADpreview",
-                "version": "v2preview"
+                "_version": "v2preview"
             }
         }
     },
@@ -37,7 +37,7 @@
         "modules": {
             "docs-conceptual": {
                 "_type": "conceptual",
-                "version": "v1.0.0"
+                "_version": "v1.0.0"
             },
             "MSOnline": {
                 "_displayName": "MSOnline",
