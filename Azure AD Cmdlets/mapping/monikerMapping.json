@@ -36,7 +36,8 @@
         "referenceTocUrl": "/powershell/module/active-directory/toc.json",
         "modules": {
             "docs-conceptual": {
-                "_type": "conceptual"
+                "_type": "conceptual",
+                "_version": "v1.0.0"
             },
             "MSOnline": {
                 "_displayName": "MSOnline",

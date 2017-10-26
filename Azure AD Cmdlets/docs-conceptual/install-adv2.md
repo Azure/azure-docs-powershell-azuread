@@ -12,17 +12,17 @@ ms.author: rodejo
 ms.custom: posh-docs-conceptual
 ms.reviewer: rodejo
 ---
-# Azure Active Directory PowerShell Version 2
+# Azure Active Directory PowerShell for Graph
 
-You can use the Azure Active Directory PowerShell Module Version 2 for Azure AD administrative tasks such as user management, domain management and for configuring single sign-on. The cmdlets listed here are different than the MSOL cmdlets which are part of Azure Active Directory Version 1.0.
+You can use the Azure Active Directory PowerShell Module Version for Graph for Azure AD administrative tasks such as user management, domain management and for configuring single sign-on. The cmdlets listed here are different than the MSOL cmdlets which are part of the MSOnline PowerShell module.
 
-The Azure AD PowerShell Version 2 module has two versions: a Public preview version and a General Availability version. It is not recommended to use the Public Preview version for production scenarios.
-The Azure AD PowerShell Version 2 preview module can be downloaded from the PowerShell Gallery at the [AzureADPreview](https://www.powershellgallery.com/packages/AzureADPreview) page.
-The Azure AD PowerShell Version 2 General Availability module can be downloaded from the PowerShell Gallery at the [AzureAD](https://www.powershellgallery.com/packages/AzureAD) page. 
+The Azure AD PowerShell for Graph module has two versions: a Public preview version and a General Availability version. It is not recommended to use the Public Preview version for production scenarios.
+The Azure AD PowerShell for Graph preview module can be downloaded from the PowerShell Gallery at the [AzureADPreview](https://www.powershellgallery.com/packages/AzureADPreview) page.
+The Azure AD PowerShell for Graph General Availability module can be downloaded from the PowerShell Gallery at the [AzureAD](https://www.powershellgallery.com/packages/AzureAD) page. 
 
 ## Installing the Azure AD Module
 
-The Azure AD Module is supported on the following Windows operating systems with the default version of Microsoft .NET Framework and Windows PowerShell: Windows 8.1, Windows 8, Windows 7, Windows Server 2012 R2, Windows Server 2012, or Windows Server 2008 R2.
+The Azure AD PwerShell for Graph Module is supported on the following Windows operating systems with the default version of Microsoft .NET Framework and Windows PowerShell: Windows 8.1, Windows 8, Windows 7, Windows Server 2012 R2, Windows Server 2012, or Windows Server 2008 R2.
 
 If your computer has all the prerequisites for the installation, to install the General Availability version of the module on your computer you can run
 
