@@ -67,7 +67,7 @@ ObjectId                             DisplayName UserPrincipalName              
 5e8b0f4d-2cd4-4e17-9467-b0f6a5c0c4d0 NewUser     NewUser@Contoso.com               Member
 ```
 
-In the first step we create a new object called "$extension" with object type "System.Collections.Generic.Dictionary". In the next step we add the extensionattribute 's nameand value to the new object,and we display the object to see that we indeed created the correct obejct to serve as a parameter for the New-AzureADUser cmdlet.
+In the first step we create a new object called "$extension" with object type "System.Collections.Generic.Dictionary". In the next step we add the extensionattribute 's name and value to the new object, and we display the object to see that we indeed created the correct object to serve as a parameter for the New-AzureADUser cmdlet.
 In the last step we create the new user and set the extension attribute value.
 
 ## PARAMETERS
@@ -312,7 +312,7 @@ And finally you can pass this variable to the cmdlet:
 
 Other attributes that can be set in the PasswordProfile are
 
-$PasswordProfile.EnforceChangePasswordPolicy - a boolean indicating that the change password policy is enababled or disabled for this user
+$PasswordProfile.EnforceChangePasswordPolicy - a boolean indicating that the change password policy is enabled or disabled for this user
 $PasswordProfile.ForceChangePasswordNextLogin - a boolean indicating that the user must change the password at the next sign in
 
 

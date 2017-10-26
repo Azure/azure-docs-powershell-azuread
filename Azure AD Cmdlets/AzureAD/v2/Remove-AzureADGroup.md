@@ -20,7 +20,7 @@ Remove-AzureADGroup -ObjectId <String> [-InformationAction <ActionPreference>] [
 ```
 
 ## DESCRIPTION
-The **Remove-AzureADGroup** cmdlet removes a group from Azure Active Directory (AD). Note that a Unified Group can be restored withing 30 days after deletion using the Restore-AzureADMSDeletedDirectoryObject cmdlet. Security groups cannot be restored after deletion.
+The **Remove-AzureADGroup** cmdlet removes a group from Azure Active Directory (AD). Note that a Unified Group can be restored within 30 days after deletion using the Restore-AzureADMSDeletedDirectoryObject cmdlet. Security groups cannot be restored after deletion.
 
 ## EXAMPLES
 

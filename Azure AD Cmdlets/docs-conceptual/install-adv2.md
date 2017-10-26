@@ -109,6 +109,9 @@ Connect-AzureAD -AzureEnvironment "AzureGermanyCloud"
 This example connects your PowerShell session to the German AzureAD environment.
 See **Connect-AzureAD** for more information.
 
+## Suggestions?
+
+If you have suggestions on how to improve Azure Active Directory PowerShell, please do not hesitate to [let us know!](https://feedback.azure.com/forums/169401-azure-active-directory/category/165066-powershell)
 
 ## More about Windows PowerShell
 
