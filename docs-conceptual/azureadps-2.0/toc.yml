@@ -1,0 +1,73 @@
+- name: Overview
+  href: overview.md
+  items:
+  - name: Install the Azure AD PowerShell V2 module
+    href: install-adv2.md
+- name: Using Azure AD PowerShell
+  items:
+  - name: PowerShell Scenarios
+    items:
+    - name: Importing data
+      href: importing-data.md
+    - name: Recovering deleted data
+      href: recovering-deleted-data.md
+  - name: Directory Features
+    items:
+    - name: Managing groups
+      href: https://docs.microsoft.com/en-us/azure/active-directory/active-directory-accessmanagement-groups-settings-v2-cmdlets
+    - name: Managing Unified Groups settings
+      href: https://docs.microsoft.com/en-us/azure/active-directory/active-directory-accessmanagement-groups-settings-cmdlets
+    - name: Managing Role Based Access Control (RBAC)
+      href: https://docs.microsoft.com/en-us/azure/active-directory/role-based-access-control-manage-access-powershell
+    - name: Working with licenses
+      href: working-with-licenses.md
+    - name: List all Service Principal Application Role assignments
+      href: List-Service-principal-application-roles.md
+    - name: Using extension attributes
+      href: using-extension-attributes-sample.md
+    - name: Working with Administrative Units
+      href: Working-with-Administrative-Units.md
+    - name: Inviting guests in B2B
+      href: https://docs.microsoft.com/en-us/azure/active-directory/active-directory-b2b-code-samples#powershell-example
+    - name: Creating a new user and setting the password
+      href: new-user-sample.md
+    - name: Assigning licenses to a user
+      href: Enabling-licenses-sample.md
+    - name: Connecting an Azure AD Powershell session with Service Principal credentials
+      href: signing-in-service-principal.md
+- name: Frequently asked questions
+  items:
+  - name: Where can I find the PowerShell log file?
+    href: PowerShell-logfile.md
+  - name: How can I find which version of a module is installed on my computer?
+    href: Find-Module-version.md
+  - name: How can I install a previous version of a module?
+    href: Install-previous-version.md
+- name: Troubleshooting
+  items:
+  - name: Authentication issues
+    items:
+    - name: I get an error "[your account] isn't in our system"
+      href: account-not-in-system-error.md
+  - name: Execution errors
+    items:
+    - name: I'm looking for a user or a group but PowerShell does not return the object
+      href: Cannot-find-object.md
+- name: Videos
+  items:
+  - name: Manage dynamic groups with PowerShell
+    href: https://channel9.msdn.com/Series/Azure-Active-Directory-Videos-Demos/Managing-dynamic-groups-with-Azure-AD-PowerShell
+  - name: Managing applications with PowerShell
+    href: https://channel9.msdn.com/Series/Azure-Active-Directory-Videos-Demos/ManageAppsAzureADPowerShell
+- name: Read more
+  items:
+  - name: Getting started with PowerShell
+    href: https://msdn.microsoft.com/powershell/scripting/getting-started/getting-started-with-windows-powershell
+  - name: PowerShell fundamental concepts
+    href: https://msdn.microsoft.com/en-us/powershell/scripting/getting-started/fundamental-concepts
+  - name: PowerShell setup and installation
+    href: https://msdn.microsoft.com/en-us/powershell/scripting/setup/setup-reference
+  - name: Working with files and folders
+    href: https://msdn.microsoft.com/en-us/powershell/scripting/getting-started/cookbooks/working-with-files-and-folders
+  - name: PowerShellGet module
+    href: https://msdn.microsoft.com/powershell/reference/5.1/PowerShellGet/PowerShellGet
