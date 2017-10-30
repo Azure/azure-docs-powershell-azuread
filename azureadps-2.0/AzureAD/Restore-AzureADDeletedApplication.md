@@ -1,10 +1,10 @@
-
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
 online version: 
 schema: 2.0.0
 ms.reviewer: rodejo
 ms.custom: iamfeature=PowerShell
+_fromModule: AzureAD
 ---
 
 # Restore-AzureADDeletedApplication
@@ -97,11 +97,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-System.String
+### System.String
 
 ## OUTPUTS
 
-System.Object
+### System.Object
 
 ## NOTES
 

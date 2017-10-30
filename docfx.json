@@ -25,7 +25,7 @@
           "**/*.yml",
           "**/*.md"
         ],
-        "src": "azureadps-1.0/docs-conceptual",
+        "src": "docs-conceptual/azureadps-1.0",
         "version": "azureadps-1.0",
         "dest": "azure/active-directory"
       },
@@ -53,7 +53,7 @@
           "**/*.yml",
           "**/*.md"
         ],
-        "src": "azureadps-2.0/docs-conceptual",
+        "src": "docs-conceptual/azureadps-2.0",
         "version": "azureadps-2.0",
         "dest": "azure/active-directory"
       },
@@ -81,7 +81,7 @@
           "**/*.yml",
           "**/*.md"
         ],
-        "src": "azureadps-2.0-preview/docs-conceptual",
+        "src": "docs-conceptual/azureadps-2.0-preview",
         "version": "azureadps-2.0-preview",
         "dest": "azure/active-directory"
       }
@@ -101,22 +101,26 @@
       "ms.author": {
         "azureadps-1.0/**/*.md": "rodejo",
         "azureadps-2.0/**/*.md": "rodejo",
-        "azureadps-2.0-preview/**/*.md": "rodejo"
+        "azureadps-2.0-preview/**/*.md": "rodejo",
+        "docs-conceptual/**/*.md": "rodejo"
       },
       "author": {
         "azureadps-1.0/**/*.md": "RobdeJong",
         "azureadps-2.0/**/*.md": "RobdeJong",
-        "azureadps-2.0-preview/**/*.md": "RobdeJong"
+        "azureadps-2.0-preview/**/*.md": "RobdeJong",
+        "docs-conceptual/**/*.md": "RobdeJong"        
       },
       "ms.manager": {
         "azureadps-1.0/**/*.md": "kbrint",
         "azureadps-2.0/**/*.md": "kbrint",
-        "azureadps-2.0-preview/**/*.md": "kbrint"
+        "azureadps-2.0-preview/**/*.md": "kbrint",
+        "docs-conceptual/**/*.md": "kbrint"        
       },
       "ms.service": {
         "azureadps-1.0/**/*.md": "active-directory",
         "azureadps-2.0/**/*.md": "active-directory",
-        "azureadps-2.0-preview/**/*.md": "active-directory"
+        "azureadps-2.0-preview/**/*.md": "active-directory",
+        "docs-conceptual/**/*.md": "active-directory"        
       }
     },
     "globalMetadata": {
