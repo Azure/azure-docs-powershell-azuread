@@ -29,9 +29,6 @@ The easiest way to install the module is from the [PowerShell Gallery](https://w
 ```powershell
 Install-Module MSOnline
 ```
-
-You can also download the module from the [Azure Active Directory Connection download page](http://connect.microsoft.com/site1164/Downloads/DownloadDetails.aspx?DownloadID=59185), download its .msi file, and click **Run** to run the installer package.
-
 ## MSOnline Public Preview module
 
 The MSOnline Public Preview release 1.1.130.0 is no longer available for download. If you are looking for the MSOL-Settings cmdlets to manage groups settings for Unified Groups, these are now available in the newer Azure AD PowerShell V2 Public Preview module, which can be found in the [Powershell Gallery for the Azure AD Preview module](https://www.powershellgallery.com/packages/AzureADPreview). You can install this module with the cmdlet
