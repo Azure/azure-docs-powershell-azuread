@@ -30,6 +30,15 @@ PS C:\> Get-MsolAccountSku
 
 This command returns a list of SKUs.
 
+### Example 2: Get available services
+```
+PS C:\> Get-MsolAccountSku | select select -ExpandProperty ServiceStatus
+```
+
+This command returns a list of available services. This is very useful when you work with **New-MsolLicenseOptions** cmdlet and want to disable certain services for specific users. For more information, see: 
+* [New-MsolLicenseOptions](https://docs.microsoft.com/en-us/powershell/module/msonline/new-msollicenseoptions?view=azureadps-1.0 "New-MsolLicenseOptions")  
+* [View licenses and services with Office 365 PowerShell](https://technet.microsoft.com/en-us/library/dn771773.aspx?f=255&MSPPError=-2147217396)
+
 ## PARAMETERS
 
 ### -TenantId
@@ -89,4 +98,5 @@ Only SKUs with target class=user are assignable.
 
 ## NOTES
 
-## RELATED LINKS
+## RELATED LINKS  
+[View licenses and services with Office 365 PowerShell](https://technet.microsoft.com/en-us/library/dn771773.aspx?f=255&MSPPError=-2147217396)
