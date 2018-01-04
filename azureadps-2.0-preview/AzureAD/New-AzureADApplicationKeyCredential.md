@@ -53,7 +53,7 @@ PS C:\> $base64Value = [System.Convert]::ToBase64String($bin)
 PS C:\> $bin = $cer.GetCertHash()
 PS C:\> $base64Thumbprint = [System.Convert]::ToBase64String($bin)
 PS C:\> $keyid = [System.Guid]::NewGuid().ToString() 
-PS C:\> New-AzureADApplicationKeyCredential -ObjectId 009d786a-3503-4217-b8ab-db03d71c179a -CustomKeyIdentifier  $base64Thumbprint  -Type AsymmetricX509Cert -Usage Verify -Value $base64Value  -StartDate $cer.GetEffectiveDateString() -EndDate cer.GetExpirationDateString()
+PS C:\> New-AzureADApplicationKeyCredential -ObjectId 009d786a-3503-4217-b8ab-db03d71c179a -CustomKeyIdentifier $base64Thumbprint -Type AsymmetricX509Cert -Usage Verify -Value $base64Value -StartDate $cer.GetEffectiveDateString() -EndDate $cer.GetExpirationDateString()
 ```
 
 The first seven commands create values for the application key credential and stores them in variables.
