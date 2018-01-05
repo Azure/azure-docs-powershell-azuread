@@ -32,7 +32,7 @@ This command returns a list of SKUs.
 
 ### Example 2: Get available services
 ```
-PS C:\> Get-MsolAccountSku | select select -ExpandProperty ServiceStatus
+PS C:\> Get-MsolAccountSku | select -ExpandProperty ServiceStatus
 ```
 
 This command returns a list of available services. This is very useful when you work with **New-MsolLicenseOptions** cmdlet and want to disable certain services for specific users. For more information, see: 
