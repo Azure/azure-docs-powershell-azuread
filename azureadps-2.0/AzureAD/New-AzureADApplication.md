@@ -48,6 +48,33 @@ acd10942-5747-4385-8824-4c5d5fa904f9 b5fecfab-0ea2-4fd1-8570-b2c41b3d5149 My new
 
 This command creates an application in Azure AD.
 
+### Example 2: Create an SAML application
+```
+PS C:\>New-AzureADApplication -DisplayName "My new SAML application"  -IdentifierUris "http://mynewapp.contoso.com" -SamlMetadataURL "http://mynewapp.contoso.com/metadata.xml" -ReplyUrls "http://mynewapp.contoso.com/finishLogin"
+
+ObjectId                             AppId                                DisplayName 
+--------                             -----                                ----------- 
+acd10942-5747-4385-8824-4c5d5fa904f9 b5fecfab-0ea2-4fd1-8570-b2c41b3d5149 My new application
+```
+
+This command creates an application in Azure AD with your SAML metadata.
+
+After this you still need to set permissions on who can access the application. 
+
+### Example 3: Create an OAuth application
+```
+PS C:\>New-AzureADApplication -DisplayName "My new SAML application"  -IdentifierUris "http://mynewapp.contoso.com" -ReplyUrls "http://mynewapp.contoso.com/oauth2/callback"
+
+ObjectId                             AppId                                DisplayName 
+--------                             -----                                ----------- 
+acd10942-5747-4385-8824-4c5d5fa904f9 b5fecfab-0ea2-4fd1-8570-b2c41b3d5149 My new application
+```
+
+This command creates an application in Azure AD prepped for OAuth.
+
+After this you still need to create the keys for your application and setup the permissions of the application. 
+
+
 ## PARAMETERS
 
 ### -AddIns
