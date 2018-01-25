@@ -33,7 +33,7 @@ PS C:\> Remove-AzureADApplicationPasswordCredential -ObjectId $AppId -KeyId $Key
 
 The first command gets the ID of an application by using the [Get-AzureADApplication](./Get-AzureADApplication.md) cmdlet, and then stores it in the $AppID variable.
 
-The second command gets the password credential for the application identified by $AppID by using the [Get-AzureADApplicationPasswordCredential](./ Get-AzureADApplicationPasswordCredential.md) cmdlet. 
+The second command gets the password credential for the application identified by $AppID by using the [Get-AzureADApplicationPasswordCredential](./Get-AzureADApplicationPasswordCredential.md) cmdlet. 
 The command stores it in the $KeyId variable.
 
 The final command removes the application password credential for the application identified by $AppID.
