@@ -166,7 +166,7 @@ Type: System.Collections.Generic.List`1[System.String]
 Parameter Sets: (All)
 Aliases: 
 
-Required: False
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
