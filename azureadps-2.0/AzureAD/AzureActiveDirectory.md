@@ -573,6 +573,49 @@ Updates the password for the signed-in user.
 This cmdlet is used to invite a new external user to your directory
 
 
+### [Get-AzureADMSGroup](Get-AzureADMSGroup.md)
+This cmdlet returns information about one or more groups
+
+
+### [New-AzureADMSGroup](New-AzureADMSGroup.md)
+This cmdlet is used to create a new group
+
+
+### [Remove-AzureADMSGroup](Remove-AzureADMSGroup.md)
+This cmdlet is used to remove an existing group
+
+
+### [Set-AzureADMSGroup](Set-AzureADMSGroup.md)
+This cmdlet is used to update group information
+
+
+### [Get-AzureADMSGroupLifecyclePolicy](Get-AzureADMSGroupLifecyclePolicy.md)
+This cmdlet is used to retrieve the lifecycle policy of a group
+
+
+### [New-AzureADMSGroupLifecyclePolicy](New-AzureADMSGroupLifecyclePolicy.md)
+This cmdlet can be used to create a new lifecycle policy for a group
+
+
+### [Remove-AzureADMSGroupLifecyclePolicy](Remove-AzureADMSGroupLifecyclePolicy.md)
+This cmdlet can be used to remove a lifecycle policy for a group
+
+
+### [Add-AzureADMSLifecyclePolicyGroup](Add-AzureADMSLifecyclePolicyGroup.md)
+This cmdlet is used to add a new lifecycle policy to a group
+
+
+### [Remove-AzureADMSLifecyclePolicyGroup](Remove-AzureADMSLifecyclePolicyGroup.md)
+This cmdlet can be used to remove a lifecycle policy from a group
+
+
+### [Reset-AzureADMSLifeCycleGroup](Reset-AzureADMSLifeCycleGroup.md)
+This cmdlet is used to reset the lifecycle of a group
+
+
+### [Get-AzureADMSLifecyclePolicyGroup](Get-AzureADMSLifecyclePolicyGroup.md)
+This cmdlet is used to retrieve the lifecycle policy for a group.
+
 
 
 

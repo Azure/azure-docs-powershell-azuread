@@ -554,3 +554,53 @@ Set the thumbnail photo for a user
 ### [Update-AzureADSignedInUserPassword](Update-AzureADSignedInUserPassword.md)
 Updates the password for the signed-in user.
 
+### [Get-AzureADApplicationProxyApplication](Get-AzureADApplicationProxyApplication.md)
+Retrieve one or more Application Proxy applications
+
+### [Get-AzureADApplicationProxyApplicationConnectorGroup](Get-AzureADApplicationProxyApplicationConnectorGroup.md)
+Retrieve the Application Proxy connector group for an Application Proxy application
+
+### [Get-AzureADApplicationProxyConnector](Get-AzureADApplicationProxyConnector.md)
+Retrieve an Application Proxy connector
+
+### [Get-AzureADApplicationProxyConnectorGroup](Get-AzureADApplicationProxyConnectorGroup.md)
+Retrieve an Application Proxy connector group
+
+### [Get-AzureADApplicationProxyConnectorGroupMember](sGet-AzureADApplicationProxyConnectorGroupMembers.md)
+Retrieve the members of an Application Proxy connector group
+
+### [Get-AzureADApplicationProxyConnectorMemberOf](Get-AzureADApplicationProxyConnectorMemberOf.md)
+Retrieve the Application Proxy connector group an Application Proxy application is a member of
+
+### [New-AzureADApplicationProxyApplication](New-AzureADApplicationProxyApplication.md)
+Create a new Application Proxy Application
+
+### [New-AzureADApplicationProxyConnectorGroup](New-AzureADApplicationProxyConnectorGroup.md)
+Create a new Application Proxy Connector group
+
+### [Remove-AzureADApplicationProxyApplication](Remove-AzureADApplicationProxyApplication.md)
+Remove an Application Proxy Application
+
+### [Remove-AzureADApplicationProxyApplicationConnectorGroup](Remove-AzureADApplicationProxyApplicationConnectorGroup.md)
+
+Remove the Application Proxy Connector group from an Application Proxy Application 
+### [Remove-AzureADApplicationProxyConnectorGroup](Remove-AzureADApplicationProxyConnectorGroup.md)
+Remove an Application Proxy Connector group
+
+### [Set-AzureADApplicationProxyApplication](Set-AzureADApplicationProxyApplication.md)
+Set the properties of an Application Proxy Application
+
+### [Set-AzureADApplicationProxyApplicationConnectorGroup](Set-AzureADApplicationProxyApplicationConnectorGroup.md)
+Set the properties of an Application Proxy Application Connector group
+
+### [Set-AzureADApplicationProxyApplicationCustomDomainCertificate](Set-AzureADApplicationProxyApplicationCustomDomainCertificate.md)
+Set the custom domain certificate for an Application Proxy Application
+
+### [Set-AzureADApplicationProxyApplicationSingleSignOn](Set-AzureADApplicationProxyApplicationSingleSignOn.md)
+Set the single sign-on properties for an Application Proxy Application
+
+### [Set-AzureADApplicationProxyConnector](Set-AzureADApplicationProxyConnector.md)
+Set the properties for an Application Proxy Connector
+
+### [Set-AzureADApplicationProxyConnectorGroup](Set-AzureADApplicationProxyConnectorGroup.md)
+Set the properties for an Application Proxy Connector group
