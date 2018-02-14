@@ -133,5 +133,17 @@
     "Set-AzureADUserManager": "Users",
     "Set-AzureADUserPassword": "Users",
     "Set-AzureADUserThumbnailPhoto": "Users",
-    "Update-AzureADSignedInUserPassword": "Users"
+    "Update-AzureADSignedInUserPassword": "Users",
+    "Get-AzureADMSGroup": "Groups",
+    "New-AzureADMSGroup": "Groups",
+    "Remove-AzureADMSGroup": "Groups",
+    "Set-AzureADMSGroup": "Groups",
+    "Get-AzureADMSGroupLifecyclePolicy": "Groups",
+    "New-AzureADMSGroupLifecyclePolicy": "Groups",
+    "Set-AzureADMSGroupLifecyclePolicy": "Groups",
+    "Remove-AzureADMSGroupLifecyclePolicy": "Groups",
+    "Add-AzureADMSLifecyclePolicyGroup": "Groups",
+    "Remove-AzureADMSLifecyclePolicyGroup": "Groups",
+    "Reset-AzureADMSLifeCycleGroup": "Groups",
+    "Get-AzureADMSLifecyclePolicyGroup": "Groups"
 }

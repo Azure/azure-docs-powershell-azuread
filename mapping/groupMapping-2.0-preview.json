@@ -177,5 +177,23 @@
     "Set-AzureADUserPassword": "Users",
     "Set-AzureADUserThumbnailPhoto": "Users",
     "Update-AzureADSignedInUserPassword": "Users",
-    "Get-AzureADCurrentSessionInfo": "Connect to your directory"
+    "Get-AzureADCurrentSessionInfo": "Connect to your directory",
+    "Get-AzureADApplicationProxyApplication": "Application Proxy Application Management",
+    "Get-AzureADApplicationProxyApplicationConnectorGroup": "Application Proxy Application Management",
+    "Get-AzureADApplicationProxyConnector": "Application Proxy Connector Management",
+    "Get-AzureADApplicationProxyConnectorGroup": "Application Proxy Connector Management",
+    "Get-AzureADApplicationProxyConnectorGroupMembers": "Application Proxy Connector Management",
+    "Get-AzureADApplicationProxyConnectorMemberOf": "Application Proxy Connector Management",
+    "New-AzureADApplicationProxyApplication": "Application Proxy Application Management",
+    "New-AzureADApplicationProxyConnectorGroup": "Application Proxy Connector Management",
+    "Remove-AzureADApplicationProxyApplication": "Application Proxy Application Management",
+    "Remove-AzureADApplicationProxyApplicationConnectorGroup": "Application Proxy Application Management",
+    "Remove-AzureADApplicationProxyConnectorGroup": "Application Proxy Connector Management",
+    "Set-AzureADApplicationProxyApplication": "Application Proxy Application Management",
+    "Set-AzureADApplicationProxyApplicationConnectorGroup": "Application Proxy Connector Management",
+    "Set-AzureADApplicationProxyApplicationCustomDomainCertificate": "Application Proxy Application Management",
+    "Set-AzureADApplicationProxyApplicationSingleSignOn": "Application Proxy Application Management",
+    "Set-AzureADApplicationProxyConnector": "Application Proxy Connector Management",
+    "Set-AzureADApplicationProxyConnectorGroup": "Application Proxy Connector Management"
+
 }
