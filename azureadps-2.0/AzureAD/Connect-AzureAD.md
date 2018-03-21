@@ -62,7 +62,8 @@ PS C:\> Connect-AzureAD -Credential $Credential
 
 The first command gets the user credentials, and then stores them in the $Credential variable.
 
-The second command connects the current PowerShell session using the credentials in $Credential.
+The second command connects the current PowerShell session using the credentials in $Credential.  
+Please note that after the second command is completed $Credential variable becomes empty. Please see [Issue #169 on GitHub](https://github.com/Azure/azure-docs-powershell-azuread/issues/169) for more details.
 
 This account authenticates with Azure Active Directory using organizational ID credentials.
 You cannot use multi-factor authentication or Microsoft account credentials to run Azure Active Directory cmdlets with this account.
