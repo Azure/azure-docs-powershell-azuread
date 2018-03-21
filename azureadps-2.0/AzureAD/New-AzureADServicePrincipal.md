@@ -36,7 +36,7 @@ New-AzureADServicePrincipal [-AccountEnabled <String>]
 PS C:\>New-AzureADServicePrincipal -AccountEnabled $true -AppId $MyApp.AppId -AppRoleAssignmentRequired $true -DisplayName $App -Tags {WindowsAzureActiveDirectoryIntegratedApp}
 ```
 
-This command creates a service principal. The tag "-Tags {WindowsAzureActiveDirectoryIntegratedApp}" is used to have this service principal show up in the list of Integrated Applicatins in the Admin Portal.
+This command creates a service principal. The tag "-Tags {WindowsAzureActiveDirectoryIntegratedApp}" is used to have this service principal show up in the list of Integrated Applications in the Admin Portal.
 
 ## PARAMETERS
 
