@@ -1,5 +1,9 @@
 {
     "Add-AzureADAdministrativeUnitMember": "Administrative Units",
+    "Get-AzureADMSIdentityProvider": "Identity Provider Management",
+    "New-AzureADMSIdentityProvider": "Identity Provider Management",
+    "Remove-AzureADMSIdentityProvider": "Identity Provider Management",
+    "Set-AzureADMSIdentityProvider": "Identity Provider Management",
     "Add-AzureADApplicationOwner": "Applications",
     "Add-AzureADApplicationPolicy": "Applications",
     "Add-AzureADDeviceRegisteredOwner": "Devices",
