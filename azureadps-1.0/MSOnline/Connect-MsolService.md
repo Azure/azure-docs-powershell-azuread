@@ -32,7 +32,7 @@ Connect-MsolService [-AdGraphAccessToken <String>] [-MsGraphAccessToken <String>
 
 ## DESCRIPTION
 The **Connect-MsolService** cmdlet attempts to initiate a connection to Azure Active Directory.
-You must specify a credential, as a **PSCredential** object, or specify the _CurrentCredentials_ parameter to use the credentials of the current user.
+You must specify a credential as a **PSCredential** object.
 
 This cmdlet may return a warning or error if the version of the module is out of date.
 
