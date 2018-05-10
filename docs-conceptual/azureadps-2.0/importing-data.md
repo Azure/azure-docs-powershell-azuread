@@ -92,7 +92,7 @@ Foreach ($NewUser in $NewUsers) {
 ### Construct the UserPrincipalName, the MailNickName and the DisplayName from the input data in the file 
 ###
 
-    $UPN = $NewUser.Firstname + "." + $NewUser.LastName + "@" + $DirectoryName
+    $UPN = $NewUser.Firstname + "." + $NewUser.LastName + "@" + $Directory
     $DisplayName = $NewUser.Firstname + " " + $NewUser.Lastname + " (" + $NewUser.Department + ")"
     $MailNickName = $NewUser.Firstname + "." + $NewUser.LastName
 
