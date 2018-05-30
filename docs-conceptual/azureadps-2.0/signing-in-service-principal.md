@@ -29,9 +29,12 @@ Connect-AzureAD
 
 ## Create a self signed certificate
 
-We'll use a self signed certificate for this example, so let's create one. You'll want to replace the <password> string inthe below example with a password of your choice, this is the password that is used to create the certificate file.
+We'll use a self signed certificate for this example, so let's create one. You'll want to replace the <password> string in the below example with a password of your choice, this is the password that is used to create the certificate file.
 
 ```powershell
+$currentDate = Get-Date
+$endDate  = $currentDate.AddYears(1)
+$notAfter  = $endDate.AddYears(1)
 $pwd = "<password>"
 $thumb = (New-SelfSignedCertificate -DnsName "drumkit.onmicrosoft.com" -CertStoreLocation "cert:\LocalMachine\My"  -KeyExportPolicy Exportable -Provider "Microsoft Enhanced RSA and AES Cryptographic Provider" -NotAfter $notAfter).Thumbprint
 $pwd = ConvertTo-SecureString -String $pwd -Force -AsPlainText
@@ -77,7 +80,7 @@ This concludes the setup portion of the example.
 ## Signing in into your tenant
 
 We can now sign in to the directory using the new service principal. 
-> Note: if you;re running all these commands in one script, as you probably would do when trying this out, please remember that Azure AD requires some time to sync all the information you just entered through all of its components. In that case, add a Sleep cmdlet call here, this will make the script processing pause for 5 seconds:
+> Note: if you're running all these commands in one script, as you probably would do when trying this out, please remember that Azure AD requires some time to sync all the information you just entered through all of its components. In that case, add a Sleep cmdlet call here, this will make the script processing pause for 5 seconds:
 
 ```powershell 
 Sleep -s 5 
