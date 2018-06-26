@@ -16,15 +16,17 @@ Updates a device.
 
 ```
 Set-AzureADDevice -ObjectId <String> [-AccountEnabled <Boolean>]
- [-AlternativeSecurityIds <System.Collections.Generic.List`1[Microsoft.Open.AzureAD.Model.AlternativeSecurityId]>]
- [-ApproximateLastLogonTimeStamp <DateTime>] [-DeviceId <String>] [-DeviceMetadata <String>]
- [-DeviceObjectVersion <Int32>] [-DeviceOSType <String>] [-DeviceOSVersion <String>]
- [-DevicePhysicalIds <System.Collections.Generic.List`1[System.String]>] [-DeviceTrustType <String>]
+ [-DeviceOSType <String>] [-DeviceOSVersion <String>]
  [-DisplayName <String>] [-IsCompliant <Boolean>] [-IsManaged <Boolean>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The **Set-AzureADDevice** cmdlet updates a device in Azure Active Directory (AD).
+The **Set-AzureADDevice** cmdlet updates a [device](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/device) in Azure Active Directory (AD).
+
+>[!NOTE]
+>DeviceOSType and DeviceOSVersion are configured during registration and should be updated by MDM apps.
+>
+>IsCompliant and IsManaged should only be updated by Intune for any device OS type or by an [approved MDM app](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm) for Windows OS devices. These are used by conditional access policies.
 
 ## EXAMPLES
 
@@ -51,124 +53,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -AlternativeSecurityIds
-Specifies alternative security IDs.
-```yaml
-Type: System.Collections.Generic.List`1[Microsoft.Open.AzureAD.Model.AlternativeSecurityId]
-Parameter Sets: (All)
-Aliases: 
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ApproximateLastLogonTimeStamp
-```yaml
-Type: DateTime
-Parameter Sets: (All)
-Aliases: 
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -DeviceId
-Specifies the device ID.
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases: 
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -DeviceMetadata
-The device metadata for this device
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases: 
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -DeviceObjectVersion
-Specifies the object version of the device.
-
-```yaml
-Type: Int32
-Parameter Sets: (All)
-Aliases: 
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -DeviceOSType
 Specifies the operating system.
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases: 
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -DeviceOSVersion
-Specifies the operating sytem version.
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases: 
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -DevicePhysicalIds
-Specifies the physical ID.
-```yaml
-Type: System.Collections.Generic.List`1[System.String]
-Parameter Sets: (All)
-Aliases: 
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -DeviceTrustType
-The device trust type
 
 ```yaml
 Type: String
@@ -253,7 +139,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [Get-AzureADDevice](./Get-AzureADDevice.md)
-
-[New-AzureADDevice](./New-AzureADDevice.md)
 
 [Remove-AzureADDevice](./Remove-AzureADDevice.md)
