@@ -273,7 +273,7 @@ These groups cannot be updated or removed.
 
 * ObjectId. The group's unique object ID.
 
-* Proxy Addresses. The proxy addresses associated with this group (for mail-enabled groups only).
+* ProxyAddresses. The proxy addresses associated with this group (for mail-enabled groups only).
 
 * ValidationStatus. Whether or not the group has any errors.
 
