@@ -69,7 +69,7 @@ This command gets the specified user.
 
 ### Example 5: Get a user by userPrincipalName
 ```
-PS C:\>Get-AzureADUser -Filter "startswith(Title,'Sales')"
+PS C:\>Get-AzureADUser -Filter "startswith(jobTitle,'Sales')"
 ```
 
 This command gets all the users whos title starts with sales. ie Sales Manager and Sales Assistant.
