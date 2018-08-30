@@ -29,6 +29,11 @@ Get-MsolDevice [-All] [-ReturnRegisteredOwners] [<CommonParameters>]
 Get-MsolDevice -DeviceId <Guid> [<CommonParameters>]
 ```
 
+### GetDeviceByLogonTimestamp
+```
+Get-MsolDevice -LogonTimeBefore <DateTime> [<CommonParameters>]
+```
+
 ### GetDeviceByObjectId
 ```
 Get-MsolDevice -ObjectId <Guid> [<CommonParameters>]
@@ -39,6 +44,10 @@ Get-MsolDevice -ObjectId <Guid> [<CommonParameters>]
 Get-MsolDevice -RegisteredOwnerUpn <String> [<CommonParameters>]
 ```
 
+### GetDeviceIncludeSystemManaaged
+```
+Get-MsolDevice -IncludeSystemManagedDevices [<CommonParameters>]
+```
 ## DESCRIPTION
 The **Get-MsolDevice** cmdlet gets an individual device, or a list of devices.
 
@@ -88,6 +97,20 @@ PS C:\>Get-MsolDevice -RegisteredOwnerUpn "pattifuller@contoso.com"
 
 This command gets all the devices registered by the user with the UPN named pattifuller@contoso.com.
 
+### Example 7: Get device by activity (logon) timestamp
+```
+PS C:\>Get-MsolDevice -LogonTimeBefore 'January 1, 2017 12:00:00 AM'
+```
+
+Ths command gets all the devices with the ApproximateLastLogonTimestamp before January 1, 2017
+
+### Example 8: Get devices and include system managed devices
+```
+PS C:\>Get-MsolDevice -all -IncludeSystemManagedDevives
+```
+
+This command gets all devices and includes auto-pilot devices and other devices that are used with Intune (e.g. EAS)
+
 ## PARAMETERS
 
 ### -All
@@ -117,6 +140,35 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByPropertyName, ByValue)
+Accept wildcard characters: False
+```
+
+### -IncludeSystemManagedDevices
+Indicates that this cmdlet includes devices that are managed by the system such as auto-pilot.
+
+```yaml
+Type: SwitchParamater
+Parameter Sets: GetDeviceIncludeSystemManaged
+Aliases: 
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+### -LogonTimeBefore
+Specified the date (UTC) used to filter the device list by.
+
+```yaml
+Type: DateTime
+Parameter Sets: GetDeviceByLogonTimestamp
+Aliases: 
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
