@@ -109,7 +109,7 @@ Ths command gets all the devices with the ApproximateLastLogonTimestamp before J
 PS C:\>Get-MsolDevice -all -IncludeSystemManagedDevives
 ```
 
-This command gets all devices and includes auto-pilot devices and other devices that are used with Intune (e.g. EAS)
+This command gets all devices and includes devices such as auto-pilot that are system managed.
 
 ## PARAMETERS
 
