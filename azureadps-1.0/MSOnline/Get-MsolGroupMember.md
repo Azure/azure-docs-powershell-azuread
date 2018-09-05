@@ -123,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -MemberObjectTypes
-Specifies an array of member object types.
+Specifies an array of member object types. Valid values are User, ServicePrincipal.
 
 ```yaml
 Type: String[]
