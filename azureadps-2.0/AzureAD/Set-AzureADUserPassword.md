@@ -24,9 +24,17 @@ The **Set-AzureADUserPassword** cmdlet sets the password for a user in Azure Act
 
 ## EXAMPLES
 
-### Example 1: Set a user's password
+### Example 1: Set a user's password using ObjectID and convert text based password to secure string
 ```
-PS C:\>Set-AzureADUserPassword -ObjectId  "df19e8e6-2ad7-453e-87f5-037f6529ae16" -Password $password
+PS C:\>$YourPassword = 'PassCompli@21'
+PS C:\>$SecurePassword = $YourPassword | ConvertTo-SecureString -AsPlainText -Force
+PS C:\>Set-AzureADUserPassword -ObjectId  "df19e8e6-2ad7-453e-87f5-037f6529ae16" -Password $SecurePassword
+```
+
+### Example 2: Set a user's password using UserPrincpalName as ObjectID and using Get-Credential for password
+```
+PS C:\>$SecurePassword = (Get-Credential).Password
+PS C:\>Set-AzureADUserPassword -ObjectId 'UserPrincipalName@domain.onmicrosoft.com' -Password $SecurePassword
 ```
 
 This command sets the specified user's password.
