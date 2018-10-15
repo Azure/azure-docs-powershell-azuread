@@ -105,6 +105,20 @@ Connect-AzureAD -TenantId $tenant.ObjectId -ApplicationId  $sp.AppId -Certificat
 
 This command authenticates the user to Azure Active Directory as a service principal.
 
+### Example 4: Connect a session using an existing token associated with the active azure context
+```
+# login
+Login-AzureRmAccount
+# perform other Azure operations...
+
+$currentAzureContext = Get-AzureRmContext
+$tenantId = $currentAzureContext.Tenant.Id
+$accountId = $currentAzureContext.Account.Id
+Connect-AzureAD -TenantId $tenantId -AccountId $accountId
+```
+
+This command authenticates the user to Azure Active Directory as the user associated with the current azure context, using cached tokens as possible to avoid credential re-prompting during Connect-AzureAD.
+
 ## PARAMETERS
 
 ### -AadAccessToken
