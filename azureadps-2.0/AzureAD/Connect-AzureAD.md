@@ -62,7 +62,8 @@ PS C:\> Connect-AzureAD -Credential $Credential
 
 The first command gets the user credentials, and then stores them in the $Credential variable.
 
-The second command connects the current PowerShell session using the credentials in $Credential.
+The second command connects the current PowerShell session using the credentials in $Credential.  
+Please note that after the second command is completed $Credential variable becomes empty. Please see [Issue #169 on GitHub](https://github.com/Azure/azure-docs-powershell-azuread/issues/169) for more details.
 
 This account authenticates with Azure Active Directory using organizational ID credentials.
 You cannot use multi-factor authentication or Microsoft account credentials to run Azure Active Directory cmdlets with this account.
@@ -103,6 +104,20 @@ Connect-AzureAD -TenantId $tenant.ObjectId -ApplicationId  $sp.AppId -Certificat
 ```
 
 This command authenticates the user to Azure Active Directory as a service principal.
+
+### Example 4: Connect a session using an existing token associated with the active azure context
+```
+# login
+Login-AzureRmAccount
+# perform other Azure operations...
+
+$currentAzureContext = Get-AzureRmContext
+$tenantId = $currentAzureContext.Tenant.Id
+$accountId = $currentAzureContext.Account.Id
+Connect-AzureAD -TenantId $tenantId -AccountId $accountId
+```
+
+This command authenticates the user to Azure Active Directory as the user associated with the current azure context, using cached tokens as possible to avoid credential re-prompting during Connect-AzureAD.
 
 ## PARAMETERS
 
@@ -381,5 +396,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Disconnet-AzureAD](./Disconnect-AzureAD.md)
+[Disconnect-AzureAD](./Disconnect-AzureAD.md)
 
