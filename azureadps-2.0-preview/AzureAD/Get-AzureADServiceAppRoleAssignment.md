@@ -34,6 +34,19 @@ The command stores the ID in the $ServicePrincipalId variable.
 
 The second command gets the application role assignments for the service principal in identified by $ServicePrincipalId. 
 
+### Example 2: Retrieve the user count of an application using its display name
+```
+PS C:\> $AppName = Read-Host -Prompt 'Input the display name of your app'
+PS C:\> $SpId = (Get-AzureADServicePrincipal -Filter "displayName eq '$AppName'").ObjectId
+PS C:\> (Get-AzureADServiceAppRoleAssignment -ObjectId $SpId -All $true).Count # this row outputs the number of users of the app
+```
+
+The first command gets the user to input the name of their app, and stores it in a variable.
+
+The second command retrieves the service principal that belongs to the app with the assigned displayname by using the [Get-AzureADServicePrincipal](./Get-AzureADServicePrincipal.md) cmdlet. It saves the principal's id in a variable.
+
+The third command gets the application role assignments for the service principal id of the application fetched using the first command. It then outputs the count of those assignments, which is also the count of the users for the application.
+
 ## PARAMETERS
 
 ### -All
@@ -87,6 +100,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ## OUTPUTS
+
+All of the assignments of users to the service principal that is identified by its id.
 
 ## NOTES
 
