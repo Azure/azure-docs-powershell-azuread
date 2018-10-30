@@ -128,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The Id pf the policy for which you want to set values.
+The Id of the policy for which you want to set values.
 
 ```yaml
 Type: String
