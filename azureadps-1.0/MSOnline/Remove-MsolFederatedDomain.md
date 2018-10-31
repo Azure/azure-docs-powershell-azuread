@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Online.Identity.Federation.PowerShell.dll-Help.xml
 online version:
 schema: 2.0.0

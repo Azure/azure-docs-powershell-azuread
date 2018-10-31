@@ -31,7 +31,6 @@ $roleTemplate = Get-AzureADDirectoryRoleTemplate | ? { $_.DisplayName -eq "Guest
 
 # Enable an instance of the DirectoryRole template
 Enable-AzureADDirectoryRole -RoleTemplateId $roleTemplate.ObjectId
-
 ```
 
 The first command gets an inviter role that has the display name Guest Inviter by using the [Get-AzureADDirectoryRoleTemplate](./Get-AzureADDirectoryRoleTemplate.md) cmdlet. The command stores Guest Inviter in the $roleTemplate variable. 

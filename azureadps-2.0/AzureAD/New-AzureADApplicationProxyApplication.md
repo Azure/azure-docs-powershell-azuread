@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.Custom.dll-Help.xml
 online version: 
 schema: 2.0.0
@@ -39,7 +39,6 @@ VerifiedCustomDomainCertificatesMetadata :
 VerifiedCustomDomainKeyCredential        : 
 VerifiedCustomDomainPasswordCredential   : 
 SingleSignOnSettings                     : 
-
 ```
 Example 1: Creating a new application with only the basic required settings, and the default domain for applications.
 
@@ -62,11 +61,10 @@ VerifiedCustomDomainCertificatesMetadata : class OnPremisesPublishingVerifiedCus
                                              IssueDate: 11/9/2017 5:54:29
                                              ExpiryDate: 11/9/2019 5:54:29
                                            }
-                                           
+
 VerifiedCustomDomainKeyCredential        : 
 VerifiedCustomDomainPasswordCredential   : 
 SingleSignOnSettings                     :  
-
 ```
 Example 2: Creating a new application that uses a custom domain and sets several optional flags.
 

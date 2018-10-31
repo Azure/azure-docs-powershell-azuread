@@ -39,11 +39,10 @@ VerifiedCustomDomainCertificatesMetadata : class OnPremisesPublishingVerifiedCus
                                              IssueDate: 11/9/2017 5:54:29
                                              ExpiryDate: 11/9/2019 5:54:29
                                            }
-                                           
+
 VerifiedCustomDomainKeyCredential        : 
 VerifiedCustomDomainPasswordCredential   : 
 SingleSignOnSettings                     :  
-
 ```
 
 ## PARAMETERS

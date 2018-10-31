@@ -131,7 +131,7 @@ Updates an application.
 Sets the logo for an Application
 
 
-##Devices
+## Devices
 
 ### [Add-AzureADDeviceRegisteredOwner](Add-AzureADDeviceRegisteredOwner.md)
 Adds a registered owner for a device.
@@ -167,7 +167,7 @@ Removes a registered user from a device.
 Updates a device.
 
 
-##Directory Roles
+## Directory Roles
 
 ### [Add-AzureADDirectoryRoleMember](Add-AzureADDirectoryRoleMember.md)
 Adds a member to a directory role.
@@ -188,7 +188,7 @@ Gets directory role templates.
 Removes a member of a directory role.
 
 
-##Groups
+## Groups
 
 ### [Add-AzureADGroupMember](Add-AzureADGroupMember.md)
 Adds a member to a group.

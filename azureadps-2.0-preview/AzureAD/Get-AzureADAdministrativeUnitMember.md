@@ -35,10 +35,10 @@ The acceptable values for this parameter are:
 * SilentlyContinue
 * Stop
 * Suspend
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: infa
+  ```yaml
+  Type: ActionPreference
+  Parameter Sets: (All)
+  Aliases: infa
 
 Required: False
 Position: Named

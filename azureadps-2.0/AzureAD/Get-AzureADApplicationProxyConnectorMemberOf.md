@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
 online version: 
 schema: 2.0.0
@@ -27,7 +27,6 @@ PS C:\> Get-AzureADApplicationProxyConnectorMemberOf -Id 4c8b06e7-9751-41d5-8e5e
 Id                                   Name                ConnectorGroupType IsDefault
 --                                   ----                ------------------ ---------
 a39b9095-8dc8-4d3a-86c3-e7b5c3f0fb84 Application Servers applicationProxy       False 
-
 ```
 
 

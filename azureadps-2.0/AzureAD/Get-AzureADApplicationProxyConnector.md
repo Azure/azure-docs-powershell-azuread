@@ -50,8 +50,6 @@ PS C:\> Get-AzureADApplicationProxyConnector -Id 4c8b06e7-9751-41d5-8e5e-48e9b9b
 Id                                   MachineName                      ExternalIp     Status
 --                                   -----------                      ----------     ------
 4c8b06e7-9751-41d5-8e5e-48e9b9bc2c66 AWCyclesApps.adventure-works.com 52.165.149.115 active 
-
-
 ```
 Example 2: Retrieve information for a specific connector 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
 online version:
 schema: 2.0.0
@@ -39,7 +39,7 @@ PS C:\> Add-MsolRoleMember -RoleName "Company Administrator" -RoleMemberEmailAdd
 ```
 
 This command adds elisadaugherty@contoso.com to the Company Administrator role.
-To get the list of values for the _RoleName_ parameter, use the [Get-MsolRole](./Get-MsolRole.md) cmdlet.
+To get the list of values for the *RoleName* parameter, use the [Get-MsolRole](./Get-MsolRole.md) cmdlet.
 
 ## PARAMETERS
 

@@ -29,7 +29,6 @@ Id                                   MachineName     ExternalIp   Status
 --                                   -----------     ----------   ------
 969eddd2-ad11-47ca-92ba-4442b9901edf vm-test-010 13.93.84.164 active
 ea4a4b91-aace-4e8b-b81a-b2f6429a477e test-vm-conn1 52.18.9.115 active
-
 ```
 
 The output of this command, showing all the connectors in the group.

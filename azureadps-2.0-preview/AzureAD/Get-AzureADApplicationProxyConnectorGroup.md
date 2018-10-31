@@ -40,7 +40,6 @@ Id                                   Name                ConnectorGroupType IsDe
 1a0bc41a-8663-4da3-934c-214640663a33 Default             applicationProxy        True
 68348ab6-4cc5-4c8c-a0f0-7a43db2f4ff6 Guest Applications  applicationProxy       False
 a39b9095-8dc8-4d3a-86c3-e7b5c3f0fb84 Application Servers applicationProxy       False
-
 ``` 
 Example 1: Retrieve all connector groups
 
@@ -51,7 +50,6 @@ PS C:\Users\nanaeh\Desktop\Microsoft.Open.AzureAD.Module.Preview> Get-AzureADApp
 Id                                   Name                ConnectorGroupType IsDefault
 --                                   ----                ------------------ ---------
 a39b9095-8dc8-4d3a-86c3-e7b5c3f0fb84 Application Servers applicationProxy       False 
-
 ```
 Example 2: Retrieve a specific connector groups
 

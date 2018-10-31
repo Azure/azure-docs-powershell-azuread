@@ -27,8 +27,6 @@ PS C:\> Get-AzureADApplicationProxyApplicationConnectorGroup -ObjectId 8d6c6684-
 Id                                   Name                ConnectorGroupType IsDefault
 --                                   ----                ------------------ ---------
 a39b9095-8dc8-4d3a-86c3-e7b5c3f0fb84 Application Servers applicationProxy       False 
-
-
 ```
 
 ## PARAMETERS

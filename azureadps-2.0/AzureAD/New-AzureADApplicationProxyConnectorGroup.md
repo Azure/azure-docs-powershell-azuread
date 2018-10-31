@@ -27,7 +27,6 @@ PS C:\> New-AzureADApplicationProxyConnectorGroup -Name "Backup Application Serv
 Id                                   Name                       ConnectorGroupType IsDefault
 --                                   ----                       ------------------ ---------
 d533d7b1-fd92-49e8-a200-3e7dcf7c2ab5 Backup Application Servers applicationProxy       False 
-
 ```
 Example 1: Create a new Connector Group with the name "Backup Application Servers"
 

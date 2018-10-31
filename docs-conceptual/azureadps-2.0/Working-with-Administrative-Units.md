@@ -17,9 +17,9 @@ ms.reviewer: rodejo
 
 Here are some demo scripts that you can use to learn how to use Azure AD PowerShell to work with Administrative Units. These scripts form a complete demo - You'll setup a demo environment for Administrative Units in your directory, see how to create and populate Administrative Units as a Global Admin and assign roles to delegated admins, and you'll see the effects of your actions when you sign in as a delegated admin, and finally there is a cleanup script to clean up all the object we created in this demo.
 
-#Demo scripts
+# Demo scripts
 
-##Setup.ps1	
+## Setup.ps1 
 Run this script initially to create the users and admins used later in the demo.
 ```powershell
 # Login as Global Administrator
@@ -45,10 +45,9 @@ Enable-AzureADDirectoryRole -RoleTemplateId "729827e3-9c14-49f7-bb1b-9608f156bbb
 
 # Enable the User Account Administrator Role using the templateId GUID for the role
 Enable-AzureADDirectoryRole -RoleTemplateId "fe930be7-5e62-47db-91af-98c3a49a38b1"
-
 ```
 
-##Global Admin.ps1	
+## Global Admin.ps1  
 Run this script after the setup script to walk through the experience of a global admin creating and populating the AUs, and assigning the respective AU-scoped User Account and Helpdesk Admins.
 ```powershell
 #Login as Global Administrator
@@ -136,7 +135,7 @@ Get-AzureADScopedRoleMembership -ObjectId $eastCoastAU.ObjectId | fl *
 ###################################################################################
 ```
 
-##AU UA Admin.ps1	
+## AU UA Admin.ps1   
 Run this script after the Global Admin script to walk through the experience of an AU-scoped User Account Admin updating profile information, resetting passwords, and assigning licenses for users in their AU.
 ```powershell
 #Login as AU-scoped User Account Admin (WestCoastUserAdmin@<domain>, PS: Windows2000)
@@ -169,7 +168,7 @@ $eastCoastUser1 = Get-AzureADUser -Filter "UserPrincipalName eq 'EastCoastUser1@
 Set-AzureADUserPassword -ObjectId $eastCoastUser1.ObjectId -Password $password
 ```
 
-##AU Helpdesk Admin.ps1	
+## AU Helpdesk Admin.ps1 
 Run this script after the Global Admin script to walk through the experience of an AU-scoped Helpdesk Admin resetting passwords for users in their AU.
 ```powershell
 #Login as East Coast Helpdesk Admin (EastCoastHelpdeskAdmin@<domain>, PS: Windows2000)
@@ -188,7 +187,7 @@ $westCoastUser1 = Get-AzureADUser -Filter "UserPrincipalName eq 'WestCoastUser1@
 Set-AzureADUserPassword -ObjectId $westCoastUser1.ObjectId -Password $password
 ```
 
-##Cleanup.ps1	
+## Cleanup.ps1   
 Run this script to delete the created users and AUs
 ```powershell
 #Login as a Global Admin
@@ -263,6 +262,5 @@ Remove-AzureADUser -ObjectId $mobileadmin.ObjectId
 
 Get-AzureADUser | ft DisplayName, UserPrincipalName
 Get-AzureADAdministrativeUnit
-
 ```
 

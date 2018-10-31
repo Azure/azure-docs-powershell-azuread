@@ -27,7 +27,7 @@ Get-AzureADServicePrincipal | % {
   $_.AppRoles | % { $appRoles[$_.Id] = $_.DisplayName }
 
   # Get the app role assignments for this app, and add a field for the app role name
-  Get-AzureADServiceAppRoleAssignment -ObjectId ($_.ObjectId) | Select ResourceDisplayName, PrincipalDisplayName,  Id | % {  $_ | Add-Member "AppRoleDisplayName" $appRoles[$_.Id] -Passthru
-  }
+  Get-AzureADServiceAppRoleAssignment -ObjectId ($_.ObjectId) | Select ResourceDisplayName, PrincipalDisplayName,  Id | % {  $_ | Add-Member "AppRoleDisplayName" $appRoles[$_.Id] -Passthru
+  }
 }
 ```

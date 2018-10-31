@@ -106,7 +106,6 @@ Foreach ($NewUser in $NewUsers) {
 ### End the Foreach loop
 ###
     }
-
 ```powershell
 
 > Note: After succesfully executing this script the new users will have been created in your Azure Active Directory. Not ethat since we have specified -AccountEnabled = $True, the new users can immediately use their password to sign in to the directory. If you do not want the users accounts to be active directly after running the script, you can specify -AccountEnabled = $False, and enable the accounts later using the Set-AzureADUser cmdlet.

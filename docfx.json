@@ -108,19 +108,19 @@
         "azureadps-1.0/**/*.md": "RobdeJong",
         "azureadps-2.0/**/*.md": "RobdeJong",
         "azureadps-2.0-preview/**/*.md": "RobdeJong",
-        "docs-conceptual/**/*.md": "RobdeJong"        
+        "docs-conceptual/**/*.md": "RobdeJong"
       },
       "ms.manager": {
         "azureadps-1.0/**/*.md": "kbrint",
         "azureadps-2.0/**/*.md": "kbrint",
         "azureadps-2.0-preview/**/*.md": "kbrint",
-        "docs-conceptual/**/*.md": "kbrint"        
+        "docs-conceptual/**/*.md": "kbrint"
       },
       "ms.service": {
         "azureadps-1.0/**/*.md": "active-directory",
         "azureadps-2.0/**/*.md": "active-directory",
         "azureadps-2.0-preview/**/*.md": "active-directory",
-        "docs-conceptual/**/*.md": "active-directory"        
+        "docs-conceptual/**/*.md": "active-directory"
       }
     },
     "globalMetadata": {
@@ -133,6 +133,7 @@
       "breadcrumb_path": "/powershell/bread/toc.json",
       "ms.devlang": "powershell"
     },
-    "dest": "azureps-azuread"
+    "dest": "azureps-azuread",
+    "markdownEngineName": "markdig"
   }
 }

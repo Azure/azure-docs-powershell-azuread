@@ -26,11 +26,10 @@ The Set-AzureADApplicationProxyApplicationSingleSignOn cmdlet allows you to set 
 PS C:\> Set-AzureADApplicationProxyApplicationSingleSignOn -ObjectId 4eba5342-8d17-4eac-a1f6-62a0de26311e -SingleSignOnMode OnPremisesKerberos -KerberosInternalApplicationServicePrincipalName "http/www.adventure-works.com" -KerberosDelegatedLoginIdentity OnPremisesUserPrincipalName
 ```
 Example 1: Assign an application to use Kerberos Constrained Delegation, and specify required parameters. 
- 
+
 ### Example 2
 ```
 PS C:\> Set-AzureADApplicationProxyApplicationSingleSignOn -ObjectId 4eba5342-8d17-4eac-a1f6-62a0de26311e -SingleSignOnMode None
-
 ```
 Example 2: Remove SSO from an application
 

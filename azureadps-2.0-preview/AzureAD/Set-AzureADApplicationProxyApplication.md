@@ -39,8 +39,6 @@ VerifiedCustomDomainCertificatesMetadata :
 VerifiedCustomDomainKeyCredential        : 
 VerifiedCustomDomainPasswordCredential   : 
 SingleSignOnSettings                     :  
-
-
 ```
 
 Example 1: Add the link translation feature to an application

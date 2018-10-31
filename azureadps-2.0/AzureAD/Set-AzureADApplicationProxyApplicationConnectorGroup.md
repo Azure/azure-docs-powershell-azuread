@@ -23,7 +23,6 @@ The Set-AzureADApplicationProxyApplicationConnectorGroup cmdlet sets the connect
 ### Example 1
 ```
 PS C:\> Set-AzureADApplicationProxyApplicationConnectorGroup -ObjectId 59462d3c-a1bc-40a0-9bed-be799357ebce -ConnectorGroupId a39b9095-8dc8-4d3a-86c3-e7b5c3f0fb84 
-
 ```
 Example 1: Set a new Connector Group for a specific application
 
