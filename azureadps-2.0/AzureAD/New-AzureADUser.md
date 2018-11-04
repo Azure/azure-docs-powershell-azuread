@@ -18,7 +18,7 @@ Creates an AD user.
 New-AzureADUser [-ExtensionProperty <System.Collections.Generic.Dictionary`2[System.String,System.String]>]
  -AccountEnabled <Boolean> [-City <String>] [-Country <String>] [-CreationType <String>] [-Department <String>]
  -DisplayName <String> [-FacsimileTelephoneNumber <String>] [-GivenName <String>] [-IsCompromised <Boolean>]
- [-ImmutableId <String>] [-JobTitle <String>] [-MailNickName <String>] [-Mobile <String>]
+ [-ImmutableId <String>] [-JobTitle <String>] -MailNickName <String> [-Mobile <String>]
  [-OtherMails <System.Collections.Generic.List`1[System.String]>] [-PasswordPolicies <String>]
  -PasswordProfile <PasswordProfile> [-PhysicalDeliveryOfficeName <String>] [-PostalCode <String>]
  [-PreferredLanguage <String>] [-ShowInAddressList <Boolean>]
@@ -252,7 +252,7 @@ Type: String
 Parameter Sets: (All)
 Aliases: 
 
-Required: False
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
