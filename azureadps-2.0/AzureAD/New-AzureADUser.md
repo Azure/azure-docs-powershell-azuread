@@ -76,17 +76,6 @@ ObjectId                             DisplayName UserPrincipalName              
 
 In the first step we create a new object called "$extension" with object type "System.Collections.Generic.Dictionary". In the next step we add the extensionattribute 's name and value to the new object, and we display the object to see that we indeed created the correct object to serve as a parameter for the New-AzureADUser cmdlet.
 In the last step we create the new user and set the extension attribute value.
-	### Example 3: Create a user for use with a federated domain
- ```powershell
-#Where Federated.Contoso.com is a Federated domain, ImmutableID is required
-New-AzureADUser -DisplayName "NewUser" -PasswordProfile $PasswordProfile -UserPrincipalName "NewUser@Federated.Contoso.com" -AccountEnabled $true -MailNickName "NewUser" -ImmutableID 'JQBJ4izMgEi8btONjOqIDA=='
-```
-```
-ObjectId                             DisplayName UserPrincipalName                 UserType
---------                             ----------- -----------------                 --------
-5e8b0f4d-2cd4-4e17-9467-b0f6a5c0c4d0 NewUser     NewUser@Federated.Contoso.com     Member
-```
- This creates a new user and associates it to a federated account with the specified ImmutableID
 
 ### Example 3: Create a user for use with a federated domain
  ```powershell
