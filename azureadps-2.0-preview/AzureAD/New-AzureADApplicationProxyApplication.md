@@ -19,13 +19,15 @@ New-AzureADApplicationProxyApplication -DisplayName <String> -ExternalUrl <Strin
 ```
 
 ## DESCRIPTION
-The New-AzureADApplicationProxyApplication cmdlet creates a new application configured for Application Proxy in Azure Active Directory. To ensure this application is usable, please also make sure you assign users and configure SSO if needed. Note that without specifying a ConnectorGroupId, this application by default will use the �Default� connector group in your tenant.
+The New-AzureADApplicationProxyApplication cmdlet creates a new application configured for Application Proxy in Azure Active Directory. To ensure this application is usable, please also make sure you assign users and configure SSO if needed. Note that without specifying a ConnectorGroupId, this application by default will use the **Default** connector group in your tenant.
 
 ## EXAMPLES
 
 ### Example 1
 ```
-PS C:\> New-AzureADApplicationProxyApplication -DisplayName "Finance Tracker" -ExternalUrl "https://finance-awcycles.msappproxy.net/" -InternalUrl "http://finance/" 
+PS C:\> New-AzureADApplicationProxyApplication -DisplayName "Finance Tracker" `
+ -ExternalUrl "https://finance-awcycles.msappproxy.net/" `
+ -InternalUrl "http://finance/" 
 
 
 ExternalAuthenticationType               : AadPreAuthentication
@@ -45,7 +47,10 @@ Example 1: Creating a new application with only the basic required settings, and
 
 ### Example 2
 ```
-PS C:\> New-AzureADApplicationProxyApplication -DisplayName "HR Resources" -ExternalUrl "https://hr.adventure-works.com/" -InternalUrl "http://hr.adventure-works.com/" -ApplicationServerTimeout Long 
+PS C:\> New-AzureADApplicationProxyApplication -DisplayName "HR Resources" `
+ -ExternalUrl "https://hr.adventure-works.com/" `
+ -InternalUrl "http://hr.adventure-works.com/" `
+ -ApplicationServerTimeout Long 
 
 
 ExternalAuthenticationType               : AadPreAuthentication
