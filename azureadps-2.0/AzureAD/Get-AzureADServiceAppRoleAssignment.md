@@ -34,6 +34,13 @@ The command stores the ID in the $ServicePrincipalId variable.
 
 The second command gets the application role assignments for the service principal in identified by $ServicePrincipalId. 
 
+### Example 2: Retrieve the application role assignments for a specific service principal
+```
+PS C:\> $serviceprincipal = Get-AzureADServicePrincipal -SearchString "Azure AD Connector - Logic Apps"
+PS C:\> Get-AzureADServiceAppRoleAssignment -ObjectId $serviceprincipal.ObjectId | Select *
+```
+In this example the Service Principal named Azure AD Connector - Logic Apps" is retrieved bij using a searchstring. The second command gets the role assignments with all it's properties. 
+
 ## PARAMETERS
 
 ### -All
