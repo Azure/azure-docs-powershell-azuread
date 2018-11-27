@@ -87,6 +87,9 @@ Default value: None
 Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
+> [!WARNING]
+> If the user is using Skype for Business Online, they will need to reschedule any Skype for Business Online meetings that they organized, and they will need to tell their external contacts to update the old contact information.
+<br> If the user is using OneDrive, the URL to this location will change. If they have OneNote notebooks in their OneDrive, then they may need to close and reopen them in OneNote. If they have shared files from their OneDrive, then the links to the files may not work and the user can reshare.
 
 ### -ObjectId
 Specifies the unique object ID of the user to update.
