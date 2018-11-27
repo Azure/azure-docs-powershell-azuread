@@ -67,6 +67,21 @@ The command stores the ID in the $ServicePrincipalId variable.
 
 The second command gets the service principal identified by $ServicePrincipalId. 
 
+### Example 3: Retrieve multiple service principals by search string
+```
+PS C:\> Get-AzureADServicePrincipal -SearchString "Azure AD"
+
+ObjectId                             AppId                                DisplayName
+--------                             -----                                -----------
+13707a06-fefa-4b69-ada2-290368c67bf2 b2a54184-d0c5-4c6a-af28-f973d5820b56 Azure AD Connector - Logic Apps 1
+6c00a831-f6a0-41d8-a8eb-befd07dbc1cc bf26f092-3426-4a99-abfb-97dad74e661a Azure AD Identity Governance
+1de9432b-90a7-4ffb-ab3a-eb5fbde71712 fc68d9e5-1f76-45ef-99aa-214805418498 Azure AD Identity Protection
+b8e2ed20-d0b6-43d6-9ac5-1791fa572659 fc03f97a-9db0-4627-a216-ec98ce54e018 Azure AD Notification
+cd59eb0b-436f-4235-8694-f125abcc7a88 7b7531ad-5926-4f2d-8a1d-38495ad33e17 Azure Advanced Threat Protection
+```
+
+The command gets the service principals by using a search string. 
+
 ## PARAMETERS
 
 ### -All
