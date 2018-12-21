@@ -39,6 +39,13 @@ PS C:\> Set-MsolUserLicense -UserPrincipalName "davidchew@contoso.com" -AddLicen
 
 This command adds the Office 365 for Enterprises license to the user.
 
+>[!Warning]
+>If you try to assign user with the license it has been already assigned with you may get an error:
+>```
+>Set-MsolUserLicense : Unable to assign this license because it is invalid. Use the Get-MsolAccountSku cmdlet to
+>retrieve a list of valid licenses.
+>```
+
 ### Example 2: Remove a license from a user
 ```
 PS C:\> Set-MsolUserLicense -UserPrincipalName "davidchew@contoso.com" -RemoveLicenses "contoso:ENTERPRISEPACK"
@@ -46,6 +53,13 @@ PS C:\> Set-MsolUserLicense -UserPrincipalName "davidchew@contoso.com" -RemoveLi
 
 This command removes the Office 365 for Enterprises license from the user.
 This may result in the user's data being removed from each service.
+
+>[!Warning]
+>If you try to remove a license that has never been assigned to the user you may get an error:
+>```
+>Set-MsolUserLicense : Unable to remove this license because it is invalid. Use the Get-MsolAccountSku cmdlet to
+>retrieve a list of valid licenses.
+>```
 
 ### Example 3: Replace one license with another
 ```
