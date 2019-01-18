@@ -7,7 +7,7 @@ schema: 2.0.0
 # Set-AzureADMSGroup
 
 ## SYNOPSIS
-{{Fill in the Synopsis}}
+Updates a specific unified group in Azure AD.
 
 ## SYNTAX
 
@@ -19,21 +19,21 @@ Set-AzureADMSGroup -Id <String> [-Description <String>] [-DisplayName <String>] 
 ```
 
 ## DESCRIPTION
-{{Fill in the Description}}
+The Set-AzureADMSGroup cmdlet updates an Azure Active Directory (Azure AD) group.
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: Change group to be dynamic
 ```
-PS C:\> {{ Add example code here }}
+PS C:\> Set-AzureADMSGroup -Id "9126185e-25df-4522-a380-7ab697a7241c" -GroupTypes "DynamicMembership" -MembershipRule "(user.department -eq "Sales")" -MembershipRuleProcessingState "On"
 ```
 
-{{ Add example description here }}
+For information about updating dynamic groups, see Using attributes to create advanced rules (https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/).
 
 ## PARAMETERS
 
 ### -Description
-{{Fill Description Description}}
+Specifies a description for the group.
 
 ```yaml
 Type: String
@@ -48,7 +48,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-{{Fill DisplayName Description}}
+Set-AzureADMSGroup -ObjectId "11fa5e1e-737c-40c5-835e-416ae3959606" 
 
 ```yaml
 Type: String
@@ -63,7 +63,8 @@ Accept wildcard characters: False
 ```
 
 ### -GroupTypes
-{{Fill GroupTypes Description}}
+Specifies that the group is a dynamic group. 
+To create a dynamic group, specify a value of DynamicMembership.
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
@@ -78,11 +79,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-{{Fill Id Description}}
+Specifies the ID of the group that this cmdlet updates.
 
 ```yaml
 Type: String
-Parameter Sets: (All)
+Parameter Sets: GetById
 Aliases: 
 
 Required: True
@@ -93,14 +94,16 @@ Accept wildcard characters: False
 ```
 
 ### -MailEnabled
-{{Fill MailEnabled Description}}
+Specifies whether this group is mail enabled.
+
+Currently, you cannot create mail enabled groups in Azure AD.
 
 ```yaml
 Type: Boolean
 Parameter Sets: (All)
 Aliases: 
 
-Required: False
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -108,14 +111,15 @@ Accept wildcard characters: False
 ```
 
 ### -MailNickname
-{{Fill MailNickname Description}}
+Specifies a mail nickname for the group.
+If MailEnabled is $False you must still specify a mail nickname.
 
 ```yaml
 Type: String
 Parameter Sets: (All)
 Aliases: 
 
-Required: False
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -123,7 +127,9 @@ Accept wildcard characters: False
 ```
 
 ### -MembershipRule
-{{Fill MembershipRule Description}}
+Specifies the membership rule for a dynamic group.
+
+For more information about the rules that you can use for dynamic groups, see Using attributes to create advanced rules (https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/).
 
 ```yaml
 Type: String
@@ -138,7 +144,13 @@ Accept wildcard characters: False
 ```
 
 ### -MembershipRuleProcessingState
-{{Fill MembershipRuleProcessingState Description}}
+Specifies the rule processing state.
+The acceptable values for this parameter are:
+
+* "On". Process the group rule.
+* "Paused". Stop processing the group rule.
+
+Changing the value of the processing state does not change the members list of the group.
 
 ```yaml
 Type: String
@@ -153,14 +165,15 @@ Accept wildcard characters: False
 ```
 
 ### -SecurityEnabled
-{{Fill SecurityEnabled Description}}
+Specifies whether the group is security enabled.
+For security groups, this value must be $True.
 
 ```yaml
 Type: Boolean
 Parameter Sets: (All)
 Aliases: 
 
-Required: False
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -168,7 +181,19 @@ Accept wildcard characters: False
 ```
 
 ### -Visibility
-{{Fill Visibility Description}}
+This parameter determines the visibility of the group's content and members list. This parameter can take one of the following values:
+
+* "Public" - Anyone can view the contents of the group
+* "Private" - Only members can view the content of the group
+* "HiddenMembership" - Only members can view the content of the group and only members, owners, Global/Company Administrator, User Administrator and Helpdesk Administrators can view the members list of the group.
+
+If no value is provided, the default value will be "Public".
+
+Notes:
+
+* This parameter is only valid for groups that have the groupType set to "Unified".
+* If a group has this attribute set to "HiddenMembership" it cannot be changed later.
+* Anyone can join a group that has this attribute set to "Public". If the attribute is set to Private or HiddenMembership, only owner(s) can add new members to the group and requests to join the group need approval of the owner(s).
 
 ```yaml
 Type: String
@@ -196,4 +221,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+
+[Get-AzureADMSGroup]()
+
+[Remove-AzureADMSGroup]()
+
+[New-AzureADMSGroup]()
+
+[Using attributes to create advanced rules](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/)
 
