@@ -48,6 +48,25 @@ SingleSignOnSettings                     :
 
 ```
 
+### Example 2
+
+Use the following script to get the list of Azure AD Application Proxy applications registered in your tenant:
+
+```powershell
+foreach ($a in Get-AzureADApplication)
+{
+    try
+    {
+        $p = Get-AzureADApplicationProxyApplication -ObjectId $a.ObjectId
+        [pscustomobject]@{ObjectID=$a.ObjectId; DisplayName=$a.DisplayName; ExternalUrl=$p.ExternalUrl; InternalUrl=$p.InternalUrl}
+    }
+    catch
+    {
+        continue
+    }
+}
+```
+
 ## PARAMETERS
 
 ### -ObjectId
@@ -78,22 +97,3 @@ Accept wildcard characters: False
 ## NOTES
 
 ## RELATED LINKS
-
-## To get a list of all the Azure AD Application Proxy applications in the tenant
-
-Use the following script to get the list of Azure AD Application Proxy applications registered in your tenant:
-
-```powershell
-foreach ($a in Get-AzureADApplication)
-{
-    try
-    {
-        $p = Get-AzureADApplicationProxyApplication -ObjectId $a.ObjectId
-        [pscustomobject]@{ObjectID=$a.ObjectId; DisplayName=$a.DisplayName; ExternalUrl=$p.ExternalUrl; InternalUrl=$p.InternalUrl}
-    }
-    catch
-    {
-        continue
-    }
-}
-```
