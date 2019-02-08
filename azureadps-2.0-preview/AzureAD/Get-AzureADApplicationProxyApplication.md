@@ -53,7 +53,7 @@ SingleSignOnSettings                     :
 Use the following script to get the list of Azure AD Application Proxy applications registered in your tenant:
 
 ```powershell
-foreach ($a in Get-AzureADApplication)
+foreach ($a in (Get-AzureADApplication -All:$true))
 {
     try
     {
