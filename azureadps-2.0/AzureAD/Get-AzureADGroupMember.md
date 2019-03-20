@@ -32,6 +32,9 @@ ObjectId                             ObjectType
 0a1068c0-dbb6-4537-9db3-b48f3e31dd76 User
 ```
 
+[!NOTE] You would have to specify "-All:$true" . Otherwise the command
+
+
 ### Example 2: Get all group members
 ```
 PS C:\> Get-AzureADGroupMember -ObjectId "62438306-7c37-4638-a72d-0ee8d9217680" -All:$true
@@ -59,7 +62,6 @@ Default value: None
 Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
-[!NOTE] You would have to specify "-All:$true" . Otherwise the command
 
 
 ### -ObjectId
