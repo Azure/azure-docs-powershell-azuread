@@ -32,6 +32,17 @@ ObjectId                             ObjectType
 0a1068c0-dbb6-4537-9db3-b48f3e31dd76 User
 ```
 
+### Example 2: Get all group members
+```
+PS C:\> Get-AzureADGroupMember -ObjectId "62438306-7c37-4638-a72d-0ee8d9217680" -All:$true
+```
+
+### Example 3: Get group members by getting group from the pipeline
+```
+PS C:\> Get-AzureADGroup | Get-AzureADGroupMember
+```
+This is particullary useful when you have no group objectid. In addition it makes the command much more pleasant to read.
+
 ## PARAMETERS
 
 ### -All
@@ -48,6 +59,9 @@ Default value: None
 Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
+
+[!NOTE] You would have to specify ```-All:$true```. Otherwise the command
+
 
 ### -ObjectId
 Specifies the ID of a group in Azure AD.
