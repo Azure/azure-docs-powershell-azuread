@@ -36,6 +36,8 @@ ObjectId                             ObjectType
 ```
 PS C:\> Get-AzureADGroupMember -ObjectId "62438306-7c37-4638-a72d-0ee8d9217680" -All:$true
 ```
+[!NOTE] > You would have to specify ```-All:$true```. Otherwise the command
+
 
 ### Example 3: Get group members by getting group from the pipeline
 ```
@@ -59,8 +61,6 @@ Default value: None
 Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
-
-[!NOTE] > You would have to specify ```-All:$true```. Otherwise the command
 
 
 ### -ObjectId
