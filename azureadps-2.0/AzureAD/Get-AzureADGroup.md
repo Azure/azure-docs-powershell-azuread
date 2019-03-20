@@ -36,7 +36,7 @@ The **Get-AzureADGroup** cmdlet gets a group in Azure Active Directory (AD).
 
 ### Example 1: Get all groups
 ```
-PS C:\>Get-AzureADGroup
+PS C:\>Get-AzureADGroup -All:$true
 
 
 ObjectId                             DisplayName                          Description
