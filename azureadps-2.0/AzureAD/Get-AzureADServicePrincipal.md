@@ -36,7 +36,7 @@ The **Get-AzureADServicePrincipal** cmdlet gets a service principal in Azure Act
 
 ### Example 1: Retrieve all service principal from the directory
 ```
-PS C:\> Get-AzureADServicePrincipal
+PS C:\> Get-AzureADServicePrincipal -All $true
 
 ObjectId                             AppId                                DisplayName
 --------                             -----                                -----------
