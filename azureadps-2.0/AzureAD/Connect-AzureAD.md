@@ -30,7 +30,7 @@ Connect-AzureAD [-AzureEnvironmentName <EnvironmentName>] -TenantId <String> -Ce
 
 ### AccessToken
 ```
-Connect-AzureAD [-AzureEnvironmentName <EnvironmentName>] [-TenantId <String>] -AadAccessToken <String>
+Connect-AzureAD [-AzureEnvironmentName <EnvironmentName>] -TenantId <String> -AadAccessToken <String>
  [-MsAccessToken <String>] -AccountId <String> [-LogLevel <LogLevel>] [-LogFilePath <String>]
  [-InformationAction <ActionPreference>] [-InformationVariable <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
