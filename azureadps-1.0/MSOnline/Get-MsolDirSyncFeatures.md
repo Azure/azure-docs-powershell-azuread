@@ -19,7 +19,7 @@ Get-MsolDirSyncFeatures [-Feature <String>] [-TenantId <Guid>] [<CommonParameter
 ```
 
 ## DESCRIPTION
-The **Get-MsolDirSyncProvisioningError** cmdlet gets the status of identity synchronization features for a tenant.
+The **Get-MsolDirSyncFeatures** cmdlet gets the status of identity synchronization features for a tenant.
 
 Synchronization features that can be used with this cmdlet include the following:
 
