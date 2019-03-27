@@ -34,7 +34,7 @@ This cmdlet can only be used for users with standard identities.
 
 ### Example 1: Reset a password with a random password
 ```
-PS C:\> Set-MsolUserPassword -UserPrincipalName "davidchew@contoso.com" -ForceChangePassword
+PS C:\> Set-MsolUserPassword -UserPrincipalName "davidchew@contoso.com" -ForceChangePassword $ture
 ```
 
 This command resets the password for davidchew@contoso.com.
