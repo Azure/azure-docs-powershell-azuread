@@ -110,7 +110,7 @@ Valid values are:
 * AzureCloud
 * AzureChinaCloud
 * AzureGermanyCloud
-* USGovernment
+* AzureUSGovernment
 
 ```yaml
 Type: AzureEnvironment
