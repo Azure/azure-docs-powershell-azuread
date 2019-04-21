@@ -14,6 +14,8 @@ Gets a service principal application role assignment.
 
 ## SYNTAX
 
+### Usage
+
 ```
 Get-AzureADServiceAppRoleAssignment -ObjectId <String> [-All <Boolean>] [-Top <Int32>] [<CommonParameters>]
 ```
