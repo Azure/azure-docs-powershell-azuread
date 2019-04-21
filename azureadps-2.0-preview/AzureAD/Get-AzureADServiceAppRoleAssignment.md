@@ -103,7 +103,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-All of the assignments of users to the service principal that is identified by its id.
+### Output of the commandlet
+
+All of the assignments of users to the service principal that is identified by the supplied id.
 
 ## NOTES
 
