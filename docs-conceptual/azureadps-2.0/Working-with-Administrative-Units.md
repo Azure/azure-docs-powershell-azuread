@@ -40,15 +40,11 @@ New-AzureADUser -UserPrincipalName "EastCoastUserAdmin@$initialDomain" -DisplayN
 New-AzureADUser -UserPrincipalName "EastCoastHelpdeskAdmin@$initialDomain" -DisplayName "EastCoastPasswordAdmin" -PasswordProfile $passwordProfile -UsageLocation "US" -AccountEnabled $true -MailNickName "EastCoastPasswordAdmin"
 New-AzureADUser -UserPrincipalName "MobileUserAdmin@$initialDomain" -DisplayName "MobileUserAdmin" -PasswordProfile $passwordProfile -UsageLocation "US" -AccountEnabled $true -MailNickName "MobileUserAdmin"
 
-# Enable the Helpdesk Administrator Role
-$helpDeskAdminRole = New-Object Microsoft.Open.AzureAD.Model.DirectoryRole
-$helpDeskAdminRole.RoleTemplateId = "729827e3-9c14-49f7-bb1b-9608f156bbb8"
-Enable-AzureADDirectoryRole -DirectoryRole $helpDeskAdminRole
+# Enable the Helpdesk Administrator Role using the templateId GUID for the role
+Enable-AzureADDirectoryRole -RoleTemplateId "729827e3-9c14-49f7-bb1b-9608f156bbb8"
 
-# Enable the User Account Administrator Role
-$userAdminAdminRole = New-Object Microsoft.Open.AzureAD.Model.DirectoryRole
-$userAdminAdminRole.RoleTemplateId = "fe930be7-5e62-47db-91af-98c3a49a38b1"
-Enable-AzureADDirectoryRole -DirectoryRole $userAdminAdminRole
+# Enable the User Account Administrator Role using the templateId GUID for the role
+Enable-AzureADDirectoryRole -RoleTemplateId "fe930be7-5e62-47db-91af-98c3a49a38b1"
 
 ```
 

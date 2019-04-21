@@ -28,7 +28,7 @@
     - name: Working with Administrative Units
       href: Working-with-Administrative-Units.md
     - name: Inviting guests in B2B
-      href: https://docs.microsoft.com/en-us/azure/active-directory/active-directory-b2b-code-samples#powershell-example
+      href: https://docs.microsoft.com/en-us/azure/active-directory/b2b/code-samples#powershell-example
     - name: Creating a new user and setting the password
       href: new-user-sample.md
     - name: Assigning licenses to a user
