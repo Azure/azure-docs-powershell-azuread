@@ -63,7 +63,7 @@ PS C:\>Get-MsolDirSyncProvisioningError -ErrorCategory PropertyConflict -SearchS
 
 This command gets all objects with DirSyncProvisioningErrors with a PropertyConflict that uses the display name attribute starting with PattiFul.
 
-### Example 56: Get a maximum number of provisioning errors5
+### Example 5: Get a maximum number of provisioning errors5
 ```
 PS C:\>Get-MsolDirSyncProvisioningError -ErrorCategory PropertyConflict -MaxResults 5
 ```
