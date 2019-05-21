@@ -1,6 +1,7 @@
 ---
-external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
-online version: 
+external help file: Microsoft.Open.MS.GraphV10.PowerShell.dll-Help.xml
+Module Name: AzureAD
+online version:
 schema: 2.0.0
 ---
 
@@ -12,7 +13,7 @@ The Get-AzureADApplicationProxyApplicationConnectorGroup cmdlet retrieves the co
 ## SYNTAX
 
 ```
-Get-AzureADApplicationProxyApplicationConnectorGroup -ObjectId <String>
+Get-AzureADApplicationProxyApplicationConnectorGroup -ObjectId <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -26,9 +27,7 @@ PS C:\> Get-AzureADApplicationProxyApplicationConnectorGroup -ObjectId 8d6c6684-
 
 Id                                   Name                ConnectorGroupType IsDefault
 --                                   ----                ------------------ ---------
-a39b9095-8dc8-4d3a-86c3-e7b5c3f0fb84 Application Servers applicationProxy       False 
-
-
+a39b9095-8dc8-4d3a-86c3-e7b5c3f0fb84 Application Servers applicationProxy       False
 ```
 
 ## PARAMETERS
@@ -39,7 +38,7 @@ ObjectId is the Id of the application. This can be found using the Get-AzureADAp
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -48,10 +47,12 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+
 ## INPUTS
 
 ### System.String
-
 
 ## OUTPUTS
 
@@ -60,4 +61,3 @@ Accept wildcard characters: False
 ## NOTES
 
 ## RELATED LINKS
-

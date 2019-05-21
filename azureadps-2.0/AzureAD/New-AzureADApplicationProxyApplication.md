@@ -1,6 +1,7 @@
-﻿---
-external help file: Microsoft.Open.MS.GraphBeta.PowerShell.Custom.dll-Help.xml
-online version: 
+---
+external help file: Microsoft.Open.MS.GraphV10.PowerShell.Custom.dll-Help.xml
+Module Name: AzureAD
+online version:
 schema: 2.0.0
 ---
 
@@ -14,8 +15,8 @@ The New-AzureADApplicationProxyApplication cmdlet creates a new application conf
 ```
 New-AzureADApplicationProxyApplication -DisplayName <String> -ExternalUrl <String> -InternalUrl <String>
  [-ExternalAuthenticationType <ExternalAuthenticationTypeEnum>] [-IsTranslateHostHeaderEnabled <Boolean>]
- [-IsTranslateLinksInBodyEnabled <Boolean>] [-ApplicationServerTimeout <ApplicationServerTimeoutEnum>]
- [-ConnectorGroupId <String>]
+ [-IsHttpOnlyCookieEnabled <Boolean>] [-IsTranslateLinksInBodyEnabled <Boolean>]
+ [-ApplicationServerTimeout <ApplicationServerTimeoutEnum>] [-ConnectorGroupId <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -38,9 +39,9 @@ IsOnPremPublishingEnabled                : True
 VerifiedCustomDomainCertificatesMetadata : 
 VerifiedCustomDomainKeyCredential        : 
 VerifiedCustomDomainPasswordCredential   : 
-SingleSignOnSettings                     : 
-
+SingleSignOnSettings                     :
 ```
+
 Example 1: Creating a new application with only the basic required settings, and the default domain for applications.
 
 ### Example 2
@@ -65,9 +66,9 @@ VerifiedCustomDomainCertificatesMetadata : class OnPremisesPublishingVerifiedCus
                                            
 VerifiedCustomDomainKeyCredential        : 
 VerifiedCustomDomainPasswordCredential   : 
-SingleSignOnSettings                     :  
-
+SingleSignOnSettings                     :
 ```
+
 Example 2: Creating a new application that uses a custom domain and sets several optional flags.
 
 ## PARAMETERS
@@ -78,7 +79,7 @@ Set this value to Long only if your application is slow to authenticate and conn
 ```yaml
 Type: ApplicationServerTimeoutEnum
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 Accepted values: Default, Long
 
 Required: False
@@ -95,7 +96,7 @@ Connectors process the remote access to your application, and connector groups h
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -110,7 +111,7 @@ The displayname of the new Application
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -127,7 +128,7 @@ Passthru: Users don't have to authenticate against Azure Active Directory to acc
 ```yaml
 Type: ExternalAuthenticationTypeEnum
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 Accepted values: AadPreAuthentication, Passthru
 
 Required: False
@@ -143,7 +144,7 @@ The address your users will go to in order to access the app from outside your n
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -158,7 +159,7 @@ The URL that you use to access the application from inside your private network.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -173,7 +174,7 @@ If set to true, translates urls in headers. Keep this value true unless your app
 ```yaml
 Type: Boolean
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -188,7 +189,7 @@ If set to true, translates urls in body. Keep this value as No unless you have h
 ```yaml
 Type: Boolean
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -197,13 +198,30 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
+### -IsHttpOnlyCookieEnabled
+{{ Fill IsHttpOnlyCookieEnabled Description }}
+
+```yaml
+Type: Boolean
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName, ByValue)
+Accept wildcard characters: False
+```
+
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+
 ## INPUTS
 
 ### System.String
 System.Nullable`1[[Microsoft.Open.MSGraph.Model.ApplicationProxyApplicationObject+ExternalAuthenticationTypeEnum, Microsoft.Open.MS.GraphBeta.Client, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null]]
 System.Nullable`1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
 System.Nullable`1[[Microsoft.Open.MSGraph.Model.ApplicationProxyApplicationObject+ApplicationServerTimeoutEnum, Microsoft.Open.MS.GraphBeta.Client, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null]]
-
 
 ## OUTPUTS
 
@@ -212,4 +230,3 @@ System.Nullable`1[[Microsoft.Open.MSGraph.Model.ApplicationProxyApplicationObjec
 ## NOTES
 
 ## RELATED LINKS
-

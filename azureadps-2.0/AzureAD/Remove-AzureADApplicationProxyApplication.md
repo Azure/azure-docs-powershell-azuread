@@ -1,6 +1,7 @@
 ---
-external help file: Microsoft.Open.MS.GraphBeta.PowerShell.Custom.dll-Help.xml
-online version: 
+external help file: Microsoft.Open.MS.GraphV10.PowerShell.Custom.dll-Help.xml
+Module Name: AzureAD
+online version:
 schema: 2.0.0
 ---
 
@@ -13,6 +14,7 @@ Deletes an Application Proxy application.
 
 ```
 Remove-AzureADApplicationProxyApplication -ObjectId <String> [-RemoveADApplication <Boolean>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -42,7 +44,7 @@ The unique application Id of the application. This can be found using the Get-Az
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -57,7 +59,7 @@ This allows you to delete application completely. When this is false (default), 
 ```yaml
 Type: Boolean
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -66,10 +68,13 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+
 ## INPUTS
 
 ## OUTPUTS
 
 ## NOTES
-## RELATED LINKS
 
+## RELATED LINKS

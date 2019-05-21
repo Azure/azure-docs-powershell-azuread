@@ -1,6 +1,7 @@
 ---
-external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
-online version: 
+external help file: Microsoft.Open.MS.GraphV10.PowerShell.dll-Help.xml
+Module Name: AzureAD
+online version:
 schema: 2.0.0
 ---
 
@@ -12,7 +13,7 @@ The New-AzureADApplicationProxyConnectorGroup cmdlet creates a new Application P
 ## SYNTAX
 
 ```
-New-AzureADApplicationProxyConnectorGroup -Name <Name>
+New-AzureADApplicationProxyConnectorGroup -Name <Name> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -26,9 +27,9 @@ PS C:\> New-AzureADApplicationProxyConnectorGroup -Name "Backup Application Serv
 
 Id                                   Name                       ConnectorGroupType IsDefault
 --                                   ----                       ------------------ ---------
-d533d7b1-fd92-49e8-a200-3e7dcf7c2ab5 Backup Application Servers applicationProxy       False 
-
+d533d7b1-fd92-49e8-a200-3e7dcf7c2ab5 Backup Application Servers applicationProxy       False
 ```
+
 Example 1: Create a new Connector Group with the name "Backup Application Servers"
 
 ## PARAMETERS
@@ -39,7 +40,7 @@ The name of the new Connector Group.
 ```yaml
 Type: Name
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -48,10 +49,12 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+
 ## INPUTS
 
 ### Microsoft.Open.MSGraph.Model.Name
-
 
 ## OUTPUTS
 
@@ -60,4 +63,3 @@ Accept wildcard characters: False
 ## NOTES
 
 ## RELATED LINKS
-
