@@ -1,10 +1,11 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+Module Name: AzureAD
 ms.assetid: 66D77613-4992-463D-B318-E2D53B14AED4
-online version: 
-schema: 2.0.0
-ms.reviewer: rodejo
 ms.custom: iamfeature=PowerShell
+ms.reviewer: rodejo
+online version:
+schema: 2.0.0
 ---
 
 # Select-AzureADGroupIdsUserIsMemberOf
@@ -55,7 +56,7 @@ Specifies an array of group object IDs.
 ```yaml
 Type: GroupIdsForMembershipCheck
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -107,7 +108,7 @@ Specifies the ID of a user (as a UPN or ObjectId) in Azure AD.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -117,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -126,4 +127,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-

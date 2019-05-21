@@ -1,10 +1,11 @@
 ---
 external help file: Microsoft.Open.Azure.AD.CommonLibrary.dll-Help.xml
+Module Name: AzureAD
 ms.assetid: A5EF9C25-E0D9-432F-A528-81534A01F444
-online version: 
-schema: 2.0.0
-ms.reviewer: rodejo
 ms.custom: iamfeature=PowerShell
+ms.reviewer: rodejo
+online version:
+schema: 2.0.0
 ---
 
 # Connect-AzureAD
@@ -127,7 +128,7 @@ Specifies a Azure Active Directory Graph access token.
 ```yaml
 Type: String
 Parameter Sets: AccessToken
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -142,7 +143,7 @@ Specifies the ID of an account. You must specify the UPN of the user when authen
 ```yaml
 Type: String
 Parameter Sets: UserCredential
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -154,7 +155,7 @@ Accept wildcard characters: False
 ```yaml
 Type: String
 Parameter Sets: AccessToken
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -169,7 +170,7 @@ Specifies the application ID of the service principal.
 ```yaml
 Type: String
 Parameter Sets: ServicePrincipalCertificate
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -191,7 +192,7 @@ The default value is AzureCloud.
 ```yaml
 Type: EnvironmentName
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -206,7 +207,7 @@ Specifies the certificate thumbprint of a digital public key X.509 certificate o
 ```yaml
 Type: String
 Parameter Sets: ServicePrincipalCertificate
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -224,7 +225,7 @@ The **PSCredential** object provides the user ID and password for organizational
 ```yaml
 Type: PSCredential
 Parameter Sets: UserCredential
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -283,7 +284,7 @@ The default value is Info.
 ```yaml
 Type: LogLevel
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -298,7 +299,7 @@ Specifies a Microsoft Graph access token.
 ```yaml
 Type: String
 Parameter Sets: AccessToken
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -376,7 +377,7 @@ The path where the log file for this PowerShell session is written to. Provide a
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -386,7 +387,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

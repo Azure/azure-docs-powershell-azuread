@@ -1,8 +1,9 @@
 ---
-external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
+external help file: Microsoft.Open.MS.GraphV10.PowerShell.dll-Help.xml
+Module Name: AzureAD
 ms.custom: iamfeature=PowerShell
 ms.reviewer: rodejo
-online version: 
+online version:
 schema: 2.0.0
 ---
 
@@ -105,7 +106,7 @@ If true, return all groups. If false, return the number of objects specified by 
 ```yaml
 Type: Boolean
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -120,7 +121,7 @@ Specifies an oData v3.0 filter string to match a set of groups.
 ```yaml
 Type: String
 Parameter Sets: GetQuery
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -135,7 +136,7 @@ Specifies the ID of the group that this cmdlet gets.
 ```yaml
 Type: String
 Parameter Sets: GetById
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -151,7 +152,7 @@ This cmdlet gets groups that have **DisplayName** or **Description** attributes 
 ```yaml
 Type: String
 Parameter Sets: GetVague
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -167,7 +168,7 @@ The default value is 100.
 ```yaml
 Type: Int32
 Parameter Sets: GetQuery
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -177,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

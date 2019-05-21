@@ -1,10 +1,11 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+Module Name: AzureAD
 ms.assetid: B2EE39EC-3CD7-4F55-8D27-9E32E4E152C3
-online version: 
-schema: 2.0.0
-ms.reviewer: rodejo
 ms.custom: iamfeature=PowerShell
+ms.reviewer: rodejo
+online version:
+schema: 2.0.0
 ---
 
 # New-AzureADGroupAppRoleAssignment
@@ -15,8 +16,8 @@ Assigns a group to an application role.
 ## SYNTAX
 
 ```
-New-AzureADGroupAppRoleAssignment -ObjectId <String> -PrincipalId <String> -ResourceId <String> -Id <String>
-[-InformationAction <ActionPreference>] [-InformationVariable <String>] [<CommonParameters>]
+New-AzureADGroupAppRoleAssignment -ObjectId <String> [-InformationAction <ActionPreference>]
+ [-InformationVariable <String>] -Id <String> -PrincipalId <String> -ResourceId <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -59,62 +60,19 @@ New-AzureADGroupAppRoleAssignment -ObjectId $group.ObjectId -PrincipalId $group.
 
 ## PARAMETERS
 
-### -ObjectId
-The object ID of the group in Azure AD to be assigned to the app role.
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases: 
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByPropertyName, ByValue)
-Accept wildcard characters: False
-```
-
-### -PrincipalId
-The object ID of the principal which will be assigned to the app role. When assigning a group to an app role, provide the object ID of the group.
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases: 
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ResourceId
-The object ID of the ServicePrincipal for the application for which the group is being assigned an app role.
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases: 
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
 ### -Id
 The ID of the app role to assign. Provide an empty Guid (`[Guid]::Empty`) when creating an app role assignement for an application that does not have any app roles defined, or the `Id` of the app role to assign the group to.
 
 You can retrieve the application's app roles by examining the application object's AppRoles property:
 
-```Powershell
-Get-AzureADServicePrincipal -SearchString "Your Application display name" | Format-List AppRoles 
-```
+
+
+Get-AzureADServicePrincipal -SearchString "Your Application display name" | Format-List AppRoles
 
 This cmdlet returns the list of roles that are defined in an application:
 
-```
+
+
 AppRoles : {class AppRole {
             AllowedMemberTypes: System.Collections.Generic.List1[System.String]
             Description: <description for this role>
@@ -124,12 +82,11 @@ AppRoles : {class AppRole {
             Value: <Value that will be transmitted as a claim in a token for this role>
         }
         }
-```
 
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -175,8 +132,53 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ObjectId
+The object ID of the group in Azure AD to be assigned to the app role.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName, ByValue)
+Accept wildcard characters: False
+```
+
+### -PrincipalId
+The object ID of the principal which will be assigned to the app role. When assigning a group to an app role, provide the object ID of the group.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ResourceId
+The object ID of the ServicePrincipal for the application for which the group is being assigned an app role.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

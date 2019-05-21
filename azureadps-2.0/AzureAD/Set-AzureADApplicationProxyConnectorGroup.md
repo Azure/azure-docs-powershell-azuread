@@ -1,6 +1,7 @@
 ---
-external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
-online version: 
+external help file: Microsoft.Open.MS.GraphV10.PowerShell.dll-Help.xml
+Module Name: AzureAD
+online version:
 schema: 2.0.0
 ---
 
@@ -12,7 +13,7 @@ The Set-AzureADApplicationProxyConnectorGroup cmdlet allows you to change the na
 ## SYNTAX
 
 ```
-Set-AzureADApplicationProxyConnectorGroup -Id <String> -Name <Name>
+Set-AzureADApplicationProxyConnectorGroup -Id <String> -Name <Name> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -22,8 +23,9 @@ The Set-AzureADApplicationProxyConnectorGroup cmdlet allows you to change the na
 
 ### Example 1
 ```
-PS C:\> Set-AzureADApplicationProxyConnectorGroup -Id d533d7b1-fd92-49e8-a200-3e7dcf7c2ab5 -Name "Offsite Application Servers" 
+PS C:\> Set-AzureADApplicationProxyConnectorGroup -Id d533d7b1-fd92-49e8-a200-3e7dcf7c2ab5 -Name "Offsite Application Servers"
 ```
+
 Example 1: Rename a Connector Group to "Offsite Application Servers"
 
 ## PARAMETERS
@@ -34,7 +36,7 @@ The unique identifier of the Connector group that will be renamed. You can find 
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -49,7 +51,7 @@ The new name for the Connector group.
 ```yaml
 Type: Name
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -58,11 +60,13 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+
 ## INPUTS
 
 ### System.String
 Microsoft.Open.MSGraph.Model.Name
-
 
 ## OUTPUTS
 
@@ -71,4 +75,3 @@ Microsoft.Open.MSGraph.Model.Name
 ## NOTES
 
 ## RELATED LINKS
-

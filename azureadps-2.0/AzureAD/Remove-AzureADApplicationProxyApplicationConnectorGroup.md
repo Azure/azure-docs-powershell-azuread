@@ -1,6 +1,7 @@
-﻿---
-external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
-online version: 
+---
+external help file: Microsoft.Open.MS.GraphV10.PowerShell.dll-Help.xml
+Module Name: AzureAD
+online version:
 schema: 2.0.0
 ---
 
@@ -12,7 +13,7 @@ The Remove-AzureADApplicationProxyApplicationConnectorGroup cmdlet sets the conn
 ## SYNTAX
 
 ```
-Remove-AzureADApplicationProxyApplicationConnectorGroup -ObjectId <String>
+Remove-AzureADApplicationProxyApplicationConnectorGroup -ObjectId <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -22,8 +23,9 @@ If your application is already in the 'Default' group, you will see an error bec
 
 ### Example 1
 ```
-PS C:\> Remove-AzureADApplicationProxyApplicationConnectorGroup -ObjectId 59462d3c-a1bc-40a0-9bed-be799357ebce 
+PS C:\> Remove-AzureADApplicationProxyApplicationConnectorGroup -ObjectId 59462d3c-a1bc-40a0-9bed-be799357ebce
 ```
+
 Example 1: Remove the Connector Group associated with an application, setting the group to 'Default'
 
 ## PARAMETERS
@@ -34,7 +36,7 @@ The unique application Id of the application. This can be found using the Get-Az
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -43,10 +45,12 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+
 ## INPUTS
 
 ### System.String
-
 
 ## OUTPUTS
 
@@ -55,4 +59,3 @@ Accept wildcard characters: False
 ## NOTES
 
 ## RELATED LINKS
-

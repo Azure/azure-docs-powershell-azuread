@@ -1,6 +1,7 @@
 ---
-external help file: Microsoft.Open.MS.GraphBeta.PowerShell.Custom.dll-Help.xml
-online version: 
+external help file: Microsoft.Open.MS.GraphV10.PowerShell.Custom.dll-Help.xml
+Module Name: AzureAD
+online version:
 schema: 2.0.0
 ---
 
@@ -14,8 +15,9 @@ The Set-AzureADApplicationProxyApplication allows you to modify and set configur
 ```
 Set-AzureADApplicationProxyApplication -ObjectId <String> [-ExternalUrl <String>] [-InternalUrl <String>]
  [-ExternalAuthenticationType <ExternalAuthenticationTypeEnum>] [-IsTranslateHostHeaderEnabled <Boolean>]
+ [-IsHttpOnlyCookieEnabled <Boolean>] [-IsSecureCookieEnabled <Boolean>] [-IsPersistentCookieEnabled <Boolean>]
  [-IsTranslateLinksInBodyEnabled <Boolean>] [-ApplicationServerTimeout <ApplicationServerTimeoutEnum>]
- [-ConnectorGroupId <String>]
+ [-ConnectorGroupId <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -38,9 +40,7 @@ IsOnPremPublishingEnabled                : True
 VerifiedCustomDomainCertificatesMetadata : 
 VerifiedCustomDomainKeyCredential        : 
 VerifiedCustomDomainPasswordCredential   : 
-SingleSignOnSettings                     :  
-
-
+SingleSignOnSettings                     :
 ```
 
 Example 1: Add the link translation feature to an application
@@ -53,7 +53,7 @@ Specifies a unique application ID of an application in Azure Active Directory. T
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -68,7 +68,7 @@ The address your users will go to in order to access the app from outside your n
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -83,7 +83,7 @@ The URL that you use to access the application from inside your private network.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -100,7 +100,7 @@ Passthru: Users don't have to authenticate against Azure Active Directory to acc
 ```yaml
 Type: ExternalAuthenticationTypeEnum
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -115,7 +115,7 @@ If set to true, translates urls in headers. Keep this value true unless your app
 ```yaml
 Type: Boolean
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -130,7 +130,7 @@ If set to true, translates urls in body. Keep this value as No unless you have h
 ```yaml
 Type: Boolean
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -145,7 +145,7 @@ Specifies the backend server timeout type. Set this value to Long only if your a
 ```yaml
 Type: ApplicationServerTimeoutEnum
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -161,7 +161,7 @@ Connectors process the remote access to your application, and connector groups h
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -170,10 +170,58 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
+### -IsHttpOnlyCookieEnabled
+{{ Fill IsHttpOnlyCookieEnabled Description }}
+
+```yaml
+Type: Boolean
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName, ByValue)
+Accept wildcard characters: False
+```
+
+### -IsPersistentCookieEnabled
+{{ Fill IsPersistentCookieEnabled Description }}
+
+```yaml
+Type: Boolean
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName, ByValue)
+Accept wildcard characters: False
+```
+
+### -IsSecureCookieEnabled
+{{ Fill IsSecureCookieEnabled Description }}
+
+```yaml
+Type: Boolean
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName, ByValue)
+Accept wildcard characters: False
+```
+
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+
 ## INPUTS
 
 ## OUTPUTS
 
 ## NOTES
-## RELATED LINKS
 
+## RELATED LINKS

@@ -1,10 +1,11 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+Module Name: AzureAD
 ms.assetid: 3719960D-7A77-414E-A20C-812B527F27AB
-online version: 
-schema: 2.0.0
-ms.reviewer: rodejo
 ms.custom: iamfeature=PowerShell
+ms.reviewer: rodejo
+online version:
+schema: 2.0.0
 ---
 
 # Enable-AzureADDirectoryRole
@@ -16,7 +17,7 @@ Activates an existing directory role in Azure Active Directory.
 
 ```
 Enable-AzureADDirectoryRole [-InformationAction <ActionPreference>] [-InformationVariable <String>]
- [-DirectoryRole <String>] [<CommonParameters>]
+ [-RoleTemplateId <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -31,7 +32,6 @@ $roleTemplate = Get-AzureADDirectoryRoleTemplate | ? { $_.DisplayName -eq "Guest
 
 # Enable an instance of the DirectoryRole template
 Enable-AzureADDirectoryRole -RoleTemplateId $roleTemplate.ObjectId
-
 ```
 
 The first command gets an inviter role that has the display name Guest Inviter by using the [Get-AzureADDirectoryRoleTemplate](./Get-AzureADDirectoryRoleTemplate.md) cmdlet. The command stores Guest Inviter in the $roleTemplate variable. 
@@ -83,7 +83,7 @@ The ID of the Role template to enable
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -93,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -1,6 +1,7 @@
 ---
-external help file: Microsoft.Open.MS.GraphBeta.PowerShell.Custom.dll-Help.xml
-online version: 
+external help file: Microsoft.Open.MS.GraphV10.PowerShell.Custom.dll-Help.xml
+Module Name: AzureAD
+online version:
 schema: 2.0.0
 ---
 
@@ -13,7 +14,7 @@ The Set-AzureADApplicationProxyApplicationCustomDomainCertificate cmdlet assigns
 
 ```
 Set-AzureADApplicationProxyApplicationCustomDomainCertificate -ObjectId <String> -PfxFilePath <String>
- -Password <SecureString>
+ -Password <SecureString> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -24,9 +25,7 @@ The Set-AzureADApplicationProxyApplicationCustomDomainCertificate cmdlet assigns
 ### Example 1
 ```
 PS C:\> $securePassword = Read-Host -AsSecureString
-PS C:\> Set-AzureADApplicationProxyApplicationCustomDomainCertificate -ObjectId 4eba5342-8d17-4eac-a1f6-62a0de26311e -PfxFilePath "C:\Temp\Certificates\cert.pfx" -Password $securePassword 
-
-
+PS C:\> Set-AzureADApplicationProxyApplicationCustomDomainCertificate -ObjectId 4eba5342-8d17-4eac-a1f6-62a0de26311e -PfxFilePath "C:\Temp\Certificates\cert.pfx" -Password $securePassword
 ```
 
 Example 1: Assign a certificate to an application configured for Application Proxy
@@ -39,7 +38,7 @@ The unique application Id for the application the certificate should be uploaded
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -54,7 +53,7 @@ A secure string containing the password for the pfx certificate
 ```yaml
 Type: SecureString
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -69,7 +68,7 @@ The file path for the pfx certificate for the custom domain
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -78,11 +77,13 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+
 ## INPUTS
 
 ### System.String
 System.Security.SecureString
-
 
 ## OUTPUTS
 
@@ -91,4 +92,3 @@ System.Security.SecureString
 ## NOTES
 
 ## RELATED LINKS
-
