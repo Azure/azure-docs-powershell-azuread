@@ -8,9 +8,10 @@ ms.assetid: 7D9D9507-ADE5-45BD-97F8-0CCCDA3D3B58
 ms.reviewer: rodejo
 ms.custom: iamfeature=PowerShell
 ---
+
 # Azure Active Directory PowerShell for Graph module
 ## Description
-The Azure Active Directory PowerShell for Graph module can be downloaded and installed from the PowerShell Gallery, www.powershellgallery.com.  The gallery uses the PowerShellGet module. The PowerShellGet module requires PowerShell 3.0 or newer and requires one of the following operating systems:
+The Azure Active Directory PowerShell for Graph module can be downloaded and installed from the [PowerShell Gallery](https://www.powershellgallery.com/).  The gallery uses the PowerShellGet module. The PowerShellGet module requires PowerShell 3.0 or newer and requires one of the following operating systems:
 
 Windows 10
 Windows 8.1 Pro
