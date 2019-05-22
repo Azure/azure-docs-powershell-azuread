@@ -33,7 +33,8 @@ The **Get-MsolRoleMember** cmdlet gets members of the specified role.
 
 ### Example 1: Get members of a role
 ```
-PS C:\> $RoleMembers = Get-MsolRole -RoleName "Company Administrator"
+PS C:\> $Role = Get-MsolRole -RoleName "Company Administrator"
+PS C:\> $RoleMembers = Get-MsolRoleMember  -RoleObjectId $Role.ObjectId
 ```
 
 This command returns all the members of the specified role.
