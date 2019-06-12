@@ -1,26 +1,24 @@
 ---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
-ms.assetid: 1E76B8D2-A7DF-49EE-8E22-6BFEE24A8B7F
-ms.custom: iamfeature=PowerShell
-ms.reviewer: rodejo
-online version: 
+Module Name:
+online version:
 schema: 2.0.0
 ---
 
 # Add-AzureADApplicationPolicy
 
 ## SYNOPSIS
-**The Add-AzureADApplicationPolicy cmdlet is not available at this time**.
+The Add-AzureADApplicationPolicy cmdlet is not available at this time .
 
 ## SYNTAX
 
 ```
-Add-AzureADApplicationPolicy -Id <String> -RefObjectId <String> [-InformationAction <ActionPreference>]
- [-InformationVariable <String>] [<CommonParameters>]
+Add-AzureADApplicationPolicy [-InformationAction <ActionPreference>] [-InformationVariable <String>]
+ -RefObjectId <String> -Id <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The **Add-AzureADApplicationPolicy** cmdlet adds an Azure Active Directory application policy.
+The Add-AzureADApplicationPolicy cmdlet adds an Azure Active Directory application policy.
 
 ## EXAMPLES
 
@@ -35,8 +33,8 @@ This command adds an application policy.
 
 ### -InformationAction
 Specifies how this cmdlet responds to an information event.
-The acceptable values for this parameter are:
-* Continue
+The acceptable values for this parameter are: * Continue
+
 * Ignore
 * Inquire
 * SilentlyContinue
@@ -57,6 +55,7 @@ Accept wildcard characters: False
 
 ### -InformationVariable
 Specifies a variable in which to store an information event message.
+
 ```yaml
 Type: String
 Parameter Sets: (All)
@@ -75,7 +74,7 @@ Specifies the ID of the policy.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -90,7 +89,7 @@ The ID of the application for which you need to set the policy
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -100,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -110,7 +109,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADApplicationPolicy](./Get-AzureADApplicationPolicy.md)
+[Get-AzureADApplicationPolicy]()
 
-[Remove-AzureADApplicationPolicy](./Remove-AzureADApplicationPolicy.md)
+[Remove-AzureADApplicationPolicy]()
 

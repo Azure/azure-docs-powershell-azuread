@@ -1,6 +1,7 @@
 ---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
-online version: 
+Module Name:
+online version:
 schema: 2.0.0
 ---
 
@@ -16,7 +17,8 @@ Reset-AzureADMSLifeCycleGroup -GroupId <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The Reset-AzureADMSLifeCycleGroup renews a group by updating the RenewedDateTime property on a group to the current DateTime. When a group is renewed, the group expiration is extended by the number of days defined in the policy.
+The Reset-AzureADMSLifeCycleGroup renews a group by updating the RenewedDateTime property on a group to the current DateTime.
+When a group is renewed, the group expiration is extended by the number of days defined in the policy.
 
 ## EXAMPLES
 
@@ -35,7 +37,7 @@ Specifies the ID of a group in Azure Active Directory.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -45,17 +47,14 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### None
-
 ## OUTPUTS
 
 ### System.Object
-
 ## NOTES
 
 ## RELATED LINKS
-

@@ -1,28 +1,25 @@
 ---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
-online version: 
+Module Name:
+online version:
 schema: 2.0.0
 ---
 
 # Get-AzureADMSGroupLifecyclePolicy
 
 ## SYNOPSIS
-Retrieves the properties and relationships of a groupLifecyclePolicies object in Azure Active Directory
+Retrieves the properties and relationships of a groupLifecyclePolicies object in Azure Active Directory.
+If you specify no parameters, this cmdlet gets all groupLifecyclePolicies.
 
 ## SYNTAX
 
-### GetQuery (Default)
-```
-Get-AzureADMSGroupLifecyclePolicy [<CommonParameters>]
-```
-
-### GetById
 ```
 Get-AzureADMSGroupLifecyclePolicy -Id <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The Get-AzureADMSGroupLifecyclePolicy command retrieves the properties and relationships of a groupLifecyclePolicies object in Azure Active Directory
+The Get-AzureADMSGroupLifecyclePolicy command retrieves the properties and relationships of a groupLifecyclePolicies object in Azure Active Directory.
+If you specify no parameters, this cmdlet gets all groupLifecyclePolicies.
 
 ## EXAMPLES
 
@@ -40,8 +37,8 @@ Specifies the ID of a groupLifecyclePolicies object in Azure Active Directory
 
 ```yaml
 Type: String
-Parameter Sets: GetById
-Aliases: 
+Parameter Sets: (All)
+Aliases:
 
 Required: True
 Position: Named
@@ -51,18 +48,16 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
-System.Nullable`1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+System.Nullable\`1\[\[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089\]\]
 
 ## OUTPUTS
 
 ### System.Object
-
 ## NOTES
 
 ## RELATED LINKS
-

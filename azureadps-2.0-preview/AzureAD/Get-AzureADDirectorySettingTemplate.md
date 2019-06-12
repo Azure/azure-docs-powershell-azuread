@@ -1,9 +1,7 @@
 ---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
-ms.assetid: BBFC4A72-1D35-4E9F-9B8A-F558E4D0E150
-ms.custom: iamfeature=PowerShell
-ms.reviewer: rodejo
-online version: 
+Module Name:
+online version:
 schema: 2.0.0
 ---
 
@@ -14,27 +12,28 @@ Gets a directory setting template.
 
 ## SYNTAX
 
-### GetQuery (Default)
 ```
 Get-AzureADDirectorySettingTemplate [-InformationAction <ActionPreference>] [-InformationVariable <String>]
- [<CommonParameters>]
-```
-
-### GetById
-```
-Get-AzureADDirectorySettingTemplate -Id <String> [-InformationAction <ActionPreference>]
- [-InformationVariable <String>] [<CommonParameters>]
+ -Id <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The **Get-AzureADDirectorySettingTemplate** cmdlet gets a directory setting template from Azure Active Directory (AD).
+The Get-AzureADDirectorySettingTemplate cmdlet gets a directory setting template from Azure Active Directory (AD).
 
 ## EXAMPLES
+
+### Example 1
+```
+PS C:\> {{ Add example code here }}
+```
+
+{{ Add example description here }}
 
 ## PARAMETERS
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event.
+The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -75,8 +74,8 @@ The ID of the settings template you want to retrieve
 
 ```yaml
 Type: String
-Parameter Sets: GetById
-Aliases: 
+Parameter Sets: (All)
+Aliases:
 
 Required: True
 Position: Named
@@ -86,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -95,4 +94,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-

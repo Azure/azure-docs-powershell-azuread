@@ -1,9 +1,7 @@
 ---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
-ms.assetid: F1CEBDF4-5AF8-4AFC-AA1F-D36CEC381D04
-ms.custom: iamfeature=PowerShell
-ms.reviewer: rodejo
-online version: 
+Module Name:
+online version:
 schema: 2.0.0
 ---
 
@@ -14,15 +12,15 @@ Gets an object setting.
 
 ## SYNTAX
 
-### GetQuery (Default)
+### UNNAMED_PARAMETER_SET_1
 ```
-Get-AzureADObjectSetting -TargetType <String> -TargetObjectId <String> [-All <Boolean>] [-Top <Int32>]
+Get-AzureADObjectSetting [-All <Boolean>] -Id <String> -TargetObjectId <String> -TargetType <String>
  [<CommonParameters>]
 ```
 
-### GetById
+### UNNAMED_PARAMETER_SET_2
 ```
-Get-AzureADObjectSetting -TargetType <String> -TargetObjectId <String> -Id <String> [-All <Boolean>]
+Get-AzureADObjectSetting [-All <Boolean>] -TargetObjectId <String> -TargetType <String> [-Top <Int32>]
  [<CommonParameters>]
 ```
 
@@ -31,15 +29,23 @@ The Get-AzureADObjectSetting cmdlet gets an object setting from Azure Active Dir
 
 ## EXAMPLES
 
+### Example 1
+```
+PS C:\> {{ Add example code here }}
+```
+
+{{ Add example description here }}
+
 ## PARAMETERS
 
 ### -All
-If true, return all objects settings. If false, return the number of objects specified by the Top parameter
+If true, return all objects settings.
+If false, return the number of objects specified by the Top parameter
 
 ```yaml
 Type: Boolean
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -49,12 +55,12 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Specifies the ID of a settings object. 
+Specifies the ID of a settings object.
 
 ```yaml
 Type: String
-Parameter Sets: GetById
-Aliases: 
+Parameter Sets: UNNAMED_PARAMETER_SET_1
+Aliases:
 
 Required: True
 Position: Named
@@ -69,7 +75,7 @@ Specifies the ID of the target object.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -79,12 +85,12 @@ Accept wildcard characters: False
 ```
 
 ### -TargetType
-Specifies the target type. 
+Specifies the target type.
 
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -98,8 +104,8 @@ Specifies the maximum number of records to return.
 
 ```yaml
 Type: Int32
-Parameter Sets: GetQuery
-Aliases: 
+Parameter Sets: UNNAMED_PARAMETER_SET_2
+Aliases:
 
 Required: False
 Position: Named
@@ -109,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -119,9 +125,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[New-AzureADObjectSetting](./New-AzureADObjectSetting.md)
+[New-AzureADObjectSetting]()
 
-[Remove-AzureADObjectSetting](./Remove-AzureADObjectSetting.md)
+[Remove-AzureADObjectSetting]()
 
-[Set-AzureADObjectSetting](./Set-AzureADObjectSetting.md)
+[Set-AzureADObjectSetting]()
 

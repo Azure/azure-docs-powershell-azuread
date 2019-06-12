@@ -1,9 +1,7 @@
 ---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
-ms.assetid: D74563F0-14B9-43BD-8C3C-BC46CD505407
-ms.custom: iamfeature=PowerShell
-ms.reviewer: rodejo
-online version: 
+Module Name:
+online version:
 schema: 2.0.0
 ---
 
@@ -15,12 +13,12 @@ Removes a policy.
 ## SYNTAX
 
 ```
-Remove-AzureADPolicy -Id <String> [-InformationAction <ActionPreference>] [-InformationVariable <String>]
+Remove-AzureADPolicy [-InformationAction <ActionPreference>] [-InformationVariable <String>] -Id <String>
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The **Remove-AzureADPolicy** cmdlet removes a policy from Azure Active Directory (AD).
+The Remove-AzureADPolicy cmdlet removes a policy from Azure Active Directory (AD).
 
 ## EXAMPLES
 
@@ -34,7 +32,8 @@ This command removes the specified policy.
 ## PARAMETERS
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event.
+The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -76,7 +75,7 @@ The Id of the policy you want to remove
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -86,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -96,8 +95,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADPolicy](./Get-AzureADPolicy.md)
+[Get-AzureADPolicy]()
 
-[New-AzureADPolicy](./New-AzureADPolicy.md)
+[New-AzureADPolicy]()
 
-[Set-AzureADPolicy](./Set-AzureADPolicy.md)
+[Set-AzureADPolicy]()
+

@@ -1,9 +1,7 @@
 ---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
-ms.assetid: 81048EAD-48BE-4972-8942-8FA44F3D7979
-ms.custom: iamfeature=PowerShell
-ms.reviewer: rodejo
-online version: 
+Module Name:
+online version:
 schema: 2.0.0
 ---
 
@@ -15,19 +13,27 @@ Deletes settings in Azure Active Directory.
 ## SYNTAX
 
 ```
-Remove-AzureADObjectSetting -TargetType <String> -TargetObjectId <String> -Id <String>
- [-InformationAction <ActionPreference>] [-InformationVariable <String>] [<CommonParameters>]
+Remove-AzureADObjectSetting [-InformationAction <ActionPreference>] [-InformationVariable <String>]
+ -Id <String> -TargetObjectId <String> -TargetType <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The **Remove-AzureADObjectSetting** cmdlet removes object settings in Azure Active Directory (AD).
+The Remove-AzureADObjectSetting cmdlet removes object settings in Azure Active Directory (AD).
 
 ## EXAMPLES
+
+### Example 1
+```
+PS C:\> {{ Add example code here }}
+```
+
+{{ Add example description here }}
 
 ## PARAMETERS
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event.
+The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -69,7 +75,7 @@ Specfies the ID of a settings object in Azure AD.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -79,12 +85,12 @@ Accept wildcard characters: False
 ```
 
 ### -TargetObjectId
-Specifies the object ID of the target. 
+Specifies the object ID of the target.
 
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -99,7 +105,7 @@ Specifies the target type.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -109,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -119,10 +125,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADObjectSetting](./Get-AzureADObjectSetting.md)
+[Get-AzureADObjectSetting]()
 
-[New-AzureADObjectSetting](./New-AzureADObjectSetting.md)
+[New-AzureADObjectSetting]()
 
-[Set-AzureADObjectSetting](./Set-AzureADObjectSetting.md)
-
+[Set-AzureADObjectSetting]()
 

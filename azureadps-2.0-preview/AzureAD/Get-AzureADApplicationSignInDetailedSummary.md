@@ -5,43 +5,58 @@ online version:
 schema: 2.0.0
 ---
 
-# Remove-AzureADMSGroupLifecyclePolicy
+# Get-AzureADApplicationSignInDetailedSummary
 
 ## SYNOPSIS
-Deletes a groupLifecyclePolicies object
+Get detailed sign in summaries
 
 ## SYNTAX
 
 ```
-Remove-AzureADMSGroupLifecyclePolicy -Id <String> [<CommonParameters>]
+Get-AzureADApplicationSignInDetailedSummary [-Top <int?>] [-Filter <string>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The Remove-AzureADMSGroupLifecyclePolicy command deletes a groupLifecyclePolicies object in Azure Active Directory.
 
 ## EXAMPLES
 
 ### Example 1
-```
-PS C:\> Remove-AzureADMSGroupLifecyclePolicy -Id "13bed58e-6144-41e5-abbd-47c95964e671"
+```powershell
+PS C:\> {{ Add example code here }}
 ```
 
-This cmdlet deletes the groupLifecyclePolicies object that has the specified ID.
+{{ Add example description here }}
 
 ## PARAMETERS
 
-### -Id
-Specifies the ID of the groupLifecyclePolicies object that this cmdlet removes.
+### -Top
+The maximum number of records to return.
 
 ```yaml
-Type: String
+Type: int?
 Parameter Sets: (All)
 Aliases:
 
-Required: True
+Required: False
 Position: Named
 Default value: None
-Accept pipeline input: True (ByPropertyName, ByValue)
+Accept pipeline input: True
+Accept wildcard characters: False
+```
+
+### -Filter
+The oData v3.0 filter statement. 
+Controls which objects are returned.
+
+```yaml
+Type: string
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True
 Accept wildcard characters: False
 ```
 
@@ -50,10 +65,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### System.String
 ## OUTPUTS
 
-### System.Object
+### Microsoft.Online.Administration.GetApplicationSignInDetailedSummaryObjectsResponse
 ## NOTES
-
 ## RELATED LINKS

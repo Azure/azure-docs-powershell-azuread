@@ -1,9 +1,7 @@
 ---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
-ms.assetid: 4AC32B4E-81B5-4C66-82D5-21B839DB71AC
-ms.custom: iamfeature=PowerShell
-ms.reviewer: rodejo
-online version: 
+Module Name:
+online version:
 schema: 2.0.0
 ---
 
@@ -23,7 +21,7 @@ New-AzureADPolicy [-AlternativeIdentifier <String>]
 ```
 
 ## DESCRIPTION
-The **New-AzureADPolicy** cmdlet creates a policy in Azure Active Directory (AD).
+The New-AzureADPolicy cmdlet creates a policy in Azure Active Directory (AD).
 
 ## EXAMPLES
 
@@ -42,7 +40,7 @@ Specifies an alternative ID.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -52,13 +50,12 @@ Accept wildcard characters: False
 ```
 
 ### -Definition
-Specifies an array of JSON that contains all the rules of the policy, for example:
-*-Definition @("{"TokenLifetimePolicy":{"Version":1,"MaxInactiveTime":"20:00:00"}}")*
+Specifies an array of JSON that contains all the rules of the policy, for example: -Definition @("{"TokenLifetimePolicy":{"Version":1,"MaxInactiveTime":"20:00:00"}}")
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -73,7 +70,7 @@ String of the policy name
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -88,7 +85,7 @@ True if this policy is the organisational default
 ```yaml
 Type: Boolean
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -98,10 +95,12 @@ Accept wildcard characters: False
 ```
 
 ### -KeyCredentials
+@{Text=}
+
 ```yaml
 Type: System.Collections.Generic.List`1[Microsoft.Open.MSGraph.Model.KeyCredential]
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -111,12 +110,13 @@ Accept wildcard characters: False
 ```
 
 ### -Type
-Specifies the type of policy. For token lifetimes, specify "TokenLifetimePolicy".
+Specifies the type of policy.
+For token lifetimes, specify "TokenLifetimePolicy".
 
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -136,8 +136,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADPolicy](./Get-AzureADPolicy.md)
+[Get-AzureADPolicy]()
 
-[Remove-AzureADPolicy](./Remove-AzureADPolicy.md)
+[Remove-AzureADPolicy]()
 
-[Set-AzureADPolicy](./Set-AzureADPolicy.md)
+[Set-AzureADPolicy]()
+

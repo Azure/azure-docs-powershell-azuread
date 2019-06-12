@@ -5,33 +5,34 @@ online version:
 schema: 2.0.0
 ---
 
-# Remove-AzureADMSGroupLifecyclePolicy
+# Remove-AzureADMSTrustFrameworkPolicy
 
 ## SYNOPSIS
-Deletes a groupLifecyclePolicies object
+This cmdlet is used to delete a trust framework policy (custom policy) in the directory.
 
 ## SYNTAX
 
 ```
-Remove-AzureADMSGroupLifecyclePolicy -Id <String> [<CommonParameters>]
+Remove-AzureADMSTrustFrameworkPolicy -Id <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The Remove-AzureADMSGroupLifecyclePolicy command deletes a groupLifecyclePolicies object in Azure Active Directory.
+This cmdlet is used to delete a trust framework policy in the directory.
+The trust framework policy will be permanently deleted.
 
 ## EXAMPLES
 
 ### Example 1
 ```
-PS C:\> Remove-AzureADMSGroupLifecyclePolicy -Id "13bed58e-6144-41e5-abbd-47c95964e671"
+PS C:\> Remove-AzureADMSTrustFrameworkPolicy -Id B2C_1A_signup_signin
 ```
 
-This cmdlet deletes the groupLifecyclePolicies object that has the specified ID.
+This example removes the specified trust framework policy.
 
 ## PARAMETERS
 
 ### -Id
-Specifies the ID of the groupLifecyclePolicies object that this cmdlet removes.
+The unique identifier for a trust framework policy.
 
 ```yaml
 Type: String

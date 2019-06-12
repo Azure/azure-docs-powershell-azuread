@@ -1,35 +1,38 @@
 ---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
-ms.custom: iamfeature=PowerShell
-ms.reviewer: rodejo
-online version: 
+Module Name:
+online version:
 schema: 2.0.0
 ---
 
 # Get-AzureADMSDeletedGroup
 
 ## SYNOPSIS
-This cmdlet is used to retrieve the soft deleted groups in a directory. 
+This cmdlet is used to retrieve the soft deleted groups in a directory.
 
 ## SYNTAX
 
-### GetQuery (Default)
+### UNNAMED_PARAMETER_SET_1
 ```
-Get-AzureADMSDeletedGroup [-All <Boolean>] [-Top <Int32>] [-Filter <String>] [<CommonParameters>]
-```
-
-### GetVague
-```
-Get-AzureADMSDeletedGroup [-SearchString <String>] [-All <Boolean>] [<CommonParameters>]
+Get-AzureADMSDeletedGroup [-All <Boolean>] [-Filter <String>] [-Top <Int32>] [<CommonParameters>]
 ```
 
-### GetById
+### UNNAMED_PARAMETER_SET_2
 ```
-Get-AzureADMSDeletedGroup -Id <String> [-All <Boolean>] [<CommonParameters>]
+Get-AzureADMSDeletedGroup [-All <Boolean>] -Id <String> [<CommonParameters>]
+```
+
+### UNNAMED_PARAMETER_SET_3
+```
+Get-AzureADMSDeletedGroup [-All <Boolean>] [-SearchString <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-This cmdlet is used to retrieve the soft deleted groups in a directory. When a group is deleted it is initially soft deleted and can be recovered during the first 30 days after deletion. After 30 days the group is permanently deleted and can no longer be recovered. Note that soft delete is currently only implemented for Unified Groups (a.k.a. Office 365 Groups).
+This cmdlet is used to retrieve the soft deleted groups in a directory.
+When a group is deleted it is initially soft deleted and can be recovered during the first 30 days after deletion.
+After 30 days the group is permanently deleted and can no longer be recovered.
+Note that soft delete is currently only implemented for Unified Groups (a.k.a.
+Office 365 Groups).
 
 ## EXAMPLES
 
@@ -49,7 +52,7 @@ If false, return the number of objects specified by the Top parameter
 ```yaml
 Type: Boolean
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -59,12 +62,13 @@ Accept wildcard characters: False
 ```
 
 ### -Filter
-Specifies an oData v3.0 filter statement. This parameter controls which objects are returned.
+Specifies an oData v3.0 filter statement.
+This parameter controls which objects are returned.
 
 ```yaml
 Type: String
-Parameter Sets: GetQuery
-Aliases: 
+Parameter Sets: UNNAMED_PARAMETER_SET_1
+Aliases:
 
 Required: False
 Position: Named
@@ -78,8 +82,8 @@ The Id of the deleted group to be retrieved
 
 ```yaml
 Type: String
-Parameter Sets: GetById
-Aliases: 
+Parameter Sets: UNNAMED_PARAMETER_SET_2
+Aliases:
 
 Required: True
 Position: Named
@@ -93,8 +97,8 @@ Specifies a search string.
 
 ```yaml
 Type: String
-Parameter Sets: GetVague
-Aliases: 
+Parameter Sets: UNNAMED_PARAMETER_SET_3
+Aliases:
 
 Required: False
 Position: Named
@@ -108,8 +112,8 @@ Specifies the maximum number of records to return.
 
 ```yaml
 Type: Int32
-Parameter Sets: GetQuery
-Aliases: 
+Parameter Sets: UNNAMED_PARAMETER_SET_1
+Aliases:
 
 Required: False
 Position: Named
@@ -119,19 +123,16 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
-System.Nullable`1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
-System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+System.Nullable\`1\[\[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089\]\] System.Nullable\`1\[\[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089\]\]
 
 ## OUTPUTS
 
 ### System.Object
-
 ## NOTES
 
 ## RELATED LINKS
-

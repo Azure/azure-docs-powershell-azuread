@@ -1,9 +1,7 @@
 ---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
-ms.assetid: 5655BF04-B245-4D0E-9AD9-AAAA1A6B048D
-ms.custom: iamfeature=PowerShell
-ms.reviewer: rodejo
-online version: 
+Module Name:
+online version:
 schema: 2.0.0
 ---
 
@@ -14,26 +12,28 @@ Gets a policy.
 
 ## SYNTAX
 
-### GetQuery (Default)
 ```
-Get-AzureADPolicy [-InformationAction <ActionPreference>] [-InformationVariable <String>] [<CommonParameters>]
-```
-
-### GetById
-```
-Get-AzureADPolicy -Id <String> [-InformationAction <ActionPreference>] [-InformationVariable <String>]
+Get-AzureADPolicy [-InformationAction <ActionPreference>] [-InformationVariable <String>] -Id <String>
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The **Get-AzureADPolicy** cmdlet gets a policy in Azure Active Directory (AD).
+The Get-AzureADPolicy cmdlet gets a policy in Azure Active Directory (AD).
 
 ## EXAMPLES
+
+### Example 1
+```
+PS C:\> {{ Add example code here }}
+```
+
+{{ Add example description here }}
 
 ## PARAMETERS
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event.
+The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -74,8 +74,8 @@ The Id of the policy you want to retrieve
 
 ```yaml
 Type: String
-Parameter Sets: GetById
-Aliases: 
+Parameter Sets: (All)
+Aliases:
 
 Required: True
 Position: Named
@@ -85,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -95,9 +95,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[New-AzureADPolicy](./New-AzureADPolicy.md)
+[New-AzureADPolicy]()
 
-[Remove-AzureADPolicy](./Remove-AzureADPolicy.md)
+[Remove-AzureADPolicy]()
 
-[Set-AzureADPolicy](./Set-AzureADPolicy.md)
+[Set-AzureADPolicy]()
 

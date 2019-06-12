@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
-Module Name: AzureADPreview
+Module Name:
 online version:
 schema: 2.0.0
 ---
@@ -12,12 +12,6 @@ This cmdlet is used to retrieve the configured identity providers in the directo
 
 ## SYNTAX
 
-### GetQuery (Default)
-```
-Get-AzureADMSIdentityProvider [<CommonParameters>]
-```
-
-### GetById
 ```
 Get-AzureADMSIdentityProvider -Id <String> [<CommonParameters>]
 ```
@@ -55,7 +49,7 @@ The unique identifier for an identity provider.
 
 ```yaml
 Type: String
-Parameter Sets: GetById
+Parameter Sets: (All)
 Aliases:
 
 Required: True
@@ -66,17 +60,14 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable.
-For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
-
 ## OUTPUTS
 
 ### System.Object
-
 ## NOTES
 
 ## RELATED LINKS

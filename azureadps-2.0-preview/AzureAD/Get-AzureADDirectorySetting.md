@@ -1,9 +1,7 @@
 ---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
-ms.assetid: FF1EF8E7-1372-42D8-966C-19FBE9603F5B
-ms.custom: iamfeature=PowerShell
-ms.reviewer: rodejo
-online version: 
+Module Name:
+online version:
 schema: 2.0.0
 ---
 
@@ -14,14 +12,14 @@ Gets a directory setting.
 
 ## SYNTAX
 
-### GetQuery (Default)
+### UNNAMED_PARAMETER_SET_1
 ```
-Get-AzureADDirectorySetting [-All <Boolean>] [-Top <Int32>] [<CommonParameters>]
+Get-AzureADDirectorySetting [-All <Boolean>] -Id <String> [<CommonParameters>]
 ```
 
-### GetById
+### UNNAMED_PARAMETER_SET_2
 ```
-Get-AzureADDirectorySetting -Id <String> [-All <Boolean>] [<CommonParameters>]
+Get-AzureADDirectorySetting [-All <Boolean>] [-Top <Int32>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -29,15 +27,23 @@ The Get-AzureADDirectorySetting cmdlet gets a directory setting from Azure Activ
 
 ## EXAMPLES
 
+### Example 1
+```
+PS C:\> {{ Add example code here }}
+```
+
+{{ Add example description here }}
+
 ## PARAMETERS
 
 ### -All
-If true, return all directory settings. If false, return the number of objects specified by the Top parameter
+If true, return all directory settings.
+If false, return the number of objects specified by the Top parameter
 
 ```yaml
 Type: Boolean
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -51,8 +57,8 @@ Specifies the ID of a directory in Azure AD.
 
 ```yaml
 Type: String
-Parameter Sets: GetById
-Aliases: 
+Parameter Sets: UNNAMED_PARAMETER_SET_1
+Aliases:
 
 Required: True
 Position: Named
@@ -66,8 +72,8 @@ Specifies the maximum number of records to return.
 
 ```yaml
 Type: Int32
-Parameter Sets: GetQuery
-Aliases: 
+Parameter Sets: UNNAMED_PARAMETER_SET_2
+Aliases:
 
 Required: False
 Position: Named
@@ -77,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -87,7 +93,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[New-AzureADDirectorySetting](./New-AzureADDirectorySetting.md)
-[Remove-AzureADDirectorySetting](./Remove-AzureADDirectorySetting.md)
-[Set-AzureADDirectorySetting](./Set-AzureADDirectorySetting.md)
+[New-AzureADDirectorySetting]()
+
+[Remove-AzureADDirectorySetting]()
+
+[Set-AzureADDirectorySetting]()
 
