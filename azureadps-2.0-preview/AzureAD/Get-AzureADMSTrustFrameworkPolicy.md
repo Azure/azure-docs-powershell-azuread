@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.Custom.dll-Help.xml
-Module Name: AzureADPreview
+Module Name:
 online version:
 schema: 2.0.0
 ---
@@ -8,40 +8,41 @@ schema: 2.0.0
 # Get-AzureADMSTrustFrameworkPolicy
 
 ## SYNOPSIS
-{{ Fill in the Synopsis }}
+This cmdlet is used to retrieve the created trust framework policies (custom policies) in the directory.
 
 ## SYNTAX
 
-### GetQuery (Default)
-```
-Get-AzureADMSTrustFrameworkPolicy [<CommonParameters>]
-```
-
-### GetById
 ```
 Get-AzureADMSTrustFrameworkPolicy -Id <String> [-OutputFilePath <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-{{ Fill in the Description }}
+This cmdlet is used to retrieve the trust framework policies that have been created in the directory.
 
 ## EXAMPLES
 
 ### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
+```
+PS C:\> Get-AzureADMSTrustFrameworkPolicy
 ```
 
-{{ Add example description here }}
+This example retrieves the list of all trust framework policies in the directory.
+
+### Example 2
+```
+PS C:\> Get-AzureADMSTrustFrameworkPolicy -Id B2C_1A_signup_signin
+```
+
+This example retrieves the contents of the specified trust framework policy.
 
 ## PARAMETERS
 
 ### -Id
-{{ Fill Id Description }}
+The unique identifier for a trust framework policy.
 
 ```yaml
 Type: String
-Parameter Sets: GetById
+Parameter Sets: (All)
 Aliases:
 
 Required: True
@@ -52,11 +53,11 @@ Accept wildcard characters: False
 ```
 
 ### -OutputFilePath
-{{ Fill OutputFilePath Description }}
+@{Description=System.Management.Automation.PSObject\[\]}
 
 ```yaml
 Type: String
-Parameter Sets: GetById
+Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -72,7 +73,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### System.String
-
 ## OUTPUTS
 
 ### System.Object
