@@ -46,15 +46,38 @@ GroupTypes                    : {}
 MembershipRule                : (user.department -eq "Marketing") MembershipRuleProcessingState : Paused
 ```
 
-This command creates a new dynamic group with the following rule:
+Creating dynamic groups with PowerShell currently requires the AzureADPreview module.
+Before the AzureADPreview module is installed and imported, the parameters MembershipRule and MembershipRuleProcessingState will not exist for theNew-AzureADMSGroup cmdlet
 
+This command creates a new dynamic group with the following rule:
+```
 \`user.department -contains "Marketing"\`
+```
 
 The double quotation marks are replaced with single quotation marks.
 
 The processing state is On. 
 This means that all users in the directory that qualify the rule are added as members to the group.
 Any users that do not qualify are removed from the group.
+
+### Example 2: Create an Office 365 group
+```
+PS C:\> New-AzureADMSGroup -Description "Stamp Collectors" -DisplayName "Office 365 group for all Stamp Collectors in our org" -MailNickname "StampCollectors" -GroupTypes "Unified" -MailEnabled $true -SecurityEnabled $true
+```
+
+The value that you provide for the "MailNickName" parameter is used to create both the SMTP address and the email address of the group. If the MailNickName is not unique, a four-digit string is added to the SMTP and email addresses to make them unique.
+
+### Example 3: Create an Office 365 group with dynamic membership
+```
+PS C:\> New-AzureADMSGroup -Description "Stamp Collectors" -DisplayName "Office 365 group for all Stamp Collectors in our org" -MailNickname "StampCollectors" -GroupTypes "Unified" -MailEnabled $true -SecurityEnabled $true
+```
+
+To create a dynamic Office 365 group, you need to specify both "DynamicMembership" and "Unified" in the GroupTypes parameter.
+
+Sometimes you may want to stop the processing of a dynamic group, like when you're importing a large number of new users or reorganizing your group architecture. To do that, use the MembershipRuleProcessingState parameter to switch processing on and off. To switch the procesing back on, use syntax such as the following:
+```
+Set-AzureADMSGroup -Id 92e93152-a1a6-4aac-a18a-bfe157e3b319 -MembershipRuleProcessingState "On"
+```
 
 ## PARAMETERS
 
@@ -156,6 +179,8 @@ Accept wildcard characters: False
 ### -MembershipRule
 Specifies the membership rule for a dynamic group.
 
+Requires the AzureADPreview module.
+
 For more information about the rules that you can use for dynamic groups, see Using attributes to create advanced rules (https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/).
 
 ```yaml
@@ -178,6 +203,8 @@ The acceptable values for this parameter are:
 * "Paused". Stop processing the group rule.
 
 Changing the value of the processing state does not change the members list of the group.
+
+Requires the AzureADPreview module
 
 ```yaml
 Type: String
