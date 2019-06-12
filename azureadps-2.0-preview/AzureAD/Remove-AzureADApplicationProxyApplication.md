@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.Custom.dll-Help.xml
-Module Name: AzureADPreview
+Module Name:
 online version:
 schema: 2.0.0
 ---
@@ -39,7 +39,9 @@ Example 2: Remove a Proxy Application, and remove it from Azure AD completely
 ## PARAMETERS
 
 ### -ObjectId
-The unique application Id of the application. This can be found using the Get-AzureADApplication command. You can also find this in the Azure Portal by navigating to AAD, Enterprise Applications, All Applications, Select your application, go to the properties tab, and use the ObjectId on that page. 
+The unique application Id of the application.
+This can be found using the Get-AzureADApplication command.
+You can also find this in the Azure Portal by navigating to AAD, Enterprise Applications, All Applications, Select your application, go to the properties tab, and use the ObjectId on that page.
 
 ```yaml
 Type: String
@@ -54,7 +56,9 @@ Accept wildcard characters: False
 ```
 
 ### -RemoveADApplication
-This allows you to delete application completely. When this is false (default), Application Proxy properties are removed from the application but the application still exists. If this is true, the application is completely removed from Azure AD.
+This allows you to delete application completely.
+When this is false (default), Application Proxy properties are removed from the application but the application still exists.
+If this is true, the application is completely removed from Azure AD.
 
 ```yaml
 Type: Boolean

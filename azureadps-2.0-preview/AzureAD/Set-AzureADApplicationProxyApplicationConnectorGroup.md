@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.Custom.dll-Help.xml
-Module Name: AzureADPreview
+Module Name:
 online version:
 schema: 2.0.0
 ---
@@ -8,17 +8,18 @@ schema: 2.0.0
 # Set-AzureADApplicationProxyApplicationConnectorGroup
 
 ## SYNOPSIS
-The Set-AzureADApplicationProxyApplicationConnectorGroup cmdlet assigns the given connector group to a specified application. 
+The Set-AzureADApplicationProxyApplicationConnectorGroup cmdlet assigns the given connector group to a specified application.
 
 ## SYNTAX
 
 ```
-Set-AzureADApplicationProxyApplicationConnectorGroup -ObjectId <String> -ConnectorGroupId <String>
+Set-AzureADApplicationProxyApplicationConnectorGroup -ConnectorGroupId <String> -ObjectId <String>
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The Set-AzureADApplicationProxyApplicationConnectorGroup cmdlet sets the connector group assigned for the specified application. The application must be configured for Application Proxy in Azure Active Directory (AD). 
+The Set-AzureADApplicationProxyApplicationConnectorGroup cmdlet sets the connector group assigned for the specified application.
+The application must be configured for Application Proxy in Azure Active Directory (AD).
 
 ## EXAMPLES
 
@@ -32,7 +33,8 @@ Example 1: Set a new Connector Group for a specific application
 ## PARAMETERS
 
 ### -ConnectorGroupId
-The Id of the Connector group that should be assigned to the application. You can find this by using the Get-AzureADApplicationProxyConnectorGroup command.
+The Id of the Connector group that should be assigned to the application.
+You can find this by using the Get-AzureADApplicationProxyConnectorGroup command.
 
 ```yaml
 Type: String
@@ -47,7 +49,8 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-The unique application Id for the application the Connector group will be assigned to. This can be found using the Get-AzureADApplication command.
+The unique application Id for the application the Connector group will be assigned to.
+This can be found using the Get-AzureADApplication command.
 
 ```yaml
 Type: String
@@ -67,11 +70,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### System.String
-
 ## OUTPUTS
 
 ### System.Object
-
 ## NOTES
 
 ## RELATED LINKS

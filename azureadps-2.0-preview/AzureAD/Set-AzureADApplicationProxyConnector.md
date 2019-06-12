@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.Custom.dll-Help.xml
-Module Name: AzureADPreview
+Module Name:
 online version:
 schema: 2.0.0
 ---
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Set-AzureADApplicationProxyConnector
 
 ## SYNOPSIS
-The Set-AzureADApplicationProxyConnector cmdlet allows reassignment of the connector to another connector group. 
+The Set-AzureADApplicationProxyConnector cmdlet allows reassignment of the connector to another connector group.
 
 ## SYNTAX
 
@@ -17,7 +17,7 @@ Set-AzureADApplicationProxyConnector -Id <String> -ConnectorGroupId <String> [<C
 ```
 
 ## DESCRIPTION
-The Set-AzureADApplicationProxyConnector cmdlet allows reassignment of the connector to another connector group. 
+The Set-AzureADApplicationProxyConnector cmdlet allows reassignment of the connector to another connector group.
 
 ## EXAMPLES
 
@@ -31,7 +31,8 @@ Example 1: Move a Connector to a different Connector Group
 ## PARAMETERS
 
 ### -Id
-The Id of the Connector being moved. You can find this value using the Get-AzureADApplicationProxyConnector command.
+The Id of the Connector being moved.
+You can find this value using the Get-AzureADApplicationProxyConnector command.
 
 ```yaml
 Type: String
@@ -46,7 +47,8 @@ Accept wildcard characters: False
 ```
 
 ### -ConnectorGroupId
-The unique idenfier of the target application proxy connector group in Azure Active Directory. You can find this value using the Get-AzureAdApplicationProxyConnectorGroup command. 
+The unique idenfier of the target application proxy connector group in Azure Active Directory.
+You can find this value using the Get-AzureAdApplicationProxyConnectorGroup command.
 
 ```yaml
 Type: String

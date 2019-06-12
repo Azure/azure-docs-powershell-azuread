@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.Custom.dll-Help.xml
-Module Name: AzureADPreview
+Module Name:
 online version:
 schema: 2.0.0
 ---
@@ -8,17 +8,20 @@ schema: 2.0.0
 # Set-AzureADApplicationProxyApplicationCustomDomainCertificate
 
 ## SYNOPSIS
-The Set-AzureADApplicationProxyApplicationCustomDomainCertificate cmdlet assigns a certificate to an application configured for Application Proxy in Azure Active Directory (AD). This will upload the certificate and allow the application to use Custom Domains. 
+The Set-AzureADApplicationProxyApplicationCustomDomainCertificate cmdlet assigns a certificate to an application configured for Application Proxy in Azure Active Directory (AD).
+This will upload the certificate and allow the application to use Custom Domains.
 
 ## SYNTAX
 
 ```
-Set-AzureADApplicationProxyApplicationCustomDomainCertificate -ObjectId <String> -PfxFilePath <String>
- -Password <SecureString> [<CommonParameters>]
+Set-AzureADApplicationProxyApplicationCustomDomainCertificate -ObjectId <String> -Password <SecureString>
+ -PfxFilePath <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The Set-AzureADApplicationProxyApplicationCustomDomainCertificate cmdlet assigns a certificate to an application configured for Application Proxy in Azure Active Directory (AD). This will upload the certificate and allow the application to use Custom Domains. If you have one certificate that includes many of your applications, you only need to upload it with one application and it will also be assigned to the other relevant applications.
+The Set-AzureADApplicationProxyApplicationCustomDomainCertificate cmdlet assigns a certificate to an application configured for Application Proxy in Azure Active Directory (AD).
+This will upload the certificate and allow the application to use Custom Domains.
+If you have one certificate that includes many of your applications, you only need to upload it with one application and it will also be assigned to the other relevant applications.
 
 ## EXAMPLES
 
@@ -33,7 +36,9 @@ Example 1: Assign a certificate to an application configured for Application Pro
 ## PARAMETERS
 
 ### -ObjectId
-The unique application Id for the application the certificate should be uploaded to. This can be found using the Get-AzureADApplication command. You can also find this in the Azure Portal by navigating to AAD, Enterprise Applications, All Applications, Select your application, go to the properties tab, and use the ObjectId on that page. 
+The unique application Id for the application the certificate should be uploaded to.
+This can be found using the Get-AzureADApplication command.
+You can also find this in the Azure Portal by navigating to AAD, Enterprise Applications, All Applications, Select your application, go to the properties tab, and use the ObjectId on that page.
 
 ```yaml
 Type: String
@@ -88,7 +93,6 @@ System.Security.SecureString
 ## OUTPUTS
 
 ### System.Object
-
 ## NOTES
 
 ## RELATED LINKS

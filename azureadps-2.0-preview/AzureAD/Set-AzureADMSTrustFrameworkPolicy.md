@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.Custom.dll-Help.xml
-Module Name: AzureADPreview
+Module Name:
 online version:
 schema: 2.0.0
 ---
@@ -8,42 +8,75 @@ schema: 2.0.0
 # Set-AzureADMSTrustFrameworkPolicy
 
 ## SYNOPSIS
-{{ Fill in the Synopsis }}
+This cmdlet is used to update a trust framework policy (custom policy) in the directory.
 
 ## SYNTAX
 
-### Content (Default)
+### UNNAMED_PARAMETER_SET_1
 ```
-Set-AzureADMSTrustFrameworkPolicy [-Id <String>] [-OutputFilePath <String>] -Content <String>
+Set-AzureADMSTrustFrameworkPolicy -Content <String> [-Id <String>] [-OutputFilePath <String>]
  [<CommonParameters>]
 ```
 
-### File
+### UNNAMED_PARAMETER_SET_2
 ```
 Set-AzureADMSTrustFrameworkPolicy [-Id <String>] -InputFilePath <String> [-OutputFilePath <String>]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-{{ Fill in the Description }}
+This cmdlet is used to update a trust framework policy in the directory.
+
+The contents of the trust framework policy to be updated can be provided using a file or a command line variable.
+
+The contents of the updated trust framework policy can be written to an output file or to the screen.
 
 ## EXAMPLES
 
 ### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
+```
+PS C:\> Set-AzureADMSTrustFrameworkPolicy -Id B2C_1A_signup_signin -Content $policyContent
 ```
 
-{{ Add example description here }}
+The example updates a trust framework policy from the content specified.
+
+The contents of updated trust framework policy are displayed on screen.
+
+### Example 2
+```
+PS C:\> Set-AzureADMSTrustFrameworkPolicy -Id B2C_1A_signup_signin -Content $policyContent -OutputFilePath C:\CreatedPolicy.xml
+```
+
+The example updates a trust framework policy from the content specified.
+
+The contents of updated trust framework policy are written to file mentioned in output file path.
+
+### Example 3
+```
+PS C:\> Set-AzureADMSTrustFrameworkPolicy -Id B2C_1A_signup_signin -InputFilePath C:\InputPolicy.xml -OutputFilePath C:\CreatedPolicy.xml
+```
+
+The example updates a trust framework policy from the file mentioned in InputFilePath.
+
+The contents of updated trust framework policy are written to file mentioned in output file path.
+
+### Example 4
+```
+PS C:\> Set-AzureADMSTrustFrameworkPolicy -Id B2C_1A_signup_signin -InputFilePath C:\InputPolicy.xml
+```
+
+The example updates a trust framework policy from the file mentioned in InputFilePath.
+
+The contents of updated created trust framework policy are displayed on screen.
 
 ## PARAMETERS
 
 ### -Content
-{{ Fill Content Description }}
+The content of the trust framework policy to be updated.
 
 ```yaml
 Type: String
-Parameter Sets: Content
+Parameter Sets: UNNAMED_PARAMETER_SET_1
 Aliases:
 
 Required: True
@@ -54,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-{{ Fill Id Description }}
+The unique identifier for a trust framework policy.
 
 ```yaml
 Type: String
@@ -69,11 +102,11 @@ Accept wildcard characters: False
 ```
 
 ### -InputFilePath
-{{ Fill InputFilePath Description }}
+Path to the file used for reading the contents of trust framework policy to be updated.
 
 ```yaml
 Type: String
-Parameter Sets: File
+Parameter Sets: UNNAMED_PARAMETER_SET_2
 Aliases:
 
 Required: True
@@ -84,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -OutputFilePath
-{{ Fill OutputFilePath Description }}
+Path to the file used for writing the contents of updated trust framework policy.
 
 ```yaml
 Type: String
@@ -104,7 +137,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### System.String
-
 ## OUTPUTS
 
 ### System.Object
