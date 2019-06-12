@@ -1,6 +1,7 @@
 ---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.Custom.dll-Help.xml
-online version: 
+Module Name: AzureADPreview
+online version:
 schema: 2.0.0
 ---
 
@@ -8,12 +9,13 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The Set-AzureADApplicationProxyApplicationSingleSignOn cmdlet allows you to set and modify single sign-on (SSO) settings for an application configured for Application Proxy in Azure Active Directory. 
+
 ## SYNTAX
 
 ```
 Set-AzureADApplicationProxyApplicationSingleSignOn -ObjectId <String> -SingleSignOnMode <SingleSignOnModeEnum>
  [-KerberosInternalApplicationServicePrincipalName <String>]
- [-KerberosDelegatedLoginIdentity <KerberosSignOnMappingAttributeTypeEnum>]
+ [-KerberosDelegatedLoginIdentity <KerberosSignOnMappingAttributeTypeEnum>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -25,13 +27,15 @@ The Set-AzureADApplicationProxyApplicationSingleSignOn cmdlet allows you to set 
 ```
 PS C:\> Set-AzureADApplicationProxyApplicationSingleSignOn -ObjectId 4eba5342-8d17-4eac-a1f6-62a0de26311e -SingleSignOnMode OnPremisesKerberos -KerberosInternalApplicationServicePrincipalName "http/www.adventure-works.com" -KerberosDelegatedLoginIdentity OnPremisesUserPrincipalName
 ```
+
 Example 1: Assign an application to use Kerberos Constrained Delegation, and specify required parameters. 
  
+
 ### Example 2
 ```
 PS C:\> Set-AzureADApplicationProxyApplicationSingleSignOn -ObjectId 4eba5342-8d17-4eac-a1f6-62a0de26311e -SingleSignOnMode None
-
 ```
+
 Example 2: Remove SSO from an application
 
 ## PARAMETERS
@@ -42,7 +46,7 @@ The identity that the Connector can use on behalf of your users to authenticate.
 ```yaml
 Type: KerberosSignOnMappingAttributeTypeEnum
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 Accepted values: UserPrincipalName, OnPremisesUserPrincipalName, UserPrincipalUsername, OnPremisesUserPrincipalUsername, OnPremisesSAMAccountName
 
 Required: False
@@ -58,7 +62,7 @@ The internal application SPN of the application server. This SPN needs to be in 
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -73,7 +77,7 @@ The unique application Id of the application that needs different SSO settings. 
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -88,7 +92,7 @@ Choose the type of SSO you would like the application to use. Please note that o
 ```yaml
 Type: SingleSignOnModeEnum
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 Accepted values: None, OnPremisesKerberos, HeaderBased
 
 Required: True
@@ -98,12 +102,14 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+
 ## INPUTS
 
 ### System.String
 System.Nullable`1[[Microsoft.Open.MSGraph.Model.OnPremisesPublishingSingleSignOnObject+SingleSignOnModeEnum, Microsoft.Open.MS.GraphBeta.Client, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null]]
 System.Nullable`1[[Microsoft.Open.MSGraph.Model.OnPremisesPublishingKerberosSignOnSettingsObject+KerberosSignOnMappingAttributeTypeEnum, Microsoft.Open.MS.GraphBeta.Client, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null]]
-
 
 ## OUTPUTS
 
@@ -112,4 +118,3 @@ System.Nullable`1[[Microsoft.Open.MSGraph.Model.OnPremisesPublishingKerberosSign
 ## NOTES
 
 ## RELATED LINKS
-

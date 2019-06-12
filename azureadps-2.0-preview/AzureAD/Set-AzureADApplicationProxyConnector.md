@@ -1,6 +1,7 @@
 ---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.Custom.dll-Help.xml
-online version: 
+Module Name: AzureADPreview
+online version:
 schema: 2.0.0
 ---
 
@@ -12,7 +13,7 @@ The Set-AzureADApplicationProxyConnector cmdlet allows reassignment of the conne
 ## SYNTAX
 
 ```
-Set-AzureADApplicationProxyConnector -Id <String> -ConnectorGroupId <String>
+Set-AzureADApplicationProxyConnector -Id <String> -ConnectorGroupId <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -22,9 +23,9 @@ The Set-AzureADApplicationProxyConnector cmdlet allows reassignment of the conne
 
 ### Example 1
 ```
-PS C:\> Set-AzureADApplicationProxyConnector -Id 834c5dd6-f2e8-47ae-973a-9fc769289b3d -ConnectorGroupId a39b9095-8dc8-4d3a-86c3-e7b5c3f0fb84 
-
+PS C:\> Set-AzureADApplicationProxyConnector -Id 834c5dd6-f2e8-47ae-973a-9fc769289b3d -ConnectorGroupId a39b9095-8dc8-4d3a-86c3-e7b5c3f0fb84
 ```
+
 Example 1: Move a Connector to a different Connector Group
 
 ## PARAMETERS
@@ -35,7 +36,7 @@ The Id of the Connector being moved. You can find this value using the Get-Azure
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -50,7 +51,7 @@ The unique idenfier of the target application proxy connector group in Azure Act
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -59,10 +60,13 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+
 ## INPUTS
 
 ## OUTPUTS
 
 ## NOTES
-## RELATED LINKS
 
+## RELATED LINKS

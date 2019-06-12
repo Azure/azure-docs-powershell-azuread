@@ -1,6 +1,7 @@
 ---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
-online version: 
+Module Name: AzureADPreview
+online version:
 schema: 2.0.0
 ---
 
@@ -41,7 +42,7 @@ Specifies the ID of a groupLifecyclePolicies object in Azure Active Directory
 ```yaml
 Type: String
 Parameter Sets: GetById
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -51,7 +52,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -65,4 +66,3 @@ System.Nullable`1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, P
 ## NOTES
 
 ## RELATED LINKS
-

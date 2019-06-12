@@ -1,6 +1,7 @@
 ---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
-online version: 
+Module Name: AzureADPreview
+online version:
 schema: 2.0.0
 ---
 
@@ -13,7 +14,7 @@ The Get-AzureADApplicationProxyApplication cmdlet retrieves an application confi
 ## SYNTAX
 
 ```
-Get-AzureADApplicationProxyApplication -ObjectId <String>
+Get-AzureADApplicationProxyApplication -ObjectId <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -44,8 +45,7 @@ VerifiedCustomDomainCertificatesMetadata : class OnPremisesPublishingVerifiedCus
                                            
 VerifiedCustomDomainKeyCredential        : 
 VerifiedCustomDomainPasswordCredential   : 
-SingleSignOnSettings                     :  
-
+SingleSignOnSettings                     :
 ```
 
 ### Example 2
@@ -85,10 +85,12 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+
 ## INPUTS
 
 ### System.String
-
 
 ## OUTPUTS
 

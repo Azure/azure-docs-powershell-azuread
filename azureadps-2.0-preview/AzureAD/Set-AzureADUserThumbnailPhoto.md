@@ -1,8 +1,9 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.Custom.dll-Help.xml
+Module Name: AzureADPreview
 ms.custom: iamfeature=PowerShell
 ms.reviewer: rodejo
-online version: 
+online version:
 schema: 2.0.0
 ---
 
@@ -48,7 +49,7 @@ The file path of the image to be uploaded as the user thumbnail photo
 ```yaml
 Type: String
 Parameter Sets: File
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -59,10 +60,12 @@ Accept wildcard characters: False
 
 ### -FileStream
 A filestream that contains the user thumbnail photo
+
+
 ```yaml
 Type: Stream
 Parameter Sets: Stream
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -77,7 +80,7 @@ An Image Byte Array that contains the user thumbnail photo
 ```yaml
 Type: Byte[]
 Parameter Sets: ByteArray
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -92,7 +95,7 @@ The Object ID of the user for which the user thumbnail photo is set
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -102,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -117,4 +120,3 @@ System.Byte[]
 ## NOTES
 
 ## RELATED LINKS
-
