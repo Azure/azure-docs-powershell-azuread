@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
-Module Name: AzureADPreview
+Module Name:
 online version:
 schema: 2.0.0
 ---
@@ -8,30 +8,34 @@ schema: 2.0.0
 # Set-GovernanceRoleSetting
 
 ## SYNOPSIS
-{{ Fill in the Synopsis }}
+Update role setting
 
 ## SYNTAX
 
 ```
-Set-GovernanceRoleSetting -ProviderId <String> -Id <String> [-ResourceId <String>] [-RoleDefinitionId <String>]
+Set-GovernanceRoleSetting
  [-AdminEligibleSettings <System.Collections.Generic.List`1[Microsoft.Open.MSGraph.Model.GovernanceRuleSetting]>]
  [-AdminMemberSettings <System.Collections.Generic.List`1[Microsoft.Open.MSGraph.Model.GovernanceRuleSetting]>]
+ -Id <String> -ProviderId <String> [-ResourceId <String>] [-RoleDefinitionId <String>]
  [-UserEligibleSettings <System.Collections.Generic.List`1[Microsoft.Open.MSGraph.Model.GovernanceRuleSetting]>]
  [-UserMemberSettings <System.Collections.Generic.List`1[Microsoft.Open.MSGraph.Model.GovernanceRuleSetting]>]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-{{ Fill in the Description }}
+Update role setting
 
 ## EXAMPLES
 
 ### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
+```
+PS C:\> $setting = New-Object Microsoft.Open.MSGraph.Model.GovernanceRuleSetting
+				  PS C:\> $setting.RuleIdentifier = "JustificationRule"
+				  PS C:\> $setting.Setting = "{'required':false}"
+				  PS C:\> Set-GovernanceRoleSetting -ProviderId AzureResources -Id ff518d09-47f5-45a9-bb32-71916d9aeadf -ResourceId 3f5887ed-dd6e-4821-8bde-c813ec508cf9 -RoleDefinitionId 2387ced3-4e95-4c36-a915-73d803f93702 -UserMemberSettings $setting
 ```
 
-{{ Add example description here }}
+Update a role setting by setting the justification to be false
 
 ## PARAMETERS
 
@@ -51,7 +55,7 @@ Accept wildcard characters: False
 ```
 
 ### -AdminMemberSettings
-{{ Fill AdminMemberSettings Description }}
+The rule settings that are evaluated when an administrator tries to add an eligible role assignment.
 
 ```yaml
 Type: System.Collections.Generic.List`1[Microsoft.Open.MSGraph.Model.GovernanceRuleSetting]
@@ -66,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-{{ Fill Id Description }}
+The unique identifier of the specific role setting
 
 ```yaml
 Type: String
@@ -81,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProviderId
-{{ Fill ProviderId Description }}
+The unique identifier of the specific provider
 
 ```yaml
 Type: String
@@ -96,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-{{ Fill ResourceId Description }}
+The unique identifier of the specific resource
 
 ```yaml
 Type: String
@@ -111,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -RoleDefinitionId
-{{ Fill RoleDefinitionId Description }}
+The unique identifier of the specific role definition
 
 ```yaml
 Type: String
@@ -126,7 +130,8 @@ Accept wildcard characters: False
 ```
 
 ### -UserEligibleSettings
-{{ Fill UserEligibleSettings Description }}
+The rule settings that are evaluated when a user tries to add an eligible role assignment.
+This is not supported for pimforazurerbac scenario for now, and may be available in the future scenarios.
 
 ```yaml
 Type: System.Collections.Generic.List`1[Microsoft.Open.MSGraph.Model.GovernanceRuleSetting]
@@ -141,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserMemberSettings
-{{ Fill UserMemberSettings Description }}
+The rule settings that are evaluated when a user tries to activate his role assignment.
 
 ```yaml
 Type: System.Collections.Generic.List`1[Microsoft.Open.MSGraph.Model.GovernanceRuleSetting]
@@ -161,7 +166,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### System.String
-
 ## OUTPUTS
 
 ### System.Object

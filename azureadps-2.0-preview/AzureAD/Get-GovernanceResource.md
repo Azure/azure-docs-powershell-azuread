@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
-Module Name: AzureADPreview
+Module Name:
 online version:
 schema: 2.0.0
 ---
@@ -8,30 +8,30 @@ schema: 2.0.0
 # Get-GovernanceResource
 
 ## SYNOPSIS
-{{ Fill in the Synopsis }}
+Get a Governance Resources
 
 ## SYNTAX
 
 ```
-Get-GovernanceResource -ProviderId <String> -Id <String> [<CommonParameters>]
+Get-GovernanceResource -Id <String> -ProviderId <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-{{ Fill in the Description }}
+Get a Governance Resources
 
 ## EXAMPLES
 
 ### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
+```
+PS C:\> Get-GovernanceResource -ProviderId AzureResources -Id 3f5887ed-dd6e-4821-8bde-c813ec508cf9
 ```
 
-{{ Add example description here }}
+Get a governance resource for AzureResource provider
 
 ## PARAMETERS
 
 ### -Id
-{{ Fill Id Description }}
+The unique identifier of the specific resource
 
 ```yaml
 Type: String
@@ -46,7 +46,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProviderId
-{{ Fill ProviderId Description }}
+The unique identifier of the specific provider
 
 ```yaml
 Type: String
@@ -66,7 +66,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### System.String
-
 ## OUTPUTS
 
 ### System.Object

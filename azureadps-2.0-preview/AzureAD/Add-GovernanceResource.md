@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
-Module Name: AzureADPreview
+Module Name:
 online version:
 schema: 2.0.0
 ---
@@ -8,30 +8,30 @@ schema: 2.0.0
 # Add-GovernanceResource
 
 ## SYNOPSIS
-{{ Fill in the Synopsis }}
+Use this API to Add a new governance resources.
 
 ## SYNTAX
 
 ```
-Add-GovernanceResource -ProviderId <String> [-ExternalId <String>] [<CommonParameters>]
+Add-GovernanceResource [-ExternalId <String>] -ProviderId <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-{{ Fill in the Description }}
+Use this API to Add a new governance resources.
 
 ## EXAMPLES
 
 ### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
+```
+PS C:\> Add-GovernanceResource -ProviderId AzureResources -ExternalId "/subscriptions/38ab2ccc-3747-4567-b36b-9478f5602f0d"
 ```
 
-{{ Add example description here }}
+Register a new Resource
 
 ## PARAMETERS
 
 ### -ExternalId
-{{ Fill ExternalId Description }}
+The unique identifier of the specific resource Id
 
 ```yaml
 Type: String
@@ -46,7 +46,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProviderId
-{{ Fill ProviderId Description }}
+The unique identifier of the specific provider
 
 ```yaml
 Type: String
@@ -66,7 +66,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### System.String
-
 ## OUTPUTS
 
 ### System.Object

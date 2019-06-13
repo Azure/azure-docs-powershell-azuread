@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
-Module Name: AzureADPreview
+Module Name:
 online version:
 schema: 2.0.0
 ---
@@ -8,31 +8,32 @@ schema: 2.0.0
 # Set-GovernanceRoleAssignmentRequest
 
 ## SYNOPSIS
-{{ Fill in the Synopsis }}
+Update a role assignment request
 
 ## SYNTAX
 
 ```
-Set-GovernanceRoleAssignmentRequest -ProviderId <String> -Id <String> [-Reason <String>] [-Decision <String>]
- [-Schedule <GovernanceSchedule>] [-AssignmentState <String>] [<CommonParameters>]
+Set-GovernanceRoleAssignmentRequest [-AssignmentState <String>] [-Decision <String>] -Id <String>
+ -ProviderId <String> [-Reason <String>] [-Schedule <GovernanceSchedule>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-{{ Fill in the Description }}
+Update a role assignment request
 
 ## EXAMPLES
 
 ### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
+```
+PS C:\> Set-GovernanceRoleAssignmentRequest -ProviderId AzureResources -Id 8d28fcb3-1373-4810-8e84-75adea9a18be -Reason "{'RequestorReason':'test','AdminReason':'gg'}" -Decision "AdminDenied"
 ```
 
-{{ Add example description here }}
+Update a role assignment request by setting to denied
 
 ## PARAMETERS
 
 ### -AssignmentState
-{{ Fill AssignmentState Description }}
+The state of assignment, and the values can be Eligible or Active.
+For decision of AdminApproved, it is required.
 
 ```yaml
 Type: String
@@ -47,7 +48,8 @@ Accept wildcard characters: False
 ```
 
 ### -Decision
-{{ Fill Decision Description }}
+The administrator decision of the role assignment request.
+The value should be updated as AdminApproved or AdminDenied.
 
 ```yaml
 Type: String
@@ -62,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-{{ Fill Id Description }}
+The unique identifier of the specific role assignment request
 
 ```yaml
 Type: String
@@ -77,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProviderId
-{{ Fill ProviderId Description }}
+The unique identifier of the specific provider
 
 ```yaml
 Type: String
@@ -92,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -Reason
-{{ Fill Reason Description }}
+The reason provided by the administrator for his decision.
 
 ```yaml
 Type: String
@@ -107,7 +109,8 @@ Accept wildcard characters: False
 ```
 
 ### -Schedule
-{{ Fill Schedule Description }}
+The schedule of the role assignment request.
+For status of AdminApproved, it is required.
 
 ```yaml
 Type: GovernanceSchedule
@@ -127,7 +130,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### System.String
-
 ## OUTPUTS
 
 ### System.Object

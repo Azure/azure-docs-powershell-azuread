@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
-Module Name: AzureADPreview
+Module Name:
 online version:
 schema: 2.0.0
 ---
@@ -8,30 +8,30 @@ schema: 2.0.0
 # Get-GovernanceRoleAssignmentRequest
 
 ## SYNOPSIS
-{{ Fill in the Synopsis }}
+Get governance role assignment request
 
 ## SYNTAX
 
 ```
-Get-GovernanceRoleAssignmentRequest -ProviderId <String> -Id <String> [<CommonParameters>]
+Get-GovernanceRoleAssignmentRequest -Id <String> -ProviderId <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-{{ Fill in the Description }}
+Get governance role assignment request
 
 ## EXAMPLES
 
 ### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
+```
+PS C:\> Get-GovernanceRoleAssignmentRequest -ProviderId AzureResources -Id 14eda86f-b650-4ccf-802f-33842c1f1d2c
 ```
 
-{{ Add example description here }}
+Get a role assignment request for AzureResources provider with a role assignment id
 
 ## PARAMETERS
 
 ### -Id
-{{ Fill Id Description }}
+The unique identifier of the specific role assignment request
 
 ```yaml
 Type: String
@@ -46,7 +46,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProviderId
-{{ Fill ProviderId Description }}
+The unique identifier of the specific provider
 
 ```yaml
 Type: String
@@ -66,7 +66,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### System.String
-
 ## OUTPUTS
 
 ### System.Object

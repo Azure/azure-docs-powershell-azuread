@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
-Module Name: AzureADPreview
+Module Name:
 online version:
 schema: 2.0.0
 ---
@@ -8,31 +8,31 @@ schema: 2.0.0
 # Get-GovernanceRoleAssignments
 
 ## SYNOPSIS
-{{ Fill in the Synopsis }}
+Get role assignments for a specific provider and resource
 
 ## SYNTAX
 
 ```
-Get-GovernanceRoleAssignments -ProviderId <String> -ResourceId <String> [-Top <Int32>] [-Filter <String>]
+Get-GovernanceRoleAssignments [-Filter <String>] -ProviderId <String> -ResourceId <String> [-Top <Int32>]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-{{ Fill in the Description }}
+Get role assignments for a specific provider and resource
 
 ## EXAMPLES
 
 ### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
+```
+PS C:\> Get-GovernanceRoleAssignments -ProviderId AzureResources -ResourceId 3f5887ed-dd6e-4821-8bde-c813ec508cf9
 ```
 
-{{ Add example description here }}
+Get all role assignments for a specific provider and resource
 
 ## PARAMETERS
 
 ### -Filter
-{{ Fill Filter Description }}
+The Odata filter
 
 ```yaml
 Type: String
@@ -47,7 +47,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProviderId
-{{ Fill ProviderId Description }}
+The unique identifier of the specific provider
 
 ```yaml
 Type: String
@@ -62,7 +62,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-{{ Fill ResourceId Description }}
+The unique identifier of the specific resource
 
 ```yaml
 Type: String
@@ -77,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -Top
-{{ Fill Top Description }}
+The top count
 
 ```yaml
 Type: Int32
@@ -97,9 +97,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### System.String
-
 ### System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
-
 ## OUTPUTS
 
 ### System.Object

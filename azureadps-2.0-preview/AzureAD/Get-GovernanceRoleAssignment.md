@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
-Module Name: AzureADPreview
+Module Name:
 online version:
 schema: 2.0.0
 ---
@@ -8,30 +8,37 @@ schema: 2.0.0
 # Get-GovernanceRoleAssignment
 
 ## SYNOPSIS
-{{ Fill in the Synopsis }}
+Get a governance role assignment
 
 ## SYNTAX
 
 ```
-Get-GovernanceRoleAssignment -ProviderId <String> -ResourceId <String> -Id <String> [<CommonParameters>]
+Get-GovernanceRoleAssignment -Id <String> -ProviderId <String> -ResourceId <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-{{ Fill in the Description }}
+Get a governance role assignment
 
 ## EXAMPLES
 
 ### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
+```
+PS C:\> Get-GovernanceRoleAssignments -ProviderId AzureResources -ResourceId 3f5887ed-dd6e-4821-8bde-c813ec508cf9
 ```
 
-{{ Add example description here }}
+Get all role assignments for a specific resource
+
+### Example 2
+```
+PS C:\> Get-GovernanceRoleAssignment -ProviderId AzureResources -ResourceId 3f5887ed-dd6e-4821-8bde-c813ec508cf9 -Id b83c177a-10e0-4eeb-8d0b-f3668fbf81fa
+```
+
+Get a role assignment for a specific resource with assignment id
 
 ## PARAMETERS
 
 ### -Id
-{{ Fill Id Description }}
+The unique identifier of the specific role assignment
 
 ```yaml
 Type: String
@@ -46,7 +53,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProviderId
-{{ Fill ProviderId Description }}
+The unique identifier of the specific provider
 
 ```yaml
 Type: String
@@ -61,7 +68,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-{{ Fill ResourceId Description }}
+The unique identifier of the specific resource
 
 ```yaml
 Type: String
@@ -81,7 +88,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### System.String
-
 ## OUTPUTS
 
 ### System.Object

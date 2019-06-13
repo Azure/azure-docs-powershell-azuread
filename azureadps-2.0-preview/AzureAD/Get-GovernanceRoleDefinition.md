@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
-Module Name: AzureADPreview
+Module Name:
 online version:
 schema: 2.0.0
 ---
@@ -8,31 +8,31 @@ schema: 2.0.0
 # Get-GovernanceRoleDefinition
 
 ## SYNOPSIS
-{{ Fill in the Synopsis }}
+Get role definition by id
 
 ## SYNTAX
 
 ```
-Get-GovernanceRoleDefinition -ProviderId <String> -ResourceId <String> -Id <String> [-Top <Int32>]
- [-Filter <String>] [<CommonParameters>]
+Get-GovernanceRoleDefinition [-Filter <String>] -Id <String> -ProviderId <String> -ResourceId <String>
+ [-Top <Int32>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-{{ Fill in the Description }}
+Get role definition by id
 
 ## EXAMPLES
 
 ### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
+```
+PS C:\> Get-GovernanceRoleDefinition -ProviderId AzureResources -ResourceId e5e7d29d-5465-45ac-885f-4716a5ee74b5 -Id ff67e02b-d77b-4588-9f32-e02b7da6539b -Top 10
 ```
 
-{{ Add example description here }}
+Get role definition for a specific provider, resource and id
 
 ## PARAMETERS
 
 ### -Filter
-{{ Fill Filter Description }}
+The Odata filter
 
 ```yaml
 Type: String
@@ -47,7 +47,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-{{ Fill Id Description }}
+The id of a role definition
 
 ```yaml
 Type: String
@@ -62,7 +62,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProviderId
-{{ Fill ProviderId Description }}
+The unique identifier of the specific provider
 
 ```yaml
 Type: String
@@ -77,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-{{ Fill ResourceId Description }}
+The unique identifier of the specific resource
 
 ```yaml
 Type: String
@@ -92,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -Top
-{{ Fill Top Description }}
+The top count
 
 ```yaml
 Type: Int32
@@ -112,9 +112,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### System.String
-
 ### System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
-
 ## OUTPUTS
 
 ### System.Object

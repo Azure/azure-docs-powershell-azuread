@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
-Module Name: AzureADPreview
+Module Name:
 online version:
 schema: 2.0.0
 ---
@@ -8,30 +8,30 @@ schema: 2.0.0
 # Get-GovernanceResources
 
 ## SYNOPSIS
-{{ Fill in the Synopsis }}
+Get all resources based on provider
 
 ## SYNTAX
 
 ```
-Get-GovernanceResources -ProviderId <String> [-Top <Int32>] [-Filter <String>] [<CommonParameters>]
+Get-GovernanceResources [-Filter <String>] -ProviderId <String> [-Top <Int32>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-{{ Fill in the Description }}
+Get all resources based on provider
 
 ## EXAMPLES
 
 ### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
+```
+PS C:\> Get-GovernanceResources -ProviderId AzureResources
 ```
 
-{{ Add example description here }}
+Get all resources for AzureResources provider
 
 ## PARAMETERS
 
 ### -Filter
-{{ Fill Filter Description }}
+The filter for Odata query
 
 ```yaml
 Type: String
@@ -46,7 +46,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProviderId
-{{ Fill ProviderId Description }}
+The unique identifier of the specific provider
 
 ```yaml
 Type: String
@@ -61,7 +61,7 @@ Accept wildcard characters: False
 ```
 
 ### -Top
-{{ Fill Top Description }}
+The top result count
 
 ```yaml
 Type: Int32
@@ -81,9 +81,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### System.String
-
 ### System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
-
 ## OUTPUTS
 
 ### System.Object

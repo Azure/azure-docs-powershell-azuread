@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
-Module Name: AzureADPreview
+Module Name:
 online version:
 schema: 2.0.0
 ---
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-GovernanceRoleDefinitions
 
 ## SYNOPSIS
-{{ Fill in the Synopsis }}
+Get role definitions
 
 ## SYNTAX
 
@@ -17,21 +17,21 @@ Get-GovernanceRoleDefinitions -ProviderId <String> -ResourceId <String> [<Common
 ```
 
 ## DESCRIPTION
-{{ Fill in the Description }}
+Get role definitions
 
 ## EXAMPLES
 
 ### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
+```
+PS C:\> Get-GovernanceRoleDefinitions -ProviderId AzureResources -ResourceId e5e7d29d-5465-45ac-885f-4716a5ee74b5
 ```
 
-{{ Add example description here }}
+Get role definitions for a specific provider and resource
 
 ## PARAMETERS
 
 ### -ProviderId
-{{ Fill ProviderId Description }}
+The unique identifier of the specific provider
 
 ```yaml
 Type: String
@@ -46,7 +46,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-{{ Fill ResourceId Description }}
+The unique identifier of the specific resource
 
 ```yaml
 Type: String
@@ -66,7 +66,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### System.String
-
 ## OUTPUTS
 
 ### System.Object
