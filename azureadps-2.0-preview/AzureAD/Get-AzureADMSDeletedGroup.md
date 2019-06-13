@@ -1,8 +1,9 @@
 ---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
+Module Name: AzureADPreview
 ms.custom: iamfeature=PowerShell
 ms.reviewer: rodejo
-online version: 
+online version:
 schema: 2.0.0
 ---
 
@@ -49,7 +50,7 @@ If false, return the number of objects specified by the Top parameter
 ```yaml
 Type: Boolean
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -64,7 +65,7 @@ Specifies an oData v3.0 filter statement. This parameter controls which objects 
 ```yaml
 Type: String
 Parameter Sets: GetQuery
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -79,7 +80,7 @@ The Id of the deleted group to be retrieved
 ```yaml
 Type: String
 Parameter Sets: GetById
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -94,7 +95,7 @@ Specifies a search string.
 ```yaml
 Type: String
 Parameter Sets: GetVague
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -109,7 +110,7 @@ Specifies the maximum number of records to return.
 ```yaml
 Type: Int32
 Parameter Sets: GetQuery
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -119,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -134,4 +135,3 @@ System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, Pub
 ## NOTES
 
 ## RELATED LINKS
-

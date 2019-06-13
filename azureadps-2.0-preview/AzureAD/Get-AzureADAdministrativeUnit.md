@@ -1,9 +1,10 @@
 ---
 external help file: Microsoft.Open.AzureADBeta.Graph.PowerShell.dll-Help.xml
+Module Name: AzureADPreview
 ms.assetid: 46154156-B7D4-40DE-8EC9-760E44110C76
 ms.custom: iamfeature=PowerShell
 ms.reviewer: rodejo
-online version: 
+online version:
 schema: 2.0.0
 ---
 
@@ -37,7 +38,7 @@ If true, return all administrative units. If false, return the number of objects
 ```yaml
 Type: Boolean
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -54,7 +55,7 @@ For more information about oData v3.0 filter expressions, see https://msdn.micro
 ```yaml
 Type: String
 Parameter Sets: GetQuery
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -69,7 +70,7 @@ Specifies the ID of an administrative unit in Azure Active Directory.
 ```yaml
 Type: String
 Parameter Sets: GetById
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -84,7 +85,7 @@ Specifies the maximum number of records to return.
 ```yaml
 Type: Int32
 Parameter Sets: GetQuery
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -94,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

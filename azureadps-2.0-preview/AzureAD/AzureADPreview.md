@@ -18,7 +18,7 @@ Adds an administrative unit member.
 Adds an owner to an application.
 
 ### [Add-AzureADApplicationPolicy](Add-AzureADApplicationPolicy.md)
-The Add-AzureADApplicationPolicy cmdlet is not available at this time .
+**The Add-AzureADApplicationPolicy cmdlet is not available at this time**.
 
 ### [Add-AzureADDeviceRegisteredOwner](Add-AzureADDeviceRegisteredOwner.md)
 Adds a registered owner for a device.
@@ -87,7 +87,7 @@ Gets the password credential for an application.
 Gets an application policy.
 
 ### [Get-AzureADApplicationProxyApplication](Get-AzureADApplicationProxyApplication.md)
-The Get-AzureADApplicationProxyApplication cmdlet retrieves an application configured for Application Proxy in Azure Active Directory.
+The Get-AzureADApplicationProxyApplication cmdlet retrieves an application configured for Application Proxy in Azure Active Directory. 
 
 ### [Get-AzureADApplicationProxyApplicationConnectorGroup](Get-AzureADApplicationProxyApplicationConnectorGroup.md)
 The Get-AzureADApplicationProxyApplicationConnectorGroup cmdlet retrieves the connector group assigned for a specific application.
@@ -96,13 +96,13 @@ The Get-AzureADApplicationProxyApplicationConnectorGroup cmdlet retrieves the co
 The Get-AzureADApplicationProxyApplicationConnector cmdlet a list of all connectors, or if specified, details of a specific connector.
 
 ### [Get-AzureADApplicationProxyConnectorGroup](Get-AzureADApplicationProxyConnectorGroup.md)
-The Get-AzureADApplicationProxyConnectorGroup cmdlet retrieves a list of all connector groups, or if specified, details of a specific connector group.
+The Get-AzureADApplicationProxyConnectorGroup cmdlet retrieves a list of all connector groups, or if specified, details of a specific connector group. 
 
 ### [Get-AzureADApplicationProxyConnectorGroupMembers](Get-AzureADApplicationProxyConnectorGroupMembers.md)
-The Get-AzureADApplicationProxyConnectorGroupMembers gets all the Application Proxy connectors associated with the given connector group.
+The Get-AzureADApplicationProxyConnectorGroupMembers gets all the Application Proxy connectors associated with the given connector group. 
 
 ### [Get-AzureADApplicationProxyConnectorMemberOf](Get-AzureADApplicationProxyConnectorMemberOf.md)
-The Get-AzureADApplicationProxyConnectorMemberOf command gets the ConnectorGroup that the specified Connector is a member of.
+The Get-AzureADApplicationProxyConnectorMemberOf command gets the ConnectorGroup that the specified Connector is a member of. 
 
 ### [Get-AzureADApplicationServiceEndpoint](Get-AzureADApplicationServiceEndpoint.md)
 Retrieve the service endpoint of an application
@@ -162,7 +162,7 @@ Gets a directory setting template.
 Gets a domain.
 
 ### [Get-AzureADDomainNameReference](Get-AzureADDomainNameReference.md)
-This cmdlet retrieves the objects that are referenced by a given domain name
+This cmdlet retrieves the objects that are referenced by a given domain name 
 
 ### [Get-AzureADDomainServiceConfigurationRecord](Get-AzureADDomainServiceConfigurationRecord.md)
 Gets the domain's service configuration records from the serviceConfigurationRecords navigation property.
@@ -189,14 +189,13 @@ Gets an owner of a group.
 This cmdlet is used to retrieve a soft deleted directory object from the directory
 
 ### [Get-AzureADMSDeletedGroup](Get-AzureADMSDeletedGroup.md)
-This cmdlet is used to retrieve the soft deleted groups in a directory.
+This cmdlet is used to retrieve the soft deleted groups in a directory. 
 
 ### [Get-AzureADMSGroup](Get-AzureADMSGroup.md)
 Gets information about groups in Azure AD.
 
 ### [Get-AzureADMSGroupLifecyclePolicy](Get-AzureADMSGroupLifecyclePolicy.md)
-Retrieves the properties and relationships of a groupLifecyclePolicies object in Azure Active Directory.
-If you specify no parameters, this cmdlet gets all groupLifecyclePolicies.
+Retrieves the properties and relationships of a groupLifecyclePolicies object in Azure Active Directory
 
 ### [Get-AzureADMSIdentityProvider](Get-AzureADMSIdentityProvider.md)
 This cmdlet is used to retrieve the configured identity providers in the directory.
@@ -205,10 +204,10 @@ This cmdlet is used to retrieve the configured identity providers in the directo
 Retrieves the lifecycle policy object to which a group belongs.
 
 ### [Get-AzureADOAuth2PermissionGrant](Get-AzureADOAuth2PermissionGrant.md)
-Gets OAuth2PermissionGrant entities.
+Gets **OAuth2PermissionGrant** entities.
 
 ### [Get-AzureADObjectByObjectId](Get-AzureADObjectByObjectId.md)
-Retrieves the object(s) specified by the objectIds parameter
+Retrieves the object(s) specified by the objectIds parameter 
 
 ### [Get-AzureADObjectSetting](Get-AzureADObjectSetting.md)
 Gets an object setting.
@@ -289,7 +288,7 @@ Gets the manager of a user.
 Get user memberships.
 
 ### [Get-AzureADUserOAuth2PermissionGrant](Get-AzureADUserOAuth2PermissionGrant.md)
-Gets an oAuth2PermissionGrant object.
+Gets an **oAuth2PermissionGrant** object.
 
 ### [Get-AzureADUserOwnedDevice](Get-AzureADUserOwnedDevice.md)
 Get registered devices owned by a user.
@@ -319,10 +318,10 @@ Creates a key credential for an application.
 Creates a password credential for an application.
 
 ### [New-AzureADApplicationProxyApplication](New-AzureADApplicationProxyApplication.md)
-The New-AzureADApplicationProxyApplication cmdlet creates a new application configured for Application Proxy in Azure Active Directory.
+The New-AzureADApplicationProxyApplication cmdlet creates a new application configured for Application Proxy in Azure Active Directory. 
 
 ### [New-AzureADApplicationProxyConnectorGroup](New-AzureADApplicationProxyConnectorGroup.md)
-The New-AzureADApplicationProxyConnectorGroup cmdlet creates a new Application Proxy Connector group.
+The New-AzureADApplicationProxyConnectorGroup cmdlet creates a new Application Proxy Connector group. 
 
 ### [New-AzureADDevice](New-AzureADDevice.md)
 Creates a device.
@@ -406,10 +405,10 @@ Removes an application policy.
 Deletes an Application Proxy application.
 
 ### [Remove-AzureADApplicationProxyApplicationConnectorGroup](Remove-AzureADApplicationProxyApplicationConnectorGroup.md)
-The Remove-AzureADApplicationProxyApplicationConnectorGroup cmdlet sets the connector group assigned for the specified application to 'Default' and removes the current assignment.
+The Remove-AzureADApplicationProxyApplicationConnectorGroup cmdlet sets the connector group assigned for the specified application to 'Default' and removes the current assignment. 
 
 ### [Remove-AzureADApplicationProxyConnectorGroup](Remove-AzureADApplicationProxyConnectorGroup.md)
-The Remove-AzureADApplicationProxyApplicationConnectorGroup cmdlet deletes an Application Proxy Connector group.
+The Remove-AzureADApplicationProxyApplicationConnectorGroup cmdlet deletes an Application Proxy Connector group. 
 
 ### [Remove-AzureADContact](Remove-AzureADContact.md)
 Removes a contact.
@@ -517,10 +516,10 @@ Restores a previously deleted application
 This cmdlet is used to restore a previously deleted object.
 
 ### [Revoke-AzureADSignedInUserAllRefreshToken](Revoke-AzureADSignedInUserAllRefreshToken.md)
-Invalidates the refresh tokens issued to applications for the current user.
+Invalidates the refresh tokens issued to applications for the current user. 
 
 ### [Revoke-AzureADUserAllRefreshToken](Revoke-AzureADUserAllRefreshToken.md)
-Invalidates the refresh tokens issued to applications for a user.
+Invalidates the refresh tokens issued to applications for a user. 
 
 ### [Select-AzureADGroupIdsContactIsMemberOf](Select-AzureADGroupIdsContactIsMemberOf.md)
 Get groups in which a contact is a member.
@@ -544,23 +543,22 @@ Updates an application.
 Sets the logo for an Application
 
 ### [Set-AzureADApplicationProxyApplication](Set-AzureADApplicationProxyApplication.md)
-The Set-AzureADApplicationProxyApplication allows you to modify and set configurations for an application in Azure Active Directory configured to use ApplicationProxy.
+The Set-AzureADApplicationProxyApplication allows you to modify and set configurations for an application in Azure Active Directory configured to use ApplicationProxy. 
 
 ### [Set-AzureADApplicationProxyApplicationConnectorGroup](Set-AzureADApplicationProxyApplicationConnectorGroup.md)
-The Set-AzureADApplicationProxyApplicationConnectorGroup cmdlet assigns the given connector group to a specified application.
+The Set-AzureADApplicationProxyApplicationConnectorGroup cmdlet assigns the given connector group to a specified application. 
 
 ### [Set-AzureADApplicationProxyApplicationCustomDomainCertificate](Set-AzureADApplicationProxyApplicationCustomDomainCertificate.md)
-The Set-AzureADApplicationProxyApplicationCustomDomainCertificate cmdlet assigns a certificate to an application configured for Application Proxy in Azure Active Directory (AD).
-This will upload the certificate and allow the application to use Custom Domains.
+The Set-AzureADApplicationProxyApplicationCustomDomainCertificate cmdlet assigns a certificate to an application configured for Application Proxy in Azure Active Directory (AD). This will upload the certificate and allow the application to use Custom Domains. 
 
 ### [Set-AzureADApplicationProxyApplicationSingleSignOn](Set-AzureADApplicationProxyApplicationSingleSignOn.md)
-The Set-AzureADApplicationProxyApplicationSingleSignOn cmdlet allows you to set and modify single sign-on (SSO) settings for an application configured for Application Proxy in Azure Active Directory.
+The Set-AzureADApplicationProxyApplicationSingleSignOn cmdlet allows you to set and modify single sign-on (SSO) settings for an application configured for Application Proxy in Azure Active Directory. 
 
 ### [Set-AzureADApplicationProxyConnector](Set-AzureADApplicationProxyConnector.md)
-The Set-AzureADApplicationProxyConnector cmdlet allows reassignment of the connector to another connector group.
+The Set-AzureADApplicationProxyConnector cmdlet allows reassignment of the connector to another connector group. 
 
 ### [Set-AzureADApplicationProxyConnectorGroup](Set-AzureADApplicationProxyConnectorGroup.md)
-The Set-AzureADApplicationProxyConnectorGroup cmdlet allows you to change the name of a given Application Proxy connector group.
+The Set-AzureADApplicationProxyConnectorGroup cmdlet allows you to change the name of a given Application Proxy connector group. 
 
 ### [Set-AzureADDevice](Set-AzureADDevice.md)
 Updates a device.
