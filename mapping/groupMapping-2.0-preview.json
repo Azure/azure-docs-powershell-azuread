@@ -198,6 +198,24 @@
     "Set-AzureADApplicationProxyApplicationCustomDomainCertificate": "Application Proxy Application Management",
     "Set-AzureADApplicationProxyApplicationSingleSignOn": "Application Proxy Application Management",
     "Set-AzureADApplicationProxyConnector": "Application Proxy Connector Management",
-    "Set-AzureADApplicationProxyConnectorGroup": "Application Proxy Connector Management"
+    "Set-AzureADApplicationProxyConnectorGroup": "Application Proxy Connector Management",
+    "Add-GovernanceResource": "Governance",
+    "Close-GovernanceRoleAssignmentRequest": "Governance",
+    "Get-GovernanceResource": "Governance",
+    "Get-GovernanceResources": "Governance",
+    "Get-GovernanceRoleAssignment": "Governance",
+    "Get-GovernanceRoleAssignmentRequest": "Governance",
+    "Get-GovernanceRoleAssignmentRequests": "Governance",
+    "Get-GovernanceRoleAssignments": "Governance",
+    "Get-GovernanceRoleDefinition": "Governance",
+    "Get-GovernanceRoleDefinitions": "Governance",
+    "Get-GovernanceRoleSetting": "Governance",
+    "Get-GovernanceRoleSettings": "Governance",
+    "New-GovernanceRoleAssignmentRequest": "Governance",
+    "Set-GovernanceRoleAssignmentRequest": "Governance",
+    "Set-GovernanceRoleSetting": "Governance",
+    "Get-AzureADMSTrustFrameworkPolicy": "Trustframework Policies",
+    "New-AzureADMSTrustFrameworkPolicy": "Trustframework Policies",
+    "Set-AzureADMSTrustFrameworkPolicy": "Trustframework Policies"
 
 }

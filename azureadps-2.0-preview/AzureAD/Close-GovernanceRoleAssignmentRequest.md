@@ -8,7 +8,7 @@ schema: 2.0.0
 # Close-GovernanceRoleAssignmentRequest
 
 ## SYNOPSIS
-Cancel a GovernanceRoleAssignmentRequest
+Cancels a GovernanceRoleAssignmentRequest
 
 ## SYNTAX
 
