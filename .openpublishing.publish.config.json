@@ -10,13 +10,17 @@
       "build_output_subfolder": "azureps-azuread",
       "locale": "en-us",
       "monikers": [],
+      "xref_query_tags": [
+        "/dotnet"
+      ],
       "open_to_public_contributors": true,
       "git_repository_branch_open_to_public_contributors": "master",
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
         "RestApi": "Content",
-        "AzurePSModulePage": "Content"
+        "AzurePSModulePage": "Content",
+        "Tutorial": "Content"
       },
       "build_entry_point": "docs",
       "template_folder": "_themes",
@@ -38,6 +42,18 @@
     {
       "path_to_root": "_themes",
       "url": "https://github.com/Microsoft/templates.docs.msft",
+      "branch": "master",
+      "branch_mapping": {}
+    },
+    {
+      "path_to_root": "dotnet-xref",
+      "url": "https://github.com/MicrosoftDocs/dotnet-xref",
+      "branch": "live",
+      "branch_mapping": {}
+    },
+    {
+      "path_to_root": "_themes.pdf",
+      "url": "https://github.com/Microsoft/templates.docs.msft.pdf",
       "branch": "master",
       "branch_mapping": {}
     }

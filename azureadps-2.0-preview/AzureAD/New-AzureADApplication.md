@@ -1,9 +1,10 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+Module Name: AzureADPreview
 ms.assetid: 235D5FBC-E726-4F95-8BBD-454E8180576A
 ms.custom: iamfeature=PowerShell
 ms.reviewer: rodejo
-online version: 
+online version:
 schema: 2.0.0
 ---
 
@@ -16,20 +17,24 @@ Creates an application.
 
 ```
 New-AzureADApplication [-AddIns <System.Collections.Generic.List`1[Microsoft.Open.AzureAD.Model.AddIn]>]
+ [-AllowGuestsSignIn <Boolean>] [-AllowPassthroughUsers <Boolean>] [-AppLogoUrl <String>]
  [-AppRoles <System.Collections.Generic.List`1[Microsoft.Open.AzureAD.Model.AppRole]>]
  [-AvailableToOtherTenants <Boolean>] -DisplayName <String> [-ErrorUrl <String>]
  [-GroupMembershipClaims <String>] [-Homepage <String>]
- [-IdentifierUris <System.Collections.Generic.List`1[System.String]>]
+ [-IdentifierUris <System.Collections.Generic.List`1[System.String]>] [-InformationalUrls <InformationalUrl>]
+ [-IsDeviceOnlyAuthSupported <Boolean>] [-IsDisabled <Boolean>]
  [-KeyCredentials <System.Collections.Generic.List`1[Microsoft.Open.AzureAD.Model.KeyCredential]>]
  [-KnownClientApplications <System.Collections.Generic.List`1[System.String]>] [-LogoutUrl <String>]
  [-Oauth2AllowImplicitFlow <Boolean>] [-Oauth2AllowUrlPathMatching <Boolean>]
  [-Oauth2Permissions <System.Collections.Generic.List`1[Microsoft.Open.AzureAD.Model.OAuth2Permission]>]
- [-Oauth2RequirePostResponse <Boolean>]
+ [-Oauth2RequirePostResponse <Boolean>] [-OrgRestrictions <System.Collections.Generic.List`1[System.String]>]
+ [-OptionalClaims <OptionalClaims>] [-ParentalControlSettings <ParentalControlSettings>]
  [-PasswordCredentials <System.Collections.Generic.List`1[Microsoft.Open.AzureAD.Model.PasswordCredential]>]
- [-PublicClient <Boolean>] [-RecordConsentConditions <String>]
+ [-PreAuthorizedApplications <System.Collections.Generic.List`1[Microsoft.Open.AzureAD.Model.PreAuthorizedApplication]>]
+ [-PublicClient <Boolean>] [-PublisherDomain <String>] [-RecordConsentConditions <String>]
  [-ReplyUrls <System.Collections.Generic.List`1[System.String]>]
  [-RequiredResourceAccess <System.Collections.Generic.List`1[Microsoft.Open.AzureAD.Model.RequiredResourceAccess]>]
- [-SamlMetadataUrl <String>] [<CommonParameters>]
+ [-SamlMetadataUrl <String>] [-SignInAudience <String>] [-WwwHomepage <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -57,7 +62,7 @@ Defines custom behavior that a consuming service can use to call an app in speci
 ```yaml
 Type: System.Collections.Generic.List`1[Microsoft.Open.AzureAD.Model.AddIn]
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -68,10 +73,12 @@ Accept wildcard characters: False
 
 ### -AppRoles
 The collection of application roles that an application may declare. These roles can be assigned to users, groups or service principals.
+
+
 ```yaml
 Type: System.Collections.Generic.List`1[Microsoft.Open.AzureAD.Model.AppRole]
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -86,7 +93,7 @@ Indicates whether this application is available in other tenants.
 ```yaml
 Type: Boolean
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -101,7 +108,7 @@ Specifies the display name of the application.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -116,7 +123,7 @@ The Error URL of this application
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -132,7 +139,7 @@ A bitmask that configures the "groups" claim issued in a user or OAuth 2.0 acces
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -147,7 +154,7 @@ The URL to the application's homepage.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -164,7 +171,7 @@ The first element is populated from the Web application's "APP ID URI" field if 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -179,7 +186,7 @@ The collection of key credentials associated with the application
 ```yaml
 Type: System.Collections.Generic.List`1[Microsoft.Open.AzureAD.Model.KeyCredential]
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -194,7 +201,7 @@ Client applications that are tied to this resource application. Consent to any o
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -205,10 +212,12 @@ Accept wildcard characters: False
 
 ### -LogoutUrl
 The logout url for this application
+
+
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -224,7 +233,7 @@ Specifies whether this web application can request OAuth2.0 implicit flow tokens
 ```yaml
 Type: Boolean
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -239,7 +248,7 @@ Specifies whether, as part of OAuth 2.0 token requests, Azure AD will allow path
 ```yaml
 Type: Boolean
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -254,7 +263,7 @@ The collection of OAuth 2.0 permission scopes that the web API (resource) applic
 ```yaml
 Type: System.Collections.Generic.List`1[Microsoft.Open.AzureAD.Model.OAuth2Permission]
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -269,7 +278,7 @@ The collection of password credentials associated with the application.
 ```yaml
 Type: System.Collections.Generic.List`1[Microsoft.Open.AzureAD.Model.PasswordCredential]
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -284,7 +293,7 @@ Specifies whether this application is a public client (such as an installed appl
 ```yaml
 Type: Boolean
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -299,7 +308,7 @@ Do not use. May be removed in future versions
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -315,7 +324,7 @@ Specifies the URLs that user tokens are sent to for sign in, or the redirect URI
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -330,7 +339,7 @@ Specifies resources that this application requires access to and the set of OAut
 ```yaml
 Type: System.Collections.Generic.List`1[Microsoft.Open.AzureAD.Model.RequiredResourceAccess]
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -341,10 +350,12 @@ Accept wildcard characters: False
 
 ### -SamlMetadataUrl
 The URL to the SAML metadata for the application.
+
+
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -359,7 +370,202 @@ Set this to true if an Oauth2 psot response is required
 ```yaml
 Type: Boolean
 Parameter Sets: (All)
-Aliases: 
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AllowGuestsSignIn
+{{ Fill AllowGuestsSignIn Description }}
+
+```yaml
+Type: Boolean
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AllowPassthroughUsers
+{{ Fill AllowPassthroughUsers Description }}
+
+```yaml
+Type: Boolean
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AppLogoUrl
+{{ Fill AppLogoUrl Description }}
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -InformationalUrls
+{{ Fill InformationalUrls Description }}
+
+```yaml
+Type: InformationalUrl
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -IsDeviceOnlyAuthSupported
+{{ Fill IsDeviceOnlyAuthSupported Description }}
+
+```yaml
+Type: Boolean
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -IsDisabled
+{{ Fill IsDisabled Description }}
+
+```yaml
+Type: Boolean
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -OptionalClaims
+{{ Fill OptionalClaims Description }}
+
+```yaml
+Type: OptionalClaims
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -OrgRestrictions
+{{ Fill OrgRestrictions Description }}
+
+```yaml
+Type: System.Collections.Generic.List`1[System.String]
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ParentalControlSettings
+{{ Fill ParentalControlSettings Description }}
+
+```yaml
+Type: ParentalControlSettings
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -PreAuthorizedApplications
+{{ Fill PreAuthorizedApplications Description }}
+
+```yaml
+Type: System.Collections.Generic.List`1[Microsoft.Open.AzureAD.Model.PreAuthorizedApplication]
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -PublisherDomain
+{{ Fill PublisherDomain Description }}
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -SignInAudience
+{{ Fill SignInAudience Description }}
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WwwHomepage
+{{ Fill WwwHomepage Description }}
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
 
 Required: False
 Position: Named
@@ -369,7 +575,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -1,6 +1,7 @@
-﻿---
+---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
-online version: 
+Module Name: AzureADPreview
+online version:
 schema: 2.0.0
 ---
 
@@ -12,7 +13,7 @@ The Get-AzureADApplicationProxyConnectorMemberOf command gets the ConnectorGroup
 ## SYNTAX
 
 ```
-Get-AzureADApplicationProxyConnectorMemberOf -Id <String>
+Get-AzureADApplicationProxyConnectorMemberOf -Id <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -26,10 +27,8 @@ PS C:\> Get-AzureADApplicationProxyConnectorMemberOf -Id 4c8b06e7-9751-41d5-8e5e
 
 Id                                   Name                ConnectorGroupType IsDefault
 --                                   ----                ------------------ ---------
-a39b9095-8dc8-4d3a-86c3-e7b5c3f0fb84 Application Servers applicationProxy       False 
-
+a39b9095-8dc8-4d3a-86c3-e7b5c3f0fb84 Application Servers applicationProxy       False
 ```
-
 
 ## PARAMETERS
 
@@ -39,7 +38,7 @@ The Id of the connector. You can find this by running Get-AzureADApplicationProx
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -48,10 +47,12 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+
 ## INPUTS
 
 ### System.String
-
 
 ## OUTPUTS
 
@@ -60,4 +61,3 @@ Accept wildcard characters: False
 ## NOTES
 
 ## RELATED LINKS
-
