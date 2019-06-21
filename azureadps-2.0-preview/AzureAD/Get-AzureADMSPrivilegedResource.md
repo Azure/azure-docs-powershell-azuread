@@ -1,42 +1,65 @@
 ---
-external help file: Microsoft.Open.AzureADBeta.Graph.PowerShell.dll-Help.xml
+external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
 Module Name: AzureADPreview
 online version:
 schema: 2.0.0
 ---
 
-# Get-AzureADExternalDomainFederation
+# Get-AzureADMSPrivilegedResource
 
 ## SYNOPSIS
-Get an externalDomainFederation by external domain name.
+Get azure AD MS privileged resource
 
 ## SYNTAX
 
 ### GetQuery (Default)
 ```
-Get-AzureADExternalDomainFederation [-All <Boolean>] [-Top <Int32>] [-Filter <String>] [<CommonParameters>]
+Get-AzureADMSPrivilegedResource -ProviderId <String> [-Top <Int32>] [-Filter <String>] [<CommonParameters>]
 ```
 
 ### GetById
 ```
-Get-AzureADExternalDomainFederation -ExternalDomainName <String> [-All <Boolean>] [<CommonParameters>]
+Get-AzureADMSPrivilegedResource -ProviderId <String> -Id <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
+Get azure AD MS privileged resource
 
 ## EXAMPLES
 
-### Example 1: Gets an external domain federation setting for a given external domain.
+### Example 1
 ```
-Get-AzureADExternalFederationDomain -ExternalDomainName "test.com"
+PS C:\> Get-AzureADMSPrivilegedResource -ProviderId AzureResources -Id 3f5887ed-dd6e-4821-8bde-c813ec508cf9
 ```
 
-This command gets an external domain federation setting.
+Get a resource for AzureResource provider with Id
+
+### Example 2
+```
+PS C:\> Get-AzureADMSPrivilegedResource -ProviderId AzureResources
+```
+
+Get all resources for AzureResource provider
 
 ## PARAMETERS
 
-### -ExternalDomainName
-The unique idenfier of an externalDomainFederation in Azure Active Directory
+### -Filter
+The filter for Odata query
+
+```yaml
+Type: String
+Parameter Sets: GetQuery
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName, ByValue)
+Accept wildcard characters: False
+```
+
+### -Id
+The unique identifier of the specific resource
 
 ```yaml
 Type: String
@@ -50,15 +73,15 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
-### -All
-Boolean to express that return all results from the server for the specific query
+### -ProviderId
+The unique identifier of the specific provider
 
 ```yaml
-Type: Boolean
+Type: String
 Parameter Sets: (All)
 Aliases:
 
-Required: False
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByPropertyName, ByValue)
@@ -66,26 +89,10 @@ Accept wildcard characters: False
 ```
 
 ### -Top
-The maximum number of records to return.
+The top result count
 
 ```yaml
 Type: Int32
-Parameter Sets: GetQuery
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: True (ByPropertyName, ByValue)
-Accept wildcard characters: False
-```
-
-### -Filter
-The oData v3.0 filter statement. 
-Controls which objects are returned.
-
-```yaml
-Type: String
 Parameter Sets: GetQuery
 Aliases:
 
@@ -101,8 +108,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
+### System.String
 ## OUTPUTS
 
+### System.Object
 ## NOTES
 
 ## RELATED LINKS

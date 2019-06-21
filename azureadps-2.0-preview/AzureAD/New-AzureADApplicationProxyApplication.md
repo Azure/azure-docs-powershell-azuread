@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.Custom.dll-Help.xml
-Module Name:
+Module Name: AzureADPreview
 online version:
 schema: 2.0.0
 ---
@@ -13,10 +13,10 @@ The New-AzureADApplicationProxyApplication cmdlet creates a new application conf
 ## SYNTAX
 
 ```
-New-AzureADApplicationProxyApplication [-ApplicationServerTimeout <ApplicationServerTimeoutEnum>]
- [-ConnectorGroupId <String>] -DisplayName <String>
- [-ExternalAuthenticationType <ExternalAuthenticationTypeEnum>] -ExternalUrl <String> -InternalUrl <String>
- [-IsTranslateHostHeaderEnabled <Boolean>] [-IsTranslateLinksInBodyEnabled <Boolean>] [<CommonParameters>]
+New-AzureADApplicationProxyApplication -DisplayName <String> -ExternalUrl <String> -InternalUrl <String>
+ [-ExternalAuthenticationType <ExternalAuthenticationTypeEnum>] [-IsTranslateHostHeaderEnabled <Boolean>]
+ [-IsTranslateLinksInBodyEnabled <Boolean>] [-ApplicationServerTimeout <ApplicationServerTimeoutEnum>]
+ [-ConnectorGroupId <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION

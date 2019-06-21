@@ -1,36 +1,38 @@
 ---
-external help file: Microsoft.Open.AzureADBeta.Graph.PowerShell.dll-Help.xml
+external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
 Module Name: AzureADPreview
 online version:
 schema: 2.0.0
 ---
 
-# Remove-AzureADExternalDomainFederation
+# Remove-AzureADMSTrustFrameworkPolicy
 
 ## SYNOPSIS
-Delete an externalDomainFederation by external domain name.
+This cmdlet is used to delete a trust framework policy (custom policy) in the directory.
 
 ## SYNTAX
 
 ```
-Remove-AzureADExternalDomainFederation -ExternalDomainName <String> [<CommonParameters>]
+Remove-AzureADMSTrustFrameworkPolicy -Id <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
+This cmdlet is used to delete a trust framework policy in the directory.
+The trust framework policy will be permanently deleted.
 
 ## EXAMPLES
 
-### Example 1: Deletes an external domain federation setting for a given external domain.
+### Example 1
 ```
-Remove-AzureADExternalFederationDomain -ExternalDomainName "test.com"
+PS C:\> Remove-AzureADMSTrustFrameworkPolicy -Id B2C_1A_signup_signin
 ```
 
-This command deletes an external domain federation setting.
+This example removes the specified trust framework policy.
 
 ## PARAMETERS
 
-### -ExternalDomainName
-The unique idenfier of an externalDomainFederation in Azure Active Directory
+### -Id
+The unique identifier for a trust framework policy.
 
 ```yaml
 Type: String
@@ -49,8 +51,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
+### System.String
 ## OUTPUTS
 
+### System.Object
 ## NOTES
 
 ## RELATED LINKS

@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
-Module Name:
+Module Name: AzureADPreview
 online version:
 schema: 2.0.0
 ---
@@ -13,7 +13,7 @@ Get signin summary by last number of days
 ## SYNTAX
 
 ```
-Get-AzureADApplicationSignInSummary -Days <int?> [<CommonParameters>]
+Get-AzureADApplicationSignInSummary -Days <Int32> [-Top <Int32>] [-Filter <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -42,14 +42,44 @@ Number of past days summary will contain.
 Valid values are 7 and 30
 
 ```yaml
-Type: int?
+Type: Int32
 Parameter Sets: (All)
 Aliases:
 
 Required: True
 Position: Named
 Default value: None
-Accept pipeline input: True
+Accept pipeline input: True (ByPropertyName, ByValue)
+Accept wildcard characters: False
+```
+
+### -Filter
+{{ Fill Filter Description }}
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName, ByValue)
+Accept wildcard characters: False
+```
+
+### -Top
+{{ Fill Top Description }}
+
+```yaml
+Type: Int32
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
@@ -62,4 +92,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Online.Administration.GetApplicationSignInSummaryObjectsResponse
 ## NOTES
+
 ## RELATED LINKS

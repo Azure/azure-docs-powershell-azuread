@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.Custom.dll-Help.xml
-Module Name:
+Module Name: AzureADPreview
 online version:
 schema: 2.0.0
 ---
@@ -13,7 +13,7 @@ The Set-AzureADApplicationProxyApplicationConnectorGroup cmdlet assigns the give
 ## SYNTAX
 
 ```
-Set-AzureADApplicationProxyApplicationConnectorGroup -ConnectorGroupId <String> -ObjectId <String>
+Set-AzureADApplicationProxyApplicationConnectorGroup -ObjectId <String> -ConnectorGroupId <String>
  [<CommonParameters>]
 ```
 

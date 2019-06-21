@@ -1,38 +1,37 @@
 ---
-external help file: Microsoft.Open.MS.GraphBeta.PowerShell.Custom.dll-Help.xml
+external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
 Module Name: AzureADPreview
 online version:
 schema: 2.0.0
 ---
 
-# Set-AzureADApplicationProxyConnector
+# Close-AzureADMSPrivilegedRoleAssignmentRequest
 
 ## SYNOPSIS
-The Set-AzureADApplicationProxyConnector cmdlet allows reassignment of the connector to another connector group.
+Cancel a AzureADMSPrivilegedRoleAssignmentRequest
 
 ## SYNTAX
 
 ```
-Set-AzureADApplicationProxyConnector -Id <String> -ConnectorGroupId <String> [<CommonParameters>]
+Close-AzureADMSPrivilegedRoleAssignmentRequest -ProviderId <String> -Id <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The Set-AzureADApplicationProxyConnector cmdlet allows reassignment of the connector to another connector group.
+Cancel a AzureADMSPrivilegedRoleAssignmentRequest
 
 ## EXAMPLES
 
 ### Example 1
 ```
-PS C:\> Set-AzureADApplicationProxyConnector -Id 834c5dd6-f2e8-47ae-973a-9fc769289b3d -ConnectorGroupId a39b9095-8dc8-4d3a-86c3-e7b5c3f0fb84
+PS C:\> Close-AzureADMSPrivilegedRoleAssignmentRequest -ProviderId AzureResources -Id 14eda86f-b650-4ccf-802f-33842c1f1d2c
 ```
 
-Example 1: Move a Connector to a different Connector Group
+Cancel a request for AzureResources provider
 
 ## PARAMETERS
 
 ### -Id
-The Id of the Connector being moved.
-You can find this value using the Get-AzureADApplicationProxyConnector command.
+The unique identifier of the specific role assignment request
 
 ```yaml
 Type: String
@@ -46,9 +45,8 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
-### -ConnectorGroupId
-The unique idenfier of the target application proxy connector group in Azure Active Directory.
-You can find this value using the Get-AzureAdApplicationProxyConnectorGroup command.
+### -ProviderId
+The unique identifier of the specific provider
 
 ```yaml
 Type: String
@@ -67,8 +65,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
+### System.String
 ## OUTPUTS
 
+### System.Object
 ## NOTES
 
 ## RELATED LINKS

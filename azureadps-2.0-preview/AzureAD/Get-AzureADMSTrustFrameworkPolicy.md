@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.Custom.dll-Help.xml
-Module Name:
+Module Name: AzureADPreview
 online version:
 schema: 2.0.0
 ---
@@ -12,6 +12,12 @@ This cmdlet is used to retrieve the created trust framework policies (custom pol
 
 ## SYNTAX
 
+### GetQuery (Default)
+```
+Get-AzureADMSTrustFrameworkPolicy [<CommonParameters>]
+```
+
+### GetById
 ```
 Get-AzureADMSTrustFrameworkPolicy -Id <String> [-OutputFilePath <String>] [<CommonParameters>]
 ```
@@ -42,7 +48,7 @@ The unique identifier for a trust framework policy.
 
 ```yaml
 Type: String
-Parameter Sets: (All)
+Parameter Sets: GetById
 Aliases:
 
 Required: True
@@ -57,7 +63,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: (All)
+Parameter Sets: GetById
 Aliases:
 
 Required: False

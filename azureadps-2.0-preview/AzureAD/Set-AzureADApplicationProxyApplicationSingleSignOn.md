@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.Custom.dll-Help.xml
-Module Name:
+Module Name: AzureADPreview
 online version:
 schema: 2.0.0
 ---
@@ -13,10 +13,9 @@ The Set-AzureADApplicationProxyApplicationSingleSignOn cmdlet allows you to set 
 ## SYNTAX
 
 ```
-Set-AzureADApplicationProxyApplicationSingleSignOn
- [-KerberosDelegatedLoginIdentity <KerberosSignOnMappingAttributeTypeEnum>]
- [-KerberosInternalApplicationServicePrincipalName <String>] -ObjectId <String>
- -SingleSignOnMode <SingleSignOnModeEnum> [<CommonParameters>]
+Set-AzureADApplicationProxyApplicationSingleSignOn -ObjectId <String> -SingleSignOnMode <SingleSignOnModeEnum>
+ [-KerberosInternalApplicationServicePrincipalName <String>]
+ [-KerberosDelegatedLoginIdentity <KerberosSignOnMappingAttributeTypeEnum>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
