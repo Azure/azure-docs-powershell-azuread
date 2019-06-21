@@ -1,47 +1,47 @@
 ---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
-Module Name:
+Module Name: AzureADPreview
 online version:
 schema: 2.0.0
 ---
 
-# Get-GovernanceRoleSetting
+# Add-AzureADMSPrivilegedResource
 
 ## SYNOPSIS
-Get role setting
+Use this API to add a new azure AD MS privileged resource.
 
 ## SYNTAX
 
 ```
-Get-GovernanceRoleSetting -Id <String> -ProviderId <String> [<CommonParameters>]
+Add-AzureADMSPrivilegedResource -ProviderId <String> [-ExternalId <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get role setting
+Use this API to add a new azure AD MS privileged resource.
 
 ## EXAMPLES
 
 ### Example 1
 ```
-PS C:\> Get-GovernanceRoleSetting -ProviderId AzureResources -Id 4b95b664-7434-48e6-8dec-34caf4d8c3bd
+PS C:\> Add-AzureADMSPrivilegedResource -ProviderId AzureResources -ExternalId "/subscriptions/38ab2ccc-3747-4567-b36b-9478f5602f0d"
 ```
 
-Get role setting for a specific provider id and setting id
+Register a new Resource
 
 ## PARAMETERS
 
-### -Id
-The unique identifier of the specific role setting
+### -ExternalId
+The unique identifier of the specific resource Id
 
 ```yaml
 Type: String
 Parameter Sets: (All)
 Aliases:
 
-Required: True
+Required: False
 Position: Named
 Default value: None
-Accept pipeline input: True (ByPropertyName, ByValue)
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

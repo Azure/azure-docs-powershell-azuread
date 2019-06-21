@@ -1,11 +1,11 @@
 ---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
-Module Name:
+Module Name: AzureADPreview
 online version:
 schema: 2.0.0
 ---
 
-# Set-GovernanceRoleSetting
+# Set-AzureADMSPrivilegedRoleSetting
 
 ## SYNOPSIS
 Update role setting
@@ -13,12 +13,12 @@ Update role setting
 ## SYNTAX
 
 ```
-Set-GovernanceRoleSetting
- [-AdminEligibleSettings <System.Collections.Generic.List`1[Microsoft.Open.MSGraph.Model.GovernanceRuleSetting]>]
- [-AdminMemberSettings <System.Collections.Generic.List`1[Microsoft.Open.MSGraph.Model.GovernanceRuleSetting]>]
- -Id <String> -ProviderId <String> [-ResourceId <String>] [-RoleDefinitionId <String>]
- [-UserEligibleSettings <System.Collections.Generic.List`1[Microsoft.Open.MSGraph.Model.GovernanceRuleSetting]>]
- [-UserMemberSettings <System.Collections.Generic.List`1[Microsoft.Open.MSGraph.Model.GovernanceRuleSetting]>]
+Set-AzureADMSPrivilegedRoleSetting -ProviderId <String> -Id <String> [-ResourceId <String>]
+ [-RoleDefinitionId <String>]
+ [-AdminEligibleSettings <System.Collections.Generic.List`1[Microsoft.Open.MSGraph.Model.AzureADMSPrivilegedRuleSetting]>]
+ [-AdminMemberSettings <System.Collections.Generic.List`1[Microsoft.Open.MSGraph.Model.AzureADMSPrivilegedRuleSetting]>]
+ [-UserEligibleSettings <System.Collections.Generic.List`1[Microsoft.Open.MSGraph.Model.AzureADMSPrivilegedRuleSetting]>]
+ [-UserMemberSettings <System.Collections.Generic.List`1[Microsoft.Open.MSGraph.Model.AzureADMSPrivilegedRuleSetting]>]
  [<CommonParameters>]
 ```
 
@@ -29,10 +29,10 @@ Update role setting
 
 ### Example 1
 ```
-PS C:\> $setting = New-Object Microsoft.Open.MSGraph.Model.GovernanceRuleSetting
+PS C:\> $setting = New-Object Microsoft.Open.MSGraph.Model.AzureADMSPrivilegedRuleSetting
 				  PS C:\> $setting.RuleIdentifier = "JustificationRule"
 				  PS C:\> $setting.Setting = "{'required':false}"
-				  PS C:\> Set-GovernanceRoleSetting -ProviderId AzureResources -Id ff518d09-47f5-45a9-bb32-71916d9aeadf -ResourceId 3f5887ed-dd6e-4821-8bde-c813ec508cf9 -RoleDefinitionId 2387ced3-4e95-4c36-a915-73d803f93702 -UserMemberSettings $setting
+				  PS C:\> Set-AzureADMSPrivilegedRoleSetting -ProviderId AzureResources -Id ff518d09-47f5-45a9-bb32-71916d9aeadf -ResourceId 3f5887ed-dd6e-4821-8bde-c813ec508cf9 -RoleDefinitionId 2387ced3-4e95-4c36-a915-73d803f93702 -UserMemberSettings $setting
 ```
 
 Update a role setting by setting the justification to be false
@@ -40,10 +40,10 @@ Update a role setting by setting the justification to be false
 ## PARAMETERS
 
 ### -AdminEligibleSettings
-{{ Fill AdminEligibleSettings Description }}
+The rule settings that are evaluated when an administrator tries to add an eligible role assignment.
 
 ```yaml
-Type: System.Collections.Generic.List`1[Microsoft.Open.MSGraph.Model.GovernanceRuleSetting]
+Type: System.Collections.Generic.List`1[Microsoft.Open.MSGraph.Model.AzureADMSPrivilegedRuleSetting]
 Parameter Sets: (All)
 Aliases:
 
@@ -55,10 +55,10 @@ Accept wildcard characters: False
 ```
 
 ### -AdminMemberSettings
-The rule settings that are evaluated when an administrator tries to add an eligible role assignment.
+The rule settings that are evaluated when an administrator tries to add an activate role assignment.
 
 ```yaml
-Type: System.Collections.Generic.List`1[Microsoft.Open.MSGraph.Model.GovernanceRuleSetting]
+Type: System.Collections.Generic.List`1[Microsoft.Open.MSGraph.Model.AzureADMSPrivilegedRuleSetting]
 Parameter Sets: (All)
 Aliases:
 
@@ -134,7 +134,7 @@ The rule settings that are evaluated when a user tries to add an eligible role a
 This is not supported for pimforazurerbac scenario for now, and may be available in the future scenarios.
 
 ```yaml
-Type: System.Collections.Generic.List`1[Microsoft.Open.MSGraph.Model.GovernanceRuleSetting]
+Type: System.Collections.Generic.List`1[Microsoft.Open.MSGraph.Model.AzureADMSPrivilegedRuleSetting]
 Parameter Sets: (All)
 Aliases:
 
@@ -149,7 +149,7 @@ Accept wildcard characters: False
 The rule settings that are evaluated when a user tries to activate his role assignment.
 
 ```yaml
-Type: System.Collections.Generic.List`1[Microsoft.Open.MSGraph.Model.GovernanceRuleSetting]
+Type: System.Collections.Generic.List`1[Microsoft.Open.MSGraph.Model.AzureADMSPrivilegedRuleSetting]
 Parameter Sets: (All)
 Aliases:
 

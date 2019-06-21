@@ -1,38 +1,40 @@
 ---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
-Module Name:
+Module Name: AzureADPreview
 online version:
 schema: 2.0.0
 ---
 
-# Get-GovernanceRoleDefinition
+# Set-AzureADMSPrivilegedRoleAssignmentRequest
 
 ## SYNOPSIS
-Get role definition by id
+Update a role assignment request
 
 ## SYNTAX
 
 ```
-Get-GovernanceRoleDefinition [-Filter <String>] -Id <String> -ProviderId <String> -ResourceId <String>
- [-Top <Int32>] [<CommonParameters>]
+Set-AzureADMSPrivilegedRoleAssignmentRequest -ProviderId <String> -Id <String> [-Reason <String>]
+ [-Decision <String>] [-Schedule <AzureADMSPrivilegedSchedule>] [-AssignmentState <String>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get role definition by id
+Update a role assignment request
 
 ## EXAMPLES
 
 ### Example 1
 ```
-PS C:\> Get-GovernanceRoleDefinition -ProviderId AzureResources -ResourceId e5e7d29d-5465-45ac-885f-4716a5ee74b5 -Id ff67e02b-d77b-4588-9f32-e02b7da6539b -Top 10
+PS C:\> Set-AzureADMSPrivilegedRoleAssignmentRequest -ProviderId AzureResources -Id 8d28fcb3-1373-4810-8e84-75adea9a18be -Reason "{'RequestorReason':'test','AdminReason':'gg'}" -Decision "AdminDenied"
 ```
 
-Get role definition for a specific provider, resource and id
+Update a role assignment request by setting to denied
 
 ## PARAMETERS
 
-### -Filter
-The Odata filter
+### -AssignmentState
+The state of assignment, and the values can be Eligible or Active.
+For decision of AdminApproved, it is required.
 
 ```yaml
 Type: String
@@ -42,12 +44,28 @@ Aliases:
 Required: False
 Position: Named
 Default value: None
-Accept pipeline input: True (ByPropertyName, ByValue)
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Decision
+The administrator decision of the role assignment request.
+The value should be updated as AdminApproved or AdminDenied.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
 ### -Id
-The id of a role definition
+The unique identifier of the specific role assignment request
 
 ```yaml
 Type: String
@@ -76,33 +94,34 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
-### -ResourceId
-The unique identifier of the specific resource
+### -Reason
+The reason provided by the administrator for his decision.
 
 ```yaml
 Type: String
 Parameter Sets: (All)
 Aliases:
 
-Required: True
+Required: False
 Position: Named
 Default value: None
-Accept pipeline input: True (ByPropertyName, ByValue)
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Top
-The top count
+### -Schedule
+The schedule of the role assignment request.
+For status of AdminApproved, it is required.
 
 ```yaml
-Type: Int32
+Type: AzureADMSPrivilegedSchedule
 Parameter Sets: (All)
 Aliases:
 
 Required: False
 Position: Named
 Default value: None
-Accept pipeline input: True (ByPropertyName, ByValue)
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -112,7 +131,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### System.String
-### System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
 ## OUTPUTS
 
 ### System.Object

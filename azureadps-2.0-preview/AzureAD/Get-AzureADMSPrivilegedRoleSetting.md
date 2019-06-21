@@ -1,42 +1,69 @@
 ---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
-Module Name:
+Module Name: AzureADPreview
 online version:
 schema: 2.0.0
 ---
 
-# Get-GovernanceRoleAssignments
+# Get-AzureADMSPrivilegedRoleSetting
 
 ## SYNOPSIS
-Get role assignments for a specific provider and resource
+Get role settings
 
 ## SYNTAX
 
+### GetQuery (Default)
 ```
-Get-GovernanceRoleAssignments [-Filter <String>] -ProviderId <String> -ResourceId <String> [-Top <Int32>]
- [<CommonParameters>]
+Get-AzureADMSPrivilegedRoleSetting -ProviderId <String> [-Top <Int32>] [-Filter <String>] [<CommonParameters>]
+```
+
+### GetById
+```
+Get-AzureADMSPrivilegedRoleSetting -ProviderId <String> -Id <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get role assignments for a specific provider and resource
+Get role settings
 
 ## EXAMPLES
 
 ### Example 1
 ```
-PS C:\> Get-GovernanceRoleAssignments -ProviderId AzureResources -ResourceId 3f5887ed-dd6e-4821-8bde-c813ec508cf9
+PS C:\> Get-AzureADMSPrivilegedRoleSetting -ProviderId AzureResources -Filter "ResourceId eq 'e5e7d29d-5465-45ac-885f-4716a5ee74b5'"
 ```
 
-Get all role assignments for a specific provider and resource
+Get role settings for a specific provider and resource
+
+### Example 2
+```
+PS C:\> Get-AzureADMSPrivilegedRoleSetting -ProviderId AzureResources -Id 4b95b664-7434-48e6-8dec-34caf4d8c3bd
+```
+
+Get a role setting for a specific provider and Id
 
 ## PARAMETERS
 
-### -Filter
-The Odata filter
+### -Id
+The unique identifier of the specific role setting
 
 ```yaml
 Type: String
-Parameter Sets: (All)
+Parameter Sets: GetById
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName, ByValue)
+Accept wildcard characters: False
+```
+
+### -Filter
+The filter of Odata
+
+```yaml
+Type: String
+Parameter Sets: GetQuery
 Aliases:
 
 Required: False
@@ -61,27 +88,12 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
-### -ResourceId
-The unique identifier of the specific resource
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByPropertyName, ByValue)
-Accept wildcard characters: False
-```
-
 ### -Top
 The top count
 
 ```yaml
 Type: Int32
-Parameter Sets: (All)
+Parameter Sets: GetQuery
 Aliases:
 
 Required: False

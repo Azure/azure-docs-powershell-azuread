@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
-Module Name:
+Module Name: AzureADPreview
 online version:
 schema: 2.0.0
 ---
@@ -13,7 +13,7 @@ Get detailed sign in summaries
 ## SYNTAX
 
 ```
-Get-AzureADApplicationSignInDetailedSummary [-Top <int?>] [-Filter <string>] [<CommonParameters>]
+Get-AzureADApplicationSignInDetailedSummary [-Top <Int32>] [-Filter <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -41,14 +41,14 @@ This command gets all sign ins that failed with 50089 code for "FailureReason: F
 The maximum number of records to return.
 
 ```yaml
-Type: int?
+Type: Int32
 Parameter Sets: (All)
 Aliases:
 
 Required: False
 Position: Named
 Default value: None
-Accept pipeline input: True
+Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
@@ -57,14 +57,14 @@ The oData v3.0 filter statement.
 Controls which objects are returned.
 
 ```yaml
-Type: string
+Type: String
 Parameter Sets: (All)
 Aliases:
 
 Required: False
 Position: Named
 Default value: None
-Accept pipeline input: True
+Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
@@ -77,4 +77,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Online.Administration.GetApplicationSignInDetailedSummaryObjectsResponse
 ## NOTES
+
 ## RELATED LINKS

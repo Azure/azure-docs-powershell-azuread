@@ -107,6 +107,18 @@ The Get-AzureADApplicationProxyConnectorMemberOf command gets the ConnectorGroup
 ### [Get-AzureADApplicationServiceEndpoint](Get-AzureADApplicationServiceEndpoint.md)
 Retrieve the service endpoint of an application
 
+### [Get-AzureADApplicationSignInDetailedSummary](Get-AzureADApplicationSignInDetailedSummary.md)
+Get detailed sign in summaries
+
+### [Get-AzureADApplicationSignInSummary](Get-AzureADApplicationSignInSummary.md)
+Get signin summary by last number of days
+
+### [Get-AzureADAuditDirectoryLogs](Get-AzureADAuditDirectoryLogs.md)
+Get directory audit logs
+
+### [Get-AzureADAuditSignInLogs](Get-AzureADAuditSignInLogs.md)
+Get audit logs of signins
+
 ### [Get-AzureADContact](Get-AzureADContact.md)
 Gets a contact from Azure Active Directory.
 
@@ -173,6 +185,9 @@ Retrieve the domain verification DNS record for a domain
 ### [Get-AzureADExtensionProperty](Get-AzureADExtensionProperty.md)
 Gets  extension properties registered with Azure AD.
 
+### [Get-AzureADExternalDomainFederation](Get-AzureADExternalDomainFederation.md)
+Get an externalDomainFederation by external domain name.
+
 ### [Get-AzureADGroup](Get-AzureADGroup.md)
 Gets a group.
 
@@ -203,6 +218,9 @@ This cmdlet is used to retrieve the configured identity providers in the directo
 ### [Get-AzureADMSLifecyclePolicyGroup](Get-AzureADMSLifecyclePolicyGroup.md)
 Retrieves the lifecycle policy object to which a group belongs.
 
+### [Get-AzureADMSTrustFrameworkPolicy](Get-AzureADMSTrustFrameworkPolicy.md)
+This cmdlet is used to retrieve the created trust framework policies (custom policies) in the directory.
+
 ### [Get-AzureADOAuth2PermissionGrant](Get-AzureADOAuth2PermissionGrant.md)
 Gets **OAuth2PermissionGrant** entities.
 
@@ -217,6 +235,12 @@ Gets a policy.
 
 ### [Get-AzureADPolicyAppliedObject](Get-AzureADPolicyAppliedObject.md)
 
+
+### [Get-AzureADPrivilegedRole](Get-AzureADPrivilegedRole.md)
+{{ Fill in the Synopsis }}
+
+### [Get-AzureADPrivilegedRoleAssignment](Get-AzureADPrivilegedRoleAssignment.md)
+{{ Fill in the Synopsis }}
 
 ### [Get-AzureADScopedRoleMembership](Get-AzureADScopedRoleMembership.md)
 Gets a scoped role membership from an administrative unit.
@@ -302,6 +326,9 @@ Get devices registered by a user.
 ### [Get-AzureADUserThumbnailPhoto](Get-AzureADUserThumbnailPhoto.md)
 Retrieve the thumbnail photo of a user
 
+### [Get-CrossCloudVerificationCode](Get-CrossCloudVerificationCode.md)
+{{ Fill in the Synopsis }}
+
 ### [New-AzureADAdministrativeUnit](New-AzureADAdministrativeUnit.md)
 Creates an administrative unit.
 
@@ -318,7 +345,7 @@ Creates a key credential for an application.
 Creates a password credential for an application.
 
 ### [New-AzureADApplicationProxyApplication](New-AzureADApplicationProxyApplication.md)
-The New-AzureADApplicationProxyApplication cmdlet creates a new application configured for Application Proxy in Azure Active Directory. 
+The New-AzureADApplicationProxyApplication cmdlet creates a new application configured for Application Proxy in Azure Active Directory.
 
 ### [New-AzureADApplicationProxyConnectorGroup](New-AzureADApplicationProxyConnectorGroup.md)
 The New-AzureADApplicationProxyConnectorGroup cmdlet creates a new Application Proxy Connector group. 
@@ -331,6 +358,9 @@ Creates a directory settings object.
 
 ### [New-AzureADDomain](New-AzureADDomain.md)
 Creates a domain.
+
+### [New-AzureADExternalDomainFederation](New-AzureADExternalDomainFederation.md)
+Create a new externalDomainFederation in Azure Active Directory
 
 ### [New-AzureADGroup](New-AzureADGroup.md)
 Creates a group.
@@ -350,11 +380,17 @@ This cmdlet is used to configure a new identity provider in the directory.
 ### [New-AzureADMSInvitation](New-AzureADMSInvitation.md)
 This cmdlet is used to invite a new external user to your directory
 
+### [New-AzureADMSTrustFrameworkPolicy](New-AzureADMSTrustFrameworkPolicy.md)
+This cmdlet is used to create a trust framework policy (custom policy) in the directory.
+
 ### [New-AzureADObjectSetting](New-AzureADObjectSetting.md)
 Creates a settings object.
 
 ### [New-AzureADPolicy](New-AzureADPolicy.md)
 Creates a policy.
+
+### [New-AzureADPrivilegedRoleAssignment](New-AzureADPrivilegedRoleAssignment.md)
+{{ Fill in the Synopsis }}
 
 ### [New-AzureADServiceAppRoleAssignment](New-AzureADServiceAppRoleAssignment.md)
 Assigns a service principal to an application role.
@@ -416,6 +452,9 @@ Removes a contact.
 ### [Remove-AzureADContactManager](Remove-AzureADContactManager.md)
 Removes a contact's manager.
 
+### [Remove-AzureADDeletedApplication](Remove-AzureADDeletedApplication.md)
+{{ Fill in the Synopsis }}
+
 ### [Remove-AzureADDevice](Remove-AzureADDevice.md)
 Deletes a device.
 
@@ -433,6 +472,9 @@ Deletes a directory setting in Azure Active Directory.
 
 ### [Remove-AzureADDomain](Remove-AzureADDomain.md)
 Removes a domain.
+
+### [Remove-AzureADExternalDomainFederation](Remove-AzureADExternalDomainFederation.md)
+Delete an externalDomainFederation by external domain name.
 
 ### [Remove-AzureADGroup](Remove-AzureADGroup.md)
 Removes a group.
@@ -543,19 +585,20 @@ Updates an application.
 Sets the logo for an Application
 
 ### [Set-AzureADApplicationProxyApplication](Set-AzureADApplicationProxyApplication.md)
-The Set-AzureADApplicationProxyApplication allows you to modify and set configurations for an application in Azure Active Directory configured to use ApplicationProxy. 
+The Set-AzureADApplicationProxyApplication allows you to modify and set configurations for an application in Azure Active Directory configured to use ApplicationProxy.
 
 ### [Set-AzureADApplicationProxyApplicationConnectorGroup](Set-AzureADApplicationProxyApplicationConnectorGroup.md)
-The Set-AzureADApplicationProxyApplicationConnectorGroup cmdlet assigns the given connector group to a specified application. 
+The Set-AzureADApplicationProxyApplicationConnectorGroup cmdlet assigns the given connector group to a specified application.
 
 ### [Set-AzureADApplicationProxyApplicationCustomDomainCertificate](Set-AzureADApplicationProxyApplicationCustomDomainCertificate.md)
-The Set-AzureADApplicationProxyApplicationCustomDomainCertificate cmdlet assigns a certificate to an application configured for Application Proxy in Azure Active Directory (AD). This will upload the certificate and allow the application to use Custom Domains. 
+The Set-AzureADApplicationProxyApplicationCustomDomainCertificate cmdlet assigns a certificate to an application configured for Application Proxy in Azure Active Directory (AD).
+This will upload the certificate and allow the application to use Custom Domains.
 
 ### [Set-AzureADApplicationProxyApplicationSingleSignOn](Set-AzureADApplicationProxyApplicationSingleSignOn.md)
-The Set-AzureADApplicationProxyApplicationSingleSignOn cmdlet allows you to set and modify single sign-on (SSO) settings for an application configured for Application Proxy in Azure Active Directory. 
+The Set-AzureADApplicationProxyApplicationSingleSignOn cmdlet allows you to set and modify single sign-on (SSO) settings for an application configured for Application Proxy in Azure Active Directory.
 
 ### [Set-AzureADApplicationProxyConnector](Set-AzureADApplicationProxyConnector.md)
-The Set-AzureADApplicationProxyConnector cmdlet allows reassignment of the connector to another connector group. 
+The Set-AzureADApplicationProxyConnector cmdlet allows reassignment of the connector to another connector group.
 
 ### [Set-AzureADApplicationProxyConnectorGroup](Set-AzureADApplicationProxyConnectorGroup.md)
 The Set-AzureADApplicationProxyConnectorGroup cmdlet allows you to change the name of a given Application Proxy connector group. 
@@ -580,6 +623,9 @@ Updates a specific group Lifecycle Policy in Azure Active Directory
 
 ### [Set-AzureADMSIdentityProvider](Set-AzureADMSIdentityProvider.md)
 This cmdlet is used to update the properties of an existing identity provider configured in the directory.
+
+### [Set-AzureADMSTrustFrameworkPolicy](Set-AzureADMSTrustFrameworkPolicy.md)
+This cmdlet is used to update a trust framework policy (custom policy) in the directory.
 
 ### [Set-AzureADObjectSetting](Set-AzureADObjectSetting.md)
 Updates object settings.

@@ -1,20 +1,26 @@
 ---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
-Module Name:
+Module Name: AzureADPreview
 online version:
 schema: 2.0.0
 ---
 
-# Get-GovernanceRoleAssignmentRequests
+# Get-AzureADMSPrivilegedRoleAssignmentRequest
 
 ## SYNOPSIS
 Get role assignment request for a specific resource
 
 ## SYNTAX
 
+### GetQuery (Default)
 ```
-Get-GovernanceRoleAssignmentRequests [-Filter <String>] -ProviderId <String> -ResourceId <String>
- [-Top <Int32>] [<CommonParameters>]
+Get-AzureADMSPrivilegedRoleAssignmentRequest -ProviderId <String> [-Top <Int32>] [-Filter <String>]
+ [<CommonParameters>]
+```
+
+### GetById
+```
+Get-AzureADMSPrivilegedRoleAssignmentRequest -ProviderId <String> -Id <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -24,19 +30,41 @@ Get role assignment request for a specific resource
 
 ### Example 1
 ```
-PS C:\> Get-GovernanceRoleAssignmentRequests -ProviderId AzureResources -ResourceId e5e7d29d-5465-45ac-885f-4716a5ee74b5
+PS C:\> Get-AzureADMSPrivilegedRoleAssignmentRequest -ProviderId AzureResources -Filter "ResourceId eq 'e5e7d29d-5465-45ac-885f-4716a5ee74b5'"
 ```
 
 Get all role assigment requests for a specific provider and resource
 
+### Example 2
+```
+PS C:\> Get-AzureADMSPrivilegedRoleAssignmentRequest -ProviderId AzureResources -Id 247438d7-fc8d-4354-a737-4898a4019a95
+```
+
+Get a role assigment requests for a specific provider and Id
+
 ## PARAMETERS
+
+### -Id
+The unique identifier of the specific role assignment request
+
+```yaml
+Type: String
+Parameter Sets: GetById
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName, ByValue)
+Accept wildcard characters: False
+```
 
 ### -Filter
 The Odata query
 
 ```yaml
 Type: String
-Parameter Sets: (All)
+Parameter Sets: GetQuery
 Aliases:
 
 Required: False
@@ -61,27 +89,12 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
-### -ResourceId
-The unique identifier of the specific resource
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByPropertyName, ByValue)
-Accept wildcard characters: False
-```
-
 ### -Top
 The top count
 
 ```yaml
 Type: Int32
-Parameter Sets: (All)
+Parameter Sets: GetQuery
 Aliases:
 
 Required: False

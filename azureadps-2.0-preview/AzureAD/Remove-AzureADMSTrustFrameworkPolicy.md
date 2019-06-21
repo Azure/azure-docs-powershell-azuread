@@ -1,52 +1,38 @@
 ---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
-Module Name:
+Module Name: AzureADPreview
 online version:
 schema: 2.0.0
 ---
 
-# Get-GovernanceRoleDefinitions
+# Remove-AzureADMSTrustFrameworkPolicy
 
 ## SYNOPSIS
-Get role definitions
+This cmdlet is used to delete a trust framework policy (custom policy) in the directory.
 
 ## SYNTAX
 
 ```
-Get-GovernanceRoleDefinitions -ProviderId <String> -ResourceId <String> [<CommonParameters>]
+Remove-AzureADMSTrustFrameworkPolicy -Id <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get role definitions
+This cmdlet is used to delete a trust framework policy in the directory.
+The trust framework policy will be permanently deleted.
 
 ## EXAMPLES
 
 ### Example 1
 ```
-PS C:\> Get-GovernanceRoleDefinitions -ProviderId AzureResources -ResourceId e5e7d29d-5465-45ac-885f-4716a5ee74b5
+PS C:\> Remove-AzureADMSTrustFrameworkPolicy -Id B2C_1A_signup_signin
 ```
 
-Get role definitions for a specific provider and resource
+This example removes the specified trust framework policy.
 
 ## PARAMETERS
 
-### -ProviderId
-The unique identifier of the specific provider
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByPropertyName, ByValue)
-Accept wildcard characters: False
-```
-
-### -ResourceId
-The unique identifier of the specific resource
+### -Id
+The unique identifier for a trust framework policy.
 
 ```yaml
 Type: String

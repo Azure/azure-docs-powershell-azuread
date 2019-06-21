@@ -1,29 +1,29 @@
 ---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
-Module Name:
+Module Name: AzureADPreview
 online version:
 schema: 2.0.0
 ---
 
-# Close-GovernanceRoleAssignmentRequest
+# Close-AzureADMSPrivilegedRoleAssignmentRequest
 
 ## SYNOPSIS
-Cancels a GovernanceRoleAssignmentRequest
+Cancel a AzureADMSPrivilegedRoleAssignmentRequest
 
 ## SYNTAX
 
 ```
-Close-GovernanceRoleAssignmentRequest -Id <String> -ProviderId <String> [<CommonParameters>]
+Close-AzureADMSPrivilegedRoleAssignmentRequest -ProviderId <String> -Id <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Cancel a GovernanceRoleAssignmentRequest
+Cancel a AzureADMSPrivilegedRoleAssignmentRequest
 
 ## EXAMPLES
 
 ### Example 1
 ```
-PS C:\> Close-GovernanceRoleAssignmentRequest -ProviderId AzureResources -Id 14eda86f-b650-4ccf-802f-33842c1f1d2c
+PS C:\> Close-AzureADMSPrivilegedRoleAssignmentRequest -ProviderId AzureResources -Id 14eda86f-b650-4ccf-802f-33842c1f1d2c
 ```
 
 Cancel a request for AzureResources provider
