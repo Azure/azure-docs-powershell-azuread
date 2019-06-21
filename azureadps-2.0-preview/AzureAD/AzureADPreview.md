@@ -38,6 +38,9 @@ Adds an owner to a group.
 ### [Add-AzureADMSLifecyclePolicyGroup](Add-AzureADMSLifecyclePolicyGroup.md)
 Adds a group to a lifecycle policy
 
+### [Add-AzureADMSPrivilegedResource](Add-AzureADMSPrivilegedResource.md)
+Use this API to add a new azure AD MS privileged resource.
+
 ### [Add-AzureADScopedRoleMembership](Add-AzureADScopedRoleMembership.md)
 Adds a scoped role membership to an administrative unit.
 
@@ -46,6 +49,9 @@ Adds an owner to a service principal.
 
 ### [Add-AzureADServicePrincipalPolicy](Add-AzureADServicePrincipalPolicy.md)
 Adds a service principal policy.
+
+### [Close-AzureADMSPrivilegedRoleAssignmentRequest](Close-AzureADMSPrivilegedRoleAssignmentRequest.md)
+Cancel a AzureADMSPrivilegedRoleAssignmentRequest
 
 ### [Confirm-AzureADDomain](Confirm-AzureADDomain.md)
 Validate the ownership of a domain.
@@ -217,6 +223,21 @@ This cmdlet is used to retrieve the configured identity providers in the directo
 
 ### [Get-AzureADMSLifecyclePolicyGroup](Get-AzureADMSLifecyclePolicyGroup.md)
 Retrieves the lifecycle policy object to which a group belongs.
+
+### [Get-AzureADMSPrivilegedResource](Get-AzureADMSPrivilegedResource.md)
+Get azure AD MS privileged resource
+
+### [Get-AzureADMSPrivilegedRoleAssignment](Get-AzureADMSPrivilegedRoleAssignment.md)
+Get role assignments for a specific provider and resource
+
+### [Get-AzureADMSPrivilegedRoleAssignmentRequest](Get-AzureADMSPrivilegedRoleAssignmentRequest.md)
+Get role assignment request for a specific resource
+
+### [Get-AzureADMSPrivilegedRoleDefinition](Get-AzureADMSPrivilegedRoleDefinition.md)
+Get role definitions
+
+### [Get-AzureADMSPrivilegedRoleSetting](Get-AzureADMSPrivilegedRoleSetting.md)
+Get role settings
 
 ### [Get-AzureADMSTrustFrameworkPolicy](Get-AzureADMSTrustFrameworkPolicy.md)
 This cmdlet is used to retrieve the created trust framework policies (custom policies) in the directory.
@@ -413,6 +434,9 @@ Creates an AD user.
 ### [New-AzureADUserAppRoleAssignment](New-AzureADUserAppRoleAssignment.md)
 Assigns a user to an application role.
 
+### [Open-AzureADMSPrivilegedRoleAssignmentRequest](Open-AzureADMSPrivilegedRoleAssignmentRequest.md)
+Create a role assignment request
+
 ### [Remove-AzureADAdministrativeUnit](Remove-AzureADAdministrativeUnit.md)
 Removes an administrative unit.
 
@@ -502,6 +526,9 @@ This cmdlet is used to delete an identity provider in the directory.
 
 ### [Remove-AzureADMSLifecyclePolicyGroup](Remove-AzureADMSLifecyclePolicyGroup.md)
 Removes a group from a lifecycle policy
+
+### [Remove-AzureADMSTrustFrameworkPolicy](Remove-AzureADMSTrustFrameworkPolicy.md)
+This cmdlet is used to delete a trust framework policy (custom policy) in the directory.
 
 ### [Remove-AzureADOAuth2PermissionGrant](Remove-AzureADOAuth2PermissionGrant.md)
 Removes an oAuth2PermissionGrant.
@@ -623,6 +650,12 @@ Updates a specific group Lifecycle Policy in Azure Active Directory
 
 ### [Set-AzureADMSIdentityProvider](Set-AzureADMSIdentityProvider.md)
 This cmdlet is used to update the properties of an existing identity provider configured in the directory.
+
+### [Set-AzureADMSPrivilegedRoleAssignmentRequest](Set-AzureADMSPrivilegedRoleAssignmentRequest.md)
+Update a role assignment request
+
+### [Set-AzureADMSPrivilegedRoleSetting](Set-AzureADMSPrivilegedRoleSetting.md)
+Update role setting
 
 ### [Set-AzureADMSTrustFrameworkPolicy](Set-AzureADMSTrustFrameworkPolicy.md)
 This cmdlet is used to update a trust framework policy (custom policy) in the directory.
