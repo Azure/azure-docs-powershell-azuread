@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.Custom.dll-Help.xml
-Module Name:
+Module Name: AzureADPreview
 online version:
 schema: 2.0.0
 ---
@@ -14,8 +14,8 @@ This will upload the certificate and allow the application to use Custom Domains
 ## SYNTAX
 
 ```
-Set-AzureADApplicationProxyApplicationCustomDomainCertificate -ObjectId <String> -Password <SecureString>
- -PfxFilePath <String> [<CommonParameters>]
+Set-AzureADApplicationProxyApplicationCustomDomainCertificate -ObjectId <String> -PfxFilePath <String>
+ -Password <SecureString> [<CommonParameters>]
 ```
 
 ## DESCRIPTION

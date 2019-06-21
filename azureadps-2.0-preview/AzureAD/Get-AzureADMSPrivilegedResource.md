@@ -1,48 +1,69 @@
 ---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
-Module Name:
+Module Name: AzureADPreview
 online version:
 schema: 2.0.0
 ---
 
-# Get-GovernanceRoleAssignment
+# Get-AzureADMSPrivilegedResource
 
 ## SYNOPSIS
-Get a governance role assignment
+Get azure AD MS privileged resource
 
 ## SYNTAX
 
+### GetQuery (Default)
 ```
-Get-GovernanceRoleAssignment -Id <String> -ProviderId <String> -ResourceId <String> [<CommonParameters>]
+Get-AzureADMSPrivilegedResource -ProviderId <String> [-Top <Int32>] [-Filter <String>] [<CommonParameters>]
+```
+
+### GetById
+```
+Get-AzureADMSPrivilegedResource -ProviderId <String> -Id <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get a governance role assignment
+Get azure AD MS privileged resource
 
 ## EXAMPLES
 
 ### Example 1
 ```
-PS C:\> Get-GovernanceRoleAssignments -ProviderId AzureResources -ResourceId 3f5887ed-dd6e-4821-8bde-c813ec508cf9
+PS C:\> Get-AzureADMSPrivilegedResource -ProviderId AzureResources -Id 3f5887ed-dd6e-4821-8bde-c813ec508cf9
 ```
 
-Get all role assignments for a specific resource
+Get a resource for AzureResource provider with Id
 
 ### Example 2
 ```
-PS C:\> Get-GovernanceRoleAssignment -ProviderId AzureResources -ResourceId 3f5887ed-dd6e-4821-8bde-c813ec508cf9 -Id b83c177a-10e0-4eeb-8d0b-f3668fbf81fa
+PS C:\> Get-AzureADMSPrivilegedResource -ProviderId AzureResources
 ```
 
-Get a role assignment for a specific resource with assignment id
+Get all resources for AzureResource provider
 
 ## PARAMETERS
 
-### -Id
-The unique identifier of the specific role assignment
+### -Filter
+The filter for Odata query
 
 ```yaml
 Type: String
-Parameter Sets: (All)
+Parameter Sets: GetQuery
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName, ByValue)
+Accept wildcard characters: False
+```
+
+### -Id
+The unique identifier of the specific resource
+
+```yaml
+Type: String
+Parameter Sets: GetById
 Aliases:
 
 Required: True
@@ -67,15 +88,15 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
-### -ResourceId
-The unique identifier of the specific resource
+### -Top
+The top result count
 
 ```yaml
-Type: String
-Parameter Sets: (All)
+Type: Int32
+Parameter Sets: GetQuery
 Aliases:
 
-Required: True
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: True (ByPropertyName, ByValue)

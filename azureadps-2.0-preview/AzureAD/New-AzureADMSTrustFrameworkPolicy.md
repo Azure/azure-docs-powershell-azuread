@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.Custom.dll-Help.xml
-Module Name:
+Module Name: AzureADPreview
 online version:
 schema: 2.0.0
 ---
@@ -12,12 +12,12 @@ This cmdlet is used to create a trust framework policy (custom policy) in the di
 
 ## SYNTAX
 
-### UNNAMED_PARAMETER_SET_1
+### Content (Default)
 ```
-New-AzureADMSTrustFrameworkPolicy -Content <String> [-OutputFilePath <String>] [<CommonParameters>]
+New-AzureADMSTrustFrameworkPolicy [-OutputFilePath <String>] -Content <String> [<CommonParameters>]
 ```
 
-### UNNAMED_PARAMETER_SET_2
+### File
 ```
 New-AzureADMSTrustFrameworkPolicy -InputFilePath <String> [-OutputFilePath <String>] [<CommonParameters>]
 ```
@@ -74,7 +74,7 @@ The content of the trust framework policy to be created.
 
 ```yaml
 Type: String
-Parameter Sets: UNNAMED_PARAMETER_SET_1
+Parameter Sets: Content
 Aliases:
 
 Required: True
@@ -89,7 +89,7 @@ Path to the file used for reading the contents of trust framework policy to be c
 
 ```yaml
 Type: String
-Parameter Sets: UNNAMED_PARAMETER_SET_2
+Parameter Sets: File
 Aliases:
 
 Required: True

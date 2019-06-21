@@ -1,45 +1,59 @@
 ---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
-Module Name:
+Module Name: AzureADPreview
 online version:
 schema: 2.0.0
 ---
 
-# Get-GovernanceRoleSettings
+# Get-AzureADMSPrivilegedRoleDefinition
 
 ## SYNOPSIS
-Get role settings
+Get role definitions
 
 ## SYNTAX
 
+### GetQuery (Default)
 ```
-Get-GovernanceRoleSettings [-Filter <String>] -ProviderId <String> -ResourceId <String> [-Top <Int32>]
+Get-AzureADMSPrivilegedRoleDefinition -ProviderId <String> -ResourceId <String> [-Top <Int32>]
+ [-Filter <String>] [<CommonParameters>]
+```
+
+### GetById
+```
+Get-AzureADMSPrivilegedRoleDefinition -ProviderId <String> -ResourceId <String> -Id <String>
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get role settings
+Get role definitions
 
 ## EXAMPLES
 
 ### Example 1
 ```
-PS C:\> Get-GovernanceRoleSettings -ProviderId AzureResources -ResourceId e5e7d29d-5465-45ac-885f-4716a5ee74b5
+PS C:\> Get-AzureADMSPrivilegedRoleDefinition -ProviderId AzureResources -ResourceId e5e7d29d-5465-45ac-885f-4716a5ee74b5 -Top 10
 ```
 
-Get role settings for a specific provider and resource
+Get role definitions for a specific provider and resource
+
+### Example 1
+```
+PS C:\> Get-AzureADMSPrivilegedRoleDefinition -ProviderId AzureResources -ResourceId e5e7d29d-5465-45ac-885f-4716a5ee74b5 -Id ff67e02b-d77b-4588-9f32-e02b7da6539b
+```
+
+Get a role definitions for a specific provider, resource and Id
 
 ## PARAMETERS
 
-### -Filter
-The filter of Odata
+### -Id
+The id of a role definition
 
 ```yaml
 Type: String
-Parameter Sets: (All)
+Parameter Sets: GetById
 Aliases:
 
-Required: False
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByPropertyName, ByValue)
@@ -76,12 +90,27 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
+### -Filter
+{{ Fill Filter Description }}
+
+```yaml
+Type: String
+Parameter Sets: GetQuery
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName, ByValue)
+Accept wildcard characters: False
+```
+
 ### -Top
-The top count
+{{ Fill Top Description }}
 
 ```yaml
 Type: Int32
-Parameter Sets: (All)
+Parameter Sets: GetQuery
 Aliases:
 
 Required: False
@@ -97,7 +126,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### System.String
-### System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
 ## OUTPUTS
 
 ### System.Object
