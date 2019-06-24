@@ -3,6 +3,8 @@
   items:
   - name: Install the Azure AD PowerShell V2 module
     href: install-adv2.md
+  - name: Azure AD PowerShell V2 version history
+    href: ad-pshell-v2-version-history.md
 - name: Using Azure AD PowerShell
   items:
   - name: PowerShell Scenarios
