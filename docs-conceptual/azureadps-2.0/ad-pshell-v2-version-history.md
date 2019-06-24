@@ -19,9 +19,6 @@ ms.collection: M365-identity-device-management
 # Azure Active Directory PowerShell for Graph: Version release history
 The Azure Active Directory (Azure AD) team regularly updates Azure AD Connect with new features and functionality. The Azure Active Directory PowerShell for Graph modules are available in a General Availability version (AzureAD module) and a preview version (AzureADPreview module). This document contains the release history of both modules.
 
->[!IMPORTANT]
->This article only pertains to the General Availability release of the Azure AD module.  This does not apply to the preview release as this is subject to change.
-
 This article is designed to help you keep track of the versions that have been released, and to understand what the changes are in the latest version.
 
 ## 2.0.2.25 - General Availability release of the AzureAD module
