@@ -256,13 +256,6 @@ Gets a policy.
 
 ### [Get-AzureADPolicyAppliedObject](Get-AzureADPolicyAppliedObject.md)
 
-
-### [Get-AzureADPrivilegedRole](Get-AzureADPrivilegedRole.md)
-{{ Fill in the Synopsis }}
-
-### [Get-AzureADPrivilegedRoleAssignment](Get-AzureADPrivilegedRoleAssignment.md)
-{{ Fill in the Synopsis }}
-
 ### [Get-AzureADScopedRoleMembership](Get-AzureADScopedRoleMembership.md)
 Gets a scoped role membership from an administrative unit.
 
@@ -409,9 +402,6 @@ Creates a settings object.
 
 ### [New-AzureADPolicy](New-AzureADPolicy.md)
 Creates a policy.
-
-### [New-AzureADPrivilegedRoleAssignment](New-AzureADPrivilegedRoleAssignment.md)
-{{ Fill in the Synopsis }}
 
 ### [New-AzureADServiceAppRoleAssignment](New-AzureADServiceAppRoleAssignment.md)
 Assigns a service principal to an application role.
