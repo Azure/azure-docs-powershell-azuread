@@ -33,7 +33,7 @@ This article is designed to help you keep track of the versions that have been r
 
 ### Fixed issues 
 
-- Fix for bug  - `Get-AsureADUser` -searchstring fails with error " Message: Unsupported or invalid query filter clause specified for property 'userState' of resource 'User'."
+- Fix for bug  - `Get-AzureADUser` -searchstring fails with error " Message: Unsupported or invalid query filter clause specified for property 'userState' of resource 'User'."
 - Fix for bug  - `Get-AzureADUserOwnedObject` fails with error  “The given key was not present in the dictionary”
 
 ## 2.0.2.24 - Preview release of the AzureADPreview module
@@ -47,7 +47,6 @@ This article is designed to help you keep track of the versions that have been r
 The following new cmdlets were added to the AzureADPreview module:
 
 #### Privileged Role Management
-
 
 - `Add-AzureADMSPrivilegedResource`
 - `Close-AzureADMSPrivilegedRoleAssignmentRequest`
@@ -64,7 +63,6 @@ Read more about [Azure AD Privileged Role management](https://docs.microsoft.com
 
 #### Trust Framework Policy Management
 
-
 - `New-AzureADMSTrustFrameworkPolicy`
 - `Get-AzureADMSTrustFrameworkPolicy`
 - `Remove-AzureADMSTrustFrameworkPolicy`
@@ -74,25 +72,16 @@ Read more about the [B2C Trust Framework policies](https://docs.microsoft.com/en
 
 #### Directory Auditing
 
-
 - `Get-AzureADAuditDirectoryLogs`
 - `Get-AzureADAuditSignInLogs`
 
 Read more about [Azure AD directory auditing](https://docs.microsoft.com/en-us/azure/active-directory/reports-monitoring/)
 
-## 2.0.2.25 Public Preview release of the AzureAD  module
-### Release status
-6/21/2019: Released for installation and upgrade from the [PowerShell Gallery](https://www.powershellgallery.com/packages/AzureAD /2.0.2.25)
-
-## 2.0.2.24 Public Preview release of the AzureADPreview module
-### Release status
-6/19/2019: Released for installation and upgrade from the [PowerShell Gallery](https://www.powershellgallery.com/packages/AzureADPreview/2.0.2.24)
-
 ## 2.0.2.17 Public Preview release of the AzureADPreview module
 ### Release status
 4/9/2019: Released for installation and upgrade from the [PowerShell Gallery](https://www.powershellgallery.com/packages/AzureADPreview/2.0.2.17)
 
-## 2.0.2.16 Public Preview release of the AzureAD  module
+## 2.0.2.16 General Availability release of the AzureAD module
 ### Release status
 4/9/2019: Released for installation and upgrade from the [PowerShell Gallery](https://www.powershellgallery.com/packages/AzureAD /2.0.2.16)
 
@@ -100,7 +89,7 @@ Read more about [Azure AD directory auditing](https://docs.microsoft.com/en-us/a
 ### Release status
 4/6/2019: Released for installation and upgrade from the [PowerShell Gallery](https://www.powershellgallery.com/packages/AzureADPreview/2.0.2.15)
 
-## 2.0.2.14 Public Preview release of the AzureAD  module
+## 2.0.2.14 General Availability  release of the AzureAD module
 ### Release status
 4/6/2019: Released for installation and upgrade from the [PowerShell Gallery](https://www.powershellgallery.com/packages/AzureAD /2.0.2.14)
 
@@ -108,7 +97,7 @@ Read more about [Azure AD directory auditing](https://docs.microsoft.com/en-us/a
 ### Release status
 10/5/2018: Released for installation and upgrade from the [PowerShell Gallery](https://www.powershellgallery.com/packages/AzureADPreview/2.0.2.5)
 
-## 2.0.2.4 Public Preview release of the AzureAD  module
+## 2.0.2.4 General Availability release of the AzureAD module
 ### Release status
 10/5/2018: Released for installation and upgrade from the [PowerShell Gallery](https://www.powershellgallery.com/packages/AzureAD /2.0.2.4)
 
@@ -116,7 +105,7 @@ Read more about [Azure AD directory auditing](https://docs.microsoft.com/en-us/a
 ### Release status
 10/3/2018: Released for installation and upgrade from the [PowerShell Gallery](https://www.powershellgallery.com/packages/AzureADPreview/2.0.2.3)
 
-## 2.0.2.2 Public Preview release of the AzureAD  module
+## 2.0.2.2 General Availability release of the AzureAD module
 ### Release status
 10/3/2018: Released for installation and upgrade from the [PowerShell Gallery](https://www.powershellgallery.com/packages/AzureAD /2.0.2.2)
 
@@ -128,7 +117,7 @@ Read more about [Azure AD directory auditing](https://docs.microsoft.com/en-us/a
 ### Release status
 6/21/2018: Released for installation and upgrade from the [PowerShell Gallery](https://www.powershellgallery.com/packages/AzureADPreview/2.0.1.17)
 
-## 2.0.1.16 Public Preview release of the AzureAD  module
+## 2.0.1.16 General Availability release of the AzureAD module
 ### Release status
 6/21/2018: Released for installation and upgrade from the [PowerShell Gallery](https://www.powershellgallery.com/packages/AzureAD /2.0.1.16)
 
@@ -136,7 +125,7 @@ Read more about [Azure AD directory auditing](https://docs.microsoft.com/en-us/a
 ### Release status
 5/7/2018: Released for installation and upgrade from the [PowerShell Gallery](https://www.powershellgallery.com/packages/AzureADPreview/2.0.1.11)
 
-## 2.0.1.10 Public Preview release of the AzureAD  module
+## 2.0.1.10 General Availability release of the AzureAD module
 ### Release status
 5/7/2018: Released for installation and upgrade from the [PowerShell Gallery](https://www.powershellgallery.com/packages/AzureAD /2.0.1.10)
 
@@ -144,11 +133,11 @@ Read more about [Azure AD directory auditing](https://docs.microsoft.com/en-us/a
 ### Release status
 5/2/2018: Released for installation and upgrade from the [PowerShell Gallery](https://www.powershellgallery.com/packages/AzureADPreview/2.0.1.9)
 
-## 2.0.1.6 Public Preview release of the AzureAD  module
+## 2.0.1.6 General Availability of the AzureAD module
 ### Release status
 5/2/2019: Released for installation and upgrade from the [PowerShell Gallery](https://www.powershellgallery.com/packages/AzureAD /2.0.1.6)
 
-## 2.0.1.3 Public Preview release of the AzureAD  module
+## 2.0.1.3 General Availability release of the AzureAD module
 ### Release status
 3/20/2018: Released for installation and upgrade from the [PowerShell Gallery](https://www.powershellgallery.com/packages/AzureAD /2.0.1.3)
 
@@ -156,7 +145,7 @@ Read more about [Azure AD directory auditing](https://docs.microsoft.com/en-us/a
 ### Release status
 3/19/2018: Released for installation and upgrade from the [PowerShell Gallery](https://www.powershellgallery.com/packages/AzureADPreview/2.0.1.2)
 
-## 2.0.0.155 Public Preview release of the AzureAD  module
+## 2.0.0.155 General Availability release of the AzureAD module
 ### Release status
 2/15/2018: Released for installation and upgrade from the [PowerShell Gallery](https://www.powershellgallery.com/packages/AzureAD /2.0.0.155)
 
@@ -172,7 +161,7 @@ Read more about [Azure AD directory auditing](https://docs.microsoft.com/en-us/a
 ### Release status
 8/6/2017: Released for installation and upgrade from the [PowerShell Gallery](https://www.powershellgallery.com/packages/AzureADPreview/2.0.0.137)
 
-## 2.0.0.131 Public Preview release of the AzureAD  module
+## 2.0.0.131 General Availability release of the AzureAD module
 ### Release status
 7/10/2017: Released for installation and upgrade from the [PowerShell Gallery](https://www.powershellgallery.com/packages/AzureAD /2.0.0.131)
 
@@ -188,7 +177,7 @@ Read more about [Azure AD directory auditing](https://docs.microsoft.com/en-us/a
 ### Release status
 6/8/2017: Released for installation and upgrade from the [PowerShell Gallery](https://www.powershellgallery.com/packages/AzureADPreview/2.0.0.125)
 
-## 2.0.0.115 Public Preview release of the AzureAD  module
+## 2.0.0.115 General Availability release of the AzureAD module
 ### Release status
 5/1/2017: Released for installation and upgrade from the [PowerShell Gallery](https://www.powershellgallery.com/packages/AzureAD /2.0.0.115)
 
@@ -200,7 +189,7 @@ Read more about [Azure AD directory auditing](https://docs.microsoft.com/en-us/a
 ### Release status
 4/18/2017: Released for installation and upgrade from the [PowerShell Gallery](https://www.powershellgallery.com/packages/AzureADPreview/2.0.0.110)
 
-## 2.0.0.109 Public Preview release of the AzureAD  module
+## 2.0.0.109 General Availability release of the AzureAD module
 ### Release status
 4/17/2017: Released for installation and upgrade from the [PowerShell Gallery](https://www.powershellgallery.com/packages/AzureAD /2.0.0.109)
 
@@ -208,7 +197,7 @@ Read more about [Azure AD directory auditing](https://docs.microsoft.com/en-us/a
 ### Release status
 3/28/2017: Released for installation and upgrade from the [PowerShell Gallery](https://www.powershellgallery.com/packages/AzureADPreview/2.0.0.98)
 
-## 2.0.0.98 Public Preview release of the AzureAD  module
+## 2.0.0.98 General Availability release of the AzureAD module
 ### Release status
 3/28/2017 : Released for installation and upgrade from the [PowerShell Gallery](https://www.powershellgallery.com/packages/AzureAD /2.0.0.98)
 
@@ -220,11 +209,11 @@ Read more about [Azure AD directory auditing](https://docs.microsoft.com/en-us/a
 ### Release status
 3/7/2017: Released for installation and upgrade from the [PowerShell Gallery](https://www.powershellgallery.com/packages/AzureADPreview/2.0.0.76)
 
-## 2.0.0.71 Public Preview release of the AzureAD  module
+## 2.0.0.71 General Availability release of the AzureAD module
 ### Release status
 3/1/2017: Released for installation and upgrade from the [PowerShell Gallery](https://www.powershellgallery.com/packages/AzureAD /2.0.0.71)
 
-## 2.0.0.55 Public Preview release of the AzureAD  module
+## 2.0.0.55 General Availability release of the AzureAD module
 ### Release status
 2/9/2017: Released for installation and upgrade from the [PowerShell Gallery](https://www.powershellgallery.com/packages/AzureAD /2.0.0.55)
 
@@ -256,11 +245,11 @@ Read more about [Azure AD directory auditing](https://docs.microsoft.com/en-us/a
 ### Release status
 11/21/2016: Released for installation and upgrade from the [PowerShell Gallery](https://www.powershellgallery.com/packages/AzureADPreview/2.0.0.33)
 
-## 2.0.0.33 Public Preview release of the AzureAD  module
+## 2.0.0.33 General Availability release of the AzureAD module
 ### Release status
 11/21/2016: Released for installation and upgrade from the [PowerShell Gallery](https://www.powershellgallery.com/packages/AzureAD /2.0.0.33)
 
-## 2.0.0.30 Public Preview release of the AzureAD  module
+## 2.0.0.30 General Availability release of the AzureAD module
 ### Release status
 11/17/2016: Released for installation and upgrade from the [PowerShell Gallery](https://www.powershellgallery.com/packages/AzureAD /2.0.0.30)
 
