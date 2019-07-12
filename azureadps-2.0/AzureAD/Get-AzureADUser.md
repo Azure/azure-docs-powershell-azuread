@@ -72,7 +72,7 @@ This command gets the specified user.
 PS C:\>Get-AzureADUser -Filter "startswith(Title,'Sales')"
 ```
 
-This command gets all the users whos title starts with sales. ie Sales Manager and Sales Assistant.
+This command gets all the users whose title starts with sales. ie Sales Manager and Sales Assistant.
 
 ## PARAMETERS
 
