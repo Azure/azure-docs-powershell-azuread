@@ -77,13 +77,13 @@ Connect-AzureAD
 $currentDate = Get-Date
 $endDate  = $currentDate.AddYears(1)
 $notAfter  = $endDate.AddYears(1)
-$pwd  = "<password>"
+$passwd  = "<password>"
 $thumb = (New-SelfSignedCertificate -CertStoreLocation cert:\localmachine\my -DnsName com.foo.bar -KeyExportPolicy Exportable -Provider "Microsoft Enhanced RSA and AES Cryptographic Provider" -NotAfter $notAfter).Thumbprint
-$pwd = ConvertTo-SecureString -String $pwd -Force -AsPlainText
-Export-PfxCertificate -cert "cert:\localmachine\my\$thumb" -FilePath c:\temp\examplecert.pfx -Password $pwd
+$passwd = ConvertTo-SecureString -String $passwd -Force -AsPlainText
+Export-PfxCertificate -cert "cert:\localmachine\my\$thumb" -FilePath c:\temp\examplecert.pfx -Password $passwd
 
 # Load the certificate
-$cert  = New-Object System.Security.Cryptography.X509Certificates.X509Certificate("C:\temp\examplecert.pfx", $pwd)
+$cert  = New-Object System.Security.Cryptography.X509Certificates.X509Certificate("C:\temp\examplecert.pfx", $passwd)
 $keyValue = [System.Convert]::ToBase64String($cert.GetRawCertData())
 
 
