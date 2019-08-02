@@ -21,6 +21,25 @@ The Azure Active Directory (Azure AD) team regularly updates Azure AD Connect wi
 
 This article is designed to help you keep track of the versions that have been released, and to understand what the changes are in the latest version.
 
+## 2.0.2.32 - Preview release of the AzureADPreview module
+
+### Release status 
+
+08/02//2019: Released for installation and upgrade from the [PowerShell Gallery](https://www.powershellgallery.com/packages/AzureADPreview/2.0.2.32)
+
+### New features and improvements 
+The following new cmdlets are added in this release:
+
+Get-AzureADMSRoleAssignment
+Get-AzureADMSRoleDefinition
+New-AzureADMSRoleAssignment
+New-AzureADMSRoleDefinition
+Remove-AzureADMSRoleAssignment
+Remove-AzureADMSRoleDefinition
+Set-AzureADMSRoleDefinition
+
+Added support for -Filter parameter in Get-AzureADDirectoryRole cmdlet
+
 ## 2.0.2.31 - General Availability release of the AzureAD module
 
 ### Release status 
