@@ -30,13 +30,19 @@ This article is designed to help you keep track of the versions that have been r
 ### New features and improvements 
 The following new cmdlets are added in this release:
 
-Get-AzureADMSRoleAssignment
-Get-AzureADMSRoleDefinition
-New-AzureADMSRoleAssignment
-New-AzureADMSRoleDefinition
-Remove-AzureADMSRoleAssignment
-Remove-AzureADMSRoleDefinition
-Set-AzureADMSRoleDefinition
+ - Get-AzureADMSRoleAssignment
+
+ - Get-AzureADMSRoleDefinition
+
+ - New-AzureADMSRoleAssignment
+
+ - New-AzureADMSRoleDefinition
+
+ - Remove-AzureADMSRoleAssignment
+
+ - Remove-AzureADMSRoleDefinition
+
+ - Set-AzureADMSRoleDefinition
 
 Added support for -Filter parameter in Get-AzureADDirectoryRole cmdlet
 
