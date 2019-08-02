@@ -21,6 +21,15 @@ The Azure Active Directory (Azure AD) team regularly updates Azure AD Connect wi
 
 This article is designed to help you keep track of the versions that have been released, and to understand what the changes are in the latest version.
 
+## 2.0.2.31 - General Availability release of the AzureAD module
+
+### Release status 
+
+08/02//2019: Released for installation and upgrade from the [PowerShell Gallery](https://www.powershellgallery.com/packages/AzureAD/2.0.2.31)
+
+### New features and improvements 
+Added support for -Filter parameter in Get-AzureADDirectoryRole cmdlet
+
 ## 2.0.2.25 - General Availability release of the AzureAD module
 
 ### Release status 
