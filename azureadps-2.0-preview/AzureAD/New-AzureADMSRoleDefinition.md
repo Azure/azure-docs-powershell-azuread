@@ -25,7 +25,7 @@ The New-AzureADMSRoleDefinition cmdlet creates an Azure Active Directory (Azure 
 ## EXAMPLES
 
 ### Example 1
-```powershell
+```
 PS C:\> 
 $allowedResourceAction = @()
 $allowedResourceAction += @("microsoft.aad.directory/applications/create")
@@ -37,7 +37,6 @@ $resourceScopes = @()
 $resourceScopes += '/'
 
 New-AzureADMSRoleDefinition -RolePermissions $rolePermissions -IsEnabled $true -DisplayName 'MyRoleDefinition' -ResourceScopes $resourceScopes
-```
 
 Id              : c466024e-f757-4409-a897-d780916814b1
 OdataType       :
@@ -54,6 +53,7 @@ RolePermissions : {class RolePermission {
                   }
 TemplateId      : 4dd5aa9c-cf4d-4895-a993-740d342802b9
 Version         :
+```
 
 This command creates a new role definition in AzureAD.
 
