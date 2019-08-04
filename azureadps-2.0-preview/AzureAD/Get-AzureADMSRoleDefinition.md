@@ -35,9 +35,8 @@ Specify the SearchString or Filter parameter to find particular role definition.
 ## EXAMPLES
 
 ### Example 1
-```powershell
-PS C:\> Get-AzureADMSRoleDefinition
 ```
+PS C:\> Get-AzureADMSRoleDefinition
 
 Id              : 690e93e9-da28-4b25-9d0d-2f0b4e6b2ff9
 OdataType       :
@@ -67,11 +66,11 @@ RolePermissions : {class RolePermission {
                   }
 TemplateId      : 332a8659-25b8-4b3e-b545-38b331c48b2b
 Version         :
+```
 
 ### Example 2
-```powershell
-PS C:\> Get-AzureADMSRoleDefinition -Id 1a327991-10cb-4266-877a-998fb4df78ec
 ```
+PS C:\> Get-AzureADMSRoleDefinition -Id 1a327991-10cb-4266-877a-998fb4df78ec
 
 Id              : 1a327991-10cb-4266-877a-998fb4df78ec
 OdataType       :
@@ -88,11 +87,11 @@ RolePermissions : {class RolePermission {
                   }
 TemplateId      : 332a8659-25b8-4b3e-b545-38b331c48b2b
 Version         :
+```
 
 ### Example 3
-```powershell
-PS C:\> Get-AzureADMSRoleDefinition -Filter "startswith(displayName, 'Sample')"
 ```
+PS C:\> Get-AzureADMSRoleDefinition -Filter "startswith(displayName, 'Sample')"
 
 Id              : 690e93e9-da28-4b25-9d0d-2f0b4e6b2ff9
 OdataType       :
@@ -121,8 +120,8 @@ RolePermissions : {class RolePermission {
                   }
                   }
 TemplateId      : 332a8659-25b8-4b3e-b545-38b331c48b2b
-Version         :
-				  
+Version         :  
+```
 
 ## PARAMETERS
 
