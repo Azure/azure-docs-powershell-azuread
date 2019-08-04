@@ -1,688 +1,718 @@
 ---
-Module Name: AzureADPreview
+Module Name: azureadpreview
 Module Guid: b433e830-b479-4f7f-9c80-9cc6c28e1b51
 Download Help Link: {{Please enter FwLink manually}}
 Help Version: {{Please enter version of help manually (X.X.X.X) format}}
 Locale: en-US
 ---
 
-# AzureADPreview Module
+# azureadpreview Module
 ## Description
 {{Manually Enter Description Here}}
 
-## AzureADPreview Cmdlets
+## azureadpreview Cmdlets
 ### [Add-AzureADAdministrativeUnitMember](Add-AzureADAdministrativeUnitMember.md)
-Adds an administrative unit member.
+{{Manually Enter Add-AzureADAdministrativeUnitMember Description Here}}
 
 ### [Add-AzureADApplicationOwner](Add-AzureADApplicationOwner.md)
-Adds an owner to an application.
+{{Manually Enter Add-AzureADApplicationOwner Description Here}}
 
 ### [Add-AzureADApplicationPolicy](Add-AzureADApplicationPolicy.md)
-**The Add-AzureADApplicationPolicy cmdlet is not available at this time**.
+{{Manually Enter Add-AzureADApplicationPolicy Description Here}}
 
 ### [Add-AzureADDeviceRegisteredOwner](Add-AzureADDeviceRegisteredOwner.md)
-Adds a registered owner for a device.
+{{Manually Enter Add-AzureADDeviceRegisteredOwner Description Here}}
 
 ### [Add-AzureADDeviceRegisteredUser](Add-AzureADDeviceRegisteredUser.md)
-Adds a registered user for a device.
+{{Manually Enter Add-AzureADDeviceRegisteredUser Description Here}}
 
 ### [Add-AzureADDirectoryRoleMember](Add-AzureADDirectoryRoleMember.md)
-Adds a member to a directory role.
+{{Manually Enter Add-AzureADDirectoryRoleMember Description Here}}
 
 ### [Add-AzureADGroupMember](Add-AzureADGroupMember.md)
-Adds a member to a group.
+{{Manually Enter Add-AzureADGroupMember Description Here}}
 
 ### [Add-AzureADGroupOwner](Add-AzureADGroupOwner.md)
-Adds an owner to a group.
+{{Manually Enter Add-AzureADGroupOwner Description Here}}
 
 ### [Add-AzureADMSLifecyclePolicyGroup](Add-AzureADMSLifecyclePolicyGroup.md)
-Adds a group to a lifecycle policy
+{{Manually Enter Add-AzureADMSLifecyclePolicyGroup Description Here}}
 
 ### [Add-AzureADMSPrivilegedResource](Add-AzureADMSPrivilegedResource.md)
-Use this API to add a new azure AD MS privileged resource.
+{{Manually Enter Add-AzureADMSPrivilegedResource Description Here}}
 
 ### [Add-AzureADScopedRoleMembership](Add-AzureADScopedRoleMembership.md)
-Adds a scoped role membership to an administrative unit.
+{{Manually Enter Add-AzureADScopedRoleMembership Description Here}}
 
 ### [Add-AzureADServicePrincipalOwner](Add-AzureADServicePrincipalOwner.md)
-Adds an owner to a service principal.
+{{Manually Enter Add-AzureADServicePrincipalOwner Description Here}}
 
 ### [Add-AzureADServicePrincipalPolicy](Add-AzureADServicePrincipalPolicy.md)
-Adds a service principal policy.
+{{Manually Enter Add-AzureADServicePrincipalPolicy Description Here}}
 
 ### [Close-AzureADMSPrivilegedRoleAssignmentRequest](Close-AzureADMSPrivilegedRoleAssignmentRequest.md)
-Cancel a AzureADMSPrivilegedRoleAssignmentRequest
+{{Manually Enter Close-AzureADMSPrivilegedRoleAssignmentRequest Description Here}}
 
 ### [Confirm-AzureADDomain](Confirm-AzureADDomain.md)
-Validate the ownership of a domain.
+{{Manually Enter Confirm-AzureADDomain Description Here}}
 
 ### [Connect-AzureAD](Connect-AzureAD.md)
-Connects with an authenticated account to use Active Directory cmdlet requests.
+{{Manually Enter Connect-AzureAD Description Here}}
 
 ### [Disconnect-AzureAD](Disconnect-AzureAD.md)
-Disconnects the current session from an Azure Active Directory tenant.
+{{Manually Enter Disconnect-AzureAD Description Here}}
 
 ### [Enable-AzureADDirectoryRole](Enable-AzureADDirectoryRole.md)
-Activates an existing directory role in Azure Active Directory.
+{{Manually Enter Enable-AzureADDirectoryRole Description Here}}
 
 ### [Get-AzureADAdministrativeUnit](Get-AzureADAdministrativeUnit.md)
-Gets an administrative unit.
+{{Manually Enter Get-AzureADAdministrativeUnit Description Here}}
 
 ### [Get-AzureADAdministrativeUnitMember](Get-AzureADAdministrativeUnitMember.md)
-Gets a member of an administrative unit.
+{{Manually Enter Get-AzureADAdministrativeUnitMember Description Here}}
 
 ### [Get-AzureADApplication](Get-AzureADApplication.md)
-Gets an application.
+{{Manually Enter Get-AzureADApplication Description Here}}
 
 ### [Get-AzureADApplicationExtensionProperty](Get-AzureADApplicationExtensionProperty.md)
-Gets application extension properties.
+{{Manually Enter Get-AzureADApplicationExtensionProperty Description Here}}
 
 ### [Get-AzureADApplicationKeyCredential](Get-AzureADApplicationKeyCredential.md)
-Gets the key credentials for an application.
+{{Manually Enter Get-AzureADApplicationKeyCredential Description Here}}
 
 ### [Get-AzureADApplicationLogo](Get-AzureADApplicationLogo.md)
-Retrieve the logo of an application
+{{Manually Enter Get-AzureADApplicationLogo Description Here}}
 
 ### [Get-AzureADApplicationOwner](Get-AzureADApplicationOwner.md)
-Gets the owner of an application.
+{{Manually Enter Get-AzureADApplicationOwner Description Here}}
 
 ### [Get-AzureADApplicationPasswordCredential](Get-AzureADApplicationPasswordCredential.md)
-Gets the password credential for an application.
+{{Manually Enter Get-AzureADApplicationPasswordCredential Description Here}}
 
 ### [Get-AzureADApplicationPolicy](Get-AzureADApplicationPolicy.md)
-Gets an application policy.
+{{Manually Enter Get-AzureADApplicationPolicy Description Here}}
 
 ### [Get-AzureADApplicationProxyApplication](Get-AzureADApplicationProxyApplication.md)
-The Get-AzureADApplicationProxyApplication cmdlet retrieves an application configured for Application Proxy in Azure Active Directory. 
+{{Manually Enter Get-AzureADApplicationProxyApplication Description Here}}
 
 ### [Get-AzureADApplicationProxyApplicationConnectorGroup](Get-AzureADApplicationProxyApplicationConnectorGroup.md)
-The Get-AzureADApplicationProxyApplicationConnectorGroup cmdlet retrieves the connector group assigned for a specific application.
+{{Manually Enter Get-AzureADApplicationProxyApplicationConnectorGroup Description Here}}
 
 ### [Get-AzureADApplicationProxyConnector](Get-AzureADApplicationProxyConnector.md)
-The Get-AzureADApplicationProxyApplicationConnector cmdlet a list of all connectors, or if specified, details of a specific connector.
+{{Manually Enter Get-AzureADApplicationProxyConnector Description Here}}
 
 ### [Get-AzureADApplicationProxyConnectorGroup](Get-AzureADApplicationProxyConnectorGroup.md)
-The Get-AzureADApplicationProxyConnectorGroup cmdlet retrieves a list of all connector groups, or if specified, details of a specific connector group. 
+{{Manually Enter Get-AzureADApplicationProxyConnectorGroup Description Here}}
 
 ### [Get-AzureADApplicationProxyConnectorGroupMembers](Get-AzureADApplicationProxyConnectorGroupMembers.md)
-The Get-AzureADApplicationProxyConnectorGroupMembers gets all the Application Proxy connectors associated with the given connector group. 
+{{Manually Enter Get-AzureADApplicationProxyConnectorGroupMembers Description Here}}
 
 ### [Get-AzureADApplicationProxyConnectorMemberOf](Get-AzureADApplicationProxyConnectorMemberOf.md)
-The Get-AzureADApplicationProxyConnectorMemberOf command gets the ConnectorGroup that the specified Connector is a member of. 
+{{Manually Enter Get-AzureADApplicationProxyConnectorMemberOf Description Here}}
 
 ### [Get-AzureADApplicationServiceEndpoint](Get-AzureADApplicationServiceEndpoint.md)
-Retrieve the service endpoint of an application
+{{Manually Enter Get-AzureADApplicationServiceEndpoint Description Here}}
 
 ### [Get-AzureADApplicationSignInDetailedSummary](Get-AzureADApplicationSignInDetailedSummary.md)
-Get detailed sign in summaries
+{{Manually Enter Get-AzureADApplicationSignInDetailedSummary Description Here}}
 
 ### [Get-AzureADApplicationSignInSummary](Get-AzureADApplicationSignInSummary.md)
-Get signin summary by last number of days
+{{Manually Enter Get-AzureADApplicationSignInSummary Description Here}}
 
 ### [Get-AzureADAuditDirectoryLogs](Get-AzureADAuditDirectoryLogs.md)
-Get directory audit logs
+{{Manually Enter Get-AzureADAuditDirectoryLogs Description Here}}
 
 ### [Get-AzureADAuditSignInLogs](Get-AzureADAuditSignInLogs.md)
-Get audit logs of signins
+{{Manually Enter Get-AzureADAuditSignInLogs Description Here}}
 
 ### [Get-AzureADContact](Get-AzureADContact.md)
-Gets a contact from Azure Active Directory.
+{{Manually Enter Get-AzureADContact Description Here}}
 
 ### [Get-AzureADContactDirectReport](Get-AzureADContactDirectReport.md)
-Get the direct reports for a contact.
+{{Manually Enter Get-AzureADContactDirectReport Description Here}}
 
 ### [Get-AzureADContactManager](Get-AzureADContactManager.md)
-Gets the manager of a contact.
+{{Manually Enter Get-AzureADContactManager Description Here}}
 
 ### [Get-AzureADContactMembership](Get-AzureADContactMembership.md)
-Get a contact membership.
+{{Manually Enter Get-AzureADContactMembership Description Here}}
 
 ### [Get-AzureADContactThumbnailPhoto](Get-AzureADContactThumbnailPhoto.md)
-Retrieves the thumbnail photo of a contact
+{{Manually Enter Get-AzureADContactThumbnailPhoto Description Here}}
 
 ### [Get-AzureADContract](Get-AzureADContract.md)
-Gets a contract.
+{{Manually Enter Get-AzureADContract Description Here}}
 
 ### [Get-AzureADCurrentSessionInfo](Get-AzureADCurrentSessionInfo.md)
-This cmdlet will return the current session state
+{{Manually Enter Get-AzureADCurrentSessionInfo Description Here}}
 
 ### [Get-AzureADDeletedApplication](Get-AzureADDeletedApplication.md)
-Retrieves the list of previously deleted applications
+{{Manually Enter Get-AzureADDeletedApplication Description Here}}
 
 ### [Get-AzureADDevice](Get-AzureADDevice.md)
-Gets a device from Active Directory.
+{{Manually Enter Get-AzureADDevice Description Here}}
 
 ### [Get-AzureADDeviceConfiguration](Get-AzureADDeviceConfiguration.md)
-This cmdlet retrieves the device configuration object
+{{Manually Enter Get-AzureADDeviceConfiguration Description Here}}
 
 ### [Get-AzureADDeviceRegisteredOwner](Get-AzureADDeviceRegisteredOwner.md)
-Gets the registered owner of a device.
+{{Manually Enter Get-AzureADDeviceRegisteredOwner Description Here}}
 
 ### [Get-AzureADDeviceRegisteredUser](Get-AzureADDeviceRegisteredUser.md)
-Gets a registered user.
+{{Manually Enter Get-AzureADDeviceRegisteredUser Description Here}}
 
 ### [Get-AzureADDirectoryRole](Get-AzureADDirectoryRole.md)
-Gets a directory role.
+{{Manually Enter Get-AzureADDirectoryRole Description Here}}
 
 ### [Get-AzureADDirectoryRoleMember](Get-AzureADDirectoryRoleMember.md)
-Gets members of a directory role.
+{{Manually Enter Get-AzureADDirectoryRoleMember Description Here}}
 
 ### [Get-AzureADDirectoryRoleTemplate](Get-AzureADDirectoryRoleTemplate.md)
-Gets directory role templates.
+{{Manually Enter Get-AzureADDirectoryRoleTemplate Description Here}}
 
 ### [Get-AzureADDirectorySetting](Get-AzureADDirectorySetting.md)
-Gets a directory setting.
+{{Manually Enter Get-AzureADDirectorySetting Description Here}}
 
 ### [Get-AzureADDirectorySettingTemplate](Get-AzureADDirectorySettingTemplate.md)
-Gets a directory setting template.
+{{Manually Enter Get-AzureADDirectorySettingTemplate Description Here}}
 
 ### [Get-AzureADDomain](Get-AzureADDomain.md)
-Gets a domain.
+{{Manually Enter Get-AzureADDomain Description Here}}
 
 ### [Get-AzureADDomainNameReference](Get-AzureADDomainNameReference.md)
-This cmdlet retrieves the objects that are referenced by a given domain name 
+{{Manually Enter Get-AzureADDomainNameReference Description Here}}
 
 ### [Get-AzureADDomainServiceConfigurationRecord](Get-AzureADDomainServiceConfigurationRecord.md)
-Gets the domain's service configuration records from the serviceConfigurationRecords navigation property.
+{{Manually Enter Get-AzureADDomainServiceConfigurationRecord Description Here}}
 
 ### [Get-AzureADDomainVerificationDnsRecord](Get-AzureADDomainVerificationDnsRecord.md)
-Retrieve the domain verification DNS record for a domain
+{{Manually Enter Get-AzureADDomainVerificationDnsRecord Description Here}}
 
 ### [Get-AzureADExtensionProperty](Get-AzureADExtensionProperty.md)
-Gets  extension properties registered with Azure AD.
+{{Manually Enter Get-AzureADExtensionProperty Description Here}}
 
 ### [Get-AzureADExternalDomainFederation](Get-AzureADExternalDomainFederation.md)
-Get an externalDomainFederation by external domain name.
+{{Manually Enter Get-AzureADExternalDomainFederation Description Here}}
 
 ### [Get-AzureADGroup](Get-AzureADGroup.md)
-Gets a group.
+{{Manually Enter Get-AzureADGroup Description Here}}
 
 ### [Get-AzureADGroupAppRoleAssignment](Get-AzureADGroupAppRoleAssignment.md)
-Gets a group application role assignment.
+{{Manually Enter Get-AzureADGroupAppRoleAssignment Description Here}}
 
 ### [Get-AzureADGroupMember](Get-AzureADGroupMember.md)
-Gets a member of a group.
+{{Manually Enter Get-AzureADGroupMember Description Here}}
 
 ### [Get-AzureADGroupOwner](Get-AzureADGroupOwner.md)
-Gets an owner of a group.
+{{Manually Enter Get-AzureADGroupOwner Description Here}}
 
 ### [Get-AzureADMSDeletedDirectoryObject](Get-AzureADMSDeletedDirectoryObject.md)
-This cmdlet is used to retrieve a soft deleted directory object from the directory
+{{Manually Enter Get-AzureADMSDeletedDirectoryObject Description Here}}
 
 ### [Get-AzureADMSDeletedGroup](Get-AzureADMSDeletedGroup.md)
-This cmdlet is used to retrieve the soft deleted groups in a directory. 
+{{Manually Enter Get-AzureADMSDeletedGroup Description Here}}
 
 ### [Get-AzureADMSGroup](Get-AzureADMSGroup.md)
-Gets information about groups in Azure AD.
+{{Manually Enter Get-AzureADMSGroup Description Here}}
 
 ### [Get-AzureADMSGroupLifecyclePolicy](Get-AzureADMSGroupLifecyclePolicy.md)
-Retrieves the properties and relationships of a groupLifecyclePolicies object in Azure Active Directory
+{{Manually Enter Get-AzureADMSGroupLifecyclePolicy Description Here}}
 
 ### [Get-AzureADMSIdentityProvider](Get-AzureADMSIdentityProvider.md)
-This cmdlet is used to retrieve the configured identity providers in the directory.
+{{Manually Enter Get-AzureADMSIdentityProvider Description Here}}
 
 ### [Get-AzureADMSLifecyclePolicyGroup](Get-AzureADMSLifecyclePolicyGroup.md)
-Retrieves the lifecycle policy object to which a group belongs.
+{{Manually Enter Get-AzureADMSLifecyclePolicyGroup Description Here}}
 
 ### [Get-AzureADMSPrivilegedResource](Get-AzureADMSPrivilegedResource.md)
-Get azure AD MS privileged resource
+{{Manually Enter Get-AzureADMSPrivilegedResource Description Here}}
 
 ### [Get-AzureADMSPrivilegedRoleAssignment](Get-AzureADMSPrivilegedRoleAssignment.md)
-Get role assignments for a specific provider and resource
+{{Manually Enter Get-AzureADMSPrivilegedRoleAssignment Description Here}}
 
 ### [Get-AzureADMSPrivilegedRoleAssignmentRequest](Get-AzureADMSPrivilegedRoleAssignmentRequest.md)
-Get role assignment request for a specific resource
+{{Manually Enter Get-AzureADMSPrivilegedRoleAssignmentRequest Description Here}}
 
 ### [Get-AzureADMSPrivilegedRoleDefinition](Get-AzureADMSPrivilegedRoleDefinition.md)
-Get role definitions
+{{Manually Enter Get-AzureADMSPrivilegedRoleDefinition Description Here}}
 
 ### [Get-AzureADMSPrivilegedRoleSetting](Get-AzureADMSPrivilegedRoleSetting.md)
-Get role settings
+{{Manually Enter Get-AzureADMSPrivilegedRoleSetting Description Here}}
+
+### [Get-AzureADMSRoleAssignment](Get-AzureADMSRoleAssignment.md)
+{{Manually Enter Get-AzureADMSRoleAssignment Description Here}}
+
+### [Get-AzureADMSRoleDefinition](Get-AzureADMSRoleDefinition.md)
+{{Manually Enter Get-AzureADMSRoleDefinition Description Here}}
 
 ### [Get-AzureADMSTrustFrameworkPolicy](Get-AzureADMSTrustFrameworkPolicy.md)
-This cmdlet is used to retrieve the created trust framework policies (custom policies) in the directory.
+{{Manually Enter Get-AzureADMSTrustFrameworkPolicy Description Here}}
 
 ### [Get-AzureADOAuth2PermissionGrant](Get-AzureADOAuth2PermissionGrant.md)
-Gets **OAuth2PermissionGrant** entities.
+{{Manually Enter Get-AzureADOAuth2PermissionGrant Description Here}}
 
 ### [Get-AzureADObjectByObjectId](Get-AzureADObjectByObjectId.md)
-Retrieves the object(s) specified by the objectIds parameter 
+{{Manually Enter Get-AzureADObjectByObjectId Description Here}}
 
 ### [Get-AzureADObjectSetting](Get-AzureADObjectSetting.md)
-Gets an object setting.
+{{Manually Enter Get-AzureADObjectSetting Description Here}}
 
 ### [Get-AzureADPolicy](Get-AzureADPolicy.md)
-Gets a policy.
+{{Manually Enter Get-AzureADPolicy Description Here}}
 
 ### [Get-AzureADPolicyAppliedObject](Get-AzureADPolicyAppliedObject.md)
+{{Manually Enter Get-AzureADPolicyAppliedObject Description Here}}
+
+### [Get-AzureADPrivilegedRole](Get-AzureADPrivilegedRole.md)
+{{Manually Enter Get-AzureADPrivilegedRole Description Here}}
+
+### [Get-AzureADPrivilegedRoleAssignment](Get-AzureADPrivilegedRoleAssignment.md)
+{{Manually Enter Get-AzureADPrivilegedRoleAssignment Description Here}}
 
 ### [Get-AzureADScopedRoleMembership](Get-AzureADScopedRoleMembership.md)
-Gets a scoped role membership from an administrative unit.
+{{Manually Enter Get-AzureADScopedRoleMembership Description Here}}
 
 ### [Get-AzureADServiceAppRoleAssignedTo](Get-AzureADServiceAppRoleAssignedTo.md)
-{{Fill in the Synopsis}}
+{{Manually Enter Get-AzureADServiceAppRoleAssignedTo Description Here}}
 
 ### [Get-AzureADServiceAppRoleAssignment](Get-AzureADServiceAppRoleAssignment.md)
-Gets a service principal application role assignment.
+{{Manually Enter Get-AzureADServiceAppRoleAssignment Description Here}}
 
 ### [Get-AzureADServicePrincipal](Get-AzureADServicePrincipal.md)
-Gets a service principal.
+{{Manually Enter Get-AzureADServicePrincipal Description Here}}
 
 ### [Get-AzureADServicePrincipalCreatedObject](Get-AzureADServicePrincipalCreatedObject.md)
-Get objects created by a service principal.
+{{Manually Enter Get-AzureADServicePrincipalCreatedObject Description Here}}
 
 ### [Get-AzureADServicePrincipalKeyCredential](Get-AzureADServicePrincipalKeyCredential.md)
-Get key credentials for a service principal.
+{{Manually Enter Get-AzureADServicePrincipalKeyCredential Description Here}}
 
 ### [Get-AzureADServicePrincipalMembership](Get-AzureADServicePrincipalMembership.md)
-Get a service principal membership.
+{{Manually Enter Get-AzureADServicePrincipalMembership Description Here}}
 
 ### [Get-AzureADServicePrincipalOAuth2PermissionGrant](Get-AzureADServicePrincipalOAuth2PermissionGrant.md)
-Gets an oAuth2PermissionGrant object.
+{{Manually Enter Get-AzureADServicePrincipalOAuth2PermissionGrant Description Here}}
 
 ### [Get-AzureADServicePrincipalOwnedObject](Get-AzureADServicePrincipalOwnedObject.md)
-Gets an object owned by a service principal.
+{{Manually Enter Get-AzureADServicePrincipalOwnedObject Description Here}}
 
 ### [Get-AzureADServicePrincipalOwner](Get-AzureADServicePrincipalOwner.md)
-Get the owner of a service principal.
+{{Manually Enter Get-AzureADServicePrincipalOwner Description Here}}
 
 ### [Get-AzureADServicePrincipalPasswordCredential](Get-AzureADServicePrincipalPasswordCredential.md)
-Get credentials for a service principal.
+{{Manually Enter Get-AzureADServicePrincipalPasswordCredential Description Here}}
 
 ### [Get-AzureADServicePrincipalPolicy](Get-AzureADServicePrincipalPolicy.md)
-
+{{Manually Enter Get-AzureADServicePrincipalPolicy Description Here}}
 
 ### [Get-AzureADSubscribedSku](Get-AzureADSubscribedSku.md)
-Gets subscribed SKUs to Microsoft services.
+{{Manually Enter Get-AzureADSubscribedSku Description Here}}
 
 ### [Get-AzureADTenantDetail](Get-AzureADTenantDetail.md)
-Gets the details of a tenant.
+{{Manually Enter Get-AzureADTenantDetail Description Here}}
 
 ### [Get-AzureADTrustedCertificateAuthority](Get-AzureADTrustedCertificateAuthority.md)
-Gets the trusted certificate authority.
+{{Manually Enter Get-AzureADTrustedCertificateAuthority Description Here}}
 
 ### [Get-AzureADUser](Get-AzureADUser.md)
-Gets a user.
+{{Manually Enter Get-AzureADUser Description Here}}
 
 ### [Get-AzureADUserAppRoleAssignment](Get-AzureADUserAppRoleAssignment.md)
-Get a user application role assignment.
+{{Manually Enter Get-AzureADUserAppRoleAssignment Description Here}}
 
 ### [Get-AzureADUserCreatedObject](Get-AzureADUserCreatedObject.md)
-Get objects created by the user.
+{{Manually Enter Get-AzureADUserCreatedObject Description Here}}
 
 ### [Get-AzureADUserDirectReport](Get-AzureADUserDirectReport.md)
-Get the user's direct reports.
+{{Manually Enter Get-AzureADUserDirectReport Description Here}}
 
 ### [Get-AzureADUserExtension](Get-AzureADUserExtension.md)
-Gets a user extension.
+{{Manually Enter Get-AzureADUserExtension Description Here}}
 
 ### [Get-AzureADUserLicenseDetail](Get-AzureADUserLicenseDetail.md)
-Retrieves license details for a user
+{{Manually Enter Get-AzureADUserLicenseDetail Description Here}}
 
 ### [Get-AzureADUserManager](Get-AzureADUserManager.md)
-Gets the manager of a user.
+{{Manually Enter Get-AzureADUserManager Description Here}}
 
 ### [Get-AzureADUserMembership](Get-AzureADUserMembership.md)
-Get user memberships.
+{{Manually Enter Get-AzureADUserMembership Description Here}}
 
 ### [Get-AzureADUserOAuth2PermissionGrant](Get-AzureADUserOAuth2PermissionGrant.md)
-Gets an **oAuth2PermissionGrant** object.
+{{Manually Enter Get-AzureADUserOAuth2PermissionGrant Description Here}}
 
 ### [Get-AzureADUserOwnedDevice](Get-AzureADUserOwnedDevice.md)
-Get registered devices owned by a user.
+{{Manually Enter Get-AzureADUserOwnedDevice Description Here}}
 
 ### [Get-AzureADUserOwnedObject](Get-AzureADUserOwnedObject.md)
-Get objects owned by a user.
+{{Manually Enter Get-AzureADUserOwnedObject Description Here}}
 
 ### [Get-AzureADUserRegisteredDevice](Get-AzureADUserRegisteredDevice.md)
-Get devices registered by a user.
+{{Manually Enter Get-AzureADUserRegisteredDevice Description Here}}
 
 ### [Get-AzureADUserThumbnailPhoto](Get-AzureADUserThumbnailPhoto.md)
-Retrieve the thumbnail photo of a user
+{{Manually Enter Get-AzureADUserThumbnailPhoto Description Here}}
 
 ### [Get-CrossCloudVerificationCode](Get-CrossCloudVerificationCode.md)
-{{ Fill in the Synopsis }}
+{{Manually Enter Get-CrossCloudVerificationCode Description Here}}
 
 ### [New-AzureADAdministrativeUnit](New-AzureADAdministrativeUnit.md)
-Creates an administrative unit.
+{{Manually Enter New-AzureADAdministrativeUnit Description Here}}
 
 ### [New-AzureADApplication](New-AzureADApplication.md)
-Creates an application.
+{{Manually Enter New-AzureADApplication Description Here}}
 
 ### [New-AzureADApplicationExtensionProperty](New-AzureADApplicationExtensionProperty.md)
-Creates an application extension property.
+{{Manually Enter New-AzureADApplicationExtensionProperty Description Here}}
 
 ### [New-AzureADApplicationKeyCredential](New-AzureADApplicationKeyCredential.md)
-Creates a key credential for an application.
+{{Manually Enter New-AzureADApplicationKeyCredential Description Here}}
 
 ### [New-AzureADApplicationPasswordCredential](New-AzureADApplicationPasswordCredential.md)
-Creates a password credential for an application.
+{{Manually Enter New-AzureADApplicationPasswordCredential Description Here}}
 
 ### [New-AzureADApplicationProxyApplication](New-AzureADApplicationProxyApplication.md)
-The New-AzureADApplicationProxyApplication cmdlet creates a new application configured for Application Proxy in Azure Active Directory.
+{{Manually Enter New-AzureADApplicationProxyApplication Description Here}}
 
 ### [New-AzureADApplicationProxyConnectorGroup](New-AzureADApplicationProxyConnectorGroup.md)
-The New-AzureADApplicationProxyConnectorGroup cmdlet creates a new Application Proxy Connector group. 
+{{Manually Enter New-AzureADApplicationProxyConnectorGroup Description Here}}
 
 ### [New-AzureADDevice](New-AzureADDevice.md)
-Creates a device.
+{{Manually Enter New-AzureADDevice Description Here}}
 
 ### [New-AzureADDirectorySetting](New-AzureADDirectorySetting.md)
-Creates a directory settings object.
+{{Manually Enter New-AzureADDirectorySetting Description Here}}
 
 ### [New-AzureADDomain](New-AzureADDomain.md)
-Creates a domain.
+{{Manually Enter New-AzureADDomain Description Here}}
 
 ### [New-AzureADExternalDomainFederation](New-AzureADExternalDomainFederation.md)
-Create a new externalDomainFederation in Azure Active Directory
+{{Manually Enter New-AzureADExternalDomainFederation Description Here}}
 
 ### [New-AzureADGroup](New-AzureADGroup.md)
-Creates a group.
+{{Manually Enter New-AzureADGroup Description Here}}
 
 ### [New-AzureADGroupAppRoleAssignment](New-AzureADGroupAppRoleAssignment.md)
-Assign a group of users to an application role.
+{{Manually Enter New-AzureADGroupAppRoleAssignment Description Here}}
 
 ### [New-AzureADMSGroup](New-AzureADMSGroup.md)
-Creates an Azure AD group.
+{{Manually Enter New-AzureADMSGroup Description Here}}
 
 ### [New-AzureADMSGroupLifecyclePolicy](New-AzureADMSGroupLifecyclePolicy.md)
-Creates a new groupLifecyclePolicy
+{{Manually Enter New-AzureADMSGroupLifecyclePolicy Description Here}}
 
 ### [New-AzureADMSIdentityProvider](New-AzureADMSIdentityProvider.md)
-This cmdlet is used to configure a new identity provider in the directory.
+{{Manually Enter New-AzureADMSIdentityProvider Description Here}}
 
 ### [New-AzureADMSInvitation](New-AzureADMSInvitation.md)
-This cmdlet is used to invite a new external user to your directory
+{{Manually Enter New-AzureADMSInvitation Description Here}}
+
+### [New-AzureADMSRoleAssignment](New-AzureADMSRoleAssignment.md)
+{{Manually Enter New-AzureADMSRoleAssignment Description Here}}
+
+### [New-AzureADMSRoleDefinition](New-AzureADMSRoleDefinition.md)
+{{Manually Enter New-AzureADMSRoleDefinition Description Here}}
 
 ### [New-AzureADMSTrustFrameworkPolicy](New-AzureADMSTrustFrameworkPolicy.md)
-This cmdlet is used to create a trust framework policy (custom policy) in the directory.
+{{Manually Enter New-AzureADMSTrustFrameworkPolicy Description Here}}
 
 ### [New-AzureADObjectSetting](New-AzureADObjectSetting.md)
-Creates a settings object.
+{{Manually Enter New-AzureADObjectSetting Description Here}}
 
 ### [New-AzureADPolicy](New-AzureADPolicy.md)
-Creates a policy.
+{{Manually Enter New-AzureADPolicy Description Here}}
+
+### [New-AzureADPrivilegedRoleAssignment](New-AzureADPrivilegedRoleAssignment.md)
+{{Manually Enter New-AzureADPrivilegedRoleAssignment Description Here}}
 
 ### [New-AzureADServiceAppRoleAssignment](New-AzureADServiceAppRoleAssignment.md)
-Assigns a service principal to an application role.
+{{Manually Enter New-AzureADServiceAppRoleAssignment Description Here}}
 
 ### [New-AzureADServicePrincipal](New-AzureADServicePrincipal.md)
-Creates a service principal.
+{{Manually Enter New-AzureADServicePrincipal Description Here}}
 
 ### [New-AzureADServicePrincipalKeyCredential](New-AzureADServicePrincipalKeyCredential.md)
-Create a new key credential for a service principal
+{{Manually Enter New-AzureADServicePrincipalKeyCredential Description Here}}
 
 ### [New-AzureADServicePrincipalPasswordCredential](New-AzureADServicePrincipalPasswordCredential.md)
-Creates a password credential for a service principal.
+{{Manually Enter New-AzureADServicePrincipalPasswordCredential Description Here}}
 
 ### [New-AzureADTrustedCertificateAuthority](New-AzureADTrustedCertificateAuthority.md)
-Creates a trusted certificate authority.
+{{Manually Enter New-AzureADTrustedCertificateAuthority Description Here}}
 
 ### [New-AzureADUser](New-AzureADUser.md)
-Creates an AD user.
+{{Manually Enter New-AzureADUser Description Here}}
 
 ### [New-AzureADUserAppRoleAssignment](New-AzureADUserAppRoleAssignment.md)
-Assigns a user to an application role.
+{{Manually Enter New-AzureADUserAppRoleAssignment Description Here}}
 
 ### [Open-AzureADMSPrivilegedRoleAssignmentRequest](Open-AzureADMSPrivilegedRoleAssignmentRequest.md)
-Create a role assignment request
+{{Manually Enter Open-AzureADMSPrivilegedRoleAssignmentRequest Description Here}}
 
 ### [Remove-AzureADAdministrativeUnit](Remove-AzureADAdministrativeUnit.md)
-Removes an administrative unit.
+{{Manually Enter Remove-AzureADAdministrativeUnit Description Here}}
 
 ### [Remove-AzureADAdministrativeUnitMember](Remove-AzureADAdministrativeUnitMember.md)
-Removes an administrative unit member.
+{{Manually Enter Remove-AzureADAdministrativeUnitMember Description Here}}
 
 ### [Remove-AzureADApplication](Remove-AzureADApplication.md)
-Delete an application by objectId.
+{{Manually Enter Remove-AzureADApplication Description Here}}
 
 ### [Remove-AzureADApplicationExtensionProperty](Remove-AzureADApplicationExtensionProperty.md)
-Removes an application extension property.
+{{Manually Enter Remove-AzureADApplicationExtensionProperty Description Here}}
 
 ### [Remove-AzureADApplicationKeyCredential](Remove-AzureADApplicationKeyCredential.md)
-Removes a key credential from an application.
+{{Manually Enter Remove-AzureADApplicationKeyCredential Description Here}}
 
 ### [Remove-AzureADApplicationOwner](Remove-AzureADApplicationOwner.md)
-Removes an owner from an application.
+{{Manually Enter Remove-AzureADApplicationOwner Description Here}}
 
 ### [Remove-AzureADApplicationPasswordCredential](Remove-AzureADApplicationPasswordCredential.md)
-Removes a password credential from an application.
+{{Manually Enter Remove-AzureADApplicationPasswordCredential Description Here}}
 
 ### [Remove-AzureADApplicationPolicy](Remove-AzureADApplicationPolicy.md)
-Removes an application policy.
+{{Manually Enter Remove-AzureADApplicationPolicy Description Here}}
 
 ### [Remove-AzureADApplicationProxyApplication](Remove-AzureADApplicationProxyApplication.md)
-Deletes an Application Proxy application.
+{{Manually Enter Remove-AzureADApplicationProxyApplication Description Here}}
 
 ### [Remove-AzureADApplicationProxyApplicationConnectorGroup](Remove-AzureADApplicationProxyApplicationConnectorGroup.md)
-The Remove-AzureADApplicationProxyApplicationConnectorGroup cmdlet sets the connector group assigned for the specified application to 'Default' and removes the current assignment. 
+{{Manually Enter Remove-AzureADApplicationProxyApplicationConnectorGroup Description Here}}
 
 ### [Remove-AzureADApplicationProxyConnectorGroup](Remove-AzureADApplicationProxyConnectorGroup.md)
-The Remove-AzureADApplicationProxyApplicationConnectorGroup cmdlet deletes an Application Proxy Connector group. 
+{{Manually Enter Remove-AzureADApplicationProxyConnectorGroup Description Here}}
 
 ### [Remove-AzureADContact](Remove-AzureADContact.md)
-Removes a contact.
+{{Manually Enter Remove-AzureADContact Description Here}}
 
 ### [Remove-AzureADContactManager](Remove-AzureADContactManager.md)
-Removes a contact's manager.
+{{Manually Enter Remove-AzureADContactManager Description Here}}
 
 ### [Remove-AzureADDeletedApplication](Remove-AzureADDeletedApplication.md)
-{{ Fill in the Synopsis }}
+{{Manually Enter Remove-AzureADDeletedApplication Description Here}}
 
 ### [Remove-AzureADDevice](Remove-AzureADDevice.md)
-Deletes a device.
+{{Manually Enter Remove-AzureADDevice Description Here}}
 
 ### [Remove-AzureADDeviceRegisteredOwner](Remove-AzureADDeviceRegisteredOwner.md)
-Removes the registered owner of a device.
+{{Manually Enter Remove-AzureADDeviceRegisteredOwner Description Here}}
 
 ### [Remove-AzureADDeviceRegisteredUser](Remove-AzureADDeviceRegisteredUser.md)
-Removes a registered user from a device.
+{{Manually Enter Remove-AzureADDeviceRegisteredUser Description Here}}
 
 ### [Remove-AzureADDirectoryRoleMember](Remove-AzureADDirectoryRoleMember.md)
-Removes a member of a directory role.
+{{Manually Enter Remove-AzureADDirectoryRoleMember Description Here}}
 
 ### [Remove-AzureADDirectorySetting](Remove-AzureADDirectorySetting.md)
-Deletes a directory setting in Azure Active Directory.
+{{Manually Enter Remove-AzureADDirectorySetting Description Here}}
 
 ### [Remove-AzureADDomain](Remove-AzureADDomain.md)
-Removes a domain.
+{{Manually Enter Remove-AzureADDomain Description Here}}
 
 ### [Remove-AzureADExternalDomainFederation](Remove-AzureADExternalDomainFederation.md)
-Delete an externalDomainFederation by external domain name.
+{{Manually Enter Remove-AzureADExternalDomainFederation Description Here}}
 
 ### [Remove-AzureADGroup](Remove-AzureADGroup.md)
-Removes a group.
+{{Manually Enter Remove-AzureADGroup Description Here}}
 
 ### [Remove-AzureADGroupAppRoleAssignment](Remove-AzureADGroupAppRoleAssignment.md)
-Delete a group application role assignment.
+{{Manually Enter Remove-AzureADGroupAppRoleAssignment Description Here}}
 
 ### [Remove-AzureADGroupMember](Remove-AzureADGroupMember.md)
-Removes a member from a group.
+{{Manually Enter Remove-AzureADGroupMember Description Here}}
 
 ### [Remove-AzureADGroupOwner](Remove-AzureADGroupOwner.md)
-Removes an owner from a group.
+{{Manually Enter Remove-AzureADGroupOwner Description Here}}
 
 ### [Remove-AzureADMSDeletedDirectoryObject](Remove-AzureADMSDeletedDirectoryObject.md)
-This cmdlet is used to permanently delete a previously deleted directory object
+{{Manually Enter Remove-AzureADMSDeletedDirectoryObject Description Here}}
 
 ### [Remove-AzureADMSGroup](Remove-AzureADMSGroup.md)
-Removes an Azure AD group.
+{{Manually Enter Remove-AzureADMSGroup Description Here}}
 
 ### [Remove-AzureADMSGroupLifecyclePolicy](Remove-AzureADMSGroupLifecyclePolicy.md)
-Deletes a groupLifecyclePolicies object
+{{Manually Enter Remove-AzureADMSGroupLifecyclePolicy Description Here}}
 
 ### [Remove-AzureADMSIdentityProvider](Remove-AzureADMSIdentityProvider.md)
-This cmdlet is used to delete an identity provider in the directory.
+{{Manually Enter Remove-AzureADMSIdentityProvider Description Here}}
 
 ### [Remove-AzureADMSLifecyclePolicyGroup](Remove-AzureADMSLifecyclePolicyGroup.md)
-Removes a group from a lifecycle policy
+{{Manually Enter Remove-AzureADMSLifecyclePolicyGroup Description Here}}
+
+### [Remove-AzureADMSRoleAssignment](Remove-AzureADMSRoleAssignment.md)
+{{Manually Enter Remove-AzureADMSRoleAssignment Description Here}}
+
+### [Remove-AzureADMSRoleDefinition](Remove-AzureADMSRoleDefinition.md)
+{{Manually Enter Remove-AzureADMSRoleDefinition Description Here}}
 
 ### [Remove-AzureADMSTrustFrameworkPolicy](Remove-AzureADMSTrustFrameworkPolicy.md)
-This cmdlet is used to delete a trust framework policy (custom policy) in the directory.
+{{Manually Enter Remove-AzureADMSTrustFrameworkPolicy Description Here}}
 
 ### [Remove-AzureADOAuth2PermissionGrant](Remove-AzureADOAuth2PermissionGrant.md)
-Removes an oAuth2PermissionGrant.
+{{Manually Enter Remove-AzureADOAuth2PermissionGrant Description Here}}
 
 ### [Remove-AzureADObjectSetting](Remove-AzureADObjectSetting.md)
-Deletes settings in Azure Active Directory.
+{{Manually Enter Remove-AzureADObjectSetting Description Here}}
 
 ### [Remove-AzureADPolicy](Remove-AzureADPolicy.md)
-Removes a policy.
+{{Manually Enter Remove-AzureADPolicy Description Here}}
 
 ### [Remove-AzureADScopedRoleMembership](Remove-AzureADScopedRoleMembership.md)
-Removes a scoped role membership.
+{{Manually Enter Remove-AzureADScopedRoleMembership Description Here}}
 
 ### [Remove-AzureADServiceAppRoleAssignment](Remove-AzureADServiceAppRoleAssignment.md)
-Removes a service principal application role assignment.
+{{Manually Enter Remove-AzureADServiceAppRoleAssignment Description Here}}
 
 ### [Remove-AzureADServicePrincipal](Remove-AzureADServicePrincipal.md)
-Removes a service principal.
+{{Manually Enter Remove-AzureADServicePrincipal Description Here}}
 
 ### [Remove-AzureADServicePrincipalKeyCredential](Remove-AzureADServicePrincipalKeyCredential.md)
-Removes a key credential from a service principal.
+{{Manually Enter Remove-AzureADServicePrincipalKeyCredential Description Here}}
 
 ### [Remove-AzureADServicePrincipalOwner](Remove-AzureADServicePrincipalOwner.md)
-Removes an owner from a service principal.
+{{Manually Enter Remove-AzureADServicePrincipalOwner Description Here}}
 
 ### [Remove-AzureADServicePrincipalPasswordCredential](Remove-AzureADServicePrincipalPasswordCredential.md)
-Removes a password credential from a service principal.
+{{Manually Enter Remove-AzureADServicePrincipalPasswordCredential Description Here}}
 
 ### [Remove-AzureADServicePrincipalPolicy](Remove-AzureADServicePrincipalPolicy.md)
-
+{{Manually Enter Remove-AzureADServicePrincipalPolicy Description Here}}
 
 ### [Remove-AzureADTrustedCertificateAuthority](Remove-AzureADTrustedCertificateAuthority.md)
-Removes a trusted certificate authority.
+{{Manually Enter Remove-AzureADTrustedCertificateAuthority Description Here}}
 
 ### [Remove-AzureADUser](Remove-AzureADUser.md)
-Removes a user.
+{{Manually Enter Remove-AzureADUser Description Here}}
 
 ### [Remove-AzureADUserAppRoleAssignment](Remove-AzureADUserAppRoleAssignment.md)
-Removes a user application role assignment.
+{{Manually Enter Remove-AzureADUserAppRoleAssignment Description Here}}
 
 ### [Remove-AzureADUserExtension](Remove-AzureADUserExtension.md)
-Removes a user extension.
+{{Manually Enter Remove-AzureADUserExtension Description Here}}
 
 ### [Remove-AzureADUserManager](Remove-AzureADUserManager.md)
-Removes a user's manager.
+{{Manually Enter Remove-AzureADUserManager Description Here}}
 
 ### [Reset-AzureADMSLifeCycleGroup](Reset-AzureADMSLifeCycleGroup.md)
-Renews a group by updating the RenewedDateTime property on a group to the current DateTime.
+{{Manually Enter Reset-AzureADMSLifeCycleGroup Description Here}}
 
 ### [Restore-AzureADDeletedApplication](Restore-AzureADDeletedApplication.md)
-Restores a previously deleted application
+{{Manually Enter Restore-AzureADDeletedApplication Description Here}}
 
 ### [Restore-AzureADMSDeletedDirectoryObject](Restore-AzureADMSDeletedDirectoryObject.md)
-This cmdlet is used to restore a previously deleted object.
+{{Manually Enter Restore-AzureADMSDeletedDirectoryObject Description Here}}
 
 ### [Revoke-AzureADSignedInUserAllRefreshToken](Revoke-AzureADSignedInUserAllRefreshToken.md)
-Invalidates the refresh tokens issued to applications for the current user. 
+{{Manually Enter Revoke-AzureADSignedInUserAllRefreshToken Description Here}}
 
 ### [Revoke-AzureADUserAllRefreshToken](Revoke-AzureADUserAllRefreshToken.md)
-Invalidates the refresh tokens issued to applications for a user. 
+{{Manually Enter Revoke-AzureADUserAllRefreshToken Description Here}}
 
 ### [Select-AzureADGroupIdsContactIsMemberOf](Select-AzureADGroupIdsContactIsMemberOf.md)
-Get groups in which a contact is a member.
+{{Manually Enter Select-AzureADGroupIdsContactIsMemberOf Description Here}}
 
 ### [Select-AzureADGroupIdsGroupIsMemberOf](Select-AzureADGroupIdsGroupIsMemberOf.md)
-Gets group IDs that a group is a member of.
+{{Manually Enter Select-AzureADGroupIdsGroupIsMemberOf Description Here}}
 
 ### [Select-AzureADGroupIdsServicePrincipalIsMemberOf](Select-AzureADGroupIdsServicePrincipalIsMemberOf.md)
-Selects the groups in which a service principal is a member.
+{{Manually Enter Select-AzureADGroupIdsServicePrincipalIsMemberOf Description Here}}
 
 ### [Select-AzureADGroupIdsUserIsMemberOf](Select-AzureADGroupIdsUserIsMemberOf.md)
-Selects the groups that a user is a member of.
+{{Manually Enter Select-AzureADGroupIdsUserIsMemberOf Description Here}}
 
 ### [Set-AzureADAdministrativeUnit](Set-AzureADAdministrativeUnit.md)
-Updates an administrative unit.
+{{Manually Enter Set-AzureADAdministrativeUnit Description Here}}
 
 ### [Set-AzureADApplication](Set-AzureADApplication.md)
-Updates an application.
+{{Manually Enter Set-AzureADApplication Description Here}}
 
 ### [Set-AzureADApplicationLogo](Set-AzureADApplicationLogo.md)
-Sets the logo for an Application
+{{Manually Enter Set-AzureADApplicationLogo Description Here}}
 
 ### [Set-AzureADApplicationProxyApplication](Set-AzureADApplicationProxyApplication.md)
-The Set-AzureADApplicationProxyApplication allows you to modify and set configurations for an application in Azure Active Directory configured to use ApplicationProxy.
+{{Manually Enter Set-AzureADApplicationProxyApplication Description Here}}
 
 ### [Set-AzureADApplicationProxyApplicationConnectorGroup](Set-AzureADApplicationProxyApplicationConnectorGroup.md)
-The Set-AzureADApplicationProxyApplicationConnectorGroup cmdlet assigns the given connector group to a specified application.
+{{Manually Enter Set-AzureADApplicationProxyApplicationConnectorGroup Description Here}}
 
 ### [Set-AzureADApplicationProxyApplicationCustomDomainCertificate](Set-AzureADApplicationProxyApplicationCustomDomainCertificate.md)
-The Set-AzureADApplicationProxyApplicationCustomDomainCertificate cmdlet assigns a certificate to an application configured for Application Proxy in Azure Active Directory (AD).
-This will upload the certificate and allow the application to use Custom Domains.
+{{Manually Enter Set-AzureADApplicationProxyApplicationCustomDomainCertificate Description Here}}
 
 ### [Set-AzureADApplicationProxyApplicationSingleSignOn](Set-AzureADApplicationProxyApplicationSingleSignOn.md)
-The Set-AzureADApplicationProxyApplicationSingleSignOn cmdlet allows you to set and modify single sign-on (SSO) settings for an application configured for Application Proxy in Azure Active Directory.
+{{Manually Enter Set-AzureADApplicationProxyApplicationSingleSignOn Description Here}}
 
 ### [Set-AzureADApplicationProxyConnector](Set-AzureADApplicationProxyConnector.md)
-The Set-AzureADApplicationProxyConnector cmdlet allows reassignment of the connector to another connector group.
+{{Manually Enter Set-AzureADApplicationProxyConnector Description Here}}
 
 ### [Set-AzureADApplicationProxyConnectorGroup](Set-AzureADApplicationProxyConnectorGroup.md)
-The Set-AzureADApplicationProxyConnectorGroup cmdlet allows you to change the name of a given Application Proxy connector group. 
+{{Manually Enter Set-AzureADApplicationProxyConnectorGroup Description Here}}
 
 ### [Set-AzureADDevice](Set-AzureADDevice.md)
-Updates a device.
+{{Manually Enter Set-AzureADDevice Description Here}}
 
 ### [Set-AzureADDirectorySetting](Set-AzureADDirectorySetting.md)
-Updates a directory setting in Azure Active Directory.
+{{Manually Enter Set-AzureADDirectorySetting Description Here}}
 
 ### [Set-AzureADDomain](Set-AzureADDomain.md)
-Updates a domain.
+{{Manually Enter Set-AzureADDomain Description Here}}
 
 ### [Set-AzureADGroup](Set-AzureADGroup.md)
-Updates a specific group in Azure Active Directory
+{{Manually Enter Set-AzureADGroup Description Here}}
 
 ### [Set-AzureADMSGroup](Set-AzureADMSGroup.md)
-{{Fill in the Synopsis}}
+{{Manually Enter Set-AzureADMSGroup Description Here}}
 
 ### [Set-AzureADMSGroupLifecyclePolicy](Set-AzureADMSGroupLifecyclePolicy.md)
-Updates a specific group Lifecycle Policy in Azure Active Directory
+{{Manually Enter Set-AzureADMSGroupLifecyclePolicy Description Here}}
 
 ### [Set-AzureADMSIdentityProvider](Set-AzureADMSIdentityProvider.md)
-This cmdlet is used to update the properties of an existing identity provider configured in the directory.
+{{Manually Enter Set-AzureADMSIdentityProvider Description Here}}
 
 ### [Set-AzureADMSPrivilegedRoleAssignmentRequest](Set-AzureADMSPrivilegedRoleAssignmentRequest.md)
-Update a role assignment request
+{{Manually Enter Set-AzureADMSPrivilegedRoleAssignmentRequest Description Here}}
 
 ### [Set-AzureADMSPrivilegedRoleSetting](Set-AzureADMSPrivilegedRoleSetting.md)
-Update role setting
+{{Manually Enter Set-AzureADMSPrivilegedRoleSetting Description Here}}
+
+### [Set-AzureADMSRoleDefinition](Set-AzureADMSRoleDefinition.md)
+{{Manually Enter Set-AzureADMSRoleDefinition Description Here}}
 
 ### [Set-AzureADMSTrustFrameworkPolicy](Set-AzureADMSTrustFrameworkPolicy.md)
-This cmdlet is used to update a trust framework policy (custom policy) in the directory.
+{{Manually Enter Set-AzureADMSTrustFrameworkPolicy Description Here}}
 
 ### [Set-AzureADObjectSetting](Set-AzureADObjectSetting.md)
-Updates object settings.
+{{Manually Enter Set-AzureADObjectSetting Description Here}}
 
 ### [Set-AzureADPolicy](Set-AzureADPolicy.md)
-Updates a policy.
+{{Manually Enter Set-AzureADPolicy Description Here}}
 
 ### [Set-AzureADServicePrincipal](Set-AzureADServicePrincipal.md)
-Updates a service principal.
+{{Manually Enter Set-AzureADServicePrincipal Description Here}}
 
 ### [Set-AzureADTenantDetail](Set-AzureADTenantDetail.md)
-Set contact details for a tenant
+{{Manually Enter Set-AzureADTenantDetail Description Here}}
 
 ### [Set-AzureADTrustedCertificateAuthority](Set-AzureADTrustedCertificateAuthority.md)
-Updates a trusted certificate authority.
+{{Manually Enter Set-AzureADTrustedCertificateAuthority Description Here}}
 
 ### [Set-AzureADUser](Set-AzureADUser.md)
-Updates a user.
+{{Manually Enter Set-AzureADUser Description Here}}
 
 ### [Set-AzureADUserExtension](Set-AzureADUserExtension.md)
-Sets a user extension.
+{{Manually Enter Set-AzureADUserExtension Description Here}}
 
 ### [Set-AzureADUserLicense](Set-AzureADUserLicense.md)
-Adds or removes licenses for a Microsoft online service to the list of assigned licenses for a user.
+{{Manually Enter Set-AzureADUserLicense Description Here}}
 
 ### [Set-AzureADUserManager](Set-AzureADUserManager.md)
-Updates a user's manager.
+{{Manually Enter Set-AzureADUserManager Description Here}}
 
 ### [Set-AzureADUserPassword](Set-AzureADUserPassword.md)
-Sets the password of a user.
+{{Manually Enter Set-AzureADUserPassword Description Here}}
 
 ### [Set-AzureADUserThumbnailPhoto](Set-AzureADUserThumbnailPhoto.md)
-Set the thumbnail photo for a user
+{{Manually Enter Set-AzureADUserThumbnailPhoto Description Here}}
 
 ### [Update-AzureADSignedInUserPassword](Update-AzureADSignedInUserPassword.md)
-Updates the password for the signed-in user.
+{{Manually Enter Update-AzureADSignedInUserPassword Description Here}}
 
