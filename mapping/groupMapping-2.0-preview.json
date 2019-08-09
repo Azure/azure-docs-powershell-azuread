@@ -214,6 +214,13 @@
     "Remove-AzureADMSTrustFrameworkPolicy": "Trust Framework Policy Management",
     "Set-AzureADMSTrustFrameworkPolicy": "Trust Framework Policy Management",
     "Get-AzureADAuditDirectoryLogs": "Directory Auditing",
-    "Get-AzureADAuditSignInLogs": "Directory Auditing"
+    "Get-AzureADAuditSignInLogs": "Directory Auditing",
+    "Get-AzureADMSRoleAssignment": "Role Management",
+    "Get-AzureADMSRoleDefinition": "Role Management",
+    "New-AzureADMSRoleAssignment": "Role Management",
+    "New-AzureADMSRoleDefinition": "Role Management",
+    "Remove-AzureADMSRoleAssignment": "Role Management",
+    "Remove-AzureADMSRoleDefinition": "Role Management",
+    "Set-AzureADMSRoleDefinition": "Role Management"
 
 }
