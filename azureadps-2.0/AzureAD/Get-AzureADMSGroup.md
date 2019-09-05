@@ -146,7 +146,7 @@ Accept wildcard characters: False
 
 ### -SearchString
 Specifies a search string. 
-This cmdlet gets groups that have **DisplayName** or **Description** attributes that match the search string. 
+This cmdlet gets groups that have **DisplayName**, **mailNickname**, or **mail** attributes that match the search string. 
 
 ```yaml
 Type: String
