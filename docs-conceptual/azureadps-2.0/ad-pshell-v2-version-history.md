@@ -21,6 +21,24 @@ The Azure Active Directory (Azure AD) team regularly updates Azure AD Connect wi
 
 This article is designed to help you keep track of the versions that have been released, and to understand what the changes are in the latest version.
 
+## 2.0.2.39 - Preview release of the AzureAD Preview module
+
+
+### Release status 
+
+00/09//2019: Released for installation and upgrade from the [PowerShell Gallery](https://www.powershellgallery.com/packages/AzureADPreview/2.0.2.39)
+
+### New features and improvements
+
+The following new cmdlets are added in this release:
+
+ - Add-AzureADMSFeatureRolloutPolicyDirectoryObject
+ - Get-AzureADMSFeatureRolloutPolicy
+ - New-AzureADMSFeatureRolloutPolicy
+ - Remove-AzureADMSFeatureRolloutPolicy
+ - Remove-AzureADMSFeatureRolloutPolicyDirectoryObject
+ - Set-AzureADMSFeatureRolloutPolicy
+
 ## 2.0.2.32 - Preview release of the AzureADPreview module
 
 ### Release status 
