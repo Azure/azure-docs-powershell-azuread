@@ -26,7 +26,7 @@ This article is designed to help you keep track of the versions that have been r
 
 ### Release status 
 
-00/09/2019: Released for installation and upgrade from the [PowerShell Gallery](https://www.powershellgallery.com/packages/AzureADPreview/2.0.2.39)
+09/09/2019: Released for installation and upgrade from the [PowerShell Gallery](https://www.powershellgallery.com/packages/AzureADPreview/2.0.2.39)
 
 ### New features and improvements
 
