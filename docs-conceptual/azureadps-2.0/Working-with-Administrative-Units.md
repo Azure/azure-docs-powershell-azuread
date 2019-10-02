@@ -213,8 +213,7 @@ $adminunits = Get-AzureADAdministrativeUnit
 foreach($adminunit in $adminunits) {
     $adminScopes = Get-AzureADScopedRoleMembership -ObjectId $adminunit.ObjectId
     foreach($SRM in $UaAdminScopes) {
-        Remove-AzureADScopedRoleMembership -ObjectId $uaadmin.ObjectId -ScopedRoleMembershipId $SRM.Id
-        Remove-AzureADScopedRoleMembership -ObjectId $helpdeskadmin.ObjectId -ScopedRoleMembershipId $SRM.Id
+        Remove-AzureADScopedRoleMembership -ObjectId $adminunit.ObjectId -ScopedRoleMembershipId $SRM.Id
         }
     }
 # Check all scoped role memberships were deleted
