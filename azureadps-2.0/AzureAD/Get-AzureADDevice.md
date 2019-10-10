@@ -47,7 +47,7 @@ This command gets the specified device.
 
 ### Example 2: Get all devices
 ```
-PS C:\>Get-AzureADDevice
+PS C:\>Get-AzureADDevice -All $true
 
 ObjectId                             DeviceId                             DisplayName
 --------                             --------                             -----------
