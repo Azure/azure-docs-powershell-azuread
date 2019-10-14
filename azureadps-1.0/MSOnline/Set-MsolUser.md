@@ -67,6 +67,20 @@ PS C:\> Set-MsolUser -UserPrincipalName "davidchew@contoso.com" -PreferredDataLo
 
 This command sets the preferred data location property of a user whose user principal name is davidchew@contoso.com to EUR.
 
+### Example 5: Set a phone number with an extension
+```
+PS C:\> Set-MsolUser -UserPrincipalName "davidchew@contoso.com" -PhoneNumber +4544890100;ext=601
+```
+
+This command sets the phone number and extension properties of a user whose user principal name is davidchew@contoso.com to 4544890100 with an extension of 601.
+
+### Example 6: Set a telephone extension
+```
+PS C:\> Set-MsolUser -UserPrincipalName "davidchew@contoso.com" -PhoneNumber x601
+```
+
+This command sets the extension property of a user whose user principal name is davidchew@contoso.com to extension 601.
+
 ## PARAMETERS
 
 ### -AlternateEmailAddresses
