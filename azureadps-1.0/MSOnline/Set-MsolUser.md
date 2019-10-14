@@ -69,10 +69,10 @@ This command sets the preferred data location property of a user whose user prin
 
 ### Example 5: Set a phone number with an extension
 ```
-PS C:\> Set-MsolUser -UserPrincipalName "davidchew@contoso.com" -PhoneNumber +4544890100;ext=601
+PS C:\> Set-MsolUser -UserPrincipalName "davidchew@contoso.com" -PhoneNumber +4255550123;ext=601
 ```
 
-This command sets the phone number and extension properties of a user whose user principal name is davidchew@contoso.com to 4544890100 with an extension of 601.
+This command sets the phone number and extension properties of a user whose user principal name is davidchew@contoso.com to 425 555 0123 with an extension of 601.
 
 ### Example 6: Set a telephone extension
 ```
