@@ -38,7 +38,7 @@ This cmdlet is used to set the thumbnail photo for a user
 PS C:\WINDOWS\system32> Set-AzureADUserThumbnailPhoto -ObjectId ba6752c4-6a2e-4be5-a23d-67d8d5980796 -FilePath D:\UserThumbnailPhoto.jpg
 ```
 
-This example sets the thumbnail photo of the user specified witht eh PObjectId parameter to the image specified with the FilePath parameter
+This example sets the thumbnail photo of the user specified with the ObjectId parameter to the image specified with the FilePath parameter
 
 ## PARAMETERS
 
