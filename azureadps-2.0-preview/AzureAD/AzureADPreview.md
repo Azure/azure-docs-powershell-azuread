@@ -240,10 +240,10 @@ Get role definitions
 Get role settings
 
 ### [Get-AzureADMSRoleAssignment](Get-AzureADMSRoleAssignment.md)
-Get Azure AD role assignments
+Gets information about role assignments in Azure AD.
 
 ### [Get-AzureADMSRoleDefinition](Get-AzureADMSRoleDefinition.md)
-Get Azure AD role definitions
+Gets information about role definitions in Azure AD.
 
 ### [Get-AzureADMSTrustFrameworkPolicy](Get-AzureADMSTrustFrameworkPolicy.md)
 This cmdlet is used to retrieve the created trust framework policies (custom policies) in the directory.
@@ -261,6 +261,7 @@ Gets an object setting.
 Gets a policy.
 
 ### [Get-AzureADPolicyAppliedObject](Get-AzureADPolicyAppliedObject.md)
+
 
 ### [Get-AzureADScopedRoleMembership](Get-AzureADScopedRoleMembership.md)
 Gets a scoped role membership from an administrative unit.
@@ -401,10 +402,10 @@ This cmdlet is used to configure a new identity provider in the directory.
 This cmdlet is used to invite a new external user to your directory
 
 ### [New-AzureADMSRoleAssignment](New-AzureADMSRoleAssignment.md)
-Create a new Azure AD role assignment
+Creates an Azure AD role assignment.
 
 ### [New-AzureADMSRoleDefinition](New-AzureADMSRoleDefinition.md)
-Create a new Azure AD role definition
+Creates an Azure AD role definition.
 
 ### [New-AzureADMSTrustFrameworkPolicy](New-AzureADMSTrustFrameworkPolicy.md)
 This cmdlet is used to create a trust framework policy (custom policy) in the directory.
@@ -530,10 +531,10 @@ This cmdlet is used to delete an identity provider in the directory.
 Removes a group from a lifecycle policy
 
 ### [Remove-AzureADMSRoleAssignment](Remove-AzureADMSRoleAssignment.md)
-Remove an Azure AD role assignment
+Removes a role assignment.
 
 ### [Remove-AzureADMSRoleDefinition](Remove-AzureADMSRoleDefinition.md)
-Remove an Azure AD role definition
+Removes a role definition.
 
 ### [Remove-AzureADMSTrustFrameworkPolicy](Remove-AzureADMSTrustFrameworkPolicy.md)
 This cmdlet is used to delete a trust framework policy (custom policy) in the directory.
@@ -666,7 +667,7 @@ Update a role assignment request
 Update role setting
 
 ### [Set-AzureADMSRoleDefinition](Set-AzureADMSRoleDefinition.md)
-Update an Azure AD role definition
+Update a role definition.
 
 ### [Set-AzureADMSTrustFrameworkPolicy](Set-AzureADMSTrustFrameworkPolicy.md)
 This cmdlet is used to update a trust framework policy (custom policy) in the directory.

@@ -16,7 +16,7 @@ This cmdlet is used to invite a new external user to your directory
 
 ```
 New-AzureADMSInvitation [-InvitedUserDisplayName <String>] -InvitedUserEmailAddress <String>
- [-SendInvitationMessage <Boolean>] -InviteRedirectUrl <String>
+ [-SendInvitationMessage <Boolean>] -InviteRedirectUrl <String> [-InvitedUser <User>]
  [-InvitedUserMessageInfo <InvitedUserMessageInfo>] [-InvitedUserType <String>] [<CommonParameters>]
 ```
 
@@ -70,6 +70,21 @@ Addition information to specify how the invitation message is sent
 
 ```yaml
 Type: InvitedUserMessageInfo
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -InvitedUser
+User object for existing on-prem non-synced guest-user
+
+```yaml
+Type: User
 Parameter Sets: (All)
 Aliases:
 
