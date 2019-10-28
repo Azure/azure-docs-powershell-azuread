@@ -221,6 +221,12 @@
     "New-AzureADMSRoleDefinition": "Role Management",
     "Remove-AzureADMSRoleAssignment": "Role Management",
     "Remove-AzureADMSRoleDefinition": "Role Management",
-    "Set-AzureADMSRoleDefinition": "Role Management"
+    "Set-AzureADMSRoleDefinition": "Role Management",
+	"Add-AzureADMSFeatureRolloutPolicyDirectoryObject" : "Staged Rollout",
+    "Get-AzureADMSFeatureRolloutPolicy" : "Staged Rollout",
+    "New-AzureADMSFeatureRolloutPolicy" : "Staged Rollout",
+    "Remove-AzureADMSFeatureRolloutPolicy" : "Staged Rollout",
+    "Remove-AzureADMSFeatureRolloutPolicyDirectoryObject" : "Staged Rollout",
+    "Set-AzureADMSFeatureRolloutPolicy" : "Staged Rollout"
 
 }
