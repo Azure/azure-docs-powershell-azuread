@@ -708,3 +708,20 @@ Set the thumbnail photo for a user
 ### [Update-AzureADSignedInUserPassword](Update-AzureADSignedInUserPassword.md)
 Updates the password for the signed-in user.
 
+### [Add-AzureADMSFeatureRolloutPolicyDirectoryObject](Add-AzureADMSFeatureRolloutPolicyDirectoryObject.md)
+Allows an admin to add a group to the cloud authentication roll-out policy in Azure AD. Users in this group will start authenticating to the cloud per policy. 
+
+### [Get-AzureADMSFeatureRolloutPolicy][Get-AzureADMSFeatureRolloutPolicy.md]
+Gets the policy for cloud authentication roll-out in Azure Active Directory. 
+
+### [New-AzureADMSFeatureRolloutPolicy](New-AzureADMSFeatureRolloutPolicy.md)
+Allows an admin to create the policy for cloud authentication roll-out in Azure AD. 
+
+### [Remove-AzureADMSFeatureRolloutPolicy](Remove-AzureADMSFeatureRolloutPolicy.md)
+Allows an admin to remove the policy for cloud authentication roll-out in Azure AD. 
+
+### [Remove-AzureADMSFeatureRolloutPolicyDirectoryObject](Remove-AzureADMSFeatureRolloutPolicyDirectoryObject.md)
+Allows an admin to remove a group from the cloud authentication rollout policy in Azure AD. Users in this group will revert back to the authenticating using the global policy (in most cases this will be federation). 
+
+### [Set-AzureADMSFeatureRolloutPolicy](Set-AzureADMSFeatureRolloutPolicy.md)
+Allows an admin to modify the policy for cloud authentication roll-out in Azure AD. 
