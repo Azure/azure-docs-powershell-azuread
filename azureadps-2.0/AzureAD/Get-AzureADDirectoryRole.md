@@ -12,6 +12,8 @@ ms.custom: iamfeature=PowerShell
 ## SYNOPSIS
 Gets a directory role.
 
+Get-AzureADDirectoryRole cmdlet only returns roles that have been activated. A role becomes activated when an admin activates the role using the [Enable-AzureADDirectoryRole](https://docs.microsoft.com/en-us/powershell/module/azuread/enable-azureaddirectoryrole?view=azureadps-2.0) cmdlet. We do not activate all built-in roles to start with. 
+
 ## SYNTAX
 
 ### GetQuery (Default)
