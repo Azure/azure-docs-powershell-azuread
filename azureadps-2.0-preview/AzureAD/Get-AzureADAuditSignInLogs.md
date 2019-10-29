@@ -47,7 +47,7 @@ This command shows how to get audit logs by location
 
 ### Example 4: Get all sign in logs with a given status
 ```
-PS C:\>Get-AzureADAuditSignInLogs -Filter "status/errorCode eq 0 -All $true"
+PS C:\>Get-AzureADAuditSignInLogs -Filter "status/errorCode eq 0" -All $true
 PS C:\>Get-AzureADAuditSignInLogs -Filter "status/errorCode ne 0"
 ```
 
