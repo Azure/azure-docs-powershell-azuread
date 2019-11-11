@@ -27,7 +27,7 @@ The **Remove-AzureADDeviceRegisteredUser** cmdlet removes a registered user from
 ```
 PS C:\> $Device = Get-AzureADDevice -Top 1
 PS C:\> $User = Get-AzureADDeviceRegisteredUser -ObjectId $Device.ObjectId
-PS C:\> Remove-AzureADDeviceRegisteredOwner -ObjectId $Device.ObjectId -OwnerId $Owner.ObjectId
+PS C:\> Remove-AzureADDeviceRegisteredUser -ObjectId $Device.ObjectId -UserId $User.ObjectId
 ```
 
 The first command gets a device by using the [Get-AzureADDevice](./Get-AzureADDevice.md) cmdlet, and then stores it in the $Device variable.
