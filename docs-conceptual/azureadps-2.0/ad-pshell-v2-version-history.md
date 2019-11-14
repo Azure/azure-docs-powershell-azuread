@@ -40,14 +40,16 @@ The following new cmdlets are added in this release:
  - Remove-AzureADMSServicePrincipalDelegatedPermissionClassification
  - Set-AzureADMSPasswordSingleSignOnCredential
 
-The new -AzureADMSServicePrincipalDelegatedPermissionClassification cmdlets enable customers to create/read and delete delegated permission classifications which are contained entity defined on the Azure Active Directory ServicePrincipal entity.
-The new -AzureADMSPasswordSingleSignOnCredential cmdlets allow customers to manage the credentials for Password SSO applications. Users can perform operation to their own credentials, users can read group credentials, and application owner or global admin with the right roles and RBAC permission can do CRUD operations for other user or group credentials. 
-The new Get-AzureADMSApplicationTemplate allows customers to list the applicationTemplate objects from the AzureAD Gallery / App Marketplace.
+The new **-AzureADMSServicePrincipalDelegatedPermissionClassification** cmdlets enable customers to create/read and delete delegated permission classifications which are contained entity defined on the Azure Active Directory ServicePrincipal entity.
 
-Added support for -IsAssignableToRole parameter in both Get-AzureADMSGroup and New-AzureADMSGroup cmdlets.  Groups with this property set can only be created by principals with designated permissions.
+The new **-AzureADMSPasswordSingleSignOnCredential** cmdlets allow customers to manage the credentials for Password SSO applications. Users can perform operation to their own credentials, users can read group credentials, and application owner or global admin with the right roles and RBAC permission can do CRUD operations for other user or group credentials. 
+
+The new **Get-AzureADMSApplicationTemplate** allows customers to list the applicationTemplate objects from the AzureAD Gallery / App Marketplace.
+
+We added support for **-IsAssignableToRole** parameter in both **Get-AzureADMSGroup** and **New-AzureADMSGroup** cmdlets.  Groups with this property set can only be created by principals with designated permissions.
  
 ### Fixed issues 
-This release fixes a bug where the Set-AzureADTrustedCertificateAuthority cmdlet, in specific conditions, was unable to properly set CrlDistributionPoint.
+This release fixes a bug where the **et-AzureADTrustedCertificateAuthorit**y cmdlet, in specific conditions, was unable to properly set CrlDistributionPoint.
 
 ## 2.0.2.61 - General availability release of the AzureAD module
 
@@ -56,7 +58,7 @@ This release fixes a bug where the Set-AzureADTrustedCertificateAuthority cmdlet
 11/13/2019: Released for installation and upgrade from the [PowerShell Gallery](https://www.powershellgallery.com/packages/AzureAD/2.0.2.61)
 
 ### Fixed issues 
-This release fixes a bug where the Set-AzureADDomain and New-AzureADDomain cmdlets would not allow the user to properly set the IsDefaultForCloudRedirections property.
+This release fixes a bug where the S**et-AzureADDomain** and **New-AzureADDomai**n cmdlets would not allow the user to properly set the IsDefaultForCloudRedirections property.
 
 ## 2.0.2.53 - Public preview release of the AzureADPreview module
 
