@@ -49,7 +49,7 @@ The new **Get-AzureADMSApplicationTemplate** allows customers to list the applic
 We added support for **-IsAssignableToRole** parameter in both **Get-AzureADMSGroup** and **New-AzureADMSGroup** cmdlets.  Groups with this property set can only be created by principals with designated permissions.
  
 ### Fixed issues 
-This release fixes a bug where the **et-AzureADTrustedCertificateAuthorit**y cmdlet, in specific conditions, was unable to properly set CrlDistributionPoint.
+This release fixes a bug where the **Set-AzureADTrustedCertificateAuthority** cmdlet, in specific conditions, was unable to properly set CrlDistributionPoint.
 
 ## 2.0.2.61 - General availability release of the AzureAD module
 
@@ -58,7 +58,7 @@ This release fixes a bug where the **et-AzureADTrustedCertificateAuthorit**y cmd
 11/13/2019: Released for installation and upgrade from the [PowerShell Gallery](https://www.powershellgallery.com/packages/AzureAD/2.0.2.61)
 
 ### Fixed issues 
-This release fixes a bug where the S**et-AzureADDomain** and **New-AzureADDomai**n cmdlets would not allow the user to properly set the IsDefaultForCloudRedirections property.
+This release fixes a bug where the **Set-AzureADDomain** and **New-AzureADDomain** cmdlets would not allow the user to properly set the IsDefaultForCloudRedirections property.
 
 ## 2.0.2.53 - Public preview release of the AzureADPreview module
 
