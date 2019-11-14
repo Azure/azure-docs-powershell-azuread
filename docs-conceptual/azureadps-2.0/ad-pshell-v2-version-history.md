@@ -21,6 +21,43 @@ The Azure Active Directory (Azure AD) team regularly updates Azure AD Connect wi
 
 This article is designed to help you keep track of the versions that have been released, and to understand what the changes are in the latest version.
 
+## 2.0.2.62 - Public preview release of the AzureADPreview module
+
+### Release status 
+
+11/13/2019: Released for installation and upgrade from the [PowerShell Gallery](https://www.powershellgallery.com/packages/AzureADPreview/2.0.2.62)
+
+### New features and improvements
+
+The following new cmdlets are added in this release:
+
+ - Add-AzureADMSServicePrincipalDelegatedPermissionClassification
+ - Get-AzureADMSApplicationTemplate
+ - Get-AzureADMSPasswordSingleSignOnCredential
+ - Get-AzureADMSServicePrincipalDelegatedPermissionClassification
+ - New-AzureADMSPasswordSingleSignOnCredential
+ - Remove-AzureADMSPasswordSingleSignOnCredential
+ - Remove-AzureADMSServicePrincipalDelegatedPermissionClassification
+ - Set-AzureADMSPasswordSingleSignOnCredential
+
+The new -AzureADMSServicePrincipalDelegatedPermissionClassification cmdlets enable customers to create/read and delete delegated permission classifications which are contained entity defined on the Azure Active Directory ServicePrincipal entity.
+The new -AzureADMSPasswordSingleSignOnCredential cmdlets allow customers to manage the credentials for Password SSO applications. Users can perform operation to their own credentials, users can read group credentials, and application owner or global admin with the right roles and RBAC permission can do CRUD operations for other user or group credentials. 
+The new Get-AzureADMSApplicationTemplate allows customers to list the applicationTemplate objects from the AzureAD Gallery / App Marketplace.
+
+Added support for -IsAssignableToRole parameter in both Get-AzureADMSGroup and New-AzureADMSGroup cmdlets.  Groups with this property set can only be created by principals with designated permissions.
+ 
+### Fixed issues 
+This release fixes a bug where the Set-AzureADTrustedCertificateAuthority cmdlet, in specific conditions, was unable to properly set CrlDistributionPoint.
+
+## 2.0.2.61 - General availability release of the AzureAD module
+
+### Release status 
+
+11/13/2019: Released for installation and upgrade from the [PowerShell Gallery](https://www.powershellgallery.com/packages/AzureAD/2.0.2.61)
+
+### Fixed issues 
+This release fixes a bug where the Set-AzureADDomain and New-AzureADDomain cmdlets would not allow the user to properly set the IsDefaultForCloudRedirections property.
+
 ## 2.0.2.53 - Public preview release of the AzureADPreview module
 
 ### Release status 
