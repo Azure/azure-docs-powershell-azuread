@@ -51,7 +51,7 @@ Notepad c:\MsolHelp\msolcmdlets.txt
 * View the name, synopsis, description, detailed parameters, and any examples provided for a cmdlet, run the following command at the Windows PowerShell command prompt: `Get-Help <cmdlet-name> -Full`
 
 >[!NOTE]
-> MSOnline PowerShell can only be used by users who are a member of the directory. Guest users cannot use MSOnline PowerShell.
+>MSOnline PowerShell can only be used by users who are a member of the directory. Guest users cannot use MSOnline PowerShell.
 
 ## More about Windows PowerShell
 
