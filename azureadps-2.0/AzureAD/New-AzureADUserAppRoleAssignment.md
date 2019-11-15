@@ -107,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The ID of the app role to assign. Provide an empty Guid (`[Guid]::Empty`) when creating an app role assignement for an application that does not have any app roles defined, or the `Id` of the app role to assign the user to.
+The ID of the app role to assign. Provide an empty Guid (`[Guid]::Empty`) when creating an app role assignment for an application that does not have any app roles defined, or the `Id` of the app role to assign the user to.
 
 You can retrieve the application's app roles by examining the application object's AppRoles property:
 
