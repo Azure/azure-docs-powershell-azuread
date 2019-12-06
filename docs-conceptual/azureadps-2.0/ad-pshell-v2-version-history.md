@@ -21,6 +21,123 @@ The Azure Active Directory (Azure AD) team regularly updates Azure AD Connect wi
 
 This article is designed to help you keep track of the versions that have been released, and to understand what the changes are in the latest version.
 
+## 2.0.2.77 - Preview release of the AzureADPreview module
+
+### Release status 
+
+11/22//2019: Released for installation and upgrade from the [PowerShell Gallery](https://www.powershellgallery.com/packages/AzureADPreview/2.0.2.77)
+
+### New features and improvements 
+
+The following new cmdlets were added to the AzureADPreview module:
+
+- `Get-AzureADMSApplication`
+- `New-AzureADMSApplication`
+- `Set-AzureADMSApplication`
+- `Set-AzureADMSApplicationLogo`
+- `Remove-AzureADMSApplication`
+- `New-AzureADMSApplicationPassword`
+- `Remove-AzureADMSApplicationPassword`
+- `New-AzureADMSApplicationKey`
+- `Remove-AzureADMSApplicationKey`
+- `Get-AzureADMSApplicationOwner`
+- `Add-AzureADMSApplicationOwner`
+- `Remove-AzureADMSApplicationOwner`
+- `Get-AzureADMSApplicationExtensionProperty`
+- `New-AzureADMSApplicationExtensionProperty`
+- `Remove-AzureADMSApplicationExtensionProperty`
+
+The new **Get-AzureADMSApplication** cmdlet retrieves the list of applications within the organization.
+
+The new **New-AzureADMSApplication** cmdlet creates (registers) a new application object.
+
+The new **Set-AzureADMSApplication** cmdlet updates the properties of an application object.
+
+The new **Set-AzureADMSApplicationLogo** cmdlet sets the logo for an application object.
+
+The new **Remove-AzureADMSApplication** cmdlet deletes an application object.
+
+The new **New-AzureADMSApplicationPassword** cmdlet adds a strong password to an application.
+
+The new **Remove-AzureADMSApplicationPassword** cmdlet remove a password from an application.
+
+The new **New-AzureADMSApplicationKey** cmdlet adds a new key to an application.
+
+The new **Remove-AzureADMSApplicationKey** cmdlet removes a key from an application.
+
+The new **Get-AzureADMSApplicationOwner** cmdlet retrieves the list of owners for an application object.
+
+The new **Add-AzureADMSApplicationOwner** cmdlet adds an owner for an application object.
+
+The new **Remove-AzureADMSApplicationOwner** cmdlet removes an owner from an application object.
+
+The new **Get-AzureADMSApplicationExtensionProperty** cmdlet retrieves the list of extension properties on an application object.
+
+The new **New-AzureADMSApplicationExtensionProperty** cmdlet creates an extension property on an application object.
+
+The new **Remove-AzureADMSApplicationExtensionProperty** cmdlet deletes an extension property from an application object.
+
+All the things you can do in the existing cmdlets can also be done through the new "MS" version of cmdlets. Applications created using the new **New-AzureADMSApplication** cmdlet can sign-in Work/School, Personal Microsoft Account users.
+
+
+## 2.0.2.76 - General Availability release of the AzureAD module
+
+### Release status 
+
+11/22//2019: Released for installation and upgrade from the [PowerShell Gallery](https://www.powershellgallery.com/packages/AzureAD/2.0.2.76)
+
+### New features and improvements 
+
+The following new cmdlets were added to the AzureAD module:
+
+- `Get-AzureADMSApplication`
+- `New-AzureADMSApplication`
+- `Set-AzureADMSApplication`
+- `Set-AzureADMSApplicationLogo`
+- `Remove-AzureADMSApplication`
+- `New-AzureADMSApplicationPassword`
+- `Remove-AzureADMSApplicationPassword`
+- `New-AzureADMSApplicationKey`
+- `Remove-AzureADMSApplicationKey`
+- `Get-AzureADMSApplicationOwner`
+- `Add-AzureADMSApplicationOwner`
+- `Remove-AzureADMSApplicationOwner`
+- `Get-AzureADMSApplicationExtensionProperty`
+- `New-AzureADMSApplicationExtensionProperty`
+- `Remove-AzureADMSApplicationExtensionProperty`
+
+The new **Get-AzureADMSApplication** cmdlet retrieves the list of applications within the organization.
+
+The new **New-AzureADMSApplication** cmdlet creates (registers) a new application object.
+
+The new **Set-AzureADMSApplication** cmdlet updates the properties of an application object.
+
+The new **Set-AzureADMSApplicationLogo** cmdlet sets the logo for an application object.
+
+The new **Remove-AzureADMSApplication** cmdlet deletes an application object.
+
+The new **New-AzureADMSApplicationPassword** cmdlet adds a strong password to an application.
+
+The new **Remove-AzureADMSApplicationPassword** cmdlet remove a password from an application.
+
+The new **New-AzureADMSApplicationKey** cmdlet adds a new key to an application.
+
+The new **Remove-AzureADMSApplicationKey** cmdlet removes a key from an application.
+
+The new **Get-AzureADMSApplicationOwner** cmdlet retrieves the list of owners for an application object.
+
+The new **Add-AzureADMSApplicationOwner** cmdlet adds an owner for an application object.
+
+The new **Remove-AzureADMSApplicationOwner** cmdlet removes an owner from an application object.
+
+The new **Get-AzureADMSApplicationExtensionProperty** cmdlet retrieves the list of extension properties on an application object.
+
+The new **New-AzureADMSApplicationExtensionProperty** cmdlet creates an extension property on an application object.
+
+The new **Remove-AzureADMSApplicationExtensionProperty** cmdlet deletes an extension property from an application object.
+
+All the things you can do in the existing cmdlets can also be done through the new "MS" version of cmdlets. Applications created using the new **New-AzureADMSApplication** cmdlet can sign-in Work/School, Personal Microsoft Account users.
+
 ## 2.0.2.62 - Public preview release of the AzureADPreview module
 
 ### Release status 
