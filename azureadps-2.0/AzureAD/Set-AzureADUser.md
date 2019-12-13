@@ -49,6 +49,16 @@ PS C:\> Get-AzureADUser -SearchString "Test" | Set-AzureADUser -PasswordPolicies
 
 This command gets a list of AD Users and sets the password policie to disable the expiration
 
+### Example 3: Add a guest user to the global address list
+Find the guest user's ObjectID by running:
+```
+Get-AzureADUser -Filter "userType eq 'Guest'"
+```
+Then run the following using the appropriate values for ObjectID, GivenName, Surname, DisplayName, and TelephoneNumber.
+```
+Set-AzureADUser -ObjectId cfcbd1a0-ed18-4210-9b9d-cf0ba93cf6b2 -ShowInAddressList $true -GivenName 'Megan' -Surname 'Bowen' -DisplayName 'Megan Bowen" -TelephoneNumber '555-555-5555'
+```
+
 ## PARAMETERS
 
 ### -AccountEnabled
