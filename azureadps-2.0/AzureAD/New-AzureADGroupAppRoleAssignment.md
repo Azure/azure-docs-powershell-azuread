@@ -36,7 +36,7 @@ $servicePrincipal = Get-AzureADServicePrincipal -SearchString "<Your app's displ
 $group = Get-AzureADGroup -SearchString "<Your group's name>"
 
 # Create the group app role assignment
-New-AzureADGroupAppRoleAssignment -ObjectId $group.ObjectId -PrincipalId $group.ObjectId -ResourceId $servicePrincipal.ObjectId -Id $servicePrincipal.appRole.Id
+New-AzureADGroupAppRoleAssignment -ObjectId $group.ObjectId -PrincipalId $group.ObjectId -ResourceId $servicePrincipal.ObjectId -Id $servicePrincipal.appRoles.Id
 ```
 
 ### Example 2: Assign a group to a specific app role within an application
