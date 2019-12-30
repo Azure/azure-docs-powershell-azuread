@@ -95,12 +95,13 @@ New-AzureADApplicationKeyCredential -ObjectId $application.ObjectId -CustomKeyId
 $sp = New-AzureADServicePrincipal -AppId $application.AppId
 
 # Give the Service Principal Reader access to the current tenant (Get-AzureADDirectoryRole)
-Add-AzureADDirectoryRoleMember -ObjectId 5997d714-c3b5-4d5b-9973-ec2f38fd49d5 -RefObjectId $sp.ObjectId
+$role = Get-AzureADDirectoryRole -Filter "DisplayName eq 'Directory Readers'"
+Add-AzureADDirectoryRoleMember -ObjectId $role.ObjectId -RefObjectId $sp.ObjectId
 
 # Get Tenant Detail
 $tenant = Get-AzureADTenantDetail
 # Now you can login to Azure PowerShell with your Service Principal and Certificate
-Connect-AzureAD -TenantId $tenant.ObjectId -ApplicationId  $sp.AppId -CertificateThumbprint $thumb
+Connect-AzureAD -TenantId $tenant.ObjectId -ApplicationId $sp.AppId -CertificateThumbprint $thumb
 ```
 
 This command authenticates the user to Azure Active Directory as a service principal.
