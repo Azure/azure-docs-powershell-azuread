@@ -67,7 +67,7 @@ PS C:\>Get-AzureADUser -Filter "userPrincipalName eq 'jondoe@contoso.com'"
 
 This command gets the specified user.
 
-### Example 5: Get a user by userPrincipalName
+### Example 5: Get all users that have a title begins with Sales
 ```
 PS C:\>Get-AzureADUser -Filter "startswith(Title,'Sales')"
 ```
