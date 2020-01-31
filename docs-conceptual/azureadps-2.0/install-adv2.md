@@ -48,7 +48,7 @@ The Azure AD module is distributed using the PowerShell gallery. Installing item
 - [**Get WMF 5.0**](http://go.microsoft.com/fwlink/?LinkId=398175), or
 - [**Get MSI Installer**](http://go.microsoft.com/fwlink/?LinkID=746217&clcid=0x409)
 
-With the latest[PowerShellGet](http://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409)module, you can:
+With the latest [PowerShellGet](http://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409) module, you can:
 
 + Search through items in the Gallery with [**Find-Module**](http://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409) and [**Find-Script**](http://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409)
 + Save items to your system from the Gallery with [**Save-Module**](http://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409)    and [**Save-Script**](http://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409)
