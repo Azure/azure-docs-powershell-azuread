@@ -55,7 +55,7 @@ This command retrieves all service principal from the directory.
 ### Example 2: Retrieve a service principal by ID
 ```
 PS C:\> $ServicePrincipalId = (Get-AzureADServicePrincipal -Top 1).ObjectId
-PS C:\> Get-AzureADServicePrincipal $ServicePrincipalId
+PS C:\> Get-AzureADServicePrincipal -ObjectId $ServicePrincipalId
 
 ObjectId                             AppId                                DisplayName
 --------                             -----                                -----------
