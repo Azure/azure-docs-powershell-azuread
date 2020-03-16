@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-AzureADMSRoleDefinition
 
 ## SYNOPSIS
-Creates an Azure AD role definition.
+{{ Fill in the Synopsis }}
 
 ## SYNTAX
 
@@ -20,47 +20,21 @@ New-AzureADMSRoleDefinition [-Description <String>] -DisplayName <String>
 ```
 
 ## DESCRIPTION
-The New-AzureADMSRoleDefinition cmdlet creates an Azure Active Directory (Azure AD) role definition.
+{{ Fill in the Description }}
 
 ## EXAMPLES
 
 ### Example 1
-```
-PS C:\> 
-$allowedResourceAction = @()
-$allowedResourceAction += @("microsoft.aad.directory/applications/create")
-$rolePermission = @{'allowedResourceActions' = $allowedResourceAction}
-$rolePermissions = @()
-$rolePermissions += $rolePermission
-
-$resourceScopes = @()
-$resourceScopes += '/'
-
-New-AzureADMSRoleDefinition -RolePermissions $rolePermissions -IsEnabled $true -DisplayName 'MyRoleDefinition' -ResourceScopes $resourceScopes
-
-Id              : c466024e-f757-4409-a897-d780916814b1
-OdataType       :
-Description     :
-DisplayName     : fgdf
-IsBuiltIn       : False
-ResourceScopes  : {/}
-IsEnabled       : True
-RolePermissions : {class RolePermission {
-                  AllowedResourceActions:
-                  microsoft.directory/applications/create
-                    Condition:
-                  }
-                  }
-TemplateId      : 4dd5aa9c-cf4d-4895-a993-740d342802b9
-Version         :
+```powershell
+PS C:\> {{ Add example code here }}
 ```
 
-This command creates a new role definition in AzureAD.
+{{ Add example description here }}
 
 ## PARAMETERS
 
 ### -Description
-Specifies a description for the role definition.
+{{ Fill Description Description }}
 
 ```yaml
 Type: String
@@ -75,7 +49,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-Specifies a display name for the role definition.
+{{ Fill DisplayName Description }}
 
 ```yaml
 Type: String
@@ -90,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsEnabled
-Specifies whether the role definition is enabled.
+{{ Fill IsEnabled Description }}
 
 ```yaml
 Type: Boolean
@@ -105,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceScopes
-Specifies the resource scopes for the role definition.
+{{ Fill ResourceScopes Description }}
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
@@ -120,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -RolePermissions
-Specifies permissions for the role definition.
+{{ Fill RolePermissions Description }}
 
 ```yaml
 Type: System.Collections.Generic.List`1[Microsoft.Open.MSGraph.Model.RolePermission]
@@ -135,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -TemplateId
-Specifies template id for the role definition.
+{{ Fill TemplateId Description }}
 
 ```yaml
 Type: String
@@ -150,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -Version
-Specifies version for the role definition.
+{{ Fill Version Description }}
 
 ```yaml
 Type: String
@@ -174,13 +148,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Object
-
 ## NOTES
 
 ## RELATED LINKS
-
-[Get-AzureADMSRoleDefinition]()
-
-[Set-AzureADMSRoleDefinition]()
-
-[Remove-AzureADMSRoleDefinition]()

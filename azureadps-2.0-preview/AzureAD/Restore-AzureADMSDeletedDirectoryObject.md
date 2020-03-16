@@ -1,8 +1,6 @@
 ---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
 Module Name: AzureADPreview
-ms.custom: iamfeature=PowerShell
-ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -19,8 +17,13 @@ Restore-AzureADMSDeletedDirectoryObject -Id <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-This cmdlet is used to restore a previously deleted object. Currently, only restoring Group and Application objects is supported. 
-When a group or an application is deleted it is initially soft deleted and can be recovered during the first 30 days after deletion. After 30 days the deleted object is permanently deleted and can no longer be recovered. Note that only Unified Groups (a.k.a. Office 365 Groups) can be restored. Security groups cannot be restored.
+This cmdlet is used to restore a previously deleted object.
+Currently, only restoring Group and Application objects is supported. 
+When a group or an application is deleted it is initially soft deleted and can be recovered during the first 30 days after deletion.
+After 30 days the deleted object is permanently deleted and can no longer be recovered.
+Note that only Unified Groups (a.k.a.
+Office 365 Groups) can be restored.
+Security groups cannot be restored.
 
 ## EXAMPLES
 
@@ -29,7 +32,7 @@ When a group or an application is deleted it is initially soft deleted and can b
 Restore-AzureADMSDeletedDirectoryObject -Id aa644285-eb75-4389-885e-7233f096984c
 ```
 
-This example shows how to restore a deleted object with Id aa644285-eb75-4389-885e-7233f096984c 
+This example shows how to restore a deleted object with Id aa644285-eb75-4389-885e-7233f096984c
 
 ## PARAMETERS
 
@@ -54,11 +57,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### System.String
-
 ## OUTPUTS
 
 ### System.Object
-
 ## NOTES
 
 ## RELATED LINKS

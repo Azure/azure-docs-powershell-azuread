@@ -1,9 +1,6 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
 Module Name: AzureADPreview
-ms.assetid: 27EA6A45-9227-4E87-AC85-0A6C4B2AE620
-ms.custom: iamfeature=PowerShell
-ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -21,7 +18,7 @@ Add-AzureADApplicationOwner -ObjectId <String> -RefObjectId <String> [-Informati
 ```
 
 ## DESCRIPTION
-The **Add-AzureADApplicationOwner** cmdlet adds an owner to an Azure Active Directory application.
+The Add-AzureADApplicationOwner cmdlet adds an owner to an Azure Active Directory application.
 
 ## EXAMPLES
 
@@ -36,8 +33,8 @@ This command adds an owner to an application.
 
 ### -InformationAction
 Specifies how this cmdlet responds to an information event.
-The acceptable values for this parameter are:
-* Continue
+The acceptable values for this parameter are: * Continue
+
 * Ignore
 * Inquire
 * SilentlyContinue
@@ -58,7 +55,6 @@ Accept wildcard characters: False
 
 ### -InformationVariable
 Specifies a variable in which to store an information event message.
-
 
 ```yaml
 Type: String
@@ -113,7 +109,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADApplicationOwner](./Get-AzureADApplicationOwner.md)
+[Get-AzureADApplicationOwner]()
 
-[Remove-AzureADApplicationOwner](./Remove-AzureADApplicationOwner.md)
+[Remove-AzureADApplicationOwner]()
 

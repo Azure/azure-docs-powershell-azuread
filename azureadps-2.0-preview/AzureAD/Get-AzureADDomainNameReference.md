@@ -1,8 +1,6 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
 Module Name: AzureADPreview
-ms.custom: iamfeature=PowerShell
-ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -10,7 +8,7 @@ schema: 2.0.0
 # Get-AzureADDomainNameReference
 
 ## SYNOPSIS
-This cmdlet retrieves the objects that are referenced by a given domain name 
+This cmdlet retrieves the objects that are referenced by a given domain name
 
 ## SYNTAX
 
@@ -19,7 +17,7 @@ Get-AzureADDomainNameReference -Name <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-This cmdlet retrieves the objects that are referenced by a given domain name 
+This cmdlet retrieves the objects that are referenced by a given domain name
 
 ## EXAMPLES
 
@@ -53,11 +51,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### System.String
-
 ## OUTPUTS
 
 ### System.Object
-
 ## NOTES
 
 ## RELATED LINKS

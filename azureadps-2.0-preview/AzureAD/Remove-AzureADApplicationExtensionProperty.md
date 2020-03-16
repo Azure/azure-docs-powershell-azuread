@@ -1,9 +1,6 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
 Module Name: AzureADPreview
-ms.assetid: 441B9A03-B06D-4B67-91F2-09CB78C11330
-ms.custom: iamfeature=PowerShell
-ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -21,7 +18,7 @@ Remove-AzureADApplicationExtensionProperty -ObjectId <String> -ExtensionProperty
 ```
 
 ## DESCRIPTION
-The **Remove-AzureADApplicationExtensionProperty** cmdlet removes an application extension property for an object in Azure Active Directory.
+The Remove-AzureADApplicationExtensionProperty cmdlet removes an application extension property for an object in Azure Active Directory.
 
 ## EXAMPLES
 
@@ -114,6 +111,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADApplicationExtensionProperty](./Get-AzureADApplicationExtensionProperty.md)
+[Get-AzureADApplicationExtensionProperty]()
 
-[New-AzureADApplicationExtensionProperty](./New-AzureADApplicationExtensionProperty.md)
+[New-AzureADApplicationExtensionProperty]()
+

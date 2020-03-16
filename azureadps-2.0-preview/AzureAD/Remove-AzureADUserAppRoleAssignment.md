@@ -1,9 +1,6 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
 Module Name: AzureADPreview
-ms.assetid: A57C8BFC-4E69-444D-8B9E-65D4767F8364
-ms.custom: iamfeature=PowerShell
-ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -21,9 +18,16 @@ Remove-AzureADUserAppRoleAssignment -ObjectId <String> -AppRoleAssignmentId <Str
 ```
 
 ## DESCRIPTION
-The **Remove-AzureADUserAppRoleAssignment** cmdlet removes a user application role assignment in Azure Active Directory (AD).
+The Remove-AzureADUserAppRoleAssignment cmdlet removes a user application role assignment in Azure Active Directory (AD).
 
 ## EXAMPLES
+
+### Example 1
+```powershell
+PS C:\> {{ Add example code here }}
+```
+
+{{ Add example description here }}
 
 ## PARAMETERS
 
@@ -43,7 +47,8 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event.
+The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -105,6 +110,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADUserAppRoleAssignment](./Get-AzureADUserAppRoleAssignment.md)
+[Get-AzureADUserAppRoleAssignment]()
 
-[New-AzureADUserAppRoleAssignment](./New-AzureADUserAppRoleAssignment.md)
+[New-AzureADUserAppRoleAssignment]()
+

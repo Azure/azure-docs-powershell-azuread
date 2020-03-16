@@ -1,9 +1,6 @@
 ---
 external help file: Microsoft.Open.AzureADBeta.Graph.PowerShell.dll-Help.xml
 Module Name: AzureADPreview
-ms.assetid: C05871A7-998C-48AC-BCEB-4CD916E86767
-ms.custom: iamfeature=PowerShell
-ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -21,22 +18,28 @@ Get-AzureADAdministrativeUnitMember -ObjectId <String> [-InformationAction <Acti
 ```
 
 ## DESCRIPTION
-The **Get-AzureADAdministrativeUnitMember** cmdlet gets a member of an Active Directory administrative unit.
+The Get-AzureADAdministrativeUnitMember cmdlet gets a member of an Active Directory administrative unit.
 
 ## EXAMPLES
+
+### Example 1
+```powershell
+PS C:\> {{ Add example code here }}
+```
+
+{{ Add example description here }}
 
 ## PARAMETERS
 
 ### -InformationAction
 Specifies how this cmdlet responds to an information event.
-The acceptable values for this parameter are:
-* Continue
+The acceptable values for this parameter are: * Continue
+
 * Ignore
 * Inquire
 * SilentlyContinue
 * Stop
 * Suspend
-
 
 ```yaml
 Type: ActionPreference
@@ -52,7 +55,6 @@ Accept wildcard characters: False
 
 ### -InformationVariable
 Specifies a variable in which to store an information event message.
-
 
 ```yaml
 Type: String
@@ -92,7 +94,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Add-AzureADAdministrativeUnitMember](./Add-AzureADAdministrativeUnitMember.md)
+[Add-AzureADAdministrativeUnitMember]()
 
-[Remove-AzureADAdministrativeUnitMember](./Remove-AzureADAdministrativeUnitMember.md)
+[Remove-AzureADAdministrativeUnitMember]()
 

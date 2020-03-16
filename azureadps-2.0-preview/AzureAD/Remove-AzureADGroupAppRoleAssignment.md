@@ -1,9 +1,6 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
 Module Name: AzureADPreview
-ms.assetid: F65ACCCF-86C4-4438-920F-289F5C69444E
-ms.custom: iamfeature=PowerShell
-ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -21,9 +18,16 @@ Remove-AzureADGroupAppRoleAssignment -ObjectId <String> -AppRoleAssignmentId <St
 ```
 
 ## DESCRIPTION
-The **Remove-AzureADGroupAppRoleAssignment** cmdlet removes a group application role assignment from Azure Active Directory (AD).
+The Remove-AzureADGroupAppRoleAssignment cmdlet removes a group application role assignment from Azure Active Directory (AD).
 
 ## EXAMPLES
+
+### Example 1
+```powershell
+PS C:\> {{ Add example code here }}
+```
+
+{{ Add example description here }}
 
 ## PARAMETERS
 
@@ -43,7 +47,8 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event.
+The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -105,6 +110,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADGroupAppRoleAssignment](./Get-AzureADGroupAppRoleAssignment.md)
+[Get-AzureADGroupAppRoleAssignment]()
 
-[New-AzureADGroupAppRoleAssignment](./New-AzureADGroupAppRoleAssignment.md)
+[New-AzureADGroupAppRoleAssignment]()
+

@@ -1,9 +1,6 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
 Module Name: AzureADPreview
-ms.assetid: 3A7A5F22-B002-41F0-BA4C-91262FA3D462
-ms.custom: iamfeature=PowerShell
-ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -21,7 +18,7 @@ Add-AzureADGroupOwner -ObjectId <String> -RefObjectId <String> [-InformationActi
 ```
 
 ## DESCRIPTION
-The **Add-AzureADGroupOwner** cmdlet adds an owner to an Azure Active Directory group.
+The Add-AzureADGroupOwner cmdlet adds an owner to an Azure Active Directory group.
 
 ## EXAMPLES
 
@@ -35,7 +32,8 @@ This command adds an owner to a group.
 ## PARAMETERS
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event.
+The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -112,7 +110,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADGroupOwner](./Get-AzureADGroupOwner.md)
-[Remove-AzureADGroupOwner](./Remove-AzureADGroupOwner.md)
+[Get-AzureADGroupOwner]()
 
+[Remove-AzureADGroupOwner]()
 
