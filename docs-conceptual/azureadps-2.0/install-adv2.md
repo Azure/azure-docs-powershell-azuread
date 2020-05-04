@@ -77,7 +77,7 @@ Therefore, **PowerShellGet** requires one of the following operating systems:
 You can check the version of the module you have installed on your computer by running this command:
 
 ```PowerShell
-PS C:\WINDOWS\system32> Get-Module AzureADPreview
+Get-Module AzureADPreview
 
 ModuleType Version Name                ExportedCommands
 ---------- ------- ----                ----------------
@@ -87,7 +87,7 @@ Binary     2.0.0.7 azureadpreview     {Add-AzureADAdmini...
 To update the version of the Azure AD PowerShell module on your computer, re-run the **Install-Module** cmdlet:
 
 ```PowerShell
-PS C:\WINDOWS\system32> Install-Module AzureADPreview
+Install-Module AzureADPreview
 ```
 This command checks the PowerShell gallery to see if a newer version is available and installs it on your computer if the version on the PowerShell Gallery is newer than the one installed on your computer.
 
