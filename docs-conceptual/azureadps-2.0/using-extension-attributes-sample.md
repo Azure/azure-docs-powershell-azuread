@@ -41,7 +41,7 @@ You can read more about extension properties in [this article.](https://msdn.mic
 In these examples we'll be using a user object and work with extension properties. We'll first find the ObjectId of the user so we can easily refer to it later:
 
 ```powershell 
-$UserId = (Get-AzureADUser -Searchstring <UPN of the user we're working with>).ObjectId 
+$UserId = (Get-AzureADUser -Searchstring <UPN of the user we are working with>).ObjectId 
 ```
 
 ### Get all property values of a user
