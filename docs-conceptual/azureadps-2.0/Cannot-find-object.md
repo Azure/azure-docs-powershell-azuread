@@ -43,4 +43,4 @@ Note that this approach works for all properties of objects. For a limited numbe
 ```powershell
 Get-AzureADUser -SearchString "London"
 ```
-This will return all users where one of the qualifying string attributes on the user object equals "London" - which would include users who's DisplayName equals "Jack London" or whre the Department equals "London".
+This will return all users where one of the qualifying string attributes on the user object equals "London" - which would include users who's DisplayName equals "Jack London" or where the Department equals "London".
