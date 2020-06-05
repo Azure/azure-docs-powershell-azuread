@@ -43,7 +43,7 @@ The user is required to reset the password on next sign in.
 
 ### Example 2: Reset a password
 ```
-PS C:\> Set-MsolUserPassword -UserPrincipalName "davidchew@consoso.com" -NewPassword "pa$$word"
+PS C:\> Set-MsolUserPassword -UserPrincipalName "davidchew@contoso.com" -NewPassword "pa$$word"
 ```
 
 This command resets the password for davidchew@contoso.com.
