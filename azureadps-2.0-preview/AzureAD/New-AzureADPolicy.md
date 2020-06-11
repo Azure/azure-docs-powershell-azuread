@@ -30,7 +30,7 @@ The **New-AzureADPolicy** cmdlet creates a policy in Azure Active Directory (AD)
 
 ### Example 1: Create a policy
 ```
-PS C:\>New-AzureADPolicy -Definition <Array of Rules> -DisplayName <Name of Policy> -IsTenantDefault
+PS C:\>New-AzureADPolicy -Definition <Array of Rules> -DisplayName <Name of Policy> -IsOrganizationDefault $true
 ```
 
 This command creates a new policy.
