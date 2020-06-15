@@ -52,6 +52,8 @@ Accept wildcard characters: False
 ```
 
 ### -EndDate
+The EndDate should be a Coordinated Universal Time (UTC) datetime
+
 ```yaml
 Type: DateTime
 Parameter Sets: (All)
@@ -117,6 +119,8 @@ Accept wildcard characters: False
 ```
 
 ### -StartDate
+The StartDate should be a Coordinated Universal Time (UTC) datetime
+
 ```yaml
 Type: DateTime
 Parameter Sets: (All)
