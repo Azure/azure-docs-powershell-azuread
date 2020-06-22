@@ -20,7 +20,7 @@ Set-AzureADMSAuthorizationPolicy
     [- BlockMsolPowerShell <bool>] 
     [- DisplayName <string>] 
     [- Description <string>] 
-    [- EnabledPrivateFeatures <System.Collections.Generic.List`1[System.String]>] 
+    [- EnabledPreviewFeatures <System.Collections.Generic.List`1[System.String]>] 
     [- GuestUserRoleId <string>] 
     [- PermissionGrantPolicyIdsAssignedToDefaultUserRole <System.Collections.Generic.List`1[System.String]>]
 ```
