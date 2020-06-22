@@ -20,9 +20,9 @@ Set-AzureADMSAuthorizationPolicy
     [- BlockMsolPowerShell <bool>] 
     [- DisplayName <string>] 
     [- Description <string>] 
-    [- EnabledPrivateFeatures <string>] 
+    [- EnabledPrivateFeatures <System.Collections.Generic.List`1[System.String]>] 
     [- GuestUserRoleId <string>] 
-    [- PermissionGrantPolicyIdsAssignedToDefaultUserRole <PermissionGrantPolicyIdList>]
+    [- PermissionGrantPolicyIdsAssignedToDefaultUserRole <System.Collections.Generic.List`1[System.String]>]
 ```
 
 ## DESCRIPTION
@@ -49,6 +49,95 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByPropertyName, ByValue)
+Accept wildcard characters: False
+```
+### -Description
+Specifies a description for the authorization policy.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DisplayName
+Specifies a display name for the authorization policy.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -BlockMsolPowerShell
+Specifies whether the user-based access to the legacy service endpoint used by MSOL PowerShell is blocked or not.
+
+```yaml
+Type: Boolean
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -EnabledPreviewFeatures
+Specifies the preview features enabled for private preview on the tenant.
+
+```yaml
+Type: System.Collections.Generic.List`1[System.String]
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -GuestUserRoleId
+Specifies the roleTemplate Id for the role that should be granted to guest user.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -PermissionGrantPolicyIdsAssignedToDefaultUserRole
+Specifies the policy Ids of permission grant policies assigned to the default user role.
+
+```yaml
+Type: System.Collections.Generic.List`1[System.String]
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
