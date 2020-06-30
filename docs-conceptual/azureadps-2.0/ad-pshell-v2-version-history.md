@@ -11,7 +11,7 @@ ms.devlang: na
 ms.topic: reference
 ms.tgt_pltfrm: na
 ms.workload: identity
-ms.date: 06/24/2019
+ms.date: 06/30/2020
 ms.subservice: hybrid
 ms.author: billmath
 ms.collection: M365-identity-device-management
@@ -20,6 +20,95 @@ ms.collection: M365-identity-device-management
 The Azure Active Directory (Azure AD) team regularly updates Azure AD Connect with new features and functionality. The Azure Active Directory PowerShell for Graph modules are available in a General Availability version (AzureAD module) and a preview version (AzureADPreview module). This document contains the release history of both modules.
 
 This article is designed to help you keep track of the versions that have been released, and to understand what the changes are in the latest version.
+
+
+## 2.0.2.105 - Preview release of the AzureADPreview module
+
+### Release status
+
+06/30/2020: Released for installation and upgrade from the PowerShell Gallery
+
+### New features and improvements
+
+The following new cmdlets were added to the AzureADPreview module:
+
+- Add parameter `BlockMsolPowerShell` to **Set-AzureADMSAuthorizationPolicy** cmdlet.
+- Added parameter `Top` to **Get-AzureADAuditSignInLogs** cmdlet
+
+
+## 2.0.2.104 - General Availability release of the AzureAD module
+
+### Release status 
+
+06/29//2020: Released for installation and upgrade from the [PowerShell Gallery](https://www.powershellgallery.com/packages/AzureAD/2.0.2.76)
+
+### New features and improvements 
+
+The following new cmdlets were added to the AzureAD module:
+
+- `New-AzureADMSConditionalAccessPolicy`
+- `Get-AzureADMSConditionalAccessPolicy`
+- `Set-AzureADMSConditionalAccessPolicy`
+- `Remove-AzureADMSConditionalAccessPolicy`
+- `New-AzureADMSNamedLocationPolicy`
+- `Get-AzureADMSNamedLocationPolicy`
+- `Set-AzureADMSNamedLocationPolicy`
+- `Remove-AzureADMSNamedLocationPolicy`
+
+The new **New-AzureADMSConditionalAccessPolicy** cmdlet creates a new conditional access policy in Azure Active Directory.
+The new **Get-AzureADMSNamedLocationPolicy** cmdlet retrieves the list of Azure Active Directory conditional acces policies.
+The new **Set-AzureADMSConditionalAccessPolicy** cmdlet updates the properties of a conditional access policy in Azure Active Directory.
+The new **Remove-AzureADMSConditionalAccessPolicy** cmdlet deletes an Azure Active Directory conditional access policy.
+The new **Get-AzureADMSNamedLocationPolicy** cmdlet retrieves the list of Azure Active Directory named location policies.
+The new **New-AzureADMSNamedLocationPolicy** cmdlet creates a new named location policy in Azure Active Directory.
+The new **Set-AzureADMSNamedLocationPolicy** cmdlet updates the properties of a named location policy in Azure Active Directory.
+The new **Remove-AzureADMSNamedLocationPolicy** cmdlet deletes an Azure Active Directory named location policy.
+
+
+## 2.0.2.102 - Preview release of the AzureADPreview module
+
+### Release status
+
+05/14/2020: Released for installation and upgrade from the PowerShell Gallery
+
+### New features and improvements
+
+The following new cmdlets were added to the AzureADPreview module:
+
+- `New-AzureADMSApplicationFromApplicationTemplate`
+- `New-AzureADMSPermissionGrantConditionSet`
+- `Get-AzureADMSPermissionGrantConditionSet`
+- `Set-AzureADMSPermissionGrantConditionSet`
+- `Remove-AzureADMSPermissionGrantConditionSet`
+- `New-AzureADMSConditionalAccessPolicy`
+- `Get-AzureADMSConditionalAccessPolicy`
+- `Set-AzureADMSConditionalAccessPolicy`
+- `Remove-AzureADMSConditionalAccessPolicy`
+- `New-AzureADMSNamedLocationPolicy`
+- `Get-AzureADMSNamedLocationPolicy`
+- `Set-AzureADMSNamedLocationPolicy`
+- `Remove-AzureADMSNamedLocationPolicy`
+
+The new **New-AzureADMSApplicationFromApplicationTemplate** cmdlet creates a new application based on a applicationTemplate (Azure AD Gallery app or Non-Gallery)
+The new **New-AzureADMSPermissionGrantConditionSet** cmdlet creates a new permission grant conditional set in Azure Active Directory.
+The new **Set-AzureADMSPermissionGrantConditionSet** cmdlet updates the properties of a permission grant conditional set in Azure Active Directory.
+The new **Remove-AzureADMSPermissionGrantConditionSet** cmdlet deletes an Azure Active Directory permission grant conditional set.
+The new **Get-AzureADMSPermissionGrantConditionSet** cmdlet retrieves the list of Azure Active Directory permission grant conditional set.
+The new **New-AzureADMSConditionalAccessPolicy** cmdlet creates a new conditional access policy in Azure Active Directory.
+The new **Get-AzureADMSNamedLocationPolicy** cmdlet retrieves the list of Azure Active Directory conditional acces policies.
+The new **Set-AzureADMSConditionalAccessPolicy** cmdlet updates the properties of a conditional access policy in Azure Active Directory.
+The new **Remove-AzureADMSConditionalAccessPolicy** cmdlet deletes an Azure Active Directory conditional access policy.
+The new **Get-AzureADMSNamedLocationPolicy** cmdlet retrieves the list of Azure Active Directory named location policies.
+The new **New-AzureADMSNamedLocationPolicy** cmdlet creates a new named location policy in Azure Active Directory.
+The new **Set-AzureADMSNamedLocationPolicy** cmdlet updates the properties of a named location policy in Azure Active Directory.
+The new **Remove-AzureADMSNamedLocationPolicy** cmdlet deletes an Azure Active Directory named location policy.
+Added parameters ‘Top’ and ‘All’ to **Get-AzureADAdministrativeUnitMember** cmdlet
+
+### Minor breaking changes:
+
+•	The cmdlet **New-AzureADMSPermissionGrantPolicy** no longer support the parameters “includes” and “excludes”.
+•	The cmdlet **Set-AzureADMSPermissionGrantPolicy** no longer support the parameters “includes” and “excludes”.
+
 
 ## 2.0.2.85 - Preview release of the AzureADPreview module
 
