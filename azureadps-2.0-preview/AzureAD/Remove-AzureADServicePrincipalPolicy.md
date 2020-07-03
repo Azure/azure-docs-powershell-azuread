@@ -22,7 +22,7 @@ Remove-AzureADServicePrincipalPolicy -Id <String> -PolicyId <String> [-Informati
 
 ### Example 1: Remove a service principal policy
 ```
-PS C:\>Remove-AzureADApplicationPolicy -ObjectId <object id of application> -PolicyId <object id of policy>
+PS C:\>Remove-AzureADServicePrincipalPolicy -Id <object id of application> -PolicyId <object id of policy>
 ```
 
 This command removes a service principal policy.
