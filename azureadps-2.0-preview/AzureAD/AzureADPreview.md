@@ -725,3 +725,11 @@ Allows an admin to remove a group from the cloud authentication rollout policy i
 
 ### [Set-AzureADMSFeatureRolloutPolicy](Set-AzureADMSFeatureRolloutPolicy.md)
 Allows an admin to modify the policy for cloud authentication roll-out in Azure AD. 
+
+### [Get-AzureADMSAuthorizationPolicy](Get-AzureADMSAuthorizationPolicy.md)
+Gets an authorization policy.
+
+### [Set-AzureADMSAuthorizationPolicy](Set-AzureADMSAuthorizationPolicy.md)
+Sets an authorization policy.
+
+
