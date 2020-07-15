@@ -1,9 +1,8 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
-online version: 
+Module Name: AzureAD
+online version:
 schema: 2.0.0
-ms.reviewer: rodejo
-ms.custom: iamfeature=PowerShell
 ---
 
 # Get-AzureADApplicationServiceEndpoint
@@ -18,7 +17,10 @@ Get-AzureADApplicationServiceEndpoint -ObjectId <String> [-All <Boolean>] [-Top 
 ```
 
 ## DESCRIPTION
-This cmdlet retrieves the service endpoint(s) of an application. The service endpoint entity contains service discovery information. The serviceEndpoints property of the Application entitie is of type ServiceEndpoint. Other services can use the information stored in the ServiceEndpoint entity to find this service and its addressable endpoints. 
+This cmdlet retrieves the service endpoint(s) of an application.
+The service endpoint entity contains service discovery information.
+The serviceEndpoints property of the Application entitie is of type ServiceEndpoint.
+Other services can use the information stored in the ServiceEndpoint entity to find this service and its addressable endpoints.
 
 ## EXAMPLES
 
@@ -32,12 +34,12 @@ Retrieves the Service EndPoint of the application that is specified through the 
 ## PARAMETERS
 
 ### -All
-Return all service endpoints 
+Return all service endpoints
 
 ```yaml
 Type: Boolean
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -52,7 +54,7 @@ Specifies the object ID of the application for which the service endpoint is ret
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -62,12 +64,13 @@ Accept wildcard characters: False
 ```
 
 ### -Top
-specifies the maximum number of results that are returned. the default is 100.
+specifies the maximum number of results that are returned.
+the default is 100.
 
 ```yaml
 Type: Int32
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -77,19 +80,16 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
-System.Nullable`1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
-System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+System.Nullable\`1\[\[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089\]\] System.Nullable\`1\[\[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089\]\]
 
 ## OUTPUTS
 
 ### System.Object
-
 ## NOTES
 
 ## RELATED LINKS
-

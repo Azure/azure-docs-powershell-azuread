@@ -1,10 +1,8 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
-ms.assetid: 52681E27-7FE6-43CE-B2BF-8516C21E04CB
-online version: 
+Module Name: AzureAD
+online version:
 schema: 2.0.0
-ms.reviewer: rodejo
-ms.custom: iamfeature=PowerShell
 ---
 
 # Get-AzureADUser
@@ -30,7 +28,7 @@ Get-AzureADUser -ObjectId <String> [-All <Boolean>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The **Get-AzureADUser** cmdlet gets a user from Azure Active Directory (AD).
+The Get-AzureADUser cmdlet gets a user from Azure Active Directory (AD).
 
 ## EXAMPLES
 
@@ -58,7 +56,7 @@ ObjectId                             DisplayName UserPrincipalName              
 2b450b8e-1db6-42cb-a545-1b05eb8a358b New user    NewTestUser@contoso.onmicrosoft.com Member
 ```
 
-This cmdlet gets all users that match the value of *SearchString* against the first characters in **DisplayName** or **UserPrincipalName** .
+This cmdlet gets all users that match the value of SearchString against the first characters in DisplayName or UserPrincipalName .
 
 ### Example 4: Get a user by userPrincipalName
 ```
@@ -72,17 +70,19 @@ This command gets the specified user.
 PS C:\>Get-AzureADUser -Filter "startswith(Title,'Sales')"
 ```
 
-This command gets all the users whos title starts with sales. ie Sales Manager and Sales Assistant.
+This command gets all the users whos title starts with sales.
+ie Sales Manager and Sales Assistant.
 
 ## PARAMETERS
 
 ### -All
-If true, return all users. If false, return the number of objects specified by the Top parameter
+If true, return all users.
+If false, return the number of objects specified by the Top parameter
 
 ```yaml
 Type: Boolean
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -92,13 +92,15 @@ Accept wildcard characters: False
 ```
 
 ### -Filter
-Specifies an oData v3.0 filter statement. This parameter controls which objects are returned.
-Details on querying with oData can be found here. http://www.odata.org/documentation/odata-version-3-0/odata-version-3-0-core-protocol/#queryingcollections
+Specifies an oData v3.0 filter statement.
+This parameter controls which objects are returned.
+Details on querying with oData can be found here.
+http://www.odata.org/documentation/odata-version-3-0/odata-version-3-0-core-protocol/#queryingcollections
 
 ```yaml
 Type: String
 Parameter Sets: GetQuery
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -108,12 +110,12 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-Specifies the ID (as a UPN or ObjectId) of a user in Azure AD. 
+Specifies the ID (as a UPN or ObjectId) of a user in Azure AD.
 
 ```yaml
 Type: String
 Parameter Sets: GetById
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -124,10 +126,11 @@ Accept wildcard characters: False
 
 ### -SearchString
 Specifies a search string.
+
 ```yaml
 Type: String
 Parameter Sets: GetVague
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -142,7 +145,7 @@ Specifies the maximum number of records to return.
 ```yaml
 Type: Int32
 Parameter Sets: GetQuery
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -152,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -162,8 +165,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[New-AzureADUser](./New-AzureADUser.md)
+[New-AzureADUser]()
 
-[Remove-AzureADUser](./Remove-AzureADUser.md)
+[Remove-AzureADUser]()
 
-[Set-AzureADUser](./Set-AzureADUser.md)
+[Set-AzureADUser]()
+
