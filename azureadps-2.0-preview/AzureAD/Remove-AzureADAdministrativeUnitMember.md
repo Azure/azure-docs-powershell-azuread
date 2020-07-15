@@ -1,9 +1,6 @@
 ---
 external help file: Microsoft.Open.AzureADBeta.Graph.PowerShell.dll-Help.xml
 Module Name: AzureADPreview
-ms.assetid: 9DEA1FE5-FE78-431F-9D12-53C349812A81
-ms.custom: iamfeature=PowerShell
-ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -21,9 +18,16 @@ Remove-AzureADAdministrativeUnitMember -ObjectId <String> -MemberId <String>
 ```
 
 ## DESCRIPTION
-The **Remove-AzureADAdministrativeUnitMember** cmdlet removes an administrative unit member in Azure Active Directory (AD).
+The Remove-AzureADAdministrativeUnitMember cmdlet removes an administrative unit member in Azure Active Directory (AD).
 
 ## EXAMPLES
+
+### Example 1
+```powershell
+PS C:\> {{ Add example code here }}
+```
+
+{{ Add example description here }}
 
 ## PARAMETERS
 
@@ -107,8 +111,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Add-AzureADAdministrativeUnitMember](./Add-AzureADAdministrativeUnitMember.md)
+[Add-AzureADAdministrativeUnitMember]()
 
-[Remove-AzureADAdministrativeUnitMember](./Remove-AzureADAdministrativeUnitMember.md)
-
+[Remove-AzureADAdministrativeUnitMember]()
 

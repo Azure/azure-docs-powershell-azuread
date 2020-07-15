@@ -33,6 +33,7 @@ The contents of the created trust framework policy can be written to an output f
 
 ### Example 1
 ```
+PS C:\> $policyContent = Get-Content 'C:\temp\CreatedPolicy.xml' | out-string
 PS C:\> New-AzureADMSTrustFrameworkPolicy -Content $policyContent
 ```
 
@@ -42,6 +43,7 @@ The contents of newly created trust framework policy are displayed on screen.
 
 ### Example 2
 ```
+PS C:\> $policyContent = Get-Content 'C:\temp\CreatedPolicy.xml' | out-string
 PS C:\> New-AzureADMSTrustFrameworkPolicy -Content $policyContent -OutputFilePath C:\CreatedPolicy.xml
 ```
 

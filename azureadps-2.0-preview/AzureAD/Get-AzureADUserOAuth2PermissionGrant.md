@@ -1,9 +1,6 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
 Module Name: AzureADPreview
-ms.assetid: 4E853AB1-5885-4A12-AA3B-0D85B61E54D3
-ms.custom: iamfeature=PowerShell
-ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -11,7 +8,7 @@ schema: 2.0.0
 # Get-AzureADUserOAuth2PermissionGrant
 
 ## SYNOPSIS
-Gets an **oAuth2PermissionGrant** object.
+Gets an oAuth2PermissionGrant object.
 
 ## SYNTAX
 
@@ -20,7 +17,7 @@ Get-AzureADUserOAuth2PermissionGrant -ObjectId <String> [-All <Boolean>] [-Top <
 ```
 
 ## DESCRIPTION
-The **Get-AzureADUserOAuth2PermissionGrant** cmdlet gets an **oAuth2PermissionGrant** object for the specified user in Azure Active Directory (AD).
+The Get-AzureADUserOAuth2PermissionGrant cmdlet gets an oAuth2PermissionGrant object for the specified user in Azure Active Directory (AD).
 
 ## EXAMPLES
 
@@ -30,16 +27,16 @@ PS C:\> $UserId = (Get-AzureADUser -Top 1).ObjectId
 PS C:\> Get-AzureADUserOAuth2PermissionGrant -ObjectId $UserId
 ```
 
-The first command gets the ID of an Azure AD user by using the [Get-AzureADUser](./Get-AzureADUser.md) cmdlet. 
+The first command gets the ID of an Azure AD user by using the Get-AzureADUser (./Get-AzureADUser.md)cmdlet. 
 The command stores the value in the $UserId variable.
 
 The second command gets the OAuth2 permission grants for the user identified by $UserId.
- 
 
 ## PARAMETERS
 
 ### -All
-If true, return all permission grants. If false, return the number of objects specified by the Top parameter
+If true, return all permission grants.
+If false, return the number of objects specified by the Top parameter
 
 ```yaml
 Type: Boolean
@@ -54,7 +51,7 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-Specifies the ID (as a UPN or ObjectId) of a user in Azure AD. 
+Specifies the ID (as a UPN or ObjectId) of a user in Azure AD.
 
 ```yaml
 Type: String
@@ -94,4 +91,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADUser](./Get-AzureADUser.md) 
+[Get-AzureADUser]()
+

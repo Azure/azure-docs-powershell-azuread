@@ -1,9 +1,6 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
 Module Name: AzureADPreview
-ms.assetid: 174EC629-F240-47FD-B603-87F4419ACD14
-ms.custom: iamfeature=PowerShell
-ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -21,7 +18,7 @@ Get-AzureADApplicationExtensionProperty -ObjectId <String> [-InformationAction <
 ```
 
 ## DESCRIPTION
-The **Get-AzureADApplicationExtensionProperty** cmdlet gets application extension properties in Azure Active Directory.
+The Get-AzureADApplicationExtensionProperty cmdlet gets application extension properties in Azure Active Directory.
 
 ## EXAMPLES
 
@@ -103,6 +100,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[New-AzureADApplicationExtensionProperty](./New-AzureADApplicationExtensionProperty.md)
+[New-AzureADApplicationExtensionProperty]()
 
-[Remove-AzureADApplicationExtensionProperty](./Remove-AzureADApplicationExtensionProperty.md)
+[Remove-AzureADApplicationExtensionProperty]()
+

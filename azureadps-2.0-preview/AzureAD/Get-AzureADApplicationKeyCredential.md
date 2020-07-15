@@ -1,9 +1,6 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.Custom.dll-Help.xml
 Module Name: AzureADPreview
-ms.assetid: 306B2B21-9B1C-4388-B3D6-419CDE02C75C
-ms.custom: iamfeature=PowerShell
-ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -21,7 +18,7 @@ Get-AzureADApplicationKeyCredential -ObjectId <String> [-InformationAction <Acti
 ```
 
 ## DESCRIPTION
-The **Get-AzureADApplicationKeyCredential** cmdlet gets the key credentials for an application.
+The Get-AzureADApplicationKeyCredential cmdlet gets the key credentials for an application.
 
 ## EXAMPLES
 
@@ -99,6 +96,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[New-AzureADApplicationKeyCredential](./New-AzureADApplicationKeyCredential.md)
+[New-AzureADApplicationKeyCredential]()
 
-[Remove-AzureADApplicationKeyCredential](./Remove-AzureADApplicationKeyCredential.md)
+[Remove-AzureADApplicationKeyCredential]()
+

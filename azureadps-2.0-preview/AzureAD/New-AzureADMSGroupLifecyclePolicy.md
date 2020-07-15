@@ -32,7 +32,8 @@ This will create a a new groupLifecyclePolicy setting the group lifetime to 99 d
 ## PARAMETERS
 
 ### -AlternateNotificationEmails
-Notification emails for groups that have no owners will be sent to these email addresses. List of email addresses separated by a ";".
+Notification emails for groups that have no owners will be sent to these email addresses.
+List of email addresses separated by a ";".
 
 ```yaml
 Type: String
@@ -62,8 +63,10 @@ Accept wildcard characters: False
 ```
 
 ### -ManagedGroupTypes
-This parameter allows the admin to select which office 365 groups the policy will apply to. "None" will create the policy in a disabled state. "All" will apply the policy to every Office 365 group in the tenant. "Selected" will allow the admin to choose specific Office 365 groups that the policy will apply to.
-Please note that this parameter is case sensitive - "none" or "NONE" will not be recognized as valid values.
+This parameter allows the admin to select which office 365 groups the policy will apply to.
+"None" will create the policy in a disabled state.
+"All" will apply the policy to every Office 365 group in the tenant.
+"Selected" will allow the admin to choose specific Office 365 groups that the policy will apply to.
 
 ```yaml
 Type: String
@@ -83,11 +86,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### None
-
 ## OUTPUTS
 
 ### System.Object
-
 ## NOTES
 
 ## RELATED LINKS

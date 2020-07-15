@@ -1,9 +1,6 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.Custom.dll-Help.xml
 Module Name: AzureADPreview
-ms.assetid: DE20FBC9-0786-4EA6-834F-93AF173350C0
-ms.custom: iamfeature=PowerShell
-ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -21,7 +18,7 @@ Get-AzureADServicePrincipalPasswordCredential -ObjectId <String> [-InformationAc
 ```
 
 ## DESCRIPTION
-The **Get-AzureADServicePrincipalPasswordCredential** cmdlet gets the password credentials for a service principal in Azure Active Directory (AD).
+The Get-AzureADServicePrincipalPasswordCredential cmdlet gets the password credentials for a service principal in Azure Active Directory (AD).
 
 ## EXAMPLES
 
@@ -31,7 +28,7 @@ PS C:\> $ServicePrincipalId = (Get-AzureADServicePrincipal -Top 1).ObjectId
 PS C:\> Get-AzureADServicePrincipalPasswordCredential -ObjectId $ServicePrincipalId
 ```
 
-The first command gets the ID of a service principal by using the [Get-AzureADServicePrincipal](./Get-AzureADServicePrincipal.md) cmdlet. 
+The first command gets the ID of a service principal by using the Get-AzureADServicePrincipal (./Get-AzureADServicePrincipal.md)cmdlet. 
 The command stores the ID in the $ServicePrincipalId variable.
 
 The second command gets the password credential of a service principal identified by $ServicePrincipalId.
@@ -39,7 +36,8 @@ The second command gets the password credential of a service principal identifie
 ## PARAMETERS
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event.
+The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -101,8 +99,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADServicePrincipal](./Get-AzureADServicePrincipal.md)
+[Get-AzureADServicePrincipal]()
 
-[New-AzureADServicePrincipalPasswordCredential](./New-AzureADServicePrincipalPasswordCredential.md)
+[New-AzureADServicePrincipalPasswordCredential]()
 
-[Remove-AzureADServicePrincipalPasswordCredential](./Remove-AzureADServicePrincipalPasswordCredential.md)
+[Remove-AzureADServicePrincipalPasswordCredential]()
+

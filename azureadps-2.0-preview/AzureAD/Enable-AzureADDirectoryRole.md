@@ -1,9 +1,6 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
 Module Name: AzureADPreview
-ms.assetid: 3719960D-7A77-414E-A20C-812B527F27AB
-ms.custom: iamfeature=PowerShell
-ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -21,7 +18,7 @@ Enable-AzureADDirectoryRole [-InformationAction <ActionPreference>] [-Informatio
 ```
 
 ## DESCRIPTION
-The **Enable-AzureADDirectoryRole** cmdlet activates an existing directory role in Azure Active Directory.
+The Enable-AzureADDirectoryRole cmdlet activates an existing directory role in Azure Active Directory.
 
 ## EXAMPLES
 
@@ -45,8 +42,8 @@ ObjectId                             DisplayName   Description
 03618579-3c16-4765-9539-86d9163ee3d9 Guest Inviter Guest Inviter has access to invite guest users.
 ```
 
-The first command gets an inviter role that has the display name Guest Inviter by using the [Get-AzureADDirectoryRoleTemplate](./Get-AzureADDirectoryRoleTemplate.md) cmdlet. 
-The command stores Guest Inviter in the $InviterRole variable. 
+The first command gets an inviter role that has the display name Guest Inviter by using the Get-AzureADDirectoryRoleTemplate (./Get-AzureADDirectoryRoleTemplate.md)cmdlet. 
+The command stores Guest Inviter in the $InviterRole variable.
 
 The second command displays the contents of $InviterRole.
 
@@ -55,7 +52,8 @@ The final command enables the directory role in $InviterRole.
 ## PARAMETERS
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event.
+The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -117,6 +115,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADDirectoryRole](./Get-AzureADDirectoryRole.md)
+[Get-AzureADDirectoryRole]()
 
-[Get-AzureADDirectoryRoleTemplate](./Get-AzureADDirectoryRoleTemplate.md)
+[Get-AzureADDirectoryRoleTemplate]()
+

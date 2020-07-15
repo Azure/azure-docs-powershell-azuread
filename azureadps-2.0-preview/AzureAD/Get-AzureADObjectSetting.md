@@ -1,9 +1,6 @@
 ---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
 Module Name: AzureADPreview
-ms.assetid: F1CEBDF4-5AF8-4AFC-AA1F-D36CEC381D04
-ms.custom: iamfeature=PowerShell
-ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -32,10 +29,18 @@ The Get-AzureADObjectSetting cmdlet gets an object setting from Azure Active Dir
 
 ## EXAMPLES
 
+### Example 1
+```
+PS C:\> {{ Add example code here }}
+```
+
+{{ Add example description here }}
+
 ## PARAMETERS
 
 ### -All
-If true, return all objects settings. If false, return the number of objects specified by the Top parameter
+If true, return all objects settings.
+If false, return the number of objects specified by the Top parameter
 
 ```yaml
 Type: Boolean
@@ -50,7 +55,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Specifies the ID of a settings object. 
+Specifies the ID of a settings object.
 
 ```yaml
 Type: String
@@ -80,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetType
-Specifies the target type. 
+Specifies the target type.
 
 ```yaml
 Type: String
@@ -120,9 +125,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[New-AzureADObjectSetting](./New-AzureADObjectSetting.md)
+[New-AzureADObjectSetting]()
 
-[Remove-AzureADObjectSetting](./Remove-AzureADObjectSetting.md)
+[Remove-AzureADObjectSetting]()
 
-[Set-AzureADObjectSetting](./Set-AzureADObjectSetting.md)
+[Set-AzureADObjectSetting]()
 

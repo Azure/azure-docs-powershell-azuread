@@ -1,9 +1,6 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
 Module Name: AzureADPreview
-ms.assetid: 3B08911A-85D4-4E91-B288-69D77C3F39C5
-ms.custom: iamfeature=PowerShell
-ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -20,7 +17,7 @@ Get-AzureADUserDirectReport -ObjectId <String> [-All <Boolean>] [-Top <Int32>] [
 ```
 
 ## DESCRIPTION
-The **Get-AzureADUserDirectReport** cmdlet gets the direct reports for a user in Azure Active Directory (AD).
+The Get-AzureADUserDirectReport cmdlet gets the direct reports for a user in Azure Active Directory (AD).
 
 ## EXAMPLES
 
@@ -38,7 +35,8 @@ This command gets the direct report for the specified user.
 ## PARAMETERS
 
 ### -All
-If true, return all direct reports for this user. If false, return the number of objects specified by the Top parameter
+If true, return all direct reports for this user.
+If false, return the number of objects specified by the Top parameter
 
 ```yaml
 Type: Boolean

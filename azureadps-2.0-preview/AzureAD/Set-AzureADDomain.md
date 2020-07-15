@@ -1,9 +1,6 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
 Module Name: AzureADPreview
-ms.assetid: 53B15037-19DD-4253-B998-D968DA05F2AC
-ms.custom: iamfeature=PowerShell
-ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -16,56 +13,57 @@ Updates a domain.
 ## SYNTAX
 
 ```
-Set-AzureADDomain -Name <String> [-InformationAction <ActionPreference>] [-InformationVariable <String>]
- [-IsDefault <Boolean>] [-SupportedServices <System.Collections.Generic.List`1[System.String]>]
- [<CommonParameters>]
+Set-AzureADDomain -Name <String> [-IsDefault <Boolean>] [-IsDefaultForCloudRedirections <Boolean>]
+ [-SupportedServices <System.Collections.Generic.List`1[System.String]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The **Set-AzureADDomain** cmdlet updates a domain in Azure Active Directory (AD).
+The Set-AzureADDomain cmdlet updates a domain in Azure Active Directory (AD).
 
 ## EXAMPLES
 
+### Example 1: Set the domain as the default domain for new user account creation
+```
+PS C:\>Set-AzureADDomain -Name Contoso.com -IsDefault $true
+```
+
+This command updates the default domain (One per company) used for new account creation.
+
+### Example 2: Set the list of domain capabilities
+```
+PS C:\>Set-AzureADDomain -Name Contoso.com -SupportedServices @("Email", "OfficeCommunicationsOnline")
+```
+
+This command updates the supported services for this domain.
+
+### Example 3: Set the default domain for cloud redirections
+```
+PS C:\>Set-AzureADDomain -Name Contoso.com -IsDefaultForCloudRedirections $true
+```
+
+This command updates the default domain used for cloud redirections.
+
 ## PARAMETERS
 
-### -InformationAction
-Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
-
-- Continue
-- Ignore
-- Inquire
-- SilentlyContinue
-- Stop
-- Suspend
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: infa
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -InformationVariable
-Specifies an information variable.
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases: iv
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -IsDefault
+Indicates whether or not this is the default domain that is used for user creation.
+There is only one default domain per company.
+
+```yaml
+Type: Boolean
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -IsDefaultForCloudRedirections
+Indicates whether or not this is the default domain used for cloud redirections.
+
 ```yaml
 Type: Boolean
 Parameter Sets: (All)
@@ -79,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-Specifies a name.
+The fully qualified name of the domain.
 
 ```yaml
 Type: String
@@ -94,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -SupportedServices
-Specifies an array of supported services.
+The capabilities assigned to the domain.
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
@@ -119,10 +117,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Confirm-AzureADDomain](./Confirm-AzureADDomain.md)
+[Confirm-AzureADDomain]()
 
-[Get-AzureADDomain](./Get-AzureADDomain.md)
+[Get-AzureADDomain]()
 
-[New-AzureADDomain](./New-AzureADDomain.md)
+[New-AzureADDomain]()
 
-[Remove-AzureADDomain](./Remove-AzureADDomain.md)
+[Remove-AzureADDomain]()
+

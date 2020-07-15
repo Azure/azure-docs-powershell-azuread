@@ -1,9 +1,6 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
 Module Name: AzureADPreview
-ms.assetid: 393B2C82-CB87-4892-872E-6E6285DFF955
-ms.custom: iamfeature=PowerShell
-ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -26,7 +23,7 @@ Get-AzureADContact -ObjectId <String> [-All <Boolean>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The **Get-AzureADContact** cmdlet gets a contact from Azure Active Directory.
+The Get-AzureADContact cmdlet gets a contact from Azure Active Directory.
 
 ## EXAMPLES
 
@@ -44,7 +41,8 @@ This command retrieves all contact objects in the directory.
 ## PARAMETERS
 
 ### -All
-If true, return all contacts. If false, return the number of objects specified by the Top parameter
+If true, return all contacts.
+If false, return the number of objects specified by the Top parameter
 
 ```yaml
 Type: Boolean
@@ -59,7 +57,8 @@ Accept wildcard characters: False
 ```
 
 ### -Filter
-Specifies an oData v3.0 filter statement. This parameter controls which objects are returned.
+Specifies an oData v3.0 filter statement.
+This parameter controls which objects are returned.
 
 ```yaml
 Type: String
@@ -114,6 +113,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Remove-AzureADContact](./Remove-AzureADContact.md)
+[Remove-AzureADContact]()
 
-[Set-AzureADContact](./Set-AzureADContact.md)
+[Set-AzureADContact]()
+

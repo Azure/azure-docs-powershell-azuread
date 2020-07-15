@@ -92,5 +92,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Online.Administration.GetApplicationSignInSummaryObjectsResponse
 ## NOTES
-
 ## RELATED LINKS

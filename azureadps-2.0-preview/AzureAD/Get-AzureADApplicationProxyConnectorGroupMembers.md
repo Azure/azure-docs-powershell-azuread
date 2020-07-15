@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-AzureADApplicationProxyConnectorGroupMembers
 
 ## SYNOPSIS
-The Get-AzureADApplicationProxyConnectorGroupMembers gets all the Application Proxy connectors associated with the given connector group. 
+The Get-AzureADApplicationProxyConnectorGroupMembers gets all the Application Proxy connectors associated with the given connector group.
 
 ## SYNTAX
 
@@ -18,7 +18,7 @@ Get-AzureADApplicationProxyConnectorGroupMembers -Id <String> [-All <Boolean>] [
 ```
 
 ## DESCRIPTION
-The Get-AzureADApplicationProxyConnectorGroupMembers gets all the Application Proxy connectors associated with the given connector group. 
+The Get-AzureADApplicationProxyConnectorGroupMembers gets all the Application Proxy connectors associated with the given connector group.
 
 ## EXAMPLES
 
@@ -37,7 +37,8 @@ The output of this command, showing all the connectors in the group.
 ## PARAMETERS
 
 ### -All
-If true, return all users. If false, return the number of objects specified by the Top parameter
+If true, return all users.
+If false, return the number of objects specified by the Top parameter
 
 ```yaml
 Type: Boolean
@@ -52,7 +53,9 @@ Accept wildcard characters: False
 ```
 
 ### -Filter
-Specifies an oData v3.0 filter statement. This parameter controls which objects are returned. Details on querying with oData can be found here: http://www.odata.org/documentation/odata-version-3-0/odata-version-3-0-core-protocol/#queryingcollections
+Specifies an oData v3.0 filter statement.
+This parameter controls which objects are returned.
+Details on querying with oData can be found here: http://www.odata.org/documentation/odata-version-3-0/odata-version-3-0-core-protocol/#queryingcollections
 
 ```yaml
 Type: String
@@ -67,7 +70,8 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The Id of the Connector group. This can be found by running the Get-AzureADApplicationProxyConnectorGroup command. 
+The Id of the Connector group.
+This can be found by running the Get-AzureADApplicationProxyConnectorGroup command.
 
 ```yaml
 Type: String
@@ -102,13 +106,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### System.String
-System.Nullable`1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
-System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+System.Nullable\`1\[\[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089\]\] System.Nullable\`1\[\[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089\]\]
 
 ## OUTPUTS
 
 ### System.Object
-
 ## NOTES
 
 ## RELATED LINKS

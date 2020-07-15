@@ -1,9 +1,6 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
 Module Name: AzureADPreview
-ms.assetid: 626B58EC-3CBB-452B-BE80-0A70B01E4555
-ms.custom: iamfeature=PowerShell
-ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -20,7 +17,7 @@ Get-AzureADGroupOwner -ObjectId <String> [-All <Boolean>] [-Top <Int32>] [<Commo
 ```
 
 ## DESCRIPTION
-The **Get-AzureADGroupOwner** cmdlet gets an owner of a group in Azure Active Directory (AD).
+The Get-AzureADGroupOwner cmdlet gets an owner of a group in Azure Active Directory (AD).
 
 ## EXAMPLES
 
@@ -38,7 +35,8 @@ This command gets the specified group owner.
 ## PARAMETERS
 
 ### -All
-If true, return all group owners. If false, return the number of objects specified by the Top parameter
+If true, return all group owners.
+If false, return the number of objects specified by the Top parameter
 
 ```yaml
 Type: Boolean
@@ -93,7 +91,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Add-AzureADGroupOwner](./Add-AzureADGroupOwner.md)
+[Add-AzureADGroupOwner]()
 
-[Remove-AzureADGroupOwner](./Remove-AzureADGroupOwner.md)
+[Remove-AzureADGroupOwner]()
 
