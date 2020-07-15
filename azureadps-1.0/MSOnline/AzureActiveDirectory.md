@@ -12,9 +12,9 @@ ms.custom: iamfeature=PowerShell
 # MSOnline Module
 ## Description
 
-Note: this is the older MSOnline V1 PowerShell module for Azure Active Directory. Customers are encouraged to use the newer Azure Active Directory V2 PowerShell module instead of this module. For more information about the V2 module please see [Azure Active Directory V2 PowerShell](https://docs.microsoft.com/en-us/powershell/azuread/v2/azureactivedirectory).
+Note: this is the older MSOnline V1 PowerShell module for Azure Active Directory. Customers are encouraged to use the newer Azure Active Directory V2 PowerShell module instead of this module. For more information about the V2 module please see [Azure Active Directory V2 PowerShell](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory).
 
-For more detail info on installation of the AzureAD cmdlets please see: [Azure ActiveDirectory (MSOnline)](https://docs.microsoft.com/en-us/powershell/azure/active-directory/overview?view=azureadps-1.0).
+For more detail info on installation of the AzureAD cmdlets please see: [Azure ActiveDirectory (MSOnline)](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-1.0).
 
 This topic displays help topics for the Azure Active Directory MSOnline module.
 
@@ -446,6 +446,6 @@ These include the following:
 
 ## See Also
 
-[Administering your Azure AD directory](https://msdn.microsoft.com/en-us/library/azure/hh967611(v=azure.98).aspx)
+[Administering your Azure AD directory](https://msdn.microsoft.com/library/azure/hh967611(v=azure.98).aspx)
 
-[Install Windows PowerShell for directory synchronization](https://msdn.microsoft.com/en-us/library/azure/jj151828(v=azure.98).aspx)
+[Install Windows PowerShell for directory synchronization](https://msdn.microsoft.com/library/azure/jj151828(v=azure.98).aspx)
