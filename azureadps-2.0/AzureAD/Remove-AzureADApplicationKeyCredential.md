@@ -1,10 +1,8 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.Custom.dll-Help.xml
-ms.assetid: 59B49FB7-4743-4D76-9C08-4416D862BEE3
-online version: 
+Module Name: AzureAD
+online version:
 schema: 2.0.0
-ms.reviewer: rodejo
-ms.custom: iamfeature=PowerShell
 ---
 
 # Remove-AzureADApplicationKeyCredential
@@ -20,7 +18,7 @@ Remove-AzureADApplicationKeyCredential -ObjectId <String> -KeyId <String>
 ```
 
 ## DESCRIPTION
-The **Remove-AzureADApplicationKeyCredential** cmdlet removes a key credential from an application.
+The Remove-AzureADApplicationKeyCredential cmdlet removes a key credential from an application.
 
 ## EXAMPLES
 
@@ -78,7 +76,7 @@ Specifies a custom key ID.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -93,7 +91,7 @@ Specifies a unique ID of an application in Azure Active Directory.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -103,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -113,6 +111,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADApplicationKeyCredential](./Get-AzureADApplicationKeyCredential.md)
+[Get-AzureADApplicationKeyCredential]()
 
-[New-AzureADApplicationKeyCredential](./New-AzureADApplicationKeyCredential.md)
+[New-AzureADApplicationKeyCredential]()
+
