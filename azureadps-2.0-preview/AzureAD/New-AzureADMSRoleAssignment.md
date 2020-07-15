@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-AzureADMSRoleAssignment
 
 ## SYNOPSIS
-Creates an Azure AD role assignment.
+{{ Fill in the Synopsis }}
 
 ## SYNTAX
 
@@ -18,21 +18,21 @@ New-AzureADMSRoleAssignment -RoleDefinitionId <String> -PrincipalId <String> -Re
 ```
 
 ## DESCRIPTION
-The New-AzureADMSRoleAssignment cmdlet creates an Azure Active Directory (Azure AD) role assignment.
+{{ Fill in the Description }}
 
 ## EXAMPLES
 
 ### Example 1
 ```powershell
-PS C:\> New-AzureADMSRoleAssignment -RoleDefinitionId 62e90356-69f5-4237-9190-012177145e10 -PrincipalId 69584089-b4d1-4055-9c94-320412efd653 -ResourceScope '/'
+PS C:\> {{ Add example code here }}
 ```
 
-This command creates a new role assignment.
+{{ Add example description here }}
 
 ## PARAMETERS
 
 ### -PrincipalId
-Specifies the principal for role assignment.
+{{ Fill PrincipalId Description }}
 
 ```yaml
 Type: String
@@ -47,7 +47,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceScope
-Specifies the resource scope for role assignment.
+{{ Fill ResourceScope Description }}
 
 ```yaml
 Type: String
@@ -62,7 +62,7 @@ Accept wildcard characters: False
 ```
 
 ### -RoleDefinitionId
-Specifies the role definition for role assignment.
+{{ Fill RoleDefinitionId Description }}
 
 ```yaml
 Type: String
@@ -86,11 +86,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Object
-
 ## NOTES
 
 ## RELATED LINKS
-
-[Get-AzureADMSRoleAssignment]()
-
-[Remove-AzureADMSRoleAssignment]()

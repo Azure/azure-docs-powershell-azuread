@@ -1,9 +1,6 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
 Module Name: AzureADPreview
-ms.assetid: F2D051A2-8915-459D-8083-2D5800C53A86
-ms.custom: iamfeature=PowerShell
-ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -20,7 +17,7 @@ Get-AzureADDeviceRegisteredOwner -ObjectId <String> [-All <Boolean>] [-Top <Int3
 ```
 
 ## DESCRIPTION
-The **Get-AzureADDeviceRegisteredOwner** cmdlet gets the registered owner of a device in Azure Active Directory.
+The Get-AzureADDeviceRegisteredOwner cmdlet gets the registered owner of a device in Azure Active Directory.
 
 ## EXAMPLES
 
@@ -30,14 +27,14 @@ PS C:\> $DevId = (Get-AzureADDevice -Top 1).ObjectId
 PS C:\> Get-AzureADDeviceRegisteredOwner -ObjectId $DevId
 ```
 
-The first command gets the object ID of a device by using the [Get-AzureADDevice](./Get-AzureADDevice.md) cmdlet, and then stores it in the $DevId variable.  
-
+The first command gets the object ID of a device by using the Get-AzureADDevice (./Get-AzureADDevice.md)cmdlet, and then stores it in the $DevId variable.
 The second command gets the registered owner of the device in $DevId.
 
 ## PARAMETERS
 
 ### -All
-If true, return all registered owners. If false, return the number of objects specified by the Top parameter
+If true, return all registered owners.
+If false, return the number of objects specified by the Top parameter
 
 ```yaml
 Type: Boolean
@@ -54,7 +51,6 @@ Accept wildcard characters: False
 ### -ObjectId
 Specifies the ID of an object.
 
-
 ```yaml
 Type: String
 Parameter Sets: (All)
@@ -68,6 +64,8 @@ Accept wildcard characters: False
 ```
 
 ### -Top
+@{Text=}
+
 ```yaml
 Type: Int32
 Parameter Sets: (All)
@@ -91,8 +89,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Add-AzureADDeviceRegisteredOwner](./Add-AzureADDeviceRegisteredOwner.md)
+[Add-AzureADDeviceRegisteredOwner]()
 
-[Get-AzureADDevice](./Get-AzureADDevice.md)
+[Get-AzureADDevice]()
 
-[Remove-AzureADDeviceRegisteredOwner](./Remove-AzureADDeviceRegisteredOwner.md)
+[Remove-AzureADDeviceRegisteredOwner]()
+

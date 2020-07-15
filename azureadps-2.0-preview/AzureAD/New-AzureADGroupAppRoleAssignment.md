@@ -1,9 +1,6 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
 Module Name: AzureADPreview
-ms.assetid: B2EE39EC-3CD7-4F55-8D27-9E32E4E152C3
-ms.custom: iamfeature=PowerShell
-ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -21,9 +18,16 @@ New-AzureADGroupAppRoleAssignment -ObjectId <String> [-InformationAction <Action
 ```
 
 ## DESCRIPTION
-The **New-AzureADGroupAppRoleAssignment** cmdlet assigns a group of users to an application role in Azure Active Directory (AD).
+The New-AzureADGroupAppRoleAssignment cmdlet assigns a group of users to an application role in Azure Active Directory (AD).
 
 ## EXAMPLES
+
+### Example 1
+```powershell
+PS C:\> {{ Add example code here }}
+```
+
+{{ Add example description here }}
 
 ## PARAMETERS
 
@@ -137,8 +141,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADGroupAppRoleAssignment](./Get-AzureADGroupAppRoleAssignment.md)
+[Get-AzureADGroupAppRoleAssignment]()
 
-[Remove-AzureADGroupAppRoleAssignment](./Remove-AzureADGroupAppRoleAssignment.md)
+[Remove-AzureADGroupAppRoleAssignment]()
 
-[Managing applications in Azure Active Directory using PowerShell](https://channel9.msdn.com/Series/Azure-Active-Directory-Videos-Demos/ManageAppsAzureADPowerShell) 
+[Managing applications in Azure Active Directory using PowerShell](https://channel9.msdn.com/Series/Azure-Active-Directory-Videos-Demos/ManageAppsAzureADPowerShell)
+

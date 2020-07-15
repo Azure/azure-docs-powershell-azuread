@@ -1,9 +1,6 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
 Module Name: AzureADPreview
-ms.assetid: 2F1DA4E0-4D7C-4726-85AA-2493B0A3FDA8
-ms.custom: iamfeature=PowerShell
-ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -21,7 +18,7 @@ Remove-AzureADGroupOwner -ObjectId <String> -OwnerId <String> [-InformationActio
 ```
 
 ## DESCRIPTION
-The **Remove-AzureADGroupOwner** cmdlet removes an owner from a group in Azure Active Directory (AD).
+The Remove-AzureADGroupOwner cmdlet removes an owner from a group in Azure Active Directory (AD).
 
 ## EXAMPLES
 
@@ -112,6 +109,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Add-AzureADGroupOwner](./Add-AzureADGroupOwner.md)
-[Get-AzureADGroupOwner](./Get-AzureADGroupOwner.md)
+[Add-AzureADGroupOwner]()
+
+[Get-AzureADGroupOwner]()
 

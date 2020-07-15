@@ -1,9 +1,6 @@
 ---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
 Module Name: AzureADPreview
-ms.assetid: C62F46A7-EEE7-41C9-9F71-98C05C11E20D
-ms.custom: iamfeature=PowerShell
-ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -20,14 +17,22 @@ Get-AzureADPolicyAppliedObject -Id <String> [-InformationAction <ActionPreferenc
 ```
 
 ## DESCRIPTION
-The **Get-AzureADPolicyAppliedObject** cmdlet gets a policy-applied object from Azure Active Directory (AD).
+The Get-AzureADPolicyAppliedObject cmdlet gets a policy-applied object from Azure Active Directory (AD).
 
 ## EXAMPLES
+
+### Example 1
+```
+PS C:\> {{ Add example code here }}
+```
+
+{{ Add example description here }}
 
 ## PARAMETERS
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event.
+The acceptable values for this parameter are:
 
 - Continue
 - Ignore

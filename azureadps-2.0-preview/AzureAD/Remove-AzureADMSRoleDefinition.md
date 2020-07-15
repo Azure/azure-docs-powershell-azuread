@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-AzureADMSRoleDefinition
 
 ## SYNOPSIS
-Removes a role definition.
+{{ Fill in the Synopsis }}
 
 ## SYNTAX
 
@@ -17,21 +17,21 @@ Remove-AzureADMSRoleDefinition -Id <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The Remove-AzureADMSRoleDefinition cmdlet removes a role definition from Azure Active Directory (AD).
+{{ Fill in the Description }}
 
 ## EXAMPLES
 
 ### Example 1
 ```powershell
-PS C:\> Remove-AzureADMSRoleDefinition -Id 62e90894-69f5-4237-9190-012177145e10
+PS C:\> {{ Add example code here }}
 ```
 
-This command removes the specified role definition from AzureAD.
+{{ Add example description here }}
 
 ## PARAMETERS
 
 ### -Id
-Spevifies the id for the role definition.
+{{ Fill Id Description }}
 
 ```yaml
 Type: String
@@ -55,13 +55,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Object
-
 ## NOTES
 
 ## RELATED LINKS
-
-[Get-AzureADMSRoleDefinition]()
-
-[New-AzureADMSRoleDefinition]()
-
-[Set-AzureADMSRoleDefinition]()

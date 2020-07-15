@@ -1,9 +1,6 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.Custom.dll-Help.xml
 Module Name: AzureADPreview
-ms.assetid: FFAE1502-E55E-46E2-BB77-632BAF9323B4
-ms.custom: iamfeature=PowerShell
-ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -21,7 +18,7 @@ Set-AzureADUserPassword -ObjectId <String> -Password <SecureString> [-ForceChang
 ```
 
 ## DESCRIPTION
-The **Set-AzureADUserPassword** cmdlet sets the password for a user in Azure Active Directory (AD).
+The Set-AzureADUserPassword cmdlet sets the password for a user in Azure Active Directory (AD).
 
 ## EXAMPLES
 
@@ -50,7 +47,7 @@ Accept wildcard characters: False
 ```
 
 ### -ForceChangePasswordNextLogin
-Forces a user to change their password during their next log in. 
+Forces a user to change their password during their next log in.
 
 ```yaml
 Type: Boolean
@@ -67,7 +64,6 @@ Accept wildcard characters: False
 ### -ObjectId
 Specifies the ID of an object.
 
-
 ```yaml
 Type: String
 Parameter Sets: (All)
@@ -81,8 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -Password
-Specifies the password. 
-
+Specifies the password.
 
 ```yaml
 Type: SecureString

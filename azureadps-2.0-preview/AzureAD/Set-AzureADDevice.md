@@ -1,9 +1,6 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
 Module Name: AzureADPreview
-ms.assetid: 9291E4E2-ECED-49D7-947A-40485128C06F
-ms.custom: iamfeature=PowerShell
-ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -26,7 +23,7 @@ Set-AzureADDevice -ObjectId <String> [-AccountEnabled <Boolean>]
 ```
 
 ## DESCRIPTION
-The **Set-AzureADDevice** cmdlet updates a device in Azure Active Directory (AD).
+The Set-AzureADDevice cmdlet updates a device in Azure Active Directory (AD).
 
 ## EXAMPLES
 
@@ -41,7 +38,6 @@ This command updates the specified device.
 
 ### -AccountEnabled
 Indicates whether the account is enabled.
-
 
 ```yaml
 Type: Boolean
@@ -58,7 +54,6 @@ Accept wildcard characters: False
 ### -AlternativeSecurityIds
 Specifies alternative security IDs.
 
-
 ```yaml
 Type: System.Collections.Generic.List`1[Microsoft.Open.AzureAD.Model.AlternativeSecurityId]
 Parameter Sets: (All)
@@ -72,6 +67,8 @@ Accept wildcard characters: False
 ```
 
 ### -ApproximateLastLogonTimeStamp
+@{Text=}
+
 ```yaml
 Type: DateTime
 Parameter Sets: (All)
@@ -162,7 +159,6 @@ Accept wildcard characters: False
 ### -DevicePhysicalIds
 Specifies the physical ID.
 
-
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
 Parameter Sets: (All)
@@ -192,7 +188,6 @@ Accept wildcard characters: False
 
 ### -DisplayName
 Specifies the display name.
-
 
 ```yaml
 Type: String
@@ -292,8 +287,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADDevice](./Get-AzureADDevice.md)
+[Get-AzureADDevice]()
 
-[New-AzureADDevice](./New-AzureADDevice.md)
+[New-AzureADDevice]()
 
-[Remove-AzureADDevice](./Remove-AzureADDevice.md)
+[Remove-AzureADDevice]()
+

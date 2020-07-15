@@ -1,9 +1,6 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
 Module Name: AzureADPreview
-ms.assetid: 8EAAE8EA-44D5-4B28-A940-28085547083A
-ms.custom: iamfeature=PowerShell
-ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -31,7 +28,7 @@ Get-AzureADServicePrincipal -ObjectId <String> [-All <Boolean>] [<CommonParamete
 ```
 
 ## DESCRIPTION
-The **Get-AzureADServicePrincipal** cmdlet gets a service principal in Azure Active Directory (AD).
+The Get-AzureADServicePrincipal cmdlet gets a service principal in Azure Active Directory (AD).
 
 ## EXAMPLES
 
@@ -51,7 +48,7 @@ ObjectId                             AppId                                Displa
 0ea80ff0-a9ea-43b6-b876-d5989efd8228 00000009-0000-0000-c000-000000000000 Microsoft Power BI Reporting and Analytics</dev:code>
 ```
 
-This command retrieves all service principal from the directory. 
+This command retrieves all service principal from the directory.
 
 ### Example 2: Retrieve a service principal by ID
 ```
@@ -63,15 +60,16 @@ ObjectId                             AppId                                Displa
 00221b6f-4387-4f3f-aa85-34316ad7f956 e5e29b8a-85d9-41ea-b8d1-2162bd004528 Tenant Schema Extension App
 ```
 
-The first command gets the ID of a service principal by using the [Get-AzureADServicePrincipal](./Get-AzureADServicePrincipal.md) cmdlet. 
+The first command gets the ID of a service principal by using the Get-AzureADServicePrincipal (./Get-AzureADServicePrincipal.md)cmdlet. 
 The command stores the ID in the $ServicePrincipalId variable.
 
-The second command gets the service principal identified by $ServicePrincipalId. 
+The second command gets the service principal identified by $ServicePrincipalId.
 
 ## PARAMETERS
 
 ### -All
-If true, return all serviceprincipal objects. If false, return the number of objects specified by the Top parameter
+If true, return all serviceprincipal objects.
+If false, return the number of objects specified by the Top parameter
 
 ```yaml
 Type: Boolean
@@ -86,7 +84,8 @@ Accept wildcard characters: False
 ```
 
 ### -Filter
-Specifies an oData v3.0 filter statement. This parameter controls which objects are returned.
+Specifies an oData v3.0 filter statement.
+This parameter controls which objects are returned.
 
 ```yaml
 Type: String
@@ -117,7 +116,6 @@ Accept wildcard characters: False
 
 ### -SearchString
 Specifies a search string.
-
 
 ```yaml
 Type: String
@@ -157,8 +155,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADServicePrincipal](./Get-AzureADServicePrincipal.md)
+[Get-AzureADServicePrincipal]()
 
-[Remove-AzureADServicePrincipal](./Remove-AzureADServicePrincipal.md)
+[Remove-AzureADServicePrincipal]()
 
-[Set-AzureADServicePrincipal](./Set-AzureADServicePrincipal.md)
+[Set-AzureADServicePrincipal]()
+

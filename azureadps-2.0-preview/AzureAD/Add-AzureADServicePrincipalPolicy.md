@@ -1,9 +1,6 @@
 ---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
 Module Name: AzureADPreview
-ms.assetid: C6B7A2E6-1C8E-4E8E-AF21-24999DF81310
-ms.custom: iamfeature=PowerShell
-ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -21,7 +18,7 @@ Add-AzureADServicePrincipalPolicy -Id <String> -RefObjectId <String> [-Informati
 ```
 
 ## DESCRIPTION
-The **Add-AzureADServicePrincipalPolicy** cmdlet adds a service principal policy.
+The Add-AzureADServicePrincipalPolicy cmdlet adds a service principal policy.
 
 ## EXAMPLES
 
@@ -33,7 +30,8 @@ PS C:\>Add-AzureADServicePrincipalPolicy -Id <object id of service principal> -R
 ## PARAMETERS
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event.
+The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -110,8 +108,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADServicePrincipalPolicy](./Get-AzureADServicePrincipalPolicy.md)
+[Get-AzureADServicePrincipalPolicy]()
 
-[Remove-AzureADServicePrincipalPolicy](./Remove-AzureADServicePrincipalPolicy.md)
-
+[Remove-AzureADServicePrincipalPolicy]()
 

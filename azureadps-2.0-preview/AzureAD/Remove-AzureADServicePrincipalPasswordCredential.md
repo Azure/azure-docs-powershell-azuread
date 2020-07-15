@@ -1,9 +1,6 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.Custom.dll-Help.xml
 Module Name: AzureADPreview
-ms.assetid: 75F2C609-19BB-4E07-8E76-4AF00C028A2A
-ms.custom: iamfeature=PowerShell
-ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -21,14 +18,22 @@ Remove-AzureADServicePrincipalPasswordCredential -ObjectId <String> -KeyId <Stri
 ```
 
 ## DESCRIPTION
-The **Remove-AzureADServicePrincipalPasswordCredential** cmdlet removes a password credential from a service principal in Azure Active Directory (AD).
+The Remove-AzureADServicePrincipalPasswordCredential cmdlet removes a password credential from a service principal in Azure Active Directory (AD).
 
 ## EXAMPLES
+
+### Example 1
+```powershell
+PS C:\> {{ Add example code here }}
+```
+
+{{ Add example description here }}
 
 ## PARAMETERS
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event.
+The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -65,6 +70,8 @@ Accept wildcard characters: False
 ```
 
 ### -KeyId
+@{Text=}
+
 ```yaml
 Type: String
 Parameter Sets: (All)
@@ -103,6 +110,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADServicePrincipalPasswordCredential](./Get-AzureADServicePrincipalPasswordCredential.md)
+[Get-AzureADServicePrincipalPasswordCredential]()
 
-[New-AzureADServicePrincipalPasswordCredential](./New-AzureADServicePrincipalPasswordCredential.md)
+[New-AzureADServicePrincipalPasswordCredential]()
+

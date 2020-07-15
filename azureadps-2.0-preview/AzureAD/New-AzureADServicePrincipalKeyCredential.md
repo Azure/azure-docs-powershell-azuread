@@ -1,9 +1,6 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.Custom.dll-Help.xml
 Module Name: AzureADPreview
-ms.assetid: D6EA0D4D-6643-4F11-A94C-2A71827C2774
-ms.custom: iamfeature=PowerShell
-ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -22,7 +19,7 @@ New-AzureADServicePrincipalKeyCredential -ObjectId <String> [-CustomKeyIdentifie
 ```
 
 ## DESCRIPTION
-The **New-AzureADServicePrincipalKeyCredential** cmdlet creates a key credential for a service principal in Azure Active Directory (AD).
+The New-AzureADServicePrincipalKeyCredential cmdlet creates a key credential for a service principal in Azure Active Directory (AD).
 
 ## EXAMPLES
 
@@ -36,6 +33,8 @@ This command creates a key credential for a service principal.
 ## PARAMETERS
 
 ### -CustomKeyIdentifier
+@{Text=}
+
 ```yaml
 Type: String
 Parameter Sets: (All)
@@ -49,6 +48,8 @@ Accept wildcard characters: False
 ```
 
 ### -EndDate
+@{Text=}
+
 ```yaml
 Type: DateTime
 Parameter Sets: (All)
@@ -62,7 +63,8 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event.
+The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -114,6 +116,8 @@ Accept wildcard characters: False
 ```
 
 ### -StartDate
+@{Text=}
+
 ```yaml
 Type: DateTime
 Parameter Sets: (All)
@@ -127,6 +131,8 @@ Accept wildcard characters: False
 ```
 
 ### -Type
+@{Text=}
+
 ```yaml
 Type: KeyType
 Parameter Sets: (All)
@@ -140,6 +146,8 @@ Accept wildcard characters: False
 ```
 
 ### -Usage
+@{Text=}
+
 ```yaml
 Type: KeyUsage
 Parameter Sets: (All)
@@ -153,6 +161,8 @@ Accept wildcard characters: False
 ```
 
 ### -Value
+@{Text=}
+
 ```yaml
 Type: String
 Parameter Sets: (All)
@@ -176,6 +186,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADServicePrincipalKeyCredential](./Get-AzureADServicePrincipalKeyCredential.md)
+[Get-AzureADServicePrincipalKeyCredential]()
 
-[Remove-AzureADServicePrincipalKeyCredential](./Remove-AzureADServicePrincipalKeyCredential.md)
+[Remove-AzureADServicePrincipalKeyCredential]()
+

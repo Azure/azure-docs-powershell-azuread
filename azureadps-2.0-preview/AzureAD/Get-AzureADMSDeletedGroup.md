@@ -1,8 +1,6 @@
 ---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
 Module Name: AzureADPreview
-ms.custom: iamfeature=PowerShell
-ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -10,7 +8,7 @@ schema: 2.0.0
 # Get-AzureADMSDeletedGroup
 
 ## SYNOPSIS
-This cmdlet is used to retrieve the soft deleted groups in a directory. 
+This cmdlet is used to retrieve the soft deleted groups in a directory.
 
 ## SYNTAX
 
@@ -30,7 +28,11 @@ Get-AzureADMSDeletedGroup -Id <String> [-All <Boolean>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-This cmdlet is used to retrieve the soft deleted groups in a directory. When a group is deleted it is initially soft deleted and can be recovered during the first 30 days after deletion. After 30 days the group is permanently deleted and can no longer be recovered. Note that soft delete is currently only implemented for Unified Groups (a.k.a. Office 365 Groups).
+This cmdlet is used to retrieve the soft deleted groups in a directory.
+When a group is deleted it is initially soft deleted and can be recovered during the first 30 days after deletion.
+After 30 days the group is permanently deleted and can no longer be recovered.
+Note that soft delete is currently only implemented for Unified Groups (a.k.a.
+Office 365 Groups).
 
 ## EXAMPLES
 
@@ -60,7 +62,8 @@ Accept wildcard characters: False
 ```
 
 ### -Filter
-Specifies an oData v3.0 filter statement. This parameter controls which objects are returned.
+Specifies an oData v3.0 filter statement.
+This parameter controls which objects are returned.
 
 ```yaml
 Type: String
@@ -125,13 +128,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### System.String
-System.Nullable`1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
-System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+System.Nullable\`1\[\[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089\]\] System.Nullable\`1\[\[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089\]\]
 
 ## OUTPUTS
 
 ### System.Object
-
 ## NOTES
 
 ## RELATED LINKS

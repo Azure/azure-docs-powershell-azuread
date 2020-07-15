@@ -8,7 +8,7 @@ schema: 2.0.0
 # Set-AzureADApplicationProxyConnectorGroup
 
 ## SYNOPSIS
-The Set-AzureADApplicationProxyConnectorGroup cmdlet allows you to change the name of a given Application Proxy connector group. 
+The Set-AzureADApplicationProxyConnectorGroup cmdlet allows you to change the name of a given Application Proxy connector group.
 
 ## SYNTAX
 
@@ -17,7 +17,7 @@ Set-AzureADApplicationProxyConnectorGroup -Id <String> -Name <Name> [<CommonPara
 ```
 
 ## DESCRIPTION
-The Set-AzureADApplicationProxyConnectorGroup cmdlet allows you to change the name of a given Application Proxy connector group. 
+The Set-AzureADApplicationProxyConnectorGroup cmdlet allows you to change the name of a given Application Proxy connector group.
 
 ## EXAMPLES
 
@@ -31,7 +31,8 @@ Example 1: Rename a Connector Group to "Offsite Application Servers"
 ## PARAMETERS
 
 ### -Id
-The unique identifier of the Connector group that will be renamed. You can find the Id using the Get-AzureADApplicationProxyConnectorGroup command. 
+The unique identifier of the Connector group that will be renamed.
+You can find the Id using the Get-AzureADApplicationProxyConnectorGroup command.
 
 ```yaml
 Type: String
@@ -71,7 +72,6 @@ Microsoft.Open.MSGraph.Model.Name
 ## OUTPUTS
 
 ### System.Object
-
 ## NOTES
 
 ## RELATED LINKS
