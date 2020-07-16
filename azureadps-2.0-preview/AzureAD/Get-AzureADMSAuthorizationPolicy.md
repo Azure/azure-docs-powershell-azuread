@@ -12,7 +12,7 @@ Gets an authorization policy.
 
 ## SYNTAX
 
-### GetQuery (Default)
+### GetQuery
 ```
 Get-AzureADMSAuthorizationPolicy [<CommonParameters>]
 ```
