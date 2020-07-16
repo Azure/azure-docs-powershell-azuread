@@ -40,17 +40,17 @@ Note that you cannot install both the preview version and the GA version on the 
 
 ### About the PowerShell Gallery
 The Azure AD module is distributed using the PowerShell gallery. Installing items from the Gallery requires the latest version of the PowerShellGet module, which is available in Windows 10, in Windows Management Framework (WMF) 5.0, or in the MSI-based installer (for PowerShell 3 and 4).
-- [**Get Windows 10**](http://go.microsoft.com/fwlink/?LinkID=624830&clcid=0x409),
-- [**Get WMF 5.0**](http://go.microsoft.com/fwlink/?LinkId=398175), or
-- [**Get MSI Installer**](http://go.microsoft.com/fwlink/?LinkID=746217&clcid=0x409)
+- [**Get Windows 10**](https://go.microsoft.com/fwlink/?LinkID=624830&clcid=0x409),
+- [**Get WMF 5.0**](https://go.microsoft.com/fwlink/?LinkId=398175), or
+- [**Get MSI Installer**](https://go.microsoft.com/fwlink/?LinkID=746217&clcid=0x409)
 
-With the latest[PowerShellGet](http://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409)module, you can:
+With the latest[PowerShellGet](https://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409)module, you can:
 
-+ Search through items in the Gallery with [**Find-Module**](http://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409) and [**Find-Script**](http://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409)
-+ Save items to your system from the Gallery with [**Save-Module**](http://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409)    and [**Save-Script**](http://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409)
-+ Install items from the Gallery with [**Install-Module**](http://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409) and [**Install-Script**](http://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409)
-+ Upload items to the Gallery with [**Publish-Module**](http://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409) and [**Publish-Script**](http://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409)
-+ Add your own custom repository with [**Register-PSRepository**](http://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409)
++ Search through items in the Gallery with [**Find-Module**](https://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409) and [**Find-Script**](https://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409)
++ Save items to your system from the Gallery with [**Save-Module**](https://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409)    and [**Save-Script**](https://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409)
++ Install items from the Gallery with [**Install-Module**](https://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409) and [**Install-Script**](https://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409)
++ Upload items to the Gallery with [**Publish-Module**](https://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409) and [**Publish-Script**](https://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409)
++ Add your own custom repository with [**Register-PSRepository**](https://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409)
 
 Check out the [Getting Started](https://www.powershellgallery.com/) page for more information on how to use PowerShellGet commands with the Gallery. You can also run *Update-Help -Module PowerShellGet* to install local help for these commands.
 
@@ -66,7 +66,7 @@ Therefore, **PowerShellGet** requires one of the following operating systems:
 - Windows Server 2012 R2
 - Windows Server 2008 R2 SP1
 
-**PowerShellGet** also  requires .NET Framework 4.5 or above. You can install .NET Framework 4.5 or above from [here](https://msdn.microsoft.com/en-us/library/5a4x27ek.aspx).
+**PowerShellGet** also  requires .NET Framework 4.5 or above. You can install .NET Framework 4.5 or above from [here](https://msdn.microsoft.com/library/5a4x27ek.aspx).
 
 ## Updating the Azure AD Module
 
@@ -129,5 +129,5 @@ For more detailed information, you can run any of the following commands:
 * `Get-Help <cmdlet name> -Examples`
 * `Get-Help <cmdlet name> -Full`
 
-For more information about Windows PowerShell, see the [Getting Started with Windows PowerShell](https://msdn.microsoft.com/en-us/powershell/scripting/getting-started/getting-started-with-windows-powershell).
+For more information about Windows PowerShell, see the [Getting Started with Windows PowerShell](https://msdn.microsoft.com/powershell/scripting/getting-started/getting-started-with-windows-powershell).
 
