@@ -34,7 +34,7 @@ If the application is deleted or consent is removed in the other organization’
 
 >Note: If an extension property’s value is set on an object and that property becomes inaccessible in that object’s directory, the property still counts against that object’s limit of 100 extension property values. The only way to remove the property value from consideration once it has been set is to explicitly set it to null. You cannot do this if the extension property is inaccessible.
 
-You can read more about extension properties in [this article.](https://msdn.microsoft.com/en-us/library/azure/ad/graph/howto/azure-ad-graph-api-directory-schema-extensions)
+You can read more about extension properties in [this article.](https://msdn.microsoft.com/library/azure/ad/graph/howto/azure-ad-graph-api-directory-schema-extensions)
 
 ## Examples
 
