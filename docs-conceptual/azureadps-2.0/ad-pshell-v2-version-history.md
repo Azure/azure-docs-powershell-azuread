@@ -60,7 +60,7 @@ The following new cmdlets were added to the AzureADPreview module:
 - `Set-AzureADMSPrivilegedRoleAssignmentRequest`
 - `Set-AzureADMSPrivilegedRoleSetting`
 
-Read more about [Azure AD Privileged Role management](https://docs.microsoft.com/en-us/azure/active-directory/privileged-identity-management/)
+Read more about [Azure AD Privileged Role management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/)
 
 #### Trust Framework Policy Management
 
@@ -70,7 +70,7 @@ Read more about [Azure AD Privileged Role management](https://docs.microsoft.com
 - `Remove-AzureADMSTrustFrameworkPolicy`
 - `Set-AzureADMSTrustFrameworkPolicy`
 
-Read more about the [B2C Trust Framework policies](https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-reference-trustframeworks-defined-ief-custom#understand-trust-framework-policies)
+Read more about the [B2C Trust Framework policies](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-reference-trustframeworks-defined-ief-custom#understand-trust-framework-policies)
 
 #### Directory Auditing
 
@@ -78,7 +78,7 @@ Read more about the [B2C Trust Framework policies](https://docs.microsoft.com/en
 - `Get-AzureADAuditDirectoryLogs`
 - `Get-AzureADAuditSignInLogs`
 
-Read more about [Azure AD directory auditing](https://docs.microsoft.com/en-us/azure/active-directory/reports-monitoring/)
+Read more about [Azure AD directory auditing](https://docs.microsoft.com/azure/active-directory/reports-monitoring/)
 
 ## 2.0.2.25 Public Preview release of the AzureAD  module
 ### Release status
