@@ -20,6 +20,10 @@ The Azure AD PowerShell for Graph module has two versions: a Public preview vers
 The Azure AD PowerShell for Graph preview module can be downloaded from the PowerShell Gallery at the [AzureADPreview](https://www.powershellgallery.com/packages/AzureADPreview) page.
 The Azure AD PowerShell for Graph General Availability module can be downloaded from the PowerShell Gallery at the [AzureAD](https://www.powershellgallery.com/packages/AzureAD) page. 
 
+## Azure Active Directory PowerShell for Graph release version history
+
+The release history for the Azure AD module and the Azure AD Preview module is here: https://docs.microsoft.com/en-us/powershell/azure/active-directory/ad-pshell-v2-version-history
+
 ## Installing the Azure AD Module
 
 The Azure AD Module is supported on the following Windows operating systems with the default version of Microsoft .NET Framework and Windows PowerShell: Windows 8.1, Windows 8, Windows 7, Windows Server 2012 R2, Windows Server 2012, or Windows Server 2008 R2.

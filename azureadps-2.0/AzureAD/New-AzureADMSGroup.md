@@ -13,7 +13,7 @@ Creates an Azure AD group.
 ## SYNTAX
 
 ```
-New-AzureADMSGroup [-Description <String>] -DisplayName <String> -MailEnabled <Boolean> -MailNickname <String>
+New-AzureADMSGroup [-Description <String>] -DisplayName <String> -MailEnabled $false -MailNickname <String>
  -SecurityEnabled <Boolean> [-GroupTypes <System.Collections.Generic.List`1[System.String]>]
  [-Visibility <String>] [<CommonParameters>]
 ```

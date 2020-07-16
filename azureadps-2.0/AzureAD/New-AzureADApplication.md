@@ -165,9 +165,11 @@ Accept wildcard characters: False
 ### -IdentifierUris
 User-defined URI(s) that uniquely identify a Web application within its Azure AD tenant, or within a verified custom domain (see "Domains" tab in the Azure classic portal) if the application is multi-tenant.
 
+
 The first element is populated from the Web application's "APP ID URI" field if updated via the Azure classic portal (or respective Azure AD PowerShell cmdlet parameter).
 Additional URIs can be added via the application manifest; see Understanding the Azure AD Application Manifest for details.
-This collection is also used to populate the Web application's servicePrincipalNames collection.
+This collection is also used to populate the Web application's servicePrincipalNames collection. 
+
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
