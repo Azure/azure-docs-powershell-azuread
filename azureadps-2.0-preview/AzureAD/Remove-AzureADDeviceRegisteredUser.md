@@ -1,6 +1,9 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
 Module Name: AzureADPreview
+ms.assetid: 18A501C7-DFDE-4F4D-A82C-6AA855EB5C33
+ms.custom: iamfeature=PowerShell
+ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -17,7 +20,7 @@ Remove-AzureADDeviceRegisteredUser -ObjectId <String> -UserId <String> [<CommonP
 ```
 
 ## DESCRIPTION
-The Remove-AzureADDeviceRegisteredUser cmdlet removes a registered user from an Azure Active Directory device.
+The **Remove-AzureADDeviceRegisteredUser** cmdlet removes a registered user from an Azure Active Directory device.
 
 ## EXAMPLES
 
@@ -28,9 +31,9 @@ PS C:\> $User = Get-AzureADDeviceRegisteredUser -ObjectId $Device.ObjectId
 PS C:\> Remove-AzureADDeviceRegisteredOwner -ObjectId $Device.ObjectId -OwnerId $Owner.ObjectId
 ```
 
-The first command gets a device by using the Get-AzureADDevice (./Get-AzureADDevice.md)cmdlet, and then stores it in the $Device variable.
+The first command gets a device by using the [Get-AzureADDevice](./Get-AzureADDevice.md) cmdlet, and then stores it in the $Device variable.
 
-The second command gets the registered user for the device in $Device by using the Get-AzureADDeviceRegisteredUser (./Get-AzureADDeviceRegisteredUser.md)cmdlet.
+The second command gets the registered user for the device in $Device by using the [Get-AzureADDeviceRegisteredUser](./Get-AzureADDeviceRegisteredUser.md) cmdlet.
 The command stores it in the $User variable.
 
 The final command removes the user in $User from the device in $Device.
@@ -39,6 +42,7 @@ The final command removes the user in $User from the device in $Device.
 
 ### -ObjectId
 Specifies the ID of an object.
+
 
 ```yaml
 Type: String
@@ -54,6 +58,7 @@ Accept wildcard characters: False
 
 ### -UserId
 Specifies the ID of a user.
+
 
 ```yaml
 Type: String
@@ -78,7 +83,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Add-AzureADDeviceRegisteredUser]()
+[Add-AzureADDeviceRegisteredUser](./Add-AzureADDeviceRegisteredUser.md)
 
-[Get-AzureADDeviceRegisteredUser]()
-
+[Get-AzureADDeviceRegisteredUser](./Get-AzureADDeviceRegisteredUser.md)

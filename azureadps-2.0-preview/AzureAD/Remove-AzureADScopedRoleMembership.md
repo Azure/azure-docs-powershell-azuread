@@ -1,6 +1,9 @@
 ---
 external help file: Microsoft.Open.AzureADBeta.Graph.PowerShell.dll-Help.xml
 Module Name: AzureADPreview
+ms.assetid: 937A2A6D-2DF5-43A5-8D2B-8555420254FB
+ms.custom: iamfeature=PowerShell
+ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -17,16 +20,9 @@ Remove-AzureADScopedRoleMembership -ObjectId <String> -ScopedRoleMembershipId <S
 ```
 
 ## DESCRIPTION
-The Remove-AzureADScopedRoleMembership cmdlet removes a scoped role membership from Azure Active Directory (AD).
+The **Remove-AzureADScopedRoleMembership** cmdlet removes a scoped role membership from Azure Active Directory (AD).
 
 ## EXAMPLES
-
-### Example 1
-```
-Remove-AzureADScopedRoleMembership -ObjectId "1026185e-25df-4522-a380-7ab697a7241c" -ScopedRoleMembershipId "3028185e-25df-4522-a380-7ab697a7241c"
-```
-
-Removes scoped membership.
 
 ## PARAMETERS
 
@@ -71,7 +67,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Add-AzureADScopedRoleMembership]()
+[Add-AzureADScopedRoleMembership](./Add-AzureADScopedRoleMembership.md)
 
-[Get-AzureADScopedRoleMembership]()
-
+[Get-AzureADScopedRoleMembership](./Get-AzureADScopedRoleMembership.md)

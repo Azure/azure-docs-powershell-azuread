@@ -1,6 +1,9 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
 Module Name: AzureADPreview
+ms.assetid: C7AFAE7E-5D54-4941-9958-9EB874D115DD
+ms.custom: iamfeature=PowerShell
+ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -18,7 +21,7 @@ Remove-AzureADApplication -ObjectId <String> [-InformationAction <ActionPreferen
 ```
 
 ## DESCRIPTION
-The Remove-AzureADApplication cmdlet removes the specified application from Azure Active Directory (AD).
+The **Remove-AzureADApplication** cmdlet removes the specified application from Azure Active Directory (AD).
 
 ## EXAMPLES
 
@@ -35,6 +38,7 @@ This command removes the specified application.
 Specifies how this cmdlet responds to an information event.
 
 The acceptable values for this parameter are:
+
 
 - Continue
 - Ignore
@@ -96,9 +100,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADApplication]()
+[Get-AzureADApplication](./Get-AzureADApplication.md)
 
-[New-AzureADApplication]()
+[New-AzureADApplication](./New-AzureADApplication.md)
 
-[Set-AzureADApplication]()
-
+[Set-AzureADApplication](./Set-AzureADApplication.md)

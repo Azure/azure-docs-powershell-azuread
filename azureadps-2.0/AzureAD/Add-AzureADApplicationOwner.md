@@ -1,8 +1,10 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
-Module Name: AzureAD
-online version:
+ms.assetid: 27EA6A45-9227-4E87-AC85-0A6C4B2AE620
+online version: 
 schema: 2.0.0
+ms.reviewer: rodejo
+ms.custom: iamfeature=PowerShell
 ---
 
 # Add-AzureADApplicationOwner
@@ -18,7 +20,7 @@ Add-AzureADApplicationOwner -ObjectId <String> -RefObjectId <String> [-Informati
 ```
 
 ## DESCRIPTION
-The Add-AzureADApplicationOwner cmdlet adds an owner to an Azure Active Directory application.
+The **Add-AzureADApplicationOwner** cmdlet adds an owner to an Azure Active Directory application.
 
 ## EXAMPLES
 
@@ -33,8 +35,8 @@ This command adds an owner to an application.
 
 ### -InformationAction
 Specifies how this cmdlet responds to an information event.
-The acceptable values for this parameter are: * Continue
-
+The acceptable values for this parameter are:
+* Continue
 * Ignore
 * Inquire
 * SilentlyContinue
@@ -55,7 +57,6 @@ Accept wildcard characters: False
 
 ### -InformationVariable
 Specifies a variable in which to store an information event message.
-
 ```yaml
 Type: String
 Parameter Sets: (All)
@@ -74,7 +75,7 @@ Specifies the ID of an application in Azure Active Directory.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: True
 Position: Named
@@ -89,7 +90,7 @@ Specifies the ID of the Active Directory object to assign as owner/manager/membe
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: True
 Position: Named
@@ -99,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -109,7 +110,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADApplicationOwner]()
+[Get-AzureADApplicationOwner](./Get-AzureADApplicationOwner.md)
 
-[Remove-AzureADApplicationOwner]()
+[Remove-AzureADApplicationOwner](./Remove-AzureADApplicationOwner.md)
 

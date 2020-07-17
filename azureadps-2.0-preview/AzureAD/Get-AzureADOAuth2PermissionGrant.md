@@ -1,6 +1,9 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
 Module Name: AzureADPreview
+ms.assetid: 7ED60BB8-1968-412C-ACDF-923DB66F3DE4
+ms.custom: iamfeature=PowerShell
+ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -8,7 +11,7 @@ schema: 2.0.0
 # Get-AzureADOAuth2PermissionGrant
 
 ## SYNOPSIS
-Gets OAuth2PermissionGrant entities.
+Gets **OAuth2PermissionGrant** entities.
 
 ## SYNTAX
 
@@ -17,7 +20,7 @@ Get-AzureADOAuth2PermissionGrant [-All <Boolean>] [-Top <Int32>] [<CommonParamet
 ```
 
 ## DESCRIPTION
-The Get-AzureADOAuth2PermissionGrant cmdlet gets OAuth2PermissionGrant entities in Azure Active Directory (AD).
+The **Get-AzureADOAuth2PermissionGrant** cmdlet gets **OAuth2PermissionGrant** entities in Azure Active Directory (AD).
 
 ## EXAMPLES
 
@@ -46,8 +49,7 @@ This command gets the OAuth2 permission grants.
 ## PARAMETERS
 
 ### -All
-If true, return all OAth2 permission grants.
-If false, return the number of objects specified by the Top parameter
+If true, return all OAth2 permission grants. If false, return the number of objects specified by the Top parameter
 
 ```yaml
 Type: Boolean
@@ -87,5 +89,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Remove-AzureADOAuth2PermissionGrant]()
-
+[Remove-AzureADOAuth2PermissionGrant](./Remove-AzureADOAuth2PermissionGrant.md)

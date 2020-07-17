@@ -1,6 +1,9 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
 Module Name: AzureADPreview
+ms.assetid: F5FFA4CF-0672-4645-8646-70153A01CB9C
+ms.custom: iamfeature=PowerShell
+ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -18,7 +21,7 @@ Add-AzureADGroupMember -ObjectId <String> -RefObjectId <String> [-InformationAct
 ```
 
 ## DESCRIPTION
-The Add-AzureADGroupMember cmdlet adds a member to a group.
+The **Add-AzureADGroupMember** cmdlet adds a member to a group.
 
 ## EXAMPLES
 
@@ -32,8 +35,7 @@ This command adds a member to a group.
 ## PARAMETERS
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -110,7 +112,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADGroupMember]()
+[Get-AzureADGroupMember](./Get-AzureADGroupMember.md)
 
-[Remove-AzureADGroupMember]()
+[Remove-AzureADGroupMember](./Remove-AzureADGroupMember.md)
+
 

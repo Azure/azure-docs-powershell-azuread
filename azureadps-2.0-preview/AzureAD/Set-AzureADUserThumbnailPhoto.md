@@ -1,6 +1,8 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.Custom.dll-Help.xml
 Module Name: AzureADPreview
+ms.custom: iamfeature=PowerShell
+ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -59,6 +61,7 @@ Accept wildcard characters: False
 ### -FileStream
 A filestream that contains the user thumbnail photo
 
+
 ```yaml
 Type: Stream
 Parameter Sets: Stream
@@ -107,11 +110,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### System.String
-System.IO.Stream System.Byte\[\]
+System.IO.Stream
+System.Byte[]
 
 ## OUTPUTS
 
 ### System.Object
+
 ## NOTES
 
 ## RELATED LINKS

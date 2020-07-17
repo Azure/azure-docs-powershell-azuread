@@ -8,8 +8,7 @@ schema: 2.0.0
 # Get-AzureADMSGroupLifecyclePolicy
 
 ## SYNOPSIS
-Retrieves the properties and relationships of a groupLifecyclePolicies object in Azure Active Directory.
-If you specify no parameters, this cmdlet gets all groupLifecyclePolicies.
+Retrieves the properties and relationships of a groupLifecyclePolicies object in Azure Active Directory
 
 ## SYNTAX
 
@@ -24,8 +23,7 @@ Get-AzureADMSGroupLifecyclePolicy -Id <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The Get-AzureADMSGroupLifecyclePolicy command retrieves the properties and relationships of a groupLifecyclePolicies object in Azure Active Directory.
-If you specify no parameters, this cmdlet gets all groupLifecyclePolicies.
+The Get-AzureADMSGroupLifecyclePolicy command retrieves the properties and relationships of a groupLifecyclePolicies object in Azure Active Directory
 
 ## EXAMPLES
 
@@ -59,11 +57,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### System.String
-System.Nullable\`1\[\[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089\]\]
+System.Nullable`1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
 
 ## OUTPUTS
 
 ### System.Object
+
 ## NOTES
 
 ## RELATED LINKS

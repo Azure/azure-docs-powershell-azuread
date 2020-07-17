@@ -8,8 +8,7 @@ schema: 2.0.0
 # Get-CrossCloudVerificationCode
 
 ## SYNOPSIS
-Gets the verification code used to validate the ownership of the domain in another connected cloud.
-Important: Only applies to a verified domain.
+{{ Fill in the Synopsis }}
 
 ## SYNTAX
 
@@ -18,20 +17,21 @@ Get-CrossCloudVerificationCode -Name <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
+{{ Fill in the Description }}
 
 ## EXAMPLES
 
-### Example 1: Get the cross cloud verification code
-```
-PS C:\>Get-CrossCloudVerificationCode -Name Contoso.com
+### Example 1
+```powershell
+PS C:\> {{ Add example code here }}
 ```
 
-This command will return a string that can be used to enable cross cloud federation scenarios.
+{{ Add example description here }}
 
 ## PARAMETERS
 
 ### -Name
-Specifies the name of a domain.
+{{ Fill Name Description }}
 
 ```yaml
 Type: String
@@ -50,8 +50,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
+### System.String
+
 ## OUTPUTS
 
-### Microsoft.Online.Administration.GetCrossCloudVerificationCodeResponse
+### System.Object
 ## NOTES
+
 ## RELATED LINKS

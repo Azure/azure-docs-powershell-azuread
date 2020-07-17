@@ -1,8 +1,10 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
-Module Name: AzureAD
-online version:
+ms.assetid: 5DCD4EAF-A3D8-49CE-8392-A0F3AE61B86C
+online version: 
 schema: 2.0.0
+ms.reviewer: rodejo
+ms.custom: iamfeature=PowerShell
 ---
 
 # Remove-AzureADDevice
@@ -18,7 +20,7 @@ Remove-AzureADDevice -ObjectId <String> [-InformationAction <ActionPreference>] 
 ```
 
 ## DESCRIPTION
-The Remove-AzureADDevice cmdlet removes a device from Azure Active Directory (AD).
+The **Remove-AzureADDevice** cmdlet removes a device from Azure Active Directory (AD).
 
 ## EXAMPLES
 
@@ -32,8 +34,7 @@ This command removes the specified device.
 ## PARAMETERS
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -75,7 +76,7 @@ Specifies the object ID of a device in Azure AD.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: True
 Position: Named
@@ -85,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -95,9 +96,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADDevice]()
+[Get-AzureADDevice](./Get-AzureADDevice.md)
 
-[New-AzureADDevice]()
+[New-AzureADDevice](./New-AzureADDevice.md)
 
-[Set-AzureADDevice]()
-
+[Set-AzureADDevice](./Set-AzureADDevice.md)

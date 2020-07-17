@@ -1,6 +1,8 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
 Module Name: AzureADPreview
+ms.custom: iamfeature=PowerShell
+ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -57,8 +59,7 @@ This example shows how an existing application was deleted and how the G-AzureAD
 ## PARAMETERS
 
 ### -All
-If true, return all deleted applications.
-If false, return the number of objects specified by the Top parameter
+If true, return all deleted applications. If false, return the number of objects specified by the Top parameter
 
 ```yaml
 Type: Boolean
@@ -103,8 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -Top
-The maximum number of applications returned by this cmdlet.
-the default value is 100.
+The maximum number of applications returned by this cmdlet. the default value is 100.
 
 ```yaml
 Type: Int32
@@ -124,11 +124,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### System.String
-System.Nullable\`1\[\[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089\]\] System.Nullable\`1\[\[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089\]\]
+System.Nullable`1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
 
 ## OUTPUTS
 
 ### System.Object
+
 ## NOTES
 
 ## RELATED LINKS

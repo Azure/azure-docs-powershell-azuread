@@ -1,6 +1,9 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
 Module Name: AzureADPreview
+ms.assetid: 186B4EE1-A85A-45C0-B480-ABB4FBEF9AE0
+ms.custom: iamfeature=PowerShell
+ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -18,7 +21,7 @@ Get-AzureADDirectoryRoleTemplate [-InformationAction <ActionPreference>] [-Infor
 ```
 
 ## DESCRIPTION
-The Get-AzureADDirectoryRoleTemplate cmdlet gets directory role templates in Azure Active Directory (AD).
+The **Get-AzureADDirectoryRoleTemplate** cmdlet gets directory role templates in Azure Active Directory (AD).
 
 ## EXAMPLES
 
@@ -68,8 +71,7 @@ This command gets the role templates in Azure AD.
 ## PARAMETERS
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore

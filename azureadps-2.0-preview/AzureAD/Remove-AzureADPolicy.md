@@ -1,6 +1,9 @@
 ---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
 Module Name: AzureADPreview
+ms.assetid: D74563F0-14B9-43BD-8C3C-BC46CD505407
+ms.custom: iamfeature=PowerShell
+ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -18,7 +21,7 @@ Remove-AzureADPolicy -Id <String> [-InformationAction <ActionPreference>] [-Info
 ```
 
 ## DESCRIPTION
-The Remove-AzureADPolicy cmdlet removes a policy from Azure Active Directory (AD).
+The **Remove-AzureADPolicy** cmdlet removes a policy from Azure Active Directory (AD).
 
 ## EXAMPLES
 
@@ -32,8 +35,7 @@ This command removes the specified policy.
 ## PARAMETERS
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -95,9 +97,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADPolicy]()
+[Get-AzureADPolicy](./Get-AzureADPolicy.md)
 
-[New-AzureADPolicy]()
+[New-AzureADPolicy](./New-AzureADPolicy.md)
 
-[Set-AzureADPolicy]()
-
+[Set-AzureADPolicy](./Set-AzureADPolicy.md)

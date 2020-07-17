@@ -1,6 +1,9 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
 Module Name: AzureADPreview
+ms.assetid: 677D76C2-6088-4374-8C6C-3BAC7B625BCE
+ms.custom: iamfeature=PowerShell
+ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -18,7 +21,7 @@ Get-AzureADServicePrincipalCreatedObject -ObjectId <String> [-All <Boolean>] [-T
 ```
 
 ## DESCRIPTION
-The Get-AzureADServicePrincipalCreatedObject cmdlet gets an object created by a service principal in Azure Active Directory (AD).
+The **Get-AzureADServicePrincipalCreatedObject** cmdlet gets an object created by a service principal in Azure Active Directory (AD).
 
 ## EXAMPLES
 
@@ -28,16 +31,15 @@ PS C:\> $ServicePrincipalId = (Get-AzureADServicePrincipal -Top 1).ObjectId
 PS C:\> Get-AzureADServicePrincipalCreatedObject -ObjectId $ServicePrincipalId
 ```
 
-The first command gets the ID of a service principal by using the Get-AzureADServicePrincipal (./Get-AzureADServicePrincipal.md)cmdlet. 
+The first command gets the ID of a service principal by using the [Get-AzureADServicePrincipal](./Get-AzureADServicePrincipal.md) cmdlet. 
 The command stores the ID in the $ServicePrincipalId variable.
 
-The second command gets objects created by the service principal identified by $ServicePrincipalId.
+The second command gets objects created by the service principal identified by $ServicePrincipalId. 
 
 ## PARAMETERS
 
 ### -All
-If true, return all objects created by the service principal.
-If false, return the number of objects specified by the Top parameter
+If true, return all objects created by the service principal. If false, return the number of objects specified by the Top parameter
 
 ```yaml
 Type: Boolean
@@ -92,5 +94,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADServicePrincipal]()
-
+[Get-AzureADServicePrincipal](./Get-AzureADServicePrincipal.md)

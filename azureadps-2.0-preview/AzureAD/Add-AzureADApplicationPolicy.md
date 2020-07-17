@@ -1,6 +1,9 @@
 ---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
 Module Name: AzureADPreview
+ms.assetid: 1E76B8D2-A7DF-49EE-8E22-6BFEE24A8B7F
+ms.custom: iamfeature=PowerShell
+ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -8,7 +11,7 @@ schema: 2.0.0
 # Add-AzureADApplicationPolicy
 
 ## SYNOPSIS
-The Add-AzureADApplicationPolicy cmdlet is not available at this time .
+**The Add-AzureADApplicationPolicy cmdlet is not available at this time**.
 
 ## SYNTAX
 
@@ -18,7 +21,7 @@ Add-AzureADApplicationPolicy -Id <String> -RefObjectId <String> [-InformationAct
 ```
 
 ## DESCRIPTION
-The Add-AzureADApplicationPolicy cmdlet adds an Azure Active Directory application policy.
+The **Add-AzureADApplicationPolicy** cmdlet adds an Azure Active Directory application policy.
 
 ## EXAMPLES
 
@@ -33,8 +36,8 @@ This command adds an application policy.
 
 ### -InformationAction
 Specifies how this cmdlet responds to an information event.
-The acceptable values for this parameter are: * Continue
-
+The acceptable values for this parameter are:
+* Continue
 * Ignore
 * Inquire
 * SilentlyContinue
@@ -55,6 +58,7 @@ Accept wildcard characters: False
 
 ### -InformationVariable
 Specifies a variable in which to store an information event message.
+
 
 ```yaml
 Type: String
@@ -109,7 +113,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADApplicationPolicy]()
+[Get-AzureADApplicationPolicy](./Get-AzureADApplicationPolicy.md)
 
-[Remove-AzureADApplicationPolicy]()
+[Remove-AzureADApplicationPolicy](./Remove-AzureADApplicationPolicy.md)
 

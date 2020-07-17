@@ -1,6 +1,9 @@
 ---
 external help file: Microsoft.Open.AzureADBeta.Graph.PowerShell.dll-Help.xml
 Module Name: AzureADPreview
+ms.assetid: 7B6691DA-D534-4425-B85E-9EC7EA729ED2
+ms.custom: iamfeature=PowerShell
+ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -18,16 +21,9 @@ New-AzureADAdministrativeUnit [-InformationAction <ActionPreference>] [-Informat
 ```
 
 ## DESCRIPTION
-The New-AzureADAdministrativeUnit cmdlet creates an administrative unit in Azure Active Directory (AD).
+The **New-AzureADAdministrativeUnit** cmdlet creates an administrative unit in Azure Active Directory (AD).
 
 ## EXAMPLES
-
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
 
 ## PARAMETERS
 
@@ -62,8 +58,7 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -110,9 +105,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADAdministrativeUnit]()
+[Get-AzureADAdministrativeUnit](./Get-AzureADAdministrativeUnit.md)
 
-[Remove-AzureADAdministrativeUnit]()
+[Remove-AzureADAdministrativeUnit](./Remove-AzureADAdministrativeUnit.md)
 
-[Set-AzureADAdministrativeUnit]()
+[Set-AzureADAdministrativeUnit](./Set-AzureADAdministrativeUnit.md)
+
 

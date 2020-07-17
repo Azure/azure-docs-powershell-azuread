@@ -1,6 +1,9 @@
 ---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
 Module Name: AzureADPreview
+ms.assetid: FF1EF8E7-1372-42D8-966C-19FBE9603F5B
+ms.custom: iamfeature=PowerShell
+ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -27,18 +30,10 @@ The Get-AzureADDirectorySetting cmdlet gets a directory setting from Azure Activ
 
 ## EXAMPLES
 
-### Example 1
-```
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
-
 ## PARAMETERS
 
 ### -All
-If true, return all directory settings.
-If false, return the number of objects specified by the Top parameter
+If true, return all directory settings. If false, return the number of objects specified by the Top parameter
 
 ```yaml
 Type: Boolean
@@ -93,9 +88,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[New-AzureADDirectorySetting]()
-
-[Remove-AzureADDirectorySetting]()
-
-[Set-AzureADDirectorySetting]()
+[New-AzureADDirectorySetting](./New-AzureADDirectorySetting.md)
+[Remove-AzureADDirectorySetting](./Remove-AzureADDirectorySetting.md)
+[Set-AzureADDirectorySetting](./Set-AzureADDirectorySetting.md)
 

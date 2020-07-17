@@ -1,8 +1,10 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
-Module Name: AzureAD
-online version:
+ms.assetid: DD253761-F1BB-4EF1-B0CB-586C0040DECE
+online version: 
 schema: 2.0.0
+ms.reviewer: rodejo
+ms.custom: iamfeature=PowerShell
 ---
 
 # Get-AzureADDirectoryRoleMember
@@ -18,7 +20,7 @@ Get-AzureADDirectoryRoleMember -ObjectId <String> [-InformationAction <ActionPre
 ```
 
 ## DESCRIPTION
-The Get-AzureADDirectoryRoleMember cmdlet gets the members of a directory role in Azure Active Directory (AD).
+The **Get-AzureADDirectoryRoleMember** cmdlet gets the members of a directory role in Azure Active Directory (AD).
 
 ## EXAMPLES
 
@@ -37,11 +39,18 @@ c13dd34a-492b-4561-b171-40fcce2916c5 User
 
 This command gets the members of the specified role.
 
+### Example 2: Get members by role name
+```
+PS C:\>$role = Get-AzureADDirectoryRole | Where-Object {$_.displayName -eq 'Company Administrator'}
+PS C:\>Get-AzureADDirectoryRoleMember -ObjectId $role.ObjectId | Get-AzureADUser
+```
+
+This example fetches the members for the specified role name, and pipes the output to Get-AzureADUser to fetch DisplayName and UPN.
+
 ## PARAMETERS
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -83,7 +92,7 @@ Specifies the ID of a directory role in Azure AD.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: True
 Position: Named
@@ -93,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -103,7 +112,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Add-AzureADDirectoryRoleMember]()
-
-[Remove-AzureADDirectoryRoleMember]()
+[Add-AzureADDirectoryRoleMember](./Add-AzureADDirectoryRoleMember.md)
+[Remove-AzureADDirectoryRoleMember](./Remove-AzureADDirectoryRoleMember.md)
 

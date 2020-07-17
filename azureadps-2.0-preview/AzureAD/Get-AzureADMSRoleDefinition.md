@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-AzureADMSRoleDefinition
 
 ## SYNOPSIS
-{{ Fill in the Synopsis }}
+Gets information about role definitions in Azure AD.
 
 ## SYNTAX
 
@@ -28,21 +28,106 @@ Get-AzureADMSRoleDefinition -Id <String> [-All <Boolean>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-{{ Fill in the Description }}
+The Get-AzureADMSRoleDefinition cmdlet gets information about role definitions in Azure Active Directory (Azure AD).
+To get a role definition, specify the Id parameter. 
+Specify the SearchString or Filter parameter to find particular role definition. 
 
 ## EXAMPLES
 
 ### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
+```
+PS C:\> Get-AzureADMSRoleDefinition
+
+Id              : 690e93e9-da28-4b25-9d0d-2f0b4e6b2ff9
+OdataType       :
+Description     : SampleRoleDefinition1.
+DisplayName     : SampleRoleDef
+IsBuiltIn       : False
+ResourceScopes  : {/}
+IsEnabled       : True
+RolePermissions : {class RolePermission {
+                  AllowedResourceActions:
+                  microsoft.directory/applications/create
+                    Condition:
+                  }
+                  }
+Id              : 1a327991-10cb-4266-877a-998fb4df78ec
+OdataType       :
+Description     :
+DisplayName     : SampleRoleDefinition2.
+IsBuiltIn       : False
+ResourceScopes  : {/}
+IsEnabled       : True
+RolePermissions : {class RolePermission {
+                  AllowedResourceActions:
+                  microsoft.directory/applications/create
+                    Condition:
+                  }
+                  }
+TemplateId      : 332a8659-25b8-4b3e-b545-38b331c48b2b
+Version         :
 ```
 
-{{ Add example description here }}
+### Example 2
+```
+PS C:\> Get-AzureADMSRoleDefinition -Id 1a327991-10cb-4266-877a-998fb4df78ec
+
+Id              : 1a327991-10cb-4266-877a-998fb4df78ec
+OdataType       :
+Description     :
+DisplayName     : SampleRoleDefinition2.
+IsBuiltIn       : False
+ResourceScopes  : {/}
+IsEnabled       : True
+RolePermissions : {class RolePermission {
+                  AllowedResourceActions:
+                  microsoft.directory/applications/create
+                    Condition:
+                  }
+                  }
+TemplateId      : 332a8659-25b8-4b3e-b545-38b331c48b2b
+Version         :
+```
+
+### Example 3
+```
+PS C:\> Get-AzureADMSRoleDefinition -Filter "startswith(displayName, 'Sample')"
+
+Id              : 690e93e9-da28-4b25-9d0d-2f0b4e6b2ff9
+OdataType       :
+Description     : SampleRoleDefinition1.
+DisplayName     : SampleRoleDef
+IsBuiltIn       : False
+ResourceScopes  : {/}
+IsEnabled       : True
+RolePermissions : {class RolePermission {
+                  AllowedResourceActions:
+                  microsoft.directory/applications/create
+                    Condition:
+                  }
+                  }
+Id              : 1a327991-10cb-4266-877a-998fb4df78ec
+OdataType       :
+Description     :
+DisplayName     : SampleRoleDefinition2.
+IsBuiltIn       : False
+ResourceScopes  : {/}
+IsEnabled       : True
+RolePermissions : {class RolePermission {
+                  AllowedResourceActions:
+                  microsoft.directory/applications/create
+                    Condition:
+                  }
+                  }
+TemplateId      : 332a8659-25b8-4b3e-b545-38b331c48b2b
+Version         :
+```
 
 ## PARAMETERS
 
 ### -All
-{{ Fill All Description }}
+If true, return all role definitions.
+If false, return the number of objects specified by the Top parameter
 
 ```yaml
 Type: Boolean
@@ -57,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -Filter
-{{ Fill Filter Description }}
+Specifies an oData v3.0 filter string to match a set of role definitions.
 
 ```yaml
 Type: String
@@ -72,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-{{ Fill Id Description }}
+Specifies the ID of the role definition that this cmdlet gets.
 
 ```yaml
 Type: String
@@ -87,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### -SearchString
-{{ Fill SearchString Description }}
+Specifies a search string. 
 
 ```yaml
 Type: String
@@ -102,7 +187,8 @@ Accept wildcard characters: False
 ```
 
 ### -Top
-{{ Fill Top Description }}
+Specifies the maximum number of records that this cmldet gets.
+The default value is 100.
 
 ```yaml
 Type: Int32
@@ -122,14 +208,19 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### System.String
-
-### System.Nullable`1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
-
-### System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+System.Nullable`1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
 
 ## OUTPUTS
 
 ### System.Object
+
 ## NOTES
 
 ## RELATED LINKS
+
+[New-AzureADMSRoleDefinition]()
+
+[Set-AzureADMSRoleDefinition]()
+
+[Remove-AzureADMSRoleDefinition]()

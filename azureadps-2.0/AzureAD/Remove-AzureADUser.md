@@ -1,8 +1,10 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
-Module Name: AzureAD
-online version:
+ms.assetid: 92AA880E-6C9D-4234-86D3-239CA64E245E
+online version: 
 schema: 2.0.0
+ms.reviewer: rodejo
+ms.custom: iamfeature=PowerShell
 ---
 
 # Remove-AzureADUser
@@ -18,7 +20,7 @@ Remove-AzureADUser -ObjectId <String> [-InformationAction <ActionPreference>] [-
 ```
 
 ## DESCRIPTION
-The Remove-AzureADUser cmdlet removes a user in Azure Active Directory (AD).
+The **Remove-AzureADUser** cmdlet removes a user in Azure Active Directory (AD).
 
 ## EXAMPLES
 
@@ -32,8 +34,7 @@ This command removes the specified user in Azure AD.
 ## PARAMETERS
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -75,7 +76,7 @@ Specifies the ID of a user (as a UPN or ObjectId) in Azure AD.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: True
 Position: Named
@@ -85,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -95,9 +96,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADUser]()
+[Get-AzureADUser](./Get-AzureADUser.md)
 
-[New-AzureADUser]()
+[New-AzureADUser](./New-AzureADUser.md)
 
-[Set-AzureADUser]()
-
+[Set-AzureADUser](./Set-AzureADUser.md)

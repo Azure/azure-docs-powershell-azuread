@@ -1,6 +1,9 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
 Module Name: AzureADPreview
+ms.assetid: DB181096-FF93-4C1E-9E08-884E8162DAB7
+ms.custom: iamfeature=PowerShell
+ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -17,7 +20,7 @@ Get-AzureADContactMembership -ObjectId <String> [-All <Boolean>] [-Top <Int32>] 
 ```
 
 ## DESCRIPTION
-The Get-AzureADContactMembership cmdlet gets a contact membership in Azure Active Directory.
+The **Get-AzureADContactMembership** cmdlet gets a contact membership in Azure Active Directory.
 
 ## EXAMPLES
 
@@ -31,15 +34,14 @@ ObjectId                             ObjectType
 0015df25-808e-4715-9c24-a6929c25c201 Group
 ```
 
-The first command gets a contact by using the Get-AzureADContact (./Get-AzureADContact.md)cmdlet, and then stores it in the $Contact variable.
+The first command gets a contact by using the [Get-AzureADContact](./Get-AzureADContact.md) cmdlet, and then stores it in the $Contact variable.
 
 The second command gets the memberships for $Contact.
 
 ## PARAMETERS
 
 ### -All
-If true, return all memberships.
-If false, return the number of objects specified by the Top parameter
+If true, return all memberships. If false, return the number of objects specified by the Top parameter
 
 ```yaml
 Type: Boolean
@@ -94,5 +96,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADContact]()
-
+[Get-AzureADContact](./Get-AzureADContact.md)

@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-AzureADApplicationProxyApplication
 
 ## SYNOPSIS
-The Get-AzureADApplicationProxyApplication cmdlet retrieves an application configured for Application Proxy in Azure Active Directory.
+
+The Get-AzureADApplicationProxyApplication cmdlet retrieves an application configured for Application Proxy in Azure Active Directory. 
 
 ## SYNTAX
 
@@ -17,14 +18,15 @@ Get-AzureADApplicationProxyApplication -ObjectId <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The Get-AzureADApplicationProxyApplication cmdlet retrieves an application configured for Application Proxy in Azure Active Directory.
+
+The Get-AzureADApplicationProxyApplication cmdlet retrieves an application configured for Application Proxy in Azure Active Directory. 
 
 ## EXAMPLES
 
 ### Example 1
+
 ```
 PS C:\> Get-AzureADApplicationProxyApplication -ObjectId 8d6c6684-6f8c-42e2-8914-32ed2adf9ccf
-
 
 ExternalAuthenticationType               : AadPreAuthentication
 ApplicationServerTimeout                 : Default
@@ -36,22 +38,40 @@ IsOnPremPublishingEnabled                : True
 VerifiedCustomDomainCertificatesMetadata : class OnPremisesPublishingVerifiedCustomDomainCertificatesMetadataObject {
                                              Thumbprint:  [XXXXX]
                                              SubjectName: [XXXXX]
-                                             Issuer:
+                                             Issuer: 
                                              IssueDate: 11/9/2017 5:54:29
                                              ExpiryDate: 11/9/2019 5:54:29
                                            }
-
-VerifiedCustomDomainKeyCredential        :
-VerifiedCustomDomainPasswordCredential   :
+                                           
+VerifiedCustomDomainKeyCredential        : 
+VerifiedCustomDomainPasswordCredential   : 
 SingleSignOnSettings                     :
+```
+
+### Example 2
+
+Use the following script to get the list of Azure AD Application Proxy applications registered in your tenant:
+
+```powershell
+foreach ($a in (Get-AzureADApplication -All:$true))
+{
+    try
+    {
+        $p = Get-AzureADApplicationProxyApplication -ObjectId $a.ObjectId
+        [pscustomobject]@{ObjectID=$a.ObjectId; DisplayName=$a.DisplayName; ExternalUrl=$p.ExternalUrl; InternalUrl=$p.InternalUrl}
+    }
+    catch
+    {
+        continue
+    }
+}
 ```
 
 ## PARAMETERS
 
 ### -ObjectId
-This is the unique application Id of the application.
-This can be found using the Get-AzureADApplication command.
-You can also find this in the Azure Portal by navigating to AAD, Enterprise Applications, All Applications, Select your application, go to the properties tab, and use the ObjectId on that page.
+
+This is the unique application Id of the application. This can be found using the Get-AzureADApplication command. You can also find this in the Azure Portal by navigating to AAD, Enterprise Applications, All Applications, Select your application, go to the properties tab, and use the ObjectId on that page.
 
 ```yaml
 Type: String
@@ -71,9 +91,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### System.String
+
 ## OUTPUTS
 
 ### System.Object
+
 ## NOTES
 
 ## RELATED LINKS

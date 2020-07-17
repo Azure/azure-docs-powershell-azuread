@@ -1,6 +1,9 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
 Module Name: AzureADPreview
+ms.assetid: 18D86E76-31D1-4286-8950-8067FBAF005A
+ms.custom: iamfeature=PowerShell
+ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -17,7 +20,7 @@ Get-AzureADUserMembership -ObjectId <String> [-All <Boolean>] [-Top <Int32>] [<C
 ```
 
 ## DESCRIPTION
-The Get-AzureADUserMembership cmdlet gets user memberships in Azure Active Directory (AD).
+The **Get-AzureADUserMembership** cmdlet gets user memberships in Azure Active Directory (AD).
 
 ## EXAMPLES
 
@@ -46,8 +49,7 @@ This command gets the memberships for the specified user.
 ## PARAMETERS
 
 ### -All
-If true, return all memberships of this user.
-If false, return the number of objects specified by the Top parameter
+If true, return all memberships of this user. If false, return the number of objects specified by the Top parameter
 
 ```yaml
 Type: Boolean
@@ -62,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-Specifies the ID of a user (as a UPN or ObjectId) in Azure AD.
+Specifies the ID of a user (as a UPN or ObjectId) in Azure AD. 
 
 ```yaml
 Type: String

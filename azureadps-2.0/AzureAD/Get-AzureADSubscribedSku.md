@@ -1,8 +1,10 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
-Module Name: AzureAD
-online version:
+ms.assetid: 0E1A27BF-2CD9-43CD-851D-D1F09484CDE3
+online version: 
 schema: 2.0.0
+ms.reviewer: rodejo
+ms.custom: iamfeature=PowerShell
 ---
 
 # Get-AzureADSubscribedSku
@@ -25,7 +27,7 @@ Get-AzureADSubscribedSku -ObjectId <String> [-InformationAction <ActionPreferenc
 ```
 
 ## DESCRIPTION
-The Get-AzureADSubscribedSku cmdlet gets subscribed SKUs to Microsoft services.
+The **Get-AzureADSubscribedSku** cmdlet gets subscribed SKUs to Microsoft services.
 
 ## EXAMPLES
 
@@ -46,8 +48,7 @@ This command gets subscribed SKUs.
 ## PARAMETERS
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -89,7 +90,7 @@ The object ID of the SKU
 ```yaml
 Type: String
 Parameter Sets: GetById
-Aliases:
+Aliases: 
 
 Required: True
 Position: Named
@@ -99,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -108,3 +109,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+

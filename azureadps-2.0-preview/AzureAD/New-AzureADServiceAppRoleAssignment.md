@@ -1,6 +1,9 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
 Module Name: AzureADPreview
+ms.assetid: 35D6752C-1503-412C-84D0-3775EC30CE13
+ms.custom: iamfeature=PowerShell
+ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -18,16 +21,9 @@ New-AzureADServiceAppRoleAssignment -ObjectId <String> [-InformationAction <Acti
 ```
 
 ## DESCRIPTION
-The New-AzureADServiceAppRoleAssignment cmdlet assigns a service principal to an application role in Azure Active Directory (AD).
+The **New-AzureADServiceAppRoleAssignment** cmdlet assigns a service principal to an application role in Azure Active Directory (AD).
 
 ## EXAMPLES
-
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
 
 ## PARAMETERS
 
@@ -47,8 +43,7 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -140,7 +135,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADServiceAppRoleAssignment]()
+[Get-AzureADServiceAppRoleAssignment](./Get-AzureADServiceAppRoleAssignment.md)
 
-[Remove-AzureADServiceAppRoleAssignment]()
-
+[Remove-AzureADServiceAppRoleAssignment](./Remove-AzureADServiceAppRoleAssignment.md)

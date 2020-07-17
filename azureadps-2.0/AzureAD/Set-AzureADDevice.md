@@ -1,8 +1,10 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
-Module Name: AzureAD
-online version:
+ms.assetid: 9291E4E2-ECED-49D7-947A-40485128C06F
+online version: 
 schema: 2.0.0
+ms.reviewer: rodejo
+ms.custom: iamfeature=PowerShell
 ---
 
 # Set-AzureADDevice
@@ -14,16 +16,17 @@ Updates a device.
 
 ```
 Set-AzureADDevice -ObjectId <String> [-AccountEnabled <Boolean>]
- [-AlternativeSecurityIds <System.Collections.Generic.List`1[Microsoft.Open.AzureAD.Model.AlternativeSecurityId]>]
- [-ApproximateLastLogonTimeStamp <DateTime>] [-DeviceId <String>] [-DeviceMetadata <String>]
- [-DeviceObjectVersion <Int32>] [-DeviceOSType <String>] [-DeviceOSVersion <String>]
- [-DevicePhysicalIds <System.Collections.Generic.List`1[System.String]>] [-DeviceTrustType <String>]
- [-DisplayName <String>] [-IsCompliant <Boolean>] [-IsManaged <Boolean>] [-ProfileType <String>]
- [-SystemLabels <System.Collections.Generic.List`1[System.String]>] [<CommonParameters>]
+ [-DeviceOSType <String>] [-DeviceOSVersion <String>]
+ [-DisplayName <String>] [-IsCompliant <Boolean>] [-IsManaged <Boolean>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The Set-AzureADDevice cmdlet updates a device in Azure Active Directory (AD).
+The **Set-AzureADDevice** cmdlet updates a [device](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/device) in Azure Active Directory (AD).
+
+>[!NOTE]
+>DeviceOSType and DeviceOSVersion are configured during registration and should be updated by MDM apps.
+>
+>IsCompliant and IsManaged should only be updated by Intune for any device OS type or by an [approved MDM app](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm) for Windows OS devices. These are used by conditional access policies.
 
 ## EXAMPLES
 
@@ -38,86 +41,10 @@ This command updates the specified device.
 
 ### -AccountEnabled
 Indicates whether the account is enabled.
-
 ```yaml
 Type: Boolean
 Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -AlternativeSecurityIds
-Specifies alternative security IDs.
-
-```yaml
-Type: System.Collections.Generic.List`1[Microsoft.Open.AzureAD.Model.AlternativeSecurityId]
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ApproximateLastLogonTimeStamp
-@{Text=}
-
-```yaml
-Type: DateTime
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -DeviceId
-Specifies the device ID.
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -DeviceMetadata
-The device metadata for this device
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -DeviceObjectVersion
-Specifies the object version of the device.
-
-```yaml
-Type: Int32
-Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -132,52 +59,7 @@ Specifies the operating system.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -DeviceOSVersion
-Specifies the operating sytem version.
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -DevicePhysicalIds
-Specifies the physical ID.
-
-```yaml
-Type: System.Collections.Generic.List`1[System.String]
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -DeviceTrustType
-The device trust type
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -188,11 +70,10 @@ Accept wildcard characters: False
 
 ### -DisplayName
 Specifies the display name.
-
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -207,7 +88,7 @@ Indicates whether the device is compliant.
 ```yaml
 Type: Boolean
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -222,7 +103,7 @@ Indicates whether the device is managed.
 ```yaml
 Type: Boolean
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -237,7 +118,7 @@ Specifies the object ID of a device in Azure AD.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: True
 Position: Named
@@ -246,38 +127,8 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
-### -ProfileType
-{{ Fill ProfileType Description }}
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -SystemLabels
-{{ Fill SystemLabels Description }}
-
-```yaml
-Type: System.Collections.Generic.List`1[System.String]
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -287,9 +138,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADDevice]()
+[Get-AzureADDevice](./Get-AzureADDevice.md)
 
-[New-AzureADDevice]()
-
-[Remove-AzureADDevice]()
-
+[Remove-AzureADDevice](./Remove-AzureADDevice.md)

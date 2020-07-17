@@ -1,6 +1,9 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
 Module Name: AzureADPreview
+ms.assetid: A81910CC-FC86-414D-B79D-B09892732DC1
+ms.custom: iamfeature=PowerShell
+ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -19,7 +22,7 @@ New-AzureADGroup [-InformationAction <ActionPreference>] [-InformationVariable <
 ```
 
 ## DESCRIPTION
-The New-AzureADGroup cmdlet creates a group in Azure Active Directory (AD).
+The **New-AzureADGroup** cmdlet creates a group in Azure Active Directory (AD).
 
 ## EXAMPLES
 
@@ -159,9 +162,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADGroup]()
+[Get-AzureADGroup](./Get-AzureADGroup.md)
 
-[Remove-AzureADGroup]()
+[Remove-AzureADGroup](./Remove-AzureADGroup.md)
 
-[Set-AzureADGroup]()
+[Set-AzureADGroup](./Set-AzureADGroup.md)
+
 

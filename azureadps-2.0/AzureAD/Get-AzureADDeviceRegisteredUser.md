@@ -1,8 +1,10 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
-Module Name: AzureAD
-online version:
+ms.assetid: 944E709A-0F66-485C-86E4-1CB4C998C71D
+online version: 
 schema: 2.0.0
+ms.reviewer: rodejo
+ms.custom: iamfeature=PowerShell
 ---
 
 # Get-AzureADDeviceRegisteredUser
@@ -17,7 +19,7 @@ Get-AzureADDeviceRegisteredUser -ObjectId <String> [-All <Boolean>] [-Top <Int32
 ```
 
 ## DESCRIPTION
-The Get-AzureADDeviceRegisteredUser cmdlet gets a registered user for an Azure Active Directory device.
+The **Get-AzureADDeviceRegisteredUser** cmdlet gets a registered user for an Azure Active Directory device.
 
 ## EXAMPLES
 
@@ -27,19 +29,19 @@ PS C:\> $DevId = (Get-AzureADDevice -Top 1).ObjectId
 PS C:\> Get-AzureADDeviceRegisteredUser -ObjectId $DevId
 ```
 
-The first command gets the object ID of a device by using the Get-AzureADDevice (./Get-AzureADDevice.md)cmdlet, and then stores it in the $DevId variable.
+The first command gets the object ID of a device by using the [Get-AzureADDevice](./Get-AzureADDevice.md) cmdlet, and then stores it in the $DevId variable.  
+
 The second command gets the registered users of the device in $DevId.
 
 ## PARAMETERS
 
 ### -All
-If true, return all registered users.
-If false, return the number of objects specified by the Top parameter
+If true, return all registered users. If false, return the number of objects specified by the Top parameter
 
 ```yaml
 Type: Boolean
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -50,11 +52,10 @@ Accept wildcard characters: False
 
 ### -ObjectId
 Specifies an object ID.
-
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: True
 Position: Named
@@ -64,12 +65,10 @@ Accept wildcard characters: False
 ```
 
 ### -Top
-@{Text=}
-
 ```yaml
 Type: Int32
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -79,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -89,7 +88,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Add-AzureADDeviceRegisteredUser]()
+[Add-AzureADDeviceRegisteredUser](./Add-AzureADDeviceRegisteredUser.md)
 
-[Remove-AzureADDeviceRegisteredUser]()
-
+[Remove-AzureADDeviceRegisteredUser](./Remove-AzureADDeviceRegisteredUser.md)

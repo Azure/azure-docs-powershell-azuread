@@ -1,6 +1,9 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
 Module Name: AzureADPreview
+ms.assetid: 5DCD4EAF-A3D8-49CE-8392-A0F3AE61B86C
+ms.custom: iamfeature=PowerShell
+ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -18,7 +21,7 @@ Remove-AzureADDevice -ObjectId <String> [-InformationAction <ActionPreference>] 
 ```
 
 ## DESCRIPTION
-The Remove-AzureADDevice cmdlet removes a device from Azure Active Directory (AD).
+The **Remove-AzureADDevice** cmdlet removes a device from Azure Active Directory (AD).
 
 ## EXAMPLES
 
@@ -32,8 +35,7 @@ This command removes the specified device.
 ## PARAMETERS
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -95,9 +97,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADDevice]()
+[Get-AzureADDevice](./Get-AzureADDevice.md)
 
-[New-AzureADDevice]()
+[New-AzureADDevice](./New-AzureADDevice.md)
 
-[Set-AzureADDevice]()
-
+[Set-AzureADDevice](./Set-AzureADDevice.md)

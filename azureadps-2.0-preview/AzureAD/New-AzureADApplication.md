@@ -1,6 +1,9 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
 Module Name: AzureADPreview
+ms.assetid: 235D5FBC-E726-4F95-8BBD-454E8180576A
+ms.custom: iamfeature=PowerShell
+ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -35,7 +38,7 @@ New-AzureADApplication [-AddIns <System.Collections.Generic.List`1[Microsoft.Ope
 ```
 
 ## DESCRIPTION
-The New-AzureADApplication cmdlet creates an application in Azure Active Directory (AD).
+The **New-AzureADApplication** cmdlet creates an application in Azure Active Directory (AD).
 
 ## EXAMPLES
 
@@ -53,9 +56,8 @@ This command creates an application in Azure AD.
 ## PARAMETERS
 
 ### -AddIns
-Defines custom behavior that a consuming service can use to call an app in specific contexts.
-For example, applications that can render file streams may set the addIns property for its "FileHandler" functionality.
-This will let services like Office 365 call the application in the context of a document the user is working on.
+Defines custom behavior that a consuming service can use to call an app in specific contexts. For example, applications that can render file streams may set the addIns property for its "FileHandler" functionality. This will let services like Office 365 call the application in the context of a document the user is working on.
+
 
 ```yaml
 Type: System.Collections.Generic.List`1[Microsoft.Open.AzureAD.Model.AddIn]
@@ -70,8 +72,8 @@ Accept wildcard characters: False
 ```
 
 ### -AppRoles
-The collection of application roles that an application may declare.
-These roles can be assigned to users, groups or service principals.
+The collection of application roles that an application may declare. These roles can be assigned to users, groups or service principals.
+
 
 ```yaml
 Type: System.Collections.Generic.List`1[Microsoft.Open.AzureAD.Model.AppRole]
@@ -131,9 +133,8 @@ Accept wildcard characters: False
 ```
 
 ### -GroupMembershipClaims
-A bitmask that configures the "groups" claim issued in a user or OAuth 2.0 access token that the application expects.
-The bitmask values are: 0: None, 1: Security groups and Azure AD roles, 2: Reserved, and 4: Reserved.
-Setting the bitmask to 7 will get all of the security groups, distribution groups, and Azure AD directory roles that the signed-in user is a member of.
+A bitmask that configures the "groups" claim issued in a user or OAuth 2.0 access token that the application expects. The bitmask values are: 0: None, 1: Security groups and Azure AD roles, 2: Reserved, and 4: Reserved. Setting the bitmask to 7 will get all of the security groups, distribution groups, and Azure AD directory roles that the signed-in user is a member of.
+
 
 ```yaml
 Type: String
@@ -163,11 +164,9 @@ Accept wildcard characters: False
 ```
 
 ### -IdentifierUris
-User-defined URI(s) that uniquely identify a Web application within its Azure AD tenant, or within a verified custom domain (see "Domains" tab in the Azure classic portal) if the application is multi-tenant.
+User-defined URI(s) that uniquely identify a Web application within its Azure AD tenant, or within a verified custom domain (see "Domains" tab in the Azure classic portal) if the application is multi-tenant. 
 
-The first element is populated from the Web application's "APP ID URI" field if updated via the Azure classic portal (or respective Azure AD PowerShell cmdlet parameter).
-Additional URIs can be added via the application manifest; see Understanding the Azure AD Application Manifest for details.
-This collection is also used to populate the Web application's servicePrincipalNames collection.
+The first element is populated from the Web application's "APP ID URI" field if updated via the Azure classic portal (or respective Azure AD PowerShell cmdlet parameter). Additional URIs can be added via the application manifest; see Understanding the Azure AD Application Manifest for details. This collection is also used to populate the Web application's servicePrincipalNames collection. 
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
@@ -197,8 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### -KnownClientApplications
-Client applications that are tied to this resource application.
-Consent to any of the known client applications will result in implicit consent to the resource application through a combined consent dialog (showing the OAuth permission scopes required by the client and the resource).
+Client applications that are tied to this resource application. Consent to any of the known client applications will result in implicit consent to the resource application through a combined consent dialog (showing the OAuth permission scopes required by the client and the resource).
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
@@ -215,6 +213,7 @@ Accept wildcard characters: False
 ### -LogoutUrl
 The logout url for this application
 
+
 ```yaml
 Type: String
 Parameter Sets: (All)
@@ -228,8 +227,8 @@ Accept wildcard characters: False
 ```
 
 ### -Oauth2AllowImplicitFlow
-Specifies whether this web application can request OAuth2.0 implicit flow tokens.
-The default is false.
+Specifies whether this web application can request OAuth2.0 implicit flow tokens. The default is false.
+
 
 ```yaml
 Type: Boolean
@@ -244,8 +243,7 @@ Accept wildcard characters: False
 ```
 
 ### -Oauth2AllowUrlPathMatching
-Specifies whether, as part of OAuth 2.0 token requests, Azure AD will allow path matching of the redirect URI against the application's replyUrls.
-The default is false.
+Specifies whether, as part of OAuth 2.0 token requests, Azure AD will allow path matching of the redirect URI against the application's replyUrls. The default is false.
 
 ```yaml
 Type: Boolean
@@ -260,8 +258,7 @@ Accept wildcard characters: False
 ```
 
 ### -Oauth2Permissions
-The collection of OAuth 2.0 permission scopes that the web API (resource) application exposes to client applications.
-These permission scopes may be granted to client applications during consent.
+The collection of OAuth 2.0 permission scopes that the web API (resource) application exposes to client applications. These permission scopes may be granted to client applications during consent.
 
 ```yaml
 Type: System.Collections.Generic.List`1[Microsoft.Open.AzureAD.Model.OAuth2Permission]
@@ -291,8 +288,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicClient
-Specifies whether this application is a public client (such as an installed application running on a mobile device).
-Default is false.
+Specifies whether this application is a public client (such as an installed application running on a mobile device). Default is false.
 
 ```yaml
 Type: Boolean
@@ -307,8 +303,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecordConsentConditions
-Do not use.
-May be removed in future versions
+Do not use. May be removed in future versions 
 
 ```yaml
 Type: String
@@ -325,6 +320,7 @@ Accept wildcard characters: False
 ### -ReplyUrls
 Specifies the URLs that user tokens are sent to for sign in, or the redirect URIs that OAuth 2.0 authorization codes and access tokens are sent to.
 
+
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
 Parameter Sets: (All)
@@ -338,8 +334,7 @@ Accept wildcard characters: False
 ```
 
 ### -RequiredResourceAccess
-Specifies resources that this application requires access to and the set of OAuth permission scopes and application roles that it needs under each of those resources.
-This pre-configuration of required resource access drives the consent experience.
+Specifies resources that this application requires access to and the set of OAuth permission scopes and application roles that it needs under each of those resources. This pre-configuration of required resource access drives the consent experience.
 
 ```yaml
 Type: System.Collections.Generic.List`1[Microsoft.Open.AzureAD.Model.RequiredResourceAccess]
@@ -356,6 +351,7 @@ Accept wildcard characters: False
 ### -SamlMetadataUrl
 The URL to the SAML metadata for the application.
 
+
 ```yaml
 Type: String
 Parameter Sets: (All)
@@ -369,7 +365,7 @@ Accept wildcard characters: False
 ```
 
 ### -Oauth2RequirePostResponse
-Set this to true if an Oauth2 psot response is required
+Set this to true if an Oauth2 psot response is required 
 
 ```yaml
 Type: Boolean
@@ -589,15 +585,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADApplication]()
+[Get-AzureADApplication](./Get-AzureADApplication.md)
 
-[Remove-AzureADApplication]()
+[Remove-AzureADApplication](./Remove-AzureADApplication.md)
 
-[Set-AzureADApplication]()
+[Set-AzureADApplication](./Set-AzureADApplication.md)
 
-[Get-AzureADApplication]()
+[Get-AzureADApplication](./Get-AzureADApplication.md)
 
-[Remove-AzureADApplication]()
+[Remove-AzureADApplication](./Remove-AzureADApplication.md)
 
-[Set-AzureADApplication]()
-
+[Set-AzureADApplication](./Set-AzureADApplication.md)

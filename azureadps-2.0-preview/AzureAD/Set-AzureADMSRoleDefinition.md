@@ -8,7 +8,7 @@ schema: 2.0.0
 # Set-AzureADMSRoleDefinition
 
 ## SYNOPSIS
-{{ Fill in the Synopsis }}
+Update a role definition.
 
 ## SYNTAX
 
@@ -20,21 +20,21 @@ Set-AzureADMSRoleDefinition -Id <String> [-Description <String>] [-DisplayName <
 ```
 
 ## DESCRIPTION
-{{ Fill in the Description }}
+The Set-AzureADMSRoleDefinition cmdlet sets a role definition in Azure Active Directory (AD).
 
 ## EXAMPLES
 
 ### Example 1
 ```powershell
-PS C:\> {{ Add example code here }}
+PS C:\> Set-AzureADMSRoleDefinition -ID c466024e-f789-4409-a897-d220916814b1 -DisplayName 'UpdatedDisplayName'
 ```
 
-{{ Add example description here }}
+This command updates the specified role definition in Azure AD.
 
 ## PARAMETERS
 
 ### -Description
-{{ Fill Description Description }}
+Specifies a description for the role definition.
 
 ```yaml
 Type: String
@@ -49,7 +49,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-{{ Fill DisplayName Description }}
+Specifies a display name for the role definition.
 
 ```yaml
 Type: String
@@ -64,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-{{ Fill Id Description }}
+Specifies Id for the role definition.
 
 ```yaml
 Type: String
@@ -79,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsEnabled
-{{ Fill IsEnabled Description }}
+Specifies whether the role definition is enabled.
 
 ```yaml
 Type: Boolean
@@ -94,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceScopes
-{{ Fill ResourceScopes Description }}
+Specifies the resource scopes for the role definition.
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
@@ -109,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -RolePermissions
-{{ Fill RolePermissions Description }}
+Specifies permissions for the role definition.
 
 ```yaml
 Type: System.Collections.Generic.List`1[Microsoft.Open.MSGraph.Model.RolePermission]
@@ -124,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -TemplateId
-{{ Fill TemplateId Description }}
+Specifies template id for the role definition.
 
 ```yaml
 Type: String
@@ -139,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -Version
-{{ Fill Version Description }}
+Specifies version for the role definition.
 
 ```yaml
 Type: String
@@ -163,6 +163,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Object
+
 ## NOTES
 
 ## RELATED LINKS
+
+[Get-AzureADMSRoleDefinition]()
+
+[New-AzureADMSRoleDefinition]()
+
+[Remove-AzureADMSRoleDefinition]()

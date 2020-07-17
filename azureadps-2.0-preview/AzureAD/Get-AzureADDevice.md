@@ -1,6 +1,9 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
 Module Name: AzureADPreview
+ms.assetid: E5E17FE9-67C1-463F-BC06-B3B6883D99AE
+ms.custom: iamfeature=PowerShell
+ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -28,7 +31,7 @@ Get-AzureADDevice -ObjectId <String> [-All <Boolean>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The Get-AzureADDevice cmdlet gets a device from Azure Active Directory (AD).
+The **Get-AzureADDevice** cmdlet gets a device from Azure Active Directory (AD).
 
 ## EXAMPLES
 
@@ -59,8 +62,7 @@ This command gets all available devices.
 ## PARAMETERS
 
 ### -All
-If true, return all devices.
-If false, return the number of objects specified by the Top parameter
+If true, return all devices. If false, return the number of objects specified by the Top parameter
 
 ```yaml
 Type: Boolean
@@ -75,8 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -Filter
-Specifies the oData v3.0 filter statement.
-This parameter controls which objects are returned.
+Specifies the oData v3.0 filter statement. This parameter controls which objects are returned.
 
 ```yaml
 Type: String
@@ -107,6 +108,7 @@ Accept wildcard characters: False
 
 ### -SearchString
 Specifies a search string.
+
 
 ```yaml
 Type: String
@@ -146,9 +148,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[New-AzureADDevice]()
+[New-AzureADDevice](./New-AzureADDevice.md)
+[Remove-AzureADDevice](./Remove-AzureADDevice.md)
+[Set-AzureADDevice](./Set-AzureADDevice.md)
 
-[Remove-AzureADDevice]()
-
-[Set-AzureADDevice]()
 

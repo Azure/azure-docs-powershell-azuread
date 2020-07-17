@@ -1,8 +1,9 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
-Module Name: AzureAD
-online version:
+online version: 
 schema: 2.0.0
+ms.reviewer: rodejo
+ms.custom: iamfeature=PowerShell
 ---
 
 # Get-AzureADDeletedApplication
@@ -57,13 +58,12 @@ This example shows how an existing application was deleted and how the G-AzureAD
 ## PARAMETERS
 
 ### -All
-If true, return all deleted applications.
-If false, return the number of objects specified by the Top parameter
+If true, return all deleted applications. If false, return the number of objects specified by the Top parameter
 
 ```yaml
 Type: Boolean
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -78,7 +78,7 @@ Retrieve only those deleted applications that satisfy the filter
 ```yaml
 Type: String
 Parameter Sets: GetQuery
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -93,7 +93,7 @@ Retrieve only those applications that satisfy the -SearchString value
 ```yaml
 Type: String
 Parameter Sets: GetVague
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -103,13 +103,12 @@ Accept wildcard characters: False
 ```
 
 ### -Top
-The maximum number of applications returned by this cmdlet.
-the default value is 100.
+The maximum number of applications returned by this cmdlet. the default value is 100.
 
 ```yaml
 Type: Int32
 Parameter Sets: GetQuery
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -119,16 +118,19 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
-System.Nullable\`1\[\[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089\]\] System.Nullable\`1\[\[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089\]\]
+System.Nullable`1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
 
 ## OUTPUTS
 
 ### System.Object
+
 ## NOTES
 
 ## RELATED LINKS
+

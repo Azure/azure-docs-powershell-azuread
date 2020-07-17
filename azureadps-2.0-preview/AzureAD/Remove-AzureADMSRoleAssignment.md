@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-AzureADMSRoleAssignment
 
 ## SYNOPSIS
-{{ Fill in the Synopsis }}
+Removes a role assignment.
 
 ## SYNTAX
 
@@ -17,21 +17,21 @@ Remove-AzureADMSRoleAssignment -Id <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-{{ Fill in the Description }}
+The Remove-AzureADMSRoleAssignment cmdlet removes a role assignment from Azure Active Directory (AD).
 
 ## EXAMPLES
 
 ### Example 1
 ```powershell
-PS C:\> {{ Add example code here }}
+PS C:\> Remove-AzureADMSRoleAssignment -Id Y1vFBcN4i0e3ngdNDocmngJAWGnAbFVAnJQyBBLv1lM-1
 ```
 
-{{ Add example description here }}
+Removes the specified role assignment from AzureAD.
 
 ## PARAMETERS
 
 ### -Id
-{{ Fill Id Description }}
+Specifies the Id for role assignment.
 
 ```yaml
 Type: String
@@ -55,6 +55,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Object
+
 ## NOTES
 
 ## RELATED LINKS
+
+[Get-AzureADMSRoleAssignment]()
+
+[New-AzureADMSRoleAssignment]()

@@ -1,6 +1,8 @@
 ---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
 Module Name: AzureADPreview
+ms.custom: iamfeature=PowerShell
+ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -17,8 +19,7 @@ Remove-AzureADMSDeletedDirectoryObject -Id <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-This cmdlet is used to permanently delete a previously deleted directory object.
-When a directory object is permanently deleted it can no longer be restored.
+This cmdlet is used to permanently delete a previously deleted directory object. When a directory object is permanently deleted it can no longer be restored.
 
 ## EXAMPLES
 
@@ -52,9 +53,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### System.String
+
 ## OUTPUTS
 
 ### System.Object
+
 ## NOTES
 
 ## RELATED LINKS

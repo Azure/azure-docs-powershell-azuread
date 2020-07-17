@@ -1,26 +1,23 @@
 ---
-external help file: Microsoft.Open.MS.GraphV10.PowerShell.Custom.dll-Help.xml
-Module Name: AzureAD
-online version:
+external help file: Microsoft.Open.MS.GraphBeta.PowerShell.Custom.dll-Help.xml
+online version: 
 schema: 2.0.0
 ---
 
 # Set-AzureADApplicationProxyApplicationSingleSignOn
 
 ## SYNOPSIS
-The Set-AzureADApplicationProxyApplicationSingleSignOn cmdlet allows you to set and modify single sign-on (SSO) settings for an application configured for Application Proxy in Azure Active Directory.
-
+The Set-AzureADApplicationProxyApplicationSingleSignOn cmdlet allows you to set and modify single sign-on (SSO) settings for an application configured for Application Proxy in Azure Active Directory. 
 ## SYNTAX
 
 ```
 Set-AzureADApplicationProxyApplicationSingleSignOn -ObjectId <String> -SingleSignOnMode <SingleSignOnModeEnum>
  [-KerberosInternalApplicationServicePrincipalName <String>]
- [-KerberosDelegatedLoginIdentity <KerberosSignOnMappingAttributeTypeEnum>] [<CommonParameters>]
+ [-KerberosDelegatedLoginIdentity <KerberosSignOnMappingAttributeTypeEnum>]
 ```
 
 ## DESCRIPTION
-The Set-AzureADApplicationProxyApplicationSingleSignOn cmdlet allows you to set and modify single sign-on (SSO) settings for an application configured for Application Proxy in Azure Active Directory.
-This is limited to setting No SSO, Kerberos Constrained Delegation (for applications using Integrated Windows Authentication), and Header-based SSO.
+The Set-AzureADApplicationProxyApplicationSingleSignOn cmdlet allows you to set and modify single sign-on (SSO) settings for an application configured for Application Proxy in Azure Active Directory. This is limited to setting No SSO, Kerberos Constrained Delegation (for applications using Integrated Windows Authentication), and Header-based SSO.
 
 ## EXAMPLES
 
@@ -28,25 +25,24 @@ This is limited to setting No SSO, Kerberos Constrained Delegation (for applicat
 ```
 PS C:\> Set-AzureADApplicationProxyApplicationSingleSignOn -ObjectId 4eba5342-8d17-4eac-a1f6-62a0de26311e -SingleSignOnMode OnPremisesKerberos -KerberosInternalApplicationServicePrincipalName "http/www.adventure-works.com" -KerberosDelegatedLoginIdentity OnPremisesUserPrincipalName
 ```
-
-Example 1: Assign an application to use Kerberos Constrained Delegation, and specify required parameters.
-
+Example 1: Assign an application to use Kerberos Constrained Delegation, and specify required parameters. 
+ 
 ### Example 2
 ```
 PS C:\> Set-AzureADApplicationProxyApplicationSingleSignOn -ObjectId 4eba5342-8d17-4eac-a1f6-62a0de26311e -SingleSignOnMode None
-```
 
+```
 Example 2: Remove SSO from an application
 
 ## PARAMETERS
 
 ### -KerberosDelegatedLoginIdentity
-The identity that the Connector can use on behalf of your users to authenticate.
+The identity that the Connector can use on behalf of your users to authenticate. 
 
 ```yaml
 Type: KerberosSignOnMappingAttributeTypeEnum
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 Accepted values: UserPrincipalName, OnPremisesUserPrincipalName, UserPrincipalUsername, OnPremisesUserPrincipalUsername, OnPremisesSAMAccountName
 
 Required: False
@@ -57,13 +53,12 @@ Accept wildcard characters: False
 ```
 
 ### -KerberosInternalApplicationServicePrincipalName
-The internal application SPN of the application server.
-This SPN needs to be in the list of services to which the Connector can present delegated credentials.
+The internal application SPN of the application server. This SPN needs to be in the list of services to which the Connector can present delegated credentials.
 
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -73,14 +68,12 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-The unique application Id of the application that needs different SSO settings.
-This can be found using the Get-AzureADApplication command.
-You can also find this in the Azure Portal by navigating to AAD, Enterprise Applications, All Applications, Select your application, go to the properties tab, and use the ObjectId on that page.
+The unique application Id of the application that needs different SSO settings. This can be found using the Get-AzureADApplication command. You can also find this in the Azure Portal by navigating to AAD, Enterprise Applications, All Applications, Select your application, go to the properties tab, and use the ObjectId on that page. 
 
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: True
 Position: Named
@@ -90,13 +83,12 @@ Accept wildcard characters: False
 ```
 
 ### -SingleSignOnMode
-Choose the type of SSO you would like the application to use.
-Please note that only three SSO settings are supported in powershell, for more options, please use the Azure Portal.
+Choose the type of SSO you would like the application to use. Please note that only three SSO settings are supported in powershell, for more options, please use the Azure Portal.
 
 ```yaml
 Type: SingleSignOnModeEnum
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 Accepted values: None, OnPremisesKerberos, HeaderBased
 
 Required: True
@@ -106,17 +98,18 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
-
 ## INPUTS
 
 ### System.String
-System.Nullable\`1\[\[Microsoft.Open.MSGraph.Model.OnPremisesPublishingSingleSignOnObject+SingleSignOnModeEnum, Microsoft.Open.MS.GraphV10.Client, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null\]\] System.Nullable\`1\[\[Microsoft.Open.MSGraph.Model.OnPremisesPublishingKerberosSignOnSettingsObject+KerberosSignOnMappingAttributeTypeEnum, Microsoft.Open.MS.GraphV10.Client, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null\]\]
+System.Nullable`1[[Microsoft.Open.MSGraph.Model.OnPremisesPublishingSingleSignOnObject+SingleSignOnModeEnum, Microsoft.Open.MS.GraphBeta.Client, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null]]
+System.Nullable`1[[Microsoft.Open.MSGraph.Model.OnPremisesPublishingKerberosSignOnSettingsObject+KerberosSignOnMappingAttributeTypeEnum, Microsoft.Open.MS.GraphBeta.Client, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null]]
+
 
 ## OUTPUTS
 
 ### System.Object
+
 ## NOTES
 
 ## RELATED LINKS
+

@@ -1,6 +1,9 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
 Module Name: AzureADPreview
+ms.assetid: FD2AE118-42DC-4DA4-A705-17972ECCA1E7
+ms.custom: iamfeature=PowerShell
+ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -18,7 +21,7 @@ Remove-AzureADGroupMember -ObjectId <String> -MemberId <String> [-InformationAct
 ```
 
 ## DESCRIPTION
-The Remove-AzureADGroupMember cmdlet removes a member from a group in Azure Active Directory (AD).
+The **Remove-AzureADGroupMember** cmdlet removes a member from a group in Azure Active Directory (AD).
 
 ## EXAMPLES
 
@@ -32,8 +35,7 @@ This command removes the specified member from the specified group.
 ## PARAMETERS
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -110,7 +112,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Add-AzureADGroupMember]()
+[Add-AzureADGroupMember](./Add-AzureADGroupMember.md)
 
-[Get-AzureADGroupMember]()
-
+[Get-AzureADGroupMember](./Get-AzureADGroupMember.md)
