@@ -1,6 +1,9 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
 Module Name: AzureADPreview
+ms.assetid: 3B666786-2620-4E80-9A36-552B942A9F7C
+ms.custom: iamfeature=PowerShell
+ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -18,7 +21,7 @@ New-AzureADUserAppRoleAssignment -ObjectId <String> [-InformationAction <ActionP
 ```
 
 ## DESCRIPTION
-The New-AzureADUserAppRoleAssignment cmdlet assigns a user to an application role in Azure Active Directory (AD).
+The **New-AzureADUserAppRoleAssignment** cmdlet assigns a user to an application role in Azure Active Directory (AD).
 
 ## EXAMPLES
 
@@ -52,22 +55,29 @@ $user = Get-AzureADUser -ObjectId $username
 New-AzureADUserAppRoleAssignment -ObjectId $user.ObjectId -PrincipalId $user.ObjectId -ResourceId $spo.ObjectId -Id $spo.Approles[1].id
 ```
 
-This cmdlet assigns to the specified user the application role of which the Id is specified with $spo.Approles\[1\].id.
-please refer to the description of the -Id parameter for more information on how to retrieve application roles for an application.
+This cmdlet assigns to the specified user the application role of which the Id is specified with $spo.Approles[1].id. please refer to the description of the -Id parameter for more information on how to retrieve application roles for an application.
 
 ## PARAMETERS
 
 ### -Id
-The ID of the app role to assign.
-Provide an empty guid when creating a new app role assignement for an application that does not have any roles, or the Id of the role to assign to the user.
+The ID of the app role to assign. Provide an empty guid when creating a new app role assignement for an application that does not have any roles, or the Id of the role to assign to the user.
 
 You can retrieve the application's roles by examining the application object's AppRoles property:
 
-Get-AzureadApplication -SearchString "Your Application display name" | select Approles | Fl
+	Get-AzureadApplication -SearchString "Your Application display name" | select Approles | Fl 
 
 This cmdlet returns the list of roles that are defined in an application:
 
-AppRoles : {class AppRole {              AllowedMemberTypes: System.Collections.Generic.List1\[System.String\]              Description: \<description for this role\>              DisplayName: \<display name for this role\>              Id: 97e244a2-6ccd-4312-9de6-ecb21884c9f7              IsEnabled: True              Value: \<Value that will be transmitted as a claim in a token for this role\>            }            }
+	AppRoles : {class AppRole {
+             AllowedMemberTypes: System.Collections.Generic.List1[System.String]
+             Description: <description for this role>
+             DisplayName: <display name for this role>
+             Id: 97e244a2-6ccd-4312-9de6-ecb21884c9f7
+             IsEnabled: True
+             Value: <Value that will be transmitted as a claim in a token for this role>
+           }
+           }
+
 
 ```yaml
 Type: String
@@ -82,8 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -135,8 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrincipalId
-The object ID of the principal to which the new app role is assigned.
-When assigning a new role to a user provide the object ID of the user.
+The object ID of the principal to which the new app role is assigned. When assigning a new role to a user provide the object ID of the user.
 
 ```yaml
 Type: String
@@ -176,7 +184,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADUserAppRoleAssignment]()
+[Get-AzureADUserAppRoleAssignment](./Get-AzureADUserAppRoleAssignment.md)
 
-[Remove-AzureADUserAppRoleAssignment]()
-
+[Remove-AzureADUserAppRoleAssignment](./Remove-AzureADUserAppRoleAssignment.md)

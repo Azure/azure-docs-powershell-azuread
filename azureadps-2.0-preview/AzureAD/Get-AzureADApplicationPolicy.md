@@ -1,6 +1,9 @@
 ---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
 Module Name: AzureADPreview
+ms.assetid: 20303C1F-EB5F-4326-B522-2241D736ED4E
+ms.custom: iamfeature=PowerShell
+ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -18,7 +21,7 @@ Get-AzureADApplicationPolicy -Id <String> [-InformationAction <ActionPreference>
 ```
 
 ## DESCRIPTION
-The Get-AzureADApplicationPolicy cmdlet gets an Azure Active Directory application policy.
+The **Get-AzureADApplicationPolicy** cmdlet gets an Azure Active Directory application policy.
 
 ## EXAMPLES
 
@@ -96,7 +99,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Add-AzureADApplicationPolicy]()
+[Add-AzureADApplicationPolicy](./Add-AzureADApplicationPolicy.md)
+[Remove-AzureADApplicationPolicy](./Remove-AzureADApplicationPolicy.md)
 
-[Remove-AzureADApplicationPolicy]()
 

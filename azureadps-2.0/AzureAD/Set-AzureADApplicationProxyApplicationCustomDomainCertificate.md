@@ -1,28 +1,25 @@
 ---
-external help file: Microsoft.Open.MS.GraphV10.PowerShell.Custom.dll-Help.xml
-Module Name: AzureAD
-online version:
+external help file: Microsoft.Open.MS.GraphBeta.PowerShell.Custom.dll-Help.xml
+online version: 
 schema: 2.0.0
 ---
 
 # Set-AzureADApplicationProxyApplicationCustomDomainCertificate
 
 ## SYNOPSIS
-The Set-AzureADApplicationProxyApplicationCustomDomainCertificate cmdlet assigns a certificate to an application configured for Application Proxy in Azure Active Directory (AD).
-This will upload the certificate and allow the application to use Custom Domains.
+The Set-AzureADApplicationProxyApplicationCustomDomainCertificate cmdlet assigns a certificate to an application configured for Application Proxy in Azure Active Directory (AD). This will upload the certificate and allow the application to use Custom Domains. 
 
 ## SYNTAX
 
 ```
 Set-AzureADApplicationProxyApplicationCustomDomainCertificate -ObjectId <String> -PfxFilePath <String>
- -Password <SecureString> [<CommonParameters>]
+ -Password <SecureString>
 ```
 
 ## DESCRIPTION
 
-The Set-AzureADApplicationProxyApplicationCustomDomainCertificate cmdlet assigns a certificate to an application configured for Application Proxy in Azure Active Directory (AD).
-This will upload the certificate and allow the application to use Custom Domains.
-If you have one certificate that includes many of your applications, you only need to upload it with one application and it will also be assigned to the other relevant applications.
+The Set-AzureADApplicationProxyApplicationCustomDomainCertificate cmdlet assigns a certificate to an application configured for Application Proxy in Azure Active Directory (AD). This will upload the certificate and allow the application to use Custom Domains. If you have one certificate that includes many of your applications, you only need to upload it with one application and it will also be assigned to the other relevant applications.
+=======
 
 
 ## EXAMPLES
@@ -30,7 +27,9 @@ If you have one certificate that includes many of your applications, you only ne
 ### Example 1
 ```
 PS C:\> $securePassword = Read-Host -AsSecureString
-PS C:\> Set-AzureADApplicationProxyApplicationCustomDomainCertificate -ObjectId 4eba5342-8d17-4eac-a1f6-62a0de26311e -PfxFilePath "C:\Temp\Certificates\cert.pfx" -Password $securePassword
+PS C:\> Set-AzureADApplicationProxyApplicationCustomDomainCertificate -ObjectId 4eba5342-8d17-4eac-a1f6-62a0de26311e -PfxFilePath "C:\Temp\Certificates\cert.pfx" -Password $securePassword 
+
+
 ```
 
 Example 1: Assign a certificate to an application configured for Application Proxy
@@ -38,14 +37,12 @@ Example 1: Assign a certificate to an application configured for Application Pro
 ## PARAMETERS
 
 ### -ObjectId
-The unique application Id for the application the certificate should be uploaded to.
-This can be found using the Get-AzureADApplication command.
-You can also find this in the Azure Portal by navigating to AAD, Enterprise Applications, All Applications, Select your application, go to the properties tab, and use the ObjectId on that page.
+The unique application Id for the application the certificate should be uploaded to. This can be found using the Get-AzureADApplication command. You can also find this in the Azure Portal by navigating to AAD, Enterprise Applications, All Applications, Select your application, go to the properties tab, and use the ObjectId on that page. 
 
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: True
 Position: Named
@@ -60,7 +57,7 @@ A secure string containing the password for the pfx certificate
 ```yaml
 Type: SecureString
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: True
 Position: Named
@@ -75,7 +72,7 @@ The file path for the pfx certificate for the custom domain
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: True
 Position: Named
@@ -84,17 +81,17 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
-
 ## INPUTS
 
 ### System.String
 System.Security.SecureString
 
+
 ## OUTPUTS
 
 ### System.Object
+
 ## NOTES
 
 ## RELATED LINKS
+

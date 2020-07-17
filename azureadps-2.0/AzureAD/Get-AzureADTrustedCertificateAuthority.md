@@ -1,8 +1,10 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.Custom.dll-Help.xml
-Module Name: AzureAD
-online version:
+ms.assetid: 48304207-E7EC-4436-A15C-C9F428E8E98C
+online version: 
 schema: 2.0.0
+ms.reviewer: rodejo
+ms.custom: iamfeature=PowerShell
 ---
 
 # Get-AzureADTrustedCertificateAuthority
@@ -18,7 +20,7 @@ Get-AzureADTrustedCertificateAuthority [-TrustedIssuer <String>] [-TrustedIssuer
 ```
 
 ## DESCRIPTION
-The Get-AzureADTrustedCertificateAuthority cmdlet gets the trusted certificate authority in Azure Active Directory (AD).
+The **Get-AzureADTrustedCertificateAuthority** cmdlet gets the trusted certificate authority in Azure Active Directory (AD).
 
 ## EXAMPLES
 
@@ -29,25 +31,10 @@ PS C:\> Get-AzureADTrustedCertificateAuthority
 
 This command retrieve the trusted certificate authorities that are defined in your directory.
 
-### Example 2: Retrieve the trusted certificate authorities that are defined in your directory based on TrustedIssuer
-```
-PS C:\> Get-AzureADTrustedCertificateAuthority -TrustedIssuer "CN=example.azure.com, O=MSIT. Ltd, L=Redmond, C=US"
-```
-
-This command retrieve the trusted certificate authorities that are defined in your directory based on TrustedIssuer.
-
-### Example 3: Retrieve the trusted certificate authorities that are defined in your directory based on TrustedIssuerSki
-```
-PS C:\> Get-AzureADTrustedCertificateAuthority -TrustedIssuerSki 4BA2D7AC2A5DF47C70E19E61EDFB4E62B3BF67FD
-```
-
-This command retrieve the trusted certificate authorities that are defined in your directory based on TrustedIssuerSki.
-
 ## PARAMETERS
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -89,7 +76,7 @@ Specifies a trusted issuer.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -99,12 +86,10 @@ Accept wildcard characters: False
 ```
 
 ### -TrustedIssuerSki
-@{Text=}
-
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -114,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -124,11 +109,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[New-AzureADTrustedCertificateAuthority]()
+[New-AzureADTrustedCertificateAuthority](./New-AzureADTrustedCertificateAuthority.md)
 
-[Remove-AzureADTrustedCertificateAuthority]()
+[Remove-AzureADTrustedCertificateAuthority](./Remove-AzureADTrustedCertificateAuthority.md)
 
-[Set-AzureADTrustedCertificateAuthority]()
+[Set-AzureADTrustedCertificateAuthority](./Set-AzureADTrustedCertificateAuthority.md)
 
-[Online help and examples for working with certificate authority](https://azure.microsoft.com/en-us/documentation/articles/active-directory-certificate-based-authentication-ios/)
-
+[Online help and examples for working with certificate authority](https://azure.microsoft.com/en-us/documentation/articles/active-directory-certificate-based-authentication-ios/) 

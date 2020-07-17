@@ -1,6 +1,9 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
 Module Name: AzureADPreview
+ms.assetid: 0DF2C468-53D8-4BC5-AFC8-7E8EDF38C347
+ms.custom: iamfeature=PowerShell
+ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -23,7 +26,7 @@ New-AzureADDevice -AccountEnabled <Boolean>
 ```
 
 ## DESCRIPTION
-The New-AzureADDevice cmdlet creates a device in Azure Active Directory (AD).
+The **New-AzureADDevice** cmdlet creates a device in Azure Active Directory (AD).
 
 ## EXAMPLES
 
@@ -56,8 +59,6 @@ Accept wildcard characters: False
 ```
 
 ### -AlternativeSecurityIds
-@{Text=}
-
 ```yaml
 Type: System.Collections.Generic.List`1[Microsoft.Open.AzureAD.Model.AlternativeSecurityId]
 Parameter Sets: (All)
@@ -71,8 +72,6 @@ Accept wildcard characters: False
 ```
 
 ### -ApproximateLastLogonTimeStamp
-@{Text=}
-
 ```yaml
 Type: DateTime
 Parameter Sets: (All)
@@ -161,8 +160,6 @@ Accept wildcard characters: False
 ```
 
 ### -DevicePhysicalIds
-@{Text=}
-
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
 Parameter Sets: (All)
@@ -276,9 +273,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADDevice]()
+[Get-AzureADDevice](./Get-AzureADDevice.md)
 
-[Remove-AzureADDevice]()
+[Remove-AzureADDevice](./Remove-AzureADDevice.md)
 
-[Set-AzureADDevice]()
+[Set-AzureADDevice](./Set-AzureADDevice.md)
+
 

@@ -1,6 +1,9 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
 Module Name: AzureADPreview
+ms.assetid: E008C14D-91DE-4CD4-BB76-6D037BB747DB
+ms.custom: iamfeature=PowerShell
+ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -28,7 +31,7 @@ Get-AzureADGroup -ObjectId <String> [-All <Boolean>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The Get-AzureADGroup cmdlet gets a group in Azure Active Directory (AD).
+The **Get-AzureADGroup** cmdlet gets a group in Azure Active Directory (AD).
 
 ## EXAMPLES
 
@@ -73,8 +76,7 @@ This command gets the groups that include the text All in their display names.
 ## PARAMETERS
 
 ### -All
-If true, return all groups.
-If false, return the number of objects specified by the Top parameter
+If true, return all groups. If false, return the number of objects specified by the Top parameter
 
 ```yaml
 Type: Boolean
@@ -89,8 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -Filter
-Specifies an oData v3.0 filter statement.
-This parameter controls which objects are returned.
+Specifies an oData v3.0 filter statement. This parameter controls which objects are returned.
 
 ```yaml
 Type: String
@@ -121,6 +122,7 @@ Accept wildcard characters: False
 
 ### -SearchString
 Specifies a search string.
+
 
 ```yaml
 Type: String
@@ -160,9 +162,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[New-AzureADGroup]()
+[New-AzureADGroup](./New-AzureADGroup.md)
+[Remove-AzureADGroup](./Remove-AzureADGroup.md)
+[Set-AzureADGroup](./Set-AzureADGroup.md)
 
-[Remove-AzureADGroup]()
-
-[Set-AzureADGroup]()
 

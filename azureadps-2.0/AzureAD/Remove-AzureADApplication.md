@@ -1,8 +1,10 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
-Module Name: AzureAD
-online version:
+ms.assetid: C7AFAE7E-5D54-4941-9958-9EB874D115DD
+online version: 
 schema: 2.0.0
+ms.reviewer: rodejo
+ms.custom: iamfeature=PowerShell
 ---
 
 # Remove-AzureADApplication
@@ -18,7 +20,7 @@ Remove-AzureADApplication -ObjectId <String> [-InformationAction <ActionPreferen
 ```
 
 ## DESCRIPTION
-The Remove-AzureADApplication cmdlet removes the specified application from Azure Active Directory (AD).
+The **Remove-AzureADApplication** cmdlet removes the specified application from Azure Active Directory (AD).
 
 ## EXAMPLES
 
@@ -35,6 +37,7 @@ This command removes the specified application.
 Specifies how this cmdlet responds to an information event.
 
 The acceptable values for this parameter are:
+
 
 - Continue
 - Ignore
@@ -76,7 +79,7 @@ Specifies the ID of an application in Azure AD.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: True
 Position: Named
@@ -86,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -96,9 +99,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADApplication]()
+[Get-AzureADApplication](./Get-AzureADApplication.md)
 
-[New-AzureADApplication]()
+[New-AzureADApplication](./New-AzureADApplication.md)
 
-[Set-AzureADApplication]()
-
+[Set-AzureADApplication](./Set-AzureADApplication.md)

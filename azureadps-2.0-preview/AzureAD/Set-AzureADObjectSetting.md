@@ -1,6 +1,9 @@
 ---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
 Module Name: AzureADPreview
+ms.assetid: 505A49A7-2C60-4D87-BE2C-AE5BF7B5FD86
+ms.custom: iamfeature=PowerShell
+ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -19,21 +22,14 @@ Set-AzureADObjectSetting -TargetType <String> -TargetObjectId <String> -Id <Stri
 ```
 
 ## DESCRIPTION
-The Set-AzureADObjectSetting cmdlet updates the settings for an object in Azure Active Directory (AD).
+The **Set-AzureADObjectSetting** cmdlet updates the settings for an object in Azure Active Directory (AD).
 
 ## EXAMPLES
-
-### Example 1
-```
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
 
 ## PARAMETERS
 
 ### -DirectorySetting
-Specifies a DirectorySetting object.
+Specifies a **DirectorySetting** object. 
 
 ```yaml
 Type: DirectorySetting
@@ -48,8 +44,7 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -141,9 +136,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADObjectSetting]()
+[Get-AzureADObjectSetting](./Get-AzureADObjectSetting.md)
 
-[New-AzureADObjectSetting]()
+[New-AzureADObjectSetting](./New-AzureADObjectSetting.md)
 
-[Remove-AzureADObjectSetting]()
-
+[Remove-AzureADObjectSetting](./Remove-AzureADObjectSetting.md)

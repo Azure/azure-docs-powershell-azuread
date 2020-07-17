@@ -1,6 +1,9 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.Custom.dll-Help.xml
 Module Name: AzureADPreview
+ms.assetid: 9E9EE157-A923-4643-8DA5-E1A27EFB61E0
+ms.custom: iamfeature=PowerShell
+ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -18,7 +21,7 @@ Get-AzureADServicePrincipalKeyCredential -ObjectId <String> [-InformationAction 
 ```
 
 ## DESCRIPTION
-The Get-AzureADServicePrincipalKeyCredential cmdlet gets the key credentials for a service principal in Azure Active Directory (AD).
+The **Get-AzureADServicePrincipalKeyCredential** cmdlet gets the key credentials for a service principal in Azure Active Directory (AD).
 
 ## EXAMPLES
 
@@ -28,7 +31,7 @@ PS C:\> $ServicePrincipalId = (Get-AzureADServicePrincipal -Top 1).ObjectId
 PS C:\> Get-AzureADServicePrincipalKeyCredential -ObjectId $ServicePrincipalId
 ```
 
-The first command gets the ID of a service principal by using the Get-AzureADServicePrincipal (./Get-AzureADServicePrincipal.md)cmdlet. 
+The first command gets the ID of a service principal by using the [Get-AzureADServicePrincipal](./Get-AzureADServicePrincipal.md) cmdlet. 
 The command stores the ID in the $ServicePrincipalId variable.
 
 The second command gets the key credential for the service principal identified by $ServicePrincipalId.
@@ -36,8 +39,7 @@ The second command gets the key credential for the service principal identified 
 ## PARAMETERS
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -99,9 +101,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADServicePrincipal]()
+[Get-AzureADServicePrincipal](./Get-AzureADServicePrincipal.md)
 
-[New-AzureADServicePrincipalKeyCredential]()
+[New-AzureADServicePrincipalKeyCredential](./New-AzureADServicePrincipalKeyCredential.md)
 
-[Remove-AzureADServicePrincipalKeyCredential]()
-
+[Remove-AzureADServicePrincipalKeyCredential](./Remove-AzureADServicePrincipalKeyCredential.md)

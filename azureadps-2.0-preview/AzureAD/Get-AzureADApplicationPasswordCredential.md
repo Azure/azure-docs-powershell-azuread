@@ -1,6 +1,9 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.Custom.dll-Help.xml
 Module Name: AzureADPreview
+ms.assetid: 5F3B0266-B5CD-4CAB-B22D-BDEA4C78E3B1
+ms.custom: iamfeature=PowerShell
+ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -18,7 +21,7 @@ Get-AzureADApplicationPasswordCredential -ObjectId <String> [-InformationAction 
 ```
 
 ## DESCRIPTION
-The Get-AzureADApplicationPasswordCredential cmdlet gets the password credentials for an Azure Active Directory application.
+The **Get-AzureADApplicationPasswordCredential** cmdlet gets the password credentials for an Azure Active Directory application.
 
 ## EXAMPLES
 

@@ -1,6 +1,9 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
 Module Name: AzureADPreview
+ms.assetid: 8846536B-3E57-4307-81C7-CCFFB2C6E5EC
+ms.custom: iamfeature=PowerShell
+ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -19,7 +22,7 @@ Set-AzureADGroup -ObjectId <String> [-InformationAction <ActionPreference>] [-In
 ```
 
 ## DESCRIPTION
-The Set-AzureADGroup cmdlet updates a group in Azure Active Directory (AD).
+The **Set-AzureADGroup** cmdlet updates a group in Azure Active Directory (AD).
 
 ## EXAMPLES
 
@@ -34,6 +37,7 @@ This command updates the specfied group in Azure AD.
 
 ### -Description
 Specfies a description.
+
 
 ```yaml
 Type: String
@@ -63,8 +67,7 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -171,9 +174,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADGroup]()
+[Get-AzureADGroup](./Get-AzureADGroup.md)
 
-[New-AzureADGroup]()
+[New-AzureADGroup](./New-AzureADGroup.md)
 
-[Remove-AzureADGroup]()
-
+[Remove-AzureADGroup](./Remove-AzureADGroup.md)

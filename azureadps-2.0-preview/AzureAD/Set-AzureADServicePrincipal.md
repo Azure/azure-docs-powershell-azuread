@@ -1,6 +1,9 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
 Module Name: AzureADPreview
+ms.assetid: 540A8E20-80C9-48D8-BE49-E1DA84FD3BF7
+ms.custom: iamfeature=PowerShell
+ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -26,7 +29,7 @@ Set-AzureADServicePrincipal -ObjectId <String> [-AccountEnabled <String>]
 ```
 
 ## DESCRIPTION
-The Set-AzureADServicePrincipal cmdlet updates a service principal in Azure Active Directory (Azure AD).
+The **Set-AzureADServicePrincipal** cmdlet updates a service principal in Azure Active Directory (Azure AD).
 
 ## EXAMPLES
 
@@ -222,6 +225,7 @@ Accept wildcard characters: False
 ### -ReplyUrls
 The URLs that user tokens are sent to for sign in with the associated application, or the redirect URIs that OAuth 2.0 authorization codes and access tokens are sent to for the associated application.
 
+
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
 Parameter Sets: (All)
@@ -235,8 +239,6 @@ Accept wildcard characters: False
 ```
 
 ### -SamlMetadataUrl
-@{Text=}
-
 ```yaml
 Type: String
 Parameter Sets: (All)
@@ -281,7 +283,7 @@ Accept wildcard characters: False
 
 ### -Tags
 Specifies an array of tags.
-Note that if you intend for this service principal to show up in the All Applications list in the admin portal, you need to set this value to {WindowsAzureActiveDirectoryIntegratedApp}
+Note that if you intend for this service principal to show up in the All Applications list in the admin portal, you need to set this value to {WindowsAzureActiveDirectoryIntegratedApp} 
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
@@ -306,9 +308,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADServicePrincipal]()
+[Get-AzureADServicePrincipal](./Get-AzureADServicePrincipal.md)
 
-[New-AzureADServicePrincipal]()
+[New-AzureADServicePrincipal](./New-AzureADServicePrincipal.md)
 
-[Remove-AzureADServicePrincipal]()
-
+[Remove-AzureADServicePrincipal](./Remove-AzureADServicePrincipal.md)

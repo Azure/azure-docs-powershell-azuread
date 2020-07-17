@@ -1,8 +1,10 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
-Module Name: AzureAD
-online version:
+ms.assetid: B6BE96C3-7409-4AE2-AF70-823BEF4BFC62
+online version: 
 schema: 2.0.0
+ms.reviewer: rodejo
+ms.custom: iamfeature=PowerShell
 ---
 
 # Remove-AzureADDeviceRegisteredOwner
@@ -17,7 +19,7 @@ Remove-AzureADDeviceRegisteredOwner -ObjectId <String> -OwnerId <String> [<Commo
 ```
 
 ## DESCRIPTION
-The Remove-AzureADDeviceRegisteredOwner cmdlet removes the registered owner of a device in Azure Active Directory (AD).
+The **Remove-AzureADDeviceRegisteredOwner** cmdlet removes the registered owner of a device in Azure Active Directory (AD).
 
 ## EXAMPLES
 
@@ -28,9 +30,9 @@ PS C:\> $Owner = Get-AzureADDeviceRegisteredOwner -ObjectId $Device.ObjectId
 PS C:\> Remove-AzureADDeviceRegisteredOwner -ObjectId $Device.ObjectId -OwnerId $Owner.ObjectId
 ```
 
-The first command gets a device by using the Get-AzureADDevice (./Get-AzureADDevice.md)cmdlet, and then stores it in the $Device variable.
+The first command gets a device by using the [Get-AzureADDevice](./Get-AzureADDevice.md) cmdlet, and then stores it in the $Device variable.
 
-The second command gets the registered owner for the device in $Device by using the Get-AzureADDeviceRegisteredOwner (./Get-AzureADDeviceRegisteredOwner.md)cmdlet.
+The second command gets the registered owner for the device in $Device by using the [Get-AzureADDeviceRegisteredOwner](./Get-AzureADDeviceRegisteredOwner.md) cmdlet.
 The command stores it in the $Owner variable.
 
 The final command removes the owner in $Owner from the device in $Device.
@@ -39,11 +41,10 @@ The final command removes the owner in $Owner from the device in $Device.
 
 ### -ObjectId
 Specifies an object ID.
-
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: True
 Position: Named
@@ -54,11 +55,10 @@ Accept wildcard characters: False
 
 ### -OwnerId
 Specifies an owner ID.
-
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: True
 Position: Named
@@ -68,7 +68,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -78,9 +78,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Add-AzureADDeviceRegisteredOwner]()
+[Add-AzureADDeviceRegisteredOwner](./Add-AzureADDeviceRegisteredOwner.md)
 
-[Get-AzureADDevice]()
+[Get-AzureADDevice](./Get-AzureADDevice.md)
 
-[Get-AzureADDeviceRegisteredOwner]()
-
+[Get-AzureADDeviceRegisteredOwner](./Get-AzureADDeviceRegisteredOwner.md)

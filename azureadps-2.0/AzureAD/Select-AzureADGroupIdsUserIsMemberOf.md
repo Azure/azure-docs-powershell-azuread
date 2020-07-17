@@ -1,8 +1,10 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
-Module Name: AzureAD
-online version:
+ms.assetid: 66D77613-4992-463D-B318-E2D53B14AED4
+online version: 
 schema: 2.0.0
+ms.reviewer: rodejo
+ms.custom: iamfeature=PowerShell
 ---
 
 # Select-AzureADGroupIdsUserIsMemberOf
@@ -19,7 +21,7 @@ Select-AzureADGroupIdsUserIsMemberOf -ObjectId <String>
 ```
 
 ## DESCRIPTION
-The Select-AzureADGroupIdsUserIsMemberOf cmdlet selects the groups that a user is a member of in Azure Actve Directory (AD).
+The **Select-AzureADGroupIdsUserIsMemberOf** cmdlet selects the groups that a user is a member of in Azure Actve Directory (AD).
 
 ## EXAMPLES
 
@@ -35,15 +37,15 @@ OdataMetadata                                                                   
 https://graph.windows.net/85b5ff1e-0402-400c-9e3c-0f9e965325d1/$metadata#Collection(Edm.String) {093fc0e2-1d6e-4a1b-9bf8-effa0196f1f7}
 ```
 
-The first command creates a GroupIdsForMembershipCheck object, and then stores it in the $Groups variable.
+The first command creates a **GroupIdsForMembershipCheck** object, and then stores it in the $Groups variable.
 
-The second command gets an ID for a group by using the Get-AzureADGroup (./Get-AzureADGroup.md)cmdlet, and then stores it as a property of $Groups.
+The second command gets an ID for a group by using the [Get-AzureADGroup](./Get-AzureADGroup.md) cmdlet, and then stores it as a property of $Groups.
 
-The third command gets the ID of a user by using the Get-AzureADUser (./Get-AzureADUser.md)cmdlet, and then stores it in the $UserId variable.
+The third command gets the ID of a user by using the [Get-AzureADUser](./Get-AzureADUser.md) cmdlet, and then stores it in the $UserId variable.
 
 The final command gets the group membership of a group for a user identified by $UserId.
-This cmdlet returns an oData object.
-To find the groups this user is a member of, iterate through the Value attribute of the returned oData objects.
+This cmdlet returns an **oData** object.
+To find the groups this user is a member of, iterate through the **Value** attribute of the returned **oData** objects.
 
 ## PARAMETERS
 
@@ -53,7 +55,7 @@ Specifies an array of group object IDs.
 ```yaml
 Type: GroupIdsForMembershipCheck
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: True
 Position: Named
@@ -63,8 +65,7 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -106,7 +107,7 @@ Specifies the ID of a user (as a UPN or ObjectId) in Azure AD.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: True
 Position: Named
@@ -116,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -125,3 +126,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+

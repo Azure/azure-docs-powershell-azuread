@@ -35,7 +35,6 @@ The contents of the updated trust framework policy can be written to an output f
 
 ### Example 1
 ```
-PS C:\> $policyContent = Get-Content 'C:\temp\CreatedPolicy.xml' | out-string
 PS C:\> Set-AzureADMSTrustFrameworkPolicy -Id B2C_1A_signup_signin -Content $policyContent
 ```
 
@@ -45,7 +44,6 @@ The contents of updated trust framework policy are displayed on screen.
 
 ### Example 2
 ```
-PS C:\> $policyContent = Get-Content 'C:\temp\CreatedPolicy.xml' | out-string
 PS C:\> Set-AzureADMSTrustFrameworkPolicy -Id B2C_1A_signup_signin -Content $policyContent -OutputFilePath C:\CreatedPolicy.xml
 ```
 

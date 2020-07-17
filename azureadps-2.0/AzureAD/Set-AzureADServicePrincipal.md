@@ -1,8 +1,10 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
-Module Name: AzureAD
-online version:
+ms.assetid: 540A8E20-80C9-48D8-BE49-E1DA84FD3BF7
+online version: 
 schema: 2.0.0
+ms.reviewer: rodejo
+ms.custom: iamfeature=PowerShell
 ---
 
 # Set-AzureADServicePrincipal
@@ -26,7 +28,7 @@ Set-AzureADServicePrincipal -ObjectId <String> [-AccountEnabled <String>]
 ```
 
 ## DESCRIPTION
-The Set-AzureADServicePrincipal cmdlet updates a service principal in Azure Active Directory (Azure AD).
+The **Set-AzureADServicePrincipal** cmdlet updates a service principal in Azure Active Directory (Azure AD).
 
 ## EXAMPLES
 
@@ -45,7 +47,7 @@ Indicates whether the account is enabled.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -60,7 +62,7 @@ The alternative names for this service principal
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -75,7 +77,7 @@ Specifies the application ID.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -90,7 +92,7 @@ Indicates whether an application role assignment is required.
 ```yaml
 Type: Boolean
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -105,7 +107,7 @@ Specifies the display name.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -120,7 +122,7 @@ Specifies the error URL.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -135,7 +137,7 @@ Specifies the home page.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -150,7 +152,7 @@ Specifies key credentials.
 ```yaml
 Type: System.Collections.Generic.List`1[Microsoft.Open.AzureAD.Model.KeyCredential]
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -165,7 +167,7 @@ Specifies the logout URL.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -180,7 +182,7 @@ Specifeis the ID of a service principal in Azure AD.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: True
 Position: Named
@@ -195,7 +197,7 @@ Specifies password credentials.
 ```yaml
 Type: System.Collections.Generic.List`1[Microsoft.Open.AzureAD.Model.PasswordCredential]
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -210,7 +212,7 @@ Specifies the publisher name.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -222,10 +224,11 @@ Accept wildcard characters: False
 ### -ReplyUrls
 The URLs that user tokens are sent to for sign in with the associated application, or the redirect URIs that OAuth 2.0 authorization codes and access tokens are sent to for the associated application.
 
+
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -235,12 +238,10 @@ Accept wildcard characters: False
 ```
 
 ### -SamlMetadataUrl
-@{Text=}
-
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -255,7 +256,7 @@ Specifies service principal names.
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -270,7 +271,7 @@ The service principal type
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -281,12 +282,12 @@ Accept wildcard characters: False
 
 ### -Tags
 Specifies an array of tags.
-Note that if you intend for this service principal to show up in the All Applications list in the admin portal, you need to set this value to {WindowsAzureActiveDirectoryIntegratedApp}
+Note that if you intend for this service principal to show up in the All Applications list in the admin portal, you need to set this value to {WindowsAzureActiveDirectoryIntegratedApp} 
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -296,7 +297,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -306,9 +307,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADServicePrincipal]()
+[Get-AzureADServicePrincipal](./Get-AzureADServicePrincipal.md)
 
-[New-AzureADServicePrincipal]()
+[New-AzureADServicePrincipal](./New-AzureADServicePrincipal.md)
 
-[Remove-AzureADServicePrincipal]()
-
+[Remove-AzureADServicePrincipal](./Remove-AzureADServicePrincipal.md)

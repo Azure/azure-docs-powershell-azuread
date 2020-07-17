@@ -1,6 +1,9 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
 Module Name: AzureADPreview
+ms.assetid: DD253761-F1BB-4EF1-B0CB-586C0040DECE
+ms.custom: iamfeature=PowerShell
+ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -18,7 +21,7 @@ Get-AzureADDirectoryRoleMember -ObjectId <String> [-InformationAction <ActionPre
 ```
 
 ## DESCRIPTION
-The Get-AzureADDirectoryRoleMember cmdlet gets the members of a directory role in Azure Active Directory (AD).
+The **Get-AzureADDirectoryRoleMember** cmdlet gets the members of a directory role in Azure Active Directory (AD).
 
 ## EXAMPLES
 
@@ -40,8 +43,7 @@ This command gets the members of the specified role.
 ## PARAMETERS
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -103,7 +105,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Add-AzureADDirectoryRoleMember]()
-
-[Remove-AzureADDirectoryRoleMember]()
+[Add-AzureADDirectoryRoleMember](./Add-AzureADDirectoryRoleMember.md)
+[Remove-AzureADDirectoryRoleMember](./Remove-AzureADDirectoryRoleMember.md)
 

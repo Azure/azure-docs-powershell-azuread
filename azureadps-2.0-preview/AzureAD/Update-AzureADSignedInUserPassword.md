@@ -1,6 +1,9 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.Custom.dll-Help.xml
 Module Name: AzureADPreview
+ms.assetid: 8959FA62-5E06-4C57-90CC-985F7467BC59
+ms.custom: iamfeature=PowerShell
+ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -18,7 +21,7 @@ Update-AzureADSignedInUserPassword -CurrentPassword <SecureString> -NewPassword 
 ```
 
 ## DESCRIPTION
-The Update-AzureADSignedInUserPassword cmdlet updates the password for the signed-in user in Azure Active Directory (AD).
+The **Update-AzureADSignedInUserPassword** cmdlet updates the password for the signed-in user in Azure Active Directory (AD).
 
 ## EXAMPLES
 
@@ -47,8 +50,7 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore

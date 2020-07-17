@@ -1,8 +1,9 @@
 ---
 external help file: Microsoft.Open.MS.GraphV10.PowerShell.dll-Help.xml
-Module Name: AzureAD
-online version:
+online version: 
 schema: 2.0.0
+ms.reviewer: rodejo
+ms.custom: iamfeature=PowerShell
 ---
 
 # New-AzureADMSInvitation
@@ -39,7 +40,7 @@ The display name of the user as it will appear in your directory
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -54,7 +55,7 @@ The Email address to which the invitation is sent
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: True
 Position: Named
@@ -69,7 +70,7 @@ Addition information to specify how the invitation message is sent
 ```yaml
 Type: InvitedUserMessageInfo
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -79,14 +80,12 @@ Accept wildcard characters: False
 ```
 
 ### -InvitedUserType
-The userType of the user being invited.
-By default, this is Guest.
-You can invite as Member if you're are company administrator.
+The userType of the user being invited. By default, this is Guest. You can invite as Member if you're are company administrator.
 
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -101,7 +100,7 @@ The URL to which the invited user is forwarded after accepting the invitation
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: True
 Position: Named
@@ -116,7 +115,7 @@ A Boolean parameter that indicates whether or not an invitation message will be 
 ```yaml
 Type: Boolean
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -126,14 +125,17 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### None
+
 ## OUTPUTS
 
 ### System.Object
+
 ## NOTES
 
 ## RELATED LINKS
+

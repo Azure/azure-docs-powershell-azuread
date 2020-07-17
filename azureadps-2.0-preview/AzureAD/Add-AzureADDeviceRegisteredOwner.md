@@ -1,6 +1,9 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
 Module Name: AzureADPreview
+ms.assetid: 31B92E0F-E46C-4371-8AC9-6C2B497C979B
+ms.custom: iamfeature=PowerShell
+ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -17,21 +20,15 @@ Add-AzureADDeviceRegisteredOwner -ObjectId <String> -RefObjectId <String> [<Comm
 ```
 
 ## DESCRIPTION
-The Add-AzureADDeviceRegisteredOwner cmdlet adds a registerd owner for an Azure Active Directory device.
+The **Add-AzureADDeviceRegisteredOwner** cmdlet adds a registerd owner for an Azure Active Directory device.
 
 ## EXAMPLES
-
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
 
 ## PARAMETERS
 
 ### -ObjectId
-Specifies the object ID.
+Specifies the object ID. 
+
 
 ```yaml
 Type: String
@@ -47,6 +44,7 @@ Accept wildcard characters: False
 
 ### -RefObjectId
 Specifies the ID of the Active Directory object to add.
+
 
 ```yaml
 Type: String
@@ -71,7 +69,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADDeviceRegisteredOwner]()
+[Get-AzureADDeviceRegisteredOwner](./Get-AzureADDeviceRegisteredOwner.md)
 
-[Remove-AzureADDeviceRegisteredOwner]()
-
+[Remove-AzureADDeviceRegisteredOwner](./Remove-AzureADDeviceRegisteredOwner.md)

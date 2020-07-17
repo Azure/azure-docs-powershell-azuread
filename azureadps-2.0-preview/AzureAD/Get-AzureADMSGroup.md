@@ -39,36 +39,36 @@ If you specify no parameters, this cmdlet gets all groups.
 ```
 PS C:\> Get-AzureADMSGroup
 
-Id                            : d539a25e-2db2-482a-9dcb-2a0b27fe4f27
-Description                   :
-OnPremisesSyncEnabled         :
-DisplayName                   :
-ADSyncOperators
-OnPremisesLastSyncDateTime    :
-Mail                          :
+Id                            : d539a25e-2db2-482a-9dcb-2a0b27fe4f27 
+Description                   : 
+OnPremisesSyncEnabled         : 
+DisplayName                   : 
+ADSyncOperators 
+OnPremisesLastSyncDateTime    : 
+Mail                          : 
 MailEnabled                   : False
-MailNickname                  : ADSyncOperators
-OnPremisesSecurityIdentifier  : S-1-5-21-2695029449-1154706203-1063139792-1243
-ProxyAddresses                : {}
-SecurityEnabled               : True
-GroupTypes                    : {}
-MembershipRule                :
+MailNickname                  : ADSyncOperators 
+OnPremisesSecurityIdentifier  : S-1-5-21-2695029449-1154706203-1063139792-1243 
+ProxyAddresses                : {} 
+SecurityEnabled               : True 
+GroupTypes                    : {} 
+MembershipRule                : 
 MembershipRuleProcessingState :
 
 
-Id                            : d98ddc78-6e8d-4f0d-8a3f-b923c6ebc14b
-Description                   :
-OnPremisesSyncEnabled         :
-DisplayName                   : Project Icarus
-OnPremisesLastSyncDateTime    :
-Mail                          :
-MailEnabled                   : False
-MailNickname                  : 60f3d02c-0c6e-41da-bb64-128c73b4d9e6
-OnPremisesSecurityIdentifier  :
-ProxyAddresses                : {}
-SecurityEnabled               : True
-GroupTypes                    : {DynamicMembership}
-MembershipRule                : (user.jobtitle -eq "Sales manager") -or ((user.department -eq "Marketing") -and (user.country -eq "Greece"))
+Id                            : d98ddc78-6e8d-4f0d-8a3f-b923c6ebc14b 
+Description                   : 
+OnPremisesSyncEnabled         : 
+DisplayName                   : Project Icarus 
+OnPremisesLastSyncDateTime    : 
+Mail                          : 
+MailEnabled                   : False 
+MailNickname                  : 60f3d02c-0c6e-41da-bb64-128c73b4d9e6 
+OnPremisesSecurityIdentifier  : 
+ProxyAddresses                : {} 
+SecurityEnabled               : True 
+GroupTypes                    : {DynamicMembership} 
+MembershipRule                : (user.jobtitle -eq "Sales manager") -or ((user.department -eq "Marketing") -and (user.country -eq "Greece")) 
 MembershipRuleProcessingState : On
 ```
 
@@ -78,19 +78,19 @@ This command gets all groups in Azure AD.
 ```
 PS C:\> Get-AzureADMSGroup -Id "d98ddc78-6e8d-4f0d-8a3f-b923c6ebc14b"
 
-Id                            : d98ddc78-6e8d-4f0d-8a3f-b923c6ebc14b
-Description                   :
-OnPremisesSyncEnabled         :
-DisplayName                   : Project Icarus
-OnPremisesLastSyncDateTime    :
-Mail                          :
-MailEnabled                   : False
-MailNickname                  : 60f3d02c-0c6e-41da-bb64-128c73b4d9e6
-OnPremisesSecurityIdentifier  :
-ProxyAddresses                : {}
-SecurityEnabled               : True
-GroupTypes                    : {DynamicMembership}
-MembershipRule                : (user.jobtitle -eq "Sales manager") -or ((user.department -eq "Marketing") -and (user.country -eq "Greece"))
+Id                            : d98ddc78-6e8d-4f0d-8a3f-b923c6ebc14b 
+Description                   : 
+OnPremisesSyncEnabled         : 
+DisplayName                   : Project Icarus 
+OnPremisesLastSyncDateTime    : 
+Mail                          : 
+MailEnabled                   : False 
+MailNickname                  : 60f3d02c-0c6e-41da-bb64-128c73b4d9e6 
+OnPremisesSecurityIdentifier  : 
+ProxyAddresses                : {} 
+SecurityEnabled               : True 
+GroupTypes                    : {DynamicMembership} 
+MembershipRule                : (user.jobtitle -eq "Sales manager") -or ((user.department -eq "Marketing") -and (user.country -eq "Greece")) 
 MembershipRuleProcessingState : On
 ```
 

@@ -1,7 +1,6 @@
 ---
-external help file: Microsoft.Open.MS.GraphV10.PowerShell.dll-Help.xml
-Module Name: AzureAD
-online version:
+external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
+online version: 
 schema: 2.0.0
 ---
 
@@ -32,13 +31,12 @@ This will create a a new groupLifecyclePolicy setting the group lifetime to 99 d
 ## PARAMETERS
 
 ### -AlternateNotificationEmails
-Notification emails for groups that have no owners will be sent to these email addresses.
-List of email addresses separated by a ";".
+Notification emails for groups that have no owners will be sent to these email addresses. List of email addresses separated by a ";".
 
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: True
 Position: Named
@@ -53,7 +51,7 @@ The number of days a group can exist before it needs to be renewed
 ```yaml
 Type: Int32
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: True
 Position: Named
@@ -63,15 +61,13 @@ Accept wildcard characters: False
 ```
 
 ### -ManagedGroupTypes
-This parameter allows the admin to select which office 365 groups the policy will apply to.
-"None" will create the policy in a disabled state.
-"All" will apply the policy to every Office 365 group in the tenant.
-"Selected" will allow the admin to choose specific Office 365 groups that the policy will apply to.
+This parameter allows the admin to select which office 365 groups the policy will apply to. "None" will create the policy in a disabled state. "All" will apply the policy to every Office 365 group in the tenant. "Selected" will allow the admin to choose specific Office 365 groups that the policy will apply to.
+Please note that this parameter is case sensitive - "none" or "NONE" will not be recognized as valid values.
 
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: True
 Position: Named
@@ -81,14 +77,17 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### None
+
 ## OUTPUTS
 
 ### System.Object
+
 ## NOTES
 
 ## RELATED LINKS
+

@@ -1,8 +1,10 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
-Module Name: AzureAD
-online version:
+ms.assetid: 04497A4E-E281-4FB5-98D5-102039F15692
+online version: 
 schema: 2.0.0
+ms.reviewer: rodejo
+ms.custom: iamfeature=PowerShell
 ---
 
 # Get-AzureADDomain
@@ -23,26 +25,18 @@ Get-AzureADDomain -Name <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The Get-AzureADDomain cmdlet gets a domain in Azure Active Directory (AD).
+The **Get-AzureADDomain** cmdlet gets a domain in Azure Active Directory (AD).
 
 ## EXAMPLES
-
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
 
 ## PARAMETERS
 
 ### -Name
 Specifies the name of a domain.
-
 ```yaml
 Type: String
 Parameter Sets: GetById
-Aliases:
+Aliases: 
 
 Required: True
 Position: Named
@@ -52,7 +46,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -62,11 +56,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Confirm-AzureADDomain]()
+[Confirm-AzureADDomain](./Confirm-AzureADDomain.md)
+[New-AzureADDomain](./New-AzureADDomain.md)
+[Remove-AzureADDomain](./Remove-AzureADDomain.md)
+[Set-AzureADDomain](./Set-AzureADDomain.md)
 
-[New-AzureADDomain]()
-
-[Remove-AzureADDomain]()
-
-[Set-AzureADDomain]()
 

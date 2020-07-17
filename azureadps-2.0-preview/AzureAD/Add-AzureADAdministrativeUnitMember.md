@@ -1,6 +1,9 @@
 ---
 external help file: Microsoft.Open.AzureADBeta.Graph.PowerShell.dll-Help.xml
 Module Name: AzureADPreview
+ms.assetid: C2254A89-1700-4321-99FD-529E481705A3
+ms.custom: iamfeature=PowerShell
+ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -18,28 +21,22 @@ Add-AzureADAdministrativeUnitMember -ObjectId <String> -RefObjectId <String>
 ```
 
 ## DESCRIPTION
-The Add-AzureADAdministrativeUnitMember cmdlet adds an Active Directory administrative unit member.
+The **Add-AzureADAdministrativeUnitMember** cmdlet adds an Active Directory administrative unit member.
 
 ## EXAMPLES
-
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
 
 ## PARAMETERS
 
 ### -InformationAction
 Specifies how this cmdlet responds to an information event.
-The acceptable values for this parameter are: * Continue
-
+The acceptable values for this parameter are:
+* Continue
 * Ignore
 * Inquire
 * SilentlyContinue
 * Stop
 * Suspend
+
 
 ```yaml
 Type: ActionPreference
@@ -56,6 +53,7 @@ Accept wildcard characters: False
 ### -InformationVariable
 Specifies a variable in which to store an information event message.
 
+
 ```yaml
 Type: String
 Parameter Sets: (All)
@@ -71,6 +69,7 @@ Accept wildcard characters: False
 ### -ObjectId
 Specifies the ID of an Active Directory administrative unit.
 
+
 ```yaml
 Type: String
 Parameter Sets: (All)
@@ -85,6 +84,7 @@ Accept wildcard characters: False
 
 ### -RefObjectId
 Specifies the unique ID of the specific Azure Active Directory object that will be assigned as owner/manager/member.
+
 
 ```yaml
 Type: String
@@ -109,7 +109,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADAdministrativeUnitMember]()
+[Get-AzureADAdministrativeUnitMember](./Get-AzureADAdministrativeUnitMember.md)
 
-[Remove-AzureADAdministrativeUnitMember]()
-
+[Remove-AzureADAdministrativeUnitMember](./Remove-AzureADAdministrativeUnitMember.md)

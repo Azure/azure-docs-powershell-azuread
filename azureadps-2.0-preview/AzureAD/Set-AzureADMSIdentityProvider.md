@@ -95,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -Type
-{{ Fill Type Description }}
+{{Fill Type Description}}
 
 ```yaml
 Type: String
@@ -115,9 +115,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### System.String
+
 ## OUTPUTS
 
 ### System.Object
+
 ## NOTES
 
 ## RELATED LINKS

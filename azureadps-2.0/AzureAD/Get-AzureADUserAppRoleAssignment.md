@@ -1,8 +1,10 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
-Module Name: AzureAD
-online version:
+ms.assetid: 20B9B17F-DF19-4105-8D94-DEB9AE9E724B
+online version: 
 schema: 2.0.0
+ms.reviewer: rodejo
+ms.custom: iamfeature=PowerShell
 ---
 
 # Get-AzureADUserAppRoleAssignment
@@ -26,7 +28,7 @@ PS C:\> $UserId = (Get-AzureADUser -Top 1).ObjectId
 Get-AzureADUserAppRoleAssignment -ObjectId $UserId
 ```
 
-The first command gets the ID of an Azure AD user by using the Get-AzureADUser (./Get-AzureADUser.md)cmdlet. 
+The first command gets the ID of an Azure AD user by using the [Get-AzureADUser](./Get-AzureADUser.md) cmdlet. 
 The command stores the value in the $UserId variable.
 
 The second command gets a user application role assignment for the user in $UserId.
@@ -34,13 +36,12 @@ The second command gets a user application role assignment for the user in $User
 ## PARAMETERS
 
 ### -All
-If true, return all user application role assignments for this user.
-If false, return the number of objects specified by the Top parameter
+If true, return all user application role assignments for this user. If false, return the number of objects specified by the Top parameter
 
 ```yaml
 Type: Boolean
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -50,12 +51,12 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-Specifies the ID of a user (as a UPN or ObjectId) in Azure Active Directory.
+Specifies the ID of a user (as a UPN or ObjectId) in Azure Active Directory. 
 
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: True
 Position: Named
@@ -70,7 +71,7 @@ Specifies the maximum number of records to return.
 ```yaml
 Type: Int32
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -80,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -90,9 +91,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADUser]()
+[Get-AzureADUser](./Get-AzureADUser.md)
 
-[New-AzureADUserAppRoleAssignment]()
+[New-AzureADUserAppRoleAssignment](./New-AzureADUserAppRoleAssignment.md)
 
-[Remove-AzureADUserAppRoleAssignment]()
-
+[Remove-AzureADUserAppRoleAssignment](./Remove-AzureADUserAppRoleAssignment.md)

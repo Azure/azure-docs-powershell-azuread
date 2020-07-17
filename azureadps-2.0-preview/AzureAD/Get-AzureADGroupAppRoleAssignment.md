@@ -1,6 +1,9 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
 Module Name: AzureADPreview
+ms.assetid: BE5F502D-BDD9-4D72-8F9A-BAFA0463EE41
+ms.custom: iamfeature=PowerShell
+ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -17,7 +20,7 @@ Get-AzureADGroupAppRoleAssignment -ObjectId <String> [-All <Boolean>] [-Top <Int
 ```
 
 ## DESCRIPTION
-The Get-AzureADGroupAppRoleAssignment cmdlet gets a group application role assignment in Azure Active Directory (AD).
+The **Get-AzureADGroupAppRoleAssignment** cmdlet gets a group application role assignment in Azure Active Directory (AD).
 
 ## EXAMPLES
 
@@ -27,7 +30,7 @@ $GroupId = (Get-AzureADGroup -Top 1).ObjectId
 Get-AzureADGroupAppRoleAssignment -ObjectId $GroupId
 ```
 
-The first command gets the object ID of a group by using the Get-AzureADGroup (./Get-AzureADGroup.md)cmdlet.
+The first command gets the object ID of a group by using the [Get-AzureADGroup](./Get-AzureADGroup.md) cmdlet.
 The command stores the ID in the $GroupId variable.
 
 The second command gets the application role assignments of the group in $GroupId.
@@ -35,8 +38,7 @@ The second command gets the application role assignments of the group in $GroupI
 ## PARAMETERS
 
 ### -All
-If true, return all application role assignments.
-If false, return the number of objects specified by the Top parameter
+If true, return all application role assignments. If false, return the number of objects specified by the Top parameter
 
 ```yaml
 Type: Boolean
@@ -91,9 +93,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADGroup]()
+[Get-AzureADGroup](./Get-AzureADGroup.md)
 
-[New-AzureADGroupAppRoleAssignment]()
+[New-AzureADGroupAppRoleAssignment](./New-AzureADGroupAppRoleAssignment.md)
 
-[Remove-AzureADGroupAppRoleAssignment]()
-
+[Remove-AzureADGroupAppRoleAssignment](./Remove-AzureADGroupAppRoleAssignment.md)

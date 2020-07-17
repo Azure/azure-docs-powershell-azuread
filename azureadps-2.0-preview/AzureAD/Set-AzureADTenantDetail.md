@@ -1,6 +1,8 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
 Module Name: AzureADPreview
+ms.custom: iamfeature=PowerShell
+ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -65,7 +67,7 @@ Accept wildcard characters: False
 ```
 
 ### -SecurityComplianceNotificationPhones
-The phone number(s) that are used for security compliance
+The phone number(s) that are used for security compliance 
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
@@ -115,9 +117,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### None
+
 ## OUTPUTS
 
 ### System.Object
+
 ## NOTES
 
 ## RELATED LINKS

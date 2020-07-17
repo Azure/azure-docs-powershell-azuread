@@ -1,6 +1,9 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
 Module Name: AzureADPreview
+ms.assetid: 8212C7A5-3AA7-4E28-9F0C-D0C97F8AC08E
+ms.custom: iamfeature=PowerShell
+ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -17,7 +20,7 @@ Get-AzureADGroupMember -ObjectId <String> [-All <Boolean>] [-Top <Int32>] [<Comm
 ```
 
 ## DESCRIPTION
-The Get-AzureADGroupMember cmdlet gets a member of a group in Azure Active Directory (AD).
+The **Get-AzureADGroupMember** cmdlet gets a member of a group in Azure Active Directory (AD).
 
 ## EXAMPLES
 
@@ -33,8 +36,7 @@ ObjectId                             ObjectType
 ## PARAMETERS
 
 ### -All
-If true, return all group members.
-If false, return the number of objects specified by the Top parameter
+If true, return all group members. If false, return the number of objects specified by the Top parameter
 
 ```yaml
 Type: Boolean
@@ -89,7 +91,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Add-AzureADGroupMember]()
-
-[Remove-AzureADGroupMember]()
+[Add-AzureADGroupMember](./Add-AzureADGroupMember.md)
+[Remove-AzureADGroupMember](./Remove-AzureADGroupMember.md)
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-AzureADApplicationProxyConnectorGroup
 
 ## SYNOPSIS
-The New-AzureADApplicationProxyConnectorGroup cmdlet creates a new Application Proxy Connector group.
+The New-AzureADApplicationProxyConnectorGroup cmdlet creates a new Application Proxy Connector group. 
 
 ## SYNTAX
 
@@ -17,7 +17,7 @@ New-AzureADApplicationProxyConnectorGroup -Name <Name> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The New-AzureADApplicationProxyConnectorGroup cmdlet creates a new Application Proxy connector group.
+The New-AzureADApplicationProxyConnectorGroup cmdlet creates a new Application Proxy connector group. 
 
 ## EXAMPLES
 
@@ -55,9 +55,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Open.MSGraph.Model.Name
+
 ## OUTPUTS
 
 ### System.Object
+
 ## NOTES
 
 ## RELATED LINKS

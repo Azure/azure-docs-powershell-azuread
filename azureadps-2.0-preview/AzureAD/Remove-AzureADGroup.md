@@ -1,6 +1,9 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
 Module Name: AzureADPreview
+ms.assetid: D495C18D-D65F-4D9E-8A04-C478D1C0F97C
+ms.custom: iamfeature=PowerShell
+ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -18,9 +21,7 @@ Remove-AzureADGroup -ObjectId <String> [-InformationAction <ActionPreference>] [
 ```
 
 ## DESCRIPTION
-The Remove-AzureADGroup cmdlet removes a group from Azure Active Directory (AD).
-Note that a Unified Group can be restored withing 30 days after deletion using the Restore-AzureADMSDeletedDirectoryObject cmdlet.
-Security groups cannot be restored after deletion.
+The **Remove-AzureADGroup** cmdlet removes a group from Azure Active Directory (AD). Note that a Unified Group can be restored withing 30 days after deletion using the Restore-AzureADMSDeletedDirectoryObject cmdlet. Security groups cannot be restored after deletion.
 
 ## EXAMPLES
 
@@ -34,8 +35,7 @@ This command removes the specified group from Azure AD.
 ## PARAMETERS
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -97,9 +97,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADGroup]()
+[Get-AzureADGroup](./Get-AzureADGroup.md)
 
-[New-AzureADGroup]()
+[New-AzureADGroup](./New-AzureADGroup.md)
 
-[Set-AzureADGroup]()
-
+[Set-AzureADGroup](./Set-AzureADGroup.md)

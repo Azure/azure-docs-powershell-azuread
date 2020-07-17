@@ -1,6 +1,9 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
 Module Name: AzureADPreview
+ms.assetid: CAA240EC-E380-4CDB-A1CC-56BBD28DFB82
+ms.custom: iamfeature=PowerShell
+ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -25,7 +28,7 @@ Get-AzureADDirectoryRole -ObjectId <String> [-InformationAction <ActionPreferenc
 ```
 
 ## DESCRIPTION
-The Get-AzureADDirectoryRole cmdlet gets a directory role from Azure Active Directory (AD).
+The **Get-AzureADDirectoryRole** cmdlet gets a directory role from Azure Active Directory (AD).
 
 ## EXAMPLES
 
@@ -56,22 +59,6 @@ d96eb2b3-0970-4827-8f26-6008efd86511 Security Administrator             Security
 ```
 
 ## PARAMETERS
-
-### -Filter
-The oData v3.0 filter statement. 
-Controls which objects are returned.
-
-```yaml
-Type: String
-Parameter Sets: GetQuery
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: True (ByPropertyName, ByValue)
-Accept wildcard characters: False
-```
 
 ### -InformationAction
 Specifies how this cmdlet responds to an information event.
@@ -127,6 +114,21 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
+### -Filter
+{{ Fill Filter Description }}
+
+```yaml
+Type: String
+Parameter Sets: GetQuery
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName, ByValue)
+Accept wildcard characters: False
+```
+
 ### CommonParameters
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
@@ -138,5 +140,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Enable-AzureADDirectoryRole]()
+[Enable-AzureADDirectoryRole](./Enable-AzureADDirectoryRole.md)
 

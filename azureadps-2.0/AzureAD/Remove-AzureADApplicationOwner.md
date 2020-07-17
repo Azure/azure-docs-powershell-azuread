@@ -1,8 +1,10 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
-Module Name: AzureAD
-online version:
+ms.assetid: 6B318FF5-2DD5-485A-A4BA-C2E9F7CA1DEC
+online version: 
 schema: 2.0.0
+ms.reviewer: rodejo
+ms.custom: iamfeature=PowerShell
 ---
 
 # Remove-AzureADApplicationOwner
@@ -18,7 +20,7 @@ Remove-AzureADApplicationOwner -ObjectId <String> -OwnerId <String> [-Informatio
 ```
 
 ## DESCRIPTION
-The Remove-AzureADApplicationOwner cmdlet removes an owner from an application in Azure Active Directory (AD).
+The **Remove-AzureADApplicationOwner** cmdlet removes an owner from an application in Azure Active Directory (AD).
 
 ## EXAMPLES
 
@@ -76,7 +78,7 @@ Specifies the ID of an application in Azure AD.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: True
 Position: Named
@@ -91,7 +93,7 @@ Specifies the ID of the owner.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: True
 Position: Named
@@ -101,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -111,7 +113,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Add-AzureADApplicationOwner]()
+[Add-AzureADApplicationOwner](./Add-AzureADApplicationOwner.md)
 
-[Get-AzureADApplicationOwner]()
-
+[Get-AzureADApplicationOwner](./Get-AzureADApplicationOwner.md)

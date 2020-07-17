@@ -1,6 +1,8 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
 Module Name: AzureADPreview
+ms.custom: iamfeature=PowerShell
+ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -18,8 +20,7 @@ Get-AzureADDomainVerificationDnsRecord -Name <String> [<CommonParameters>]
 
 ## DESCRIPTION
 Gets the domain's verification records from the verificationDnsRecords navigation property. 
-You can't use the domain with your Azure AD tenant until you have successfully verified that you own the domain.
-To verify the ownership of the domain, you need to first retrieve a set of domain verification records which you need to add to the zone file of the domain.
+You can't use the domain with your Azure AD tenant until you have successfully verified that you own the domain. To verify the ownership of the domain, you need to first retrieve a set of domain verification records which you need to add to the zone file of the domain.
 
 ## EXAMPLES
 
@@ -58,9 +59,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### System.String
+
 ## OUTPUTS
 
 ### System.Object
+
 ## NOTES
 
 ## RELATED LINKS

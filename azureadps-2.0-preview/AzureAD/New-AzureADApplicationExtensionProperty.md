@@ -1,6 +1,9 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
 Module Name: AzureADPreview
+ms.assetid: B15F90ED-2F60-4401-89A2-89E3DD072519
+ms.custom: iamfeature=PowerShell
+ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -19,7 +22,7 @@ New-AzureADApplicationExtensionProperty -ObjectId <String> [-InformationAction <
 ```
 
 ## DESCRIPTION
-The New-AzureADApplicationExtensionProperty cmdlet creates an application extension property for an object in Azure Active Directory.
+The **New-AzureADApplicationExtensionProperty** cmdlet creates an application extension property for an object in Azure Active Directory.
 
 ## EXAMPLES
 
@@ -147,7 +150,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADApplicationExtensionProperty]()
+[Get-AzureADApplicationExtensionProperty](./Get-AzureADApplicationExtensionProperty.md)
 
-[Remove-AzureADApplicationExtensionProperty]()
-
+[Remove-AzureADApplicationExtensionProperty](./Remove-AzureADApplicationExtensionProperty.md)

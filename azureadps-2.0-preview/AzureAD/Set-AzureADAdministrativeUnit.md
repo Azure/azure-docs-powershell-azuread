@@ -1,6 +1,9 @@
 ---
 external help file: Microsoft.Open.AzureADBeta.Graph.PowerShell.dll-Help.xml
 Module Name: AzureADPreview
+ms.assetid: 80D775B6-1EA6-4F54-A727-A981B0CBC3A1
+ms.custom: iamfeature=PowerShell
+ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -18,21 +21,15 @@ Set-AzureADAdministrativeUnit -ObjectId <String> [-InformationAction <ActionPref
 ```
 
 ## DESCRIPTION
-The Set-AzureADAdministrativeUnit cmdlet updates an administrative unit in Azure Active Directory (AD).
+The **Set-AzureADAdministrativeUnit** cmdlet updates an administrative unit in Azure Active Directory (AD).
 
 ## EXAMPLES
-
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
 
 ## PARAMETERS
 
 ### -Description
 Specifies a description.
+
 
 ```yaml
 Type: String
@@ -62,8 +59,7 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -125,9 +121,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADAdministrativeUnit]()
+[Get-AzureADAdministrativeUnit](./Get-AzureADAdministrativeUnit.md)
 
-[New-AzureADAdministrativeUnit]()
+[New-AzureADAdministrativeUnit](./New-AzureADAdministrativeUnit.md)
 
-[Remove-AzureADAdministrativeUnit]()
-
+[Remove-AzureADAdministrativeUnit](./Remove-AzureADAdministrativeUnit.md)

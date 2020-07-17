@@ -1,6 +1,8 @@
 ---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
 Module Name: AzureADPreview
+ms.custom: iamfeature=PowerShell
+ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -15,8 +17,7 @@ This cmdlet is used to invite a new external user to your directory
 ```
 New-AzureADMSInvitation [-InvitedUserDisplayName <String>] -InvitedUserEmailAddress <String>
  [-SendInvitationMessage <Boolean>] -InviteRedirectUrl <String> [-InvitedUser <User>]
- [-InvitedUserMessageInfo <InvitedUserMessageInfo>] [-InvitedUserType <String>] [-ResetRedemption <Boolean>]
- [<CommonParameters>]
+ [-InvitedUserMessageInfo <InvitedUserMessageInfo>] [-InvitedUserType <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -31,15 +32,6 @@ New-AzureADMSInvitation -InvitedUserEmailAddress someexternaluser@externaldomain
 
 Using the cmdlet in this example, an email is sent to the user who's email address is in the -InvitedUserEmailAddress parameter.
 When the user accepts the invitation, they are forwarded to the url as specified in the -InviteRedirectUrl parameter
-
-### Reset a Redemption for an external user
-```
-PS C:\> New-AzureADMSInvitation -InvitedUserEmailAddress someexternaluser@externaldomain.com -ResetRedemption $true -InvitedUser $user -InviteRedirectUrl "http://myapps.onmicrosoft.com"
-```
-
-In this example we show how an admin can reset the redemption for an external user in the -InvitedUser parameter.
-They need to passed the switch -ResetRedemption as true.
-Once reset, External user will have to re-redeem the invitation to continue to access the resources.
 
 ## PARAMETERS
 
@@ -89,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -InvitedUser
-An existing user object in the directory that you want to add or update the B2B credentials for.
+User object for existing on-prem non-synced guest-user
 
 ```yaml
 Type: User
@@ -104,9 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -InvitedUserType
-The userType of the user being invited.
-By default, this is Guest.
-You can invite as Member if you're are company administrator.
+The userType of the user being invited. By default, this is Guest. You can invite as Member if you're are company administrator.
 
 ```yaml
 Type: String
@@ -150,31 +140,17 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ResetRedemption
-Indicates whether the invite redemption on an existing external user should be removed so the user can re-redeem the account. 
-By default, this is false and should only be set to true when passing in a valid external user to the InvitedUser property.
-
-```yaml
-Type: Boolean
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### CommonParameters
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### None
+
 ## OUTPUTS
 
 ### System.Object
+
 ## NOTES
 
 ## RELATED LINKS

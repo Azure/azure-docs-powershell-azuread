@@ -1,8 +1,10 @@
 ---
 external help file: Microsoft.Open.Azure.AD.CommonLibrary.dll-Help.xml
-Module Name: AzureAD
-online version:
+ms.assetid: A5EF9C25-E0D9-432F-A528-81534A01F444
+online version: 
 schema: 2.0.0
+ms.reviewer: rodejo
+ms.custom: iamfeature=PowerShell
 ---
 
 # Connect-AzureAD
@@ -35,7 +37,7 @@ Connect-AzureAD [-AzureEnvironmentName <EnvironmentName>] [-TenantId <String>] -
 ```
 
 ## DESCRIPTION
-The Connect-AzureAD cmdlet connects an authenticated account to use for Azure Active Directory cmdlet requests.
+The **Connect-AzureAD** cmdlet connects an authenticated account to use for Azure Active Directory cmdlet requests.
 
 You can use this authenticated account only with Azure Active Directory cmdlets.
 
@@ -48,7 +50,7 @@ PS C:\> Connect-AzureAD -Confirm
 
 This command connects the current PowerShell session to an Azure Active Directory tenant.
 The command prompts you for a username and password for the tenant you want to connect to.
-The Confirm parameter prompts you for confirmation.
+The *Confirm* parameter prompts you for confirmation. 
 
 If multi-factor authentication is enabled for your credentials, you must log in using the interactive option or use service principal authentication.
 
@@ -60,7 +62,8 @@ PS C:\> Connect-AzureAD -Credential $Credential
 
 The first command gets the user credentials, and then stores them in the $Credential variable.
 
-The second command connects the current PowerShell session using the credentials in $Credential.
+The second command connects the current PowerShell session using the credentials in $Credential.  
+Please note that after the second command is completed $Credential variable becomes empty. Please see [Issue #169 on GitHub](https://github.com/Azure/azure-docs-powershell-azuread/issues/169) for more details.
 
 This account authenticates with Azure Active Directory using organizational ID credentials.
 You cannot use multi-factor authentication or Microsoft account credentials to run Azure Active Directory cmdlets with this account.
@@ -72,15 +75,15 @@ Connect-AzureAD
 
 # Create the self signed cert
 $currentDate = Get-Date
-$endDate = $currentDate.AddYears(1)
-$notAfter = $endDate.AddYears(1)
-$pwd = "<password>"
+$endDate  = $currentDate.AddYears(1)
+$notAfter  = $endDate.AddYears(1)
+$pwd  = "<password>"
 $thumb = (New-SelfSignedCertificate -CertStoreLocation cert:\localmachine\my -DnsName com.foo.bar -KeyExportPolicy Exportable -Provider "Microsoft Enhanced RSA and AES Cryptographic Provider" -NotAfter $notAfter).Thumbprint
 $pwd = ConvertTo-SecureString -String $pwd -Force -AsPlainText
 Export-PfxCertificate -cert "cert:\localmachine\my\$thumb" -FilePath c:\temp\examplecert.pfx -Password $pwd
 
 # Load the certificate
-$cert = New-Object System.Security.Cryptography.X509Certificates.X509Certificate("C:\temp\examplecert.pfx", $pwd)
+$cert  = New-Object System.Security.Cryptography.X509Certificates.X509Certificate("C:\temp\examplecert.pfx", $pwd)
 $keyValue = [System.Convert]::ToBase64String($cert.GetRawCertData())
 
 
@@ -89,18 +92,32 @@ $application = New-AzureADApplication -DisplayName "test123" -IdentifierUris "ht
 New-AzureADApplicationKeyCredential -ObjectId $application.ObjectId -CustomKeyIdentifier "Test123" -StartDate $currentDate -EndDate $endDate -Type AsymmetricX509Cert -Usage Verify -Value $keyValue
 
 # Create the Service Principal and connect it to the Application
-$sp=New-AzureADServicePrincipal -AppId $application.AppId
+$sp = New-AzureADServicePrincipal -AppId $application.AppId
 
 # Give the Service Principal Reader access to the current tenant (Get-AzureADDirectoryRole)
 Add-AzureADDirectoryRoleMember -ObjectId 5997d714-c3b5-4d5b-9973-ec2f38fd49d5 -RefObjectId $sp.ObjectId
 
 # Get Tenant Detail
-$tenant=Get-AzureADTenantDetail
+$tenant = Get-AzureADTenantDetail
 # Now you can login to Azure PowerShell with your Service Principal and Certificate
 Connect-AzureAD -TenantId $tenant.ObjectId -ApplicationId  $sp.AppId -CertificateThumbprint $thumb
 ```
 
 This command authenticates the user to Azure Active Directory as a service principal.
+
+### Example 4: Connect a session using an existing token associated with the active azure context
+```
+# login
+Login-AzureRmAccount
+# perform other Azure operations...
+
+$currentAzureContext = Get-AzureRmContext
+$tenantId = $currentAzureContext.Tenant.Id
+$accountId = $currentAzureContext.Account.Id
+Connect-AzureAD -TenantId $tenantId -AccountId $accountId
+```
+
+This command authenticates the user to Azure Active Directory as the user associated with the current azure context, using cached tokens as possible to avoid credential re-prompting during Connect-AzureAD.
 
 ## PARAMETERS
 
@@ -110,7 +127,7 @@ Specifies a Azure Active Directory Graph access token.
 ```yaml
 Type: String
 Parameter Sets: AccessToken
-Aliases:
+Aliases: 
 
 Required: True
 Position: Named
@@ -120,13 +137,12 @@ Accept wildcard characters: False
 ```
 
 ### -AccountId
-Specifies the ID of an account.
-You must specify the UPN of the user when authenticating with a user access token.
+Specifies the ID of an account. You must specify the UPN of the user when authenticating with a user access token.
 
 ```yaml
 Type: String
 Parameter Sets: UserCredential
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -138,7 +154,7 @@ Accept wildcard characters: False
 ```yaml
 Type: String
 Parameter Sets: AccessToken
-Aliases:
+Aliases: 
 
 Required: True
 Position: Named
@@ -153,7 +169,7 @@ Specifies the application ID of the service principal.
 ```yaml
 Type: String
 Parameter Sets: ServicePrincipalCertificate
-Aliases:
+Aliases: 
 
 Required: True
 Position: Named
@@ -163,12 +179,11 @@ Accept wildcard characters: False
 ```
 
 ### -AzureEnvironmentName
-Specifies the name of the Azure environment.
-The acceptable values for this parameter are:
+Specifies the name of the Azure environment. The acceptable values for this parameter are: 
 
 - AzureCloud
 - AzureChinaCloud
-- AzureUSGovernment
+- AzureUSGovernment 
 - AzureGermanyCloud
 
 The default value is AzureCloud.
@@ -176,7 +191,7 @@ The default value is AzureCloud.
 ```yaml
 Type: EnvironmentName
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -186,12 +201,12 @@ Accept wildcard characters: False
 ```
 
 ### -CertificateThumbprint
-Specifies the certificate thumbprint of a digital public key X.509 certificate of a user account that has permission to perform this action.
+Specifies the certificate thumbprint of a digital public key X.509 certificate of a user account that has permission to perform this action. 
 
 ```yaml
 Type: String
 Parameter Sets: ServicePrincipalCertificate
-Aliases:
+Aliases: 
 
 Required: True
 Position: Named
@@ -201,15 +216,15 @@ Accept wildcard characters: False
 ```
 
 ### -Credential
-Specifies a PSCredential object.
-For more information about the PSCredential object, type Get-Help Get-Credential.
+Specifies a **PSCredential** object.
+For more information about the **PSCredential** object, type Get-Help Get-Credential.
 
-The PSCredential object provides the user ID and password for organizational ID credentials.
+The **PSCredential** object provides the user ID and password for organizational ID credentials.
 
 ```yaml
 Type: PSCredential
 Parameter Sets: UserCredential
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -219,8 +234,7 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -257,8 +271,7 @@ Accept wildcard characters: False
 ```
 
 ### -LogLevel
-Specifies the log level.
-The accdeptable values for this parameter are:
+Specifies the log level. The accdeptable values for this parameter are: 
 
 - Info
 - Error
@@ -270,7 +283,7 @@ The default value is Info.
 ```yaml
 Type: LogLevel
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -285,7 +298,7 @@ Specifies a Microsoft Graph access token.
 ```yaml
 Type: String
 Parameter Sets: AccessToken
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -299,7 +312,7 @@ Specifies the ID of a tenant.
 
 If you do not specify this parameter, the account is authenticated with the home tenant.
 
-You must specify the TenantId parameter to authenticate as a service principal or when using Microsoft account.
+You must specify the *TenantId* parameter to authenticate as a service principal or when using Microsoft account.
 
 ```yaml
 Type: String
@@ -344,6 +357,7 @@ Accept wildcard characters: False
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
+
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
@@ -357,13 +371,12 @@ Accept wildcard characters: False
 ```
 
 ### -LogFilePath
-The path where the log file for this PowerShell session is written to.
-Provide a value here if you need to deviate from the default PowerShell log file location.
+The path where the log file for this PowerShell session is written to. Provide a value here if you need to deviate from the default PowerShell log file location.
 
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -373,7 +386,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -383,5 +396,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Disconnet-AzureAD]()
+[Disconnect-AzureAD](./Disconnect-AzureAD.md)
 

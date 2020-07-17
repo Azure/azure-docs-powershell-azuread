@@ -1,6 +1,9 @@
 ---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
 Module Name: AzureADPreview
+ms.assetid: 29AA4CF0-03E2-4896-BAA1-C964C05AF3D4
+ms.custom: iamfeature=PowerShell
+ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -18,16 +21,9 @@ New-AzureADDirectorySetting -DirectorySetting <DirectorySetting> [-InformationAc
 ```
 
 ## DESCRIPTION
-The New-AzureADDirectorySetting cmdlet creates a directory settings object in Azure Active Directory (AD).
+The **New-AzureADDirectorySetting** cmdlet creates a directory settings object in Azure Active Directory (AD).
 
 ## EXAMPLES
-
-### Example 1
-```
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
 
 ## PARAMETERS
 
@@ -47,8 +43,7 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event.
-The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -95,9 +90,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADDirectorySetting]()
+[Get-AzureADDirectorySetting](./Get-AzureADDirectorySetting.md)
 
-[Remove-AzureADDirectorySetting]()
+[Remove-AzureADDirectorySetting](./Remove-AzureADDirectorySetting.md)
 
-[Set-AzureADDirectorySetting]()
-
+[Set-AzureADDirectorySetting](./Set-AzureADDirectorySetting.md)
