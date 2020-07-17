@@ -22,7 +22,7 @@ The Azure AD PowerShell for Graph General Availability module can be downloaded 
 
 ## Azure Active Directory PowerShell for Graph release version history
 
-The release history for the Azure AD module and the Azure AD Preview module is here: https://docs.microsoft.com/en-us/powershell/azure/active-directory/ad-pshell-v2-version-history
+The release history for the Azure AD module and the Azure AD Preview module is here: https://docs.microsoft.com/powershell/azure/active-directory/ad-pshell-v2-version-history
 
 ## Installing the Azure AD Module
 
