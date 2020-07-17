@@ -17,7 +17,10 @@ Set-AzureADApplicationProxyApplicationCustomDomainCertificate -ObjectId <String>
 ```
 
 ## DESCRIPTION
+
 The Set-AzureADApplicationProxyApplicationCustomDomainCertificate cmdlet assigns a certificate to an application configured for Application Proxy in Azure Active Directory (AD). This will upload the certificate and allow the application to use Custom Domains. If you have one certificate that includes many of your applications, you only need to upload it with one application and it will also be assigned to the other relevant applications.
+=======
+
 
 ## EXAMPLES
 

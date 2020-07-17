@@ -25,7 +25,7 @@ The **New-AzureADGroupAppRoleAssignment** cmdlet assigns a group to an applicati
 ## EXAMPLES
 
 ### Example 1: Assign a group to an application without roles
-
+=======
 This example assigns a group to an application that doesn't have any app roles defined, using the default app role ID.
 
 ```PowerShell
@@ -37,6 +37,7 @@ $group = Get-AzureADGroup -SearchString "<Your group's name>"
 
 # Create the group app role assignment
 New-AzureADGroupAppRoleAssignment -ObjectId $group.ObjectId -PrincipalId $group.ObjectId -ResourceId $servicePrincipal.ObjectId -Id ([Guid]::Empty)
+
 ```
 
 ### Example 2: Assign a group to a specific app role within an application
