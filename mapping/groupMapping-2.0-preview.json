@@ -228,7 +228,7 @@
     "Remove-AzureADMSFeatureRolloutPolicy" : "Staged Rollout",
     "Remove-AzureADMSFeatureRolloutPolicyDirectoryObject" : "Staged Rollout",
     "Set-AzureADMSFeatureRolloutPolicy" : "Staged Rollout",
-	"Get-AzureADMSAuthorizationPolicy" : "Groups",
-	"Set-AzureADMSAuthorizationPolicy" : "Groups"
+	"Get-AzureADMSAuthorizationPolicy" : "Policies",
+	"Set-AzureADMSAuthorizationPolicy" : "Policies"
 
 }
