@@ -41,6 +41,7 @@ $licenses.AddLicenses = $license
 Set-AzureADUserLicense -ObjectId "Violeta.Collias@drumkit.onmicrosoft.com" -AssignedLicenses $licenses
 
 $Licenses.AddLicenses = @()
+# Note that RemoveLicenses is a list of SkuID strings, and not objects like AddLicenses
 $Licenses.RemoveLicenses =  (Get-AzureADSubscribedSku | Where-Object -Property SkuPartNumber -Value "O365_BUSINESS_PREMIUM" -EQ).SkuID
 Set-AzureADUserLicense -ObjectId "Violeta.Collias@drumkit.onmicrosoft.com" -AssignedLicenses $licenses 
 ```
