@@ -442,7 +442,7 @@ These include the following:
 * [Azure Active Directory Forum](http://aka.ms/aadforum)
 * [Azure AD Community Information Center](http://aka.ms/aadcommunity)
 * [Azure Active Directory Community scripts](http://aka.ms/aadscripts)
-* [Microsoft Azure Active Directory PowerShell Module Version Release History](http://social.technet.microsoft.com/wiki/contents/articles/28552.microsoft-azure-active-directory-powershell-module-version-release-history.aspx)
+* [Microsoft Azure Active Directory PowerShell Module Version Release History](https://social.technet.microsoft.com/wiki/contents/articles/28552.microsoft-azure-active-directory-powershell-module-version-release-history.aspx)
 
 ## See Also
 
