@@ -222,11 +222,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADMSGroup]()
+[Get-AzureADMSGroup](get-azureadmsgroup.md)
 
-[Remove-AzureADMSGroup]()
+[Remove-AzureADMSGroup](remove-azureadmsgroup.md)
 
-[New-AzureADMSGroup]()
+[New-AzureADMSGroup](new-azureadmsgroup.md)
 
 [Using attributes to create advanced rules](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/)
 
