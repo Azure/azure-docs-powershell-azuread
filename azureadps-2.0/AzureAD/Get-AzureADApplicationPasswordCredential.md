@@ -21,6 +21,7 @@ Get-AzureADApplicationPasswordCredential -ObjectId <String> [-InformationAction 
 
 ## DESCRIPTION
 The **Get-AzureADApplicationPasswordCredential** cmdlet gets the password credentials for an Azure Active Directory application.
+<sub>This does not return the App Secret or Certificate used </sub>
 
 ## EXAMPLES
 
@@ -33,6 +34,14 @@ EndDate             : 9/28/2017 3:57:10 PM
 KeyId               :
 StartDate           : 9/28/2016 3:57:10 PM
 Value               : ZJ0V1Yg4cp4eWIey9DrYspqVdX1pdvY437P/ueGxVLU=
+
+PS C:\>Get-AzureADApplicationPasswordCredential -ObjectId 3ddd22e7-a150-4bb3-b100-e410dea1cb84
+
+CustomKeyIdentifier :
+EndDate             : 9/28/2017 3:57:10 PM
+KeyId               : 99f25818-ced1-4d54-959c-ef1111ae6ed6
+StartDate           : 9/28/2016 3:57:10 PM
+Value               :
 ```
 
 ## PARAMETERS
