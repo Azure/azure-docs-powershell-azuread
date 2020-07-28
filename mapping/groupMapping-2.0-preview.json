@@ -229,6 +229,20 @@
     "Remove-AzureADMSFeatureRolloutPolicyDirectoryObject" : "Staged Rollout",
     "Set-AzureADMSFeatureRolloutPolicy" : "Staged Rollout",
 	"Get-AzureADMSAuthorizationPolicy" : "Policies",
-	"Set-AzureADMSAuthorizationPolicy" : "Policies"
-
+	"Set-AzureADMSAuthorizationPolicy" : "Policies",
+	"Get-AzureADMSApplication" : "Application", 
+    "New-AzureADMSApplication" : "Application",
+    "Set-AzureADMSApplication" : "Application",
+    "Set-AzureADMSApplicationLogo" : "Application",
+    "Remove-AzureADMSApplication" : "Application",
+    "New-AzureADMSApplicationPassword" : "Application",
+    "Remove-AzureADMSApplicationPassword" : "Application",
+    "New-AzureADMSApplicationKey" : "Application",
+    "Remove-AzureADMSApplicationKey" : "Application",
+    "Get-AzureADMSApplicationOwner" : "Application",
+    "Add-AzureADMSApplicationOwner" : "Application",
+    "Remove-AzureADMSApplicationOwner" : "Application",
+    "Get-AzureADMSApplicationExtensionProperty" : "Application",
+    "New-AzureADMSApplicationExtensionProperty" : "Application",
+    "Remove-AzureADMSApplicationExtensionProperty" : "Application"
 }
