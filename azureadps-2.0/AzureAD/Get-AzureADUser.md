@@ -67,9 +67,13 @@ PS C:\>Get-AzureADUser -Filter "userPrincipalName eq 'jondoe@contoso.com'"
 
 This command gets the specified user.
 
-### Example 5: Get a user by userPrincipalName
+### Example 5: Get a user with a job title begining with Sales
 ```
 PS C:\>Get-AzureADUser -Filter "startswith(Title,'Sales')"
+```
+### Example 6: Combines 2 filters in a single request: Get a user with a job title begining with Sales and ensures that the user is enabled
+```
+PS C:\>Get-AzureADUser -Filter "startswith(Title,'Sales') and (accountEnabled eq true)"
 ```
 
 This command gets all the users whos title starts with sales. ie Sales Manager and Sales Assistant.
