@@ -8,7 +8,13 @@ Locale: en-US
 
 # AzureADPreview Module
 ## Description
-{{Manually Enter Description Here}}
+The Azure Active Directory PowerShell for Graph Preview module can be downloaded and installed from the PowerShell Gallery, www.powershellgallery.com. The gallery uses the PowerShellGet module. The PowerShellGet module requires PowerShell 3.0 or newer and requires one of the following operating systems:
+
+Windows 10 Windows 8.1 Pro Windows 8.1 Enterprise Windows 7 SP1 Windows Server 2016 TP5 Windows Server 2012 R2 Windows Server 2008 R2 SP1
+
+PowerShellGet also requires .NET Framework 4.5 or above. You can install .NET Framework 4.5 or above from here. For more information, please refer to this link For more detailed info on installation of the AzureAD cmdlets please see: Azure Active Directory PowerShell for Graph.
+
+These are the cmdlets in the Azure Active Directory PowerShell for Graph Preview module.
 
 ## AzureADPreview Cmdlets
 ### [Add-AzureADAdministrativeUnitMember](Add-AzureADAdministrativeUnitMember.md)
