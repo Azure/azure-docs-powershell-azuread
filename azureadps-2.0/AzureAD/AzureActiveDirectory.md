@@ -27,34 +27,34 @@ These are the cmdlets in the Azure Active Directory PowerShell for Graph module.
 
 ## Administrative Units
 
-### [Add-AzureADAdministrativeUnitMember](Add-AzureADAdministrativeUnitMember.md)
+### [Add-AzureADMSAdministrativeUnitMember](Add-AzureADMSAdministrativeUnitMember.md)
 Adds an administrative unit member.
 
 ### [Add-AzureADScopedRoleMembership](Add-AzureADScopedRoleMembership.md)
 Adds a scoped role membership to an administrative unit.
 
-### [Get-AzureADAdministrativeUnit](Get-AzureADAdministrativeUnit.md)
+### [Get-AzureADMSAdministrativeUnit](Get-AzureADMSAdministrativeUnit.md)
 Gets an administrative unit.
 
-### [Get-AzureADAdministrativeUnitMember](Get-AzureADAdministrativeUnitMember.md)
+### [Get-AzureADMSAdministrativeUnitMember](Get-AzureADMSAdministrativeUnitMember.md)
 Gets a member of an administrative unit.
 
 ### [Get-AzureADScopedRoleMembership](Get-AzureADScopedRoleMembership.md)
 Gets a scoped role membership from an administrative unit.
 
-### [New-AzureADAdministrativeUnit](New-AzureADAdministrativeUnit.md)
+### [New-AzureADMSAdministrativeUnit](New-AzureADMSAdministrativeUnit.md)
 Creates an administrative unit.
 
-### [Remove-AzureADAdministrativeUnit](Remove-AzureADAdministrativeUnit.md)
+### [Remove-AzureADMSAdministrativeUnit](Remove-AzureADMSAdministrativeUnit.md)
 Removes an administrative unit.
 
-### [Remove-AzureADAdministrativeUnitMember](Remove-AzureADAdministrativeUnitMember.md)
+### [Remove-AzureADMSAdministrativeUnitMember](Remove-AzureADMSAdministrativeUnitMember.md)
 Removes an administrative unit member.
 
 ### [Remove-AzureADScopedRoleMembership](Remove-AzureADScopedRoleMembership.md)
 Removes a scoped role membership.
 
-### [Set-AzureADAdministrativeUnit](Set-AzureADAdministrativeUnit.md)
+### [Set-AzureADMSAdministrativeUnit](Set-AzureADMSAdministrativeUnit.md)
 Updates an administrative unit.
 
 
