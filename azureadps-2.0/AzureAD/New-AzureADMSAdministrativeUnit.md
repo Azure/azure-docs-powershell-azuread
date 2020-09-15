@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Open.AzureADBeta.Graph.PowerShell.dll-Help.xml
-Module Name: AzureADPreview
+Module Name: AzureAD
 ms.assetid: 7B6691DA-D534-4425-B85E-9EC7EA729ED2
 ms.custom: iamfeature=PowerShell
 ms.reviewer: rodejo
@@ -8,7 +8,7 @@ online version:
 schema: 2.0.0
 ---
 
-# New-AzureADAdministrativeUnit
+# New-AzureADMSAdministrativeUnit
 
 ## SYNOPSIS
 Creates an administrative unit.
@@ -16,12 +16,12 @@ Creates an administrative unit.
 ## SYNTAX
 
 ```
-New-AzureADAdministrativeUnit [-InformationAction <ActionPreference>] [-InformationVariable <String>]
+New-AzureADMSAdministrativeUnit [-InformationAction <ActionPreference>] [-InformationVariable <String>]
  [-Description <String>] -DisplayName <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The **New-AzureADAdministrativeUnit** cmdlet creates an administrative unit in Azure Active Directory (AD).
+The **New-AzureADMSAdministrativeUnit** cmdlet creates an administrative unit in Azure Active Directory (AD).
 
 ## EXAMPLES
 
@@ -105,10 +105,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADAdministrativeUnit](./Get-AzureADAdministrativeUnit.md)
+[Get-AzureADMSAdministrativeUnit](./Get-AzureADMSAdministrativeUnit.md)
 
-[Remove-AzureADAdministrativeUnit](./Remove-AzureADAdministrativeUnit.md)
+[Remove-AzureADMSAdministrativeUnit](./Remove-AzureADMSAdministrativeUnit.md)
 
-[Set-AzureADAdministrativeUnit](./Set-AzureADAdministrativeUnit.md)
+[Set-AzureADMSAdministrativeUnit](./Set-AzureADMSAdministrativeUnit.md)
 
 

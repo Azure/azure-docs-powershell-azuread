@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Open.AzureADBeta.Graph.PowerShell.dll-Help.xml
-Module Name: AzureADPreview
+Module Name: AzureAD
 ms.assetid: 5BEB9DBE-CEB2-45EA-9F3F-BCB68E7CB857
 ms.custom: iamfeature=PowerShell
 ms.reviewer: rodejo
@@ -8,7 +8,7 @@ online version:
 schema: 2.0.0
 ---
 
-# Remove-AzureADAdministrativeUnit
+# Remove-AzureADMSAdministrativeUnit
 
 ## SYNOPSIS
 Removes an administrative unit.
@@ -16,12 +16,12 @@ Removes an administrative unit.
 ## SYNTAX
 
 ```
-Remove-AzureADAdministrativeUnit -ObjectId <String> [-InformationAction <ActionPreference>]
+Remove-AzureADMSAdministrativeUnit -Id <String> [-InformationAction <ActionPreference>]
  [-InformationVariable <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The **Remove-AzureADAdministrativeUnit** cmdlet removes an administrative unit from Azure Active Directory.
+The **Remove-AzureADMSAdministrativeUnit** cmdlet removes an administrative unit from Azure Active Directory.
 
 ## EXAMPLES
 
@@ -65,7 +65,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ObjectId
+### -Id
 Specifies the ID of an administrative unit in Active Directory.
 
 ```yaml
@@ -91,7 +91,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADAdministrativeUnit](./Get-AzureADAdministrativeUnit.md)
+[Get-AzureADMSAdministrativeUnit](./Get-AzureADMSAdministrativeUnit.md)
 
-[Set-AzureADAdministrativeUnit](./Set-AzureADAdministrativeUnit.md)
+[Set-AzureADMSAdministrativeUnit](./Set-AzureADMSAdministrativeUnit.md)
 

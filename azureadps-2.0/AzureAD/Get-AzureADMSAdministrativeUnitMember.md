@@ -1,27 +1,27 @@
 ---
 external help file: Microsoft.Open.AzureADBeta.Graph.PowerShell.dll-Help.xml
-Module Name: AzureADPreview
-ms.assetid: C2254A89-1700-4321-99FD-529E481705A3
+Module Name: AzureAD
+ms.assetid: C05871A7-998C-48AC-BCEB-4CD916E86767
 ms.custom: iamfeature=PowerShell
 ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
 
-# Add-AzureADAdministrativeUnitMember
+# Get-AzureADMSAdministrativeUnitMember
 
 ## SYNOPSIS
-Adds an administrative unit member.
+Gets a member of an administrative unit.
 
 ## SYNTAX
 
 ```
-Add-AzureADAdministrativeUnitMember -ObjectId <String> -RefObjectId <String>
- [-InformationAction <ActionPreference>] [-InformationVariable <String>] [<CommonParameters>]
+Get-AzureADMSAdministrativeUnitMember -Id <String> [-InformationAction <ActionPreference>]
+ [-InformationVariable <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The **Add-AzureADAdministrativeUnitMember** cmdlet adds an Active Directory administrative unit member.
+The **Get-AzureADMSAdministrativeUnitMember** cmdlet gets a member of an Active Directory administrative unit.
 
 ## EXAMPLES
 
@@ -66,25 +66,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ObjectId
-Specifies the ID of an Active Directory administrative unit.
-
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByPropertyName, ByValue)
-Accept wildcard characters: False
-```
-
-### -RefObjectId
-Specifies the unique ID of the specific Azure Active Directory object that will be assigned as owner/manager/member.
-
+### -Id
+Specifies the ID of an administrative unit in Azure Active Directory.
 
 ```yaml
 Type: String
@@ -109,6 +92,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADAdministrativeUnitMember](./Get-AzureADAdministrativeUnitMember.md)
+[Add-AzureADMSAdministrativeUnitMember](./Add-AzureADMSAdministrativeUnitMember.md)
 
-[Remove-AzureADAdministrativeUnitMember](./Remove-AzureADAdministrativeUnitMember.md)
+[Remove-AzureADMSAdministrativeUnitMember](./Remove-AzureADMSAdministrativeUnitMember.md)
+

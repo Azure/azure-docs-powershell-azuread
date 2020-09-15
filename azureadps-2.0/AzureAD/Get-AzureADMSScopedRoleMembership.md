@@ -1,33 +1,34 @@
 ---
 external help file: Microsoft.Open.AzureADBeta.Graph.PowerShell.dll-Help.xml
-Module Name: AzureADPreview
-ms.assetid: 937A2A6D-2DF5-43A5-8D2B-8555420254FB
+Module Name: AzureAD
+ms.assetid: 142C8CA5-58AC-4D47-98D5-B3FB7E6A37C7
 ms.custom: iamfeature=PowerShell
 ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
 
-# Remove-AzureADScopedRoleMembership
+# Get-AzureADMSScopedRoleMembership
 
 ## SYNOPSIS
-Removes a scoped role membership.
+Gets a scoped role membership from an administrative unit.
 
 ## SYNTAX
 
 ```
-Remove-AzureADScopedRoleMembership -ObjectId <String> -ScopedRoleMembershipId <String> [<CommonParameters>]
+Get-AzureADMSScopedRoleMembership -Id <String> [-ScopedRoleMembershipId <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The **Remove-AzureADScopedRoleMembership** cmdlet removes a scoped role membership from Azure Active Directory (AD).
+The **Get-AzureADMSScopedRoleMembership** cmdlet gets a scoped role membership from an administrative unit in Azure Active Directory (AD).
 
 ## EXAMPLES
 
 ## PARAMETERS
 
-### -ObjectId
-Specifies an object ID.
+### -Id
+Specifies the ID of the administrative unit object.
+
 
 ```yaml
 Type: String
@@ -42,14 +43,14 @@ Accept wildcard characters: False
 ```
 
 ### -ScopedRoleMembershipId
-Specifies the ID of the scoped role membership to remove.
+Specifies the ID of a scoped role membership.
 
 ```yaml
 Type: String
 Parameter Sets: (All)
 Aliases:
 
-Required: True
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: True (ByPropertyName, ByValue)
@@ -67,6 +68,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Add-AzureADScopedRoleMembership](./Add-AzureADScopedRoleMembership.md)
+[Add-AzureADMSScopedRoleMembership](./Add-AzureADMSScopedRoleMembership.md)
 
-[Get-AzureADScopedRoleMembership](./Get-AzureADScopedRoleMembership.md)
+[Remove-AzureADMSScopedRoleMembership](./Remove-AzureADMSScopedRoleMembership.md)
+

@@ -1,6 +1,6 @@
 ---
 external help file: Microsoft.Open.AzureADBeta.Graph.PowerShell.dll-Help.xml
-Module Name: AzureADPreview
+Module Name: AzureAD
 ms.assetid: 46154156-B7D4-40DE-8EC9-760E44110C76
 ms.custom: iamfeature=PowerShell
 ms.reviewer: rodejo
@@ -8,7 +8,7 @@ online version:
 schema: 2.0.0
 ---
 
-# Get-AzureADAdministrativeUnit
+# Get-AzureADMSAdministrativeUnit
 
 ## SYNOPSIS
 Gets an administrative unit.
@@ -17,16 +17,16 @@ Gets an administrative unit.
 
 ### GetQuery (Default)
 ```
-Get-AzureADAdministrativeUnit [-All <Boolean>] [-Top <Int32>] [-Filter <String>] [<CommonParameters>]
+Get-AzureADMSAdministrativeUnit [-All <Boolean>] [-Top <Int32>] [-Filter <String>] [<CommonParameters>]
 ```
 
 ### GetById
 ```
-Get-AzureADAdministrativeUnit -ObjectId <String> [-All <Boolean>] [<CommonParameters>]
+Get-AzureADMSAdministrativeUnit -Id <String> [-All <Boolean>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The **Get-AzureADAdministrativeUnit** cmdlet gets an Azure Active Directory administrative unit.
+The **Get-AzureADMSAdministrativeUnit** cmdlet gets an Azure Active Directory administrative unit.
 
 ## EXAMPLES
 
@@ -64,7 +64,7 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
-### -ObjectId
+### -Id
 Specifies the ID of an administrative unit in Azure Active Directory.
 
 ```yaml
@@ -105,8 +105,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[New-AzureADAdministrativeUnit](./New-AzureADAdministrativeUnit.md)
+[New-AzureADMSAdministrativeUnit](./New-AzureADMSAdministrativeUnit.md)
 
-[Remove-AzureADAdministrativeUnit](./Remove-AzureADAdministrativeUnit.md)
+[Remove-AzureADMSAdministrativeUnit](./Remove-AzureADMSAdministrativeUnit.md)
 
-[Set-AzureADAdministrativeUnit](./Set-AzureADAdministrativeUnit.md)
+[Set-AzureADMSAdministrativeUnit](./Set-AzureADMSAdministrativeUnit.md)

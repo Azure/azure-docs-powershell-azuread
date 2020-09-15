@@ -1,27 +1,27 @@
 ---
 external help file: Microsoft.Open.AzureADBeta.Graph.PowerShell.dll-Help.xml
-Module Name: AzureADPreview
-ms.assetid: 9DEA1FE5-FE78-431F-9D12-53C349812A81
+Module Name: AzureAD
+ms.assetid: C2254A89-1700-4321-99FD-529E481705A3
 ms.custom: iamfeature=PowerShell
 ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
 
-# Remove-AzureADAdministrativeUnitMember
+# Add-AzureADMSAdministrativeUnitMember
 
 ## SYNOPSIS
-Removes an administrative unit member.
+Adds an administrative unit member.
 
 ## SYNTAX
 
 ```
-Remove-AzureADAdministrativeUnitMember -ObjectId <String> -MemberId <String>
+Add-AzureADMSAdministrativeUnitMember -Id <String> -RefObjectId <String>
  [-InformationAction <ActionPreference>] [-InformationVariable <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The **Remove-AzureADAdministrativeUnitMember** cmdlet removes an administrative unit member in Azure Active Directory (AD).
+The **Add-AzureADMSAdministrativeUnitMember** cmdlet adds an Active Directory administrative unit member.
 
 ## EXAMPLES
 
@@ -29,15 +29,14 @@ The **Remove-AzureADAdministrativeUnitMember** cmdlet removes an administrative 
 
 ### -InformationAction
 Specifies how this cmdlet responds to an information event.
-
 The acceptable values for this parameter are:
+* Continue
+* Ignore
+* Inquire
+* SilentlyContinue
+* Stop
+* Suspend
 
-- Continue
-- Ignore
-- Inquire
-- SilentlyContinue
-- Stop
-- Suspend
 
 ```yaml
 Type: ActionPreference
@@ -52,7 +51,8 @@ Accept wildcard characters: False
 ```
 
 ### -InformationVariable
-Specifies an information variable.
+Specifies a variable in which to store an information event message.
+
 
 ```yaml
 Type: String
@@ -66,8 +66,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -MemberId
-Specifies the ID of the administrative unit member.
+### -Id
+Specifies the ID of an Active Directory administrative unit.
+
 
 ```yaml
 Type: String
@@ -81,8 +82,9 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
-### -ObjectId
-Specifies the ID of an administrative unit in Azure AD.
+### -RefObjectId
+Specifies the unique ID of the specific Azure Active Directory object that will be assigned as owner/manager/member.
+
 
 ```yaml
 Type: String
@@ -107,8 +109,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Add-AzureADAdministrativeUnitMember](./Add-AzureADAdministrativeUnitMember.md)
+[Get-AzureADMSAdministrativeUnitMember](./Get-AzureADMSAdministrativeUnitMember.md)
 
-[Remove-AzureADAdministrativeUnitMember](./Remove-AzureADAdministrativeUnitMember.md)
-
-
+[Remove-AzureADMSAdministrativeUnitMember](./Remove-AzureADMSAdministrativeUnitMember.md)
