@@ -17,7 +17,7 @@ Adds a scoped role membership to an administrative unit.
 
 ```
 Add-AzureADMSScopedRoleMembership -Id <String>
- [-RoleObjectId <String>] [-RoleMemberInfo <RoleMemberInfo>] [<CommonParameters>]
+ [-RoleId <String>] [-RoleMemberInfo <RoleMemberInfo>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -32,13 +32,13 @@ $User = Get-AzureADUser -SearchString "The user that will be an admin on this un
 	$Unit = Get-AzureADMSAdministrativeUnit | Where-Object -Property DisplayName -Eq -Value "<The display name of the unit"
 	$RoleMember = New-Object -TypeName Microsoft.Open.AzureAD.Model.RoleMemberInfo
 	$RoleMember.ObjectId = $User.ObjectID
-	Add-AzureADMSScopedRoleMembership -Id $unit.ObjectId -RoleObjectId $Role.ObjectId -RoleMemberInfo $RoleMember
+	Add-AzureADMSScopedRoleMembership -Id $unit.ObjectId -RoleId $Role.ObjectId -RoleMemberInfo $RoleMember
 ```
 
 This cmdlet returns the Scope role membership object:
  
 
-	AdministrativeUnitId                 RoleObjectId
+	AdministrativeUnitId                 RoleId
 	--------------------------           ------------
 	c9ab56cc-e349-4237-856e-cab03157a91e 526b7173-5a6e-49dc-88ec-b677a9093709
 
@@ -74,7 +74,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -RoleObjectId
+### -RoleId
 ```yaml
 Type: String
 Parameter Sets: (All)

@@ -16,7 +16,7 @@ Removes a scoped role membership.
 ## SYNTAX
 
 ```
-Remove-AzureADMSScopedRoleMembership -Id <String> -ScopedRoleMembershipId <String> [<CommonParameters>]
+Remove-AzureADMSScopedRoleMembership -Id <String> -ScopedRoleMembership <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -41,7 +41,7 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
-### -ScopedRoleMembershipId
+### -ScopedRoleMembership
 Specifies the ID of the scoped role membership to remove.
 
 ```yaml
