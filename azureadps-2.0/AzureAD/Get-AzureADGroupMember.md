@@ -1,10 +1,8 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
-ms.assetid: 8212C7A5-3AA7-4E28-9F0C-D0C97F8AC08E
-online version: 
+Module Name: AzureAD
+online version:
 schema: 2.0.0
-ms.reviewer: rodejo
-ms.custom: iamfeature=PowerShell
 ---
 
 # Get-AzureADGroupMember
@@ -19,7 +17,7 @@ Get-AzureADGroupMember -ObjectId <String> [-All <Boolean>] [-Top <Int32>] [<Comm
 ```
 
 ## DESCRIPTION
-The **Get-AzureADGroupMember** cmdlet gets a member of a group in Azure Active Directory (AD).
+The Get-AzureADGroupMember cmdlet gets a member of a group in Azure Active Directory (AD).
 
 ## EXAMPLES
 
@@ -35,12 +33,13 @@ ObjectId                             ObjectType
 ## PARAMETERS
 
 ### -All
-If true, return all group members. If false, return the number of objects specified by the Top parameter
+If true, return all group members.
+If false, return the number of objects specified by the Top parameter
 
 ```yaml
 Type: Boolean
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -55,7 +54,7 @@ Specifies the ID of a group in Azure AD.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -70,7 +69,7 @@ Specifies the maximum number of records to return.
 ```yaml
 Type: Int32
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -80,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -90,6 +89,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Add-AzureADGroupMember](./Add-AzureADGroupMember.md)
-[Remove-AzureADGroupMember](./Remove-AzureADGroupMember.md)
+[Add-AzureADGroupMember]()
+
+[Remove-AzureADGroupMember]()
 

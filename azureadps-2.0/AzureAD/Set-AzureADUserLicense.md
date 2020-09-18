@@ -1,10 +1,8 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
-ms.assetid: A98FA4E7-3662-433C-A28D-CAF4D60592A1
-online version: 
+Module Name: AzureAD
+online version:
 schema: 2.0.0
-ms.reviewer: rodejo
-ms.custom: iamfeature=PowerShell
 ---
 
 # Set-AzureADUserLicense
@@ -20,44 +18,45 @@ Set-AzureADUserLicense -ObjectId <String> -AssignedLicenses <AssignedLicenses>
 ```
 
 ## DESCRIPTION
-The **Set-AzureADUserLicense** adds or removes licenses for a Microsoft online service to the list of assigned licenses for a user.
+The Set-AzureADUserLicense adds or removes licenses for a Microsoft online service to the list of assigned licenses for a user.
 
 ## EXAMPLES
 
-### Example 1: Add or remove a license for a user
-
-```powershell
-# Create the objects we'll need to add and remove licenses
-$license = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicense
-$licenses = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicenses
-
-# Find the SkuID of the license we want to add - in this example we'll use the O365_BUSINESS_PREMIUM license
-$license.SkuId = (Get-AzureADSubscribedSku | Where-Object -Property SkuPartNumber -Value "O365_BUSINESS_PREMIUM" -EQ).SkuID
-
-# Set the Office license as the license we want to add in the $licenses object
-$licenses.AddLicenses = $license
-
-# Call the Set-AzureADUserLicense cmdlet to set the license.
-Set-AzureADUserLicense -ObjectId "Violeta.Collias@drumkit.onmicrosoft.com" -AssignedLicenses $licenses
-
-$Licenses.AddLicenses = @()
-$Licenses.RemoveLicenses =  (Get-AzureADSubscribedSku | Where-Object -Property SkuPartNumber -Value "O365_BUSINESS_PREMIUM" -EQ).SkuID
-Set-AzureADUserLicense -ObjectId "Violeta.Collias@drumkit.onmicrosoft.com" -AssignedLicenses $licenses 
+### Example 1: Add a license to a user based on a template user
 ```
+PS C:\> $LicensedUser = Get-AzureADUser -ObjectId "TemplateUser@contoso.com"  
+PS C:\> $User = Get-AzureADUser -ObjectId "User@contoso.com"  
+PS C:\> $License = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicense 
+PS C:\> $License.SkuId = $LicensedUser.AssignedLicenses.SkuId 
+PS C:\> $Licenses = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicenses 
+PS C:\> $Licenses.AddLicenses = $License 
+PS C:\> Set-AzureADUserLicense -ObjectId $User.ObjectId -AssignedLicenses $Licenses
+```
+
+The first command gets a user by using the Get-AzureADUser (./Get-AzureADUser.md)cmdlet, and then stores it in the $LicensedUser variable.
+
+The second command gets another user by using Get-AzureADUser , and then stores it in the $User variable.
+
+The third command creates an AssignedLicense type, and then stores it in the $License variable.
+
+The fourth command set the SkuId property of $License to the same value as the SkuId property of $LicensedUser.
+
+The fifth commmand creates an AssignedLicenses object, and stores it in the $Licenses variable.
+
+The sixth command adds the license in $License to $Licenses.
+
+The final command assigns the licenses in $Licenses to the user in $User.
+The licenses in $Licenses includes $License from the third and fourth commands.
 
 ## PARAMETERS
 
 ### -AssignedLicenses
-Specifies a list of licenses to assign or remove. This parameter takes an object of the type Microsoft.Open.AzureAD.Model.AssignedLicenses, as shown in the example above. This contains two attributes that we'll be using here: 
-+ AddLicenses is list that contains objects of the type Microsoft.Open.AzureAD.Model.AssignedLicense
-+ RemoveLicenses is a list that contains objects of the type String
-
-To add new licenses to a user, specify these in the AddLicenses property, to remove licenses add them to the list in the RemoveLicenses property. Licenses that are assigned to a user but are not mentioned in the RemoveLicenses or AddLicenses properties are not changed.
+Specifies a list of licenses to assign or remove.
 
 ```yaml
 Type: AssignedLicenses
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -67,7 +66,8 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event.
+The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -104,12 +104,12 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-Specifies the ID of a user (as a UPN or ObjectId) in Azure AD. 
+Specifies the ID of a user (as a UPN or ObjectId) in Azure AD.
 
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -129,4 +129,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADUser](./Get-AzureADUser.md) 
+[Get-AzureADUser]()
+

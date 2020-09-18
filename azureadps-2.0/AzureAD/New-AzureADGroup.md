@@ -1,16 +1,14 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
-ms.assetid: A81910CC-FC86-414D-B79D-B09892732DC1
-online version: 
+Module Name: AzureAD
+online version:
 schema: 2.0.0
-ms.reviewer: rodejo
-ms.custom: iamfeature=PowerShell
 ---
 
 # New-AzureADGroup
 
 ## SYNOPSIS
-This cmdlet can be used to create a group.
+Creates a group.
 
 ## SYNTAX
 
@@ -21,23 +19,7 @@ New-AzureADGroup [-InformationAction <ActionPreference>] [-InformationVariable <
 ```
 
 ## DESCRIPTION
-The **New-AzureADGroup** cmdlet creates a group in Azure Active Directory (AD).
-
-Note: 
-
-Groups with the following highly privileged email aliases can only be created by an Azure AD global administrator:
-
-* abuse 
-* admin 
-* administrator 
-* hostmaster 
-* majordomo 
-* postmaster 
-* root 
-* secure 
-* security 
-* ssl-admin 
-* webmaster 
+The New-AzureADGroup cmdlet creates a group in Azure Active Directory (AD).
 
 ## EXAMPLES
 
@@ -58,7 +40,7 @@ Specifies a description of the group.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -73,7 +55,7 @@ Specifies the display name of the group.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -127,7 +109,7 @@ Indicates whether mail is enabled.
 ```yaml
 Type: Boolean
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -142,7 +124,7 @@ Specifies a nickname for mail.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -157,7 +139,7 @@ Indicates whether the group is security-enabled.
 ```yaml
 Type: Boolean
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -167,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -177,10 +159,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADGroup](./Get-AzureADGroup.md)
+[Get-AzureADGroup]()
 
-[Remove-AzureADGroup](./Remove-AzureADGroup.md)
+[Remove-AzureADGroup]()
 
-[Set-AzureADGroup](./Set-AzureADGroup.md)
-
+[Set-AzureADGroup]()
 

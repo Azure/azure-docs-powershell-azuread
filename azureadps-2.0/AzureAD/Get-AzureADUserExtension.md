@@ -1,10 +1,8 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.Custom.dll-Help.xml
-ms.assetid: 98A2D6B6-FBE5-420F-BA31-94161FBACEDF
-online version: 
+Module Name: AzureAD
+online version:
 schema: 2.0.0
-ms.reviewer: rodejo
-ms.custom: iamfeature=PowerShell
 ---
 
 # Get-AzureADUserExtension
@@ -19,7 +17,7 @@ Get-AzureADUserExtension -ObjectId <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The **Get-AzureADUserExtension** cmdlet gets a user extension in Azure Active Directory (AD).
+The Get-AzureADUserExtension cmdlet gets a user extension in Azure Active Directory (AD).
 
 ## EXAMPLES
 
@@ -42,7 +40,7 @@ refreshTokensValidFromDateTime 11/7/2016 10:11:09 PM
 showInAddressList
 ```
 
-The first command gets the ID of an Azure AD user by using the [Get-AzureADUser](./Get-AzureADUser.md) cmdlet. 
+The first command gets the ID of an Azure AD user by using the Get-AzureADUser (./Get-AzureADUser.md)cmdlet. 
 The command stores the value in the $UserId variable.
 
 The second command retrieves all extension attributes that have a value assigned to them for the user identified by $UserId.
@@ -51,10 +49,11 @@ The second command retrieves all extension attributes that have a value assigned
 
 ### -ObjectId
 Specifies the ID of an object.
+
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -64,7 +63,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -74,8 +73,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADUser](./Get-AzureADUser.md)
+[Get-AzureADUser]()
 
-[Remove-AzureADUserExtension](./Remove-AzureADUserExtension.md)
+[Remove-AzureADUserExtension]()
 
-[Set-AzureADUserExtension](./Set-AzureADUserExtension.md)
+[Set-AzureADUserExtension]()
+
