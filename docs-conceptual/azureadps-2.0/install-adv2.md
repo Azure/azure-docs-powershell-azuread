@@ -1,7 +1,7 @@
 ---
 services: active-directory
 documentationcenter: ''
-
+title: 'Install AzureAD PowerShell for Graph'
 ms.service: active-directory
 ms.workload: identity
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ ms.author: rodejo
 ms.custom: posh-docs-conceptual
 ms.reviewer: rodejo
 ---
-# Azure Active Directory PowerShell for Graph
+# Install Azure Active Directory PowerShell for Graph
 
 You can use the Azure Active Directory PowerShell Module Version for Graph for Azure AD administrative tasks such as user management, domain management and for configuring single sign-on. The cmdlets listed here are different than the MSOL cmdlets which are part of Azure Active Directory Version 1.0.
 

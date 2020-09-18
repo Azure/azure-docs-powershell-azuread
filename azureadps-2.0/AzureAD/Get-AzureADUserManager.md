@@ -1,10 +1,8 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
-ms.assetid: C27027E1-A314-4EF2-82F2-396524334B99
-online version: 
+Module Name: AzureAD
+online version:
 schema: 2.0.0
-ms.reviewer: rodejo
-ms.custom: iamfeature=PowerShell
 ---
 
 # Get-AzureADUserManager
@@ -20,7 +18,7 @@ Get-AzureADUserManager -ObjectId <String> [-InformationAction <ActionPreference>
 ```
 
 ## DESCRIPTION
-The **Get-AzureADUserManager** cmdlet gets the manager of a user in Azure Active Directory (AD).
+The Get-AzureADUserManager cmdlet gets the manager of a user in Azure Active Directory (AD).
 
 ## EXAMPLES
 
@@ -38,7 +36,8 @@ This command gets the manager of the specified user.
 ## PARAMETERS
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event.
+The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -80,7 +79,7 @@ The unique identifier of a user in Azure Active Directory (UPN or ObjectId)
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -90,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -100,7 +99,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Remove-AzureADUserManager](./Remove-AzureADUserManager.md)
+[Remove-AzureADUserManager]()
 
-[Set-AzureADUserManager](./Set-AzureADUserManager.md)
+[Set-AzureADUserManager]()
 

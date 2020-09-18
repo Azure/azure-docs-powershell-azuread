@@ -1,10 +1,8 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
-ms.assetid: 441B9A03-B06D-4B67-91F2-09CB78C11330
-online version: 
+Module Name: AzureAD
+online version:
 schema: 2.0.0
-ms.reviewer: rodejo
-ms.custom: iamfeature=PowerShell
 ---
 
 # Remove-AzureADApplicationExtensionProperty
@@ -20,7 +18,7 @@ Remove-AzureADApplicationExtensionProperty -ObjectId <String> -ExtensionProperty
 ```
 
 ## DESCRIPTION
-The **Remove-AzureADApplicationExtensionProperty** cmdlet removes an application extension property for an object in Azure Active Directory.
+The Remove-AzureADApplicationExtensionProperty cmdlet removes an application extension property for an object in Azure Active Directory.
 
 ## EXAMPLES
 
@@ -39,7 +37,7 @@ Specifies the unique ID of the extension property to remove.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -93,7 +91,7 @@ Specifies the unique ID of an application in Azure Active Directory.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -103,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -113,6 +111,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADApplicationExtensionProperty](./Get-AzureADApplicationExtensionProperty.md)
+[Get-AzureADApplicationExtensionProperty]()
 
-[New-AzureADApplicationExtensionProperty](./New-AzureADApplicationExtensionProperty.md)
+[New-AzureADApplicationExtensionProperty]()
+
