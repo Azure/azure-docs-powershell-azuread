@@ -1,673 +1,673 @@
 ---
 Module Name: AzureAD
-Module Guid: d60c0004-962d-4dfb-8d28-5707572ffd00
-Download Help Link: {{ Update Download Link }}
-Help Version: {{ Please enter version of help manually (X.X.X.X) format }}
+Module Guid: b433e830-b479-4f7f-9c80-9cc6c28e1b51
+Download Help Link: {{Please enter FwLink manually}}
+Help Version: {{Please enter version of help manually (X.X.X.X) format}}
 Locale: en-US
+ms.assetid: 7D9D9507-ADE5-45BD-97F8-0CCCDA3D3B58
+ms.reviewer: rodejo
+ms.custom: iamfeature=PowerShell
 ---
-
-# AzureAD Module
+# Azure Active Directory PowerShell for Graph module
 ## Description
-{{ Fill in the Description }}
+The Azure Active Directory PowerShell for Graph module can be downloaded and installed from the PowerShell Gallery, www.powershellgallery.com.  The gallery uses the PowerShellGet module. The PowerShellGet module requires PowerShell 3.0 or newer and requires one of the following operating systems:
 
-## AzureAD Cmdlets
+Windows 10
+Windows 8.1 Pro
+Windows 8.1 Enterprise
+Windows 7 SP1
+Windows Server 2016 TP5
+Windows Server 2012 R2
+Windows Server 2008 R2 SP1
+
+PowerShellGet also requires .NET Framework 4.5 or above. You can install .NET Framework 4.5 or above from [here](https://www.microsoft.com/en-us/download/details.aspx?id=30653). For more information, please refer to [this link](https://msdn.microsoft.com/powershell/gallery/readme)
+For more detailed info on installation of the AzureAD cmdlets please see: [Azure Active Directory PowerShell for Graph](https://docs.microsoft.com/en-us/powershell/azuread/).
+
+These are the cmdlets in the Azure Active Directory PowerShell for Graph module.
+
+## Administrative Units
+
+### [Add-AzureADAdministrativeUnitMember](Add-AzureADAdministrativeUnitMember.md)
+Adds an administrative unit member.
+
+### [Add-AzureADScopedRoleMembership](Add-AzureADScopedRoleMembership.md)
+Adds a scoped role membership to an administrative unit.
+
+### [Get-AzureADAdministrativeUnit](Get-AzureADAdministrativeUnit.md)
+Gets an administrative unit.
+
+### [Get-AzureADAdministrativeUnitMember](Get-AzureADAdministrativeUnitMember.md)
+Gets a member of an administrative unit.
+
+### [Get-AzureADScopedRoleMembership](Get-AzureADScopedRoleMembership.md)
+Gets a scoped role membership from an administrative unit.
+
+### [New-AzureADAdministrativeUnit](New-AzureADAdministrativeUnit.md)
+Creates an administrative unit.
+
+### [Remove-AzureADAdministrativeUnit](Remove-AzureADAdministrativeUnit.md)
+Removes an administrative unit.
+
+### [Remove-AzureADAdministrativeUnitMember](Remove-AzureADAdministrativeUnitMember.md)
+Removes an administrative unit member.
+
+### [Remove-AzureADScopedRoleMembership](Remove-AzureADScopedRoleMembership.md)
+Removes a scoped role membership.
+
+### [Set-AzureADAdministrativeUnit](Set-AzureADAdministrativeUnit.md)
+Updates an administrative unit.
+
+
+## Applications
+
 ### [Add-AzureADApplicationOwner](Add-AzureADApplicationOwner.md)
-{{ Fill in the Description }}
+Adds an owner to an application.
 
-### [Add-AzureADDeviceRegisteredOwner](Add-AzureADDeviceRegisteredOwner.md)
-{{ Fill in the Description }}
+### [Add-AzureADApplicationPolicy](Add-AzureADApplicationPolicy.md)
+Adds an application policy.
 
-### [Add-AzureADDeviceRegisteredUser](Add-AzureADDeviceRegisteredUser.md)
-{{ Fill in the Description }}
-
-### [Add-AzureADDirectoryRoleMember](Add-AzureADDirectoryRoleMember.md)
-{{ Fill in the Description }}
-
-### [Add-AzureADGroupMember](Add-AzureADGroupMember.md)
-{{ Fill in the Description }}
-
-### [Add-AzureADGroupOwner](Add-AzureADGroupOwner.md)
-{{ Fill in the Description }}
-
-### [Add-AzureADMSAdministrativeUnitMember](Add-AzureADMSAdministrativeUnitMember.md)
-{{ Fill in the Description }}
-
-### [Add-AzureADMSApplicationOwner](Add-AzureADMSApplicationOwner.md)
-{{ Fill in the Description }}
-
-### [Add-AzureADMSLifecyclePolicyGroup](Add-AzureADMSLifecyclePolicyGroup.md)
-{{ Fill in the Description }}
-
-### [Add-AzureADMSScopedRoleMembership](Add-AzureADMSScopedRoleMembership.md)
-{{ Fill in the Description }}
-
-### [Add-AzureADMSServicePrincipalDelegatedPermissionClassification](Add-AzureADMSServicePrincipalDelegatedPermissionClassification.md)
-{{ Fill in the Description }}
-
-### [Add-AzureADServicePrincipalOwner](Add-AzureADServicePrincipalOwner.md)
-{{ Fill in the Description }}
-
-### [Confirm-AzureADDomain](Confirm-AzureADDomain.md)
-{{ Fill in the Description }}
-
-### [Connect-AzureAD](Connect-AzureAD.md)
-{{ Fill in the Description }}
-
-### [Disconnect-AzureAD](Disconnect-AzureAD.md)
-{{ Fill in the Description }}
-
-### [Enable-AzureADDirectoryRole](Enable-AzureADDirectoryRole.md)
-{{ Fill in the Description }}
 
 ### [Get-AzureADApplication](Get-AzureADApplication.md)
-{{ Fill in the Description }}
+Gets an application.
 
 ### [Get-AzureADApplicationExtensionProperty](Get-AzureADApplicationExtensionProperty.md)
-{{ Fill in the Description }}
+Gets application extension properties.
 
 ### [Get-AzureADApplicationKeyCredential](Get-AzureADApplicationKeyCredential.md)
-{{ Fill in the Description }}
+Gets the key credentials for an application.
 
 ### [Get-AzureADApplicationLogo](Get-AzureADApplicationLogo.md)
-{{ Fill in the Description }}
+Retrieve the logo of an application
 
 ### [Get-AzureADApplicationOwner](Get-AzureADApplicationOwner.md)
-{{ Fill in the Description }}
+Gets the owner of an application.
 
 ### [Get-AzureADApplicationPasswordCredential](Get-AzureADApplicationPasswordCredential.md)
-{{ Fill in the Description }}
+Gets the password credential for an application.
 
-### [Get-AzureADApplicationProxyApplication](Get-AzureADApplicationProxyApplication.md)
-{{ Fill in the Description }}
-
-### [Get-AzureADApplicationProxyApplicationConnectorGroup](Get-AzureADApplicationProxyApplicationConnectorGroup.md)
-{{ Fill in the Description }}
-
-### [Get-AzureADApplicationProxyConnector](Get-AzureADApplicationProxyConnector.md)
-{{ Fill in the Description }}
-
-### [Get-AzureADApplicationProxyConnectorGroup](Get-AzureADApplicationProxyConnectorGroup.md)
-{{ Fill in the Description }}
-
-### [Get-AzureADApplicationProxyConnectorGroupMember](Get-AzureADApplicationProxyConnectorGroupMember.md)
-{{ Fill in the Description }}
-
-### [Get-AzureADApplicationProxyConnectorMemberOf](Get-AzureADApplicationProxyConnectorMemberOf.md)
-{{ Fill in the Description }}
+### [Get-AzureADApplicationPolicy](Get-AzureADApplicationPolicy.md)
+Gets an application policy.
 
 ### [Get-AzureADApplicationServiceEndpoint](Get-AzureADApplicationServiceEndpoint.md)
-{{ Fill in the Description }}
-
-### [Get-AzureADContact](Get-AzureADContact.md)
-{{ Fill in the Description }}
-
-### [Get-AzureADContactDirectReport](Get-AzureADContactDirectReport.md)
-{{ Fill in the Description }}
-
-### [Get-AzureADContactManager](Get-AzureADContactManager.md)
-{{ Fill in the Description }}
-
-### [Get-AzureADContactMembership](Get-AzureADContactMembership.md)
-{{ Fill in the Description }}
-
-### [Get-AzureADContactThumbnailPhoto](Get-AzureADContactThumbnailPhoto.md)
-{{ Fill in the Description }}
-
-### [Get-AzureADContract](Get-AzureADContract.md)
-{{ Fill in the Description }}
-
-### [Get-AzureADCurrentSessionInfo](Get-AzureADCurrentSessionInfo.md)
-{{ Fill in the Description }}
+Retrieve the service endpoint of an application
 
 ### [Get-AzureADDeletedApplication](Get-AzureADDeletedApplication.md)
-{{ Fill in the Description }}
-
-### [Get-AzureADDevice](Get-AzureADDevice.md)
-{{ Fill in the Description }}
-
-### [Get-AzureADDeviceConfiguration](Get-AzureADDeviceConfiguration.md)
-{{ Fill in the Description }}
-
-### [Get-AzureADDeviceRegisteredOwner](Get-AzureADDeviceRegisteredOwner.md)
-{{ Fill in the Description }}
-
-### [Get-AzureADDeviceRegisteredUser](Get-AzureADDeviceRegisteredUser.md)
-{{ Fill in the Description }}
-
-### [Get-AzureADDirectoryRole](Get-AzureADDirectoryRole.md)
-{{ Fill in the Description }}
-
-### [Get-AzureADDirectoryRoleMember](Get-AzureADDirectoryRoleMember.md)
-{{ Fill in the Description }}
-
-### [Get-AzureADDirectoryRoleTemplate](Get-AzureADDirectoryRoleTemplate.md)
-{{ Fill in the Description }}
-
-### [Get-AzureADDomain](Get-AzureADDomain.md)
-{{ Fill in the Description }}
-
-### [Get-AzureADDomainNameReference](Get-AzureADDomainNameReference.md)
-{{ Fill in the Description }}
-
-### [Get-AzureADDomainServiceConfigurationRecord](Get-AzureADDomainServiceConfigurationRecord.md)
-{{ Fill in the Description }}
-
-### [Get-AzureADDomainVerificationDnsRecord](Get-AzureADDomainVerificationDnsRecord.md)
-{{ Fill in the Description }}
-
-### [Get-AzureADExtensionProperty](Get-AzureADExtensionProperty.md)
-{{ Fill in the Description }}
-
-### [Get-AzureADGroup](Get-AzureADGroup.md)
-{{ Fill in the Description }}
-
-### [Get-AzureADGroupAppRoleAssignment](Get-AzureADGroupAppRoleAssignment.md)
-{{ Fill in the Description }}
-
-### [Get-AzureADGroupMember](Get-AzureADGroupMember.md)
-{{ Fill in the Description }}
-
-### [Get-AzureADGroupOwner](Get-AzureADGroupOwner.md)
-{{ Fill in the Description }}
-
-### [Get-AzureADMSAdministrativeUnit](Get-AzureADMSAdministrativeUnit.md)
-{{ Fill in the Description }}
-
-### [Get-AzureADMSAdministrativeUnitMember](Get-AzureADMSAdministrativeUnitMember.md)
-{{ Fill in the Description }}
-
-### [Get-AzureADMSApplication](Get-AzureADMSApplication.md)
-{{ Fill in the Description }}
-
-### [Get-AzureADMSApplicationExtensionProperty](Get-AzureADMSApplicationExtensionProperty.md)
-{{ Fill in the Description }}
-
-### [Get-AzureADMSApplicationOwner](Get-AzureADMSApplicationOwner.md)
-{{ Fill in the Description }}
-
-### [Get-AzureADMSConditionalAccessPolicy](Get-AzureADMSConditionalAccessPolicy.md)
-{{ Fill in the Description }}
-
-### [Get-AzureADMSDeletedDirectoryObject](Get-AzureADMSDeletedDirectoryObject.md)
-{{ Fill in the Description }}
-
-### [Get-AzureADMSDeletedGroup](Get-AzureADMSDeletedGroup.md)
-{{ Fill in the Description }}
-
-### [Get-AzureADMSGroup](Get-AzureADMSGroup.md)
-{{ Fill in the Description }}
-
-### [Get-AzureADMSGroupLifecyclePolicy](Get-AzureADMSGroupLifecyclePolicy.md)
-{{ Fill in the Description }}
-
-### [Get-AzureADMSIdentityProvider](Get-AzureADMSIdentityProvider.md)
-{{ Fill in the Description }}
-
-### [Get-AzureADMSLifecyclePolicyGroup](Get-AzureADMSLifecyclePolicyGroup.md)
-{{ Fill in the Description }}
-
-### [Get-AzureADMSNamedLocationPolicy](Get-AzureADMSNamedLocationPolicy.md)
-{{ Fill in the Description }}
-
-### [Get-AzureADMSPermissionGrantConditionSet](Get-AzureADMSPermissionGrantConditionSet.md)
-{{ Fill in the Description }}
-
-### [Get-AzureADMSPermissionGrantPolicy](Get-AzureADMSPermissionGrantPolicy.md)
-{{ Fill in the Description }}
-
-### [Get-AzureADMSScopedRoleMembership](Get-AzureADMSScopedRoleMembership.md)
-{{ Fill in the Description }}
-
-### [Get-AzureADMSServicePrincipalDelegatedPermissionClassification](Get-AzureADMSServicePrincipalDelegatedPermissionClassification.md)
-{{ Fill in the Description }}
-
-### [Get-AzureADOAuth2PermissionGrant](Get-AzureADOAuth2PermissionGrant.md)
-{{ Fill in the Description }}
-
-### [Get-AzureADObjectByObjectId](Get-AzureADObjectByObjectId.md)
-{{ Fill in the Description }}
-
-### [Get-AzureADServiceAppRoleAssignedTo](Get-AzureADServiceAppRoleAssignedTo.md)
-{{ Fill in the Description }}
-
-### [Get-AzureADServiceAppRoleAssignment](Get-AzureADServiceAppRoleAssignment.md)
-{{ Fill in the Description }}
-
-### [Get-AzureADServicePrincipal](Get-AzureADServicePrincipal.md)
-{{ Fill in the Description }}
-
-### [Get-AzureADServicePrincipalCreatedObject](Get-AzureADServicePrincipalCreatedObject.md)
-{{ Fill in the Description }}
-
-### [Get-AzureADServicePrincipalKeyCredential](Get-AzureADServicePrincipalKeyCredential.md)
-{{ Fill in the Description }}
-
-### [Get-AzureADServicePrincipalMembership](Get-AzureADServicePrincipalMembership.md)
-{{ Fill in the Description }}
-
-### [Get-AzureADServicePrincipalOAuth2PermissionGrant](Get-AzureADServicePrincipalOAuth2PermissionGrant.md)
-{{ Fill in the Description }}
-
-### [Get-AzureADServicePrincipalOwnedObject](Get-AzureADServicePrincipalOwnedObject.md)
-{{ Fill in the Description }}
-
-### [Get-AzureADServicePrincipalOwner](Get-AzureADServicePrincipalOwner.md)
-{{ Fill in the Description }}
-
-### [Get-AzureADServicePrincipalPasswordCredential](Get-AzureADServicePrincipalPasswordCredential.md)
-{{ Fill in the Description }}
-
-### [Get-AzureADSubscribedSku](Get-AzureADSubscribedSku.md)
-{{ Fill in the Description }}
-
-### [Get-AzureADTenantDetail](Get-AzureADTenantDetail.md)
-{{ Fill in the Description }}
-
-### [Get-AzureADTrustedCertificateAuthority](Get-AzureADTrustedCertificateAuthority.md)
-{{ Fill in the Description }}
-
-### [Get-AzureADUser](Get-AzureADUser.md)
-{{ Fill in the Description }}
-
-### [Get-AzureADUserAppRoleAssignment](Get-AzureADUserAppRoleAssignment.md)
-{{ Fill in the Description }}
-
-### [Get-AzureADUserCreatedObject](Get-AzureADUserCreatedObject.md)
-{{ Fill in the Description }}
-
-### [Get-AzureADUserDirectReport](Get-AzureADUserDirectReport.md)
-{{ Fill in the Description }}
-
-### [Get-AzureADUserExtension](Get-AzureADUserExtension.md)
-{{ Fill in the Description }}
-
-### [Get-AzureADUserLicenseDetail](Get-AzureADUserLicenseDetail.md)
-{{ Fill in the Description }}
-
-### [Get-AzureADUserManager](Get-AzureADUserManager.md)
-{{ Fill in the Description }}
-
-### [Get-AzureADUserMembership](Get-AzureADUserMembership.md)
-{{ Fill in the Description }}
-
-### [Get-AzureADUserOAuth2PermissionGrant](Get-AzureADUserOAuth2PermissionGrant.md)
-{{ Fill in the Description }}
-
-### [Get-AzureADUserOwnedDevice](Get-AzureADUserOwnedDevice.md)
-{{ Fill in the Description }}
-
-### [Get-AzureADUserOwnedObject](Get-AzureADUserOwnedObject.md)
-{{ Fill in the Description }}
-
-### [Get-AzureADUserRegisteredDevice](Get-AzureADUserRegisteredDevice.md)
-{{ Fill in the Description }}
-
-### [Get-AzureADUserThumbnailPhoto](Get-AzureADUserThumbnailPhoto.md)
-{{ Fill in the Description }}
-
-### [Get-CrossCloudVerificationCode](Get-CrossCloudVerificationCode.md)
-{{ Fill in the Description }}
+Retrieve the deleted applications in the directory
 
 ### [New-AzureADApplication](New-AzureADApplication.md)
-{{ Fill in the Description }}
+Creates an application.
 
 ### [New-AzureADApplicationExtensionProperty](New-AzureADApplicationExtensionProperty.md)
-{{ Fill in the Description }}
+Creates an application extension property.
 
 ### [New-AzureADApplicationKeyCredential](New-AzureADApplicationKeyCredential.md)
-{{ Fill in the Description }}
+Creates a key credential for an application.
 
 ### [New-AzureADApplicationPasswordCredential](New-AzureADApplicationPasswordCredential.md)
-{{ Fill in the Description }}
-
-### [New-AzureADApplicationProxyApplication](New-AzureADApplicationProxyApplication.md)
-{{ Fill in the Description }}
-
-### [New-AzureADApplicationProxyConnectorGroup](New-AzureADApplicationProxyConnectorGroup.md)
-{{ Fill in the Description }}
-
-### [New-AzureADDevice](New-AzureADDevice.md)
-{{ Fill in the Description }}
-
-### [New-AzureADDomain](New-AzureADDomain.md)
-{{ Fill in the Description }}
-
-### [New-AzureADGroup](New-AzureADGroup.md)
-{{ Fill in the Description }}
-
-### [New-AzureADGroupAppRoleAssignment](New-AzureADGroupAppRoleAssignment.md)
-{{ Fill in the Description }}
-
-### [New-AzureADMSAdministrativeUnit](New-AzureADMSAdministrativeUnit.md)
-{{ Fill in the Description }}
-
-### [New-AzureADMSApplication](New-AzureADMSApplication.md)
-{{ Fill in the Description }}
-
-### [New-AzureADMSApplicationExtensionProperty](New-AzureADMSApplicationExtensionProperty.md)
-{{ Fill in the Description }}
-
-### [New-AzureADMSApplicationKey](New-AzureADMSApplicationKey.md)
-{{ Fill in the Description }}
-
-### [New-AzureADMSApplicationPassword](New-AzureADMSApplicationPassword.md)
-{{ Fill in the Description }}
-
-### [New-AzureADMSConditionalAccessPolicy](New-AzureADMSConditionalAccessPolicy.md)
-{{ Fill in the Description }}
-
-### [New-AzureADMSGroup](New-AzureADMSGroup.md)
-{{ Fill in the Description }}
-
-### [New-AzureADMSGroupLifecyclePolicy](New-AzureADMSGroupLifecyclePolicy.md)
-{{ Fill in the Description }}
-
-### [New-AzureADMSIdentityProvider](New-AzureADMSIdentityProvider.md)
-{{ Fill in the Description }}
-
-### [New-AzureADMSInvitation](New-AzureADMSInvitation.md)
-{{ Fill in the Description }}
-
-### [New-AzureADMSNamedLocationPolicy](New-AzureADMSNamedLocationPolicy.md)
-{{ Fill in the Description }}
-
-### [New-AzureADMSPermissionGrantConditionSet](New-AzureADMSPermissionGrantConditionSet.md)
-{{ Fill in the Description }}
-
-### [New-AzureADMSPermissionGrantPolicy](New-AzureADMSPermissionGrantPolicy.md)
-{{ Fill in the Description }}
-
-### [New-AzureADServiceAppRoleAssignment](New-AzureADServiceAppRoleAssignment.md)
-{{ Fill in the Description }}
-
-### [New-AzureADServicePrincipal](New-AzureADServicePrincipal.md)
-{{ Fill in the Description }}
-
-### [New-AzureADServicePrincipalKeyCredential](New-AzureADServicePrincipalKeyCredential.md)
-{{ Fill in the Description }}
-
-### [New-AzureADServicePrincipalPasswordCredential](New-AzureADServicePrincipalPasswordCredential.md)
-{{ Fill in the Description }}
-
-### [New-AzureADTrustedCertificateAuthority](New-AzureADTrustedCertificateAuthority.md)
-{{ Fill in the Description }}
-
-### [New-AzureADUser](New-AzureADUser.md)
-{{ Fill in the Description }}
-
-### [New-AzureADUserAppRoleAssignment](New-AzureADUserAppRoleAssignment.md)
-{{ Fill in the Description }}
+Creates a password credential for an application.
 
 ### [Remove-AzureADApplication](Remove-AzureADApplication.md)
-{{ Fill in the Description }}
+Delete an application by objectId.
 
 ### [Remove-AzureADApplicationExtensionProperty](Remove-AzureADApplicationExtensionProperty.md)
-{{ Fill in the Description }}
+Removes an application extension property.
 
 ### [Remove-AzureADApplicationKeyCredential](Remove-AzureADApplicationKeyCredential.md)
-{{ Fill in the Description }}
+Removes a key credential from an application.
 
 ### [Remove-AzureADApplicationOwner](Remove-AzureADApplicationOwner.md)
-{{ Fill in the Description }}
+Removes an owner from an application.
 
 ### [Remove-AzureADApplicationPasswordCredential](Remove-AzureADApplicationPasswordCredential.md)
-{{ Fill in the Description }}
-
-### [Remove-AzureADApplicationProxyApplication](Remove-AzureADApplicationProxyApplication.md)
-{{ Fill in the Description }}
-
-### [Remove-AzureADApplicationProxyApplicationConnectorGroup](Remove-AzureADApplicationProxyApplicationConnectorGroup.md)
-{{ Fill in the Description }}
-
-### [Remove-AzureADApplicationProxyConnectorGroup](Remove-AzureADApplicationProxyConnectorGroup.md)
-{{ Fill in the Description }}
-
-### [Remove-AzureADContact](Remove-AzureADContact.md)
-{{ Fill in the Description }}
-
-### [Remove-AzureADContactManager](Remove-AzureADContactManager.md)
-{{ Fill in the Description }}
-
-### [Remove-AzureADDeletedApplication](Remove-AzureADDeletedApplication.md)
-{{ Fill in the Description }}
-
-### [Remove-AzureADDevice](Remove-AzureADDevice.md)
-{{ Fill in the Description }}
-
-### [Remove-AzureADDeviceRegisteredOwner](Remove-AzureADDeviceRegisteredOwner.md)
-{{ Fill in the Description }}
-
-### [Remove-AzureADDeviceRegisteredUser](Remove-AzureADDeviceRegisteredUser.md)
-{{ Fill in the Description }}
-
-### [Remove-AzureADDirectoryRoleMember](Remove-AzureADDirectoryRoleMember.md)
-{{ Fill in the Description }}
-
-### [Remove-AzureADDomain](Remove-AzureADDomain.md)
-{{ Fill in the Description }}
-
-### [Remove-AzureADGroup](Remove-AzureADGroup.md)
-{{ Fill in the Description }}
-
-### [Remove-AzureADGroupAppRoleAssignment](Remove-AzureADGroupAppRoleAssignment.md)
-{{ Fill in the Description }}
-
-### [Remove-AzureADGroupMember](Remove-AzureADGroupMember.md)
-{{ Fill in the Description }}
-
-### [Remove-AzureADGroupOwner](Remove-AzureADGroupOwner.md)
-{{ Fill in the Description }}
-
-### [Remove-AzureADMSAdministrativeUnit](Remove-AzureADMSAdministrativeUnit.md)
-{{ Fill in the Description }}
-
-### [Remove-AzureADMSAdministrativeUnitMember](Remove-AzureADMSAdministrativeUnitMember.md)
-{{ Fill in the Description }}
-
-### [Remove-AzureADMSApplication](Remove-AzureADMSApplication.md)
-{{ Fill in the Description }}
-
-### [Remove-AzureADMSApplicationExtensionProperty](Remove-AzureADMSApplicationExtensionProperty.md)
-{{ Fill in the Description }}
-
-### [Remove-AzureADMSApplicationKey](Remove-AzureADMSApplicationKey.md)
-{{ Fill in the Description }}
-
-### [Remove-AzureADMSApplicationOwner](Remove-AzureADMSApplicationOwner.md)
-{{ Fill in the Description }}
-
-### [Remove-AzureADMSApplicationPassword](Remove-AzureADMSApplicationPassword.md)
-{{ Fill in the Description }}
-
-### [Remove-AzureADMSApplicationVerifiedPublisher](Remove-AzureADMSApplicationVerifiedPublisher.md)
-{{ Fill in the Description }}
-
-### [Remove-AzureADMSConditionalAccessPolicy](Remove-AzureADMSConditionalAccessPolicy.md)
-{{ Fill in the Description }}
-
-### [Remove-AzureADMSDeletedDirectoryObject](Remove-AzureADMSDeletedDirectoryObject.md)
-{{ Fill in the Description }}
-
-### [Remove-AzureADMSGroup](Remove-AzureADMSGroup.md)
-{{ Fill in the Description }}
-
-### [Remove-AzureADMSGroupLifecyclePolicy](Remove-AzureADMSGroupLifecyclePolicy.md)
-{{ Fill in the Description }}
-
-### [Remove-AzureADMSIdentityProvider](Remove-AzureADMSIdentityProvider.md)
-{{ Fill in the Description }}
-
-### [Remove-AzureADMSLifecyclePolicyGroup](Remove-AzureADMSLifecyclePolicyGroup.md)
-{{ Fill in the Description }}
-
-### [Remove-AzureADMSNamedLocationPolicy](Remove-AzureADMSNamedLocationPolicy.md)
-{{ Fill in the Description }}
-
-### [Remove-AzureADMSPermissionGrantConditionSet](Remove-AzureADMSPermissionGrantConditionSet.md)
-{{ Fill in the Description }}
-
-### [Remove-AzureADMSPermissionGrantPolicy](Remove-AzureADMSPermissionGrantPolicy.md)
-{{ Fill in the Description }}
-
-### [Remove-AzureADMSScopedRoleMembership](Remove-AzureADMSScopedRoleMembership.md)
-{{ Fill in the Description }}
-
-### [Remove-AzureADMSServicePrincipalDelegatedPermissionClassification](Remove-AzureADMSServicePrincipalDelegatedPermissionClassification.md)
-{{ Fill in the Description }}
-
-### [Remove-AzureADOAuth2PermissionGrant](Remove-AzureADOAuth2PermissionGrant.md)
-{{ Fill in the Description }}
-
-### [Remove-AzureADServiceAppRoleAssignment](Remove-AzureADServiceAppRoleAssignment.md)
-{{ Fill in the Description }}
-
-### [Remove-AzureADServicePrincipal](Remove-AzureADServicePrincipal.md)
-{{ Fill in the Description }}
-
-### [Remove-AzureADServicePrincipalKeyCredential](Remove-AzureADServicePrincipalKeyCredential.md)
-{{ Fill in the Description }}
-
-### [Remove-AzureADServicePrincipalOwner](Remove-AzureADServicePrincipalOwner.md)
-{{ Fill in the Description }}
-
-### [Remove-AzureADServicePrincipalPasswordCredential](Remove-AzureADServicePrincipalPasswordCredential.md)
-{{ Fill in the Description }}
-
-### [Remove-AzureADTrustedCertificateAuthority](Remove-AzureADTrustedCertificateAuthority.md)
-{{ Fill in the Description }}
-
-### [Remove-AzureADUser](Remove-AzureADUser.md)
-{{ Fill in the Description }}
-
-### [Remove-AzureADUserAppRoleAssignment](Remove-AzureADUserAppRoleAssignment.md)
-{{ Fill in the Description }}
-
-### [Remove-AzureADUserExtension](Remove-AzureADUserExtension.md)
-{{ Fill in the Description }}
-
-### [Remove-AzureADUserManager](Remove-AzureADUserManager.md)
-{{ Fill in the Description }}
-
-### [Reset-AzureADMSLifeCycleGroup](Reset-AzureADMSLifeCycleGroup.md)
-{{ Fill in the Description }}
+Removes a password credential from an application.
 
 ### [Restore-AzureADDeletedApplication](Restore-AzureADDeletedApplication.md)
-{{ Fill in the Description }}
-
-### [Restore-AzureADMSDeletedDirectoryObject](Restore-AzureADMSDeletedDirectoryObject.md)
-{{ Fill in the Description }}
-
-### [Revoke-AzureADSignedInUserAllRefreshToken](Revoke-AzureADSignedInUserAllRefreshToken.md)
-{{ Fill in the Description }}
-
-### [Revoke-AzureADUserAllRefreshToken](Revoke-AzureADUserAllRefreshToken.md)
-{{ Fill in the Description }}
-
-### [Select-AzureADGroupIdsContactIsMemberOf](Select-AzureADGroupIdsContactIsMemberOf.md)
-{{ Fill in the Description }}
-
-### [Select-AzureADGroupIdsGroupIsMemberOf](Select-AzureADGroupIdsGroupIsMemberOf.md)
-{{ Fill in the Description }}
-
-### [Select-AzureADGroupIdsServicePrincipalIsMemberOf](Select-AzureADGroupIdsServicePrincipalIsMemberOf.md)
-{{ Fill in the Description }}
-
-### [Select-AzureADGroupIdsUserIsMemberOf](Select-AzureADGroupIdsUserIsMemberOf.md)
-{{ Fill in the Description }}
+Restores a previously deleted application
 
 ### [Set-AzureADApplication](Set-AzureADApplication.md)
-{{ Fill in the Description }}
+Updates an application.
 
 ### [Set-AzureADApplicationLogo](Set-AzureADApplicationLogo.md)
-{{ Fill in the Description }}
+Sets the logo for an Application
 
-### [Set-AzureADApplicationProxyApplication](Set-AzureADApplicationProxyApplication.md)
-{{ Fill in the Description }}
 
-### [Set-AzureADApplicationProxyApplicationConnectorGroup](Set-AzureADApplicationProxyApplicationConnectorGroup.md)
-{{ Fill in the Description }}
+##Devices
 
-### [Set-AzureADApplicationProxyApplicationCustomDomainCertificate](Set-AzureADApplicationProxyApplicationCustomDomainCertificate.md)
-{{ Fill in the Description }}
+### [Add-AzureADDeviceRegisteredOwner](Add-AzureADDeviceRegisteredOwner.md)
+Adds a registered owner for a device.
 
-### [Set-AzureADApplicationProxyApplicationSingleSignOn](Set-AzureADApplicationProxyApplicationSingleSignOn.md)
-{{ Fill in the Description }}
+### [Add-AzureADDeviceRegisteredUser](Add-AzureADDeviceRegisteredUser.md)
+Adds a registered user for a device.
 
-### [Set-AzureADApplicationProxyConnector](Set-AzureADApplicationProxyConnector.md)
-{{ Fill in the Description }}
+### [Get-AzureADDevice](Get-AzureADDevice.md)
+Gets a device from Active Directory.
 
-### [Set-AzureADApplicationProxyConnectorGroup](Set-AzureADApplicationProxyConnectorGroup.md)
-{{ Fill in the Description }}
+### [Get-AzureADDeviceConfiguration](Get-AzureADDeviceConfiguration.md)
+This cmdlet retrieves the device configuration object
+
+### [Get-AzureADDeviceRegisteredOwner](Get-AzureADDeviceRegisteredOwner.md)
+Gets the registered owner of a device.
+
+### [Get-AzureADDeviceRegisteredUser](Get-AzureADDeviceRegisteredUser.md)
+Gets a registered user.
+
+### [New-AzureADDevice](New-AzureADDevice.md)
+Creates a device.
+
+### [Remove-AzureADDevice](Remove-AzureADDevice.md)
+Deletes a device.
+
+### [Remove-AzureADDeviceRegisteredOwner](Remove-AzureADDeviceRegisteredOwner.md)
+Removes the registered owner of a device.
+
+### [Remove-AzureADDeviceRegisteredUser](Remove-AzureADDeviceRegisteredUser.md)
+Removes a registered user from a device.
 
 ### [Set-AzureADDevice](Set-AzureADDevice.md)
-{{ Fill in the Description }}
+Updates a device.
 
-### [Set-AzureADDomain](Set-AzureADDomain.md)
-{{ Fill in the Description }}
+
+##Directory Roles
+
+### [Add-AzureADDirectoryRoleMember](Add-AzureADDirectoryRoleMember.md)
+Adds a member to a directory role.
+
+### [Enable-AzureADDirectoryRole](Enable-AzureADDirectoryRole.md)
+Activates an existing directory role in Azure Active Directory.
+
+### [Get-AzureADDirectoryRole](Get-AzureADDirectoryRole.md)
+Gets a directory role.
+
+### [Get-AzureADDirectoryRoleMember](Get-AzureADDirectoryRoleMember.md)
+Gets members of a directory role.
+
+### [Get-AzureADDirectoryRoleTemplate](Get-AzureADDirectoryRoleTemplate.md)
+Gets directory role templates.
+
+### [Remove-AzureADDirectoryRoleMember](Remove-AzureADDirectoryRoleMember.md)
+Removes a member of a directory role.
+
+
+##Groups
+
+### [Add-AzureADGroupMember](Add-AzureADGroupMember.md)
+Adds a member to a group.
+
+### [Add-AzureADGroupOwner](Add-AzureADGroupOwner.md)
+Adds an owner to a group.
+
+### [Get-AzureADGroup](Get-AzureADGroup.md)
+Gets a group.
+
+### [Get-AzureADGroupAppRoleAssignment](Get-AzureADGroupAppRoleAssignment.md)
+Gets a group application role assignment.
+
+### [Get-AzureADGroupMember](Get-AzureADGroupMember.md)
+Gets a member of a group.
+
+### [Get-AzureADGroupOwner](Get-AzureADGroupOwner.md)
+Gets an owner of a group.
+
+### [Get-AzureADMSGroup](Get-AzureADMSGroup.md)
+Gets information about groups in Azure AD.
+
+### [New-AzureADGroup](New-AzureADGroup.md)
+Creates a group.
+
+### [New-AzureADGroupAppRoleAssignment](New-AzureADGroupAppRoleAssignment.md)
+Assign a group of users to an application role.
+
+### [New-AzureADMSGroup](New-AzureADMSGroup.md)
+Creates an Azure AD group.
+
+### [Remove-AzureADGroup](Remove-AzureADGroup.md)
+Removes a group.
+
+### [Remove-AzureADGroupAppRoleAssignment](Remove-AzureADGroupAppRoleAssignment.md)
+Delete a group application role assignment.
+
+### [Remove-AzureADGroupMember](Remove-AzureADGroupMember.md)
+Removes a member from a group.
+
+### [Remove-AzureADGroupOwner](Remove-AzureADGroupOwner.md)
+Removes an owner from a group.
+
+### [Remove-AzureADMSGroup](Remove-AzureADMSGroup.md)
+Removes an Azure AD group.
+
+### [Select-AzureADGroupIdsContactIsMemberOf](Select-AzureADGroupIdsContactIsMemberOf.md)
+Get groups in which a contact is a member.
+
+### [Select-AzureADGroupIdsGroupIsMemberOf](Select-AzureADGroupIdsGroupIsMemberOf.md)
+Gets group IDs that a group is a member of.
+
+### [Select-AzureADGroupIdsServicePrincipalIsMemberOf](Select-AzureADGroupIdsServicePrincipalIsMemberOf.md)
+Selects the groups in which a service principal is a member.
+
+### [Select-AzureADGroupIdsUserIsMemberOf](Select-AzureADGroupIdsUserIsMemberOf.md)
+Selects the groups that a user is a member of.
 
 ### [Set-AzureADGroup](Set-AzureADGroup.md)
-{{ Fill in the Description }}
-
-### [Set-AzureADMSAdministrativeUnit](Set-AzureADMSAdministrativeUnit.md)
-{{ Fill in the Description }}
-
-### [Set-AzureADMSApplication](Set-AzureADMSApplication.md)
-{{ Fill in the Description }}
-
-### [Set-AzureADMSApplicationLogo](Set-AzureADMSApplicationLogo.md)
-{{ Fill in the Description }}
-
-### [Set-AzureADMSApplicationVerifiedPublisher](Set-AzureADMSApplicationVerifiedPublisher.md)
-{{ Fill in the Description }}
-
-### [Set-AzureADMSConditionalAccessPolicy](Set-AzureADMSConditionalAccessPolicy.md)
-{{ Fill in the Description }}
+Updates a specific group in Azure Active Directory
 
 ### [Set-AzureADMSGroup](Set-AzureADMSGroup.md)
-{{ Fill in the Description }}
+Changes attribute values on an Azure AD group.
 
-### [Set-AzureADMSGroupLifecyclePolicy](Set-AzureADMSGroupLifecyclePolicy.md)
-{{ Fill in the Description }}
 
-### [Set-AzureADMSIdentityProvider](Set-AzureADMSIdentityProvider.md)
-{{ Fill in the Description }}
+## Service Principals
 
-### [Set-AzureADMSNamedLocationPolicy](Set-AzureADMSNamedLocationPolicy.md)
-{{ Fill in the Description }}
+### [Add-AzureADServicePrincipalOwner](Add-AzureADServicePrincipalOwner.md)
+Adds an owner to a service principal.
 
-### [Set-AzureADMSPermissionGrantConditionSet](Set-AzureADMSPermissionGrantConditionSet.md)
-{{ Fill in the Description }}
+### [Add-AzureADServicePrincipalPolicy](Add-AzureADServicePrincipalPolicy.md)
+Adds a service principal policy.
 
-### [Set-AzureADMSPermissionGrantPolicy](Set-AzureADMSPermissionGrantPolicy.md)
-{{ Fill in the Description }}
+### [Get-AzureADServiceAppRoleAssignment](Get-AzureADServiceAppRoleAssignment.md)
+Gets a service principal application role assignment.
+
+### [Get-AzureADServicePrincipal](Get-AzureADServicePrincipal.md)
+Gets a service principal.
+
+### [Get-AzureADServicePrincipalCreatedObject](Get-AzureADServicePrincipalCreatedObject.md)
+Get objects created by a service principal.
+
+### [Get-AzureADServicePrincipalKeyCredential](Get-AzureADServicePrincipalKeyCredential.md)
+Get key credentials for a service principal.
+
+### [Get-AzureADServicePrincipalMembership](Get-AzureADServicePrincipalMembership.md)
+Get a service principal membership.
+
+### [Get-AzureADServicePrincipalOAuth2PermissionGrant](Get-AzureADServicePrincipalOAuth2PermissionGrant.md)
+Gets an oAuth2PermissionGrant for a service principal.
+
+### [Get-AzureADServicePrincipalOwnedObject](Get-AzureADServicePrincipalOwnedObject.md)
+Gets an object owned by a service principal.
+
+### [Get-AzureADServicePrincipalOwner](Get-AzureADServicePrincipalOwner.md)
+Get the owner of a service principal.
+
+### [Get-AzureADServicePrincipalPasswordCredential](Get-AzureADServicePrincipalPasswordCredential.md)
+Get credentials for a service principal.
+
+### [Get-AzureADServicePrincipalPolicy](Get-AzureADServicePrincipalPolicy.md)
+Get the service principal policy
+
+### [New-AzureADServiceAppRoleAssignment](New-AzureADServiceAppRoleAssignment.md)
+Assigns a service principal to an application role.
+
+### [New-AzureADServicePrincipal](New-AzureADServicePrincipal.md)
+Creates a service principal.
+
+### [New-AzureADServicePrincipalKeyCredential](New-AzureADServicePrincipalKeyCredential.md)
+Create a new key credential for a service principal
+
+### [New-AzureADServicePrincipalPasswordCredential](New-AzureADServicePrincipalPasswordCredential.md)
+Creates a password credential for a service principal.
+
+### [Remove-AzureADServiceAppRoleAssignment](Remove-AzureADServiceAppRoleAssignment.md)
+Removes a service principal application role assignment.
+
+### [Remove-AzureADServicePrincipal](Remove-AzureADServicePrincipal.md)
+Removes a service principal.
+
+### [Remove-AzureADServicePrincipalKeyCredential](Remove-AzureADServicePrincipalKeyCredential.md)
+Removes a key credential from a service principal.
+
+### [Remove-AzureADServicePrincipalOwner](Remove-AzureADServicePrincipalOwner.md)
+Removes an owner from a service principal.
+
+### [Remove-AzureADServicePrincipalPasswordCredential](Remove-AzureADServicePrincipalPasswordCredential.md)
+Removes a password credential from a service principal.
 
 ### [Set-AzureADServicePrincipal](Set-AzureADServicePrincipal.md)
-{{ Fill in the Description }}
+Updates a service principal.
+
+
+## Domains
+
+### [Confirm-AzureADDomain](Confirm-AzureADDomain.md)
+Validate the ownership of a domain.
+
+### [Get-AzureADDomain](Get-AzureADDomain.md)
+Gets a domain.
+
+### [Get-AzureADDomainNameReference](Get-AzureADDomainNameReference.md)
+This cmdlet retrieves the objects that are referenced by a given domain name 
+
+### [Get-AzureADDomainServiceConfigurationRecord](Get-AzureADDomainServiceConfigurationRecord.md)
+Gets the domain's service configuration records from the serviceConfigurationRecords navigation property.
+
+### [Get-AzureADDomainVerificationDnsRecord](Get-AzureADDomainVerificationDnsRecord.md)
+Retrieve the domain verification DNS record for a domain
+
+### [New-AzureADDomain](New-AzureADDomain.md)
+Creates a domain.
+
+### [Remove-AzureADDomain](Remove-AzureADDomain.md)
+Removes a domain.
+
+### [Set-AzureADDomain](Set-AzureADDomain.md)
+Updates a domain.
+
+## Connect your PowerShell session
+
+### [Connect-AzureAD](Connect-AzureAD.md)
+Connects with an authenticated account to use Active Directory cmdlet requests.
+
+### [Disconnect-AzureAD](Disconnect-AzureAD.md)
+Disconnects the current session from an Azure Active Directory tenant.
+
+## Contacts
+
+### [Get-AzureADContact](Get-AzureADContact.md)
+Gets a contact from Azure Active Directory.
+
+### [Get-AzureADContactDirectReport](Get-AzureADContactDirectReport.md)
+Get the direct reports for a contact.
+
+### [Get-AzureADContactManager](Get-AzureADContactManager.md)
+Gets the manager of a contact.
+
+### [Get-AzureADContactMembership](Get-AzureADContactMembership.md)
+Get a contact membership.
+
+### [Get-AzureADContactThumbnailPhoto](Get-AzureADContactThumbnailPhoto.md)
+Retrieves the thumbnail photo of a contact
+
+### [Remove-AzureADContact](Remove-AzureADContact.md)
+Removes a contact.
+
+### [Remove-AzureADContactManager](Remove-AzureADContactManager.md)
+Removes a contact's manager.
+
+## Contracts
+
+### [Get-AzureADContract](Get-AzureADContract.md)
+Gets a contract.
+
+## Directory Settings
+
+### [Get-AzureADDirectorySetting](Get-AzureADDirectorySetting.md)
+Gets a directory setting.
+
+### [Get-AzureADDirectorySettingTemplate](Get-AzureADDirectorySettingTemplate.md)
+Gets a directory setting template.
+
+### [New-AzureADDirectorySetting](New-AzureADDirectorySetting.md)
+Creates a directory settings object.
+
+### [Remove-AzureADDirectorySetting](Remove-AzureADDirectorySetting.md)
+Deletes a directory setting in Azure Active Directory.
+
+### [Set-AzureADDirectorySetting](Set-AzureADDirectorySetting.md)
+Updates a directory setting in Azure Active Directory.
+
+## Extension Properties
+
+### [Get-AzureADExtensionProperty](Get-AzureADExtensionProperty.md)
+Gets  extension properties registered with Azure AD.
+
+## OAuth2PermissionGrant
+
+### [Get-AzureADOAuth2PermissionGrant](Get-AzureADOAuth2PermissionGrant.md)
+Gets OAuth2PermissionGrant entities.
+
+### [Remove-AzureADOAuth2PermissionGrant](Remove-AzureADOAuth2PermissionGrant.md)
+Removes an oAuth2PermissionGrant.
+
+
+
+## Directory Objects
+
+### [Get-AzureADObjectByObjectId](Get-AzureADObjectByObjectId.md)
+Retrieves the object(s) specified by the objectIds parameter 
+
+### [Get-AzureADObjectSetting](Get-AzureADObjectSetting.md)
+Gets an object setting.
+
+### [New-AzureADObjectSetting](New-AzureADObjectSetting.md)
+Creates a settings object.
+
+### [Remove-AzureADObjectSetting](Remove-AzureADObjectSetting.md)
+Deletes settings in Azure Active Directory.
+
+### [Set-AzureADObjectSetting](Set-AzureADObjectSetting.md)
+Updates object settings.
+
+
+# Policies
+
+### [Get-AzureADPolicy](Get-AzureADPolicy.md)
+Gets a policy.
+
+### [Get-AzureADPolicyAppliedObject](Get-AzureADPolicyAppliedObject.md)
+Get the objects to which a policy is applied
+
+### [New-AzureADPolicy](New-AzureADPolicy.md)
+Creates a policy.
+
+### [Remove-AzureADPolicy](Remove-AzureADPolicy.md)
+Removes a policy.
+
+### [Set-AzureADPolicy](Set-AzureADPolicy.md)
+Updates a policy.
+
+
+## Licenses
+
+### [Get-AzureADSubscribedSku](Get-AzureADSubscribedSku.md)
+Gets subscribed SKUs to Microsoft services.
+
+## Tenant information
+
+### [Get-AzureADTenantDetail](Get-AzureADTenantDetail.md)
+Gets the details of a tenant.
 
 ### [Set-AzureADTenantDetail](Set-AzureADTenantDetail.md)
-{{ Fill in the Description }}
+Set contact details for a tenant
+
+
+## Certificates
+
+### [Get-AzureADTrustedCertificateAuthority](Get-AzureADTrustedCertificateAuthority.md)
+Gets the trusted certificate authority.
+
+### [New-AzureADTrustedCertificateAuthority](New-AzureADTrustedCertificateAuthority.md)
+Creates a trusted certificate authority.
+
+### [Remove-AzureADTrustedCertificateAuthority](Remove-AzureADTrustedCertificateAuthority.md)
+Removes a trusted certificate authority.
 
 ### [Set-AzureADTrustedCertificateAuthority](Set-AzureADTrustedCertificateAuthority.md)
-{{ Fill in the Description }}
+Updates a trusted certificate authority.
+
+
+
+## Users
+
+### [Get-AzureADUser](Get-AzureADUser.md)
+Gets a user.
+
+### [Get-AzureADUserAppRoleAssignment](Get-AzureADUserAppRoleAssignment.md)
+Get a user application role assignment.
+
+### [Get-AzureADUserCreatedObject](Get-AzureADUserCreatedObject.md)
+Get objects created by the user.
+
+### [Get-AzureADUserDirectReport](Get-AzureADUserDirectReport.md)
+Get the user's direct reports.
+
+### [Get-AzureADUserExtension](Get-AzureADUserExtension.md)
+Gets a user extension.
+
+### [Get-AzureADUserLicenseDetail](Get-AzureADUserLicenseDetail.md)
+Retrieves license details for a user
+
+### [Get-AzureADUserManager](Get-AzureADUserManager.md)
+Gets the manager of a user.
+
+### [Get-AzureADUserMembership](Get-AzureADUserMembership.md)
+Get user memberships.
+
+### [Get-AzureADUserOAuth2PermissionGrant](Get-AzureADUserOAuth2PermissionGrant.md)
+Gets an oAuth2PermissionGrant object for a user
+
+### [Get-AzureADUserOwnedDevice](Get-AzureADUserOwnedDevice.md)
+Get registered devices owned by a user.
+
+### [Get-AzureADUserOwnedObject](Get-AzureADUserOwnedObject.md)
+Get objects owned by a user.
+
+### [Get-AzureADUserRegisteredDevice](Get-AzureADUserRegisteredDevice.md)
+Get devices registered by a user.
+
+### [Get-AzureADUserThumbnailPhoto](Get-AzureADUserThumbnailPhoto.md)
+Retrieve the thumbnail photo of a user
+
+### [New-AzureADUser](New-AzureADUser.md)
+Creates an AD user.
+
+### [New-AzureADUserAppRoleAssignment](New-AzureADUserAppRoleAssignment.md)
+Assigns a user to an application role.
+
+### [Remove-AzureADUser](Remove-AzureADUser.md)
+Removes a user.
+
+### [Remove-AzureADUserAppRoleAssignment](Remove-AzureADUserAppRoleAssignment.md)
+Removes a user application role assignment.
+
+### [Remove-AzureADUserExtension](Remove-AzureADUserExtension.md)
+Removes a user extension.
+
+### [Remove-AzureADUserManager](Remove-AzureADUserManager.md)
+Removes a user's manager.
+
+### [Revoke-AzureADSignedInUserAllRefreshToken](Revoke-AzureADSignedInUserAllRefreshToken.md)
+Invalidates the refresh tokens issued to applications for the current user. 
+
+### [Revoke-AzureADUserAllRefreshToken](Revoke-AzureADUserAllRefreshToken.md)
+Invalidates the refresh tokens issued to applications for a user. 
 
 ### [Set-AzureADUser](Set-AzureADUser.md)
-{{ Fill in the Description }}
+Updates a user.
 
 ### [Set-AzureADUserExtension](Set-AzureADUserExtension.md)
-{{ Fill in the Description }}
+Sets a user extension.
 
 ### [Set-AzureADUserLicense](Set-AzureADUserLicense.md)
-{{ Fill in the Description }}
+Adds or removes licenses for a Microsoft online service to the list of assigned licenses for a user.
 
 ### [Set-AzureADUserManager](Set-AzureADUserManager.md)
-{{ Fill in the Description }}
+Updates a user's manager.
 
 ### [Set-AzureADUserPassword](Set-AzureADUserPassword.md)
-{{ Fill in the Description }}
+Sets the password of a user.
 
 ### [Set-AzureADUserThumbnailPhoto](Set-AzureADUserThumbnailPhoto.md)
-{{ Fill in the Description }}
+Set the thumbnail photo for a user
 
 ### [Update-AzureADSignedInUserPassword](Update-AzureADSignedInUserPassword.md)
-{{ Fill in the Description }}
+Updates the password for the signed-in user.
+
+### [New-AzureADMSInvitation](New-AzureADMSInvitation.md)
+This cmdlet is used to invite a new external user to your directory
+
+
+### [Get-AzureADMSGroup](Get-AzureADMSGroup.md)
+This cmdlet returns information about one or more groups
+
+
+### [New-AzureADMSGroup](New-AzureADMSGroup.md)
+This cmdlet is used to create a new group
+
+
+### [Remove-AzureADMSGroup](Remove-AzureADMSGroup.md)
+This cmdlet is used to remove an existing group
+
+
+### [Set-AzureADMSGroup](Set-AzureADMSGroup.md)
+This cmdlet is used to update group information
+
+
+### [Get-AzureADMSGroupLifecyclePolicy](Get-AzureADMSGroupLifecyclePolicy.md)
+This cmdlet is used to retrieve the lifecycle policy of a group
+
+
+### [New-AzureADMSGroupLifecyclePolicy](New-AzureADMSGroupLifecyclePolicy.md)
+This cmdlet can be used to create a new lifecycle policy for a group
+
+
+### [Remove-AzureADMSGroupLifecyclePolicy](Remove-AzureADMSGroupLifecyclePolicy.md)
+This cmdlet can be used to remove a lifecycle policy for a group
+
+
+### [Add-AzureADMSLifecyclePolicyGroup](Add-AzureADMSLifecyclePolicyGroup.md)
+This cmdlet is used to add a new lifecycle policy to a group
+
+
+### [Remove-AzureADMSLifecyclePolicyGroup](Remove-AzureADMSLifecyclePolicyGroup.md)
+This cmdlet can be used to remove a lifecycle policy from a group
+
+
+### [Reset-AzureADMSLifeCycleGroup](Reset-AzureADMSLifeCycleGroup.md)
+This cmdlet is used to reset the lifecycle of a group
+
+
+### [Get-AzureADMSLifecyclePolicyGroup](Get-AzureADMSLifecyclePolicyGroup.md)
+This cmdlet is used to retrieve the lifecycle policy for a group.
+
+
+### [Get-AzureADApplicationProxyApplication](Get-AzureADApplicationProxyApplication.md)
+Retrieve one or more Application Proxy applications
+
+### [Get-AzureADApplicationProxyApplicationConnectorGroup](Get-AzureADApplicationProxyApplicationConnectorGroup.md)
+Retrieve the Application Proxy connector group for an Application Proxy application
+
+### [Get-AzureADApplicationProxyConnector](Get-AzureADApplicationProxyConnector.md)
+Retrieve an Application Proxy connector
+
+### [Get-AzureADApplicationProxyConnectorGroup](Get-AzureADApplicationProxyConnectorGroup.md)
+Retrieve an Application Proxy connector group
+
+### [Get-AzureADApplicationProxyConnectorGroupMember](sGet-AzureADApplicationProxyConnectorGroupMembers.md)
+Retrieve the members of an Application Proxy connector group
+
+### [Get-AzureADApplicationProxyConnectorMemberOf](Get-AzureADApplicationProxyConnectorMemberOf.md)
+Retrieve the Application Proxy connector group an Application Proxy application is a member of
+
+### [New-AzureADApplicationProxyApplication](New-AzureADApplicationProxyApplication.md)
+Create a new Application Proxy Application
+
+### [New-AzureADApplicationProxyConnectorGroup](New-AzureADApplicationProxyConnectorGroup.md)
+Create a new Application Proxy Connector group
+
+### [Remove-AzureADApplicationProxyApplication](Remove-AzureADApplicationProxyApplication.md)
+Remove an Application Proxy Application
+
+### [Remove-AzureADApplicationProxyApplicationConnectorGroup](Remove-AzureADApplicationProxyApplicationConnectorGroup.md)
+Remove the Application Proxy Connector group from an Application Proxy Application 
+
+### [Remove-AzureADApplicationProxyConnectorGroup](Remove-AzureADApplicationProxyConnectorGroup.md)
+Remove an Application Proxy Connector group
+
+### [Set-AzureADApplicationProxyApplication](Set-AzureADApplicationProxyApplication.md)
+Set the properties of an Application Proxy Application
+
+### [Set-AzureADApplicationProxyApplicationConnectorGroup](Set-AzureADApplicationProxyApplicationConnectorGroup.md)
+Set the properties of an Application Proxy Application Connector group
+
+### [Set-AzureADApplicationProxyApplicationCustomDomainCertificate](Set-AzureADApplicationProxyApplicationCustomDomainCertificate.md)
+Set the custom domain certificate for an Application Proxy Application
+
+### [Set-AzureADApplicationProxyApplicationSingleSignOn](Set-AzureADApplicationProxyApplicationSingleSignOn.md)
+Set the single sign-on properties for an Application Proxy Application
+
+### [Set-AzureADApplicationProxyConnector](Set-AzureADApplicationProxyConnector.md)
+Set the properties for an Application Proxy Connector
+
+### [Set-AzureADApplicationProxyConnectorGroup](Set-AzureADApplicationProxyConnectorGroup.md)
+Set the properties for an Application Proxy Connector group
+
+
+
 
