@@ -162,5 +162,14 @@
     "Set-AzureADApplicationProxyApplicationCustomDomainCertificate": "Application Proxy Application Management",
     "Set-AzureADApplicationProxyApplicationSingleSignOn": "Application Proxy Application Management",
     "Set-AzureADApplicationProxyConnector": "Application Proxy Connector Management",
-    "Set-AzureADApplicationProxyConnectorGroup": "Application Proxy Connector Management"
+    "Set-AzureADApplicationProxyConnectorGroup": "Application Proxy Connector Management",
+    "Get-AzureADAdministrativeUnit": "Administrative Units",
+    "Get-AzureADAdministrativeUnitMember": "Administrative Units",
+    "Add-AzureADScopedRoleMembership": "Administrative Units",
+    "Add-AzureADAdministrativeUnitMember": "Administrative Units",
+    "Get-AzureADScopedRoleMembership": "Administrative Units",
+    "New-AzureADAdministrativeUnit": "Administrative Units",
+    "Remove-AzureADAdministrativeUnit": "Administrative Units",
+    "Remove-AzureADAdministrativeUnitMember": "Administrative Units",
+    "Remove-AzureADScopedRoleMembership": "Administrative Units"
 }
