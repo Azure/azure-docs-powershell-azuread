@@ -1,16 +1,14 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
-ms.assetid: 7ED60BB8-1968-412C-ACDF-923DB66F3DE4
-online version: 
+Module Name: AzureAD
+online version:
 schema: 2.0.0
-ms.reviewer: rodejo
-ms.custom: iamfeature=PowerShell
 ---
 
 # Get-AzureADOAuth2PermissionGrant
 
 ## SYNOPSIS
-Gets **OAuth2PermissionGrant** entities.
+Gets OAuth2PermissionGrant entities.
 
 ## SYNTAX
 
@@ -19,7 +17,7 @@ Get-AzureADOAuth2PermissionGrant [-All <Boolean>] [-Top <Int32>] [<CommonParamet
 ```
 
 ## DESCRIPTION
-The **Get-AzureADOAuth2PermissionGrant** cmdlet gets **OAuth2PermissionGrant** entities in Azure Active Directory (AD).
+The Get-AzureADOAuth2PermissionGrant cmdlet gets OAuth2PermissionGrant entities in Azure Active Directory (AD).
 
 ## EXAMPLES
 
@@ -48,12 +46,13 @@ This command gets the OAuth2 permission grants.
 ## PARAMETERS
 
 ### -All
-If true, return all OAth2 permission grants. If false, return the number of objects specified by the Top parameter
+If true, return all OAth2 permission grants.
+If false, return the number of objects specified by the Top parameter
 
 ```yaml
 Type: Boolean
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -68,7 +67,7 @@ Specifies the maximum number of records to return.
 ```yaml
 Type: Int32
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -78,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -88,4 +87,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Remove-AzureADOAuth2PermissionGrant](./Remove-AzureADOAuth2PermissionGrant.md)
+[Remove-AzureADOAuth2PermissionGrant]()
+
