@@ -1,7 +1,7 @@
 ---
 services: active-directory
 documentationcenter: ''
-
+title: 'Install AzureAD Preview'
 ms.service: active-directory
 ms.workload: identity
 ms.tgt_pltfrm: na

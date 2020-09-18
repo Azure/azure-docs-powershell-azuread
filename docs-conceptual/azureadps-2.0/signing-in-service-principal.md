@@ -1,7 +1,7 @@
 ---
 services: active-directory
 documentationcenter: ''
-
+title: 'Using a service principal'
 ms.service: active-directory
 ms.workload: identity
 ms.tgt_pltfrm: na

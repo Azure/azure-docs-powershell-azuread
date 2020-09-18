@@ -1,7 +1,7 @@
 ---
 services: active-directory
 documentationcenter: ''
-
+title: 'Azure AD cmdlts'
 ms.service: active-directory
 ms.workload: identity
 ms.tgt_pltfrm: na

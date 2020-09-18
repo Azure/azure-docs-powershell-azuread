@@ -1,7 +1,7 @@
 ---
 services: active-directory
 documentationcenter: ''
-
+title: 'Working with administrative units'
 ms.service: active-directory
 ms.workload: identity
 ms.tgt_pltfrm: na
