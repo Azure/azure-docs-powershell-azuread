@@ -1,7 +1,7 @@
 ---
 services: active-directory
 documentationcenter: ''
-
+title: 'Install AzureAD PowerShell for Graph'
 ms.service: active-directory
 ms.workload: identity
 ms.tgt_pltfrm: na

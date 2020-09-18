@@ -1,7 +1,7 @@
 ---
 services: active-directory
 documentationcenter: ''
-
+title: 'Log file'
 ms.service: active-directory
 ms.workload: identity
 ms.tgt_pltfrm: na
