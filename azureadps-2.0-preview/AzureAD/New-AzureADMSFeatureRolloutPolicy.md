@@ -60,7 +60,7 @@ Accept wildcard characters: False
 ### -Feature
 Specifies a feature assigned to the cloud authentication roll-out policy.
 
-Currently, you can assign PassthroughAuthentication | SeamlessSso | PasswordHashSync.
+Currently, you can assign PassthroughAuthentication | SeamlessSso | PasswordHashSync | EmailAsAlternateId.
 
 ```yaml
 Type: FeatureEnum
