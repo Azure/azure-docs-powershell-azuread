@@ -38,7 +38,7 @@ This command turns on the self-serve password reset feature for all users in the
 ## PARAMETERS
 
 ### -SelfServePasswordResetEnabled
-Indicates whether to allow the use of the self-service password reset feature.
+Indicates whether to allow the use of the self-service password reset feature for administrators. This setting doesn't control the behavior for non-administrator accounts.
 This setting is applied company-wide.
 
 ```yaml
