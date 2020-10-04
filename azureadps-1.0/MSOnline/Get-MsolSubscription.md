@@ -96,7 +96,7 @@ This cmdlet returns subscription objects that contain the following information:
 
 * SkuPartNumber. The SKU associated with this subscription.
 
-* Status. The status of this subscription (Enabled, Expired, or Suspended).
+* Status. The status of this subscription (Enabled, Warning, Expired, or Suspended).
 
 * TotalLicenses. The number of seats included in this subscription.
 
