@@ -32,7 +32,8 @@ If an organization consents to “read only” permissions for an application wi
 
 If the application is deleted or consent is removed in the other organization’s directory, the extension property becomes inaccessible on the target directory object. If the extension is deleted by the application, it also becomes inaccessible on the target directory object. If a multi-tenant application adds additional extension properties after consent was granted, these properties become immediately accessible in the other organization’s directory.
 
->Note: If an extension property’s value is set on an object and that property becomes inaccessible in that object’s directory, the property still counts against that object’s limit of 100 extension property values. The only way to remove the property value from consideration once it has been set is to explicitly set it to null. You cannot do this if the extension property is inaccessible.
+>[!NOTE]
+> If an extension property’s value is set on an object and that property becomes inaccessible in that object’s directory, the property still counts against that object’s limit of 100 extension property values. The only way to remove the property value from consideration once it has been set is to explicitly set it to null. You cannot do this if the extension property is inaccessible.
 
 You can read more about extension properties in [this article.](https://msdn.microsoft.com/library/azure/ad/graph/howto/azure-ad-graph-api-directory-schema-extensions)
 
