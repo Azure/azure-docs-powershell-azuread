@@ -32,7 +32,8 @@ If an organization consents to “read only” permissions for an application wi
 
 If the application is deleted or consent is removed in the other organization’s directory, the extension property becomes inaccessible on the target directory object. If the extension is deleted by the application, it also becomes inaccessible on the target directory object. If a multi-tenant application adds additional extension properties after consent was granted, these properties become immediately accessible in the other organization’s directory.
 
->Note: If an extension property’s value is set on an object and that property becomes inaccessible in that object’s directory, the property still counts against that object’s limit of 100 extension property values. The only way to remove the property value from consideration once it has been set is to explicitly set it to null. You cannot do this if the extension property is inaccessible.
+>[!NOTE]
+> If an extension property’s value is set on an object and that property becomes inaccessible in that object’s directory, the property still counts against that object’s limit of 100 extension property values. The only way to remove the property value from consideration once it has been set is to explicitly set it to null. You cannot do this if the extension property is inaccessible.
 
 You can read more about extension properties in [this article.](https://msdn.microsoft.com/library/azure/ad/graph/howto/azure-ad-graph-api-directory-schema-extensions)
 
@@ -105,8 +106,9 @@ ObjectId                             Name                                       
 91ec8ae5-6813-4453-afd7-31680a484892 extension_0380f0f700c040b5aa577c9268940b53_MyNewProperty {User}
 ```
 
->Note that the Name of the new property is generated from the format "Extension_" + <objectID of your placeholder application> + "_" + <the name of your new property>. The exact value of the name will therefore be different for different applications you create.
->Note that you can assign a property to more than one object type. In our example we only used one TargetObject, "User", but you could also have specified "User","Group", this would assign the object to both user and group objects.
+> [!NOTE] 
+> The Name of the new property is generated from the format "Extension_" + &lt;objectID of your placeholder application&gt; + "_" + &lt;the name of your new property&gt;. The exact value of the name will therefore be different for different applications you create.
+> You can assign a property to more than one object type. In our example we only used one TargetObject, "User", but you could also have specified "User","Group", this would assign the object to both user and group objects.
 
 ### Setting values for extension properties
 
