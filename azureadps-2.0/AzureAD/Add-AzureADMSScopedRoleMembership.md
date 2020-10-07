@@ -23,10 +23,11 @@ The Add-AzureADMSScopedRoleMembership cmdlet adds a scoped role membership to an
 ## EXAMPLES
 
 ### Example 1
+
 ```
 $User = Get-AzureADUser -SearchString "The user that will be an admin on this unit"
 	$Role = Get-AzureADDirectoryRole | Where-Object -Property DisplayName -EQ -Value "User Account Administrator"
-	$Unit = Get-AzureADMSAdministrativeUnit | Where-Object -Property DisplayName -Eq -Value "<The display name of the unit"
+	$Unit = Get-AzureADMSAdministrativeUnit | Where-Object -Property DisplayName -Eq -Value "<The display name of the unit>"
 	$RoleMember = New-Object -TypeName Microsoft.Open.MSGraph.Model.MsRolememberinfo.RoleMemberInfo
 	$RoleMember.Id = $User.ObjectID
 	Add-AzureADMSScopedRoleMembership -Id $Unit.Id -RoleId $Role.ObjectId -RoleMemberInfo $RoleMember
