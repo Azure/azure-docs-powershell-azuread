@@ -24,10 +24,24 @@ The Remove-AzureADUserAppRoleAssignment cmdlet removes a user application role a
 
 ### Example 1
 ```powershell
-PS C:\> {{ Add example code here }}
-```
+PS C:\> $appRoleAssignmentId = "AOpk4dbpHUiYomPPDlBfoglrwbCoExFLjTo8P-HhRC5"
+$user = Get-AzureADUser -ObjectId "james.smith@example.com"
 
-{{ Add example description here }}
+Remove-AzureADUserAppRoleAssignment -ObjectId $user.ObjectId -AppRoleAssignmentId $appRoleAssignmentId
+```
+Remove a single App Role Assignment with a known Id 
+
+### Example 2
+```powershell
+PS C:\> $username = "james.smith@example.com"
+$appname = "example-app"
+
+$servicePrincipal = Get-AzureADServicePrincipal -Filter "Displayname eq '$appname'"
+$user = Get-AzureADUser -ObjectId $username
+
+Get-AzureADUserAppRoleAssignment -ObjectId $user.ObjectId | Where-Object {( $_.ResourceId -eq $servicePrincipal.ObjectId ) -and ( $_.PrincipalId -eq $user.ObjectId ) -and ( $_.PrincipalType -eq "User")  | ForEach-Object -Process { Remove-AzureADUserAppRoleAssignment -ObjectId $user.ObjectId -AppRoleAssignmentId $_.ObjectId }
+```
+Remove all of a users App Role assignments for a a given AD Service Principle (Enterprise Application in Azure AD Interface). Please note this will only remove direct assignments to the user. Group assignments may also still be present for groups the user is in. 
 
 ## PARAMETERS
 
