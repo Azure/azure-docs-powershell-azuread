@@ -48,7 +48,7 @@ The Azure AD module is distributed using the PowerShell gallery. Installing item
 - [**Get WMF 5.0**](https://go.microsoft.com/fwlink/?LinkId=398175), or
 - [**Get MSI Installer**](https://go.microsoft.com/fwlink/?LinkID=746217&clcid=0x409)
 
-With the latest[PowerShellGet](https://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409)module, you can:
+With the latest [PowerShellGet](https://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409) module, you can:
 
 + Search through items in the Gallery with [**Find-Module**](https://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409) and [**Find-Script**](https://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409)
 + Save items to your system from the Gallery with [**Save-Module**](https://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409)    and [**Save-Script**](https://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409)
@@ -61,7 +61,9 @@ Check out the [Getting Started](https://www.powershellgallery.com/) page for mor
 ### Supported Operating Systems
 
 The **PowerShellGet** module requires **PowerShell 3.0 or newer**.
+
 Therefore, **PowerShellGet** requires one of the following operating systems:
+
 - Windows 10
 - Windows 8.1 Pro
 - Windows 8.1 Enterprise
