@@ -25,7 +25,7 @@ Conditional access policies are custom rules that define an access scenario.
 
 ## EXAMPLES
 
-### Example 1: Creates a new Ip named location policy in Azure AD.
+### Example 1: Creates a new IP named location policy in Azure AD.
 ```
 PS C:\> $ipRanges = New-Object -TypeName Microsoft.Open.MSGraph.Model.IpRange
           PS C:\> $ipRanges.cidrAddress = "6.5.4.3/32"
@@ -44,7 +44,7 @@ PS C:\> $ipRanges = New-Object -TypeName Microsoft.Open.MSGraph.Model.IpRange
                                     }
 ```
 
-This command creates a new country named location policy in Azure AD.
+This command creates a new IP named location policy in Azure AD.
 
 ### Example 2: Creates a new country named location policy in Azure AD.
 ```
