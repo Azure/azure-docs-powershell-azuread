@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Creates an Azure AD group.
 
+>[!Note]
+> This command currently requires the AzureADPreview module
+
 ## SYNTAX
 
 ```
