@@ -38,4 +38,4 @@ We are currently aware of the backlog for this repo and are working to address t
 
 Automatically generated reference content is any of the content under this Reference node, such as [Get-AzureADUser](https://docs.microsoft.com/powershell/module/AzureAD/Get-AzureADUser?view=azureadps-2.0)
 
-This only applies to reference content and not conceputal content.  Pull requests for changes to conceptual content are accepted and encouraged.  An example of the conceputal content is the [Overview](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-2.0) or a scenario such as [importing data](https://docs.microsoft.com/powershell/azure/active-directory/importing-data?view=azureadps-2.0).
+This only applies to reference content and not conceptual content.  Pull requests for changes to conceptual content are accepted and encouraged.  An example of the conceptual content is the [Overview](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-2.0) or a scenario such as [importing data](https://docs.microsoft.com/powershell/azure/active-directory/importing-data?view=azureadps-2.0).
