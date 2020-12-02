@@ -1,7 +1,7 @@
 ---
 services: active-directory
 documentationcenter: ''
-
+title: 'Cannot find object'
 ms.service: active-directory
 ms.workload: identity
 ms.tgt_pltfrm: na
@@ -25,7 +25,7 @@ Get-AzureADUser | Where ($_.City -eq "London")
 
 You would expect PowerShell to return all users where the value for the City property equals London. However... the Get-AzureADUser cmdlet by default only returns the first 100 objects it finds, and the subsequent Where cmdlet filters these first 100 objects to find users where the City equals London. If the user you are looking for exists in your directory but is not in the first 100 users that are returned by the Get-azureADUser cmdlet, that user will not be returned.
 
-# How to return all objects for subsequent filtering
+## How to return all objects for subsequent filtering
 To get the Get-AzureADUser cmdlet to return all users, you would use the -All parameter, as in
 
 ```powershell

@@ -20,7 +20,8 @@ Windows Server 2016 TP5
 Windows Server 2012 R2
 Windows Server 2008 R2 SP1
 
-PowerShellGet also requires .NET Framework 4.5 or above. You can install .NET Framework 4.5 or above from [here](https://www.microsoft.com/en-us/download/details.aspx?id=30653). For more information, please refer to [this link](https://msdn.microsoft.com/powershell/gallery/readme)
+PowerShellGet also requires .NET Framework 4.5 or above. You can install .NET Framework 4.5 or above from [here](https://www.microsoft.com/en-us/download/details.aspx?id=30653). 
+
 For more detailed info on installation of the AzureAD cmdlets please see: [Azure Active Directory PowerShell for Graph](https://docs.microsoft.com/en-us/powershell/azuread/).
 
 These are the cmdlets in the Azure Active Directory PowerShell for Graph module.
@@ -131,7 +132,7 @@ Updates an application.
 Sets the logo for an Application
 
 
-##Devices
+## Devices
 
 ### [Add-AzureADDeviceRegisteredOwner](Add-AzureADDeviceRegisteredOwner.md)
 Adds a registered owner for a device.
@@ -167,7 +168,7 @@ Removes a registered user from a device.
 Updates a device.
 
 
-##Directory Roles
+## Directory Roles
 
 ### [Add-AzureADDirectoryRoleMember](Add-AzureADDirectoryRoleMember.md)
 Adds a member to a directory role.
@@ -188,7 +189,7 @@ Gets directory role templates.
 Removes a member of a directory role.
 
 
-##Groups
+## Groups
 
 ### [Add-AzureADGroupMember](Add-AzureADGroupMember.md)
 Adds a member to a group.
@@ -435,7 +436,7 @@ Deletes settings in Azure Active Directory.
 Updates object settings.
 
 
-# Policies
+## Policies
 
 ### [Get-AzureADPolicy](Get-AzureADPolicy.md)
 Gets a policy.

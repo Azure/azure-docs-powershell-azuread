@@ -1,7 +1,7 @@
 ---
 services: active-directory
 documentationcenter: ''
-
+title: 'Find module'
 ms.service: active-directory
 ms.workload: identity
 ms.tgt_pltfrm: na

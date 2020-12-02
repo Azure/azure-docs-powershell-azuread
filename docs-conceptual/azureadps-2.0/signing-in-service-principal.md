@@ -1,7 +1,7 @@
 ---
 services: active-directory
 documentationcenter: ''
-
+title: 'Using a service principal'
 ms.service: active-directory
 ms.workload: identity
 ms.tgt_pltfrm: na
@@ -33,7 +33,7 @@ We'll use a self signed certificate for this example, so let's create one. You'l
 
 ```powershell
 $pwd = "<password>"
-$notAfter = (Get-Date).AddYears(1)
+$notAfter = (Get-Date).AddMonths(6) # Valid for 6 months
 $thumb = (New-SelfSignedCertificate -DnsName "drumkit.onmicrosoft.com" -CertStoreLocation "cert:\LocalMachine\My"  -KeyExportPolicy Exportable -Provider "Microsoft Enhanced RSA and AES Cryptographic Provider" -NotAfter $notAfter).Thumbprint
 $pwd = ConvertTo-SecureString -String $pwd -Force -AsPlainText
 Export-PfxCertificate -cert "cert:\localmachine\my\$thumb" -FilePath c:\temp\examplecert.pfx -Password $pwd

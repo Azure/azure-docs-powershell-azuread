@@ -1,10 +1,8 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.Custom.dll-Help.xml
-ms.assetid: C19B638B-9511-4828-B5AD-D177ECF9D5C0
-online version: 
+Module Name: AzureAD
+online version:
 schema: 2.0.0
-ms.reviewer: rodejo
-ms.custom: iamfeature=PowerShell
 ---
 
 # New-AzureADTrustedCertificateAuthority
@@ -20,17 +18,31 @@ New-AzureADTrustedCertificateAuthority -CertificateAuthorityInformation <Certifi
 ```
 
 ## DESCRIPTION
-The **New-AzureADTrustedCertificateAuthority** cmdlet creates a trusted certificate authority in Azure Active Directory (AD).
+The New-AzureADTrustedCertificateAuthority cmdlet creates a trusted certificate authority in Azure Active Directory (AD).
 
 ## EXAMPLES
+
+### Example 1: Creates the trusted certificate authorities in your directory
+```
+PS C:\> $new_ca = New-Object -TypeName Microsoft.Open.AzureAD.Model.CertificateAuthorityInformation #Create CertificateAuthorityInformation object
+		PS C:\> $new_ca.AuthorityType = "RootAuthority"
+		PS C:\> $new_ca.CrlDistributionPoint = "https://example.crl"
+		PS C:\> $new_ca.DeltaCrlDistributionPoint = "https://deltaexample.crl"
+		PS C:\> $new_ca.TrustedCertificate = "Path to .cer file(including cer file name)"
+		PS C:\> New-AzureADTrustedCertificateAuthority -CertificateAuthorityInformation $new_ca
+```
+
+This command creates the trusted certificate authorities in your directory.
 
 ## PARAMETERS
 
 ### -CertificateAuthorityInformation
+@{Text=}
+
 ```yaml
 Type: CertificateAuthorityInformation
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -40,7 +52,8 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event.
+The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -77,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -87,10 +100,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADTrustedCertificateAuthority](./Get-AzureADTrustedCertificateAuthority.md)
+[Get-AzureADTrustedCertificateAuthority]()
 
-[Remove-AzureADTrustedCertificateAuthority](./Remove-AzureADTrustedCertificateAuthority.md)
+[Remove-AzureADTrustedCertificateAuthority]()
 
-[Set-AzureADTrustedCertificateAuthority](./Set-AzureADTrustedCertificateAuthority.md)
-
+[Set-AzureADTrustedCertificateAuthority]()
 

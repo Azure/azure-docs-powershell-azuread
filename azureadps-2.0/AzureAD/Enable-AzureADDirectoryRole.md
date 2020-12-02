@@ -1,10 +1,8 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
-ms.assetid: 3719960D-7A77-414E-A20C-812B527F27AB
-online version: 
+Module Name: AzureAD
+online version:
 schema: 2.0.0
-ms.reviewer: rodejo
-ms.custom: iamfeature=PowerShell
 ---
 
 # Enable-AzureADDirectoryRole
@@ -16,32 +14,46 @@ Activates an existing directory role in Azure Active Directory.
 
 ```
 Enable-AzureADDirectoryRole [-InformationAction <ActionPreference>] [-InformationVariable <String>]
- [-DirectoryRole <String>] [<CommonParameters>]
+ [-RoleTemplateId <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The **Enable-AzureADDirectoryRole** cmdlet activates an existing directory role in Azure Active Directory.
+The Enable-AzureADDirectoryRole cmdlet activates an existing directory role in Azure Active Directory.
 
 ## EXAMPLES
 
 ### Example 1: Enable a directory role
 ```
-# Get Guest Inviter directory role template
-$roleTemplate = Get-AzureADDirectoryRoleTemplate | ? { $_.DisplayName -eq "Guest Inviter" }
+# Retrieve the Template Role object for the Guest Inviter role 
+$InviterRole = Get-AzureADDirectoryRoleTemplate | Where-Object {$_.DisplayName -eq "Guest Inviter"}
 
-# Enable an instance of the DirectoryRole template
-Enable-AzureADDirectoryRole -RoleTemplateId $roleTemplate.ObjectId
+# Inspect the $Inveoter variable to make sure we found the correct template role
+$InviterRole
 
+ObjectId                             DisplayName   Description
+--------                             -----------   -----------
+95e79109-95c0-4d8e-aee3-d01accf2d47b Guest Inviter Guest Inviter has access to invite guest users.
+
+# Enable the Inviter Role
+Enable-AzureADDirectoryRole -RoleTemplateId $InviterRole.ObjectId
+
+ObjectId                             DisplayName   Description
+--------                             -----------   -----------
+03618579-3c16-4765-9539-86d9163ee3d9 Guest Inviter Guest Inviter has access to invite guest users.
 ```
 
-The first command gets an inviter role that has the display name Guest Inviter by using the [Get-AzureADDirectoryRoleTemplate](./Get-AzureADDirectoryRoleTemplate.md) cmdlet. The command stores Guest Inviter in the $roleTemplate variable. 
+The first command gets an inviter role that has the display name Guest Inviter by using the Get-AzureADDirectoryRoleTemplate (./Get-AzureADDirectoryRoleTemplate.md)cmdlet. 
+The command stores Guest Inviter in the $InviterRole variable.
 
-The second command instantiates an instance of the directory role in $roleTemplate.
+The second command displays the contents of $InviterRole.
+
+The final command enables the directory role in $InviterRole.
 
 ## PARAMETERS
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event.
+The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -83,7 +95,7 @@ The ID of the Role template to enable
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -93,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -103,6 +115,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADDirectoryRole](./Get-AzureADDirectoryRole.md)
+[Get-AzureADDirectoryRole]()
 
-[Get-AzureADDirectoryRoleTemplate](./Get-AzureADDirectoryRoleTemplate.md)
+[Get-AzureADDirectoryRoleTemplate]()
+

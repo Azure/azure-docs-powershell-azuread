@@ -1,10 +1,8 @@
 ---
 external help file: Microsoft.Open.Azure.AD.CommonLibrary.dll-Help.xml
-ms.assetid: 1EC5BEED-D45D-4938-B279-795075D05542
-online version: 
+Module Name: AzureAD
+online version:
 schema: 2.0.0
-ms.reviewer: rodejo
-ms.custom: iamfeature=PowerShell
 ---
 
 # Disconnect-AzureAD
@@ -20,7 +18,7 @@ Disconnect-AzureAD [-InformationAction <ActionPreference>] [-InformationVariable
 ```
 
 ## DESCRIPTION
-The **Disconnect-AzureAD** cmdlet disconnects the current session from an Azure Active Directory tenant.
+The Disconnect-AzureAD cmdlet disconnects the current session from an Azure Active Directory tenant.
 
 ## EXAMPLES
 
@@ -34,7 +32,8 @@ This command disconnects your session from a tenant.
 ## PARAMETERS
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event.
+The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -103,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -113,4 +112,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Connect-AzureAD](./Connect-AzureAD.md)
+[Connect-AzureAD]()
+

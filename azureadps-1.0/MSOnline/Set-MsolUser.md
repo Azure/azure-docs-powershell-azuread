@@ -41,7 +41,7 @@ Update the licenses, password, and User Principal Name for a user by using the [
 PS C:\> Set-MsolUser -UserPrincipalName "davidchew@contoso.com" -BlockCredential $True
 ```
 
-This command sets block credential to $Tue for a user, which blocks them from being able to sign in.
+This command sets block credential to $True for a user, which blocks them from being able to sign in.
 This cannot be done for a synced user.
 
 ### Example 2: Update display name
