@@ -20,7 +20,6 @@ ms.reviewer: rodejo
 Extension attributes offer a convenient way to extend your Azure AD directory with new attributes that you can use to store attribute values for objects in your directory. You can attach an extension attribute to the following object types:
 
 + users
-+ groups
 + tenant details
 + devices
 + applications
