@@ -1,7 +1,7 @@
 ---
 services: active-directory
 documentationcenter: ''
-
+title: 'Create a new user'
 ms.service: active-directory
 ms.workload: identity
 ms.tgt_pltfrm: na
@@ -24,15 +24,21 @@ The cmdlet used is [New-AzureADUser](). This cmdlet has many parameters that you
 + AccountEnabled - this indicates whether the account is enabled for sign in. If you set it to $False, the user will not be able to use the account, but you can set it ti $True right now or do that later if you need to perform other configuration tasks for the new user, such as assigning licenses or applications.
 + PasswordProfile - Specifies the user's password profile. Note that the parameter type for this parameter is "PasswordProfile". in order to pass a parameter of this type, you first need to create a variable in PowerShell with that type. We can do that with the New-Object cmdlet:
 
-```powershell $PasswordProfile = New-Object -TypeName Microsoft.Open.AzureAD.Model.PasswordProfile```
+```powershell 
+$PasswordProfile = New-Object -TypeName Microsoft.Open.AzureAD.Model.PasswordProfile
+```
 
 Then you can proceed to set the value of the password in this variable:
 
-``` powershell $PasswordProfile.Password = "<Password>" ```
+``` powershell 
+$PasswordProfile.Password = "<Password>"
+```
 
 To create the user, call the New-AzureADUser cmdlet with the parameter values:
 
-```powershell New-AzureADUser -AccountEnabled $True -DisplayName "Abby Brown" -PasswordProfile $PasswordProfile -MailNickName "AbbyB" -UserPrincipalName "AbbyB@contoso.com"```
+```powershell 
+New-AzureADUser -AccountEnabled $True -DisplayName "Abby Brown" -PasswordProfile $PasswordProfile -MailNickName "AbbyB" -UserPrincipalName "AbbyB@contoso.com"
+```
 
 PowerShell will return the new user object you just created and show the ObjectId:
 

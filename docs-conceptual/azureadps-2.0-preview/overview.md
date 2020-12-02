@@ -1,14 +1,14 @@
 ---
 services: active-directory
 documentationcenter: ''
-
+title: 'Overview AzureADPreview'
 ms.service: active-directory
 ms.workload: identity
 ms.tgt_pltfrm: na
 ms.devlang: powershell
 ms.topic: article
-ms.date: 07/10/2017
-ms.author: rodejo
+ms.date: 07/28/2020
+ms.author: billmath
 ms.custom: posh-docs-conceptual
 ms.reviewer: rodejo
 ---
@@ -18,7 +18,7 @@ Azure Active Directory PowerShell for Graph (AzureAD) is a module IT Pros common
 
 If you are developing new PowerShell scripts with Azure AD cmdlets we advise you to use the newer [Azure Active Directory PowerShell for Graph cmdlets](/powershell/module/azuread?view=azureadps-2.0). 
 
-Please refer to the below detailed description of the modules for a full list of cmdlets and functionality.
+Please refer to the below detailed description of the modules for a full list of the cmdlets and functionality.
 
 
 Module | Description

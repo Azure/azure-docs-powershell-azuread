@@ -20,13 +20,14 @@ Set-MsolDomainAuthentication -DomainName <String> -Authentication <DomainAuthent
  [-PassiveLogOnUri <String>] [-ActiveLogOnUri <String>] [-IssuerUri <String>] [-FederationBrandName <String>]
  [-MetadataExchangeUri <String>] [-PreferredAuthenticationProtocol <AuthenticationProtocol>]
  [-SupportsMfa <Boolean>] [-DefaultInteractiveAuthenticationMethod <String>]
- [-OpenIdConnectDiscoveryEndpoint <String>] [-SigningCertificateUpdateStatus <SigningCertificateUpdateStatus>]
+ [-OpenIdConnectDiscoveryEndpoint <String>] [-SigningCertificate
+ Status <SigningCertificateUpdateStatus>]
  [-PromptLoginBehavior <PromptLoginBehavior>] [-TenantId <Guid>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 The **Set-MsolDomainAuthentication** cmdlet changes the domain authentication between standard identity and single-sign on.
-This cmdlet update only the settings in Azure Active Directory.
+This cmdlet updates only the settings in Azure Active Directory.
 Typically, the [Convert-MsolDomainToStandard](./Convert-MsolDomainToStandard.md) or [Convert-MsolDomainToFederated](./Convert-MsolDomainToFederated.md) cmdlet should be used instead.
 
 ## PARAMETERS

@@ -1,7 +1,7 @@
 ---
 services: active-directory
 documentationcenter: ''
-
+title: 'Install MSOnline'
 ms.service: active-directory
 ms.workload: identity
 ms.tgt_pltfrm: na
@@ -17,7 +17,7 @@ ms.reviewer: rodejo
 You can use the Azure Active Directory Module for Windows PowerShell cmdlets for Azure AD administrative tasks such as user management, domain management and for configuring single sign-on.
 This topic includes information about how to install these cmdlets for use with your directory.
 
-Please note that we will begin to deprecate this module when the functionality of this module is available in the newer [Azure Active Directory PowerShell for Graph](https://docs.microsoft.com/en-us/powershell/azuread/v2/azureactivedirectory) module. We advise customers who are creating new PowerShell scripts to use the newer module instead of this module.
+Please note that we will begin to deprecate this module when the functionality of this module is available in the newer [Azure Active Directory PowerShell for Graph](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory) module. We advise customers who are creating new PowerShell scripts to use the newer module instead of this module.
 
 
 ## Install the Azure AD Module
@@ -37,16 +37,16 @@ The MSOnline Public Preview release 1.1.130.0 is no longer available for downloa
 Install-Module AzureADPreview
 ```
  
-Note that the MSOL Settings cmdlets have been given a new name, more information about these cmdlets and how to use them can be found in [this article](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-accessmanagement-groups-settings-cmdlets).
+Note that the MSOL Settings cmdlets have been given a new name, more information about these cmdlets and how to use them can be found in [this article](https://docs.microsoft.com/azure/active-directory/active-directory-accessmanagement-groups-settings-cmdlets).
  
 **Important**
 
-Effective October 20, 2014, the [Azure Active Directory Module for Windows PowerShell (32-bit version)](http://go.microsoft.com/fwlink/p/?linkid=236298) is discontinued.
+Effective October 20, 2014, the [Azure Active Directory Module for Windows PowerShell (32-bit version)](https://go.microsoft.com/fwlink/p/?linkid=236298) is discontinued.
 Support for the 32-bit version will no longer occur, and future updates to the Azure Active Directory Module will be released only for the 64-bit version.
 
 We strongly recommend you install the 64-bit version to ensure future support and compatibility.
 
-You can also access previous versions of the Azure AD module from the [Microsoft Azure Active Directory PowerShell Module Version Release History](http://social.technet.microsoft.com/wiki/contents/articles/28552.microsoft-azure-active-directory-powershell-module-version-release-history.aspx) on the TechNet Wiki.
+You can also access previous versions of the Azure AD module from the [Microsoft Azure Active Directory PowerShell Module Version Release History](https://social.technet.microsoft.com/wiki/contents/articles/28552.microsoft-azure-active-directory-powershell-module-version-release-history.aspx) on the TechNet Wiki.
 
 
 ## Updating the Azure AD Module
@@ -87,7 +87,7 @@ Connect-MsolService -AzureEnvironment "AzureGermanyCloud"
 
 This example connects your PowerShell session to the German AzureAD environment.
 
-See [Connect-MsolService](https://msdn.microsoft.com/en-us/library/azure/dn194123(v=azure.98).aspx) for more information.
+See [Connect-MsolService](https://msdn.microsoft.com/library/azure/dn194123(v=azure.98).aspx) for more information.
 
 For more information about the cmdlets, you can do the following:
 

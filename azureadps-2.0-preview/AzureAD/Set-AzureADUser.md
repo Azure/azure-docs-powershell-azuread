@@ -1,8 +1,9 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+Module Name: AzureADPreview
 ms.custom: iamfeature=PowerShell
 ms.reviewer: rodejo
-online version: 
+online version:
 schema: 2.0.0
 ---
 
@@ -16,15 +17,17 @@ Updates a user.
 ```
 Set-AzureADUser -ObjectId <String>
  [-ExtensionProperty <System.Collections.Generic.Dictionary`2[System.String,System.String]>]
- [-AccountEnabled <Boolean>] [-City <String>] [-Country <String>] [-CreationType <String>]
- [-Department <String>] [-DisplayName <String>] [-FacsimileTelephoneNumber <String>] [-GivenName <String>]
- [-IsCompromised <Boolean>] [-ImmutableId <String>] [-JobTitle <String>] [-MailNickName <String>]
- [-Mobile <String>] [-OtherMails <System.Collections.Generic.List`1[System.String]>]
- [-PasswordPolicies <String>] [-PasswordProfile <PasswordProfile>] [-PhysicalDeliveryOfficeName <String>]
- [-PostalCode <String>] [-PreferredLanguage <String>] [-ShowInAddressList <Boolean>]
+ [-AccountEnabled <Boolean>] [-AgeGroup <String>] [-City <String>] [-CompanyName <String>]
+ [-ConsentProvidedForMinor <String>] [-Country <String>] [-CreationType <String>] [-Department <String>]
+ [-DisplayName <String>] [-FacsimileTelephoneNumber <String>] [-GivenName <String>] [-IsCompromised <Boolean>]
+ [-ImmutableId <String>] [-JobTitle <String>] [-MailNickName <String>] [-Mobile <String>]
+ [-OtherMails <System.Collections.Generic.List`1[System.String]>] [-PasswordPolicies <String>]
+ [-PasswordProfile <PasswordProfile>] [-PhysicalDeliveryOfficeName <String>] [-PostalCode <String>]
+ [-PreferredLanguage <String>] [-ShowInAddressList <Boolean>]
  [-SignInNames <System.Collections.Generic.List`1[Microsoft.Open.AzureAD.Model.SignInName]>] [-State <String>]
  [-StreetAddress <String>] [-Surname <String>] [-TelephoneNumber <String>] [-UsageLocation <String>]
- [-UserPrincipalName <String>] [-UserType <String>] [<CommonParameters>]
+ [-UserPrincipalName <String>] [-UserState <String>] [-UserStateChangedOn <String>] [-UserType <String>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -49,7 +52,7 @@ Indicates whether the account is enabled.
 ```yaml
 Type: Boolean
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -64,7 +67,7 @@ Specifies the user's city.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -79,7 +82,7 @@ Specifies the user's country.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -97,7 +100,7 @@ When creating a work or school account, do not specify the property or set it to
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -112,7 +115,7 @@ Specifies the user's department.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -127,7 +130,7 @@ Specifies the user's display name.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -142,7 +145,7 @@ Accept wildcard characters: False
 ```yaml
 Type: System.Collections.Generic.Dictionary`2[System.String,System.String]
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -157,7 +160,7 @@ Specifies the user's given name.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -172,7 +175,7 @@ Accept wildcard characters: False
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -187,7 +190,7 @@ True if this user is compromised
 ```yaml
 Type: Boolean
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -202,7 +205,7 @@ Specifies the user's job title.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -217,7 +220,7 @@ Specifies a nickname for the user's mail address.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -232,7 +235,7 @@ Specifies the user's mobile phone number.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -247,7 +250,7 @@ Specifies the ID of a user (as a UPN or ObjectId) in Azure AD.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -262,7 +265,7 @@ Specifies other email addresses for the user.
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -277,7 +280,7 @@ Specifies password policies for the user.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -292,7 +295,7 @@ Specifies the user's password profile.
 ```yaml
 Type: PasswordProfile
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -307,7 +310,7 @@ Accept wildcard characters: False
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -322,7 +325,7 @@ Specifies the user's postal code.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -337,7 +340,7 @@ Specifies the user's preferred language.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -352,7 +355,7 @@ Set to True to show this user in the address list.
 ```yaml
 Type: Boolean
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -367,7 +370,7 @@ The list of sign in names for this user
 ```yaml
 Type: System.Collections.Generic.List`1[Microsoft.Open.AzureAD.Model.SignInName]
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -382,7 +385,7 @@ Specifies the user's state.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -397,7 +400,7 @@ Specifies the user's street address.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -412,7 +415,7 @@ Specifies the user's surname.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -427,7 +430,7 @@ Specifies the user's telephone number.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -442,7 +445,7 @@ Accept wildcard characters: False
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -457,7 +460,7 @@ Specifies the user's user principal name.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -472,7 +475,7 @@ Accept wildcard characters: False
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -487,7 +490,82 @@ Accept wildcard characters: False
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AgeGroup
+{{ Fill AgeGroup Description }}
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -CompanyName
+{{ Fill CompanyName Description }}
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ConsentProvidedForMinor
+{{ Fill ConsentProvidedForMinor Description }}
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -UserState
+{{ Fill UserState Description }}
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -UserStateChangedOn
+{{ Fill UserStateChangedOn Description }}
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
 
 Required: False
 Position: Named
@@ -497,7 +575,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

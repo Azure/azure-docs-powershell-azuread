@@ -1,10 +1,8 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
-ms.assetid: 652D7268-D620-4A4C-AAF7-E5D553FE5F09
-online version: 
+Module Name: AzureAD
+online version:
 schema: 2.0.0
-ms.reviewer: rodejo
-ms.custom: iamfeature=PowerShell
 ---
 
 # Add-AzureADDirectoryRoleMember
@@ -20,48 +18,22 @@ Add-AzureADDirectoryRoleMember -ObjectId <String> -RefObjectId <String> [-Inform
 ```
 
 ## DESCRIPTION
-The **Add-AzureADDirectoryRoleMember** cmdlet adds a member to an Azure Active Directory role.
+The Add-AzureADDirectoryRoleMember cmdlet adds a member to an Azure Active Directory role.
 
 ## EXAMPLES
 
-### Example 1: Add a member to an Active Directory role instance
+### Example 1: Add a member to an Active Directory role
 ```
 PS C:\>Add-AzureADDirectoryRoleMember -ObjectId 019ea7a2-1613-47c9-81cb-20ba35b1ae48 -RefObjectId c13dd34a-492b-4561-b171-40fcce2916c5
 ```
 
-This example adds a member to an Active Directory role instance.
-
-### Example 2: Add a member to an Active Directory role instance
-```powershell
-# Fetch user to assign to role
-$roleMember = Get-AzureADUser -ObjectId "vincesm@msods.com"
-
-# Fetch User Account Administrator role instance
-$role = Get-AzureADDirectoryRole | Where-Object {$_.displayName -eq 'User Account Administrator'}
-
-# If role instance does not exist, instantiate it based on the role template
-if ($role -eq $null) {
-    # Instantiate an instance of the role template
-    $roleTemplate = Get-AzureADDirectoryRoleTemplate | Where-Object {$_.displayName -eq 'User Account Administrator'}
-    Enable-AzureADDirectoryRole -RoleTemplateId $roleTemplate.ObjectId
-
-    # Fetch User Account Administrator role instance again
-    $role = Get-AzureADDirectoryRole | Where-Object {$_.displayName -eq 'User Account Administrator'}
-}
-
-# Add user to role
-Add-AzureADDirectoryRoleMember -ObjectId $role.ObjectId -RefObjectId $roleMember.ObjectId
-
-# Fetch role membership for role to confirm
-Get-AzureADDirectoryRoleMember -ObjectId $role.ObjectId | Get-AzureADUser
-```
-
-This example adds a member to an Active Directory role instance, instantiating the role instance first if it does not exist.
+This command adds a member to an Active Directory role.
 
 ## PARAMETERS
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event.
+The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -103,7 +75,7 @@ Specifies the ID of a directory role in Azure Active Directory.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -113,12 +85,12 @@ Accept wildcard characters: False
 ```
 
 ### -RefObjectId
-Specifies the ID of the Azure Active Directory object to assign as a member. Members can be users or service principals only.
+Specifies the ID of the Azure Active Directory object to assign as owner/manager/member.
 
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -128,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -138,7 +110,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADDirectoryRoleMember](./Get-AzureADDirectoryRoleMember.md)
+[Get-AzureADDirectoryRoleMember]()
 
-[Remove-AzureADDirectoryRoleMember](./Remove-AzureADDirectoryRoleMember.md)
+[Remove-AzureADDirectoryRoleMember]()
 

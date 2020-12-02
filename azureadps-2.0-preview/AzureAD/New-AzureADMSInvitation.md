@@ -1,8 +1,9 @@
 ---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
+Module Name: AzureADPreview
 ms.custom: iamfeature=PowerShell
 ms.reviewer: rodejo
-online version: 
+online version:
 schema: 2.0.0
 ---
 
@@ -15,7 +16,7 @@ This cmdlet is used to invite a new external user to your directory
 
 ```
 New-AzureADMSInvitation [-InvitedUserDisplayName <String>] -InvitedUserEmailAddress <String>
- [-SendInvitationMessage <Boolean>] -InviteRedirectUrl <String>
+ [-SendInvitationMessage <Boolean>] -InviteRedirectUrl <String> [-InvitedUser <User>]
  [-InvitedUserMessageInfo <InvitedUserMessageInfo>] [-InvitedUserType <String>] [<CommonParameters>]
 ```
 
@@ -40,7 +41,7 @@ The display name of the user as it will appear in your directory
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -55,7 +56,7 @@ The Email address to which the invitation is sent
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -70,7 +71,22 @@ Addition information to specify how the invitation message is sent
 ```yaml
 Type: InvitedUserMessageInfo
 Parameter Sets: (All)
-Aliases: 
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -InvitedUser
+User object for existing on-prem non-synced guest-user
+
+```yaml
+Type: User
+Parameter Sets: (All)
+Aliases:
 
 Required: False
 Position: Named
@@ -85,7 +101,7 @@ The userType of the user being invited. By default, this is Guest. You can invit
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -100,7 +116,7 @@ The URL to which the invited user is forwarded after accepting the invitation
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -115,7 +131,7 @@ A Boolean parameter that indicates whether or not an invitation message will be 
 ```yaml
 Type: Boolean
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -125,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -138,4 +154,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-

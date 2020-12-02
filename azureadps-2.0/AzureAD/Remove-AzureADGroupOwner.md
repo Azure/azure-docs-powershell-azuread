@@ -1,10 +1,8 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
-ms.assetid: 2F1DA4E0-4D7C-4726-85AA-2493B0A3FDA8
-online version: 
+Module Name: AzureAD
+online version:
 schema: 2.0.0
-ms.reviewer: rodejo
-ms.custom: iamfeature=PowerShell
 ---
 
 # Remove-AzureADGroupOwner
@@ -20,7 +18,7 @@ Remove-AzureADGroupOwner -ObjectId <String> -OwnerId <String> [-InformationActio
 ```
 
 ## DESCRIPTION
-The **Remove-AzureADGroupOwner** cmdlet removes an owner from a group in Azure Active Directory (AD).
+The Remove-AzureADGroupOwner cmdlet removes an owner from a group in Azure Active Directory (AD).
 
 ## EXAMPLES
 
@@ -76,7 +74,7 @@ Specifies the ID of a group in Azure AD.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -91,7 +89,7 @@ Specifies the ID of an owner.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -101,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -111,6 +109,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Add-AzureADGroupOwner](./Add-AzureADGroupOwner.md)
-[Get-AzureADGroupOwner](./Get-AzureADGroupOwner.md)
+[Add-AzureADGroupOwner]()
+
+[Get-AzureADGroupOwner]()
 
