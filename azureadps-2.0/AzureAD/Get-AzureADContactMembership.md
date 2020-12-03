@@ -1,10 +1,8 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
-ms.assetid: DB181096-FF93-4C1E-9E08-884E8162DAB7
-online version: 
+Module Name: AzureAD
+online version:
 schema: 2.0.0
-ms.reviewer: rodejo
-ms.custom: iamfeature=PowerShell
 ---
 
 # Get-AzureADContactMembership
@@ -19,7 +17,7 @@ Get-AzureADContactMembership -ObjectId <String> [-All <Boolean>] [-Top <Int32>] 
 ```
 
 ## DESCRIPTION
-The **Get-AzureADContactMembership** cmdlet gets a contact membership in Azure Active Directory.
+The Get-AzureADContactMembership cmdlet gets a contact membership in Azure Active Directory.
 
 ## EXAMPLES
 
@@ -33,19 +31,20 @@ ObjectId                             ObjectType
 0015df25-808e-4715-9c24-a6929c25c201 Group
 ```
 
-The first command gets a contact by using the [Get-AzureADContact](./Get-AzureADContact.md) cmdlet, and then stores it in the $Contact variable.
+The first command gets a contact by using the Get-AzureADContact (./Get-AzureADContact.md)cmdlet, and then stores it in the $Contact variable.
 
 The second command gets the memberships for $Contact.
 
 ## PARAMETERS
 
 ### -All
-If true, return all memberships. If false, return the number of objects specified by the Top parameter
+If true, return all memberships.
+If false, return the number of objects specified by the Top parameter
 
 ```yaml
 Type: Boolean
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -60,7 +59,7 @@ Specifies the ID of a contact in Azure Active Directory.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -75,7 +74,7 @@ Specifies the maximum number of records to return.
 ```yaml
 Type: Int32
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -85,7 +84,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -95,4 +94,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADContact](./Get-AzureADContact.md)
+[Get-AzureADContact]()
+

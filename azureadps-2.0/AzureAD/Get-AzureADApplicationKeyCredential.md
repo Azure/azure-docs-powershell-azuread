@@ -1,10 +1,8 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.Custom.dll-Help.xml
-ms.assetid: 306B2B21-9B1C-4388-B3D6-419CDE02C75C
-online version: 
+Module Name: AzureAD
+online version:
 schema: 2.0.0
-ms.reviewer: rodejo
-ms.custom: iamfeature=PowerShell
 ---
 
 # Get-AzureADApplicationKeyCredential
@@ -20,7 +18,7 @@ Get-AzureADApplicationKeyCredential -ObjectId <String> [-InformationAction <Acti
 ```
 
 ## DESCRIPTION
-The **Get-AzureADApplicationKeyCredential** cmdlet gets the key credentials for an application.
+The Get-AzureADApplicationKeyCredential cmdlet gets the key credentials for an application.
 
 ## EXAMPLES
 
@@ -78,7 +76,7 @@ Specifies a unique ID of an application in Azure Active Directory for which to g
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -88,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -98,6 +96,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[New-AzureADApplicationKeyCredential](./New-AzureADApplicationKeyCredential.md)
+[New-AzureADApplicationKeyCredential]()
 
-[Remove-AzureADApplicationKeyCredential](./Remove-AzureADApplicationKeyCredential.md)
+[Remove-AzureADApplicationKeyCredential]()
+

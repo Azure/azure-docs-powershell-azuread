@@ -1,7 +1,7 @@
 ---
 services: active-directory
 documentationcenter: ''
-
+title: 'Working with licenses'
 ms.service: active-directory
 ms.workload: identity
 ms.tgt_pltfrm: na
@@ -12,6 +12,8 @@ ms.author: rodejo
 ms.custom: posh-docs-conceptual
 ms.reviewer: rodejo
 ---
+# Working with licenses
+
 (Get-AzureADUser).AssignedPlans gets you a list of assigned plans and their “capability status” – whether the particular service is Enabled or disabled based on the subscription status in commerce. The “Service” field is the type of the service behind the plan, and not the name of the service plan itself (the name is not included in this object at all, just the guid ID of the plan)
 
 https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/assignedplan

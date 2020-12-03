@@ -1,10 +1,8 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
-ms.assetid: E5E17FE9-67C1-463F-BC06-B3B6883D99AE
-online version: 
+Module Name: AzureAD
+online version:
 schema: 2.0.0
-ms.reviewer: rodejo
-ms.custom: iamfeature=PowerShell
 ---
 
 # Get-AzureADDevice
@@ -30,7 +28,7 @@ Get-AzureADDevice -ObjectId <String> [-All <Boolean>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The **Get-AzureADDevice** cmdlet gets a device from Azure Active Directory (AD).
+The Get-AzureADDevice cmdlet gets a device from Azure Active Directory (AD).
 
 ## EXAMPLES
 
@@ -61,12 +59,13 @@ This command gets all available devices.
 ## PARAMETERS
 
 ### -All
-If true, return all devices. If false, return the number of objects specified by the Top parameter
+If true, return all devices.
+If false, return the number of objects specified by the Top parameter
 
 ```yaml
 Type: Boolean
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -76,12 +75,13 @@ Accept wildcard characters: False
 ```
 
 ### -Filter
-Specifies the oData v3.0 filter statement. This parameter controls which objects are returned.
+Specifies the oData v3.0 filter statement.
+This parameter controls which objects are returned.
 
 ```yaml
 Type: String
 Parameter Sets: GetQuery
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -96,7 +96,7 @@ Specifies the ID of a device in Azure AD.
 ```yaml
 Type: String
 Parameter Sets: GetById
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -107,10 +107,11 @@ Accept wildcard characters: False
 
 ### -SearchString
 Specifies a search string.
+
 ```yaml
 Type: String
 Parameter Sets: GetVague
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -125,7 +126,7 @@ Specifies the maximum number of records to return.
 ```yaml
 Type: Int32
 Parameter Sets: GetQuery
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -135,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -145,8 +146,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[New-AzureADDevice](./New-AzureADDevice.md)
-[Remove-AzureADDevice](./Remove-AzureADDevice.md)
-[Set-AzureADDevice](./Set-AzureADDevice.md)
+[New-AzureADDevice]()
 
+[Remove-AzureADDevice]()
+
+[Set-AzureADDevice]()
 
