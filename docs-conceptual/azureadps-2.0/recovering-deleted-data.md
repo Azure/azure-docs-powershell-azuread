@@ -37,7 +37,7 @@ ObjectId                             AppId                                Displa
 9a7d49c5-42ee-47a3-bad7-17cae5bb8f26 7dba6cec-ffd5-40af-ba40-1eb158574b5a My Properties Bag
 ```
 
-Within the first 30 days after an object is deleted, it can be recovered using the Recover-AzureADMSDeletedDirectoryObject cmdlet. To recover a deleted directory pobject you must specify the Id of the object. This is what you see when you recover a deleted group:
+Within the first 30 days after an object is deleted, it can be recovered using the Restore-AzureADMSDeletedDirectoryObject cmdlet. To recover a deleted directory pobject you must specify the Id of the object. This is what you see when you recover a deleted group:
 
 ```powershell
 Restore-AzureADMSDeletedDirectoryObject -Id 822cda93-4d5b-4c60-86d9-5d395e37afb4
