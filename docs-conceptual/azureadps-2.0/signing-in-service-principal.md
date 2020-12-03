@@ -1,7 +1,7 @@
 ---
 services: active-directory
 documentationcenter: ''
-
+title: 'Using a service principal'
 ms.service: active-directory
 ms.workload: identity
 ms.tgt_pltfrm: na
@@ -54,7 +54,7 @@ Next step is to create a new application and assign the certificate we created a
 
 ```powershell 
 $application = New-AzureADApplication -DisplayName "test123" -IdentifierUris "https://rodejo2177668"
-New-AzureADApplicationKeyCredential -ObjectId $application.ObjectId -CustomKeyIdentifier "Test123" -Type AsymmetricX509Cert -Usage Verify -Value $keyValue
+New-AzureADApplicationKeyCredential -ObjectId $application.ObjectId -CustomKeyIdentifier "Test123" -Type AsymmetricX509Cert -Usage Verify -Value $keyValue -EndDate $notAfter
 ```
 
 ## Create the Service Principal and connect it to the Application

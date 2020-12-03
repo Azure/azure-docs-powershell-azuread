@@ -1,10 +1,8 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
-ms.assetid: CAA240EC-E380-4CDB-A1CC-56BBD28DFB82
-online version: 
+Module Name: AzureAD
+online version:
 schema: 2.0.0
-ms.reviewer: rodejo
-ms.custom: iamfeature=PowerShell
 ---
 
 # Get-AzureADDirectoryRole
@@ -12,16 +10,12 @@ ms.custom: iamfeature=PowerShell
 ## SYNOPSIS
 Gets a directory role.
 
-Get-AzureADDirectoryRole cmdlet only returns roles that have been activated. A role becomes activated when an admin activates the role using the [Enable-AzureADDirectoryRole](https://docs.microsoft.com/en-us/powershell/module/azuread/enable-azureaddirectoryrole?view=azureadps-2.0) cmdlet. We do not activate all built-in roles to start with. 
-
-When assigning a role using Azure portal, role activation step is implicitly done by portal on admin's behalf. To get the full list of roles available in Azure AD, use [Get-AzureADDirectoryRoleTemplate](https://docs.microsoft.com/en-us/powershell/module/azuread/get-azureaddirectoryroletemplate?view=azureadps-2.0).
-
 ## SYNTAX
 
 ### GetQuery (Default)
 ```
-Get-AzureADDirectoryRole [-InformationAction <ActionPreference>] [-InformationVariable <String>]
- [<CommonParameters>]
+Get-AzureADDirectoryRole [-Filter <String>] [-InformationAction <ActionPreference>]
+ [-InformationVariable <String>] [<CommonParameters>]
 ```
 
 ### GetById
@@ -31,7 +25,7 @@ Get-AzureADDirectoryRole -ObjectId <String> [-InformationAction <ActionPreferenc
 ```
 
 ## DESCRIPTION
-The **Get-AzureADDirectoryRole** cmdlet gets a directory role from Azure Active Directory (AD).
+The Get-AzureADDirectoryRole cmdlet gets a directory role from Azure Active Directory (AD).
 
 ## EXAMPLES
 
@@ -44,16 +38,7 @@ ObjectId                             DisplayName                        Descript
 019ea7a2-1613-47c9-81cb-20ba35b1ae48 Company Administrator              Company Administrator role has full access to perform any operation in the company scope.
 ```
 
-### Example 2: Get a directory role by name
-```
-PS C:\>Get-AzureADDirectoryRole | Where-Object {$_.displayName -eq 'Security Reader'}
-
-ObjectId                             DisplayName     Description                                                             
---------                             -----------     -----------                                                             
-5b3fe201-fa8b-4144-b6f1-875829ff7543 Security Reader Security Reader allows ability to read security information and reports.
-```
-
-### Example 3: Get all directory roles
+### Example 2: Get all directory roles
 ```
 PS C:\>Get-AzureADDirectoryRole
 
@@ -71,6 +56,22 @@ d96eb2b3-0970-4827-8f26-6008efd86511 Security Administrator             Security
 ```
 
 ## PARAMETERS
+
+### -Filter
+The oData v3.0 filter statement. 
+Controls which objects are returned.
+
+```yaml
+Type: String
+Parameter Sets: GetQuery
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName, ByValue)
+Accept wildcard characters: False
+```
 
 ### -InformationAction
 Specifies how this cmdlet responds to an information event.
@@ -117,7 +118,7 @@ Specifies the ID of a directory role in Azure AD.
 ```yaml
 Type: String
 Parameter Sets: GetById
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -127,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -137,5 +138,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Enable-AzureADDirectoryRole](./Enable-AzureADDirectoryRole.md)
+[Enable-AzureADDirectoryRole]()
 

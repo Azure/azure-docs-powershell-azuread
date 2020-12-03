@@ -1,10 +1,8 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
-ms.assetid: E008C14D-91DE-4CD4-BB76-6D037BB747DB
-online version: 
+Module Name: AzureAD
+online version:
 schema: 2.0.0
-ms.reviewer: rodejo
-ms.custom: iamfeature=PowerShell
 ---
 
 # Get-AzureADGroup
@@ -30,7 +28,7 @@ Get-AzureADGroup -ObjectId <String> [-All <Boolean>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The **Get-AzureADGroup** cmdlet gets a group in Azure Active Directory (AD).
+The Get-AzureADGroup cmdlet gets a group in Azure Active Directory (AD).
 
 ## EXAMPLES
 
@@ -75,12 +73,13 @@ This command gets the groups that include the text All in their display names.
 ## PARAMETERS
 
 ### -All
-If true, return all groups. If false, return the number of objects specified by the Top parameter
+If true, return all groups.
+If false, return the number of objects specified by the Top parameter
 
 ```yaml
 Type: Boolean
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -90,12 +89,13 @@ Accept wildcard characters: False
 ```
 
 ### -Filter
-Specifies an oData v3.0 filter statement. This parameter controls which objects are returned.
+Specifies an oData v3.0 filter statement.
+This parameter controls which objects are returned.
 
 ```yaml
 Type: String
 Parameter Sets: GetQuery
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -110,7 +110,7 @@ The unique identifier of a group in Azure Active Directory (ObjectId)
 ```yaml
 Type: String
 Parameter Sets: GetById
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -121,10 +121,11 @@ Accept wildcard characters: False
 
 ### -SearchString
 Specifies a search string.
+
 ```yaml
 Type: String
 Parameter Sets: GetVague
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -139,7 +140,7 @@ Specifies the maximum number of records to return.
 ```yaml
 Type: Int32
 Parameter Sets: GetQuery
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -149,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -159,8 +160,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[New-AzureADGroup](./New-AzureADGroup.md)
-[Remove-AzureADGroup](./Remove-AzureADGroup.md)
-[Set-AzureADGroup](./Set-AzureADGroup.md)
+[New-AzureADGroup]()
 
+[Remove-AzureADGroup]()
+
+[Set-AzureADGroup]()
 
