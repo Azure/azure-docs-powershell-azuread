@@ -212,7 +212,9 @@ foreach($i in $admins) {
 $adminunits = Get-AzureADAdministrativeUnit
 foreach($adminunit in $adminunits) {
     $adminScopes = Get-AzureADScopedRoleMembership -ObjectId $adminunit.ObjectId
-    foreach($SRM in $UaAdminScopes) {
+
+    foreach($SRM in $adminScopes) {
+
         Remove-AzureADScopedRoleMembership -ObjectId $adminunit.ObjectId -ScopedRoleMembershipId $SRM.Id
         }
     }
