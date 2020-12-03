@@ -22,7 +22,9 @@ The Azure Active Directory PowerShell for Graph module can be downloaded and ins
 
 PowerShellGet also requires .NET Framework 4.5 or above. You can install .NET Framework 4.5 or above from [here](https://www.microsoft.com/en-us/download/details.aspx?id=30653). 
 
-For more detailed info on installation of the AzureAD cmdlets please see: [Azure Active Directory PowerShell for Graph](https://docs.microsoft.com/en-us/powershell/azuread/).
+
+PowerShellGet also requires .NET Framework 4.5 or above. You can install .NET Framework 4.5 or above from [here](https://www.microsoft.com/en-us/download/details.aspx?id=30653). For more information, please refer to [this link](https://msdn.microsoft.com/powershell/gallery/readme)
+For more detailed info on installation of the AzureAD cmdlets please see: [Azure Active Directory PowerShell for Graph](https://docs.microsoft.com/en-us/powershell/azure/active-directory/install-adv2).
 
 These are the cmdlets in the Azure Active Directory PowerShell for Graph module.
 
