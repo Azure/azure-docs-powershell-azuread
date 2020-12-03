@@ -1,10 +1,8 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
-ms.assetid: 22D71474-34F5-4646-BB68-A929B211D283
-online version: 
+Module Name: AzureAD
+online version:
 schema: 2.0.0
-ms.reviewer: rodejo
-ms.custom: iamfeature=PowerShell
 ---
 
 # Add-AzureADServicePrincipalOwner
@@ -20,7 +18,7 @@ Add-AzureADServicePrincipalOwner -ObjectId <String> -RefObjectId <String>
 ```
 
 ## DESCRIPTION
-The **Add-AzureADServicePrincipalOwner** cmdlet adds an owner to a service principal in Azure Active Directory.
+The Add-AzureADServicePrincipalOwner cmdlet adds an owner to a service principal in Azure Active Directory.
 
 ## EXAMPLES
 
@@ -28,19 +26,20 @@ The **Add-AzureADServicePrincipalOwner** cmdlet adds an owner to a service princ
 ```
 PS C:\> $ServicePrincipalId = (Get-AzureADServicePrincipal -Top 1).ObjectId
 PS C:\> $OwnerId = (Get-AzureADUser -Top 1).ObjectId
-PS C:\> Add-AzureADServicePrincipalOwner -ObjectId $ServicePrincipalId -RefObjectId $OwnerId
+PS C:\> Add-AzureADServicePrincipalOwner -ObjectId $ServicePrincipalId -RefObjectId -$OwnerId
 ```
 
-The first command gets the object ID of a service principal by using the [Get-AzureADServicePrincipal](./Get-AzureADServicePrincipal.md) cmdlet, and then stores it in the $ServicePrincipalId variable. 
+The first command gets the object ID of a service principal by using the Get-AzureADServicePrincipal (./Get-AzureADServicePrincipal.md)cmdlet, and then stores it in the $ServicePrincipalId variable.
 
-The second command gets the object ID a user by using the [Get-AzureADUser](./Get-AzureADUser.md) cmdlet, and then stores it in the $OwnerId variable. 
+The second command gets the object ID a user by using the Get-AzureADUser (./Get-AzureADUser.md)cmdlet, and then stores it in the $OwnerId variable.
 
 The final command adds the user specified by $OwnerId an owner to a service principal specified by $ServicePrincipalId.
 
 ## PARAMETERS
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event.
+The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -82,7 +81,7 @@ Specifies the ID of a service principal in Active Directory.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -97,7 +96,7 @@ Specifies the ID of the Active Directory object to assign as owner/manager/membe
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -107,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -117,10 +116,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADServicePrincipal](./Get-AzureADServicePrincipal.md)
+[Get-AzureADServicePrincipal]()
 
-[Get-AzureADServicePrincipalOwner](./Get-AzureADServicePrincipalOwner.md)
+[Get-AzureADServicePrincipalOwner]()
 
-[Get-AzureADUser](./Get-AzureADUser.md)
+[Get-AzureADUser]()
 
-[Remove-AzureADServicePrincipalOwner](./Remove-AzureADServicePrincipalOwner.md)
+[Remove-AzureADServicePrincipalOwner]()
+

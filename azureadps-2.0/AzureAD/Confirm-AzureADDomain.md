@@ -1,10 +1,8 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
-ms.assetid: 120268ED-E28B-434B-8EC2-313D3C3517B9
-online version: 
+Module Name: AzureAD
+online version:
 schema: 2.0.0
-ms.reviewer: rodejo
-ms.custom: iamfeature=PowerShell
 ---
 
 # Confirm-AzureADDomain
@@ -15,22 +13,38 @@ Validate the ownership of a domain.
 ## SYNTAX
 
 ```
-Confirm-AzureADDomain -Name <String> [<CommonParameters>]
+Confirm-AzureADDomain -Name <String> [-CrossCloudVerificationCode <CrossCloudVerificationCodeBody>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The **Confirm-AzureADDomain** cmdlet validates the ownership of an Azure Active Directory domain.
+The Confirm-AzureADDomain cmdlet validates the ownership of an Azure Active Directory domain.
 
 ## EXAMPLES
+
+### Example 1: Confirm the domain
+```
+PS C:\>Confirm-AzureADDomain -Name Contoso.com
+```
+
+This command will confirm your domain; changing the status to "Verified".
+
+### Example 2: Confirm the domain with a cross cloud verification code
+```
+PS C:\>Confirm-AzureADDomain -Name Contoso.com -CrossCloudVerificationCode ms84324896
+```
+
+This command will confirm your domain for dual federation scenarios.
 
 ## PARAMETERS
 
 ### -Name
 Specifies the name of the domain.
+
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -39,8 +53,23 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
+### -CrossCloudVerificationCode
+The cross-cloud domain verification code.
+
+```yaml
+Type: CrossCloudVerificationCodeBody
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName, ByValue)
+Accept wildcard characters: False
+```
+
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -50,12 +79,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADDomain](./Get-AzureADDomain.md)
+[Get-AzureADDomain]()
 
-[New-AzureADDomain](./New-AzureADDomain.md)
+[New-AzureADDomain]()
 
-[Remove-AzureADDomain](./Remove-AzureADDomain.md)
+[Remove-AzureADDomain]()
 
-[Set-AzureADDomain](./Set-AzureADDomain.md)
-
+[Set-AzureADDomain]()
 

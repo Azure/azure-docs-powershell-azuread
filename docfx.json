@@ -11,7 +11,7 @@
       },
       {
         "files": [
-          "**/*.md"
+          "**/*.yml"
         ],
         "src": "azureadps-1.0",
         "version": "azureadps-1.0",
@@ -39,7 +39,7 @@
       },
       {
         "files": [
-          "**/*.md"
+          "**/*.yml"
         ],
         "src": "azureadps-2.0",
         "version": "azureadps-2.0",
@@ -67,7 +67,7 @@
       },
       {
         "files": [
-          "**/*.md"
+          "**/*.yml"
         ],
         "src": "azureadps-2.0-preview",
         "version": "azureadps-2.0-preview",
@@ -99,28 +99,28 @@
     },
     "filemetadata": {
       "ms.author": {
-        "azureadps-1.0/**/*.md": "rodejo",
-        "azureadps-2.0/**/*.md": "rodejo",
-        "azureadps-2.0-preview/**/*.md": "rodejo",
+        "azureadps-1.0/**/*.yml": "rodejo",
+        "azureadps-2.0/**/*.yml": "rodejo",
+        "azureadps-2.0-preview/**/*.yml": "rodejo",
         "docs-conceptual/**/*.md": "rodejo"
       },
       "author": {
-        "azureadps-1.0/**/*.md": "RobdeJong",
-        "azureadps-2.0/**/*.md": "RobdeJong",
-        "azureadps-2.0-preview/**/*.md": "RobdeJong",
-        "docs-conceptual/**/*.md": "RobdeJong"        
+        "azureadps-1.0/**/*.yml": "RobdeJong",
+        "azureadps-2.0/**/*.yml": "RobdeJong",
+        "azureadps-2.0-preview/**/*.yml": "RobdeJong",
+        "docs-conceptual/**/*.md": "RobdeJong"
       },
       "ms.manager": {
-        "azureadps-1.0/**/*.md": "kbrint",
-        "azureadps-2.0/**/*.md": "kbrint",
-        "azureadps-2.0-preview/**/*.md": "kbrint",
-        "docs-conceptual/**/*.md": "kbrint"        
+        "azureadps-1.0/**/*.yml": "kbrint",
+        "azureadps-2.0/**/*.yml": "kbrint",
+        "azureadps-2.0-preview/**/*.yml": "kbrint",
+        "docs-conceptual/**/*.md": "kbrint"
       },
       "ms.service": {
-        "azureadps-1.0/**/*.md": "active-directory",
-        "azureadps-2.0/**/*.md": "active-directory",
-        "azureadps-2.0-preview/**/*.md": "active-directory",
-        "docs-conceptual/**/*.md": "active-directory"        
+        "azureadps-1.0/**/*.yml": "active-directory",
+        "azureadps-2.0/**/*.yml": "active-directory",
+        "azureadps-2.0-preview/**/*.yml": "active-directory",
+        "docs-conceptual/**/*.md": "active-directory"
       }
     },
     "globalMetadata": {

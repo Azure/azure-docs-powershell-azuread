@@ -14,11 +14,11 @@
   - name: Directory Features
     items:
     - name: Managing groups
-      href: https://docs.microsoft.com/en-us/azure/active-directory/active-directory-accessmanagement-groups-settings-v2-cmdlets
+      href: https://docs.microsoft.com/azure/active-directory/enterprise-users/groups-settings-v2-cmdlets
     - name: Managing Unified Groups settings
-      href: https://docs.microsoft.com/en-us/azure/active-directory/active-directory-accessmanagement-groups-settings-cmdlets
+      href: https://docs.microsoft.com/azure/active-directory/enterprise-users/groups-settings-cmdlets
     - name: Managing Role Based Access Control (RBAC)
-      href: https://docs.microsoft.com/en-us/azure/active-directory/role-based-access-control-manage-access-powershell
+      href: https://docs.microsoft.com/azure/role-based-access-control/role-assignments-powershell
     - name: Working with licenses
       href: working-with-licenses.md
     - name: List all Service Principal Application Role assignments
