@@ -21,6 +21,25 @@ The Azure Active Directory (Azure AD) team regularly updates Azure AD Connect wi
 
 This article is designed to help you keep track of the versions that have been released, and to understand what the changes are in the latest version.
 
+## 2.0.2.85 - Preview release of the AzureADPreview module
+
+### Release status 
+
+02/25/2020: Released for installation and upgrade from the [PowerShell Gallery](https://www.powershellgallery.com/packages/AzureADPreview/2.0.2.85)
+
+### New features and improvements 
+
+The following new cmdlets were added to the AzureADPreview module:
+
+- Support for AuthorizationPolicy and PermissionGrantPolicy API
+  - Get-AzureADMSAuthorizationPolicy
+  - Set-AzureADMSAuthorizationPolicy
+  - Get-AzureADMSPermissionGrantPolicy
+  - New-AzureADMSPermissionGrantPolicy
+  - Remove-AzureADMSPermissionGrantPolicy
+- Add label assignment capability to New-AzureADMSGroup and Set-AzureADMSGroup
+- Add ResetRedemption parameter to New-AzureADMSInvitation to reset an external user's invitation redemption
+
 ## 2.0.2.77 - Preview release of the AzureADPreview module
 
 ### Release status 
@@ -312,7 +331,7 @@ The following new cmdlets were added to the AzureADPreview module:
 - `Set-AzureADMSPrivilegedRoleAssignmentRequest`
 - `Set-AzureADMSPrivilegedRoleSetting`
 
-Read more about [Azure AD Privileged Role management](https://docs.microsoft.com/en-us/azure/active-directory/privileged-identity-management/)
+Read more about [Azure AD Privileged Role management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/)
 
 #### Trust Framework Policy Management
 
@@ -321,14 +340,14 @@ Read more about [Azure AD Privileged Role management](https://docs.microsoft.com
 - `Remove-AzureADMSTrustFrameworkPolicy`
 - `Set-AzureADMSTrustFrameworkPolicy`
 
-Read more about the [B2C Trust Framework policies](https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-reference-trustframeworks-defined-ief-custom#understand-trust-framework-policies)
+Read more about the [B2C Trust Framework policies](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-reference-trustframeworks-defined-ief-custom#understand-trust-framework-policies)
 
 #### Directory Auditing
 
 - `Get-AzureADAuditDirectoryLogs`
 - `Get-AzureADAuditSignInLogs`
 
-Read more about [Azure AD directory auditing](https://docs.microsoft.com/en-us/azure/active-directory/reports-monitoring/)
+Read more about [Azure AD directory auditing](https://docs.microsoft.com/azure/active-directory/reports-monitoring/)
 
 ## 2.0.2.17 Public Preview release of the AzureADPreview module
 ### Release status

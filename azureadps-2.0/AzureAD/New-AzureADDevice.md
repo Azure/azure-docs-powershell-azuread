@@ -1,10 +1,8 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
-ms.assetid: 0DF2C468-53D8-4BC5-AFC8-7E8EDF38C347
-online version: 
+Module Name: AzureAD
+online version:
 schema: 2.0.0
-ms.reviewer: rodejo
-ms.custom: iamfeature=PowerShell
 ---
 
 # New-AzureADDevice
@@ -20,11 +18,12 @@ New-AzureADDevice -AccountEnabled <Boolean>
  [-ApproximateLastLogonTimeStamp <DateTime>] -DeviceId <String> [-DeviceMetadata <String>]
  [-DeviceObjectVersion <Int32>] -DeviceOSType <String> -DeviceOSVersion <String>
  [-DevicePhysicalIds <System.Collections.Generic.List`1[System.String]>] [-DeviceTrustType <String>]
- -DisplayName <String> [-IsCompliant <Boolean>] [-IsManaged <Boolean>] [<CommonParameters>]
+ -DisplayName <String> [-IsCompliant <Boolean>] [-IsManaged <Boolean>] [-ProfileType <String>]
+ [-SystemLabels <System.Collections.Generic.List`1[System.String]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The **New-AzureADDevice** cmdlet creates a device in Azure Active Directory (AD).
+The New-AzureADDevice cmdlet creates a device in Azure Active Directory (AD).
 
 ## EXAMPLES
 
@@ -47,7 +46,7 @@ Indicates whether the account is enabled.
 ```yaml
 Type: Boolean
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -57,10 +56,12 @@ Accept wildcard characters: False
 ```
 
 ### -AlternativeSecurityIds
+@{Text=}
+
 ```yaml
 Type: System.Collections.Generic.List`1[Microsoft.Open.AzureAD.Model.AlternativeSecurityId]
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -70,10 +71,12 @@ Accept wildcard characters: False
 ```
 
 ### -ApproximateLastLogonTimeStamp
+@{Text=}
+
 ```yaml
 Type: DateTime
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -88,7 +91,7 @@ Specifies the ID of the device.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -103,7 +106,7 @@ The metadata for this device
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -118,7 +121,7 @@ Specifies the object version of the device.
 ```yaml
 Type: Int32
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -133,7 +136,7 @@ Specifies the operating system type of the new device.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -148,7 +151,7 @@ Specifies the operating system version of the new device.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -158,10 +161,12 @@ Accept wildcard characters: False
 ```
 
 ### -DevicePhysicalIds
+@{Text=}
+
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -176,7 +181,7 @@ The trust type for this device
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -191,7 +196,7 @@ Specifies the display name of the new device.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -206,7 +211,7 @@ true if the device complies with Mobile Device Management (MDM) policies; otherw
 ```yaml
 Type: Boolean
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -221,7 +226,37 @@ true if the device is managed by a Mobile Device Management (MDM) app such as In
 ```yaml
 Type: Boolean
 Parameter Sets: (All)
-Aliases: 
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProfileType
+{{ Fill ProfileType Description }}
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -SystemLabels
+{{ Fill SystemLabels Description }}
+
+```yaml
+Type: System.Collections.Generic.List`1[System.String]
+Parameter Sets: (All)
+Aliases:
 
 Required: False
 Position: Named
@@ -231,7 +266,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -241,10 +276,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADDevice](./Get-AzureADDevice.md)
+[Get-AzureADDevice]()
 
-[Remove-AzureADDevice](./Remove-AzureADDevice.md)
+[Remove-AzureADDevice]()
 
-[Set-AzureADDevice](./Set-AzureADDevice.md)
-
+[Set-AzureADDevice]()
 

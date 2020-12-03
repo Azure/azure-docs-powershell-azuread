@@ -1,9 +1,25 @@
+---
+services: active-directory
+documentationcenter: ''
+title: 'Overview MSOnlie'
+ms.service: active-directory
+ms.workload: identity
+ms.tgt_pltfrm: na
+ms.devlang: powershell
+ms.topic: article
+ms.date: 07/10/2017
+ms.author: billmath
+ms.custom: posh-docs-conceptual
+
+---
+
+
 # Azure ActiveDirectory (MSOnline)
 
 You can use the Azure Active Directory Module for Windows PowerShell cmdlets for Azure AD administrative tasks such as user management, domain management and for configuring single sign-on.
 This topic includes information about how to install these cmdlets for use with your directory.
 
-Please note that we will begin to deprecate this module when the functionality of this module is migrated to the newer [Azure Active Directory PowerShell for Graph Module](https://docs.microsoft.com/en-us/powershell/azuread/v2/azureactivedirectory). We advise customers who are creating new PowerShell scripts to use the newer module instead of this module.
+Please note that we will begin to deprecate this module when the functionality of this module is migrated to the newer [Azure Active Directory PowerShell for Graph Module](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory). We advise customers who are creating new PowerShell scripts to use the newer module instead of this module.
 
 ## Install the Azure AD Module
 
@@ -32,7 +48,7 @@ To connect to a specific environment of Azure Active Directory, use the AzureEnv
 
 This example connects your PowerShell session to the German AzureAD environment.
 
-See [Connect-MsolService](https://msdn.microsoft.com/en-us/library/azure/dn194123(v=azure.98).aspx) for more information.
+See [Connect-MsolService](https://msdn.microsoft.com/library/azure/dn194123(v=azure.98).aspx) for more information.
 
 For more information about the cmdlets, you can do the following:
 

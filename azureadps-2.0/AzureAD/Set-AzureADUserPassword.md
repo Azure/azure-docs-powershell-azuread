@@ -1,10 +1,8 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.Custom.dll-Help.xml
-ms.assetid: FFAE1502-E55E-46E2-BB77-632BAF9323B4
-online version: 
+Module Name: AzureAD
+online version:
 schema: 2.0.0
-ms.reviewer: rodejo
-ms.custom: iamfeature=PowerShell
 ---
 
 # Set-AzureADUserPassword
@@ -20,7 +18,7 @@ Set-AzureADUserPassword -ObjectId <String> -Password <SecureString> [-ForceChang
 ```
 
 ## DESCRIPTION
-The **Set-AzureADUserPassword** cmdlet sets the password for a user in Azure Active Directory (AD).
+The Set-AzureADUserPassword cmdlet sets the password for a user in Azure Active Directory (AD).
 
 ## EXAMPLES
 
@@ -39,7 +37,7 @@ If set to true, force the user to change their password
 ```yaml
 Type: Boolean
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -49,12 +47,12 @@ Accept wildcard characters: False
 ```
 
 ### -ForceChangePasswordNextLogin
-Forces a user to change their password during their next log in. 
+Forces a user to change their password during their next log in.
 
 ```yaml
 Type: Boolean
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -65,10 +63,11 @@ Accept wildcard characters: False
 
 ### -ObjectId
 Specifies the ID of an object.
+
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -78,11 +77,12 @@ Accept wildcard characters: False
 ```
 
 ### -Password
-Specifies the password. 
+Specifies the password.
+
 ```yaml
 Type: SecureString
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -92,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -101,4 +101,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-
