@@ -28,7 +28,7 @@ The New-AzureADMSRoleDefinition cmdlet creates an Azure Active Directory (Azure 
 ```
 PS C:\> 
 $allowedResourceAction = @()
-$allowedResourceAction += @("microsoft.aad.directory/applications/create")
+$allowedResourceAction += @("microsoft.directory/applications/create")
 $rolePermission = @{'allowedResourceActions' = $allowedResourceAction}
 $rolePermissions = @()
 $rolePermissions += $rolePermission
