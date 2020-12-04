@@ -29,11 +29,11 @@ PS C:\> $OwnerId = (Get-AzureADUser -Top 1).ObjectId
 PS C:\> Add-AzureADServicePrincipalOwner -ObjectId $ServicePrincipalId -RefObjectId -$OwnerId
 ```
 
-The first command gets the object ID of a service principal by using the Get-AzureADServicePrincipal (./Get-AzureADServicePrincipal.md)cmdlet, and then stores it in the $ServicePrincipalId variable.
+The first command gets the object ID of a service principal by using the Get-AzureADServicePrincipal(./Get-AzureADServicePrincipal.md) cmdlet, and then stores it in the `$ServicePrincipalId` variable.
 
-The second command gets the object ID a user by using the Get-AzureADUser (./Get-AzureADUser.md)cmdlet, and then stores it in the $OwnerId variable.
+The second command gets the object ID a user by using the Get-AzureADUser(./Get-AzureADUser.md) cmdlet, and then stores it in the `$OwnerId` variable.
 
-The final command adds the user specified by $OwnerId an owner to a service principal specified by $ServicePrincipalId.
+The final command adds the user specified by `$OwnerId` an owner to a service principal specified by `$ServicePrincipalId`.
 
 ## PARAMETERS
 
