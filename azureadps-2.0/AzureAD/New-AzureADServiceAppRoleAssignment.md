@@ -24,10 +24,10 @@ The New-AzureADServiceAppRoleAssignment cmdlet assigns a service principal to an
 
 ### Example 1
 ```powershell
-PS C:\> {{ Add example code here }}
+PS C:\> New-AzureADServiceAppRoleAssignment  -PrincipalId $MySP.ObjectId -ObjectId $MySP.ObjectId -Id $AppRole.Id -ResourceId $MyApp.AppId 
 ```
 
-{{ Add example description here }}
+This command assigns the role stored in $AppRole.Id from the application $MyApp to the Service Principal $MySP
 
 ## PARAMETERS
 
