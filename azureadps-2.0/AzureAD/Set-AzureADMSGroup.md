@@ -83,11 +83,8 @@ Specifies the ID of the group that this cmdlet updates.
 
 ```yaml
 Type: String
-
-=======
 Parameter Sets: GetById
 Aliases: 
-
 
 Required: True
 Position: Named
@@ -120,10 +117,7 @@ If MailEnabled is $False you must still specify a mail nickname.
 ```yaml
 Type: String
 Parameter Sets: (All)
-
 Aliases:
-=======
-Aliases: 
 
 Required: True
 Position: Named
@@ -162,7 +156,6 @@ Changing the value of the processing state does not change the members list of t
 Type: String
 Parameter Sets: (All)
 Aliases: 
-
 
 Required: False
 Position: Named
