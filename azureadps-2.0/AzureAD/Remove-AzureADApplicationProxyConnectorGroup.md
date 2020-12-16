@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-AzureADApplicationProxyConnectorGroup
 
 ## SYNOPSIS
-The Remove-AzureADApplicationProxyApplicationConnectorGroup cmdlet deletes an Application Proxy Connector group.
+The Remove-AzureADApplicationProxyConnectorGroup cmdlet deletes an Application Proxy Connector group.
 
 ## SYNTAX
 

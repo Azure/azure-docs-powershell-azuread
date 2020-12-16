@@ -1,0 +1,9 @@
+{
+  "redirections": [
+    {
+      "source_path": "azuread/v2/azureactivedirectory/index.md",
+      "redirect_url": "/powershell/azure/active-directory/overview?view=",
+      "redirect_document_id": false
+    }
+  ]
+}
