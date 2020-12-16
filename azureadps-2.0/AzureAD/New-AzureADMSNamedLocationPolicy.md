@@ -23,6 +23,9 @@ New-AzureADMSNamedLocationPolicy [-OdataType <String>] [-Id <String>] [-DisplayN
 This cmdlet allows an admin to create new named location policy in Azure Active Directory.
 Conditional access policies are custom rules that define an access scenario.
 
+> [!NOTE]
+> Named Locations created by PowerShell will only display in Named locations (preview), you can't see them in them in the old view.
+
 ## EXAMPLES
 
 ### Example 1: Creates a new Ip named location policy in Azure AD.
