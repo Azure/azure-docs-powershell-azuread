@@ -2,7 +2,12 @@
   "redirections": [
     {
       "source_path": "azuread/v2/azureactivedirectory/index.md",
-      "redirect_url": "/powershell/azure/active-directory/overview?view=",
+      "redirect_url": "/powershell/azure/active-directory/overview?view=azureadps-2.0",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "azuread/v2/azureactivedirectory.md",
+      "redirect_url": "/powershell/azure/active-directory/overview?view=azureadps-2.0",
       "redirect_document_id": false
     }
   ]
