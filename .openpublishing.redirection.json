@@ -1,0 +1,9 @@
+{
+  "redirections": [
+    {
+      "source_path": "https://docs.microsoft.com/en-us/powershell/azuread/v2/azureactivedirectory",
+      "redirect_url": "https://docs.microsoft.com/powershell/azure/active-directory/overview",
+      "redirect_document_id": false
+    }
+  ]
+{ 
