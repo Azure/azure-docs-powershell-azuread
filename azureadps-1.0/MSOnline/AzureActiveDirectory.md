@@ -12,7 +12,7 @@ ms.custom: iamfeature=PowerShell
 # MSOnline Module
 ## Description
 
-Note: this is the older MSOnline V1 PowerShell module for Azure Active Directory. Customers are encouraged to use the newer Azure Active Directory V2 PowerShell module instead of this module. For more information about the V2 module please see [Azure Active Directory V2 PowerShell](/powershell/azure/active-directory/overview?view=azureadps-1.0&preserve_view=true).
+Note: this is the older MSOnline V1 PowerShell module for Azure Active Directory. Customers are encouraged to use the newer Azure Active Directory V2 PowerShell module instead of this module. For more information about the V2 module please see [Azure Active Directory V2 PowerShell](/powershell/azure/active-directory/overview?view=azureadps-2.0&preserve_view=true).
 
 For more detail info on installation of the AzureAD cmdlets please see: [Azure ActiveDirectory (MSOnline)](/powershell/azure/active-directory/overview?view=azureadps-1.0&preserve_view=true).
 
