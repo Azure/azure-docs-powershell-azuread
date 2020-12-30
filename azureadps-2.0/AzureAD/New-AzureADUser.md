@@ -282,7 +282,7 @@ Accept wildcard characters: False
 ### -PasswordProfile
 Specifies the user's password profile.
 Note that the parameter type for this parameter is "PasswordProfile".
-in order to pass a parameter of this type, you first need to create a vairable in PowerShell with that type:
+in order to pass a parameter of this type, you first need to create a variable in PowerShell with that type:
 
 $PasswordProfile = New-Object -TypeName Microsoft.Open.AzureAD.Model.PasswordProfile
 
@@ -296,7 +296,7 @@ New-AzureADUser -PasswordProfile $PasswordProfile ...
 
 Other attributes that can be set in the PasswordProfile are
 
-$PasswordProfile.EnforceChangePasswordPolicy - a boolean indicating that the change password policy is enababled or disabled for this user $PasswordProfile.ForceChangePasswordNextLogin - a boolean indicating that the user must change the password at the next sign in
+$PasswordProfile.EnforceChangePasswordPolicy - a boolean indicating that the change password policy is enabled or disabled for this user $PasswordProfile.ForceChangePasswordNextLogin - a boolean indicating that the user must change the password at the next sign in
 
 ```yaml
 Type: PasswordProfile
