@@ -123,6 +123,10 @@ Accept wildcard characters: False
 ```
 
 ### -UsersPermissionToReadOtherUsersEnabled
+
+> [!NOTE]
+> Setting this to $False may have adverse impacts on many services in your tenant. For example, Team Owners will no longer be able to add members to a team.
+
 Indicates whether to allow users to view the profile info of other users in their company.
 This setting is applied company-wide.
 Set to $False to disable users' ability to use the Azure AD module for Windows PowerShell to access user information for their organization.
