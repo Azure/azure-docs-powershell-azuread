@@ -19,6 +19,8 @@ Get-AzureADApplicationProxyApplication -ObjectId <String> [<CommonParameters>]
 ## DESCRIPTION
 The Get-AzureADApplicationProxyApplication cmdlet retrieves an application configured for Application Proxy in Azure Active Directory.
 
+Note: Running these commands as a Service Principal is not supported, you must be logged in as a user.
+
 ## EXAMPLES
 
 ### Example 1
