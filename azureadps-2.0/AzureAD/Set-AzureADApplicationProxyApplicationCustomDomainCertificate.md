@@ -23,6 +23,8 @@ The Set-AzureADApplicationProxyApplicationCustomDomainCertificate cmdlet assigns
 This will upload the certificate and allow the application to use Custom Domains.
 If you have one certificate that includes many of your applications, you only need to upload it with one application and it will also be assigned to the other relevant applications.
 
+Note: Running these commands as a Service Principal is not supported, you must be logged in as a user.
+
 ## EXAMPLES
 
 ### Example 1
