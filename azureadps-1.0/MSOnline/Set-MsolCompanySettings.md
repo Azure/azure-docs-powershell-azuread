@@ -58,7 +58,7 @@ Indicates whether to allow users to create security groups.
 This setting is applied company-wide.  Set to $False to disable users' ability to create security groups. 
 
 > [!NOTE]
-> For information on how to allow users to create Office 365 groups, please see [Azure Active Directory Cmdlets for Configuring Group Settings](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-accessmanagement-groups-settings-cmdlets)
+> For information on how to allow users to create Office 365 groups, please see [Azure Active Directory Cmdlets for Configuring Group Settings](https://docs.microsoft.com/azure/active-directory/active-directory-accessmanagement-groups-settings-cmdlets)
 
 ```yaml
 Type: Boolean
