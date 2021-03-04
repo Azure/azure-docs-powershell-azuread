@@ -35,6 +35,14 @@ b3c7b2c2-bb9a-4e30-a9fc-46adbe8c0899 extension_6e151e1a9cf44f8689a410023ac39235_
 
 This command gets extension properties that have been synced from on-premises Azure AD.
 
+Note : This command may come as empty if your tenant has more than 1000 Apps. since its randomly query the first 1000 app doesnt catch the "schema app".
+
+If you expect consistent output for any automation or scripting. you need to use the below cmdlet
+
+$objId = (Get-AzureADApplication -Filter "DisplayName eq 'Tenant Schema Extension App' ").ObjectId
+Get-AzureADApplicationExtensionProperty -ObjectId $objId
+
+
 ## PARAMETERS
 
 ### -IsSyncedFromOnPremises
