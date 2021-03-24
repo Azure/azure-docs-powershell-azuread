@@ -35,7 +35,7 @@ The **Get-MsolAdministrativeUnitMember** cmdlet gets members of an administrativ
 
 ```
 PS C:\> $AdministrativeUnit = Get-MsolAdministrativeUnit -SearchString "West Coast"
-PS C:\> Get-MsolAdministrativeUnitMember -AdministrativeUnitObjectId $AdminstrativeUnit.ObjectId
+PS C:\> Get-MsolAdministrativeUnitMember -AdministrativeUnitObjectId $AdministrativeUnit.ObjectId
 ```
 
 The first command gets an administrative unit that matches a search string by using the [Get-MsolAdministrativeUnit](./Get-MsolAdministrativeUnit.md) cmdlet.
