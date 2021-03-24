@@ -34,14 +34,14 @@ The **Get-MsolAdministrativeUnitMember** cmdlet gets members of an administrativ
 ### Example 1: Get members of an administrative unit
 
 ```
-PS C:\> $AdminstrativeUnit = Get-MsolAdministrativeUnit -SearchString "West Coast"
+PS C:\> $AdministrativeUnit = Get-MsolAdministrativeUnit -SearchString "West Coast"
 PS C:\> Get-MsolAdministrativeUnitMember -AdministrativeUnitObjectId $AdminstrativeUnit.ObjectId
 ```
 
 The first command gets an administrative unit that matches a search string by using the [Get-MsolAdministrativeUnit](./Get-MsolAdministrativeUnit.md) cmdlet.
-The command stores the administrative unit in the $AdminstrativeUnit variable.
+The command stores the administrative unit in the $AdministrativeUnit variable.
 
-The second command returns all members of the administrative unit in $AdminstrativeUnit.
+The second command returns all members of the administrative unit in $AdministrativeUnit.
 
 ## PARAMETERS
 
