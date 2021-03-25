@@ -131,7 +131,11 @@
         "Azure"
       ],
       "breadcrumb_path": "/powershell/bread/toc.json",
-      "ms.devlang": "powershell"
+      "ms.devlang": "powershell",
+      "products": [
+        "https://authoring-docs-microsoft.poolparty.biz/devrel/b1cfdec6-b0c3-4209-818c-736879856e0e",
+        "https://authoring-docs-microsoft.poolparty.biz/devrel/8bce367e-2e90-4b56-9ed5-5e4e9f3a2dc3"
+      ]
     },
     "dest": "azureps-azuread"
   }
