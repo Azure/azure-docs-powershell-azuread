@@ -138,7 +138,8 @@ Accept wildcard characters: False
 ```
 
 ### -ExtensionProperty
-@{Text=}
+
+Add data to custom user properties as the basic **open extensions** or the more versatile **schema extensaions**. See [learn-more-about-extensions].
 
 ```yaml
 Type: System.Collections.Generic.Dictionary`2[System.String,System.String]
@@ -168,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -ImmutableId
-@{Text=}
+This property is used to associate an on-premises Active Directory user account to their Azure AD user object. This property must be specified when creating a new user account in the Graph if you are using a federated domain for the user's `userPrincipalName` (UPN) property. **Important:** The **$** and **\_** characters cannot be used when specifying this property.
 
 ```yaml
 Type: String
@@ -303,7 +304,7 @@ Accept wildcard characters: False
 ```
 
 ### -PhysicalDeliveryOfficeName
-@{Text=}
+The office location in the user's place of business. Maximum length is 128 characters.
 
 ```yaml
 Type: String
@@ -438,7 +439,7 @@ Accept wildcard characters: False
 ```
 
 ### -UsageLocation
-@{Text=}
+A two letter country code ([ISO standard 3166](https://www.iso.org/iso-3166-country-codes.html)). Required for users that will be assigned licenses due to legal requirement to check for availability of services in countries.  Examples include: "US", "JP", and "GB". Not nullable. 
 
 ```yaml
 Type: String
@@ -468,7 +469,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserType
-@{Text=}
+A string value that can be used to classify user types in your directory, such as "Member" and "Guest".
 
 ```yaml
 Type: String
@@ -483,7 +484,7 @@ Accept wildcard characters: False
 ```
 
 ### -FacsimileTelephoneNumber
-{{Fill FacsimileTelephoneNumber Description}}
+ The fax number of the user.
 
 ```yaml
 Type: String
@@ -498,7 +499,7 @@ Accept wildcard characters: False
 ```
 
 ### -AgeGroup
-{{ Fill AgeGroup Description }}
+Used by enterprise applications to determine the legal age group of the user. This property is read-only and calculated based on **ageGroup** and **consentProvidedForMinor** properties. Allowed values: `null`, `minorWithOutParentalConsent`, `minorWithParentalConsent`, `minorNoParentalConsentRequired`, `notAdult` and `adult`. Refer to the [legal age group property definitions][learn-more-about-age-group-and-minor-consent-definitions]
 
 ```yaml
 Type: String
@@ -513,7 +514,7 @@ Accept wildcard characters: False
 ```
 
 ### -CompanyName
-{{ Fill CompanyName Description }}
+The company name which the user is associated. This property can be useful for describing the company that an external user comes from. The maximum length of the company name is 64 characters.
 
 ```yaml
 Type: String
@@ -528,7 +529,7 @@ Accept wildcard characters: False
 ```
 
 ### -ConsentProvidedForMinor
-{{ Fill ConsentProvidedForMinor Description }}
+Sets whether consent has been obtained for minors. Allowed values: `null`, `granted`, `denied` and `notRequired`. Refer to the [legal age group property definitions][learn-more-about-age-group-and-minor-consent-definitions] for further information. 
 
 ```yaml
 Type: String
@@ -543,7 +544,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserState
-{{ Fill UserState Description }}
+For an external user invited to the tenant using the [invitation API](https://docs.microsoft.com/en-us/graph/api/invitation-post), this property represents the invited user's invitation status. For invited users, the state can be `PendingAcceptance` or `Accepted`, or `null` for all other users.
 
 ```yaml
 Type: String
@@ -558,7 +559,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserStateChangedOn
-{{ Fill UserStateChangedOn Description }}
+Shows the timestamp for the latest change to the externalUserState property.
 
 ```yaml
 Type: String
@@ -589,3 +590,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 [Remove-AzureADUser]()
 
+[Learn more about age group and minor consent definitions](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0#legal-age-group-property-definitions)
+
+[Learn more about extensions](https://docs.microsoft.com/en-us/graph/extensibility-overview)
