@@ -1,0 +1,99 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Retreive the delegated permission classification objects on a service principal.
+module: AzureAD
+notes: ""
+outputs:
+- name: <xref href="Microsoft.Online.Administration.DelegatedPermissionClassification" data-throw-if-not-resolved="False" />
+  description: ""
+syntaxes:
+- >-
+  Get-AzureADMSServicePrincipalDelegatedPermissionClassification -ServicePrincipalId <String> [-Filter <String>]
+
+   [<CommonParameters>]
+- >-
+  Get-AzureADMSServicePrincipalDelegatedPermissionClassification -ServicePrincipalId <String> -Id <String>
+
+   [<CommonParameters>]
+examples:
+- title: 'Example 1: Get a list of delegated permission classifications'
+  code: |-
+    PS C:\> Get-AzureADMSServicePrincipalDelegatedPermissionClassification -ServicePrincipalId "95f56359-0165-4f80-bffb-c89d06cf2c6f"
+
+    Classification : Low
+    Id             : 5XBeIKarUkypdm0tRsSAQwE
+    PermissionId   : 205e70e5-aba6-4c52-a976-6d2d46c48043
+    PermissionName : Sites.Read.All
+
+    Classification : Low
+    Id             : ntbaFJsJyUKBC9ACmB_uwQE
+    PermissionId   : 14dad69e-099b-42c9-810b-d002981feec1
+    PermissionName : profile
+  description: |-
+    This command retrieves all delegated permission classifications from the service principal.
+  summary: ""
+- title: 'Example 2: Get a delegated permission classifications'
+  code: |-
+    PS C:\> Get-AzureADMSServicePrincipalDelegatedPermissionClassification -ServicePrincipalId "95f56359-0165-4f80-bffb-c89d06cf2c6f" -Id "5XBeIKarUkypdm0tRsSAQwE"
+
+    Classification : Low
+    Id             : 5XBeIKarUkypdm0tRsSAQwE
+    PermissionId   : 205e70e5-aba6-4c52-a976-6d2d46c48043
+    PermissionName : Sites.Read.All
+  description: |-
+    This command retrieves the delegated permission classification by Id from the service principal.
+  summary: ""
+- title: 'Example 3: Get a delegated permission classification with filter'
+  code: |-
+    PS C:\> Get-AzureADMSServicePrincipalDelegatedPermissionClassification -ServicePrincipalId "95f56359-0165-4f80-bffb-c89d06cf2c6f" -Filter "PermissionName eq 'Sites.Read.All'"
+
+    Classification : Low
+    Id             : 5XBeIKarUkypdm0tRsSAQwE
+    PermissionId   : 205e70e5-aba6-4c52-a976-6d2d46c48043
+    PermissionName : Sites.Read.All
+  description: |-
+    This command retrieves the filtered delegated permission classifications from the service principal.
+  summary: ""
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Filter
+  description: |+
+    The oData v3.0 filter statement. 
+    Controls which objects are returned.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  isRequired: true
+  description: |+
+    The unique identifier of a delegated permission classification object id.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ServicePrincipalId
+  isRequired: true
+  description: |+
+    The unique identifier of a service principal object in Azure Active Directory.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: AzureAD.Get-AzureADMSServicePrincipalDelegatedPermissionClassification
+name: Get-AzureADMSServicePrincipalDelegatedPermissionClassification
+description: |-
+  The Get-AzureADMSServicePrincipalDelegatedPermissionClassification cmdlet retrieves the delegated permission classifications from a service principal.
+metadata:
+  external help file: Microsoft.Open.MS.GraphV10.PowerShell.dll-Help.xml
+  Module Name: AzureAD
+  online version: ""
+  schema: 2.0.0

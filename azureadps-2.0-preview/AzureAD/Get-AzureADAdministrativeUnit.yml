@@ -1,0 +1,71 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Gets an administrative unit.
+module: AzureADPreview
+notes: ""
+links:
+- text: New-AzureADAdministrativeUnit
+  href: ./New-AzureADAdministrativeUnit.yml
+- text: Remove-AzureADAdministrativeUnit
+  href: ./Remove-AzureADAdministrativeUnit.yml
+- text: Set-AzureADAdministrativeUnit
+  href: ./Set-AzureADAdministrativeUnit.yml
+syntaxes:
+- Get-AzureADAdministrativeUnit [-All <Boolean>] [-Top <Int32>] [-Filter <String>] [<CommonParameters>]
+- Get-AzureADAdministrativeUnit -ObjectId <String> [-All <Boolean>] [<CommonParameters>]
+parameters:
+- type: <xref href="Boolean" data-throw-if-not-resolved="False" />
+  name: All
+  description: |+
+    If true, return all administrative units. If false, return the number of objects specified by the Top parameter
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Filter
+  description: |+
+    Specifies an oData v3.0 filter statement. This parameter filters which objects are returned.
+
+    For more information about oData v3.0 filter expressions, see https://msdn.microsoft.com/en-us/library/hh169248%28v=nav.90%29.aspx
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ObjectId
+  isRequired: true
+  description: |+
+    Specifies the ID of an administrative unit in Azure Active Directory.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Top
+  description: |+
+    Specifies the maximum number of records to return.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: AzureADPreview.Get-AzureADAdministrativeUnit
+name: Get-AzureADAdministrativeUnit
+description: |-
+  The **Get-AzureADAdministrativeUnit** cmdlet gets an Azure Active Directory administrative unit.
+metadata:
+  external help file: Microsoft.Open.AzureADBeta.Graph.PowerShell.dll-Help.xml
+  Module Name: AzureADPreview
+  ms.assetid: 46154156-B7D4-40DE-8EC9-760E44110C76
+  ms.custom: iamfeature=PowerShell
+  ms.reviewer: rodejo
+  online version: ""
+  schema: 2.0.0

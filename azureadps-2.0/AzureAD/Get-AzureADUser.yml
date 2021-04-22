@@ -1,0 +1,111 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Gets a user.
+module: AzureAD
+notes: ""
+syntaxes:
+- Get-AzureADUser [-All <Boolean>] [-Top <Int32>] [-Filter <String>] [<CommonParameters>]
+- Get-AzureADUser [-SearchString <String>] [-All <Boolean>] [<CommonParameters>]
+- Get-AzureADUser -ObjectId <String> [-All <Boolean>] [<CommonParameters>]
+examples:
+- title: 'Example 1: Get ten users'
+  code: |-
+    PS C:\>Get-AzureADUser -Top 10
+  description: |-
+    This command gets ten users.
+  summary: ""
+- title: 'Example 2: Get a user by ID'
+  code: |-
+    PS C:\>Get-AzureADUser -ObjectId "testUpn@tenant.com"
+  description: |-
+    This command gets the specified user.
+  summary: ""
+- title: 'Example 3: Search among retrieved users'
+  code: |-
+    PS C:\> Get-AzureADUser -SearchString "New"
+
+    ObjectId                             DisplayName UserPrincipalName                   UserType
+    --------                             ----------- -----------------                   --------
+    5e8b0f4d-2cd4-4e17-9467-b0f6a5c0c4d0 New user    NewUser@contoso.onmicrosoft.com     Member
+    2b450b8e-1db6-42cb-a545-1b05eb8a358b New user    NewTestUser@contoso.onmicrosoft.com Member
+  description: |-
+    This cmdlet gets all users that match the value of SearchString against the first characters in DisplayName or UserPrincipalName .
+  summary: ""
+- title: 'Example 4: Get a user by userPrincipalName'
+  code: |-
+    PS C:\>Get-AzureADUser -Filter "userPrincipalName eq 'jondoe@contoso.com'"
+  description: |-
+    This command gets the specified user.
+  summary: ""
+- title: 'Example 5: Get a user by userPrincipalName'
+  code: |-
+    PS C:\>Get-AzureADUser -Filter "startswith(Title,'Sales')"
+  description: |-
+    This command gets all the users whos title starts with sales.
+    ie Sales Manager and Sales Assistant.
+  summary: ""
+parameters:
+- type: <xref href="Boolean" data-throw-if-not-resolved="False" />
+  name: All
+  description: |+
+    If true, return all users.
+    If false, return the number of objects specified by the Top parameter
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Filter
+  description: |+
+    Specifies an oData v3.0 filter statement.
+    This parameter controls which objects are returned.
+    Details on querying with oData can be found here.
+    http://www.odata.org/documentation/odata-version-3-0/odata-version-3-0-core-protocol/#queryingcollections
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ObjectId
+  isRequired: true
+  description: |+
+    Specifies the ID (as a UPN or ObjectId) of a user in Azure AD.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: SearchString
+  description: |+
+    Specifies a search string.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Top
+  description: |+
+    Specifies the maximum number of records to return.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: AzureAD.Get-AzureADUser
+name: Get-AzureADUser
+description: |-
+  The Get-AzureADUser cmdlet gets a user from Azure Active Directory (AD).
+metadata:
+  external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+  Module Name: AzureAD
+  online version: ""
+  schema: 2.0.0
