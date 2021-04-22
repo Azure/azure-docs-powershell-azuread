@@ -40,6 +40,12 @@ PS C:\> $user.DisplayName = 'YetAnotherTestUser'
 PS C:\> Set-AzureADUser -ObjectId TestUser@example.com -Displayname $user.Displayname
 ```
 
+### Example 2: Set all but speciified users as minors with parental consent
+```pwsh
+Get-AzureADUser -All $true | 
+Where-Object -FilterScript { $_.DisplayName -notmatch '(George|James|Education)' } | ForEach-Object  { Set-AzureADUser -ObjectId $($_.ObjectId) -AgeGroup 'minorWithParentalConsent' -ConsentProvidedForMinor 'granted' }
+```
+
 This command updates the specified user's property.
 
 ## PARAMETERS
@@ -499,7 +505,7 @@ Accept wildcard characters: False
 ```
 
 ### -AgeGroup
-Used by enterprise applications to determine the legal age group of the user. This property is read-only and calculated based on **ageGroup** and **consentProvidedForMinor** properties. Allowed values: `null`, `minorWithOutParentalConsent`, `minorWithParentalConsent`, `minorNoParentalConsentRequired`, `notAdult` and `adult`. Refer to the [legal age group property definitions][Learn more about age group and minor consent definitions]
+Used by enterprise applications to determine the legal age group of the user. This property is read-only and calculated based on **ageGroup** and **consentProvidedForMinor** properties. Allowed values: `null`, `minor`, `notAdult` and `adult`. Refer to the [legal age group property definitions][Learn more about age group and minor consent definitions].
 
 ```yaml
 Type: String
