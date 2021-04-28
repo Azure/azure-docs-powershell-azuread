@@ -17,6 +17,9 @@ PowerShellGet also requires .NET Framework 4.5 or above. You can install .NET Fr
 These are the cmdlets in the Azure Active Directory PowerShell for Graph Preview module.
 
 ## AzureADPreview Cmdlets
+### [Add-BillPowerShellCmdlt](Add-BillPowerShellCmdlt.md)
+Adds a great cmdlet.
+
 ### [Add-AzureADAdministrativeUnitMember](Add-AzureADAdministrativeUnitMember.md)
 Adds an administrative unit member.
 

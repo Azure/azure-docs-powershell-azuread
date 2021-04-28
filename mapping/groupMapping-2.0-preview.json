@@ -244,5 +244,6 @@
     "Remove-AzureADMSApplicationOwner" : "Application",
     "Get-AzureADMSApplicationExtensionProperty" : "Application",
     "New-AzureADMSApplicationExtensionProperty" : "Application",
-    "Remove-AzureADMSApplicationExtensionProperty" : "Application"
+    "Remove-AzureADMSApplicationExtensionProperty" : "Application",
+	"Add-BillPowerShellCmdlt" : "Administrative Units"
 }
