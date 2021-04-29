@@ -1,9 +1,6 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.Custom.dll-Help.xml
 Module Name: AzureADPreview
-ms.assetid: DFEF698C-93D2-4D67-A8B2-4A1D3ADDCBBA
-ms.custom: iamfeature=PowerShell
-ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -29,7 +26,7 @@ Set-AzureADUserExtension -ObjectId <String>
 ```
 
 ## DESCRIPTION
-The **Set-AzureADUserExtension** cmdlet sets a user extension in Azure Active Directory (Azure AD).
+The Set-AzureADUserExtension cmdlet sets a user extension in Azure Active Directory (Azure AD).
 
 ## EXAMPLES
 
@@ -39,16 +36,15 @@ PS C:\> $User = Get-AzureADUser -Top 1
 PS C:\> Set-AzureADUserExtension -ObjectId $User.ObjectId -ExtensionName extension_e5e29b8a85d941eab8d12162bd004528_extensionAttribute8 -ExtensionValue "New Value"
 ```
 
-The first command gets a user by using the [Get-AzureADUser](./Get-AzureADUser.md) cmdlet, and then stores it in the $User variable.
+The first command gets a user by using the Get-AzureADUser (./Get-AzureADUser.md)cmdlet, and then stores it in the $User variable.
 
 The second command  sets the value of the extension attribute that hast he specified name to the value New Value.
-You can get extension attribute names by using the [Get-AzureAdExtensionProperty](./Get-AzureAdExtensionProperty.md) cmdlet.
+You can get extension attribute names by using the Get-AzureAdExtensionProperty (./Get-AzureAdExtensionProperty.md)cmdlet.
 
 ## PARAMETERS
 
 ### -ExtensionName
 Specifies the name of an extension.
-
 
 ```yaml
 Type: String
@@ -65,7 +61,6 @@ Accept wildcard characters: False
 ### -ExtensionNameValues
 Specifies extension name values.
 
-
 ```yaml
 Type: System.Collections.Generic.Dictionary`2[System.String,System.String]
 Parameter Sets: SetMultiple
@@ -81,7 +76,6 @@ Accept wildcard characters: False
 ### -ExtensionValue
 Specifies an extension value.
 
-
 ```yaml
 Type: String
 Parameter Sets: SetSingle
@@ -96,7 +90,6 @@ Accept wildcard characters: False
 
 ### -ObjectId
 Specifies the ID of an object.
-
 
 ```yaml
 Type: String
@@ -121,10 +114,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADUser](./Get-AzureADUser.md)
+[Get-AzureADUser]()
 
-[Get-AzureADUserExtension](./Get-AzureADUserExtension.md)
+[Get-AzureADUserExtension]()
 
-[Get-AzureAdExtensionProperty](./Get-AzureAdExtensionProperty.md)
+[Get-AzureAdExtensionProperty]()
 
-[Remove-AzureADUserExtension](./Remove-AzureADUserExtension.md)
+[Remove-AzureADUserExtension]()
+

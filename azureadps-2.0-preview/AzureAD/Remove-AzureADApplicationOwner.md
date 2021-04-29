@@ -1,9 +1,6 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
 Module Name: AzureADPreview
-ms.assetid: 6B318FF5-2DD5-485A-A4BA-C2E9F7CA1DEC
-ms.custom: iamfeature=PowerShell
-ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -21,7 +18,7 @@ Remove-AzureADApplicationOwner -ObjectId <String> -OwnerId <String> [-Informatio
 ```
 
 ## DESCRIPTION
-The **Remove-AzureADApplicationOwner** cmdlet removes an owner from an application in Azure Active Directory (AD).
+The Remove-AzureADApplicationOwner cmdlet removes an owner from an application in Azure Active Directory (AD).
 
 ## EXAMPLES
 
@@ -114,6 +111,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Add-AzureADApplicationOwner](./Add-AzureADApplicationOwner.md)
+[Add-AzureADApplicationOwner]()
 
-[Get-AzureADApplicationOwner](./Get-AzureADApplicationOwner.md)
+[Get-AzureADApplicationOwner]()
+

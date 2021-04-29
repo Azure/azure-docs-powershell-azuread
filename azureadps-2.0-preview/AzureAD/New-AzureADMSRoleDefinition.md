@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-AzureADMSRoleDefinition
 
 ## SYNOPSIS
-Creates an Azure AD role definition.
+Create a new Azure Active Directory roleDefinition.
 
 ## SYNTAX
 
@@ -16,51 +16,28 @@ Creates an Azure AD role definition.
 New-AzureADMSRoleDefinition [-Description <String>] -DisplayName <String>
  [-ResourceScopes <System.Collections.Generic.List`1[System.String]>] -IsEnabled <Boolean>
  -RolePermissions <System.Collections.Generic.List`1[Microsoft.Open.MSGraph.Model.RolePermission]>
- [-TemplateId <String>] [-Version <String>] [<CommonParameters>]
+ [-TemplateId <String>] [-Version <String>]
+ [-InheritsPermissionsFrom <System.Collections.Generic.List`1[Microsoft.Open.MSGraph.Model.DirectoryRoleDefinition]>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The New-AzureADMSRoleDefinition cmdlet creates an Azure Active Directory (Azure AD) role definition.
+Create a new Azure Active Directory roleDefinition object.
+For more info see https://go.microsoft.com/fwlink/?linkid=2097519.
 
 ## EXAMPLES
 
 ### Example 1
-```
-PS C:\> 
-$allowedResourceAction = @()
-$allowedResourceAction += @("microsoft.aad.directory/applications/create")
-$rolePermission = @{'allowedResourceActions' = $allowedResourceAction}
-$rolePermissions = @()
-$rolePermissions += $rolePermission
-
-$resourceScopes = @()
-$resourceScopes += '/'
-
-New-AzureADMSRoleDefinition -RolePermissions $rolePermissions -IsEnabled $true -DisplayName 'MyRoleDefinition' -ResourceScopes $resourceScopes
-
-Id              : c466024e-f757-4409-a897-d780916814b1
-OdataType       :
-Description     :
-DisplayName     : fgdf
-IsBuiltIn       : False
-ResourceScopes  : {/}
-IsEnabled       : True
-RolePermissions : {class RolePermission {
-                  AllowedResourceActions:
-                  microsoft.directory/applications/create
-                    Condition:
-                  }
-                  }
-TemplateId      : 4dd5aa9c-cf4d-4895-a993-740d342802b9
-Version         :
+```powershell
+PS C:\> {{ Add example code here }}
 ```
 
-This command creates a new role definition in AzureAD.
+{{ Add example description here }}
 
 ## PARAMETERS
 
 ### -Description
-Specifies a description for the role definition.
+{{ Fill Description Description }}
 
 ```yaml
 Type: String
@@ -75,7 +52,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-Specifies a display name for the role definition.
+{{ Fill DisplayName Description }}
 
 ```yaml
 Type: String
@@ -89,8 +66,23 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -InheritsPermissionsFrom
+{{ Fill InheritsPermissionsFrom Description }}
+
+```yaml
+Type: System.Collections.Generic.List`1[Microsoft.Open.MSGraph.Model.DirectoryRoleDefinition]
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -IsEnabled
-Specifies whether the role definition is enabled.
+{{ Fill IsEnabled Description }}
 
 ```yaml
 Type: Boolean
@@ -105,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceScopes
-Specifies the resource scopes for the role definition.
+{{ Fill ResourceScopes Description }}
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
@@ -120,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -RolePermissions
-Specifies permissions for the role definition.
+{{ Fill RolePermissions Description }}
 
 ```yaml
 Type: System.Collections.Generic.List`1[Microsoft.Open.MSGraph.Model.RolePermission]
@@ -135,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -TemplateId
-Specifies template id for the role definition.
+{{ Fill TemplateId Description }}
 
 ```yaml
 Type: String
@@ -150,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -Version
-Specifies version for the role definition.
+{{ Fill Version Description }}
 
 ```yaml
 Type: String
@@ -169,18 +161,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### None
-
 ## OUTPUTS
 
-### System.Object
-
+### Microsoft.Open.MSGraph.Model.DirectoryRoleDefinition
 ## NOTES
 
 ## RELATED LINKS
-
-[Get-AzureADMSRoleDefinition]()
-
-[Set-AzureADMSRoleDefinition]()
-
-[Remove-AzureADMSRoleDefinition]()

@@ -1,9 +1,6 @@
 ---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
 Module Name: AzureADPreview
-ms.assetid: 1575D032-020F-4471-A408-2487C93940AF
-ms.custom: iamfeature=PowerShell
-ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -24,7 +21,7 @@ Set-AzureADPolicy -Id <String> [-AlternativeIdentifier <String>]
 ```
 
 ## DESCRIPTION
-The **Set-AzureADPolicy** cmdlet sets a policy in Azure Active Directory (AD).
+The Set-AzureADPolicy cmdlet sets a policy in Azure Active Directory (AD).
 
 ## EXAMPLES
 
@@ -53,8 +50,8 @@ Accept wildcard characters: False
 ```
 
 ### -Definition
-Specifies the array of stringfied JSON that contains all the rules of the policy. For example
-*-Definition @("{"TokenLifetimePolicy":{"Version":1,"MaxInactiveTime":"20:00:00"}}")*.
+Specifies the array of stringfied JSON that contains all the rules of the policy.
+For example -Definition @("{"TokenLifetimePolicy":{"Version":1,"MaxInactiveTime":"20:00:00"}}") .
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
@@ -114,7 +111,8 @@ Accept wildcard characters: False
 ```
 
 ### -Type
-Specifies the type of policy. For token lifetimes, use "TokenLifetimePolicy".
+Specifies the type of policy.
+For token lifetimes, use "TokenLifetimePolicy".
 
 ```yaml
 Type: String
@@ -154,8 +152,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADPolicy](./Get-AzureADPolicy.md)
+[Get-AzureADPolicy]()
 
-[New-AzureADPolicy](./New-AzureADPolicy.md)
+[New-AzureADPolicy]()
 
-[Remove-AzureADPolicy](./Remove-AzureADPolicy.md)
+[Remove-AzureADPolicy]()
+

@@ -28,7 +28,8 @@ Get-AzureADApplicationProxyConnector -Id <String> [-All <Boolean>] [<CommonParam
 ```
 
 ## DESCRIPTION
-The Get-AzureADApplicationProxyApplicationConnector cmdlet retrieves the details for a given connector. If no connectorId is specified, it retrieves all the connectors assigned to the tenant.
+The Get-AzureADApplicationProxyApplicationConnector cmdlet retrieves the details for a given connector.
+If no connectorId is specified, it retrieves all the connectors assigned to the tenant.
 
 ## EXAMPLES
 
@@ -53,12 +54,13 @@ Id                                   MachineName                      ExternalIp
 4c8b06e7-9751-41d5-8e5e-48e9b9bc2c66 AWCyclesApps.adventure-works.com 52.165.149.115 active
 ```
 
-Example 2: Retrieve information for a specific connector 
+Example 2: Retrieve information for a specific connector
 
 ## PARAMETERS
 
 ### -All
-If true, return all users. If false, return the number of objects specified by the Top parameter
+If true, return all users.
+If false, return the number of objects specified by the Top parameter
 
 ```yaml
 Type: Boolean
@@ -73,7 +75,9 @@ Accept wildcard characters: False
 ```
 
 ### -Filter
-Specifies an oData v3.0 filter statement. This parameter controls which objects are returned. Details on querying with oData can be found here: http://www.odata.org/documentation/odata-version-3-0/odata-version-3-0-core-protocol/#queryingcollections
+Specifies an oData v3.0 filter statement.
+This parameter controls which objects are returned.
+Details on querying with oData can be found here: http://www.odata.org/documentation/odata-version-3-0/odata-version-3-0-core-protocol/#queryingcollections
 
 ```yaml
 Type: String
@@ -88,7 +92,8 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The Id of the specific connector. You can find this by running the command without this parameter to get the desired Id, or by going into the portal and viewing connector details.
+The Id of the specific connector.
+You can find this by running the command without this parameter to get the desired Id, or by going into the portal and viewing connector details.
 
 ```yaml
 Type: String
@@ -138,13 +143,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### System.String
-System.Nullable`1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
-System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+System.Nullable\`1\[\[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089\]\] System.Nullable\`1\[\[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089\]\]
 
 ## OUTPUTS
 
 ### System.Object
-
 ## NOTES
 
 ## RELATED LINKS

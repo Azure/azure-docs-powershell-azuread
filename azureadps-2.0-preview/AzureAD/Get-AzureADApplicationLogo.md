@@ -1,8 +1,6 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.Custom.dll-Help.xml
 Module Name: AzureADPreview
-ms.custom: iamfeature=PowerShell
-ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -50,7 +48,7 @@ This example shows how to retrieve the application logo for an application that 
 ## PARAMETERS
 
 ### -FileName
-If provided, the application logo is copied to the file who's name is provided in this parameter 
+If provided, the application logo is copied to the file who's name is provided in this parameter
 
 ```yaml
 Type: String
@@ -120,7 +118,6 @@ System.Boolean
 ## OUTPUTS
 
 ### System.Object
-
 ## NOTES
 
 ## RELATED LINKS

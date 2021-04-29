@@ -1,9 +1,6 @@
 ---
 external help file: Microsoft.Open.Azure.AD.CommonLibrary.dll-Help.xml
 Module Name: AzureADPreview
-ms.assetid: 1EC5BEED-D45D-4938-B279-795075D05542
-ms.custom: iamfeature=PowerShell
-ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -21,7 +18,7 @@ Disconnect-AzureAD [-InformationAction <ActionPreference>] [-InformationVariable
 ```
 
 ## DESCRIPTION
-The **Disconnect-AzureAD** cmdlet disconnects the current session from an Azure Active Directory tenant.
+The Disconnect-AzureAD cmdlet disconnects the current session from an Azure Active Directory tenant.
 
 ## EXAMPLES
 
@@ -35,7 +32,8 @@ This command disconnects your session from a tenant.
 ## PARAMETERS
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event.
+The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -114,4 +112,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Connect-AzureAD](./Connect-AzureAD.md)
+[Connect-AzureAD]()
+

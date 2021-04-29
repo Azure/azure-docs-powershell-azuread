@@ -1,9 +1,6 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
 Module Name: AzureADPreview
-ms.assetid: 800AD06B-DDC3-4594-A339-4135A525155F
-ms.custom: iamfeature=PowerShell
-ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -20,7 +17,7 @@ Get-AzureADTenantDetail [-All <Boolean>] [-Top <Int32>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The **Get-AzureADTenantDetail** cmdlet gets the details of a tenant in Azure Active Directory (AD).
+The Get-AzureADTenantDetail cmdlet gets the details of a tenant in Azure Active Directory (AD).
 
 ## EXAMPLES
 
@@ -36,7 +33,8 @@ ObjectId                             DisplayName            VerifiedDomains
 ## PARAMETERS
 
 ### -All
-If true, return all tenant details. If false, return the number of objects specified by the Top parameter
+If true, return all tenant details.
+If false, return the number of objects specified by the Top parameter
 
 ```yaml
 Type: Boolean

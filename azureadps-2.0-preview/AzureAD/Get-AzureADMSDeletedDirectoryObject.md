@@ -1,8 +1,6 @@
 ---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
 Module Name: AzureADPreview
-ms.custom: iamfeature=PowerShell
-ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -19,7 +17,9 @@ Get-AzureADMSDeletedDirectoryObject -Id <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-This cmdlet is used to retrieve a soft deleted directory object from the directory. Note that soft delete for groups is currently only implemented for Unified Groups (a.k.a. Office 365 Groups).
+This cmdlet is used to retrieve a soft deleted directory object from the directory.
+Note that soft delete for groups is currently only implemented for Unified Groups (a.k.a.
+Office 365 Groups).
 
 ## EXAMPLES
 
@@ -53,11 +53,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### System.String
-
 ## OUTPUTS
 
 ### System.Object
-
 ## NOTES
 
 ## RELATED LINKS

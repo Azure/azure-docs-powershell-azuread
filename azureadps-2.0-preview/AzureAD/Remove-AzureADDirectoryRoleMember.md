@@ -1,9 +1,6 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
 Module Name: AzureADPreview
-ms.assetid: 26DDC7C2-8ABF-40A8-84D2-25A4E95BB4D7
-ms.custom: iamfeature=PowerShell
-ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -21,7 +18,7 @@ Remove-AzureADDirectoryRoleMember -ObjectId <String> -MemberId <String> [-Inform
 ```
 
 ## DESCRIPTION
-The **Remove-AzureADDirectoryRoleMember** cmdlet removes a member from a directory role in Azure Active Directory (AD).
+The Remove-AzureADDirectoryRoleMember cmdlet removes a member from a directory role in Azure Active Directory (AD).
 
 ## EXAMPLES
 
@@ -35,7 +32,8 @@ This command removes the specified member from the specified role.
 ## PARAMETERS
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event.
+The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -112,6 +110,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Add-AzureADDirectoryRoleMember](./Add-AzureADDirectoryRoleMember.md)
+[Add-AzureADDirectoryRoleMember]()
 
-[Get-AzureADDirectoryRoleMember](./Get-AzureADDirectoryRoleMember.md)
+[Get-AzureADDirectoryRoleMember]()
+

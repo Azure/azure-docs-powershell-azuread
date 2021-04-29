@@ -1,9 +1,6 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.Custom.dll-Help.xml
 Module Name: AzureADPreview
-ms.assetid: 3C1BC855-0B50-4B1D-9D72-25A5E346F09D
-ms.custom: iamfeature=PowerShell
-ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -22,7 +19,7 @@ New-AzureADApplicationKeyCredential -ObjectId <String> [-CustomKeyIdentifier <St
 ```
 
 ## DESCRIPTION
-The **New-AzureADApplicationKeyCredential** cmdlet creates a key credential for an application.
+The New-AzureADApplicationKeyCredential cmdlet creates a key credential for an application.
 
 ## EXAMPLES
 
@@ -40,7 +37,7 @@ Usage               : Sign
 Value               : {49, 50, 51}
 ```
 
-The first command gets the ID of an application by using the [Get-AzureADApplication](./Get-AzureADApplication.md) cmdlet.
+The first command gets the ID of an application by using the Get-AzureADApplication (./Get-AzureADApplication.md)cmdlet.
 The command stores it in the $AppId variable.
 
 The second command creates the application key credential for the application identified by $AppId.
@@ -54,7 +51,7 @@ PS C:\> $base64Value = [System.Convert]::ToBase64String($bin)
 PS C:\> $bin = $cer.GetCertHash()
 PS C:\> $base64Thumbprint = [System.Convert]::ToBase64String($bin)
 PS C:\> $keyid = [System.Guid]::NewGuid().ToString() 
-PS C:\> New-AzureADApplicationKeyCredential -ObjectId 009d786a-3503-4217-b8ab-db03d71c179a -CustomKeyIdentifier $base64Thumbprint -Type AsymmetricX509Cert -Usage Verify -Value $base64Value -StartDate $cer.GetEffectiveDateString() -EndDate $cer.GetExpirationDateString()
+PS C:\> New-AzureADApplicationKeyCredential -ObjectId 009d786a-3503-4217-b8ab-db03d71c179a -CustomKeyIdentifier  $base64Thumbprint  -Type AsymmetricX509Cert -Usage Verify -Value $base64Value  -StartDate $cer.GetEffectiveDateString() -EndDate cer.GetExpirationDateString()
 ```
 
 The first seven commands create values for the application key credential and stores them in variables.
@@ -79,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### -EndDate
-Specifies the time when the key becomes invalid as a **DateTime** object.
+Specifies the time when the key becomes invalid as a DateTime object.
 
 ```yaml
 Type: DateTime
@@ -148,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -StartDate
-Specifies the time when the key becomes valid as a **DateTime** object.
+Specifies the time when the key becomes valid as a DateTime object.
 
 ```yaml
 Type: DateTime
@@ -218,10 +215,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADApplication](./Get-AzureADApplication.md) 
+[Get-AzureADApplication]()
 
-[Get-AzureADApplicationKeyCredential](./Get-AzureADApplicationKeyCredential.md)
+[Get-AzureADApplicationKeyCredential]()
 
-[Remove-AzureADApplicationKeyCredential](./Remove-AzureADApplicationKeyCredential.md)
+[Remove-AzureADApplicationKeyCredential]()
 
 [This cmdlet uses the ADAL library in Azure Active Directory. To learn more about ADAL, please follow this link:](http://www.cloudidentity.com/blog/2013/09/12/active-directory-authentication-library-adal-v1-for-net-general-availability/)
+

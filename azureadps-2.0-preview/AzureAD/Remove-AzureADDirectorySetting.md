@@ -1,9 +1,6 @@
 ---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
 Module Name: AzureADPreview
-ms.assetid: 329E3820-C069-4F0F-8793-28AF37DCF7F1
-ms.custom: iamfeature=PowerShell
-ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -21,14 +18,22 @@ Remove-AzureADDirectorySetting -Id <String> [-InformationAction <ActionPreferenc
 ```
 
 ## DESCRIPTION
-The **Remove-AzureADDirectorySetting** cmdlet removes a directory setting from Azure Active Directory (AD).
+The Remove-AzureADDirectorySetting cmdlet removes a directory setting from Azure Active Directory (AD).
 
 ## EXAMPLES
+
+### Example 1
+```
+PS C:\> {{ Add example code here }}
+```
+
+{{ Add example description here }}
 
 ## PARAMETERS
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event.
+The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -90,8 +95,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADDirectorySetting](./Get-AzureADDirectorySetting.md)
+[Get-AzureADDirectorySetting]()
 
-[New-AzureADDirectorySetting](./New-AzureADDirectorySetting.md)
+[New-AzureADDirectorySetting]()
 
-[Set-AzureADDirectorySetting](./Set-AzureADDirectorySetting.md)
+[Set-AzureADDirectorySetting]()
+

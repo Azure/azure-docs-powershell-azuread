@@ -1,9 +1,6 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.Custom.dll-Help.xml
 Module Name: AzureADPreview
-ms.assetid: AB894D03-378C-4F96-87C2-54FA2C7476B3
-ms.custom: iamfeature=PowerShell
-ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -21,14 +18,22 @@ Remove-AzureADServicePrincipalKeyCredential -ObjectId <String> -KeyId <String>
 ```
 
 ## DESCRIPTION
-The **Remove-AzureADServicePrincipalKeyCredential** cmdlet removes a key credential from a service principal in Azure Active Directory (AD).
+The Remove-AzureADServicePrincipalKeyCredential cmdlet removes a key credential from a service principal in Azure Active Directory (AD).
 
 ## EXAMPLES
+
+### Example 1
+```powershell
+PS C:\> {{ Add example code here }}
+```
+
+{{ Add example description here }}
 
 ## PARAMETERS
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event.
+The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -105,6 +110,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADServicePrincipalKeyCredential](./Get-AzureADServicePrincipalKeyCredential.md)
+[Get-AzureADServicePrincipalKeyCredential]()
 
-[New-AzureADServicePrincipalKeyCredential](./New-AzureADServicePrincipalKeyCredential.md)
+[New-AzureADServicePrincipalKeyCredential]()
+

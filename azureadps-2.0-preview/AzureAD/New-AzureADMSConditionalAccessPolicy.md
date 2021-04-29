@@ -13,9 +13,10 @@ Creates a new conditional access policy in Azure Active Directory.
 ## SYNTAX
 
 ```
-New-AzureADMSConditionalAccessPolicy [-Id <String>] [-DisplayName <String>] [-State <String>]
- [-Conditions <ConditionalAccessConditionSet>] [-GrantControls <ConditionalAccessGrantControls>]
- [-SessionControls <ConditionalAccessSessionControls>] [<CommonParameters>]
+New-AzureADMSConditionalAccessPolicy [-Id <String>] [-DisplayName <String>] [-CreatedDateTime <String>]
+ [-ModifiedDateTime <String>] [-State <String>] [-Conditions <ConditionalAccessConditionSet>]
+ [-GrantControls <ConditionalAccessGrantControls>] [-SessionControls <ConditionalAccessSessionControls>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -130,8 +131,38 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -CreatedDateTime
+{{ Fill CreatedDateTime Description }}
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Id
 {{ Fill Id Description }}
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ModifiedDateTime
+{{ Fill ModifiedDateTime Description }}
 
 ```yaml
 Type: String

@@ -1,9 +1,6 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
 Module Name: AzureADPreview
-ms.assetid: 04497A4E-E281-4FB5-98D5-102039F15692
-ms.custom: iamfeature=PowerShell
-ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -17,62 +14,30 @@ Gets a domain.
 
 ### GetQuery (Default)
 ```
-Get-AzureADDomain [-InformationAction <ActionPreference>] [-InformationVariable <String>] [<CommonParameters>]
+Get-AzureADDomain [<CommonParameters>]
 ```
 
 ### GetById
 ```
-Get-AzureADDomain -Name <String> [-InformationAction <ActionPreference>] [-InformationVariable <String>]
- [<CommonParameters>]
+Get-AzureADDomain -Name <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The **Get-AzureADDomain** cmdlet gets a domain in Azure Active Directory (AD).
+The Get-AzureADDomain cmdlet gets a domain in Azure Active Directory (AD).
 
 ## EXAMPLES
 
+### Example 1
+```powershell
+PS C:\> {{ Add example code here }}
+```
+
+{{ Add example description here }}
+
 ## PARAMETERS
-
-### -InformationAction
-Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
-
-- Continue
-- Ignore
-- Inquire
-- SilentlyContinue
-- Stop
-- Suspend
-
-```yaml
-Type: ActionPreference
-Parameter Sets: (All)
-Aliases: infa
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -InformationVariable
-Specifies an information variable.
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases: iv
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
 
 ### -Name
 Specifies the name of a domain.
-
 
 ```yaml
 Type: String
@@ -97,9 +62,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Confirm-AzureADDomain](./Confirm-AzureADDomain.md)
-[New-AzureADDomain](./New-AzureADDomain.md)
-[Remove-AzureADDomain](./Remove-AzureADDomain.md)
-[Set-AzureADDomain](./Set-AzureADDomain.md)
+[Confirm-AzureADDomain]()
 
+[New-AzureADDomain]()
+
+[Remove-AzureADDomain]()
+
+[Set-AzureADDomain]()
 

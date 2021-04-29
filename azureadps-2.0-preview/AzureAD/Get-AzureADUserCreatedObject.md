@@ -1,9 +1,6 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
 Module Name: AzureADPreview
-ms.assetid: 2AB8CC27-F872-4E3D-9972-A4E11BDD4B33
-ms.custom: iamfeature=PowerShell
-ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -20,7 +17,7 @@ Get-AzureADUserCreatedObject -ObjectId <String> [-All <Boolean>] [-Top <Int32>] 
 ```
 
 ## DESCRIPTION
-The **Get-AzureADUserCreatedObject** cmdlet gets objects created by a user in Azure Active Directory (AD).
+The Get-AzureADUserCreatedObject cmdlet gets objects created by a user in Azure Active Directory (AD).
 
 ## EXAMPLES
 
@@ -41,7 +38,8 @@ This command gets an object created by the specified user.
 ## PARAMETERS
 
 ### -All
-If true, return all objects created by this user. If false, return the number of objects specified by the Top parameter
+If true, return all objects created by this user.
+If false, return the number of objects specified by the Top parameter
 
 ```yaml
 Type: Boolean
@@ -56,7 +54,7 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-Specifies the ID (as a UPN or ObjectId) of a user in Azure AD. 
+Specifies the ID (as a UPN or ObjectId) of a user in Azure AD.
 
 ```yaml
 Type: String

@@ -1,9 +1,6 @@
 ---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
 Module Name: AzureADPreview
-ms.assetid: D4C305FF-6005-4296-8B26-CFFCACFF9D2C
-ms.custom: iamfeature=PowerShell
-ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -20,7 +17,7 @@ Get-AzureADServicePrincipalPolicy -Id <String> [-InformationAction <ActionPrefer
 ```
 
 ## DESCRIPTION
-The **Get-AzureADServicePrincipalPolicy** cmdlet gets the policy of a service principal in Azure Active Directory (AD).
+The Get-AzureADServicePrincipalPolicy cmdlet gets the policy of a service principal in Azure Active Directory (AD).
 
 ## EXAMPLES
 
@@ -34,7 +31,8 @@ This command get the policy for the specified service principal.
 ## PARAMETERS
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event.
+The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -96,7 +94,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Add-AzureADServicePrincipalPolicy](./Add-AzureADServicePrincipalPolicy.md)
+[Add-AzureADServicePrincipalPolicy]()
 
-[Remove-AzureADServicePrincipalPolicy](./Remove-AzureADServicePrincipalPolicy.md)
+[Remove-AzureADServicePrincipalPolicy]()
 

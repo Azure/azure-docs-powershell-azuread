@@ -8,31 +8,47 @@ schema: 2.0.0
 # New-AzureADMSRoleAssignment
 
 ## SYNOPSIS
-Creates an Azure AD role assignment.
+Create a new Azure Active Directory roleAssignment.
 
 ## SYNTAX
 
 ```
 New-AzureADMSRoleAssignment -RoleDefinitionId <String> -PrincipalId <String> -ResourceScope <String>
- [<CommonParameters>]
+ -DirectoryScopeId <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The New-AzureADMSRoleAssignment cmdlet creates an Azure Active Directory (Azure AD) role assignment.
+Create a new Azure Active Directory roleAssignment object.
+For more info see https://go.microsoft.com/fwlink/?linkid=2097519.
 
 ## EXAMPLES
 
 ### Example 1
 ```powershell
-PS C:\> New-AzureADMSRoleAssignment -RoleDefinitionId 62e90356-69f5-4237-9190-012177145e10 -PrincipalId 69584089-b4d1-4055-9c94-320412efd653 -ResourceScope '/'
+PS C:\> {{ Add example code here }}
 ```
 
-This command creates a new role assignment.
+{{ Add example description here }}
 
 ## PARAMETERS
 
+### -DirectoryScopeId
+{{ Fill DirectoryScopeId Description }}
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -PrincipalId
-Specifies the principal for role assignment.
+{{ Fill PrincipalId Description }}
 
 ```yaml
 Type: String
@@ -47,7 +63,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceScope
-Specifies the resource scope for role assignment.
+{{ Fill ResourceScope Description }}
 
 ```yaml
 Type: String
@@ -62,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -RoleDefinitionId
-Specifies the role definition for role assignment.
+{{ Fill RoleDefinitionId Description }}
 
 ```yaml
 Type: String
@@ -81,16 +97,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### None
-
 ## OUTPUTS
 
-### System.Object
-
+### Microsoft.Open.MSGraph.Model.DirectoryRoleAssignment
 ## NOTES
 
 ## RELATED LINKS
-
-[Get-AzureADMSRoleAssignment]()
-
-[Remove-AzureADMSRoleAssignment]()

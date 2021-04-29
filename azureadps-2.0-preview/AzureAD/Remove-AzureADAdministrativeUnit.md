@@ -1,9 +1,6 @@
 ---
 external help file: Microsoft.Open.AzureADBeta.Graph.PowerShell.dll-Help.xml
 Module Name: AzureADPreview
-ms.assetid: 5BEB9DBE-CEB2-45EA-9F3F-BCB68E7CB857
-ms.custom: iamfeature=PowerShell
-ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -21,16 +18,23 @@ Remove-AzureADAdministrativeUnit -ObjectId <String> [-InformationAction <ActionP
 ```
 
 ## DESCRIPTION
-The **Remove-AzureADAdministrativeUnit** cmdlet removes an administrative unit from Azure Active Directory.
+The Remove-AzureADAdministrativeUnit cmdlet removes an administrative unit from Azure Active Directory.
 
 ## EXAMPLES
+
+### Example 1
+```powershell
+PS C:\> {{ Add example code here }}
+```
+
+{{ Add example description here }}
 
 ## PARAMETERS
 
 ### -InformationAction
 Specifies how this cmdlet responds to an information event.
-The acceptable values for this parameter are:
-* Continue
+The acceptable values for this parameter are: * Continue
+
 * Ignore
 * Inquire
 * SilentlyContinue
@@ -51,7 +55,6 @@ Accept wildcard characters: False
 
 ### -InformationVariable
 Specifies a variable in which to store an information event message.
-
 
 ```yaml
 Type: String
@@ -91,7 +94,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADAdministrativeUnit](./Get-AzureADAdministrativeUnit.md)
+[Get-AzureADAdministrativeUnit]()
 
-[Set-AzureADAdministrativeUnit](./Set-AzureADAdministrativeUnit.md)
+[Set-AzureADAdministrativeUnit]()
 

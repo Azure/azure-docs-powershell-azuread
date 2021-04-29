@@ -17,7 +17,8 @@ Reset-AzureADMSLifeCycleGroup -GroupId <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The Reset-AzureADMSLifeCycleGroup renews a group by updating the RenewedDateTime property on a group to the current DateTime. When a group is renewed, the group expiration is extended by the number of days defined in the policy.
+The Reset-AzureADMSLifeCycleGroup renews a group by updating the RenewedDateTime property on a group to the current DateTime.
+When a group is renewed, the group expiration is extended by the number of days defined in the policy.
 
 ## EXAMPLES
 
@@ -51,11 +52,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### None
-
 ## OUTPUTS
 
 ### System.Object
-
 ## NOTES
 
 ## RELATED LINKS

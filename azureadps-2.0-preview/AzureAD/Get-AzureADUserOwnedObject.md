@@ -1,9 +1,6 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
 Module Name: AzureADPreview
-ms.assetid: 36DA56DE-7C38-4C67-844A-1407533A7DA3
-ms.custom: iamfeature=PowerShell
-ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -20,7 +17,7 @@ Get-AzureADUserOwnedObject -ObjectId <String> [-All <Boolean>] [-Top <Int32>] [<
 ```
 
 ## DESCRIPTION
-The **Get-AzureADUserOwnedObject** cmdlet gets objects owned by a user in Azure Active Directory (AD).
+The Get-AzureADUserOwnedObject cmdlet gets objects owned by a user in Azure Active Directory (AD).
 
 ## EXAMPLES
 
@@ -45,7 +42,8 @@ This command gets objects owned by the specified user.
 ## PARAMETERS
 
 ### -All
-If true, return all objects owned by this user. If false, return the number of objects specified by the Top parameter
+If true, return all objects owned by this user.
+If false, return the number of objects specified by the Top parameter
 
 ```yaml
 Type: Boolean
@@ -60,7 +58,7 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-Specifies the ID of a user (as a UPN or ObjectId) in Azure AD. 
+Specifies the ID of a user (as a UPN or ObjectId) in Azure AD.
 
 ```yaml
 Type: String

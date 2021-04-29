@@ -1,9 +1,6 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
 Module Name: AzureADPreview
-ms.assetid: 7DC1958A-D7DE-44AF-A5B1-9C90ABF0B89A
-ms.custom: iamfeature=PowerShell
-ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -37,7 +34,8 @@ New-AzureADServicePrincipal [-AccountEnabled <String>]
 PS C:\>New-AzureADServicePrincipal -AccountEnabled $true -AppId $MyApp.AppId -AppRoleAssignmentRequired $true -DisplayName $App -Tags {WindowsAzureActiveDirectoryIntegratedApp}
 ```
 
-This command creates a service principal. The tag "-Tags {WindowsAzureActiveDirectoryIntegratedApp}" is used to have this service principal show up in the list of Integrated Applicatins in the Admin Portal.
+This command creates a service principal.
+The tag "-Tags {WindowsAzureActiveDirectoryIntegratedApp}" is used to have this service principal show up in the list of Integrated Applicatins in the Admin Portal.
 
 ## PARAMETERS
 
@@ -73,7 +71,6 @@ Accept wildcard characters: False
 
 ### -AppId
 The unique identifier for the associated application (its appId property).
-
 
 ```yaml
 Type: String
@@ -165,7 +162,6 @@ Accept wildcard characters: False
 ### -LogoutUrl
 Specifies the logout URL.
 
-
 ```yaml
 Type: String
 Parameter Sets: (All)
@@ -239,11 +235,11 @@ Accept wildcard characters: False
 ```
 
 ### -ServicePrincipalNames
-Specifies an array of service principal names. Based on the identifierURIs collection, plus the application's appId property, these URIs are used to reference an application's service principal. A client will use these to:
+Specifies an array of service principal names.
+Based on the identifierURIs collection, plus the application's appId property, these URIs are used to reference an application's service principal.
+A client will use these to:
 
- - populate requiredResourceAccess, via "Permissions to other applications" in the Azure classic portal.
- - specify a resource URI to acquire an access token, which is the URI returned in the claim.
-
+- populate requiredResourceAccess, via "Permissions to other applications" in the Azure classic portal.  - specify a resource URI to acquire an access token, which is the URI returned in the claim.
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
@@ -275,7 +271,7 @@ Accept wildcard characters: False
 ### -Tags
 Tags linked to this service principal.
 
-Note that if you intend for this service principal to show up in the All Applications list in the admin portal, you need to set this value to {WindowsAzureActiveDirectoryIntegratedApp} 
+Note that if you intend for this service principal to show up in the All Applications list in the admin portal, you need to set this value to {WindowsAzureActiveDirectoryIntegratedApp}
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
@@ -300,8 +296,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADServicePrincipal](./Get-AzureADServicePrincipal.md)
+[Get-AzureADServicePrincipal]()
 
-[Remove-AzureADServicePrincipal](./Remove-AzureADServicePrincipal.md)
+[Remove-AzureADServicePrincipal]()
 
-[Set-AzureADServicePrincipal](./Set-AzureADServicePrincipal.md)
+[Set-AzureADServicePrincipal]()
+

@@ -1,9 +1,6 @@
 ---
 external help file: Microsoft.Open.Azure.AD.CommonLibrary.dll-Help.xml
 Module Name: AzureADPreview
-ms.assetid: A5EF9C25-E0D9-432F-A528-81534A01F444
-ms.custom: iamfeature=PowerShell
-ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -38,7 +35,7 @@ Connect-AzureAD [-AzureEnvironmentName <EnvironmentName>] [-TenantId <String>] -
 ```
 
 ## DESCRIPTION
-The **Connect-AzureAD** cmdlet connects an authenticated account to use for Azure Active Directory cmdlet requests.
+The Connect-AzureAD cmdlet connects an authenticated account to use for Azure Active Directory cmdlet requests.
 
 You can use this authenticated account only with Azure Active Directory cmdlets.
 
@@ -51,7 +48,7 @@ PS C:\> Connect-AzureAD -Confirm
 
 This command connects the current PowerShell session to an Azure Active Directory tenant.
 The command prompts you for a username and password for the tenant you want to connect to.
-The *Confirm* parameter prompts you for confirmation. 
+The Confirm parameter prompts you for confirmation.
 
 If multi-factor authentication is enabled for your credentials, you must log in using the interactive option or use service principal authentication.
 
@@ -123,7 +120,8 @@ Accept wildcard characters: False
 ```
 
 ### -AccountId
-Specifies the ID of an account. You must specify the UPN of the user when authenticating with a user access token.
+Specifies the ID of an account.
+You must specify the UPN of the user when authenticating with a user access token.
 
 ```yaml
 Type: String
@@ -165,11 +163,12 @@ Accept wildcard characters: False
 ```
 
 ### -AzureEnvironmentName
-Specifies the name of the Azure environment. The acceptable values for this parameter are: 
+Specifies the name of the Azure environment.
+The acceptable values for this parameter are:
 
 - AzureCloud
 - AzureChinaCloud
-- AzureUSGovernment 
+- AzureUSGovernment
 - AzureGermanyCloud
 
 The default value is AzureCloud.
@@ -187,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### -CertificateThumbprint
-Specifies the certificate thumbprint of a digital public key X.509 certificate of a user account that has permission to perform this action. 
+Specifies the certificate thumbprint of a digital public key X.509 certificate of a user account that has permission to perform this action.
 
 ```yaml
 Type: String
@@ -202,10 +201,10 @@ Accept wildcard characters: False
 ```
 
 ### -Credential
-Specifies a **PSCredential** object.
-For more information about the **PSCredential** object, type Get-Help Get-Credential.
+Specifies a PSCredential object.
+For more information about the PSCredential object, type Get-Help Get-Credential.
 
-The **PSCredential** object provides the user ID and password for organizational ID credentials.
+The PSCredential object provides the user ID and password for organizational ID credentials.
 
 ```yaml
 Type: PSCredential
@@ -220,7 +219,8 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event.
+The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -257,7 +257,8 @@ Accept wildcard characters: False
 ```
 
 ### -LogLevel
-Specifies the log level. The accdeptable values for this parameter are: 
+Specifies the log level.
+The accdeptable values for this parameter are:
 
 - Info
 - Error
@@ -298,7 +299,7 @@ Specifies the ID of a tenant.
 
 If you do not specify this parameter, the account is authenticated with the home tenant.
 
-You must specify the *TenantId* parameter to authenticate as a service principal or when using Microsoft account.
+You must specify the TenantId parameter to authenticate as a service principal or when using Microsoft account.
 
 ```yaml
 Type: String
@@ -343,7 +344,6 @@ Accept wildcard characters: False
 Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
-
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
@@ -357,7 +357,8 @@ Accept wildcard characters: False
 ```
 
 ### -LogFilePath
-The path where the log file for this PowerShell session is written to. Provide a value here if you need to deviate from the default PowerShell log file location.
+The path where the log file for this PowerShell session is written to.
+Provide a value here if you need to deviate from the default PowerShell log file location.
 
 ```yaml
 Type: String
@@ -382,5 +383,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Disconnet-AzureAD](./Disconnect-AzureAD.md)
+[Disconnet-AzureAD]()
 

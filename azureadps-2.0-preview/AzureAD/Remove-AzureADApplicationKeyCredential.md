@@ -1,9 +1,6 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.Custom.dll-Help.xml
 Module Name: AzureADPreview
-ms.assetid: 59B49FB7-4743-4D76-9C08-4416D862BEE3
-ms.custom: iamfeature=PowerShell
-ms.reviewer: rodejo
 online version:
 schema: 2.0.0
 ---
@@ -21,7 +18,7 @@ Remove-AzureADApplicationKeyCredential -ObjectId <String> -KeyId <String>
 ```
 
 ## DESCRIPTION
-The **Remove-AzureADApplicationKeyCredential** cmdlet removes a key credential from an application.
+The Remove-AzureADApplicationKeyCredential cmdlet removes a key credential from an application.
 
 ## EXAMPLES
 
@@ -114,6 +111,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADApplicationKeyCredential](./Get-AzureADApplicationKeyCredential.md)
+[Get-AzureADApplicationKeyCredential]()
 
-[New-AzureADApplicationKeyCredential](./New-AzureADApplicationKeyCredential.md)
+[New-AzureADApplicationKeyCredential]()
+
