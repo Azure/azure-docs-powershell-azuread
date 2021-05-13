@@ -1,12 +1,14 @@
 ---
+title: 'AzureAD overview'
+description: This is an introduction to Azure AD PowerShell.
 services: active-directory
 documentationcenter: ''
-title: 'Overview AzureAD'
+
 ms.service: active-directory
 ms.workload: identity
 ms.tgt_pltfrm: na
 ms.devlang: powershell
-ms.topic: article
+ms.topic: overview
 ms.date: 07/10/2017
 ms.author: rodejo
 ms.custom: posh-docs-conceptual
@@ -28,16 +30,18 @@ For more detailed information, you can run any of the following commands:
 * `Get-Help <cmdlet name> -Examples`
 * `Get-Help <cmdlet name> -Full`
 
-For more information about Windows PowerShell, see the [Getting Started with Windows PowerShell](https://msdn.microsoft.com/powershell/scripting/getting-started/getting-started-with-windows-powershell).
-
 Azure Active Directory PowerShell for Graph (AzureAD) is a module IT Pros commonly use to manage their Azure Active Directory. The cmdlets in the Azure AD module enable you to retrieve data from the directory, create new objects in the directory, update existing objects, remove objects, as well as configure the directory and its features.
 
-If you are developing new PowerShell scripts with Azure AD cmdlets we advise you to use the newer [Azure Active Directory PowerShell for Graph cmdlets](/powershell/module/azuread?view=azureadps-2.0). 
+If you are developing new PowerShell scripts with Azure AD cmdlets we advise you to use the newer [Azure Active Directory PowerShell for Graph cmdlets](/powershell/module/azuread?view=azureadps-2.0&preserve-view=true). 
 
 Refer to the modules below for a full list of cmdlets and their functionality.
 
 Module | Description
 ------ | -----------
-[AzureAD](/powershell/module/azuread?view=azureadps-2.0) | Azure Active Directory PowerShell for Graph
-[MSOnline](/powershell/module/msonline?view=azureadps-1.0)| MSOnline PowerShell
+[AzureAD](/powershell/module/azuread?view=azureadps-2.0&preserve-view=true) | Azure Active Directory PowerShell for Graph
+[MSOnline](/powershell/module/msonline?view=azureadps-1.0&preserve-view=true)| MSOnline PowerShell
+
+## Next steps
+- For more information about Windows PowerShell, see the  [Getting Started with Windows PowerShell](https://msdn.microsoft.com/powershell/scripting/getting-started/getting-started-with-windows-powershell).
+- [Install Azure Active Directory PowerShell for Graph](install-adv2.md).
 

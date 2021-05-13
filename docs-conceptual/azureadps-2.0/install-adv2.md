@@ -1,12 +1,15 @@
 ---
+
+title: 'Install AzureAD PowerShell for Graph'
+description: Learn how to install the Azure AD and Azure AD Preview modules from the PowerShell Gallery.
 services: active-directory
 documentationcenter: ''
-title: 'Install AzureAD PowerShell for Graph'
+
 ms.service: active-directory
 ms.workload: identity
 ms.tgt_pltfrm: na
 ms.devlang: powershell
-ms.topic: article
+ms.topic: overview
 ms.date: 07/10/2017
 ms.author: rodejo
 ms.custom: posh-docs-conceptual
@@ -130,4 +133,4 @@ See **Connect-AzureAD** for more information.
 
 ## Next steps
 
-- See the [Azure Active Directory PowerShell for Graph module](../../azureadps-2.0/AzureAD/AzureActiveDirectory.md)
+- See the [New features and improvements](ad-pshell-v2-version-history.md).
