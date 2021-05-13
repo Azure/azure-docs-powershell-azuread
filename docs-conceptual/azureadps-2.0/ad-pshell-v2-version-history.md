@@ -40,7 +40,7 @@ The following new cmdlets were added to the AzureADPreview module:
 
 ### Release status 
 
-06/29//2020: Released for installation and upgrade from the [PowerShell Gallery](https://www.powershellgallery.com/packages/AzureAD/2.0.2.76)
+06/29/2020: Released for installation and upgrade from the [PowerShell Gallery](https://www.powershellgallery.com/packages/AzureAD/2.0.2.76)
 
 ### New features and improvements 
 

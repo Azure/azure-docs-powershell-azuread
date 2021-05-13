@@ -14,12 +14,27 @@ ms.reviewer: rodejo
 ---
 # Azure Active Directory PowerShell for Graph
 
+Windows PowerShell is a task-based command-line shell and scripting language designed for system administration.
+Unlike most shells, which accept and return text, Windows PowerShell is built on top of the .NET Framework, and accepts and returns .NET Framework objects.
+
+Windows PowerShell introduces the concept of a cmdlet (pronounced "command-let"), a simple, single-function command-line tool built into the shell.
+Cmdlets have the following naming convention: a verb and noun separated by a dash (-), such as **Get-Help**, **Get-Process**, and **Start-Service**.
+Windows PowerShell includes more than one hundred basic core cmdlets.
+
+For more information about, or for the syntax of, any of the cmdlets, use the `Get-Help <cmdlet name>` command, where `<cmdlet name>` is the name of the cmdlet that you want to research.
+For more detailed information, you can run any of the following commands:
+
+* `Get-Help <cmdlet name> -Detailed`
+* `Get-Help <cmdlet name> -Examples`
+* `Get-Help <cmdlet name> -Full`
+
+For more information about Windows PowerShell, see the [Getting Started with Windows PowerShell](https://msdn.microsoft.com/powershell/scripting/getting-started/getting-started-with-windows-powershell).
+
 Azure Active Directory PowerShell for Graph (AzureAD) is a module IT Pros commonly use to manage their Azure Active Directory. The cmdlets in the Azure AD module enable you to retrieve data from the directory, create new objects in the directory, update existing objects, remove objects, as well as configure the directory and its features.
 
 If you are developing new PowerShell scripts with Azure AD cmdlets we advise you to use the newer [Azure Active Directory PowerShell for Graph cmdlets](/powershell/module/azuread?view=azureadps-2.0). 
 
-Please refer to the below detailed description of the modules for a full list of cmdlets and functionality.
-
+Refer to the modules below for a full list of cmdlets and their functionality.
 
 Module | Description
 ------ | -----------
