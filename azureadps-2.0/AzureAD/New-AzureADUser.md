@@ -34,6 +34,8 @@ The New-AzureADUser cmdlet creates a user in Azure Active Directory (AD).
 
 ### Example 1: Create a user
 ```
+$PasswordProfile = New-Object -TypeName Microsoft.Open.AzureAD.Model.PasswordProfile
+$PasswordProfile.Password = "<Password>"
 New-AzureADUser -DisplayName "New User" -PasswordProfile $PasswordProfile -UserPrincipalName "NewUser@contoso.com" -AccountEnabled $true -MailNickName "Newuser"
 
 ObjectId                             DisplayName UserPrincipalName               UserType
