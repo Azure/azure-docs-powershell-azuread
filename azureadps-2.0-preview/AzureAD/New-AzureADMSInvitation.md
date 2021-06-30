@@ -10,7 +10,7 @@ schema: 2.0.0
 # New-AzureADMSInvitation
 
 ## SYNOPSIS
-This cmdlet is used to invite a new external user to your directory
+This cmdlet is used to invite a new external user to your directory.
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ This cmdlet is used to invite a new external user to your directory.
 
 ### Invite a new external user to your directory
 ```
-New-AzureADMSInvitation -InvitedUserEmailAddress someexternaluser@externaldomain.com -SendInvitationMessage $True -InviteRedirectUrl "http://myapps.onmicrosoft.com"
+New-AzureADMSInvitation -InvitedUserEmailAddress someexternaluser@externaldomain.com -SendInvitationMessage $True -InviteRedirectUrl "http://myapps.microsoft.com"
 ```
 
 Using the cmdlet in this example, an email is sent to the user who's email address is in the -InvitedUserEmailAddress parameter.
