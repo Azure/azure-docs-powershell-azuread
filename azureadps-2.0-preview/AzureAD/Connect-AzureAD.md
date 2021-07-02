@@ -257,7 +257,7 @@ Accept wildcard characters: False
 ```
 
 ### -LogLevel
-Specifies the log level. The accdeptable values for this parameter are: 
+Specifies the log level. The acceptable values for this parameter are: 
 
 - Info
 - Error
@@ -382,5 +382,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Disconnet-AzureAD](./Disconnect-AzureAD.md)
+[Disconnect-AzureAD](./Disconnect-AzureAD.md)
 

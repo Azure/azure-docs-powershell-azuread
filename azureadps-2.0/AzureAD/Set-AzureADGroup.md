@@ -28,12 +28,12 @@ The Set-AzureADGroup cmdlet updates a group in Azure Active Directory (AD).
 PS C:\>Set-AzureADGroup -ObjectId "11fa5e1e-737c-40c5-835e-416ae3959606" -Description "This is my new group"
 ```
 
-This command updates the specfied group in Azure AD.
+This command updates the specified group in Azure AD.
 
 ## PARAMETERS
 
 ### -Description
-Specfies a description.
+Specifies a description.
 
 ```yaml
 Type: String

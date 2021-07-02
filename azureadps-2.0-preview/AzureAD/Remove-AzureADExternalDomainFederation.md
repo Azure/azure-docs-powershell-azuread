@@ -30,7 +30,7 @@ This command deletes an external domain federation setting.
 ## PARAMETERS
 
 ### -ExternalDomainName
-The unique idenfier of an externalDomainFederation in Azure Active Directory
+The unique identifer of an externalDomainFederation in Azure Active Directory
 
 ```yaml
 Type: String

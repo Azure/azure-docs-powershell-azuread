@@ -17,7 +17,7 @@ Add-AzureADDeviceRegisteredOwner -ObjectId <String> -RefObjectId <String> [<Comm
 ```
 
 ## DESCRIPTION
-The Add-AzureADDeviceRegisteredOwner cmdlet adds a registerd owner for an Azure Active Directory device.
+The Add-AzureADDeviceRegisteredOwner cmdlet adds a registered owner for an Azure Active Directory device.
 
 ## EXAMPLES
 

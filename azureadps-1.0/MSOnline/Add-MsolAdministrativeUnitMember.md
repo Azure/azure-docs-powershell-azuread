@@ -27,18 +27,18 @@ The **Add-MsolAdministrativeUnitMember** cmdlet adds a member to an administrati
 ### Example 1: Add a member to an administrative unit
 
 ```
-PS C:\> $AdminstrativeUnit  = Get-MsolAdministrativeUnit -SearchString "West Coast"
+PS C:\> $AdministrativeUnit  = Get-MsolAdministrativeUnit -SearchString "West Coast"
 PS C:\> $User = Get-MsolUser -UserPrincipalName "davidchew@contoso.com"
-PS C:\> Add-MsolAdministrativeUnitMember -AdministrativeUnitObjectId $AdminstrativeUnit.ObjectId -AdministrativeUnitMemberObjectId $User.ObjectId
+PS C:\> Add-MsolAdministrativeUnitMember -AdministrativeUnitObjectId $AdministrativeUnit.ObjectId -AdministrativeUnitMemberObjectId $User.ObjectId
 ```
 
 The first command gets an administrative unit that matches a search string by using the [Get-MsolAdministrativeUnit](./Get-MsolAdministrativeUnit.md) cmdlet.
-The command stores the administrative unit in the $AdminstrativeUnit variable.
+The command stores the administrative unit in the $AdministrativeUnit variable.
 
 The second command gets a user for the user principal name davidchew@contoso.com by using the [Get-MsolUser](./Get-MsolUser.md) cmdlet.
 The command stores the user in the $User variable.
 
-The final command adds the user in $User to the administrative unit in $AdminstrativeUnit.
+The final command adds the user in $User to the administrative unit in $AdministrativeUnit.
 Both are identified by ObjectId.
 
 
