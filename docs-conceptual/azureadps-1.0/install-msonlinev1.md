@@ -2,6 +2,7 @@
 services: active-directory
 documentationcenter: ''
 title: 'Install MSOnline'
+description: Provides a guide on the installation steps for MSOnline PowerShell.
 ms.service: active-directory
 ms.workload: identity
 ms.tgt_pltfrm: na

@@ -1,7 +1,8 @@
 ---
 services: active-directory
 documentationcenter: ''
-title: 'Overview MSOnlie'
+title: 'Overview MSOnline'
+description: Provides a description and getting started information for MSOline PowerShell.
 ms.service: active-directory
 ms.workload: identity
 ms.tgt_pltfrm: na
@@ -12,7 +13,6 @@ ms.author: billmath
 ms.custom: posh-docs-conceptual
 
 ---
-
 
 # Azure ActiveDirectory (MSOnline)
 
@@ -73,7 +73,10 @@ Notepad c:\MsolHelp\msolcmdlets.txt
 
 Windows PowerShell is a task-based command-line shell and scripting language designed for system administration.
 Unlike most shells, which accept and return text, Windows PowerShell is built on top of the .NET Framework, and accepts and returns .NET Framework objects.
+
 Windows PowerShell introduces the concept of a cmdlet (pronounced "command-let"), a simple, single-function command-line tool built into the shell.
+
 Cmdlets have the following naming convention: a verb and noun separated by a dash (-), such as Get-Help, Get-Process, and Start-Service.
+
 Windows PowerShell includes more than one hundred basic core cmdlets.
 For more information about Windows PowerShell, see [Getting Started with Windows PowerShell](https://msdn.microsoft.com/powershell/scripting/getting-started/getting-started-with-windows-powershell).

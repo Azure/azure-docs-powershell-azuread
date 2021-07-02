@@ -1,7 +1,7 @@
 ---
 services: active-directory
 documentationcenter: ''
-title: 'Overview AzureAD'
+title: 'Azure AD PowerShell overview'
 ms.service: active-directory
 ms.workload: identity
 ms.tgt_pltfrm: na
