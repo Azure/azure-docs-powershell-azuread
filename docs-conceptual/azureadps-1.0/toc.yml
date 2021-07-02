@@ -1,5 +1,5 @@
 - name: Overview
   href: overview.md
   items:
-  - name: Install the MSonline module
+  - name: Install the MSOnline module
     href: install-msonlinev1.md
