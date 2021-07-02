@@ -45,7 +45,7 @@ This cmdlet returns the Scope role membership object:
 ## PARAMETERS
 
 ### -AdministrativeUnitObjectId
-Specifies the ID of an admininstrative unit.
+Specifies the ID of an administrative unit.
 
 ```yaml
 Type: String

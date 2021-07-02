@@ -46,7 +46,7 @@ This command gets the owners of an application.
 ## PARAMETERS
 
 ### -ObjectId
-Specifes the ID of an application in Azure Active Directory.
+Specifies the ID of an application in Azure Active Directory.
 
 ```yaml
 Type: String

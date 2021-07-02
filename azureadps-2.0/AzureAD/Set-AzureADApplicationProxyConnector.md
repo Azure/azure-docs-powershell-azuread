@@ -47,7 +47,7 @@ Accept wildcard characters: False
 ```
 
 ### -ConnectorGroupId
-The unique idenfier of the target application proxy connector group in Azure Active Directory.
+The unique identifer of the target application proxy connector group in Azure Active Directory.
 You can find this value using the Get-AzureAdApplicationProxyConnectorGroup command.
 
 ```yaml

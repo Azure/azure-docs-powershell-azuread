@@ -175,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-Specifeis the ID of a service principal in Azure AD.
+Specifies the ID of a service principal in Azure AD.
 
 ```yaml
 Type: String

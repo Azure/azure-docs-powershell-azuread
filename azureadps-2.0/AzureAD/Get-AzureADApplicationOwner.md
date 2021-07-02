@@ -51,7 +51,7 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-Specifes the ID of an application in Azure Active Directory.
+Specifies the ID of an application in Azure Active Directory.
 
 ```yaml
 Type: String

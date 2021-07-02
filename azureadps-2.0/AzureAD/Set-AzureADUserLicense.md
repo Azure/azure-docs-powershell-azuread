@@ -41,7 +41,7 @@ The third command creates an AssignedLicense type, and then stores it in the $Li
 
 The fourth command set the SkuId property of $License to the same value as the SkuId property of $LicensedUser.
 
-The fifth commmand creates an AssignedLicenses object, and stores it in the $Licenses variable.
+The fifth command creates an AssignedLicenses object, and stores it in the $Licenses variable.
 
 The sixth command adds the license in $License to $Licenses.
 

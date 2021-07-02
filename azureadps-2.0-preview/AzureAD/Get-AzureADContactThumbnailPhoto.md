@@ -94,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -View
-If this parameter value is set to $Ture, display the retrieved thumbnail poto in a new window
+If this parameter value is set to $True, display the retrieved thumbnail photo in a new window
 
 ```yaml
 Type: Boolean
