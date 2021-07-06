@@ -2,6 +2,7 @@
 services: active-directory
 documentationcenter: ''
 title: 'Install AzureAD PowerShell for Graph'
+description: This provides a guide on the installation process of the Azure AD PowerShell module.
 ms.service: active-directory
 ms.workload: identity
 ms.tgt_pltfrm: na
@@ -22,7 +23,7 @@ The Azure AD PowerShell for Graph General Availability module can be downloaded 
 
 ## Azure Active Directory PowerShell for Graph release version history
 
-The release history for the Azure AD module and the Azure AD Preview module is here: https://docs.microsoft.com/powershell/azure/active-directory/ad-pshell-v2-version-history
+The release history for the Azure AD module and the Azure AD Preview module is here:[azure active directory powershell for graph: version release history](ad-pshell-v2-version-history.md).
 
 ## Installing the Azure AD Module
 

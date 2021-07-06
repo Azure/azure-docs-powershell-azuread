@@ -2,6 +2,7 @@
 services: active-directory
 documentationcenter: ''
 title: 'Install MSOnline'
+description: Provides a guide on the installation steps for MSOnline PowerShell.
 ms.service: active-directory
 ms.workload: identity
 ms.tgt_pltfrm: na
@@ -17,7 +18,7 @@ ms.reviewer: rodejo
 You can use the Azure Active Directory Module for Windows PowerShell cmdlets for Azure AD administrative tasks such as user management, domain management and for configuring single sign-on.
 This topic includes information about how to install these cmdlets for use with your directory.
 
-Please note that we will begin to deprecate this module when the functionality of this module is available in the newer [Azure Active Directory PowerShell for Graph](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory) module. We advise customers who are creating new PowerShell scripts to use the newer module instead of this module.
+Please note that we will begin to deprecate this module when the functionality of this module is available in the newer [Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2?view=azureadps-2.0&preserve-view=true) module. We advise customers who are creating new PowerShell scripts to use the newer module instead of this module.
 
 
 ## Install the Azure AD Module
@@ -37,7 +38,7 @@ The MSOnline Public Preview release 1.1.130.0 is no longer available for downloa
 Install-Module AzureADPreview
 ```
  
-Note that the MSOL Settings cmdlets have been given a new name, more information about these cmdlets and how to use them can be found in [this article](https://docs.microsoft.com/azure/active-directory/active-directory-accessmanagement-groups-settings-cmdlets).
+Note that the MSOL Settings cmdlets have been given a new name, more information about these cmdlets and how to use them can be found in [this article](/azure/active-directory/active-directory-accessmanagement-groups-settings-cmdlets).
  
 **Important**
 
