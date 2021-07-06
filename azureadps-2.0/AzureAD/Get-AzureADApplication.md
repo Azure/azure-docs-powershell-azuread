@@ -45,20 +45,25 @@ This command gets an application by its display name.
 
 ### Example 2: Get an application by ID
 ```
-PS C:\>Get-AzureADApplication -Filter "AppId eq 'ed192e92-84d4-4baf-997d-1e190a81f28e'"
+PS C:\>Get-AzureADApplication -Filter "AppId eq '421599eb-eed7-4988-9b31-02b43a4d37b8'"
+
+ObjectId                             AppId                                DisplayName     
+--------                             -----                                -----------
+ed192e92-84d4-4baf-997d-1e190a81f28e 421599eb-eed7-4988-9b31-02b43a4d37b8 MyNewApp
 ```
 
 This command gets an application by its ID.
 
-Output:
-
-ObjectId                             AppId                                DisplayName     --------                             -----                                -----------
-ed192e92-84d4-4baf-997d-1e190a81f28e 36ee4c6c-0812-40a2-b820-b22ebd02bce3 MyNewApp
-
 ### Retrieve an application by identifierUris
 ```
 Get-AzureADApplication -Filter "identifierUris/any(uri:uri eq 'http://wingtips.wingtiptoysonline.com')"
+
+ObjectId                             AppId                                DisplayName     
+--------                             -----                                -----------
+9393a401-bc8a-41a9-8f20-6b073d247b17 29ee07a3-df6e-4660-a32f-918ea550f235 Wingtips Online
 ```
+
+This command gets an application by its identifierUris.
 
 ## PARAMETERS
 
