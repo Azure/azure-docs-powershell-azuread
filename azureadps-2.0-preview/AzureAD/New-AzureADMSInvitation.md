@@ -66,7 +66,7 @@ Accept wildcard characters: False
 ```
 
 ### -InvitedUserMessageInfo
-Addition information to specify how the invitation message is sent
+Information to specify how the invitation message is sent.
 
 ```yaml
 Type: InvitedUserMessageInfo
