@@ -3,7 +3,8 @@ title: 'AzureAD overview'
 description: This is an introduction to Azure AD PowerShell.
 services: active-directory
 documentationcenter: ''
-
+title: 'Azure AD PowerShell overview'
+description: An introduction to the Azure AD PowerShell module.
 ms.service: active-directory
 ms.workload: identity
 ms.tgt_pltfrm: na
@@ -19,9 +20,7 @@ ms.reviewer: rodejo
 Windows PowerShell is a task-based command-line shell and scripting language designed for system administration.
 Unlike most shells, which accept and return text, Windows PowerShell is built on top of the .NET Framework, and accepts and returns .NET Framework objects.
 
-Windows PowerShell introduces the concept of a cmdlet (pronounced "command-let"), a simple, single-function command-line tool built into the shell.
-Cmdlets have the following naming convention: a verb and noun separated by a dash (-), such as **Get-Help**, **Get-Process**, and **Start-Service**.
-Windows PowerShell includes more than one hundred basic core cmdlets.
+If you are developing new PowerShell scripts with Azure AD cmdlets we advise you to use the newer [Azure Active Directory PowerShell for Graph cmdlets](/powershell/module/azuread?view=azureadps-2.0&preserve-view=true).
 
 For more information about, or for the syntax of, any of the cmdlets, use the `Get-Help <cmdlet name>` command, where `<cmdlet name>` is the name of the cmdlet that you want to research.
 For more detailed information, you can run any of the following commands:
@@ -40,8 +39,4 @@ Module | Description
 ------ | -----------
 [AzureAD](/powershell/module/azuread?view=azureadps-2.0&preserve-view=true) | Azure Active Directory PowerShell for Graph
 [MSOnline](/powershell/module/msonline?view=azureadps-1.0&preserve-view=true)| MSOnline PowerShell
-
-## Next steps
-- For more information about Windows PowerShell, see the  [Getting Started with Windows PowerShell](https://msdn.microsoft.com/powershell/scripting/getting-started/getting-started-with-windows-powershell).
-- [Install Azure Active Directory PowerShell for Graph](install-adv2.md).
 

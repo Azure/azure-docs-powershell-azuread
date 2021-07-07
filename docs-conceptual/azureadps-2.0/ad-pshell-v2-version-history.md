@@ -331,6 +331,8 @@ The following new cmdlets were added to the AzureADPreview module:
 - `Set-AzureADMSPrivilegedRoleAssignmentRequest`
 - `Set-AzureADMSPrivilegedRoleSetting`
 
+Read more about [Azure AD Privileged Role management](/azure/active-directory/privileged-identity-management/).
+
 #### Trust Framework Policy Management
 
 - `New-AzureADMSTrustFrameworkPolicy`
@@ -338,10 +340,14 @@ The following new cmdlets were added to the AzureADPreview module:
 - `Remove-AzureADMSTrustFrameworkPolicy`
 - `Set-AzureADMSTrustFrameworkPolicy`
 
+Read more about the [B2C Trust Framework policies](/azure/active-directory-b2c/active-directory-b2c-reference-trustframeworks-defined-ief-custom).
+
 #### Directory Auditing
 
 - `Get-AzureADAuditDirectoryLogs`
 - `Get-AzureADAuditSignInLogs`
+
+Read more about [Azure AD directory auditing](/azure/active-directory/reports-monitoring/).
 
 ## 2.0.2.17 Public Preview release of the AzureADPreview module
 ### Release status

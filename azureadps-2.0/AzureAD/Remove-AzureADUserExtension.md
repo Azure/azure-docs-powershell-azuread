@@ -30,10 +30,10 @@ The Remove-AzureADUserExtension cmdlet removes a user extension from Azure Activ
 
 ### Example 1
 ```powershell
-PS C:\> {{ Add example code here }}
+PS C:\> Remove-AzureADUserExtension -ObjectId TestUser@example.com -ExtensionName "Test Extension"
 ```
 
-{{ Add example description here }}
+This will remove the "Test Extension" attribute from user: TestUser@example.com.
 
 ## PARAMETERS
 
