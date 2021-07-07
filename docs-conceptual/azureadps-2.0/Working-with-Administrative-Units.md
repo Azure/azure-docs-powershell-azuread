@@ -100,7 +100,7 @@ Get-AzureADAdministrativeUnitMember -ObjectId $eastCoastAU.ObjectId | Get-AzureA
 ### Get list of available roles
 $admins = Get-AzureADDirectoryRole
 foreach($i in $admins) {
-    if($i.DisplayName -eq "User Account Administrator") {
+    if($i.DisplayName -eq "User Administrator") {
         $uaAdmin = $i
         }
     if($i.DisplayName -eq "Helpdesk Administrator") {
@@ -199,7 +199,7 @@ Connect-AzureAD
 ### Get roles used in demo
 $admins = Get-AzureADDirectoryRole
 foreach($i in $admins) {
-    if($i.DisplayName -eq "User Account Administrator") {
+    if($i.DisplayName -eq "User Administrator") {
         $uaadmin = $i
         }
     if($i.DisplayName -eq "Helpdesk Administrator") {
