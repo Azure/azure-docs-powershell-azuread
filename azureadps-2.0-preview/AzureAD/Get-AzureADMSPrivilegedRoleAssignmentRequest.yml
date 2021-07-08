@@ -1,0 +1,84 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Get role assignment request for a specific resource
+module: AzureADPreview
+notes: ""
+inputs:
+- name: <xref href="System.String" data-throw-if-not-resolved="False" />
+  description: ""
+- name: <xref href="System.Nullable`1" data-throw-if-not-resolved="False" /><span>[</span><xref href="" data-throw-if-not-resolved="False" /><span>[</span><xref href="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" data-throw-if-not-resolved="False" /><span>]</span><span>]</span>
+  description: ""
+outputs:
+- name: <xref href="System.Object" data-throw-if-not-resolved="False" />
+  description: ""
+syntaxes:
+- >-
+  Get-AzureADMSPrivilegedRoleAssignmentRequest -ProviderId <String> [-Top <Int32>] [-Filter <String>]
+
+   [<CommonParameters>]
+- Get-AzureADMSPrivilegedRoleAssignmentRequest -ProviderId <String> -Id <String> [<CommonParameters>]
+examples:
+- title: Example 1
+  code: |-
+    PS C:\> Get-AzureADMSPrivilegedRoleAssignmentRequest -ProviderId AzureResources -Filter "ResourceId eq 'e5e7d29d-5465-45ac-885f-4716a5ee74b5'"
+  description: |-
+    Get all role assigment requests for a specific provider and resource
+  summary: ""
+- title: Example 2
+  code: |-
+    PS C:\> Get-AzureADMSPrivilegedRoleAssignmentRequest -ProviderId AzureResources -Id 247438d7-fc8d-4354-a737-4898a4019a95
+  description: |-
+    Get a role assigment requests for a specific provider and Id
+  summary: ""
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Filter
+  description: |+
+    The Odata query
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  isRequired: true
+  description: |+
+    The unique identifier of the specific role assignment request
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ProviderId
+  isRequired: true
+  description: |+
+    The unique identifier of the specific provider
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Top
+  description: |+
+    The top count
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: AzureADPreview.Get-AzureADMSPrivilegedRoleAssignmentRequest
+name: Get-AzureADMSPrivilegedRoleAssignmentRequest
+description: |-
+  Get role assignment request for a specific resource
+metadata:
+  external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
+  Module Name: AzureADPreview
+  online version: ""
+  schema: 2.0.0

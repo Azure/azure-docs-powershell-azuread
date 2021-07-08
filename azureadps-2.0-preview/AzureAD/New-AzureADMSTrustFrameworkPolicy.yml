@@ -1,0 +1,92 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  This cmdlet is used to create a trust framework policy (custom policy) in the directory.
+module: AzureADPreview
+notes: ""
+inputs:
+- name: <xref href="System.String" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="System.Object" data-throw-if-not-resolved="False" />
+  description: ""
+syntaxes:
+- New-AzureADMSTrustFrameworkPolicy [-OutputFilePath <String>] -Content <String> [<CommonParameters>]
+- New-AzureADMSTrustFrameworkPolicy -InputFilePath <String> [-OutputFilePath <String>] [<CommonParameters>]
+examples:
+- title: Example 1
+  code: |-
+    PS C:\> New-AzureADMSTrustFrameworkPolicy -Content $policyContent
+  description: |-
+    The example creates a trust framework policy from the content specified.
+
+    The contents of newly created trust framework policy are displayed on screen.
+  summary: ""
+- title: Example 2
+  code: |-
+    PS C:\> New-AzureADMSTrustFrameworkPolicy -Content $policyContent -OutputFilePath C:\CreatedPolicy.xml
+  description: |-
+    The example creates a trust framework policy from the content specified.
+
+    The contents of newly created trust framework policy are written to file mentioned in output file path.
+  summary: ""
+- title: Example 3
+  code: |-
+    PS C:\> New-AzureADMSTrustFrameworkPolicy -InputFilePath C:\InputPolicy.xml -OutputFilePath C:\CreatedPolicy.xml
+  description: |-
+    The example creates a trust framework policy from the file mentioned in InputFilePath.
+
+    The contents of newly created trust framework policy are written to file mentioned in output file path.
+  summary: ""
+- title: Example 4
+  code: |-
+    PS C:\> New-AzureADMSTrustFrameworkPolicy -InputFilePath C:\InputPolicy.xml
+  description: |-
+    The example creates a trust framework policy from the file mentioned in InputFilePath.
+
+    The contents of newly created trust framework policy are displayed on screen.
+  summary: ""
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Content
+  isRequired: true
+  description: |+
+    The content of the trust framework policy to be created.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: InputFilePath
+  isRequired: true
+  description: |+
+    Path to the file used for reading the contents of trust framework policy to be created.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: OutputFilePath
+  description: |+
+    Path to the file used for writing the contents of newly created trust framework policy.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: AzureADPreview.New-AzureADMSTrustFrameworkPolicy
+name: New-AzureADMSTrustFrameworkPolicy
+description: |-
+  This cmdlet is used to create a trust framework policy in the directory.
+
+  The contents of the trust framework policy to be created can be provided using a file or a command line variable.
+
+  The contents of the created trust framework policy can be written to an output file or to the screen.
+metadata:
+  external help file: Microsoft.Open.MS.GraphBeta.PowerShell.Custom.dll-Help.xml
+  Module Name: AzureADPreview
+  online version: ""
+  schema: 2.0.0

@@ -1,0 +1,102 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Allows an admin to create the policy for cloud authentication roll-out in Azure AD.
+module: AzureADPreview
+notes: ""
+outputs:
+- name: <xref href="Microsoft.Online.Administration.MsFeatureRolloutPolicy" data-throw-if-not-resolved="False" />
+  description: ""
+syntaxes:
+- >-
+  New-AzureADMSFeatureRolloutPolicy -Feature <FeatureEnum> -DisplayName <String> [-Description <String>]
+
+   -IsEnabled <Boolean> [-IsAppliedToOrganization <Boolean>]
+
+   [-AppliesTo <System.Collections.Generic.List`1[Microsoft.Open.MSGraph.Model.MsDirectoryObject]>]
+
+   [<CommonParameters>]
+examples:
+- title: 'Example 1: Creates the policy for cloud authentication roll-out in Azure AD.'
+  code: |-
+    PS C:\> New-AzureADMSFeatureRolloutPolicy -Feature PassthroughAuthentication -DisplayName "Passthrough Authentication Rollout Policy" -IsEnabled $true
+
+              Feature                 : PassthroughAuthentication
+              Id                      : 7ca3e599-e8cc-4d31-9ed6-19dd4f88e833
+              DisplayName             : Passthrough Authentication Rollout Policy
+              Description             :
+              IsEnabled               : True
+              IsAppliedToOrganization : False
+              AppliesTo               :
+  description: |-
+    This command creates the policy for cloud authentication roll-out in Azure AD.
+  summary: ""
+parameters:
+- type: <xref href="System.Collections.Generic.List`1" data-throw-if-not-resolved="False" /><span>[</span><xref href="Microsoft.Open.MSGraph.Model.MsDirectoryObject" data-throw-if-not-resolved="False" /><span>]</span>
+  name: AppliesTo
+  description: |+
+    Specifies a list of Azure AD objects that is assigned to the feature.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Description
+  description: |+
+    Specifies the description of the cloud authentication roll-out policy.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: DisplayName
+  isRequired: true
+  description: |+
+    Specifies the display name of the cloud authentication roll-out policy.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="FeatureEnum" data-throw-if-not-resolved="False" />
+  name: Feature
+  isRequired: true
+  description: |+
+    Specifies a feature assigned to the cloud authentication roll-out policy.
+
+    Currently, you can assign PassthroughAuthentication | SeamlessSso | PasswordHashSync.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Boolean" data-throw-if-not-resolved="False" />
+  name: IsAppliedToOrganization
+  description: |+
+    Specifies if the cloud authentication roll-out policy applied to the entire organization.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Boolean" data-throw-if-not-resolved="False" />
+  name: IsEnabled
+  isRequired: true
+  description: |+
+    Specifies the status of cloud authentication roll-out policy.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: AzureADPreview.New-AzureADMSFeatureRolloutPolicy
+name: New-AzureADMSFeatureRolloutPolicy
+description: |-
+  This cmdlet allows an admin to create the policy for cloud authentication roll-out (users moving from federation to cloud auth) in Azure AD.
+  The policy admin can identify whether the users will authenticate using password hashes in Azure AD (Password hash-sync) or Active Directory on-premises directly (Pass-through authentication).
+metadata:
+  external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
+  Module Name: AzureADPreview
+  online version: ""
+  schema: 2.0.0

@@ -1,0 +1,54 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  The Set-AzureADApplicationProxyConnectorGroup cmdlet allows you to change the name of a given Application Proxy connector group.
+module: AzureAD
+notes: ""
+inputs:
+- name: <xref href="System.String" data-throw-if-not-resolved="False" />
+  description: |-
+    Microsoft.Open.MSGraph.Model.Name
+outputs:
+- name: <xref href="System.Object" data-throw-if-not-resolved="False" />
+  description: ""
+syntaxes:
+- Set-AzureADApplicationProxyConnectorGroup -Id <String> -Name <Name> [<CommonParameters>]
+examples:
+- title: Example 1
+  code: |-
+    PS C:\> Set-AzureADApplicationProxyConnectorGroup -Id d533d7b1-fd92-49e8-a200-3e7dcf7c2ab5 -Name "Offsite Application Servers"
+  description: |-
+    Example 1: Rename a Connector Group to "Offsite Application Servers"
+  summary: ""
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  isRequired: true
+  description: |+
+    The unique identifier of the Connector group that will be renamed.
+    You can find the Id using the Get-AzureADApplicationProxyConnectorGroup command.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Name" data-throw-if-not-resolved="False" />
+  name: Name
+  isRequired: true
+  description: |+
+    The new name for the Connector group.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: AzureAD.Set-AzureADApplicationProxyConnectorGroup
+name: Set-AzureADApplicationProxyConnectorGroup
+description: |-
+  The Set-AzureADApplicationProxyConnectorGroup cmdlet allows you to change the name of a given Application Proxy connector group.
+metadata:
+  external help file: Microsoft.Open.MS.GraphV10.PowerShell.dll-Help.xml
+  Module Name: AzureAD
+  online version: ""
+  schema: 2.0.0

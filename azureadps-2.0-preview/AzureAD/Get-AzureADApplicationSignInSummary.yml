@@ -1,0 +1,65 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Get signin summary by last number of days
+module: AzureADPreview
+notes: ""
+outputs:
+- name: <xref href="Microsoft.Online.Administration.GetApplicationSignInSummaryObjectsResponse" data-throw-if-not-resolved="False" />
+  description: ""
+syntaxes:
+- Get-AzureADApplicationSignInSummary -Days <Int32> [-Top <Int32>] [-Filter <String>] [<CommonParameters>]
+examples:
+- title: 'Example 1: Get sign in summary by application for the last week'
+  code: |-
+    PS C:\>Get-AzureADApplicationSignInSummary -Days 7 -Filter "appDisplayName eq 'Graph Explorer'"
+  description: |-
+    This command gets a summary of all sign ins to Graph Explorer for the last 7 days.
+  summary: ""
+- title: 'Example 2: Get sign in summaries for the last month'
+  code: |-
+    PS C:\>Get-AzureADApplicationSignInSummary -Days 30
+  description: |-
+    This command gets summaries for all sign ins from the past 30 days.
+  summary: ""
+parameters:
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Days
+  isRequired: true
+  description: |+
+    Number of past days summary will contain.
+    Valid values are 7 and 30
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Filter
+  description: |+
+    {{ Fill Filter Description }}
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Top
+  description: |+
+    {{ Fill Top Description }}
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: AzureADPreview.Get-AzureADApplicationSignInSummary
+name: Get-AzureADApplicationSignInSummary
+description: |-
+  The Get-AzureADApplicationSignInSummary cmdlet gets sign in summaries for the last 7 or 30 days.
+metadata:
+  external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
+  Module Name: AzureADPreview
+  online version: ""
+  schema: 2.0.0

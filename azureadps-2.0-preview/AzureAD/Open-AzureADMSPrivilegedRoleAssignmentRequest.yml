@@ -1,0 +1,126 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Create a role assignment request
+module: AzureADPreview
+notes: ""
+inputs:
+- name: <xref href="System.String" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="System.Object" data-throw-if-not-resolved="False" />
+  description: ""
+syntaxes:
+- >-
+  Open-AzureADMSPrivilegedRoleAssignmentRequest -ProviderId <String> -ResourceId <String>
+
+   -RoleDefinitionId <String> -SubjectId <String> -Type <String> -AssignmentState <String>
+
+   -Schedule <AzureADMSPrivilegedSchedule> [-Reason <String>] [<CommonParameters>]
+examples:
+- title: Example 1
+  code: |-
+    PS C:\> $schedule = New-Object Microsoft.Open.MSGraph.Model.AzureADMSPrivilegedSchedule
+    				  PS C:\> $schedule.Type = "Once"
+    				  PS C:\> $schedule.StartDateTime = "2019-04-26T20:49:11.770Z"
+    				  PS C:\> $schedule.endDateTime = "2019-07-25T20:49:11.770Z"
+    				  PS C:\> Open-AzureADMSPrivilegedRoleAssignmentRequest -ProviderId AzureResources -Schedule $schedule -ResourceId "e5e7d29d-5465-45ac-885f-4716a5ee74b5" -RoleDefinitionId "9f8c1837-f885-4dfd-9a75-990f9222b21d" -SubjectId "a25004a3-eceb-4ad4-b4aa-9485356bc55b" -AssignmentState "Eligible" -Type "AdminAdd"
+  description: |-
+    Create a role assignment request
+  summary: ""
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: AssignmentState
+  isRequired: true
+  description: |+
+    The state of assignment.
+    The value can be Eligible and Active.
+    Required.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ProviderId
+  isRequired: true
+  description: |+
+    The unique identifier of the specific provider
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Reason
+  description: |+
+    The reason needs to be provided for the role assignment request for audit and review purpose.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ResourceId
+  isRequired: true
+  description: |+
+    The unique identifier of the specific resource
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: RoleDefinitionId
+  isRequired: true
+  description: |+
+    The ID of the role definition.
+    Required.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="AzureADMSPrivilegedSchedule" data-throw-if-not-resolved="False" />
+  name: Schedule
+  isRequired: true
+  description: |+
+    The schedule of the role assignment request.
+    For request type of UserAdd, AdminAdd, AdminUpdate, and AdminExtend, it is required.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: SubjectId
+  isRequired: true
+  description: |+
+    The ID of the subject.
+    Required.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Type
+  isRequired: true
+  description: |+
+    The request type.
+    The value can be AdminAdd, UserAdd, AdminUpdate, AdminRemove, UserRemove, UserExtend, UserRenew, AdminRenewand AdminExtend.
+    Required.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: AzureADPreview.Open-AzureADMSPrivilegedRoleAssignmentRequest
+name: Open-AzureADMSPrivilegedRoleAssignmentRequest
+description: |-
+  Create a role assignment request
+metadata:
+  external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
+  Module Name: AzureADPreview
+  online version: ""
+  schema: 2.0.0

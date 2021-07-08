@@ -1,0 +1,264 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Connects with an authenticated account to use Active Directory cmdlet requests.
+module: AzureADPreview
+notes: ""
+links:
+- text: Disconnet-AzureAD
+  href: ./Disconnect-AzureAD.yml
+syntaxes:
+- >-
+  Connect-AzureAD [-AzureEnvironmentName <EnvironmentName>] [-TenantId <String>] [-Credential <PSCredential>]
+
+   [-AccountId <String>] [-LogLevel <LogLevel>] [-LogFilePath <String>] [-InformationAction <ActionPreference>]
+
+   [-InformationVariable <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  Connect-AzureAD [-AzureEnvironmentName <EnvironmentName>] -TenantId <String> -CertificateThumbprint <String>
+
+   -ApplicationId <String> [-LogLevel <LogLevel>] [-LogFilePath <String>] [-InformationAction <ActionPreference>]
+
+   [-InformationVariable <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  Connect-AzureAD [-AzureEnvironmentName <EnvironmentName>] [-TenantId <String>] -AadAccessToken <String>
+
+   [-MsAccessToken <String>] -AccountId <String> [-LogLevel <LogLevel>] [-LogFilePath <String>]
+
+   [-InformationAction <ActionPreference>] [-InformationVariable <String>] [-WhatIf] [-Confirm]
+
+   [<CommonParameters>]
+examples:
+- title: 'Example 1: Connect a PowerShell session to a tenant'
+  code: |-
+    PS C:\> Connect-AzureAD -Confirm
+  description: |-
+    This command connects the current PowerShell session to an Azure Active Directory tenant.
+    The command prompts you for a username and password for the tenant you want to connect to.
+    The *Confirm* parameter prompts you for confirmation. 
+
+    If multi-factor authentication is enabled for your credentials, you must log in using the interactive option or use service principal authentication.
+  summary: ""
+- title: 'Example 2: Connect a session using a variable'
+  code: |-
+    PS C:\> $Credential = Get-Credential
+    PS C:\> Connect-AzureAD -Credential $Credential
+  description: |-
+    The first command gets the user credentials, and then stores them in the $Credential variable.
+
+    The second command connects the current PowerShell session using the credentials in $Credential.
+
+    This account authenticates with Azure Active Directory using organizational ID credentials.
+    You cannot use multi-factor authentication or Microsoft account credentials to run Azure Active Directory cmdlets with this account.
+  summary: ""
+- title: 'Example 3: Connect a session as a service principal'
+  code: |-
+    # Login to Azure AD PowerShell With Admin Account
+    Connect-AzureAD 
+
+    # Create the self signed cert
+    $currentDate = Get-Date
+    $endDate = $currentDate.AddYears(1)
+    $notAfter = $endDate.AddYears(1)
+    $pwd = "<password>"
+    $thumb = (New-SelfSignedCertificate -CertStoreLocation cert:\localmachine\my -DnsName com.foo.bar -KeyExportPolicy Exportable -Provider "Microsoft Enhanced RSA and AES Cryptographic Provider" -NotAfter $notAfter).Thumbprint
+    $pwd = ConvertTo-SecureString -String $pwd -Force -AsPlainText
+    Export-PfxCertificate -cert "cert:\localmachine\my\$thumb" -FilePath c:\temp\examplecert.pfx -Password $pwd
+
+    # Load the certificate
+    $cert = New-Object System.Security.Cryptography.X509Certificates.X509Certificate("C:\temp\examplecert.pfx", $pwd)
+    $keyValue = [System.Convert]::ToBase64String($cert.GetRawCertData())
+
+
+    # Create the Azure Active Directory Application
+    $application = New-AzureADApplication -DisplayName "test123" -IdentifierUris "https://test123"
+    New-AzureADApplicationKeyCredential -ObjectId $application.ObjectId -CustomKeyIdentifier "Test123" -StartDate $currentDate -EndDate $endDate -Type AsymmetricX509Cert -Usage Verify -Value $keyValue
+
+    # Create the Service Principal and connect it to the Application
+    $sp=New-AzureADServicePrincipal -AppId $application.AppId
+
+    # Give the Service Principal Reader access to the current tenant (Get-AzureADDirectoryRole)
+    Add-AzureADDirectoryRoleMember -ObjectId 5997d714-c3b5-4d5b-9973-ec2f38fd49d5 -RefObjectId $sp.ObjectId
+
+    # Get Tenant Detail
+    $tenant=Get-AzureADTenantDetail
+    # Now you can login to Azure PowerShell with your Service Principal and Certificate
+    Connect-AzureAD -TenantId $tenant.ObjectId -ApplicationId  $sp.AppId -CertificateThumbprint $thumb
+  description: |-
+    This command authenticates the user to Azure Active Directory as a service principal.
+  summary: ""
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: AadAccessToken
+  isRequired: true
+  description: |+
+    Specifies a Azure Active Directory Graph access token.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: AccountId
+  isRequired: true
+  description: |+
+    Specifies the ID of an account. You must specify the UPN of the user when authenticating with a user access token.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ApplicationId
+  isRequired: true
+  description: |+
+    Specifies the application ID of the service principal.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="EnvironmentName" data-throw-if-not-resolved="False" />
+  name: AzureEnvironmentName
+  description: |+
+    Specifies the name of the Azure environment. The acceptable values for this parameter are: 
+
+    - AzureCloud
+    - AzureChinaCloud
+    - AzureUSGovernment 
+    - AzureGermanyCloud
+
+    The default value is AzureCloud.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: CertificateThumbprint
+  isRequired: true
+  description: |+
+    Specifies the certificate thumbprint of a digital public key X.509 certificate of a user account that has permission to perform this action. 
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: "False"
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="PSCredential" data-throw-if-not-resolved="False" />
+  name: Credential
+  description: |+
+    Specifies a **PSCredential** object.
+    For more information about the **PSCredential** object, type Get-Help Get-Credential.
+
+    The **PSCredential** object provides the user ID and password for organizational ID credentials.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="ActionPreference" data-throw-if-not-resolved="False" />
+  name: InformationAction
+  description: |+
+    Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
+
+    - Continue
+    - Ignore
+    - Inquire
+    - SilentlyContinue
+    - Stop
+    - Suspend
+
+  defaultValue: None
+  position: Named
+  aliases: infa
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: InformationVariable
+  description: |+
+    Specifies a variable in which to store an information event message.
+
+  defaultValue: None
+  position: Named
+  aliases: iv
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: LogFilePath
+  description: |+
+    The path where the log file for this PowerShell session is written to. Provide a value here if you need to deviate from the default PowerShell log file location.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="LogLevel" data-throw-if-not-resolved="False" />
+  name: LogLevel
+  description: |+
+    Specifies the log level. The accdeptable values for this parameter are: 
+
+    - Info
+    - Error
+    - Warning
+    - None
+
+    The default value is Info.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: MsAccessToken
+  description: |+
+    Specifies a Microsoft Graph access token.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: TenantId
+  isRequired: true
+  description: |+
+    Specifies the ID of a tenant.
+
+    If you do not specify this parameter, the account is authenticated with the home tenant.
+
+    You must specify the *TenantId* parameter to authenticate as a service principal or when using Microsoft account.
+
+  defaultValue: None
+  position: Named
+  aliases: Domain, TenantDomain
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+
+  defaultValue: "False"
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: AzureADPreview.Connect-AzureAD
+name: Connect-AzureAD
+description: |-
+  The **Connect-AzureAD** cmdlet connects an authenticated account to use for Azure Active Directory cmdlet requests.
+
+  You can use this authenticated account only with Azure Active Directory cmdlets.
+metadata:
+  external help file: Microsoft.Open.Azure.AD.CommonLibrary.dll-Help.xml
+  Module Name: AzureADPreview
+  ms.assetid: A5EF9C25-E0D9-432F-A528-81534A01F444
+  ms.custom: iamfeature=PowerShell
+  ms.reviewer: rodejo
+  online version: ""
+  schema: 2.0.0

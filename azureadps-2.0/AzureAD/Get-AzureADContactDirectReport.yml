@@ -1,0 +1,59 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Get the direct reports for a contact.
+module: AzureAD
+notes: ""
+syntaxes:
+- Get-AzureADContactDirectReport -ObjectId <String> [-All <Boolean>] [-Top <Int32>] [<CommonParameters>]
+examples:
+- title: 'Example 1: Get the direct reports of a contact'
+  code: |-
+    PS C:\> $Contact = Get-AzureADContact -Top 1
+    PS C:\> Get-AzureADContactDirectReport -ObjectId $Contact.ObjectId
+  description: |-
+    The first command gets a contact by using the Get-AzureADContact (./Get-AzureADContact.md)cmdlet, and then stores it in the $Contact variable.
+
+    The second command gets the direct reports for $Contact.
+  summary: ""
+parameters:
+- type: <xref href="Boolean" data-throw-if-not-resolved="False" />
+  name: All
+  description: |+
+    If true, return all direct reports.
+    If false, return the number of objects specified by the Top parameter
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ObjectId
+  isRequired: true
+  description: |+
+    Specifies the ID of a contact in Azure Active Directory.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Top
+  description: |+
+    Specifies the maximum number of records to return.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: AzureAD.Get-AzureADContactDirectReport
+name: Get-AzureADContactDirectReport
+description: |-
+  The Get-AzureADContactDirectReport cmdlet gets the direct reports for a contact.
+metadata:
+  external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+  Module Name: AzureAD
+  online version: ""
+  schema: 2.0.0

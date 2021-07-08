@@ -1,0 +1,66 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Gets a member of a group.
+module: AzureADPreview
+notes: ""
+links:
+- text: Add-AzureADGroupMember
+  href: ./Add-AzureADGroupMember.yml
+- text: Remove-AzureADGroupMember
+  href: ./Remove-AzureADGroupMember.yml
+syntaxes:
+- Get-AzureADGroupMember -ObjectId <String> [-All <Boolean>] [-Top <Int32>] [<CommonParameters>]
+examples:
+- title: 'Example 1: Get a group member by ID'
+  code: |-
+    PS C:\>Get-AzureADGroupMember -ObjectId "62438306-7c37-4638-a72d-0ee8d9217680"
+
+    ObjectId                             ObjectType
+    --------                             ----------
+    0a1068c0-dbb6-4537-9db3-b48f3e31dd76 User
+  description: ""
+  summary: ""
+parameters:
+- type: <xref href="Boolean" data-throw-if-not-resolved="False" />
+  name: All
+  description: |+
+    If true, return all group members. If false, return the number of objects specified by the Top parameter
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ObjectId
+  isRequired: true
+  description: |+
+    Specifies the ID of a group in Azure AD.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Top
+  description: |+
+    Specifies the maximum number of records to return.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: AzureADPreview.Get-AzureADGroupMember
+name: Get-AzureADGroupMember
+description: |-
+  The **Get-AzureADGroupMember** cmdlet gets a member of a group in Azure Active Directory (AD).
+metadata:
+  external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+  Module Name: AzureADPreview
+  ms.assetid: 8212C7A5-3AA7-4E28-9F0C-D0C97F8AC08E
+  ms.custom: iamfeature=PowerShell
+  ms.reviewer: rodejo
+  online version: ""
+  schema: 2.0.0

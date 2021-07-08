@@ -1,0 +1,44 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  The Remove-AzureADApplicationProxyApplicationConnectorGroup cmdlet sets the connector group assigned for the specified application to 'Default' and removes the current assignment.
+module: AzureAD
+notes: ""
+inputs:
+- name: <xref href="System.String" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="System.Object" data-throw-if-not-resolved="False" />
+  description: ""
+syntaxes:
+- Remove-AzureADApplicationProxyApplicationConnectorGroup -ObjectId <String> [<CommonParameters>]
+examples:
+- title: Example 1
+  code: |-
+    PS C:\> Remove-AzureADApplicationProxyApplicationConnectorGroup -ObjectId 59462d3c-a1bc-40a0-9bed-be799357ebce
+  description: |-
+    Example 1: Remove the Connector Group associated with an application, setting the group to 'Default'
+  summary: ""
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ObjectId
+  isRequired: true
+  description: |+
+    The unique application Id of the application.
+    This can be found using the Get-AzureADApplication command.
+    You can also find this in the Azure Portal by navigating to AAD, Enterprise Applications, All Applications, Select your application, go to the properties tab, and use the ObjectId on that page.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: AzureAD.Remove-AzureADApplicationProxyApplicationConnectorGroup
+name: Remove-AzureADApplicationProxyApplicationConnectorGroup
+description: |-
+  If your application is already in the 'Default' group, you will see an error because the application cannot be removed from the 'Default' group unless it is being added to another group.
+  The application must be configured for Application Proxy in Azure Active Directory (AD).
+metadata:
+  external help file: Microsoft.Open.MS.GraphV10.PowerShell.dll-Help.xml
+  Module Name: AzureAD
+  online version: ""
+  schema: 2.0.0

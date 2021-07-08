@@ -1,0 +1,67 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Get objects owned by a user.
+module: AzureAD
+notes: ""
+syntaxes:
+- Get-AzureADUserOwnedObject -ObjectId <String> [-All <Boolean>] [-Top <Int32>] [<CommonParameters>]
+examples:
+- title: 'Example 1: Get objects owned by a user'
+  code: |-
+    PS C:\>Get-AzureADUserOwnedObject -ObjectId "df19e8e6-2ad7-453e-87f5-037f6529ae16"
+
+    ObjectId                             ObjectType
+    --------                             ----------
+    9c2564d6-e4d7-4167-a79f-4b961512f232 Group
+    36db8aaf-022a-448d-aedc-34ef2ceb943c Group
+    529b48fb-6324-4899-88ab-fb9bd9ed0fd4 Group
+    0e6cf869-82ca-4647-b330-420b9a6f8ef7 Group
+    78045c26-218e-46fb-94b6-1a47320da153 Group
+    4c0ed9b7-cca2-4bb2-a2f1-736bb263ea0b Group
+    49a8bc01-2751-450b-a2e8-b4267f609513 Application
+    a0dada57-89ef-4db8-9e5f-46cca3bf2398 Group
+  description: |-
+    This command gets objects owned by the specified user.
+  summary: ""
+parameters:
+- type: <xref href="Boolean" data-throw-if-not-resolved="False" />
+  name: All
+  description: |+
+    If true, return all objects owned by this user.
+    If false, return the number of objects specified by the Top parameter
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ObjectId
+  isRequired: true
+  description: |+
+    Specifies the ID of a user (as a UPN or ObjectId) in Azure AD.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Top
+  description: |+
+    Specifies the maximum number of records to return.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: AzureAD.Get-AzureADUserOwnedObject
+name: Get-AzureADUserOwnedObject
+description: |-
+  The Get-AzureADUserOwnedObject cmdlet gets objects owned by a user in Azure Active Directory (AD).
+metadata:
+  external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+  Module Name: AzureAD
+  online version: ""
+  schema: 2.0.0

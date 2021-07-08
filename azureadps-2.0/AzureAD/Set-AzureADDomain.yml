@@ -1,0 +1,78 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Updates a domain.
+module: AzureAD
+notes: ""
+syntaxes:
+- >-
+  Set-AzureADDomain -Name <String> [-IsDefault <Boolean>] [-IsDefaultForCloudRedirections <Boolean>]
+
+   [-SupportedServices <System.Collections.Generic.List`1[System.String]>] [<CommonParameters>]
+examples:
+- title: 'Example 1: Set the domain as the default domain for new user account creation'
+  code: |-
+    PS C:\>Set-AzureADDomain -Name Contoso.com -IsDefault $true
+  description: |-
+    This command updates the default domain (One per company) used for new account creation.
+  summary: ""
+- title: 'Example 2: Set the list of domain capabilities'
+  code: |-
+    PS C:\>Set-AzureADDomain -Name Contoso.com -SupportedServices @("Email", "OfficeCommunicationsOnline")
+  description: |-
+    This command updates the supported services for this domain.
+  summary: ""
+- title: 'Example 3: Set the default domain for cloud redirections'
+  code: |-
+    PS C:\>Set-AzureADDomain -Name Contoso.com -IsDefaultForCloudRedirections $true
+  description: |-
+    This command updates the default domain used for cloud redirections.
+  summary: ""
+parameters:
+- type: <xref href="Boolean" data-throw-if-not-resolved="False" />
+  name: IsDefault
+  description: |+
+    Indicates whether or not this is the default domain that is used for user creation.
+    There is only one default domain per company.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Boolean" data-throw-if-not-resolved="False" />
+  name: IsDefaultForCloudRedirections
+  description: |+
+    Indicates whether or not this is the default domain used for cloud redirections.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Name
+  isRequired: true
+  description: |+
+    The fully qualified name of the domain.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="System.Collections.Generic.List`1" data-throw-if-not-resolved="False" /><span>[</span><xref href="System.String" data-throw-if-not-resolved="False" /><span>]</span>
+  name: SupportedServices
+  description: |+
+    The capabilities assigned to the domain.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: AzureAD.Set-AzureADDomain
+name: Set-AzureADDomain
+description: |-
+  The Set-AzureADDomain cmdlet updates a domain in Azure Active Directory (AD).
+metadata:
+  external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+  Module Name: AzureAD
+  online version: ""
+  schema: 2.0.0

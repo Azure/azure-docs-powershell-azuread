@@ -1,0 +1,507 @@
+items:
+- name: Reference
+  items:
+  - name: Administrative Units
+    href: AzureAD/index.yml#administrative-units
+    items:
+    - name: Add-AzureADMSAdministrativeUnitMember
+      uid: AzureAD.Add-AzureADMSAdministrativeUnitMember
+    - name: Add-AzureADMSScopedRoleMembership
+      uid: AzureAD.Add-AzureADMSScopedRoleMembership
+    - name: Get-AzureADMSAdministrativeUnit
+      uid: AzureAD.Get-AzureADMSAdministrativeUnit
+    - name: Get-AzureADMSAdministrativeUnitMember
+      uid: AzureAD.Get-AzureADMSAdministrativeUnitMember
+    - name: Get-AzureADMSScopedRoleMembership
+      uid: AzureAD.Get-AzureADMSScopedRoleMembership
+    - name: New-AzureADMSAdministrativeUnit
+      uid: AzureAD.New-AzureADMSAdministrativeUnit
+    - name: Remove-AzureADMSAdministrativeUnit
+      uid: AzureAD.Remove-AzureADMSAdministrativeUnit
+    - name: Remove-AzureADMSAdministrativeUnitMember
+      uid: AzureAD.Remove-AzureADMSAdministrativeUnitMember
+    - name: Remove-AzureADMSScopedRoleMembership
+      uid: AzureAD.Remove-AzureADMSScopedRoleMembership
+  - name: Application Proxy Application Management
+    href: AzureAD/index.yml#application-proxy-application-management
+    items:
+    - name: Get-AzureADApplicationProxyApplication
+      uid: AzureAD.Get-AzureADApplicationProxyApplication
+    - name: Get-AzureADApplicationProxyApplicationConnectorGroup
+      uid: AzureAD.Get-AzureADApplicationProxyApplicationConnectorGroup
+    - name: New-AzureADApplicationProxyApplication
+      uid: AzureAD.New-AzureADApplicationProxyApplication
+    - name: Remove-AzureADApplicationProxyApplication
+      uid: AzureAD.Remove-AzureADApplicationProxyApplication
+    - name: Remove-AzureADApplicationProxyApplicationConnectorGroup
+      uid: AzureAD.Remove-AzureADApplicationProxyApplicationConnectorGroup
+    - name: Set-AzureADApplicationProxyApplication
+      uid: AzureAD.Set-AzureADApplicationProxyApplication
+    - name: Set-AzureADApplicationProxyApplicationCustomDomainCertificate
+      uid: AzureAD.Set-AzureADApplicationProxyApplicationCustomDomainCertificate
+    - name: Set-AzureADApplicationProxyApplicationSingleSignOn
+      uid: AzureAD.Set-AzureADApplicationProxyApplicationSingleSignOn
+  - name: Application Proxy Connector Management
+    href: AzureAD/index.yml#application-proxy-connector-management
+    items:
+    - name: Get-AzureADApplicationProxyConnector
+      uid: AzureAD.Get-AzureADApplicationProxyConnector
+    - name: Get-AzureADApplicationProxyConnectorGroup
+      uid: AzureAD.Get-AzureADApplicationProxyConnectorGroup
+    - name: Get-AzureADApplicationProxyConnectorGroupMembers
+      uid: AzureAD.Get-AzureADApplicationProxyConnectorGroupMembers
+    - name: Get-AzureADApplicationProxyConnectorMemberOf
+      uid: AzureAD.Get-AzureADApplicationProxyConnectorMemberOf
+    - name: New-AzureADApplicationProxyConnectorGroup
+      uid: AzureAD.New-AzureADApplicationProxyConnectorGroup
+    - name: Remove-AzureADApplicationProxyConnectorGroup
+      uid: AzureAD.Remove-AzureADApplicationProxyConnectorGroup
+    - name: Set-AzureADApplicationProxyApplicationConnectorGroup
+      uid: AzureAD.Set-AzureADApplicationProxyApplicationConnectorGroup
+    - name: Set-AzureADApplicationProxyConnector
+      uid: AzureAD.Set-AzureADApplicationProxyConnector
+    - name: Set-AzureADApplicationProxyConnectorGroup
+      uid: AzureAD.Set-AzureADApplicationProxyConnectorGroup
+  - name: Applications
+    href: AzureAD/index.yml#applications
+    items:
+    - name: Add-AzureADApplicationOwner
+      uid: AzureAD.Add-AzureADApplicationOwner
+    - name: Get-AzureADApplication
+      uid: AzureAD.Get-AzureADApplication
+    - name: Get-AzureADApplicationExtensionProperty
+      uid: AzureAD.Get-AzureADApplicationExtensionProperty
+    - name: Get-AzureADApplicationKeyCredential
+      uid: AzureAD.Get-AzureADApplicationKeyCredential
+    - name: Get-AzureADApplicationLogo
+      uid: AzureAD.Get-AzureADApplicationLogo
+    - name: Get-AzureADApplicationOwner
+      uid: AzureAD.Get-AzureADApplicationOwner
+    - name: Get-AzureADApplicationPasswordCredential
+      uid: AzureAD.Get-AzureADApplicationPasswordCredential
+    - name: Get-AzureADApplicationServiceEndpoint
+      uid: AzureAD.Get-AzureADApplicationServiceEndpoint
+    - name: Get-AzureADDeletedApplication
+      uid: AzureAD.Get-AzureADDeletedApplication
+    - name: New-AzureADApplication
+      uid: AzureAD.New-AzureADApplication
+    - name: New-AzureADApplicationExtensionProperty
+      uid: AzureAD.New-AzureADApplicationExtensionProperty
+    - name: New-AzureADApplicationKeyCredential
+      uid: AzureAD.New-AzureADApplicationKeyCredential
+    - name: New-AzureADApplicationPasswordCredential
+      uid: AzureAD.New-AzureADApplicationPasswordCredential
+    - name: Remove-AzureADApplication
+      uid: AzureAD.Remove-AzureADApplication
+    - name: Remove-AzureADApplicationExtensionProperty
+      uid: AzureAD.Remove-AzureADApplicationExtensionProperty
+    - name: Remove-AzureADApplicationKeyCredential
+      uid: AzureAD.Remove-AzureADApplicationKeyCredential
+    - name: Remove-AzureADApplicationOwner
+      uid: AzureAD.Remove-AzureADApplicationOwner
+    - name: Remove-AzureADApplicationPasswordCredential
+      uid: AzureAD.Remove-AzureADApplicationPasswordCredential
+    - name: Set-AzureADApplication
+      uid: AzureAD.Set-AzureADApplication
+    - name: Set-AzureADApplicationLogo
+      uid: AzureAD.Set-AzureADApplicationLogo
+  - name: AzureAD
+    href: AzureAD/index.yml#azuread
+    items:
+    - name: Add-AzureADMSApplicationOwner
+      uid: AzureAD.Add-AzureADMSApplicationOwner
+    - name: Add-AzureADMSServicePrincipalDelegatedPermissionClassification
+      uid: AzureAD.Add-AzureADMSServicePrincipalDelegatedPermissionClassification
+    - name: Get-AzureADApplicationProxyConnectorGroupMember
+      uid: AzureAD.Get-AzureADApplicationProxyConnectorGroupMember
+    - name: Get-AzureADCurrentSessionInfo
+      uid: AzureAD.Get-AzureADCurrentSessionInfo
+    - name: Get-AzureADMSApplication
+      uid: AzureAD.Get-AzureADMSApplication
+    - name: Get-AzureADMSApplicationExtensionProperty
+      uid: AzureAD.Get-AzureADMSApplicationExtensionProperty
+    - name: Get-AzureADMSApplicationOwner
+      uid: AzureAD.Get-AzureADMSApplicationOwner
+    - name: Get-AzureADMSConditionalAccessPolicy
+      uid: AzureAD.Get-AzureADMSConditionalAccessPolicy
+    - name: Get-AzureADMSDeletedDirectoryObject
+      uid: AzureAD.Get-AzureADMSDeletedDirectoryObject
+    - name: Get-AzureADMSDeletedGroup
+      uid: AzureAD.Get-AzureADMSDeletedGroup
+    - name: Get-AzureADMSIdentityProvider
+      uid: AzureAD.Get-AzureADMSIdentityProvider
+    - name: Get-AzureADMSNamedLocationPolicy
+      uid: AzureAD.Get-AzureADMSNamedLocationPolicy
+    - name: Get-AzureADMSPermissionGrantConditionSet
+      uid: AzureAD.Get-AzureADMSPermissionGrantConditionSet
+    - name: Get-AzureADMSPermissionGrantPolicy
+      uid: AzureAD.Get-AzureADMSPermissionGrantPolicy
+    - name: Get-AzureADMSServicePrincipalDelegatedPermissionClassification
+      uid: AzureAD.Get-AzureADMSServicePrincipalDelegatedPermissionClassification
+    - name: Get-CrossCloudVerificationCode
+      uid: AzureAD.Get-CrossCloudVerificationCode
+    - name: New-AzureADMSApplication
+      uid: AzureAD.New-AzureADMSApplication
+    - name: New-AzureADMSApplicationExtensionProperty
+      uid: AzureAD.New-AzureADMSApplicationExtensionProperty
+    - name: New-AzureADMSApplicationKey
+      uid: AzureAD.New-AzureADMSApplicationKey
+    - name: New-AzureADMSApplicationPassword
+      uid: AzureAD.New-AzureADMSApplicationPassword
+    - name: New-AzureADMSConditionalAccessPolicy
+      uid: AzureAD.New-AzureADMSConditionalAccessPolicy
+    - name: New-AzureADMSIdentityProvider
+      uid: AzureAD.New-AzureADMSIdentityProvider
+    - name: New-AzureADMSNamedLocationPolicy
+      uid: AzureAD.New-AzureADMSNamedLocationPolicy
+    - name: New-AzureADMSPermissionGrantConditionSet
+      uid: AzureAD.New-AzureADMSPermissionGrantConditionSet
+    - name: New-AzureADMSPermissionGrantPolicy
+      uid: AzureAD.New-AzureADMSPermissionGrantPolicy
+    - name: Remove-AzureADDeletedApplication
+      uid: AzureAD.Remove-AzureADDeletedApplication
+    - name: Remove-AzureADMSApplication
+      uid: AzureAD.Remove-AzureADMSApplication
+    - name: Remove-AzureADMSApplicationExtensionProperty
+      uid: AzureAD.Remove-AzureADMSApplicationExtensionProperty
+    - name: Remove-AzureADMSApplicationKey
+      uid: AzureAD.Remove-AzureADMSApplicationKey
+    - name: Remove-AzureADMSApplicationOwner
+      uid: AzureAD.Remove-AzureADMSApplicationOwner
+    - name: Remove-AzureADMSApplicationPassword
+      uid: AzureAD.Remove-AzureADMSApplicationPassword
+    - name: Remove-AzureADMSApplicationVerifiedPublisher
+      uid: AzureAD.Remove-AzureADMSApplicationVerifiedPublisher
+    - name: Remove-AzureADMSConditionalAccessPolicy
+      uid: AzureAD.Remove-AzureADMSConditionalAccessPolicy
+    - name: Remove-AzureADMSDeletedDirectoryObject
+      uid: AzureAD.Remove-AzureADMSDeletedDirectoryObject
+    - name: Remove-AzureADMSIdentityProvider
+      uid: AzureAD.Remove-AzureADMSIdentityProvider
+    - name: Remove-AzureADMSNamedLocationPolicy
+      uid: AzureAD.Remove-AzureADMSNamedLocationPolicy
+    - name: Remove-AzureADMSPermissionGrantConditionSet
+      uid: AzureAD.Remove-AzureADMSPermissionGrantConditionSet
+    - name: Remove-AzureADMSPermissionGrantPolicy
+      uid: AzureAD.Remove-AzureADMSPermissionGrantPolicy
+    - name: Remove-AzureADMSServicePrincipalDelegatedPermissionClassification
+      uid: AzureAD.Remove-AzureADMSServicePrincipalDelegatedPermissionClassification
+    - name: Restore-AzureADMSDeletedDirectoryObject
+      uid: AzureAD.Restore-AzureADMSDeletedDirectoryObject
+    - name: Set-AzureADMSAdministrativeUnit
+      uid: AzureAD.Set-AzureADMSAdministrativeUnit
+    - name: Set-AzureADMSApplication
+      uid: AzureAD.Set-AzureADMSApplication
+    - name: Set-AzureADMSApplicationLogo
+      uid: AzureAD.Set-AzureADMSApplicationLogo
+    - name: Set-AzureADMSApplicationVerifiedPublisher
+      uid: AzureAD.Set-AzureADMSApplicationVerifiedPublisher
+    - name: Set-AzureADMSConditionalAccessPolicy
+      uid: AzureAD.Set-AzureADMSConditionalAccessPolicy
+    - name: Set-AzureADMSIdentityProvider
+      uid: AzureAD.Set-AzureADMSIdentityProvider
+    - name: Set-AzureADMSNamedLocationPolicy
+      uid: AzureAD.Set-AzureADMSNamedLocationPolicy
+    - name: Set-AzureADMSPermissionGrantConditionSet
+      uid: AzureAD.Set-AzureADMSPermissionGrantConditionSet
+    - name: Set-AzureADMSPermissionGrantPolicy
+      uid: AzureAD.Set-AzureADMSPermissionGrantPolicy
+  - name: Certificate Authorities
+    href: AzureAD/index.yml#certificate-authorities
+    items:
+    - name: Get-AzureADTrustedCertificateAuthority
+      uid: AzureAD.Get-AzureADTrustedCertificateAuthority
+    - name: New-AzureADTrustedCertificateAuthority
+      uid: AzureAD.New-AzureADTrustedCertificateAuthority
+    - name: Remove-AzureADTrustedCertificateAuthority
+      uid: AzureAD.Remove-AzureADTrustedCertificateAuthority
+    - name: Set-AzureADTrustedCertificateAuthority
+      uid: AzureAD.Set-AzureADTrustedCertificateAuthority
+  - name: Connect to your directory
+    href: AzureAD/index.yml#connect-to-your-directory
+    items:
+    - name: Connect-AzureAD
+      uid: AzureAD.Connect-AzureAD
+    - name: Disconnect-AzureAD
+      uid: AzureAD.Disconnect-AzureAD
+  - name: Contacts
+    href: AzureAD/index.yml#contacts
+    items:
+    - name: Get-AzureADContact
+      uid: AzureAD.Get-AzureADContact
+    - name: Get-AzureADContactDirectReport
+      uid: AzureAD.Get-AzureADContactDirectReport
+    - name: Get-AzureADContactManager
+      uid: AzureAD.Get-AzureADContactManager
+    - name: Get-AzureADContactMembership
+      uid: AzureAD.Get-AzureADContactMembership
+    - name: Get-AzureADContactThumbnailPhoto
+      uid: AzureAD.Get-AzureADContactThumbnailPhoto
+    - name: Remove-AzureADContact
+      uid: AzureAD.Remove-AzureADContact
+    - name: Remove-AzureADContactManager
+      uid: AzureAD.Remove-AzureADContactManager
+    - name: Select-AzureADGroupIdsContactIsMemberOf
+      uid: AzureAD.Select-AzureADGroupIdsContactIsMemberOf
+  - name: Contracts
+    href: AzureAD/index.yml#contracts
+    items:
+    - name: Get-AzureADContract
+      uid: AzureAD.Get-AzureADContract
+  - name: Deleted Objects
+    href: AzureAD/index.yml#deleted-objects
+    items:
+    - name: Restore-AzureADDeletedApplication
+      uid: AzureAD.Restore-AzureADDeletedApplication
+  - name: Devices
+    href: AzureAD/index.yml#devices
+    items:
+    - name: Add-AzureADDeviceRegisteredOwner
+      uid: AzureAD.Add-AzureADDeviceRegisteredOwner
+    - name: Add-AzureADDeviceRegisteredUser
+      uid: AzureAD.Add-AzureADDeviceRegisteredUser
+    - name: Get-AzureADDevice
+      uid: AzureAD.Get-AzureADDevice
+    - name: Get-AzureADDeviceConfiguration
+      uid: AzureAD.Get-AzureADDeviceConfiguration
+    - name: Get-AzureADDeviceRegisteredOwner
+      uid: AzureAD.Get-AzureADDeviceRegisteredOwner
+    - name: Get-AzureADDeviceRegisteredUser
+      uid: AzureAD.Get-AzureADDeviceRegisteredUser
+    - name: New-AzureADDevice
+      uid: AzureAD.New-AzureADDevice
+    - name: Remove-AzureADDevice
+      uid: AzureAD.Remove-AzureADDevice
+    - name: Remove-AzureADDeviceRegisteredOwner
+      uid: AzureAD.Remove-AzureADDeviceRegisteredOwner
+    - name: Remove-AzureADDeviceRegisteredUser
+      uid: AzureAD.Remove-AzureADDeviceRegisteredUser
+    - name: Set-AzureADDevice
+      uid: AzureAD.Set-AzureADDevice
+  - name: Directory
+    href: AzureAD/index.yml#directory
+    items:
+    - name: Get-AzureADSubscribedSku
+      uid: AzureAD.Get-AzureADSubscribedSku
+    - name: Get-AzureADTenantDetail
+      uid: AzureAD.Get-AzureADTenantDetail
+    - name: Set-AzureADTenantDetail
+      uid: AzureAD.Set-AzureADTenantDetail
+  - name: Directory Objects
+    href: AzureAD/index.yml#directory-objects
+    items:
+    - name: Get-AzureADObjectByObjectId
+      uid: AzureAD.Get-AzureADObjectByObjectId
+  - name: Directory Roles
+    href: AzureAD/index.yml#directory-roles
+    items:
+    - name: Add-AzureADDirectoryRoleMember
+      uid: AzureAD.Add-AzureADDirectoryRoleMember
+    - name: Enable-AzureADDirectoryRole
+      uid: AzureAD.Enable-AzureADDirectoryRole
+    - name: Get-AzureADDirectoryRole
+      uid: AzureAD.Get-AzureADDirectoryRole
+    - name: Get-AzureADDirectoryRoleMember
+      uid: AzureAD.Get-AzureADDirectoryRoleMember
+    - name: Get-AzureADDirectoryRoleTemplate
+      uid: AzureAD.Get-AzureADDirectoryRoleTemplate
+    - name: Remove-AzureADDirectoryRoleMember
+      uid: AzureAD.Remove-AzureADDirectoryRoleMember
+  - name: Domains
+    href: AzureAD/index.yml#domains
+    items:
+    - name: Confirm-AzureADDomain
+      uid: AzureAD.Confirm-AzureADDomain
+    - name: Get-AzureADDomain
+      uid: AzureAD.Get-AzureADDomain
+    - name: Get-AzureADDomainNameReference
+      uid: AzureAD.Get-AzureADDomainNameReference
+    - name: Get-AzureADDomainServiceConfigurationRecord
+      uid: AzureAD.Get-AzureADDomainServiceConfigurationRecord
+    - name: Get-AzureADDomainVerificationDnsRecord
+      uid: AzureAD.Get-AzureADDomainVerificationDnsRecord
+    - name: New-AzureADDomain
+      uid: AzureAD.New-AzureADDomain
+    - name: Remove-AzureADDomain
+      uid: AzureAD.Remove-AzureADDomain
+    - name: Set-AzureADDomain
+      uid: AzureAD.Set-AzureADDomain
+  - name: Extension Properties
+    href: AzureAD/index.yml#extension-properties
+    items:
+    - name: Get-AzureADExtensionProperty
+      uid: AzureAD.Get-AzureADExtensionProperty
+  - name: Groups
+    href: AzureAD/index.yml#groups
+    items:
+    - name: Add-AzureADGroupMember
+      uid: AzureAD.Add-AzureADGroupMember
+    - name: Add-AzureADGroupOwner
+      uid: AzureAD.Add-AzureADGroupOwner
+    - name: Add-AzureADMSLifecyclePolicyGroup
+      uid: AzureAD.Add-AzureADMSLifecyclePolicyGroup
+    - name: Get-AzureADGroup
+      uid: AzureAD.Get-AzureADGroup
+    - name: Get-AzureADGroupAppRoleAssignment
+      uid: AzureAD.Get-AzureADGroupAppRoleAssignment
+    - name: Get-AzureADGroupMember
+      uid: AzureAD.Get-AzureADGroupMember
+    - name: Get-AzureADGroupOwner
+      uid: AzureAD.Get-AzureADGroupOwner
+    - name: Get-AzureADMSGroup
+      uid: AzureAD.Get-AzureADMSGroup
+    - name: Get-AzureADMSGroupLifecyclePolicy
+      uid: AzureAD.Get-AzureADMSGroupLifecyclePolicy
+    - name: Get-AzureADMSLifecyclePolicyGroup
+      uid: AzureAD.Get-AzureADMSLifecyclePolicyGroup
+    - name: New-AzureADGroup
+      uid: AzureAD.New-AzureADGroup
+    - name: New-AzureADGroupAppRoleAssignment
+      uid: AzureAD.New-AzureADGroupAppRoleAssignment
+    - name: New-AzureADMSGroup
+      uid: AzureAD.New-AzureADMSGroup
+    - name: New-AzureADMSGroupLifecyclePolicy
+      uid: AzureAD.New-AzureADMSGroupLifecyclePolicy
+    - name: Remove-AzureADGroup
+      uid: AzureAD.Remove-AzureADGroup
+    - name: Remove-AzureADGroupAppRoleAssignment
+      uid: AzureAD.Remove-AzureADGroupAppRoleAssignment
+    - name: Remove-AzureADGroupMember
+      uid: AzureAD.Remove-AzureADGroupMember
+    - name: Remove-AzureADGroupOwner
+      uid: AzureAD.Remove-AzureADGroupOwner
+    - name: Remove-AzureADMSGroup
+      uid: AzureAD.Remove-AzureADMSGroup
+    - name: Remove-AzureADMSGroupLifecyclePolicy
+      uid: AzureAD.Remove-AzureADMSGroupLifecyclePolicy
+    - name: Remove-AzureADMSLifecyclePolicyGroup
+      uid: AzureAD.Remove-AzureADMSLifecyclePolicyGroup
+    - name: Reset-AzureADMSLifeCycleGroup
+      uid: AzureAD.Reset-AzureADMSLifeCycleGroup
+    - name: Select-AzureADGroupIdsGroupIsMemberOf
+      uid: AzureAD.Select-AzureADGroupIdsGroupIsMemberOf
+    - name: Set-AzureADGroup
+      uid: AzureAD.Set-AzureADGroup
+    - name: Set-AzureADMSGroup
+      uid: AzureAD.Set-AzureADMSGroup
+    - name: Set-AzureADMSGroupLifecyclePolicy
+      uid: AzureAD.Set-AzureADMSGroupLifecyclePolicy
+  - name: OAuth2
+    href: AzureAD/index.yml#oauth2
+    items:
+    - name: Get-AzureADOAuth2PermissionGrant
+      uid: AzureAD.Get-AzureADOAuth2PermissionGrant
+    - name: Remove-AzureADOAuth2PermissionGrant
+      uid: AzureAD.Remove-AzureADOAuth2PermissionGrant
+  - name: Service Principals
+    href: AzureAD/index.yml#service-principals
+    items:
+    - name: Add-AzureADServicePrincipalOwner
+      uid: AzureAD.Add-AzureADServicePrincipalOwner
+    - name: Get-AzureADServiceAppRoleAssignedTo
+      uid: AzureAD.Get-AzureADServiceAppRoleAssignedTo
+    - name: Get-AzureADServiceAppRoleAssignment
+      uid: AzureAD.Get-AzureADServiceAppRoleAssignment
+    - name: Get-AzureADServicePrincipal
+      uid: AzureAD.Get-AzureADServicePrincipal
+    - name: Get-AzureADServicePrincipalCreatedObject
+      uid: AzureAD.Get-AzureADServicePrincipalCreatedObject
+    - name: Get-AzureADServicePrincipalKeyCredential
+      uid: AzureAD.Get-AzureADServicePrincipalKeyCredential
+    - name: Get-AzureADServicePrincipalMembership
+      uid: AzureAD.Get-AzureADServicePrincipalMembership
+    - name: Get-AzureADServicePrincipalOAuth2PermissionGrant
+      uid: AzureAD.Get-AzureADServicePrincipalOAuth2PermissionGrant
+    - name: Get-AzureADServicePrincipalOwnedObject
+      uid: AzureAD.Get-AzureADServicePrincipalOwnedObject
+    - name: Get-AzureADServicePrincipalOwner
+      uid: AzureAD.Get-AzureADServicePrincipalOwner
+    - name: Get-AzureADServicePrincipalPasswordCredential
+      uid: AzureAD.Get-AzureADServicePrincipalPasswordCredential
+    - name: New-AzureADServiceAppRoleAssignment
+      uid: AzureAD.New-AzureADServiceAppRoleAssignment
+    - name: New-AzureADServicePrincipal
+      uid: AzureAD.New-AzureADServicePrincipal
+    - name: New-AzureADServicePrincipalKeyCredential
+      uid: AzureAD.New-AzureADServicePrincipalKeyCredential
+    - name: New-AzureADServicePrincipalPasswordCredential
+      uid: AzureAD.New-AzureADServicePrincipalPasswordCredential
+    - name: Remove-AzureADServiceAppRoleAssignment
+      uid: AzureAD.Remove-AzureADServiceAppRoleAssignment
+    - name: Remove-AzureADServicePrincipal
+      uid: AzureAD.Remove-AzureADServicePrincipal
+    - name: Remove-AzureADServicePrincipalKeyCredential
+      uid: AzureAD.Remove-AzureADServicePrincipalKeyCredential
+    - name: Remove-AzureADServicePrincipalOwner
+      uid: AzureAD.Remove-AzureADServicePrincipalOwner
+    - name: Remove-AzureADServicePrincipalPasswordCredential
+      uid: AzureAD.Remove-AzureADServicePrincipalPasswordCredential
+    - name: Select-AzureADGroupIdsServicePrincipalIsMemberOf
+      uid: AzureAD.Select-AzureADGroupIdsServicePrincipalIsMemberOf
+    - name: Set-AzureADServicePrincipal
+      uid: AzureAD.Set-AzureADServicePrincipal
+  - name: Users
+    href: AzureAD/index.yml#users
+    items:
+    - name: Get-AzureADUser
+      uid: AzureAD.Get-AzureADUser
+    - name: Get-AzureADUserAppRoleAssignment
+      uid: AzureAD.Get-AzureADUserAppRoleAssignment
+    - name: Get-AzureADUserCreatedObject
+      uid: AzureAD.Get-AzureADUserCreatedObject
+    - name: Get-AzureADUserDirectReport
+      uid: AzureAD.Get-AzureADUserDirectReport
+    - name: Get-AzureADUserExtension
+      uid: AzureAD.Get-AzureADUserExtension
+    - name: Get-AzureADUserLicenseDetail
+      uid: AzureAD.Get-AzureADUserLicenseDetail
+    - name: Get-AzureADUserManager
+      uid: AzureAD.Get-AzureADUserManager
+    - name: Get-AzureADUserMembership
+      uid: AzureAD.Get-AzureADUserMembership
+    - name: Get-AzureADUserOAuth2PermissionGrant
+      uid: AzureAD.Get-AzureADUserOAuth2PermissionGrant
+    - name: Get-AzureADUserOwnedDevice
+      uid: AzureAD.Get-AzureADUserOwnedDevice
+    - name: Get-AzureADUserOwnedObject
+      uid: AzureAD.Get-AzureADUserOwnedObject
+    - name: Get-AzureADUserRegisteredDevice
+      uid: AzureAD.Get-AzureADUserRegisteredDevice
+    - name: Get-AzureADUserThumbnailPhoto
+      uid: AzureAD.Get-AzureADUserThumbnailPhoto
+    - name: New-AzureADMSInvitation
+      uid: AzureAD.New-AzureADMSInvitation
+    - name: New-AzureADUser
+      uid: AzureAD.New-AzureADUser
+    - name: New-AzureADUserAppRoleAssignment
+      uid: AzureAD.New-AzureADUserAppRoleAssignment
+    - name: Remove-AzureADUser
+      uid: AzureAD.Remove-AzureADUser
+    - name: Remove-AzureADUserAppRoleAssignment
+      uid: AzureAD.Remove-AzureADUserAppRoleAssignment
+    - name: Remove-AzureADUserExtension
+      uid: AzureAD.Remove-AzureADUserExtension
+    - name: Remove-AzureADUserManager
+      uid: AzureAD.Remove-AzureADUserManager
+    - name: Revoke-AzureADSignedInUserAllRefreshToken
+      uid: AzureAD.Revoke-AzureADSignedInUserAllRefreshToken
+    - name: Revoke-AzureADUserAllRefreshToken
+      uid: AzureAD.Revoke-AzureADUserAllRefreshToken
+    - name: Select-AzureADGroupIdsUserIsMemberOf
+      uid: AzureAD.Select-AzureADGroupIdsUserIsMemberOf
+    - name: Set-AzureADUser
+      uid: AzureAD.Set-AzureADUser
+    - name: Set-AzureADUserExtension
+      uid: AzureAD.Set-AzureADUserExtension
+    - name: Set-AzureADUserLicense
+      uid: AzureAD.Set-AzureADUserLicense
+    - name: Set-AzureADUserManager
+      uid: AzureAD.Set-AzureADUserManager
+    - name: Set-AzureADUserPassword
+      uid: AzureAD.Set-AzureADUserPassword
+    - name: Set-AzureADUserThumbnailPhoto
+      uid: AzureAD.Set-AzureADUserThumbnailPhoto
+    - name: Update-AzureADSignedInUserPassword
+      uid: AzureAD.Update-AzureADSignedInUserPassword
+metadata:
+  universal_conceptual_toc: /powershell/azure/active-directory/toc.json

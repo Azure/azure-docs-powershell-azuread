@@ -1,0 +1,54 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Validate the ownership of a domain.
+module: AzureAD
+notes: ""
+syntaxes:
+- >-
+  Confirm-AzureADDomain -Name <String> [-CrossCloudVerificationCode <CrossCloudVerificationCodeBody>]
+
+   [<CommonParameters>]
+examples:
+- title: 'Example 1: Confirm the domain'
+  code: |-
+    PS C:\>Confirm-AzureADDomain -Name Contoso.com
+  description: |-
+    This command will confirm your domain; changing the status to "Verified".
+  summary: ""
+- title: 'Example 2: Confirm the domain with a cross cloud verification code'
+  code: |-
+    PS C:\>Confirm-AzureADDomain -Name Contoso.com -CrossCloudVerificationCode ms84324896
+  description: |-
+    This command will confirm your domain for dual federation scenarios.
+  summary: ""
+parameters:
+- type: <xref href="CrossCloudVerificationCodeBody" data-throw-if-not-resolved="False" />
+  name: CrossCloudVerificationCode
+  description: |+
+    The cross-cloud domain verification code.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Name
+  isRequired: true
+  description: |+
+    Specifies the name of the domain.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: AzureAD.Confirm-AzureADDomain
+name: Confirm-AzureADDomain
+description: |-
+  The Confirm-AzureADDomain cmdlet validates the ownership of an Azure Active Directory domain.
+metadata:
+  external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+  Module Name: AzureAD
+  online version: ""
+  schema: 2.0.0

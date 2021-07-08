@@ -1,0 +1,56 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Sets the verified publisher of an application to a verified Microsoft Partner Network (MPN) identifier.
+module: AzureAD
+notes: ""
+inputs:
+- name: <xref href="string" data-throw-if-not-resolved="False" />
+  description: ""
+- name: <xref href="string" data-throw-if-not-resolved="False" />
+  description: ""
+syntaxes:
+- >-
+  Set-AzureADMSApplicationVerifiedPublisher -AppObjectId <String>
+
+   -SetVerifiedPublisherRequest <SetVerifiedPublisherRequest> [<CommonParameters>]
+examples:
+- title: 'Example 1: Set the verified publisher of an application.'
+  code: |-
+    $appObjId = 'ad6c71a5-e48f-4320-bb59-92642a2d8d9f'
+              $mpnId =  '0433167'
+              $req =  @{verifiedPublisherId=$mpnId}
+              Set-AzureADMSApplicationVerifiedPublisher -AppObjectId $appObjId -SetVerifiedPublisherRequest $req
+  description: ""
+  summary: ""
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: AppObjectId
+  isRequired: true
+  description: |+
+    The unique identifier of an Azure Active Directory Application object.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SetVerifiedPublisherRequest" data-throw-if-not-resolved="False" />
+  name: SetVerifiedPublisherRequest
+  isRequired: true
+  description: |+
+    A request body object containing the verifiedPublisherId property its the MPNID value.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: AzureAD.Set-AzureADMSApplicationVerifiedPublisher
+name: Set-AzureADMSApplicationVerifiedPublisher
+description: |-
+  Sets the verified publisher of an application to a verified Microsoft Partner Network (MPN) identifier.
+metadata:
+  external help file: Microsoft.Open.MS.GraphV10.PowerShell.dll-Help.xml
+  Module Name: AzureAD
+  online version: ""
+  schema: 2.0.0

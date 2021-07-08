@@ -1,0 +1,56 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Removes a key from an application.
+module: AzureAD
+notes: ""
+inputs:
+- name: <xref href="string" data-throw-if-not-resolved="False" />
+  description: ""
+syntaxes:
+- Remove-AzureADMSApplicationKey -ObjectId <String> [-KeyId <String>] [-Proof <String>] [<CommonParameters>]
+examples:
+- title: 'Example 1: Removes a key credential from an application'
+  code: |-
+    PS C:\>Remove-AzureADMSApplicationKey -ObjectId "3ddd22e7-a150-4bb3-b100-e410dea1cb84" -KeyId "FDA27CF-1B58-4CAE-8CE7-CD04F0AAB945" -Proof {token}
+  description: |-
+    This command removes the specificed key credential from the specified application.
+  summary: ""
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: KeyId
+  description: |+
+    The key id corresponding to the key object to be removed.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ObjectId
+  isRequired: true
+  description: |+
+    The unique identifier of the object specific Azure Active Directory object
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Proof
+  description: |+
+    The JWT token provided as a proof of possession.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: AzureAD.Remove-AzureADMSApplicationKey
+name: Remove-AzureADMSApplicationKey
+description: |-
+  Removes a key from an application.
+metadata:
+  external help file: Microsoft.Open.MS.GraphV10.PowerShell.dll-Help.xml
+  Module Name: AzureAD
+  online version: ""
+  schema: 2.0.0

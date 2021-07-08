@@ -1,0 +1,43 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Retrieves the properties and relationships of a groupLifecyclePolicies object in Azure Active Directory
+module: AzureADPreview
+notes: ""
+inputs:
+- name: <xref href="System.String" data-throw-if-not-resolved="False" />
+  description: |-
+    System.Nullable`1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+outputs:
+- name: <xref href="System.Object" data-throw-if-not-resolved="False" />
+  description: ""
+syntaxes:
+- Get-AzureADMSGroupLifecyclePolicy [<CommonParameters>]
+- Get-AzureADMSGroupLifecyclePolicy -Id <String> [<CommonParameters>]
+examples:
+- title: Example 1
+  code: |-
+    PS C:\> Get-AzureADMSGroupLifecyclePolicy
+  description: |-
+    This command retrieves the group expiration settings configured for the tenant
+  summary: ""
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  isRequired: true
+  description: |+
+    Specifies the ID of a groupLifecyclePolicies object in Azure Active Directory
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: AzureADPreview.Get-AzureADMSGroupLifecyclePolicy
+name: Get-AzureADMSGroupLifecyclePolicy
+description: |-
+  The Get-AzureADMSGroupLifecyclePolicy command retrieves the properties and relationships of a groupLifecyclePolicies object in Azure Active Directory
+metadata:
+  external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
+  Module Name: AzureADPreview
+  online version: ""
+  schema: 2.0.0

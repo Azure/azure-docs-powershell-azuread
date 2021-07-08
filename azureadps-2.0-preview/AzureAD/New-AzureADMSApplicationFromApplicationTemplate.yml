@@ -1,0 +1,52 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Instantiates an application
+module: AzureADPreview
+notes: ""
+outputs:
+- name: <xref href="Microsoft.Online.Administration.ApplicationTemplateCopy" data-throw-if-not-resolved="False" />
+  description: ""
+syntaxes:
+- >-
+  New-AzureADMSApplicationFromApplicationTemplate -Id <String> -DisplayName <ApplicationTemplateDisplayName>
+
+   [<CommonParameters>]
+examples:
+- title: 1. Creates an application from application template
+  code: |-
+    PS C:\> $instantiated_app = New-AzureADMSApplicationTemplate -Id  e8b7b394-057d-4203-a93a-1879c28ece38 -DisplayName bugzilla-copy1
+  description: |-
+    This command instantiates a new application based on application template referenced by the id.
+  summary: ""
+parameters:
+- type: <xref href="ApplicationTemplateDisplayName" data-throw-if-not-resolved="False" />
+  name: DisplayName
+  isRequired: true
+  description: |+
+    Application template display name
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  isRequired: true
+  description: |+
+    The unique identifier of an object in Azure Active Directory
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: AzureADPreview.New-AzureADMSApplicationFromApplicationTemplate
+name: New-AzureADMSApplicationFromApplicationTemplate
+description: |-
+  This cmdlet allows users to create application from application template
+metadata:
+  external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
+  Module Name: AzureADPreview
+  online version: ""
+  schema: 2.0.0

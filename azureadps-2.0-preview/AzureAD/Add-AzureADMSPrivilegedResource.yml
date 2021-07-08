@@ -1,0 +1,50 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Use this API to add a new azure AD MS privileged resource.
+module: AzureADPreview
+notes: ""
+inputs:
+- name: <xref href="System.String" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="System.Object" data-throw-if-not-resolved="False" />
+  description: ""
+syntaxes:
+- Add-AzureADMSPrivilegedResource -ProviderId <String> [-ExternalId <String>] [<CommonParameters>]
+examples:
+- title: Example 1
+  code: |-
+    PS C:\> Add-AzureADMSPrivilegedResource -ProviderId AzureResources -ExternalId "/subscriptions/38ab2ccc-3747-4567-b36b-9478f5602f0d"
+  description: |-
+    Register a new Resource
+  summary: ""
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ExternalId
+  description: |+
+    The unique identifier of the specific resource Id
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ProviderId
+  isRequired: true
+  description: |+
+    The unique identifier of the specific provider
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: AzureADPreview.Add-AzureADMSPrivilegedResource
+name: Add-AzureADMSPrivilegedResource
+description: |-
+  Use this API to add a new azure AD MS privileged resource.
+metadata:
+  external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
+  Module Name: AzureADPreview
+  online version: ""
+  schema: 2.0.0

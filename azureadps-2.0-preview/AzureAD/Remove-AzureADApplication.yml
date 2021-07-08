@@ -1,0 +1,76 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Delete an application by objectId.
+module: AzureADPreview
+notes: ""
+links:
+- text: Get-AzureADApplication
+  href: ./Get-AzureADApplication.yml
+- text: New-AzureADApplication
+  href: ./New-AzureADApplication.yml
+- text: Set-AzureADApplication
+  href: ./Set-AzureADApplication.yml
+syntaxes:
+- >-
+  Remove-AzureADApplication -ObjectId <String> [-InformationAction <ActionPreference>]
+
+   [-InformationVariable <String>] [<CommonParameters>]
+examples:
+- title: 'Example 1: Remove an application'
+  code: |-
+    PS C:\>Remove-AzureADApplication -ObjectId "acd10942-5747-4385-8824-4c5d5fa904f9"
+  description: |-
+    This command removes the specified application.
+  summary: ""
+parameters:
+- type: <xref href="ActionPreference" data-throw-if-not-resolved="False" />
+  name: InformationAction
+  description: |+
+    Specifies how this cmdlet responds to an information event.
+
+    The acceptable values for this parameter are:
+
+
+    - Continue
+    - Ignore
+    - Inquire
+    - SilentlyContinue
+    - Stop
+    - Suspend
+
+  defaultValue: None
+  position: Named
+  aliases: infa
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: InformationVariable
+  description: |+
+    Specifies an information variable.
+
+  defaultValue: None
+  position: Named
+  aliases: iv
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ObjectId
+  isRequired: true
+  description: |+
+    Specifies the ID of an application in Azure AD.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: AzureADPreview.Remove-AzureADApplication
+name: Remove-AzureADApplication
+description: |-
+  The **Remove-AzureADApplication** cmdlet removes the specified application from Azure Active Directory (AD).
+metadata:
+  external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+  Module Name: AzureADPreview
+  ms.assetid: C7AFAE7E-5D54-4941-9958-9EB874D115DD
+  ms.custom: iamfeature=PowerShell
+  ms.reviewer: rodejo
+  online version: ""
+  schema: 2.0.0

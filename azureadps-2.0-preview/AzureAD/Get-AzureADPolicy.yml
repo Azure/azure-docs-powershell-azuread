@@ -1,0 +1,90 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Gets a policy.
+module: AzureADPreview
+notes: ""
+links:
+- text: New-AzureADPolicy
+  href: ./New-AzureADPolicy.yml
+- text: Remove-AzureADPolicy
+  href: ./Remove-AzureADPolicy.yml
+- text: Set-AzureADPolicy
+  href: ./Set-AzureADPolicy.yml
+syntaxes:
+- >-
+  Get-AzureADPolicy [-All <Boolean>] [-Top <Int32>] [-InformationAction <ActionPreference>]
+
+   [-InformationVariable <String>] [<CommonParameters>]
+- >-
+  Get-AzureADPolicy -Id <String> [-All <Boolean>] [-InformationAction <ActionPreference>]
+
+   [-InformationVariable <String>] [<CommonParameters>]
+parameters:
+- type: <xref href="Boolean" data-throw-if-not-resolved="False" />
+  name: All
+  description: |+
+    {{ Fill All Description }}
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  isRequired: true
+  description: |+
+    The Id of the policy you want to retrieve
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="ActionPreference" data-throw-if-not-resolved="False" />
+  name: InformationAction
+  description: |+
+    Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
+
+    - Continue
+    - Ignore
+    - Inquire
+    - SilentlyContinue
+    - Stop
+    - Suspend
+
+  defaultValue: None
+  position: Named
+  aliases: infa
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: InformationVariable
+  description: |+
+    Specifies an information variable.
+
+  defaultValue: None
+  position: Named
+  aliases: iv
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Top
+  description: |+
+    {{ Fill Top Description }}
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: AzureADPreview.Get-AzureADPolicy
+name: Get-AzureADPolicy
+description: |-
+  The **Get-AzureADPolicy** cmdlet gets a policy in Azure Active Directory (AD).
+metadata:
+  external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
+  Module Name: AzureADPreview
+  ms.assetid: 5655BF04-B245-4D0E-9AD9-AAAA1A6B048D
+  ms.custom: iamfeature=PowerShell
+  ms.reviewer: rodejo
+  online version: ""
+  schema: 2.0.0

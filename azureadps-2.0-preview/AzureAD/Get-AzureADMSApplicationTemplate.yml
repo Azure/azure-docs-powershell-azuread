@@ -1,0 +1,45 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Retrieve a list of applicationTemplate objects
+module: AzureADPreview
+notes: ""
+outputs:
+- name: <xref href="Microsoft.Online.Administration.ApplicationTemplate" data-throw-if-not-resolved="False" />
+  description: ""
+syntaxes:
+- Get-AzureADMSApplicationTemplate [<CommonParameters>]
+- Get-AzureADMSApplicationTemplate -Id <String> [<CommonParameters>]
+examples:
+- title: 1. Gets a list of application template objects
+  code: |-
+    PS C:\> $all_templates = Get-AzureADMSApplicationTemplate
+  description: |-
+    This command gets all the application template objects
+  summary: ""
+- title: 2. Gets an application template object
+  code: |-
+    PS C:\> $template = Get-AzureADMSApplicationTemplate -Id e8b7b394-057d-4203-a93a-1879c28ece38
+  description: |-
+    This command gets an application template object for the given id
+  summary: ""
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  isRequired: true
+  description: |+
+    The unique identifier of an application template
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: AzureADPreview.Get-AzureADMSApplicationTemplate
+name: Get-AzureADMSApplicationTemplate
+description: |-
+  This cmdlet allows users to get a list of all the application templates or a specific application template.
+metadata:
+  external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
+  Module Name: AzureADPreview
+  online version: ""
+  schema: 2.0.0

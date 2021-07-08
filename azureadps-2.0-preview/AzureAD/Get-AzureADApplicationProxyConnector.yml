@@ -1,0 +1,100 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  The Get-AzureADApplicationProxyApplicationConnector cmdlet a list of all connectors, or if specified, details of a specific connector.
+module: AzureADPreview
+notes: ""
+inputs:
+- name: <xref href="System.String" data-throw-if-not-resolved="False" />
+  description: |-
+    System.Nullable`1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+    System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+outputs:
+- name: <xref href="System.Object" data-throw-if-not-resolved="False" />
+  description: ""
+syntaxes:
+- Get-AzureADApplicationProxyConnector [-All <Boolean>] [-Top <Int32>] [-Filter <String>] [<CommonParameters>]
+- Get-AzureADApplicationProxyConnector [-SearchString <String>] [-All <Boolean>] [<CommonParameters>]
+- Get-AzureADApplicationProxyConnector -Id <String> [-All <Boolean>] [<CommonParameters>]
+examples:
+- title: Example 1
+  code: |-
+    PS C:\> Get-AzureADApplicationProxyConnector
+
+    Id                                   MachineName                      ExternalIp     Status
+    --                                   -----------                      ----------     ------
+    4c8b06e7-9751-41d5-8e5e-48e9b9bc2c66 AWCyclesApps.adventure-works.com 52.165.149.115 active
+    834c5dd6-f2e8-47ae-973a-9fc769289b3d AWCyclesAD.adventure-works.com   52.165.149.131 active
+  description: |-
+    Example 1: Retrieve all connectors
+  summary: ""
+- title: Example 2
+  code: |-
+    PS C:\> Get-AzureADApplicationProxyConnector -Id 4c8b06e7-9751-41d5-8e5e-48e9b9bc2c66
+
+    Id                                   MachineName                      ExternalIp     Status
+    --                                   -----------                      ----------     ------
+    4c8b06e7-9751-41d5-8e5e-48e9b9bc2c66 AWCyclesApps.adventure-works.com 52.165.149.115 active
+  description: |-
+    Example 2: Retrieve information for a specific connector
+  summary: ""
+parameters:
+- type: <xref href="Boolean" data-throw-if-not-resolved="False" />
+  name: All
+  description: |+
+    If true, return all users. If false, return the number of objects specified by the Top parameter
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Filter
+  description: |+
+    Specifies an oData v3.0 filter statement. This parameter controls which objects are returned. Details on querying with oData can be found here: http://www.odata.org/documentation/odata-version-3-0/odata-version-3-0-core-protocol/#queryingcollections
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  isRequired: true
+  description: |+
+    The Id of the specific connector. You can find this by running the command without this parameter to get the desired Id, or by going into the portal and viewing connector details.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: SearchString
+  description: |+
+    Specifies a search string.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Top
+  description: |+
+    Specifies the maximum number of records to return.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: AzureADPreview.Get-AzureADApplicationProxyConnector
+name: Get-AzureADApplicationProxyConnector
+description: |-
+  The Get-AzureADApplicationProxyApplicationConnector cmdlet retrieves the details for a given connector. If no connectorId is specified, it retrieves all the connectors assigned to the tenant.
+metadata:
+  external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
+  Module Name: AzureADPreview
+  online version: ""
+  schema: 2.0.0

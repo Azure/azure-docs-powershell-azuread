@@ -1,0 +1,77 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Get audit logs of signins
+module: AzureADPreview
+notes: ""
+syntaxes:
+- Get-AzureADAuditSignInLogs [-All <Boolean>] [-Top <Int32>] [-Filter <String>] [<CommonParameters>]
+examples:
+- title: 'Example 1: Get sign in logs after a certain date'
+  code: |-
+    PS C:\>Get-AzureADAuditSignInLogs -Filter "createdDateTime gt 2019-03-20"
+  description: |-
+    This command gets all sign in logs on or after 3/20/2019
+  summary: ""
+- title: 'Example 2: Get sign in logs for a user or application'
+  code: |-
+    PS C:\>Get-AzureADAuditSignInLogs -Filter "userPrincipalName eq 'bgates@microsoft.com'"
+    PS C:\>Get-AzureADAuditSignInLogs -Filter "userDisplayName eq 'Paul Allen'"
+    PS C:\>Get-AzureADAuditSignInLogs -Filter "appId eq 'de8bc8b5-d9f9-48b1-a8ad-b748da725064'"
+    PS C:\>Get-AzureADAuditSignInLogs -Filter "appDisplayName eq 'Microsoft'"
+  description: |-
+    These commands are different ways to get all sign in logs for a certain user or application
+  summary: ""
+- title: 'Example 3: Get sign in logs from a certain location'
+  code: |-
+    PS C:\>Get-AzureADAuditSignInLogs -Filter "location/city eq 'Redmond' and location/state eq 'Washington' and location/countryOrRegion eq 'US'"
+  description: |-
+    This command shows how to get audit logs by location
+  summary: ""
+- title: 'Example 4: Get all sign in logs with a given status'
+  code: |-
+    PS C:\>Get-AzureADAuditSignInLogs -Filter "status/errorCode eq 0 -All $true"
+    PS C:\>Get-AzureADAuditSignInLogs -Filter "status/errorCode ne 0"
+  description: |-
+    These commands show how to get sign in logs for successes (eq 0) and failures (ne 0)
+  summary: ""
+parameters:
+- type: <xref href="Boolean" data-throw-if-not-resolved="False" />
+  name: All
+  description: |+
+    Boolean to express that return all results from the server for the specific query
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Filter
+  description: |+
+    The oData v3.0 filter statement. 
+    Controls which objects are returned.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Top
+  description: |+
+    The maximum number of records to return.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: AzureADPreview.Get-AzureADAuditSignInLogs
+name: Get-AzureADAuditSignInLogs
+description: |-
+  The Get-AzureADAuditSignInLogs cmdlet gets an Azure Active Directory sign in log.
+metadata:
+  external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
+  Module Name: AzureADPreview
+  online version: ""
+  schema: 2.0.0

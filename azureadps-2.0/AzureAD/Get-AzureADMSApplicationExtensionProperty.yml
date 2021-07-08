@@ -1,0 +1,45 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Retrieves the list of extension properties on an application object.
+module: AzureAD
+notes: ""
+inputs:
+- name: <xref href="string" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Open.MSGraph.Model.GetExtensionPropertiesResponse" data-throw-if-not-resolved="False" />
+  description: ""
+syntaxes:
+- Get-AzureADMSApplicationExtensionProperty -ObjectId <String> [<CommonParameters>]
+examples:
+- title: 'Example 1: Get extension properties'
+  code: |-
+    PS C:\>Get-AzureADMSApplicationExtensionProperty -ObjectId "3ddd22e7-a150-4bb3-b100-e410dea1cb84"
+
+              ObjectId                             Name                                                    TargetObjects
+              --------                             ----                                                    -------------
+              344ed560-f8e7-410e-ab9f-c795a7df5c36 extension_36ee4c6c081240a2b820b22ebd02bce3_NewAttribute {}
+  description: |-
+    This command gets the extension properties for the specified application in Azure Active Directory.
+  summary: ""
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ObjectId
+  isRequired: true
+  description: |+
+    The unique identifier of the object specific Azure Active Directory object
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: AzureAD.Get-AzureADMSApplicationExtensionProperty
+name: Get-AzureADMSApplicationExtensionProperty
+description: |-
+  Retrieves the list of extension properties on an application object.
+metadata:
+  external help file: Microsoft.Open.MS.GraphV10.PowerShell.dll-Help.xml
+  Module Name: AzureAD
+  online version: ""
+  schema: 2.0.0

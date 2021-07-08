@@ -1,0 +1,58 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  This cmdlet is used to retrieve the created trust framework policies (custom policies) in the directory.
+module: AzureADPreview
+notes: ""
+inputs:
+- name: <xref href="System.String" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="System.Object" data-throw-if-not-resolved="False" />
+  description: ""
+syntaxes:
+- Get-AzureADMSTrustFrameworkPolicy [<CommonParameters>]
+- Get-AzureADMSTrustFrameworkPolicy -Id <String> [-OutputFilePath <String>] [<CommonParameters>]
+examples:
+- title: Example 1
+  code: |-
+    PS C:\> Get-AzureADMSTrustFrameworkPolicy
+  description: |-
+    This example retrieves the list of all trust framework policies in the directory.
+  summary: ""
+- title: Example 2
+  code: |-
+    PS C:\> Get-AzureADMSTrustFrameworkPolicy -Id B2C_1A_signup_signin
+  description: |-
+    This example retrieves the contents of the specified trust framework policy.
+  summary: ""
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  isRequired: true
+  description: |+
+    The unique identifier for a trust framework policy.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: OutputFilePath
+  description: |+
+    @{Description=System.Management.Automation.PSObject\[\]}
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: AzureADPreview.Get-AzureADMSTrustFrameworkPolicy
+name: Get-AzureADMSTrustFrameworkPolicy
+description: |-
+  This cmdlet is used to retrieve the trust framework policies that have been created in the directory.
+metadata:
+  external help file: Microsoft.Open.MS.GraphBeta.PowerShell.Custom.dll-Help.xml
+  Module Name: AzureADPreview
+  online version: ""
+  schema: 2.0.0

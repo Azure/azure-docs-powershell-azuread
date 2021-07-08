@@ -1,0 +1,41 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Retrieves the lifecycle policy object to which a group belongs.
+module: AzureADPreview
+notes: ""
+inputs:
+- name: <xref href="System.String" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="System.Object" data-throw-if-not-resolved="False" />
+  description: ""
+syntaxes:
+- Get-AzureADMSLifecyclePolicyGroup -Id <String> [<CommonParameters>]
+examples:
+- title: Example 1
+  code: |-
+    PS C:\> Get-AzureADMSLifecyclePolicyGroup -Id cffd97bd-6b91-4c4e-b553-6918a320211c
+  description: |-
+    This command retrieves the lifecycle policy object to which a group belongs.
+  summary: ""
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  isRequired: true
+  description: |+
+    Specifies the ID of a group in Azure Active Directory
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: AzureADPreview.Get-AzureADMSLifecyclePolicyGroup
+name: Get-AzureADMSLifecyclePolicyGroup
+description: |-
+  The Get-AzureADMSLifecyclePolicyGroup retrieves the lifecycle policy object to which a group belongs.
+metadata:
+  external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
+  Module Name: AzureADPreview
+  online version: ""
+  schema: 2.0.0
