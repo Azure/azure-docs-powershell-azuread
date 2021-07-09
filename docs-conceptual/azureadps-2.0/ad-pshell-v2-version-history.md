@@ -1,6 +1,6 @@
 ---
 title: 'Azure Active Directory PowerShell for Graph: Version release history | Microsoft Docs'
-description: This article lists all releases of the AzureAD and AzureADPreview PowerShell modules
+description: This article lists all releases of the AzureAD and AzureADPreview PowerShell modules.
 services: active-directory
 documentationcenter: ''
 author: billmath
@@ -40,30 +40,20 @@ The following new cmdlets were added to the AzureADPreview module:
 
 ### Release status 
 
-06/29//2020: Released for installation and upgrade from the [PowerShell Gallery](https://www.powershellgallery.com/packages/AzureAD/2.0.2.76)
+06/29/2020: Released for installation and upgrade from the [PowerShell Gallery](https://www.powershellgallery.com/packages/AzureAD/2.0.2.76)
 
 ### New features and improvements 
 
 The following new cmdlets were added to the AzureAD module:
 
-- `New-AzureADMSConditionalAccessPolicy`
-- `Get-AzureADMSConditionalAccessPolicy`
-- `Set-AzureADMSConditionalAccessPolicy`
-- `Remove-AzureADMSConditionalAccessPolicy`
-- `New-AzureADMSNamedLocationPolicy`
-- `Get-AzureADMSNamedLocationPolicy`
-- `Set-AzureADMSNamedLocationPolicy`
-- `Remove-AzureADMSNamedLocationPolicy`
-
-The new **New-AzureADMSConditionalAccessPolicy** cmdlet creates a new conditional access policy in Azure Active Directory.
-The new **Get-AzureADMSNamedLocationPolicy** cmdlet retrieves the list of Azure Active Directory conditional acces policies.
-The new **Set-AzureADMSConditionalAccessPolicy** cmdlet updates the properties of a conditional access policy in Azure Active Directory.
-The new **Remove-AzureADMSConditionalAccessPolicy** cmdlet deletes an Azure Active Directory conditional access policy.
-The new **Get-AzureADMSNamedLocationPolicy** cmdlet retrieves the list of Azure Active Directory named location policies.
-The new **New-AzureADMSNamedLocationPolicy** cmdlet creates a new named location policy in Azure Active Directory.
-The new **Set-AzureADMSNamedLocationPolicy** cmdlet updates the properties of a named location policy in Azure Active Directory.
-The new **Remove-AzureADMSNamedLocationPolicy** cmdlet deletes an Azure Active Directory named location policy.
-
+- `New-AzureADMSConditionalAccessPolicy`- creates a new conditional access policy in Azure Active Directory.
+- `Get-AzureADMSConditionalAccessPolicy` - retrieves the list of Azure Active Directory conditional acces policies.
+- `Set-AzureADMSConditionalAccessPolicy` - updates the properties of a conditional access policy in Azure Active Directory.
+- `Remove-AzureADMSConditionalAccessPolicy` - deletes an Azure Active Directory conditional access policy.
+- `New-AzureADMSNamedLocationPolicy` - creates a new named location policy in Azure Active Directory. 
+- `Get-AzureADMSNamedLocationPolicy` - retrieves the list of Azure Active Directory named location policies.
+- `Set-AzureADMSNamedLocationPolicy` - updates the properties of a named location policy in Azure Active Directory.
+- `Remove-AzureADMSNamedLocationPolicy` - deletes an Azure Active Directory named location policy.
 
 ## 2.0.2.102 - Preview release of the AzureADPreview module
 
@@ -75,33 +65,20 @@ The new **Remove-AzureADMSNamedLocationPolicy** cmdlet deletes an Azure Active D
 
 The following new cmdlets were added to the AzureADPreview module:
 
-- `New-AzureADMSApplicationFromApplicationTemplate`
-- `New-AzureADMSPermissionGrantConditionSet`
-- `Get-AzureADMSPermissionGrantConditionSet`
-- `Set-AzureADMSPermissionGrantConditionSet`
-- `Remove-AzureADMSPermissionGrantConditionSet`
-- `New-AzureADMSConditionalAccessPolicy`
-- `Get-AzureADMSConditionalAccessPolicy`
-- `Set-AzureADMSConditionalAccessPolicy`
-- `Remove-AzureADMSConditionalAccessPolicy`
-- `New-AzureADMSNamedLocationPolicy`
-- `Get-AzureADMSNamedLocationPolicy`
-- `Set-AzureADMSNamedLocationPolicy`
-- `Remove-AzureADMSNamedLocationPolicy`
+- `New-AzureADMSApplicationFromApplicationTemplate` - creates a new application based on a applicationTemplate (Azure AD Gallery app or Non-Gallery)
+- `New-AzureADMSPermissionGrantConditionSet` - creates a new permission grant conditional set in Azure Active Directory.
+- `Get-AzureADMSPermissionGrantConditionSet` - retrieves the list of Azure Active Directory permission grant conditional set.
+- `Set-AzureADMSPermissionGrantConditionSet` - updates the properties of a permission grant conditional set in Azure Active Directory.
+- `Remove-AzureADMSPermissionGrantConditionSet` - deletes an Azure Active Directory permission grant conditional set.
+- `New-AzureADMSConditionalAccessPolicy` - creates a new conditional access policy in Azure Active Directory.
+- `Get-AzureADMSConditionalAccessPolicy` - retrieves the list of Azure Active Directory conditional acces policies.
+- `Set-AzureADMSConditionalAccessPolicy` - updates the properties of a conditional access policy in Azure Active Directory.
+- `Remove-AzureADMSConditionalAccessPolicy` - deletes an Azure Active Directory conditional access policy.
+- `New-AzureADMSNamedLocationPolicy` - creates a new named location policy in Azure Active Directory.
+- `Get-AzureADMSNamedLocationPolicy` - retrieves the list of Azure Active Directory named location policies.
+- `Set-AzureADMSNamedLocationPolicy` - updates the properties of a named location policy in Azure Active Directory.
+- `Remove-AzureADMSNamedLocationPolicy` - deletes an Azure Active Directory named location policy.
 
-The new **New-AzureADMSApplicationFromApplicationTemplate** cmdlet creates a new application based on a applicationTemplate (Azure AD Gallery app or Non-Gallery)
-The new **New-AzureADMSPermissionGrantConditionSet** cmdlet creates a new permission grant conditional set in Azure Active Directory.
-The new **Set-AzureADMSPermissionGrantConditionSet** cmdlet updates the properties of a permission grant conditional set in Azure Active Directory.
-The new **Remove-AzureADMSPermissionGrantConditionSet** cmdlet deletes an Azure Active Directory permission grant conditional set.
-The new **Get-AzureADMSPermissionGrantConditionSet** cmdlet retrieves the list of Azure Active Directory permission grant conditional set.
-The new **New-AzureADMSConditionalAccessPolicy** cmdlet creates a new conditional access policy in Azure Active Directory.
-The new **Get-AzureADMSNamedLocationPolicy** cmdlet retrieves the list of Azure Active Directory conditional acces policies.
-The new **Set-AzureADMSConditionalAccessPolicy** cmdlet updates the properties of a conditional access policy in Azure Active Directory.
-The new **Remove-AzureADMSConditionalAccessPolicy** cmdlet deletes an Azure Active Directory conditional access policy.
-The new **Get-AzureADMSNamedLocationPolicy** cmdlet retrieves the list of Azure Active Directory named location policies.
-The new **New-AzureADMSNamedLocationPolicy** cmdlet creates a new named location policy in Azure Active Directory.
-The new **Set-AzureADMSNamedLocationPolicy** cmdlet updates the properties of a named location policy in Azure Active Directory.
-The new **Remove-AzureADMSNamedLocationPolicy** cmdlet deletes an Azure Active Directory named location policy.
 Added parameters ‘Top’ and ‘All’ to **Get-AzureADAdministrativeUnitMember** cmdlet
 
 ### Minor breaking changes:
@@ -121,13 +98,13 @@ Added parameters ‘Top’ and ‘All’ to **Get-AzureADAdministrativeUnitMembe
 The following new cmdlets were added to the AzureADPreview module:
 
 - Support for AuthorizationPolicy and PermissionGrantPolicy API
-  - Get-AzureADMSAuthorizationPolicy
-  - Set-AzureADMSAuthorizationPolicy
-  - Get-AzureADMSPermissionGrantPolicy
-  - New-AzureADMSPermissionGrantPolicy
-  - Remove-AzureADMSPermissionGrantPolicy
-- Add label assignment capability to New-AzureADMSGroup and Set-AzureADMSGroup
-- Add ResetRedemption parameter to New-AzureADMSInvitation to reset an external user's invitation redemption
+  - `Get-AzureADMSAuthorizationPolicy`
+  - `Set-AzureADMSAuthorizationPolicy`
+  - `Get-AzureADMSPermissionGrantPolicy`
+  - `New-AzureADMSPermissionGrantPolicy`
+  - `Remove-AzureADMSPermissionGrantPolicy`
+- Add label assignment capability to `New-AzureADMSGroup` and `Set-AzureADMSGroup`
+- Add ResetRedemption parameter to `New-AzureADMSInvitation` to reset an external user's invitation redemption
 
 ## 2.0.2.77 - Preview release of the AzureADPreview module
 
@@ -139,53 +116,23 @@ The following new cmdlets were added to the AzureADPreview module:
 
 The following new cmdlets were added to the AzureADPreview module:
 
-- `Get-AzureADMSApplication`
-- `New-AzureADMSApplication`
-- `Set-AzureADMSApplication`
-- `Set-AzureADMSApplicationLogo`
-- `Remove-AzureADMSApplication`
-- `New-AzureADMSApplicationPassword`
-- `Remove-AzureADMSApplicationPassword`
-- `New-AzureADMSApplicationKey`
-- `Remove-AzureADMSApplicationKey`
-- `Get-AzureADMSApplicationOwner`
-- `Add-AzureADMSApplicationOwner`
-- `Remove-AzureADMSApplicationOwner`
-- `Get-AzureADMSApplicationExtensionProperty`
-- `New-AzureADMSApplicationExtensionProperty`
-- `Remove-AzureADMSApplicationExtensionProperty`
+- `Get-AzureADMSApplication` - retrieves the list of applications within the organization.
+- `New-AzureADMSApplication` - creates (registers) a new application object.
+- `Set-AzureADMSApplication` - updates the properties of an application object.
+- `Set-AzureADMSApplicationLogo` - sets the logo for an application object.
+- `Remove-AzureADMSApplication` - deletes an application object.
+- `New-AzureADMSApplicationPassword` - adds a strong password to an application.
+- `Remove-AzureADMSApplicationPassword` - removes a password from an application.
+- `New-AzureADMSApplicationKey` - adds a new key to an application.
+- `Remove-AzureADMSApplicationKey` - removes a key from an application.
+- `Get-AzureADMSApplicationOwner` - retrieves the list of owners for an application object.
+- `Add-AzureADMSApplicationOwner` - adds an owner for an application object.
+- `Remove-AzureADMSApplicationOwner` - removes an owner from an application object.
+- `Get-AzureADMSApplicationExtensionProperty` - retrieves the list of extension properties on an application object.
+- `New-AzureADMSApplicationExtensionProperty` - creates an extension property on an application object.
+- `Remove-AzureADMSApplicationExtensionProperty` - deletes an extension property from an application object.
 
-The new **Get-AzureADMSApplication** cmdlet retrieves the list of applications within the organization.
-
-The new **New-AzureADMSApplication** cmdlet creates (registers) a new application object.
-
-The new **Set-AzureADMSApplication** cmdlet updates the properties of an application object.
-
-The new **Set-AzureADMSApplicationLogo** cmdlet sets the logo for an application object.
-
-The new **Remove-AzureADMSApplication** cmdlet deletes an application object.
-
-The new **New-AzureADMSApplicationPassword** cmdlet adds a strong password to an application.
-
-The new **Remove-AzureADMSApplicationPassword** cmdlet remove a password from an application.
-
-The new **New-AzureADMSApplicationKey** cmdlet adds a new key to an application.
-
-The new **Remove-AzureADMSApplicationKey** cmdlet removes a key from an application.
-
-The new **Get-AzureADMSApplicationOwner** cmdlet retrieves the list of owners for an application object.
-
-The new **Add-AzureADMSApplicationOwner** cmdlet adds an owner for an application object.
-
-The new **Remove-AzureADMSApplicationOwner** cmdlet removes an owner from an application object.
-
-The new **Get-AzureADMSApplicationExtensionProperty** cmdlet retrieves the list of extension properties on an application object.
-
-The new **New-AzureADMSApplicationExtensionProperty** cmdlet creates an extension property on an application object.
-
-The new **Remove-AzureADMSApplicationExtensionProperty** cmdlet deletes an extension property from an application object.
-
-All the things you can do in the existing cmdlets can also be done through the new "MS" version of cmdlets. Applications created using the new **New-AzureADMSApplication** cmdlet can sign-in Work/School, Personal Microsoft Account users.
+All the things you can do in the existing cmdlets can also be done through the new "MS" version of cmdlets. Applications created using the new **New-AzureADMSApplication** cmdlet can sign-in Work/School and Personal Microsoft Account users.
 
 
 ## 2.0.2.76 - General Availability release of the AzureAD module
@@ -198,51 +145,21 @@ All the things you can do in the existing cmdlets can also be done through the n
 
 The following new cmdlets were added to the AzureAD module:
 
-- `Get-AzureADMSApplication`
-- `New-AzureADMSApplication`
-- `Set-AzureADMSApplication`
-- `Set-AzureADMSApplicationLogo`
-- `Remove-AzureADMSApplication`
-- `New-AzureADMSApplicationPassword`
-- `Remove-AzureADMSApplicationPassword`
-- `New-AzureADMSApplicationKey`
-- `Remove-AzureADMSApplicationKey`
-- `Get-AzureADMSApplicationOwner`
-- `Add-AzureADMSApplicationOwner`
-- `Remove-AzureADMSApplicationOwner`
-- `Get-AzureADMSApplicationExtensionProperty`
-- `New-AzureADMSApplicationExtensionProperty`
-- `Remove-AzureADMSApplicationExtensionProperty`
-
-The new **Get-AzureADMSApplication** cmdlet retrieves the list of applications within the organization.
-
-The new **New-AzureADMSApplication** cmdlet creates (registers) a new application object.
-
-The new **Set-AzureADMSApplication** cmdlet updates the properties of an application object.
-
-The new **Set-AzureADMSApplicationLogo** cmdlet sets the logo for an application object.
-
-The new **Remove-AzureADMSApplication** cmdlet deletes an application object.
-
-The new **New-AzureADMSApplicationPassword** cmdlet adds a strong password to an application.
-
-The new **Remove-AzureADMSApplicationPassword** cmdlet remove a password from an application.
-
-The new **New-AzureADMSApplicationKey** cmdlet adds a new key to an application.
-
-The new **Remove-AzureADMSApplicationKey** cmdlet removes a key from an application.
-
-The new **Get-AzureADMSApplicationOwner** cmdlet retrieves the list of owners for an application object.
-
-The new **Add-AzureADMSApplicationOwner** cmdlet adds an owner for an application object.
-
-The new **Remove-AzureADMSApplicationOwner** cmdlet removes an owner from an application object.
-
-The new **Get-AzureADMSApplicationExtensionProperty** cmdlet retrieves the list of extension properties on an application object.
-
-The new **New-AzureADMSApplicationExtensionProperty** cmdlet creates an extension property on an application object.
-
-The new **Remove-AzureADMSApplicationExtensionProperty** cmdlet deletes an extension property from an application object.
+- `Get-AzureADMSApplication` - retrieves the list of applications within the organization.
+- `New-AzureADMSApplication` - creates (registers) a new application object.
+- `Set-AzureADMSApplication` - pdates the properties of an application object.
+- `Set-AzureADMSApplicationLogo` - sets the logo for an application object.
+- `Remove-AzureADMSApplication` - deletes an application object.
+- `New-AzureADMSApplicationPassword` - dds a strong password to an application.
+- `Remove-AzureADMSApplicationPassword` - removes a password from an application.
+- `New-AzureADMSApplicationKey` - adds a new key to an application.
+- `Remove-AzureADMSApplicationKey` - removes a key from an application.
+- `Get-AzureADMSApplicationOwner` - retrieves the list of owners for an application object.
+- `Add-AzureADMSApplicationOwner` - adds an owner for an application object.
+- `Remove-AzureADMSApplicationOwner` - removes an owner from an application object.
+- `Get-AzureADMSApplicationExtensionProperty` - retrieves the list of extension properties on an application object.
+- `New-AzureADMSApplicationExtensionProperty` - creates an extension property on an application object.
+- `Remove-AzureADMSApplicationExtensionProperty` - deletes an extension property from an application object.
 
 All the things you can do in the existing cmdlets can also be done through the new "MS" version of cmdlets. Applications created using the new **New-AzureADMSApplication** cmdlet can sign-in Work/School, Personal Microsoft Account users.
 
@@ -256,14 +173,14 @@ All the things you can do in the existing cmdlets can also be done through the n
 
 The following new cmdlets are added in this release:
 
- - Add-AzureADMSServicePrincipalDelegatedPermissionClassification
- - Get-AzureADMSApplicationTemplate
- - Get-AzureADMSPasswordSingleSignOnCredential
- - Get-AzureADMSServicePrincipalDelegatedPermissionClassification
- - New-AzureADMSPasswordSingleSignOnCredential
- - Remove-AzureADMSPasswordSingleSignOnCredential
- - Remove-AzureADMSServicePrincipalDelegatedPermissionClassification
- - Set-AzureADMSPasswordSingleSignOnCredential
+ - `Add-AzureADMSServicePrincipalDelegatedPermissionClassification`
+ - `Get-AzureADMSServicePrincipalDelegatedPermissionClassification`
+ - `Remove-AzureADMSServicePrincipalDelegatedPermissionClassification` 
+ - `Get-AzureADMSApplicationTemplate`
+ - `Get-AzureADMSPasswordSingleSignOnCredential`
+ - `New-AzureADMSPasswordSingleSignOnCredential`
+ - `Remove-AzureADMSPasswordSingleSignOnCredential`
+ - `Set-AzureADMSPasswordSingleSignOnCredential`
 
 The new **-AzureADMSServicePrincipalDelegatedPermissionClassification** cmdlets enable customers to create/read and delete delegated permission classifications which are contained entity defined on the Azure Active Directory ServicePrincipal entity.
 
@@ -341,12 +258,12 @@ This release fixes a bug where the Disconnect-AzureAD cmdlet, in specific condit
 
 The following new cmdlets are added in this release:
 
- - Add-AzureADMSFeatureRolloutPolicyDirectoryObject
- - Get-AzureADMSFeatureRolloutPolicy
- - New-AzureADMSFeatureRolloutPolicy
- - Remove-AzureADMSFeatureRolloutPolicy
- - Remove-AzureADMSFeatureRolloutPolicyDirectoryObject
- - Set-AzureADMSFeatureRolloutPolicy
+ - `Add-AzureADMSFeatureRolloutPolicyDirectoryObject`
+ - `Get-AzureADMSFeatureRolloutPolicy`
+ - `New-AzureADMSFeatureRolloutPolicy`
+ - `Remove-AzureADMSFeatureRolloutPolicy`
+ - `Remove-AzureADMSFeatureRolloutPolicyDirectoryObject`
+ - `Set-AzureADMSFeatureRolloutPolicy`
 
 ## 2.0.2.32 - Preview release of the AzureADPreview module
 
@@ -357,19 +274,13 @@ The following new cmdlets are added in this release:
 ### New features and improvements 
 The following new cmdlets are added in this release:
 
- - Get-AzureADMSRoleAssignment
-
- - Get-AzureADMSRoleDefinition
-
- - New-AzureADMSRoleAssignment
-
- - New-AzureADMSRoleDefinition
-
- - Remove-AzureADMSRoleAssignment
-
- - Remove-AzureADMSRoleDefinition
-
- - Set-AzureADMSRoleDefinition
+ - `Get-AzureADMSRoleAssignment`
+ - `Get-AzureADMSRoleDefinition`
+ - `New-AzureADMSRoleAssignment`
+ - `New-AzureADMSRoleDefinition`
+ - `Remove-AzureADMSRoleAssignment`
+ - `Remove-AzureADMSRoleDefinition`
+ - `Set-AzureADMSRoleDefinition`
 
 Added support for -Filter parameter in Get-AzureADDirectoryRole cmdlet
 
@@ -649,3 +560,10 @@ Read more about [Azure AD directory auditing](/azure/active-directory/reports-mo
 ## 1.1.143.0 Public Preview release of the AzureADPreview module
 ### Release status
 6/30/2016: Released for installation and upgrade from the [PowerShell Gallery](https://www.powershellgallery.com/packages/AzureADPreview/1.1.143.0)
+
+## Next steps
+
+Read more about:
+- [Azure AD Privileged role management](/azure/active-directory/privileged-identity-management/)
+- [B2C Trust Framework policies](/azure/active-directory-b2c/active-directory-b2c-reference-trustframeworks-defined-ief-custom)
+- [Azure AD directory auditing](/azure/active-directory/reports-monitoring/)

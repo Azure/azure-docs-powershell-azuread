@@ -1,13 +1,9 @@
 ---
-services: active-directory
-documentationcenter: ''
 title: 'Install AzureAD PowerShell for Graph'
 description: This provides a guide on the installation process of the Azure AD PowerShell module.
 ms.service: active-directory
 ms.workload: identity
-ms.tgt_pltfrm: na
-ms.devlang: powershell
-ms.topic: article
+ms.topic: overview
 ms.date: 07/10/2017
 ms.author: rodejo
 ms.custom: posh-docs-conceptual
@@ -15,11 +11,13 @@ ms.reviewer: rodejo
 ---
 # Install Azure Active Directory PowerShell for Graph
 
-You can use the Azure Active Directory PowerShell Module Version for Graph for Azure AD administrative tasks such as user management, domain management and for configuring single sign-on. The cmdlets listed here are different than the MSOL cmdlets which are part of Azure Active Directory Version 1.0.
+You can use the Azure Active Directory PowerShell module version for Graph for Azure AD administrative tasks such as user management, domain management and for configuring single sign-on. The cmdlets listed here are different from the MSOnline cmdlets which are part of Azure Active Directory PowerShell version 1.0.
 
-The Azure AD PowerShell for Graph module has two versions: a Public preview version and a General Availability version. It is not recommended to use the Public Preview version for production scenarios.
-The Azure AD PowerShell for Graph preview module can be downloaded from the PowerShell Gallery at the [AzureADPreview](https://www.powershellgallery.com/packages/AzureADPreview) page.
-The Azure AD PowerShell for Graph General Availability module can be downloaded from the PowerShell Gallery at the [AzureAD](https://www.powershellgallery.com/packages/AzureAD) page. 
+The Azure AD PowerShell for Graph module has two versions: a Public Preview version and a General Availability (GA) version. It is not recommended to use the Public Preview version for production scenarios.
+
+To download the modules from the PowerShell Gallery use the following;
+- [AzureADPreview](https://www.powershellgallery.com/packages/AzureADPreview)
+- [AzureAD](https://www.powershellgallery.com/packages/AzureAD)
 
 ## Azure Active Directory PowerShell for Graph release version history
 
@@ -27,15 +25,30 @@ The release history for the Azure AD module and the Azure AD Preview module is h
 
 ## Installing the Azure AD Module
 
-The Azure AD Module is supported on the following Windows operating systems with the default version of Microsoft .NET Framework and Windows PowerShell: Windows 10, Windows 8.1, Windows 8, Windows 7, Windows Server 2012 R2, Windows Server 2012, or Windows Server 2008 R2.
+### Prerequisites
 
-If your computer has all the prerequisites for the installation, to install the General Availability version of the module on your computer you can run
+The Azure AD module is supported on the following Windows operating systems with the default version of Microsoft .NET Framework and Windows PowerShell: 
+
+:::row:::
+    :::column:::
+        - Windows 8.1
+        - Windows 8
+        - Windows 7
+    :::column-end:::
+    :::column:::
+        - Windows Server 2012 R2, 
+        - Windows Server 2012 
+        - Windows Server 2008 R2.
+    :::column-end:::
+:::row-end:::
+
+To install the General Availability version of the module, run:
 
 ```powershell
 Install-Module AzureAD
 ```
 
-To install the public preview release, use
+To install the public preview release, run:
 
 ```powershell
 Install-module AzureADPreview
@@ -44,7 +57,8 @@ Install-module AzureADPreview
 Note that you cannot install both the preview version and the GA version on the same computer at the same time.
 
 ### About the PowerShell Gallery
-The Azure AD module is distributed using the PowerShell gallery. Installing items from the Gallery requires the latest version of the PowerShellGet module, which is available in Windows 10, in Windows Management Framework (WMF) 5.0, or in the MSI-based installer (for PowerShell 3 and 4).
+
+The Azure AD module is distributed using the PowerShell Gallery. Installing items from the gallery requires the latest version of the PowerShellGet module, which is available in Windows 10, in Windows Management Framework (WMF) 5.0, or in the MSI-based installer (for PowerShell 3 and 4).
 - [**Get Windows 10**](https://go.microsoft.com/fwlink/?LinkID=624830&clcid=0x409),
 - [**Get WMF 5.0**](https://go.microsoft.com/fwlink/?LinkId=398175), or
 - [**Get MSI Installer**](https://go.microsoft.com/fwlink/?LinkID=746217&clcid=0x409)
@@ -79,7 +93,7 @@ Therefore, **PowerShellGet** requires one of the following operating systems:
 
 ## Updating the Azure AD Module
 
-You can check the version of the module you have installed on your computer by running this command:
+To check the version of the module installed on your computer run this command:
 
 ```PowerShell
 Get-Module AzureADPreview
@@ -94,7 +108,7 @@ To update the version of the Azure AD PowerShell module on your computer, re-run
 ```PowerShell
 Install-Module AzureADPreview
 ```
-This command checks the PowerShell gallery to see if a newer version is available and installs it on your computer if the version on the PowerShell Gallery is newer than the one installed on your computer.
+This command checks the PowerShell gallery to see if a newer version is available. If yes, the newer than the one installed on your computer.
 
 ## Connect to Azure AD
 
@@ -118,22 +132,6 @@ Connect-AzureAD -AzureEnvironment "AzureGermanyCloud"
 This example connects your PowerShell session to the German AzureAD environment.
 See **Connect-AzureAD** for more information.
 
+## Next steps
 
-## More about Windows PowerShell
-
-Windows PowerShell is a task-based command-line shell and scripting language designed for system administration.
-Unlike most shells, which accept and return text, Windows PowerShell is built on top of the .NET Framework, and accepts and returns .NET Framework objects.
-
-Windows PowerShell introduces the concept of a cmdlet (pronounced "command-let"), a simple, single-function command-line tool built into the shell.
-Cmdlets have the following naming convention: a verb and noun separated by a dash (-), such as **Get-Help**, **Get-Process**, and **Start-Service**.
-Windows PowerShell includes more than one hundred basic core cmdlets.
-
-For more information about, or for the syntax of, any of the cmdlets, use the `Get-Help <cmdlet name>` command, where `<cmdlet name>` is the name of the cmdlet that you want to research.
-For more detailed information, you can run any of the following commands:
-
-* `Get-Help <cmdlet name> -Detailed`
-* `Get-Help <cmdlet name> -Examples`
-* `Get-Help <cmdlet name> -Full`
-
-For more information about Windows PowerShell, see the [Getting Started with Windows PowerShell](https://msdn.microsoft.com/powershell/scripting/getting-started/getting-started-with-windows-powershell).
-
+- See the [New features and improvements](ad-pshell-v2-version-history.md).
