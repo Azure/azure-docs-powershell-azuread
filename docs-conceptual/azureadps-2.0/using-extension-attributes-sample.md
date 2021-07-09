@@ -23,7 +23,6 @@ Extension attributes offer a convenient way to extend your Azure AD directory wi
 + tenant details
 + devices
 + applications
-+ service principals
 
 Extension properties are registered on an Application object within the developer’s directory. After the application has been consented to by a user or an admin in the developer’s directory, the property is added to the target directory type and becomes immediately accessible in the developer’s directory. For a multi-tenant application, when the application is granted consent by a user or an admin in another organization, the extension properties become immediately accessible on the target directory type in the other organization’s directory.
 
