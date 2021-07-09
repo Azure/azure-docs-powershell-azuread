@@ -11,7 +11,7 @@ ms.reviewer: rodejo
 ---
 # Install Azure Active Directory PowerShell for Graph
 
-You can use the Azure Active Directory PowerShell module version for Graph for Azure AD administrative tasks such as user management, domain management and for configuring single sign-on. The cmdlets listed here are different from the MSOnline cmdlets which are part of Azure Active Directory Version 1.0.
+You can use the Azure Active Directory PowerShell module version for Graph for Azure AD administrative tasks such as user management, domain management and for configuring single sign-on. The cmdlets listed here are different from the MSOnline cmdlets which are part of Azure Active Directory PowerShell version 1.0.
 
 The Azure AD PowerShell for Graph module has two versions: a Public Preview version and a General Availability (GA) version. It is not recommended to use the Public Preview version for production scenarios.
 
@@ -28,12 +28,19 @@ The release history for the Azure AD module and the Azure AD Preview module is h
 ### Prerequisites
 
 The Azure AD module is supported on the following Windows operating systems with the default version of Microsoft .NET Framework and Windows PowerShell: 
-- Windows 8.1
-- Windows 8
-- Windows 7
-- Windows Server 2012 R2, 
-- Windows Server 2012 
-- Windows Server 2008 R2.
+
+:::row:::
+    :::column:::
+        - Windows 8.1
+        - Windows 8
+        - Windows 7
+    :::column-end:::
+    :::column:::
+        - Windows Server 2012 R2, 
+        - Windows Server 2012 
+        - Windows Server 2008 R2.
+    :::column-end:::
+:::row-end:::
 
 To install the General Availability version of the module, run:
 
@@ -51,7 +58,7 @@ Note that you cannot install both the preview version and the GA version on the 
 
 ### About the PowerShell Gallery
 
-The Azure AD module is distributed using the PowerShell gallery. Installing items from the Gallery requires the latest version of the PowerShellGet module, which is available in Windows 10, in Windows Management Framework (WMF) 5.0, or in the MSI-based installer (for PowerShell 3 and 4).
+The Azure AD module is distributed using the PowerShell Gallery. Installing items from the gallery requires the latest version of the PowerShellGet module, which is available in Windows 10, in Windows Management Framework (WMF) 5.0, or in the MSI-based installer (for PowerShell 3 and 4).
 - [**Get Windows 10**](https://go.microsoft.com/fwlink/?LinkID=624830&clcid=0x409),
 - [**Get WMF 5.0**](https://go.microsoft.com/fwlink/?LinkId=398175), or
 - [**Get MSI Installer**](https://go.microsoft.com/fwlink/?LinkID=746217&clcid=0x409)

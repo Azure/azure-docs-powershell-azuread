@@ -16,7 +16,7 @@ ms.custom: posh-docs-conceptual
 
 # Azure ActiveDirectory (MSOnline)
 
-You can use the Azure Active Directory Module for Windows PowerShell cmdlets for Azure AD administrative tasks such as user management, domain management and for configuring single sign-on.
+You can use the Azure Active Directory module for Windows PowerShell cmdlets for Azure AD administrative tasks such as user management, domain management and for configuring single sign-on.
 This topic includes information about how to install these cmdlets for use with your directory.
 
 Please note that we will begin to deprecate this module when the functionality of this module is migrated to the [Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2?view=azureadps-2.0&preserve-view=true). We advise customers who are creating new PowerShell scripts to use the newer module instead of this module.
