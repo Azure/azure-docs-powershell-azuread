@@ -25,22 +25,7 @@ The release history for the Azure AD module and the Azure AD Preview module is h
 
 ## Installing the Azure AD Module
 
-### Prerequisites
-
-The Azure AD module is supported on the following Windows operating systems with the default version of Microsoft .NET Framework and Windows PowerShell: 
-
-:::row:::
-    :::column:::
-        - Windows 8.1
-        - Windows 8
-        - Windows 7
-    :::column-end:::
-    :::column:::
-        - Windows Server 2012 R2, 
-        - Windows Server 2012 
-        - Windows Server 2008 R2.
-    :::column-end:::
-:::row-end:::
+The Azure AD Module is supported on the following Windows operating systems with the default version of Microsoft .NET Framework and Windows PowerShell: Windows 10, Windows 8.1, Windows 8, Windows 7, Windows Server 2012 R2, Windows Server 2012, or Windows Server 2008 R2.
 
 To install the General Availability version of the module, run:
 
