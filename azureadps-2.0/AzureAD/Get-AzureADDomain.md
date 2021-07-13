@@ -27,12 +27,29 @@ The Get-AzureADDomain cmdlet gets a domain in Azure Active Directory (AD).
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: Get a list of Domains that have been created.
 ```powershell
-PS C:\> {{ Add example code here }}
+PS C:\>Get-AzureADDomain
+
+Name        AvailabilityStatus AuthenticationType
+----        ------------------ ------------------
+Contoso.com                    Managed
+Fabrikam.com                   Managed
+Adatum.com                     Managed
 ```
 
-{{ Add example description here }}
+This command retrieves a list of domains.
+
+### Example 2: Get a specific Domain.
+```powershell
+PS C:\>Get-AzureADDomain -Name Contoso.com
+
+Name        AvailabilityStatus AuthenticationType
+----        ------------------ ------------------
+Contoso.com                    Managed
+```
+
+This command retrieves a domain with the specified name.
 
 ## PARAMETERS
 
