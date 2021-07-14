@@ -127,6 +127,8 @@
       "showPowerShellPicker": "true",
       "apiPlatform": "powershell",
       "brand": "azure",
+      "feedback_system": "GitHub",
+      "feedback_github_repo": "Azure/azure-docs-powershell-azuread",
       "searchScope": [
         "Azure"
       ],
