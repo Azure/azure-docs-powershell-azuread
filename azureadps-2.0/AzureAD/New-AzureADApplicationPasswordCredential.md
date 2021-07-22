@@ -37,7 +37,7 @@ Value               : ZJ0V1Yg4cp4eWIey9DrYspqVdX1pdvY437P/ueGxVLU=
 ## PARAMETERS
 
 ### -CustomKeyIdentifier
-@{Text=}
+A unique binary identifier.
 
 ```yaml
 Type: String
@@ -52,7 +52,7 @@ Accept wildcard characters: False
 ```
 
 ### -EndDate
-@{Text=}
+The date and time at which the password expires.
 
 ```yaml
 Type: DateTime
@@ -120,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -StartDate
-@{Text=}
+The date and time at which the password becomes valid.
 
 ```yaml
 Type: DateTime
@@ -135,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -Value
-@{Text=}
+The password for the user.
 
 ```yaml
 Type: String
