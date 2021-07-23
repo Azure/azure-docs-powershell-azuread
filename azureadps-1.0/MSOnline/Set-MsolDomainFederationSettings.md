@@ -187,6 +187,9 @@ Accept wildcard characters: False
 ### -SupportsMfa
 Indicates whether the IDP STS supports MFA.
 
+>[!NOTE]
+>To secure your Azure AD resource, it is recommended to require MFA through a [Conditional Access policy](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa), set the domain setting SupportsMfa to $True and [emit the multipleauthn claim](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-adfs#secure-azure-ad-resources-using-ad-fs) when a user performs two-step verification successfully.
+
 ```yaml
 Type: Boolean
 Parameter Sets: (All)
