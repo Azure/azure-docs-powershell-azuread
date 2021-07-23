@@ -82,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -TechnicalNotificationMails
-The email addres(es) that are used for technical notification emails
+The email address(es) that are used for technical notification emails
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
