@@ -46,7 +46,7 @@ PS C:\> Get-AzureADMSFeatureRolloutPolicy
           AppliesTo               :
 ```
 
-This command retrieves a list of all cloud authentication roll-out ploicies in Azure AD.
+This command retrieves a list of all cloud authentication roll-out policies in Azure AD.
 
 ### Example 2: Retrieves cloud authentication roll-out in Azure AD with given Id.
 ```

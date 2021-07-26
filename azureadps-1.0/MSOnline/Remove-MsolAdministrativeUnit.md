@@ -26,15 +26,15 @@ The **Remove-MsolAdministrativeUnit** cmdlet deletes an administrative unit from
 ### Example 1: Remove an administrative unit
 
 ```
-PS C:\> $AdminstrativeUnit = Get-MsolAdministrativeUnit -SearchString "West Coast"
-PS C:\> Remove-MsolAdministrativeUnit -ObjectId $AdminstrativeUnit.ObjectId -Force
+PS C:\> $AdministrativeUnit = Get-MsolAdministrativeUnit -SearchString "West Coast"
+PS C:\> Remove-MsolAdministrativeUnit -ObjectId $AdministrativeUnit.ObjectId -Force
 ```
 
 The first command gets an administrative unit that matches a search string by using the [Get-MsolAdministrativeUnit](./Get-MsolAdministrativeUnit.md) cmdlet.
-The command stores the administrative unit in the $AdminstrativeUnit variable.
+The command stores the administrative unit in the $AdministrativeUnit variable.
 
 The second command deletes the administrative unit.
-The command specifies the administrative unit by using the object ID of $AdminstrativeUnit.
+The command specifies the administrative unit by using the object ID of $AdministrativeUnit.
 The command specifies the _Force_ parameter.
 It does not prompt for comfirmation.
 
