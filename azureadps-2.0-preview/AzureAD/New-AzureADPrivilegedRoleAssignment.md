@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-AzureADPrivilegedRoleAssignment
 
 ## SYNOPSIS
-{{ Fill in the Synopsis }}
+Creates a privileged role assignment for a particular user.
 
 ## SYNTAX
 
@@ -18,7 +18,7 @@ New-AzureADPrivilegedRoleAssignment [-ExpirationDateTime <DateTime>] [-Id <Strin
 ```
 
 ## DESCRIPTION
-{{ Fill in the Description }}
+The New-AzureADPrivilegedRoleAssignment cmdlet creates a privileged role assignment for a particular user.
 
 ## EXAMPLES
 
@@ -32,7 +32,7 @@ PS C:\> {{ Add example code here }}
 ## PARAMETERS
 
 ### -ExpirationDateTime
-{{ Fill ExpirationDateTime Description }}
+The UTC DateTime when the temporary privileged role assignment will be expired. For permanent role assignment, the value is null.
 
 ```yaml
 Type: DateTime
@@ -47,7 +47,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-{{ Fill Id Description }}
+The unique identifier for the privileged role assignment.
 
 ```yaml
 Type: String
@@ -62,7 +62,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsElevated
-{{ Fill IsElevated Description }}
+`true` if the role assignment is activated. `false` if the role assignment is deactivated.
 
 ```yaml
 Type: Boolean
@@ -77,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResultMessage
-{{ Fill ResultMessage Description }}
+Result message set by the service.
 
 ```yaml
 Type: String
@@ -92,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -RoleId
-{{ Fill RoleId Description }}
+Role identifier, in GUID string format.
 
 ```yaml
 Type: String
@@ -107,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserId
-{{ Fill UserId Description }}
+User identifier, in GUID string format.
 
 ```yaml
 Type: String
