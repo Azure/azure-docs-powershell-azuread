@@ -1,7 +1,7 @@
 ---
 services: active-directory
 documentationcenter: ''
-title: 'Overview MSOnline'
+title: 'MSOnline PowerShell overview'
 description: Provides a description and getting started information for MSOline PowerShell.
 ms.service: active-directory
 ms.workload: identity
@@ -11,10 +11,9 @@ ms.topic: article
 ms.date: 07/10/2017
 ms.author: billmath
 ms.custom: posh-docs-conceptual
-
 ---
 
-# Azure ActiveDirectory (MSOnline)
+# Azure Active Directory (MSOnline)
 
 You can use the Azure Active Directory module for Windows PowerShell cmdlets for Azure AD administrative tasks such as user management, domain management and for configuring single sign-on.
 This topic includes information about how to install these cmdlets for use with your directory.
