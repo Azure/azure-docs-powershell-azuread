@@ -27,7 +27,7 @@ The Enable-AzureADDirectoryRole cmdlet activates an existing directory role in A
 # Retrieve the Template Role object for the Guest Inviter role 
 $InviterRole = Get-AzureADDirectoryRoleTemplate | Where-Object {$_.DisplayName -eq "Guest Inviter"}
 
-# Inspect the $Inveoter variable to make sure we found the correct template role
+# Inspect the $Inviter variable to make sure we found the correct template role
 $InviterRole
 
 ObjectId                             DisplayName   Description

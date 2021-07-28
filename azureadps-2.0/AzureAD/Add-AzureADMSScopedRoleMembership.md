@@ -40,7 +40,7 @@ AdministrativeUnitId           RoleId 	--------------------------           ----
 ## PARAMETERS
 
 ### -AdministrativeUnitId
-Specifies the ID of an admininstrative unit.
+Specifies the ID of an administrative unit.
 
 ```yaml
 Type: String

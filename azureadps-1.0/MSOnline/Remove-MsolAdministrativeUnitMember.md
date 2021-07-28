@@ -27,18 +27,18 @@ The **Remove-MsolAdministrativeUnitMember** cmdlet is used to remove a member fr
 ### Example 1: Remove a member from an administrative unit
 
 ```
-PS C:\> $AdminstrativeUnit = Get-MsolAdministrativeUnit -SearchString "West Coast"
+PS C:\> $AdministrativeUnit = Get-MsolAdministrativeUnit -SearchString "West Coast"
 PS C:\> $User = Get-MsolUser -UserPrincipalName "davidchew@contoso.com"
-PS C:\> Remove-MsolAdministrativeUnitMember  -AdministrativeUnitObjectId $AdminstrativeUnit.ObjectId -AdministrativeUnitMemberObjectId $User.ObjectId
+PS C:\> Remove-MsolAdministrativeUnitMember  -AdministrativeUnitObjectId $AdministrativeUnit.ObjectId -AdministrativeUnitMemberObjectId $User.ObjectId
 ```
 
 The first command gets an administrative unit that matches a search string by using the [Get-MsolAdministrativeUnit](./Get-MsolAdministrativeUnit.md) cmdlet.
-The command stores the administrative unit in the $AdminstrativeUnit variable.
+The command stores the administrative unit in the $AdministrativeUnit variable.
 
 The second command gets a user for the user principal name davidchew@contoso.com by using the [Get-MsolUser](./Get-MsolUser.md) cmdlet.
 The command stores the user in the $User variable.
 
-The final command removes the member in $User from the administrative unit in $AdminstrativeUnit.
+The final command removes the member in $User from the administrative unit in $AdministrativeUnit.
 
 ## PARAMETERS
 
