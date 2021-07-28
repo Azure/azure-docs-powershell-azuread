@@ -6,6 +6,9 @@ Welcome to the open-source [documentation](https://docs.microsoft.com/azure) of 
 
 Contributing to open source is more than just providing updates, it's also about letting us know when there is an issue. Read our [Contributing guidance](CONTRIBUTING.md) to find out more.
 
+> [!IMPORTANT]
+> New pull requests **MUST** always be created against the master branch which is the default branch in the main repository and not the live branch. PRs created against the live branch will not be accepted.
+
 ### Prerequisites
 
 You've decided to contribute, that's great! To contribute to the documentation, you need a few tools.

@@ -34,7 +34,7 @@ $user = Get-AzureADUser -searchstring "<Your user's UPN>"
 
 # Get the service principal for the app you want to assign the user to
 
-$servicePrincipal = Get-AzureADServicePrincipal -Filter "appId eq 'appId'"
+$servicePrincipal = Get-AzureADServicePrincipal -Filter "appId eq '$appId'"
 
 # Create the user app role assignment
 
