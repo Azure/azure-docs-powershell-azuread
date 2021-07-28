@@ -1,7 +1,7 @@
 ---
 services: active-directory
 documentationcenter: ''
-title: 'MSOnline PowerShell overview'
+title: 'Overview MSOnline'
 description: Provides a description and getting started information for MSOline PowerShell.
 ms.service: active-directory
 ms.workload: identity
@@ -14,13 +14,12 @@ ms.custom: posh-docs-conceptual
 
 ---
 
-
 # Azure ActiveDirectory (MSOnline)
 
-You can use the Azure Active Directory Module for Windows PowerShell cmdlets for Azure AD administrative tasks such as user management, domain management and for configuring single sign-on.
+You can use the Azure Active Directory module for Windows PowerShell cmdlets for Azure AD administrative tasks such as user management, domain management and for configuring single sign-on.
 This topic includes information about how to install these cmdlets for use with your directory.
 
-Please note that we will begin to deprecate this module when the functionality of this module is migrated to the [Azure Active Directory PowerShell for Graph Module](/powershell/azure/active-directory/ad-pshell-v2-version-history?view=azureadps-2.0&preserve-view=true). We advise customers who are creating new PowerShell scripts to use the newer module instead of this module.
+Please note that we will begin to deprecate this module when the functionality of this module is migrated to the [Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2?view=azureadps-2.0&preserve-view=true). We advise customers who are creating new PowerShell scripts to use the newer module instead of this module.
 
 ## Install the Azure AD Module
 
@@ -73,7 +72,7 @@ Notepad c:\MsolHelp\msolcmdlets.txt
 ## More about Windows PowerShell
 
 Windows PowerShell is a task-based command-line shell and scripting language designed for system administration.
-Unlike most shells which accept and return text, Windows PowerShell is built on top of the .NET Framework, and accepts and returns .NET Framework objects.
+Unlike most shells, which accept and return text, Windows PowerShell is built on top of the .NET Framework, and accepts and returns .NET Framework objects.
 
 Windows PowerShell introduces the concept of a cmdlet (pronounced "command-let"), a simple, single-function command-line tool built into the shell.
 

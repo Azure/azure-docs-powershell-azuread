@@ -33,7 +33,7 @@ Use [Get-MsolCompanyInformation](./Get-MsolCompanyInformation.md) to read the cu
 PS C:\> Set-MsolCompanySettings -SelfServePasswordResetEnabled $True
 ```
 
-This command turns on the self-serve password reset feature for all users in the company.
+This command turns on the self-serve password reset feature for all administrators in the company.
 
 ## PARAMETERS
 

@@ -102,6 +102,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-AzureADContact]()
 
 [Remove-AzureADContactManager]()
-
-[Set-AzureADContactManager]()
-

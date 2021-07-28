@@ -36,10 +36,10 @@ PS C:\> $User = Get-AzureADUser -Top 1
 PS C:\> Set-AzureADUserExtension -ObjectId $User.ObjectId -ExtensionName extension_e5e29b8a85d941eab8d12162bd004528_extensionAttribute8 -ExtensionValue "New Value"
 ```
 
-The first command gets a user by using the Get-AzureADUser (./Get-AzureADUser.md)cmdlet, and then stores it in the $User variable.
+The first command gets a user by using the [Get-AzureADUser](./Get-AzureADUser.md) cmdlet, and then stores it in the $User variable.
 
 The second command  sets the value of the extension attribute that hast he specified name to the value New Value.
-You can get extension attribute names by using the Get-AzureAdExtensionProperty (./Get-AzureAdExtensionProperty.md)cmdlet.
+You can get extension attribute names by using the [Get-AzureAdExtensionProperty](./Get-AzureAdExtensionProperty.md) cmdlet.
 
 ## PARAMETERS
 

@@ -29,7 +29,7 @@ Updates an Azure Active Directory permission grant condition set object identifi
 
 ### Example 1: Update a permission grant condition set to includes permissions that has been classified as low.
 ```
-1. Get exisiting permission grant policy by that need to be updated.
+1. Get existing permission grant policy by that need to be updated.
 		
 		$permissionGrantConditionSet =Get-AzureADMSPermissionGrantConditionSet -PolicyId "test1" -ConditionSetType "includes" -Id "0f81cce0-a766-4db6-a7e2-4e5f10f6abf8"
 

@@ -71,7 +71,7 @@ ObjectId                             DisplayName                                
 093fc0e2-1d6e-4a1b-9bf8-effa0196f1f7 All Users
 ```
 
-This command gets the groups that include the text All in their display names.
+This command gets the groups that start with the text All in their display names.
 
 ## PARAMETERS
 

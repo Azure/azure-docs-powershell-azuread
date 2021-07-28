@@ -27,15 +27,15 @@ The **Set-MsolAdministrativeUnit** cmdlet updates the properties of an administr
 ### Example 1: Modify a description of an administrative unit
 
 ```
-PS C:\> $AdminstrativeUnit = Get-MsolAdministrativeUnit -SearchString "West Coast"
-PS C:\> Set-MsolAdministrativeUnit -Description "West Coast region" -ObjectID $AdminstrativeUnit.ObjectId
+PS C:\> $AdministrativeUnit = Get-MsolAdministrativeUnit -SearchString "West Coast"
+PS C:\> Set-MsolAdministrativeUnit -Description "West Coast region" -ObjectID $AdministrativeUnit.ObjectId
 ```
 
 The first command gets an administrative unit that matches a search string by using the [Get-MsolAdministrativeUnit](./Get-MsolAdministrativeUnit.md) cmdlet.
-The command stores the administrative unit in the $AdminstrativeUnit variable.
+The command stores the administrative unit in the $AdministrativeUnit variable.
 
 The second command assigns the description value of West Coast region.
-The command specifies the administrative unit by using the object ID of $AdminstrativeUnit.
+The command specifies the administrative unit by using the object ID of $AdministrativeUnit.
 
 ## PARAMETERS
 
