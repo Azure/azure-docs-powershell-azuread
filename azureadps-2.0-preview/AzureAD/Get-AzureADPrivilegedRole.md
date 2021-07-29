@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-AzureADPrivilegedRole
 
 ## SYNOPSIS
-{{ Fill in the Synopsis }}
+Read properties and relationships of PrivilegedRole object.
 
 ## SYNTAX
 
@@ -23,21 +23,14 @@ Get-AzureADPrivilegedRole -Id <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-{{ Fill in the Description }}
+The Get-AzureADPrivilegedRole cmdlet reads the properties and relationships on the privilegedRole object.
 
 ## EXAMPLES
-
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
 
 ## PARAMETERS
 
 ### -Filter
-{{ Fill Filter Description }}
+Specifies the oData v3.0 filter statement. This parameter controls which objects are returned.
 
 ```yaml
 Type: String
@@ -52,7 +45,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-{{ Fill Id Description }}
+The unique identifier for administrator role. It is a GUID string and has the same value as the role template id from Azure AD for the given role.
 
 ```yaml
 Type: String

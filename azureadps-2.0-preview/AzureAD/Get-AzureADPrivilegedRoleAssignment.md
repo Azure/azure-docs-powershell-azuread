@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-AzureADPrivilegedRoleAssignment
 
 ## SYNOPSIS
-{{ Fill in the Synopsis }}
+Retrieve a list of privilegedRoleAssignment objects, which correspond to all role assignments for the organization.
 
 ## SYNTAX
 
@@ -23,21 +23,14 @@ Get-AzureADPrivilegedRoleAssignment -Id <String> [-All <Boolean>] [<CommonParame
 ```
 
 ## DESCRIPTION
-{{ Fill in the Description }}
+The Get-AzureADPrivilegedRoleAssignment cmdlet retrieves a list of privilegedRoleAssignment objects, which correspond to all role assignments for the organization.
 
 ## EXAMPLES
-
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
 
 ## PARAMETERS
 
 ### -All
-{{ Fill All Description }}
+If true, return all privilegedRoleAssignments. If false, return the number of objects specified by the Top parameter
 
 ```yaml
 Type: Boolean
@@ -52,7 +45,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-{{ Fill Id Description }}
+The unique identifier for the privileged role assignment.
 
 ```yaml
 Type: String
@@ -67,7 +60,7 @@ Accept wildcard characters: False
 ```
 
 ### -Top
-{{ Fill Top Description }}
+Specifies the maximum number of records to return.
 
 ```yaml
 Type: Int32
