@@ -5,7 +5,7 @@ online version:
 schema: 2.0.0
 ---
 
-# Get-AzureADServicePrincipalPasswordCredential
+# New-AzureADServicePrincipalPasswordCredential
 
 ## SYNOPSIS
 Get credentials for a service principal.
@@ -13,19 +13,19 @@ Get credentials for a service principal.
 ## SYNTAX
 
 ```
-Get-AzureADServicePrincipalPasswordCredential -ObjectId <String> [-InformationAction <ActionPreference>]
+New-AzureADServicePrincipalPasswordCredential -ObjectId <String> [-InformationAction <ActionPreference>]
  [-InformationVariable <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The Get-AzureADServicePrincipalPasswordCredential cmdlet gets the password credentials for a service principal in Azure Active Directory (AD).
+The New-AzureADServicePrincipalPasswordCredential cmdlet gets the password credentials for a service principal in Azure Active Directory (AD).
 
 ## EXAMPLES
 
 ### Example 1: Retrieve the password credential of a service principal
 ```
 PS C:\> $ServicePrincipalId = (Get-AzureADServicePrincipal -Top 1).ObjectId
-PS C:\> Get-AzureADServicePrincipalPasswordCredential -ObjectId $ServicePrincipalId
+PS C:\> New-AzureADServicePrincipalPasswordCredential -ObjectId $ServicePrincipalId
 ```
 
 The first command gets the ID of a service principal by using the Get-AzureADServicePrincipal (./Get-AzureADServicePrincipal.md)cmdlet. 
