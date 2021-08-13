@@ -41,7 +41,7 @@ The following new  custom security attributes cmdlets were added to the AzureADP
 - `New-AzureADMSCustomSecurityAttributeDefinition`
 - `Set-AzureADMSCustomSecurityAttributeDefinition`
 
-## 2.0.2.104 - General Availability release of the AzureAD module
+## 2.0.2.137 - General Availability release of the AzureAD module
 
 ### Release status 
 
