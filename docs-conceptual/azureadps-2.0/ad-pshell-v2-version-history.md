@@ -21,12 +21,41 @@ The Azure Active Directory (Azure AD) team regularly updates Azure AD Connect wi
 
 This article is designed to help you keep track of the versions that have been released, and to understand what the changes are in the latest version.
 
+## 2.0.2.138 - Preview release of the AzureADPreview module
+
+### Release status
+
+07/30/2021: Released for installation and upgrade from the [PowerShell Gallery](https://www.powershellgallery.com/packages/AzureADPreview/2.0.2.138)
+
+### New features and improvements
+
+The following new  custom security attributes cmdlets were added to the AzureADPreview module:
+
+- `Add-AzureADMScustomSecurityAttributeDefinitionAllowedValues`
+- `Get-AzureADMSCustomSecurityAttributeDefinitionAllowedValue`
+- `Set-AzureADMSCustomSecurityAttributeDefinitionAllowedValue`
+- `Get-AzureADMSAttributeSet`
+- `New-AzureADMSAttributeSet`
+- `Set-AzureADMSAttributeSet`
+- `Get-AzureADMSCustomSecurityAttributeDefinition`
+- `New-AzureADMSCustomSecurityAttributeDefinition`
+- `Set-AzureADMSCustomSecurityAttributeDefinition`
+
+## 2.0.2.104 - General Availability release of the AzureAD module
+
+### Release status 
+
+07/30/2021: Released for installation and upgrade from the [PowerShell Gallery](https://www.powershellgallery.com/packages/AzureAD/2.0.2.137)
+
+### New features and improvements 
+
+- Add parameter `IsAssignableToRole` to **New-AzureADMSGroup** and **Set-AzureADMSGroup** cmdlets.
 
 ## 2.0.2.105 - Preview release of the AzureADPreview module
 
 ### Release status
 
-06/30/2020: Released for installation and upgrade from the PowerShell Gallery
+06/30/2020: Released for installation and upgrade from the [PowerShell Gallery](https://www.powershellgallery.com/packages/AzureADPreview/2.0.2.105)
 
 ### New features and improvements
 
@@ -40,7 +69,7 @@ The following new cmdlets were added to the AzureADPreview module:
 
 ### Release status 
 
-06/29/2020: Released for installation and upgrade from the [PowerShell Gallery](https://www.powershellgallery.com/packages/AzureAD/2.0.2.76)
+06/29/2020: Released for installation and upgrade from the [PowerShell Gallery](https://www.powershellgallery.com/packages/AzureAD/2.0.2.104)
 
 ### New features and improvements 
 
