@@ -123,6 +123,9 @@ Connect-AzureAD -Credential $AzureAdCred
 The first command prompts for credentials and stores them as $AzureAdCred.
 The next command uses those credentials as $azureadcred to connect to the service.
 
+> [!Note]
+> The Azure AD and Azure AD Preview modules comprise of cmdlets with different naming conventions i.e. `-AzureAD` and `-AzureMS`. The `-AzureAD` cmdlets connect to the Azure AD Graph endpoint `https://graph.windows.net` while the `-AzureADMS` make calls to the Microsoft Graph endpoint `graph.microsoft.com`. Authentication is handled silently when you change the calls from one endpoint to another and you are not prompted for the credentials again.
+
 To connect to a specific environment of Azure Active Directory, use the _AzureEnvironment_ parameter, as follows:
 
 ```PowerShell
