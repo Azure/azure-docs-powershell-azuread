@@ -23,6 +23,15 @@ The Set-AzureADMSGroup cmdlet sets the properties for an existing Azure Active D
 
 ## EXAMPLES
 
+### Example 1: Update a group's display name
+
+```
+PS C:\> Set-AzureADMSGroup -Id '0260d811-6674-4e65-9674-f511abcb4f7b' -DisplayName 'Tailspin Toys Ltd'
+```
+
+This command updates the display name of the specified group.
+
+
 ## PARAMETERS
 
 ### -Description
@@ -30,7 +39,7 @@ Specifies a description for the group.
 
 ```yaml
 Type: String
-Parameter Sets: (All)
+Parameter Sets: (All) 
 Aliases:
 
 Required: False
