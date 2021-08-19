@@ -13,9 +13,9 @@ Creates an Azure AD group.
 ## SYNTAX
 
 ```
-New-AzureADMSGroup [-Description <String>] -DisplayName <String> -MailEnabled <Boolean> -MailNickname <String>
- -SecurityEnabled <Boolean> [-GroupTypes <System.Collections.Generic.List`1[System.String]>]
- [-Visibility <String>] [<CommonParameters>]
+New-AzureADMSGroup [-Description <String>] -DisplayName <String> [-IsAssignableToRole <Boolean>]
+ -MailEnabled <Boolean> -MailNickname <String> -SecurityEnabled <Boolean>
+ [-GroupTypes <System.Collections.Generic.List`1[System.String]>] [-Visibility <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -54,6 +54,36 @@ The processing state is On.
 This means that all users in the directory that qualify the rule are added as members to the group.
 Any users that do not qualify are removed from the group.
 
+### Example 2: Create a group assignable to role
+```
+PS C:\> New-AzureADMSGroup -DisplayName "HelpDesk admin group" -Description "Group assignable to role" -MailEnabled $False -MailNickname "helpDeskAdminGroup" -SecurityEnabled $True -IsAssignableToRole $True -Visibility "Private"
+
+Id                            : 1026185e-25df-4522-a380-7ab697a7241c
+Description                   : Group assignable to role
+OnPremisesSyncEnabled         : 
+DisplayName                   : HelpDesk admin group
+Mail                          : 
+MailEnabled                   : False
+IsAssignableToRole            : True 
+MailNickname                  : helpDeskAdminGroup
+ProxyAddresses                : {} 
+SecurityEnabled               : True 
+GroupTypes                    : {}
+```
+
+### Example 3: Create a group with label assignment
+```
+PS C:\> New-AzureADMSGroup -Description "Group associated with a label" -DisplayName "HelpDesk admin group" -GroupTypes "Unified" -LabelId "00000000-0000-0000-0000-000000000000" -MailEnabled $True -MailNickname "helpDeskAdminGroup" -SecurityEnabled $False
+
+Id                            : 11111111-1111-1111-1111-111111111111
+Description                   : Group associated with a label
+DisplayName                   : HelpDesk admin group
+GroupTypes                    : ["Unified"]
+MailEnabled                   : True
+MailNickname                  : helpDeskAdminGroup
+SecurityEnabled               : False
+```
+
 ## PARAMETERS
 
 ### -Description
@@ -87,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -MailEnabled
-Specifies whether this group is mail enabled.
+Indicates whether this group is mail enabled.
 
 Currently, you cannot create mail enabled groups in Azure AD.
 
@@ -120,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -SecurityEnabled
-Specifies whether the group is security enabled.
+Indicates whether the group is security enabled.
 For security groups, this value must be $True.
 
 ```yaml
@@ -152,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### -Visibility
-This parameter determines the visibility of the group's content and members list.
+Specifies the visibility of the group's content and members list.
 This parameter can take one of the following values:
 
 * "Public" - Anyone can view the contents of the group
@@ -169,6 +199,21 @@ Notes:
 
 ```yaml
 Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -IsAssignableToRole
+Indicates whether group can be assigned to a role. This property can only be set at the time of group creation and cannot be modified on an existing group.
+
+```yaml
+Type: Boolean
 Parameter Sets: (All)
 Aliases:
 
