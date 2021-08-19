@@ -1,10 +1,8 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
-ms.assetid: 7B6DBC7D-8143-47E3-A045-A76F93692099
-online version: 
+Module Name: AzureAD
+online version:
 schema: 2.0.0
-ms.reviewer: rodejo
-ms.custom: iamfeature=PowerShell
 ---
 
 # Select-AzureADGroupIdsGroupIsMemberOf
@@ -21,7 +19,7 @@ Select-AzureADGroupIdsGroupIsMemberOf -ObjectId <String>
 ```
 
 ## DESCRIPTION
-The **Select-AzureADGroupIdsGroupIsMemberOf** cmdlet gets the groups that a specified group is a member of in Azure Active Directory (AD).
+The Select-AzureADGroupIdsGroupIsMemberOf cmdlet gets the groups that a specified group is a member of in Azure Active Directory (AD).
 
 ## EXAMPLES
 
@@ -37,11 +35,11 @@ OdataMetadata                                                                   
 https://graph.windows.net/85b5ff1e-0402-400c-9e3c-0f9e965325d1/$metadata#Collection(Edm.String) {093fc0e2-1d6e-4a1b-9bf8-effa0196f1f7}
 ```
 
-The first command creates a **GroupIdsForMembershipCheck** object, and then stores it in the $Groups variable.
+The first command creates a GroupIdsForMembershipCheck object, and then stores it in the $Groups variable.
 
-The second command gets an ID for a group by using the [Get-AzureADGroup](./Get-AzureADGroup.md) cmdlet, and then stores it as a property of $Groups.
+The second command gets an ID for a group by using the Get-AzureADGroup (./Get-AzureADGroup.md)cmdlet, and then stores it as a property of $Groups.
 
-The third command gets the ID of a group by using **Get-AzureADGroup**, and then stores it in the $GroupId variable.
+The third command gets the ID of a group by using Get-AzureADGroup , and then stores it in the $GroupId variable.
 
 The final command gets the group membership of a group identified by $GroupId.
 
@@ -53,7 +51,7 @@ Specifies an array of group object IDs.
 ```yaml
 Type: GroupIdsForMembershipCheck
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -63,7 +61,8 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event.
+The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -105,7 +104,7 @@ Specifies the ID of a group in Azure AD.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -115,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -125,4 +124,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADGroup](./Get-AzureADGroup.md)
+[Get-AzureADGroup]()
+

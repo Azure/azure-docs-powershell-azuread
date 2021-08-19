@@ -102,4 +102,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 [Get-AzureADContactManager](./Get-AzureADContactManager.md)
 
-[Set-AzureADContactManager](./Set-AzureADContactManager.md)

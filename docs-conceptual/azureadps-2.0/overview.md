@@ -1,7 +1,8 @@
 ---
 services: active-directory
 documentationcenter: ''
-
+title: 'Azure AD PowerShell overview'
+description: An introduction to the Azure AD PowerShell module.
 ms.service: active-directory
 ms.workload: identity
 ms.tgt_pltfrm: na
@@ -16,13 +17,13 @@ ms.reviewer: rodejo
 
 Azure Active Directory PowerShell for Graph (AzureAD) is a module IT Pros commonly use to manage their Azure Active Directory. The cmdlets in the Azure AD module enable you to retrieve data from the directory, create new objects in the directory, update existing objects, remove objects, as well as configure the directory and its features.
 
-If you are developing new PowerShell scripts with Azure AD cmdlets we advise you to use the newer [Azure Active Directory PowerShell for Graph cmdlets](/powershell/module/azuread?view=azureadps-2.0). 
+If you are developing new PowerShell scripts with Azure AD cmdlets we advise you to use the newer [Azure Active Directory PowerShell for Graph cmdlets](/powershell/module/azuread?view=azureadps-2.0&preserve-view=true). 
 
 Please refer to the below detailed description of the modules for a full list of cmdlets and functionality.
 
 
 Module | Description
 ------ | -----------
-[AzureAD](/powershell/module/azuread?view=azureadps-2.0) | Azure Active Directory PowerShell for Graph
-[MSOnline](/powershell/module/msonline?view=azureadps-1.0)| MSOnline PowerShell
+[AzureAD](/powershell/module/azuread?view=azureadps-2.0&preserve-view=true) | Azure Active Directory PowerShell for Graph
+[MSOnline](/powershell/module/msonline?view=azureadps-1.0&preserve-view=true)| MSOnline PowerShell
 

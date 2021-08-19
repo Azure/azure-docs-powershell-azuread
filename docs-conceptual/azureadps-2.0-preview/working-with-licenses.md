@@ -1,7 +1,7 @@
 ---
 services: active-directory
 documentationcenter: ''
-
+title: 'Working with licenses (AzureADPreview)'
 ms.service: active-directory
 ms.workload: identity
 ms.tgt_pltfrm: na

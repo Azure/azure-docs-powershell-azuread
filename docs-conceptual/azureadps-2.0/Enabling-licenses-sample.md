@@ -1,7 +1,7 @@
 ---
 services: active-directory
 documentationcenter: ''
-
+title: 'Assigning licenses to a user'
 ms.service: active-directory
 ms.workload: identity
 ms.tgt_pltfrm: na

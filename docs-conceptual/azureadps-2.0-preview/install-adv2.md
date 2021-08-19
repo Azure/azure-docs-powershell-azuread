@@ -1,7 +1,7 @@
 ---
 services: active-directory
 documentationcenter: ''
-
+title: 'Install AzureAD Preview'
 ms.service: active-directory
 ms.workload: identity
 ms.tgt_pltfrm: na
@@ -44,7 +44,7 @@ The Azure AD module is distributed using the PowerShell gallery. Installing item
 - [**Get WMF 5.0**](https://go.microsoft.com/fwlink/?LinkId=398175), or
 - [**Get MSI Installer**](https://go.microsoft.com/fwlink/?LinkID=746217&clcid=0x409)
 
-With the latest[PowerShellGet](https://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409)module, you can:
+With the latest [PowerShellGet](https://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409) module, you can:
 
 + Search through items in the Gallery with [**Find-Module**](https://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409) and [**Find-Script**](https://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409)
 + Save items to your system from the Gallery with [**Save-Module**](https://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409)    and [**Save-Script**](https://go.microsoft.com/fwlink/?LinkID=760387&clcid=0x409)

@@ -1,9 +1,8 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.Custom.dll-Help.xml
-online version: 
+Module Name: AzureAD
+online version:
 schema: 2.0.0
-ms.reviewer: rodejo
-ms.custom: iamfeature=PowerShell
 ---
 
 # Set-AzureADApplicationLogo
@@ -48,7 +47,7 @@ The file path of the file that is to be uploaded as the application logo
 ```yaml
 Type: String
 Parameter Sets: File
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -63,7 +62,7 @@ A fileStream that is to be used as the application logo
 ```yaml
 Type: Stream
 Parameter Sets: Stream
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -78,7 +77,7 @@ And ImageByteArray that is to be used as the application logo
 ```yaml
 Type: Byte[]
 Parameter Sets: ByteArray
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -93,7 +92,7 @@ The ObjectID of the Application for which the logo is set
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -103,19 +102,16 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
-System.IO.Stream
-System.Byte[]
+System.IO.Stream System.Byte\[\]
 
 ## OUTPUTS
 
 ### System.Object
-
 ## NOTES
 
 ## RELATED LINKS
-

@@ -1,10 +1,8 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
-ms.assetid: 8846536B-3E57-4307-81C7-CCFFB2C6E5EC
-online version: 
+Module Name: AzureAD
+online version:
 schema: 2.0.0
-ms.reviewer: rodejo
-ms.custom: iamfeature=PowerShell
 ---
 
 # Set-AzureADGroup
@@ -21,7 +19,7 @@ Set-AzureADGroup -ObjectId <String> [-InformationAction <ActionPreference>] [-In
 ```
 
 ## DESCRIPTION
-The **Set-AzureADGroup** cmdlet updates a group in Azure Active Directory (AD).
+The Set-AzureADGroup cmdlet updates a group in Azure Active Directory (AD).
 
 ## EXAMPLES
 
@@ -30,16 +28,17 @@ The **Set-AzureADGroup** cmdlet updates a group in Azure Active Directory (AD).
 PS C:\>Set-AzureADGroup -ObjectId "11fa5e1e-737c-40c5-835e-416ae3959606" -Description "This is my new group"
 ```
 
-This command updates the specified group in Azure AD.
+This command updates the specfied group in Azure AD.
 
 ## PARAMETERS
 
 ### -Description
 Specfies a description.
+
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -54,7 +53,7 @@ Specifies a display name.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -64,7 +63,8 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
+Specifies how this cmdlet responds to an information event.
+The acceptable values for this parameter are:
 
 - Continue
 - Ignore
@@ -106,7 +106,7 @@ Indicates whether mail is enabled.
 ```yaml
 Type: Boolean
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -121,7 +121,7 @@ Specifies a nickname for the mail.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -136,7 +136,7 @@ Specifies the object ID of a group.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -151,7 +151,7 @@ Indicates whether security is enabled.
 ```yaml
 Type: Boolean
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -171,8 +171,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADGroup](./Get-AzureADGroup.md)
+[Get-AzureADGroup]()
 
-[New-AzureADGroup](./New-AzureADGroup.md)
+[New-AzureADGroup]()
 
-[Remove-AzureADGroup](./Remove-AzureADGroup.md)
+[Remove-AzureADGroup]()
+

@@ -1,10 +1,8 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
-ms.assetid: 45AD85CB-E30B-412B-945E-64187DD0E9BA
-online version: 
+Module Name: AzureAD
+online version:
 schema: 2.0.0
-ms.reviewer: rodejo
-ms.custom: iamfeature=PowerShell
 ---
 
 # Get-AzureADContactManager
@@ -20,7 +18,7 @@ Get-AzureADContactManager -ObjectId <String> [-InformationAction <ActionPreferen
 ```
 
 ## DESCRIPTION
-The **Get-AzureADContactManager** cmdlet gets the manager of a contact in Azure Active Directory.
+The Get-AzureADContactManager cmdlet gets the manager of a contact in Azure Active Directory.
 
 ## EXAMPLES
 
@@ -30,7 +28,7 @@ PS C:\> $Contact = Get-AzureADContact -Top 1
 PS C:\> Get-AzureADContactManager -ObjectId $Contact.ObjectId
 ```
 
-The first command gets a contact by using the [Get-AzureADContact](./Get-AzureADContact.md) cmdlet, and then stores it in the $Contact variable.
+The first command gets a contact by using the Get-AzureADContact (./Get-AzureADContact.md)cmdlet, and then stores it in the $Contact variable.
 
 The second command gets the manager for $Contact.
 
@@ -81,7 +79,7 @@ Specifies the ID of a contact in Azure Active Directory.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -91,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -101,8 +99,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADContact](./Get-AzureADContact.md) 
+[Get-AzureADContact]()
 
-[Remove-AzureADContactManager](./Remove-AzureADContactManager.md)
-
-[Set-AzureADContactManager](./Set-AzureADContactManager.md)
+[Remove-AzureADContactManager]()

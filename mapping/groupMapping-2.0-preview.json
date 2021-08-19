@@ -244,5 +244,18 @@
     "Remove-AzureADMSApplicationOwner" : "Application",
     "Get-AzureADMSApplicationExtensionProperty" : "Application",
     "New-AzureADMSApplicationExtensionProperty" : "Application",
-    "Remove-AzureADMSApplicationExtensionProperty" : "Application"
+    "Remove-AzureADMSApplicationExtensionProperty" : "Application",
+	"Add-AzureADMSAdministrativeUnitMember": "Administrative Units",		
+    "Add-AzureADMSScopedRoleMembership": "Administrative Units",		
+    "Get-AzureADMSAdministrativeUnit": "Administrative Units",		
+    "Get-AzureADMSAdministrativeUnitMember": "Administrative Units",	
+    "Get-AzureADMSGroupPermissionGrant": "Administrative Units",		
+    "Get-AzureADMSScopedRoleMembership": "Administrative Units",		
+    "New-AzureADMSAdministrativeUnit": "Administrative Units",		
+    "Remove-AzureADMSAdministrativeUnit": "Administrative Units",		
+    "Remove-AzureADMSAdministrativeUnitMember": "Administrative Units",		
+    "Remove-AzureADMSScopedRoleMembership": "Administrative Units",		
+    "Set-AzureADMSAdministrativeUnit": "Administrative Units",	
+    "Remove-AzureADMSApplicationVerifiedPublisher": "Applications",		
+    "Set-AzureADMSApplicationVerifiedPublisher": "Applications"
 }

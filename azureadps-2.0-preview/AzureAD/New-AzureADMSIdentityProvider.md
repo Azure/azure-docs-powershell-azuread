@@ -25,7 +25,7 @@ Configuring an identity provider in your Azure AD tenant also enables future B2B
 For example, an organization has resources in Office 365 that needs to be shared with a Gmail user.
 The Gmail user will use their Google account credentials to authenticate and access the documents.
 
-The current set of identity providers can be Microsoft, Google, Facebook, Amazon, or LinkedIn.
+The current set of identity providers for Azure AD B2C includes Microsoft, Google, Facebook, Amazon, LinkedIn, GitHub, Twitter, Weibo, QQ, and WeChat.
 
 ## EXAMPLES
 
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 
 ### -Type
 The identity provider type.
-It must be one of the following values: Microsoft, Google, Facebook, Amazon, or LinkedIn.
+It must be one of the following values: Microsoft, Google, Facebook, Amazon, LinkedIn, GitHub, Twitter, Weibo, QQ, or WeChat.
 
 ```yaml
 Type: String
