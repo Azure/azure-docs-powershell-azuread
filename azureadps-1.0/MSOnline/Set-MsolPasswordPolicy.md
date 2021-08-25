@@ -10,7 +10,7 @@ ms.custom: iamfeature=PowerShell
 # Set-MsolPasswordPolicy
 
 ## SYNOPSIS
-Updates the password policy of a specified domain or tenant.
+Updates the password policy of a specified domain.
 
 ## SYNTAX
 
@@ -20,20 +20,12 @@ Set-MsolPasswordPolicy -DomainName <String> [-ValidityPeriod <UInt32>] [-Notific
 ```
 
 ## DESCRIPTION
-The **Set-MsolPasswordPolicy** cmdlet updates the password policy of a specified domain or tenant.
+The **Set-MsolPasswordPolicy** cmdlet updates the password policy of a specified domain.
 Two settings are required, the first is to indicate the length of time that a password remains valid before it must be changed and the second is to indicate the number of days before the password expiration date that will trigger when users will receive their first notification that their password will soon expire.
 
 ## EXAMPLES
 
-### Example 1: Update validity period and notification for the current domain
-```
-PS C:\> Set-MsolPasswordPolicy -ValidityPeriod 60 -NotificationDays 14
-```
-
-This command updates the tenant so that all users passwords expire after 60 days.
-The users receive notification 14 days prior to that expiry.
-
-### Example 2: Update validity period and notification for a domain
+### Example 1: Update validity period and notification for a domain
 ```
 PS C:\> Set-MsolPasswordPolicy -ValidityPeriod 60 -NotificationDays 14 -DomainName "contoso.com"
 ```
