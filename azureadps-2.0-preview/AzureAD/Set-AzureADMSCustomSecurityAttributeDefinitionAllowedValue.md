@@ -22,7 +22,7 @@ Updates an Azure Active Directory CustomSecurityAttributeDefinition Allowed Valu
 
 ## EXAMPLES
 
-### Example
+### Example 1
 ```powershell
 Set-AzureADMSCustomSecurityAttributeDefinitionAllowedValue -CustomSecurityAttributeDefinitionId TestSet_TestAttribute -Id TestAllowedValue -IsActive $true
 ```

@@ -22,7 +22,7 @@ Create a new Azure Active Directory AttributeSet object.
 
 ## EXAMPLES
 
-### Example
+### Example 1
 ```powershell
 New-AzureADMSAttributeSet -Id "testAttributeSet" -Description "TestAttributeDescription" -MaxAttributesPerSet 10
 ```

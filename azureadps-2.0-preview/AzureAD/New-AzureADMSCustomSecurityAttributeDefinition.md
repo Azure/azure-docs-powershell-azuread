@@ -23,7 +23,7 @@ Create a new Azure Active Directory CustomSecurityAttributeDefinition object.
 
 ## EXAMPLES
 
-### Example
+### Example 1
 ```powershell
 New-AzureADMSCustomSecurityAttributeDefinition -AttributeSet "TestSet" -Name "TestAttribute" -Description "TestAttributeDescription" -Type "String" -Status "Available" -IsCollection $true -IsSearchable $true -UsePreDefinedValuesOnly $true
 ```
