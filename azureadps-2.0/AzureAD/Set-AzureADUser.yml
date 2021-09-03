@@ -1,0 +1,385 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Updates a user.
+module: AzureAD
+notes: ""
+links:
+- text: Get-AzureADUser
+  href: Get-AzureADUser.yml
+- text: New-AzureADUser
+  href: New-AzureADUser.yml
+- text: Remove-AzureADUser
+  href: Remove-AzureADUser.yml
+syntaxes:
+- >-
+  Set-AzureADUser -ObjectId <String>
+
+   [-ExtensionProperty <System.Collections.Generic.Dictionary`2[System.String,System.String]>]
+
+   [-AccountEnabled <Boolean>] [-AgeGroup <String>] [-City <String>] [-CompanyName <String>]
+
+   [-ConsentProvidedForMinor <String>] [-Country <String>] [-CreationType <String>] [-Department <String>]
+
+   [-DisplayName <String>] [-FacsimileTelephoneNumber <String>] [-GivenName <String>] [-IsCompromised <Boolean>]
+
+   [-ImmutableId <String>] [-JobTitle <String>] [-MailNickName <String>] [-Mobile <String>]
+
+   [-OtherMails <System.Collections.Generic.List`1[System.String]>] [-PasswordPolicies <String>]
+
+   [-PasswordProfile <PasswordProfile>] [-PhysicalDeliveryOfficeName <String>] [-PostalCode <String>]
+
+   [-PreferredLanguage <String>] [-ShowInAddressList <Boolean>]
+
+   [-SignInNames <System.Collections.Generic.List`1[Microsoft.Open.AzureAD.Model.SignInName]>] [-State <String>]
+
+   [-StreetAddress <String>] [-Surname <String>] [-TelephoneNumber <String>] [-UsageLocation <String>]
+
+   [-UserPrincipalName <String>] [-UserState <String>] [-UserStateChangedOn <String>] [-UserType <String>]
+
+   [<CommonParameters>]
+examples:
+- title: 'Example 1: Update a user'
+  code: |-
+    PS C:\> $user = Get-AzureADUser -ObjectId TestUser@example.com 
+    PS C:\> $user.DisplayName = 'YetAnotherTestUser' 
+    PS C:\> Set-AzureADUser -ObjectId TestUser@example.com -Displayname $user.Displayname
+  description: ""
+  summary: ""
+- title: 'Example 2: Set all but speciified users as minors with parental consent'
+  code: |-
+    Get-AzureADUser -All $true | 
+    Where-Object -FilterScript { $_.DisplayName -notmatch '(George|James|Education)' } | 
+    ForEach-Object  { Set-AzureADUser -ObjectId $($_.ObjectId) -AgeGroup 'minor' -ConsentProvidedForMinor 'granted' }
+  description: |-
+    This command updates the specified user's property.
+  summary: ""
+parameters:
+- type: <xref href="Boolean" data-throw-if-not-resolved="False" />
+  name: AccountEnabled
+  description: |+
+    Indicates whether the account is enabled.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: AgeGroup
+  description: |+
+    Used by enterprise applications to determine the legal age group of the user. This property is read-only and calculated based on **ageGroup** and **consentProvidedForMinor** properties. Allowed values: `null`, `minor`, `notAdult` and `adult`. Refer to the [legal age group property definitions][Learn more about age group and minor consent definitions].
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: City
+  description: |+
+    Specifies the user's city.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: CompanyName
+  description: |+
+    The company name which the user is associated. This property can be useful for describing the company that an external user comes from. The maximum length of the company name is 64 characters.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ConsentProvidedForMinor
+  description: |+
+    Sets whether consent has been obtained for minors. Allowed values: `null`, `granted`, `denied` and `notRequired`. Refer to the [legal age group property definitions][Learn more about age group and minor consent definitions] for further information.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Country
+  description: |+
+    Specifies the user's country.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: CreationType
+  description: |+
+    Indicates whether the user account is a local account for an Azure Active Directory B2C tenant.
+    Possible values are "LocalAccount" and null.
+    When creating a local account, the property is required and you must set it to "LocalAccount".
+    When creating a work or school account, do not specify the property or set it to null.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Department
+  description: |+
+    Specifies the user's department.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: DisplayName
+  description: |+
+    Specifies the user's display name.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="System.Collections.Generic.Dictionary`2" data-throw-if-not-resolved="False" /><span>[</span><xref href="System.String,System.String" data-throw-if-not-resolved="False" /><span>]</span>
+  name: ExtensionProperty
+  description: |+
+    Add data to custom user properties as the basic **open extensions** or the more versatile **schema extensaions**. See [more about extensions][Learn more about extensions].
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: FacsimileTelephoneNumber
+  description: |2+
+     The fax number of the user.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: GivenName
+  description: |+
+    Specifies the user's given name.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ImmutableId
+  description: |+
+    This property is used to associate an on-premises Active Directory user account to their Azure AD user object. This property must be specified when creating a new user account in the Graph if you are using a federated domain for the user's `userPrincipalName` (UPN) property. **Important:** The **$** and **\_** characters cannot be used when specifying this property.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Boolean" data-throw-if-not-resolved="False" />
+  name: IsCompromised
+  description: |+
+    True if this user is compromised
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: JobTitle
+  description: |+
+    Specifies the user's job title.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: MailNickName
+  description: |+
+    Specifies a nickname for the user's mail address.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Mobile
+  description: |+
+    Specifies the user's mobile phone number.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ObjectId
+  isRequired: true
+  description: |+
+    Specifies the ID of a user (as a UPN or ObjectId) in Azure AD.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="System.Collections.Generic.List`1" data-throw-if-not-resolved="False" /><span>[</span><xref href="System.String" data-throw-if-not-resolved="False" /><span>]</span>
+  name: OtherMails
+  description: |+
+    Specifies other email addresses for the user.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: PasswordPolicies
+  description: |+
+    Specifies password policies for the user.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="PasswordProfile" data-throw-if-not-resolved="False" />
+  name: PasswordProfile
+  description: |+
+    Specifies the user's password profile.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: PhysicalDeliveryOfficeName
+  description: |+
+    The office location in the user's place of business. Maximum length is 128 characters.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: PostalCode
+  description: |+
+    Specifies the user's postal code.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: PreferredLanguage
+  description: |+
+    Specifies the user's preferred language.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Boolean" data-throw-if-not-resolved="False" />
+  name: ShowInAddressList
+  description: |+
+    Set to True to show this user in the address list.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="System.Collections.Generic.List`1" data-throw-if-not-resolved="False" /><span>[</span><xref href="Microsoft.Open.AzureAD.Model.SignInName" data-throw-if-not-resolved="False" /><span>]</span>
+  name: SignInNames
+  description: |+
+    The list of sign in names for this user
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: State
+  description: |+
+    Specifies the user's state.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: StreetAddress
+  description: |+
+    Specifies the user's street address.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Surname
+  description: |+
+    Specifies the user's surname.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: TelephoneNumber
+  description: |+
+    Specifies the user's telephone number.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: UsageLocation
+  description: |+
+    A two letter country code ([ISO standard 3166](https://www.iso.org/iso-3166-country-codes.html)). Required for users that will be assigned licenses due to legal requirement to check for availability of services in countries.  Examples include: "US", "JP", and "GB". Not nullable.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: UserPrincipalName
+  description: |+
+    Specifies the user's user principal name.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: UserState
+  description: |+
+    For an external user invited to the tenant using the [invitation API](https://docs.microsoft.com/en-us/graph/api/invitation-post), this property represents the invited user's invitation status. For invited users, the state can be `PendingAcceptance` or `Accepted`, or `null` for all other users.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: UserStateChangedOn
+  description: |+
+    Shows the timestamp for the latest change to the externalUserState property.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: UserType
+  description: |+
+    A string value that can be used to classify user types in your directory, such as "Member" and "Guest".
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: AzureAD.Set-AzureADUser
+name: Set-AzureADUser
+description: |-
+  The Set-AzureADUser cmdlet updates a user in Azure Active Directory (AD).
+metadata:
+  external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+  Module Name: AzureAD
+  online version: ""
+  schema: 2.0.0

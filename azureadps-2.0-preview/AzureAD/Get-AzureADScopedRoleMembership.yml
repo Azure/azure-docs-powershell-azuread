@@ -1,0 +1,47 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Gets a scoped role membership from an administrative unit.
+module: AzureADPreview
+notes: ""
+links:
+- text: Add-AzureADScopedRoleMembership
+  href: ./Add-AzureADScopedRoleMembership.yml
+- text: Remove-AzureADScopedRoleMembership
+  href: ./Remove-AzureADScopedRoleMembership.yml
+syntaxes:
+- Get-AzureADScopedRoleMembership -ObjectId <String> [-ScopedRoleMembershipId <String>] [<CommonParameters>]
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ObjectId
+  isRequired: true
+  description: |+
+    Specifies the ID of an object.
+
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ScopedRoleMembershipId
+  description: |+
+    Specifies the ID of a scoped role membership.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: AzureADPreview.Get-AzureADScopedRoleMembership
+name: Get-AzureADScopedRoleMembership
+description: |-
+  The **Get-AzureADScopedRoleMembership** cmdlet gets a scoped role membership from an administrative unit in Azure Active Directory (AD).
+metadata:
+  external help file: Microsoft.Open.AzureADBeta.Graph.PowerShell.dll-Help.xml
+  Module Name: AzureADPreview
+  ms.assetid: 142C8CA5-58AC-4D47-98D5-B3FB7E6A37C7
+  ms.custom: iamfeature=PowerShell
+  ms.reviewer: rodejo
+  online version: ""
+  schema: 2.0.0

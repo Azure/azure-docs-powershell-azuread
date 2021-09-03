@@ -1,0 +1,81 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Adds an owner to a service principal.
+module: AzureAD
+notes: ""
+syntaxes:
+- >-
+  Add-AzureADServicePrincipalOwner -ObjectId <String> -RefObjectId <String>
+
+   [-InformationAction <ActionPreference>] [-InformationVariable <String>] [<CommonParameters>]
+examples:
+- title: 'Example 1: Add a user as an owner to a service principal'
+  code: |-
+    PS C:\> $ServicePrincipalId = (Get-AzureADServicePrincipal -Top 1).ObjectId
+    PS C:\> $OwnerId = (Get-AzureADUser -Top 1).ObjectId
+    PS C:\> Add-AzureADServicePrincipalOwner -ObjectId $ServicePrincipalId -RefObjectId -$OwnerId
+  description: |-
+    The first command gets the object ID of a service principal by using the Get-AzureADServicePrincipal (./Get-AzureADServicePrincipal.md)cmdlet, and then stores it in the $ServicePrincipalId variable.
+
+    The second command gets the object ID a user by using the Get-AzureADUser (./Get-AzureADUser.md)cmdlet, and then stores it in the $OwnerId variable.
+
+    The final command adds the user specified by $OwnerId an owner to a service principal specified by $ServicePrincipalId.
+  summary: ""
+parameters:
+- type: <xref href="ActionPreference" data-throw-if-not-resolved="False" />
+  name: InformationAction
+  description: |+
+    Specifies how this cmdlet responds to an information event.
+    The acceptable values for this parameter are:
+
+    - Continue
+    - Ignore
+    - Inquire
+    - SilentlyContinue
+    - Stop
+    - Suspend
+
+  defaultValue: None
+  position: Named
+  aliases: infa
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: InformationVariable
+  description: |+
+    Specifies a variable in which to store an information event message.
+
+  defaultValue: None
+  position: Named
+  aliases: iv
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ObjectId
+  isRequired: true
+  description: |+
+    Specifies the ID of a service principal in Active Directory.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: RefObjectId
+  isRequired: true
+  description: |+
+    Specifies the ID of the Active Directory object to assign as owner/manager/member.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: AzureAD.Add-AzureADServicePrincipalOwner
+name: Add-AzureADServicePrincipalOwner
+description: |-
+  The Add-AzureADServicePrincipalOwner cmdlet adds an owner to a service principal in Azure Active Directory.
+metadata:
+  external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+  Module Name: AzureAD
+  online version: ""
+  schema: 2.0.0

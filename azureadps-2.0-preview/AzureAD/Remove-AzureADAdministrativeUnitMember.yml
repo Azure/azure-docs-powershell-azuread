@@ -1,0 +1,77 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Removes an administrative unit member.
+module: AzureADPreview
+notes: ""
+links:
+- text: Add-AzureADAdministrativeUnitMember
+  href: ./Add-AzureADAdministrativeUnitMember.yml
+- text: Remove-AzureADAdministrativeUnitMember
+  href: ./Remove-AzureADAdministrativeUnitMember.yml
+syntaxes:
+- >-
+  Remove-AzureADAdministrativeUnitMember -ObjectId <String> -MemberId <String>
+
+   [-InformationAction <ActionPreference>] [-InformationVariable <String>] [<CommonParameters>]
+parameters:
+- type: <xref href="ActionPreference" data-throw-if-not-resolved="False" />
+  name: InformationAction
+  description: |+
+    Specifies how this cmdlet responds to an information event.
+
+    The acceptable values for this parameter are:
+
+    - Continue
+    - Ignore
+    - Inquire
+    - SilentlyContinue
+    - Stop
+    - Suspend
+
+  defaultValue: None
+  position: Named
+  aliases: infa
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: InformationVariable
+  description: |+
+    Specifies an information variable.
+
+  defaultValue: None
+  position: Named
+  aliases: iv
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: MemberId
+  isRequired: true
+  description: |+
+    Specifies the ID of the administrative unit member.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ObjectId
+  isRequired: true
+  description: |+
+    Specifies the ID of an administrative unit in Azure AD.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: AzureADPreview.Remove-AzureADAdministrativeUnitMember
+name: Remove-AzureADAdministrativeUnitMember
+description: |-
+  The **Remove-AzureADAdministrativeUnitMember** cmdlet removes an administrative unit member in Azure Active Directory (AD).
+metadata:
+  external help file: Microsoft.Open.AzureADBeta.Graph.PowerShell.dll-Help.xml
+  Module Name: AzureADPreview
+  ms.assetid: 9DEA1FE5-FE78-431F-9D12-53C349812A81
+  ms.custom: iamfeature=PowerShell
+  ms.reviewer: rodejo
+  online version: ""
+  schema: 2.0.0

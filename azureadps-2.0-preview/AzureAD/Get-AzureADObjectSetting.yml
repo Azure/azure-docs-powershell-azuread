@@ -1,0 +1,87 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Gets an object setting.
+module: AzureADPreview
+notes: ""
+links:
+- text: New-AzureADObjectSetting
+  href: ./New-AzureADObjectSetting.yml
+- text: Remove-AzureADObjectSetting
+  href: ./Remove-AzureADObjectSetting.yml
+- text: Set-AzureADObjectSetting
+  href: ./Set-AzureADObjectSetting.yml
+syntaxes:
+- >-
+  Get-AzureADObjectSetting -TargetType <String> -TargetObjectId <String> [-All <Boolean>] [-Top <Int32>]
+
+   [<CommonParameters>]
+- >-
+  Get-AzureADObjectSetting -TargetType <String> -TargetObjectId <String> -Id <String> [-All <Boolean>]
+
+   [<CommonParameters>]
+parameters:
+- type: <xref href="Boolean" data-throw-if-not-resolved="False" />
+  name: All
+  description: |+
+    If true, return all objects settings. If false, return the number of objects specified by the Top parameter
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  isRequired: true
+  description: |+
+    Specifies the ID of a settings object. 
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: TargetObjectId
+  isRequired: true
+  description: |+
+    Specifies the ID of the target object.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: TargetType
+  isRequired: true
+  description: |+
+    Specifies the target type. 
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Top
+  description: |+
+    Specifies the maximum number of records to return.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: AzureADPreview.Get-AzureADObjectSetting
+name: Get-AzureADObjectSetting
+description: |-
+  The Get-AzureADObjectSetting cmdlet gets an object setting from Azure Active Directory (AD).
+metadata:
+  external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
+  Module Name: AzureADPreview
+  ms.assetid: F1CEBDF4-5AF8-4AFC-AA1F-D36CEC381D04
+  ms.custom: iamfeature=PowerShell
+  ms.reviewer: rodejo
+  online version: ""
+  schema: 2.0.0

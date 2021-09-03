@@ -1,0 +1,41 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Removes a role assignment.
+module: AzureADPreview
+notes: ""
+inputs:
+- name: <xref href="System.String" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="System.Object" data-throw-if-not-resolved="False" />
+  description: ""
+syntaxes:
+- Remove-AzureADMSRoleAssignment -Id <String> [<CommonParameters>]
+examples:
+- title: Example 1
+  code: |-
+    PS C:\> Remove-AzureADMSRoleAssignment -Id Y1vFBcN4i0e3ngdNDocmngJAWGnAbFVAnJQyBBLv1lM-1
+  description: |-
+    Removes the specified role assignment from AzureAD.
+  summary: ""
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  isRequired: true
+  description: |+
+    Specifies the Id for role assignment.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: AzureADPreview.Remove-AzureADMSRoleAssignment
+name: Remove-AzureADMSRoleAssignment
+description: |-
+  The Remove-AzureADMSRoleAssignment cmdlet removes a role assignment from Azure Active Directory (AD).
+metadata:
+  external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
+  Module Name: AzureADPreview
+  online version: ""
+  schema: 2.0.0

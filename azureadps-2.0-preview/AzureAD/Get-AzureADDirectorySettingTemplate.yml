@@ -1,0 +1,63 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Gets a directory setting template.
+module: AzureADPreview
+notes: ""
+syntaxes:
+- >-
+  Get-AzureADDirectorySettingTemplate [-InformationAction <ActionPreference>] [-InformationVariable <String>]
+
+   [<CommonParameters>]
+- >-
+  Get-AzureADDirectorySettingTemplate -Id <String> [-InformationAction <ActionPreference>]
+
+   [-InformationVariable <String>] [<CommonParameters>]
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  isRequired: true
+  description: |+
+    The ID of the settings template you want to retrieve
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="ActionPreference" data-throw-if-not-resolved="False" />
+  name: InformationAction
+  description: |+
+    Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
+
+    - Continue
+    - Ignore
+    - Inquire
+    - SilentlyContinue
+    - Stop
+    - Suspend
+
+  defaultValue: None
+  position: Named
+  aliases: infa
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: InformationVariable
+  description: |+
+    Specifies an information variable.
+
+  defaultValue: None
+  position: Named
+  aliases: iv
+  parameterValueGroup: ""
+uid: AzureADPreview.Get-AzureADDirectorySettingTemplate
+name: Get-AzureADDirectorySettingTemplate
+description: |-
+  The **Get-AzureADDirectorySettingTemplate** cmdlet gets a directory setting template from Azure Active Directory (AD).
+metadata:
+  external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
+  Module Name: AzureADPreview
+  ms.assetid: BBFC4A72-1D35-4E9F-9B8A-F558E4D0E150
+  ms.custom: iamfeature=PowerShell
+  ms.reviewer: rodejo
+  online version: ""
+  schema: 2.0.0

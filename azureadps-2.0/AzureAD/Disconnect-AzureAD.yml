@@ -1,0 +1,73 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Disconnects the current session from an Azure Active Directory tenant.
+module: AzureAD
+notes: ""
+syntaxes:
+- >-
+  Disconnect-AzureAD [-InformationAction <ActionPreference>] [-InformationVariable <String>] [-WhatIf] [-Confirm]
+
+   [<CommonParameters>]
+examples:
+- title: 'Example 1: Disconnect your session from a tenant'
+  code: |-
+    PS C:\> Disconnect-AzureAD
+  description: |-
+    This command disconnects your session from a tenant.
+  summary: ""
+parameters:
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: "False"
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="ActionPreference" data-throw-if-not-resolved="False" />
+  name: InformationAction
+  description: |+
+    Specifies how this cmdlet responds to an information event.
+    The acceptable values for this parameter are:
+
+    - Continue
+    - Ignore
+    - Inquire
+    - SilentlyContinue
+    - Stop
+    - Suspend
+
+  defaultValue: None
+  position: Named
+  aliases: infa
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: InformationVariable
+  description: |+
+    Specifies a variable in which to store an information event message.
+
+  defaultValue: None
+  position: Named
+  aliases: iv
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: "False"
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: AzureAD.Disconnect-AzureAD
+name: Disconnect-AzureAD
+description: |-
+  The Disconnect-AzureAD cmdlet disconnects the current session from an Azure Active Directory tenant.
+metadata:
+  external help file: Microsoft.Open.Azure.AD.CommonLibrary.dll-Help.xml
+  Module Name: AzureAD
+  online version: ""
+  schema: 2.0.0
