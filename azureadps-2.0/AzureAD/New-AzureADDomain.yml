@@ -1,0 +1,99 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Creates a domain.
+module: AzureAD
+notes: ""
+syntaxes:
+- >-
+  New-AzureADDomain [-IsDefault <Boolean>] [-IsDefaultForCloudRedirections <Boolean>] -Name <String>
+
+   [-SupportedServices <System.Collections.Generic.List`1[System.String]>] [<CommonParameters>]
+examples:
+- title: 'Example 1: Create a new Domain'
+  code: |-
+    PS C:\>New-AzureADDomain -Name Contoso.com 
+
+    Name        AvailabilityStatus AuthenticationType
+    ----        ------------------ ------------------
+    Contoso.com                    Managed
+  description: |-
+    This command creates a new domain.
+  summary: ""
+- title: 'Example 2: Create a new Domain with a list of domain capabilities'
+  code: |-
+    PS C:\>New-AzureADDomain -Name Contoso.com -SupportedServices @("Email", "OfficeCommunicationsOnline")
+
+    Name        AvailabilityStatus AuthenticationType
+    ----        ------------------ ------------------
+    Contoso.com                    Managed
+  description: |-
+    This command creates a new domain with the specified services for this domain.
+  summary: ""
+- title: 'Example 3: Create a new Domain as the default for cross cloud redirections'
+  code: |-
+    PS C:\>New-AzureADDomain -Name Contoso.com -IsDefaultForCloudRedirections
+
+              Name        AvailabilityStatus AuthenticationType
+              ----        ------------------ ------------------
+              Contoso.com                    Managed
+  description: |-
+    This command creates a new domain and marks it as the default for cross cloud redirections.
+  summary: ""
+- title: 'Example 4: Create a new Domain and make if the default new user creation'
+  code: |-
+    PS C:\>New-AzureADDomain -Name Contoso.com -IsDefault
+
+              Name        AvailabilityStatus AuthenticationType
+              ----        ------------------ ------------------
+              Contoso.com                    Managed
+  description: |-
+    This command creates a new domain and marks it as the default to be used for new user creation.
+  summary: ""
+parameters:
+- type: <xref href="Boolean" data-throw-if-not-resolved="False" />
+  name: IsDefault
+  description: |+
+    Indicates whether or not this is the default domain that is used for user creation.
+    There is only one default domain per company.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Boolean" data-throw-if-not-resolved="False" />
+  name: IsDefaultForCloudRedirections
+  description: |+
+    Indicates whether or not this is the default domain used for cloud redirections.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Name
+  isRequired: true
+  description: |+
+    The fully qualified name of the domain.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="System.Collections.Generic.List`1" data-throw-if-not-resolved="False" /><span>[</span><xref href="System.String" data-throw-if-not-resolved="False" /><span>]</span>
+  name: SupportedServices
+  description: |+
+    The capabilities assigned to the domain.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: AzureAD.New-AzureADDomain
+name: New-AzureADDomain
+description: |-
+  The New-AzureADDomain cmdlet creates a domain in Azure Active Directory (AD).
+metadata:
+  external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+  Module Name: AzureAD
+  online version: ""
+  schema: 2.0.0

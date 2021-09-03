@@ -1,0 +1,63 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Get objects created by the user.
+module: AzureAD
+notes: ""
+syntaxes:
+- Get-AzureADUserCreatedObject -ObjectId <String> [-All <Boolean>] [-Top <Int32>] [<CommonParameters>]
+examples:
+- title: 'Example 1: Get a user-created object'
+  code: |-
+    PS C:\>Get-AzureADUserCreatedObject -ObjectId "df19e8e6-2ad7-453e-87f5-037f6529ae16"
+
+    ObjectId                             ObjectType
+    --------                             ----------
+    f618e073-cda3-4fc7-b8bd-5ad63f19840f ServicePrincipal
+    ed70f968-38ec-48d6-ae58-decfe80bfd5f ServicePrincipal
+    35ab4659-f61c-4a75-98d2-ef1d04ac2095 ServicePrincipal
+    d0ce9d42-c943-43a1-a0b0-b1ded8d0ce3d ServicePrincipal
+  description: |-
+    This command gets an object created by the specified user.
+  summary: ""
+parameters:
+- type: <xref href="Boolean" data-throw-if-not-resolved="False" />
+  name: All
+  description: |+
+    If true, return all objects created by this user.
+    If false, return the number of objects specified by the Top parameter
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ObjectId
+  isRequired: true
+  description: |+
+    Specifies the ID (as a UPN or ObjectId) of a user in Azure AD.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Top
+  description: |+
+    Specifies the maximum number of records to return.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: AzureAD.Get-AzureADUserCreatedObject
+name: Get-AzureADUserCreatedObject
+description: |-
+  The Get-AzureADUserCreatedObject cmdlet gets objects created by a user in Azure Active Directory (AD).
+metadata:
+  external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+  Module Name: AzureAD
+  online version: ""
+  schema: 2.0.0

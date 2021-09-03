@@ -1,0 +1,45 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  The New-AzureADApplicationProxyConnectorGroup cmdlet creates a new Application Proxy Connector group.
+module: AzureADPreview
+notes: ""
+inputs:
+- name: <xref href="Microsoft.Open.MSGraph.Model.Name" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="System.Object" data-throw-if-not-resolved="False" />
+  description: ""
+syntaxes:
+- New-AzureADApplicationProxyConnectorGroup -Name <Name> [<CommonParameters>]
+examples:
+- title: Example 1
+  code: |-
+    PS C:\> New-AzureADApplicationProxyConnectorGroup -Name "Backup Application Servers"
+
+    Id                                   Name                       ConnectorGroupType IsDefault
+    --                                   ----                       ------------------ ---------
+    d533d7b1-fd92-49e8-a200-3e7dcf7c2ab5 Backup Application Servers applicationProxy       False
+  description: |-
+    Example 1: Create a new Connector Group with the name "Backup Application Servers"
+  summary: ""
+parameters:
+- type: <xref href="Name" data-throw-if-not-resolved="False" />
+  name: Name
+  isRequired: true
+  description: |+
+    The name of the new Connector Group.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: AzureADPreview.New-AzureADApplicationProxyConnectorGroup
+name: New-AzureADApplicationProxyConnectorGroup
+description: |-
+  The New-AzureADApplicationProxyConnectorGroup cmdlet creates a new Application Proxy connector group.
+metadata:
+  external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
+  Module Name: AzureADPreview
+  online version: ""
+  schema: 2.0.0

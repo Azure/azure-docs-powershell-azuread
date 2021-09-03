@@ -1,0 +1,62 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  The Get-AzureADApplicationProxyApplication cmdlet retrieves an application configured for Application Proxy in Azure Active Directory.
+module: AzureAD
+notes: ""
+inputs:
+- name: <xref href="System.String" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="System.Object" data-throw-if-not-resolved="False" />
+  description: ""
+syntaxes:
+- Get-AzureADApplicationProxyApplication -ObjectId <String> [<CommonParameters>]
+examples:
+- title: Example 1
+  code: |-
+    PS C:\> Get-AzureADApplicationProxyApplication -ObjectId 8d6c6684-6f8c-42e2-8914-32ed2adf9ccf
+
+
+    ExternalAuthenticationType               : AadPreAuthentication
+    ApplicationServerTimeout                 : Default
+    ExternalUrl                              : https://travel.cycles.adventure-works.com/
+    InternalUrl                              : https://awcyclesapps.adventure-works.com:3000/
+    IsTranslateHostHeaderEnabled             : False
+    IsTranslateLinksInBodyEnabled            : False
+    IsOnPremPublishingEnabled                : True
+    VerifiedCustomDomainCertificatesMetadata : class OnPremisesPublishingVerifiedCustomDomainCertificatesMetadataObject {
+                                                 Thumbprint:  [XXXXX]
+                                                 SubjectName: [XXXXX]
+                                                 Issuer:
+                                                 IssueDate: 11/9/2017 5:54:29
+                                                 ExpiryDate: 11/9/2019 5:54:29
+                                               }
+
+    VerifiedCustomDomainKeyCredential        :
+    VerifiedCustomDomainPasswordCredential   :
+    SingleSignOnSettings                     :
+  description: ""
+  summary: ""
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ObjectId
+  isRequired: true
+  description: |+
+    This is the unique application Id of the application.
+    This can be found using the Get-AzureADApplication command.
+    You can also find this in the Azure Portal by navigating to AAD, Enterprise Applications, All Applications, Select your application, go to the properties tab, and use the ObjectId on that page.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: AzureAD.Get-AzureADApplicationProxyApplication
+name: Get-AzureADApplicationProxyApplication
+description: |-
+  The Get-AzureADApplicationProxyApplication cmdlet retrieves an application configured for Application Proxy in Azure Active Directory.
+metadata:
+  external help file: Microsoft.Open.MS.GraphV10.PowerShell.dll-Help.xml
+  Module Name: AzureAD
+  online version: ""
+  schema: 2.0.0
