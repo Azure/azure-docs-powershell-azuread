@@ -257,15 +257,5 @@
     "Remove-AzureADMSScopedRoleMembership": "Administrative Units",		
     "Set-AzureADMSAdministrativeUnit": "Administrative Units",	
     "Remove-AzureADMSApplicationVerifiedPublisher": "Applications",		
-    "Set-AzureADMSApplicationVerifiedPublisher": "Applications",
-    "Add-AzureADMScustomSecurityAttributeDefinitionAllowedValues": "Directory Roles",
-    "Get-AzureADMSCustomSecurityAttributeDefinitionAllowedValue": "Directory Roles",
-    "Set-AzureADMSCustomSecurityAttributeDefinitionAllowedValue": "Directory Roles",
-    "Get-AzureADMSAttributeSet": "Directory Roles",
-    "New-AzureADMSAttributeSet": "Directory Roles",
-    "Set-AzureADMSAttributeSet": "Directory Roles",
-    "Get-AzureADMSCustomSecurityAttributeDefinition": "Directory Roles",
-    "New-AzureADMSCustomSecurityAttributeDefinition": "Directory Roles",
-    "Set-AzureADMSCustomSecurityAttributeDefinition": "Directory Roles"
-
+    "Set-AzureADMSApplicationVerifiedPublisher": "Applications"    
 }
