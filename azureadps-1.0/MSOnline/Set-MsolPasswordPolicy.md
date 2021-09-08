@@ -15,7 +15,7 @@ Updates the password policy of a specified domain.
 ## SYNTAX
 
 ```
-Set-MsolPasswordPolicy -DomainName <String> [-ValidityPeriod <UInt32>] [-NotificationDays <UInt32>]
+Set-MsolPasswordPolicy -DomainName <String> -ValidityPeriod <UInt32> -NotificationDays <UInt32>
  [-TenantId <Guid>] [<CommonParameters>]
 ```
 
