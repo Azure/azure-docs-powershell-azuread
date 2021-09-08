@@ -257,5 +257,5 @@
     "Remove-AzureADMSScopedRoleMembership": "Administrative Units",		
     "Set-AzureADMSAdministrativeUnit": "Administrative Units",	
     "Remove-AzureADMSApplicationVerifiedPublisher": "Applications",		
-    "Set-AzureADMSApplicationVerifiedPublisher": "Applications"
+    "Set-AzureADMSApplicationVerifiedPublisher": "Applications"    
 }

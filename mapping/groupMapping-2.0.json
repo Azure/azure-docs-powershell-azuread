@@ -171,5 +171,13 @@
     "New-AzureADMSAdministrativeUnit": "Administrative Units",
     "Remove-AzureADMSAdministrativeUnit": "Administrative Units",
     "Remove-AzureADMSAdministrativeUnitMember": "Administrative Units",
-    "Remove-AzureADMSScopedRoleMembership": "Administrative Units"
+    "Remove-AzureADMSScopedRoleMembership": "Administrative Units",
+    "Get-AzureADMSRoleAssignment": "Directory Roles",
+    "Get-AzureADMSRoleDefinition": "Directory Roles",
+    "New-AzureADMSRoleAssignment": "Directory Roles",
+    "New-AzureADMSRoleDefinition": "Directory Roles",
+    "Remove-AzureADMSRoleAssignment": "Directory Roles",
+    "Remove-AzureADMSRoleDefinition": "Directory Roles",
+    "Set-AzureADMSRoleDefinition": "Directory Roles"
+
 }
