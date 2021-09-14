@@ -29,6 +29,8 @@ The Set-AzureADMSAuthorizationPolicy cmdlet updates an Azure Active Directory au
 PS C:\>Set-AzureADMSAuthorizationPolicy -DisplayName "updated displayname" -Description "updated description" -DefaultUserRolePermissions @{ AllowedToCreateApps = $false }
 ```
 
+This command updates the specified parameters of the authorization policy.
+
 ## PARAMETERS
 
 ### -AllowedToSignUpEmailBasedSubscriptions

@@ -26,6 +26,8 @@ The Get-AzureADMSAuthorizationPolicy cmdlet gets an Azure Active Directory autho
 PS C:\>Get-AzureADMSAuthorizationPolicy
 ```
 
+This commands gets the Azure AD authorization policy.
+
 ## PARAMETERS
 
 ### CommonParameters
