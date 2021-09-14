@@ -178,6 +178,8 @@
     "New-AzureADMSRoleDefinition": "Directory Roles",
     "Remove-AzureADMSRoleAssignment": "Directory Roles",
     "Remove-AzureADMSRoleDefinition": "Directory Roles",
-    "Set-AzureADMSRoleDefinition": "Directory Roles"
+    "Set-AzureADMSRoleDefinition": "Directory Roles",
+    "Get-AzureADMSAuthorizationPolicy": "Policies",
+    "Set-AzureADMSAuthorizationPolicy":"Policies"
 
 }
