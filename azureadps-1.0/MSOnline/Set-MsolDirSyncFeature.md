@@ -40,6 +40,13 @@ PS C:\> Set-MsolDirSyncFeature -Feature EnableSoftMatchOnUpn -Enable $True
 
 This command enables the SoftMatchOnUpn feature for the tenant.
 
+### Example 2: Block Soft Matching for the tenant
+```
+PS C:\> Set-MsolDirSyncFeature -Feature BlockSoftMatch -Enable $True
+```
+
+This command enables the BlockSoftMatch feature for the tenant - effectively blocking the Soft Matching feature in the tenant
+
 ## PARAMETERS
 
 ### -Feature
