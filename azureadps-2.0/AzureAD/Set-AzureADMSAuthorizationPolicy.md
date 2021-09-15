@@ -8,7 +8,7 @@ schema: 2.0.0
 # Set-AzureADMSAuthorizationPolicy
 
 ## SYNOPSIS
-Updates an authorization policy.
+Updates an authorization policy, which represents a policy that can control Azure Active Directory authorization settings.
 
 ## SYNTAX
 

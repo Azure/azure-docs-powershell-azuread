@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-AzureADMSAuthorizationPolicy
 
 ## SYNOPSIS
-Gets an authorization policy.
+Gets an authorization policy, which represents a policy that can control Azure Active Directory authorization settings.
 
 ## SYNTAX
 
