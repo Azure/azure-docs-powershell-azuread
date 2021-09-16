@@ -41,7 +41,7 @@ These commands are different ways to get all audit logs for a certain user or ap
 ### Example 3: Get audit logs containing a given target resource
 ```
 PS C:\>Get-AzureADAuditDirectoryLogs -Filter "targetResources/any(tr:tr/displayName eq 'Active Directory Example')"
-PS C:\>Get-AzureADAuditDirectoryLogs -Filter "targetResources/any(tr:tr/type eq 'ServicePrincipal'"
+PS C:\>Get-AzureADAuditDirectoryLogs -Filter "targetResources/any(tr:tr/type eq 'ServicePrincipal')"
 ```
 
 These commands show how to get audit logs by target resource display name or type
