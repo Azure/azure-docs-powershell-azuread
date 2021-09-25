@@ -43,7 +43,7 @@ PS C:\> $user.DisplayName = 'YetAnotherTestUser'
 PS C:\> Set-AzureADUser -ObjectId TestUser@example.com -Displayname $user.Displayname
 ```
 
-### Example 2: Set all but speciified users as minors with parental consent
+### Example 2: Set all but specified users as minors with parental consent
 
 ```pwsh
 Get-AzureADUser -All $true | 
