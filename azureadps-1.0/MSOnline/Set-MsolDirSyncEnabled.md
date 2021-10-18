@@ -21,7 +21,7 @@ Set-MsolDirSyncEnabled -EnableDirSync <Boolean> [-Force] [-TenantId <Guid>] [<Co
 ## DESCRIPTION
 The **Set-MsolDirSyncEnabled** cmdlet turns directory synchronization on or off for a company.
 
->Note: It may take 72 hours for deactivation to be completed. The time depends on the number of objects that are in your cloud service subscription account.
+>Important: Once you have disabled dirsync through this cmdlet it may take 72 hours for deactivation to be completed. The time depends on the number of objects that are in your cloud service subscription account. **You cannot cancel the disable action**, it will need to complete before you can take any other action, including re-enabling of DirSync. If you choose to re-enable DirSync, a full synchronization of your synced objects will happen. This may take a considerable time depending on the number of objects in your Active Directory.
 
 >Note: If you have disabled DirSync and then decide to re-enable DirSync, and if you had previously enabled the DirSync feature BlockCloudObjectTakeoverThroughHardMatch, OnPrem to cloud object takeover/update will be blocked for all objects which were mastered in Active Directory before. If this is the case and you want to resume syncing Active Directory mastered obejcts with Azure AD then you will need to set BlockCloudObjectTakeoverThroughHardMatch feature to false. You can read more about the DirSync features in [this article](https://docs.microsoft.com/powershell/module/msonline/set-msoldirsyncfeature?view=azureadps-1.0#example-3--block-cloud-object-takeover-through-hard-matching-for-the-tenant.md)
 
