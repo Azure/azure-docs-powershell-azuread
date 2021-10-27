@@ -22,33 +22,33 @@ The Get-AzureADAuditSignInLogs cmdlet gets an Azure Active Directory sign in log
 ## EXAMPLES
 
 ### Example 1: Get sign in logs after a certain date
-```
-PS C:\>Get-AzureADAuditSignInLogs -Filter "createdDateTime gt 2019-03-20"
+```powershell
+PS> Get-AzureADAuditSignInLogs -Filter "createdDateTime -gt 2019-03-20"
 ```
 
 This command gets all sign in logs on or after 3/20/2019
 
 ### Example 2: Get sign in logs for a user or application
-```
-PS C:\>Get-AzureADAuditSignInLogs -Filter "userPrincipalName eq 'bgates@microsoft.com'"
-PS C:\>Get-AzureADAuditSignInLogs -Filter "userDisplayName eq 'Paul Allen'"
-PS C:\>Get-AzureADAuditSignInLogs -Filter "appId eq 'de8bc8b5-d9f9-48b1-a8ad-b748da725064'"
-PS C:\>Get-AzureADAuditSignInLogs -Filter "appDisplayName eq 'Microsoft'"
+```powershell
+PS> Get-AzureADAuditSignInLogs -Filter "userPrincipalName -eq 'bgates@microsoft.com'"
+PS> Get-AzureADAuditSignInLogs -Filter "userDisplayName -eq 'Paul Allen'"
+PS> Get-AzureADAuditSignInLogs -Filter "appId -eq 'de8bc8b5-d9f9-48b1-a8ad-b748da725064'"
+PS> Get-AzureADAuditSignInLogs -Filter "appDisplayName -eq 'Microsoft'"
 ```
 
 These commands are different ways to get all sign in logs for a certain user or application
 
 ### Example 3: Get sign in logs from a certain location
-```
-PS C:\>Get-AzureADAuditSignInLogs -Filter "location/city eq 'Redmond' and location/state eq 'Washington' and location/countryOrRegion eq 'US'"
+```powershell
+PS C:> Get-AzureADAuditSignInLogs -Filter "location/city -eq 'Redmond' -and location/state -eq 'Washington' -and location/countryOrRegion -eq 'US'"
 ```
 
 This command shows how to get audit logs by location
 
 ### Example 4: Get all sign in logs with a given status
-```
-PS C:\>Get-AzureADAuditSignInLogs -Filter "status/errorCode eq 0" -All $true
-PS C:\>Get-AzureADAuditSignInLogs -Filter "status/errorCode ne 0"
+```powershell
+PS> Get-AzureADAuditSignInLogs -Filter "status/errorCode -eq 0" -All $true
+PS> Get-AzureADAuditSignInLogs -Filter "status/errorCode -ne 0"
 ```
 
 These commands show how to get sign in logs for successes (eq 0) and failures (ne 0)
