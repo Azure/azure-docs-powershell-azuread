@@ -21,6 +21,8 @@ New-AzureADMSGroup [-Description <String>] -DisplayName <String> [-IsAssignableT
 ## DESCRIPTION
 The New-AzureADMSGroup cmdlet creates an Azure Active Directory (Azure AD) group.
 
+## Examples
+
 ### Example : Create a group assignable to role
 ```
 PS C:\> New-AzureADMSGroup -DisplayName "HelpDesk admin group" -Description "Group assignable to role" -MailEnabled $False -MailNickname "helpDeskAdminGroup" -SecurityEnabled $True -IsAssignableToRole $True -Visibility "Private"
