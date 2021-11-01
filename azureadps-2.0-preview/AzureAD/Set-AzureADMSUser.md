@@ -18,7 +18,7 @@ Set-AzureADMSUser -Id <String> [-DisplayName <String>] [-CustomSecurityAttribute
 ```
 
 ## DESCRIPTION
-The Set-AzureADMSUser cmdlet updates a user in Azure Active Directory (AD).
+Updates a user in Azure Active Directory (AD).
 
 ## EXAMPLES
 
@@ -34,37 +34,45 @@ Update a user
 ### Example 2
 ```powershell
 PS C:\> $attributes = @{
-    Storage = @{
+    Engineering = @{
         "@odata.type" = "#Microsoft.DirectoryServices.CustomSecurityAttributeValue"
         "Project@odata.type" = "#Collection(String)"
-        Project = @("Value3","Value1")
+        Project = @("Baker","Cascade")
     }
 } 
 PS C:\> Set-AzureADMSUser -Id dbb22700-a7de-4372-ae78-0098ee60e55e -CustomSecurityAttributes $attributes
 ```
 
 Assign a custom security attribute with a multi-string value to a user.
-For this example, the attribute set name is `Storage` and the custom security attribute name is `Project`.
+
+- Attribute set: `Engineering`
+- Attribute: `Project`
+- Attribute data type: Collection of Strings
+- Attribute value: `("Baker","Cascade")`
 
 ### Example 3
 ```powershell
 PS C:\> $attributesUpdate = @{
-    Storage = @{
+    Engineering = @{
         "@odata.type" = "#Microsoft.DirectoryServices.CustomSecurityAttributeValue"
         "Project@odata.type" = "#Collection(String)"
-        Project = @("Value3","Value1")
+        Project = @("Alpine","Baker")
     }
 }
 PS C:\> Set-AzureADMSUser -Id dbb22700-a7de-4372-ae78-0098ee60e55e -CustomSecurityAttributes $attributes
 ```
 
 Update a custom security attribute with a multi-string value for a user.
-For this example, the attribute set name is `Storage` and the custom security attribute name is `Project`.
+
+- Attribute set: `Engineering`
+- Attribute: `Project`
+- Attribute data type: Collection of Strings
+- Attribute value: `("Alpine","Baker")`
 
 ## PARAMETERS
 
 ### -CustomSecurityAttributes
-Custom security attributes for a user.
+Custom security attributes for the user.
 
 ```yaml
 Type: Object

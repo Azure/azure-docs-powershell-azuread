@@ -24,22 +24,28 @@ Updates an Azure Active Directory (Azure AD) custom security attribute definitio
 
 ### Example 1
 ```powershell
-Set-AzureADMSCustomSecurityAttributeDefinition -Id "TestSet_TestAttribute" -Description "New Test Description"
+Set-AzureADMSCustomSecurityAttributeDefinition -Id "Engineering_ProjectDate" -Description "Target completion date (YYYY/MM/DD)"
 ```
 
-Update a single definition
+Update a custom security attribute definition
+
+- Attribute set: `Engineering`
+- Attribute: `ProjectDate`
 
 ### Example 2
 ```powershell
-Set-AzureADMSCustomSecurityAttributeDefinition -Id Storage_Project2 -Status "Deprecated" -UsePreDefinedValuesOnly $false
+Set-AzureADMSCustomSecurityAttributeDefinition -Id Engineering_Project -Status "Deprecated"
 ```
 
-Update a single definition
+Deactivate a custom security attribute definition
+
+- Attribute set: `Engineering`
+- Attribute: `Project`
 
 ## PARAMETERS
 
 ### -Description
-Description for the custom security attribute definition.
+Description of the custom security attribute definition.
 
 ```yaml
 Type: String
@@ -69,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -Status
-Determines whether attribute is currently active or has been deprecated. Acceptable values are 'Available' and 'Deprecated'.
+Specifies whether the custom security attribute is active or deactivated. Acceptable values are 'Available' and 'Deprecated'.
 
 ```yaml
 Type: String
@@ -84,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -UsePreDefinedValuesOnly
-Determines whether the attribute is free form or restricted to an allowed list of values only.
+Indicates whether only predefined values can be assigned to the custom security attribute.
 
 ```yaml
 Type: Boolean

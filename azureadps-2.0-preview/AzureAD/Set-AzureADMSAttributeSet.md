@@ -24,22 +24,26 @@ Updates an Azure Active Directory (Azure AD) attribute set object identified by 
 
 ### Example 1
 ```powershell
-Set-AzureADMSAttributeSet -Id "testAttributeSet" -Description "New Test Description"
+Set-AzureADMSAttributeSet -Id "Engineering" -Description "Attributes for cloud engineering team"
 ```
 
-Update a single attribute set
+Update an attribute set
+
+- Attribute set: `Engineering`
 
 ### Example 2
 ```powershell
-Set-AzureADMSAttributeSet -Id "testAttributeSet" -MaxAttributesPerSet 20
+Set-AzureADMSAttributeSet -Id "Engineering" -MaxAttributesPerSet 20
 ```
 
-Update a single attribute set
+Update an attribute set
+
+- Attribute set: `Engineering`
 
 ## PARAMETERS
 
 ### -Description
-Description for the attribute set.
+Description of the attribute set.
 
 ```yaml
 Type: String
@@ -54,7 +58,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-String identifier that is unique within a tenant.
+Name of the attribute set.
 
 ```yaml
 Type: String
@@ -69,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxAttributesPerSet
-Number of attributes that can be added in the attribute set.
+Maximum number of custom security attributes that can be defined in the attribute set.
 
 ```yaml
 Type: Int32

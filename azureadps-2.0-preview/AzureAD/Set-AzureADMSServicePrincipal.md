@@ -26,7 +26,7 @@ Set-AzureADMSServicePrincipal -Id <String> [-AccountEnabled <String>] [-AppId <S
 ```
 
 ## DESCRIPTION
-The Set-AzureADMSServicePrincipal cmdlet updates a service principal in Azure Active Directory (Azure AD).
+Updates a service principal in Azure Active Directory (Azure AD).
 
 ## EXAMPLES
 
@@ -40,32 +40,40 @@ This command disables the account of the specified service principal.
 ### Example 2
 ```powershell
 PS C:\> $attributes = @{
-    testAttributeSet1 = @{
+    Engineering = @{
         "@odata.type" = "#Microsoft.DirectoryServices.CustomSecurityAttributeValue"
-        "testAttribute@odata.type" = "#Collection(String)"
-        testAttribute = @("Value3","Value1")
+        "Project@odata.type" = "#Collection(String)"
+        Project = @("Baker","Cascade")
     }
 }
 PS C:\> Set-AzureADMSServicePrincipal -Id 7d194b0c-bf17-40ff-9f7f-4b671de8dc20 -CustomSecurityAttributes $attributes
 ```
 
 Assign a custom security attribute with a multi-string value to an application (service principal).
-For this example, the attribute set name is `testAttributeSet1` and the custom security attribute name is `testAttribute`.
+
+- Attribute set: `Engineering`
+- Attribute: `Project`
+- Attribute data type: Collection of Strings
+- Attribute value: `("Baker","Cascade")`
 
 ### Example 3
 ```powershell
 PS C:\> $attributesUpdate = @{
-    testAttributeSet1 = @{
+    Engineering = @{
         "@odata.type" = "#Microsoft.DirectoryServices.CustomSecurityAttributeValue"
-        "testAttribute@odata.type" = "#Collection(String)"
-        testAttribute = @("Value5")
+        "Project@odata.type" = "#Collection(String)"
+        Project = @("Alpine","Baker")
     }
 }
 PS C:\> Set-AzureADMSServicePrincipal -Id 7d194b0c-bf17-40ff-9f7f-4b671de8dc20 -CustomSecurityAttributes $attributesUpdate 
 ```
 
 Update a custom security attribute with a multi-string value for an application (service principal).
-For this example, the attribute set name is `testAttributeSet1` and the custom security attribute name is `testAttribute`.
+
+- Attribute set: `Engineering`
+- Attribute: `Project`
+- Attribute data type: Collection of Strings
+- Attribute value: `("Alpine","Baker")`
 
 ## PARAMETERS
 
@@ -115,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -CustomSecurityAttributes
-Custom security attributes for a service principal.
+Custom security attributes for the service principal.
 
 ```yaml
 Type: Object

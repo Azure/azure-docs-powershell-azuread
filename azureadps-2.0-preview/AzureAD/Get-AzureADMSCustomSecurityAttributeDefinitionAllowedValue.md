@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-AzureADMSCustomSecurityAttributeDefinitionAllowedValue
 
 ## SYNOPSIS
-Gets the allowed value on a custom security attribute definition.
+Gets the predefined value for a custom security attribute definition.
 
 ## SYNTAX
 
@@ -25,23 +25,30 @@ Get-AzureADMSCustomSecurityAttributeDefinitionAllowedValue -CustomSecurityAttrib
 ```
 
 ## DESCRIPTION
-Gets the allowed value on an Azure Active Directory (Azure AD) custom security attribute definition.
+Gets the predefined value for an Azure Active Directory (Azure AD) custom security attribute definition.
 
 ## EXAMPLES
 
 ### Example 1
 ```powershell
-Get-AzureADMSCustomSecurityAttributeDefinitionAllowedValue -CustomSecurityAttributeDefinitionId "TestSet_TestAttribute"
+Get-AzureADMSCustomSecurityAttributeDefinitionAllowedValue -CustomSecurityAttributeDefinitionId "Engineering_Project"
 ```
 
-Get all allowed values
+Get all predefined values
+
+- Attribute set: `Engineering`
+- Attribute: `Project`
 
 ### Example 2
 ```powershell
-Get-AzureADMSCustomSecurityAttributeDefinitionAllowedValue -CustomSecurityAttributeDefinitionId TestSet_TestAttribute -Id TestAllowedValue
+Get-AzureADMSCustomSecurityAttributeDefinitionAllowedValue -CustomSecurityAttributeDefinitionId "Engineering_Project" -Id "Alpine"
 ```
 
-Get a single allowed value
+Get a predefined value
+
+- Attribute set: `Engineering`
+- Attribute: `Project`
+- Predefined value: `Alpine`
 
 ## PARAMETERS
 
@@ -79,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique identifier of an object in Azure AD.
+The unique identifier of a predefined value in Azure AD.
 
 ```yaml
 Type: String

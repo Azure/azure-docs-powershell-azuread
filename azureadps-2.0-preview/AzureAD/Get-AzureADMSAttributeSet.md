@@ -36,10 +36,12 @@ Get all attribute sets
 
 ### Example 2
 ```powershell
-Get-AzureADMSAttributeSet -Id "testAttributeSet"
+Get-AzureADMSAttributeSet -Id "Engineering"
 ```
 
-Get a single attribute set
+Get a attribute set
+
+- Attribute set: `Engineering`
 
 ## PARAMETERS
 

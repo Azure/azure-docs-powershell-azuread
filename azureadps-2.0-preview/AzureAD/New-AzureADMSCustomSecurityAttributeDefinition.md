@@ -19,21 +19,25 @@ New-AzureADMSCustomSecurityAttributeDefinition -AttributeSet <String> [-Descript
 ```
 
 ## DESCRIPTION
-Adds a new AAzure Active Directory (Azure AD) custom security attribute definition object.
+Adds a new Azure Active Directory (Azure AD) custom security attribute definition object.
 
 ## EXAMPLES
 
 ### Example
 ```powershell
-New-AzureADMSCustomSecurityAttributeDefinition -AttributeSet "TestSet" -Name "TestAttribute" -Description "TestAttributeDescription" -Type "String" -Status "Available" -IsCollection $true -IsSearchable $true -UsePreDefinedValuesOnly $true
+New-AzureADMSCustomSecurityAttributeDefinition -AttributeSet "Engineering" -Name "ProjectDate" -Description "Target completion date" -Type "String" -Status "Available" -IsCollection $false -IsSearchable $true -UsePreDefinedValuesOnly $true
 ```
 
-Add a single definition
+Add a custom security attribute definition
+
+- Attribute set: `Engineering`
+- Attribute: `ProjectDate`
+- Attribute data type: String
 
 ## PARAMETERS
 
 ### -AttributeSet
-The unique identifier of an attribute set in Azure AD.
+Name of the attribute set in Azure AD.
 
 ```yaml
 Type: String
@@ -63,7 +67,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsCollection
-Determines whether the attribute is of collection type.
+Indicates whether multiple values can be assigned to the custom security attribute.
 
 ```yaml
 Type: Boolean
@@ -78,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsSearchable
-Determines whether attribute values will be indexed for searching on objects which will be stamped with attribute values.
+Indicates whether custom security attribute values will be indexed for searching on objects that are assigned attribute values.
 
 ```yaml
 Type: Boolean
@@ -93,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-Name that is unique within an attribute set.
+Name of the custom security attribute. Must be unique within an attribute set.
 
 ```yaml
 Type: String
@@ -108,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -Status
-Determines whether attribute is currently active or has been deprecated. Acceptable values are 'Available' and 'Deprecated'.
+Specifies whether the custom security attribute is active or deactivated. Acceptable values are 'Available' and 'Deprecated'.
 
 ```yaml
 Type: String
@@ -138,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -UsePreDefinedValuesOnly
-Determines whether the attribute is free form or restricted to an allowed list of values only.
+Indicates whether only predefined values can be assigned to the custom security attribute. If set to false, free-form values are allowed.
 
 ```yaml
 Type: Boolean

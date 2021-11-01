@@ -28,7 +28,7 @@ Get-AzureADMSUser -Id <String> [-All <Boolean>] [-Select <String>] [<CommonParam
 ```
 
 ## DESCRIPTION
-The Get-AzureADMSUser cmdlet gets a user from Azure Active Directory (Azure AD).
+Gets a user in Azure Active Directory (Azure AD).
 
 ## EXAMPLES
 

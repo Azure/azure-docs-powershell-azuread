@@ -8,7 +8,7 @@ schema: 2.0.0
 # Add-AzureADMScustomSecurityAttributeDefinitionAllowedValues
 
 ## SYNOPSIS
-Adds an allowed value for a custom security attribute definition.
+Adds a predefined value for a custom security attribute definition.
 
 ## SYNTAX
 
@@ -18,21 +18,25 @@ Add-AzureADMScustomSecurityAttributeDefinitionAllowedValues -CustomSecurityAttri
 ```
 
 ## DESCRIPTION
-Adds an allowed value for a Azure Active Directory (Azure AD) custom security attribute definition.
+Adds a predefined value for a Azure Active Directory (Azure AD) custom security attribute definition.
 
 ## EXAMPLES
 
 ### Example
 ```powershell
-Add-AzureADMScustomSecurityAttributeDefinitionAllowedValues -CustomSecurityAttributeDefinitionId TestSet_TestAttribute -Id "TestAllowedValue" -IsActive $true
+Add-AzureADMScustomSecurityAttributeDefinitionAllowedValues -CustomSecurityAttributeDefinitionId Engineering_Project -Id "Alpine" -IsActive $true
 ```
 
-Add a single allowed value
+Add a predefined value
+
+- Attribute set: `Engineering`
+- Attribute: `Project`
+- Predefined value: `Alpine`
 
 ## PARAMETERS
 
 ### -CustomSecurityAttributeDefinitionId
-The unique identifier of a CustomSecurityAttributeDefinition in Azure AD.
+The unique identifier for a custom security attribute definition in Azure AD.
 
 ```yaml
 Type: String
@@ -62,7 +66,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsActive
-Determines whether the allowed value is active or not, if set to false, this value cannot be stamped on any other principal/resource.
+Indicates whether the predefined value is active or deactivated. If set to false, this predefined value cannot be assigned to any additional supported directory objects.
 
 ```yaml
 Type: Boolean

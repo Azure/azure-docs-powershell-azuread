@@ -24,10 +24,12 @@ Adds a new Azure Active Directory (Azure AD) attribute set object.
 
 ### Example
 ```powershell
-New-AzureADMSAttributeSet -Id "testAttributeSet" -Description "TestAttributeDescription" -MaxAttributesPerSet 10
+New-AzureADMSAttributeSet -Id "Engineering" -Description "Attributes for engineering team" -MaxAttributesPerSet 10
 ```
 
 Add a single attribute set
+
+- Attribute set: `Engineering`
 
 ## PARAMETERS
 
@@ -47,7 +49,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-String identifier that is unique within a tenant.
+Name of the attribute set. Must be unique within a tenant.
 
 ```yaml
 Type: String
@@ -62,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxAttributesPerSet
-Number of attributes that can be added in the attribute set.
+Maximum number of custom security attributes that can be defined in the attribute set.
 
 ```yaml
 Type: Int32
