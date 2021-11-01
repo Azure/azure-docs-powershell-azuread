@@ -37,7 +37,7 @@ Gets a user in Azure Active Directory (Azure AD).
 PS C:\> $user = Get-AzureADMSUser -UserPrincipalName TestUser@example.com 
 ```
 
-Get a user by user principal name
+Get a user by user principal name.
 
 ### Example 2
 ```powershell
@@ -45,7 +45,7 @@ PS C:\> $user1 = Get-AzureADMSUser -Id dbb22700-a7de-4372-ae78-0098ee60e55e -Sel
 PS C:\> $user1.CustomSecurityAttributes
 ```
 
-List custom security attribute assignments for a user
+List custom security attribute assignments for a user.
 
 ## PARAMETERS
 

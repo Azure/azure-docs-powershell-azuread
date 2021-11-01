@@ -28,7 +28,7 @@ Adds a new Azure Active Directory (Azure AD) custom security attribute definitio
 New-AzureADMSCustomSecurityAttributeDefinition -AttributeSet "Engineering" -Name "ProjectDate" -Description "Target completion date" -Type "String" -Status "Available" -IsCollection $false -IsSearchable $true -UsePreDefinedValuesOnly $true
 ```
 
-Add a custom security attribute definition
+Add a custom security attribute definition.
 
 - Attribute set: `Engineering`
 - Attribute: `ProjectDate`

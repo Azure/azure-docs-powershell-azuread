@@ -27,7 +27,7 @@ Updates an Azure Active Directory (Azure AD) custom security attribute definitio
 Set-AzureADMSCustomSecurityAttributeDefinition -Id "Engineering_ProjectDate" -Description "Target completion date (YYYY/MM/DD)"
 ```
 
-Update a custom security attribute definition
+Update a custom security attribute definition.
 
 - Attribute set: `Engineering`
 - Attribute: `ProjectDate`
@@ -37,7 +37,7 @@ Update a custom security attribute definition
 Set-AzureADMSCustomSecurityAttributeDefinition -Id Engineering_Project -Status "Deprecated"
 ```
 
-Deactivate a custom security attribute definition
+Deactivate a custom security attribute definition.
 
 - Attribute set: `Engineering`
 - Attribute: `Project`

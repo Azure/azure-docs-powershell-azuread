@@ -27,7 +27,7 @@ Updates an Azure Active Directory (Azure AD) custom security attribute definitio
 Set-AzureADMSCustomSecurityAttributeDefinitionAllowedValue -CustomSecurityAttributeDefinitionId "Engineering_Project" -Id "Alpine" -IsActive $false
 ```
 
-Deactivate a predefined value
+Deactivate a predefined value.
 
 - Attribute set: `Engineering`
 - Attribute: `Project`

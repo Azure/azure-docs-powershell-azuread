@@ -32,14 +32,14 @@ Gets a list of Azure Active Directory (Azure AD) custom security attribute defin
 Get-AzureADMSCustomSecurityAttributeDefinition
 ```
 
-Get all custom security attribute definitions
+Get all custom security attribute definitions.
 
 ### Example 2
 ```powershell
 Get-AzureADMSCustomSecurityAttributeDefinition -Id "Engineering_ProjectDate" 
 ```
 
-Get a custom security attribute definition
+Get a custom security attribute definition.
 
 - Attribute set: `Engineering`
 - Attribute: `ProjectDate`

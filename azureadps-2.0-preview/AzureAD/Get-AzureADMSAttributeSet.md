@@ -32,14 +32,14 @@ Gets a list of Azure Active Directory (Azure AD) attribute sets.
 Get-AzureADMSAttributeSet
 ```
 
-Get all attribute sets
+Get all attribute sets.
 
 ### Example 2
 ```powershell
 Get-AzureADMSAttributeSet -Id "Engineering"
 ```
 
-Get a attribute set
+Get an attribute set.
 
 - Attribute set: `Engineering`
 

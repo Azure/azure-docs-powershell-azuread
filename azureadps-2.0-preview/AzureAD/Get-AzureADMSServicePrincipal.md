@@ -62,14 +62,14 @@ KeyCredentials                     : {}
 PasswordCredentials                : {}
 ```
 
-Get all service principals from the directory
+Get all service principals from the directory.
 
 ### Example 2
 ```powershell
 PS C:\> $sp = Get-AzureADMSServicePrincipal -Id 4a7c15df-ac88-44f3-84c6-fd0812701f29
 ```
 
-Get a service principal by ID
+Get a service principal by ID.
 
 ### Example 3
 ```powershell
@@ -77,7 +77,7 @@ PS C:\> $ServicePrincipalId = (Get-AzureADMSServicePrincipal -Top 1).Id
 PS C:\> Get-AzureADMSServicePrincipal $ServicePrincipalId
 ```
 
-The first command gets the ID of a service principal by using the Get-AzureADMSServicePrincipal cmdlet. 
+The first command gets the ID of a service principal by using the Get-AzureADMSServicePrincipal cmdlet.
 The command stores the ID in the $ServicePrincipalId variable.
 
 The second command gets the service principal identified by $ServicePrincipalId.
@@ -88,7 +88,7 @@ PS C:\> Get-AzureADMSServicePrincipal -Select CustomSecurityAttributes
 Get-AzureADMSServicePrincipal -Id 7d194b0c-bf17-40ff-9f7f-4b671de8dc20  -Select "CustomSecurityAttributes, Id"
 ```
 
-List custom security attribute assignments for an application (service principal)
+List custom security attribute assignments for an application (service principal).
 
 ## PARAMETERS
 

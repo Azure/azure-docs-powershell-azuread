@@ -27,7 +27,7 @@ Adds a predefined value for a Azure Active Directory (Azure AD) custom security 
 Add-AzureADMScustomSecurityAttributeDefinitionAllowedValues -CustomSecurityAttributeDefinitionId Engineering_Project -Id "Alpine" -IsActive $true
 ```
 
-Add a predefined value
+Add a predefined value:
 
 - Attribute set: `Engineering`
 - Attribute: `Project`

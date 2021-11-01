@@ -27,7 +27,7 @@ Adds a new Azure Active Directory (Azure AD) attribute set object.
 New-AzureADMSAttributeSet -Id "Engineering" -Description "Attributes for engineering team" -MaxAttributesPerSet 10
 ```
 
-Add a single attribute set
+Add a single attribute set.
 
 - Attribute set: `Engineering`
 

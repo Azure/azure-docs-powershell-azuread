@@ -27,7 +27,7 @@ Updates an Azure Active Directory (Azure AD) attribute set object identified by 
 Set-AzureADMSAttributeSet -Id "Engineering" -Description "Attributes for cloud engineering team"
 ```
 
-Update an attribute set
+Update an attribute set.
 
 - Attribute set: `Engineering`
 
@@ -36,7 +36,7 @@ Update an attribute set
 Set-AzureADMSAttributeSet -Id "Engineering" -MaxAttributesPerSet 20
 ```
 
-Update an attribute set
+Update an attribute set.
 
 - Attribute set: `Engineering`
 

@@ -34,7 +34,7 @@ Gets the predefined value for an Azure Active Directory (Azure AD) custom securi
 Get-AzureADMSCustomSecurityAttributeDefinitionAllowedValue -CustomSecurityAttributeDefinitionId "Engineering_Project"
 ```
 
-Get all predefined values
+Get all predefined values.
 
 - Attribute set: `Engineering`
 - Attribute: `Project`
@@ -44,7 +44,7 @@ Get all predefined values
 Get-AzureADMSCustomSecurityAttributeDefinitionAllowedValue -CustomSecurityAttributeDefinitionId "Engineering_Project" -Id "Alpine"
 ```
 
-Get a predefined value
+Get a predefined value.
 
 - Attribute set: `Engineering`
 - Attribute: `Project`

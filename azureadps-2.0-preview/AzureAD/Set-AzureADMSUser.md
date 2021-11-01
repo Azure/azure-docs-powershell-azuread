@@ -29,7 +29,7 @@ PS C:\> $user.DisplayName = 'YetAnotherTestUser'
 PS C:\> Set-AzureADMSUser -UserPrincipalName TestUser@example.com -Displayname $user.Displayname
 ```
 
-Update a user
+Update a user.
 
 ### Example 2
 ```powershell
