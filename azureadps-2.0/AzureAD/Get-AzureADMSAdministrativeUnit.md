@@ -29,10 +29,16 @@ The Get-AzureADMSAdministrativeUnit cmdlet gets an Azure Active Directory admini
 
 ### Example 1
 ```powershell
-PS C:\> {{ Add example code here }}
-```
+PS C:\> Get-AzureADMSAdministrativeUnit -all $true
 
-{{ Add example description here }}
+
+Id                           : 2ea02270-ca51-4e2c-9d6e-ffe66501c148
+OdataType                    :
+Description                  : School
+DisplayName                  : 125-AU
+IsMemberManagementRestricted : False
+
+This command gets all Administrative Units in Azure AD.
 
 ## PARAMETERS
 
