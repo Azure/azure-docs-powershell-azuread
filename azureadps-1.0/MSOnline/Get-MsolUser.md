@@ -456,15 +456,15 @@ In this case, the user should be licensed with 30 days to avoid losing their mai
 
 * PasswordNeverExpires. Whether the user's password should be forced to change every 90 days.
 
-* Phone Number. The user's phone number.
+* PhoneNumber. The user's phone number.
 
-* Postal Code. The user's postal code.
+* PostalCode. The user's postal code.
 
-* Preferred Data Location. The user's preferred data location.
+* PreferredDataLocation. The user's preferred data location.
 
-* Preferred Language. The user's preferred language.
+* PreferredLanguage. The user's preferred language.
 
-* Proxy Addresses. The proxy addresses associated with this user.
+* ProxyAddresses. The proxy addresses associated with this user.
 
 * State. The user's state.
 
