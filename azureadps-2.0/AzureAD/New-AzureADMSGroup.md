@@ -21,40 +21,9 @@ New-AzureADMSGroup [-Description <String>] -DisplayName <String> [-IsAssignableT
 ## DESCRIPTION
 The New-AzureADMSGroup cmdlet creates an Azure Active Directory (Azure AD) group.
 
-For information about creating dynamic groups, see Using attributes to create advanced rules (https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/).
+## Examples
 
-## EXAMPLES
-
-### Example 1: Create a dynamic group
-```
-PS C:\> New-AzureADMSGroup -DisplayName "Dynamic Group 01" -Description "Dynamic group created from PS" -MailEnabled $False -MailNickName "group" -SecurityEnabled $True -GroupTypes "DynamicMembership" -MembershipRule "(user.department -contains ""Marketing"")" -MembershipRuleProcessingState "On"
-
-Id                            : 9126185e-25df-4522-a380-7ab697a7241c
-Description                   : Dynamic group created from PS
-OnPremisesSyncEnabled         :
-DisplayName                   : Dynamic Group 01
-OnPremisesLastSyncDateTime    :
-Mail                          :
-MailEnabled                   : False
-MailNickname                  : group
-OnPremisesSecurityIdentifier  :
-ProxyAddresses                : {}
-SecurityEnabled               : True
-GroupTypes                    : {}
-MembershipRule                : (user.department -eq "Marketing") MembershipRuleProcessingState : Paused
-```
-
-This command creates a new dynamic group with the following rule:
-
-\`user.department -contains "Marketing"\`
-
-The double quotation marks are replaced with single quotation marks.
-
-The processing state is On. 
-This means that all users in the directory that qualify the rule are added as members to the group.
-Any users that do not qualify are removed from the group.
-
-### Example 2: Create a group assignable to role
+### Example : Create a group assignable to role
 ```
 PS C:\> New-AzureADMSGroup -DisplayName "HelpDesk admin group" -Description "Group assignable to role" -MailEnabled $False -MailNickname "helpDeskAdminGroup" -SecurityEnabled $True -IsAssignableToRole $True -Visibility "Private"
 
@@ -69,19 +38,6 @@ MailNickname                  : helpDeskAdminGroup
 ProxyAddresses                : {} 
 SecurityEnabled               : True 
 GroupTypes                    : {}
-```
-
-### Example 3: Create a group with label assignment
-```
-PS C:\> New-AzureADMSGroup -Description "Group associated with a label" -DisplayName "HelpDesk admin group" -GroupTypes "Unified" -LabelId "00000000-0000-0000-0000-000000000000" -MailEnabled $True -MailNickname "helpDeskAdminGroup" -SecurityEnabled $False
-
-Id                            : 11111111-1111-1111-1111-111111111111
-Description                   : Group associated with a label
-DisplayName                   : HelpDesk admin group
-GroupTypes                    : ["Unified"]
-MailEnabled                   : True
-MailNickname                  : helpDeskAdminGroup
-SecurityEnabled               : False
 ```
 
 ## PARAMETERS

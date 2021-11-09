@@ -369,7 +369,7 @@ Accept wildcard characters: False
 ```
 
 ### -Oauth2RequirePostResponse
-Set this to true if an Oauth2 psot response is required
+Set this to true if an Oauth2 post response is required
 
 ```yaml
 Type: Boolean

@@ -41,7 +41,7 @@ Example 2: Remove a Proxy Application, and remove it from Azure AD completely
 ### -ObjectId
 The unique application Id of the application.
 This can be found using the Get-AzureADApplication command.
-You can also find this in the Azure Portal by navigating to AAD, Enterprise Applications, All Applications, Select your application, go to the properties tab, and use the ObjectId on that page.
+You can also find this in the Azure Portal by navigating to Azure AD > App registrations > All applications. Select your application. This takes you to the application's overview page. Use the ObjectId on that page.
 
 ```yaml
 Type: String
