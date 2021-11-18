@@ -257,5 +257,18 @@
     "Remove-AzureADMSScopedRoleMembership": "Administrative Units",		
     "Set-AzureADMSAdministrativeUnit": "Administrative Units",	
     "Remove-AzureADMSApplicationVerifiedPublisher": "Applications",		
-    "Set-AzureADMSApplicationVerifiedPublisher": "Applications"    
+    "Set-AzureADMSApplicationVerifiedPublisher": "Applications",
+    "Add-AzureADMScustomSecurityAttributeDefinitionAllowedValues": "Custom Security Attributes",  
+    "Get-AzureADMSAttributeSet": "Custom Security Attributes", 
+    "Get-AzureADMSCustomSecurityAttributeDefinition": "Custom Security Attributes", 
+    "Get-AzureADMSCustomSecurityAttributeDefinitionAllowedValue": "Custom Security Attributes", 
+    "New-AzureADMSAttributeSet": "Custom Security Attributes", 
+    "New-AzureADMSCustomSecurityAttributeDefinition": "Custom Security Attributes", 
+    "Set-AzureADMSAttributeSet": "Custom Security Attributes", 
+    "Set-AzureADMSCustomSecurityAttributeDefinition": "Custom Security Attributes", 
+    "Set-AzureADMSCustomSecurityAttributeDefinitionAllowedValue": "Custom Security Attributes", 
+    "Get-AzureADMSServicePrincipal": "Service Principals",
+    "Set-AzureADMSServicePrincipal": "Service Principals",
+    "Get-AzureADMSUser": "Users",
+    "Set-AzureADMSUser": "Users"
 }
