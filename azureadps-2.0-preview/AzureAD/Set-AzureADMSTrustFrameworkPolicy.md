@@ -20,7 +20,7 @@ Set-AzureADMSTrustFrameworkPolicy [-Id <String>] [-OutputFilePath <String>] -Con
 
 ### File
 ```
-Set-AzureADMSTrustFrameworkPolicy [-Id <String>] -InputFilePath <String> [-OutputFilePath <String>]
+Set-AzureADMSTrustFrameworkPolicy -Id <String> -InputFilePath <String> [-OutputFilePath <String>]
  [<CommonParameters>]
 ```
 
@@ -94,7 +94,7 @@ Type: String
 Parameter Sets: (All)
 Aliases:
 
-Required: False
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
