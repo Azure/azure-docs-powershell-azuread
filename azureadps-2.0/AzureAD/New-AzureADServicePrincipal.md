@@ -55,7 +55,7 @@ Accept wildcard characters: False
 ```
 
 ### -AlternativeNames
-The atlernative names for this service principal
+The alternative names for this service principal
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
