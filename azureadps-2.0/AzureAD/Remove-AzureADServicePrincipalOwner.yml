@@ -8,13 +8,6 @@ syntaxes:
   Remove-AzureADServicePrincipalOwner -ObjectId <String> -OwnerId <String>
 
    [-InformationAction <ActionPreference>] [-InformationVariable <String>] [<CommonParameters>]
-examples:
-- title: Example 1
-  code: |-
-    PS C:\> {{ Add example code here }}
-  description: |-
-    {{ Add example description here }}
-  summary: ""
 parameters:
 - type: <xref href="ActionPreference" data-throw-if-not-resolved="False" />
   name: InformationAction

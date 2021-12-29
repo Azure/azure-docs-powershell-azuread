@@ -20,15 +20,6 @@ Remove-AzureADServicePrincipalOwner -ObjectId <String> -OwnerId <String>
 ## DESCRIPTION
 The Remove-AzureADServicePrincipalOwner cmdlet removes an owner from a service principal in Azure Active Directory (AD).
 
-## EXAMPLES
-
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
-
 ## PARAMETERS
 
 ### -InformationAction
