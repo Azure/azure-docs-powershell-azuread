@@ -28,7 +28,7 @@ Get-AzureADMSGroup -Id <String> [-All <Boolean>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The Get-AzureADMSGroup cmdlet gets information about groups in Azure Active Directory (Azure AD) using he Microsoft Graph.
+The Get-AzureADMSGroup cmdlet gets information about groups in Azure Active Directory (Azure AD) using the Microsoft Graph.
 To get a group, specify the Id parameter. 
 Specify the SearchString or Filter parameter to find particular groups. 
 If you specify no parameters, this cmdlet gets all groups.
