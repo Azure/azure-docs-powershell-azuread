@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-AzureADMSGroup
 
 ## SYNOPSIS
-Gets information about groups in Azure AD.
+Gets information about groups in Azure AD (via MS Graph).
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ Get-AzureADMSGroup -Id <String> [-All <Boolean>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The Get-AzureADMSGroup cmdlet gets information about groups in Azure Active Directory (Azure AD).
+The Get-AzureADMSGroup cmdlet gets information about groups in Azure Active Directory (Azure AD) using he Microsoft Graph.
 To get a group, specify the Id parameter. 
 Specify the SearchString or Filter parameter to find particular groups. 
 If you specify no parameters, this cmdlet gets all groups.
@@ -179,6 +179,8 @@ Accept wildcard characters: False
 ### CommonParameters
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
+This cmdlet uses the MSGraph instead of the AzureAD Graph. Commands that use the MSGraph are in the format of \*-ADMS\*. For more information on the naming convention see [New enhancements to the #AzureAD PowerShell 2.0 preview. Manage dynamic groups and more!](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/new-enhancements-to-the-azuread-powershell-2-0-preview-manage/ba-p/245153)
+
 ## INPUTS
 
 ### System.String
@@ -199,6 +201,8 @@ We recommend that you do not use this cmdlet in a production environment.
 [Remove-AzureADMSGroup]()
 
 [Set-AzureADMSGroup]()
+
+[Get-AzureADGroup]()
 
 [#AzureAD: Certificate based authentication for iOS and Android now in preview!](https://blogs.technet.microsoft.com/enterprisemobility/2016/07/18/azuread-certificate-based-authentication-for-ios-and-android-now-in-preview/)
 
