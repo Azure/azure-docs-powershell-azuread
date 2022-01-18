@@ -148,7 +148,7 @@ Accept wildcard characters: False
 
 ### -Type
 The request type.
-The value can be AdminAdd, UserAdd, AdminUpdate, AdminRemove, UserRemove, UserExtend, UserRenew, AdminRenewand AdminExtend.
+The value can be AdminAdd, UserAdd, AdminUpdate, AdminRemove, UserRemove, UserExtend, UserRenew, AdminRenew and AdminExtend.
 Required.
 
 ```yaml
