@@ -30,6 +30,7 @@ This command gets all sign in logs on or after 3/20/2019
 
 ### Example 2: Get sign in logs for a user or application
 ```
+PS C:\>Get-AzureADAuditSignInLogs -Filter "startsWith(userPrincipalName,'bgates@microsoft.com')"
 PS C:\>Get-AzureADAuditSignInLogs -Filter "userDisplayName eq 'Paul Allen'"
 PS C:\>Get-AzureADAuditSignInLogs -Filter "appId eq 'de8bc8b5-d9f9-48b1-a8ad-b748da725064'"
 PS C:\>Get-AzureADAuditSignInLogs -Filter "appDisplayName eq 'Microsoft'"
