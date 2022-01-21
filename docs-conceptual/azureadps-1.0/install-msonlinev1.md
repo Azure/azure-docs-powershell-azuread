@@ -86,7 +86,7 @@ Connect-MsolService -AzureEnvironment "AzureGermanyCloud"
 
 This example connects your PowerShell session to the German AzureAD environment.
 
-See [Connect-MsolService] (https://docs.microsoft.com/powershell/module/msonline/connect-msolservice?view=azureadps-1.0) for more information.
+See [Connect-MsolService] (https://docs.microsoft.com/powershell/module/msonline/connect-msolservice) for more information.
 
 For more information about the cmdlets, you can do the following:
 
