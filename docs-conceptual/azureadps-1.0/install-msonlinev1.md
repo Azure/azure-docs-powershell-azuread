@@ -1,19 +1,17 @@
 ---
 services: active-directory
-documentationcenter: ''
 title: 'Install MSOnline'
 description: Provides a guide on the installation steps for MSOnline PowerShell.
 ms.service: active-directory
 ms.workload: identity
-ms.tgt_pltfrm: na
 ms.devlang: powershell
 ms.topic: article
-ms.date: 07/10/2017
+ms.date: 01/21/2022
 ms.author: rodejo
 ms.custom: posh-docs-conceptual
 ms.reviewer: rodejo
 ---
-# Azure ActiveDirectory (MSOnline)
+# Azure Active Directory (MSOnline)
 
 You can use the Azure Active Directory Module for Windows PowerShell cmdlets for Azure AD administrative tasks such as user management, domain management and for configuring single sign-on.
 This topic includes information about how to install these cmdlets for use with your directory.
@@ -88,7 +86,7 @@ Connect-MsolService -AzureEnvironment "AzureGermanyCloud"
 
 This example connects your PowerShell session to the German AzureAD environment.
 
-See [Connect-MsolService](https://msdn.microsoft.com/library/azure/dn194123(v=azure.98).aspx) for more information.
+See [Connect-MsolService] (https://docs.microsoft.com/powershell/module/msonline/connect-msolservice) for more information.
 
 For more information about the cmdlets, you can do the following:
 
