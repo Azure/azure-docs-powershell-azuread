@@ -33,7 +33,7 @@ This command gets all audit logs on or after 3/20/2019
 PS C:\>Get-AzureADAuditDirectoryLogs -Filter "initiatedBy/user/userPrincipalName eq 'JNiyomugabo@Contoso.com'"
 PS C:\>Get-AzureADAuditDirectoryLogs -Filter "initiatedBy/user/displayName eq 'Jean Niyomugabo'"
 PS C:\>Get-AzureADAuditDirectoryLogs -Filter "initiatedBy/app/appId eq 'de8bc8b5-d9f9-48b1-a8ad-b748da725064'"
-PS C:\>Get-AzureADAuditDirectoryLogs -Filter "initiatedBy/app/displayName eq 'Test-App'"
+PS C:\>Get-AzureADAuditDirectoryLogs -Filter "initiatedBy/app/displayName eq 'myApp'"
 ```
 
 These commands are different ways to get all audit logs for a certain user or application
