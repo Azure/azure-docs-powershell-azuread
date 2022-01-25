@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-AzureADServiceAppRoleAssignedTo
 
 ## SYNOPSIS
-{{Fill in the Synopsis}}
+Gets app role assignments for this app or service, granted to users, groups and other service principals.
 
 ## SYNTAX
 
@@ -17,21 +17,24 @@ Get-AzureADServiceAppRoleAssignedTo -ObjectId <String> [-All <Boolean>] [-Top <I
 ```
 
 ## DESCRIPTION
-{{Fill in the Description}}
+The Get-AzureADServiceAppRoleAssignedTo cmdlet gets app role assignments for this app or service, granted to users, groups and other service principals.
 
 ## EXAMPLES
 
 ### Example 1
 ```
-PS C:\> {{ Add example code here }}
+PS C:\> $ServicePrincipalId = (Get-AzureADServicePrincipal -Top 1).ObjectId
+PS C:\> Get-AzureADServiceAppRoleAssignedTo -ObjectId $ServicePrincipalId
 ```
 
-{{ Add example description here }}
+The first command gets the ID of a service principal and stores it in the $ServicePrincipalId variable.
+
+The second command gets the app role assignments for the service principal granted to users, groups and other service principals.
 
 ## PARAMETERS
 
 ### -All
-{{Fill All Description}}
+If true, return all application role assignments. If false, return the number of objects specified by the Top parameter.
 
 ```yaml
 Type: Boolean
@@ -46,7 +49,7 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-{{Fill ObjectId Description}}
+Specifies the ID of a service principal in Azure AD.
 
 ```yaml
 Type: String
@@ -61,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -Top
-{{Fill Top Description}}
+Specifies the maximum number of records to return.
 
 ```yaml
 Type: Int32
