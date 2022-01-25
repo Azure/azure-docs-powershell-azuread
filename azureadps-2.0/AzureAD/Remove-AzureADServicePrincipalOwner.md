@@ -29,7 +29,7 @@ PS C:\> $OwnerId = (Get-AzureADServicePrincipalOwner -ObjectID $ServicePrincipal
 PS C:\> Remove-AzureADServicePrincipalOwner -ObjectID $ServicePrincipalId -OwnerID $OwnerId
 ```
 
-The first command gets the ID of the service principal and store it in the $ServicePrincipalId variable.
+The first command gets the ID of the service principal and stores it in the $ServicePrincipalId variable.
 
 The second command gets the ID of one owner of the specified service principal and stores it in the $OwnerId variable.
 
