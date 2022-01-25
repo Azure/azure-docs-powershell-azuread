@@ -24,10 +24,16 @@ The Remove-AzureADServicePrincipalOwner cmdlet removes an owner from a service p
 
 ### Example 1
 ```powershell
-PS C:\> {{ Add example code here }}
+PS C:\> $ServicePrincipalId = (Get-AzureADServicePrincipal -Top 1).ObjectId
+PS C:\> $OwnerId = (Get-AzureADServicePrincipalOwner -ObjectID $ServicePrincipalId -Top 1).ObjectId
+PS C:\> Remove-AzureADServicePrincipalOwner -ObjectID $ServicePrincipalId -OwnerID $OwnerId
 ```
 
-{{ Add example description here }}
+The first command gets the ID of the service principal and store it in the $ServicePrincipalId variable.
+
+The second command gets the ID of one owner of the specified service principal and stores it in the $OwnerId variable.
+
+The third command removes the owner identified by $OwnerId of the service principal identified by $ServicePrincipalId.
 
 ## PARAMETERS
 
