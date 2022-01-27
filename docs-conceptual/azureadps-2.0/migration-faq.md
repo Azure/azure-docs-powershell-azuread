@@ -4,8 +4,8 @@ description: Answers to frequently asked questions about the migration from Azur
 ms.service: active-directory
 ms.workload: identity
 ms.topic: article
-ms.date: 27/01/2022
-ms.author: msewaweru
+ms.date: 01/27/2022
+ms.author: eunicewaweru
 ---
 
 # Azure AD PowerShell to Microsoft Graph PowerShell migration FAQ
