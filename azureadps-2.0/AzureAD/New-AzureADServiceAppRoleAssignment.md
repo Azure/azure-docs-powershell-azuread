@@ -29,15 +29,15 @@ PS C:\> New-AzureADServiceAppRoleAssignment -ObjectID 'd2d32a8c-0330-4d09-9509-9
 
 In this example,
 
-- `ObjectId`:  The id of the client service principal to which you are assigning the app role.
-- `Id`: The id of the appRole (defined on the resource service principal) to assign to the client service principal.
-- `PrincipalId`: The id of the client service principal to which you are assigning the app role.
-- `ResourceId`: The id of the resource servicePrincipal which has defined the app role.
+- `ObjectId`:  The Id of the client service principal to which you are assigning the app role.
+- `Id`: The Id of the appRole (defined on the resource service principal) to assign to the client service principal.
+- `PrincipalId`: The Id of the client service principal to which you are assigning the app role.
+- `ResourceId`: The Id of the resource servicePrincipal which has defined the app role.
 
 ## PARAMETERS
 
 ### -Id
-Specifies the ID.
+Specifies the Id of the appRole (defined on the resource service principal) to assign to the client service principal.
 
 ```yaml
 Type: String
@@ -90,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-Specifies the ID of a service principal in Azure AD.
+Specifies the Id of the client service principal to which you are assigning the app role.
 
 ```yaml
 Type: String
@@ -105,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrincipalId
-Specifies a principal ID.
+Specifies the Id of the client service principal to which you are assigning the app role.
 
 ```yaml
 Type: String
@@ -120,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Specifies a resource ID.
+Specifies the Id of the Service Principal which has defined the app role..
 
 ```yaml
 Type: String
