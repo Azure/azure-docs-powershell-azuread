@@ -20,7 +20,7 @@ What is happening here and how can we fix this?
 The most common way to search for a user is to use Get-AzureADUser - which returns all users in your directory - and then filter on the property values you are looking for, e.g.
 
 ```powershell
-Get-AzureADUser | Where ($_.City -eq "London")
+Get-AzureADUser | Where {$_.City -eq "London"}
 ```
 
 You would expect PowerShell to return all users where the value for the City property equals London. However... the Get-AzureADUser cmdlet by default only returns the first 100 objects it finds, and the subsequent Where cmdlet filters these first 100 objects to find users where the City equals London. If the user you are looking for exists in your directory but is not in the first 100 users that are returned by the Get-azureADUser cmdlet, that user will not be returned.
@@ -35,7 +35,7 @@ Get-AzureADUser -All $True
 Now all user objects are returned, and the filter works on all user objects in your directory. So the correct way to find all users where City equals London is:
 
 ```powershell
-Get-AzureADUser -All $True | Where ($_.City -eq "London")
+Get-AzureADUser -All $True | Where {$_.City -eq "London"}
 ```
 
 Note that this approach works for all properties of objects. For a limited number of string properties you can also use the -SearchString parameter, as in
