@@ -24,10 +24,15 @@ The New-AzureADServiceAppRoleAssignment cmdlet assigns a service principal to an
 
 ### Example 1
 ```powershell
-PS C:\> {{ Add example code here }}
+PS C:\> New-AzureADServiceAppRoleAssignment -ObjectID 'd2d32a8c-0330-4d09-9509-928fe8fa80a2' -Id '584a9c48-9bae-444f-9116-f12d464ae1fc' -PrincipalID 'd2d32a8c-0330-4d09-9509-928fe8fa80a2' -ResourceID '5bb2f317-c13d-4721-afc4-e4be996eb43f'
 ```
 
-{{ Add example description here }}
+In this example,
+
+- `ObjectId`:  The id of the client service principal to which you are assigning the app role.
+- `Id`: The id of the appRole (defined on the resource service principal) to assign to the client service principal.
+- `PrincipalId`: The id of the client service principal to which you are assigning the app role.
+- `ResourceId`: The id of the resource servicePrincipal which has defined the app role.
 
 ## PARAMETERS
 
