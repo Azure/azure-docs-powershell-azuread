@@ -30,7 +30,7 @@ New-AzureADMSInvitation -InvitedUserEmailAddress someexternaluser@externaldomain
 Id                      : 6058156a-93d1-4958-a738-ddc4ab4432cf
 InvitedUserDisplayName  :
 InvitedUserEmailAddress : someexternaluser@externaldomain.com
-SendInvitationMessage   : False
+SendInvitationMessage   : True
 InviteRedeemUrl         : https://login.microsoftonline.com/redeem?rd=https%3a%2f%2finvitations.microsoft.com%2fredeem%2f%3ftenant%3d06f6521d-c18c-460a-8656-fa82e81aa94b%26user%3d7b67d069-163b-4f7e-9118-c9ceeda363d9%26ticket%3ddANXuWQMNhYv21%252bFBm%252fULkTqCnpX6vNvRgTHQmsECPU%253d%26ver%3d2.0
 InviteRedirectUrl       : http://myapps.microsoft.com/
 InvitedUser             : class User {
