@@ -133,7 +133,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### None
 ## OUTPUTS
 
-[### System.Object](/graph/api/invitation-post?view=graph-rest-1.0&tabs=http)
+[System.Object](/graph/api/invitation-post?view=graph-rest-1.0&tabs=http)
 ## NOTES
 
 ## RELATED LINKS
