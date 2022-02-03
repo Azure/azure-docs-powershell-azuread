@@ -48,7 +48,7 @@ InvitedUserType         : Guest
 Status                  : PendingAcceptance
 ```
 
-Using the cmdlet in this example, an email is sent to the user who's email address is in the -InvitedUserEmailAddress parameter.
+Using the cmdlet in this example, an email is sent to the user whose email address is in the -InvitedUserEmailAddress parameter.
 When the user accepts the invitation, they are forwarded to the url as specified in the -InviteRedirectUrl parameter
 
 ## PARAMETERS
