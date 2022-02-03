@@ -40,7 +40,7 @@ In this example, a client service principal is assigned an app role (application
 - `PrincipalId`: The ObjectId of the client service principal to which you are assigning the app role.
 
 > [!NOTE]
-> This example applies when `Connect-AzureAD` was called without any parameters. See [Example 4](#example-4--when-connected-using-a-customer-owned-app-or-service-identity) to see how this cmdlet is used when connected using a customer-owned app registration or service identity.
+> This example applies when `Connect-AzureAD` was called without any parameters. See [Example 4](#example-4-when-connected-using-a-customer-owned-app-or-service-identity) to see how this cmdlet is used when connected using a customer-owned app registration or service identity.
 
 ### Example 2: Assign an app role to a user
 
