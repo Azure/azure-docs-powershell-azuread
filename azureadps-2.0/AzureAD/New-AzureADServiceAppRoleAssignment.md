@@ -32,10 +32,10 @@ PS C:\> Connect-AzureAD
 PS C:\> New-AzureADServiceAppRoleAssignment -ObjectId $resource.ObjectId -ResourceId $resource.ObjectId -Id $appRole.Id -PrincipalId $client.ObjectId
 ```
 
-In this example, a client service principal is assigned an app role (application permission) defined by a resource service principal (e.g. an API):
+In this example, a client service principal is assigned an app role (application permission) defined by a resource service principal (for example, an API):
 
-- `ObjectId`:  The ObjectId of the resource service principal (e.g. an API).
-- `ResourceId`: The ObjectId of the resource service principal (e.g. an API).
+- `ObjectId`:  The ObjectId of the resource service principal (for example, an API).
+- `ResourceId`: The ObjectId of the resource service principal (for example, an API).
 - `Id`: The Id of the app role (defined on the resource service principal) to assign to the client service principal. If no app roles have been defined on the, you can use `00000000-0000-0000-0000-000000000000`.
 - `PrincipalId`: The ObjectId of the client service principal to which you are assigning the app role.
 
@@ -53,7 +53,7 @@ In this example, a user is assigned an app role defined by a resource app:
 
 - `ObjectId`:  The ObjectId of the app's service principal.
 - `ResourceId`: The ObjectId of the app's service principal.
-- `Id`: The Id of the app role (defined on the app's service principal) to assign to the user. If no app roles have been defined on resource app, you can use `00000000-0000-0000-0000-000000000000` to indicate the app is assigned to the user.
+- `Id`: The Id of the app role (defined on the app's service principal) to assign to the user. If no app roles have been defined to the resource app, you can use `00000000-0000-0000-0000-000000000000` to indicate that the app is assigned to the user.
 - `PrincipalId`: The ObjectId of the user to which you are assigning the app role.
 
 > [!NOTE]
@@ -70,11 +70,11 @@ In this example, a group is assigned an app role defined by a resource app. All 
 
 - `ObjectId`:  The ObjectId of the app's service principal.
 - `ResourceId`: The ObjectId of the app's service principal.
-- `Id`: The Id of the app role (defined on the app's service principal) to assign to the group. If no app roles have been defined on resource app, you can use `00000000-0000-0000-0000-000000000000` to indicate the app is assigned to the group.
+- `Id`: The Id of the app role (defined on the app's service principal) to assign to the group. If no app roles have been defined on the resource app, you can use `00000000-0000-0000-0000-000000000000` to indicate the app is assigned to the group.
 - `PrincipalId`: The ObjectId of the group to which you are assigning the app role.
 
 > [!NOTE]
-> This example applies when `Connect-AzureAD` was called witout any parameters. See [Example 4](#example-4--when-connected-using-a-customer-owned-app-or-service-identity) to see how this cmdlet is used when connected using a customer-owned app registration or service identity. 
+> This example applies when `Connect-AzureAD` was called without any parameters. See [Example 4](#example-4--when-connected-using-a-customer-owned-app-or-service-identity) to see how this cmdlet is used when connected using a customer-owned app registration or service identity. 
 
 ### Example 4: When connected using a customer-owned app or service identity
 
@@ -83,16 +83,18 @@ PS C:\> Connect-AzureAD -TenantId $tenantOrDomain -ApplicationId $appId -Certifi
 PS C:\> New-AzureADServiceAppRoleAssignment -ObjectId $client.ObjectId -ResourceId $resource.ObjectId -Id $appRole.Id -PrincipalId $client.ObjectId
 ```
 
-This cmdlet's behavior changes when connected to the Azure AD PowerShell module using a customer-owned app registration or service identity. This includes when [connecting as a service principal](Connect-AzureAD.md#example-3--connect-a-session-as-a-service-principal), and when using the `AadAccessToken` parameter with an access token obtained for a customer-owned app registration or service identity.
+This cmdlet's behavior changes when connected to the Azure AD PowerShell module using a customer-owned app registration or service identity, including:
+- When [connecting as a service principal](Connect-AzureAD.md#example-3--connect-a-session-as-a-service-principal), and 
+- When using the `AadAccessToken` parameter with an access token obtained for a customer-owned app registration or service identity.
 
-Under these circumstances this cmdlet is only used for assigning an app role to another service principal, identified by the `ObjectId` and `PrincipalId` parameters:
+Under these circumstances, this cmdlet is only used for assigning an app role to another service principal, identified by the `ObjectId` and `PrincipalId` parameters:
 
 - `ObjectId`:  The ObjectId of the client service principal to which you are assigning the app role.
-- `ResourceId`: The ObjectId of the resource service principal (e.g. an API).
+- `ResourceId`: The ObjectId of the resource service principal (for example, an API).
 - `Id`: The Id of the app role (defined on the resource service principal) to assign to the client service principal. If no app roles have been defined on the, you can use `00000000-0000-0000-0000-000000000000`.
 - `PrincipalId`: The ObjectId of the client service principal to which you are assigning the app role.
 
-When connected using a customer-owned app or service identity, use [New-AzureADUserAppRoleAssignment](New-AzureADUserAppRoleAssignment.md) and [New-AzureADGroupAppRoleAssignment](New-AzureADUserAppRoleAssignment.md) to create app role assignments to user and groups, respectively.
+When connected using a customer-owned app or service identity, use [New-AzureADUserAppRoleAssignment](New-AzureADUserAppRoleAssignment.md) and [New-AzureADGroupAppRoleAssignment](New-AzureADUserAppRoleAssignment.md) to create app role assignments for a user and groups, respectively.
 
 ## PARAMETERS
 
@@ -150,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-Specifies the ObjectId of the resource service principal (e.g. an app or an API) which is going to be assigned to a user, a group, or another service principal.
+Specifies the ObjectId of the resource service principal (such as an app or an API) that is going to be assigned to a user, a group, or another service principal.
 
 ```yaml
 Type: String
@@ -165,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrincipalId
-Specifies the ObjectId of the user, group or other service principal to which the app role is being assigned.
+Specifies the ObjectId of the user, group, or other service principal to which the app role is being assigned.
 
 ```yaml
 Type: String
@@ -180,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Specifies the ObjectId of the resource service principal (e.g. an app or an API) which is going to be assigned to a user, a group, or another service principal.
+Specifies the ObjectId of the resource service principal (such as an app or an API) that is going to be assigned to a user, a group, or another service principal.
 
 ```yaml
 Type: String
