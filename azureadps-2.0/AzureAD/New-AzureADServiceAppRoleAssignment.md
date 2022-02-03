@@ -85,7 +85,7 @@ PS C:\> New-AzureADServiceAppRoleAssignment -ObjectId $client.ObjectId -Resource
 
 This cmdlet's behavior changes when connected to the Azure AD PowerShell module using a customer-owned app registration or service identity, including:
 
-- When [connecting as a service principal](Connect-AzureAD.md#example-3--connect-a-session-as-a-service-principal), and
+- When connecting as a service principal, and
 - When using the `AadAccessToken` parameter with an access token obtained for a customer-owned app registration or service identity.
 
 Under these circumstances, this cmdlet is only used for assigning an app role to another service principal, identified by the `ObjectId` and `PrincipalId` parameters:
