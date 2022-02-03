@@ -6,6 +6,7 @@ ms.workload: identity
 ms.topic: article
 ms.date: 01/27/2022
 ms.author: eunicewaweru
+author: msewaweru
 ---
 
 # Azure AD PowerShell to Microsoft Graph PowerShell migration FAQ
@@ -31,8 +32,9 @@ The Microsoft Graph PowerShell SDK is also open source and users can contribute 
 We're working on a migration tool that will incorporate all existing Azure AD Graph cmdlets in a module powered by the Microsoft Graph API. The module borrows the cmdlet structure and return type from the Azure AD Graph PowerShell. Users will be able to download this tool as a separate module they can use solely for migration.  
 
 The module can be used in two main ways:
-- Search and replace the Azure AD cmdlet prefix with the new one in scripts, or 
-- Optionally enable aliases of original commands to run scripts unmodified. 
+
+- Search and replace the Azure AD cmdlet prefix with the new one in scripts, or
+- Optionally enable aliases of original commands to run scripts unmodified.
 
 We will provide more info about this module soon.
 
