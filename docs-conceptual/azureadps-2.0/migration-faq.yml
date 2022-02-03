@@ -22,7 +22,9 @@ sections:
 
       - question: What are we doing about the gaps in functionality between Azure AD and Microsoft Graph PowerShell modules?
         answer: |
-          As part of the parity work, we're looking at the MSOnline (MSOL) and Azure AD PowerShell glossary of cmdlets and mapping the functionality to Microsoft Graph PowerShell. This is to make sure that all existing scenarios are available in Microsoft Graph PowerShell. We started working on [a cmdlet map](/powershell/microsoftgraph/azuread-msoline-cmdlet-map) for both MSOnline and Azure AD PowerShell cmdlets to Microsoft Graph PowerShell as part of the migration documentation. Users have also reached out with specific scenarios and cmdlets that we will add to Microsoft Graph PowerShell. We're also working on tools such as the [Find-Mg command](/powershell/microsoftgraph/find-mg-graph-command) that will assist users in discovering the appropriate Microsoft Graph PowerShell cmdlets from a command name or a Microsoft Graph URI.  
+          As part of the parity work, we're looking at the MSOnline (MSOL) and Azure AD PowerShell glossary of cmdlets and mapping the functionality to Microsoft Graph PowerShell. This is to make sure that all existing scenarios are available in Microsoft Graph PowerShell. We started working on [a cmdlet map](https://docs.microsoft.com/en-us/powershell/microsoftgraph/azuread-msoline-cmdlet-map) for both MSOnline and Azure AD PowerShell cmdlets to Microsoft Graph PowerShell as part of the migration documentation. 
+          
+          Users have also reached out with specific scenarios and cmdlets that we will add to Microsoft Graph PowerShell. We're also working on tools such as the [Find-Mg command](https://docs.microsoft.com/en-us/powershell/microsoftgraph/find-mg-graph-command) that will assist users in discovering the appropriate Microsoft Graph PowerShell cmdlets from a command name or a Microsoft Graph URI.  
 
       - question: What are we doing to improve the Microsoft Graph PowerShell user experience?
         answer: |
