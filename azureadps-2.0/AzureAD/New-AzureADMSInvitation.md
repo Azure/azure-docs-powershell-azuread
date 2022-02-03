@@ -26,9 +26,29 @@ This cmdlet is used to invite a new external user to your directory.
 ### Invite a new external user to your directory
 ```
 New-AzureADMSInvitation -InvitedUserEmailAddress someexternaluser@externaldomain.com -SendInvitationMessage $True -InviteRedirectUrl "http://myapps.microsoft.com"
+
+Id                      : 6058156a-93d1-4958-a738-ddc4ab4432cf
+InvitedUserDisplayName  :
+InvitedUserEmailAddress : someexternaluser@externaldomain.com
+SendInvitationMessage   : True
+InviteRedeemUrl         : https://login.microsoftonline.com/redeem?rd=https%3a%2f%2finvitations.microsoft.com%2fredeem%2f%3ftenant%3d06f6521d-c18c-460a-8656-fa82e81aa94b%26user%3d7b67d069-163b-4f7e-9118-c9ceeda363d9%26ticket%3ddANXuWQMNhYv21%252bFBm%252fULkTqCnpX6vNvRgTHQmsECPU%253d%26ver%3d2.0
+InviteRedirectUrl       : http://myapps.microsoft.com/
+InvitedUser             : class User {
+                            Id: 04fd8318-77ca-428e-b7f2-2bb1ef7a0100
+                            OdataType:
+                          }
+
+InvitedUserMessageInfo  : class InvitedUserMessageInfo {
+                            CcRecipients: System.Collections.Generic.List`1[Microsoft.Open.MSGraph.Model.Recipient]
+                            CustomizedMessageBody:
+                            MessageLanguage:
+                          }
+
+InvitedUserType         : Guest
+Status                  : PendingAcceptance
 ```
 
-Using the cmdlet in this example, an email is sent to the user who's email address is in the -InvitedUserEmailAddress parameter.
+Using the cmdlet in this example, an email is sent to the user whose email address is in the -InvitedUserEmailAddress parameter.
 When the user accepts the invitation, they are forwarded to the url as specified in the -InviteRedirectUrl parameter
 
 ## PARAMETERS
