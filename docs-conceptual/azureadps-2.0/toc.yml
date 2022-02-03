@@ -41,7 +41,7 @@ items:
 - name: Migrate to Microsoft Graph PowerShell
   items:
     - name: Migration FAQ
-      href: migration-faq.md      
+      href: migration-faq.yml      
 - name: Frequently asked questions
   items:
   - name: Where can I find the PowerShell log file?
