@@ -27,7 +27,10 @@ The release history for the Azure AD module and the Azure AD Preview module is h
 
 ### Prerequisites
 
-The Azure AD module is supported on the following Windows operating systems with the default version of Microsoft .NET Framework and Windows PowerShell: 
+The Azure AD module is supported on the following Windows operating systems with the default version of Microsoft .NET Framework and Windows PowerShell:
+
+>[!Note]
+> The Azure AD PowerShell module is not compatible with PowerShell 7. It is only supported in PowerShell 5.1.
 
 :::row:::
     :::column:::
