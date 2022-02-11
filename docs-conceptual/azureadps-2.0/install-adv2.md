@@ -4,7 +4,7 @@ description: This provides a guide on the installation process of the Azure AD P
 ms.service: active-directory
 ms.workload: identity
 ms.topic: overview
-ms.date: 07/10/2017
+ms.date: 02/08/2022
 ms.author: rodejo
 ms.custom: posh-docs-conceptual
 ms.reviewer: rodejo
@@ -27,7 +27,7 @@ The release history for the Azure AD module and the Azure AD Preview module is h
 
 ### Prerequisites
 
-The Azure AD module is supported on the following Windows operating systems with the default version of Microsoft .NET Framework and Windows PowerShell: 
+The Azure AD module is supported on the following Windows operating systems with the default version of Microsoft .NET Framework and Windows PowerShell:
 
 :::row:::
     :::column:::
@@ -41,6 +41,9 @@ The Azure AD module is supported on the following Windows operating systems with
         - Windows Server 2008 R2.
     :::column-end:::
 :::row-end:::
+
+>[!Note]
+> The Azure AD PowerShell module is not compatible with PowerShell 7. It is only supported in PowerShell 5.1.
 
 To install the General Availability version of the module, run:
 
