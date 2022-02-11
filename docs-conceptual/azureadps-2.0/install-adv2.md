@@ -4,7 +4,7 @@ description: This provides a guide on the installation process of the Azure AD P
 ms.service: active-directory
 ms.workload: identity
 ms.topic: overview
-ms.date: 08/02/2022
+ms.date: 02/08/2022
 ms.author: rodejo
 ms.custom: posh-docs-conceptual
 ms.reviewer: rodejo
