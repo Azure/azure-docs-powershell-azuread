@@ -1,9 +1,5 @@
 {
   "build_entry_point": "docs",
-  "need_generate_pdf": false,
-  "enable_incremental_build": false,
-  "need_preview_pull_request": true,
-  "need_generate_intellisense": false,
   "docsets_to_publish": [
     {
       "docset_name": "azureps-azuread",
@@ -35,13 +31,17 @@
     }
   ],
   "notification_subscribers": [],
+  "sync_notification_subscribers": null,
   "branches_to_filter": [],
   "skip_source_output_uploading": false,
+  "need_preview_pull_request": true,
+  "enable_incremental_build": false,
+  "contribution_branch_mappings": null,
   "dependent_repositories": [
     {
       "path_to_root": "_themes",
       "url": "https://github.com/Microsoft/templates.docs.msft",
-      "branch": "master",
+      "branch": "main",
       "branch_mapping": {}
     },
     {
@@ -53,10 +53,13 @@
     {
       "path_to_root": "_themes.pdf",
       "url": "https://github.com/Microsoft/templates.docs.msft.pdf",
-      "branch": "master",
+      "branch": "main",
       "branch_mapping": {}
     }
   ],
+  "branch_target_mapping": null,
+  "need_generate_pdf": false,
+  "need_generate_intellisense": false,
   "dependent_packages": [
     {
       "id": "Microsoft.DocAsCode.MAML2Yaml",
