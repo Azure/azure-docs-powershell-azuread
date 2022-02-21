@@ -94,7 +94,7 @@ Accept wildcard characters: False
 Specifies an oData v3.0 filter statement.
 This parameter controls which objects are returned.
 Details on querying with oData can be found here.
-http://www.odata.org/documentation/odata-version-3-0/odata-version-3-0-core-protocol/#queryingcollections
+http://www.odata.org/documentation/odata-version-3-0/odata-version-3-0-core-protocol/#queryingcollections. Not all of the oData v3 functions and operators are supported at this time.
 
 ```yaml
 Type: String
