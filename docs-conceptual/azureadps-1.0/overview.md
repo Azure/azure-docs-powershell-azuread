@@ -47,7 +47,7 @@ To connect to a specific environment of Azure Active Directory, use the AzureEnv
 
 This example connects your PowerShell session to the German AzureAD environment.
 
-See [Connect-MsolService](https://msdn.microsoft.com/library/azure/dn194123(v=azure.98).aspx) for more information.
+See [Connect-MsolService](https://docs.microsoft.com/en-us/powershell/module/msonline/connect-msolservice) for more information.
 
 For more information about the cmdlets, you can do the following:
 
