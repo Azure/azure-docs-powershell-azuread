@@ -24,9 +24,9 @@ The Set-AzureADTrustedCertificateAuthority cmdlet updates a trusted certificate 
 
 ### Example 1: Updates the trusted certificate authorities that are defined in your directory
 ```
-PS C:\> $cer = Set-AzureADTrustedCertificateAuthority #Get the CertificateAuthorityInformation object
-		PS C:\> $cer[0].CrlDistributionPoint = "https://example.crl"
-		PS C:\> Set-AzureADTrustedCertificateAuthority -CertificateAuthorityInformation $cer[0]
+PS C:\> $cer = Get-AzureADTrustedCertificateAuthority #Get the CertificateAuthorityInformation object
+PS C:\> $cer[0].CrlDistributionPoint = "https://example.crl"
+PS C:\> Set-AzureADTrustedCertificateAuthority -CertificateAuthorityInformation $cer[0]
 ```
 
 This command updates the trusted certificate authorities that are defined in your directory.
