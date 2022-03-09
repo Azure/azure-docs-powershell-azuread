@@ -28,6 +28,21 @@ Set-MsolDomainFederationSettings -DomainName <String> [-SigningCertificate <Stri
 The **Set-MsolDomainFederationSettings** cmdlet is used to update the settings of a single sign-on domain.
 Single sign-on is also known as identity federation.
 
+## EXAMPLES
+
+### Example 1: Set the PromptLoginBehavior
+```
+PS C:\> Set-MsolDomainFederationSettings –DomainName <your_domain_name> -PreferredAuthenticationProtocol <your_preferred_authentication_protocol> -SupportsMfa <current_value_for_supportsmfa> -PromptLoginBehavior <TranslateToFreshPasswordAuth|NativeSupport|Disabled>
+```
+
+This command updates the `PromptLoginBehavior` to either `TranslateToFreshPasswordAuth`, `NativeSupport`, or `Disabled`. These possible values are described below:
+
+- **TranslateToFreshPasswordAuth**: means the default Azure AD behavior of translating `prompt=login` to `wauth=https://schemas.microsoft.com/ws/2008/06/identity/authenticationmethod/password` and `wfresh=0`.
+- **NativeSupport**: means that the `prompt=login` parameter will be sent as is to AD FS.
+- **Disabled**: means that only wfresh=0 is sent to AD FS
+
+Use the `Get-MsolDomainFederationSettings -DomainName <your_domain_name> | Format-List *` to get the values for `PreferredAuthenticationProtocol`, `SupportsMfa`, and `PromptLoginBehavior` for the federated domain.
+
 ## PARAMETERS
 
 ### -ActiveLogOnUri
@@ -122,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -NextSigningCertificate
-Specifies the next token signing certificate that to use to sign tokens when the primary signing certificate expires.
+Specifies the next token signing certificate that you use to sign tokens when the primary signing certificate expires.
 
 ```yaml
 Type: String
@@ -233,7 +248,7 @@ Accept wildcard characters: False
 ```
 
 ### -PreferredAuthenticationProtocol
-Specifies the preferred authentication protocol.
+Specifies the preferred authentication protocol. Valid values are `WsFed` and `Samlp`.
 
 
 ```yaml
