@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-AzureADMSGroup
 
 ## SYNOPSIS
-Creates an Azure AD group.
+Creates an Azure AD Microsoft 365 Group.
 
 ## SYNTAX
 
