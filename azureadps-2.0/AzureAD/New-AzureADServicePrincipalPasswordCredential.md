@@ -29,7 +29,7 @@ PS C:\> $endDate = (Get-Date).AddYears(1)
 PS C:\> New-AzureADServicePrincipalPasswordCredential -ObjectId $sp.ObjectId -EndDate $endDate
 ```
 
-This command creates a password credential for a service principal that expires in 1 year
+This command creates a password credential for a service principal that expires in 1 year.
 
 
 ## PARAMETERS
