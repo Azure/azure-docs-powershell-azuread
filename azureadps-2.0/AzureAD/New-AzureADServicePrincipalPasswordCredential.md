@@ -25,10 +25,12 @@ The New-AzureADServicePrincipalPasswordCredential cmdlet creates a password cred
 
 ### Example 1
 ```powershell
-PS C:\> {{ Add example code here }}
+PS C:\> $endDate = (Get-Date).AddYears(1)
+PS C:\> New-AzureADServicePrincipalPasswordCredential -ObjectId $sp.ObjectId -EndDate $endDate
 ```
 
-{{ Add example description here }}
+This command creates a password credential for a service principal that expires in 1 year.
+
 
 ## PARAMETERS
 
