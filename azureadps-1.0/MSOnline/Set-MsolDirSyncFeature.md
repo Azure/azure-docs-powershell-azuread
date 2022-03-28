@@ -21,7 +21,7 @@ Set-MsolDirSyncFeature -Feature <String> -Enable <Boolean> [-Force] [-TenantId <
 ## DESCRIPTION
 The **Set-MsolDirSyncFeature** cmdlet sets identity synchronization features for a tenant.
 
-Synchronization features that can be used with this cmdlet include the following:
+You can use the following synchronization features with this cmdlet:
 
 - **EnableSoftMatchOnUpn**: Soft match is the process used to link an object being synced from on-premises for the first time with one that already exists in the cloud. When this feature is enabled, soft match will first be attempted using the standard logic, based on the primary SMTP address. If a match is not found based on primary SMTP, then a match will be attempted based on UserPrincipalName. Once this feature is enabled it cannot be disabled.
 - **PasswordSync**
