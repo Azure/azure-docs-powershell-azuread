@@ -37,4 +37,4 @@ sections:
         answer: |
           We're working on additional tools that will help migrate existing scripts that target Azure AD PowerShell so that these scripts can use Microsoft Graph PowerShell cmdlets instead.
           
-          Send us your feedback or suggestions on how we can improve Azure AD management within Microsoft Graph PowerShell SDK by [logging an issue](https://github.com/microsoftgraph/msgraph-sdk-powershell/issues).          
+          Send us your feedback or suggestions on how we can improve Azure AD management within Microsoft Graph PowerShell SDK by [logging an issue](https://github.com/microsoftgraph/msgraph-sdk-powershell/issues/new).          
