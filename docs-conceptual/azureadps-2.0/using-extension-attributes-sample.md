@@ -64,7 +64,7 @@ thumbnailPhoto@odata.mediaContentType                                 image/Jpeg
 extension_e5e29b8a85d941eab8d12162bd004528_extensionAttribute13       Test 
 ```
 
-### Retrieve a the value of a specific extension property for a user
+### Retrieve the value of a specific extension property for a user
 
 ```powershell 
 (Get-AzureADUserExtension -ObjectId $UserId).get_item("extension_e5e29b8a85d941eab8d12162bd004528_wWWHomePage")
