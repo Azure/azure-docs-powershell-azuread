@@ -38,6 +38,10 @@ items:
       href: Enabling-licenses-sample.md
     - name: Connecting an Azure AD Powershell session with Service Principal credentials
       href: signing-in-service-principal.md
+- name: Migrate to Microsoft Graph PowerShell
+  items:
+    - name: Migration FAQ
+      href: migration-faq.yml      
 - name: Frequently asked questions
   items:
   - name: Where can I find the PowerShell log file?
