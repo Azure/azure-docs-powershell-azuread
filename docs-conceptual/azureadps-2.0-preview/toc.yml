@@ -14,7 +14,7 @@
   - name: Directory Features
     items:
     - name: Managing groups
-      href: azure/active-directory/enterprise-users/groups-settings-v2-cmdlets
+      href: /azure/active-directory/enterprise-users/groups-settings-v2-cmdlets
     - name: Managing Unified Groups settings
       href: /azure/active-directory/enterprise-users/groups-settings-cmdlets
     - name: Managing Role Based Access Control (RBAC)
