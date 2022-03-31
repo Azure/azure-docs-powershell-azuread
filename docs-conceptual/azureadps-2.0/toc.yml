@@ -17,11 +17,11 @@ items:
   - name: Directory Features
     items:
     - name: Managing groups
-      href: https://docs.microsoft.com/azure/active-directory/enterprise-users/groups-settings-v2-cmdlets
+      href: /azure/active-directory/enterprise-users/groups-settings-v2-cmdlets
     - name: Managing Unified Groups settings
-      href: https://docs.microsoft.com/azure/active-directory/enterprise-users/groups-settings-cmdlets
+      href: /azure/active-directory/enterprise-users/groups-settings-cmdlets
     - name: Managing Role Based Access Control (RBAC)
-      href: https://docs.microsoft.com/azure/role-based-access-control/role-assignments-powershell
+      href: /azure/role-based-access-control/role-assignments-powershell
     - name: Working with licenses
       href: working-with-licenses.md
     - name: List all Service Principal Application Role assignments
@@ -31,7 +31,7 @@ items:
     - name: Working with Administrative Units
       href: Working-with-Administrative-Units.md
     - name: Inviting guests in B2B
-      href: https://docs.microsoft.com/en-us/azure/active-directory/b2b/code-samples#powershell-example
+      href: /azure/active-directory/b2b/code-samples#powershell-example
     - name: Creating a new user and setting the password
       href: new-user-sample.md
     - name: Assigning licenses to a user
