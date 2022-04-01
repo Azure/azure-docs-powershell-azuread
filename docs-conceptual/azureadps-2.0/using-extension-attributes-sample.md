@@ -2,7 +2,7 @@
 services: active-directory
 documentationcenter: ''
 title: 'Azure AD cmdlets to work with extension attributes'
-Description: 'Learn how to use extension attributes to extend your Azure AD directory'
+description: 'Learn how to use extension attributes to extend your Azure AD directory'
 ms.service: active-directory
 ms.workload: identity
 ms.tgt_pltfrm: na
