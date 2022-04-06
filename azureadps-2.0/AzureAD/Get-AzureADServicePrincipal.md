@@ -48,7 +48,11 @@ ObjectId                             AppId                                Displa
 0ea80ff0-a9ea-43b6-b876-d5989efd8228 00000009-0000-0000-c000-000000000000 Microsoft Power BI Reporting and Analytics</dev:code>
 ```
 
-This command retrieves all service principal from the directory.
+This command retrieves the top 100 service principal entries from the directory.
+To retrieve all entries, please run the following:
+```
+PS C:\> Get-AzureADServicePrincipal -All $true
+```
 
 ### Example 2: Retrieve a service principal by ID
 ```
