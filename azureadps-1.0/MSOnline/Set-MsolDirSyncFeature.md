@@ -23,16 +23,17 @@ The **Set-MsolDirSyncFeature** cmdlet sets identity synchronization features for
 
 You can use the following synchronization features with this cmdlet:
 
-- **EnableSoftMatchOnUpn**: Soft match is the process used to link an object being synced from on-premises for the first time with one that already exists in the cloud. When this feature is enabled, soft match will first be attempted using the standard logic, based on the primary SMTP address. If a match is not found based on primary SMTP, then a match will be attempted based on UserPrincipalName. Once this feature is enabled it cannot be disabled.
+- **EnableSoftMatchOnUpn**: Soft match is the process used to link an object being synced from on-premises for the first time with one that already exists in the cloud. When this feature is enabled, soft match will first be attempted using the standard logic, based on the primary SMTP address. If a match isn't found based on primary SMTP, then a match will be attempted based on UserPrincipalName. Once this feature is enabled, it can't be disabled.
 - **PasswordSync**
-- **SynchronizeUpnForManagedUsers**: Allows for the synchronization of UserPrincipalName updates from on-premises for managed (non-federated) users that have been assigned a license. These updates will be blocked if this feature is not enabled. Once this feature is enabled it cannot be disabled.
-- **BlockSoftMatch**: When this feature is enabled it will block the soft match feature. Customers are encouraged to enable this feature and keep it at enabled until soft matching is required again for their tenancy. This flag should be enabled again after any soft matching has completed and is no longer needed.
-- **BlockCloudObjectTakeoverThroughHardMatch**: When this feature is enabled and;
-    -  an object is synced for which an object with a matching source anchor already exists in Azure AD and,
-    - that object in Azure AD does not have DirSyncEnabled set to "true", 
+- **SynchronizeUpnForManagedUsers**: Allows for the synchronization of UserPrincipalName updates from on-premises for managed (non-federated) users that have been assigned a license. These updates will be blocked if this feature isn't enabled. Once this feature is enabled, it can't be disabled.
+- **BlockSoftMatch**: When this feature is enabled, it will block the soft match feature. Customers are encouraged to enable this feature and keep it enabled until soft matching is required again for their tenancy. This flag should be enabled again after any soft matching has completed and is no longer needed.
+- **BlockCloudObjectTakeoverThroughHardMatch**: When this feature is enabled, and
 
-the default behavior would be to hard match the cloud object with the on premises object and set the DirSyncEnabled flag of the Cloud object to "true". <br>
-When enabling this feature the cloud object is no longer matched and the DirSyncEnabled flag is not set to "true". Instead, an error is thrown: Error Code: `InvalidHardMatch`, Error Message: `Another cloud created object with the same source anchor already exists in Azure Active Directory`.
+    -  an object is synced for which an object with a matching source anchor already exists in Azure AD and,
+    - that object in Azure AD doesn't have DirSyncEnabled set to "true", then
+    
+    the default behavior would be to hard match the cloud object with the on premises object and set the DirSyncEnabled flag of the Cloud object to "true". <br>
+    When enabling this feature, the cloud object is no longer matched and the DirSyncEnabled flag isn't set to "true". Instead, an error is thrown: Error Code: `InvalidHardMatch`, Error Message: `Another cloud created object with the same source anchor already exists in Azure Active Directory`.
 
 Enabling some of these features, such as EnableSoftMatchOnUpn and SynchronizationUpnForManagedUsers, is a permanent operation.
 You can't disable these features once they're enabled.
