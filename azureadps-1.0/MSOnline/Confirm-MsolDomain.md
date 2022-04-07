@@ -204,7 +204,7 @@ Accept wildcard characters: False
 Indicates whether the IDP STS supports MFA.
 
 >[!NOTE]
->We recommend configuring the security setting [federatedIdpMfaBehavior](/graph/api/resources/federatedIdpMfaBehavior?view=graph-rest-beta&preserve-view=true) to prevent bypassing of Azure MFA. 
+>We recommend configuring the security setting [federatedIdpMfaBehavior](/graph/api/resources/federatedIdpMfaBehavior?view=graph-rest-beta&preserve-view=true) using Microsoft Graph PowerShell for greater control over how to protect federated domains. 
 
 
 ```yaml
