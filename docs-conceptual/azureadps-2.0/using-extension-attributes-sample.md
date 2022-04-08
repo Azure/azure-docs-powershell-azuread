@@ -1,7 +1,8 @@
 ---
 services: active-directory
 documentationcenter: ''
-title: 'Azure AD cmdlts'
+title: 'Azure AD cmdlets to work with extension attributes'
+description: 'Learn how to use extension attributes to extend your Azure AD directory'
 ms.service: active-directory
 ms.workload: identity
 ms.tgt_pltfrm: na
@@ -13,7 +14,7 @@ ms.custom: posh-docs-conceptual
 ms.reviewer: rodejo
 ---
 
-# Azure AD cmdlets for working with extension attributes
+# Azure AD cmdlets to work with extension attributes
 
 ## About extension attributes
 
@@ -64,7 +65,7 @@ thumbnailPhoto@odata.mediaContentType                                 image/Jpeg
 extension_e5e29b8a85d941eab8d12162bd004528_extensionAttribute13       Test 
 ```
 
-### Retrieve a the value of a specific extension property for a user
+### Retrieve the value of a specific extension property for a user
 
 ```powershell 
 (Get-AzureADUserExtension -ObjectId $UserId).get_item("extension_e5e29b8a85d941eab8d12162bd004528_wWWHomePage")
