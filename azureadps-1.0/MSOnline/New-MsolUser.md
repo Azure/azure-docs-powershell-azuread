@@ -47,7 +47,7 @@ A random password is generated for the user.
 ### Example 2: Create a user and assign a license
 
 >[!NOTE]
-> The **-LicenseAssignment** parameter is deprecated. Learn [how to assign licenses with Microsoft Graph PowerShell](/microsoft-365/enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell). For additional information, see the [assignLicense](/graph/api/user-assignlicense?view=graph-rest-1.0&tabs=powershell) Graph API.
+> The **-LicenseAssignment** parameter is deprecated. Learn [how to assign licenses with Microsoft Graph PowerShell](/microsoft-365/enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell). For additional information, see the [Assign License](/graph/api/user-assignlicense?view=graph-rest-1.0&tabs=powershell) Graph API reference page.
 ```
 PS C:\> New-MsolUser -UserPrincipalName "davidchew@contoso.com" -DisplayName "David Chew" -FirstName "David" -LastName "Chew" -UsageLocation "US" -LicenseAssignment "Contoso:BPOS_Standard"
 ```
@@ -248,7 +248,7 @@ Accept wildcard characters: False
 Specifies an array of licenses to assign the user.
 
 >[!NOTE]
-> The **-LicenseAssignment** parameter is deprecated. Learn [how to assign licenses with Microsoft Graph PowerShell](/microsoft-365/enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell). For additional information, see the [assignLicense](/graph/api/user-assignlicense?view=graph-rest-1.0&tabs=powershell) Graph API.
+> The **-LicenseAssignment** parameter is deprecated. Learn [how to assign licenses with Microsoft Graph PowerShell](/microsoft-365/enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell). For additional information, see the [Assign License](/graph/api/user-assignlicense?view=graph-rest-1.0&tabs=powershell) Graph API reference page.
 
 ```yaml
 Type: String[]

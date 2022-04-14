@@ -13,8 +13,7 @@ ms.custom: iamfeature=PowerShell
 Updates the license assignment for a user.
 
 >[!NOTE]
-> The **Set-MsolUserLicense** cmdlet is deprecated. Learn [how to assign licenses with Microsoft Graph PowerShell](/microsoft-365/enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell). For additional information, see the [assignLicense](/graph/api/user-assignlicense?view=graph-rest-1.0&tabs=powershell) Graph API.
-
+> The **Set-MsolUserLicense** cmdlet is deprecated. Learn [how to assign licenses with Microsoft Graph PowerShell](/microsoft-365/enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell). For additional information, see the [Assign License](/graph/api/user-assignlicense?view=graph-rest-1.0&tabs=powershell) Graph API reference page.
 ## SYNTAX
 
 ### SetUserLicenses__0 (Default)
