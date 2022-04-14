@@ -13,6 +13,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Adds or removes licenses for a Microsoft online service to the list of assigned licenses for a user.
 
+>[!NOTE]
+> The **Set-AzureADUserLicense** cmdlet is deprecated. Learn [how to assign licenses with Microsoft Graph PowerShell](/microsoft-365/enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell). For additional information, see the [assignLicense](/graph/api/user-assignlicense?view=graph-rest-1.0&tabs=powershell) Graph API.
+
 ## SYNTAX
 
 ```
