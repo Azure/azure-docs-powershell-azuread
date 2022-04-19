@@ -22,7 +22,7 @@ Remove-AzureADExternalDomainFederation -ExternalDomainName <String> [<CommonPara
 
 ### Example 1: Deletes an external domain federation setting for a given external domain.
 ```
-Remove-AzureADExternalFederationDomain -ExternalDomainName "test.com"
+Remove-AzureADExternalDomainFederation -ExternalDomainName "test.com"
 ```
 
 This command deletes an external domain federation setting.
