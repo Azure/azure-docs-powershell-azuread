@@ -15,6 +15,9 @@ ms.custom: posh-docs-conceptual
 
 # Azure Active Directory (MSOnline)
 
+>[!NOTE]
+> MSOnline is planned for deprecation. See the [deprecation update](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/azure-ad-change-management-simplified/ba-p/2967456) for more details on the deprecation plans. We recommend that you start trying [Microsoft Graph PowerShell](/powershell/microsoftgraph/overview). Microsoft Graph PowerShell is the replacement for Azure AD PowerShell and MSOnline and is recommended for interacting with Azure AD. See the [migration FAQ](../azureadps-2.0/migration-faq.yml) for answers to frequent migration queries.
+
 You can use the Azure Active Directory module for Windows PowerShell cmdlets for Azure AD administrative tasks such as user management, domain management and for configuring single sign-on.
 This topic includes information about how to install these cmdlets for use with your directory.
 

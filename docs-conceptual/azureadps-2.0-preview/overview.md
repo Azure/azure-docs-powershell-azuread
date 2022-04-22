@@ -10,6 +10,9 @@ ms.custom: posh-docs-conceptual
 ---
 # Azure Active Directory PowerShell for Graph
 
+>[!NOTE]
+> Azure AD PowerShell is planned for deprecation. See the [deprecation update](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/azure-ad-change-management-simplified/ba-p/2967456) for more details on the deprecation plans. We recommend that you start trying [Microsoft Graph PowerShell](/powershell/microsoftgraph/overview). Microsoft Graph PowerShell is the replacement for Azure AD PowerShell and is recommended for interacting with Azure AD. See the [migration FAQ](../azureadps-2.0/migration-faq.yml) for answers to frequent migration queries.
+
 Azure Active Directory PowerShell for Graph (Azure AD PowerShell) is a module IT Pros commonly use to manage their Azure Active Directory. The cmdlets in the Azure AD PowerShell module enable you to retrieve data from the directory, create new objects in the directory, update existing objects, remove objects, as well as configure the directory and its features.
 
 For more information about, or for the syntax of, any of the cmdlets, use the `Get-Help <cmdlet name>` command, where `<cmdlet name>` is the name of the cmdlet that you want to research.
