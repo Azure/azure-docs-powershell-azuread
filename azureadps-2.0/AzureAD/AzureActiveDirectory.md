@@ -12,7 +12,7 @@ ms.custom: iamfeature=PowerShell
 ## Description
 
 >[!NOTE]
-> Azure AD PowerShell is planned for deprecation. See the [deprecation update](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/azure-ad-change-management-simplified/ba-p/2967456) for more details on the deprecation plans. We recommend that you start trying [Microsoft Graph PowerShell](/powershell/microsoftgraph/overview). Microsoft Graph PowerShell is the replacement for Azure AD PowerShell and is recommended for interacting with Azure AD. See the [migration FAQ](../azureadps-2.0/migration-faq.yml) for answers to frequent migration queries.
+> Azure AD PowerShell is planned for deprecation. See the [deprecation update](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/azure-ad-change-management-simplified/ba-p/2967456) for more details on the deprecation plans. We recommend that you start trying [Microsoft Graph PowerShell](/powershell/microsoftgraph/overview). Microsoft Graph PowerShell is the replacement for Azure AD PowerShell and is recommended for interacting with Azure AD. See the [migration FAQ](../../docs-conceptual/azureadps-2.0/migration-faq.yml) for answers to frequent migration queries.
 
 
 The Azure Active Directory PowerShell for Graph module can be downloaded and installed from the [PowerShell Gallery](https://www.powershellgallery.com/packages/AzureAD/). The gallery uses the PowerShellGet module. The PowerShellGet module requires PowerShell 3.0 or newer and requires one of the following operating systems:
