@@ -30,7 +30,7 @@ ObjectId                             ObjectType
 0a1068c0-dbb6-4537-9db3-b48f3e31dd76 User
 ```
 
-### Example 2: Get all users and groups within a group by group ID
+### Example 2: Get all members within a group by group ID
 ```
 PS C:\> Get-AzureADGroupMember -ObjectId "12431118-5c12-6653-h82e-1ee8d9217682" -All $true
 
