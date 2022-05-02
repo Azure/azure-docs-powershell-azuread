@@ -13,7 +13,7 @@ Renews a group by updating the RenewedDateTime property on a group to the curren
 ## SYNTAX
 
 ```
-Reset-AzureADMSLifeCycleGroup -GroupId <String> [<CommonParameters>]
+Reset-AzureADMSLifeCycleGroup -Id <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -23,14 +23,14 @@ The Reset-AzureADMSLifeCycleGroup renews a group by updating the RenewedDateTime
 
 ### Example 1
 ```
-PS C:\> Reset-AzureADMSLifeCycleGroup -groupId cffd97bd-6b91-4c4e-b553-6918a320211c
+PS C:\> Reset-AzureADMSLifeCycleGroup -Id cffd97bd-6b91-4c4e-b553-6918a320211c
 ```
 
 The Reset-AzureADMSLifeCycleGroup renews a specified group by updating the RenewedDateTime property on a group to the current DateTime.
 
 ## PARAMETERS
 
-### -GroupId
+### -Id
 Specifies the ID of a group in Azure Active Directory.
 
 ```yaml
