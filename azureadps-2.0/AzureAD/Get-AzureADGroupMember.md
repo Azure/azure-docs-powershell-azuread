@@ -30,11 +30,28 @@ ObjectId                             ObjectType
 0a1068c0-dbb6-4537-9db3-b48f3e31dd76 User
 ```
 
+### Example 2: Get all users and groups within a group by group ID
+```
+PS C:\> Get-AzureADGroupMember -ObjectId "12431118-5c12-6653-h82e-1ee8d9217682" -All $true
+
+ObjectId                             ObjectType
+--------                             ----------
+0a1068c0-dbb6-4537-9db3-b48f3e31dd76 User
+0a1068c0-dbb6-4537-9db3-b48f3e31dd76 User
+0a1068c0-dbb6-4537-9db3-b48f3e31dd76 Group
+
+```
+
+
 ## PARAMETERS
 
 ### -All
-If true, return all group members.
-If false, return the number of objects specified by the Top parameter
+If true:
+	Return all group members.
+	
+If false: 
+	Return the number of objects specified by the Top parameter. 
+	If the top parameter is not specified, return the first 100 group members.
 
 ```yaml
 Type: Boolean
@@ -86,6 +103,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ## NOTES
+
 
 ## RELATED LINKS
 
