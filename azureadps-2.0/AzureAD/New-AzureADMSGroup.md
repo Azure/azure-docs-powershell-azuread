@@ -122,8 +122,11 @@ Accept wildcard characters: False
 ```
 
 ### -GroupTypes
-Specifies that the group is a dynamic group. 
-To create a dynamic group, specify a value of DynamicMembership.
+Specifies that the group is a unified or dynamic group. 
+
+Notes: 
+
+* This parameter currently cannot be used to create dynamic groups. To create a dynamic group in PowerShell, you must use the AzureADPreview module.
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
