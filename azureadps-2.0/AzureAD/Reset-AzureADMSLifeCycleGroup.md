@@ -24,7 +24,7 @@ When a group is renewed, the group expiration is extended by the number of days 
 
 ### Example 1
 ```
-PS C:\> Reset-AzureADMSLifeCycleGroup -groupId cffd97bd-6b91-4c4e-b553-6918a320211c
+PS C:\> Reset-AzureADMSLifeCycleGroup -Id cffd97bd-6b91-4c4e-b553-6918a320211c
 ```
 
 The Reset-AzureADMSLifeCycleGroup renews a specified group by updating the RenewedDateTime property on a group to the current DateTime.
