@@ -126,7 +126,7 @@ Specifies that the group is a unified or dynamic group.
 
 Notes: 
 
-* This parameter currently cannot be used to create dynamic groups. To create a dynamic group in PowerShell, you must use the AzureADPreview module.
+* This parameter currently cannot be used to create dynamic groups. To create a dynamic group in PowerShell, you must use the Azure AD Preview module.
 
 
 ```yaml
