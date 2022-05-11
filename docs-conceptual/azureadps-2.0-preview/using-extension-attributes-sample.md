@@ -2,6 +2,7 @@
 services: active-directory
 documentationcenter: ''
 title: 'About extension attributes'
+description: "This article provides an overview of Azure Active Directory cmdlets for working with extension attributes."
 ms.service: active-directory
 ms.workload: identity
 ms.tgt_pltfrm: na
