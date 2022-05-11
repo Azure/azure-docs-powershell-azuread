@@ -105,7 +105,7 @@ ObjectId                             Name                                       
 91ec8ae5-6813-4453-afd7-31680a484892 extension_0380f0f700c040b5aa577c9268940b53_MyNewProperty {User}
 ```
 
->Note that the Name of the new property is generated from the format "Extension_" + <objectID of your placeholder application> + "_" + <the name of your new property>. The exact value of the name will therefore be different for different applications you create.
+>Note that the Name of the new property is generated from the format "Extension_" + \<objectID of your placeholder application\> + "_" + \<the name of your new property\>. The exact value of the name will therefore be different for different applications you create.
 >Note that you can assign a property to more than one object type. In our example we only used one TargetObject, "User", but you could also have specified "User","Group", this would assign the object to both user and group objects.
 
 ### Setting values for extension properties

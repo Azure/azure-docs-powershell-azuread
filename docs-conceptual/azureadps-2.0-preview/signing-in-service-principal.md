@@ -29,7 +29,7 @@ Connect-AzureAD
 
 ## Create a self signed certificate
 
-We'll use a self signed certificate for this example, so let's create one. You'll want to replace the <password> string inthe below example with a password of your choice, this is the password that is used to create the certificate file.
+We'll use a self signed certificate for this example, so let's create one. You'll want to replace the \<password\> string inthe below example with a password of your choice, this is the password that is used to create the certificate file.
 
 ```powershell
 $pwd = "<password>"
