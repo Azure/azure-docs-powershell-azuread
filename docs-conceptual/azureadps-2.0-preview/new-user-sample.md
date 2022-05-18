@@ -2,7 +2,7 @@
 services: active-directory
 documentationcenter: ''
 title: 'Create a new user with AzureAD Preview'
-description: "This example shows how you can create a new user in Azure Active Directory using only mandatory parameters or the cmdlet."
+description: "This example shows how you can create a new user in Azure Active Directory using only mandatory parameters of the cmdlet."
 ms.service: active-directory
 ms.workload: identity
 ms.tgt_pltfrm: na
