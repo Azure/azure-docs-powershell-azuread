@@ -21,7 +21,7 @@ New-AzureADServiceAppRoleAssignment -ObjectId <String> [-InformationAction <Acti
 The New-AzureADServiceAppRoleAssignment cmdlet assigns an app role from a resource service principal to a user, a group, or another service principal. App roles assigned to service principals are also known as application permissions.
 
 > [!NOTE]
-> The behavior described here applies when `Connect-AzureAD` was called without any parameters, or using a Microsoft-owned application identity. See [Example 4](#example-4--when-connected-using-a-customer-owned-app-or-service-identity) to learn more about the difference when connected using a customer-owned app registration or service identity.  
+> The behavior described here applies when `Connect-AzureAD` was called without any parameters, or using a Microsoft-owned application identity. See [Example 4](#example-4-when-connected-using-a-customer-owned-app-or-service-identity) to learn more about the difference when connected using a customer-owned app registration or service identity.  
 
 ## EXAMPLES
 
@@ -40,7 +40,7 @@ In this example, a client service principal is assigned an app role (application
 - `PrincipalId`: The ObjectId of the client service principal to which you are assigning the app role.
 
 > [!NOTE]
-> This example applies when `Connect-AzureAD` was called without any parameters. See [Example 4](#example-4--when-connected-using-a-customer-owned-app-or-service-identity) to see how this cmdlet is used when connected using a customer-owned app registration or service identity.
+> This example applies when `Connect-AzureAD` was called without any parameters. See [Example 4](#example-4-when-connected-using-a-customer-owned-app-or-service-identity) to see how this cmdlet is used when connected using a customer-owned app registration or service identity.
 
 ### Example 2: Assign an app role to a user
 
@@ -57,7 +57,7 @@ In this example, a user is assigned an app role defined by a resource app:
 - `PrincipalId`: The ObjectId of the user to which you are assigning the app role.
 
 > [!NOTE]
-> This example applies when `Connect-AzureAD` was called without any parameters. See [Example 4](#example-4--when-connected-using-a-customer-owned-app-or-service-identity) to see how this cmdlet is used when connected using a customer-owned app registration or service identity.
+> This example applies when `Connect-AzureAD` was called without any parameters. See [Example 4](#example-4-when-connected-using-a-customer-owned-app-or-service-identity) to see how this cmdlet is used when connected using a customer-owned app registration or service identity.
 
 ### Example 3: Assign an app role to a group
 
@@ -74,7 +74,7 @@ In this example, a group is assigned an app role defined by a resource app. All 
 - `PrincipalId`: The ObjectId of the group to which you are assigning the app role.
 
 > [!NOTE]
-> This example applies when `Connect-AzureAD` was called without any parameters. See [Example 4](#example-4--when-connected-using-a-customer-owned-app-or-service-identity) to see how this cmdlet is used when connected using a customer-owned app registration or service identity.
+> This example applies when `Connect-AzureAD` was called without any parameters. See [Example 4](#example-4-when-connected-using-a-customer-owned-app-or-service-identity) to see how this cmdlet is used when connected using a customer-owned app registration or service identity.
 
 ### Example 4: When connected using a customer-owned app or service identity
 
