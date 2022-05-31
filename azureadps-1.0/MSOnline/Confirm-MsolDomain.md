@@ -203,6 +203,10 @@ Accept wildcard characters: False
 ### -SupportsMfa
 Indicates whether the IDP STS supports MFA.
 
+>[!NOTE]
+>We recommend configuring the security setting [federatedIdpMfaBehavior](/graph/api/resources/internaldomainfederation?view=graph-rest-beta#federatedidpmfabehavior-values) using Microsoft Graph PowerShell for greater control over how to protect federated domains. 
+
+
 ```yaml
 Type: Boolean
 Parameter Sets: (All)
