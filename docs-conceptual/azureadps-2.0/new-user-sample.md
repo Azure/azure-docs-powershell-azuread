@@ -2,6 +2,7 @@
 services: active-directory
 documentationcenter: ''
 title: 'Create a new user'
+description: "This example shows how to create a new user in Azure Active Directory. The cmdlet used is [New-AzureADUser]()."
 ms.service: active-directory
 ms.workload: identity
 ms.tgt_pltfrm: na
@@ -20,7 +21,7 @@ The cmdlet used is [New-AzureADUser](). This cmdlet has many parameters that you
  
 + DisplayName - contains the display name for the new user, in our example this is "Abby Brown"
 + MailNickName - contains the email alias of the new user, we'll set it to "AbbyB"
-+ UserPrincipalName - contains the UserPrincipalName (UPN) of this user. The UPN is what the user will use when they sign in into Azure AD. The common structure is <MailNickName>@<directory name>, so for Abby Brown in Contoso.com, the UPN would be "AbbyB@contoso.com"
++ UserPrincipalName - contains the UserPrincipalName (UPN) of this user. The UPN is what the user will use when they sign in into Azure AD. The common structure is \<MailNickName\>@\<directory name\>, so for Abby Brown in Contoso.com, the UPN would be "AbbyB@contoso.com"
 + AccountEnabled - this indicates whether the account is enabled for sign in. If you set it to $False, the user will not be able to use the account, but you can set it to $True right now or do that later if you need to perform other configuration tasks for the new user, such as assigning licenses or applications.
 
 + PasswordProfile - Specifies the user's password profile. Note that the parameter type for this parameter is "PasswordProfile". in order to pass a parameter of this type, you first need to create a variable in PowerShell with that type. We can do that with the New-Object cmdlet:
