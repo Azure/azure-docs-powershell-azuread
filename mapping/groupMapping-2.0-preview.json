@@ -270,5 +270,6 @@
     "Get-AzureADMSServicePrincipal": "Service Principals",
     "Set-AzureADMSServicePrincipal": "Service Principals",
     "Get-AzureADMSUser": "Users",
-    "Set-AzureADMSUser": "Users"
+    "Set-AzureADMSUser": "Users",
+    "New-AzureADMSAdministrativeUnitMember": "Administrative Units"
 }
