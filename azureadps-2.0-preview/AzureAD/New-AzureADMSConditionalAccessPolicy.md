@@ -24,49 +24,75 @@ Conditional access policies are custom rules that define an access scenario.
 
 ## EXAMPLES
 
-### Example 1: Creates a new conditional access policy in Azure AD that require MFA to access Exchange Online.
+### Example 1: Creates a new conditional access policy in Azure AD that require MFA to access Exchange Online
+
 ```
 PS C:\> $conditions = New-Object -TypeName Microsoft.Open.MSGraph.Model.ConditionalAccessConditionSet
-          PS C:\> $conditions.Applications = New-Object -TypeName Microsoft.Open.MSGraph.Model.ConditionalAccessApplicationCondition
-          PS C:\> $conditions.Applications.IncludeApplications = "00000002-0000-0ff1-ce00-000000000000"
-          PS C:\> $conditions.Users = New-Object -TypeName Microsoft.Open.MSGraph.Model.ConditionalAccessUserCondition
-          PS C:\> $conditions.Users.IncludeUsers = "all"
-          PS C:\> $controls = New-Object -TypeName Microsoft.Open.MSGraph.Model.ConditionalAccessGrantControls
-          PS C:\> $controls._Operator = "OR"
-          PS C:\> $controls.BuiltInControls = "mfa"
-          PS C:\> New-AzureADMSConditionalAccessPolicy -DisplayName "MFA policy" -State "Enabled" -Conditions $conditions -GrantControls $controls
+PS C:\> $conditions.Applications = New-Object -TypeName Microsoft.Open.MSGraph.Model.ConditionalAccessApplicationCondition
+PS C:\> $conditions.Applications.IncludeApplications = "00000002-0000-0ff1-ce00-000000000000"
+PS C:\> $conditions.Users = New-Object -TypeName Microsoft.Open.MSGraph.Model.ConditionalAccessUserCondition
+PS C:\> $conditions.Users.IncludeUsers = "all"
+PS C:\> $controls = New-Object -TypeName Microsoft.Open.MSGraph.Model.ConditionalAccessGrantControls
+PS C:\> $controls._Operator = "OR"
+PS C:\> $controls.BuiltInControls = "mfa"
+PS C:\> New-AzureADMSConditionalAccessPolicy -DisplayName "MFA policy" -State "Enabled" -Conditions $conditions -GrantControls $controls
 
-          Id                      : 6b5e999b-0ba8-4186-a106-e0296c1c4358
-          DisplayName             : MFA policy
-          CreatedDateTime         : 2019-09-26T23:12:16.0792706Z
-          ModifiedDateTime        : 2019-09-27T00:12:12.5986473Z
-          State                   : Enabled
+Id                      : 6b5e999b-0ba8-4186-a106-e0296c1c4358
+DisplayName             : MFA policy
+CreatedDateTime         : 2019-09-26T23:12:16.0792706Z
+ModifiedDateTime        : 2019-09-27T00:12:12.5986473Z
+State                   : Enabled
 ```
 
 This command creates a new conditional access policy in Azure AD that require MFA to access Exchange Online.
 
-### Example 2: Creates a new conditional access policy in Azure AD that blocks access to Exchange Online from non-trusted regions.
+### Example 2: Creates a new conditional access policy in Azure AD that blocks access to Exchange Online from non-trusted regions
+
 ```
 PS C:\> $conditions = New-Object -TypeName Microsoft.Open.MSGraph.Model.ConditionalAccessConditionSet
-          PS C:\> $conditions.Applications = New-Object -TypeName Microsoft.Open.MSGraph.Model.ConditionalAccessApplicationCondition
-          PS C:\> $conditions.Applications.IncludeApplications = "00000002-0000-0ff1-ce00-000000000000"
-          PS C:\> $conditions.Users = New-Object -TypeName Microsoft.Open.MSGraph.Model.ConditionalAccessUserCondition
-          PS C:\> $conditions.Users.IncludeUsers = "all"
-          PS C:\> $conditions.Locations = New-Object -TypeName Microsoft.Open.MSGraph.Model.ConditionalAccessLocationCondition
-          PS C:\> $conditions.Locations.IncludeLocations = "198ad66e-87b3-4157-85a3-8a7b51794ee9"
-          PS C:\> $controls = New-Object -TypeName Microsoft.Open.MSGraph.Model.ConditionalAccessGrantControls
-          PS C:\> $controls._Operator = "OR"
-          PS C:\> $controls.BuiltInControls = "block"
-          PS C:\> New-AzureADMSConditionalAccessPolicy -DisplayName "MFA policy" -State "Enabled" -Conditions $conditions -GrantControls $controls
+PS C:\> $conditions.Applications = New-Object -TypeName Microsoft.Open.MSGraph.Model.ConditionalAccessApplicationCondition
+PS C:\> $conditions.Applications.IncludeApplications = "00000002-0000-0ff1-ce00-000000000000"
+PS C:\> $conditions.Users = New-Object -TypeName Microsoft.Open.MSGraph.Model.ConditionalAccessUserCondition
+PS C:\> $conditions.Users.IncludeUsers = "all"
+PS C:\> $conditions.Locations = New-Object -TypeName Microsoft.Open.MSGraph.Model.ConditionalAccessLocationCondition
+PS C:\> $conditions.Locations.IncludeLocations = "198ad66e-87b3-4157-85a3-8a7b51794ee9"
+PS C:\> $controls = New-Object -TypeName Microsoft.Open.MSGraph.Model.ConditionalAccessGrantControls
+PS C:\> $controls._Operator = "OR"
+PS C:\> $controls.BuiltInControls = "block"
+PS C:\> New-AzureADMSConditionalAccessPolicy -DisplayName "MFA policy" -State "Enabled" -Conditions $conditions -GrantControls $controls
 
-          Id                      : 6b5e999b-0ba8-4186-a106-e0296c1c4358
-          DisplayName             : MFA policy
-          CreatedDateTime         : 2019-09-26T23:12:16.0792706Z
-          ModifiedDateTime        : 2019-09-27T00:12:12.5986473Z
-          State                   : Enabled
+Id                      : 6b5e999b-0ba8-4186-a106-e0296c1c4358
+DisplayName             : MFA policy
+CreatedDateTime         : 2019-09-26T23:12:16.0792706Z
+ModifiedDateTime        : 2019-09-27T00:12:12.5986473Z
+State                   : Enabled
 ```
 
-This command creates a new conditional access policy in Azure AD that blocks access to Exchange Online from non-trusted regions.
+### Example 3: Creates a new conditional access policy in Azure AD that blocks access to Exchange Online from non-compliant devices
+
+```
+PS C:\> $conditions = New-Object -TypeName Microsoft.Open.MSGraph.Model.ConditionalAccessConditionSet
+PS C:\> $conditions.Applications = New-Object -TypeName Microsoft.Open.MSGraph.Model.ConditionalAccessApplicationCondition
+PS C:\> $conditions.Applications.IncludeApplications = "00000002-0000-0ff1-ce00-000000000000"
+PS C:\> $conditions.Users = New-Object -TypeName Microsoft.Open.MSGraph.Model.ConditionalAccessUserCondition
+PS C:\> $conditions.Users.IncludeUsers = "all"
+PS C:\> $conditions.Devices = New-Object -TypeName Microsoft.Open.MSGraph.Model.ConditionalAccessDevicesCondition
+PS C:\> $conditions.Devices.DeviceFilter = New-Object -TypeName Microsoft.Open.MSGraph.Model.ConditionalAccessFilter
+PS C:\> $conditions.Devices.DeviceFilter.Mode = "exclude"
+PS C:\> $conditions.Devices.DeviceFilter.Rule = "device.isCompliant -eq True"
+PS C:\> $controls = New-Object -TypeName Microsoft.Open.MSGraph.Model.ConditionalAccessGrantControls
+PS C:\> $controls._Operator = "OR"
+PS C:\> $controls.BuiltInControls = "block"
+PS C:\> New-AzureADMSConditionalAccessPolicy -DisplayName "Block Non-compliant device policy" -State "Enabled" -Conditions $conditions -GrantControls $controls
+
+Id               : c5560f6b-2931-4b40-8e94-8b9e11a507c1
+DisplayName      : Block Non-compliant device policy
+CreatedDateTime  : 2022-04-20T15:15:41.9500079Z
+ModifiedDateTime : 
+State            : enabled
+```
+
+This command creates a new conditional access policy in Azure AD that blocks access to Exchange Online from non-trusted regions. It demonstrates usage of [filter for devices](/azure/active-directory/conditional-access/concept-condition-filters-for-devices) condition.
 
 ## PARAMETERS
 

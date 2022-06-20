@@ -34,7 +34,7 @@ Gets a user in Azure Active Directory (Azure AD).
 
 ### Example 1
 ```powershell
-PS C:\> $user = Get-AzureADMSUser -UserPrincipalName TestUser@example.com 
+PS C:\> Get-AzureADMSUser -Filter "UserPrincipalName eq 'TestUser@example.com'"
 ```
 
 Get a user by user principal name.
