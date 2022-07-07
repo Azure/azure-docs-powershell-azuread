@@ -82,3 +82,4 @@ Cmdlets have the following naming convention: a verb and noun separated by a das
 
 Windows PowerShell includes more than one hundred basic core cmdlets.
 For more information about Windows PowerShell, see [Getting Started with Windows PowerShell](https://msdn.microsoft.com/powershell/scripting/getting-started/getting-started-with-windows-powershell).
+ 
