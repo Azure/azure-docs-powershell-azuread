@@ -30,7 +30,7 @@ The **Set-AzureADPolicy** cmdlet sets a policy in Azure Active Directory (AD).
 
 ### Example 1: Update a policy
 ```
-PS C:\>Set-AzureADPolicy -ObjectId <object id of policy> -DisplayName <string>
+PS C:\>Set-AzureADPolicy -Id <object id of policy> -DisplayName <string>
 ```
 
 This command updates the specified policy in Azure AD.
