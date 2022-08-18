@@ -168,6 +168,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+>[!NOTE]
+>There is a hard limit of 100 Application IDs that can be added per tenant.
+
 ### -ClientApplicationTenantIds
 The set of client application tenant ids to scope consent operation down to.
 It could be @("All") or a list of client application tenant ids.
