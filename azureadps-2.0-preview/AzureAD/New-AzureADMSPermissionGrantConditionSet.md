@@ -156,6 +156,9 @@ Accept wildcard characters: False
 The set of client application ids to scope consent operation down to.
 It could be @("All") or a list of client application Ids.
 
+>[!NOTE]
+>There is a hard limit of 100 Application IDs that can be added per tenant.
+
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
 Parameter Sets: (All)
@@ -167,9 +170,6 @@ Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
-
->[!NOTE]
->There is a hard limit of 100 Application IDs that can be added per tenant.
 
 ### -ClientApplicationTenantIds
 The set of client application tenant ids to scope consent operation down to.
