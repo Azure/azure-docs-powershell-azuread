@@ -54,7 +54,7 @@ Install-Module AzureAD
 To install the public preview release, run:
 
 ```powershell
-Install-module AzureADPreview
+Install-Module AzureADPreview
 ```
 
 Note that you cannot install both the preview version and the GA version on the same computer at the same time.
