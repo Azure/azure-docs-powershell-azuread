@@ -40,7 +40,7 @@ Note that the MSOL Settings cmdlets have been given a new name, more information
  
 **Important**
 
-Effective October 20, 2014, the Azure Active Directory Module for Windows PowerShell (32-bit version) is discontinued.
+Effective October 20, 2014, the [Azure Active Directory Module for Windows PowerShell (32-bit version)](https://go.microsoft.com/fwlink/p/?linkid=236298) is discontinued.
 Support for the 32-bit version will no longer occur, and future updates to the Azure Active Directory Module will be released only for the 64-bit version.
 
 We strongly recommend you install the 64-bit version to ensure future support and compatibility.
