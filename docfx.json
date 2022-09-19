@@ -126,6 +126,7 @@
     "globalMetadata": {
       "showPowerShellPicker": "true",
       "apiPlatform": "powershell",
+      "uhfHeaderId": "Azure",
       "brand": "azure",
       "searchScope": [
         "Azure"
