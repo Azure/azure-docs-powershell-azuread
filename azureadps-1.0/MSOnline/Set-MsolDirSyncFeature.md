@@ -26,7 +26,7 @@ You can use the following synchronization features with this cmdlet:
 - **EnableSoftMatchOnUpn**: Soft match is the process used to link an object being synced from on-premises for the first time with one that already exists in the cloud. When this feature is enabled, soft match will first be attempted using the standard logic, based on the primary SMTP address. If a match isn't found based on primary SMTP, then a match will be attempted based on UserPrincipalName. Once this feature is enabled, it can't be disabled.
 - **PasswordSync**
 - **SynchronizeUpnForManagedUsers**: Allows for the synchronization of UserPrincipalName updates from on-premises for managed (non-federated) users that have been assigned a license. These updates will be blocked if this feature isn't enabled. Once this feature is enabled, it can't be disabled.
-- **BlockSoftMatch**: When this feature is enabled, it will block the soft match feature. Customers are encouraged to enable this feature and keep it enabled until soft matching is required again for their tenancy. This flag should be enabled again after any soft matching has completed and is no longer needed.
+- **BlockSoftMatch**: When this feature is enabled, it will block the soft match feature. Customers are encouraged to disable this feature and keep it disabled until soft matching is required again for their tenancy. This flag should be disabled again after any soft matching has completed and is no longer needed.
 - **BlockCloudObjectTakeoverThroughHardMatch**: When this feature is enabled, and
 
     -  an object is synced for which an object with a matching source anchor already exists in Azure AD and,
