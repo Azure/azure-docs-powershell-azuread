@@ -63,20 +63,20 @@ items:
 - name: Videos
   items:
   - name: Manage dynamic groups with PowerShell
-    href: https://channel9.msdn.com/Series/Azure-Active-Directory-Videos-Demos/Managing-dynamic-groups-with-Azure-AD-PowerShell
+    href: /shows/azure-active-directory-videos-demos/managing-dynamic-groups-azure-ad-powershell
   - name: Managing applications with PowerShell
-    href: https://channel9.msdn.com/Series/Azure-Active-Directory-Videos-Demos/ManageAppsAzureADPowerShell
+    href: /shows/azure-active-directory-videos-demos/manageappsazureadpowersh
 - name: Read more
   items:
   - name: Getting started with PowerShell
-    href: https://msdn.microsoft.com/powershell/scripting/getting-started/getting-started-with-windows-powershell
+    href: /powershell/scripting/learn/ps101/01-getting-started
   - name: PowerShell fundamental concepts
-    href: https://msdn.microsoft.com/en-us/powershell/scripting/getting-started/fundamental-concepts
+    href: /powershell/scripting/lang-spec/chapter-03
   - name: PowerShell setup and installation
-    href: https://msdn.microsoft.com/en-us/powershell/scripting/setup/setup-reference
+    href: /powershell/scripting/install/installing-powershell
   - name: Working with files and folders
-    href: https://msdn.microsoft.com/en-us/powershell/scripting/getting-started/cookbooks/working-with-files-and-folders
+    href: /powershell/scripting/samples/working-with-files-and-folders
   - name: PowerShellGet module
-    href: https://msdn.microsoft.com/powershell/reference/5.1/PowerShellGet/PowerShellGet
+    href: /powershell/module/powershellget/
 metadata:
   universal_ref_toc: /powershell/module/active-directory/toc.json
