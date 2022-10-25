@@ -28,7 +28,7 @@
     - name: Working with Administrative Units
       href: Working-with-Administrative-Units.md
     - name: Inviting guests in B2B
-      href: /azure/active-directory/external-identities/what-is-b2b
+      href: /azure/active-directory/external-identities/code-samples
     - name: Creating a new user and setting the password
       href: new-user-sample.md
     - name: Assigning licenses to a user
