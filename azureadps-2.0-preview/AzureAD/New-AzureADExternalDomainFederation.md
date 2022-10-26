@@ -32,7 +32,7 @@ $federationSettings.MetadataExchangeUri="http://adfs.com/FederationMetadata.xml"
 $federationSettings.PassiveLogOnUri=$federationSettings.ActiveLogOnUri
 $federationSettings.PreferredAuthenticationProtocol="WsFed"
 $federationSettings.SigningCertificate="X509 signing public key"
-New-AzureADExternalFederationDomain -ExternalDomainName "adfs.com" -FederationSettings $federationSettings
+New-AzureADExternalDomainFederation -ExternalDomainName "adfs.com" -FederationSettings $federationSettings
 ```
 
 This command creates a new external federation domain settings.
