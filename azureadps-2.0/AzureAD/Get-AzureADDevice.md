@@ -56,6 +56,26 @@ d4fe7726-5966-431c-b3b8-cddc8fdb717d 293872f6-c006-4e6a-8629-07847c5ab078 New De
 
 This command gets all available devices.
 
+### Example 3: Get devices using a Filter criteria
+```
+PS C:\>Get-AzureADDevice -Filter "startswith(DeviceOSType,'Windows')"
+
+ObjectId                             DeviceId                             DisplayName
+--------                             --------                             -----------
+3cb87a8f-0a41-4ca8-8910-e56cc00114a3 48445467-033c-42ca-8e38-8d181db1d49c DESKTOP-ABC123YN
+62aae804-8b1a-4ab7-8fda-5068aed1a1f7 3cb87a8f-0a41-4ca8-8910-e56cc00114a3 DESKTOP-DJF4463Y
+d4fe7726-5966-431c-b3b8-cddc8fdb717d 293872f6-c006-4e6a-8629-07847c5ab078 DESKTOP-HXB4327H
+```
+
+### Example 4: Get a specific device by name
+```
+PS C:\>Get-AzureADDevice -SearchString "DESKTOP-DJF4463Y"
+
+ObjectId                             DeviceId                             DisplayName
+--------                             --------                             -----------
+62aae804-8b1a-4ab7-8fda-5068aed1a1f7 3cb87a8f-0a41-4ca8-8910-e56cc00114a3 DESKTOP-DJF4463Y
+```
+
 ## PARAMETERS
 
 ### -All
