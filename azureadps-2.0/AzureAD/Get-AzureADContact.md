@@ -38,6 +38,15 @@ b052db07-e7ec-4c0e-b481-a5ba550b9ee7 contact@contoso.com Contoso Contact
 
 This command retrieves all contact objects in the directory.
 
+### Example 2 Retrieve one contact using the filter parameter
+```
+PS C:\> Get-AzureADContact -All $true -Filter "mail -eq 'contact@contoso.com'"
+
+ObjectId                             Mail                DisplayName
+--------                             ----                -----------
+b052db07-e7ec-4c0e-b481-a5ba550b9ee7 contact@contoso.com Contoso Contact
+```
+
 ## PARAMETERS
 
 ### -All
