@@ -27,7 +27,7 @@ $GroupId = (Get-AzureADGroup -Top 1).ObjectId
 Get-AzureADGroupAppRoleAssignment -ObjectId $GroupId
 ```
 
-The first command gets the object ID of a group by using the Get-AzureADGroup (./Get-AzureADGroup.md)cmdlet.
+The first command gets the object ID of a group by using the [Get-AzureADGroup](./Get-AzureADGroup.md) cmdlet.
 The command stores the ID in the $GroupId variable.
 
 The second command gets the application role assignments of the group in $GroupId.
