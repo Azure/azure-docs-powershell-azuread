@@ -39,7 +39,6 @@ The **Get-AzureADGroup** cmdlet gets a group in Azure Active Directory (AD).
 ```
 PS C:\>Get-AzureADGroup
 
-
 ObjectId                             DisplayName                          Description
 --------                             -----------                          -----------
 00628948-b509-4362-aa73-380c4dbd2a44 ADSyncBrowse
@@ -72,6 +71,17 @@ ObjectId                             DisplayName                                
 ```
 
 This command gets the groups that start with the text All in their display names.
+
+### Example 3: Get groups filtering on an attribute
+```
+PS C:\>Get-AzureADGroup -Filter "startswith(Displayname,'Exchange')"
+
+ObjectId                             DisplayName                          Description
+--------                             -----------                          -----------
+4370f0a6-78e9-44cb-b722-29cb5307fdba Exchange Servers                     This group contains all the Exchange servers. This group shouldn't be deleted.
+47a1bff5-f449-4bfc-8772-b1515c57fec5 ExchangeLegacyInterop                This group is for interoperability with Exchange 2003 servers within the same forest.
+```
+This command gets the groups where the Displayname attribute starts with "Exchange".
 
 ## PARAMETERS
 
