@@ -33,6 +33,16 @@ KeyId               :
 StartDate           : 9/28/2016 3:57:10 PM
 Value               : ZJ0V1Yg4cp4eWIey9DrYspqVdX1pdvY437P/ueGxVLU=
 ```
+### Example 2: Create a custom password credential 
+```
+PS C:\>New-AzureADApplicationPasswordCredential -ObjectId '6e6a6561-e96d-453b-9641-743b499736cc' -Value 'Zihjfg-dsgs_d34_54"73fE"d!f~dg'
+ 
+CustomKeyIdentifier :
+EndDate             : 16-12-2023 06:00:44
+KeyId               :
+StartDate           : 16-12-2022 06:00:44
+Value               : Zihjfg-dsgs_d34_54"73fE"d!f~dg
+```
 
 ## PARAMETERS
 
