@@ -153,7 +153,7 @@ This cmdlet returns objects that contain the following information:
 
 * EmailAddress. The primary email address of the group (for MailEnabled groups only).
 
-* GroupMemberType. The group type (SecurityGroup, Distributionlist, or MailEnabledSecurityGroup).
+* GroupMemberType. The group member type (User, ServicePrincipal, Contact, or Group).
 
 * ObjectId. The unique ID of the group.
 
