@@ -14,11 +14,11 @@ summary: This article provides answers to frequently asked questions about migra
 sections:
     - name: Ignored
       questions:
-      - question: What happens to Azure AD PowerShell come June 2022?
+      - question: What happens to Azure AD PowerShell come June 2023?
         answer: |
           In June 2020, we announced the retirement of Azure AD Graph API in favor of the Microsoft Graph API, which provides all the functionality of Azure AD Graph along with new functionality. As a result, all applications calling the Azure AD Graph API would receive an error message from the endpoint after the original proposed retirement date of June 30, 2022. Azure AD PowerShell is one of the applications that utilizes the Azure AD Graph API. 
           
-          Azure AD PowerShell will continue to function after June 2022 to allow users more time to migrate to [Microsoft Graph PowerShell](https://docs.microsoft.com/en-us/powershell/microsoftgraph/overview). Customers can migrate to Microsoft Graph PowerShell with a phased shutdown of the Azure AD Graph endpoint. We encourage you to migrate to Microsoft Graph PowerShell. 
+          Azure AD PowerShell will continue to function after June 2023 to allow users more time to migrate to [Microsoft Graph PowerShell](https://docs.microsoft.com/en-us/powershell/microsoftgraph/overview). Customers can migrate to Microsoft Graph PowerShell with a phased shutdown of the Azure AD Graph endpoint. We encourage you to migrate to Microsoft Graph PowerShell. 
           
 
       - question: What is Microsoft doing about the gaps in functionality between Azure AD and Microsoft Graph PowerShell modules?
