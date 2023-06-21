@@ -112,7 +112,7 @@ Accept wildcard characters: False
 Specifies what users or group is allowed to join their devices to Azure Active Directory.
 When this value is set to All, all users are allowed to Azure Active Directory join devices.
 When this value is set to None, no one is allowed to Azure Active Directory join devices.
-When this value is set to Selected, only the users and groups from the *AllowedToWorkplaceJoin* parameter Users and Groups are allowed to Azure Active Directory join devices.
+When this value is set to Selected, you may specify what users or groups are allowed to Azure Active Directory join devices.
 
 The acceptable values for this parameter are:
 
