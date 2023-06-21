@@ -81,7 +81,7 @@ Accept wildcard characters: False
 
 ### -Country
 
-Specifies the user's country.
+Specifies the user's country or region.
 
 ```yaml
 Type: String
@@ -480,9 +480,9 @@ Accept wildcard characters: False
 
 ### -UsageLocation
 
-A two letter country code (ISO standard 3166).
+A two letter country or region code (ISO standard 3166).
 
-It's required for users that will be assigned licenses due to legal requirements to check for availability of services in countries.
+It's required for users that will be assigned licenses due to legal requirements to check for availability of services in countries and regions.
 Examples include: `US`, `JP`, and `GB`.
 
 ```yaml

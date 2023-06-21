@@ -77,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -Country
-Specifies the user's country.
+Specifies the user's country or region.
 
 ```yaml
 Type: String

@@ -44,9 +44,9 @@ PS C:\> $ipRanges = New-Object -TypeName Microsoft.Open.MSGraph.Model.IpRange
                                     }
 ```
 
-This command creates a new country named location policy in Azure AD.
+This command creates a new IP named location policy in Azure AD.
 
-### Example 2: Creates a new country named location policy in Azure AD.
+### Example 2: Creates a new country or region named location policy in Azure AD.
 ```
 PS C:\> New-AzureADMSNamedLocationPolicy -OdataType "#microsoft.graph.countryNamedLocation" -DisplayName "Country named location policy" -CountriesAndRegions "IN" -IncludeUnknownCountriesAndRegions $false
 
@@ -59,7 +59,7 @@ PS C:\> New-AzureADMSNamedLocationPolicy -OdataType "#microsoft.graph.countryNam
           IncludeUnknownCountriesAndRegions : False
 ```
 
-This command creates a new country named location policy in Azure AD.
+This command creates a new country or region named location policy in Azure AD.
 
 ## PARAMETERS
 

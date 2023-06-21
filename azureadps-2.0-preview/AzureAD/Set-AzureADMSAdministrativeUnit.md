@@ -29,7 +29,7 @@ The Set-AzureADMSAdministrativeUnit cmdlet updates an administrative unit in Azu
 PS C:\> Set-AzureADMSAdministrativeUnit -Id $adminUnit.Id -MembershipType "Dynamic" -MembershipRuleProcessingState "On" -MembershipRule '(user.country -eq "United States")'
 ```
 
-Given an existing administrative unit referenced by $adminUnit, sets the membership type to dynamic and creates a membership rule to include all users whose country is equal to United States.
+Given an existing administrative unit referenced by $adminUnit, sets the membership type to dynamic and creates a membership rule to include all users whose country or region is equal to United States.
 
 ## PARAMETERS
 
