@@ -124,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -Country
-Specifies the country of the user.
+Specifies the country or region of the user.
 
 ```yaml
 Type: String
@@ -487,7 +487,7 @@ Accept wildcard characters: False
 
 ### -UsageLocation
 Specifies the location of the user where services are consumed.
-Specify a two-letter country code.
+Specify a two-letter country or region code.
 
 ```yaml
 Type: String

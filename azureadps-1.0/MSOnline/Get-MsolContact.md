@@ -160,7 +160,7 @@ This cmdlet returns contact objects, which include the following information:
 
 * City. The contact's city.
 
-* Country. The contact's country.
+* Country. The contact's country or region.
 
 * Department. The contact's department.
 

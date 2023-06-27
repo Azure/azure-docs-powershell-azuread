@@ -65,9 +65,9 @@ This cmdlet returns the following company level information:
 
 * CompanyType. What type of company this is (can be partner or regular tenant).
 
-* Country. The company's country.
+* Country. The company's country or region.
 
-* CountryLetterCode. The two letter code for the company's country.
+* CountryLetterCode. The two letter code for the company's country or region.
 
 * DapEnabled. For partners, whether or not this partner had delegated administrator privileges.
 
