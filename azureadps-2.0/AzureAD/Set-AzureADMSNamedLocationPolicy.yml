@@ -21,11 +21,11 @@ examples:
   description: |-
     This command updates an ip named location policy in Azure AD by PolicyId.
   summary: ""
-- title: 'Example 2: Update a country named location policy in Azure AD by PolicyId.'
+- title: 'Example 2: Update a country or region named location policy in Azure AD by PolicyId.'
   code: |-
     PS C:\> Set-AzureADMSNamedLocationPolicy -PolicyId 76fdfd4d-bd80-4c1e-8fd4-6abf49d121fe -OdataType "#microsoft.graph.countryNamedLocation" -IncludeUnknownCountriesAndRegions $true
   description: |-
-    This command updates a country named location policy in Azure AD by PolicyId.
+    This command updates a country or region named location policy in Azure AD by PolicyId.
   summary: ""
 parameters:
 - type: <xref href="System.Collections.Generic.List`1" data-throw-if-not-resolved="False" /><span>[</span><xref href="Microsoft.Open.MSGraph.Model.CountriesAndRegion" data-throw-if-not-resolved="False" /><span>]</span>

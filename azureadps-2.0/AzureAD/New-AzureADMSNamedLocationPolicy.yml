@@ -31,9 +31,9 @@ examples:
                                           }
                                         }
   description: |-
-    This command creates a new country named location policy in Azure AD.
+    This command creates a new IP named location policy in Azure AD.
   summary: ""
-- title: 'Example 2: Creates a new country named location policy in Azure AD.'
+- title: 'Example 2: Creates a new country or region named location policy in Azure AD.'
   code: |-
     PS C:\> New-AzureADMSNamedLocationPolicy -OdataType "#microsoft.graph.countryNamedLocation" -DisplayName "Country named location policy" -CountriesAndRegions "IN" -IncludeUnknownCountriesAndRegions $false
 
@@ -45,7 +45,7 @@ examples:
               CountriesAndRegions               : {IN}
               IncludeUnknownCountriesAndRegions : False
   description: |-
-    This command creates a new country named location policy in Azure AD.
+    This command creates a new country or region named location policy in Azure AD.
   summary: ""
 parameters:
 - type: <xref href="System.Collections.Generic.List`1" data-throw-if-not-resolved="False" /><span>[</span><xref href="Microsoft.Open.MSGraph.Model.CountriesAndRegion" data-throw-if-not-resolved="False" /><span>]</span>

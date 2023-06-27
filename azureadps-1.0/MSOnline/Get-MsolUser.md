@@ -124,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -Country
-Specifies the country to filter results on.
+Specifies the country or region to filter results on.
 
 ```yaml
 Type: String
@@ -367,8 +367,8 @@ Accept wildcard characters: False
 ```
 
 ### -UsageLocation
-Specifies the filter for the country where the services are consumed by the user.
-Specify a two-letter country code.
+Specifies the filter for the country or region where the services are consumed by the user.
+Specify a two-letter country or region code.
 
 ```yaml
 Type: String
@@ -413,7 +413,7 @@ This cmdlet returns user objects, which include the following information:
 
 * City. The user's city.
 
-* Country. The user's country.
+* Country. The user's country or region.
 
 * Department. The user's department.
 
@@ -475,8 +475,8 @@ Strong passwords are recommended.
 
 * Title. The user's title.
 
-* UsageLocation. The country where the services are consumed by the user.
-This must be a two letter country code.
+* UsageLocation. The country or region where the services are consumed by the user.
+This must be a two letter country or region code.
 
 * UserPrincipalName. The user ID of the user.
 

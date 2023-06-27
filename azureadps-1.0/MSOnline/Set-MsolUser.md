@@ -56,8 +56,8 @@ This command updates the display name for the specified user.
 PS C:\> Set-MsolUser -UserPrincipalName "davidchew@contoso.com" -UsageLocation "CA"
 ```
 
-This command sets the location country of a user.
-The country must be a two-letter ISO code.
+This command sets the location country or region of a user.
+The country or region must be a two-letter ISO code.
 This can be set for synced users as well as managed users.
 
 ### Example 4: Set the preferred data location
@@ -434,7 +434,7 @@ Accept wildcard characters: False
 
 ### -UsageLocation
 Specifies the location of the user where services are consumed.
-Specify a two-letter country code.
+Specify a two-letter country or region code.
 
 ```yaml
 Type: String
