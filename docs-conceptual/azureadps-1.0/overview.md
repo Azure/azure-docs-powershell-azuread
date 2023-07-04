@@ -25,7 +25,7 @@ This topic includes information about how to install these cmdlets for use with 
 
 The Azure AD Module is supported on the following Windows operating systems with the default version of Microsoft .NET Framework and Windows PowerShell: Windows 8.1, Windows 8, Windows 7, Windows Server 2012 R2, Windows Server 2012, or Windows Server 2008 R2.
 
-You can install this module from the [PowerShell Gallery](https://www.powershellgallery.com/packages/MSOnline)
+You can install this module from the [PowerShell Gallery](https://www.powershellgallery.com/packages/MSOnline).
 
 ## Connect to Azure AD
 
