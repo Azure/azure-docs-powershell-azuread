@@ -30,4 +30,5 @@ Module | Description
 ------ | -----------
 [AzureAD](/powershell/module/azuread?view=azureadps-2.0&preserve-view=true) | Azure Active Directory PowerShell for Graph
 [MSOnline](/powershell/module/msonline?view=azureadps-1.0&preserve-view=true)| MSOnline PowerShell
+[Microsoft Graph PowerShell](/powershell/microsoftgraph/overview?view=graph-powershell-1.0) (Recommended)| Microsoft Graph PowerShell
 

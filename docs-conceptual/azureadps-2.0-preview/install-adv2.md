@@ -8,17 +8,19 @@ ms.tgt_pltfrm: na
 ms.devlang: powershell
 ms.topic: article
 ms.date: 07/10/2017
-ms.author: rodejo
+ms.author: eunicewaweru
 ms.custom: posh-docs-conceptual
-ms.reviewer: rodejo
+ms.reviewer: stevemutungi
 ---
 # Azure Active Directory PowerShell for Graph
 
 You can use the Azure Active Directory PowerShell Module Version for Graph for Azure AD administrative tasks such as user management, domain management and for configuring single sign-on. The cmdlets listed here are different than the MSOL cmdlets which are part of the MSOnline PowerShell module.
 
-The Azure AD PowerShell for Graph module has two versions: a Public preview version and a General Availability version. It is not recommended to use the Public Preview version for production scenarios.
+The Azure AD PowerShell for Graph module has two versions: a Public preview and a General Availability version. **It is not recommended to use the Public Preview version for production scenarios**.
+
 The Azure AD PowerShell for Graph preview module can be downloaded from the PowerShell Gallery at the [AzureADPreview](https://www.powershellgallery.com/packages/AzureADPreview) page.
-The Azure AD PowerShell for Graph General Availability module can be downloaded from the PowerShell Gallery at the [AzureAD](https://www.powershellgallery.com/packages/AzureAD) page. 
+
+The Azure AD PowerShell for Graph General Availability module can be downloaded from the PowerShell Gallery at the [AzureAD](https://www.powershellgallery.com/packages/AzureAD) page.
 
 ## Installing the Azure AD Module
 
