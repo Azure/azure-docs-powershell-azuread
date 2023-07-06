@@ -1,6 +1,6 @@
 ---
 services: active-directory
-documentationcenter: ''
+description: Learn how to install the Azure AD PowerShell module.
 title: 'Install AzureAD Preview'
 ms.service: active-directory
 ms.workload: identity
