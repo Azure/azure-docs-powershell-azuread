@@ -23,7 +23,7 @@ Create a role assignment request
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: Create an eligible role assignment request
 
 ```powershell
 $schedule = New-Object Microsoft.Open.MSGraph.Model.AzureADMSPrivilegedSchedule
@@ -35,36 +35,36 @@ Open-AzureADMSPrivilegedRoleAssignmentRequest -ProviderId AzureResources -Schedu
 
 This example creates a role assignment request.
 
-### Example 2
+### Example 2: Activate an eligible role assignment for 4 hours
 
 ```powershell
 $Duration = 4 # Number in Hours
-    $Date = Get-Date
-    $start = $Date.ToUniversalTime()
-    $end = $Date.AddHours($Duration).ToUniversalTime()
+$Date = Get-Date
+$start = $Date.ToUniversalTime()
+$end = $Date.AddHours($Duration).ToUniversalTime()
 
-    $schedule = New-Object Microsoft.Open.MSGraph.Model.AzureADMSPrivilegedSchedule
-    $schedule.Type = 'Once'
-    $schedule.StartDateTime = $start.ToString('yyyy-MM-ddTHH:mm:ss.fffZ')
-    $schedule.endDateTime = $end.ToString('yyyy-MM-ddTHH:mm:ss.fffZ')
+$schedule = New-Object Microsoft.Open.MSGraph.Model.AzureADMSPrivilegedSchedule
+$schedule.Type = 'Once'
+$schedule.StartDateTime = $start.ToString('yyyy-MM-ddTHH:mm:ss.fffZ')
+$schedule.endDateTime = $end.ToString('yyyy-MM-ddTHH:mm:ss.fffZ')
 
 Open-AzureADMSPrivilegedRoleAssignmentRequest -ProviderId AzureResources -Schedule $schedule -ResourceId "e5e7d29d-5465-45ac-885f-4716a5ee74b5" -RoleDefinitionId "9f8c1837-f885-4dfd-9a75-990f9222b21d" -SubjectId "a25004a3-eceb-4ad4-b4aa-9485356bc55b" -AssignmentState "Active" -Type "UserAdd"
 ```
 
 This example creates a role assignment request activating the Admin Role.
 
-### Example 3
+### Example 3: Deactivate a currently active role assignment
 
 ```powershell
 $Duration = 0 # Disables the role immediately
-    $Date = Get-Date
-    $start = $Date.ToUniversalTime()
-    $end = $Date.AddHours($Duration).ToUniversalTime()
+$Date = Get-Date
+$start = $Date.ToUniversalTime()
+$end = $Date.AddHours($Duration).ToUniversalTime()
 
-    $schedule = New-Object Microsoft.Open.MSGraph.Model.AzureADMSPrivilegedSchedule
-    $schedule.Type = 'Once'
-    $schedule.StartDateTime = $start.ToString('yyyy-MM-ddTHH:mm:ss.fffZ')
-    $schedule.endDateTime = $end.ToString('yyyy-MM-ddTHH:mm:ss.fffZ')
+$schedule = New-Object Microsoft.Open.MSGraph.Model.AzureADMSPrivilegedSchedule
+$schedule.Type = 'Once'
+$schedule.StartDateTime = $start.ToString('yyyy-MM-ddTHH:mm:ss.fffZ')
+$schedule.endDateTime = $end.ToString('yyyy-MM-ddTHH:mm:ss.fffZ')
 
 Open-AzureADMSPrivilegedRoleAssignmentRequest -ProviderId AzureResources -Schedule $schedule -ResourceId "e5e7d29d-5465-45ac-885f-4716a5ee74b5" -RoleDefinitionId "9f8c1837-f885-4dfd-9a75-990f9222b21d" -SubjectId "a25004a3-eceb-4ad4-b4aa-9485356bc55b" -AssignmentState "Active" -Type "UserRemove"
 ```
@@ -212,3 +212,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+
+- [Assign Azure AD roles in Privileged Identity Management using Microsoft Graph PowerShell](/powershell/microsoftgraph/tutorial-pim?view=graph-powershell-1.0)
