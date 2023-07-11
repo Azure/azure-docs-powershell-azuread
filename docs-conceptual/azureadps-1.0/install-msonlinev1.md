@@ -71,4 +71,4 @@ Notepad c:\MsolHelp\msolcmdlets.txt
 
 ## See also
 
-- [Install the Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/installation?view=graph-powershell-1.0)
+- [Install the Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/installation?view=graph-powershell-1.0&preserve-view=true)
