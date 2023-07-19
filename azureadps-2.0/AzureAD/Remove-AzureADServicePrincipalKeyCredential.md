@@ -24,14 +24,14 @@ The Remove-AzureADServicePrincipalKeyCredential cmdlet removes a key credential 
 
 ### Example 1
 ```powershell
-PS C:\> Get-AzureADServicePrincipal -SearchString 'Azure Multi-Factor Auth Client' | fl
 PS C:\> $SPObjectID = (Get-AzureADServicePrincipal -SearchString 'Azure Multi-Factor Auth Client').ObjectID
+PS C:\> Get-AzureADServicePrincipalKeyCredential -ObjectId $SPObjectID
 PS C:\> Remove-AzureADServicePrincipalKeyCredential -ObjectID $SPObjectID -KeyId <PASTE_KEYID_VALUE>
 ```
 
-It displays service principal information, including all available key credentials (certificates) with their start and end date and associated key ID.<br>
-Copy the pretended **KeyID** associated with the certificate to be removed and paste it at the **<PASTE_KEYID_VALUE>**.<br>
-After assigning **ObjectID** value to local variable, it will remove certificate (key credential) from service principal configuration.
+The first part of the examples stores the ObjectID of your service principal in the $SPObjectID variable. The second part gets all the Key Credentials for the service principal.
+Copy the preferred **KeyID** associated with the certificate to be removed and paste it at the **<PASTE_KEYID_VALUE>** in the third part of the example.<br>
+This removes the certificate (key credential) from the service principal configuration.
 
 ## PARAMETERS
 
