@@ -3,23 +3,33 @@ title: 'Azure Active Directory PowerShell for Graph: Version release history | M
 description: This article lists all releases of the AzureAD and AzureADPreview PowerShell modules.
 services: active-directory
 documentationcenter: ''
-author: billmath
-manager: daveba
+author: msewaweru
+manager: CelesteDG
 editor: ''
 ms.service: active-directory
 ms.devlang: na
 ms.topic: reference
 ms.tgt_pltfrm: na
 ms.workload: identity
-ms.date: 08/13/2021
+ms.date: 08/01/2023
 ms.subservice: hybrid
-ms.author: billmath
+ms.author: eunicewaweru
 ms.collection: M365-identity-device-management
 ---
 # Azure Active Directory PowerShell for Graph: Version release history
 The Azure Active Directory (Azure AD) team regularly updates Azure AD Connect with new features and functionality. The Azure Active Directory PowerShell for Graph modules are available in a General Availability version (AzureAD module) and a preview version (AzureADPreview module). This document contains the release history of both modules.
 
 This article is designed to help you keep track of the versions that have been released, and to understand what the changes are in the latest version.
+
+## 2.0.2.182 - General Availability release of the AzureAD module
+
+### Release status
+
+07/27/2023: Released for installation and upgrade from the [PowerShell Gallery](https://www.powershellgallery.com/packages/AzureAD/2.0.2.182)
+
+### New features and improvements
+
+- Bug fix for the Microsoft Authentication Library (MSAL) support.
 
 ## 2.0.2.180 - General Availability release of the AzureAD module
 
