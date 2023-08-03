@@ -9,9 +9,8 @@ ms.tgt_pltfrm: na
 ms.devlang: powershell
 ms.topic: article
 ms.date: 07/10/2017
-ms.author: rodejo
+ms.author: eunicewaweru
 ms.custom: posh-docs-conceptual
-ms.reviewer: rodejo
 ---
 
 # Azure AD cmdlets to work with extension attributes
@@ -140,3 +139,6 @@ If you no longer need an extension property, you can delete it:
 ```powershell 
 Remove-AzureADApplicationExtensionProperty -ObjectId (Get-AzureADApplication -SearchString "My Properties Bag").ObjectID -ExtensionPropertyId 91ec8ae5-6813-4453-afd7-31680a484892 
 ```
+
+> [!NOTE]
+> You can neither remove the attribute from Azure AD once extended nor delete the `Tenant Schema Extension App` without raising a request to the PayOps Team. Also, turning off the directory extensions option from Azure AD wizard won't remove the attributes or let you get rid of the app.
