@@ -14,7 +14,8 @@ Turns directory synchronization on or off for a company.
 
 ## SYNTAX
 
-```
+
+```powershell
 Set-MsolDirSyncEnabled -EnableDirSync <Boolean> [-Force] [-TenantId <Guid>] [<CommonParameters>]
 ```
 
@@ -30,7 +31,8 @@ The **Set-MsolDirSyncEnabled** cmdlet turns directory synchronization on or off 
 ## EXAMPLES
 
 ### Example 1: Turn on directory synchronization
-```
+
+```powershell
 PS C:\> Set-MsolDirSyncEnabled -EnableDirsync $True
 ```
 
@@ -95,3 +97,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+
