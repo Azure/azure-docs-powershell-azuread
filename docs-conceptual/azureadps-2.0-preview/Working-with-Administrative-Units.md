@@ -11,7 +11,7 @@ ms.date: 07/10/2017
 ms.author: rodejo
 ms.custom: posh-docs-conceptual
 ms.reviewer: rodejo
-description: Learn to use Azure AD PowerShell with Administrative Units: create, populate, assign roles, and manage users. Boost your directory management skills.
+description: "Learn to use Azure AD PowerShell with Administrative Units: create, populate, assign roles, and manage users. Boost your directory management skills."
 ---
 
 # Working with Administrative Units
