@@ -39,7 +39,7 @@ This command retrieves all domains for the company, verified or unverified.
 
 ###  Example 2: Get a domain by name
 ```
-PS C:\> Get-MsolDomain -Name "contoso.com"
+PS C:\> Get-MsolDomain -DomainName "contoso.com"
 ```
 
 This command retrieves the contoso.com domain.
