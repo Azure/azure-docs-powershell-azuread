@@ -19,6 +19,9 @@ Get-AzureADAuditSignInLogs [-All <Boolean>] [-Top <Int32>] [-Filter <String>] [<
 ## DESCRIPTION
 The Get-AzureADAuditSignInLogs cmdlet gets an Azure Active Directory sign in log.
 
+>[!NOTE]
+>The results from this cmdlet don't include non-interactive sign-ins.
+
 ## EXAMPLES
 
 ### Example 1: Get sign in logs after a certain date
