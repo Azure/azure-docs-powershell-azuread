@@ -11,6 +11,7 @@ ms.date: 07/10/2017
 ms.author: rodejo
 ms.custom: posh-docs-conceptual
 ms.reviewer: rodejo
+description: Discover how to locate and utilize the PowerShell log file for Azure AD diagnostics. Learn to analyze errors and track cmdlet execution paths.
 ---
 # Where can I find the PowerShell log file?
 
