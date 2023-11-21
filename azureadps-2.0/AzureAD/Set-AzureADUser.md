@@ -639,3 +639,57 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Learn more about age group and minor consent definitions]: https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0#legal-age-group-property-definitions
 
 [Learn more about extensions]: https://docs.microsoft.com/en-us/graph/extensibility-overview
+
+## MIGRATING TO MICROSOFT GRAPH POWERSHELL
+
+### Summary
+
++ Azure AD Command: [Set-AzureADUser](https://docs.microsoft.com/en-us/powershell/module/AzureAD/Set-AzureADUser)
++ Microsoft Graph Command: [Update-MgUser](/powershell/module/Microsoft.Graph.Users/Update-MgUser) ([Community Samples/Examples](https://github.com/orgs/msgraph/discussions?discussions_q=Update-MgUser))
++ Microsoft Graph Module: Microsoft.Graph.Users
+
+### Required Permissions
+
+<!-- { "blockType": "ignored", "name": "user_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/user-update-permissions.md)]
+
+To learn about the permissions for this resource, see the [user update-related permissions](/graph/api/user-update#permissions).
+### Parameter Mapping
+
+|Azure AD Module |Microsoft Graph Module|
+|---|---|
+|AccountEnabled|AccountEnabled|
+|AgeGroup|AgeGroup|
+|City|City|
+|CompanyName|CompanyName|
+|ConsentProvidedForMinor|ConsentProvidedForMinor|
+|Country|Country|
+|CreationType|CreationType|
+|Department|Department|
+|DisplayName|DisplayName|
+|ExtensionProperty||
+|FacsimileTelephoneNumber||
+|GivenName|GivenName|
+|ImmutableId||
+|IsCompromised||
+|JobTitle|JobTitle|
+|MailNickName|MailNickname|
+|Mobile||
+|ObjectId||
+|OtherMails|OtherMails|
+|PasswordPolicies|PasswordPolicies|
+|PasswordProfile|PasswordProfile|
+|PhysicalDeliveryOfficeName||
+|PostalCode|PostalCode|
+|PreferredLanguage|PreferredLanguage|
+|ShowInAddressList|ShowInAddressList|
+|SignInNames||
+|State|State|
+|StreetAddress|StreetAddress|
+|Surname|Surname|
+|TelephoneNumber||
+|UsageLocation|UsageLocation|
+|UserPrincipalName|UserPrincipalName|
+|UserState||
+|UserStateChangedOn||
+|UserType|UserType|
