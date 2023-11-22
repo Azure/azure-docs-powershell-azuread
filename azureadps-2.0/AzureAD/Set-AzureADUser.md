@@ -626,8 +626,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-## NOTES
-
 ## RELATED LINKS
 
 [Get-AzureADUser](Get-AzureADUser.md)
@@ -640,9 +638,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 [Learn more about extensions]: https://docs.microsoft.com/en-us/graph/extensibility-overview
 
-## MIGRATING TO MICROSOFT GRAPH POWERSHELL
+## NOTES
 
-### Summary
+### Migrating to Microsoft Graph PowerShell
 
 + Azure AD Command: [Set-AzureADUser](https://docs.microsoft.com/en-us/powershell/module/AzureAD/Set-AzureADUser)
 + Microsoft Graph Command: [Update-MgUser](/powershell/module/Microsoft.Graph.Users/Update-MgUser) ([Community Samples/Examples](https://github.com/orgs/msgraph/discussions?discussions_q=Update-MgUser))
