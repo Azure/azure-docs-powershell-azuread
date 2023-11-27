@@ -99,16 +99,16 @@
     },
     "filemetadata": {
       "ms.author": {
-        "azureadps-1.0/**/*.yml": "rodejo",
-        "azureadps-2.0/**/*.yml": "rodejo",
-        "azureadps-2.0-preview/**/*.yml": "rodejo",
-        "docs-conceptual/**/*.md": "rodejo"
+        "azureadps-1.0/**/*.yml": "adamed",
+        "azureadps-2.0/**/*.yml": "adamed",
+        "azureadps-2.0-preview/**/*.yml": "adamed",
+        "docs-conceptual/**/*.md": "adamed"
       },
       "author": {
-        "azureadps-1.0/**/*.yml": "RobdeJong",
-        "azureadps-2.0/**/*.yml": "RobdeJong",
-        "azureadps-2.0-preview/**/*.yml": "RobdeJong",
-        "docs-conceptual/**/*.md": "RobdeJong"
+        "azureadps-1.0/**/*.yml": "adamed",
+        "azureadps-2.0/**/*.yml": "adamed",
+        "azureadps-2.0-preview/**/*.yml": "adamed",
+        "docs-conceptual/**/*.md": "adamed"
       },
       "ms.manager": {
         "azureadps-1.0/**/*.yml": "kbrint",
