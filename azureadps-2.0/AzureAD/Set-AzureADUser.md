@@ -630,6 +630,15 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 See the [migration guide for Set-AzureADUser](./migrate-Set-AzureADUser.md) to the Microsoft Graph PowerShell.
 
+#### Summary
+
++ Azure AD Command: [Set-AzureADUser](https://docs.microsoft.com/en-us/powershell/module/AzureAD/Set-AzureADUser)
++ Azure AD Module: AzureAD
++ Microsoft Graph Command: [Update-MgUser](https://docs.microsoft.com/en-us/powershell/module/Microsoft.Graph.Users/Update-MgUser) ([Community Examples](https://github.com/orgs/msgraph/discussions?discussions_q=Update-MgUser))
++ Graph Module: Microsoft.Graph.Users
++ Graph Endpoint:  PATCH  /users/{user-id}
+
+
 ## RELATED LINKS
 
 [Get-AzureADUser](Get-AzureADUser.md)
