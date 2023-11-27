@@ -1,0 +1,82 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Adds a new group to the Azure Active Directory.
+module: MSOnline
+notes: ""
+outputs:
+- name: <xref href="Microsoft.Online.Administration.Group" data-throw-if-not-resolved="False" />
+  description: |-
+    Will return the new group that was created.
+links:
+- text: Get-MsolGroup
+  href: ./Get-MsolGroup.yml
+- text: Remove-MsolGroup
+  href: ./Remove-MsolGroup.yml
+- text: Set-MsolGroup
+  href: ./Set-MsolGroup.yml
+syntaxes:
+- >-
+  New-MsolGroup [-DisplayName <String>] [-Description <String>] [-ManagedBy <String>] [-TenantId <Guid>]
+
+   [<CommonParameters>]
+examples:
+- title: 'Example 1: Create a security group'
+  code: |-
+    PS C:\> New-MsolGroup -DisplayName "MyGroup" -Description "My test group"
+  description: |-
+    This command creates a security group called MyGroup.
+  summary: ""
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Description
+  description: |+
+    Specifies a description of the group.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: DisplayName
+  description: |+
+    Specifies a display name of the group.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ManagedBy
+  description: |+
+    Specifies the owner of the group.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Guid" data-throw-if-not-resolved="False" />
+  name: TenantId
+  description: |+
+    Specifies the unique ID of the tenant on which to perform the operation.
+    The default value is the tenant of the current user.
+    This parameter applies only to partner users.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: MSOnline.New-MsolGroup
+name: New-MsolGroup
+description: |-
+  The **New-MsolGroup** cmdlet adds a new security group to Azure Active Directory.
+metadata:
+  external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
+  online version: ""
+  schema: 2.0.0
+  ms.assetid: 046485AB-D8CC-4DBB-9129-B987A91188CF
+  ms.reviewer: rodejo
+  ms.custom: iamfeature=PowerShell

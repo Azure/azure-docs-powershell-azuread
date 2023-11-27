@@ -1,0 +1,103 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Gets members of a role who are granted that role over an administrative unit.
+module: MSOnline
+notes: ""
+outputs:
+- name: <xref href="Microsoft.Online.Administration.RoleScopedMember" data-throw-if-not-resolved="False" />
+  description: |-
+    This cmdlet returns objects that contain the following information:
+
+    * DisplayName. The display name of the scoped role member.
+    * UserPrincipalName. The user principal name of the scoped role member.
+    * ObjectId. The unique ID of the scoped role member.
+links:
+- text: Get-MsolAdministrativeUnit
+  href: ./Get-MsolAdministrativeUnit.yml
+- text: Get-MsolRole
+  href: ./Get-MsolRole.yml
+- text: Get-MsolScopedRoleMember
+  href: ./Get-MsolScopedRoleMember.yml
+- text: Remove-MsolScopedRoleMember
+  href: ./Remove-MsolScopedRoleMember.yml
+syntaxes:
+- >-
+  Get-MsolScopedRoleMember [-AdministrativeUnitObjectId <Guid>] [-RoleObjectId <Guid>] [-MaxResults <Int32>]
+
+   [-TenantId <Guid>] [<CommonParameters>]
+- >-
+  Get-MsolScopedRoleMember [-AdministrativeUnitObjectId <Guid>] [-RoleObjectId <Guid>] [-All] [-TenantId <Guid>]
+
+   [<CommonParameters>]
+examples:
+- title: 'Example 1: Get members of the User Account Administrator role'
+  code: |-
+    PS C:\> $WestCoastAu = Get-MsolAdministrativeUnit -SearchString "West Coast"
+    PS C:\> $UaAdmin = Get-MsolRole -RoleName "User Account Administrator"
+    PS C:\> Get-MsolScopedRoleMember -RoleObjectId $UaAdmin.ObjectId -AdministrativeUnitObjectId $WestCoastAu.ObjectId
+  description: |-
+    This example gets all members of the User Account Administrator role that is scoped to the administrative unit named West Coast.
+  summary: ""
+parameters:
+- type: <xref href="Guid" data-throw-if-not-resolved="False" />
+  name: AdministrativeUnitObjectId
+  description: |+
+    Specifies the unique object ID of the administrative unit.
+    If you do not specify this parameter, this cmdlet gets administrators for all administrative units.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: All
+  isRequired: true
+  description: |+
+    Indicates that this cmdlet returns all results that it finds.
+    Do not specify this parameter and the _MaxResults_ parameter.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: MaxResults
+  description: |+
+    Specifies the maximum number of results that this cmdlet returns.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Guid" data-throw-if-not-resolved="False" />
+  name: RoleObjectId
+  description: |+
+    Specifies the unique object ID of the role from which to get members.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Guid" data-throw-if-not-resolved="False" />
+  name: TenantId
+  description: |+
+    Specifies the unique ID of the tenant on which to perform the operation.
+    The default value is the tenant of the current user.
+    This parameter applies only to partner users.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: MSOnline.Get-MsolScopedRoleMember
+name: Get-MsolScopedRoleMember
+description: |-
+  The **Get-MsolScopedRoleMember** cmdlet gets members of the specified role who are granted that role over an administrative unit.
+metadata:
+  external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
+  online version: ""
+  schema: 2.0.0
+  ms.assetid: 16B61372-E804-41E7-9B03-8752A76DD2CB
+  ms.reviewer: rodejo
+  ms.custom: iamfeature=PowerShell

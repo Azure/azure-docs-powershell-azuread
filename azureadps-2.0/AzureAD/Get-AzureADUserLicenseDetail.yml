@@ -38,7 +38,7 @@ parameters:
 uid: AzureAD.Get-AzureADUserLicenseDetail
 name: Get-AzureADUserLicenseDetail
 description: |-
-  THis cmdlet retrieves license details for a user
+  This cmdlet retrieves license details for a user
 metadata:
   external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
   Module Name: AzureAD

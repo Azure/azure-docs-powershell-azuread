@@ -1,6 +1,6 @@
 ### YamlMime:PowershellCmdlet
 summary: |-
-  This cmdlet is used to invite a new external user to your directory
+  This cmdlet is used to invite a new external user to your directory.
 module: AzureAD
 notes: ""
 inputs:
@@ -19,16 +19,36 @@ syntaxes:
 examples:
 - title: Invite a new external user to your directory
   code: |-
-    New-AzureADMSInvitation -InvitedUserEmailAddress someexternaluser@externaldomain.com -SendInvitationMessage $True -InviteRedirectUrl "http://myapps.onmicrosoft.com"
+    New-AzureADMSInvitation -InvitedUserEmailAddress someexternaluser@externaldomain.com -SendInvitationMessage $True -InviteRedirectUrl "http://myapps.microsoft.com"
+
+    Id                      : 6058156a-93d1-4958-a738-ddc4ab4432cf
+    InvitedUserDisplayName  :
+    InvitedUserEmailAddress : someexternaluser@externaldomain.com
+    SendInvitationMessage   : True
+    InviteRedeemUrl         : https://login.microsoftonline.com/redeem?rd=https%3a%2f%2finvitations.microsoft.com%2fredeem%2f%3ftenant%3d06f6521d-c18c-460a-8656-fa82e81aa94b%26user%3d7b67d069-163b-4f7e-9118-c9ceeda363d9%26ticket%3ddANXuWQMNhYv21%252bFBm%252fULkTqCnpX6vNvRgTHQmsECPU%253d%26ver%3d2.0
+    InviteRedirectUrl       : http://myapps.microsoft.com/
+    InvitedUser             : class User {
+                                Id: 04fd8318-77ca-428e-b7f2-2bb1ef7a0100
+                                OdataType:
+                              }
+
+    InvitedUserMessageInfo  : class InvitedUserMessageInfo {
+                                CcRecipients: System.Collections.Generic.List`1[Microsoft.Open.MSGraph.Model.Recipient]
+                                CustomizedMessageBody:
+                                MessageLanguage:
+                              }
+
+    InvitedUserType         : Guest
+    Status                  : PendingAcceptance
   description: |-
-    Using the cmdlet in this example, an email is sent to the user who's email address is in the -InvitedUserEmailAddress parameter.
+    Using the cmdlet in this example, an email is sent to the user whose email address is in the -InvitedUserEmailAddress parameter.
     When the user accepts the invitation, they are forwarded to the url as specified in the -InviteRedirectUrl parameter
   summary: ""
 parameters:
 - type: <xref href="String" data-throw-if-not-resolved="False" />
   name: InvitedUserDisplayName
   description: |+
-    The display name of the user as it will appear in your directory
+    The display name of the user as it will appear in your directory.
 
   defaultValue: None
   position: Named
@@ -38,7 +58,7 @@ parameters:
   name: InvitedUserEmailAddress
   isRequired: true
   description: |+
-    The Email address to which the invitation is sent
+    The Email address to which the invitation is sent.
 
   defaultValue: None
   position: Named
@@ -47,7 +67,7 @@ parameters:
 - type: <xref href="InvitedUserMessageInfo" data-throw-if-not-resolved="False" />
   name: InvitedUserMessageInfo
   description: |+
-    Addition information to specify how the invitation message is sent
+    Additional information to specify how the invitation message is sent
 
   defaultValue: None
   position: Named
@@ -60,7 +80,7 @@ parameters:
     By default, this is Guest.
     You can invite as Member if you're are company administrator.
 
-  defaultValue: None
+  defaultValue: Guest
   position: Named
   aliases: ""
   parameterValueGroup: ""
@@ -68,7 +88,7 @@ parameters:
   name: InviteRedirectUrl
   isRequired: true
   description: |+
-    The URL to which the invited user is forwarded after accepting the invitation
+    The URL to which the invited user is forwarded after accepting the invitation.
 
   defaultValue: None
   position: Named

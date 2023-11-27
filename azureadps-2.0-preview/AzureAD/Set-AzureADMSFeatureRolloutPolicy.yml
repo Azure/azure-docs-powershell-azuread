@@ -1,0 +1,99 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Allows an admin to modify the policy for cloud authentication roll-out in Azure AD.
+module: AzureADPreview
+notes: ""
+syntaxes:
+- >-
+  Set-AzureADMSFeatureRolloutPolicy -Id <String> [-Feature <FeatureEnum>] [-DisplayName <String>]
+
+   [-Description <String>] [-IsEnabled <Boolean>] [-IsAppliedToOrganization <Boolean>]
+
+   [-AppliesTo <System.Collections.Generic.List`1[Microsoft.Open.MSGraph.Model.MsDirectoryObject]>]
+
+   [<CommonParameters>]
+examples:
+- title: 'Example 1: Updates the policy for cloud authentication roll-out in Azure AD.'
+  code: |-
+    PS C:\> Set-AzureADMSFeatureRolloutPolicy -Id "a03b6d9e-6654-46e6-8d0a-8ed83c675ca9" -IsEnabled $true
+  description: |-
+    This command updates the policy for cloud authentication roll-out in Azure AD.
+  summary: ""
+parameters:
+- type: <xref href="System.Collections.Generic.List`1" data-throw-if-not-resolved="False" /><span>[</span><xref href="Microsoft.Open.MSGraph.Model.MsDirectoryObject" data-throw-if-not-resolved="False" /><span>]</span>
+  name: AppliesTo
+  description: |+
+    Specifies a list of Azure AD objects that is assigned to the feature.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Description
+  description: |+
+    Specifies the description of the cloud authentication roll-out policy.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: DisplayName
+  description: |+
+    Specifies the display name of the cloud authentication roll-out policy.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="FeatureEnum" data-throw-if-not-resolved="False" />
+  name: Feature
+  description: |+
+    Specifies a feature assigned to the cloud authentication roll-out policy.
+
+    Currently, you can assign PassthroughAuthentication | SeamlessSso | PasswordHashSync.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  isRequired: true
+  description: |+
+    The unique identifier of the cloud authentication roll-out policy in Azure AD.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Boolean" data-throw-if-not-resolved="False" />
+  name: IsAppliedToOrganization
+  description: |+
+    Specifies if the cloud authentication roll-out policy applied to the entire organization.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Boolean" data-throw-if-not-resolved="False" />
+  name: IsEnabled
+  description: |+
+    Specifies the status of cloud authentication roll-out policy.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: AzureADPreview.Set-AzureADMSFeatureRolloutPolicy
+name: Set-AzureADMSFeatureRolloutPolicy
+description: |-
+  An admin will use this cmdlet to modify the cloud authentication roll-out policy including whether the method for cloud authentication is Pass-through Authentication or not (Password hash-sync) and whether Seamless SSO is enabled.
+  Users in groups assigned to the policy will start authenticating via the new authentication method and via Seamless SSO if specified.
+metadata:
+  external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
+  Module Name: AzureADPreview
+  online version: ""
+  schema: 2.0.0

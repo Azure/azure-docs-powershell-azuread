@@ -1,0 +1,73 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Removes a group.
+module: AzureADPreview
+notes: ""
+links:
+- text: Get-AzureADGroup
+  href: ./Get-AzureADGroup.yml
+- text: New-AzureADGroup
+  href: ./New-AzureADGroup.yml
+- text: Set-AzureADGroup
+  href: ./Set-AzureADGroup.yml
+syntaxes:
+- >-
+  Remove-AzureADGroup -ObjectId <String> [-InformationAction <ActionPreference>] [-InformationVariable <String>]
+
+   [<CommonParameters>]
+examples:
+- title: 'Example 1: Remove a group'
+  code: |-
+    PS C:\>Remove-AzureADGroup -ObjectId "11fa5e1e-737c-40c5-835e-416ae3959606"
+  description: |-
+    This command removes the specified group from Azure AD.
+  summary: ""
+parameters:
+- type: <xref href="ActionPreference" data-throw-if-not-resolved="False" />
+  name: InformationAction
+  description: |+
+    Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
+
+    - Continue
+    - Ignore
+    - Inquire
+    - SilentlyContinue
+    - Stop
+    - Suspend
+
+  defaultValue: None
+  position: Named
+  aliases: infa
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: InformationVariable
+  description: |+
+    Specifies an information variable.
+
+  defaultValue: None
+  position: Named
+  aliases: iv
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ObjectId
+  isRequired: true
+  description: |+
+    Specifies the object ID of a group in Azure AD.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: AzureADPreview.Remove-AzureADGroup
+name: Remove-AzureADGroup
+description: |-
+  The **Remove-AzureADGroup** cmdlet removes a group from Azure Active Directory (AD). Note that a Unified Group can be restored withing 30 days after deletion using the Restore-AzureADMSDeletedDirectoryObject cmdlet. Security groups cannot be restored after deletion.
+metadata:
+  external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+  Module Name: AzureADPreview
+  ms.assetid: D495C18D-D65F-4D9E-8A04-C478D1C0F97C
+  ms.custom: iamfeature=PowerShell
+  ms.reviewer: rodejo
+  online version: ""
+  schema: 2.0.0

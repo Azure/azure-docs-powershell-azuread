@@ -159,7 +159,14 @@ children:
   - AzureAD.Get-AzureADDirectoryRole
   - AzureAD.Get-AzureADDirectoryRoleMember
   - AzureAD.Get-AzureADDirectoryRoleTemplate
+  - AzureAD.Get-AzureADMSRoleAssignment
+  - AzureAD.Get-AzureADMSRoleDefinition
+  - AzureAD.New-AzureADMSRoleAssignment
+  - AzureAD.New-AzureADMSRoleDefinition
   - AzureAD.Remove-AzureADDirectoryRoleMember
+  - AzureAD.Remove-AzureADMSRoleAssignment
+  - AzureAD.Remove-AzureADMSRoleDefinition
+  - AzureAD.Set-AzureADMSRoleDefinition
 - title: Domains
   cmdlets:
   - AzureAD.Confirm-AzureADDomain
@@ -205,6 +212,10 @@ children:
   cmdlets:
   - AzureAD.Get-AzureADOAuth2PermissionGrant
   - AzureAD.Remove-AzureADOAuth2PermissionGrant
+- title: Policies
+  cmdlets:
+  - AzureAD.Get-AzureADMSAuthorizationPolicy
+  - AzureAD.Set-AzureADMSAuthorizationPolicy
 - title: Service Principals
   cmdlets:
   - AzureAD.Add-AzureADServicePrincipalOwner
@@ -264,6 +275,9 @@ children:
 uid: AzureAD
 name: AzureAD
 description: |-
+  >[!IMPORTANT]
+  > Azure AD PowerShell is planned for deprecation. For more details on the deprecation plans, see the [deprecation update](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/azure-ad-change-management-simplified/ba-p/2967456). You can start trying [Microsoft Graph PowerShell](/powershell/microsoftgraph/overview) to interact with Azure AD as you would in Azure AD PowerShell. In addition, Microsoft Graph PowerShell allows you access to all Microsoft Graph APIs and is available on PowerShell 7. For answers to frequent migration queries, see the [migration FAQ](../../docs-conceptual/azureadps-2.0/migration-faq.yml).
+
   The Azure Active Directory PowerShell for Graph module can be downloaded and installed from the [PowerShell Gallery](https://www.powershellgallery.com/packages/AzureAD/). The gallery uses the PowerShellGet module. The PowerShellGet module requires PowerShell 3.0 or newer and requires one of the following operating systems:
 
   - Windows 10
@@ -275,7 +289,7 @@ description: |-
   - Windows Server 2008 R2 SP1
 
 
-  PowerShellGet also requires .NET Framework 4.5 or above. You can install .NET Framework 4.5 or above from [here](https://www.microsoft.com/en-us/download/details.aspx?id=30653). For more information, please refer to [this link](https://msdn.microsoft.com/powershell/gallery/readme)
+  PowerShellGet also requires .NET Framework 4.5 or above. You can install .NET Framework 4.5 or above from [here](https://www.microsoft.com/en-us/download/details.aspx?id=30653). 
 
   For more detailed info on installation of the AzureAD cmdlets please see: [Azure Active Directory PowerShell for Graph](https://docs.microsoft.com/en-us/powershell/azure/active-directory/install-adv2).
 

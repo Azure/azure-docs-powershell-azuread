@@ -1,0 +1,51 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Sets the logo for an application object.
+module: AzureADPreview
+notes: ""
+inputs:
+- name: <xref href="string" data-throw-if-not-resolved="False" />
+  description: ""
+- name: <xref href="Byte" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  description: ""
+syntaxes:
+- Set-AzureADMSApplicationLogo -ObjectId <String> -Content <Byte[]> [<CommonParameters>]
+examples:
+- title: 'Example 1: Sets the logo of the application'
+  code: |-
+    PS C:\>Set-AzureADMSApplicationLogo -ObjectId 121ce3aa-64cb-44f2-99e8-deb705caeddd -Content {imagebytearray}
+  description: |-
+    This command updates the application logo.
+  summary: ""
+parameters:
+- type: <xref href="Byte" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Content
+  isRequired: true
+  description: |+
+    An ImageByteArray that is to be used as the application logo
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ObjectId
+  isRequired: true
+  description: |+
+    The unique identifier of the object specific Azure Active Directory object
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: AzureADPreview.Set-AzureADMSApplicationLogo
+name: Set-AzureADMSApplicationLogo
+description: |-
+  Sets the logo for an application object.
+metadata:
+  external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
+  Module Name: AzureADPreview
+  online version: ""
+  schema: 2.0.0

@@ -4,12 +4,7 @@ summary: |-
 module: AzureAD
 notes: ""
 links:
-- text: >-
-    Revoke-AzureADUserAllRefreshToken]()
-
-
-
-    [#AzureAD: Certificate based authentication for iOS and Android now in preview!
+- text: '#AzureAD: Certificate based authentication for iOS and Android now in preview!'
   href: https://blogs.technet.microsoft.com/enterprisemobility/2016/07/18/azuread-certificate-based-authentication-for-ios-and-android-now-in-preview/
 syntaxes:
 - Revoke-AzureADSignedInUserAllRefreshToken [<CommonParameters>]

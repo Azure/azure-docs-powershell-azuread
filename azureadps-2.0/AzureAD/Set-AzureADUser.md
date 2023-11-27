@@ -628,7 +628,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## NOTES
 
-### Summary
+### Migrating to Microsoft Graph PowerShell
 
 + Azure AD Command: [Set-AzureADUser](https://docs.microsoft.com/en-us/powershell/module/AzureAD/Set-AzureADUser)
 + Azure AD Module: AzureAD
@@ -636,7 +636,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 + Graph Module: Microsoft.Graph.Users
 + Graph Endpoint:  PATCH  /users/{user-id}
 
-### Permissions
+#### Permissions
 
 |Permission type|Least privileged permissions|Higher privileged permissions |
 |---|---|---|
@@ -646,7 +646,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 View more [details on permissions](/graph/api/user-update?view=graph-rest-1.0&tabs=http#permissions).
 
-### Property Mapping
+#### Property Mapping
 
 |AAD Name|Graph Name|
 |---|---|
@@ -694,6 +694,6 @@ View more [details on permissions](/graph/api/user-update?view=graph-rest-1.0&ta
 
 [Remove-AzureADUser](Remove-AzureADUser.md)
 
-[Learn more about age group and minor consent definitions]: https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0#legal-age-group-property-definitions
+[Learn more about age group and minor consent definitions]: https://learn.microsoft.com/en-us/graph/api/resources/user#legal-age-group-property-definitions
 
-[Learn more about extensions]: https://docs.microsoft.com/en-us/graph/extensibility-overview
+[Learn more about extensions]: https://learn.microsoft.com/en-us/graph/extensibility-overview

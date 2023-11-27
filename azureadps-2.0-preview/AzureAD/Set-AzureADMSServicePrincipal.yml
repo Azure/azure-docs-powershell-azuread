@@ -1,0 +1,250 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Updates a service principal.
+module: AzureADPreview
+notes: ""
+inputs:
+- name: <xref href="System.String" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="System.Object" data-throw-if-not-resolved="False" />
+  description: ""
+syntaxes:
+- >-
+  Set-AzureADMSServicePrincipal -Id <String> [-AccountEnabled <String>] [-AppId <String>]
+
+   [-AppRoleAssignmentRequired <Boolean>] [-CustomSecurityAttributes <Object>] [-DisplayName <String>]
+
+   [-ErrorUrl <String>] [-LogoutUrl <String>] [-Homepage <String>] [-SamlMetadataUrl <String>]
+
+   [-MicrosoftFirstParty <Boolean>] [-PublisherName <String>] [-PreferredTokenSigningKeyThumbprint <String>]
+
+   [-ReplyUrls <System.Collections.Generic.List`1[System.String]>]
+
+   [-ServicePrincipalNames <System.Collections.Generic.List`1[System.String]>]
+
+   [-Tags <System.Collections.Generic.List`1[System.String]>]
+
+   [-KeyCredentials <System.Collections.Generic.List`1[Microsoft.Open.MSGraph.Model.MsKeyCredential]>]
+
+   [-PasswordCredentials <System.Collections.Generic.List`1[Microsoft.Open.MSGraph.Model.MsPasswordCredential]>]
+
+   [<CommonParameters>]
+examples:
+- title: Example 1
+  code: |-
+    PS C:\> Set-AzureADMSServicePrincipal -Id 2e0d8ca7-57d1-4a87-9c2a-b3638a4cadbf -AccountEnabled $False
+  description: |-
+    This command disables the account of the specified service principal.
+  summary: ""
+- title: Example 2
+  code: |-
+    PS C:\> $attributes = @{
+        Engineering = @{
+            "@odata.type" = "#Microsoft.DirectoryServices.CustomSecurityAttributeValue"
+            "Project@odata.type" = "#Collection(String)"
+            Project = @("Baker","Cascade")
+        }
+    }
+    PS C:\> Set-AzureADMSServicePrincipal -Id 7d194b0c-bf17-40ff-9f7f-4b671de8dc20 -CustomSecurityAttributes $attributes
+  description: |-
+    Assign a custom security attribute with a multi-string value to an application (service principal).
+
+    - Attribute set: `Engineering`
+    - Attribute: `Project`
+    - Attribute data type: Collection of Strings
+    - Attribute value: `("Baker","Cascade")`
+  summary: ""
+- title: Example 3
+  code: |-
+    PS C:\> $attributesUpdate = @{
+        Engineering = @{
+            "@odata.type" = "#Microsoft.DirectoryServices.CustomSecurityAttributeValue"
+            "Project@odata.type" = "#Collection(String)"
+            Project = @("Alpine","Baker")
+        }
+    }
+    PS C:\> Set-AzureADMSServicePrincipal -Id 7d194b0c-bf17-40ff-9f7f-4b671de8dc20 -CustomSecurityAttributes $attributesUpdate
+  description: |-
+    Update a custom security attribute with a multi-string value for an application (service principal).
+
+    - Attribute set: `Engineering`
+    - Attribute: `Project`
+    - Attribute data type: Collection of Strings
+    - Attribute value: `("Alpine","Baker")`
+  summary: ""
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: AccountEnabled
+  description: |+
+    Indicates whether the account is enabled.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: AppId
+  description: |+
+    Specifies the application ID.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Boolean" data-throw-if-not-resolved="False" />
+  name: AppRoleAssignmentRequired
+  description: |+
+    Indicates whether an application role assignment is required.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Object" data-throw-if-not-resolved="False" />
+  name: CustomSecurityAttributes
+  description: |+
+    Custom security attributes for the service principal.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: DisplayName
+  description: |+
+    Specifies the display name.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ErrorUrl
+  description: |+
+    Specifies the error URL.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Homepage
+  description: |+
+    Specifies the home page.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  isRequired: true
+  description: |+
+    Specifies the ID of a service principal in Azure AD.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="System.Collections.Generic.List`1" data-throw-if-not-resolved="False" /><span>[</span><xref href="Microsoft.Open.MSGraph.Model.MsKeyCredential" data-throw-if-not-resolved="False" /><span>]</span>
+  name: KeyCredentials
+  description: |+
+    Specifies key credentials.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: LogoutUrl
+  description: |+
+    Specifies the logout URL.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Boolean" data-throw-if-not-resolved="False" />
+  name: MicrosoftFirstParty
+  description: |+
+    Indicates whether the service principal is for a Microsoft first-party app.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="System.Collections.Generic.List`1" data-throw-if-not-resolved="False" /><span>[</span><xref href="Microsoft.Open.MSGraph.Model.MsPasswordCredential" data-throw-if-not-resolved="False" /><span>]</span>
+  name: PasswordCredentials
+  description: |+
+    Specifies password credentials.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: PreferredTokenSigningKeyThumbprint
+  description: |+
+    Preferred token signing key thumbprint for the service principal.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: PublisherName
+  description: |+
+    Specifies the publisher name.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="System.Collections.Generic.List`1" data-throw-if-not-resolved="False" /><span>[</span><xref href="System.String" data-throw-if-not-resolved="False" /><span>]</span>
+  name: ReplyUrls
+  description: |+
+    The URLs that user tokens are sent to for sign in with the associated application, or the redirect URIs that OAuth 2.0 authorization codes and access tokens are sent to for the associated application.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: SamlMetadataUrl
+  description: |+
+    @{Text=}
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="System.Collections.Generic.List`1" data-throw-if-not-resolved="False" /><span>[</span><xref href="System.String" data-throw-if-not-resolved="False" /><span>]</span>
+  name: ServicePrincipalNames
+  description: |+
+    Specifies service principal names.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="System.Collections.Generic.List`1" data-throw-if-not-resolved="False" /><span>[</span><xref href="System.String" data-throw-if-not-resolved="False" /><span>]</span>
+  name: Tags
+  description: |+
+    Specifies an array of tags.
+    Note that if you intend for this service principal to show up in the All Applications list in the admin portal, you need to set this value to {WindowsAzureActiveDirectoryIntegratedApp}
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: AzureADPreview.Set-AzureADMSServicePrincipal
+name: Set-AzureADMSServicePrincipal
+description: |-
+  Updates a service principal in Azure Active Directory (Azure AD).
+metadata:
+  external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
+  Module Name: AzureADPreview
+  online version: ""
+  schema: 2.0.0

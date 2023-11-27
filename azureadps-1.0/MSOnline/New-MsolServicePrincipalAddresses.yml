@@ -1,0 +1,51 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Creates a service principal address.
+module: MSOnline
+notes: ""
+inputs:
+- name: <xref href="None" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="System.Object" data-throw-if-not-resolved="False" />
+  description: ""
+syntaxes:
+- New-MsolServicePrincipalAddresses -Address <String> [-AddressType <AddressType>] [<CommonParameters>]
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Address
+  isRequired: true
+  description: |+
+    Specifies an address to be used by an application.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="AddressType" data-throw-if-not-resolved="False" />
+  name: AddressType
+  description: |+
+    Specifies the type of address to create.
+    Valid values are:
+    * Reply
+    * Realm
+    * Error
+    * Other
+    * SamlMetadata
+    * SamlLogout
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: Reply, Realm, Error, Other, SamlMetadata, SamlLogout
+uid: MSOnline.New-MsolServicePrincipalAddresses
+name: New-MsolServicePrincipalAddresses
+description: |-
+  The **New-MsolServicePrincipalAddresses** cmdlet creates a service principal address.
+metadata:
+  external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
+  online version: ""
+  schema: 2.0.0
+  ms.assetid: ACEA9C06-7619-4EAE-967D-280F982ECE7A
+  ms.reviewer: rodejo
+  ms.custom: iamfeature=PowerShell

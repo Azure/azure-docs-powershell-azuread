@@ -1,0 +1,123 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Gets members of a role.
+module: MSOnline
+notes: ""
+outputs:
+- name: <xref href="Microsoft.Online.Administation.RoleMember" data-throw-if-not-resolved="False" />
+  description: |-
+    This cmdlet returns role member objects that contain the following information:
+
+    * DisplayName. The display name of the role member.
+
+    * EmailAddress. The email address of the role member.
+
+    * IsLicensed. Whether or not the user is licensed.
+
+    * LastDirSyncTime. The date and time that this member was last synced.
+
+    * ObjectId. The unique ID of the member.
+
+    * OverallProvisioningStatus. The provisioning status of this user.
+
+    * RoleMemberType. The type of role member.
+    Currently only "User" is supported.
+
+    * ValidationStatus. Whether or not there are any errors with this group member.
+links:
+- text: Add-MsolRoleMember
+  href: ./Add-MsolRoleMember.yml
+- text: Remove-MsolRoleMember
+  href: ./Remove-MsolRoleMember.yml
+syntaxes:
+- >-
+  Get-MsolRoleMember [-RoleObjectId <Guid>] [-MemberObjectTypes <String[]>] [-SearchString <String>]
+
+   [-MaxResults <Int32>] [-TenantId <Guid>] [<CommonParameters>]
+- >-
+  Get-MsolRoleMember [-RoleObjectId <Guid>] [-MemberObjectTypes <String[]>] [-SearchString <String>] [-All]
+
+   [-TenantId <Guid>] [<CommonParameters>]
+examples:
+- title: 'Example 1: Get members of a role'
+  code: |-
+    PS C:\> $Role = Get-MsolRole -RoleName "%Role Name%"
+    PS C:\> $RoleMembers = Get-MsolRoleMember -RoleObjectId $Role.ObjectId
+  description: |-
+    This command returns all the members of the specified role.
+    The command stores the results in the $RoleMembers variable.
+  summary: ""
+parameters:
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: All
+  isRequired: true
+  description: |+
+    Indicates that this cmdlet returns all results that it finds.
+    Do not specify this parameter and the _MaxResults_ parameter.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: MaxResults
+  description: |+
+    Specifies the maximum number of results that this cmdlet returns.
+    The default value is 250.
+
+  defaultValue: "250"
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: MemberObjectTypes
+  description: |+
+    Specifies an array of member object types.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Guid" data-throw-if-not-resolved="False" />
+  name: RoleObjectId
+  description: |+
+    Specifies the unique ID of the role from which to remove members.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: SearchString
+  description: |+
+    Specifies a string.
+    This cmdlet returns objects with a display name or email address that start with this string.
+    The string to search on.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Guid" data-throw-if-not-resolved="False" />
+  name: TenantId
+  description: |+
+    Specifies the unique ID of the tenant on which to perform the operation.
+    The default value is the tenant of the current user.
+    This parameter applies only to partner users.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: MSOnline.Get-MsolRoleMember
+name: Get-MsolRoleMember
+description: |-
+  The **Get-MsolRoleMember** cmdlet gets members of the specified role.
+metadata:
+  external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
+  online version: ""
+  schema: 2.0.0
+  ms.assetid: C38ED8D1-68B3-4D78-8386-20F6FC87A167
+  ms.reviewer: rodejo
+  ms.custom: iamfeature=PowerShell

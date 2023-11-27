@@ -67,7 +67,7 @@ parameters:
 - type: <xref href="System.Collections.Generic.List`1" data-throw-if-not-resolved="False" /><span>[</span><xref href="System.String" data-throw-if-not-resolved="False" /><span>]</span>
   name: TechnicalNotificationMails
   description: |+
-    The email addres(es) that are used for technical notification emails
+    The email address(es) that are used for technical notification emails
 
   defaultValue: None
   position: Named

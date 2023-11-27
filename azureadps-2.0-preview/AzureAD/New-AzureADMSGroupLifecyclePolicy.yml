@@ -1,0 +1,64 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Creates a new groupLifecyclePolicy
+module: AzureADPreview
+notes: ""
+inputs:
+- name: <xref href="None" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="System.Object" data-throw-if-not-resolved="False" />
+  description: ""
+syntaxes:
+- >-
+  New-AzureADMSGroupLifecyclePolicy -GroupLifetimeInDays <Int32> -ManagedGroupTypes <String>
+
+   -AlternateNotificationEmails <String> [<CommonParameters>]
+examples:
+- title: Example 1
+  code: |-
+    PS C:\> New-AzureADMSGroupLifecyclePolicy -GroupLifetimeInDays 99 -ManagedGroupTypes "Selected" -AlternateNotificationEmails "example@contoso.com"
+  description: |-
+    This will create a a new groupLifecyclePolicy setting the group lifetime to 99 days for a selected set of Office 365 groups and send renewal notification emails to groups that have no owners to "example@contoso.com"
+  summary: ""
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: AlternateNotificationEmails
+  isRequired: true
+  description: |+
+    Notification emails for groups that have no owners will be sent to these email addresses. List of email addresses separated by a ";".
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: GroupLifetimeInDays
+  isRequired: true
+  description: |+
+    The number of days a group can exist before it needs to be renewed
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ManagedGroupTypes
+  isRequired: true
+  description: |+
+    This parameter allows the admin to select which office 365 groups the policy will apply to. "None" will create the policy in a disabled state. "All" will apply the policy to every Office 365 group in the tenant. "Selected" will allow the admin to choose specific Office 365 groups that the policy will apply to.
+    Please note that this parameter is case sensitive - "none" or "NONE" will not be recognized as valid values.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: AzureADPreview.New-AzureADMSGroupLifecyclePolicy
+name: New-AzureADMSGroupLifecyclePolicy
+description: |-
+  Creates a new groupLifecyclePolicy in Azure Active Directory
+metadata:
+  external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
+  Module Name: AzureADPreview
+  online version: ""
+  schema: 2.0.0

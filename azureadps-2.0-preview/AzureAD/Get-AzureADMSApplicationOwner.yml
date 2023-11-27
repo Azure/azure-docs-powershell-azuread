@@ -51,7 +51,7 @@ parameters:
 - type: <xref href="String" data-throw-if-not-resolved="False" />
   name: ObjectId
   description: |+
-    Specifes the ID of an application in Azure Active Directory.
+    Specifies the ID of an application in Azure Active Directory.
 
   defaultValue: None
   pipelineInput: true

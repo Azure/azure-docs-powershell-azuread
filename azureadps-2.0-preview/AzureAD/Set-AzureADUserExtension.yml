@@ -1,0 +1,97 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Sets a user extension.
+module: AzureADPreview
+notes: ""
+links:
+- text: Get-AzureADUser
+  href: ./Get-AzureADUser.yml
+- text: Get-AzureADUserExtension
+  href: ./Get-AzureADUserExtension.yml
+- text: Get-AzureAdExtensionProperty
+  href: ./Get-AzureAdExtensionProperty.yml
+- text: Remove-AzureADUserExtension
+  href: ./Remove-AzureADUserExtension.yml
+syntaxes:
+- >-
+  Set-AzureADUserExtension -ObjectId <String> -ExtensionName <String> -ExtensionValue <String>
+
+   [<CommonParameters>]
+- >-
+  Set-AzureADUserExtension -ObjectId <String>
+
+   -ExtensionNameValues <System.Collections.Generic.Dictionary`2[System.String,System.String]>
+
+   [<CommonParameters>]
+examples:
+- title: 'Example 1: Set the value of an extension attribute for a user'
+  code: |-
+    PS C:\> $User = Get-AzureADUser -Top 1
+    PS C:\> Set-AzureADUserExtension -ObjectId $User.ObjectId -ExtensionName extension_e5e29b8a85d941eab8d12162bd004528_extensionAttribute8 -ExtensionValue "New Value"
+  description: |-
+    The first command gets a user by using the [Get-AzureADUser](./Get-AzureADUser.yml) cmdlet, and then stores it in the $User variable.
+
+    The second command  sets the value of the extension attribute that hast he specified name to the value New Value.
+    You can get extension attribute names by using the [Get-AzureAdExtensionProperty](./Get-AzureAdExtensionProperty.yml) cmdlet.
+  summary: ""
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ExtensionName
+  isRequired: true
+  description: |+
+    Specifies the name of an extension.
+
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="System.Collections.Generic.Dictionary`2" data-throw-if-not-resolved="False" /><span>[</span><xref href="System.String,System.String" data-throw-if-not-resolved="False" /><span>]</span>
+  name: ExtensionNameValues
+  isRequired: true
+  description: |+
+    Specifies extension name values.
+
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ExtensionValue
+  isRequired: true
+  description: |+
+    Specifies an extension value.
+
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ObjectId
+  isRequired: true
+  description: |+
+    Specifies the ID of an object.
+
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: AzureADPreview.Set-AzureADUserExtension
+name: Set-AzureADUserExtension
+description: |-
+  The **Set-AzureADUserExtension** cmdlet sets a user extension in Azure Active Directory (Azure AD).
+metadata:
+  external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.Custom.dll-Help.xml
+  Module Name: AzureADPreview
+  ms.assetid: DFEF698C-93D2-4D67-A8B2-4A1D3ADDCBBA
+  ms.custom: iamfeature=PowerShell
+  ms.reviewer: rodejo
+  online version: ""
+  schema: 2.0.0

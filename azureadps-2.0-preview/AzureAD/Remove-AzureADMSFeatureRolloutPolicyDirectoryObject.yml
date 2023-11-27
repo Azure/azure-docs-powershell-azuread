@@ -1,0 +1,49 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Allows an admin to remove a group from the cloud authentication rollout policy in Azure AD.
+  Users in this group will revert back to the authenticating using the global policy (in most cases this will be federation).
+module: AzureADPreview
+notes: ""
+syntaxes:
+- Remove-AzureADMSFeatureRolloutPolicyDirectoryObject -Id <String> -ObjectId <String> [<CommonParameters>]
+examples:
+- title: 'Example 1: Removes a group from the cloud authentication roll-out policy from Azure AD.'
+  code: |-
+    PS C:\> Remove-AzureADMSFeatureRolloutPolicyDirectoryObject -Id "a03b6d9e-6654-46e6-8d0a-8ed83c675ca9" -ObjectId "0a1068c0-dbb6-4537-9db3-b48f3e31dd76"
+  description: |-
+    This command removes a group from the cloud authentication roll-out policy from Azure AD.
+  summary: ""
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  isRequired: true
+  description: |+
+    The unique identifier of the cloud authentication roll-out policy in Azure AD.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ObjectId
+  isRequired: true
+  description: |+
+    The unique identifier of the specific Azure AD object that will be assigned to the cloud authentication roll-out policy in Azure AD.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: AzureADPreview.Remove-AzureADMSFeatureRolloutPolicyDirectoryObject
+name: Remove-AzureADMSFeatureRolloutPolicyDirectoryObject
+description: |-
+  An admin will use this cmdlet to remove groups from the cloud authentication roll-out policy.
+  Users in these groups will start authenticating against the global authentication policy (e.g.
+  federation).
+metadata:
+  external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
+  Module Name: AzureADPreview
+  online version: ""
+  schema: 2.0.0
