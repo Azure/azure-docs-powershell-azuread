@@ -16,7 +16,7 @@ ms.custom: posh-docs-conceptual
 # Azure Active Directory (MSOnline)
 
 >[!IMPORTANT]
-> MSOnline is planned for deprecation on **March 30, 2024**. For more details on the deprecation plans, see the [deprecation update](https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/microsoft-entra-new-feature-and-change-announcements/ba-p/3796396). We encourage you to continue migrating to [Microsoft Graph PowerShell](/powershell/microsoftgraph/overview), which is the recommended module for interacting with Azure AD. In addition, Microsoft Graph PowerShell allows you access to all Microsoft Graph APIs and is available on PowerShell 7. For answers to frequent migration queries, see the [Migration FAQ](../azureadps-2.0/migration-faq.yml).
+> MSOnline is planned for deprecation on **March 30, 2024**. For more details on the deprecation plans, see the [deprecation update](https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/important-azure-ad-graph-retirement-and-powershell-module/ba-p/3848270). We encourage you to continue migrating to [Microsoft Graph PowerShell](/powershell/microsoftgraph/overview), which is the recommended module for interacting with Azure AD. In addition, Microsoft Graph PowerShell allows you access to all Microsoft Graph APIs and is available on PowerShell 7. For answers to frequent migration queries, see the [Migration FAQ](../azureadps-2.0/migration-faq.yml).
 
 You can use MSOnline cmdlets for Azure AD administrative tasks such as user management, domain management and for configuring single sign-on.
 This topic includes information about how to install these cmdlets for use with your directory.
@@ -80,3 +80,4 @@ Cmdlets have the following naming convention: a verb and noun separated by a das
 
 Windows PowerShell includes more than one hundred basic core cmdlets.
 For more information about Windows PowerShell, see [Getting Started with Windows PowerShell](https://msdn.microsoft.com/powershell/scripting/getting-started/getting-started-with-windows-powershell).
+

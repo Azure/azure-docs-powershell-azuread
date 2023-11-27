@@ -11,6 +11,7 @@ ms.date: 07/10/2017
 ms.author: rodejo
 ms.custom: posh-docs-conceptual
 ms.reviewer: rodejo
+description: Discover how to list all service principal application roles in your directory with our step-by-step guide on Microsoft Azure PowerShell.
 ---
 # List all application role assignments for all service principals in your directory
 
