@@ -1,6 +1,6 @@
 ### YamlMime:PowershellCmdlet
 summary: |-
-  {{Fill in the Synopsis}}
+  Gets app role assignments for this app or service, granted to users, groups and other service principals.
 module: AzureAD
 notes: ""
 inputs:
@@ -15,15 +15,18 @@ syntaxes:
 examples:
 - title: Example 1
   code: |-
-    PS C:\> {{ Add example code here }}
+    PS C:\> $ServicePrincipalId = (Get-AzureADServicePrincipal -Top 1).ObjectId
+    PS C:\> Get-AzureADServiceAppRoleAssignedTo -ObjectId $ServicePrincipalId
   description: |-
-    {{ Add example description here }}
+    The first command gets the ID of a service principal and stores it in the $ServicePrincipalId variable.
+
+    The second command gets the app role assignments for the service principal granted to users, groups and other service principals.
   summary: ""
 parameters:
 - type: <xref href="Boolean" data-throw-if-not-resolved="False" />
   name: All
   description: |+
-    {{Fill All Description}}
+    If true, return all application role assignments. If false, return the number of objects specified by the Top parameter.
 
   defaultValue: None
   pipelineInput: true
@@ -34,7 +37,7 @@ parameters:
   name: ObjectId
   isRequired: true
   description: |+
-    {{Fill ObjectId Description}}
+    Specifies the ID of a service principal in Azure AD.
 
   defaultValue: None
   pipelineInput: true
@@ -44,7 +47,7 @@ parameters:
 - type: <xref href="Int32" data-throw-if-not-resolved="False" />
   name: Top
   description: |+
-    {{Fill Top Description}}
+    Specifies the maximum number of records to return.
 
   defaultValue: None
   pipelineInput: true
@@ -54,7 +57,7 @@ parameters:
 uid: AzureAD.Get-AzureADServiceAppRoleAssignedTo
 name: Get-AzureADServiceAppRoleAssignedTo
 description: |-
-  {{Fill in the Description}}
+  The Get-AzureADServiceAppRoleAssignedTo cmdlet gets app role assignments for this app or service, granted to users, groups and other service principals.
 metadata:
   external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
   Module Name: AzureAD

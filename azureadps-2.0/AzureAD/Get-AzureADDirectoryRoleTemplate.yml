@@ -24,7 +24,7 @@ examples:
     88d8e3e3-8f55-4a1e-953a-9b9898b8876b Directory Readers                       Allows access to various read only tasks in the directory.
     29232cdf-9323-42fd-ade2-1d097af3e4de Exchange Service Administrator          Exchange Service Administrator.
     75941009-915a-4869-abe7-691bff18279e Lync Service Administrator              Lync Service Administrator.
-    fe930be7-5e62-47db-91af-98c3a49a38b1 User Account Administrator              User Account Administrator has access to perform common user management related tasks.
+    fe930be7-5e62-47db-91af-98c3a49a38b1 User Administrator              User Account Administrator has access to perform common user management related tasks.
     9360feb5-f418-4baa-8175-e2a00bac4301 Directory Writers                       Allows access read tasks and a subset of write tasks in the directory.
     62e90394-69f5-4237-9190-012177145e10 Company Administrator                   Company Administrator role has full access to perform any operation in the company scope.
     a0b1b346-4d3e-4e8b-98f8-753987be4970 User                                    Every user is implicitly considered to be a member of the User Role.

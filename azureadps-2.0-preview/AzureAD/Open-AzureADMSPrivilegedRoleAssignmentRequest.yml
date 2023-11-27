@@ -9,6 +9,9 @@ inputs:
 outputs:
 - name: <xref href="System.Object" data-throw-if-not-resolved="False" />
   description: ""
+links:
+- text: Assign Azure AD roles in Privileged Identity Management using Microsoft Graph PowerShell
+  href: /powershell/microsoftgraph/tutorial-pim?view=graph-powershell-1.0
 syntaxes:
 - >-
   Open-AzureADMSPrivilegedRoleAssignmentRequest -ProviderId <String> -ResourceId <String>
@@ -17,15 +20,47 @@ syntaxes:
 
    -Schedule <AzureADMSPrivilegedSchedule> [-Reason <String>] [<CommonParameters>]
 examples:
-- title: Example 1
+- title: 'Example 1: Create an eligible role assignment request'
   code: |-
-    PS C:\> $schedule = New-Object Microsoft.Open.MSGraph.Model.AzureADMSPrivilegedSchedule
-    				  PS C:\> $schedule.Type = "Once"
-    				  PS C:\> $schedule.StartDateTime = "2019-04-26T20:49:11.770Z"
-    				  PS C:\> $schedule.endDateTime = "2019-07-25T20:49:11.770Z"
-    				  PS C:\> Open-AzureADMSPrivilegedRoleAssignmentRequest -ProviderId AzureResources -Schedule $schedule -ResourceId "e5e7d29d-5465-45ac-885f-4716a5ee74b5" -RoleDefinitionId "9f8c1837-f885-4dfd-9a75-990f9222b21d" -SubjectId "a25004a3-eceb-4ad4-b4aa-9485356bc55b" -AssignmentState "Eligible" -Type "AdminAdd"
+    $schedule = New-Object Microsoft.Open.MSGraph.Model.AzureADMSPrivilegedSchedule
+    $schedule.Type = "Once"
+    $schedule.StartDateTime = "2019-04-26T20:49:11.770Z"
+    $schedule.endDateTime = "2019-07-25T20:49:11.770Z"
+    Open-AzureADMSPrivilegedRoleAssignmentRequest -ProviderId AzureResources -Schedule $schedule -ResourceId "e5e7d29d-5465-45ac-885f-4716a5ee74b5" -RoleDefinitionId "9f8c1837-f885-4dfd-9a75-990f9222b21d" -SubjectId "a25004a3-eceb-4ad4-b4aa-9485356bc55b" -AssignmentState "Eligible" -Type "AdminAdd"
   description: |-
-    Create a role assignment request
+    This example creates a role assignment request.
+  summary: ""
+- title: 'Example 2: Activate an eligible role assignment for 4 hours'
+  code: |-
+    $Duration = 4 # Number in Hours
+    $Date = Get-Date
+    $start = $Date.ToUniversalTime()
+    $end = $Date.AddHours($Duration).ToUniversalTime()
+
+    $schedule = New-Object Microsoft.Open.MSGraph.Model.AzureADMSPrivilegedSchedule
+    $schedule.Type = 'Once'
+    $schedule.StartDateTime = $start.ToString('yyyy-MM-ddTHH:mm:ss.fffZ')
+    $schedule.endDateTime = $end.ToString('yyyy-MM-ddTHH:mm:ss.fffZ')
+
+    Open-AzureADMSPrivilegedRoleAssignmentRequest -ProviderId AzureResources -Schedule $schedule -ResourceId "e5e7d29d-5465-45ac-885f-4716a5ee74b5" -RoleDefinitionId "9f8c1837-f885-4dfd-9a75-990f9222b21d" -SubjectId "a25004a3-eceb-4ad4-b4aa-9485356bc55b" -AssignmentState "Active" -Type "UserAdd"
+  description: |-
+    This example creates a role assignment request activating the Admin Role.
+  summary: ""
+- title: 'Example 3: Deactivate a currently active role assignment'
+  code: |-
+    $Duration = 0 # Disables the role immediately
+    $Date = Get-Date
+    $start = $Date.ToUniversalTime()
+    $end = $Date.AddHours($Duration).ToUniversalTime()
+
+    $schedule = New-Object Microsoft.Open.MSGraph.Model.AzureADMSPrivilegedSchedule
+    $schedule.Type = 'Once'
+    $schedule.StartDateTime = $start.ToString('yyyy-MM-ddTHH:mm:ss.fffZ')
+    $schedule.endDateTime = $end.ToString('yyyy-MM-ddTHH:mm:ss.fffZ')
+
+    Open-AzureADMSPrivilegedRoleAssignmentRequest -ProviderId AzureResources -Schedule $schedule -ResourceId "e5e7d29d-5465-45ac-885f-4716a5ee74b5" -RoleDefinitionId "9f8c1837-f885-4dfd-9a75-990f9222b21d" -SubjectId "a25004a3-eceb-4ad4-b4aa-9485356bc55b" -AssignmentState "Active" -Type "UserRemove"
+  description: |-
+    This example creates a role assignment request disabling the Admin Role.
   summary: ""
 parameters:
 - type: <xref href="String" data-throw-if-not-resolved="False" />
@@ -108,7 +143,7 @@ parameters:
   isRequired: true
   description: |+
     The request type.
-    The value can be AdminAdd, UserAdd, AdminUpdate, AdminRemove, UserRemove, UserExtend, UserRenew, AdminRenewand AdminExtend.
+    The value can be AdminAdd, UserAdd, AdminUpdate, AdminRemove, UserRemove, UserExtend, UserRenew, AdminRenew and AdminExtend.
     Required.
 
   defaultValue: None

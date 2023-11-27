@@ -15,13 +15,13 @@ examples:
   code: |-
     PS C:\>Set-AzureADGroup -ObjectId "11fa5e1e-737c-40c5-835e-416ae3959606" -Description "This is my new group"
   description: |-
-    This command updates the specfied group in Azure AD.
+    This command updates the specified group in Azure AD.
   summary: ""
 parameters:
 - type: <xref href="String" data-throw-if-not-resolved="False" />
   name: Description
   description: |+
-    Specfies a description.
+    Specifies a description.
 
   defaultValue: None
   position: Named

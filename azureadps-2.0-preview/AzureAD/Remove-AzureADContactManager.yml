@@ -6,8 +6,6 @@ notes: ""
 links:
 - text: Get-AzureADContactManager
   href: ./Get-AzureADContactManager.yml
-- text: Set-AzureADContactManager
-  href: ./Set-AzureADContactManager.md
 syntaxes:
 - >-
   Remove-AzureADContactManager -ObjectId <String> [-InformationAction <ActionPreference>]

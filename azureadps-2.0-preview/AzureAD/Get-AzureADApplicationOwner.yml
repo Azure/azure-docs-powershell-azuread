@@ -36,7 +36,7 @@ parameters:
   name: ObjectId
   isRequired: true
   description: |+
-    Specifes the ID of an application in Azure Active Directory.
+    Specifies the ID of an application in Azure Active Directory.
 
   defaultValue: None
   pipelineInput: true

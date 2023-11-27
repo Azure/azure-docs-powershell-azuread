@@ -1,0 +1,49 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Retrieves a list of permission grants that have been consented for this group.
+module: AzureADPreview
+notes: ""
+inputs:
+- name: <xref href="string" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Open.MSGraph.Model.GetMSGroupPermissionGrantsResponse" data-throw-if-not-resolved="False" />
+  description: ""
+syntaxes:
+- Get-AzureADMSGroupPermissionGrant -Id <String> [<CommonParameters>]
+examples:
+- title: 'Example 1: List existing permission grants for the group. .'
+  code: |-
+    List exisiting permission grants for the group.
+    		
+    		Get-AzureADMSGroupPermissionGrant -Id "4823e767eca44858aed244154009b764" 
+
+    		Id             : vsMaSY2k_E7761KhRqpx7OGFvAwvdZnJM1s7Iqkt4PU
+    		ClientId       : deefce9d-be43-4b49-a9d3-851af6d2c26c
+    		ClientAppId    : ba4e4a78-c352-4e59-b657-81b2b395d32b
+    		ResourceAppId  : 00000003-0000-0000-c000-000000000000
+    		PermissionType : Application
+    		Permission     : Member.Read.Group
+  description: ""
+  summary: ""
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  isRequired: true
+  description: |+
+    The unique identifier of group.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: AzureADPreview.Get-AzureADMSGroupPermissionGrant
+name: Get-AzureADMSGroupPermissionGrant
+description: |-
+  Retrieves a list of permission grants that have been consented for this group.
+metadata:
+  external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
+  Module Name: AzureADPreview
+  online version: ""
+  schema: 2.0.0

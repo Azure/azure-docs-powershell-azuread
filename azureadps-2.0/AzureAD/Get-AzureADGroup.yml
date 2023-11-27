@@ -1,8 +1,9 @@
 ### YamlMime:PowershellCmdlet
 summary: |-
-  Gets a group.
+  Gets a group (via AzureAD Graph).
 module: AzureAD
-notes: ""
+notes: |-
+  This cmdlet uses the AzureAD Graph instead of the MSGraph. Commands that use the MSGraph are in the format of \*-ADMS\*. For more information on the naming convention see [New enhancements to the #AzureAD PowerShell 2.0 preview. Manage dynamic groups and more!](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/new-enhancements-to-the-azuread-powershell-2-0-preview-manage/ba-p/245153)
 syntaxes:
 - Get-AzureADGroup [-All <Boolean>] [-Top <Int32>] [-Filter <String>] [<CommonParameters>]
 - Get-AzureADGroup [-SearchString <String>] [-All <Boolean>] [<CommonParameters>]
@@ -10,7 +11,7 @@ syntaxes:
 examples:
 - title: 'Example 1: Get all groups'
   code: |-
-    PS C:\>Get-AzureADGroup
+    PS C:\>Get-AzureADGroup -All:$true
 
 
     ObjectId                             DisplayName                          Description
@@ -94,7 +95,7 @@ parameters:
   description: |+
     Specifies the maximum number of records to return.
 
-  defaultValue: None
+  defaultValue: "100"
   pipelineInput: true
   position: Named
   aliases: ""
@@ -102,7 +103,7 @@ parameters:
 uid: AzureAD.Get-AzureADGroup
 name: Get-AzureADGroup
 description: |-
-  The Get-AzureADGroup cmdlet gets a group in Azure Active Directory (AD).
+  The Get-AzureADGroup cmdlet gets a group in Azure Active Directory (AD) using the AzureAD Graph.
 metadata:
   external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
   Module Name: AzureAD

@@ -13,20 +13,7 @@ outputs:
 - name: <xref href="System.Object" data-throw-if-not-resolved="False" />
   description: ""
 links:
-- text: >-
-    Get-AzureADMSGroup]()
-
-
-
-    [New-AzureADMSGroup]()
-
-
-
-    [Set-AzureADMSGroup]()
-
-
-
-    [Using attributes to create advanced rules
+- text: Using attributes to create advanced rules
   href: https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/
 syntaxes:
 - Remove-AzureADMSGroup -Id <String> [<CommonParameters>]

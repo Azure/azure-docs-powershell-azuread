@@ -13,56 +13,32 @@ outputs:
 - name: <xref href="System.Object" data-throw-if-not-resolved="False" />
   description: ""
 links:
-- text: >-
-    Get-AzureADMSGroup]()
-
-
-
-    [Remove-AzureADMSGroup]()
-
-
-
-    [Set-AzureADMSGroup]()
-
-
-
-    [Using attributes to create advanced rules
+- text: Using attributes to create advanced rules
   href: https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/
 syntaxes:
 - >-
-  New-AzureADMSGroup [-Description <String>] -DisplayName <String> -MailEnabled <Boolean> -MailNickname <String>
+  New-AzureADMSGroup [-Description <String>] -DisplayName <String> [-IsAssignableToRole <Boolean>]
 
-   -SecurityEnabled <Boolean> [-GroupTypes <System.Collections.Generic.List`1[System.String]>]
+   -MailEnabled <Boolean> -MailNickname <String> -SecurityEnabled <Boolean>
 
-   [-Visibility <String>] [<CommonParameters>]
+   [-GroupTypes <System.Collections.Generic.List`1[System.String]>] [-Visibility <String>] [<CommonParameters>]
 examples:
-- title: 'Example 1: Create a dynamic group'
+- title: 'Example : Create a group assignable to role'
   code: |-
-    PS C:\> New-AzureADMSGroup -DisplayName "Dynamic Group 01" -Description "Dynamic group created from PS" -MailEnabled $False -MailNickName "group" -SecurityEnabled $True -GroupTypes "DynamicMembership" -MembershipRule "(user.department -contains ""Marketing"")" -MembershipRuleProcessingState "On"
+    PS C:\> New-AzureADMSGroup -DisplayName "HelpDesk admin group" -Description "Group assignable to role" -MailEnabled $False -MailNickname "helpDeskAdminGroup" -SecurityEnabled $True -IsAssignableToRole $True -Visibility "Private"
 
-    Id                            : 9126185e-25df-4522-a380-7ab697a7241c
-    Description                   : Dynamic group created from PS
-    OnPremisesSyncEnabled         :
-    DisplayName                   : Dynamic Group 01
-    OnPremisesLastSyncDateTime    :
-    Mail                          :
+    Id                            : 1026185e-25df-4522-a380-7ab697a7241c
+    Description                   : Group assignable to role
+    OnPremisesSyncEnabled         : 
+    DisplayName                   : HelpDesk admin group
+    Mail                          : 
     MailEnabled                   : False
-    MailNickname                  : group
-    OnPremisesSecurityIdentifier  :
-    ProxyAddresses                : {}
-    SecurityEnabled               : True
+    IsAssignableToRole            : True 
+    MailNickname                  : helpDeskAdminGroup
+    ProxyAddresses                : {} 
+    SecurityEnabled               : True 
     GroupTypes                    : {}
-    MembershipRule                : (user.department -eq "Marketing") MembershipRuleProcessingState : Paused
-  description: |-
-    This command creates a new dynamic group with the following rule:
-
-    \`user.department -contains "Marketing"\`
-
-    The double quotation marks are replaced with single quotation marks.
-
-    The processing state is On. 
-    This means that all users in the directory that qualify the rule are added as members to the group.
-    Any users that do not qualify are removed from the group.
+  description: ""
   summary: ""
 parameters:
 - type: <xref href="String" data-throw-if-not-resolved="False" />
@@ -87,8 +63,21 @@ parameters:
 - type: <xref href="System.Collections.Generic.List`1" data-throw-if-not-resolved="False" /><span>[</span><xref href="System.String" data-throw-if-not-resolved="False" /><span>]</span>
   name: GroupTypes
   description: |+
-    Specifies that the group is a dynamic group. 
-    To create a dynamic group, specify a value of DynamicMembership.
+    Specifies that the group is a unified or dynamic group. 
+
+    Notes: 
+
+    * This parameter currently cannot be used to create dynamic groups. To create a dynamic group in PowerShell, you must use the Azure AD Preview module.
+
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Boolean" data-throw-if-not-resolved="False" />
+  name: IsAssignableToRole
+  description: |+
+    Indicates whether group can be assigned to a role. This property can only be set at the time of group creation and cannot be modified on an existing group.
 
   defaultValue: None
   position: Named
@@ -98,7 +87,7 @@ parameters:
   name: MailEnabled
   isRequired: true
   description: |+
-    Specifies whether this group is mail enabled.
+    Indicates whether this group is mail enabled.
 
     Currently, you cannot create mail enabled groups in Azure AD.
 
@@ -121,7 +110,7 @@ parameters:
   name: SecurityEnabled
   isRequired: true
   description: |+
-    Specifies whether the group is security enabled.
+    Indicates whether the group is security enabled.
     For security groups, this value must be $True.
 
   defaultValue: None
@@ -131,7 +120,7 @@ parameters:
 - type: <xref href="String" data-throw-if-not-resolved="False" />
   name: Visibility
   description: |+
-    This parameter determines the visibility of the group's content and members list.
+    Specifies the visibility of the group's content and members list.
     This parameter can take one of the following values:
 
     * "Public" - Anyone can view the contents of the group
@@ -154,8 +143,6 @@ uid: AzureAD.New-AzureADMSGroup
 name: New-AzureADMSGroup
 description: |-
   The New-AzureADMSGroup cmdlet creates an Azure Active Directory (Azure AD) group.
-
-  For information about creating dynamic groups, see Using attributes to create advanced rules (https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/).
 metadata:
   external help file: Microsoft.Open.MS.GraphV10.PowerShell.dll-Help.xml
   Module Name: AzureAD

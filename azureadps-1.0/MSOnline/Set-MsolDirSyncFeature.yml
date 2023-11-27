@@ -1,0 +1,83 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Sets identity synchronization features for a tenant.
+module: MSOnline
+notes: ""
+links:
+- text: Get-MsolDirSyncFeatures
+  href: ./Get-MsolDirSyncFeatures.yml
+syntaxes:
+- Set-MsolDirSyncFeature -Feature <String> -Enable <Boolean> [-Force] [-TenantId <Guid>] [<CommonParameters>]
+examples:
+- title: 'Example 1: Enable a feature for the tenant'
+  code: |-
+    PS C:\> Set-MsolDirSyncFeature -Feature EnableSoftMatchOnUpn -Enable $True
+  description: |-
+    This command enables the SoftMatchOnUpn feature for the tenant.
+  summary: ""
+- title: 'Example 2: Block Soft Matching for the tenant'
+  code: |-
+    PS C:\> Set-MsolDirSyncFeature -Feature BlockSoftMatch -Enable $True
+  description: |-
+    This command enables the BlockSoftMatch feature for the tenant - effectively blocking the Soft Matching feature in the tenant
+  summary: ""
+- title: 'Example 3: Block Cloud object takeover through Hard Matching for the tenant'
+  code: |-
+    PS C:\> Set-MsolDirSyncFeature -Feature BlockCloudObjectTakeoverThroughHardMatch -Enable $True
+  description: |-
+    This command enables the BlockCloudObjectTakeoverThroughHardMatch feature for the tenant - effectively blocking the Hard Match object takeover.
+  summary: ""
+parameters:
+- type: <xref href="Boolean" data-throw-if-not-resolved="False" />
+  name: Enable
+  isRequired: true
+  description: |+
+    Indicates whether the specified feature will be turned on for the company.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Feature
+  isRequired: true
+  description: |+
+    Specifies the directory synchronization features to turn on or off.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Force
+  description: |+
+    Forces the command to run without asking for user confirmation.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Guid" data-throw-if-not-resolved="False" />
+  name: TenantId
+  description: |+
+    Specifies the unique ID of the tenant to perform the operation on.
+    If you do not specify this parameter the cmdlet will use the ID of the current user.
+    This parameter is only applicable to partner users.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: MSOnline.Set-MsolDirSyncFeature
+name: Set-MsolDirSyncFeature
+description: "The **Set-MsolDirSyncFeature** cmdlet sets identity synchronization features for a tenant.\r\n\r\nYou can use the following synchronization features with this cmdlet:\r\n\r\n- **EnableSoftMatchOnUpn**: Soft match is the process used to link an object being synced from on-premises for the first time with one that already exists in the cloud. When this feature is enabled, soft match will first be attempted using the standard logic, based on the primary SMTP address. If a match isn't found based on primary SMTP, then a match will be attempted based on UserPrincipalName. Once this feature is enabled, it can't be disabled.\r\n- **PasswordSync**\r\n- **SynchronizeUpnForManagedUsers**: Allows for the synchronization of UserPrincipalName updates from on-premises for managed (non-federated) users that have been assigned a license. These updates will be blocked if this feature isn't enabled. Once this feature is enabled, it can't be disabled.\r\n- **BlockSoftMatch**: When this feature is enabled, it will block the soft match feature. Customers are encouraged to enable this feature and keep it enabled until soft matching is required again for their tenancy. This flag should be enabled again after any soft matching has completed and is no longer needed.\r\n- **BlockCloudObjectTakeoverThroughHardMatch**: When this feature is not enabled, and\r\n\r\n    -  an object is synced for which an object with a matching source anchor already exists in Azure AD and,\r\n    - that object in Azure AD doesn't have DirSyncEnabled set to \"true\", then\r\n    \r\n    the default behavior would be to hard match the cloud object with the on premises object and set the DirSyncEnabled flag of the Cloud object to \"true\". <br><br>\r\n    When enabling this feature, the cloud object is no longer matched and the DirSyncEnabled flag isn't set to \"true\". Instead, an error is thrown: Error Code: `InvalidHardMatch`, Error Message: `Another cloud created object with the same source anchor already exists in Azure Active Directory`.\r\n\r\nEnabling some of these features, such as EnableSoftMatchOnUpn and SynchronizationUpnForManagedUsers, is a permanent operation.\r\nYou can't disable these features once they're enabled."
+metadata:
+  external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
+  online version: ""
+  schema: 2.0.0
+  ms.assetid: E4C5910F-B006-43F5-8765-E1185A9D0BBE
+  ms.reviewer: rodejo
+  ms.custom: iamfeature=PowerShell

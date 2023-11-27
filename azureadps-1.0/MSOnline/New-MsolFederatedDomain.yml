@@ -1,0 +1,62 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Adds a new single sign-on domain to Microsoft Online Services and establishes the relying party trust.
+module: MSOnline
+notes: ""
+links:
+- text: Remove-MsolFederatedDomain
+  href: ./Remove-MsolFederatedDomain.yml
+- text: Update-MsolFederatedDomain
+  href: ./Update-MsolFederatedDomain.yml
+syntaxes:
+- New-MsolFederatedDomain [-SupportMultipleDomain] -DomainName <String> [-WhatIf] [-Confirm] [<CommonParameters>]
+parameters:
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the command.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: DomainName
+  isRequired: true
+  description: |+
+    Specifies the name of the new single sign-on domain to create in Microsoft Online.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: SupportMultipleDomain
+  description: ""
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: MSOnline.New-MsolFederatedDomain
+name: New-MsolFederatedDomain
+description: |-
+  The **New-MsolFederatedDomain** cmdlet adds a new single sign-on domain to Microsoft Online Services and configures the relying party trust settings between the on-premises Active Directory Federation Services 2.0 server and Microsoft Online.
+  A single sign-on domain is also known as identity-federated domain.
+  Due to domain verification requirements, you may need to run this cmdlet several times in order to complete the process of adding the new single sign-on domain.
+metadata:
+  external help file: Microsoft.Online.Identity.Federation.PowerShell.dll-Help.xml
+  online version: ""
+  schema: 2.0.0
+  ms.assetid: 623D0291-0C85-422F-BC47-43D019839C16
+  ms.reviewer: rodejo
+  ms.custom: iamfeature=PowerShell

@@ -4,7 +4,7 @@ summary: |-
 module: AzureADPreview
 notes: ""
 links:
-- text: Disconnet-AzureAD
+- text: Disconnect-AzureAD
   href: ./Disconnect-AzureAD.yml
 syntaxes:
 - >-
@@ -201,7 +201,7 @@ parameters:
 - type: <xref href="LogLevel" data-throw-if-not-resolved="False" />
   name: LogLevel
   description: |+
-    Specifies the log level. The accdeptable values for this parameter are: 
+    Specifies the log level. The acceptable values for this parameter are: 
 
     - Info
     - Error

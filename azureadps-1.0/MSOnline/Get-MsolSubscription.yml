@@ -1,0 +1,77 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Gets subscriptions.
+module: MSOnline
+notes: ""
+outputs:
+- name: <xref href="Microsoft.Online.Administration.Subscription" data-throw-if-not-resolved="False" />
+  description: |-
+    This cmdlet returns subscription objects that contain the following information:
+
+    * DateCreated. The date that this subscription was created.
+
+    * NextLifecycleDate. The date of the next lifecycle event for this subscription.
+
+    * ObjectId. The unique ID of this subscription.
+
+    * OcpSubscriptionId. The ID of this subscription in the commerce system.
+
+    * ServiceStatus. The provisioning status of each service associated with this subscription.
+
+    * SkuId. The object ID of the SKU associated with this subscription.
+
+    * SkuPartNumber. The SKU associated with this subscription.
+
+    * Status. The status of this subscription (Enabled, Expired, or Suspended).
+
+    * TotalLicenses. The number of seats included in this subscription.
+links:
+- text: Get-MsolAccountSku
+  href: ./Get-MsolAccountSku.yml
+syntaxes:
+- Get-MsolSubscription [-TenantId <Guid>] [<CommonParameters>]
+- Get-MsolSubscription -SubscriptionId <Guid> [-TenantId <Guid>] [<CommonParameters>]
+examples:
+- title: 'Example 1: Gets a list of company subscriptions'
+  code: |-
+    PS C:\> Get-MsolSubscription
+  description: |-
+    This command gets a list of company subscriptions.
+    For license assignment,  the [Get-MsolAccountSku](./Get-MsolAccountSku.yml) cmdlet should be used instead.
+  summary: ""
+parameters:
+- type: <xref href="Guid" data-throw-if-not-resolved="False" />
+  name: SubscriptionId
+  isRequired: true
+  description: |+
+    Specifies the unique object ID of the subscription to retrieve.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Guid" data-throw-if-not-resolved="False" />
+  name: TenantId
+  description: |+
+    Specifies the unique ID of the tenant on which to perform the operation.
+    The default value is the tenant of the current user.
+    This parameter applies only to partner users.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: MSOnline.Get-MsolSubscription
+name: Get-MsolSubscription
+description: |-
+  The **Get-MsolSubscription** cmdlet gets all the subscriptions that the company has purchased.
+  When assigning licenses to users, the [Get-MsolAccountSku](./Get-MsolAccountSku.yml) cmdlet should be used instead.
+metadata:
+  external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
+  online version: ""
+  schema: 2.0.0
+  ms.assetid: 0633C5AB-EA9A-4B55-959D-26611F16AB43
+  ms.reviewer: rodejo
+  ms.custom: iamfeature=PowerShell

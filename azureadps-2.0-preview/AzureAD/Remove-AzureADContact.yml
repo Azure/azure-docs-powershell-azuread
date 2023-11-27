@@ -1,0 +1,72 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Removes a contact.
+module: AzureADPreview
+notes: ""
+links:
+- text: Get-AzureADContact
+  href: ./Get-AzureADContact.yml
+syntaxes:
+- >-
+  Remove-AzureADContact -ObjectId <String> [-InformationAction <ActionPreference>]
+
+   [-InformationVariable <String>] [<CommonParameters>]
+examples:
+- title: 'Example 1: Remove a contact'
+  code: |-
+    PS C:\> $Contact = Get-AzureADContact -Top 1
+    PS C:\> Remove-AzureADContact -ObjectId $Contact.ObjectId
+  description: |-
+    The first command gets a contact by using the [Get-AzureADContact](./Get-AzureADContact.yml) cmdlet, and then stores it in the $Contact variable.
+
+    The second command removes the contact in $Contact.
+  summary: ""
+parameters:
+- type: <xref href="ActionPreference" data-throw-if-not-resolved="False" />
+  name: InformationAction
+  description: |+
+    Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
+
+    - Continue
+    - Ignore
+    - Inquire
+    - SilentlyContinue
+    - Stop
+    - Suspend
+
+  defaultValue: None
+  position: Named
+  aliases: infa
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: InformationVariable
+  description: |+
+    Specifies an information variable.
+
+  defaultValue: None
+  position: Named
+  aliases: iv
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ObjectId
+  isRequired: true
+  description: |+
+    Specifies the object ID of a contact in Azure AD.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: AzureADPreview.Remove-AzureADContact
+name: Remove-AzureADContact
+description: |-
+  The **Remove-AzureADContact** removes a contact from Azure Active Directory (AD).
+metadata:
+  external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+  Module Name: AzureADPreview
+  ms.assetid: 184FB919-C19D-4EC0-8278-72750B223734
+  ms.custom: iamfeature=PowerShell
+  ms.reviewer: rodejo
+  online version: ""
+  schema: 2.0.0

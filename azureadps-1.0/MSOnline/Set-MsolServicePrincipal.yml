@@ -1,0 +1,138 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Updates a service principal in Microsoft Azure Active Directory.
+module: MSOnline
+notes: ""
+links:
+- text: Get-MsolServicePrincipal
+  href: ./Get-MsolServicePrincipal.yml
+- text: New-MsolServicePrincipal
+  href: ./New-MsolServicePrincipal.yml
+- text: New-MsolServicePrincipalAddresses
+  href: ./New-MsolServicePrincipalAddresses.yml
+- text: Remove-MsolServicePrincipal
+  href: ./Remove-MsolServicePrincipal.yml
+syntaxes:
+- >-
+  Set-MsolServicePrincipal [-ObjectId <Guid>] [-AppPrincipalId <Guid>] [-DisplayName <String>]
+
+   [-ServicePrincipalNames <String[]>] [-AccountEnabled <Boolean>] [-Addresses <RedirectUri[]>]
+
+   [-TenantId <Guid>] [<CommonParameters>]
+examples:
+- title: 'Example 1: Change properties on a service principal'
+  code: |-
+    PS C:\> $AppId = (Get-MsolServicePrincipal -ServicePrincipalName "MyApp").AppPrincipalId
+    PS C:\> Set-MsolServicePrincipal -AppPrincipalId $AppId -DisplayName "My Super Application" -ServicePrincipalNames @("MyApp/myapp.com", "MyApp/mysuperapp.com")
+  description: |-
+    This command updates properties on the specified service principal.
+    In this example, it specifies updates to the display name and the SPNs.
+    This will overwrite any previous settings.
+  summary: ""
+- title: 'Example 2: Change addresses on a service principal'
+  code: |-
+    PS C:\> $a = @()
+    PS C:\> $a = $a + (Get-MsolServicePrincipal -ServicePrincipalName "MyApp").Addresses
+    PS C:\> $a = $a + (New-MsolServicePrincipalAddresses -Value "myApp1.com")
+    PS C:\> $a = $a + (New-MsolServicePrincipalAddresses -Value "myApp2.com")
+    PS C:\> Set-MsolServicePrincipal -AppPrincipalId $AppId -Addresses $a
+  description: |-
+    This command updates the addresses of a service principal.
+    In this example, existing Addresses that were previously created ("myApp1.com", "myApp2.com") using the [New-MsolServicePrincipalAddresses](./New-MsolServicePrincipalAddresses.yml) cmdlet, are associated with the service principal.
+  summary: ""
+parameters:
+- type: <xref href="Boolean" data-throw-if-not-resolved="False" />
+  name: AccountEnabled
+  description: |+
+    This property is reserved for future use.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="RedirectUri" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Addresses
+  description: |+
+    Specifies the addresses list with which to update and overwrite the existing list.
+    If you do not specify this parameter, the existing property is not updated.
+    If you specify an empty list, the existing addresses are cleared.
+    Use the [New-MsolServicePrincipalAddress](./New-MsolServicePrincipalAddresses.yml) cmdlet to help create the Addresses list object.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Guid" data-throw-if-not-resolved="False" />
+  name: AppPrincipalId
+  description: |+
+    Specifies the unique application ID that is associated with the service principal to update.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: DisplayName
+  description: |+
+    Specifies the display name of the service principal.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Guid" data-throw-if-not-resolved="False" />
+  name: ObjectId
+  description: |+
+    Specifies the unique object ID of the service principal to update.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: ServicePrincipalNames
+  description: |+
+    Specifies the list of SPNs with which to update and overwrite the existing.
+    If you do not specify this parameter, the existing property is not updated.
+    If you specify an empty list, the existing SPNs are cleared, except for the SPN that contains the **AppId** value of the service principal.
+    An SPN must use one of the following formats:
+
+    * `appName`
+    * `appName/hostname`
+    * a valid URL
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Guid" data-throw-if-not-resolved="False" />
+  name: TenantId
+  description: |+
+    Specifies the unique ID of the tenant on which to perform the operation.
+    The default value is the tenant of the current user.
+    This parameter applies only to partner users.
+
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: MSOnline.Set-MsolServicePrincipal
+name: Set-MsolServicePrincipal
+description: |-
+  The **Set-MsolServicePrincipal** cmdlet updates a service principal in Microsoft Azure Active Directory.
+  It can be used to update the display name, enable/disable the service principal, trusted for delegation, the service principal names (SPNs) or the addresses.
+metadata:
+  external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
+  online version: ""
+  schema: 2.0.0
+  ms.assetid: 692698D2-D070-449D-B112-1CEB30743A38
+  ms.reviewer: rodejo
+  ms.custom: iamfeature=PowerShell

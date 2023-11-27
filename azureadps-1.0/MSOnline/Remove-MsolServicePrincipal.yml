@@ -1,0 +1,88 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Removes a service principal from Azure Active Directory.
+module: MSOnline
+notes: ""
+links:
+- text: Get-MsolServicePrincipal
+  href: ./Get-MsolServicePrincipal.yml
+- text: New-MsolServicePrincipal
+  href: ./New-MsolServicePrincipal.yml
+- text: Set-MsolServicePrincipal
+  href: ./Set-MsolServicePrincipal.yml
+syntaxes:
+- Remove-MsolServicePrincipal -ObjectId <Guid> [-TenantId <Guid>] [<CommonParameters>]
+- Remove-MsolServicePrincipal -AppPrincipalId <Guid> [-TenantId <Guid>] [<CommonParameters>]
+- Remove-MsolServicePrincipal -ServicePrincipalName <String> [-TenantId <Guid>] [<CommonParameters>]
+examples:
+- title: 'Example 1: Remove a service principal'
+  code: |-
+    PS C:\> Remove-MsolServicePrincipal -ServicePrincipalName "MyApp/myApp.com"
+  description: |-
+    This command removes a service principal by specifying one of its service principal names.
+    In this example, the service principal associated with the service principal name MyApp/myApp.com is removed.
+  summary: ""
+parameters:
+- type: <xref href="Guid" data-throw-if-not-resolved="False" />
+  name: AppPrincipalId
+  isRequired: true
+  description: |+
+    Specifies the unique application ID of the service principal to remove.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Guid" data-throw-if-not-resolved="False" />
+  name: ObjectId
+  isRequired: true
+  description: |+
+    Specifies the unique object ID of the service principal to remove.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ServicePrincipalName
+  isRequired: true
+  description: |+
+    Specifies the name of the service principal or service principals to remove.
+    An SPN must use one of the following formats:
+
+    * `appName`
+    * `appName/hostname`
+    * a valid URL
+
+    AppName represents the name of the application and hostname represents the URI authority for the application.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Guid" data-throw-if-not-resolved="False" />
+  name: TenantId
+  description: |+
+    Specifies the unique ID of the tenant on which to perform the operation.
+    The default value is the tenant of the current user.
+    This parameter applies only to partner users.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: MSOnline.Remove-MsolServicePrincipal
+name: Remove-MsolServicePrincipal
+description: |-
+  The **Remove-MsolServicePrincipal** cmdlet removes a service principal from  Azure Active Directory.
+metadata:
+  external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
+  online version: ""
+  schema: 2.0.0
+  ms.assetid: 87A60137-58ED-473B-9D1E-BB7C0CD8F8A2
+  ms.reviewer: rodejo
+  ms.custom: iamfeature=PowerShell

@@ -38,7 +38,7 @@ parameters:
 uid: AzureAD.Add-AzureADDeviceRegisteredOwner
 name: Add-AzureADDeviceRegisteredOwner
 description: |-
-  The Add-AzureADDeviceRegisteredOwner cmdlet adds a registerd owner for an Azure Active Directory device.
+  The Add-AzureADDeviceRegisteredOwner cmdlet adds a registered owner for an Azure Active Directory device.
 metadata:
   external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
   Module Name: AzureAD

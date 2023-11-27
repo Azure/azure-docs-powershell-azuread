@@ -1,0 +1,62 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Adds a new attribute set.
+module: AzureADPreview
+notes: ""
+inputs:
+- name: <xref href="None" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="System.Object" data-throw-if-not-resolved="False" />
+  description: ""
+syntaxes:
+- >-
+  New-AzureADMSAttributeSet [-Id <String>] [-Description <String>] [-MaxAttributesPerSet <Int32>]
+
+   [<CommonParameters>]
+examples:
+- title: Example
+  code: |-
+    New-AzureADMSAttributeSet -Id "Engineering" -Description "Attributes for engineering team" -MaxAttributesPerSet 10
+  description: |-
+    Add a single attribute set.
+
+    - Attribute set: `Engineering`
+  summary: ""
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Description
+  description: |+
+    Description for the attribute set.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  description: |+
+    Name of the attribute set. Must be unique within a tenant.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: MaxAttributesPerSet
+  description: |+
+    Maximum number of custom security attributes that can be defined in the attribute set.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: AzureADPreview.New-AzureADMSAttributeSet
+name: New-AzureADMSAttributeSet
+description: |-
+  Adds a new Azure Active Directory (Azure AD) attribute set object.
+metadata:
+  external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
+  Module Name: AzureADPreview
+  online version: ""
+  schema: 2.0.0

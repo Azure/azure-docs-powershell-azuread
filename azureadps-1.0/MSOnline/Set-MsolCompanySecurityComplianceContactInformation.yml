@@ -1,0 +1,88 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  **This cmdlet is not in use by any online service, so please consider it deprecated.**
+module: MSOnline
+notes: |-
+  **This cmdlet is not in use by any online service, so please consider it deprecated.**  
+  For more information about how to properly configure security contact details in Azure Security Center, see [Provide security contact details in Azure Security Center](https://aka.ms/azuresecuritycontact).
+inputs:
+- name: <xref href="System.String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  description: |-
+    System.Nullable`1[[System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+outputs:
+- name: <xref href="System.Object" data-throw-if-not-resolved="False" />
+  description: ""
+syntaxes:
+- >-
+  Set-MsolCompanySecurityComplianceContactInformation [-SecurityComplianceNotificationEmails <String[]>]
+
+   [-SecurityComplianceNotificationPhones <String[]>] [-TenantId <Guid>] [<CommonParameters>]
+examples:
+- title: 'Example 1: Set contact information'
+  code: |-
+    Set-MsolCompanySecurityComplianceContactInformation -SecurityComplianceNotificationEmails "EvanNarvaez@contoso.com", "ElisaDaugherty@contoso.com" -SecuritComplianceNotificationPhones "555-555-0012","555-555-0199"
+  description: |-
+    **This cmdlet is not in use by any online service, so please consider it deprecated.**  
+    For more information about how to properly configure security contact details in Azure Security Center, see [Provide security contact details in Azure Security Center](https://aka.ms/azuresecuritycontact).
+
+    This command sets multiple email addresses as company-level security and compliance contacts and respective phone numbers for each contact.
+  summary: ""
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: SecurityComplianceNotificationEmails
+  description: |+
+    Specifies an array of company-level security and compliance contact email addresses.
+
+    **This cmdlet is not in use by any online service, so please consider it deprecated.**  
+    For more information about how to properly configure security contact details in Azure Security Center, see [Provide security contact details in Azure Security Center](https://aka.ms/azuresecuritycontact).
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: SecurityComplianceNotificationPhones
+  description: |+
+    Specifies an array of company-level security and compliance contact phone numbers.
+
+    **This cmdlet is not in use by any online service, so please consider it deprecated.**  
+    For more information about how to properly configure security contact details in Azure Security Center, see [Provide security contact details in Azure Security Center](https://aka.ms/azuresecuritycontact).
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Guid" data-throw-if-not-resolved="False" />
+  name: TenantId
+  description: |+
+    Specifies the unique ID of the tenant on which to perform the operation.
+    The default value is the tenant of the current user.
+    This parameter applies only to partner users.
+
+    **This cmdlet is not in use by any online service, so please consider it deprecated.**  
+    For more information about how to properly configure security contact details in Azure Security Center, see [Provide security contact details in Azure Security Center](https://aka.ms/azuresecuritycontact).
+
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: MSOnline.Set-MsolCompanySecurityComplianceContactInformation
+name: Set-MsolCompanySecurityComplianceContactInformation
+description: |-
+  **This cmdlet is not in use by any online service, so please consider it deprecated.**  
+  For more information about how to properly configure security contact details in Azure Security Center, see [Provide security contact details in Azure Security Center](https://aka.ms/azuresecuritycontact).
+
+  The **Set-MsolCompanySecurityComplianceContactInformation** cmdlet sets company-level security and compliance contact preferences.
+  These preferences include email addresses and phone numbers of the tenant’s security and compliance contacts.
+  The contact is used for notification purposes.
+metadata:
+  external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
+  online version: ""
+  schema: 2.0.0
+  ms.assetid: 5EFA8894-F622-48D0-97D4-3D673E08FF37
+  ms.reviewer: rodejo
+  ms.custom: iamfeature=PowerShell

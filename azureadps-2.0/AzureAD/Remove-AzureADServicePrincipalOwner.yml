@@ -11,9 +11,15 @@ syntaxes:
 examples:
 - title: Example 1
   code: |-
-    PS C:\> {{ Add example code here }}
+    PS C:\> $ServicePrincipalId = (Get-AzureADServicePrincipal -Top 1).ObjectId
+    PS C:\> $OwnerId = (Get-AzureADServicePrincipalOwner -ObjectID $ServicePrincipalId -Top 1).ObjectId
+    PS C:\> Remove-AzureADServicePrincipalOwner -ObjectID $ServicePrincipalId -OwnerID $OwnerId
   description: |-
-    {{ Add example description here }}
+    The first command gets the ID of the service principal and stores it in the $ServicePrincipalId variable.
+
+    The second command gets the ID of one owner of the specified service principal and stores it in the $OwnerId variable.
+
+    The third command removes the owner identified by $OwnerId of the service principal identified by $ServicePrincipalId.
   summary: ""
 parameters:
 - type: <xref href="ActionPreference" data-throw-if-not-resolved="False" />

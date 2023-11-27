@@ -1,0 +1,86 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Initiates a connection to Azure Active Directory.
+module: MSOnline
+notes: ""
+syntaxes:
+- Connect-MsolService [-AzureEnvironment <AzureEnvironment>] [<CommonParameters>]
+- Connect-MsolService [-Credential <PSCredential>] [-AzureEnvironment <AzureEnvironment>] [<CommonParameters>]
+- >-
+  Connect-MsolService [-AdGraphAccessToken <String>] [-MsGraphAccessToken <String>]
+
+   [-AzureEnvironment <AzureEnvironment>] [<CommonParameters>]
+examples:
+- title: 'Example 1: Initiate a connection'
+  code: |-
+    PS C:\> Connect-MsolService
+  description: |-
+    This command attempts to initiate a connection with Azure Active Directory.
+    Since no credential is provided, the cmdlet prompts you to enter your username and password.
+  summary: ""
+- title: 'Example 2: Initiate a connection by using a credential object'
+  code: |-
+    PS C:\> Connect-MsolService -Credential $Credential -AzureEnvironment AzureChinaCloud
+  description: |-
+    This command attempts to initiate a connection to AzureChinaCloud with Azure Active Directory using the credential provided.
+    The credential must be of the type **PSCredential**.
+    To obtain a credential object, use the **Get-Credential** cmdlet.
+  summary: ""
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: AdGraphAccessToken
+  description: |+
+    Specifies the AD Graph access token to use to connect to Azure Active Directory.
+
+  defaultValue: None
+  position: Named
+  aliases: AccessToken
+  parameterValueGroup: ""
+- type: <xref href="AzureEnvironment" data-throw-if-not-resolved="False" />
+  name: AzureEnvironment
+  description: |+
+    Specifies the deployment type to use to connect to Azure Active Directory in different region.
+    Valid values are:
+
+    * AzureCloud
+    * AzureChinaCloud
+    * AzureGermanyCloud
+    * USGovernment
+
+  defaultValue: AzureCloud
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="PSCredential" data-throw-if-not-resolved="False" />
+  name: Credential
+  description: |+
+    Specifies the credential to use to connect to Azure Active Directory.
+    To obtain a **PSCredential** object, use the **Get-Credential** cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: MsGraphAccessToken
+  description: |+
+    Specifies the MS Graph access token to use to connect to Azure Active Directory.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: MSOnline.Connect-MsolService
+name: Connect-MsolService
+description: |-
+  The **Connect-MsolService** cmdlet attempts to initiate a connection to Azure Active Directory.
+  You must specify a credential, as a **PSCredential** object, or specify the _CurrentCredentials_ parameter to use the credentials of the current user.
+
+  This cmdlet may return a warning or error if the version of the module is out of date.
+metadata:
+  external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
+  online version: ""
+  schema: 2.0.0
+  ms.assetid: A5A10B0B-7C64-4778-8B42-EB073E2ADA92
+  ms.reviewer: rodejo
+  ms.custom: iamfeature=PowerShell

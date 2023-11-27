@@ -4,20 +4,7 @@ summary: |-
 module: AzureAD
 notes: ""
 links:
-- text: >-
-    New-AzureADTrustedCertificateAuthority]()
-
-
-
-    [Remove-AzureADTrustedCertificateAuthority]()
-
-
-
-    [Set-AzureADTrustedCertificateAuthority]()
-
-
-
-    [Online help and examples for working with certificate authority
+- text: Online help and examples for working with certificate authority
   href: https://azure.microsoft.com/en-us/documentation/articles/active-directory-certificate-based-authentication-ios/
 syntaxes:
 - >-

@@ -1,0 +1,80 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Removes a member from a security group.
+module: MSOnline
+notes: ""
+links:
+- text: Add-MsolGroupMember
+  href: ./Add-MsolGroupMember.yml
+- text: Get-MsolGroupMember
+  href: ./Get-MsolGroupMember.yml
+syntaxes:
+- >-
+  Remove-MsolGroupMember -GroupObjectId <Guid> [-GroupMemberType <GroupMemberType>] [-GroupMemberObjectId <Guid>]
+
+   [-TenantId <Guid>] [<CommonParameters>]
+examples:
+- title: 'Example 1: Remove a user from a group'
+  code: |-
+    PS C:\> $GroupId = Get-MsolGroup -SearchString "MyGroup"
+    PS C:\> $UserId = Get-MsolUser -UserPrincipalName "evannarvaez@contoso.com"
+    PS C:\> Remove-MsoLGroupMember -GroupObjectId $GroupId -GroupMemberType User -GroupmemberObjectId $UserId
+  description: |-
+    This example removes the user evannarvaez@contoso.com from the group named MyGroup.
+  summary: ""
+parameters:
+- type: <xref href="Guid" data-throw-if-not-resolved="False" />
+  name: GroupMemberObjectId
+  description: |+
+    Specifies the unique object ID of the user or group to remove from the group.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="GroupMemberType" data-throw-if-not-resolved="False" />
+  name: GroupMemberType
+  description: |+
+    Specifies the type of member to remove from the group.
+    Valid values are: User and Group.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Guid" data-throw-if-not-resolved="False" />
+  name: GroupObjectId
+  isRequired: true
+  description: |+
+    Specifies the unique ID of the group from which to remove members.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Guid" data-throw-if-not-resolved="False" />
+  name: TenantId
+  description: |+
+    Specifies the unique ID of the tenant on which to perform the operation.
+    The default value is the tenant of the current user.
+    This parameter applies only to partner users.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: MSOnline.Remove-MsolGroupMember
+name: Remove-MsolGroupMember
+description: |-
+  The **Remove-MsolGroupMember** cmdlet is used to remove a member from a security group.
+  This member can be either a user or a group.
+metadata:
+  external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
+  online version: ""
+  schema: 2.0.0
+  ms.assetid: 6771683C-F5D9-48C4-9591-DC6692407ACA
+  ms.reviewer: rodejo
+  ms.custom: iamfeature=PowerShell

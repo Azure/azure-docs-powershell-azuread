@@ -1,0 +1,101 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Updates object settings.
+module: AzureADPreview
+notes: ""
+links:
+- text: Get-AzureADObjectSetting
+  href: ./Get-AzureADObjectSetting.yml
+- text: New-AzureADObjectSetting
+  href: ./New-AzureADObjectSetting.yml
+- text: Remove-AzureADObjectSetting
+  href: ./Remove-AzureADObjectSetting.yml
+syntaxes:
+- >-
+  Set-AzureADObjectSetting -TargetType <String> -TargetObjectId <String> -Id <String>
+
+   -DirectorySetting <DirectorySetting> [-InformationAction <ActionPreference>] [-InformationVariable <String>]
+
+   [<CommonParameters>]
+parameters:
+- type: <xref href="DirectorySetting" data-throw-if-not-resolved="False" />
+  name: DirectorySetting
+  isRequired: true
+  description: |+
+    Specifies a **DirectorySetting** object. 
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  isRequired: true
+  description: |+
+    Specifies the ID of a settings object.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="ActionPreference" data-throw-if-not-resolved="False" />
+  name: InformationAction
+  description: |+
+    Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
+
+    - Continue
+    - Ignore
+    - Inquire
+    - SilentlyContinue
+    - Stop
+    - Suspend
+
+  defaultValue: None
+  position: Named
+  aliases: infa
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: InformationVariable
+  description: |+
+    Specifies an information variable.
+
+  defaultValue: None
+  position: Named
+  aliases: iv
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: TargetObjectId
+  isRequired: true
+  description: |+
+    Specifies the object ID of directory object.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: TargetType
+  isRequired: true
+  description: |+
+    Specifies the target type of a directory object.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: AzureADPreview.Set-AzureADObjectSetting
+name: Set-AzureADObjectSetting
+description: |-
+  The **Set-AzureADObjectSetting** cmdlet updates the settings for an object in Azure Active Directory (AD).
+metadata:
+  external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
+  Module Name: AzureADPreview
+  ms.assetid: 505A49A7-2C60-4D87-BE2C-AE5BF7B5FD86
+  ms.custom: iamfeature=PowerShell
+  ms.reviewer: rodejo
+  online version: ""
+  schema: 2.0.0

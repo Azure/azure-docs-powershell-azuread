@@ -1,0 +1,25 @@
+### YamlMime:PowershellCmdlet
+summary: ""
+module: MSOnline
+notes: ""
+syntaxes:
+- Get-MsolHasObjectsWithDirSyncProvisioningErrors [-TenantId <Guid>] [<CommonParameters>]
+parameters:
+- type: <xref href="Guid" data-throw-if-not-resolved="False" />
+  name: TenantId
+  description: ""
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: MSOnline.Get-MsolHasObjectsWithDirSyncProvisioningErrors
+name: Get-MsolHasObjectsWithDirSyncProvisioningErrors
+description: ""
+metadata:
+  external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
+  online version: ""
+  schema: 2.0.0
+  ms.assetid: 942BEF56-1526-4E08-B4A8-4B187C98BD77
+  ms.reviewer: rodejo
+  ms.custom: iamfeature=PowerShell

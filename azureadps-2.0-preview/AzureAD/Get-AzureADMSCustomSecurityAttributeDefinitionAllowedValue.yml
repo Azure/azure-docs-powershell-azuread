@@ -1,0 +1,85 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Gets the predefined value for a custom security attribute definition.
+module: AzureADPreview
+notes: ""
+inputs:
+- name: <xref href="System.String" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="System.Object" data-throw-if-not-resolved="False" />
+  description: ""
+syntaxes:
+- >-
+  Get-AzureADMSCustomSecurityAttributeDefinitionAllowedValue -CustomSecurityAttributeDefinitionId <String>
+
+   [-Filter <String>] [<CommonParameters>]
+- >-
+  Get-AzureADMSCustomSecurityAttributeDefinitionAllowedValue -CustomSecurityAttributeDefinitionId <String>
+
+   -Id <String> [<CommonParameters>]
+examples:
+- title: Example 1
+  code: |-
+    Get-AzureADMSCustomSecurityAttributeDefinitionAllowedValue -CustomSecurityAttributeDefinitionId "Engineering_Project"
+  description: |-
+    Get all predefined values.
+
+    - Attribute set: `Engineering`
+    - Attribute: `Project`
+  summary: ""
+- title: Example 2
+  code: |-
+    Get-AzureADMSCustomSecurityAttributeDefinitionAllowedValue -CustomSecurityAttributeDefinitionId "Engineering_Project" -Id "Alpine"
+  description: |-
+    Get a predefined value.
+
+    - Attribute set: `Engineering`
+    - Attribute: `Project`
+    - Predefined value: `Alpine`
+  summary: ""
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: CustomSecurityAttributeDefinitionId
+  isRequired: true
+  description: |+
+    The unique identifier of a custom security attribute definition in Azure AD.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Filter
+  description: |+
+    Specifies an oData v3.0 filter statement.
+    This parameter controls which objects are returned.
+    Details on querying with oData can be found here.
+    http://www.odata.org/documentation/odata-version-3-0/odata-version-3-0-core-protocol/#queryingcollections
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  isRequired: true
+  description: |+
+    The unique identifier of a predefined value in Azure AD.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: AzureADPreview.Get-AzureADMSCustomSecurityAttributeDefinitionAllowedValue
+name: Get-AzureADMSCustomSecurityAttributeDefinitionAllowedValue
+description: |-
+  Gets the predefined value for an Azure Active Directory (Azure AD) custom security attribute definition.
+metadata:
+  external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
+  Module Name: AzureADPreview
+  online version: ""
+  schema: 2.0.0

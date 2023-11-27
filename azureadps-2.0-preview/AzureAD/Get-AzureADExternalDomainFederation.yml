@@ -28,7 +28,7 @@ parameters:
   name: ExternalDomainName
   isRequired: true
   description: |+
-    The unique idenfier of an externalDomainFederation in Azure Active Directory
+    The unique identifer of an externalDomainFederation in Azure Active Directory
 
   defaultValue: None
   pipelineInput: true

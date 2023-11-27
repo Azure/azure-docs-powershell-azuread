@@ -1,0 +1,65 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Removes a single sign-on domain from the domains in Microsoft Online.
+module: MSOnline
+notes: ""
+links:
+- text: New-MsolFederatedDomain
+  href: ./New-MsolFederatedDomain.yml
+- text: Update-MsolFederatedDomain
+  href: ./Update-MsolFederatedDomain.yml
+syntaxes:
+- >-
+  Remove-MsolFederatedDomain [-SupportMultipleDomain] -DomainName <String> [-WhatIf] [-Confirm]
+
+   [<CommonParameters>]
+parameters:
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the command.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: DomainName
+  isRequired: true
+  description: |+
+    Specifies the name of the single sign-on domain to remove. 
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: SupportMultipleDomain
+  description: ""
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: MSOnline.Remove-MsolFederatedDomain
+name: Remove-MsolFederatedDomain
+description: |-
+  The **Remove-MsolFederatedDomain** cmdlet removes the specified single sign-on domain from Microsoft Online and the associated relying party trust settings in Active Directory Federation Services 2.0.
+
+  If the domain specified has objects associated with it, you cannot remove the domain.
+metadata:
+  external help file: Microsoft.Online.Identity.Federation.PowerShell.dll-Help.xml
+  online version: ""
+  schema: 2.0.0
+  ms.assetid: 59811DE6-DD0A-4F11-B16D-842EB397F5EE
+  ms.reviewer: rodejo
+  ms.custom: iamfeature=PowerShell
