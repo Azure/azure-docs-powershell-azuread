@@ -638,7 +638,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## NOTES
 
-### Migrating to Microsoft Graph PowerShell
+## Migrating to Microsoft Graph PowerShell
 
 + Azure AD Command: [Set-AzureADUser](https://docs.microsoft.com/en-us/powershell/module/AzureAD/Set-AzureADUser)
 + Azure AD Module: AzureAD
