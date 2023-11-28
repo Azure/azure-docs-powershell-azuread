@@ -626,6 +626,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
+## NOTES
+
+See the [migration guide for Set-AzureADUser](migrate-Set-AzureADUser) to the Microsoft Graph PowerShell.
+
 ## RELATED LINKS
 
 [Get-AzureADUser](Get-AzureADUser.md)
