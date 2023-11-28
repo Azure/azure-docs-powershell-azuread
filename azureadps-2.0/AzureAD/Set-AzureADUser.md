@@ -588,7 +588,7 @@ Accept wildcard characters: False
 
 ### -UserState
 
-For an external user invited to the tenant using the [invitation API](https://docs.microsoft.com/en-us/graph/api/invitation-post), this property represents the invited user's invitation status. For invited users, the state can be `PendingAcceptance` or `Accepted`, or `null` for all other users.
+For an external user invited to the tenant using the [invitation API](/graph/api/invitation-post), this property represents the invited user's invitation status. For invited users, the state can be `PendingAcceptance` or `Accepted`, or `null` for all other users.
 
 ```yaml
 Type: String
@@ -638,4 +638,4 @@ See the [migration guide for Set-AzureADUser](./migrate/Set-AzureADUser.md) to t
 
 [Remove-AzureADUser](Remove-AzureADUser.md)
 
-[Learn more about age group and minor consent definitions]: https://learn.microsoft.com/en-us/graph/api/resources/user#legal-age-group-property-definitions
+[Learn more about age group and minor consent definitions]: https://learn.microsoft.com/graph/api/resources/user#legal-age-group-property-definitions
