@@ -40,9 +40,9 @@
       {
         "files": [
           "**/*.yml",
-          "Set-AzureADUser.md"
+          "AzureAD/migrate/Set-AzureADUser.md"
         ],
-        "src": [ "azureadps-2.0", "azureadps-2.0/AzureAD/migrate"],
+        "src": "azureadps-2.0",
         "version": "azureadps-2.0",
         "exclude": [
           "docs-conceptual/**"
