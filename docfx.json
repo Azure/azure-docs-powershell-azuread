@@ -40,7 +40,7 @@
       {
         "files": [
           "**/*.yml",
-          "Set-AzureADUser.md"
+          "migrate-Set-AzureADUser.md"
         ],
         "src": "azureadps-2.0",
         "version": "azureadps-2.0",
