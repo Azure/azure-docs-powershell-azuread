@@ -11,9 +11,9 @@ syntaxes:
 examples:
 - title: 'Example 1: Updates the trusted certificate authorities that are defined in your directory'
   code: |-
-    PS C:\> $cer = Set-AzureADTrustedCertificateAuthority #Get the CertificateAuthorityInformation object
-    		PS C:\> $cer[0].CrlDistributionPoint = "https://example.crl"
-    		PS C:\> Set-AzureADTrustedCertificateAuthority -CertificateAuthorityInformation $cer[0]
+    PS C:\> $cer = Get-AzureADTrustedCertificateAuthority #Get the CertificateAuthorityInformation object
+    PS C:\> $cer[0].CrlDistributionPoint = "https://example.crl"
+    PS C:\> Set-AzureADTrustedCertificateAuthority -CertificateAuthorityInformation $cer[0]
   description: |-
     This command updates the trusted certificate authorities that are defined in your directory.
   summary: ""

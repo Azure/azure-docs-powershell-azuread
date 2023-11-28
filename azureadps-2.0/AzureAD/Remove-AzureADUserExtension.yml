@@ -12,9 +12,9 @@ syntaxes:
 examples:
 - title: Example 1
   code: |-
-    PS C:\> {{ Add example code here }}
+    PS C:\> Remove-AzureADUserExtension -ObjectId TestUser@example.com -ExtensionName "Test Extension"
   description: |-
-    {{ Add example description here }}
+    This will remove the "Test Extension" attribute from user: TestUser@example.com.
   summary: ""
 parameters:
 - type: <xref href="String" data-throw-if-not-resolved="False" />

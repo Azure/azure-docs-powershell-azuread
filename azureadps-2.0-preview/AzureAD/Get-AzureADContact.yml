@@ -6,8 +6,6 @@ notes: ""
 links:
 - text: Remove-AzureADContact
   href: ./Remove-AzureADContact.yml
-- text: Set-AzureADContact
-  href: ./Set-AzureADContact.md
 syntaxes:
 - Get-AzureADContact [-All <Boolean>] [-Top <Int32>] [-Filter <String>] [<CommonParameters>]
 - Get-AzureADContact -ObjectId <String> [-All <Boolean>] [<CommonParameters>]

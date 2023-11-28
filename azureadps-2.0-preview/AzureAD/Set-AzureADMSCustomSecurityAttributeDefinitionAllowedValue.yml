@@ -1,0 +1,68 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Updates an existing custom security attribute definition predefined value.
+module: AzureADPreview
+notes: ""
+inputs:
+- name: <xref href="System.String" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="System.Object" data-throw-if-not-resolved="False" />
+  description: ""
+syntaxes:
+- >-
+  Set-AzureADMSCustomSecurityAttributeDefinitionAllowedValue -CustomSecurityAttributeDefinitionId <String>
+
+   -Id <String> [-IsActive <Boolean>] [<CommonParameters>]
+examples:
+- title: Example
+  code: |-
+    Set-AzureADMSCustomSecurityAttributeDefinitionAllowedValue -CustomSecurityAttributeDefinitionId "Engineering_Project" -Id "Alpine" -IsActive $false
+  description: |-
+    Deactivate a predefined value.
+
+    - Attribute set: `Engineering`
+    - Attribute: `Project`
+    - Predefined value: `Alpine`
+  summary: ""
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: CustomSecurityAttributeDefinitionId
+  isRequired: true
+  description: |+
+    The unique identifier of a custom security attribute definition in Azure AD.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  isRequired: true
+  description: |+
+    Predefined value for the custom security attribute.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Boolean" data-throw-if-not-resolved="False" />
+  name: IsActive
+  description: |+
+    Specifies whether the predefined value is active or deactivated. If set to false, this predefined value cannot be assigned to any additional supported directory objects.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: AzureADPreview.Set-AzureADMSCustomSecurityAttributeDefinitionAllowedValue
+name: Set-AzureADMSCustomSecurityAttributeDefinitionAllowedValue
+description: |-
+  Updates an Azure Active Directory (Azure AD) custom security attribute definition predefined value object identified by ID.
+metadata:
+  external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
+  Module Name: AzureADPreview
+  online version: ""
+  schema: 2.0.0

@@ -1,0 +1,223 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Changes the authentication type of the domain.
+module: MSOnline
+notes: ""
+links:
+- text: Convert-MsolDomainToFederated
+  href: ./Convert-MsolDomainToFederated.yml
+- text: Convert-MsolDomainToStandard
+  href: ./Convert-MsolDomainToStandard.yml
+syntaxes:
+- >-
+  Set-MsolDomainAuthentication -DomainName <String> -Authentication <DomainAuthenticationType>
+
+   [-SigningCertificate <String>] [-NextSigningCertificate <String>] [-LogOffUri <String>]
+
+   [-PassiveLogOnUri <String>] [-ActiveLogOnUri <String>] [-IssuerUri <String>] [-FederationBrandName <String>]
+
+   [-MetadataExchangeUri <String>] [-PreferredAuthenticationProtocol <AuthenticationProtocol>]
+
+   [-SupportsMfa <Boolean>] [-DefaultInteractiveAuthenticationMethod <String>]
+
+   [-OpenIdConnectDiscoveryEndpoint <String>] [-SigningCertificate
+
+   Status <SigningCertificateUpdateStatus>]
+
+   [-PromptLoginBehavior <PromptLoginBehavior>] [-TenantId <Guid>] [<CommonParameters>]
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ActiveLogOnUri
+  description: |+
+    Specifies the URL of the end point used by active clients when authenticating with domains set up for single sign-on in Azure Active Directory.
+    Single sign-on is also known as identity federation.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DomainAuthenticationType" data-throw-if-not-resolved="False" />
+  name: Authentication
+  isRequired: true
+  description: |+
+    Specifies the authentication type of the domain.
+    Valid values are: managed and federated.
+    All users created on this domain have this authentication type.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: DefaultInteractiveAuthenticationMethod
+  description: |+
+    Specifies the default authentication method that should be used when an application requires the user to have interactive login.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: DomainName
+  isRequired: true
+  description: |+
+    Specifies the fully qualified domain name (FQDN) to update.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: FederationBrandName
+  description: |+
+    Specifies the name of the string value shown to users when signing in to Azure Active Directory services.
+    We recommend that customers use something that is familiar to them, like their company name, such as Contoso, Inc.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: IssuerUri
+  description: |+
+    Specifies the URI of the domain in the Azure Active Directory identity platform derived from the federation server.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: LogOffUri
+  description: |+
+    Specifies the URL that clients are redirected to when they sign out of Azure Active Directory services.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: MetadataExchangeUri
+  description: |+
+    Specifies the URL of the metadata exchange end point used for authentication from rich client applications such as Lync Online.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: NextSigningCertificate
+  description: |+
+    Specifies the next token signing certificate that is used to sign tokens when the primary signing certificate expires.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: OpenIdConnectDiscoveryEndpoint
+  description: |+
+    Specifies the OpenID Connect Discovery Endpoint of the federated IDP STS.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: PassiveLogOnUri
+  description: |+
+    Specifies the URL that web-based clients are directed to when signing in to Azure Active Directory services.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="AuthenticationProtocol" data-throw-if-not-resolved="False" />
+  name: PreferredAuthenticationProtocol
+  description: |+
+    Specifies the preferred authentication protocol.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="PromptLoginBehavior" data-throw-if-not-resolved="False" />
+  name: PromptLoginBehavior
+  description: |+
+    Specifies the prompt log-in behavior.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: SigningCertificate
+  description: |+
+    Specifies the current certificate used to sign tokens passed to the Azure Active Directory Identity platform.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SigningCertificateUpdateStatus" data-throw-if-not-resolved="False" />
+  name: SigningCertificateUpdateStatus
+  description: |+
+    Specifies the update status of the signing certificate.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Boolean" data-throw-if-not-resolved="False" />
+  name: SupportsMfa
+  description: |+
+    Indicates whether the IDP STS supports MFA.
+
+    >[!NOTE]
+    >We recommend configuring the security setting [federatedIdpMfaBehavior](/graph/api/resources/internaldomainfederation?view=graph-rest-beta#federatedidpmfabehavior-values) to prevent bypassing of Azure MFA. 
+
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Guid" data-throw-if-not-resolved="False" />
+  name: TenantId
+  description: |+
+    Specifies the unique ID of the tenant on which to perform the operation.
+    The default value is the tenant of the current user.
+    This parameter applies only to partner users.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: MSOnline.Set-MsolDomainAuthentication
+name: Set-MsolDomainAuthentication
+description: |-
+  The **Set-MsolDomainAuthentication** cmdlet changes the domain authentication between standard identity and single-sign on.
+  This cmdlet updates only the settings in Azure Active Directory.
+  Typically, the [Convert-MsolDomainToStandard](./Convert-MsolDomainToStandard.yml) or [Convert-MsolDomainToFederated](./Convert-MsolDomainToFederated.yml) cmdlet should be used instead.
+metadata:
+  external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
+  online version: ""
+  schema: 2.0.0
+  ms.assetid: 7428E3E3-B66F-4EBF-9566-B5B2C9BC5DE1
+  ms.reviewer: rodejo
+  ms.custom: iamfeature=PowerShell

@@ -28,7 +28,7 @@ parameters:
 - type: <xref href="String" data-throw-if-not-resolved="False" />
   name: AdministrativeUnitObjectId
   description: |+
-    Specifies the ID of an admininstrative unit.
+    Specifies the ID of an administrative unit.
 
   defaultValue: None
   position: Named

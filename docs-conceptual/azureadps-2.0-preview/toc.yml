@@ -1,3 +1,4 @@
+items:
 - name: Overview
   href: overview.md
   items:
@@ -71,3 +72,5 @@
     href: /powershell/scripting/samples/working-with-files-and-folders
   - name: PowerShellGet module
     href: /powershell/module/powershellget/
+metadata:
+  universal_ref_toc: /powershell/module/active-directory/toc.json

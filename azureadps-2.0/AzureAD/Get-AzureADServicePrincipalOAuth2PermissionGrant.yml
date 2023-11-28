@@ -11,7 +11,7 @@ syntaxes:
 examples:
 - title: 'Example 1: Retrieve the OAuth2 permission grants of a service principal'
   code: |-
-    PS C:\> ServicePrincipalId = (Get-AzureADServicePrincipal -Top 1).ObjectId
+    PS C:\> $ServicePrincipalId = (Get-AzureADServicePrincipal -Top 1).ObjectId
     PS C:\> Get-AzureADServicePrincipalOAuth2PermissionGrant -ObjectId $ServicePrincipalId
   description: |-
     The first command gets the ID of a service principal by using the Get-AzureADServicePrincipal (./Get-AzureADServicePrincipal.md)cmdlet. 

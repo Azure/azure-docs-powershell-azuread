@@ -1,0 +1,70 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Updates the settings in both the Active Directory Federation Services 2.0 server and Microsoft Online.
+module: MSOnline
+notes: ""
+links:
+- text: Get-MSOLFederationProperty
+  href: ./Get-MSOLFederationProperty.yml
+- text: New-MsolFederatedDomain
+  href: ./New-MsolFederatedDomain.yml
+- text: Remove-MsolFederatedDomain
+  href: ./Remove-MsolFederatedDomain.yml
+syntaxes:
+- >-
+  Update-MsolFederatedDomain [-SupportMultipleDomain] -DomainName <String> [-WhatIf] [-Confirm]
+
+   [<CommonParameters>]
+parameters:
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the command.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: DomainName
+  isRequired: true
+  description: |+
+    Specifies the name of the single sign-on domain to update.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: SupportMultipleDomain
+  description: ""
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: MSOnline.Update-MsolFederatedDomain
+name: Update-MsolFederatedDomain
+description: |-
+  The **Update-MsolFederatedDomain** cmdlet changes settings in both the Active Directory Federation Services 2.0 server and Microsoft Online.
+  A single sign-on domain is also known as identity-federated domain.
+
+  It is necessary to run this cmdlet whenever the URLs or certificate information within Active Directory Federation Services 2.0 change due to configuration changes or through regular maintenance of the certificates, such as when a certificate is about to expire.
+  This cmdlet should also be run when changes occur in Microsoft Online.
+  To confirm that the information in the two systems is correct, the [Get-MSOLFederationProperty](./Get-MSOLFederationProperty.yml) cmdlet can be used to retrieve the settings.
+metadata:
+  external help file: Microsoft.Online.Identity.Federation.PowerShell.dll-Help.xml
+  online version: ""
+  schema: 2.0.0
+  ms.assetid: 3433FAB9-DA26-483D-BE3C-406FD0C0F746
+  ms.reviewer: rodejo
+  ms.custom: iamfeature=PowerShell

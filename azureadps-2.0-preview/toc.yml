@@ -1,0 +1,718 @@
+items:
+- name: Reference
+  items:
+  - name: Administrative Units
+    href: AzureAD/index.yml#administrative-units
+    items:
+    - name: Add-AzureADAdministrativeUnitMember
+      uid: AzureADPreview.Add-AzureADAdministrativeUnitMember
+    - name: Add-AzureADMSAdministrativeUnitMember
+      uid: AzureADPreview.Add-AzureADMSAdministrativeUnitMember
+    - name: Add-AzureADMSScopedRoleMembership
+      uid: AzureADPreview.Add-AzureADMSScopedRoleMembership
+    - name: Add-AzureADScopedRoleMembership
+      uid: AzureADPreview.Add-AzureADScopedRoleMembership
+    - name: Get-AzureADAdministrativeUnit
+      uid: AzureADPreview.Get-AzureADAdministrativeUnit
+    - name: Get-AzureADAdministrativeUnitMember
+      uid: AzureADPreview.Get-AzureADAdministrativeUnitMember
+    - name: Get-AzureADMSAdministrativeUnit
+      uid: AzureADPreview.Get-AzureADMSAdministrativeUnit
+    - name: Get-AzureADMSAdministrativeUnitMember
+      uid: AzureADPreview.Get-AzureADMSAdministrativeUnitMember
+    - name: Get-AzureADMSGroupPermissionGrant
+      uid: AzureADPreview.Get-AzureADMSGroupPermissionGrant
+    - name: Get-AzureADMSScopedRoleMembership
+      uid: AzureADPreview.Get-AzureADMSScopedRoleMembership
+    - name: Get-AzureADScopedRoleMembership
+      uid: AzureADPreview.Get-AzureADScopedRoleMembership
+    - name: New-AzureADAdministrativeUnit
+      uid: AzureADPreview.New-AzureADAdministrativeUnit
+    - name: New-AzureADMSAdministrativeUnit
+      uid: AzureADPreview.New-AzureADMSAdministrativeUnit
+    - name: New-AzureADMSAdministrativeUnitMember
+      uid: AzureADPreview.New-AzureADMSAdministrativeUnitMember
+    - name: Remove-AzureADAdministrativeUnit
+      uid: AzureADPreview.Remove-AzureADAdministrativeUnit
+    - name: Remove-AzureADAdministrativeUnitMember
+      uid: AzureADPreview.Remove-AzureADAdministrativeUnitMember
+    - name: Remove-AzureADMSAdministrativeUnit
+      uid: AzureADPreview.Remove-AzureADMSAdministrativeUnit
+    - name: Remove-AzureADMSAdministrativeUnitMember
+      uid: AzureADPreview.Remove-AzureADMSAdministrativeUnitMember
+    - name: Remove-AzureADMSScopedRoleMembership
+      uid: AzureADPreview.Remove-AzureADMSScopedRoleMembership
+    - name: Remove-AzureADScopedRoleMembership
+      uid: AzureADPreview.Remove-AzureADScopedRoleMembership
+    - name: Set-AzureADAdministrativeUnit
+      uid: AzureADPreview.Set-AzureADAdministrativeUnit
+    - name: Set-AzureADMSAdministrativeUnit
+      uid: AzureADPreview.Set-AzureADMSAdministrativeUnit
+  - name: Application
+    href: AzureAD/index.yml#application
+    items:
+    - name: Add-AzureADMSApplicationOwner
+      uid: AzureADPreview.Add-AzureADMSApplicationOwner
+    - name: Get-AzureADMSApplication
+      uid: AzureADPreview.Get-AzureADMSApplication
+    - name: Get-AzureADMSApplicationExtensionProperty
+      uid: AzureADPreview.Get-AzureADMSApplicationExtensionProperty
+    - name: Get-AzureADMSApplicationOwner
+      uid: AzureADPreview.Get-AzureADMSApplicationOwner
+    - name: New-AzureADMSApplication
+      uid: AzureADPreview.New-AzureADMSApplication
+    - name: New-AzureADMSApplicationExtensionProperty
+      uid: AzureADPreview.New-AzureADMSApplicationExtensionProperty
+    - name: New-AzureADMSApplicationKey
+      uid: AzureADPreview.New-AzureADMSApplicationKey
+    - name: New-AzureADMSApplicationPassword
+      uid: AzureADPreview.New-AzureADMSApplicationPassword
+    - name: Remove-AzureADMSApplication
+      uid: AzureADPreview.Remove-AzureADMSApplication
+    - name: Remove-AzureADMSApplicationExtensionProperty
+      uid: AzureADPreview.Remove-AzureADMSApplicationExtensionProperty
+    - name: Remove-AzureADMSApplicationKey
+      uid: AzureADPreview.Remove-AzureADMSApplicationKey
+    - name: Remove-AzureADMSApplicationOwner
+      uid: AzureADPreview.Remove-AzureADMSApplicationOwner
+    - name: Remove-AzureADMSApplicationPassword
+      uid: AzureADPreview.Remove-AzureADMSApplicationPassword
+    - name: Set-AzureADMSApplication
+      uid: AzureADPreview.Set-AzureADMSApplication
+    - name: Set-AzureADMSApplicationLogo
+      uid: AzureADPreview.Set-AzureADMSApplicationLogo
+  - name: Application Proxy Application Management
+    href: AzureAD/index.yml#application-proxy-application-management
+    items:
+    - name: Get-AzureADApplicationProxyApplication
+      uid: AzureADPreview.Get-AzureADApplicationProxyApplication
+    - name: Get-AzureADApplicationProxyApplicationConnectorGroup
+      uid: AzureADPreview.Get-AzureADApplicationProxyApplicationConnectorGroup
+    - name: New-AzureADApplicationProxyApplication
+      uid: AzureADPreview.New-AzureADApplicationProxyApplication
+    - name: Remove-AzureADApplicationProxyApplication
+      uid: AzureADPreview.Remove-AzureADApplicationProxyApplication
+    - name: Remove-AzureADApplicationProxyApplicationConnectorGroup
+      uid: AzureADPreview.Remove-AzureADApplicationProxyApplicationConnectorGroup
+    - name: Set-AzureADApplicationProxyApplication
+      uid: AzureADPreview.Set-AzureADApplicationProxyApplication
+    - name: Set-AzureADApplicationProxyApplicationCustomDomainCertificate
+      uid: AzureADPreview.Set-AzureADApplicationProxyApplicationCustomDomainCertificate
+    - name: Set-AzureADApplicationProxyApplicationSingleSignOn
+      uid: AzureADPreview.Set-AzureADApplicationProxyApplicationSingleSignOn
+  - name: Application Proxy Connector Management
+    href: AzureAD/index.yml#application-proxy-connector-management
+    items:
+    - name: Get-AzureADApplicationProxyConnector
+      uid: AzureADPreview.Get-AzureADApplicationProxyConnector
+    - name: Get-AzureADApplicationProxyConnectorGroup
+      uid: AzureADPreview.Get-AzureADApplicationProxyConnectorGroup
+    - name: Get-AzureADApplicationProxyConnectorGroupMembers
+      uid: AzureADPreview.Get-AzureADApplicationProxyConnectorGroupMembers
+    - name: Get-AzureADApplicationProxyConnectorMemberOf
+      uid: AzureADPreview.Get-AzureADApplicationProxyConnectorMemberOf
+    - name: New-AzureADApplicationProxyConnectorGroup
+      uid: AzureADPreview.New-AzureADApplicationProxyConnectorGroup
+    - name: Remove-AzureADApplicationProxyConnectorGroup
+      uid: AzureADPreview.Remove-AzureADApplicationProxyConnectorGroup
+    - name: Set-AzureADApplicationProxyApplicationConnectorGroup
+      uid: AzureADPreview.Set-AzureADApplicationProxyApplicationConnectorGroup
+    - name: Set-AzureADApplicationProxyConnector
+      uid: AzureADPreview.Set-AzureADApplicationProxyConnector
+    - name: Set-AzureADApplicationProxyConnectorGroup
+      uid: AzureADPreview.Set-AzureADApplicationProxyConnectorGroup
+  - name: Applications
+    href: AzureAD/index.yml#applications
+    items:
+    - name: Add-AzureADApplicationOwner
+      uid: AzureADPreview.Add-AzureADApplicationOwner
+    - name: Add-AzureADApplicationPolicy
+      uid: AzureADPreview.Add-AzureADApplicationPolicy
+    - name: Get-AzureADApplication
+      uid: AzureADPreview.Get-AzureADApplication
+    - name: Get-AzureADApplicationExtensionProperty
+      uid: AzureADPreview.Get-AzureADApplicationExtensionProperty
+    - name: Get-AzureADApplicationKeyCredential
+      uid: AzureADPreview.Get-AzureADApplicationKeyCredential
+    - name: Get-AzureADApplicationLogo
+      uid: AzureADPreview.Get-AzureADApplicationLogo
+    - name: Get-AzureADApplicationOwner
+      uid: AzureADPreview.Get-AzureADApplicationOwner
+    - name: Get-AzureADApplicationPasswordCredential
+      uid: AzureADPreview.Get-AzureADApplicationPasswordCredential
+    - name: Get-AzureADApplicationPolicy
+      uid: AzureADPreview.Get-AzureADApplicationPolicy
+    - name: Get-AzureADApplicationServiceEndpoint
+      uid: AzureADPreview.Get-AzureADApplicationServiceEndpoint
+    - name: Get-AzureADDeletedApplication
+      uid: AzureADPreview.Get-AzureADDeletedApplication
+    - name: New-AzureADApplication
+      uid: AzureADPreview.New-AzureADApplication
+    - name: New-AzureADApplicationExtensionProperty
+      uid: AzureADPreview.New-AzureADApplicationExtensionProperty
+    - name: New-AzureADApplicationKeyCredential
+      uid: AzureADPreview.New-AzureADApplicationKeyCredential
+    - name: New-AzureADApplicationPasswordCredential
+      uid: AzureADPreview.New-AzureADApplicationPasswordCredential
+    - name: Remove-AzureADApplication
+      uid: AzureADPreview.Remove-AzureADApplication
+    - name: Remove-AzureADApplicationExtensionProperty
+      uid: AzureADPreview.Remove-AzureADApplicationExtensionProperty
+    - name: Remove-AzureADApplicationKeyCredential
+      uid: AzureADPreview.Remove-AzureADApplicationKeyCredential
+    - name: Remove-AzureADApplicationOwner
+      uid: AzureADPreview.Remove-AzureADApplicationOwner
+    - name: Remove-AzureADApplicationPasswordCredential
+      uid: AzureADPreview.Remove-AzureADApplicationPasswordCredential
+    - name: Remove-AzureADMSApplicationVerifiedPublisher
+      uid: AzureADPreview.Remove-AzureADMSApplicationVerifiedPublisher
+    - name: Set-AzureADApplication
+      uid: AzureADPreview.Set-AzureADApplication
+    - name: Set-AzureADApplicationLogo
+      uid: AzureADPreview.Set-AzureADApplicationLogo
+    - name: Set-AzureADMSApplicationVerifiedPublisher
+      uid: AzureADPreview.Set-AzureADMSApplicationVerifiedPublisher
+  - name: AzureADPreview
+    href: AzureAD/index.yml#azureadpreview
+    items:
+    - name: Add-AzureADMSServicePrincipalDelegatedPermissionClassification
+      uid: AzureADPreview.Add-AzureADMSServicePrincipalDelegatedPermissionClassification
+    - name: Get-AzureADApplicationSignInDetailedSummary
+      uid: AzureADPreview.Get-AzureADApplicationSignInDetailedSummary
+    - name: Get-AzureADApplicationSignInSummary
+      uid: AzureADPreview.Get-AzureADApplicationSignInSummary
+    - name: Get-AzureADExternalDomainFederation
+      uid: AzureADPreview.Get-AzureADExternalDomainFederation
+    - name: Get-AzureADMSApplicationTemplate
+      uid: AzureADPreview.Get-AzureADMSApplicationTemplate
+    - name: Get-AzureADMSConditionalAccessPolicy
+      uid: AzureADPreview.Get-AzureADMSConditionalAccessPolicy
+    - name: Get-AzureADMSNamedLocationPolicy
+      uid: AzureADPreview.Get-AzureADMSNamedLocationPolicy
+    - name: Get-AzureADMSPasswordSingleSignOnCredential
+      uid: AzureADPreview.Get-AzureADMSPasswordSingleSignOnCredential
+    - name: Get-AzureADMSPermissionGrantConditionSet
+      uid: AzureADPreview.Get-AzureADMSPermissionGrantConditionSet
+    - name: Get-AzureADMSPermissionGrantPolicy
+      uid: AzureADPreview.Get-AzureADMSPermissionGrantPolicy
+    - name: Get-AzureADMSServicePrincipalDelegatedPermissionClassification
+      uid: AzureADPreview.Get-AzureADMSServicePrincipalDelegatedPermissionClassification
+    - name: Get-AzureADPrivilegedRole
+      uid: AzureADPreview.Get-AzureADPrivilegedRole
+    - name: Get-AzureADPrivilegedRoleAssignment
+      uid: AzureADPreview.Get-AzureADPrivilegedRoleAssignment
+    - name: Get-CrossCloudVerificationCode
+      uid: AzureADPreview.Get-CrossCloudVerificationCode
+    - name: New-AzureADExternalDomainFederation
+      uid: AzureADPreview.New-AzureADExternalDomainFederation
+    - name: New-AzureADMSApplicationFromApplicationTemplate
+      uid: AzureADPreview.New-AzureADMSApplicationFromApplicationTemplate
+    - name: New-AzureADMSConditionalAccessPolicy
+      uid: AzureADPreview.New-AzureADMSConditionalAccessPolicy
+    - name: New-AzureADMSNamedLocationPolicy
+      uid: AzureADPreview.New-AzureADMSNamedLocationPolicy
+    - name: New-AzureADMSPasswordSingleSignOnCredential
+      uid: AzureADPreview.New-AzureADMSPasswordSingleSignOnCredential
+    - name: New-AzureADMSPermissionGrantConditionSet
+      uid: AzureADPreview.New-AzureADMSPermissionGrantConditionSet
+    - name: New-AzureADMSPermissionGrantPolicy
+      uid: AzureADPreview.New-AzureADMSPermissionGrantPolicy
+    - name: New-AzureADPrivilegedRoleAssignment
+      uid: AzureADPreview.New-AzureADPrivilegedRoleAssignment
+    - name: Remove-AzureADApplicationPolicy
+      uid: AzureADPreview.Remove-AzureADApplicationPolicy
+    - name: Remove-AzureADDeletedApplication
+      uid: AzureADPreview.Remove-AzureADDeletedApplication
+    - name: Remove-AzureADExternalDomainFederation
+      uid: AzureADPreview.Remove-AzureADExternalDomainFederation
+    - name: Remove-AzureADMSConditionalAccessPolicy
+      uid: AzureADPreview.Remove-AzureADMSConditionalAccessPolicy
+    - name: Remove-AzureADMSNamedLocationPolicy
+      uid: AzureADPreview.Remove-AzureADMSNamedLocationPolicy
+    - name: Remove-AzureADMSPasswordSingleSignOnCredential
+      uid: AzureADPreview.Remove-AzureADMSPasswordSingleSignOnCredential
+    - name: Remove-AzureADMSPermissionGrantConditionSet
+      uid: AzureADPreview.Remove-AzureADMSPermissionGrantConditionSet
+    - name: Remove-AzureADMSPermissionGrantPolicy
+      uid: AzureADPreview.Remove-AzureADMSPermissionGrantPolicy
+    - name: Remove-AzureADMSServicePrincipalDelegatedPermissionClassification
+      uid: AzureADPreview.Remove-AzureADMSServicePrincipalDelegatedPermissionClassification
+    - name: Remove-AzureADServicePrincipalPolicy
+      uid: AzureADPreview.Remove-AzureADServicePrincipalPolicy
+    - name: Set-AzureADMSConditionalAccessPolicy
+      uid: AzureADPreview.Set-AzureADMSConditionalAccessPolicy
+    - name: Set-AzureADMSNamedLocationPolicy
+      uid: AzureADPreview.Set-AzureADMSNamedLocationPolicy
+    - name: Set-AzureADMSPasswordSingleSignOnCredential
+      uid: AzureADPreview.Set-AzureADMSPasswordSingleSignOnCredential
+    - name: Set-AzureADMSPermissionGrantConditionSet
+      uid: AzureADPreview.Set-AzureADMSPermissionGrantConditionSet
+    - name: Set-AzureADMSPermissionGrantPolicy
+      uid: AzureADPreview.Set-AzureADMSPermissionGrantPolicy
+  - name: Certificate Authorities
+    href: AzureAD/index.yml#certificate-authorities
+    items:
+    - name: Get-AzureADTrustedCertificateAuthority
+      uid: AzureADPreview.Get-AzureADTrustedCertificateAuthority
+    - name: New-AzureADTrustedCertificateAuthority
+      uid: AzureADPreview.New-AzureADTrustedCertificateAuthority
+    - name: Remove-AzureADTrustedCertificateAuthority
+      uid: AzureADPreview.Remove-AzureADTrustedCertificateAuthority
+    - name: Set-AzureADTrustedCertificateAuthority
+      uid: AzureADPreview.Set-AzureADTrustedCertificateAuthority
+  - name: Connect to your directory
+    href: AzureAD/index.yml#connect-to-your-directory
+    items:
+    - name: Connect-AzureAD
+      uid: AzureADPreview.Connect-AzureAD
+    - name: Disconnect-AzureAD
+      uid: AzureADPreview.Disconnect-AzureAD
+    - name: Get-AzureADCurrentSessionInfo
+      uid: AzureADPreview.Get-AzureADCurrentSessionInfo
+  - name: Contacts
+    href: AzureAD/index.yml#contacts
+    items:
+    - name: Get-AzureADContact
+      uid: AzureADPreview.Get-AzureADContact
+    - name: Get-AzureADContactDirectReport
+      uid: AzureADPreview.Get-AzureADContactDirectReport
+    - name: Get-AzureADContactManager
+      uid: AzureADPreview.Get-AzureADContactManager
+    - name: Get-AzureADContactMembership
+      uid: AzureADPreview.Get-AzureADContactMembership
+    - name: Get-AzureADContactThumbnailPhoto
+      uid: AzureADPreview.Get-AzureADContactThumbnailPhoto
+    - name: Remove-AzureADContact
+      uid: AzureADPreview.Remove-AzureADContact
+    - name: Remove-AzureADContactManager
+      uid: AzureADPreview.Remove-AzureADContactManager
+    - name: Select-AzureADGroupIdsContactIsMemberOf
+      uid: AzureADPreview.Select-AzureADGroupIdsContactIsMemberOf
+  - name: Contracts
+    href: AzureAD/index.yml#contracts
+    items:
+    - name: Get-AzureADContract
+      uid: AzureADPreview.Get-AzureADContract
+  - name: Custom Security Attributes
+    href: AzureAD/index.yml#custom-security-attributes
+    items:
+    - name: Add-AzureADMScustomSecurityAttributeDefinitionAllowedValues
+      uid: AzureADPreview.Add-AzureADMScustomSecurityAttributeDefinitionAllowedValues
+    - name: Get-AzureADMSAttributeSet
+      uid: AzureADPreview.Get-AzureADMSAttributeSet
+    - name: Get-AzureADMSCustomSecurityAttributeDefinition
+      uid: AzureADPreview.Get-AzureADMSCustomSecurityAttributeDefinition
+    - name: Get-AzureADMSCustomSecurityAttributeDefinitionAllowedValue
+      uid: AzureADPreview.Get-AzureADMSCustomSecurityAttributeDefinitionAllowedValue
+    - name: New-AzureADMSAttributeSet
+      uid: AzureADPreview.New-AzureADMSAttributeSet
+    - name: New-AzureADMSCustomSecurityAttributeDefinition
+      uid: AzureADPreview.New-AzureADMSCustomSecurityAttributeDefinition
+    - name: Set-AzureADMSAttributeSet
+      uid: AzureADPreview.Set-AzureADMSAttributeSet
+    - name: Set-AzureADMSCustomSecurityAttributeDefinition
+      uid: AzureADPreview.Set-AzureADMSCustomSecurityAttributeDefinition
+    - name: Set-AzureADMSCustomSecurityAttributeDefinitionAllowedValue
+      uid: AzureADPreview.Set-AzureADMSCustomSecurityAttributeDefinitionAllowedValue
+  - name: Deleted Objects
+    href: AzureAD/index.yml#deleted-objects
+    items:
+    - name: Get-AzureADMSDeletedDirectoryObject
+      uid: AzureADPreview.Get-AzureADMSDeletedDirectoryObject
+    - name: Get-AzureADMSDeletedGroup
+      uid: AzureADPreview.Get-AzureADMSDeletedGroup
+    - name: Remove-AzureADMSDeletedDirectoryObject
+      uid: AzureADPreview.Remove-AzureADMSDeletedDirectoryObject
+    - name: Restore-AzureADDeletedApplication
+      uid: AzureADPreview.Restore-AzureADDeletedApplication
+    - name: Restore-AzureADMSDeletedDirectoryObject
+      uid: AzureADPreview.Restore-AzureADMSDeletedDirectoryObject
+  - name: Devices
+    href: AzureAD/index.yml#devices
+    items:
+    - name: Add-AzureADDeviceRegisteredOwner
+      uid: AzureADPreview.Add-AzureADDeviceRegisteredOwner
+    - name: Add-AzureADDeviceRegisteredUser
+      uid: AzureADPreview.Add-AzureADDeviceRegisteredUser
+    - name: Get-AzureADDevice
+      uid: AzureADPreview.Get-AzureADDevice
+    - name: Get-AzureADDeviceConfiguration
+      uid: AzureADPreview.Get-AzureADDeviceConfiguration
+    - name: Get-AzureADDeviceRegisteredOwner
+      uid: AzureADPreview.Get-AzureADDeviceRegisteredOwner
+    - name: Get-AzureADDeviceRegisteredUser
+      uid: AzureADPreview.Get-AzureADDeviceRegisteredUser
+    - name: New-AzureADDevice
+      uid: AzureADPreview.New-AzureADDevice
+    - name: Remove-AzureADDevice
+      uid: AzureADPreview.Remove-AzureADDevice
+    - name: Remove-AzureADDeviceRegisteredOwner
+      uid: AzureADPreview.Remove-AzureADDeviceRegisteredOwner
+    - name: Remove-AzureADDeviceRegisteredUser
+      uid: AzureADPreview.Remove-AzureADDeviceRegisteredUser
+    - name: Set-AzureADDevice
+      uid: AzureADPreview.Set-AzureADDevice
+  - name: Directory
+    href: AzureAD/index.yml#directory
+    items:
+    - name: Get-AzureADSubscribedSku
+      uid: AzureADPreview.Get-AzureADSubscribedSku
+    - name: Get-AzureADTenantDetail
+      uid: AzureADPreview.Get-AzureADTenantDetail
+    - name: Set-AzureADTenantDetail
+      uid: AzureADPreview.Set-AzureADTenantDetail
+  - name: Directory Auditing
+    href: AzureAD/index.yml#directory-auditing
+    items:
+    - name: Get-AzureADAuditDirectoryLogs
+      uid: AzureADPreview.Get-AzureADAuditDirectoryLogs
+    - name: Get-AzureADAuditSignInLogs
+      uid: AzureADPreview.Get-AzureADAuditSignInLogs
+  - name: Directory Objects
+    href: AzureAD/index.yml#directory-objects
+    items:
+    - name: Get-AzureADObjectByObjectId
+      uid: AzureADPreview.Get-AzureADObjectByObjectId
+  - name: Directory Roles
+    href: AzureAD/index.yml#directory-roles
+    items:
+    - name: Add-AzureADDirectoryRoleMember
+      uid: AzureADPreview.Add-AzureADDirectoryRoleMember
+    - name: Enable-AzureADDirectoryRole
+      uid: AzureADPreview.Enable-AzureADDirectoryRole
+    - name: Get-AzureADDirectoryRole
+      uid: AzureADPreview.Get-AzureADDirectoryRole
+    - name: Get-AzureADDirectoryRoleMember
+      uid: AzureADPreview.Get-AzureADDirectoryRoleMember
+    - name: Get-AzureADDirectoryRoleTemplate
+      uid: AzureADPreview.Get-AzureADDirectoryRoleTemplate
+    - name: Remove-AzureADDirectoryRoleMember
+      uid: AzureADPreview.Remove-AzureADDirectoryRoleMember
+  - name: Directory Settings
+    href: AzureAD/index.yml#directory-settings
+    items:
+    - name: Get-AzureADDirectorySetting
+      uid: AzureADPreview.Get-AzureADDirectorySetting
+    - name: Get-AzureADDirectorySettingTemplate
+      uid: AzureADPreview.Get-AzureADDirectorySettingTemplate
+    - name: New-AzureADDirectorySetting
+      uid: AzureADPreview.New-AzureADDirectorySetting
+    - name: Remove-AzureADDirectorySetting
+      uid: AzureADPreview.Remove-AzureADDirectorySetting
+    - name: Set-AzureADDirectorySetting
+      uid: AzureADPreview.Set-AzureADDirectorySetting
+  - name: Domains
+    href: AzureAD/index.yml#domains
+    items:
+    - name: Confirm-AzureADDomain
+      uid: AzureADPreview.Confirm-AzureADDomain
+    - name: Get-AzureADDomain
+      uid: AzureADPreview.Get-AzureADDomain
+    - name: Get-AzureADDomainNameReference
+      uid: AzureADPreview.Get-AzureADDomainNameReference
+    - name: Get-AzureADDomainServiceConfigurationRecord
+      uid: AzureADPreview.Get-AzureADDomainServiceConfigurationRecord
+    - name: Get-AzureADDomainVerificationDnsRecord
+      uid: AzureADPreview.Get-AzureADDomainVerificationDnsRecord
+    - name: New-AzureADDomain
+      uid: AzureADPreview.New-AzureADDomain
+    - name: Remove-AzureADDomain
+      uid: AzureADPreview.Remove-AzureADDomain
+    - name: Set-AzureADDomain
+      uid: AzureADPreview.Set-AzureADDomain
+  - name: Extension Properties
+    href: AzureAD/index.yml#extension-properties
+    items:
+    - name: Get-AzureADExtensionProperty
+      uid: AzureADPreview.Get-AzureADExtensionProperty
+  - name: Groups
+    href: AzureAD/index.yml#groups
+    items:
+    - name: Add-AzureADGroupMember
+      uid: AzureADPreview.Add-AzureADGroupMember
+    - name: Add-AzureADGroupOwner
+      uid: AzureADPreview.Add-AzureADGroupOwner
+    - name: Add-AzureADMSLifecyclePolicyGroup
+      uid: AzureADPreview.Add-AzureADMSLifecyclePolicyGroup
+    - name: Get-AzureADGroup
+      uid: AzureADPreview.Get-AzureADGroup
+    - name: Get-AzureADGroupAppRoleAssignment
+      uid: AzureADPreview.Get-AzureADGroupAppRoleAssignment
+    - name: Get-AzureADGroupMember
+      uid: AzureADPreview.Get-AzureADGroupMember
+    - name: Get-AzureADGroupOwner
+      uid: AzureADPreview.Get-AzureADGroupOwner
+    - name: Get-AzureADMSGroup
+      uid: AzureADPreview.Get-AzureADMSGroup
+    - name: Get-AzureADMSGroupLifecyclePolicy
+      uid: AzureADPreview.Get-AzureADMSGroupLifecyclePolicy
+    - name: Get-AzureADMSLifecyclePolicyGroup
+      uid: AzureADPreview.Get-AzureADMSLifecyclePolicyGroup
+    - name: New-AzureADGroup
+      uid: AzureADPreview.New-AzureADGroup
+    - name: New-AzureADGroupAppRoleAssignment
+      uid: AzureADPreview.New-AzureADGroupAppRoleAssignment
+    - name: New-AzureADMSGroup
+      uid: AzureADPreview.New-AzureADMSGroup
+    - name: New-AzureADMSGroupLifecyclePolicy
+      uid: AzureADPreview.New-AzureADMSGroupLifecyclePolicy
+    - name: Remove-AzureADGroup
+      uid: AzureADPreview.Remove-AzureADGroup
+    - name: Remove-AzureADGroupAppRoleAssignment
+      uid: AzureADPreview.Remove-AzureADGroupAppRoleAssignment
+    - name: Remove-AzureADGroupMember
+      uid: AzureADPreview.Remove-AzureADGroupMember
+    - name: Remove-AzureADGroupOwner
+      uid: AzureADPreview.Remove-AzureADGroupOwner
+    - name: Remove-AzureADMSGroup
+      uid: AzureADPreview.Remove-AzureADMSGroup
+    - name: Remove-AzureADMSGroupLifecyclePolicy
+      uid: AzureADPreview.Remove-AzureADMSGroupLifecyclePolicy
+    - name: Remove-AzureADMSLifecyclePolicyGroup
+      uid: AzureADPreview.Remove-AzureADMSLifecyclePolicyGroup
+    - name: Reset-AzureADMSLifeCycleGroup
+      uid: AzureADPreview.Reset-AzureADMSLifeCycleGroup
+    - name: Select-AzureADGroupIdsGroupIsMemberOf
+      uid: AzureADPreview.Select-AzureADGroupIdsGroupIsMemberOf
+    - name: Set-AzureADGroup
+      uid: AzureADPreview.Set-AzureADGroup
+    - name: Set-AzureADMSGroup
+      uid: AzureADPreview.Set-AzureADMSGroup
+    - name: Set-AzureADMSGroupLifecyclePolicy
+      uid: AzureADPreview.Set-AzureADMSGroupLifecyclePolicy
+  - name: Identity Provider Management
+    href: AzureAD/index.yml#identity-provider-management
+    items:
+    - name: Get-AzureADMSIdentityProvider
+      uid: AzureADPreview.Get-AzureADMSIdentityProvider
+    - name: New-AzureADMSIdentityProvider
+      uid: AzureADPreview.New-AzureADMSIdentityProvider
+    - name: Remove-AzureADMSIdentityProvider
+      uid: AzureADPreview.Remove-AzureADMSIdentityProvider
+    - name: Set-AzureADMSIdentityProvider
+      uid: AzureADPreview.Set-AzureADMSIdentityProvider
+  - name: OAuth2
+    href: AzureAD/index.yml#oauth2
+    items:
+    - name: Get-AzureADOAuth2PermissionGrant
+      uid: AzureADPreview.Get-AzureADOAuth2PermissionGrant
+    - name: Remove-AzureADOAuth2PermissionGrant
+      uid: AzureADPreview.Remove-AzureADOAuth2PermissionGrant
+  - name: Object Settings
+    href: AzureAD/index.yml#object-settings
+    items:
+    - name: Get-AzureADObjectSetting
+      uid: AzureADPreview.Get-AzureADObjectSetting
+    - name: New-AzureADObjectSetting
+      uid: AzureADPreview.New-AzureADObjectSetting
+    - name: Remove-AzureADObjectSetting
+      uid: AzureADPreview.Remove-AzureADObjectSetting
+    - name: Set-AzureADObjectSetting
+      uid: AzureADPreview.Set-AzureADObjectSetting
+  - name: Policies
+    href: AzureAD/index.yml#policies
+    items:
+    - name: Get-AzureADMSAuthorizationPolicy
+      uid: AzureADPreview.Get-AzureADMSAuthorizationPolicy
+    - name: Get-AzureADPolicy
+      uid: AzureADPreview.Get-AzureADPolicy
+    - name: Get-AzureADPolicyAppliedObject
+      uid: AzureADPreview.Get-AzureADPolicyAppliedObject
+    - name: New-AzureADPolicy
+      uid: AzureADPreview.New-AzureADPolicy
+    - name: Remove-AzureADPolicy
+      uid: AzureADPreview.Remove-AzureADPolicy
+    - name: Set-AzureADMSAuthorizationPolicy
+      uid: AzureADPreview.Set-AzureADMSAuthorizationPolicy
+    - name: Set-AzureADPolicy
+      uid: AzureADPreview.Set-AzureADPolicy
+  - name: Privileged Role Management
+    href: AzureAD/index.yml#privileged-role-management
+    items:
+    - name: Add-AzureADMSPrivilegedResource
+      uid: AzureADPreview.Add-AzureADMSPrivilegedResource
+    - name: Close-AzureADMSPrivilegedRoleAssignmentRequest
+      uid: AzureADPreview.Close-AzureADMSPrivilegedRoleAssignmentRequest
+    - name: Get-AzureADMSPrivilegedResource
+      uid: AzureADPreview.Get-AzureADMSPrivilegedResource
+    - name: Get-AzureADMSPrivilegedRoleAssignment
+      uid: AzureADPreview.Get-AzureADMSPrivilegedRoleAssignment
+    - name: Get-AzureADMSPrivilegedRoleAssignmentRequest
+      uid: AzureADPreview.Get-AzureADMSPrivilegedRoleAssignmentRequest
+    - name: Get-AzureADMSPrivilegedRoleDefinition
+      uid: AzureADPreview.Get-AzureADMSPrivilegedRoleDefinition
+    - name: Get-AzureADMSPrivilegedRoleSetting
+      uid: AzureADPreview.Get-AzureADMSPrivilegedRoleSetting
+    - name: Open-AzureADMSPrivilegedRoleAssignmentRequest
+      uid: AzureADPreview.Open-AzureADMSPrivilegedRoleAssignmentRequest
+    - name: Set-AzureADMSPrivilegedRoleAssignmentRequest
+      uid: AzureADPreview.Set-AzureADMSPrivilegedRoleAssignmentRequest
+    - name: Set-AzureADMSPrivilegedRoleSetting
+      uid: AzureADPreview.Set-AzureADMSPrivilegedRoleSetting
+  - name: Role Management
+    href: AzureAD/index.yml#role-management
+    items:
+    - name: Get-AzureADMSRoleAssignment
+      uid: AzureADPreview.Get-AzureADMSRoleAssignment
+    - name: Get-AzureADMSRoleDefinition
+      uid: AzureADPreview.Get-AzureADMSRoleDefinition
+    - name: New-AzureADMSRoleAssignment
+      uid: AzureADPreview.New-AzureADMSRoleAssignment
+    - name: New-AzureADMSRoleDefinition
+      uid: AzureADPreview.New-AzureADMSRoleDefinition
+    - name: Remove-AzureADMSRoleAssignment
+      uid: AzureADPreview.Remove-AzureADMSRoleAssignment
+    - name: Remove-AzureADMSRoleDefinition
+      uid: AzureADPreview.Remove-AzureADMSRoleDefinition
+    - name: Set-AzureADMSRoleDefinition
+      uid: AzureADPreview.Set-AzureADMSRoleDefinition
+  - name: Service Principals
+    href: AzureAD/index.yml#service-principals
+    items:
+    - name: Add-AzureADServicePrincipalOwner
+      uid: AzureADPreview.Add-AzureADServicePrincipalOwner
+    - name: Add-AzureADServicePrincipalPolicy
+      uid: AzureADPreview.Add-AzureADServicePrincipalPolicy
+    - name: Get-AzureADMSServicePrincipal
+      uid: AzureADPreview.Get-AzureADMSServicePrincipal
+    - name: Get-AzureADServiceAppRoleAssignedTo
+      uid: AzureADPreview.Get-AzureADServiceAppRoleAssignedTo
+    - name: Get-AzureADServiceAppRoleAssignment
+      uid: AzureADPreview.Get-AzureADServiceAppRoleAssignment
+    - name: Get-AzureADServicePrincipal
+      uid: AzureADPreview.Get-AzureADServicePrincipal
+    - name: Get-AzureADServicePrincipalCreatedObject
+      uid: AzureADPreview.Get-AzureADServicePrincipalCreatedObject
+    - name: Get-AzureADServicePrincipalKeyCredential
+      uid: AzureADPreview.Get-AzureADServicePrincipalKeyCredential
+    - name: Get-AzureADServicePrincipalMembership
+      uid: AzureADPreview.Get-AzureADServicePrincipalMembership
+    - name: Get-AzureADServicePrincipalOAuth2PermissionGrant
+      uid: AzureADPreview.Get-AzureADServicePrincipalOAuth2PermissionGrant
+    - name: Get-AzureADServicePrincipalOwnedObject
+      uid: AzureADPreview.Get-AzureADServicePrincipalOwnedObject
+    - name: Get-AzureADServicePrincipalOwner
+      uid: AzureADPreview.Get-AzureADServicePrincipalOwner
+    - name: Get-AzureADServicePrincipalPasswordCredential
+      uid: AzureADPreview.Get-AzureADServicePrincipalPasswordCredential
+    - name: Get-AzureADServicePrincipalPolicy
+      uid: AzureADPreview.Get-AzureADServicePrincipalPolicy
+    - name: New-AzureADServiceAppRoleAssignment
+      uid: AzureADPreview.New-AzureADServiceAppRoleAssignment
+    - name: New-AzureADServicePrincipal
+      uid: AzureADPreview.New-AzureADServicePrincipal
+    - name: New-AzureADServicePrincipalKeyCredential
+      uid: AzureADPreview.New-AzureADServicePrincipalKeyCredential
+    - name: New-AzureADServicePrincipalPasswordCredential
+      uid: AzureADPreview.New-AzureADServicePrincipalPasswordCredential
+    - name: Remove-AzureADServiceAppRoleAssignment
+      uid: AzureADPreview.Remove-AzureADServiceAppRoleAssignment
+    - name: Remove-AzureADServicePrincipal
+      uid: AzureADPreview.Remove-AzureADServicePrincipal
+    - name: Remove-AzureADServicePrincipalKeyCredential
+      uid: AzureADPreview.Remove-AzureADServicePrincipalKeyCredential
+    - name: Remove-AzureADServicePrincipalOwner
+      uid: AzureADPreview.Remove-AzureADServicePrincipalOwner
+    - name: Remove-AzureADServicePrincipalPasswordCredential
+      uid: AzureADPreview.Remove-AzureADServicePrincipalPasswordCredential
+    - name: Select-AzureADGroupIdsServicePrincipalIsMemberOf
+      uid: AzureADPreview.Select-AzureADGroupIdsServicePrincipalIsMemberOf
+    - name: Set-AzureADMSServicePrincipal
+      uid: AzureADPreview.Set-AzureADMSServicePrincipal
+    - name: Set-AzureADServicePrincipal
+      uid: AzureADPreview.Set-AzureADServicePrincipal
+  - name: Staged Rollout
+    href: AzureAD/index.yml#staged-rollout
+    items:
+    - name: Add-AzureADMSFeatureRolloutPolicyDirectoryObject
+      uid: AzureADPreview.Add-AzureADMSFeatureRolloutPolicyDirectoryObject
+    - name: Get-AzureADMSFeatureRolloutPolicy
+      uid: AzureADPreview.Get-AzureADMSFeatureRolloutPolicy
+    - name: New-AzureADMSFeatureRolloutPolicy
+      uid: AzureADPreview.New-AzureADMSFeatureRolloutPolicy
+    - name: Remove-AzureADMSFeatureRolloutPolicy
+      uid: AzureADPreview.Remove-AzureADMSFeatureRolloutPolicy
+    - name: Remove-AzureADMSFeatureRolloutPolicyDirectoryObject
+      uid: AzureADPreview.Remove-AzureADMSFeatureRolloutPolicyDirectoryObject
+    - name: Set-AzureADMSFeatureRolloutPolicy
+      uid: AzureADPreview.Set-AzureADMSFeatureRolloutPolicy
+  - name: Trust Framework Policy Management
+    href: AzureAD/index.yml#trust-framework-policy-management
+    items:
+    - name: Get-AzureADMSTrustFrameworkPolicy
+      uid: AzureADPreview.Get-AzureADMSTrustFrameworkPolicy
+    - name: New-AzureADMSTrustFrameworkPolicy
+      uid: AzureADPreview.New-AzureADMSTrustFrameworkPolicy
+    - name: Remove-AzureADMSTrustFrameworkPolicy
+      uid: AzureADPreview.Remove-AzureADMSTrustFrameworkPolicy
+    - name: Set-AzureADMSTrustFrameworkPolicy
+      uid: AzureADPreview.Set-AzureADMSTrustFrameworkPolicy
+  - name: Users
+    href: AzureAD/index.yml#users
+    items:
+    - name: Get-AzureADMSUser
+      uid: AzureADPreview.Get-AzureADMSUser
+    - name: Get-AzureADUser
+      uid: AzureADPreview.Get-AzureADUser
+    - name: Get-AzureADUserAppRoleAssignment
+      uid: AzureADPreview.Get-AzureADUserAppRoleAssignment
+    - name: Get-AzureADUserCreatedObject
+      uid: AzureADPreview.Get-AzureADUserCreatedObject
+    - name: Get-AzureADUserDirectReport
+      uid: AzureADPreview.Get-AzureADUserDirectReport
+    - name: Get-AzureADUserExtension
+      uid: AzureADPreview.Get-AzureADUserExtension
+    - name: Get-AzureADUserLicenseDetail
+      uid: AzureADPreview.Get-AzureADUserLicenseDetail
+    - name: Get-AzureADUserManager
+      uid: AzureADPreview.Get-AzureADUserManager
+    - name: Get-AzureADUserMembership
+      uid: AzureADPreview.Get-AzureADUserMembership
+    - name: Get-AzureADUserOAuth2PermissionGrant
+      uid: AzureADPreview.Get-AzureADUserOAuth2PermissionGrant
+    - name: Get-AzureADUserOwnedDevice
+      uid: AzureADPreview.Get-AzureADUserOwnedDevice
+    - name: Get-AzureADUserOwnedObject
+      uid: AzureADPreview.Get-AzureADUserOwnedObject
+    - name: Get-AzureADUserRegisteredDevice
+      uid: AzureADPreview.Get-AzureADUserRegisteredDevice
+    - name: Get-AzureADUserThumbnailPhoto
+      uid: AzureADPreview.Get-AzureADUserThumbnailPhoto
+    - name: New-AzureADMSInvitation
+      uid: AzureADPreview.New-AzureADMSInvitation
+    - name: New-AzureADUser
+      uid: AzureADPreview.New-AzureADUser
+    - name: New-AzureADUserAppRoleAssignment
+      uid: AzureADPreview.New-AzureADUserAppRoleAssignment
+    - name: Remove-AzureADUser
+      uid: AzureADPreview.Remove-AzureADUser
+    - name: Remove-AzureADUserAppRoleAssignment
+      uid: AzureADPreview.Remove-AzureADUserAppRoleAssignment
+    - name: Remove-AzureADUserExtension
+      uid: AzureADPreview.Remove-AzureADUserExtension
+    - name: Remove-AzureADUserManager
+      uid: AzureADPreview.Remove-AzureADUserManager
+    - name: Revoke-AzureADSignedInUserAllRefreshToken
+      uid: AzureADPreview.Revoke-AzureADSignedInUserAllRefreshToken
+    - name: Revoke-AzureADUserAllRefreshToken
+      uid: AzureADPreview.Revoke-AzureADUserAllRefreshToken
+    - name: Select-AzureADGroupIdsUserIsMemberOf
+      uid: AzureADPreview.Select-AzureADGroupIdsUserIsMemberOf
+    - name: Set-AzureADMSUser
+      uid: AzureADPreview.Set-AzureADMSUser
+    - name: Set-AzureADUser
+      uid: AzureADPreview.Set-AzureADUser
+    - name: Set-AzureADUserExtension
+      uid: AzureADPreview.Set-AzureADUserExtension
+    - name: Set-AzureADUserLicense
+      uid: AzureADPreview.Set-AzureADUserLicense
+    - name: Set-AzureADUserManager
+      uid: AzureADPreview.Set-AzureADUserManager
+    - name: Set-AzureADUserPassword
+      uid: AzureADPreview.Set-AzureADUserPassword
+    - name: Set-AzureADUserThumbnailPhoto
+      uid: AzureADPreview.Set-AzureADUserThumbnailPhoto
+    - name: Update-AzureADSignedInUserPassword
+      uid: AzureADPreview.Update-AzureADSignedInUserPassword
+metadata:
+  universal_conceptual_toc: /powershell/azure/active-directory/toc.json

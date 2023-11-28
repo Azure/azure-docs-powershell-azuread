@@ -4,16 +4,7 @@ summary: |-
 module: AzureAD
 notes: ""
 links:
-- text: >-
-    Get-AzureADGroupAppRoleAssignment]()
-
-
-
-    [Remove-AzureADGroupAppRoleAssignment]()
-
-
-
-    [Managing applications in Azure Active Directory using PowerShell
+- text: Managing applications in Azure Active Directory using PowerShell
   href: https://channel9.msdn.com/Series/Azure-Active-Directory-Videos-Demos/ManageAppsAzureADPowerShell
 syntaxes:
 - >-

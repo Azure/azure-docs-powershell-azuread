@@ -15,12 +15,27 @@ examples:
     0a1068c0-dbb6-4537-9db3-b48f3e31dd76 User
   description: ""
   summary: ""
+- title: 'Example 2: Get all members within a group by group ID'
+  code: |-
+    PS C:\> Get-AzureADGroupMember -ObjectId "12431118-5c12-6653-h82e-1ee8d9217682" -All $true
+
+    ObjectId                             ObjectType
+    --------                             ----------
+    0a1068c0-dbb6-4537-9db3-b48f3e31dd76 User
+    0a1068c0-dbb6-4537-9db3-b48f3e31dd76 User
+    0a1068c0-dbb6-4537-9db3-b48f3e31dd76 Group
+  description: ""
+  summary: ""
 parameters:
 - type: <xref href="Boolean" data-throw-if-not-resolved="False" />
   name: All
   description: |+
-    If true, return all group members.
-    If false, return the number of objects specified by the Top parameter
+    If true:
+    	Return all group members.
+    	
+    If false: 
+    	Return the number of objects specified by the Top parameter. 
+    	If the top parameter is not specified, return the first 100 group members.
 
   defaultValue: None
   pipelineInput: true

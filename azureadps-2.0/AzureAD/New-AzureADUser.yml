@@ -1,8 +1,7 @@
 ### YamlMime:PowershellCmdlet
 summary: |-
-  Creates an AD user.
+  Creates an Azure AD user.
 module: AzureAD
-notes: ""
 syntaxes:
 - >-
   New-AzureADUser [-ExtensionProperty <System.Collections.Generic.Dictionary`2[System.String,System.String]>]
@@ -31,6 +30,8 @@ syntaxes:
 examples:
 - title: 'Example 1: Create a user'
   code: |-
+    $PasswordProfile = New-Object -TypeName Microsoft.Open.AzureAD.Model.PasswordProfile
+    $PasswordProfile.Password = "<Password>"
     New-AzureADUser -DisplayName "New User" -PasswordProfile $PasswordProfile -UserPrincipalName "NewUser@contoso.com" -AccountEnabled $true -MailNickName "Newuser"
 
     ObjectId                             DisplayName UserPrincipalName               UserType
@@ -53,7 +54,7 @@ parameters:
 - type: <xref href="String" data-throw-if-not-resolved="False" />
   name: AgeGroup
   description: |+
-    {{ Fill AgeGroup Description }}
+    This specifies the user's age group.
 
   defaultValue: None
   position: Named
@@ -71,7 +72,7 @@ parameters:
 - type: <xref href="String" data-throw-if-not-resolved="False" />
   name: CompanyName
   description: |+
-    {{ Fill CompanyName Description }}
+    This specifies the user's company name.
 
   defaultValue: None
   position: Named
@@ -79,9 +80,7 @@ parameters:
   parameterValueGroup: ""
 - type: <xref href="String" data-throw-if-not-resolved="False" />
   name: ConsentProvidedForMinor
-  description: |+
-    {{ Fill ConsentProvidedForMinor Description }}
-
+  description: ""
   defaultValue: None
   position: Named
   aliases: ""
@@ -99,9 +98,10 @@ parameters:
   name: CreationType
   description: |+
     Indicates whether the user account is a local account for an Azure Active Directory B2C tenant.
-    Possible values are "LocalAccount" and null.
-    When creating a local account, the property is required and you must set it to "LocalAccount".
-    When creating a work or school account, do not specify the property or set it to null.
+
+    Possible values are `LocalAccount` and `null`.
+    When creating a local account, the property is required and you must set it to `LocalAccount`.
+    When creating a work or school account, do not specify the property or set it to `null`.
 
   defaultValue: None
   position: Named
@@ -128,9 +128,7 @@ parameters:
   parameterValueGroup: ""
 - type: <xref href="System.Collections.Generic.Dictionary`2" data-throw-if-not-resolved="False" /><span>[</span><xref href="System.String,System.String" data-throw-if-not-resolved="False" /><span>]</span>
   name: ExtensionProperty
-  description: |+
-    @{Text=}
-
+  description: ""
   defaultValue: None
   position: Named
   aliases: ""
@@ -138,7 +136,7 @@ parameters:
 - type: <xref href="String" data-throw-if-not-resolved="False" />
   name: FacsimileTelephoneNumber
   description: |+
-    {{Fill FacsimileTelephoneNumber Description}}
+    This specifies the user's telephone number.
 
   defaultValue: None
   position: Named
@@ -159,7 +157,7 @@ parameters:
     This property is used to associate an on-premises Active Directory user account to their Azure AD user object.
     This property must be specified when creating a new user account in the Graph if you are using a federated domain for the user's userPrincipalName (UPN) property.
 
-    Important: The $ and _ characters cannot be used when specifying this property.
+    Important: The `$` and `_` characters cannot be used when specifying this property.
 
   defaultValue: None
   position: Named
@@ -204,7 +202,7 @@ parameters:
 - type: <xref href="System.Collections.Generic.List`1" data-throw-if-not-resolved="False" /><span>[</span><xref href="System.String" data-throw-if-not-resolved="False" /><span>]</span>
   name: OtherMails
   description: |+
-    A list of additional email addresses for the user; for example: "bob@contoso.com", "Robert@fabrikam.com".
+    A list of additional email addresses for the user. For example, `bob@contoso.com`, `Robert@fabrikam.com`.
 
   defaultValue: None
   position: Named
@@ -214,8 +212,9 @@ parameters:
   name: PasswordPolicies
   description: |+
     Specifies password policies for the user.
-    This value is an enumeration with one possible value being "DisableStrongPassword", which allows weaker passwords than the default policy to be specified.
-    "DisablePasswordExpiration" can also be specified.
+
+    This value is an enumeration with one possible value being `DisableStrongPassword`, which allows weaker passwords than the default policy to be specified.
+    `DisablePasswordExpiration` can also be specified.
     The two may be specified together; for example: "DisablePasswordExpiration, DisableStrongPassword".
 
   defaultValue: None
@@ -227,22 +226,25 @@ parameters:
   isRequired: true
   description: |+
     Specifies the user's password profile.
-    Note that the parameter type for this parameter is "PasswordProfile".
-    in order to pass a parameter of this type, you first need to create a vairable in PowerShell with that type:
+    Note that the parameter type for this parameter is `PasswordProfile`.
+    In order to pass a parameter of this type, you first need to;
 
-    $PasswordProfile = New-Object -TypeName Microsoft.Open.AzureAD.Model.PasswordProfile
+    1. create a variable in PowerShell with that type:
 
-    Then you can proceed to set the value of the password in this variable:
+    `$PasswordProfile = New-Object -TypeName Microsoft.Open.AzureAD.Model.PasswordProfile`
 
-    $PasswordProfile.Password = "\<Password\>"
+    1. Set the value of the password in this variable:
 
-    And finally you can pass this variable to the cmdlet:
+    `$PasswordProfile.Password = "\<Password\>"`
 
-    New-AzureADUser -PasswordProfile $PasswordProfile ...
+    1. Finally pass this variable to the cmdlet:
 
-    Other attributes that can be set in the PasswordProfile are
+    `New-AzureADUser -PasswordProfile $PasswordProfile ...`
 
-    $PasswordProfile.EnforceChangePasswordPolicy - a boolean indicating that the change password policy is enababled or disabled for this user $PasswordProfile.ForceChangePasswordNextLogin - a boolean indicating that the user must change the password at the next sign in
+    Other attributes that can be set in the PasswordProfile are:
+
+    - `$PasswordProfile.EnforceChangePasswordPolicy` - a boolean indicating that the change password policy is enabled or disabled for this user.
+    - `$PasswordProfile.ForceChangePasswordNextLogin` - a boolean indicating that the user must change the password at the next sign in.
 
   defaultValue: None
   position: Named
@@ -288,8 +290,9 @@ parameters:
   name: SignInNames
   description: |+
     Specifies the collection of sign-in names for a local account in an Azure Active Directory B2C tenant.
+
     Each sign-in name must be unique across the company/tenant.
-    The property must be specified when you create a local account user; do not specify it when you create a work or school account.
+    The property must be specified when you create a local account user. Do not specify it when you create a work or school account.
 
   defaultValue: None
   position: Named
@@ -335,8 +338,9 @@ parameters:
   name: UsageLocation
   description: |+
     A two letter country or region code (ISO standard 3166).
-    Required for users that will be assigned licenses due to legal requirement to check for availability of services in countries and regions.
-    Examples include: "US", "JP", and "GB".
+
+    It's required for users that will be assigned licenses due to legal requirements to check for availability of services in countries and regions.
+    Examples include: `US`, `JP`, and `GB`.
 
   defaultValue: None
   position: Named
@@ -345,10 +349,12 @@ parameters:
 - type: <xref href="String" data-throw-if-not-resolved="False" />
   name: UserPrincipalName
   description: |+
-    The user principal name (UPN) of the user.
+    Specifies the user's principal name (UPN).
+
     The UPN is an Internet-style login name for the user based on the Internet standard RFC 822.
     By convention, this should map to the user's email name.
-    The general format is "alias@domain".
+    The general format is `alias@domain`.
+
     For work or school accounts, the domain must be present in the tenant's collection of verified domains.
     This property is required when a work or school account is created; it is optional for local accounts.
 
@@ -358,18 +364,14 @@ parameters:
   parameterValueGroup: ""
 - type: <xref href="String" data-throw-if-not-resolved="False" />
   name: UserState
-  description: |+
-    {{ Fill UserState Description }}
-
+  description: ""
   defaultValue: None
   position: Named
   aliases: ""
   parameterValueGroup: ""
 - type: <xref href="String" data-throw-if-not-resolved="False" />
   name: UserStateChangedOn
-  description: |+
-    {{ Fill UserStateChangedOn Description }}
-
+  description: ""
   defaultValue: None
   position: Named
   aliases: ""
@@ -386,7 +388,7 @@ parameters:
 uid: AzureAD.New-AzureADUser
 name: New-AzureADUser
 description: |-
-  The New-AzureADUser cmdlet creates a user in Azure Active Directory (AD).
+  The New-AzureADUser cmdlet creates a user in Azure Active Directory (Azure AD).
 metadata:
   external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
   Module Name: AzureAD

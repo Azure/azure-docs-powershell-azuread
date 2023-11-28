@@ -3,15 +3,27 @@ children:
 - title: Administrative Units
   cmdlets:
   - AzureADPreview.Add-AzureADAdministrativeUnitMember
+  - AzureADPreview.Add-AzureADMSAdministrativeUnitMember
+  - AzureADPreview.Add-AzureADMSScopedRoleMembership
   - AzureADPreview.Add-AzureADScopedRoleMembership
   - AzureADPreview.Get-AzureADAdministrativeUnit
   - AzureADPreview.Get-AzureADAdministrativeUnitMember
+  - AzureADPreview.Get-AzureADMSAdministrativeUnit
+  - AzureADPreview.Get-AzureADMSAdministrativeUnitMember
+  - AzureADPreview.Get-AzureADMSGroupPermissionGrant
+  - AzureADPreview.Get-AzureADMSScopedRoleMembership
   - AzureADPreview.Get-AzureADScopedRoleMembership
   - AzureADPreview.New-AzureADAdministrativeUnit
+  - AzureADPreview.New-AzureADMSAdministrativeUnit
+  - AzureADPreview.New-AzureADMSAdministrativeUnitMember
   - AzureADPreview.Remove-AzureADAdministrativeUnit
   - AzureADPreview.Remove-AzureADAdministrativeUnitMember
+  - AzureADPreview.Remove-AzureADMSAdministrativeUnit
+  - AzureADPreview.Remove-AzureADMSAdministrativeUnitMember
+  - AzureADPreview.Remove-AzureADMSScopedRoleMembership
   - AzureADPreview.Remove-AzureADScopedRoleMembership
   - AzureADPreview.Set-AzureADAdministrativeUnit
+  - AzureADPreview.Set-AzureADMSAdministrativeUnit
 - title: Application
   cmdlets:
   - AzureADPreview.Add-AzureADMSApplicationOwner
@@ -72,8 +84,10 @@ children:
   - AzureADPreview.Remove-AzureADApplicationKeyCredential
   - AzureADPreview.Remove-AzureADApplicationOwner
   - AzureADPreview.Remove-AzureADApplicationPasswordCredential
+  - AzureADPreview.Remove-AzureADMSApplicationVerifiedPublisher
   - AzureADPreview.Set-AzureADApplication
   - AzureADPreview.Set-AzureADApplicationLogo
+  - AzureADPreview.Set-AzureADMSApplicationVerifiedPublisher
 - title: AzureADPreview
   cmdlets:
   - AzureADPreview.Add-AzureADMSServicePrincipalDelegatedPermissionClassification
@@ -137,6 +151,17 @@ children:
 - title: Contracts
   cmdlets:
   - AzureADPreview.Get-AzureADContract
+- title: Custom Security Attributes
+  cmdlets:
+  - AzureADPreview.Add-AzureADMScustomSecurityAttributeDefinitionAllowedValues
+  - AzureADPreview.Get-AzureADMSAttributeSet
+  - AzureADPreview.Get-AzureADMSCustomSecurityAttributeDefinition
+  - AzureADPreview.Get-AzureADMSCustomSecurityAttributeDefinitionAllowedValue
+  - AzureADPreview.New-AzureADMSAttributeSet
+  - AzureADPreview.New-AzureADMSCustomSecurityAttributeDefinition
+  - AzureADPreview.Set-AzureADMSAttributeSet
+  - AzureADPreview.Set-AzureADMSCustomSecurityAttributeDefinition
+  - AzureADPreview.Set-AzureADMSCustomSecurityAttributeDefinitionAllowedValue
 - title: Deleted Objects
   cmdlets:
   - AzureADPreview.Get-AzureADMSDeletedDirectoryObject
@@ -275,6 +300,7 @@ children:
   cmdlets:
   - AzureADPreview.Add-AzureADServicePrincipalOwner
   - AzureADPreview.Add-AzureADServicePrincipalPolicy
+  - AzureADPreview.Get-AzureADMSServicePrincipal
   - AzureADPreview.Get-AzureADServiceAppRoleAssignedTo
   - AzureADPreview.Get-AzureADServiceAppRoleAssignment
   - AzureADPreview.Get-AzureADServicePrincipal
@@ -296,6 +322,7 @@ children:
   - AzureADPreview.Remove-AzureADServicePrincipalOwner
   - AzureADPreview.Remove-AzureADServicePrincipalPasswordCredential
   - AzureADPreview.Select-AzureADGroupIdsServicePrincipalIsMemberOf
+  - AzureADPreview.Set-AzureADMSServicePrincipal
   - AzureADPreview.Set-AzureADServicePrincipal
 - title: Staged Rollout
   cmdlets:
@@ -313,6 +340,7 @@ children:
   - AzureADPreview.Set-AzureADMSTrustFrameworkPolicy
 - title: Users
   cmdlets:
+  - AzureADPreview.Get-AzureADMSUser
   - AzureADPreview.Get-AzureADUser
   - AzureADPreview.Get-AzureADUserAppRoleAssignment
   - AzureADPreview.Get-AzureADUserCreatedObject
@@ -336,6 +364,7 @@ children:
   - AzureADPreview.Revoke-AzureADSignedInUserAllRefreshToken
   - AzureADPreview.Revoke-AzureADUserAllRefreshToken
   - AzureADPreview.Select-AzureADGroupIdsUserIsMemberOf
+  - AzureADPreview.Set-AzureADMSUser
   - AzureADPreview.Set-AzureADUser
   - AzureADPreview.Set-AzureADUserExtension
   - AzureADPreview.Set-AzureADUserLicense

@@ -117,7 +117,7 @@ parameters:
   name: ObjectId
   isRequired: true
   description: |+
-    Specifeis the ID of a service principal in Azure AD.
+    Specifies the ID of a service principal in Azure AD.
 
   defaultValue: None
   pipelineInput: true

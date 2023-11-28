@@ -1,0 +1,44 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  This cmdlet is used to restore a previously deleted object.
+module: AzureADPreview
+notes: ""
+inputs:
+- name: <xref href="System.String" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="System.Object" data-throw-if-not-resolved="False" />
+  description: ""
+syntaxes:
+- Restore-AzureADMSDeletedDirectoryObject -Id <String> [<CommonParameters>]
+examples:
+- title: Example 1
+  code: |-
+    Restore-AzureADMSDeletedDirectoryObject -Id aa644285-eb75-4389-885e-7233f096984c
+  description: |-
+    This example shows how to restore a deleted object with Id aa644285-eb75-4389-885e-7233f096984c
+  summary: ""
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  isRequired: true
+  description: |+
+    The Id of the directory object to restore
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: AzureADPreview.Restore-AzureADMSDeletedDirectoryObject
+name: Restore-AzureADMSDeletedDirectoryObject
+description: |-
+  This cmdlet is used to restore a previously deleted object. Currently, only restoring Group and Application objects is supported. 
+  When a group or an application is deleted it is initially soft deleted and can be recovered during the first 30 days after deletion. After 30 days the deleted object is permanently deleted and can no longer be recovered. Note that only Unified Groups (a.k.a. Office 365 Groups) can be restored. Security groups cannot be restored.
+metadata:
+  external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
+  Module Name: AzureADPreview
+  ms.custom: iamfeature=PowerShell
+  ms.reviewer: rodejo
+  online version: ""
+  schema: 2.0.0

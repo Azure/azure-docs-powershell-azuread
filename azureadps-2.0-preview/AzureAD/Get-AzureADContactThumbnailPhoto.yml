@@ -72,7 +72,7 @@ parameters:
 - type: <xref href="Boolean" data-throw-if-not-resolved="False" />
   name: View
   description: |+
-    If this parameter value is set to $Ture, display the retrieved thumbnail poto in a new window
+    If this parameter value is set to $True, display the retrieved thumbnail photo in a new window
 
   defaultValue: None
   pipelineInput: true

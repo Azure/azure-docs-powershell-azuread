@@ -7,11 +7,27 @@ syntaxes:
 - Get-AzureADDomain [<CommonParameters>]
 - Get-AzureADDomain -Name <String> [<CommonParameters>]
 examples:
-- title: Example 1
+- title: 'Example 1: Get a list of Domains that have been created.'
   code: |-
-    PS C:\> {{ Add example code here }}
+    PS C:\>Get-AzureADDomain
+
+    Name        AvailabilityStatus AuthenticationType
+    ----        ------------------ ------------------
+    Contoso.com                    Managed
+    Fabrikam.com                   Managed
+    Adatum.com                     Managed
   description: |-
-    {{ Add example description here }}
+    This command retrieves a list of domains.
+  summary: ""
+- title: 'Example 2: Get a specific Domain.'
+  code: |-
+    PS C:\>Get-AzureADDomain -Name Contoso.com
+
+    Name        AvailabilityStatus AuthenticationType
+    ----        ------------------ ------------------
+    Contoso.com                    Managed
+  description: |-
+    This command retrieves a domain with the specified name.
   summary: ""
 parameters:
 - type: <xref href="String" data-throw-if-not-resolved="False" />

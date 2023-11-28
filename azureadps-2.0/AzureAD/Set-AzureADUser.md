@@ -588,7 +588,7 @@ Accept wildcard characters: False
 
 ### -UserState
 
-For an external user invited to the tenant using the [invitation API](https://docs.microsoft.com/en-us/graph/api/invitation-post), this property represents the invited user's invitation status. For invited users, the state can be `PendingAcceptance` or `Accepted`, or `null` for all other users.
+For an external user invited to the tenant using the [invitation API](/graph/api/invitation-post), this property represents the invited user's invitation status. For invited users, the state can be `PendingAcceptance` or `Accepted`, or `null` for all other users.
 
 ```yaml
 Type: String
@@ -626,6 +626,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
+## NOTES
+
+See the [migration guide for Set-AzureADUser](./migrate/Set-AzureADUser.md) to the Microsoft Graph PowerShell.
+
 ## RELATED LINKS
 
 [Get-AzureADUser](Get-AzureADUser.md)
@@ -634,6 +638,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 [Remove-AzureADUser](Remove-AzureADUser.md)
 
-[Learn more about age group and minor consent definitions]: https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0#legal-age-group-property-definitions
+[Learn more about age group and minor consent definitions]: https://learn.microsoft.com/graph/api/resources/user#legal-age-group-property-definitions
 
-[Learn more about extensions]: https://docs.microsoft.com/en-us/graph/extensibility-overview
