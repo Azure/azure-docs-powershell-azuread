@@ -628,8 +628,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## NOTES
 
-### Migrating to Microsoft Graph PowerShell
-
 See the [migration guide for Set-AzureADUser](./migrate/Set-AzureADUser.md) to the Microsoft Graph PowerShell.
 
 ## RELATED LINKS
