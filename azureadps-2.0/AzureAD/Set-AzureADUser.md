@@ -639,3 +639,4 @@ See the [migration guide for Set-AzureADUser](./migrate/Set-AzureADUser.md) to t
 [Remove-AzureADUser](Remove-AzureADUser.md)
 
 [Learn more about age group and minor consent definitions]: https://learn.microsoft.com/graph/api/resources/user#legal-age-group-property-definitions
+
