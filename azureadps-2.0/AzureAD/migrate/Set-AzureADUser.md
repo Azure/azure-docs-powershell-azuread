@@ -7,6 +7,7 @@ ms.topic: reference
 ms.date: 11/10/2023
 ms.author: eunicewaweru
 manager: CelesteDG
+author: msewaweru
 ms.reviewer: stevemutungi
 ---
 
@@ -16,9 +17,9 @@ This article provides migration details from Set-AzureADUser command to Microsof
 
 ## Summary
 
-+ Azure AD Command: [Set-AzureADUser](https://docs.microsoft.com/en-us/powershell/module/AzureAD/Set-AzureADUser)
++ Azure AD Command: [Set-AzureADUser](/powershell/module/azuread/set-azureaduser)
 + Azure AD Module: AzureAD
-+ Microsoft Graph Command: [Update-MgUser](https://docs.microsoft.com/en-us/powershell/module/Microsoft.Graph.Users/Update-MgUser) ([Community Examples](https://github.com/orgs/msgraph/discussions?discussions_q=Update-MgUser))
++ Microsoft Graph Command: [Update-MgUser](/powershell/module/microsoft.graph.users/update-mguser) ([Community Examples](https://github.com/orgs/msgraph/discussions?discussions_q=Update-MgUser))
 + Graph Module: Microsoft.Graph.Users
 + Graph Endpoint:  PATCH  /users/{user-id}
 
@@ -30,7 +31,7 @@ This article provides migration details from Set-AzureADUser command to Microsof
 |Delegated (personal Microsoft account)|User.ReadWrite| Not available. |
 |Application|User.ManageIdentities.All| User.EnableDisableAccount.All, User.ReadWrite.All, Directory.ReadWrite.All |
 
-View more [details on permissions](/graph/api/user-update?view=graph-rest-1.0&tabs=http#permissions).
+View more [details on permissions](/graph/api/user-update#permissions).
 
 ## Property Mapping
 
