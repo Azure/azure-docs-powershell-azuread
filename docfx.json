@@ -39,7 +39,7 @@
       },
       {
         "files": [
-          "**/*.yml"
+          "**/*.yml",
           "**/*.md"
         ],
         "src": "azureadps-2.0",
