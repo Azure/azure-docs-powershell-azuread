@@ -39,7 +39,8 @@
       },
       {
         "files": [
-          "**/*.yml"
+          "**/*.yml",
+          "AzureAD/migrate/*.md"
         ],
         "src": "azureadps-2.0",
         "version": "azureadps-2.0",
