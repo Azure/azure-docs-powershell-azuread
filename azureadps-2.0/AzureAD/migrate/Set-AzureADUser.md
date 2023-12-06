@@ -25,6 +25,8 @@ This article provides migration details from Set-AzureADUser command to Microsof
 
 ## Permissions
 
+[!INCLUDE [permissions-table](~/../microsoft-graph/api-reference/v1.0/includes/permissions/user-update-permissions.md)]
+
 View more [details on permissions](/graph/api/user-update#permissions).
 
 ## Property Mapping
