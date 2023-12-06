@@ -28,7 +28,7 @@ parameters:
   name: RefObjectId
   isRequired: true
   description: |+
-    Specifies the ID of the Active Directory object to add.
+    Specifies the ID of the Microsoft Entra ID object to add.
 
   defaultValue: None
   pipelineInput: true
@@ -38,7 +38,7 @@ parameters:
 uid: AzureAD.Add-AzureADDeviceRegisteredOwner
 name: Add-AzureADDeviceRegisteredOwner
 description: |-
-  The Add-AzureADDeviceRegisteredOwner cmdlet adds a registered owner for an Azure Active Directory device.
+  The Add-AzureADDeviceRegisteredOwner cmdlet adds a registered owner for a Microsoft Entra ID device.
 metadata:
   external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
   Module Name: AzureAD

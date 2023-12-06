@@ -47,7 +47,7 @@ parameters:
   name: ObjectId
   isRequired: true
   description: |+
-    Specifies the ID of an application in Azure Active Directory.
+    Specifies the ID of an application in Microsoft Entra ID.
 
   defaultValue: None
   pipelineInput: true
@@ -58,7 +58,7 @@ parameters:
   name: RefObjectId
   isRequired: true
   description: |+
-    Specifies the ID of the Active Directory object to assign as owner/manager/member.
+    Specifies the ID of the Microsoft Entra ID object to assign as owner/manager/member.
 
   defaultValue: None
   pipelineInput: true
@@ -68,7 +68,7 @@ parameters:
 uid: AzureAD.Add-AzureADApplicationOwner
 name: Add-AzureADApplicationOwner
 description: |-
-  The Add-AzureADApplicationOwner cmdlet adds an owner to an Azure Active Directory application.
+  The Add-AzureADApplicationOwner cmdlet adds an owner to a Microsoft Entra ID application.
 metadata:
   external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
   Module Name: AzureAD
