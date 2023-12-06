@@ -23,10 +23,6 @@ This article provides migration details from Get-AzureADUser command to Microsof
 + Graph Module: Microsoft.Graph.Users
 + Graph Endpoint:  GET  /users/{user-id}
 
-## Permissions
-
-[!INCLUDE [permissions-table](~/../../microsoft-graph/api-reference/v1.0/includes/permissions/user-get-permissions.md)]
-
 View more [details on permissions](/graph/api/user-get#permissions).
 
 ## Property Mapping

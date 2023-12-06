@@ -25,8 +25,6 @@ This article provides migration details from Add-AzureADDeviceRegisteredOwner co
 
 ## Permissions
 
-[!INCLUDE [permissions-table](~/../microsoft-graph/api-reference/v1.0/includes/permissions/device-post-registeredowners-permissions.md)]
-
 View more [details on permissions](/graph/api/device-post-registeredowners#permissions).
 
 ## Property Mapping
