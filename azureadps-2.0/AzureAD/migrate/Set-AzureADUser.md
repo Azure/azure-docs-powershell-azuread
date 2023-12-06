@@ -25,11 +25,7 @@ This article provides migration details from Set-AzureADUser command to Microsof
 
 ## Permissions
 
-|Permission type|Least privileged permissions|Higher privileged permissions |
-|---|---|---|
-|Delegated (work or school account)|User.ReadWrite| User.ManageIdentities.All, User.EnableDisableAccount.All, User.ReadWrite.All, Directory.ReadWrite.All |
-|Delegated (personal Microsoft account)|User.ReadWrite| Not available. |
-|Application|User.ManageIdentities.All| User.EnableDisableAccount.All, User.ReadWrite.All, Directory.ReadWrite.All |
+[!INCLUDE [permissions-table](~/../microsoft-graph/api-reference/v1.0/includes/permissions/user-get-permissions.md)]
 
 View more [details on permissions](/graph/api/user-update#permissions).
 
