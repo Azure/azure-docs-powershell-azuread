@@ -147,17 +147,19 @@ Accept wildcard characters: False
 ### CommonParameters
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
+## NOTES
+
+See the [migration guide for Get-AzureADApplication](./migrate/Get-AzureADApplication.md) to the Microsoft Graph PowerShell.
+
 ## INPUTS
 
 ## OUTPUTS
 
-## NOTES
-
 ## RELATED LINKS
 
-[New-AzureADApplication]()
+[New-AzureADApplication](New-AzureADApplication.md)
 
-[Remove-AzureADApplication]()
+[Remove-AzureADApplication](Remove-AzureADApplication.md)
 
-[Set-AzureADApplication]()
+[Set-AzureADApplication](Set-AzureADApplication.md)
 
