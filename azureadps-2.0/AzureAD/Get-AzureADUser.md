@@ -156,19 +156,19 @@ Accept wildcard characters: False
 ### CommonParameters
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
-## INPUTS
-
-## OUTPUTS
-
 ## NOTES
 
 See the [migration guide for Get-AzureADUser](./migrate/Get-AzureADUser.md) to the Microsoft Graph PowerShell.
 
+## INPUTS
+
+## OUTPUTS
+
 ## RELATED LINKS
 
-[New-AzureADUser]()
+[New-AzureADUser](New-AzureADUser.md)
 
-[Remove-AzureADUser]()
+[Remove-AzureADUser](Remove-AzureADUser.md)
 
-[Set-AzureADUser]()
+[Set-AzureADUser](Set-AzureADUser.md)
 
