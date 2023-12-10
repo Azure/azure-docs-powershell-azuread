@@ -73,7 +73,7 @@ See the [migration guide for Add-AzureADDeviceRegisteredOwner](./migrate/Add-Azu
 
 ## RELATED LINKS
 
-[Get-AzureADDeviceRegisteredOwner]()
+[Get-AzureADDeviceRegisteredOwner](Get-AzureADDeviceRegisteredOwner.md)
 
-[Remove-AzureADDeviceRegisteredOwner]()
+[Remove-AzureADDeviceRegisteredOwner](Remove-AzureADDeviceRegisteredOwner.md)
 
