@@ -196,13 +196,13 @@ We recommend that you do not use this cmdlet in a production environment.
 
 ## RELATED LINKS
 
-[New-AzureADMSGroup]()
+[New-AzureADMSGroup](New-AzureADMSGroup.md)
 
-[Remove-AzureADMSGroup]()
+[Remove-AzureADMSGroup](Remove-AzureADMSGroup.md)
 
-[Set-AzureADMSGroup]()
+[Set-AzureADMSGroup](Set-AzureADMSGroup.md)
 
-[Get-AzureADGroup]()
+[Get-AzureADGroup](Get-AzureADGroup.md)
 
 [#AzureAD: Certificate based authentication for iOS and Android now in preview!](https://blogs.technet.microsoft.com/enterprisemobility/2016/07/18/azuread-certificate-based-authentication-for-ios-and-android-now-in-preview/)
 
