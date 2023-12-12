@@ -19,7 +19,7 @@ New-AzureADGroup [-InformationAction <ActionPreference>] [-InformationVariable <
 ```
 
 ## DESCRIPTION
-The New-AzureADGroup cmdlet creates a group in Azure Active Directory (AD).
+The New-AzureADGroup cmdlet creates a group in the Microsoft Entra ID.
 
 ## EXAMPLES
 
