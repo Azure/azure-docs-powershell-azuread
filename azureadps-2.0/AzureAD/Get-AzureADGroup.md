@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-AzureADGroup
 
 ## SYNOPSIS
-Gets a group (via AzureAD Graph).
+Gets a group (via Microsoft Graph).
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ Get-AzureADGroup -ObjectId <String> [-All <Boolean>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The Get-AzureADGroup cmdlet gets a group in Azure Active Directory (AD) using the AzureAD Graph.
+The Get-AzureADGroup cmdlet gets a group in the Microsoft Entra ID using the Microsoft Graph.
 
 ## EXAMPLES
 
@@ -105,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-The unique identifier of a group in Azure Active Directory (ObjectId)
+The unique identifier of a group in the Microsoft Entra ID (ObjectId)
 
 ```yaml
 Type: String

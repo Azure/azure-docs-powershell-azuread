@@ -18,7 +18,7 @@ Add-AzureADMSAdministrativeUnitMember -Id <String> -RefObjectId <String>
 ```
 
 ## DESCRIPTION
-The Add-AzureADMSAdministrativeUnitMember cmdlet adds an Active Directory administrative unit member.
+The Add-AzureADMSAdministrativeUnitMember cmdlet adds a Microsoft Entra ID administrative unit member.
 
 ## EXAMPLES
 
@@ -69,7 +69,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Specifies the ID of an Active Directory administrative unit.
+Specifies the ID of a Microsoft Entra ID administrative unit.
 
 ```yaml
 Type: String
@@ -84,7 +84,7 @@ Accept wildcard characters: False
 ```
 
 ### -RefObjectId
-Specifies the unique ID of the specific Azure Active Directory object that will be assigned as owner/manager/member.
+Specifies the unique ID of the specific Microsoft Entra ID object that will be assigned as owner/manager/member.
 
 ```yaml
 Type: String

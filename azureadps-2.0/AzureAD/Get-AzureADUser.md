@@ -28,7 +28,7 @@ Get-AzureADUser -ObjectId <String> [-All <Boolean>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The Get-AzureADUser cmdlet gets a user from Azure Active Directory (AD).
+The Get-AzureADUser cmdlet gets a user from the Microsoft Entra ID.
 
 ## EXAMPLES
 

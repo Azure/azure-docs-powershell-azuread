@@ -418,7 +418,7 @@ Id                        : 88da75d4-2cba-4c47-9a15-80a983228ad4
 ## PARAMETERS
 
 ### -ObjectId
-Specifies the ID of an application in Azure Active Directory
+Specifies the ID of an application in the Microsoft Entra ID.
 
 ```yaml
 Type: String
@@ -509,9 +509,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[New-AzureADMSApplication]()
+[New-AzureADMSApplication](New-AzureADMSApplication.md)
 
-[Remove-AzureADMSApplication]()
+[Remove-AzureADMSApplication](Remove-AzureADMSApplication.md)
 
-[Set-AzureADMSApplication]()
+[Set-AzureADMSApplication](Set-AzureADMSApplication.md)
 

@@ -18,7 +18,7 @@ Get-AzureADMSAdministrativeUnitMember -Id <String> [-All <Boolean>] [-Top <Int32
 ```
 
 ## DESCRIPTION
-The Get-AzureADMSAdministrativeUnitMember cmdlet gets a member of an Active Directory administrative unit.
+The Get-AzureADMSAdministrativeUnitMember cmdlet gets a member of a Microsoft Entra ID administrative unit.
 
 ## EXAMPLES
 
@@ -67,7 +67,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Specifies the ID of an administrative unit in Azure Active Directory.
+Specifies the ID of an administrative unit in the Microsoft Entra ID.
 
 ```yaml
 Type: String

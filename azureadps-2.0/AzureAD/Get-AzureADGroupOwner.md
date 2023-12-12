@@ -17,7 +17,7 @@ Get-AzureADGroupOwner -ObjectId <String> [-All <Boolean>] [-Top <Int32>] [<Commo
 ```
 
 ## DESCRIPTION
-The Get-AzureADGroupOwner cmdlet gets an owner of a group in Azure Active Directory (AD).
+The Get-AzureADGroupOwner cmdlet gets an owner of a group in the Microsoft Entra ID.
 
 ## EXAMPLES
 
@@ -51,7 +51,7 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-Specifies the ID of a group in Azure AD.
+Specifies the ID of a group in the Microsoft Entra ID.
 
 ```yaml
 Type: String

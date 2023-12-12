@@ -46,7 +46,7 @@ Accept wildcard characters: False
 ```
 
 ### -RefObjectId
-The unique identifier of the specific Azure Active Directory object that will be assigned as owner/manager/member
+The unique identifier of the specific Microsoft Entra ID object that will be assigned as owner/manager/member
 
 ```yaml
 Type: String

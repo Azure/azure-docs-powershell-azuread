@@ -18,7 +18,7 @@ Get-AzureADUserManager -ObjectId <String> [-InformationAction <ActionPreference>
 ```
 
 ## DESCRIPTION
-The Get-AzureADUserManager cmdlet gets the manager of a user in Azure Active Directory (AD).
+The Get-AzureADUserManager cmdlet gets the manager of a user in the Microsoft Entra ID.
 
 ## EXAMPLES
 
@@ -74,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-The unique identifier of a user in Azure Active Directory (UPN or ObjectId)
+The unique identifier of a user in the Microsoft Entra ID (UPN or ObjectId)
 
 ```yaml
 Type: String
