@@ -45,6 +45,12 @@
       "branch_mapping": {}
     },
     {
+      "path_to_root": "graphref",
+      "url": "https://github.com/microsoftgraph/microsoft-graph-docs",
+      "branch": "main",
+      "branch_mapping": {}
+    },
+    {
       "path_to_root": "_themes.pdf",
       "url": "https://github.com/Microsoft/templates.docs.msft.pdf",
       "branch": "main",

@@ -18,7 +18,7 @@ Add-AzureADApplicationOwner -ObjectId <String> -RefObjectId <String> [-Informati
 ```
 
 ## DESCRIPTION
-The Add-AzureADApplicationOwner cmdlet adds an owner to an Azure Active Directory application.
+The Add-AzureADApplicationOwner cmdlet adds an owner to a Microsoft Entra ID application.
 
 ## EXAMPLES
 
@@ -71,7 +71,7 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-Specifies the ID of an application in Azure Active Directory.
+Specifies the ID of an application in Microsoft Entra ID.
 
 ```yaml
 Type: String
@@ -103,15 +103,17 @@ Accept wildcard characters: False
 ### CommonParameters
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
+## NOTES
+
+See the [migration guide for Add-AzureADApplicationOwner](./migrate/Add-AzureADApplicationOwner.md) to the Microsoft Graph PowerShell.
+
 ## INPUTS
 
 ## OUTPUTS
 
-## NOTES
-
 ## RELATED LINKS
 
-[Get-AzureADApplicationOwner]()
+[Get-AzureADApplicationOwner](Get-AzureADApplicationOwner.md)
 
-[Remove-AzureADApplicationOwner]()
+[Remove-AzureADApplicationOwner](Remove-AzureADApplicationOwner.md)
 

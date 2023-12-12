@@ -25,17 +25,17 @@ This article provides migration details from Set-AzureADUser command to Microsof
 
 ## Permissions
 
-|Permission type|Least privileged permissions|Higher privileged permissions |
-|---|---|---|
-|Delegated (work or school account)|User.ReadWrite| User.ManageIdentities.All, User.EnableDisableAccount.All, User.ReadWrite.All, Directory.ReadWrite.All |
-|Delegated (personal Microsoft account)|User.ReadWrite| Not available. |
-|Application|User.ManageIdentities.All| User.EnableDisableAccount.All, User.ReadWrite.All, Directory.ReadWrite.All |
+|Permission type|Least privileged permissions|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|User.ReadWrite|User.ManageIdentities.All, User.EnableDisableAccount.All, User.ReadWrite.All, Directory.ReadWrite.All|
+|Delegated (personal Microsoft account)|User.ReadWrite|Not available.|
+|Application|User.ManageIdentities.All|User.EnableDisableAccount.All, User.ReadWrite.All, Directory.ReadWrite.All|
 
 View more [details on permissions](/graph/api/user-update#permissions).
 
 ## Property Mapping
 
-|AAD Name|Graph Name|
+|Azure AD Name|Microsoft Graph Name|
 |---|---|
 |AccountEnabled|AccountEnabled|
 |AgeGroup|AgeGroup|

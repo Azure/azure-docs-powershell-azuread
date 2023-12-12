@@ -32,12 +32,12 @@ The Get-AzureADUser cmdlet gets a user from Azure Active Directory (AD).
 
 ## EXAMPLES
 
-### Example 1: Get ten users
+### Example 1: Get top ten users
 ```
 PS C:\>Get-AzureADUser -Top 10
 ```
 
-This command gets ten users.
+This command gets 10 users.
 
 ### Example 2: Get a user by ID
 ```
@@ -56,7 +56,7 @@ ObjectId                             DisplayName UserPrincipalName              
 2b450b8e-1db6-42cb-a545-1b05eb8a358b New user    NewTestUser@contoso.onmicrosoft.com Member
 ```
 
-This cmdlet gets all users that match the value of SearchString against the first characters in DisplayName or UserPrincipalName .
+This cmdlet gets all users that match the value of SearchString against the first characters in DisplayName or UserPrincipalName.
 
 ### Example 4: Get a user by userPrincipalName
 ```
@@ -70,7 +70,7 @@ This command gets the specified user.
 PS C:\>Get-AzureADUser -Filter "startswith(JobTitle,'Sales')"
 ```
 
-This command gets all the users whose job title starts with sales e.g Sales Manager and Sales Assistant.
+This command gets all the users whose job title starts with sales, e.g Sales Manager, and Sales Assistant.
 
 ## PARAMETERS
 
@@ -109,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-Specifies the ID (as a UPN or ObjectId) of a user in Azure AD.
+Specifies the ID (as a UPN or ObjectId) of a user in Microsoft Entra ID.
 
 ```yaml
 Type: String
@@ -161,6 +161,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ## NOTES
+
+See the [migration guide for Get-AzureADUser](./migrate/Get-AzureADUser.md) to the Microsoft Graph PowerShell.
 
 ## RELATED LINKS
 
