@@ -31,7 +31,7 @@ This command adds an owner to an application.
 ## PARAMETERS
 
 ### -ObjectId
-The unique identifier of the object specific Azure Active Directory object
+The unique identifier of the object specific Microsoft Entra ID object
 
 ```yaml
 Type: String
