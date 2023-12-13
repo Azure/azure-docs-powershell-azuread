@@ -31,6 +31,8 @@ This article provides migration details from Get-AzureADUser command to Microsof
 |Delegated (personal Microsoft account)|User.Read|User.ReadWrite|
 |Application|User.Read.All|User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All|
 
+[!INCLUDE [permissions-table](~/graphref/api-reference/v1.0/includes/permissions/user-get-permissions.md)]
+
 View more [details on permissions](/graph/api/user-get#permissions).
 
 ## Property Mapping
