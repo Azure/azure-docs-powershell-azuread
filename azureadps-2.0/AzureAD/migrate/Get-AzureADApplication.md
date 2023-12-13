@@ -25,11 +25,11 @@ This article provides migration details from Get-AzureADApplication command to M
 
 ## Permissions
 
-[!INCLUDE [permissions-table](~/../api-reference/v1.0/includes/permissions/user-get-permissions.md)]
+[!INCLUDE [permissions-table](~/../../api-reference/v1.0/includes/permissions/user-get-permissions.md)]
 
 [!INCLUDE [permissions-table](~/api-reference/v1.0/includes/permissions/user-get-permissions.md)]
 
-[!INCLUDE [permissions-table](~/../../../../../api-reference/v1.0/includes/permissions/user-get-permissions.md)]
+[!INCLUDE [permissions-table](~/../../../api-reference/v1.0/includes/permissions/user-get-permissions.md)]
 
 |Permission type|Least privileged permissions|Higher privileged permissions|
 |:---|:---|:---|
