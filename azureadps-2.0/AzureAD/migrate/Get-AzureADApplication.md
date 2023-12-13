@@ -27,6 +27,10 @@ This article provides migration details from Get-AzureADApplication command to M
 
 [!INCLUDE [permissions-table](~/../api-reference/v1.0/includes/permissions/user-get-permissions.md)]
 
+[!INCLUDE [permissions-table](~/api-reference/v1.0/includes/permissions/user-get-permissions.md)]
+
+[!INCLUDE [permissions-table](~/../../../../../api-reference/v1.0/includes/permissions/user-get-permissions.md)]
+
 |Permission type|Least privileged permissions|Higher privileged permissions|
 |:---|:---|:---|
 |Delegated (work or school account)|Application.Read.All|Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All|
