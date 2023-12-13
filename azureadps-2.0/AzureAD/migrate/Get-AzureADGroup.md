@@ -25,11 +25,7 @@ This article provides migration details from Get-AzureADGroup command to Microso
 
 ## Permissions
 
-|Permission type|Least privileged permissions|Higher privileged permissions|
-|:---|:---|:---|
-|Delegated (work or school account)|GroupMember.Read.All|Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Group.Read.All|
-|Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|GroupMember.Read.All|Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Group.Read.All|
+[!INCLUDE [permissions-table](~/graphref/api-reference/v1.0/includes/permissions/group-get-permissions.md)]
 
 View more [details on permissions](/graph/api/group-get#permissions).
 

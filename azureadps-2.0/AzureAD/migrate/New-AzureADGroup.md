@@ -25,13 +25,15 @@ This article provides migration details from New-AzureADGroup command to Microso
 
 ## Permissions
 
-|Permission type|Least privileged permissions|Higher privileged permissions|
-|:---|:---|:---|
-|Delegated (work or school account)|Group.ReadWrite.All|Directory.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|Group.Create|Directory.ReadWrite.All, Group.ReadWrite.All|
+[!INCLUDE [permissions-table](~/graphref/api-reference/v1.0/includes/permissions/group-post-groups-permissions.md)]
 
 View more [details on permissions](/graph/api/group-post-groups#permissions).
+
+For an app create a group with owners or members while it has the *Group.Create* permission, the app must have the privileges to read the object type that it wants to assign as the group owner or member. Therefore:
++ The app can assign itself as the group's owner or member.
++ To create the group with users as owners or members, the app must have at least the *User.Read.All* permission.
++ To create the group with other service principals as owners or members, the app must have at least the *Application.Read.All* permission.
++ To create the group with either users or service principals as owners or members, the app must have at least the *Directory.Read.All* permission.
 
 ## Property Mapping
 

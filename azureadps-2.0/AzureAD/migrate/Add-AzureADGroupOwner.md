@@ -25,11 +25,7 @@ This article provides migration details from Add-AzureADGroupOwner command to Mi
 
 ## Permissions
 
-|Permission type|Least privileged permissions|Higher privileged permissions|
-|:---|:---|:---|
-|Delegated (work or school account)|Group.ReadWrite.All|Directory.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|Group.ReadWrite.All|Directory.ReadWrite.All|
+[!INCLUDE [permissions-table](~/graphref/api-reference/v1.0/includes/permissions/group-post-owners-permissions.md)]
 
 View more [details on permissions](/graph/api/group-post-owners#permissions).
 

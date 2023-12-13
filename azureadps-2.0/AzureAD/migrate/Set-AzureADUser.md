@@ -25,13 +25,16 @@ This article provides migration details from Set-AzureADUser command to Microsof
 
 ## Permissions
 
-|Permission type|Least privileged permissions|Higher privileged permissions|
-|:---|:---|:---|
-|Delegated (work or school account)|User.ReadWrite|User.ManageIdentities.All, User.EnableDisableAccount.All, User.ReadWrite.All, Directory.ReadWrite.All|
-|Delegated (personal Microsoft account)|User.ReadWrite|Not available.|
-|Application|User.ManageIdentities.All|User.EnableDisableAccount.All, User.ReadWrite.All, Directory.ReadWrite.All|
+[!INCLUDE [permissions-table](~/graphref/api-reference/v1.0/includes/permissions/user-update-permissions.md)]
 
 View more [details on permissions](/graph/api/user-update#permissions).
+
+>[!NOTE]
+> - To update sensitive user properties, such as **accountEnabled**, **mobilePhone**, and **otherMails** for users with privileged administrator roles:
+>   - In delegated scenarios, the app must be assigned the *Directory.AccessAsUser.All* delegated permission and the calling user must have a higher privileged administrator role as indicated in [Who can perform sensitive actions](../resources/users.md#who-can-perform-sensitive-actions).
+>   - In app-only scenarios, the app must be assigned a higher privileged administrator role as indicated in [Who can perform sensitive actions](../resources/users.md#who-can-perform-sensitive-actions).
+> - Your personal Microsoft account must be tied to a Microsoft Entra tenant to update your profile with the *User.ReadWrite* delegated permission on a personal Microsoft account.
+> - Updating the **identities** property requires the *User.ManageIdentities.All* permission. Also, adding a [B2C local account](../resources/objectidentity.md) to an existing **user** object is not allowed, unless the **user** object already contains a local account identity.
 
 ## Property Mapping
 

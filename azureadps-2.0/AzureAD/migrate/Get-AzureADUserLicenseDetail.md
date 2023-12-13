@@ -25,11 +25,7 @@ This article provides migration details from Get-AzureADUserLicenseDetail comman
 
 ## Permissions
 
-|Permission type|Least privileged permissions|Higher privileged permissions|
-|:---|:---|:---|
-|Delegated (work or school account)|User.Read|Directory.Read.All, Directory.ReadWrite.All, User.Read.All, User.ReadWrite.All|
-|Delegated (personal Microsoft account)|User.Read|Not available.|
-|Application|User.Read.All|Directory.Read.All, Directory.ReadWrite.All, User.ReadWrite.All|
+[!INCLUDE [permissions-table](~/graphref/api-reference/v1.0/includes/permissions/user-list-licensedetails-permissions.md)]
 
 View more [details on permissions](/graph/api/user-list-licensedetails#permissions).
 

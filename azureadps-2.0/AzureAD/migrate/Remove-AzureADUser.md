@@ -25,13 +25,19 @@ This article provides migration details from Remove-AzureADUser command to Micro
 
 ## Permissions
 
-|Permission type|Least privileged permissions|Higher privileged permissions|
-|:---|:---|:---|
-|Delegated (work or school account)|User.ReadWrite.All|Not available.|
-|Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|User.ReadWrite.All|Not available.|
+[!INCLUDE [permissions-table](~/graphref/api-reference/v1.0/includes/permissions/user-delete-permissions.md)]
 
 View more [details on permissions](/graph/api/user-delete#permissions).
+
+The calling user must be assigned one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json):
+
+- User Administrator
+- Privileged Authentication Administrator
+- Global Administrator
+
+To delete users with privileged administrator roles in delegated scenarios, the app must be assigned the *Directory.AccessAsUser.All* delegated permission, and the calling user must have a higher privileged administrator role as indicated in [Who can perform sensitive actions](../resources/users.md#who-can-perform-sensitive-actions).
+
+In app-only scenarios, the *User.ReadWrite.All* application permission isn't enough privilege to delete users with privileged administrative roles. The app must be assigned a higher privileged administrator role as indicated in [Who can perform sensitive actions](../resources/users.md#who-can-perform-sensitive-actions).
 
 ## Property Mapping
 

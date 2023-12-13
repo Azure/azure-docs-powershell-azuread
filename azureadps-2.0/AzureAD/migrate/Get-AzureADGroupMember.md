@@ -25,11 +25,7 @@ This article provides migration details from Get-AzureADGroupMember command to M
 
 ## Permissions
 
-|Permission type|Least privileged permissions|Higher privileged permissions|
-|:---|:---|:---|
-|Delegated (work or school account)|GroupMember.Read.All|Directory.Read.All, Group.Read.All, Group.ReadWrite.All, GroupMember.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|GroupMember.Read.All|Directory.Read.All, Group.Read.All, Group.ReadWrite.All, GroupMember.ReadWrite.All|
+[!INCLUDE [permissions-table](~/graphref/api-reference/v1.0/includes/permissions/group-list-members-permissions.md)]
 
 View more [details on permissions](/graph/api/group-list-members#permissions).
 

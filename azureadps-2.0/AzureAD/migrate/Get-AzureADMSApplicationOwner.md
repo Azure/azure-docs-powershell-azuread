@@ -25,11 +25,7 @@ This article provides migration details from Get-AzureADMSApplicationOwner comma
 
 ## Permissions
 
-|Permission type|Least privileged permissions|Higher privileged permissions|
-|:---|:---|:---|
-|Delegated (work or school account)|Application.Read.All|Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|Application.ReadWrite.OwnedBy|Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All|
+[!INCLUDE [permissions-table](~/graphref/api-reference/v1.0/includes/permissions/application-list-owners-permissions.md)]
 
 View more [details on permissions](/graph/api/application-list-owners#permissions).
 

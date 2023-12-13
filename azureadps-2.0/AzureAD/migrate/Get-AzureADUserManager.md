@@ -25,13 +25,11 @@ This article provides migration details from Get-AzureADUserManager command to M
 
 ## Permissions
 
-|Permission type|Least privileged permissions|Higher privileged permissions|
-|:---|:---|:---|
-|Delegated (work or school account)|User.Read.All|Directory.Read.All, Directory.ReadWrite.All, User.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|User.Read.All|Directory.Read.All, Directory.ReadWrite.All, User.ReadWrite.All|
+[!INCLUDE [permissions-table](~/graphref/api-reference/v1.0/includes/permissions/user-list-manager-permissions.md)]
 
 View more [details on permissions](/graph/api/user-list-manager#permissions).
+
+[!INCLUDE [permissions-table](~/graphref/api-reference/v1.0/includes/limited-info.md)]
 
 ## Property Mapping
 

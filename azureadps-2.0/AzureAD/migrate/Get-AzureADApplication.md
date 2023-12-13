@@ -27,12 +27,6 @@ This article provides migration details from Get-AzureADApplication command to M
 
 [!INCLUDE [permissions-table](~/graphref/api-reference/v1.0/includes/permissions/application-get-permissions.md)]
 
-|Permission type|Least privileged permissions|Higher privileged permissions|
-|:---|:---|:---|
-|Delegated (work or school account)|Application.Read.All|Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All|
-|Delegated (personal Microsoft account)|Application.Read.All|Application.ReadWrite.All|
-|Application|Application.Read.All|Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All|
-
 View more [details on permissions](/graph/api/application-get#permissions).
 
 ## Property Mapping

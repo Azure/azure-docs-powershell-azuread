@@ -25,11 +25,9 @@ This article provides migration details from Get-AzureADUserMembership command t
 
 ## Permissions
 
-|Permission type|Least privileged permissions|Higher privileged permissions|
-|:---|:---|:---|
-|Delegated (work or school account)|User.Read|Directory.Read.All, Directory.ReadWrite.All, GroupMember.Read.All|
-|Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|Directory.Read.All|Directory.ReadWrite.All|
+[!INCLUDE [permissions-table](~/graphref/api-reference/v1.0/includes/permissions/user-list-memberof-permissions.md)]
+
+> **Note:** To list the members of a group with hidden membership, the Member.Read.Hidden permission is required.
 
 View more [details on permissions](/graph/api/user-list-memberof#permissions).
 
