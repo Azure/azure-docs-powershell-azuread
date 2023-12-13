@@ -18,7 +18,7 @@ Remove-AzureADUser -ObjectId <String> [-InformationAction <ActionPreference>] [-
 ```
 
 ## DESCRIPTION
-The Remove-AzureADUser cmdlet removes a user in Azure Active Directory (AD).
+The Remove-AzureADUser cmdlet removes a user in the Microsoft Entra ID.
 
 ## EXAMPLES
 
@@ -27,7 +27,7 @@ The Remove-AzureADUser cmdlet removes a user in Azure Active Directory (AD).
 PS C:\>Remove-AzureADUser -ObjectId "TestUser@example.com"
 ```
 
-This command removes the specified user in Azure AD.
+This command removes the specified user in Microsoft Entra ID.
 
 ## PARAMETERS
 
@@ -87,17 +87,19 @@ Accept wildcard characters: False
 ### CommonParameters
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
+## NOTES
+
+See the [migration guide for Remove-AzureADUser](./migrate/Remove-AzureADUser.md) to the Microsoft Graph PowerShell.
+
 ## INPUTS
 
 ## OUTPUTS
 
-## NOTES
-
 ## RELATED LINKS
 
-[Get-AzureADUser]()
+[Get-AzureADUser](Get-AzureADUser.md)
 
-[New-AzureADUser]()
+[New-AzureADUser](New-AzureADUser.md)
 
-[Set-AzureADUser]()
+[Set-AzureADUser](Set-AzureADUser.md)
 

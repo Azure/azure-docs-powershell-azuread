@@ -25,11 +25,7 @@ This article provides migration details from Add-AzureADDeviceRegisteredOwner co
 
 ## Permissions
 
-|Permission type|Least privileged permissions|Higher privileged permissions|
-|:---|:---|:---|
-|Delegated (work or school account)|Directory.AccessAsUser.All|Not available.|
-|Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|Not supported.|Not supported.|
+[!INCLUDE [permissions-table](~/graphref/api-reference/v1.0/includes/permissions/device-post-registeredowners-permissions.md)]
 
 View more [details on permissions](/graph/api/device-post-registeredowners#permissions).
 

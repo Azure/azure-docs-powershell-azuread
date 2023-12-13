@@ -17,7 +17,7 @@ Get-AzureADApplicationOwner -ObjectId <String> [-All <Boolean>] [-Top <Int32>] [
 ```
 
 ## DESCRIPTION
-The Get-AzureADApplicationOwner cmdlet get an owner of an Azure Active Directory application.
+The Get-AzureADApplicationOwner cmdlet get an owner of a Microsoft Entra ID application.
 
 ## EXAMPLES
 
@@ -51,7 +51,7 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-Specifies the ID of an application in Azure Active Directory.
+Specifies the ID of an application in the Microsoft Entra ID.
 
 ```yaml
 Type: String
@@ -83,15 +83,17 @@ Accept wildcard characters: False
 ### CommonParameters
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
+## NOTES
+
+See the [migration guide for Get-AzureADApplicationOwner](./migrate/Get-AzureADApplicationOwner.md) to the Microsoft Graph PowerShell.
+
 ## INPUTS
 
 ## OUTPUTS
 
-## NOTES
-
 ## RELATED LINKS
 
-[Add-AzureADApplicationOwner]()
+[Add-AzureADApplicationOwner](Add-AzureADApplicationOwner.md)
 
-[Remove-AzureADApplicationOwner]()
+[Remove-AzureADApplicationOwner](Remove-AzureADApplicationOwner.md)
 

@@ -18,7 +18,7 @@ New-AzureADMSAdministrativeUnit [-InformationAction <ActionPreference>] [-Inform
 ```
 
 ## DESCRIPTION
-The New-AzureADMSAdministrativeUnit cmdlet creates an administrative unit in Azure Active Directory (AD).
+The New-AzureADMSAdministrativeUnit cmdlet creates an administrative unit in the Microsoft Entra ID.
 
 ## EXAMPLES
 

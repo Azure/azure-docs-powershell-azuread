@@ -25,11 +25,7 @@ This article provides migration details from Add-AzureADDirectoryRoleMember comm
 
 ## Permissions
 
-|Permission type|Least privileged permissions|Higher privileged permissions|
-|:---|:---|:---|
-|Delegated (work or school account)|RoleManagement.ReadWrite.Directory|Not available.|
-|Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|RoleManagement.ReadWrite.Directory|Not available.|
+[!INCLUDE [permissions-table](~/graphref/api-reference/v1.0/includes/permissions/directoryrole-post-members-permissions.md)]
 
 View more [details on permissions](/graph/api/directoryrole-post-members#permissions).
 

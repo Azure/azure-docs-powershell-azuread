@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-AzureADMSGroup
 
 ## SYNOPSIS
-Gets information about groups in Azure AD (via MS Graph).
+Gets information about groups in the Microsoft Entra ID (via MS Graph).
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ Get-AzureADMSGroup -Id <String> [-All <Boolean>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The Get-AzureADMSGroup cmdlet gets information about groups in Azure Active Directory (Azure AD) using the Microsoft Graph.
+The Get-AzureADMSGroup cmdlet gets information about groups in the Microsoft Entra ID using the Microsoft Graph.
 To get a group, specify the Id parameter. 
 Specify the SearchString or Filter parameter to find particular groups. 
 If you specify no parameters, this cmdlet gets all groups.
@@ -72,7 +72,7 @@ MembershipRule                : (user.jobtitle -eq "Sales manager") -or ((user.d
 MembershipRuleProcessingState : On
 ```
 
-This command gets all groups in Azure AD.
+This command gets all groups in the Microsoft Entra ID.
 
 ### Example 2: Get a specific group by using an ID
 ```
@@ -196,13 +196,13 @@ We recommend that you do not use this cmdlet in a production environment.
 
 ## RELATED LINKS
 
-[New-AzureADMSGroup]()
+[New-AzureADMSGroup](New-AzureADMSGroup.md)
 
-[Remove-AzureADMSGroup]()
+[Remove-AzureADMSGroup](Remove-AzureADMSGroup.md)
 
-[Set-AzureADMSGroup]()
+[Set-AzureADMSGroup](Set-AzureADMSGroup.md)
 
-[Get-AzureADGroup]()
+[Get-AzureADGroup](Get-AzureADGroup.md)
 
 [#AzureAD: Certificate based authentication for iOS and Android now in preview!](https://blogs.technet.microsoft.com/enterprisemobility/2016/07/18/azuread-certificate-based-authentication-for-ios-and-android-now-in-preview/)
 

@@ -18,7 +18,7 @@ Get-AzureADUserManager -ObjectId <String> [-InformationAction <ActionPreference>
 ```
 
 ## DESCRIPTION
-The Get-AzureADUserManager cmdlet gets the manager of a user in Azure Active Directory (AD).
+The Get-AzureADUserManager cmdlet gets the manager of a user in the Microsoft Entra ID.
 
 ## EXAMPLES
 
@@ -74,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-The unique identifier of a user in Azure Active Directory (UPN or ObjectId)
+The unique identifier of a user in the Microsoft Entra ID (UPN or ObjectId)
 
 ```yaml
 Type: String
@@ -91,15 +91,17 @@ Accept wildcard characters: False
 ### CommonParameters
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
+## NOTES
+
+See the [migration guide for Get-AzureADUserManager](./migrate/Get-AzureADUserManager.md) to the Microsoft Graph PowerShell.
+
 ## INPUTS
 
 ## OUTPUTS
 
-## NOTES
-
 ## RELATED LINKS
 
-[Remove-AzureADUserManager]()
+[Remove-AzureADUserManager](Remove-AzureADUserManager.md)
 
-[Set-AzureADUserManager]()
+[Set-AzureADUserManager](Set-AzureADUserManager.md)
 

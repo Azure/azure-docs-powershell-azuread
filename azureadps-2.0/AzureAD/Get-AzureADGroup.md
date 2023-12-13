@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-AzureADGroup
 
 ## SYNOPSIS
-Gets a group (via AzureAD Graph).
+Gets a group (via Microsoft Graph).
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ Get-AzureADGroup -ObjectId <String> [-All <Boolean>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The Get-AzureADGroup cmdlet gets a group in Azure Active Directory (AD) using the AzureAD Graph.
+The Get-AzureADGroup cmdlet gets a group in the Microsoft Entra ID using the Microsoft Graph.
 
 ## EXAMPLES
 
@@ -105,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-The unique identifier of a group in Azure Active Directory (ObjectId)
+The unique identifier of a group in the Microsoft Entra ID (ObjectId)
 
 ```yaml
 Type: String
@@ -152,21 +152,23 @@ Accept wildcard characters: False
 ### CommonParameters
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
+## NOTES
+
+1. See the [migration guide for Get-AzureADGroup](./migrate/Get-AzureADGroup.md) to the Microsoft Graph PowerShell.
+
+2. This cmdlet uses the AzureAD Graph instead of the MSGraph. Commands that use the MSGraph are in the format of \*-ADMS\*. For more information on the naming convention see [New enhancements to the #AzureAD PowerShell 2.0 preview. Manage dynamic groups and more!](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/new-enhancements-to-the-azuread-powershell-2-0-preview-manage/ba-p/245153)
+
 ## INPUTS
 
 ## OUTPUTS
 
-## NOTES
-
-This cmdlet uses the AzureAD Graph instead of the MSGraph. Commands that use the MSGraph are in the format of \*-ADMS\*. For more information on the naming convention see [New enhancements to the #AzureAD PowerShell 2.0 preview. Manage dynamic groups and more!](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/new-enhancements-to-the-azuread-powershell-2-0-preview-manage/ba-p/245153)
-
 ## RELATED LINKS
 
-[New-AzureADGroup]()
+[New-AzureADGroup](New-AzureADGroup.md)
 
-[Remove-AzureADGroup]()
+[Remove-AzureADGroup](Remove-AzureADGroup.md)
 
-[Set-AzureADGroup]()
+[Set-AzureADGroup](Set-AzureADGroup.md)
 
-[Get-AzureADMSGroup]()
+[Get-AzureADMSGroup](Get-AzureADMSGroup.md)
 
