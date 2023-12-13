@@ -27,8 +27,6 @@ This article provides migration details from Get-AzureADGroupOwner command to Mi
 
 [!INCLUDE [permissions-table](~/graphref/api-reference/v1.0/includes/permissions/group-list-owners-permissions.md)]
 
-[!INCLUDE [permissions-table](~/graphref/api-reference/v1.0/includes/limited-info.md)]
-
 View more [details on permissions](/graph/api/group-list-owners#permissions).
 
 ## Property Mapping

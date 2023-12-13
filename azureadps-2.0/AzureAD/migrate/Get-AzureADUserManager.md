@@ -29,8 +29,6 @@ This article provides migration details from Get-AzureADUserManager command to M
 
 View more [details on permissions](/graph/api/user-list-manager#permissions).
 
-[!INCLUDE [permissions-table](~/graphref/api-reference/v1.0/includes/limited-info.md)]
-
 ## Property Mapping
 
 |Azure AD Name|Microsoft Graph Name|

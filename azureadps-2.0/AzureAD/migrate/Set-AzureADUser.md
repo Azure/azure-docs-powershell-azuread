@@ -31,10 +31,10 @@ View more [details on permissions](/graph/api/user-update#permissions).
 
 >[!NOTE]
 > - To update sensitive user properties, such as **accountEnabled**, **mobilePhone**, and **otherMails** for users with privileged administrator roles:
->   - In delegated scenarios, the app must be assigned the *Directory.AccessAsUser.All* delegated permission and the calling user must have a higher privileged administrator role as indicated in [Who can perform sensitive actions](../resources/users.md#who-can-perform-sensitive-actions).
->   - In app-only scenarios, the app must be assigned a higher privileged administrator role as indicated in [Who can perform sensitive actions](../resources/users.md#who-can-perform-sensitive-actions).
+>   - In delegated scenarios, the app must be assigned the *Directory.AccessAsUser.All* delegated permission and the calling user must have a higher privileged administrator role as indicated in [Who can perform sensitive actions](/graph/api/resources/users#who-can-perform-sensitive-actions).
+>   - In app-only scenarios, the app must be assigned a higher privileged administrator role as indicated in [Who can perform sensitive actions](/graph/api/resources/users#who-can-perform-sensitive-actions).
 > - Your personal Microsoft account must be tied to a Microsoft Entra tenant to update your profile with the *User.ReadWrite* delegated permission on a personal Microsoft account.
-> - Updating the **identities** property requires the *User.ManageIdentities.All* permission. Also, adding a [B2C local account](../resources/objectidentity.md) to an existing **user** object is not allowed, unless the **user** object already contains a local account identity.
+> - Updating the **identities** property requires the *User.ManageIdentities.All* permission. Also, adding a [B2C local account](/graph/api/resources/objectidentity) to an existing **user** object is not allowed, unless the **user** object already contains a local account identity.
 
 ## Property Mapping
 

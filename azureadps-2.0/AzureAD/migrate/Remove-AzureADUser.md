@@ -35,9 +35,9 @@ The calling user must be assigned one of the following [Microsoft Entra roles](/
 - Privileged Authentication Administrator
 - Global Administrator
 
-To delete users with privileged administrator roles in delegated scenarios, the app must be assigned the *Directory.AccessAsUser.All* delegated permission, and the calling user must have a higher privileged administrator role as indicated in [Who can perform sensitive actions](../resources/users.md#who-can-perform-sensitive-actions).
+To delete users with privileged administrator roles in delegated scenarios, the app must be assigned the *Directory.AccessAsUser.All* delegated permission, and the calling user must have a higher privileged administrator role as indicated in [Who can perform sensitive actions](/graph/api/resources/users#who-can-perform-sensitive-actions).
 
-In app-only scenarios, the *User.ReadWrite.All* application permission isn't enough privilege to delete users with privileged administrative roles. The app must be assigned a higher privileged administrator role as indicated in [Who can perform sensitive actions](../resources/users.md#who-can-perform-sensitive-actions).
+In app-only scenarios, the *User.ReadWrite.All* application permission isn't enough privilege to delete users with privileged administrative roles. The app must be assigned a higher privileged administrator role as indicated in [Who can perform sensitive actions](/graph/api/resources/users#who-can-perform-sensitive-actions).
 
 ## Property Mapping
 
