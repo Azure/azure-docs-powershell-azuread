@@ -4,7 +4,7 @@ description: This article provides migration details from Get-AzureADPolicyAppli
 
 ms.service: active-directory
 ms.topic: reference
-ms.date: 12/10/2023
+ms.date: 12/18/2023
 ms.author: eunicewaweru
 manager: CelesteDG
 author: msewaweru
