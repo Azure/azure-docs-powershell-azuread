@@ -1,6 +1,6 @@
 ---
 title: 'Install AzureAD PowerShell for Graph'
-description: This provides a guide on the installation process of the Azure AD PowerShell module.
+description: Installation guidance for the Azure AD PowerShell module.
 ms.service: active-directory
 ms.workload: identity
 ms.topic: overview
@@ -16,9 +16,9 @@ ms.reviewer: stevemutungi
 
 You can use the Azure Active Directory PowerShell module version for Graph for Azure AD administrative tasks such as user management, domain management and for configuring single sign-on. The cmdlets listed here are different from the MSOnline cmdlets which are part of Azure Active Directory PowerShell version 1.0.
 
-The Azure AD PowerShell for Graph module has two versions: a Public Preview version and a General Availability (GA) version. It is not recommended to use the Public Preview version for production scenarios.
+The Azure AD PowerShell for Graph module has two versions: a Public Preview version and a General Availability (GA) version. It isn't recommended to use the Public Preview version for production scenarios.
 
-To download the modules from the PowerShell Gallery use the following;
+Download the modules from the PowerShell Gallery use the following;
 - [AzureADPreview](https://www.powershellgallery.com/packages/AzureADPreview)
 - [AzureAD](https://www.powershellgallery.com/packages/AzureAD)
 
@@ -60,7 +60,7 @@ To install the public preview release, run:
 Install-module AzureADPreview
 ```
 
-Note that you cannot install both the preview version and the GA version on the same computer at the same time.
+You cannot install both the preview version and the GA version on the same computer at the same time.
 
 ### About the PowerShell Gallery
 
@@ -109,7 +109,7 @@ ModuleType Version Name                ExportedCommands
 Binary     2.0.0.7 azureadpreview     {Add-AzureADAdmini...
 ```
 
-To update the version of the Azure AD PowerShell module on your computer, re-run the **Install-Module** cmdlet:
+To update the version of the Azure AD PowerShell module on your computer, rerun the **Install-Module** cmdlet:
 
 ```PowerShell
 Install-Module AzureADPreview
@@ -119,7 +119,7 @@ This command checks the PowerShell gallery to see if a newer version is availabl
 ## Connect to Azure AD
 
 Before you can run any of the cmdlets discussed in this article, you must first connect to your online service.
-To do so, run the cmdlet **Connect-AzureAD** at the Windows PowerShell command prompt. You will then be prompted for your credentials. If you want, you can supply your credentials in advance, for example:
+To do so, run the cmdlet **Connect-AzureAD** at the Windows PowerShell command prompt. You'll then be prompted for your credentials. If you want, you can supply your credentials in advance, for example:
 
 ```PowerShell
 $AzureAdCred = Get-Credential
