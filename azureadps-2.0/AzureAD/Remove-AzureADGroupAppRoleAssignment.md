@@ -104,6 +104,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## NOTES
 
+See the [migration guide for Remove-AzureADGroupAppRoleAssignment](./migrate/Remove-AzureADGroupAppRoleAssignment.md) to the Microsoft Graph PowerShell.
+
 ## INPUTS
 
 ## OUTPUTS

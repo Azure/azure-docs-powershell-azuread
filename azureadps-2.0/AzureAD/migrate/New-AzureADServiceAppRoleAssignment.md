@@ -34,7 +34,7 @@ This article provides migration details from New-AzureADServiceAppRoleAssignment
 View more [details on permissions](/graph/api/serviceprincipal-post-approleassignments#permissions).
 
 > [!NOTE]
-> As a best practice, we recommend creating app role assignments through the [`appRoleAssignedTo` relationship of the _resource_ service principal](serviceprincipal-post-approleassignedto.md), instead of the `appRoleAssignments` relationship of the assigned user, group, or service principal.
+> As a best practice, we recommend creating app role assignments through the [`appRoleAssignedTo` relationship of the _resource_ service principal](/graph/api/serviceprincipal-post-approleassignedto), instead of the `appRoleAssignments` relationship of the assigned user, group, or service principal.
 
 ## Property Mapping
 
