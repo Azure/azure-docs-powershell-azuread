@@ -105,7 +105,7 @@ This command authenticates the user to Azure Active Directory as a service princ
 ## PARAMETERS
 
 ### -AadAccessToken
-Specifies a Azure Active Directory Graph access token.
+Specifies an Azure Active Directory Graph access token.
 
 ```yaml
 Type: String
