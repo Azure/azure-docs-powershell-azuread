@@ -4,10 +4,10 @@ description: This provides a guide on the installation process of the Azure AD P
 ms.service: active-directory
 ms.workload: identity
 ms.topic: overview
-ms.date: 02/08/2022
-ms.author: rodejo
+ms.date: 12/16/2023
+ms.author: eunicewaweru
 ms.custom: posh-docs-conceptual
-ms.reviewer: rodejo
+ms.reviewer: stevemutungi
 ---
 # Install Azure Active Directory PowerShell for Graph
 
