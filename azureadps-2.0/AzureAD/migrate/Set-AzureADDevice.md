@@ -21,7 +21,7 @@ This article provides migration details from Set-AzureADDevice command to Micros
 + Azure AD Module: AzureAD
 + Microsoft Graph Command: [Update-MgDevice](/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdevice) ([Community Examples](https://github.com/orgs/msgraph/discussions?discussions_q=Update-MgDevice))
 + Graph Module: Microsoft.Graph.Identity.DirectoryManagement
-+ Graph Endpoint:  PPATCH /devices/{id}
++ Graph Endpoint:  PATCH /devices/{id}
 
 ## Permissions
 
