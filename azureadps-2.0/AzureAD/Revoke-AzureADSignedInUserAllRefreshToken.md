@@ -35,15 +35,17 @@ This command revokes the tokens for the current user.
 ### CommonParameters
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
+## NOTES
+
+See the [migration guide for Revoke-AzureADSignedInUserAllRefreshToken](./migrate/Revoke-AzureADSignedInUserAllRefreshToken.md) to the Microsoft Graph PowerShell.
+
 ## INPUTS
 
 ## OUTPUTS
 
-## NOTES
-
 ## RELATED LINKS
 
-[Revoke-AzureADUserAllRefreshToken]()
+[Revoke-AzureADUserAllRefreshToken](Revoke-AzureADUserAllRefreshToken.md)
 
 [#AzureAD: Certificate based authentication for iOS and Android now in preview!](https://blogs.technet.microsoft.com/enterprisemobility/2016/07/18/azuread-certificate-based-authentication-for-ios-and-android-now-in-preview/)
 

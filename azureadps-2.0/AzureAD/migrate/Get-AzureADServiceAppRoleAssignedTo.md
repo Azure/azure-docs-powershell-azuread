@@ -19,7 +19,7 @@ This article provides migration details from Get-AzureADServiceAppRoleAssignedTo
 
 + Azure AD Command: [Get-AzureADServiceAppRoleAssignedTo](/powershell/module/azuread/get-azureadserviceapproleassignedto)
 + Azure AD Module: AzureAD
-+ Microsoft Graph Command: [Get-MgServicePrincipalAppRoleAssignment](/powershell/module/microsoft.graph.applications/get-mgserviceprincipalapproleassignment) ([Community Examples](https://github.com/orgs/msgraph/discussions?discussions_q=Get-MgServicePrincipalAppRoleAssignment))
++ Microsoft Graph Command: [Get-MgServicePrincipalAppRoleAssignedTo](/powershell/module/microsoft.graph.applications/get-mgserviceprincipalapproleassignedto) ([Community Examples](https://github.com/orgs/msgraph/discussions?discussions_q=Get-MgServicePrincipalAppRoleAssignedTo))
 + Graph Module: Microsoft.Graph.Applications
 + Graph Endpoint:  GET /servicePrincipals/{servicePrincipal-id}/appRoleAssignedTo | /servicePrincipals/{servicePrincipal-id}/appRoleAssignedTo/{appRoleAssignment-id}
 
@@ -34,5 +34,5 @@ View more [details on permissions](/graph/api/serviceprincipal-list-approleassig
 |Azure AD Name|Microsoft Graph Name|
 |---|---|
 |All|All|
-|ObjectId|GroupId|
+|ObjectId|ServicePrincipalId|
 |Top|Top|

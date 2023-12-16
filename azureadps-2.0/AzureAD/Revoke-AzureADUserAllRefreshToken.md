@@ -50,6 +50,10 @@ Accept wildcard characters: False
 ### CommonParameters
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
+## NOTES
+
+See the [migration guide for Revoke-AzureADUserAllRefreshToken](./migrate/Revoke-AzureADUserAllRefreshToken.md) to the Microsoft Graph PowerShell.
+
 ## INPUTS
 
 ## OUTPUTS
@@ -58,7 +62,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Revoke-AzureADSignedInUserAllRefreshToken]()
+[Revoke-AzureADSignedInUserAllRefreshToken](Revoke-AzureADSignedInUserAllRefreshToken.md)
 
 [(#AzureAD: Certificate based authentication for iOS and Android now in preview!](https://blogs.technet.microsoft.com/enterprisemobility/2016/07/18/azuread-certificate-based-authentication-for-ios-and-android-now-in-preview/)
 
