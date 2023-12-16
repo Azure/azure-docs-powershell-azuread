@@ -83,17 +83,19 @@ Accept wildcard characters: False
 ### CommonParameters
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
+## NOTES
+
+See the [migration guide for Get-AzureADGroupAppRoleAssignment](./migrate/Get-AzureADGroupAppRoleAssignment.md) to the Microsoft Graph PowerShell.
+
 ## INPUTS
 
 ## OUTPUTS
 
-## NOTES
-
 ## RELATED LINKS
 
-[Get-AzureADGroup]()
+[Get-AzureADGroup](Get-AzureADGroup.md)
 
-[New-AzureADGroupAppRoleAssignment]()
+[New-AzureADGroupAppRoleAssignment](New-AzureADGroupAppRoleAssignment.md)
 
-[Remove-AzureADGroupAppRoleAssignment]()
+[Remove-AzureADGroupAppRoleAssignment](Remove-AzureADGroupAppRoleAssignment.md)
 
