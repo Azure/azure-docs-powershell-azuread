@@ -11,6 +11,9 @@ ms.reviewer: rodejo
 ---
 # Install Azure Active Directory PowerShell for Graph
 
+>[!IMPORTANT]
+> Azure AD Powershell is planned for deprecation on **March 30, 2024**. For more details on the deprecation plans, see the [deprecation update](https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/important-azure-ad-graph-retirement-and-powershell-module/ba-p/3848270). We encourage you to continue migrating to [Microsoft Graph PowerShell](/powershell/microsoftgraph/overview), which is the recommended module for interacting with Azure AD. In addition, Microsoft Graph PowerShell allows you access to all Microsoft Graph APIs and is available on PowerShell 7. For answers to frequent migration queries, see the [Migration FAQ](migration-faq.yml).
+
 You can use the Azure Active Directory PowerShell module version for Graph for Azure AD administrative tasks such as user management, domain management and for configuring single sign-on. The cmdlets listed here are different from the MSOnline cmdlets which are part of Azure Active Directory PowerShell version 1.0.
 
 The Azure AD PowerShell for Graph module has two versions: a Public Preview version and a General Availability (GA) version. It is not recommended to use the Public Preview version for production scenarios.
