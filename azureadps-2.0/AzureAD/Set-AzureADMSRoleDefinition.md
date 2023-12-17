@@ -165,6 +165,4 @@ See the [migration guide for Set-AzureADMSRoleDefinition](./migrate/Set-AzureADM
 ### string
 ## OUTPUTS
 
-## NOTES
-
 ## RELATED LINKS
