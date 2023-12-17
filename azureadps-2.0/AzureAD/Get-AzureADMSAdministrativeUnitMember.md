@@ -115,15 +115,17 @@ Accept wildcard characters: False
 ### CommonParameters
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
+## NOTES
+
+See the [migration guide for Get-AzureADMSAdministrativeUnitMember](./migrate/Get-AzureADMSAdministrativeUnitMember.md) to the Microsoft Graph PowerShell.
+
 ## INPUTS
 
 ## OUTPUTS
 
-## NOTES
-
 ## RELATED LINKS
 
-[Add-AzureADMSAdministrativeUnitMember]()
+[Add-AzureADMSAdministrativeUnitMember](Add-AzureADMSAdministrativeUnitMember.md)
 
-[Remove-AzureADMSAdministrativeUnitMember]()
+[Remove-AzureADMSAdministrativeUnitMember](Remove-AzureADMSAdministrativeUnitMember.md)
 
