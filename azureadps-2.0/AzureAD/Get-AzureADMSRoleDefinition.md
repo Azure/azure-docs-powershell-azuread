@@ -201,6 +201,10 @@ Accept wildcard characters: False
 ### CommonParameters
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
+## NOTES
+
+See the [migration guide for Get-AzureADMSRoleDefinition](./migrate/Get-AzureADMSRoleDefinition.md) to the Microsoft Graph PowerShell.
+
 ## INPUTS
 
 ### string
@@ -210,6 +214,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Open.MSGraph.Model.DirectoryRoleDefinition
-## NOTES
 
 ## RELATED LINKS
