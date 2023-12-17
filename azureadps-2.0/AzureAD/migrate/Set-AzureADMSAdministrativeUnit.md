@@ -27,7 +27,7 @@ This article provides migration details from Set-AzureADMSAdministrativeUnit com
 
 [!INCLUDE [permissions-table](~/graphref/api-reference/v1.0/includes/permissions/administrativeunit-update-permissions.md)]
 
-View more [details on permissions](/graph/api/administrativeunit-updatep#permissions).
+View more [details on permissions](/graph/api/administrativeunit-update#permissions).
 
 ## Property Mapping
 
