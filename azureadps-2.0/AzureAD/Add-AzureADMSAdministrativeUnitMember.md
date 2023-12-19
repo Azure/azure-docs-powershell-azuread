@@ -18,7 +18,7 @@ Add-AzureADMSAdministrativeUnitMember -Id <String> -RefObjectId <String>
 ```
 
 ## DESCRIPTION
-The Add-AzureADMSAdministrativeUnitMember cmdlet adds an Active Directory administrative unit member.
+The Add-AzureADMSAdministrativeUnitMember cmdlet adds a Microsoft Entra ID administrative unit member.
 
 ## EXAMPLES
 
@@ -69,7 +69,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Specifies the ID of an Active Directory administrative unit.
+Specifies the ID of a Microsoft Entra ID administrative unit.
 
 ```yaml
 Type: String
@@ -84,7 +84,7 @@ Accept wildcard characters: False
 ```
 
 ### -RefObjectId
-Specifies the unique ID of the specific Azure Active Directory object that will be assigned as owner/manager/member.
+Specifies the unique ID of the specific Microsoft Entra ID object that will be assigned as owner/manager/member.
 
 ```yaml
 Type: String
@@ -101,15 +101,17 @@ Accept wildcard characters: False
 ### CommonParameters
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
+## NOTES
+
+See the [migration guide for Add-AzureADMSAdministrativeUnitMember](./migrate/Add-AzureADMSAdministrativeUnitMember.md) to the Microsoft Graph PowerShell.
+
 ## INPUTS
 
 ## OUTPUTS
 
-## NOTES
-
 ## RELATED LINKS
 
-[Get-AzureADMSAdministrativeUnitMember]()
+[Get-AzureADMSAdministrativeUnitMember](Get-AzureADMSAdministrativeUnitMember.md)
 
-[Remove-AzureADMSAdministrativeUnitMember]()
+[Remove-AzureADMSAdministrativeUnitMember](Remove-AzureADMSAdministrativeUnitMember.md)
 

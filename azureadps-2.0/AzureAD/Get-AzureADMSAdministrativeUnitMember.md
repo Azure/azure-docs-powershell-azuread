@@ -18,7 +18,7 @@ Get-AzureADMSAdministrativeUnitMember -Id <String> [-All <Boolean>] [-Top <Int32
 ```
 
 ## DESCRIPTION
-The Get-AzureADMSAdministrativeUnitMember cmdlet gets a member of an Active Directory administrative unit.
+The Get-AzureADMSAdministrativeUnitMember cmdlet gets a member of a Microsoft Entra ID administrative unit.
 
 ## EXAMPLES
 
@@ -67,7 +67,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Specifies the ID of an administrative unit in Azure Active Directory.
+Specifies the ID of an administrative unit in the Microsoft Entra ID.
 
 ```yaml
 Type: String
@@ -115,15 +115,17 @@ Accept wildcard characters: False
 ### CommonParameters
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
+## NOTES
+
+See the [migration guide for Get-AzureADMSAdministrativeUnitMember](./migrate/Get-AzureADMSAdministrativeUnitMember.md) to the Microsoft Graph PowerShell.
+
 ## INPUTS
 
 ## OUTPUTS
 
-## NOTES
-
 ## RELATED LINKS
 
-[Add-AzureADMSAdministrativeUnitMember]()
+[Add-AzureADMSAdministrativeUnitMember](Add-AzureADMSAdministrativeUnitMember.md)
 
-[Remove-AzureADMSAdministrativeUnitMember]()
+[Remove-AzureADMSAdministrativeUnitMember](Remove-AzureADMSAdministrativeUnitMember.md)
 

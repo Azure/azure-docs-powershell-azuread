@@ -46,7 +46,7 @@ This command gets the owners of an application.
 ## PARAMETERS
 
 ### -ObjectId
-Specifies the ID of an application in Azure Active Directory.
+Specifies the ID of an application in the Microsoft Entra ID.
 
 ```yaml
 Type: String
@@ -94,6 +94,10 @@ Accept wildcard characters: False
 ### CommonParameters
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
+## NOTES
+
+See the [migration guide for Get-AzureADMSApplicationOwner](./migrate/Get-AzureADMSApplicationOwner.md) to the Microsoft Graph PowerShell.
+
 ## INPUTS
 
 ### bool?
@@ -102,11 +106,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Open.MSGraph.Model.GetDirectoryObjectsResponse
-## NOTES
 
 ## RELATED LINKS
 
-[Add-AzureADMSApplicationOwner]()
+[Add-AzureADMSApplicationOwner](Add-AzureADMSApplicationOwner.md)
 
-[Remove-AzureADMSApplicationOwner]()
+[Remove-AzureADMSApplicationOwner](Remove-AzureADMSApplicationOwner.md)
 

@@ -100,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-Specifies the ID of an application in Azure Active Directory.
+Specifies the ID of an application in the Microsoft Entra ID.
 
 ```yaml
 Type: String

@@ -70,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-Specifies the ID of a group in Azure Active Directory.
+Specifies the ID of a group in the Microsoft Entra ID.
 
 ```yaml
 Type: String
@@ -85,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -RefObjectId
-Specifies the ID of the Active Directory object that will be assigned as owner/manager/member.
+Specifies the ID of the Microsoft Entra ID object that will be assigned as owner/manager/member.
 
 ```yaml
 Type: String

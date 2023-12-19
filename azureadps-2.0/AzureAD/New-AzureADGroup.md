@@ -19,7 +19,7 @@ New-AzureADGroup [-InformationAction <ActionPreference>] [-InformationVariable <
 ```
 
 ## DESCRIPTION
-The New-AzureADGroup cmdlet creates a group in Azure Active Directory (AD).
+The New-AzureADGroup cmdlet creates a group in the Microsoft Entra ID.
 
 ## EXAMPLES
 
@@ -151,17 +151,19 @@ Accept wildcard characters: False
 ### CommonParameters
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
+## NOTES
+
+See the [migration guide for New-AzureADGroup](./migrate/New-AzureADGroup.md) to the Microsoft Graph PowerShell.
+
 ## INPUTS
 
 ## OUTPUTS
 
-## NOTES
-
 ## RELATED LINKS
 
-[Get-AzureADGroup]()
+[Get-AzureADGroup](Get-AzureADGroup.md)
 
-[Remove-AzureADGroup]()
+[Remove-AzureADGroup](Remove-AzureADGroup.md)
 
-[Set-AzureADGroup]()
+[Set-AzureADGroup](Set-AzureADGroup.md)
 

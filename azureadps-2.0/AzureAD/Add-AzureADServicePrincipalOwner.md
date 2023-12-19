@@ -108,19 +108,21 @@ Accept wildcard characters: False
 ### CommonParameters
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
+## NOTES
+
+See the [migration guide for Add-AzureADServicePrincipalOwner](./migrate/Add-AzureADServicePrincipalOwner.md) to the Microsoft Graph PowerShell.
+
 ## INPUTS
 
 ## OUTPUTS
 
-## NOTES
-
 ## RELATED LINKS
 
-[Get-AzureADServicePrincipal]()
+[Get-AzureADServicePrincipal](Get-AzureADServicePrincipal.md)
 
-[Get-AzureADServicePrincipalOwner]()
+[Get-AzureADServicePrincipalOwner](Get-AzureADServicePrincipalOwner.md)
 
-[Get-AzureADUser]()
+[Get-AzureADUser](Get-AzureADUser.md)
 
-[Remove-AzureADServicePrincipalOwner]()
+[Remove-AzureADServicePrincipalOwner](Remove-AzureADServicePrincipalOwner.md)
 

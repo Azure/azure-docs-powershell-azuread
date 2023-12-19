@@ -18,7 +18,7 @@ New-AzureADMSAdministrativeUnit [-InformationAction <ActionPreference>] [-Inform
 ```
 
 ## DESCRIPTION
-The New-AzureADMSAdministrativeUnit cmdlet creates an administrative unit in Azure Active Directory (AD).
+The New-AzureADMSAdministrativeUnit cmdlet creates an administrative unit in the Microsoft Entra ID.
 
 ## EXAMPLES
 
@@ -102,17 +102,19 @@ Accept wildcard characters: False
 ### CommonParameters
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
+## NOTES
+
+See the [migration guide for New-AzureADMSAdministrativeUnit](./migrate/New-AzureADMSAdministrativeUnit.md) to the Microsoft Graph PowerShell.
+
 ## INPUTS
 
 ## OUTPUTS
 
-## NOTES
-
 ## RELATED LINKS
 
-[Get-AzureADMSAdministrativeUnit]()
+[Get-AzureADMSAdministrativeUnit](Get-AzureADMSAdministrativeUnit.md)
 
-[Remove-AzureADMSAdministrativeUnit]()
+[Remove-AzureADMSAdministrativeUnit](Remove-AzureADMSAdministrativeUnit.md)
 
-[Set-AzureADMSAdministrativeUnit]()
+[Set-AzureADMSAdministrativeUnit](Set-AzureADMSAdministrativeUnit.md)
 
