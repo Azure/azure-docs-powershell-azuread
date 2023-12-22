@@ -8,7 +8,7 @@ ms.service: active-directory
 ms.workload: identity
 ms.tgt_pltfrm: na
 ms.devlang: powershell
-ms.topic: article
+ms.topic: troubleshooting
 ms.date: 07/10/2017
 ms.author: rodejo
 ms.custom: posh-docs-conceptual
