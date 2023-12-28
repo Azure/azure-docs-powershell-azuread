@@ -19,7 +19,7 @@ This article provides migration details from Get-AzureADApplicationKeyCredential
 
 + Azure AD Command: [Get-AzureADApplicationKeyCredential](/powershell/module/azuread/get-azureadapplicationkeycredential)
 + Azure AD Module: AzureAD
-+ Microsoft Graph Command: [Get-MgApplication](/powershell/module/microsoft.graph.applications/get-mgapplicationy) ([Community Examples](https://github.com/orgs/msgraph/discussions?discussions_q=Get-MgApplication))
++ Microsoft Graph Command: [Get-MgApplication](/powershell/module/microsoft.graph.applications/get-mgapplication) ([Community Examples](https://github.com/orgs/msgraph/discussions?discussions_q=Get-MgApplication))
 + Graph Module: Microsoft.Graph.Applications
 + Graph Endpoint: GET /applications/{applicationObjectId}
 
