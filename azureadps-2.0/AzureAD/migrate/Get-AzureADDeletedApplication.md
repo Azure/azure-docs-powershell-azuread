@@ -27,10 +27,10 @@ This article provides migration details from Get-AzureADDeletedApplication comma
 
 | Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
 |:-|:-|:-|:-|
-| [administrativeUnit](../resources/administrativeunit) | AdministrativeUnit.Read.All | Not supported. | AdministrativeUnit.Read.All |
+| [administrativeUnit](/graph/api/resources/administrativeunit) | AdministrativeUnit.Read.All | Not supported. | AdministrativeUnit.Read.All |
 | [application](/graph/api/resources/application) | Application.Read.All | Not supported. | Application.Read.All |
 | [group](/graph/api/resources/group) | Group.Read.All | Not supported. | Group.Read.All |
-| [servicePrincipal](../resources/serviceprincipal) | Application.Read.All | Not supported. | Application.Read.All |
+| [servicePrincipal](/graph/api/resources/serviceprincipal) | Application.Read.All | Not supported. | Application.Read.All |
 | [user](/graph/api/resources/user) | User.Read.All | Not supported. | User.Read.All |
 
 ## Property Mapping
