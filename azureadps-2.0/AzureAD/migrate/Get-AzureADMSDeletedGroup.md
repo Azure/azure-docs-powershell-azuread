@@ -11,7 +11,7 @@ author: msewaweru
 ms.reviewer: stevemutungi
 ---
 
-## Get-AzureADMSDeletedDirectoryObject
+# Get-AzureADMSDeletedDirectoryObject
 
 This article provides migration details from Get-AzureADMSDeletedDirectoryObject command to Microsoft Graph PowerShell.
 
