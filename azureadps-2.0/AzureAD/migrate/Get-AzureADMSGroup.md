@@ -1,6 +1,6 @@
 ---
-title: Get-AzureADGroup
-description: This article provides migration details from Get-AzureADGroup command to Microsoft Graph PowerShell.
+title: Get-AzureADMSGroup
+description: This article provides migration details from Get-AzureADMSGroup command to Microsoft Graph PowerShell.
 
 ms.service: active-directory
 ms.topic: reference
@@ -11,13 +11,13 @@ author: msewaweru
 ms.reviewer: stevemutungi
 ---
 
-# Get-AzureADGroup
+# Get-AzureADMSGroup
 
-This article provides migration details from Get-AzureADGroup command to Microsoft Graph PowerShell.
+This article provides migration details from Get-AzureADMSGroup command to Microsoft Graph PowerShell.
 
 ## Summary
 
-+ Azure AD Command: [Get-AzureADGroup](/powershell/module/azuread/get-azureadgroup)
++ Azure AD Command: [Get-AzureADMSGroup](/powershell/module/azuread/get-azureadmsgroup)
 + Azure AD Module: AzureAD
 + Microsoft Graph Command: [Get-MgGroup](/powershell/module/microsoft.graph.groups/get-mggroup) ([Community Examples](https://github.com/orgs/msgraph/discussions?discussions_q=Get-MgGroup))
 + Graph Module: Microsoft.Graph.Groups
