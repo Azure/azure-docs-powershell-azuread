@@ -187,24 +187,28 @@ Accept wildcard characters: False
 ### CommonParameters
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
+## NOTES
+
+See the [migration guide for New-AzureADMSGroup](./migrate/New-AzureADMSGroup.md) to the Microsoft Graph PowerShell.
+
+This cmdlet is currently in Public Preview.
+While a cmdlet is in Public Preview, we may make changes to the cmdlet which could have unexpected effects.
+We recommend that you do not use this cmdlet in a production environment.
+
 ## INPUTS
 
 ### None
 ## OUTPUTS
 
 ### System.Object
-## NOTES
-This cmdlet is currently in Public Preview.
-While a cmdlet is in Public Preview, we may make changes to the cmdlet which could have unexpected effects.
-We recommend that you do not use this cmdlet in a production environment.
 
 ## RELATED LINKS
 
-[Get-AzureADMSGroup]()
+[Get-AzureADMSGroup](Get-AzureADMSGroup.md)
 
-[Remove-AzureADMSGroup]()
+[Remove-AzureADMSGroup](Remove-AzureADMSGroup.md)
 
-[Set-AzureADMSGroup]()
+[Set-AzureADMSGroup](Set-AzureADMSGroup.md)
 
 [Using attributes to create advanced rules](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/)
 

@@ -469,6 +469,10 @@ Accept wildcard characters: False
 ### CommonParameters
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
+## NOTES
+
+See the [migration guide for New-AzureADMSApplication](./migrate/New-AzureADMSApplication.md) to the Microsoft Graph PowerShell.
+
 ## INPUTS
 
 ### Boolean
@@ -493,15 +497,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADMSApplication]()
+[Get-AzureADMSApplication](Get-AzureADMSApplication.md)
 
-[Remove-AzureADMSApplication]()
+[Remove-AzureADMSApplication](Remove-AzureADMSApplication.md)
 
-[Set-AzureADMSApplication]()
-
-[Get-AzureADMSApplication]()
-
-[Remove-AzureADMSApplication]()
-
-[Set-AzureADMSApplication]()
-
+[Set-AzureADMSApplication](Set-AzureADMSApplication.md)
