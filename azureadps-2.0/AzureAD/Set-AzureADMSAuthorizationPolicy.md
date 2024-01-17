@@ -144,14 +144,16 @@ Accept wildcard characters: False
 ### CommonParameters
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
+## NOTES
+
+See the [migration guide for Set-AzureADMSAuthorizationPolicy](./migrate/Set-AzureADMSAuthorizationPolicy.md) to the Microsoft Graph PowerShell.
+
 ## INPUTS
 
 ### Microsoft.Open.MSGraph.Model.DefaultUserRolePermissions
 ## OUTPUTS
 
-## NOTES
-
 ## RELATED LINKS
 
-[Get-AzureADMSAuthorizationPolicy]()
+[Get-AzureADMSAuthorizationPolicy](Get-AzureADMSAuthorizationPolicy.md)
 

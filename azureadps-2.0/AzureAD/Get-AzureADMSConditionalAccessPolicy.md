@@ -74,16 +74,19 @@ Accept wildcard characters: False
 ### CommonParameters
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
+## NOTES
+
+See the [migration guide for Get-AzureADMSConditionalAccessPolicy](./migrate/Get-AzureADMSConditionalAccessPolicy.md) to the Microsoft Graph PowerShell.
+
 ## INPUTS
 
 ## OUTPUTS
 
-## NOTES
 ## RELATED LINKS
 
-[New-AzureADMSConditionalAccessPolicy]()
+[New-AzureADMSConditionalAccessPolicy](New-AzureADMSConditionalAccessPolicy.md)
 
-[Set-AzureADMSConditionalAccessPolicy]()
+[Set-AzureADMSConditionalAccessPolicy](Set-AzureADMSConditionalAccessPolicy.md)
 
-[Remove-AzureADMSConditionalAccessPolicy]()
+[Remove-AzureADMSConditionalAccessPolicy](Remove-AzureADMSConditionalAccessPolicy.md)
 
