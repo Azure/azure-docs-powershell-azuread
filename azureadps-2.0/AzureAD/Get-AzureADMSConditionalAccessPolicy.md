@@ -3,6 +3,13 @@ external help file: Microsoft.Open.MS.GraphV10.PowerShell.dll-Help.xml
 Module Name: AzureAD
 online version:
 schema: 2.0.0
+ms.service: active-directory
+ms.topic: reference
+ms.date: 01/19/2024
+ms.author: eunicewaweru
+manager: CelesteDG
+author: msewaweru
+ms.reviewer: stevemutungi
 ---
 
 # Get-AzureADMSConditionalAccessPolicy
