@@ -52,6 +52,10 @@ Accept wildcard characters: False
 ### CommonParameters
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
+## NOTES
+
+See the [migration guide for Get-AzureADMSPermissionGrantPolicy](./migrate/Get-AzureADMSPermissionGrantPolicy.md) to the Microsoft Graph PowerShell.
+
 ## INPUTS
 
 ## OUTPUTS
@@ -60,9 +64,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[New-AzureADMSPermissionGrantPolicy]()
+[New-AzureADMSPermissionGrantPolicy](New-AzureADMSPermissionGrantPolicy.md)
 
-[Set-AzureADMSPermissionGrantPolicy]()
+[Set-AzureADMSPermissionGrantPolicy](Set-AzureADMSPermissionGrantPolicy.md)
 
-[Remove-AzureADMSPermissionGrantPolicy]()
+[Remove-AzureADMSPermissionGrantPolicy](Remove-AzureADMSPermissionGrantPolicy.md)
 
