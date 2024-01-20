@@ -104,12 +104,15 @@ Accept wildcard characters: False
 ### CommonParameters
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
+## NOTES
+
+See the [migration guide for New-AzureADMSIdentityProvider](./migrate/New-AzureADMSIdentityProvider.md) to the Microsoft Graph PowerShell.
+
 ## INPUTS
 
 ### None
 ## OUTPUTS
 
 ### System.Object
-## NOTES
 
 ## RELATED LINKS

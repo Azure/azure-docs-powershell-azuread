@@ -165,16 +165,19 @@ Accept wildcard characters: False
 ### CommonParameters
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
+## NOTES
+
+See the [migration guide for Set-AzureADMSNamedLocationPolicy](./migrate/Set-AzureADMSNamedLocationPolicy.md) to the Microsoft Graph PowerShell.
+
 ## INPUTS
 
 ## OUTPUTS
 
-## NOTES
 ## RELATED LINKS
 
-[Get-AzureADMSNamedLocationPolicy]()
+[Get-AzureADMSNamedLocationPolicy](Get-AzureADMSNamedLocationPolicy.md)
 
-[New-AzureADMSNamedLocationPolicy]()
+[New-AzureADMSNamedLocationPolicy](New-AzureADMSNamedLocationPolicy.md)
 
-[Remove-AzureADMSNamedLocationPolicy]()
+[Remove-AzureADMSNamedLocationPolicy](Remove-AzureADMSNamedLocationPolicy.md)
 
