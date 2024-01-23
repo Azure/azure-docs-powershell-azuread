@@ -3,6 +3,13 @@ external help file: Microsoft.Open.MS.GraphV10.PowerShell.dll-Help.xml
 Module Name: AzureAD
 online version:
 schema: 2.0.0
+ms.service: active-directory
+ms.topic: reference
+ms.date: 01/19/2024
+ms.author: eunicewaweru
+manager: CelesteDG
+author: msewaweru
+ms.reviewer: stevemutungi
 ---
 
 # Set-AzureADMSGroupLifecyclePolicy
@@ -98,12 +105,15 @@ Accept wildcard characters: False
 ### CommonParameters
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
+## NOTES
+
+See the [migration guide for Set-AzureADMSGroupLifecyclePolicy](./migrate/Set-AzureADMSGroupLifecyclePolicy.md) to the Microsoft Graph PowerShell.
+
 ## INPUTS
 
 ### System.String
 ## OUTPUTS
 
 ### System.Object
-## NOTES
 
 ## RELATED LINKS

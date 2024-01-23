@@ -237,6 +237,10 @@ Accept wildcard characters: False
 ### CommonParameters
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
+## NOTES
+
+See the [migration guide for New-AzureADMSPermissionGrantConditionSet](./migrate/New-AzureADMSPermissionGrantConditionSet.md) to the Microsoft Graph PowerShell.
+
 ## INPUTS
 
 ### string
@@ -248,9 +252,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Set-AzureADMSPermissionGrantConditionSet]()
+[Set-AzureADMSPermissionGrantConditionSet](Set-AzureADMSPermissionGrantConditionSet.md)
 
-[Get-AzureADMSPermissionGrantConditionSet]()
+[Get-AzureADMSPermissionGrantConditionSet](Get-AzureADMSPermissionGrantConditionSet.md)
 
-[Remove-AzureADMSPermissionGrantConditionSet]()
+[Remove-AzureADMSPermissionGrantConditionSet](Remove-AzureADMSPermissionGrantConditionSet.md)
 
