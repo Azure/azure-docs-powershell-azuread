@@ -8,6 +8,10 @@ Locale: en-US
 
 # AzureADPreview Module
 ## Description
+
+>[!IMPORTANT]
+> Azure AD PowerShell is planned for deprecation. For more details on the deprecation plans, see the [deprecation update](https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/important-azure-ad-graph-retirement-and-powershell-module/ba-p/3848270). You can start trying [Microsoft Graph PowerShell](/powershell/microsoftgraph/overview) to interact with Azure AD as you would in Azure AD PowerShell. In addition, Microsoft Graph PowerShell allows you access to all Microsoft Graph APIs and is available on PowerShell 7. For answers to frequent migration queries, see the [migration FAQ](../../docs-conceptual/azureadps-2.0/migration-faq.yml).
+
 The Azure Active Directory PowerShell for Graph Preview module can be downloaded and installed from the PowerShell Gallery, www.powershellgallery.com. The gallery uses the PowerShellGet module. The PowerShellGet module requires PowerShell 3.0 or newer and requires one of the following operating systems:
 
 Windows 10 Windows 8.1 Pro Windows 8.1 Enterprise Windows 7 SP1 Windows Server 2016 TP5 Windows Server 2012 R2 Windows Server 2008 R2 SP1
