@@ -12,7 +12,8 @@ ms.custom: iamfeature=PowerShell
 # MSOnline Module
 ## Description
 
-Note: this is the older MSOnline V1 PowerShell module for Azure Active Directory. Customers are encouraged to use the newer Azure Active Directory V2 PowerShell module instead of this module. For more information about the V2 module please see [Azure Active Directory V2 PowerShell](/powershell/azure/active-directory/overview?view=azureadps-2.0&preserve_view=true).
+>[!IMPORTANT]
+> Azure AD Powershell is planned for deprecation on **March 30, 2024**. For more details on the deprecation plans, see the [deprecation update](https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/important-azure-ad-graph-retirement-and-powershell-module/ba-p/3848270). We encourage you to continue migrating to [Microsoft Graph PowerShell](/powershell/microsoftgraph/overview), which is the recommended module for interacting with Azure AD. In addition, Microsoft Graph PowerShell allows you access to all Microsoft Graph APIs and is available on PowerShell 7. For answers to frequent migration queries, see the [Migration FAQ](migration-faq.yml).
 
 For more detail info on installation of the AzureAD cmdlets please see: [Azure ActiveDirectory (MSOnline)](/powershell/azure/active-directory/overview?view=azureadps-1.0&preserve_view=true).
 
