@@ -126,6 +126,8 @@
       }
     },
     "globalMetadata": {
+      "feedback_system": "Standard",
+      "feedback_help_link_type": "ask-the-community "
       "showPowerShellPicker": "true",
       "apiPlatform": "powershell",
       "uhfHeaderId": "Azure",
