@@ -126,6 +126,7 @@
       }
     },
     "globalMetadata": {
+      "feedback_system": "Standard",
       "showPowerShellPicker": "true",
       "apiPlatform": "powershell",
       "uhfHeaderId": "Azure",
