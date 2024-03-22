@@ -50,13 +50,13 @@ PS C:\> $bin = $cer.GetRawCertData()
 PS C:\> $base64Value = [System.Convert]::ToBase64String($bin)
 PS C:\> $bin = $cer.GetCertHash()
 PS C:\> $base64Thumbprint = [System.Convert]::ToBase64String($bin)
-PS C:\> $keyid = [System.Guid]::NewGuid().ToString() 
-PS C:\> New-AzureADApplicationKeyCredential -ObjectId $keyid -CustomKeyIdentifier $base64Thumbprint -Type AsymmetricX509Cert -Usage Verify -Value $base64Value -StartDate $cer.GetEffectiveDateString() -EndDate $cer.GetExpirationDateString()
+
+PS C:\> New-AzureADApplicationKeyCredential -ObjectId $AppID -CustomKeyIdentifier $base64Thumbprint -Type AsymmetricX509Cert -Usage Verify -Value $base64Value -StartDate $cer.GetEffectiveDateString() -EndDate $cer.GetExpirationDateString()
 ```
 
 The first seven commands create values for the application key credential and stores them in variables.
 
-The final command uses a certificate to add an application key credential.
+The final command adds the key credential to the application.
 
 ## PARAMETERS
 
