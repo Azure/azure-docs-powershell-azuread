@@ -14,11 +14,11 @@ summary: This article provides answers to frequently asked questions about migra
 sections:
     - name: Ignored
       questions:
-      - question: What happens to Azure AD PowerShell come March 2024?
+      - question: What happens to Azure AD PowerShell after March 2024?
         answer: |
           In June 2020, we announced the retirement of Azure AD Graph API in favor of the Microsoft Graph API, which provides all the functionality of Azure AD Graph along with new functionality. As a result, all applications calling the Azure AD Graph API would receive an error message from the endpoint after the original proposed retirement date of June 30, 2022. Azure AD PowerShell is one of the applications that utilizes the Azure AD Graph API. 
           
-          Azure AD PowerShell continues to function after June 2023 to allow users more time to migrate to [Microsoft Graph PowerShell](/powershell/microsoftgraph/overview). The Azure AD and Azure AD-Preview PowerShell modules are planned for deprecation on March 30, 2024. After the deprecation is announced, the only support offered for this PowerShell module will be support in migrating to Microsoft Graph PowerShell SDK and security fixes. Once these modules are deprecated, they continue to work for a minimum of six (6) months before being retired. We encourage you to migrate to Microsoft Graph PowerShell. 
+          Azure AD PowerShell has continued to function after June 2023 to allow users more time to migrate to [Microsoft Graph PowerShell](/powershell/microsoftgraph/overview). The Azure AD and Azure AD-Preview PowerShell modules are now deprecated on March 30, 2024. After the deprecation, the only support offered for this PowerShell module will be support in migrating to Microsoft Graph PowerShell SDK and security fixes. The module will continue to work for a minimum of six (6) months before being retired. We encourage you to migrate to Microsoft Graph PowerShell. 
           
 
       - question: What is Microsoft doing about the gaps in functionality between Azure AD and Microsoft Graph PowerShell modules?
