@@ -12,8 +12,10 @@ ms.custom: posh-docs-conceptual
 # Azure Active Directory PowerShell for Graph
 
 >[!IMPORTANT]
->Azure AD and MSOnline PowerShell are now deprecated as of March 30, 2024. To learn more, read the [deprecation update](https://techcommunity.microsoft.com/t5/microsoft-entra-blog/important-update-deprecation-of-azure-ad-powershell-and-msonline/ba-p/4094536). The only support offered for these PowerShell modules after deprecation will be for migrating to Microsoft Graph PowerShell SDK and security fixes. The deprecated modules will continue to work for a minimum of six (6) months before being retired.
->We recommend migrating to [Microsoft Graph PowerShell](/powershell/microsoftgraph/overview) to interact with Microsoft Entra ID (formerly Azure AD). Microsoft Graph PowerShell allows access to all Microsoft Graph APIs and is available on PowerShell 7. For answers to common migration queries, see the [Migration FAQ](/powershell/azure/active-directory/migration-faq).
+> Azure AD and MSOnline PowerShell modules are deprecated as of March 30, 2024. To learn more, read the [deprecation update](https://techcommunity.microsoft.com/t5/microsoft-entra-blog/important-azure-ad-graph-retirement-and-powershell-module/ba-p/3848270). After this date, support for these modules are limited to migration assistance to Microsoft Graph PowerShell SDK and security fixes. The deprecated modules will continue to function through March, 30 2025.
+>
+> We recommend migrating to [Microsoft Graph PowerShell](/powershell/microsoftgraph/overview) to interact with Microsoft Entra ID (formerly Azure AD). For common migration questions, refer to the [Migration FAQ](/powershell/azure/active-directory/migration-faq). *Note:* Versions 1.0.x of MSOnline may experience disruption after June 30, 2024.
+
 
 Azure Active Directory PowerShell for Graph (Azure AD PowerShell) is a module IT Pros commonly use to manage their Azure Active Directory. The cmdlets in the Azure AD PowerShell module enable you to retrieve data from the directory, create new objects in the directory, update existing objects, remove objects, as well as configure the directory and its features.
 
