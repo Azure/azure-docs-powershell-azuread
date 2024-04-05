@@ -15,27 +15,23 @@ sections:
     - name: Ignored
       questions:
       - question: What happens to Azure AD PowerShell after March 30, 2024?
-        answer: |
-          
+        answer: |          
           As of March 30, 2024, Azure AD, Azure AD Preview, and MS Online PowerShell modules are deprecated. Support will only be offered for critical security fixes. They will continue to function through March 30, 2025. Note: Only MSOnline versions 1.1.166.0 (2017) and later are assured to function through March 30, 2025. Use of versions earlier than 1.1.166.0 may experience disruptions after June 30, 2024. 
           
       - question: What is Microsoft doing about the gaps in functionality between Azure AD and Microsoft Graph PowerShell modules?
-        answer: |
-          
+        answer: |          
           We've been updating Microsoft Graph PowerShell to match the old modules. To help with migration, see the [cmdlet map](/powershell/microsoftgraph/azuread-msoline-cmdlet-map) of MSOnline and Azure AD PowerShell cmdlets to Microsoft Graph PowerShell. 
           
           We have also added tools such as the [Find-MgGraphCommand](/powershell/microsoftgraph/find-mg-graph-command) and [Find-MgGraphPermission](/powershell/microsoftgraph/find-mg-graph-permission) to help you find and use the appropriate Microsoft Graph PowerShell cmdlets.  
 
       - question: What is Microsoft doing to improve the Microsoft Graph PowerShell user experience?
         answer: |
-
           Microsoft Graph PowerShell cmdlets are created automatically from the API schema and are always up to date. However, they might not be as easy to use as those made by people. We're working to make them easier to use and better documented. We will also continue to add rich examples to the cmdlets. 
           
           The Microsoft Graph PowerShell SDK is open source, so you can help improve its usability or suggest new features for managing Microsoft Entra ID. Your contributions are welcome!
           
       - question: How is Microsoft going to support users who are migrating to Microsoft Graph PowerShell?
-        answer: |
-          
+        answer: |          
           We’re making substantial new and future investments in the PowerShell experience for managing Entra. Please continue to monitor this space as we announce exciting improvements in the coming months..
           
           Send us your feedback or suggestions on how we can improve Microsoft Entra ID management within Microsoft Graph PowerShell SDK by [logging an issue](https://github.com/microsoftgraph/msgraph-sdk-powershell/issues/new).          
