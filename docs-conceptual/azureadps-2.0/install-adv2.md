@@ -4,7 +4,7 @@ description: Installation guidance for the Azure AD PowerShell module.
 ms.service: active-directory
 ms.workload: identity
 ms.topic: overview
-ms.date: 12/16/2023
+ms.date: 04/25/2024
 ms.author: eunicewaweru
 ms.custom: posh-docs-conceptual
 ms.reviewer: stevemutungi
