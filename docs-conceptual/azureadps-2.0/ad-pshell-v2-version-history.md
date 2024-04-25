@@ -6,13 +6,12 @@ documentationcenter: ''
 author: msewaweru
 manager: CelesteDG
 editor: ''
+ms.devlang: powershell
 ms.service: active-directory
-ms.devlang: na
 ms.topic: reference
 ms.tgt_pltfrm: na
 ms.workload: identity
-ms.date: 08/01/2023
-ms.subservice: hybrid
+ms.date: 04/25/2024
 ms.author: eunicewaweru
 ms.collection: M365-identity-device-management
 ---
