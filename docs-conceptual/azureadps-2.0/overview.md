@@ -4,7 +4,7 @@ description: An introduction to the Azure AD PowerShell module.
 ms.service: active-directory
 ms.workload: identity
 ms.topic: overview
-ms.date: 07/10/2017
+ms.date: 04/25/2024
 ms.author: eunicewaweru
 ms.custom: posh-docs-conceptual
 ---
