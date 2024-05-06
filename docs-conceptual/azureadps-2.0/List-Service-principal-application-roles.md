@@ -36,7 +36,7 @@ Get-AzureADServicePrincipal | % {
 > [!NOTE]
 > If a particular application has more than 100 assignments above script would not return all the details.
 
-#List all Users and Role assignments for a particular Service Principal in your directory. 
+## List all Users and Role assignments for a particular Service Principal in your directory. 
 
 If you want to list all users and their role assignments for a specific Service Principal in your Azure Active Directory, you can use the below script. Since below script uses access token to call Graph API query you would need to have an App Registration with Directory.Read.All Permission to execute the script. In essence, this script provides a comprehensive list of all users and their role assignments for a specific Service Principal in your Azure Active Directory, exporting this information to a CSV file for easy viewing and analysis. This allows you to effectively manage and monitor the role assignments within your directory.
 
