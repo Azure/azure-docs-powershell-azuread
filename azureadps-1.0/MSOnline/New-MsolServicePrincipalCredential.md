@@ -41,15 +41,7 @@ The service principal is identified by supplying either the object ID, app princ
 
 ## EXAMPLES
 
-### Example 1: Add a credential to a service principal
-```
-PS C:\> New-MsolServicePrincipalCredential -ServicePrincipalName "MyApp/myApp.com"
-```
-
-This command adds a credential, or a key, object to an existing service principal.
-In this example, a symmetric key is generated for this credential and added to the service principal using the service principal name value of MyApp/myApp.com.
-
-### Example 2: Add an existing credential to a service principal
+### Example 1: Add an existing credential to a service principal
 ```
 PS C:\> $Certificate = New-Object System.Security.Cryptography.X509Certificates.X509Certificate
 PS C:\> $Certificate.Import("C:\myapp.cer")
@@ -61,7 +53,7 @@ PS C:\> New-MsolServicePrincipalCredential -ServicePrincipalName "MyApp/myApp.co
 This example adds a credential, or a key, object to an existing service principal.
 In this example, the supplied base64 encoded public X509 certificate, named myapp.cer, is added to the service principal using the service principal name value of MyApp/myApp.com.
 
-### Example 3: Register an on-premises Exchange Server
+### Example 2: Register an on-premises Exchange Server
 ```
 PS C:\> New-MsolServicePrincipalCredential -AppPrincipalId  -Type asymmetric -Value $CredValue
 ```
@@ -189,6 +181,9 @@ Valid values are:
 * password
 
 The default value is symmetric.
+
+>[!IMPORTANT]
+>Asymmetric keys are recommended. Symmetric keys aren't secure and will be disabled.
 
 ```yaml
 Type: ServicePrincipalCredentialType
