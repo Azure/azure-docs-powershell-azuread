@@ -184,7 +184,7 @@ Valid values are:
 The default value is symmetric.
 
 >[!IMPORTANT]
->Asymmetric keys are recommended. Symmetric keys aren't secure and will be disabled.
+>Asymmetric keys are recommended. Symmetric keys aren't secure and will be disabled for service principals that access Microsoft first-party applications.
 
 ```yaml
 Type: ServicePrincipalCredentialType
