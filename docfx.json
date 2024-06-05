@@ -118,6 +118,12 @@
         "azureadps-2.0-preview/**/*.yml": "kbrint",
         "docs-conceptual/**/*.md": "kbrint"
       },
+       "ms.topic": {
+        "azureadps-1.0/**/*.yml": "reference",
+        "azureadps-2.0/**/*.yml": "reference",
+        "azureadps-2.0-preview/**/*.yml": "reference",
+        "docs-conceptual/**/*.md": "conceptual"
+      },
       "ms.service": {
         "azureadps-1.0/**/*.yml": "active-directory",
         "azureadps-2.0/**/*.yml": "active-directory",
