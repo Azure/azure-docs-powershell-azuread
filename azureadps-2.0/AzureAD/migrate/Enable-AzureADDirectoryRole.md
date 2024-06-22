@@ -19,7 +19,7 @@ This article provides migration details from Enable-AzureADDirectoryRole command
 
 + Azure AD Command: [Enable-AzureADDirectoryRole](/powershell/module/azuread/enable-azureaddirectoryrole)
 + Azure AD Module: AzureAD
-+ Microsoft Graph Command: [New-MgDirectoryRoleTemplate](/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryroletemplate) ([Community Examples](https://github.com/orgs/msgraph/discussions?discussions_q=New-MgDirectoryRoleTemplate))
++ Microsoft Graph Command: [New-MgDirectoryRole](/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryrole) ([Community Examples](https://github.com/orgs/msgraph/discussions?discussions_q=New-MgDirectoryRole))
 + Graph Module: Microsoft.Graph.Identity.DirectoryManagement
 + Graph Endpoint:  POST /directoryRoles
 

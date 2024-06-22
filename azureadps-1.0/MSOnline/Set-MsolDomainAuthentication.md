@@ -20,8 +20,7 @@ Set-MsolDomainAuthentication -DomainName <String> -Authentication <DomainAuthent
  [-PassiveLogOnUri <String>] [-ActiveLogOnUri <String>] [-IssuerUri <String>] [-FederationBrandName <String>]
  [-MetadataExchangeUri <String>] [-PreferredAuthenticationProtocol <AuthenticationProtocol>]
  [-SupportsMfa <Boolean>] [-DefaultInteractiveAuthenticationMethod <String>]
- [-OpenIdConnectDiscoveryEndpoint <String>] [-SigningCertificate
- Status <SigningCertificateUpdateStatus>]
+ [-OpenIdConnectDiscoveryEndpoint <String>] [-SigningCertificateUpdateStatus <SigningCertificateUpdateStatus>]
  [-PromptLoginBehavior <PromptLoginBehavior>] [-TenantId <Guid>] [<CommonParameters>]
 ```
 
