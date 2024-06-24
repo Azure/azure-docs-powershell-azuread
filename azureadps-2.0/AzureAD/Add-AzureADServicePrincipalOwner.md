@@ -8,6 +8,7 @@ schema: 2.0.0
 # Add-AzureADServicePrincipalOwner
 
 ## SYNOPSIS
+
 Adds an owner to a service principal.
 
 ## SYNTAX
@@ -18,15 +19,17 @@ Add-AzureADServicePrincipalOwner -ObjectId <String> -RefObjectId <String>
 ```
 
 ## DESCRIPTION
+
 The Add-AzureADServicePrincipalOwner cmdlet adds an owner to a service principal in Azure Active Directory.
 
 ## EXAMPLES
 
 ### Example 1: Add a user as an owner to a service principal
+
 ```
 PS C:\> $ServicePrincipalId = (Get-AzureADServicePrincipal -Top 1).ObjectId
 PS C:\> $OwnerId = (Get-AzureADUser -Top 1).ObjectId
-PS C:\> Add-AzureADServicePrincipalOwner -ObjectId $ServicePrincipalId -RefObjectId -$OwnerId
+PS C:\> Add-AzureADServicePrincipalOwner -ObjectId $ServicePrincipalId -RefObjectId $OwnerId
 ```
 
 The first command gets the object ID of a service principal by using the Get-AzureADServicePrincipal (./Get-AzureADServicePrincipal.md)cmdlet, and then stores it in the $ServicePrincipalId variable.
@@ -38,6 +41,7 @@ The final command adds the user specified by $OwnerId an owner to a service prin
 ## PARAMETERS
 
 ### -InformationAction
+
 Specifies how this cmdlet responds to an information event.
 The acceptable values for this parameter are:
 
@@ -61,6 +65,7 @@ Accept wildcard characters: False
 ```
 
 ### -InformationVariable
+
 Specifies a variable in which to store an information event message.
 
 ```yaml
@@ -76,6 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
+
 Specifies the ID of a service principal in Active Directory.
 
 ```yaml
@@ -91,6 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -RefObjectId
+
 Specifies the ID of the Active Directory object to assign as owner/manager/member.
 
 ```yaml
@@ -106,6 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
+
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## NOTES
