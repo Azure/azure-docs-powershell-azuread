@@ -133,6 +133,7 @@
     },
     "globalMetadata": {
       "feedback_system": "Standard",
+      "ROBOTS": "NOINDEX",
       "showPowerShellPicker": "true",
       "apiPlatform": "powershell",
       "uhfHeaderId": "Azure",
