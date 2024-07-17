@@ -100,8 +100,7 @@
       }
     },
     "filemetadata": {
-      "ROBOTS": "NOINDEX",
-      "ms.author": {
+        "ms.author": {
         "azureadps-1.0/**/*.yml": "adamed",
         "azureadps-2.0/**/*.yml": "adamed",
         "azureadps-2.0-preview/**/*.yml": "adamed",
@@ -134,6 +133,7 @@
     },
     "globalMetadata": {
       "feedback_system": "Standard",
+      "ROBOTS": "NOINDEX, NOFOLLOW",
       "showPowerShellPicker": "true",
       "apiPlatform": "powershell",
       "uhfHeaderId": "Azure",
