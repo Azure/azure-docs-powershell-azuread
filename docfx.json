@@ -100,7 +100,7 @@
       }
     },
     "filemetadata": {
-        "ms.author": {
+      "ms.author": {
         "azureadps-1.0/**/*.yml": "adamed",
         "azureadps-2.0/**/*.yml": "adamed",
         "azureadps-2.0-preview/**/*.yml": "adamed",
