@@ -39,8 +39,8 @@ The tag "-Tags {WindowsAzureActiveDirectoryIntegratedApp}" is used to have this 
 
 > [!NOTE]
 > Allowed values for AppId are:
-> - A multitenant application from another Entra tenant.
-> - A single tenant application from the same tenant as the service principal.
+- A multitenant application from another Entra tenant.
+- A single tenant application from the same tenant as the service principal.
 
 ## PARAMETERS
 
@@ -88,10 +88,11 @@ Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
+
 > [!NOTE]
 > Allowed values for AppId are:
-> - A multitenant application from another Entra tenant.
-> - A single tenant application from the same tenant as the service principal.
+- A multitenant application from another Entra tenant.
+- A single tenant application from the same tenant as the service principal.
 
 ### -AppRoleAssignmentRequired
 Indicates whether an application role assignment is required.
