@@ -38,10 +38,7 @@ This command creates a service principal.
 The tag "-Tags {WindowsAzureActiveDirectoryIntegratedApp}" is used to have this service principal show up in the list of Integrated Applications in the Admin Portal.
 
 > [!NOTE]
-> Allowed values for AppId are:
-- A multitenant application from another Entra tenant.
-- A single tenant application from the same tenant as the service principal.
-
+> Allowed values for `AppId` parameter are a multitenant application from another Entra tenant or a single tenant application from the same tenant as the service principal.
 ## PARAMETERS
 
 ### -AccountEnabled
@@ -90,9 +87,7 @@ Accept wildcard characters: False
 ```
 
 > [!NOTE]
-> Allowed values for AppId are:
-- A multitenant application from another Entra tenant.
-- A single tenant application from the same tenant as the service principal.
+> Allowed values for `AppId` parameter are a multitenant application from another Entra tenant or a single tenant application from the same tenant as the service principal.
 
 ### -AppRoleAssignmentRequired
 Indicates whether an application role assignment is required.
