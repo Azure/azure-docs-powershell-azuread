@@ -86,9 +86,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-> [!NOTE]
-> Allowed values for `AppId` parameter are a multitenant application from another Entra tenant or a single tenant application from the same tenant as the service principal.
-
 ### -AppRoleAssignmentRequired
 Indicates whether an application role assignment is required.
 
