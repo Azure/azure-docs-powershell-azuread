@@ -39,6 +39,7 @@ The tag "-Tags {WindowsAzureActiveDirectoryIntegratedApp}" is used to have this 
 
 > [!NOTE]
 > Allowed values for `AppId` parameter are a multitenant application from another Entra tenant or a single tenant application from the same tenant as the service principal.
+
 ## PARAMETERS
 
 ### -AccountEnabled
@@ -73,6 +74,9 @@ Accept wildcard characters: False
 
 ### -AppId
 The unique identifier for the associated application (its appId property).
+
+> [!NOTE]
+> Allowed values for `AppId` parameter are a multitenant application from another Entra tenant or a single tenant application from the same tenant as the service principal.
 
 ```yaml
 Type: String
