@@ -242,7 +242,7 @@ The following new cmdlets are added in this release:
 
 The new **-AzureADMSServicePrincipalDelegatedPermissionClassification** cmdlets enable customers to create/read and delete delegated permission classifications which are contained entity defined on the Azure Active Directory ServicePrincipal entity.
 
-The new **-AzureADMSPasswordSingleSignOnCredential** cmdlets allow customers to manage the credentials for Password SSO applications. Users can perform operation to their own credentials, users can read group credentials, and application owner or global admin with the right roles and RBAC permission can do CRUD operations for other user or group credentials. 
+The new **-AzureADMSPasswordSingleSignOnCredential** cmdlets allow customers to manage the credentials for Password SSO applications. Users can perform operation to their own credentials, users can read group credentials, and application owner with the right roles and RBAC permission can do CRUD operations for other user or group credentials. 
 
 The new **Get-AzureADMSApplicationTemplate** allows customers to list the applicationTemplate objects from the AzureAD Gallery / App Marketplace.
 

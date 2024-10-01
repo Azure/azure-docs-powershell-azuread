@@ -33,7 +33,6 @@ The calling user must be assigned one of the following [Microsoft Entra roles](/
 
 - User Administrator
 - Privileged Authentication Administrator
-- Global Administrator
 
 To delete users with privileged administrator roles in delegated scenarios, the app must be assigned the *Directory.AccessAsUser.All* delegated permission, and the calling user must have a higher privileged administrator role as indicated in [Who can perform sensitive actions](/graph/api/resources/users#who-can-perform-sensitive-actions).
 

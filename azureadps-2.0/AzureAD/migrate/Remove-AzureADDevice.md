@@ -29,7 +29,7 @@ This article provides migration details from Remove-AzureADDevice command to Mic
 
 View more [details on permissions](/graph/api/device-delete#permissions).
 
-The calling user must also be in one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json): *Global Administrator*, *Intune Administrator*, *Windows 365 Administrator*, or *Cloud Device Administrator*.
+The calling user must also be in one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json): *Intune Administrator*, *Windows 365 Administrator*, or *Cloud Device Administrator*.
 
 ## Property Mapping
 
