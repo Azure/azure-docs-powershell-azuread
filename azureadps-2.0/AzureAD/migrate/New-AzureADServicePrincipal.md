@@ -31,7 +31,6 @@ View more [details on permissions](/graph/api/serviceprincipal-post-serviceprinc
 
 For multi-tenant apps, the calling user must also be in one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json):
 
-+ Global Administrator
 + Application Administrator
 + Cloud Application Administrator roles
 
