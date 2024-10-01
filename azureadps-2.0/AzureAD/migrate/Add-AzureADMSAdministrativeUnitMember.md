@@ -34,7 +34,6 @@ This article provides migration details from Add-AzureADMSAdministrativeUnitMemb
 To add a user, group, or device to an administrative unit, the calling principal must be assigned one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json):
 
 * Privileged Role Administrator
-* Global Administrator
 
 ### Permissions to create a new group
 
@@ -47,7 +46,6 @@ To add a user, group, or device to an administrative unit, the calling principal
 To create a new group in an administrative unit, the calling principal must be assigned one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json):
 
 * Privileged Role Administrator
-* Global Administrator
 * Groups Administrator
 
 View more [details on permissions](/graph/api/administrativeunit-post-members#permissions).

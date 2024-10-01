@@ -29,7 +29,7 @@ This article provides migration details from New-AzureADDevice command to Micros
 
 View more [details on permissions](/graph/api/device-post-devices#permissions).
 
-The calling user must also be in one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json): *Global Administrator*, *Intune Administrator*, or *Windows 365 Administrator*.
+The calling user must also be in one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json): *Intune Administrator*, or *Windows 365 Administrator*.
 
 ## Property Mapping
 
