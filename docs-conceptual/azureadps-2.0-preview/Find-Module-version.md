@@ -2,7 +2,7 @@
 services: active-directory
 documentationcenter: ''
 title: 'Find module'
-ms.service: active-directory
+ms.service: azure-active-directory
 ms.workload: identity
 ms.tgt_pltfrm: na
 ms.devlang: powershell
