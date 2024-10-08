@@ -2,7 +2,7 @@
 title: Remove-AzureADMSAdministrativeUnitMember
 description: This article provides migration details from Remove-AzureADMSAdministrativeUnitMember command to Microsoft Graph PowerShell.
 
-ms.service: active-directory
+ms.service: azure-active-directory
 ms.topic: reference
 ms.date: 11/18/2023
 ms.author: eunicewaweru

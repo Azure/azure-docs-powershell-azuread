@@ -2,7 +2,7 @@
 title: Add-AzureADGroupOwner
 description: This article provides migration details from Add-AzureADGroupOwner command to Microsoft Graph PowerShell.
 
-ms.service: active-directory
+ms.service: azure-active-directory
 ms.topic: reference
 ms.date: 11/10/2023
 ms.author: eunicewaweru

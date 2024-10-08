@@ -2,7 +2,7 @@
 services: active-directory
 title: 'Install MSOnline'
 description: Provides a guide on the installation steps for MSOnline PowerShell.
-ms.service: active-directory
+ms.service: azure-active-directory
 ms.workload: identity
 ms.devlang: powershell
 ms.topic: article
