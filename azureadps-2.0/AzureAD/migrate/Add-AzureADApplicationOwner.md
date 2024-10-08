@@ -2,7 +2,7 @@
 title: Add-AzureADApplicationOwner
 description: This article provides migration details from Add-AzureADApplicationOwner command to Microsoft Graph PowerShell.
 
-ms.service: active-directory
+ms.service: azure-active-directory
 ms.topic: reference
 ms.date: 12/10/2023
 ms.author: eunicewaweru

@@ -1,7 +1,7 @@
 ---
 title: 'Install AzureAD PowerShell for Graph'
 description: Installation guidance for the Azure AD PowerShell module.
-ms.service: active-directory
+ms.service: azure-active-directory
 ms.workload: identity
 ms.topic: overview
 ms.date: 04/25/2024

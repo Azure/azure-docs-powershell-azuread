@@ -3,7 +3,7 @@ services: active-directory
 documentationcenter: ''
 title: 'Using an SP to connect'
 description: "This example describes how you can use a Service Principal to connect to your directory from within PowerShell."
-ms.service: active-directory
+ms.service: azure-active-directory
 ms.workload: identity
 ms.tgt_pltfrm: na
 ms.devlang: powershell

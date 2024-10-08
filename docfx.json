@@ -125,10 +125,10 @@
         "docs-conceptual/**/*.md": "conceptual"
       },
       "ms.service": {
-        "azureadps-1.0/**/*.yml": "active-directory",
-        "azureadps-2.0/**/*.yml": "active-directory",
-        "azureadps-2.0-preview/**/*.yml": "active-directory",
-        "docs-conceptual/**/*.md": "active-directory"
+        "azureadps-1.0/**/*.yml": "azure-active-directory",
+        "azureadps-2.0/**/*.yml": "azure-active-directory",
+        "azureadps-2.0-preview/**/*.yml": "azure-active-directory",
+        "docs-conceptual/**/*.md": "azure-active-directory"
       }
     },
     "globalMetadata": {

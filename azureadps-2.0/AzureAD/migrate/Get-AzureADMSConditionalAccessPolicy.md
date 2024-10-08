@@ -2,7 +2,7 @@
 title: Get-AzureADMSConditionalAccessPolicy
 description: This article provides migration details from Get-AzureADMSConditionalAccessPolicy command to Microsoft Graph PowerShell.
 
-ms.service: active-directory
+ms.service: azure-active-directory
 ms.topic: reference
 ms.date: 01/19/2024
 ms.author: eunicewaweru
