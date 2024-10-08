@@ -3,7 +3,7 @@ services: active-directory
 documentationcenter: ''
 title: 'Create a new user'
 description: "This example shows how to create a new user in Azure Active Directory. The cmdlet used is [New-AzureADUser]()."
-ms.service: active-directory
+ms.service: azure-active-directory
 ms.workload: identity
 ms.tgt_pltfrm: na
 ms.devlang: powershell

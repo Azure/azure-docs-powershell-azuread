@@ -3,7 +3,7 @@ services: active-directory
 documentationcenter: ''
 title: 'Cannot find object'
 description: This article provides guidance on how to filter data returned by a cmdlet.
-ms.service: active-directory
+ms.service: azure-active-directory
 ms.workload: identity
 ms.tgt_pltfrm: na
 ms.devlang: powershell

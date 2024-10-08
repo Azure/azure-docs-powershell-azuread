@@ -3,7 +3,7 @@ title: PowerShell Account not in system troubleshooting | Microsoft Docs
 description: How to solve "Account not in system" errors.
 services: active-directory
 documentationcenter: ''
-ms.service: active-directory
+ms.service: azure-active-directory
 ms.workload: identity
 ms.tgt_pltfrm: na
 ms.devlang: powershell
