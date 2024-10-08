@@ -2,7 +2,7 @@
 title: New-AzureADMSGroup
 description: This article provides migration details from New-AzureADMSGroup command to Microsoft Graph PowerShell.
 
-ms.service: active-directory
+ms.service: azure-active-directory
 ms.topic: reference
 ms.date: 12/13/2023
 ms.author: eunicewaweru

@@ -2,7 +2,7 @@
 metadata:
   title: 'Azure AD PowerShell to Microsoft Graph PowerShell migration FAQ'
   description: Answers to frequently asked questions about the migration from Azure AD PowerShell to Microsoft Graph PowerShell.
-  ms.service: active-directory
+  ms.service: azure-active-directory
   ms.workload: identity
   ms.topic: article
   ms.date: 04/13/2024

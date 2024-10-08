@@ -1,7 +1,7 @@
 ---
 title: 'Azure AD PowerShell overview'
 description: An introduction to the Azure AD PowerShell module.
-ms.service: active-directory
+ms.service: azure-active-directory
 ms.workload: identity
 ms.topic: overview
 ms.date: 07/10/2017

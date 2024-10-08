@@ -2,7 +2,7 @@
 services: active-directory
 description: Learn how to install the Azure AD PowerShell module.
 title: 'Install AzureAD Preview'
-ms.service: active-directory
+ms.service: azure-active-directory
 ms.workload: identity
 ms.tgt_pltfrm: na
 ms.devlang: powershell
