@@ -3,7 +3,7 @@ services: active-directory
 documentationcenter: ''
 title: 'MSOnline PowerShell overview'
 description: Provides a description and getting started information for MSOline PowerShell.
-ms.service: active-directory
+ms.service: azure-active-directory
 ms.workload: identity
 ms.tgt_pltfrm: na
 ms.devlang: powershell
