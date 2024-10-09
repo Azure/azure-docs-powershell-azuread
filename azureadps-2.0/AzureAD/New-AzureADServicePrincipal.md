@@ -37,9 +37,6 @@ PS C:\>New-AzureADServicePrincipal -AccountEnabled $true -AppId $MyApp.AppId -Ap
 This command creates a service principal.
 The tag "-Tags {WindowsAzureActiveDirectoryIntegratedApp}" is used to have this service principal show up in the list of Integrated Applications in the Admin Portal.
 
-> [!NOTE]
-> Allowed values for `AppId` parameter are a multitenant application from another Entra tenant or a single tenant application from the same tenant as the service principal.
-
 ## PARAMETERS
 
 ### -AccountEnabled
@@ -74,9 +71,6 @@ Accept wildcard characters: False
 
 ### -AppId
 The unique identifier for the associated application (its appId property).
-
-> [!NOTE]
-> Allowed values for `AppId` parameter are a multitenant application from another Entra tenant or a single tenant application from the same tenant as the service principal.
 
 ```yaml
 Type: String

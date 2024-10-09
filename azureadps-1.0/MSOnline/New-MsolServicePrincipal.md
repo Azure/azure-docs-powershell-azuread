@@ -87,6 +87,11 @@ Specifies the unique application ID for a service principal in a tenant.
 Once created, this property cannot be changed.
 If you do not specify this parameter, the application ID is generated.
 
+> [!NOTE]
+> Allowed values for the `AppPrincipalId` parameter are:
+> - A multitenant application from another Entra tenant. 
+> - A single tenant application from the same tenant as the service principal.
+
 ```yaml
 Type: Guid
 Parameter Sets: (All)
