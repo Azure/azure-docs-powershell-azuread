@@ -27,7 +27,7 @@ The **Add-AzureADGroupOwner** cmdlet adds an owner to an Azure Active Directory 
 
 ### Example 1: Add an owner to a group
 ```
-PS C:\>Add-AzureADGroupOwner -ObjectId "62438306-7c37-4638-a72d-0ee8d9217680" -RefObjectId "0a1068c0-dbb6-4537-9db3-b48f3e31dd76"
+PS C:\>Add-AzureADGroupOwner -ObjectId "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb" -RefObjectId "bbbbbbbb-1111-2222-3333-cccccccccccc"
 ```
 
 This command adds an owner to a group.
@@ -114,5 +114,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 [Get-AzureADGroupOwner](./Get-AzureADGroupOwner.md)
 [Remove-AzureADGroupOwner](./Remove-AzureADGroupOwner.md)
-
-

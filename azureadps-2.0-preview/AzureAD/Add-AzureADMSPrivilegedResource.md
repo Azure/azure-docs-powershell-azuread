@@ -23,7 +23,7 @@ Use this API to add a new azure AD MS privileged resource.
 
 ### Example 1
 ```
-PS C:\> Add-AzureADMSPrivilegedResource -ProviderId AzureResources -ExternalId "/subscriptions/38ab2ccc-3747-4567-b36b-9478f5602f0d"
+PS C:\> Add-AzureADMSPrivilegedResource -ProviderId AzureResources -ExternalId "/subscriptions/aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e"
 ```
 
 Register a new Resource

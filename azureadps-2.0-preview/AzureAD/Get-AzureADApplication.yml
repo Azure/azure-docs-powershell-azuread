@@ -27,7 +27,7 @@ examples:
   summary: ""
 - title: 'Example 2: Get an application by ID'
   code: |-
-    PS C:\>Get-AzureADApplication -Filter "AppId eq 'ed192e92-84d4-4baf-997d-1e190a81f28e'"
+    PS C:\>Get-AzureADApplication -Filter "AppId eq '00001111-aaaa-2222-bbbb-3333cccc4444'"
   description: |-
     This command gets an application by its ID.
 
