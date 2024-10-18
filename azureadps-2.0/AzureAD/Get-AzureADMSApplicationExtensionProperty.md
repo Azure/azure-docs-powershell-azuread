@@ -23,7 +23,7 @@ Retrieves the list of extension properties on an application object.
 
 ### Example 1: Get extension properties
 ```
-PS C:\>Get-AzureADMSApplicationExtensionProperty -ObjectId "3ddd22e7-a150-4bb3-b100-e410dea1cb84"
+PS C:\>Get-AzureADMSApplicationExtensionProperty -ObjectId "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb"
 
           ObjectId                             Name                                                    TargetObjects
           --------                             ----                                                    -------------
@@ -68,4 +68,3 @@ See the [migration guide for Get-AzureADMSApplicationExtensionProperty](./migrat
 [New-AzureADMSApplicationExtensionProperty](New-AzureADMSApplicationExtensionProperty.md)
 
 [Remove-AzureADMSApplicationExtensionProperty](Remove-AzureADMSApplicationExtensionProperty.md)
-

@@ -39,7 +39,7 @@ Conditional access policies are custom rules that define an access scenario.
 ```
 PS C:\> Get-AzureADMSConditionalAccessPolicy
 
-          Id                      : 6b5e999b-0ba8-4186-a106-e0296c1c4358
+          Id                      : 1aaaaaa1-2bb2-3cc3-4dd4-5eeeeeeeeee5
           DisplayName             : Demo app for documentation
           CreatedDateTime         : 2019-09-26T23:12:16.0792706Z
           ModifiedDateTime        : 2019-09-27T00:12:12.5986473Z
@@ -50,9 +50,9 @@ This command retrieves a list of all conditional access policies in Azure AD.
 
 ### Example 2: Retrieves a conditional access policy in Azure AD with given Id.
 ```
-PS C:\> Get-AzureADMSConditionalAccessPolicy -PolicyId "6b5e999b-0ba8-4186-a106-e0296c1c4358"
+PS C:\> Get-AzureADMSConditionalAccessPolicy -PolicyId "1aaaaaa1-2bb2-3cc3-4dd4-5eeeeeeeeee5"
 
-          Id                      : 6b5e999b-0ba8-4186-a106-e0296c1c4358
+          Id                      : 1aaaaaa1-2bb2-3cc3-4dd4-5eeeeeeeeee5
           DisplayName             : Demo app for documentation
           CreatedDateTime         : 2019-09-26T23:12:16.0792706Z
           ModifiedDateTime        : 2019-09-27T00:12:12.5986473Z
@@ -96,4 +96,3 @@ See the [migration guide for Get-AzureADMSConditionalAccessPolicy](./migrate/Get
 [Set-AzureADMSConditionalAccessPolicy](Set-AzureADMSConditionalAccessPolicy.md)
 
 [Remove-AzureADMSConditionalAccessPolicy](Remove-AzureADMSConditionalAccessPolicy.md)
-
