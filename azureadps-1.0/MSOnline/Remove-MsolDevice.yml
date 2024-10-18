@@ -25,23 +25,23 @@ syntaxes:
 examples:
 - title: 'Example 1: Remove a device by device ID with confirmation'
   code: |-
-    PS C:\> Remove-MsolDevice -DeviceId "1aa200c4-bdfb-42b5-9a1e-5f1bafbe4274"
+    PS C:\> Remove-MsolDevice -DeviceId "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb"
   description: |-
-    This command removes the device with DeviceId 1aa200c4-bdfb-42b5-9a1e-5f1bafbe4274 from Azure Active Directory.
+    This command removes the device with DeviceId aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb from Azure Active Directory.
     Since the command does not use the *Force* parameter, the user is prompted for confirmation.
   summary: ""
 - title: 'Example 2: Remove a device by device ID'
   code: |-
-    PS C:\> Remove-MsolDevice -DeviceId "1aa200c4-bdfb-42b5-9a1e-5f1bafbe4274" -Force
+    PS C:\> Remove-MsolDevice -DeviceId "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb" -Force
   description: |-
-    This command removes the device with DeviceId 1aa200c4-bdfb-42b5-9a1e-5f1bafbe4274 from Azure Active Directory.
+    This command removes the device with DeviceId aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb from Azure Active Directory.
     Since the command uses the *Force* parameter, the user is not prompted for confirmation.
   summary: ""
 - title: 'Example 3: Remove a device by object ID'
   code: |-
-    PS C:\> Remove-MsolDevice -ObjectId "1aa200c4-bdfb-42b5-9a1e-5f1bafbe4274"
+    PS C:\> Remove-MsolDevice -ObjectId "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb"
   description: |-
-    This command removes the device with ObjectId 1aa200c4-bdfb-42b5-9a1e-5f1bafbe4274 from Azure Active Directory.
+    This command removes the device with ObjectId aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb from Azure Active Directory.
   summary: ""
 parameters:
 - type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />

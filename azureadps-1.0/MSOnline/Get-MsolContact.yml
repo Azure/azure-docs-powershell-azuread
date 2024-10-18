@@ -61,7 +61,7 @@ syntaxes:
 examples:
 - title: 'Example 1: Get a contact'
   code: |-
-    PS C:\> Get-MsolContact -ObjectId adc41dc7-4130-4215-adfb-2403bc9f844e
+    PS C:\> Get-MsolContact -ObjectId aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb
   description: |-
     This command retrieves a contact.
   summary: ""

@@ -70,7 +70,7 @@ examples:
   summary: ""
 - title: 'Example 5: Get a device object by object ID'
   code: |-
-    PS C:\>Get-MsolDevice -ObjectId "566F7EA7-7BF1-4F4A-AF23-A1B46DBD46D6"
+    PS C:\>Get-MsolDevice -ObjectId "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb"
   description: |-
     This command gets a device with the corresponding object ID.
   summary: ""

@@ -27,7 +27,7 @@ The **Add-AzureADDirectoryRoleMember** cmdlet adds a member to an Azure Active D
 
 ### Example 1: Add a member to an Active Directory role
 ```
-PS C:\>Add-AzureADDirectoryRoleMember -ObjectId 019ea7a2-1613-47c9-81cb-20ba35b1ae48 -RefObjectId c13dd34a-492b-4561-b171-40fcce2916c5
+PS C:\>Add-AzureADDirectoryRoleMember -ObjectId aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb -RefObjectId bbbbbbbb-1111-2222-3333-cccccccccccc
 ```
 
 This command adds a member to an Active Directory role.
@@ -115,4 +115,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-AzureADDirectoryRoleMember](./Get-AzureADDirectoryRoleMember.md)
 
 [Remove-AzureADDirectoryRoleMember](./Remove-AzureADDirectoryRoleMember.md)
-
