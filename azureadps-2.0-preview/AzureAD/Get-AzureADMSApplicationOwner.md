@@ -23,7 +23,7 @@ Retrieves the list of owners for an application object.
 
 ### Example 1: Get the owner of an application
 ```
-PS C:\>Get-AzureADMSApplicationOwner -ObjectId "3ddd22e7-a150-4bb3-b100-e410dea1cb84" -Top 1
+PS C:\>Get-AzureADMSApplicationOwner -ObjectId "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb" -Top 1
 
           ObjectId                             ObjectType
           --------                             ----------
@@ -34,7 +34,7 @@ This command gets the owner of an application.
 
 ### Example 1: Get the owners of an application
 ```
-PS C:\>Get-AzureADMSApplicationOwner -ObjectId "3ddd22e7-a150-4bb3-b100-e410dea1cb84" -All $true
+PS C:\>Get-AzureADMSApplicationOwner -ObjectId "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb" -All $true
 
           ObjectId                             ObjectType
           --------                             ----------
@@ -109,4 +109,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Add-AzureADMSApplicationOwner]()
 
 [Remove-AzureADMSApplicationOwner]()
-

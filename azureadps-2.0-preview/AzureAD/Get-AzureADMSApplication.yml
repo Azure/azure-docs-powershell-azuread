@@ -33,7 +33,7 @@ examples:
               System.Collections.Generic.List`1[Microsoft.Open.MSGraph.Model.PermissionScope]
               }
 
-              AppId                     : 807dd73f-8451-4cfa-b3bc-52ac3fd95330
+              AppId                     : 00001111-aaaa-2222-bbbb-3333cccc4444
               AppRoles                  : {}
               IsDeviceOnlyAuthSupported :
               IsFallbackPublicClient    :
@@ -76,7 +76,7 @@ examples:
   summary: ""
 - title: 'Example 2: Get an application by ID'
   code: |-
-    PS C:\>Get-AzureADMSApplication -Filter "AppId eq 'ed192e92-84d4-4baf-997d-1e190a81f28e'"
+    PS C:\>Get-AzureADMSApplication -Filter "AppId eq '11112222-bbbb-3333-cccc-4444dddd5555'"
   description: |-
     This command gets an application by its ID.
 
@@ -93,7 +93,7 @@ examples:
                 System.Collections.Generic.List\`1\[Microsoft.Open.MSGraph.Model.PermissionScope\]
                 }
 
-                AppId                     : 807dd73f-8451-4cfa-b3bc-52ac3fd95330
+                AppId                     : 00001111-aaaa-2222-bbbb-3333cccc4444
                 AppRoles                  : {}
                 IsDeviceOnlyAuthSupported :
                 IsFallbackPublicClient    :
@@ -139,7 +139,7 @@ examples:
   summary: ""
 - title: 'Example 4: Get an application by object ID'
   code: |-
-    PS C:\>Get-AzureADMSApplication -ObjectId ffe886bc-e978-4002-829e-cf5b1e83d56a
+    PS C:\>Get-AzureADMSApplication -ObjectId aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb
   description: |-
     This command gets an application by its object ID.
 
@@ -158,7 +158,7 @@ examples:
                 ResourceSpecificApplicationPermissions:
                 }
 
-                AppId                     : 18f78c92-365c-4fa0-9b6f-7e06fff27ffe
+                AppId                     : 22223333-cccc-4444-dddd-5555eeee6666
                 ApplicationTemplateId     :
                 AppRoles                  : {}
                 GroupMembershipClaims     :
@@ -225,7 +225,7 @@ examples:
                 ResourceSpecificApplicationPermissions:
                 }
 
-                AppId                     : a1293e4b-97ae-4f58-9eeb-d0ba5b4b821a
+                AppId                     : 33334444-dddd-5555-eeee-6666ffff7777
                 ApplicationTemplateId     :
                 AppRoles                  : {}
                 GroupMembershipClaims     :
@@ -285,7 +285,7 @@ examples:
                 ResourceSpecificApplicationPermissions:
                 }
 
-                AppId                     : 51546bbc-4233-42d3-a08e-c73a370f5d41
+                AppId                     : 44445555-eeee-6666-ffff-7777aaaa8888
                 ApplicationTemplateId     :
                 AppRoles                  : {}
                 GroupMembershipClaims     :
@@ -357,7 +357,7 @@ examples:
                 ResourceSpecificApplicationPermissions:
                 }
 
-                AppId                     : 2cffc854-bbcf-404a-8bba-70d043534129
+                AppId                     : 55556666-ffff-7777-aaaa-8888bbbb9999
                 ApplicationTemplateId     :
                 AppRoles                  : {}
                 GroupMembershipClaims     :

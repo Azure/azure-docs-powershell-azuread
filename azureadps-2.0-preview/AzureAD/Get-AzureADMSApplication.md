@@ -48,7 +48,7 @@ PS C:\>Get-AzureADMSApplication -Filter "DisplayName eq 'My App'"
           System.Collections.Generic.List`1[Microsoft.Open.MSGraph.Model.PermissionScope]
           }
 
-          AppId                     : 807dd73f-8451-4cfa-b3bc-52ac3fd95330
+          AppId                     : 00001111-aaaa-2222-bbbb-3333cccc4444
           AppRoles                  : {}
           IsDeviceOnlyAuthSupported :
           IsFallbackPublicClient    :
@@ -92,7 +92,7 @@ This command gets an application by its display name.
 
 ### Example 2: Get an application by ID
 ```
-PS C:\>Get-AzureADMSApplication -Filter "AppId eq 'ed192e92-84d4-4baf-997d-1e190a81f28e'"
+PS C:\>Get-AzureADMSApplication -Filter "AppId eq '11112222-bbbb-3333-cccc-4444dddd5555'"
 ```
 
 This command gets an application by its ID.
@@ -110,7 +110,7 @@ Id                        : ba4a97a7-3815-4752-bf4c-f1c0cccfff6a
             System.Collections.Generic.List\`1\[Microsoft.Open.MSGraph.Model.PermissionScope\]
             }
 
-            AppId                     : 807dd73f-8451-4cfa-b3bc-52ac3fd95330
+            AppId                     : 00001111-aaaa-2222-bbbb-3333cccc4444
             AppRoles                  : {}
             IsDeviceOnlyAuthSupported :
             IsFallbackPublicClient    :
@@ -156,7 +156,7 @@ Get-AzureADMSApplication -Filter "identifierUris/any(uri:uri eq 'http://wingtips
 
 ### Example 4: Get an application by object ID
 ```
-PS C:\>Get-AzureADMSApplication -ObjectId ffe886bc-e978-4002-829e-cf5b1e83d56a
+PS C:\>Get-AzureADMSApplication -ObjectId aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb
 ```
 
 This command gets an application by its object ID.
@@ -176,7 +176,7 @@ Id                        : f8bbcbe4-df80-4a6b-80c5-926e28e41407
             ResourceSpecificApplicationPermissions:
             }
 
-            AppId                     : 18f78c92-365c-4fa0-9b6f-7e06fff27ffe
+            AppId                     : 22223333-cccc-4444-dddd-5555eeee6666
             ApplicationTemplateId     :
             AppRoles                  : {}
             GroupMembershipClaims     :
@@ -244,7 +244,7 @@ Id                        : 121ce3aa-64cb-44f2-99e8-deb705caeddd
             ResourceSpecificApplicationPermissions:
             }
 
-            AppId                     : a1293e4b-97ae-4f58-9eeb-d0ba5b4b821a
+            AppId                     : 33334444-dddd-5555-eeee-6666ffff7777
             ApplicationTemplateId     :
             AppRoles                  : {}
             GroupMembershipClaims     :
@@ -304,7 +304,7 @@ Id                        : 121ce3aa-64cb-44f2-99e8-deb705caeddd
             ResourceSpecificApplicationPermissions:
             }
 
-            AppId                     : 51546bbc-4233-42d3-a08e-c73a370f5d41
+            AppId                     : 44445555-eeee-6666-ffff-7777aaaa8888
             ApplicationTemplateId     :
             AppRoles                  : {}
             GroupMembershipClaims     :
@@ -377,7 +377,7 @@ Id                        : 88da75d4-2cba-4c47-9a15-80a983228ad4
             ResourceSpecificApplicationPermissions:
             }
 
-            AppId                     : 2cffc854-bbcf-404a-8bba-70d043534129
+            AppId                     : 55556666-ffff-7777-aaaa-8888bbbb9999
             ApplicationTemplateId     :
             AppRoles                  : {}
             GroupMembershipClaims     :
@@ -522,4 +522,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Remove-AzureADMSApplication]()
 
 [Set-AzureADMSApplication]()
-
