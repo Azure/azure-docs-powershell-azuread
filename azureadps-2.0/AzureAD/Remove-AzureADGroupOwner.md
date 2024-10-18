@@ -24,7 +24,7 @@ The Remove-AzureADGroupOwner cmdlet removes an owner from a group in Azure Activ
 
 ### Example 1: Remove an owner
 ```
-PS C:\>Remove-AzureADGroupOwner -ObjectId "62438306-7c37-4638-a72d-0ee8d9217680" -OwnerId "0a1068c0-dbb6-4537-9db3-b48f3e31dd76"
+PS C:\>Remove-AzureADGroupOwner -ObjectId "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb" -OwnerId "bbbbbbbb-1111-2222-3333-cccccccccccc"
 ```
 
 ## PARAMETERS
@@ -114,4 +114,3 @@ See the [migration guide for Remove-AzureADGroupOwner](./migrate/Remove-AzureADG
 [Add-AzureADGroupOwner](Add-AzureADGroupOwner.md)
 
 [Get-AzureADGroupOwner](Get-AzureADGroupOwner.md)
-

@@ -24,7 +24,7 @@ The Remove-AzureADDirectoryRoleMember cmdlet removes a member from a directory r
 
 ### Example 1: Remove a member from a directory role
 ```
-PS C:\>Remove-AzureADDirectoryRoleMember -ObjectId "019ea7a2-1613-47c9-81cb-20ba35b1ae48" -MemberId "c13dd34a-492b-4561-b171-40fcce2916c5"
+PS C:\>Remove-AzureADDirectoryRoleMember -ObjectId "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb" -MemberId "bbbbbbbb-1111-2222-3333-cccccccccccc"
 ```
 
 This command removes the specified member from the specified role.
@@ -115,4 +115,3 @@ See the [migration guide for Remove-AzureADDirectoryRoleMember](./migrate/Remove
 [Add-AzureADDirectoryRoleMember](Add-AzureADDirectoryRoleMember.md)
 
 [Get-AzureADDirectoryRoleMember](Get-AzureADDirectoryRoleMember.md)
-
