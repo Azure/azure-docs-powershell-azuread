@@ -23,7 +23,7 @@ The Get-AzureADUserRegisteredDevice cmdlet gets devices registered by a user in 
 
 ### Example 1: Get registered devices
 ```
-PS C:\>Get-AzureADUserRegisteredDevice -ObjectId  "df19e8e6-2ad7-453e-87f5-037f6529ae16"
+PS C:\>Get-AzureADUserRegisteredDevice -ObjectId  "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb"
 ```
 
 This command gets the devices that are registered to the specified user.

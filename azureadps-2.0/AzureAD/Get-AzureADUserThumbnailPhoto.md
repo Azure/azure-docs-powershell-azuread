@@ -24,7 +24,7 @@ Retrieve the thumbnail photo of a user
 
 ### Example 1
 ```
-PS C:\WINDOWS\system32> Get-AzureADUserThumbnailPhoto -ObjectId df19e8e6-2ad7-453e-87f5-037f6529ae16
+PS C:\WINDOWS\system32> Get-AzureADUserThumbnailPhoto -ObjectId aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb
 
 
 Tag                  :

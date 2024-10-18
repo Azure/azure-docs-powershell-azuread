@@ -23,7 +23,7 @@ The Get-AzureADUserMembership cmdlet gets user memberships in Azure Active Direc
 
 ### Example 1: Get user memberships
 ```
-PS C:\>Get-AzureADUserMembership  -ObjectId "df19e8e6-2ad7-453e-87f5-037f6529ae16"
+PS C:\>Get-AzureADUserMembership  -ObjectId "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb"
 
 ObjectId                             ObjectType
 --------                             ----------
