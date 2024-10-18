@@ -26,7 +26,7 @@ The **Get-AzureADUserOwnedDevice** cmdlet gets registered devices owned by the s
 
 ### Example 1: Get devices owned by a user
 ```
-PS C:\>Get-AzureADUserOwnedDevice -ObjectId "df19e8e6-2ad7-453e-87f5-037f6529ae16"
+PS C:\>Get-AzureADUserOwnedDevice -ObjectId "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb"
 ```
 
 This command gets the registered devices owned by the specified user.

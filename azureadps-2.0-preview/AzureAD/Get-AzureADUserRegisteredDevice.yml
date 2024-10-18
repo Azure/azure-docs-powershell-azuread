@@ -8,7 +8,7 @@ syntaxes:
 examples:
 - title: 'Example 1: Get registered devices'
   code: |-
-    PS C:\>Get-AzureADUserRegisteredDevice -ObjectId  "df19e8e6-2ad7-453e-87f5-037f6529ae16"
+    PS C:\>Get-AzureADUserRegisteredDevice -ObjectId  "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb"
   description: |-
     This command gets the devices that are registered to the specified user.
   summary: ""
