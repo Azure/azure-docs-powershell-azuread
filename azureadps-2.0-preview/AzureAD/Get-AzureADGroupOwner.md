@@ -26,7 +26,7 @@ The **Get-AzureADGroupOwner** cmdlet gets an owner of a group in Azure Active Di
 
 ### Example 1: Get a group owner by ID
 ```
-PS C:\>Get-AzureADGroupOwner -ObjectId "62438306-7c37-4638-a72d-0ee8d9217680"
+PS C:\>Get-AzureADGroupOwner -ObjectId "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb"
 
 ObjectId                             ObjectType
 --------                             ----------
@@ -96,4 +96,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Add-AzureADGroupOwner](./Add-AzureADGroupOwner.md)
 
 [Remove-AzureADGroupOwner](./Remove-AzureADGroupOwner.md)
-

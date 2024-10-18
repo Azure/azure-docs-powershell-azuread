@@ -37,11 +37,11 @@ The **Get-AzureADDevice** cmdlet gets a device from Azure Active Directory (AD).
 
 ### Example 1: Get a device by ID
 ```
-PS C:\>Get-AzureADDevice -ObjectId "3cb87a8f-0a41-4ca8-8910-e56cc00114a3"
+PS C:\>Get-AzureADDevice -ObjectId "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb"
 
 ObjectId                             DeviceId                             DisplayName
 --------                             --------                             -----------
-3cb87a8f-0a41-4ca8-8910-e56cc00114a3 48445467-033c-42ca-8e38-8d181db1d49c bastias_WindowsPhone_5/1/2016_12:53 PM
+aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb 48445467-033c-42ca-8e38-8d181db1d49c bastias_WindowsPhone_5/1/2016_12:53 PM
 ```
 
 This command gets the specified device.
@@ -52,8 +52,8 @@ PS C:\>Get-AzureADDevice
 
 ObjectId                             DeviceId                             DisplayName
 --------                             --------                             -----------
-3cb87a8f-0a41-4ca8-8910-e56cc00114a3 48445467-033c-42ca-8e38-8d181db1d49c bastias_WindowsPhone_5/1/2016_12:53 PM
-62aae804-8b1a-4ab7-8fda-5068aed1a1f7 3cb87a8f-0a41-4ca8-8910-e56cc00114a3 New Device
+aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb 48445467-033c-42ca-8e38-8d181db1d49c bastias_WindowsPhone_5/1/2016_12:53 PM
+62aae804-8b1a-4ab7-8fda-5068aed1a1f7 aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb New Device
 d4fe7726-5966-431c-b3b8-cddc8fdb717d 293872f6-c006-4e6a-8629-07847c5ab078 New Device
 ```
 
@@ -151,5 +151,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [New-AzureADDevice](./New-AzureADDevice.md)
 [Remove-AzureADDevice](./Remove-AzureADDevice.md)
 [Set-AzureADDevice](./Set-AzureADDevice.md)
-
-

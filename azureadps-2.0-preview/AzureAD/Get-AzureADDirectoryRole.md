@@ -34,11 +34,11 @@ The **Get-AzureADDirectoryRole** cmdlet gets a directory role from Azure Active 
 
 ### Example 1: Get a directory role by ID
 ```
-PS C:\>Get-AzureADDirectoryRole -ObjectId "019ea7a2-1613-47c9-81cb-20ba35b1ae48"
+PS C:\>Get-AzureADDirectoryRole -ObjectId "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb"
 
 ObjectId                             DisplayName                        Description
 --------                             -----------                        -----------
-019ea7a2-1613-47c9-81cb-20ba35b1ae48 Company Administrator              Company Administrator role has full access to perform any operation in the company scope.
+aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb Company Administrator              Company Administrator role has full access to perform any operation in the company scope.
 ```
 
 ### Example 2: Get all directory roles
@@ -47,7 +47,7 @@ PS C:\>Get-AzureADDirectoryRole
 
 ObjectId                             DisplayName                        Description
 --------                             -----------                        -----------
-019ea7a2-1613-47c9-81cb-20ba35b1ae48 Company Administrator              Company Administrator role has full access to perform any operation in the company scope.
+aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb Company Administrator              Company Administrator role has full access to perform any operation in the company scope.
 2b3a80bc-51a4-476d-8e09-cd8b6cdde5ea Directory Writers                  Allows access read tasks and a subset of write tasks in the directory.
 526b7173-5a6e-49dc-88ec-b677a9093709 User Account Administrator         User Account Administrator has access to perform common user management related tasks.
 542f5aef-b23f-4e34-a838-6f2b9205b3d6 Directory Synchronization Accounts Directory Synchronization Accounts
@@ -141,4 +141,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [Enable-AzureADDirectoryRole](./Enable-AzureADDirectoryRole.md)
-
