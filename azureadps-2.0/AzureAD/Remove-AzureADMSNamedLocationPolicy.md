@@ -24,7 +24,7 @@ Named locations are custom rules that define network locations which can then be
 
 ### Example 1: Deletes a named location policy in Azure AD with given PolicyId.
 ```
-PS C:\> Remove-AzureADMSNamedLocationPolicy -PolicyId 76fdfd4d-bd80-4c1e-8fd4-6abf49d121fe
+PS C:\> Remove-AzureADMSNamedLocationPolicy -PolicyId 1aaaaaa1-2bb2-3cc3-4dd4-5eeeeeeeeee5
 ```
 
 This command deletes a named location policy in Azure AD.
@@ -64,4 +64,3 @@ See the [migration guide for Remove-AzureADMSNamedLocationPolicy](./migrate/Remo
 [Set-AzureADMSNamedLocationPolicy](Set-AzureADMSNamedLocationPolicy.md)
 
 [Get-AzureADMSNamedLocationPolicy](Get-AzureADMSNamedLocationPolicy.md)
-
