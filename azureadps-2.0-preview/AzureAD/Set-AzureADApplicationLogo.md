@@ -36,7 +36,7 @@ This cmdlet is used to set the logo for an application
 
 ### Example 1
 ```
-PS C:\WINDOWS\system32> Set-AzureADApplicationLogo -ObjectId 79592454-dea7-4660-9d91-f1768e5055ac -FilePath D:\applogo.jpg
+PS C:\WINDOWS\system32> Set-AzureADApplicationLogo -ObjectId aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb -FilePath D:\applogo.jpg
 ```
 
 This cmdlet sets the application logo for the application specified by the the ObjectID parameter to the image specified with the FIlepath parameter

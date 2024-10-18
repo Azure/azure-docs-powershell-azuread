@@ -13,7 +13,7 @@ syntaxes:
 examples:
 - title: 'Example 1: Sets the logo of the application'
   code: |-
-    PS C:\>Set-AzureADMSApplicationLogo -ObjectId 121ce3aa-64cb-44f2-99e8-deb705caeddd -Content {imagebytearray}
+    PS C:\>Set-AzureADMSApplicationLogo -ObjectId aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb -Content {imagebytearray}
   description: |-
     This command updates the application logo.
   summary: ""

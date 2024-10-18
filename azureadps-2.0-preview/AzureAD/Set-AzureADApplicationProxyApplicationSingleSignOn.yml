@@ -20,13 +20,13 @@ syntaxes:
 examples:
 - title: Example 1
   code: |-
-    PS C:\> Set-AzureADApplicationProxyApplicationSingleSignOn -ObjectId 4eba5342-8d17-4eac-a1f6-62a0de26311e -SingleSignOnMode OnPremisesKerberos -KerberosInternalApplicationServicePrincipalName "http/www.adventure-works.com" -KerberosDelegatedLoginIdentity OnPremisesUserPrincipalName
+    PS C:\> Set-AzureADApplicationProxyApplicationSingleSignOn -ObjectId aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb -SingleSignOnMode OnPremisesKerberos -KerberosInternalApplicationServicePrincipalName "http/www.adventure-works.com" -KerberosDelegatedLoginIdentity OnPremisesUserPrincipalName
   description: |-
     Example 1: Assign an application to use Kerberos Constrained Delegation, and specify required parameters.
   summary: ""
 - title: Example 2
   code: |-
-    PS C:\> Set-AzureADApplicationProxyApplicationSingleSignOn -ObjectId 4eba5342-8d17-4eac-a1f6-62a0de26311e -SingleSignOnMode None
+    PS C:\> Set-AzureADApplicationProxyApplicationSingleSignOn -ObjectId aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb -SingleSignOnMode None
   description: |-
     Example 2: Remove SSO from an application
   summary: ""

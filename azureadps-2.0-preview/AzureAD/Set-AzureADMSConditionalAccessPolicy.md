@@ -27,9 +27,9 @@ Conditional access policies are custom rules that define an access scenario.
 
 ### Example 1: Updates a conditional access policy in Azure AD by PolicyId.
 ```
-PS C:\> Set-AzureADMSConditionalAccessPolicy -PolicyId 6b5e999b-0ba8-4186-a106-e0296c1c4358 -DisplayName "MFA policy 1" -State "Enabled"
+PS C:\> Set-AzureADMSConditionalAccessPolicy -PolicyId 1aaaaaa1-2bb2-3cc3-4dd4-5eeeeeeeeee5 -DisplayName "MFA policy 1" -State "Enabled"
 
-          Id                      : 6b5e999b-0ba8-4186-a106-e0296c1c4358
+          Id                      : 1aaaaaa1-2bb2-3cc3-4dd4-5eeeeeeeeee5
           DisplayName             : MFA policy 1
           CreatedDateTime         : 2019-09-26T23:12:16.0792706Z
           ModifiedDateTime        : 2019-09-27T00:12:12.5986473Z
@@ -160,4 +160,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [New-AzureADMSConditionalAccessPolicy]()
 
 [Remove-AzureADMSConditionalAccessPolicy]()
-
