@@ -24,7 +24,7 @@ Conditional access policies are custom rules that define an access scenario.
 
 ### Example 1: Deletes a conditional access policy in Azure AD by PolicyId.
 ```
-PS C:\> Remove-AzureADMSConditionalAccessPolicy -PolicyId 6b5e999b-0ba8-4186-a106-e0296c1c4358
+PS C:\> Remove-AzureADMSConditionalAccessPolicy -PolicyId 1aaaaaa1-2bb2-3cc3-4dd4-5eeeeeeeeee5
 ```
 
 This command deletes a conditional access policy in Azure AD.
@@ -61,4 +61,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [New-AzureADMSConditionalAccessPolicy]()
 
 [Set-AzureADMSConditionalAccessPolicy]()
-

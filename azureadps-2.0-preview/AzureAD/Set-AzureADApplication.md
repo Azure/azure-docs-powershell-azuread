@@ -43,7 +43,7 @@ Set-AzureADApplication -ObjectId <String>
 
 ### Example 1: Update an application
 ```
-PS C:\>Set-AzureADApplication -ObjectId "3ddd22e7-a150-4bb3-b100-e410dea1cb84" -DisplayName "New Name"
+PS C:\>Set-AzureADApplication -ObjectId "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb" -DisplayName "New Name"
 ```
 
 This command updates the specified application.
@@ -601,4 +601,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [New-AzureADApplication]()
 
 [Remove-AzureADApplication]()
-
