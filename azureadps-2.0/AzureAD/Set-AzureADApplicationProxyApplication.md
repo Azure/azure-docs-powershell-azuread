@@ -27,7 +27,7 @@ The Set-AzureADApplicationProxyApplication allows you to modify and set addition
 
 ### Example 1
 ```
-PS C:\> Set-AzureADApplicationProxyApplication -ObjectId 257098d1-f8dd-4efb-88a2-1c92d3654f10 -IsTranslateLinksInBodyEnabled $true
+PS C:\> Set-AzureADApplicationProxyApplication -ObjectId aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb -IsTranslateLinksInBodyEnabled $true
 
 
 ExternalAuthenticationType               : AadPreAuthentication

@@ -26,14 +26,14 @@ This is limited to setting No SSO, Kerberos Constrained Delegation (for applicat
 
 ### Example 1
 ```
-PS C:\> Set-AzureADApplicationProxyApplicationSingleSignOn -ObjectId 4eba5342-8d17-4eac-a1f6-62a0de26311e -SingleSignOnMode OnPremisesKerberos -KerberosInternalApplicationServicePrincipalName "http/www.adventure-works.com" -KerberosDelegatedLoginIdentity OnPremisesUserPrincipalName
+PS C:\> Set-AzureADApplicationProxyApplicationSingleSignOn -ObjectId aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb -SingleSignOnMode OnPremisesKerberos -KerberosInternalApplicationServicePrincipalName "http/www.adventure-works.com" -KerberosDelegatedLoginIdentity OnPremisesUserPrincipalName
 ```
 
 Example 1: Assign an application to use Kerberos Constrained Delegation, and specify required parameters.
 
 ### Example 2
 ```
-PS C:\> Set-AzureADApplicationProxyApplicationSingleSignOn -ObjectId 4eba5342-8d17-4eac-a1f6-62a0de26311e -SingleSignOnMode None
+PS C:\> Set-AzureADApplicationProxyApplicationSingleSignOn -ObjectId aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb -SingleSignOnMode None
 ```
 
 Example 2: Remove SSO from an application
