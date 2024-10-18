@@ -23,7 +23,7 @@ Adds an owner for an application object.
 
 ### Example 1: Add an owner to an application
 ```
-PS C:\>Add-AzureADMSApplicationOwner -ObjectId 3ddd22e7-a150-4bb3-b100-e410dea1cb84 -RefObjectId c13dd34a-492b-4561-b171-40fcce2916c5
+PS C:\>Add-AzureADMSApplicationOwner -ObjectId aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb -RefObjectId bbbbbbbb-1111-2222-3333-cccccccccccc
 ```
 
 This command adds an owner to an application.
@@ -75,4 +75,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-AzureADMSApplicationOwner]()
 
 [Remove-AzureADMSApplicationOwner]()
-

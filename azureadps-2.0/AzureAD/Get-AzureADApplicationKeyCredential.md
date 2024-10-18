@@ -24,7 +24,7 @@ The Get-AzureADApplicationKeyCredential cmdlet gets the key credentials for an a
 
 ### Example 1: Get key credentials
 ```
-PS C:\> Get-AzureADApplicationKeyCredential -ObjectId "3ddd22e7-a150-4bb3-b100-e410dea1cb84"
+PS C:\> Get-AzureADApplicationKeyCredential -ObjectId "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb"
 ```
 
 This command gets the key credentials for the specified application.
@@ -101,4 +101,3 @@ See the [migration guide for Get-AzureADApplicationKeyCredential](./migrate/Get-
 [New-AzureADApplicationKeyCredential](New-AzureADApplicationKeyCredential.md)
 
 [Remove-AzureADApplicationKeyCredential](Remove-AzureADApplicationKeyCredential.md)
-
