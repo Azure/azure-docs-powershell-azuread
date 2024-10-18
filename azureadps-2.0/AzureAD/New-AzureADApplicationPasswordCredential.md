@@ -25,7 +25,7 @@ The New-AzureADApplicationPasswordCredential cmdlet creates a password credentia
 
 ### Example 1: Create a password credential
 ```
-PS C:\>New-AzureADApplicationPasswordCredential -ObjectId "3ddd22e7-a150-4bb3-b100-e410dea1cb84"
+PS C:\>New-AzureADApplicationPasswordCredential -ObjectId "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb"
 
 CustomKeyIdentifier :
 EndDate             : 9/28/2017 3:57:10 PM
@@ -35,7 +35,7 @@ Value               : ZJ0V1Yg4cp4eWIey9DrYspqVdX1pdvY437P/ueGxVLU=
 ```
 ### Example 2: Create a custom password credential 
 ```
-PS C:\>New-AzureADApplicationPasswordCredential -ObjectId '6e6a6561-e96d-453b-9641-743b499736cc' -Value 'Zihjfg-dsgs_d34_54"73fE"d!f~dg'
+PS C:\>New-AzureADApplicationPasswordCredential -ObjectId 'bbbbbbbb-1111-2222-3333-cccccccccccc' -Value 'Zihjfg-dsgs_d34_54"73fE"d!f~dg'
  
 CustomKeyIdentifier :
 EndDate             : 16-12-2023 06:00:44
@@ -173,4 +173,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-AzureADApplicationPasswordCredential]()
 
 [Remove-AzureADApplicationPasswordCredential]()
-
