@@ -101,7 +101,7 @@ When the cmdlet completes successfully it returns the new extension attribute ob
 ```powershell
 ObjectId                             Name                                                     TargetObjects
 --------                             ----                                                     -------------
-91ec8ae5-6813-4453-afd7-31680a484892 extension_0380f0f700c040b5aa577c9268940b53_MyNewProperty {User}
+aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb extension_0380f0f700c040b5aa577c9268940b53_MyNewProperty {User}
 ```
 
 > [!NOTE] 
@@ -130,14 +130,14 @@ This cmdlet returns the list of extension properties in your application:
 ObjectId                             Name                                                      TargetObjects
 --------                             ----                                                      -------------
 
-91ec8ae5-6813-4453-afd7-31680a484892 extension_0380f0f700c040b5aa577c9268940b53_MyNewProperty  {User}
+aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb extension_0380f0f700c040b5aa577c9268940b53_MyNewProperty  {User}
 ```
 ### Deleting extension properties
 
 If you no longer need an extension property, you can delete it:
 
 ```powershell 
-Remove-AzureADApplicationExtensionProperty -ObjectId (Get-AzureADApplication -SearchString "My Properties Bag").ObjectID -ExtensionPropertyId 91ec8ae5-6813-4453-afd7-31680a484892 
+Remove-AzureADApplicationExtensionProperty -ObjectId (Get-AzureADApplication -SearchString "My Properties Bag").ObjectID -ExtensionPropertyId aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb 
 ```
 
 > [!NOTE]

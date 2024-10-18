@@ -31,9 +31,9 @@ Updates an Azure Active Directory permission grant condition set object identifi
 ```
 1. Get existing permission grant policy by that need to be updated.
 		
-		$permissionGrantConditionSet =Get-AzureADMSPermissionGrantConditionSet -PolicyId "test1" -ConditionSetType "includes" -Id "0f81cce0-a766-4db6-a7e2-4e5f10f6abf8"
+		$permissionGrantConditionSet =Get-AzureADMSPermissionGrantConditionSet -PolicyId "test1" -ConditionSetType "includes" -Id "1aaaaaa1-2bb2-3cc3-4dd4-5eeeeeeeeee5"
 
-			Id                                          : 0f81cce0-a766-4db6-a7e2-4e5f10f6abf8
+			Id                                          : 1aaaaaa1-2bb2-3cc3-4dd4-5eeeeeeeeee5
 			PermissionType                              : delegated
 			PermissionClassification                    : all
 			ResourceApplication                         : ec8d61c9-1cb2-4edb-afb0-bcda85645555
@@ -49,7 +49,7 @@ Updates an Azure Active Directory permission grant condition set object identifi
 		
 		Set-AzureADMSPermissionGrantConditionSet -PolicyId "test1" -ConditionSetType "includes" -Id $permissionGrantConditionSet.Id -PermissionClassification low
 
-			Id                                          : 0f81cce0-a766-4db6-a7e2-4e5f10f6abf8
+			Id                                          : 1aaaaaa1-2bb2-3cc3-4dd4-5eeeeeeeeee5
 			PermissionType                              : delegated
 			PermissionClassification                    : low
 			ResourceApplication                         : ec8d61c9-1cb2-4edb-afb0-bcda85645555
@@ -64,7 +64,7 @@ Updates an Azure Active Directory permission grant condition set object identifi
 
 ### Example 2: Update a permission grant condition set
 ```
-PS C:\>Set-AzureADMSPermissionGrantConditionSet -PolicyId "policy1" -ConditionSetType "includes" -Id "665a9903-0398-48ab-b4e9-7a570d468b66" -PermissionType "Delegated" -PermissionClassification "Low" -ResourceApplication "d9d40050-c784-4b56-a06d-477542a1cafc" -Permissions @("29bf4ca5-913e-427d-8a68-5890af945109") -ClientApplicationIds @("All") -ClientApplicationTenantIds @("All") -ClientApplicationPublisherIds @("All") -ClientApplicationsFromVerifiedPublisherOnly $true
+PS C:\>Set-AzureADMSPermissionGrantConditionSet -PolicyId "policy1" -ConditionSetType "includes" -Id "2bbbbbb2-3cc3-4dd4-5ee5-6ffffffffff6" -PermissionType "Delegated" -PermissionClassification "Low" -ResourceApplication "3cccccc3-4dd4-5ee5-6ff6-7aaaaaaaaaa7" -Permissions @("4dddddd4-5ee5-6ff6-7aa7-8bbbbbbbbbb8") -ClientApplicationIds @("All") -ClientApplicationTenantIds @("All") -ClientApplicationPublisherIds @("All") -ClientApplicationsFromVerifiedPublisherOnly $true
 ```
 
 ## PARAMETERS
@@ -260,4 +260,3 @@ See the [migration guide for Set-AzureADMSPermissionGrantConditionSet](./migrate
 [Get-AzureADMSPermissionGrantConditionSet](Get-AzureADMSPermissionGrantConditionSet.md)
 
 [Remove-AzureADMSPermissionGrantConditionSet](Remove-AzureADMSPermissionGrantConditionSet.md)
-
