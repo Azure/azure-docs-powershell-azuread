@@ -24,7 +24,7 @@ Retrieves the thumbnail photo of a contact
 
 ### Example 1
 ```
-Get-AzureADContactThumbnailPhoto -ObjectId b052db07-e7ec-4c0e-b481-a5ba550b9ee7
+Get-AzureADContactThumbnailPhoto -ObjectId aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb
 
 Tag                  :
 PhysicalDimension    : {Width=279, Height=390}
