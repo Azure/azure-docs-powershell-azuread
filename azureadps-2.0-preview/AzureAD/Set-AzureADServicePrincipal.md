@@ -35,7 +35,7 @@ The **Set-AzureADServicePrincipal** cmdlet updates a service principal in Azure 
 
 ### Example 1: Disable the account of a service principal
 ```
-PS C:\> Set-AzureADServicePrincipal -ObjectId 2e0d8ca7-57d1-4a87-9c2a-b3638a4cadbf -AccountEnabled $False
+PS C:\> Set-AzureADServicePrincipal -ObjectId aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb -AccountEnabled $False
 ```
 
 This command disables the account of the specified service principal.

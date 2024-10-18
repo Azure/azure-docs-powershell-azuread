@@ -32,7 +32,7 @@ Update role setting
 PS C:\> $setting = New-Object Microsoft.Open.MSGraph.Model.AzureADMSPrivilegedRuleSetting
 				  PS C:\> $setting.RuleIdentifier = "JustificationRule"
 				  PS C:\> $setting.Setting = "{`"required`":false}"
-				  PS C:\> Set-AzureADMSPrivilegedRoleSetting -ProviderId AzureResources -Id ff518d09-47f5-45a9-bb32-71916d9aeadf -ResourceId 3f5887ed-dd6e-4821-8bde-c813ec508cf9 -RoleDefinitionId 2387ced3-4e95-4c36-a915-73d803f93702 -UserMemberSettings $setting
+				  PS C:\> Set-AzureADMSPrivilegedRoleSetting -ProviderId AzureResources -Id ff518d09-47f5-45a9-bb32-71916d9aeadf -ResourceId a0a0a0a0-bbbb-cccc-dddd-e1e1e1e1e1e1 -RoleDefinitionId b1b1b1b1-cccc-dddd-eeee-f2f2f2f2f2f2 -UserMemberSettings $setting
 ```
 
 Update a role setting by setting the justification to be false
