@@ -24,7 +24,7 @@ Deletes an extension property from an application object.
 
 ### Example 1: Remove an extension property
 ```
-PS C:\> Remove-AzureADMSApplicationExtensionProperty -ObjectId "3ddd22e7-a150-4bb3-b100-e410dea1cb84" -ExtensionPropertyId "344ed560-f8e7-410e-ab9f-c79df5c36"
+PS C:\> Remove-AzureADMSApplicationExtensionProperty -ObjectId "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb" -ExtensionPropertyId "344ed560-f8e7-410e-ab9f-c79df5c36"
 ```
 
 This command removes the extension property that has the specified ID from an application in Azure Active Directory.
@@ -76,4 +76,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-AzureADMSApplicationExtensionProperty]()
 
 [New-AzureADMSApplicationExtensionProperty]()
-
