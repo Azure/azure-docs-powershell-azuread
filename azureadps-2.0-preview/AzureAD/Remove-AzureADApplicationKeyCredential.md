@@ -27,7 +27,7 @@ The **Remove-AzureADApplicationKeyCredential** cmdlet removes a key credential f
 
 ### Example 1: Remove a key credential
 ```
-PS C:\> Remove-AzureADApplicationKeyCredential -ObjectId "3ddd22e7-a150-4bb3-b100-e410dea1cb84" -KeyId "6aa971c6-3040-45df-87ed-581c8c09ff2b"
+PS C:\> Remove-AzureADApplicationKeyCredential -ObjectId "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb" -KeyId "aaaaaaaa-0b0b-1c1c-2d2d-333333333333"
 ```
 
 This command removes the specified key credential from the specified application.
