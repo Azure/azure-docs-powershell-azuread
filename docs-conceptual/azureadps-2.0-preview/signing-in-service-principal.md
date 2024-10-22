@@ -53,7 +53,7 @@ $keyValue = [System.Convert]::ToBase64String($cert.GetRawCertData())
 Next step is to create a new application and assign the certificate we created as a key credential:
 
 ```powershell
-$application = New-AzureADApplication -DisplayName "test123" -IdentifierUris "https://eunicewaweru2177668"
+$application = New-AzureADApplication -DisplayName "test123" -IdentifierUris "https://test2177668"
 New-AzureADApplicationKeyCredential -ObjectId $application.ObjectId -CustomKeyIdentifier "Test123" -Type AsymmetricX509Cert -Usage Verify -Value $keyValue
 ```
 
