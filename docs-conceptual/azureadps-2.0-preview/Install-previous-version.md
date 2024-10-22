@@ -8,9 +8,9 @@ ms.tgt_pltfrm: na
 ms.devlang: powershell
 ms.topic: article
 ms.date: 07/10/2017
-ms.author: rodejo
+ms.author: eunicewaweru
 ms.custom: posh-docs-conceptual
-ms.reviewer: rodejo
+ms.reviewer: stevemutungi
 ---
 # How can I install a previous version of a module?
 
