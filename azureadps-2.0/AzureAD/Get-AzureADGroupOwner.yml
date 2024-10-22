@@ -8,7 +8,7 @@ syntaxes:
 examples:
 - title: 'Example 1: Get a group owner by ID'
   code: |-
-    PS C:\>Get-AzureADGroupOwner -ObjectId "62438306-7c37-4638-a72d-0ee8d9217680"
+    PS C:\>Get-AzureADGroupOwner -ObjectId "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb"
 
     ObjectId                             ObjectType
     --------                             ----------
