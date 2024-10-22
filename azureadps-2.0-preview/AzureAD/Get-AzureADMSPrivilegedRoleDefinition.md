@@ -31,14 +31,14 @@ Get role definitions
 
 ### Example 1
 ```
-PS C:\> Get-AzureADMSPrivilegedRoleDefinition -ProviderId AzureResources -ResourceId e5e7d29d-5465-45ac-885f-4716a5ee74b5 -Top 10
+PS C:\> Get-AzureADMSPrivilegedRoleDefinition -ProviderId AzureResources -ResourceId a0a0a0a0-bbbb-cccc-dddd-e1e1e1e1e1e1 -Top 10
 ```
 
 Get role definitions for a specific provider and resource
 
 ### Example 1
 ```
-PS C:\> Get-AzureADMSPrivilegedRoleDefinition -ProviderId AzureResources -ResourceId e5e7d29d-5465-45ac-885f-4716a5ee74b5 -Id ff67e02b-d77b-4588-9f32-e02b7da6539b
+PS C:\> Get-AzureADMSPrivilegedRoleDefinition -ProviderId AzureResources -ResourceId a0a0a0a0-bbbb-cccc-dddd-e1e1e1e1e1e1 -Id b1b1b1b1-cccc-dddd-eeee-f2f2f2f2f2f2
 ```
 
 Get a role definitions for a specific provider, resource and Id

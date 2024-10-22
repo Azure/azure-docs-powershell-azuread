@@ -26,7 +26,7 @@ The **Get-AzureADUserCreatedObject** cmdlet gets objects created by a user in Az
 
 ### Example 1: Get a user-created object
 ```
-PS C:\>Get-AzureADUserCreatedObject -ObjectId "df19e8e6-2ad7-453e-87f5-037f6529ae16"
+PS C:\>Get-AzureADUserCreatedObject -ObjectId "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb"
 
 ObjectId                             ObjectType
 --------                             ----------

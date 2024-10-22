@@ -41,7 +41,7 @@ Id                                 : 055aa618-7c74-40ee-b278-75545562c3d6
 ObjectId                           :
 DeletionTimestamp                  :
 AccountEnabled                     : true
-AppId                              : 6ff5f225-c1d3-46cc-b89e-39e679ff746f
+AppId                              : 00001111-aaaa-2222-bbbb-3333cccc4444
 AppDisplayName                     : App Name
 ApplicationTemplateId              :
 AppRoleAssignmentRequired          : False
@@ -56,7 +56,7 @@ MicrosoftFirstParty                :
 PublisherName                      : Microsoft Services
 PreferredTokenSigningKeyThumbprint :
 ReplyUrls                          : {}
-ServicePrincipalNames              : {6ff5f225-c1d3-46cc-b89e-39e679ff746f}
+ServicePrincipalNames              : {00001111-aaaa-2222-bbbb-3333cccc4444}
 Tags                               : {}
 KeyCredentials                     : {}
 PasswordCredentials                : {}

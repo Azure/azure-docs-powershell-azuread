@@ -27,7 +27,7 @@ The **Get-AzureADUserManager** cmdlet gets the manager of a user in Azure Active
 
 ### Example 1: Get the manager of a user
 ```
-PS C:\>Get-AzureADUserManager -ObjectId "df19e8e6-2ad7-453e-87f5-037f6529ae16"
+PS C:\>Get-AzureADUserManager -ObjectId "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb"
 
 ObjectId                             ObjectType
 --------                             ----------
@@ -104,4 +104,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Remove-AzureADUserManager](./Remove-AzureADUserManager.md)
 
 [Set-AzureADUserManager](./Set-AzureADUserManager.md)
-
