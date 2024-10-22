@@ -1,9 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Online.Identity.Federation.PowerShell.dll-Help.xml
 online version:
 schema: 2.0.0
 ms.assetid: 3433FAB9-DA26-483D-BE3C-406FD0C0F746
-ms.reviewer: rodejo
+ms.reviewer: stevemutungi
 ms.custom: iamfeature=PowerShell
 ---
 

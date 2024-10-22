@@ -8,9 +8,9 @@ ms.tgt_pltfrm: na
 ms.devlang: powershell
 ms.topic: article
 ms.date: 07/10/2017
-ms.author: rodejo
+ms.author: eunicewaweru
 ms.custom: posh-docs-conceptual
-ms.reviewer: rodejo
+ms.reviewer: stevemutungi
 description: Discover how to list all service principal application roles in your directory with our step-by-step guide on Microsoft Azure PowerShell.
 ---
 # List all application role assignments for all service principals in your directory

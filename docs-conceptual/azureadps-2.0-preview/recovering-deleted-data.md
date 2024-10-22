@@ -8,9 +8,9 @@ ms.tgt_pltfrm: na
 ms.devlang: powershell
 ms.topic: article
 ms.date: 07/10/2017
-ms.author: rodejo
+ms.author: eunicewaweru
 ms.custom: posh-docs-conceptual
-ms.reviewer: rodejo
+ms.reviewer: stevemutungi
 ---
 # Recovering deleted data
 If you have accidentally deleted data from your directory there may be some options for recovering the lost data using PowerShell. You can recover deleted Applications and deleted Unified Groups in the first 30 days after deletion. This article describes how to do that.
