@@ -8,9 +8,9 @@ ms.tgt_pltfrm: na
 ms.devlang: powershell
 ms.topic: article
 ms.date: 07/10/2017
-ms.author: rodejo
+ms.author: eunicewaweru
 ms.custom: posh-docs-conceptual
-ms.reviewer: rodejo
+ms.reviewer: stevemutungi
 description: "Learn to use Azure AD PowerShell with Administrative Units: create, populate, assign roles, and manage users. Boost your directory management skills."
 ---
 

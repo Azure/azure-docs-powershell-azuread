@@ -9,9 +9,9 @@ ms.tgt_pltfrm: na
 ms.devlang: powershell
 ms.topic: article
 ms.date: 07/10/2017
-ms.author: rodejo
+ms.author: eunicewaweru
 ms.custom: posh-docs-conceptual
-ms.reviewer: rodejo
+ms.reviewer: stevemutungi
 ---
 
 # Using a Service Principal to connect to a directory in PowerShell
@@ -53,7 +53,7 @@ $keyValue = [System.Convert]::ToBase64String($cert.GetRawCertData())
 Next step is to create a new application and assign the certificate we created as a key credential:
 
 ```powershell
-$application = New-AzureADApplication -DisplayName "test123" -IdentifierUris "https://rodejo2177668"
+$application = New-AzureADApplication -DisplayName "test123" -IdentifierUris "https://eunicewaweru2177668"
 New-AzureADApplicationKeyCredential -ObjectId $application.ObjectId -CustomKeyIdentifier "Test123" -Type AsymmetricX509Cert -Usage Verify -Value $keyValue
 ```
 

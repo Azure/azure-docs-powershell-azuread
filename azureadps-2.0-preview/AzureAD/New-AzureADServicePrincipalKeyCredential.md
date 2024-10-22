@@ -3,7 +3,7 @@ external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.Custom.dll-Help.xm
 Module Name: AzureADPreview
 ms.assetid: D6EA0D4D-6643-4F11-A94C-2A71827C2774
 ms.custom: iamfeature=PowerShell
-ms.reviewer: rodejo
+ms.reviewer: stevemutungi
 online version:
 schema: 2.0.0
 ---

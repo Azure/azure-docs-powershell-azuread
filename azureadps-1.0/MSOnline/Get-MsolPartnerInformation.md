@@ -1,9 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
 online version:
 schema: 2.0.0
 ms.assetid: C304F948-A8BB-4E5E-97B0-EB9B84025AD5
-ms.reviewer: rodejo
+ms.reviewer: stevemutungi
 ms.custom: iamfeature=PowerShell
 ---
 

@@ -3,7 +3,7 @@ external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
 Module Name: AzureADPreview
 ms.assetid: 81048EAD-48BE-4972-8942-8FA44F3D7979
 ms.custom: iamfeature=PowerShell
-ms.reviewer: rodejo
+ms.reviewer: stevemutungi
 online version:
 schema: 2.0.0
 ---

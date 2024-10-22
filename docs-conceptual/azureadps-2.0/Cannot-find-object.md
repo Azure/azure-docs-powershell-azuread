@@ -9,9 +9,9 @@ ms.tgt_pltfrm: na
 ms.devlang: powershell
 ms.topic: article
 ms.date: 02/11/2022
-ms.author: rodejo
+ms.author: eunicewaweru
 ms.custom: posh-docs-conceptual
-ms.reviewer: rodejo
+ms.reviewer: stevemutungi
 ---
 # I'm looking for a user or a group but PowerShell does not return the object
 
