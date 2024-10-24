@@ -85,7 +85,7 @@ This command gets a device with the corresponding device ID.
 
 ### Example 5: Get a device object by object ID
 ```
-PS C:\>Get-MsolDevice -ObjectId "566F7EA7-7BF1-4F4A-AF23-A1B46DBD46D6"
+PS C:\>Get-MsolDevice -ObjectId "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb"
 ```
 
 This command gets a device with the corresponding object ID.
@@ -271,5 +271,3 @@ The value could be one of the following: Authenticated, Compliant, Managed.
 [Enable-MsolDevice](./Enable-MsolDevice.md)
 
 [Remove-MsolDevice](./Remove-MsolDevice.md)
-
-

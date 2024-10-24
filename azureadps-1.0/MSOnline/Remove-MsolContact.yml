@@ -11,7 +11,7 @@ syntaxes:
 examples:
 - title: 'Example 1: Remove a contact'
   code: |-
-    PS C:\> Remove-MsolContact -ObjectId 40c4ca1a-4e15-40ad-b0bd-abeca4bcafcd -Force
+    PS C:\> Remove-MsolContact -ObjectId aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb -Force
   description: |-
     This command removes a contact from the Azure Active Directory.
   summary: ""

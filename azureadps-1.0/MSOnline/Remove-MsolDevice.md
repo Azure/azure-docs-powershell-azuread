@@ -31,26 +31,26 @@ The **Remove-MsolDevice** cmdlet removes a device object from Azure Active Direc
 
 ### Example 1: Remove a device by device ID with confirmation
 ```
-PS C:\> Remove-MsolDevice -DeviceId "1aa200c4-bdfb-42b5-9a1e-5f1bafbe4274"
+PS C:\> Remove-MsolDevice -DeviceId "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb"
 ```
 
-This command removes the device with DeviceId 1aa200c4-bdfb-42b5-9a1e-5f1bafbe4274 from Azure Active Directory.
+This command removes the device with DeviceId aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb from Azure Active Directory.
 Since the command does not use the *Force* parameter, the user is prompted for confirmation.
 
 ### Example 2: Remove a device by device ID
 ```
-PS C:\> Remove-MsolDevice -DeviceId "1aa200c4-bdfb-42b5-9a1e-5f1bafbe4274" -Force
+PS C:\> Remove-MsolDevice -DeviceId "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb" -Force
 ```
 
-This command removes the device with DeviceId 1aa200c4-bdfb-42b5-9a1e-5f1bafbe4274 from Azure Active Directory.
+This command removes the device with DeviceId aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb from Azure Active Directory.
 Since the command uses the *Force* parameter, the user is not prompted for confirmation.
 
 ### Example 3: Remove a device by object ID
 ```
-PS C:\> Remove-MsolDevice -ObjectId "1aa200c4-bdfb-42b5-9a1e-5f1bafbe4274"
+PS C:\> Remove-MsolDevice -ObjectId "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb"
 ```
 
-This command removes the device with ObjectId 1aa200c4-bdfb-42b5-9a1e-5f1bafbe4274 from Azure Active Directory.
+This command removes the device with ObjectId aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb from Azure Active Directory.
 
 ## PARAMETERS
 
