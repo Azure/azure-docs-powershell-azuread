@@ -24,7 +24,7 @@ The Get-AzureADApplicationExtensionProperty cmdlet gets application extension pr
 
 ### Example 1: Get extension properties
 ```
-PS C:\>Get-AzureADApplicationExtensionProperty -ObjectId "3ddd22e7-a150-4bb3-b100-e410dea1cb84"
+PS C:\>Get-AzureADApplicationExtensionProperty -ObjectId "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb"
 
 ObjectId                             Name                                                    TargetObjects
 --------                             ----                                                    -------------
@@ -105,4 +105,3 @@ See the [migration guide for Get-AzureADApplicationExtensionProperty](./migrate/
 [New-AzureADApplicationExtensionProperty](New-AzureADApplicationExtensionProperty.md)
 
 [Remove-AzureADApplicationExtensionProperty](Remove-AzureADApplicationExtensionProperty.md)
-

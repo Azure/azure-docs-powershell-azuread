@@ -45,11 +45,11 @@ This command gets an application by its display name.
 
 ### Example 2: Get an application by ID
 ```
-PS C:\>Get-AzureADApplication -Filter "AppId eq '421599eb-eed7-4988-9b31-02b43a4d37b8'"
+PS C:\>Get-AzureADApplication -Filter "AppId eq '00001111-aaaa-2222-bbbb-3333cccc4444'"
 
 ObjectId                             AppId                                DisplayName     
 --------                             -----                                -----------
-ed192e92-84d4-4baf-997d-1e190a81f28e 421599eb-eed7-4988-9b31-02b43a4d37b8 MyNewApp
+ed192e92-84d4-4baf-997d-1e190a81f28e 00001111-aaaa-2222-bbbb-3333cccc4444 MyNewApp
 ```
 
 This command gets an application by its ID.
@@ -162,4 +162,3 @@ See the [migration guide for Get-AzureADApplication](./migrate/Get-AzureADApplic
 [Remove-AzureADApplication](Remove-AzureADApplication.md)
 
 [Set-AzureADApplication](Set-AzureADApplication.md)
-
