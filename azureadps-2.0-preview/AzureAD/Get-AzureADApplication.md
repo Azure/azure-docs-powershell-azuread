@@ -48,7 +48,7 @@ This command gets an application by its display name.
 
 ### Example 2: Get an application by ID
 ```
-PS C:\>Get-AzureADApplication -Filter "AppId eq 'ed192e92-84d4-4baf-997d-1e190a81f28e'"
+PS C:\>Get-AzureADApplication -Filter "AppId eq '00001111-aaaa-2222-bbbb-3333cccc4444'"
 ```
 
 This command gets an application by its ID.
@@ -57,7 +57,7 @@ Output:
 
     ObjectId                             AppId                                DisplayName
     --------                             -----                                -----------  
-    ed192e92-84d4-4baf-997d-1e190a81f28e 36ee4c6c-0812-40a2-b820-b22ebd02bce3 MyNewApp
+    00001111-aaaa-2222-bbbb-3333cccc4444 36ee4c6c-0812-40a2-b820-b22ebd02bce3 MyNewApp
 
 ### Retrieve an application by identifierUris
 ```
@@ -156,7 +156,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [New-AzureADApplication](./New-AzureADApplication.md)
 [Remove-AzureADApplication](./Remove-AzureADApplication.md)
 [Set-AzureADApplication](./Set-AzureADApplication.md)
-
-
-
-
