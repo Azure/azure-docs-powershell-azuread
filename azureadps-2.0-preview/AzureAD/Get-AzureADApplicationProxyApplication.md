@@ -26,7 +26,7 @@ The Get-AzureADApplicationProxyApplication cmdlet retrieves an application confi
 ### Example 1
 
 ```
-PS C:\> Get-AzureADApplicationProxyApplication -ObjectId 8d6c6684-6f8c-42e2-8914-32ed2adf9ccf
+PS C:\> Get-AzureADApplicationProxyApplication -ObjectId aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb
 
 ExternalAuthenticationType               : AadPreAuthentication
 ApplicationServerTimeout                 : Default

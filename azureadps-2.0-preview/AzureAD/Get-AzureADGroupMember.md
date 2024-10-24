@@ -26,7 +26,7 @@ The **Get-AzureADGroupMember** cmdlet gets a member of a group in Azure Active D
 
 ### Example 1: Get a group member by ID
 ```
-PS C:\>Get-AzureADGroupMember -ObjectId "62438306-7c37-4638-a72d-0ee8d9217680"
+PS C:\>Get-AzureADGroupMember -ObjectId "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb"
 
 ObjectId                             ObjectType
 --------                             ----------
@@ -93,4 +93,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 [Add-AzureADGroupMember](./Add-AzureADGroupMember.md)
 [Remove-AzureADGroupMember](./Remove-AzureADGroupMember.md)
-
