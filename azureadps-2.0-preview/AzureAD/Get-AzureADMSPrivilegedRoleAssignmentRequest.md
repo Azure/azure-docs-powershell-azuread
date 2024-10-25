@@ -30,7 +30,7 @@ Get role assignment request for a specific resource
 
 ### Example 1
 ```
-PS C:\> Get-AzureADMSPrivilegedRoleAssignmentRequest -ProviderId AzureResources -Filter "ResourceId eq 'e5e7d29d-5465-45ac-885f-4716a5ee74b5'"
+PS C:\> Get-AzureADMSPrivilegedRoleAssignmentRequest -ProviderId AzureResources -Filter "ResourceId eq 'a0a0a0a0-bbbb-cccc-dddd-e1e1e1e1e1e1'"
 ```
 
 Get all role assigment requests for a specific provider and resource

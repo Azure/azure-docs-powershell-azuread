@@ -26,7 +26,7 @@ Note that the password field will be hidden for security purpose.
 
 ### Get password single-sign-on credentials
 ```
-PS C:\> $get_creds_output = Get-AzureADMSPasswordSingleSignOnCredential -ObjectId 9ac9883e-0ac5-4c32-8737-4267f56a28cc -PasswordSSOObjectId a4210a97-5e26-4cfe-88f1-118ed4886f27
+PS C:\> $get_creds_output = Get-AzureADMSPasswordSingleSignOnCredential -ObjectId aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb -PasswordSSOObjectId bbbbbbbb-1111-2222-3333-cccccccccccc
 ```
 
 This command gets the password sso credentials for the given ObjectId and PasswordSSOObjectId.

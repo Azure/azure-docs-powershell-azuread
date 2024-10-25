@@ -31,14 +31,14 @@ Get role assignments for a specific provider and resource
 
 ### Example 1
 ```
-PS C:\> Get-AzureADMSPrivilegedRoleAssignment -ProviderId AzureResources -ResourceId 3f5887ed-dd6e-4821-8bde-c813ec508cf9
+PS C:\> Get-AzureADMSPrivilegedRoleAssignment -ProviderId AzureResources -ResourceId a0a0a0a0-bbbb-cccc-dddd-e1e1e1e1e1e1
 ```
 
 Get all role assignments for a specific provider and resource
 
 ### Example 2
 ```
-PS C:\> Get-AzureADMSPrivilegedRoleAssignment -ProviderId AzureResources -ResourceId 3f5887ed-dd6e-4821-8bde-c813ec508cf9 -Id b83c177a-10e0-4eeb-8d0b-f3668fbf81fa
+PS C:\> Get-AzureADMSPrivilegedRoleAssignment -ProviderId AzureResources -ResourceId a0a0a0a0-bbbb-cccc-dddd-e1e1e1e1e1e1 -Id b1b1b1b1-cccc-dddd-eeee-f2f2f2f2f2f2
 ```
 
 Get a role assignment for a specific provider and resource

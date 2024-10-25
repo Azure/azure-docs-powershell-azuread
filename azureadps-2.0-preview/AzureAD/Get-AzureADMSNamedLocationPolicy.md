@@ -49,10 +49,10 @@ This command retrieves a list of all named location policies in Azure AD.
 
 ### Example 2: Retrieves a named location policy in Azure AD with given Id.
 ```
-PS C:\> Get-AzureADMSNamedLocationPolicy -PolicyId 1b7f0916-7677-40d8-97a1-d606f4ed8fcf
+PS C:\> Get-AzureADMSNamedLocationPolicy -PolicyId 1aaaaaa1-2bb2-3cc3-4dd4-5eeeeeeeeee5
 
           OdataType                           : #microsoft.graph.countryNamedLocation
-          Id                                  : 1b7f0916-7677-40d8-97a1-d606f4ed8fcf
+          Id                                  : 1aaaaaa1-2bb2-3cc3-4dd4-5eeeeeeeeee5
           DisplayName                         : Country named location
           CreatedDateTime                     : 2019-09-26T23:12:16.0792706Z
           ModifiedDateTime                    : 2019-09-27T00:12:12.5986473Z
@@ -97,4 +97,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Set-AzureADMSNamedLocationPolicy]()
 
 [Remove-AzureADMSNamedLocationPolicy]()
-
