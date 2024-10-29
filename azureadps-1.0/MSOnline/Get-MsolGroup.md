@@ -41,7 +41,7 @@ This cmdlet can be used to return a single group, if you specify the _ObjectId_ 
 
 ### Example 1: Get a group by using an ID
 ```
-PS C:\> Get-MsolGroup -ObjectId af407072-7ae1-4b07-a0ca-6634b7396054
+PS C:\> Get-MsolGroup -ObjectId aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb
 ```
 
 This command returns the group object that has the specified ID.
