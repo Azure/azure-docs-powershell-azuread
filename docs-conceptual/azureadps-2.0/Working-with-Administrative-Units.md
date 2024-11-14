@@ -7,7 +7,7 @@ ms.workload: identity
 ms.tgt_pltfrm: na
 ms.devlang: powershell
 ms.topic: article
-ms.date: 07/10/2017
+ms.date: 11/13/2024
 ms.author: eunicewaweru
 ms.custom: posh-docs-conceptual
 ms.reviewer: stevemutungi
@@ -15,14 +15,22 @@ ms.reviewer: stevemutungi
 
 # Working with Administrative Units
 
-Here are some demo scripts that you can use to learn how to use Azure AD PowerShell to work with Administrative Units. These scripts form a complete demo - You'll setup a demo environment for Administrative Units in your directory, see how to create and populate Administrative Units as a Global Admin and assign roles to delegated admins, and you'll see the effects of your actions when you sign in as a delegated admin, and finally there is a cleanup script to clean up all the object we created in this demo.
+In this article you learn how to use Azure AD PowerShell to work with Administrative Units. The article is made up of scripts that form a complete demo. The steps in this article help you to:
+
+- Setup a demo environment for administrative units in your directory, 
+- Create and populate administrative units 
+- As a # Login as Privileged Role Administrator, assign roles to delegated admins 
+- Sign in as a delegated admin to see the effects of the previous steps
+- Finally, clean up all the objects we created in this demo.
 
 ## Demo scripts
 
-### Setup.ps1	
+### Step 1: Setup script
+	
 Run this script initially to create the users and admins used later in the demo.
+
 ```powershell
-# Login as Global Administrator
+# Login as Privileged Role Administrator
 Connect-AzureAD
 
 ### Create users we'll add as AU members later
@@ -48,10 +56,10 @@ Enable-AzureADDirectoryRole -RoleTemplateId "fe930be7-5e62-47db-91af-98c3a49a38b
 
 ```
 
-## Global Admin.ps1	
-Run this script after the setup script to walk through the experience of a global admin creating and populating the AUs, and assigning the respective AU-scoped User Account and Helpdesk Admins.
+## Step 2: Create administrative units and assign roles
+
+Run this script after the setup script to walk through the experience of creating and populating the AUs, and assigning the respective AU-scoped User Account and Helpdesk Admins.
 ```powershell
-### Login as Global Administrator
 Connect-AzureAD
 
 <# Simple Administrative Unit (AU) Demo
@@ -71,29 +79,29 @@ Get-AzureADUser | ft DisplayName, UserPrincipalName
 
 ### Setup Administrative Units ######################################################
 #Create West Coast AU
-New-AzureADAdministrativeUnit -Description “West Coast region” -DisplayName “West Coast”
+New-AzureADMSAdministrativeUnit -Description “West Coast region” -DisplayName “West Coast”
 #Create East Coast AU
-New-AzureADAdministrativeUnit -Description “East Coast region” -DisplayName “East Coast”
+New-AzureADMSAdministrativeUnit -Description “East Coast region” -DisplayName “East Coast”
 
 ### Get the list of AUs
-Get-AzureADAdministrativeUnit | ft DisplayName, Description
+Get-AzureADMSAdministrativeUnit | ft DisplayName, Description
 
 ### Add West Coast AU member
-$westCoastAU = Get-AzureADAdministrativeUnit -Filter “displayname eq 'West Coast'”
+$westCoastAU = Get-AzureADMSAdministrativeUnit -Filter “displayname eq 'West Coast'”
 $initialDomain = (Get-AzureADDomain)[0].Name
 $westCoastUser1 = Get-AzureADUser -Filter "UserPrincipalName eq 'WestCoastUser1@$InitialDomain'"
 $westCoastUser2 = Get-AzureADUser -Filter "UserPrincipalName eq 'WestCoastUser2@$InitialDomain'"
-Add-AzureADAdministrativeUnitMember -ObjectId $westCoastAU.ObjectId -RefObjectId $westCoastUser1.ObjectId
-Add-AzureADAdministrativeUnitMember -ObjectId $westCoastAU.ObjectId -RefObjectId $westCoastUser2.ObjectId
-Get-AzureADAdministrativeUnitMember -ObjectId $westCoastAU.ObjectId | Get-AzureADUser
+Add-AzureADMSAdministrativeUnitMember -Id $westCoastAU.Id -RefObjectId $westCoastUser1.ObjectId
+Add-AzureADMSAdministrativeUnitMember -Id $westCoastAU.Id -RefObjectId $westCoastUser2.ObjectId
+Get-AzureADMSAdministrativeUnitMember -Id $westCoastAU.Id
 
 ### Add East Coast AU member
-$eastCoastAU = Get-AzureADAdministrativeUnit -Filter “displayname eq 'East Coast'”
+$eastCoastAU = Get-AzureADMSAdministrativeUnit -Filter “displayname eq 'East Coast'”
 $eastCoastUser1 = Get-AzureADUser -Filter "UserPrincipalName eq 'EastCoastUser1@$InitialDomain'"
 $eastCoastUser2 = Get-AzureADUser -Filter "UserPrincipalName eq 'EastCoastUser2@$InitialDomain'"
-Add-AzureADAdministrativeUnitMember -ObjectId $eastCoastAU.ObjectId -RefObjectId $eastCoastUser1.ObjectId
-Add-AzureADAdministrativeUnitMember -ObjectId $eastCoastAU.ObjectId -RefObjectId $eastCoastUser2.ObjectId
-Get-AzureADAdministrativeUnitMember -ObjectId $eastCoastAU.ObjectId | Get-AzureADUser
+Add-AzureADMSAdministrativeUnitMember -Id $eastCoastAU.Id -RefObjectId $eastCoastUser1.ObjectId
+Add-AzureADMSAdministrativeUnitMember -Id $eastCoastAU.Id -RefObjectId $eastCoastUser2.ObjectId
+Get-AzureADAdministrativeUnitMember -ObjectId $eastCoastAU.ObjectId 
 ###################################################################################
 
 ### Delegate Admin Permissions Scoped to Administrative Units ######################
@@ -110,41 +118,42 @@ foreach($i in $admins) {
 
 ### Add West Coast-scoped User Account Admin role member
 $westCoastUA = Get-AzureADUser -Filter "UserPrincipalName eq 'WestCoastUserAdmin@$InitialDomain'"
-$uaRoleMemberInfo = New-Object -TypeName Microsoft.Open.AzureAD.Model.RoleMemberInfo -Property @{ ObjectId =  $westCoastUA.ObjectId }
-Add-AzureADScopedRoleMembership -RoleObjectId $uaAdmin.ObjectId -ObjectId $westCoastAU.ObjectId -RoleMemberInfo $uaRoleMemberInfo
+$uaRoleMemberInfo = New-Object -TypeName Microsoft.Open.MSGraph.Model.MsRoleMemberInfo -Property @{Id =  $westCoastUA.Id }
+Add-AzureADMSScopedRoleMembership -RoleId $uaAdmin.ObjectId -Id $westCoastAU.Id -RoleMemberInfo $uaRoleMemberInfo
 
 ### Add West Coast-scoped Helpdesk Admin role member
 $westCoastHDA = Get-AzureADUser -Filter "UserPrincipalName eq 'WestCoastHelpdeskAdmin@$InitialDomain'"
-$hdaRoleMemberInfo = New-Object -TypeName Microsoft.Open.AzureAD.Model.RoleMemberInfo -Property @{ ObjectId =  $westCoastHDA.ObjectId }
-Add-AzureADScopedRoleMembership -RoleObjectId $helpDeskAdmin.ObjectId -ObjectId $westCoastAU.ObjectId -RoleMemberInfo $hdaRoleMemberInfo
+$hdaRoleMemberInfo = New-Object -TypeName Microsoft.Open.MSGraph.Model.MsRoleMemberInfo -Property @{Id =  $westCoastHDA.Id }
+Add-AzureADMSScopedRoleMembership -RoleId $helpDeskAdmin.ObjectId -Id $westCoastHDA.Id -RoleMemberInfo $hdaRoleMemberInfo
 
 ### Get list of West coast AU Admins
-Get-AzureADScopedRoleMembership -ObjectId $westCoastAU.ObjectId | fl *
+Get-AzureADMSScopedRoleMembership -Id $westCoastAU.Id | fl *
 
 ### Add East Coast-scoped User Account Admin role member
 $eastcoastua = Get-AzureADUser -Filter "UserPrincipalName eq 'EastCoastUserAdmin@$InitialDomain'"
-$uaRoleMemberInfo = New-Object -TypeName Microsoft.Open.AzureAD.Model.RoleMemberInfo -Property @{ ObjectId =  $eastCoastUA.ObjectId }
-Add-AzureADScopedRoleMembership -RoleObjectId $uaadmin.ObjectId -ObjectId $eastCoastAU.ObjectId -RoleMemberInfo $uaRoleMemberInfo
+$uaRoleMemberInfo = New-Object -TypeName Microsoft.Open.MSGraph.Model.MsRoleMemberInfo -Property @{Id =  $eastCoastUA.Id }
+Add-AzureADMSScopedRoleMembership -RoleId $uaadmin.ObjectId -Id $eastCoastAU.Id -RoleMemberInfo $uaRoleMemberInfo
 
 ### Add East Coast-scoped Helpdesk Admin role member
 $eastcoasthda = Get-AzureADUser -Filter "UserPrincipalName eq 'EastCoastHelpdeskAdmin@$InitialDomain'"
-$hdaRoleMemberInfo = New-Object -TypeName Microsoft.Open.AzureAD.Model.RoleMemberInfo -Property @{ ObjectId =  $eastCoastHDA.ObjectId }
-Add-AzureADScopedRoleMembership -RoleObjectId $helpDeskAdmin.ObjectId -ObjectId $eastCoastAU.ObjectId -RoleMemberInfo $hdaRoleMemberInfo
+$hdaRoleMemberInfo = New-Object -TypeName Microsoft.Open.MSGraph.Model.MsRoleMemberInfo -Property @{Id =  $eastCoastHDA.Id }
+Add-AzureADScopedRoleMembership -RoleId $helpDeskAdmin.ObjectId -Id $eastCoastAU.Id -RoleMemberInfo $hdaRoleMemberInfo
 
 ### Get list of East coast AU Admins
-Get-AzureADScopedRoleMembership -ObjectId $eastCoastAU.ObjectId | fl *
+Get-AzureADMSScopedRoleMembership -ObjectId $eastCoastAU.ObjectId | fl *
 ###################################################################################
 ```
 
-### AU UA Admin.ps1	
-Run this script after the Global Admin script to walk through the experience of an AU-scoped User Account Admin updating profile information, resetting passwords, and assigning licenses for users in their AU.
+### Step 3 : Sign in as User Administrator
+	
+Run this script to walk through the experience of an AU-scoped User Account Admin updating profile information, resetting passwords, and assigning licenses for users in their administrative unit.
 ```powershell
 ### Login as AU-scoped User Account Admin (WestCoastUserAdmin@<domain>, PS: Windows2000)
 Connect-AzureAD
 
 ### Get list of West Coast AU members
-$westCoastAU = Get-AzureADAdministrativeUnit -Filter “displayname eq 'West Coast'”
-Get-AzureADAdministrativeUnitMember -ObjectId $westCoastAU.ObjectId | Get-AzureADUser
+$westCoastAU = Get-AzureADMSAdministrativeUnit -Filter “displayname eq 'West Coast'”
+Get-AzureADMSAdministrativeUnitMember -Id $westCoastAU.Id
 
 ### Set department property (for example) for West Coast AU member.
 $initialDomain = (Get-AzureADDomain)[0].Name
@@ -162,22 +171,24 @@ Set-AzureADUserPassword -ObjectId $westCoastUser1.ObjectId -Password $password
 
 ### Get list of East Coast AU members
 $eastCoastAU = Get-AzureADAdministrativeUnit -Filter “displayname eq 'East Coast'”
-Get-AzureADAdministrativeUnitMember -ObjectId $eastCoastAU.ObjectId | Get-AzureADUser
+Get-AzureADMSAdministrativeUnitMember -Id $eastCoastAU.Id
 
 ### Attempt to set password for user in East Coast AU. All attempts to update users who are not members of West Coast AU should result in access denied.
 $eastCoastUser1 = Get-AzureADUser -Filter "UserPrincipalName eq 'EastCoastUser1@$InitialDomain'"
 Set-AzureADUserPassword -ObjectId $eastCoastUser1.ObjectId -Password $password
 ```
 
-### AU Helpdesk Admin.ps1	
-Run this script after the Global Admin script to walk through the experience of an AU-scoped Helpdesk Admin resetting passwords for users in their AU.
+### Sign in as Helpdesk Administrator
+
+Run this script to walk through the experience of an AU-scoped Helpdesk Admin resetting passwords for users in their AU.
+
 ```powershell
 #Login as East Coast Helpdesk Admin (EastCoastHelpdeskAdmin@<domain>, PS: Windows2000)
 Connect-AzureAD
 
 ### Get list of East Coast AU members
-$eastCoastAU = Get-AzureADAdministrativeUnit -Filter “displayname eq 'East Coast'”
-Get-AzureADAdministrativeUnitMember -ObjectId $eastCoastAU.ObjectId | Get-AzureADUser
+$eastCoastAU = Get-AzureADMSAdministrativeUnit -Filter “displayname eq 'East Coast'”
+Get-AzureADMSAdministrativeUnitMember -Id $eastCoastAU.Id | Get-AzureADUser
 
 ### Set password for user in East Coast AU
 $eastCoastUser1 = Get-AzureADUser -Filter "UserPrincipalName eq 'EastCoastUser1@$InitialDomain'"
@@ -188,10 +199,12 @@ $westCoastUser1 = Get-AzureADUser -Filter "UserPrincipalName eq 'WestCoastUser1@
 Set-AzureADUserPassword -ObjectId $westCoastUser1.ObjectId -Password $password
 ```
 
-## Cleanup.ps1	
-Run this script to delete the created users and AUs
+## Cleanup
+
+Run this script to delete the created users and administrative units.
+
 ```powershell
-### Login as a Global Admin
+### Login as Privileged Role Administrator
 Connect-AzureAD
 
 ### Cleanup demo
@@ -209,32 +222,32 @@ foreach($i in $admins) {
 #####
 
 ## Delete all scoped role memberships used in demo
-$adminunits = Get-AzureADAdministrativeUnit
+$adminunits = Get-AzureADMSAdministrativeUnit
 foreach($adminunit in $adminunits) {
-    $adminScopes = Get-AzureADScopedRoleMembership -ObjectId $adminunit.ObjectId
+    $adminScopes = Get-AzureADMSScopedRoleMembership -Id $adminunit.ObjectId
 
     foreach($SRM in $adminScopes) {
 
-        Remove-AzureADScopedRoleMembership -ObjectId $adminunit.ObjectId -ScopedRoleMembershipId $SRM.Id
+        Remove-AzureADMSScopedRoleMembership -Id $adminunit.ObjectId -ScopedRoleMembershipId $SRM.Id
         }
     }
 # Check all scoped role memberships were deleted
 foreach($adminunit in $adminunits) {
-    $adminScopes = Get-AzureADScopedRoleMembership -ObjectId $adminunit.ObjectId
+    $adminScopes = Get-AzureADMSScopedRoleMembership -Id $adminunit.ObjectId
     }
 ####
 
 ## Delete demo Administrative Units
 Get-AzureADAdministrativeUnit
-$WestCoastAU = Get-AzureADAdministrativeUnit -Filter “displayname eq 'West Coast'”
+$WestCoastAU = Get-AzureADMSAdministrativeUnit -Filter “displayname eq 'West Coast'”
 foreach ($au in $WestCoastAU) {
-    Remove-AzureADAdministrativeUnit –ObjectId $au.ObjectId
+    Remove-AzureADMSAdministrativeUnit –Id $au.Id
 }
-$eastcoastau = Get-AzureADAdministrativeUnit -Filter “displayname eq 'East Coast'”
+$eastcoastau = Get-AzureADMSAdministrativeUnit -Filter “displayname eq 'East Coast'”
 foreach ($au in $eastcoastau) {
-    Remove-AzureADAdministrativeUnit –ObjectId $au.ObjectId
+    Remove-AzureADMSAdministrativeUnit –Id $au.Id
 }
-Get-AzureADAdministrativeUnit
+Get-AzureADMSAdministrativeUnit
 ####
 
 ## Delete demo AU member users
@@ -263,7 +276,7 @@ Remove-AzureADUser -ObjectId $mobileadmin.ObjectId
 ####
 
 Get-AzureADUser | ft DisplayName, UserPrincipalName
-Get-AzureADAdministrativeUnit
+Get-AzureADMSAdministrativeUnit
 
 ```
 
