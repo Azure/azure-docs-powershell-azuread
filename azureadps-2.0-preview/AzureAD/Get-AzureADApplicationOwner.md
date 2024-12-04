@@ -30,7 +30,7 @@ PS C:\>Get-AzureADApplicationOwner -ObjectId "aaaaaaaa-0000-1111-2222-bbbbbbbbbb
 
 ObjectId                             ObjectType
 --------                             ----------
-c13dd34a-492b-4561-b171-40fcce2916c5 User
+aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb User
 ```
 
 This command gets the owner of an application.
