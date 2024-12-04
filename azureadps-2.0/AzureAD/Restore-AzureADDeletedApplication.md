@@ -46,7 +46,7 @@ ObjectId                             AppId                                Displa
 --------                             -----                                -----------
 79592454-dea7-4660-9d91-f1768e5055ac feabcdd1-711a-4d55-ad5e-0d0577aaaa5e analog
 
-PS C:\WINDOWS\system32> Restore-AzureADDeletedApplication -ObjectId aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb
+PS C:\WINDOWS\system32> Restore-AzureADDeletedApplication -ObjectId 79592454-dea7-4660-9d91-f1768e5055ac
 
 ObjectId                             AppId                                DisplayName
 --------                             -----                                -----------
