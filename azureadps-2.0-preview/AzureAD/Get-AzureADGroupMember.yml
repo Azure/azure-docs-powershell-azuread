@@ -17,7 +17,7 @@ examples:
 
     ObjectId                             ObjectType
     --------                             ----------
-    0a1068c0-dbb6-4537-9db3-b48f3e31dd76 User
+    aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb User
   description: ""
   summary: ""
 parameters:

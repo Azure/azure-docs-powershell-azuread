@@ -30,7 +30,7 @@ PS C:\>Get-AzureADGroupOwner -ObjectId "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb"
 
 ObjectId                             ObjectType
 --------                             ----------
-0a1068c0-dbb6-4537-9db3-b48f3e31dd76 User
+bbbbbbbb-1111-2222-3333-cccccccccccc User
 ```
 
 This command gets the specified group owner.
