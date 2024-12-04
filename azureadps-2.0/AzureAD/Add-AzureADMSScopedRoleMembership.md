@@ -35,7 +35,7 @@ $User = Get-AzureADUser -SearchString "<The user that will be an admin on this u
 
 This cmdlet returns the Scope role membership object:
 
-AdministrativeUnitId           RoleId 	--------------------------           ------------ 	00000000-0000-0000-0000-000000000000 00000000-0000-0000-0000-000000000000
+AdministrativeUnitId           RoleId 	--------------------------           ------------ 	c9ab56cc-e349-4237-856e-cab03157a91e 526b7173-5a6e-49dc-88ec-b677a9093709
 
 ## PARAMETERS
 
