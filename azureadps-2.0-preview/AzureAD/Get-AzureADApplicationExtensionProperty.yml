@@ -20,7 +20,7 @@ examples:
 
     ObjectId                             Name                                                    TargetObjects
     --------                             ----                                                    -------------
-    344ed560-f8e7-410e-ab9f-c795a7df5c36 extension_36ee4c6c081240a2b820b22ebd02bce3_NewAttribute {}
+    aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb extension_36ee4c6c081240a2b820b22ebd02bce3_NewAttribute {}
   description: |-
     This command gets the extension properties for the specified application in Azure Active Directory.
   summary: ""
