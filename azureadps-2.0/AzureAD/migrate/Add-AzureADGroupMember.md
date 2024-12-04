@@ -19,7 +19,7 @@ This article provides migration details from Add-AzureADGroupMember command to M
 
 + Azure AD Command: [Add-AzureADGroupMember](/powershell/module/azuread/add-azureadgroupmember)
 + Azure AD Module: AzureAD
-+ Microsoft Graph Command: [New-MgGroupMember](/powershell/module/microsoft.graph.groups/new-mggroupmember) ([Community Examples](https://github.com/orgs/msgraph/discussions?discussions_q=New-MgGroupMember))
++ Microsoft Graph Command: [New-MgGroupMemberByRef](/powershell/module/microsoft.graph.groups/new-mggroupmemberbyref) ([Community Examples](https://github.com/orgs/msgraph/discussions?discussions_q=New-MgGroupMember))
 + Graph Module: Microsoft.Graph.Groups
 + Graph Endpoint: POST /groups/{group-id}/members/$ref
 

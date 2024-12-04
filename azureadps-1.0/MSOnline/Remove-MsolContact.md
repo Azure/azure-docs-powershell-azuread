@@ -1,9 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
 online version:
 schema: 2.0.0
 ms.assetid: D777B598-B7CC-445E-9F7A-4E21D79BBE39
-ms.reviewer: rodejo
+ms.reviewer: stevemutungi
 ms.custom: iamfeature=PowerShell
 ---
 
@@ -25,7 +25,7 @@ The **Remove-MsolContact** cmdlet deletes a contact from Azure Active Directory.
 
 ### Example 1: Remove a contact
 ```
-PS C:\> Remove-MsolContact -ObjectId 40c4ca1a-4e15-40ad-b0bd-abeca4bcafcd -Force
+PS C:\> Remove-MsolContact -ObjectId aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb -Force
 ```
 
 This command removes a contact from the Azure Active Directory.

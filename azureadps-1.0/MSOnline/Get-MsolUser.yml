@@ -134,7 +134,7 @@ examples:
   summary: ""
 - title: 'Example 4: Get a user by object ID'
   code: |-
-    PS C:\> Get-MsolUser -ObjectId 81701046-cb37-439b-90ce-2afd9630af7d
+    PS C:\> Get-MsolUser -ObjectId aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb
   description: |-
     This command retrieves a user that has the specified object ID.
   summary: ""
@@ -346,5 +346,5 @@ metadata:
   online version: ""
   schema: 2.0.0
   ms.assetid: CED5BB55-E2BA-4400-9777-6589B6B29355
-  ms.reviewer: rodejo
+  ms.reviewer: stevemutungi
   ms.custom: iamfeature=PowerShell

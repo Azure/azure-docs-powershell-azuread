@@ -3,7 +3,7 @@ external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.Custom.dll-Help.xm
 Module Name: AzureADPreview
 ms.assetid: 5F3B0266-B5CD-4CAB-B22D-BDEA4C78E3B1
 ms.custom: iamfeature=PowerShell
-ms.reviewer: rodejo
+ms.reviewer: stevemutungi
 online version:
 schema: 2.0.0
 ---
@@ -27,7 +27,7 @@ The **Get-AzureADApplicationPasswordCredential** cmdlet gets the password creden
 
 ### Example 1:
 ```
-PS C:\>New-AzureADApplicationPasswordCredential -ObjectId aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb
+PS C:\>Get-AzureADApplicationPasswordCredential -ObjectId 3ddd22e7-a150-4bb3-b100-e410dea1cb84
 
 CustomKeyIdentifier :
 EndDate             : 9/28/2017 3:57:10 PM

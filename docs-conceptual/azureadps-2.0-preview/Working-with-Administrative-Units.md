@@ -7,23 +7,31 @@ ms.workload: identity
 ms.tgt_pltfrm: na
 ms.devlang: powershell
 ms.topic: article
-ms.date: 07/10/2017
-ms.author: rodejo
+ms.date: 11/13/2024
+ms.author: eunicewaweru
 ms.custom: posh-docs-conceptual
-ms.reviewer: rodejo
+ms.reviewer: stevemutungi
 description: "Learn to use Azure AD PowerShell with Administrative Units: create, populate, assign roles, and manage users. Boost your directory management skills."
 ---
 
 # Working with Administrative Units
 
-Here are some demo scripts that you can use to learn how to use Azure AD PowerShell to work with Administrative Units. These scripts form a complete demo - You'll setup a demo environment for Administrative Units in your directory, see how to create and populate Administrative Units as a Global Admin and assign roles to delegated admins, and you'll see the effects of your actions when you sign in as a delegated admin, and finally there is a cleanup script to clean up all the object we created in this demo.
+
+In this article you learn how to use Azure AD PowerShell to work with Administrative Units(AU). The article is made up of scripts that form a complete demo. The steps in this article help you to:
+
+- Setup a demo environment for administrative units in your directory, 
+- Create and populate administrative units 
+- As a # Login as Privileged Role Administrator, assign roles to delegated admins 
+- Sign in as a delegated admin to see the effects of the previous steps
+- Finally, clean up all the objects we created in this demo.
 
 ## Demo scripts
 
-## Setup.ps1	
+### Step 1: Setup script
+
 Run this script initially to create the users and admins used later in the demo.
 ```powershell
-# Login as Global Administrator
+# Login as Privileged Role Administrator
 Connect-AzureAD
 
 ### Create users we'll add as AU members later
@@ -66,10 +74,12 @@ if ($role -eq $null) {
 
 ```
 
-## Global Admin.ps1	
-Run this script after the setup script to walk through the experience of a global admin creating and populating the AUs, and assigning the respective AU-scoped User Account and Helpdesk Admins.
+## Step 2: Create administrative units and assign roles
+
+Run this script to walk through the experience of a Privileged Role Administrator creating and populating the AUs, and assigning the respective AU-scoped User Account and Helpdesk Admins.
+
 ```powershell
-### Login as Global Administrator
+### Login as Privileged Role Administrator
 Connect-AzureAD
 
 <# Simple Administrative Unit (AU) Demo
@@ -154,8 +164,10 @@ Get-AzureADScopedRoleMembership -ObjectId $eastCoastAU.ObjectId | fl *
 ###################################################################################
 ```
 
-## AU UA Admin.ps1	
-Run this script after the Global Admin script to walk through the experience of an AU-scoped User Account Admin updating profile information, resetting passwords, and assigning licenses for users in their AU.
+### Step 3 : Sign in as User Administrator
+
+Run this script ato walk through the experience of an AU-scoped User Account Admin updating profile information, resetting passwords, and assigning licenses for users in their AU.
+
 ```powershell
 ### Login as AU-scoped User Account Admin (WestCoastUserAdmin@<domain>, PS: Windows2000)
 Connect-AzureAD
@@ -187,8 +199,10 @@ $eastCoastUser1 = Get-AzureADUser -Filter "UserPrincipalName eq 'EastCoastUser1@
 Set-AzureADUserPassword -ObjectId $eastCoastUser1.ObjectId -Password $password
 ```
 
-## AU Helpdesk Admin.ps1	
-Run this script after the Global Admin script to walk through the experience of an AU-scoped Helpdesk Admin resetting passwords for users in their AU.
+### Sign in as Helpdesk Administrator
+
+Run this script to walk through the experience of an AU-scoped Helpdesk Admin resetting passwords for users in their AU.
+
 ```powershell
 ### Login as East Coast Helpdesk Admin (EastCoastHelpdeskAdmin@<domain>, PS: Windows2000)
 Connect-AzureAD
@@ -206,10 +220,12 @@ $westCoastUser1 = Get-AzureADUser -Filter "UserPrincipalName eq 'WestCoastUser1@
 Set-AzureADUserPassword -ObjectId $westCoastUser1.ObjectId -Password $password
 ```
 
-## Cleanup.ps1	
-Run this script to delete the created users and AUs
+## Cleanup
+
+Run this script to delete the created users and AUs.
+
 ```powershell
-### Login as a Global Admin
+### Login as Privileged Role Administrator
 Connect-AzureAD
 
 ### Cleanup demo

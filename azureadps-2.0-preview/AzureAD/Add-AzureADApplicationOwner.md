@@ -3,7 +3,7 @@ external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
 Module Name: AzureADPreview
 ms.assetid: 27EA6A45-9227-4E87-AC85-0A6C4B2AE620
 ms.custom: iamfeature=PowerShell
-ms.reviewer: rodejo
+ms.reviewer: stevemutungi
 online version:
 schema: 2.0.0
 ---
@@ -27,7 +27,7 @@ The **Add-AzureADApplicationOwner** cmdlet adds an owner to an Azure Active Dire
 
 ### Example 1: Add an owner to an application
 ```
-PS C:\>Add-AzureADApplicationOwner -ObjectId 3ddd22e7-a150-4bb3-b100-e410dea1cb84 -RefObjectId c13dd34a-492b-4561-b171-40fcce2916c5
+PS C:\>Add-AzureADApplicationOwner -ObjectId aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb -RefObjectId bbbbbbbb-1111-2222-3333-cccccccccccc
 ```
 
 This command adds an owner to an application.
@@ -116,4 +116,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-AzureADApplicationOwner](./Get-AzureADApplicationOwner.md)
 
 [Remove-AzureADApplicationOwner](./Remove-AzureADApplicationOwner.md)
-

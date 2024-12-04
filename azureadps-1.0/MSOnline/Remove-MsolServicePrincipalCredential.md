@@ -1,9 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
 online version:
 schema: 2.0.0
 ms.assetid: AD722FB5-9280-479F-8CDA-2A4572FDCA4F
-ms.reviewer: rodejo
+ms.reviewer: stevemutungi
 ms.custom: iamfeature=PowerShell
 ---
 
@@ -40,11 +40,11 @@ The credential to be removed is identified by its key ID.
 
 ### Example 1: Remove a credential from a service principal
 ```
-PS C:\> Remove-MsolServicePrincipalCredential -KeyIds @("19805a93-e9dd-4c63-8afd-88ed91f33546") -ServicePrincipalName "MyApp2/myApp.com"
+PS C:\> Remove-MsolServicePrincipalCredential -KeyIds @("aaaaaaaa-0b0b-1c1c-2d2d-333333333333") -ServicePrincipalName "MyApp2/myApp.com"
 ```
 
 This command removes a credential key from a service principal.
-In this example, the key ID 19805a93-e9dd-4c63-8afd-88ed91f33546 is removed from the service principal associated with the service principal name MyApp2/myApp.com.
+In this example, the key ID aaaaaaaa-0b0b-1c1c-2d2d-333333333333 is removed from the service principal associated with the service principal name MyApp2/myApp.com.
 To show a list of key IDs associated with a service principal, use the [Get-MsolServicePrincipalCredential](./Get-MsolServicePrincipalCredential.md) cmdlet.
 
 ## PARAMETERS

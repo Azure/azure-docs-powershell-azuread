@@ -1,9 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
 online version:
 schema: 2.0.0
 ms.assetid: 93C48D95-DB26-4F76-8078-CF845E9BCC8D
-ms.reviewer: rodejo
+ms.reviewer: stevemutungi
 ms.custom: iamfeature=PowerShell
 ---
 
@@ -39,7 +39,7 @@ Specify the _ObjectId_ parameter to get a single contact.
 
 ### Example 1: Get a contact
 ```
-PS C:\> Get-MsolContact -ObjectId adc41dc7-4130-4215-adfb-2403bc9f844e
+PS C:\> Get-MsolContact -ObjectId aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb
 ```
 
 This command retrieves a contact.

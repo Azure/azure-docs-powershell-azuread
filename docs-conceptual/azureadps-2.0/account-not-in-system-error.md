@@ -10,9 +10,9 @@ ms.tgt_pltfrm: na
 ms.devlang: powershell
 ms.topic: troubleshooting
 ms.date: 07/10/2017
-ms.author: rodejo
+ms.author: eunicewaweru
 ms.custom: posh-docs-conceptual
-ms.reviewer: rodejo
+ms.reviewer: stevemutungi
 ---
 # I get an error "\[your account] isn't in our system"
 
