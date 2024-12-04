@@ -24,7 +24,7 @@ Delete an Azure Active Directory permission grant condition set object by id.
 
 ### Example 1: Delete a permission grant condition set from a policy
 ```
-PS C:\>Remove-AzureADMSPermissionGrantConditionSet -PolicyId "policy1" -ConditionSetType "excludes" -Id "1aaaaaa1-2bb2-3cc3-4dd4-5eeeeeeeeee5"
+PS C:\>Remove-AzureADMSPermissionGrantConditionSet -PolicyId "policy1" -ConditionSetType "excludes" -Id "665a9903-0398-48ab-b4e9-7a570d468b66"
 ```
 
 ## PARAMETERS

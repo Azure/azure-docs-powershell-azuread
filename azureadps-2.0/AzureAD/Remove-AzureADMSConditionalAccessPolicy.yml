@@ -8,7 +8,7 @@ syntaxes:
 examples:
 - title: 'Example 1: Deletes a conditional access policy in Azure AD by PolicyId.'
   code: |-
-    PS C:\> Remove-AzureADMSConditionalAccessPolicy -PolicyId 1aaaaaa1-2bb2-3cc3-4dd4-5eeeeeeeeee5
+    PS C:\> Remove-AzureADMSConditionalAccessPolicy -PolicyId 6b5e999b-0ba8-4186-a106-e0296c1c4358
   description: |-
     This command deletes a conditional access policy in Azure AD.
   summary: ""
