@@ -34,7 +34,7 @@ PS C:\WINDOWS\system32> Get-AzureADDeletedApplication
 
 ObjectId                             AppId                                DisplayName
 --------                             -----                                -----------
-aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb 7dba6cec-ffd5-40af-ba40-1eb158574b5a My Properties Bag
+aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb 00001111-aaaa-2222-bbbb-3333cccc4444 My Properties Bag
 ```
 
 Within the first 30 days after an object is deleted, it can be recovered using the Recover-AzureADMSDeletedDirectoryObject cmdlet. To recover a deleted directory pobject you must specify the Id of the object. This is what you see when you recover a deleted group:
@@ -59,7 +59,7 @@ Restore-AzureADDeletedApplication -ObjectId aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb
 
 ObjectId                             AppId                                DisplayName
 --------                             -----                                -----------
-aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb 7dba6cec-ffd5-40af-ba40-1eb158574b5a My Properties Bag
+aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb 00001111-aaaa-2222-bbbb-3333cccc4444 My Properties Bag
 ```
 
 If you want to permanently delete a unified group to prevent anyone from recovering it, you can use
