@@ -39,7 +39,7 @@ d58d399f-56c3-409c-9efc-fdc28a6bd50e 3ad57eaf-2547-4161-81ae-fde64b5e1c0f Extens
 e9cfe5ad-c9eb-4cd7-87c2-2a69059aeb69 576ea3a9-3d7f-4bcc-a2b5-2d1a5088075e GraphDirectoryExtension
 
 
-PS C:\WINDOWS\system32> Remove-AzureADApplication -ObjectId aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb
+PS C:\WINDOWS\system32> Remove-AzureADApplication -ObjectId 79592454-dea7-4660-9d91-f1768e5055ac
 PS C:\WINDOWS\system32> Get-AzureADDeletedApplication
 
 ObjectId                             AppId                                DisplayName
