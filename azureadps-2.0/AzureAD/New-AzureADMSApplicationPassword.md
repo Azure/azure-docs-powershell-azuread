@@ -24,12 +24,12 @@ Adds a strong password to an application.
 
 ### Example 1: Add a password to an application
 ```
-PS C:\>New-AzureADMSApplicationPassword -ObjectId 14a3f1ac-46a7-4d00-b1ca-0b2b84f033c2 -PasswordCredential @{ displayname = "mypassword" }
+PS C:\>New-AzureADMSApplicationPassword -ObjectId aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb -PasswordCredential @{ displayname = "mypassword" }
 
           CustomKeyIdentifier :
           EndDateTime         : 10/28/2021 3:57:37 PM
           DisplayName         :
-          KeyId               : 024c4c6e-87c3-4473-8e36-650f16bb730d
+          KeyId               : aaaaaaaa-0b0b-1c1c-2d2d-333333333333
           StartDateTime       : 10/28/2019 3:57:37 PM
           SecretText          : EQ:A-s45?Rt9/3Bp?7]-7__IO]3AG09E
           Hint                : EQ:
@@ -84,4 +84,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [Remove-AzureADMSApplicationPassword]()
-

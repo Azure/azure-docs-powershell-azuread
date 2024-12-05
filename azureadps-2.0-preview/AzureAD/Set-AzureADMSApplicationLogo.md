@@ -23,7 +23,7 @@ Sets the logo for an application object.
 
 ### Example 1: Sets the logo of the application
 ```
-PS C:\>Set-AzureADMSApplicationLogo -ObjectId 121ce3aa-64cb-44f2-99e8-deb705caeddd -Content {imagebytearray}
+PS C:\>Set-AzureADMSApplicationLogo -ObjectId aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb -Content {imagebytearray}
 ```
 
 This command updates the application logo.

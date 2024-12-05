@@ -24,14 +24,14 @@ The Remove-AzureADApplicationProxyApplication cmdlet removes Application Proxy c
 
 ### Example 1
 ```
-PS C:\> Remove-AzureADApplicationProxyApplication -ObjectId 257098d1-f8dd-4efb-88a2-1c92d3654f10
+PS C:\> Remove-AzureADApplicationProxyApplication -ObjectId aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb
 ```
 
 Example 1: Remove a Proxy Application
 
 ### Example 2
 ```
-PS C:\> Remove-AzureADApplicationProxyApplication -ObjectId 0d7b0f02-3f63-414d-8d20-4b8bd0291e42 -RemoveADApplication $true
+PS C:\> Remove-AzureADApplicationProxyApplication -ObjectId bbbbbbbb-1111-2222-3333-cccccccccccc -RemoveADApplication $true
 ```
 
 Example 2: Remove a Proxy Application, and remove it from Azure AD completely

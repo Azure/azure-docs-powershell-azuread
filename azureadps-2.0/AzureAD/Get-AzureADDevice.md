@@ -34,11 +34,11 @@ The Get-AzureADDevice cmdlet gets a device from Azure Active Directory (AD).
 
 ### Example 1: Get a device by ID
 ```
-PS C:\>Get-AzureADDevice -ObjectId "3cb87a8f-0a41-4ca8-8910-e56cc00114a3"
+PS C:\>Get-AzureADDevice -ObjectId "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb"
 
 ObjectId                             DeviceId                             DisplayName
 --------                             --------                             -----------
-3cb87a8f-0a41-4ca8-8910-e56cc00114a3 48445467-033c-42ca-8e38-8d181db1d49c bastias_WindowsPhone_5/1/2016_12:53 PM
+aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb 48445467-033c-42ca-8e38-8d181db1d49c bastias_WindowsPhone_5/1/2016_12:53 PM
 ```
 
 This command gets the specified device.
@@ -173,4 +173,3 @@ See the [migration guide for Get-AzureADDevice](./migrate/Get-AzureADDevice.md) 
 [Remove-AzureADDevice](Remove-AzureADDevice.md)
 
 [Set-AzureADDevice](Set-AzureADDevice.md)
-

@@ -77,7 +77,7 @@ examples:
     $sp=New-AzureADServicePrincipal -AppId $application.AppId
 
     # Give the Service Principal Reader access to the current tenant (Get-AzureADDirectoryRole)
-    Add-AzureADDirectoryRoleMember -ObjectId 5997d714-c3b5-4d5b-9973-ec2f38fd49d5 -RefObjectId $sp.ObjectId
+    Add-AzureADDirectoryRoleMember -ObjectId aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb -RefObjectId $sp.ObjectId
 
     # Get Tenant Detail
     $tenant=Get-AzureADTenantDetail

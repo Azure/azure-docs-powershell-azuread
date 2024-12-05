@@ -27,7 +27,7 @@ The **Remove-AzureADApplicationOwner** cmdlet removes an owner from an applicati
 
 ### Example 1: Remove an owner from an application
 ```
-PS C:\>Remove-AzureADApplicationOwner -ObjectId "3ddd22e7-a150-4bb3-b100-e410dea1cb84" -OwnerId "c13dd34a-492b-4561-b171-40fcce2916c5"
+PS C:\>Remove-AzureADApplicationOwner -ObjectId "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb" -OwnerId "bbbbbbbb-1111-2222-3333-cccccccccccc"
 ```
 
 This command removes the owner from the specified application.

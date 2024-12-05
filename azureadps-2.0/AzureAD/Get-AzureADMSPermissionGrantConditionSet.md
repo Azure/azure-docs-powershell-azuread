@@ -40,7 +40,7 @@ PS C:\>Get-AzureADMSPermissionGrantConditionSet -PolicyId "policy1" -ConditionSe
 
 ### Example 3: Get a permission grant condition set
 ```
-PS C:\>Get-AzureADMSPermissionGrantConditionSet -PolicyId "policy1" -ConditionSetType "includes" -Id "665a9903-0398-48ab-b4e9-7a570d468b66"
+PS C:\>Get-AzureADMSPermissionGrantConditionSet -PolicyId "policy1" -ConditionSetType "includes" -Id "6b5e999b-0ba8-4186-a106-e0296c1c4358"
 ```
 
 ## PARAMETERS
@@ -113,4 +113,3 @@ See the [migration guide for Get-AzureADMSPermissionGrantConditionSet](./migrate
 [Set-AzureADMSPermissionGrantConditionSet](Set-AzureADMSPermissionGrantConditionSet.md)
 
 [Remove-AzureADMSPermissionGrantConditionSet](Remove-AzureADMSPermissionGrantConditionSet.md)
-

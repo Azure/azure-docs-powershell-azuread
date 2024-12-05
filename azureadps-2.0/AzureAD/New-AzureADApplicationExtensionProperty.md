@@ -25,12 +25,12 @@ The New-AzureADApplicationExtensionProperty cmdlet creates an application extens
 
 ### Example 1: Create an extension property
 ```
-PS C:\>New-AzureADApplicationExtensionProperty -ObjectID "3ddd22e7-a150-4bb3-b100-e410dea1cb84" -DataType "string" -Name "NewAttribute"
+PS C:\>New-AzureADApplicationExtensionProperty -ObjectID "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb" -DataType "string" -Name "NewAttribute"
 
 
 ObjectId                             Name                                                    TargetObjects
 --------                             ----                                                    -------------
-3ddd22e7-a150-4bb3-b100-e410dea1cb84 extension_36ee4c6c081240a2b820b22ebd02bce3_NewAttribute {}
+aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb extension_36ee4c6c081240a2b820b22ebd02bce3_NewAttribute {}
 ```
 
 This command creates an application extension property of the string type for the specified object.
@@ -152,4 +152,3 @@ See the [migration guide for New-AzureADApplicationExtensionProperty](./migrate/
 [Get-AzureADApplicationExtensionProperty](Get-AzureADApplicationExtensionProperty.md)
 
 [Remove-AzureADApplicationExtensionProperty](Remove-AzureADApplicationExtensionProperty.md)
-

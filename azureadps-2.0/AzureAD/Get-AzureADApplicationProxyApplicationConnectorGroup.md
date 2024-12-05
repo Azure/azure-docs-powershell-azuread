@@ -24,7 +24,7 @@ The application must be configured for Application Proxy in Azure Active Directo
 
 ### Example 1
 ```
-PS C:\> Get-AzureADApplicationProxyApplicationConnectorGroup -ObjectId 8d6c6684-6f8c-42e2-8914-32ed2adf9ccf
+PS C:\> Get-AzureADApplicationProxyApplicationConnectorGroup -ObjectId aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb
 
 Id                                   Name                ConnectorGroupType IsDefault
 --                                   ----                ------------------ ---------

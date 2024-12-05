@@ -27,7 +27,7 @@ The **Remove-AzureADApplication** cmdlet removes the specified application from 
 
 ### Example 1: Remove an application
 ```
-PS C:\>Remove-AzureADApplication -ObjectId "acd10942-5747-4385-8824-4c5d5fa904f9"
+PS C:\>Remove-AzureADApplication -ObjectId "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb"
 ```
 
 This command removes the specified application.

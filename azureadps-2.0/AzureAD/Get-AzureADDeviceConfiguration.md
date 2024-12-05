@@ -27,7 +27,7 @@ PS C:\WINDOWS\system32> Get-AzureADDeviceConfiguration | fl
 
 
 DeletionTimeStamp                   :
-ObjectId                            : 2af3478a-27da-4837-a387-b22b3fb236a8
+ObjectId                            : aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb
 ObjectType                          : DeviceConfiguration
 PublicIssuerCertificates            : {}
 CloudPublicIssuerCertificates       : {}

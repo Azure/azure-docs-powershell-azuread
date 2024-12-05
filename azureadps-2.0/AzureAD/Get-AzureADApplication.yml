@@ -20,7 +20,7 @@ examples:
   summary: ""
 - title: 'Example 2: Get an application by ID'
   code: |-
-    PS C:\>Get-AzureADApplication -Filter "AppId eq '421599eb-eed7-4988-9b31-02b43a4d37b8'"
+    PS C:\>Get-AzureADApplication -Filter "AppId eq '00001111-aaaa-2222-bbbb-3333cccc4444'"
 
     ObjectId                             AppId                                DisplayName     
     --------                             -----                                -----------

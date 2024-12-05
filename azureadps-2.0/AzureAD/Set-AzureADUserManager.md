@@ -24,7 +24,7 @@ The Set-AzureADUserManager cmdlet update the manager for a user in Azure Active 
 
 ### Example 1: Update a user's manager
 ```
-PS C:\>Set-AzureADUserManager -ObjectId "df19e8e6-2ad7-453e-87f5-037f6529ae16" -RefObjectId "df19e8e6-2ad7-453e-87f5-037f6529ae16"
+PS C:\>Set-AzureADUserManager -ObjectId "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb" -RefObjectId "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb"
 ```
 
 This command update's the manager for the specified user.
@@ -113,4 +113,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-AzureADUserManager]()
 
 [Remove-AzureADUserManager]()
-

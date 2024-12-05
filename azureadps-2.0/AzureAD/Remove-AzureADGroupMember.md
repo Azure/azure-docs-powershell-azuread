@@ -24,7 +24,7 @@ The Remove-AzureADGroupMember cmdlet removes a member from a group in Azure Acti
 
 ### Example 1: Remove a member
 ```
-PS C:\>Remove-AzureADGroupMember -ObjectId "62438306-7c37-4638-a72d-0ee8d9217680" -MemberId "0a1068c0-dbb6-4537-9db3-b48f3e31dd76"
+PS C:\>Remove-AzureADGroupMember -ObjectId "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb" -MemberId "bbbbbbbb-1111-2222-3333-cccccccccccc"
 ```
 
 This command removes the specified member from the specified group.
@@ -115,4 +115,3 @@ See the [migration guide for Remove-AzureADGroupMember](./migrate/Remove-AzureAD
 [Add-AzureADGroupMember](Add-AzureADGroupMember.md)
 
 [Get-AzureADGroupMember](Get-AzureADGroupMember.md)
-

@@ -23,7 +23,7 @@ If your application is already in the 'Default' group, you will see an error bec
 
 ### Example 1
 ```
-PS C:\> Remove-AzureADApplicationProxyApplicationConnectorGroup -ObjectId 59462d3c-a1bc-40a0-9bed-be799357ebce
+PS C:\> Remove-AzureADApplicationProxyApplicationConnectorGroup -ObjectId aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb
 ```
 
 Example 1: Remove the Connector Group associated with an application, setting the group to 'Default'

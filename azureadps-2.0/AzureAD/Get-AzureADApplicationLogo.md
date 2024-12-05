@@ -24,7 +24,7 @@ This cmdlet retrieves the logo that is set for an application.
 
 ### Example 1
 ```
-PS C:\WINDOWS\system32> Get-AzureADApplicationLogo -ObjectId 79592454-dea7-4660-9d91-f1768e5055ac
+PS C:\WINDOWS\system32> Get-AzureADApplicationLogo -ObjectId aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb
 
 
 Tag                  :

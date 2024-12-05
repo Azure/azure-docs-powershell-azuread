@@ -29,7 +29,7 @@ The Set-AzureADDevice cmdlet updates a device in Azure Active Directory (AD).
 
 ### Example 1: Update a device
 ```
-PS C:\>Set-AzureADDevice -ObjectId "99a1915d-298f-42d1-93ae-71646b85e2fa" -DisplayName "My OS/2 computer"
+PS C:\>Set-AzureADDevice -ObjectId "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb" -DisplayName "My OS/2 computer"
 ```
 
 This command updates the specified device.
@@ -294,4 +294,3 @@ See the [migration guide for Set-AzureADDevice](./migrate/Set-AzureADDevice.md) 
 [New-AzureADDevice](New-AzureADDevice.md)
 
 [Remove-AzureADDevice](Remove-AzureADDevice.md)
-

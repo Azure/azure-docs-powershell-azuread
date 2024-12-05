@@ -28,7 +28,7 @@ Conditional access policies are custom rules that define an access scenario.
 
 ### Example 1: Update an ip named location policy in Azure AD by PolicyId.
 ```
-PS C:\> Set-AzureADMSNamedLocationPolicy -PolicyId 07a1f48d-0cbb-4c2c-8ea2-1ea00e3eb3b6 -OdataType "#microsoft.graph.ipNamedLocation" -IsTrusted $false
+PS C:\> Set-AzureADMSNamedLocationPolicy -PolicyId 6b5e999b-0ba8-4186-a106-e0296c1c4358 -OdataType "#microsoft.graph.ipNamedLocation" -IsTrusted $false
 ```
 
 This command updates an ip named location policy in Azure AD by PolicyId.
@@ -177,4 +177,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [New-AzureADMSNamedLocationPolicy]()
 
 [Remove-AzureADMSNamedLocationPolicy]()
-

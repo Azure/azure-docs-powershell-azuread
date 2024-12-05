@@ -28,8 +28,8 @@ List exisiting permission grants for the group.
 		Get-AzureADMSGroupPermissionGrant -Id "4823e767eca44858aed244154009b764" 
 
 		Id             : vsMaSY2k_E7761KhRqpx7OGFvAwvdZnJM1s7Iqkt4PU
-		ClientId       : deefce9d-be43-4b49-a9d3-851af6d2c26c
-		ClientAppId    : ba4e4a78-c352-4e59-b657-81b2b395d32b
+		ClientId       : 00001111-aaaa-2222-bbbb-3333cccc4444
+		ClientAppId    : 11112222-bbbb-3333-cccc-4444dddd5555
 		ResourceAppId  : 00000003-0000-0000-c000-000000000000
 		PermissionType : Application
 		Permission     : Member.Read.Group

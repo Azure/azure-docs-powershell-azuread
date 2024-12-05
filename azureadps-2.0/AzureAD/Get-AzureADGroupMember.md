@@ -23,7 +23,7 @@ The Get-AzureADGroupMember cmdlet gets a member of a group in the Microsoft Entr
 
 ### Example 1: Get a group member by ID
 ```
-PS C:\>Get-AzureADGroupMember -ObjectId "62438306-7c37-4638-a72d-0ee8d9217680"
+PS C:\>Get-AzureADGroupMember -ObjectId "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb"
 
 ObjectId                             ObjectType
 --------                             ----------
@@ -32,7 +32,7 @@ ObjectId                             ObjectType
 
 ### Example 2: Get all members within a group by group ID
 ```
-PS C:\> Get-AzureADGroupMember -ObjectId "12431118-5c12-6653-h82e-1ee8d9217682" -All $true
+PS C:\> Get-AzureADGroupMember -ObjectId "bbbbbbbb-1111-2222-3333-cccccccccccc" -All $true
 
 ObjectId                             ObjectType
 --------                             ----------
@@ -111,4 +111,3 @@ See the [migration guide for Get-AzureADGroupMember](./migrate/Get-AzureADGroupM
 [Add-AzureADGroupMember](Add-AzureADGroupMember.md)
 
 [Remove-AzureADGroupMember](Remove-AzureADGroupMember.md)
-

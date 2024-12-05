@@ -11,7 +11,7 @@ syntaxes:
 examples:
 - title: "Example 1: Update a user's manager"
   code: |-
-    PS C:\>Set-AzureADUserManager -ObjectId "df19e8e6-2ad7-453e-87f5-037f6529ae16" -RefObjectId "df19e8e6-2ad7-453e-87f5-037f6529ae16"
+    PS C:\>Set-AzureADUserManager -ObjectId "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb" -RefObjectId "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb"
   description: |-
     This command update's the manager for the specified user.
   summary: ""

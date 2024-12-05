@@ -23,7 +23,7 @@ The Get-AzureADGroupOwner cmdlet gets an owner of a group in the Microsoft Entra
 
 ### Example 1: Get a group owner by ID
 ```
-PS C:\>Get-AzureADGroupOwner -ObjectId "62438306-7c37-4638-a72d-0ee8d9217680"
+PS C:\>Get-AzureADGroupOwner -ObjectId "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb"
 
 ObjectId                             ObjectType
 --------                             ----------
@@ -96,4 +96,3 @@ See the [migration guide for Get-AzureADGroupOwner](./migrate/Get-AzureADGroupOw
 [Add-AzureADGroupOwner](Add-AzureADGroupOwner.md)
 
 [Remove-AzureADGroupOwner](Remove-AzureADGroupOwner.md)
-

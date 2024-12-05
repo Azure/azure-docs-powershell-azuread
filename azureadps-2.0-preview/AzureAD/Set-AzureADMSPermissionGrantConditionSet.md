@@ -258,4 +258,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-AzureADMSPermissionGrantConditionSet]()
 
 [Remove-AzureADMSPermissionGrantConditionSet]()
-

@@ -26,7 +26,7 @@ Security groups cannot be restored after deletion.
 
 ### Example 1: Remove a group
 ```
-PS C:\>Remove-AzureADGroup -ObjectId "11fa5e1e-737c-40c5-835e-416ae3959606"
+PS C:\>Remove-AzureADGroup -ObjectId "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb"
 ```
 
 This command removes the specified group from Azure AD.
@@ -102,4 +102,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [New-AzureADGroup]()
 
 [Set-AzureADGroup]()
-

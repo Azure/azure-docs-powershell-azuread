@@ -26,7 +26,7 @@ Other services can use the information stored in the ServiceEndpoint entity to f
 
 ### Example 1
 ```
-PS C:\WINDOWS\system32> Get-AzureADApplicationServiceEndpoint -ObjectId 79592454-dea7-4660-9d91-f1768e5055ac
+PS C:\WINDOWS\system32> Get-AzureADApplicationServiceEndpoint -ObjectId aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb
 ```
 
 Retrieves the Service EndPoint of the application that is specified through the Object ID parameter

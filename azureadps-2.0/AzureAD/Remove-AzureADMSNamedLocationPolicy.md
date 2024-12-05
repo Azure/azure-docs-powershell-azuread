@@ -64,4 +64,3 @@ See the [migration guide for Remove-AzureADMSNamedLocationPolicy](./migrate/Remo
 [Set-AzureADMSNamedLocationPolicy](Set-AzureADMSNamedLocationPolicy.md)
 
 [Get-AzureADMSNamedLocationPolicy](Get-AzureADMSNamedLocationPolicy.md)
-

@@ -35,7 +35,7 @@ Updates the properties of an application object.
 
 ### Example 1: Update an application
 ```
-PS C:\>Set-AzureADMSApplication -ObjectId fcd37fb8-449c-45af-92fc-5448c671fd30 `
+PS C:\>Set-AzureADMSApplication -ObjectId aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb `
           -DisplayName "my name" `
           -AddIns @{ Type = "mytype"; Properties = [PSCustomObject]@{ Key = "key"; Value = "value" } } `
           -Api @{ AcceptMappedClaims = $true } `
@@ -43,14 +43,14 @@ PS C:\>Set-AzureADMSApplication -ObjectId fcd37fb8-449c-45af-92fc-5448c671fd30 `
           -InformationalUrl @{ SupportUrl = "https://mynewapp.contoso.com/support.html" } `
           -IsDeviceOnlyAuthSupported $false `
           -IsFallbackPublicClient $false `
-          -KeyCredentials @{ KeyId = "41111111-1111-1111-1111-111111111111"; Usage = "Encrypt"; Key = [System.IO.File]::ReadAllBytes("file.cer"); Type = "AsymmetricX509Cert" } `
+          -KeyCredentials @{ KeyId = "aaaaaaaa-0b0b-1c1c-2d2d-333333333333"; Usage = "Encrypt"; Key = [System.IO.File]::ReadAllBytes("file.cer"); Type = "AsymmetricX509Cert" } `
           -OptionalClaims @{ IdToken = [PSCustomObject]@{ Name = "claimName"; Source = "claimSource" } } `
           -ParentalControlSettings @{ LegalAgeGroupRule = "Block" } `
           -PublicClient @{ RedirectUris = "https://mynewapp.contoso.com/" } `
           -RequiredResourceAccess @{ ResourceAppId = "31111111-1111-1111-1111-111111111111"; ResourceAccess = [PSCustomObject]@{ Type = "Scope" } } `
           -SignInAudience AzureADandPersonalMicrosoftAccount `
           -Tags "mytag" `
-          -TokenEncryptionKeyId "41111111-1111-1111-1111-111111111111" `
+          -TokenEncryptionKeyId "aaaaaaaa-0b0b-1c1c-2d2d-333333333333" `
           -Web @{ LogoutUrl = "https://mynewapp.contoso.com/logout.html" } `
           -GroupMembershipClaims "SecurityGroup" `
           -IdentifierUris "https://mynewapp.contoso.com"`
@@ -406,4 +406,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [New-AzureADMSApplication]()
 
 [Remove-AzureADMSApplication]()
-

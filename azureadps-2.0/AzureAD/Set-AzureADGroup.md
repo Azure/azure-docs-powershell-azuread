@@ -25,7 +25,7 @@ The Set-AzureADGroup cmdlet updates a group in Azure Active Directory (AD).
 
 ### Example 1: Update a group
 ```
-PS C:\>Set-AzureADGroup -ObjectId "11fa5e1e-737c-40c5-835e-416ae3959606" -Description "This is my new group"
+PS C:\>Set-AzureADGroup -ObjectId "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb" -Description "This is my new group"
 ```
 
 This command updates the specified group in Azure AD.
@@ -176,4 +176,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [New-AzureADGroup]()
 
 [Remove-AzureADGroup]()
-

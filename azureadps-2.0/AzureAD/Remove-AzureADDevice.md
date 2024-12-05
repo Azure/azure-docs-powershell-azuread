@@ -24,7 +24,7 @@ The Remove-AzureADDevice cmdlet removes a device from Azure Active Directory (AD
 
 ### Example 1: Remove a device
 ```
-PS C:\>Remove-AzureADDevice -ObjectId "99a1915d-298f-42d1-93ae-71646b85e2fa"
+PS C:\>Remove-AzureADDevice -ObjectId "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb"
 ```
 
 This command removes the specified device.
@@ -102,4 +102,3 @@ See the [migration guide for Remove-AzureADDevice](./migrate/Remove-AzureADDevic
 [New-AzureADDevice](New-AzureADDevice.md)
 
 [Set-AzureADDevice](Set-AzureADDevice.md)
-
