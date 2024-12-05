@@ -52,7 +52,7 @@ This command retrieves a list of all conditional access policies in Azure AD.
 ```
 PS C:\> Get-AzureADMSConditionalAccessPolicy -PolicyId "6b5e999b-0ba8-4186-a106-e0296c1c4358"
 
-          Id                      : 1aaaaaa1-2bb2-3cc3-4dd4-5eeeeeeeeee5
+          Id                      : 6b5e999b-0ba8-4186-a106-e0296c1c4358
           DisplayName             : Demo app for documentation
           CreatedDateTime         : 2019-09-26T23:12:16.0792706Z
           ModifiedDateTime        : 2019-09-27T00:12:12.5986473Z
