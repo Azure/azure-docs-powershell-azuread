@@ -25,7 +25,7 @@ The cmdlet operates by resetting the refreshTokensValidFromDateTime user propert
 
 ### Example 1: Revoke refresh tokens for a user
 ```
-PS C:\> Revoke-AzureADUserAllRefreshToken -ObjectId "a1d91a49-70c6-4d1d-a80a-b74c820a9a33"
+PS C:\> Revoke-AzureADUserAllRefreshToken -ObjectId "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb"
 ```
 
 This command revokes the tokens for the specified user.
@@ -65,4 +65,3 @@ See the [migration guide for Revoke-AzureADUserAllRefreshToken](./migrate/Revoke
 [Revoke-AzureADSignedInUserAllRefreshToken](Revoke-AzureADSignedInUserAllRefreshToken.md)
 
 [(#AzureAD: Certificate based authentication for iOS and Android now in preview!](https://blogs.technet.microsoft.com/enterprisemobility/2016/07/18/azuread-certificate-based-authentication-for-ios-and-android-now-in-preview/)
-

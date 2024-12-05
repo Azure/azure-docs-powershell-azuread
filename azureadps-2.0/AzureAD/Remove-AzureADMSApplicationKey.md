@@ -23,7 +23,7 @@ Removes a key from an application.
 
 ### Example 1: Removes a key credential from an application
 ```
-PS C:\>Remove-AzureADMSApplicationKey -ObjectId "3ddd22e7-a150-4bb3-b100-e410dea1cb84" -KeyId "FDA27CF-1B58-4CAE-8CE7-CD04F0AAB945" -Proof {token}
+PS C:\>Remove-AzureADMSApplicationKey -ObjectId "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb" -KeyId "aaaaaaaa-0b0b-1c1c-2d2d-333333333333" -Proof {token}
 ```
 
 This command removes the specificed key credential from the specified application.
@@ -88,4 +88,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [New-AzureADMSApplicationKey]()
-

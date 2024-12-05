@@ -23,7 +23,7 @@ Remove a password from an application.
 
 ### Example 1: Removes a password from an application
 ```
-PS C:\>Remove-AzureADMSApplicationPassWord -ObjectId 1f88e99f-37a3-468f-80ae-e07b62ed0287 -KeyId 80e561ed-44ed-48dc-8c09-9d4803e26e4c
+PS C:\>Remove-AzureADMSApplicationPassWord -ObjectId aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb -KeyId aaaaaaaa-0b0b-1c1c-2d2d-333333333333
 ```
 
 This command remove the specified password from the specified application.
@@ -73,4 +73,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [New-AzureADMSApplicationPassword]()
-

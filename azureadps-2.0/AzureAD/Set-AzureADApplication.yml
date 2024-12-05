@@ -47,7 +47,7 @@ syntaxes:
 examples:
 - title: 'Example 1: Update an application'
   code: |-
-    PS C:\>Set-AzureADApplication -ObjectId "3ddd22e7-a150-4bb3-b100-e410dea1cb84" -DisplayName "New Name"
+    PS C:\>Set-AzureADApplication -ObjectId "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb" -DisplayName "New Name"
   description: |-
     This command updates the specified application.
   summary: ""
