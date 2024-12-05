@@ -31,11 +31,11 @@ The Get-AzureADDirectoryRole cmdlet gets a directory role from Azure Active Dire
 
 ### Example 1: Get a directory role by ID
 ```
-PS C:\>Get-AzureADDirectoryRole -ObjectId "019ea7a2-1613-47c9-81cb-20ba35b1ae48"
+PS C:\>Get-AzureADDirectoryRole -ObjectId "62e90394-69f5-4237-9190-012177145e10"
 
 ObjectId                             DisplayName                        Description
 --------                             -----------                        -----------
-019ea7a2-1613-47c9-81cb-20ba35b1ae48 Global Administrator              Can manage all aspects of Azure AD and Microsoft services that use Azure AD identities.
+62e90394-69f5-4237-9190-012177145e10 Global Administrator              Can manage all aspects of Azure AD and Microsoft services that use Azure AD identities.
 ```
 
 ### Example 2: Get all directory roles
@@ -44,7 +44,7 @@ PS C:\>Get-AzureADDirectoryRole
 
 ObjectId                             DisplayName                        Description
 --------                             -----------                        -----------
-019ea7a2-1613-47c9-81cb-20ba35b1ae48 Global Administrator               Can manage all aspects of Azure AD and Microsoft services that use Azure AD identities.
+62e90394-69f5-4237-9190-012177145e10 Global Administrator               Can manage all aspects of Azure AD and Microsoft services that use Azure AD identities.
 2b3a80bc-51a4-476d-8e09-cd8b6cdde5ea Directory Writers                  Can read and write basic directory information. For granting access to applications, not intended for users.
 526b7173-5a6e-49dc-88ec-b677a9093709 User Administrator                 Can manage all aspects of users and groups, including resetting passwords for limited admins.
 542f5aef-b23f-4e34-a838-6f2b9205b3d6 Directory Synchronization Accounts Only used by Azure AD Connect service.
@@ -140,4 +140,3 @@ See the [migration guide for Get-AzureADDirectoryRole](./migrate/Get-AzureADDire
 ## RELATED LINKS
 
 [Enable-AzureADDirectoryRole](Enable-AzureADDirectoryRole.md)
-
