@@ -28,7 +28,7 @@ If you have one certificate that includes many of your applications, you only ne
 ### Example 1
 ```
 PS C:\> $securePassword = Read-Host -AsSecureString
-PS C:\> Set-AzureADApplicationProxyApplicationCustomDomainCertificate -ObjectId 4eba5342-8d17-4eac-a1f6-62a0de26311e -PfxFilePath "C:\Temp\Certificates\cert.pfx" -Password $securePassword
+PS C:\> Set-AzureADApplicationProxyApplicationCustomDomainCertificate -ObjectId aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb -PfxFilePath "C:\Temp\Certificates\cert.pfx" -Password $securePassword
 ```
 
 Example 1: Assign a certificate to an application configured for Application Proxy
