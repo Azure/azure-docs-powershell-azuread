@@ -30,7 +30,7 @@ PS C:\> $credentials.Id = "a4210a97-5e26-4cfe-88f1-118ed4886f27"
 PS C:\> $creds1 = [Microsoft.Open.MSGraph.Model.PasswordSSOCredential]@{FieldId="param_1"; Value="barfoo@ms.com"; Type="text"}
 PS C:\> $creds2 = [Microsoft.Open.MSGraph.Model.PasswordSSOCredential]@{FieldId="param_2"; Value="my-secret"; Type="password"}
 PS C:\> $credentials.Credentials = @($creds1, $creds2)
-PS C:\> Set-AzureADMSPasswordSingleSignOnCredential -ObjectId 9ac9883e-0ac5-4c32-8737-4267f56a28cc -PasswordSSOCredential $credentials
+PS C:\> Set-AzureADMSPasswordSingleSignOnCredential -ObjectId aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb -PasswordSSOCredential $credentials
 ```
 
 This command sets the password sso credentials for the given ObjectId and PasswordSSOObjectId.
