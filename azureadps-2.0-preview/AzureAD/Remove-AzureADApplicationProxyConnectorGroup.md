@@ -23,7 +23,7 @@ The Remove-AzureADApplicationProxyConnectorGroup cmdlet deletes an Application P
 
 ### Example 1
 ```
-PS C:\> Remove-AzureADApplicationProxyApplicationConnectorGroup -ObjectId 59462d3c-a1bc-40a0-9bed-be799357ebce
+PS C:\> Remove-AzureADApplicationProxyApplicationConnectorGroup -ObjectId aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb
 ```
 
 Example 1: Remove a specific Connector Group

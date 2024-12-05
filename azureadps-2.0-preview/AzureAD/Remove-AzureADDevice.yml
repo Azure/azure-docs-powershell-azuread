@@ -18,7 +18,7 @@ syntaxes:
 examples:
 - title: 'Example 1: Remove a device'
   code: |-
-    PS C:\>Remove-AzureADDevice -ObjectId "99a1915d-298f-42d1-93ae-71646b85e2fa"
+    PS C:\>Remove-AzureADDevice -ObjectId "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb"
   description: |-
     This command removes the specified device.
   summary: ""
