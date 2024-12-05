@@ -44,14 +44,14 @@ New-AzureADMSPermissionGrantConditionSet -PolicyId "test1" -ConditionSetType "in
 
 ### Example 2: Create a permission grant condition set in an existing policy that includes specific permissions for a resource application
 ```
-New-AzureADMSPermissionGrantConditionSet -PolicyId "test1" -ConditionSetType "includes" -PermissionType "delegated" -Permissions @("1aaaaaa1-2bb2-3cc3-4dd4-5eeeeeeeeee5", "2bbbbbb2-3cc3-4dd4-5ee5-6ffffffffff6", "3cccccc3-4dd4-5ee5-6ff6-7aaaaaaaaaa7") -ResourceApplication "4dddddd4-5ee5-6ff6-7aa7-8bbbbbbbbbb8"
+New-AzureADMSPermissionGrantConditionSet -PolicyId "test1" -ConditionSetType "includes" -PermissionType "delegated" -Permissions @("8b590330-0eb2-45d0-baca-a00ecf7e7b87", "dac1c8fa-e6e4-47b8-a128-599660b8cd5c", "f6db0cc3-88cd-4c74-a374-3d8c7cc4c50b") -ResourceApplication "ec8d61c9-1cb2-4edb-afb0-bcda85645555"
 
 				Id                                          : 64032dc4-8423-4fd7-930c-a9ed3bb1dbb4
 				PermissionType                              : delegated
 				PermissionClassification                    : all
-				ResourceApplication                         : 4dddddd4-5ee5-6ff6-7aa7-8bbbbbbbbbb8
-				Permissions                                 : {1aaaaaa1-2bb2-3cc3-4dd4-5eeeeeeeeee5, 2bbbbbb2-3cc3-4dd4-5ee5-6ffffffffff6, 
-															  3cccccc3-4dd4-5ee5-6ff6-7aaaaaaaaaa7}
+				ResourceApplication                         : ec8d61c9-1cb2-4edb-afb0-bcda85645555
+				Permissions                                 : {8b590330-0eb2-45d0-baca-a00ecf7e7b87, dac1c8fa-e6e4-47b8-a128-599660b8cd5c 
+															  f6db0cc3-88cd-4c74-a374-3d8c7cc4c50b}
 				ClientApplicationIds                        : {all}
 				ClientApplicationTenantIds                  : {all}
 				ClientApplicationPublisherIds               : {all}
@@ -60,16 +60,16 @@ New-AzureADMSPermissionGrantConditionSet -PolicyId "test1" -ConditionSetType "in
 
 ### Example 3: Create a permission grant condition set in an existing policy that is excluded
 ```
-New-AzureADMSPermissionGrantConditionSet -PolicyId "test1" -ConditionSetType "excludes" -PermissionType "delegated" -Permissions @("1aaaaaa1-2bb2-3cc3-4dd4-5eeeeeeeeee5", "2bbbbbb2-3cc3-4dd4-5ee5-6ffffffffff6", "3cccccc3-4dd4-5ee5-6ff6-7aaaaaaaaaa7") -ResourceApplication "4dddddd4-5ee5-6ff6-7aa7-8bbbbbbbbbb8" -PermissionClassification "low" -ClientApplicationsFromVerifiedPublisherOnly $true -ClientApplicationIds @("5eeeeee5-6ff6-7aa7-8bb8-9cccccccccc9", "6ffffff6-7aa7-8bb8-9cc9-0dddddddddd0") -ClientApplicationTenantIds @("7aaaaaa7-8bb8-9cc9-0dd0-1eeeeeeeeee1", "1aaaaaa1-2bb2-3cc3-4dd4-5eeeeeeeeee5", "2bbbbbb2-3cc3-4dd4-5ee5-6ffffffffff6") -ClientApplicationPublisherIds @("verifiedpublishermpnid")
+New-AzureADMSPermissionGrantConditionSet -PolicyId "test1" -ConditionSetType "excludes" -PermissionType "delegated" -Permissions @("8b590330-0eb2-45d0-baca-a00ecf7e7b87", "dac1c8fa-e6e4-47b8-a128-599660b8cd5c", "f6db0cc3-88cd-4c74-a374-3d8c7cc4c50b") -ResourceApplication "ec8d61c9-1cb2-4edb-afb0-bcda85645555" -PermissionClassification "low" -ClientApplicationsFromVerifiedPublisherOnly $true -ClientApplicationIds @("00001111-aaaa-2222-bbbb-3333cccc4444", "11112222-bbbb-3333-cccc-4444dddd5555") -ClientApplicationTenantIds @("aaaabbbb-0000-cccc-1111-dddd2222eeee", "bbbbcccc-1111-dddd-2222-eeee3333ffff", "ccccdddd-2222-eeee-3333-ffff4444aaaa") -ClientApplicationPublisherIds @("verifiedpublishermpnid")
 
 			Id                                          : 0f81cce0-a766-4db6-a7e2-4e5f10f6abf8
 			PermissionType                              : delegated
 			PermissionClassification                    : low
-			ResourceApplication                         : 4dddddd4-5ee5-6ff6-7aa7-8bbbbbbbbbb8
-			Permissions                                 : {1aaaaaa1-2bb2-3cc3-4dd4-5eeeeeeeeee5, 2bbbbbb2-3cc3-4dd4-5ee5-6ffffffffff6, 
-														  3cccccc3-4dd4-5ee5-6ff6-7aaaaaaaaaa7}
-			ClientApplicationIds                        : {5eeeeee5-6ff6-7aa7-8bb8-9cccccccccc9, 6ffffff6-7aa7-8bb8-9cc9-0dddddddddd0}
-			ClientApplicationTenantIds                  : {7aaaaaa7-8bb8-9cc9-0dd0-1eeeeeeeeee1, 1aaaaaa1-2bb2-3cc3-4dd4-5eeeeeeeeee5, 2bbbbbb2-3cc3-4dd4-5ee5-6ffffffffff6}
+			ResourceApplication                         : ec8d61c9-1cb2-4edb-afb0-bcda85645555
+			Permissions                                 : {8b590330-0eb2-45d0-baca-a00ecf7e7b87, dac1c8fa-e6e4-47b8-a128-599660b8cd5c, 
+														  f6db0cc3-88cd-4c74-a374-3d8c7cc4c50b}
+			ClientApplicationIds                        : {00001111-aaaa-2222-bbbb-3333cccc4444, 11112222-bbbb-3333-cccc-4444dddd5555}
+			ClientApplicationTenantIds                  : {aaaabbbb-0000-cccc-1111-dddd2222eeee, bbbbcccc-1111-dddd-2222-eeee3333ffff, ccccdddd-2222-eeee-3333-ffff4444aaaa}
 			ClientApplicationPublisherIds               : {verifiedpublishermpnid}
 			ClientApplicationsFromVerifiedPublisherOnly : True
 ```
