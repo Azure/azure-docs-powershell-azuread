@@ -50,9 +50,10 @@ PS C:\> Get-AzureADMSRoleAssignment -Filter "principalId eq 'aaaaaaaa-bbbb-cccc-
 
 RoleDefinitionId                     PrincipalId                          ResourceScope Id
 ----------------                     -----------                          ------------- --
-89c55b63-78c3-478b-b79e-074d0e87269e aaaaaaaa-bbbb-cccc-1111-222222222222 /             Y1vFBcN4i0e3ngdNDocmngJAWGnRtGDAnJQyBBLv1lM-1
-62e90394-69f5-4237-9190-012177145e34 aaaaaaaa-bbbb-cccc-1111-222222222222 /             lAPpYvVpN0KRkAEhdxReEAJAWGnRtGDAnJQyBBLv1lM-1
-eb1d8c90-acf5-460d-8424-c1f1a6fbdb85 aaaaaaaa-bbbb-cccc-1111-222222222222 /             NIwd6_WsDUaEJMHxpvvbhQJAWGnRtGDAnJQyBBLv1lM-1
+89c55b63-78c3-478b-b79e-074d0e87269e 69584002-b4d1-4055-9c94-320542efd653 /             Y1vFBcN4i0e3ngdNDocmngJAWGnRtGDAnJQyBBLv1lM-1
+62e90394-69f5-4237-9190-012177145e34 69584002-b4d1-4055-9c94-320542efd653 /             lAPpYvVpN0KRkAEhdxReEAJAWGnRtGDAnJQyBBLv1lM-1
+eb1d8c90-acf5-460d-8424-c1f1a6fbdb85 69584002-b4d1-4055-9c94-320542efd653 /             NIwd6_WsDUaEJMHxpvvbhQJAWGnRtGDAnJQyBBLv1lM-1
+
 ```
 
 ## PARAMETERS
