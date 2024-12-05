@@ -64,7 +64,7 @@ Updates an Azure Active Directory permission grant condition set object identifi
 
 ### Example 2: Update a permission grant condition set
 ```
-PS C:\>Set-AzureADMSPermissionGrantConditionSet -PolicyId "policy1" -ConditionSetType "includes" -Id "665a9903-0398-48ab-b4e9-7a570d468b66" -PermissionType "Delegated" -PermissionClassification "Low" -ResourceApplication "d9d40050-c784-4b56-a06d-477542a1cafc" -Permissions @("29bf4ca5-913e-427d-8a68-5890af945109") -ClientApplicationIds @("All") -ClientApplicationTenantIds @("All") -ClientApplicationPublisherIds @("All") -ClientApplicationsFromVerifiedPublisherOnly $true
+PS C:\>Set-AzureADMSPermissionGrantConditionSet -PolicyId "policy1" -ConditionSetType "includes" -Id "665a9903-0398-48ab-b4e9-7a570d468b66" -PermissionType "Delegated" -PermissionClassification "Low" -ResourceApplication "00001111-aaaa-2222-bbbb-3333cccc4444" -Permissions @("29bf4ca5-913e-427d-8a68-5890af945109") -ClientApplicationIds @("All") -ClientApplicationTenantIds @("All") -ClientApplicationPublisherIds @("All") -ClientApplicationsFromVerifiedPublisherOnly $true
 ```
 
 ## PARAMETERS
@@ -260,4 +260,3 @@ See the [migration guide for Set-AzureADMSPermissionGrantConditionSet](./migrate
 [Get-AzureADMSPermissionGrantConditionSet](Get-AzureADMSPermissionGrantConditionSet.md)
 
 [Remove-AzureADMSPermissionGrantConditionSet](Remove-AzureADMSPermissionGrantConditionSet.md)
-

@@ -24,7 +24,7 @@ The Set-AzureADUserPassword cmdlet sets the password for a user in Azure Active 
 
 ### Example 1: Set a user's password
 ```
-PS C:\>Set-AzureADUserPassword -ObjectId  "df19e8e6-2ad7-453e-87f5-037f6529ae16" -Password $password
+PS C:\>Set-AzureADUserPassword -ObjectId  "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb" -Password $password
 ```
 
 This command sets the specified user's password.
