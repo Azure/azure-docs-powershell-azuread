@@ -24,7 +24,7 @@ The Get-AzureADApplicationPasswordCredential cmdlet gets the password credential
 
 ### Example 1:
 ```
-PS C:\>Get-AzureADApplicationPasswordCredential -ObjectId 3ddd22e7-a150-4bb3-b100-e410dea1cb84
+PS C:\>Get-AzureADApplicationPasswordCredential -ObjectId aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb
 
 CustomKeyIdentifier :
 EndDate             : 9/28/2017 3:57:10 PM
