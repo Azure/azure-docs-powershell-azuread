@@ -11,7 +11,7 @@ syntaxes:
 examples:
 - title: 'Example 1: Remove an application'
   code: |-
-    PS C:\>Remove-AzureADApplication -ObjectId "acd10942-5747-4385-8824-4c5d5fa904f9"
+    PS C:\>Remove-AzureADApplication -ObjectId "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb"
   description: |-
     This command removes the specified application.
   summary: ""

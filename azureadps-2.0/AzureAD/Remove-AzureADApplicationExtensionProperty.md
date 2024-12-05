@@ -24,7 +24,7 @@ The Remove-AzureADApplicationExtensionProperty cmdlet removes an application ext
 
 ### Example 1: Remove an extension property
 ```
-PS C:\> Remove-AzureADApplicationExtensionProperty -ObjectId "3ddd22e7-a150-4bb3-b100-e410dea1cb84" -ExtensionPropertyId "344ed560-f8e7-410e-ab9f-c79df5c36"
+PS C:\> Remove-AzureADApplicationExtensionProperty -ObjectId "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb" -ExtensionPropertyId "344ed560-f8e7-410e-ab9f-c79df5c36"
 ```
 
 This command removes the extension property that has the specified ID from an application in Azure Active Directory.
@@ -116,4 +116,3 @@ See the [migration guide for Remove-AzureADApplicationExtensionProperty](./migra
 [Get-AzureADApplicationExtensionProperty](Get-AzureADApplicationExtensionProperty.md)
 
 [New-AzureADApplicationExtensionProperty](New-AzureADApplicationExtensionProperty.md)
-

@@ -53,14 +53,14 @@ PS C:\>New-AzureADMSApplication `
           -InformationalUrl @{ SupportUrl = "https://mynewapp.contoso.com/support.html" } `
           -IsDeviceOnlyAuthSupported $false `
           -IsFallbackPublicClient $false `
-          -KeyCredentials @{ KeyId = "11111111-1111-1111-1111-111111111111"; Usage = "Encrypt"; Key = {cert}; Type = "AsymmetricX509Cert" } `
+          -KeyCredentials @{ KeyId = "aaaaaaaa-0b0b-1c1c-2d2d-333333333333"; Usage = "Encrypt"; Key = {cert}; Type = "AsymmetricX509Cert" } `
           -OptionalClaims @{ IdToken = [PSCustomObject]@{ Name = "claimName"; Source = "claimSource" } } `
           -ParentalControlSettings @{ LegalAgeGroupRule = "Block" } `
           -PublicClient @{ RedirectUris = "https://mynewapp.contoso.com/" } `
           -RequiredResourceAccess @{ ResourceAppId = "31111111-1111-1111-1111-111111111111"; ResourceAccess = [PSCustomObject]@{ Type = "Scope" } } `
           -SignInAudience AzureADandPersonalMicrosoftAccount `
           -Tags "mytag" `
-          -TokenEncryptionKeyId "11111111-1111-1111-1111-111111111111" `
+          -TokenEncryptionKeyId "aaaaaaaa-0b0b-1c1c-2d2d-333333333333" `
           -Web @{ LogoutUrl = "https://mynewapp.contoso.com/logout.html" } `
           -GroupMembershipClaims "SecurityGroup" `
           -PasswordCredentials {passwordcredentials}
@@ -81,7 +81,7 @@ PS C:\>New-AzureADMSApplication `
           Oauth2PermissionScopes:
           System.Collections.Generic.List`1[Microsoft.Open.MSGraph.Model.PermissionScope]
 
-          AppId                     : 4095dbc0-2095-42d3-b631-7a48eeede86c
+          AppId                     : 00001111-aaaa-2222-bbbb-3333cccc4444
           ApplicationTemplateId     :
           AppRoles                  : {class AppRole {
           AllowedMemberTypes: System.Collections.Generic.List`1[System.String]
@@ -112,7 +112,7 @@ PS C:\>New-AzureADMSApplication `
           CustomKeyIdentifier: System.Byte[]
           DisplayName:
           EndDateTime:
-          KeyId: 11111111-1111-1111-1111-111111111111
+          KeyId: aaaaaaaa-0b0b-1c1c-2d2d-333333333333
           StartDateTime:
           Type: AsymmetricX509Cert
           Usage: Encrypt
@@ -145,7 +145,7 @@ PS C:\>New-AzureADMSApplication `
           }
           SignInAudience            : AzureADandPersonalMicrosoftAccount
           Tags                      : {mytag}
-          TokenEncryptionKeyId      : 11111111-1111-1111-1111-111111111111
+          TokenEncryptionKeyId      : aaaaaaaa-0b0b-1c1c-2d2d-333333333333
           Web                       : class WebApplication {
           HomePageUrl:
           LogoutUrl: https://mynewapp.contoso.com/logout.html
