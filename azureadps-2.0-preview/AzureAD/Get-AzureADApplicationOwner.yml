@@ -13,11 +13,11 @@ syntaxes:
 examples:
 - title: 'Example 1: Get the owner of an application'
   code: |-
-    PS C:\>Get-AzureADApplicationOwner -ObjectId "3ddd22e7-a150-4bb3-b100-e410dea1cb84"
+    PS C:\>Get-AzureADApplicationOwner -ObjectId "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb"
 
     ObjectId                             ObjectType
     --------                             ----------
-    c13dd34a-492b-4561-b171-40fcce2916c5 User
+    aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb User
   description: |-
     This command gets the owner of an application.
   summary: ""

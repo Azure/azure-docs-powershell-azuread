@@ -21,13 +21,13 @@ examples:
 
     ObjectId                             AppId                                DisplayName
     --------                             -----                                -----------
-    3ddd22e7-a150-4bb3-b100-e410dea1cb84 36ee4c6c-0812-40a2-b820-b22ebd02bce3 TestName
+    bbbbbbbb-1111-2222-3333-cccccccccccc 11112222-bbbb-3333-cccc-4444dddd5555 TestName
   description: |-
     This command gets an application by its display name.
   summary: ""
 - title: 'Example 2: Get an application by ID'
   code: |-
-    PS C:\>Get-AzureADApplication -Filter "AppId eq 'ed192e92-84d4-4baf-997d-1e190a81f28e'"
+    PS C:\>Get-AzureADApplication -Filter "AppId eq '00001111-aaaa-2222-bbbb-3333cccc4444'"
   description: |-
     This command gets an application by its ID.
 
@@ -35,7 +35,7 @@ examples:
 
         ObjectId                             AppId                                DisplayName
         --------                             -----                                -----------  
-        ed192e92-84d4-4baf-997d-1e190a81f28e 36ee4c6c-0812-40a2-b820-b22ebd02bce3 MyNewApp
+        aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb 00001111-aaaa-2222-bbbb-3333cccc4444 MyNewApp
   summary: ""
 - title: Retrieve an application by identifierUris
   code: |-
