@@ -28,7 +28,7 @@ examples:
   summary: ""
 - title: Example 2
   code: |-
-    PS C:\> Get-AzureADMSRoleAssignment -Filter "principalId eq '69584002-b4d1-4055-9c94-320542efd653'"
+    PS C:\> Get-AzureADMSRoleAssignment -Filter "principalId eq 'aaaaaaaa-bbbb-cccc-1111-222222222222'"
 
     RoleDefinitionId                     PrincipalId                          ResourceScope Id
     ----------------                     -----------                          ------------- --
