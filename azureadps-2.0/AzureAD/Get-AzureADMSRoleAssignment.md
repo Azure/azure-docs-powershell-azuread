@@ -39,7 +39,7 @@ PS C:\> Get-AzureADMSRoleAssignment -Filter "roleDefinitionId eq '62e90394-69f5-
 RoleDefinitionId                     PrincipalId                          ResourceScope Id
 ----------------                     -----------                          ------------- --
 62e90394-69f5-4237-9190-012177145e34 aaaaaaaa-bbbb-cccc-1111-222222222222 /             lAPpYvVpN0KRkAEhdxReEAJAWGnRqAVAnJQyBBLv1lM-1
-62e90394-69f5-4237-9190-012177145e34 3f5e48d2-6bf4-4bf3-a4ff-8bbd9f23ed0b /             lAPpYvVpN0KRkAEhdxReENJPEj_0a_NLpP-LvZ8D7Qs-1
+62e90394-69f5-4237-9190-012177145e34 aaaaaaaa-bbbb-cccc-1111-222222222222 /             lAPpYvVpN0KRkAEhdxReENJPEj_0a_NLpP-LvZ8D7Qs-1
 ```
 
 ### Example 2

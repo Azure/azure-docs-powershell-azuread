@@ -49,7 +49,7 @@ This command retrieves a list of all named location policies in Azure AD.
 
 ### Example 2: Retrieves a named location policy in Azure AD with given Id.
 ```
-PS C:\> Get-AzureADMSNamedLocationPolicy -PolicyId 1aaaaaa1-2bb2-3cc3-4dd4-5eeeeeeeeee5
+PS C:\> Get-AzureADMSNamedLocationPolicy -PolicyId 6b5e999b-0ba8-4186-a106-e0296c1c4358
 
           OdataType                           : #microsoft.graph.countryNamedLocation
           Id                                  : 1aaaaaa1-2bb2-3cc3-4dd4-5eeeeeeeeee5

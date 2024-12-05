@@ -24,11 +24,11 @@ Retrieves the object(s) specified by the objectIds parameter
 
 ### Example 1
 ```
-PS C:\WINDOWS\system32> Get-AzureADObjectByObjectId -ObjectIds aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb, c4fdf87f-f68e-4859-8bcf-36579b66005e
+PS C:\WINDOWS\system32> Get-AzureADObjectByObjectId -ObjectIds aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb, bbbbbbbb-1111-2222-3333-cccccccccccc
 
 ObjectId                             AppId                                DisplayName
 --------                             -----                                -----------
-c4fdf87f-f68e-4859-8bcf-36579b66005e 71715b24-8cdd-432b-a138-86e8ad179274 Woodgrove HR App
+bbbbbbbb-1111-2222-3333-cccccccccccc 71715b24-8cdd-432b-a138-86e8ad179274 Woodgrove HR App
 
 DeletionTimeStamp                   :
 ObjectId                            : aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb
