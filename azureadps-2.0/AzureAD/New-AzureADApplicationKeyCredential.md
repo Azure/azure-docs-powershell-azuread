@@ -30,7 +30,7 @@ PS C:\> New-AzureADApplicationKeyCredential -ObjectId $AppId -CustomKeyIdentifie
 
 CustomKeyIdentifier : {84, 101, 115, 116}
 EndDate             : 11/7/2017 12:00:00 AM
-KeyId               : a5845538-3f67-402d-a03e-36d768f1441e
+KeyId               : aaaaaaaa-0b0b-1c1c-2d2d-333333333333
 StartDate           : 11/7/2016 12:00:00 AM
 Type                : Symmetric
 Usage               : Sign
@@ -222,4 +222,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Remove-AzureADApplicationKeyCredential]()
 
 [This cmdlet uses the ADAL library in Azure Active Directory. To learn more about ADAL, please follow this link:](http://www.cloudidentity.com/blog/2013/09/12/active-directory-authentication-library-adal-v1-for-net-general-availability/)
-

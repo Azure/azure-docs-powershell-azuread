@@ -23,7 +23,7 @@ The Get-AzureADUserDirectReport cmdlet gets the direct reports for a user in Azu
 
 ### Example 1: Get a user's direct reports
 ```
-PS C:\>Get-AzureADUserDirectReport -ObjectId "df19e8e6-2ad7-453e-87f5-037f6529ae16"
+PS C:\>Get-AzureADUserDirectReport -ObjectId "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb"
 
 ObjectId                             ObjectType
 --------                             ----------
