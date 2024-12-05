@@ -32,18 +32,18 @@ examples:
     e9cfe5ad-c9eb-4cd7-87c2-2a69059aeb69 576ea3a9-3d7f-4bcc-a2b5-2d1a5088075e GraphDirectoryExtension
 
 
-    PS C:\WINDOWS\system32> Remove-AzureADApplication -ObjectId 79592454-dea7-4660-9d91-f1768e5055ac
+    PS C:\WINDOWS\system32> Remove-AzureADApplication -ObjectId aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb
     PS C:\WINDOWS\system32> Get-AzureADDeletedApplication
 
     ObjectId                             AppId                                DisplayName
     --------                             -----                                -----------
-    79592454-dea7-4660-9d91-f1768e5055ac feabcdd1-711a-4d55-ad5e-0d0577aaaa5e analog
+    aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb feabcdd1-711a-4d55-ad5e-0d0577aaaa5e analog
 
-    PS C:\WINDOWS\system32> Restore-AzureADDeletedApplication -ObjectId 79592454-dea7-4660-9d91-f1768e5055ac
+    PS C:\WINDOWS\system32> Restore-AzureADDeletedApplication -ObjectId aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb
 
     ObjectId                             AppId                                DisplayName
     --------                             -----                                -----------
-    79592454-dea7-4660-9d91-f1768e5055ac feabcdd1-711a-4d55-ad5e-0d0577aaaa5e analog
+    aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb feabcdd1-711a-4d55-ad5e-0d0577aaaa5e analog
   description: |-
     This example shows how an application is deleted, then the deleted application is retrieved using the Get-AzureADDeletedApplication cmdlet, and subsequently the application is restored by specifying the application's Object ID in the Restore-AzureADDeletedApplication cmdlet
   summary: ""

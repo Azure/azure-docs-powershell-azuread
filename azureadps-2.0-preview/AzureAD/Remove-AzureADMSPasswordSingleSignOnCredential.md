@@ -25,7 +25,7 @@ Admin could remove the group credentials as well.
 
 ### Remove password single-sign-on credentials
 ```
-PS C:\> Remove-AzureADMSPasswordSingleSignOnCredential -ObjectId 9ac9883e-0ac5-4c32-8737-4267f56a28cc -PasswordSSOObjectId a4210a97-5e26-4cfe-88f1-118ed4886f27
+PS C:\> Remove-AzureADMSPasswordSingleSignOnCredential -ObjectId aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb -PasswordSSOObjectId bbbbbbbb-1111-2222-3333-cccccccccccc
 ```
 
 This command removes the password sso credentials for the given ObjectId and PasswordSSOObjectId.

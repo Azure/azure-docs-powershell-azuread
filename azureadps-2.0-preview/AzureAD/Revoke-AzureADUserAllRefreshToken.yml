@@ -13,7 +13,7 @@ syntaxes:
 examples:
 - title: 'Example 1: Revoke refresh tokens for a user'
   code: |-
-    PS C:\> Revoke-AzureADUserAllRefreshToken -ObjectId "a1d91a49-70c6-4d1d-a80a-b74c820a9a33"
+    PS C:\> Revoke-AzureADUserAllRefreshToken -ObjectId "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb"
   description: |-
     This command revokes the tokens for the specified user.
   summary: ""
