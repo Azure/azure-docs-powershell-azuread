@@ -31,11 +31,11 @@ The Get-AzureADDirectoryRole cmdlet gets a directory role from Azure Active Dire
 
 ### Example 1: Get a directory role by ID
 ```
-PS C:\>Get-AzureADDirectoryRole -ObjectId "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb"
+PS C:\>Get-AzureADDirectoryRole -ObjectId "62e90394-69f5-4237-9190-012177145e10"
 
 ObjectId                             DisplayName                        Description
 --------                             -----------                        -----------
-aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb Global Administrator              Can manage all aspects of Azure AD and Microsoft services that use Azure AD identities.
+62e90394-69f5-4237-9190-012177145e10 Global Administrator              Can manage all aspects of Azure AD and Microsoft services that use Azure AD identities.
 ```
 
 ### Example 2: Get all directory roles
@@ -44,7 +44,7 @@ PS C:\>Get-AzureADDirectoryRole
 
 ObjectId                             DisplayName                        Description
 --------                             -----------                        -----------
-aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb Global Administrator               Can manage all aspects of Azure AD and Microsoft services that use Azure AD identities.
+62e90394-69f5-4237-9190-012177145e10 Global Administrator               Can manage all aspects of Azure AD and Microsoft services that use Azure AD identities.
 2b3a80bc-51a4-476d-8e09-cd8b6cdde5ea Directory Writers                  Can read and write basic directory information. For granting access to applications, not intended for users.
 526b7173-5a6e-49dc-88ec-b677a9093709 User Administrator                 Can manage all aspects of users and groups, including resetting passwords for limited admins.
 542f5aef-b23f-4e34-a838-6f2b9205b3d6 Directory Synchronization Accounts Only used by Azure AD Connect service.

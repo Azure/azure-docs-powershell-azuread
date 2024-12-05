@@ -24,7 +24,7 @@ The Get-AzureADDirectoryRoleMember cmdlet gets the members of a directory role i
 
 ### Example 1: Get members by role ID
 ```
-PS C:\>Get-AzureADDirectoryRoleMember -ObjectId "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb"
+PS C:\>Get-AzureADDirectoryRoleMember -ObjectId "62e90394-69f5-4237-9190-012177145e10"
 
 ObjectId                             ObjectType
 --------                             ----------
