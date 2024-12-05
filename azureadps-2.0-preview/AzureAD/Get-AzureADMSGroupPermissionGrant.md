@@ -29,7 +29,7 @@ List exisiting permission grants for the group.
 
 		Id             : vsMaSY2k_E7761KhRqpx7OGFvAwvdZnJM1s7Iqkt4PU
 		ClientId       : 00001111-aaaa-2222-bbbb-3333cccc4444
-		ClientAppId    : ba4e4a78-c352-4e59-b657-81b2b395d32b
+		ClientAppId    : 11112222-bbbb-3333-cccc-4444dddd5555
 		ResourceAppId  : 00000003-0000-0000-c000-000000000000
 		PermissionType : Application
 		Permission     : Member.Read.Group
