@@ -26,7 +26,7 @@ examples:
     $schedule.Type = "Once"
     $schedule.StartDateTime = "2019-04-26T20:49:11.770Z"
     $schedule.endDateTime = "2019-07-25T20:49:11.770Z"
-    Open-AzureADMSPrivilegedRoleAssignmentRequest -ProviderId AzureResources -Schedule $schedule -ResourceId "e5e7d29d-5465-45ac-885f-4716a5ee74b5" -RoleDefinitionId "9f8c1837-f885-4dfd-9a75-990f9222b21d" -SubjectId "a25004a3-eceb-4ad4-b4aa-9485356bc55b" -AssignmentState "Eligible" -Type "AdminAdd"
+    Open-AzureADMSPrivilegedRoleAssignmentRequest -ProviderId AzureResources -Schedule $schedule -ResourceId "a0a0a0a0-bbbb-cccc-dddd-e1e1e1e1e1e1" -RoleDefinitionId "b1b1b1b1-cccc-dddd-eeee-f2f2f2f2f2f2" -SubjectId "c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3" -AssignmentState "Eligible" -Type "AdminAdd"
   description: |-
     This example creates a role assignment request.
   summary: ""
@@ -42,7 +42,7 @@ examples:
     $schedule.StartDateTime = $start.ToString('yyyy-MM-ddTHH:mm:ss.fffZ')
     $schedule.endDateTime = $end.ToString('yyyy-MM-ddTHH:mm:ss.fffZ')
 
-    Open-AzureADMSPrivilegedRoleAssignmentRequest -ProviderId AzureResources -Schedule $schedule -ResourceId "e5e7d29d-5465-45ac-885f-4716a5ee74b5" -RoleDefinitionId "9f8c1837-f885-4dfd-9a75-990f9222b21d" -SubjectId "a25004a3-eceb-4ad4-b4aa-9485356bc55b" -AssignmentState "Active" -Type "UserAdd"
+    Open-AzureADMSPrivilegedRoleAssignmentRequest -ProviderId AzureResources -Schedule $schedule -ResourceId "a0a0a0a0-bbbb-cccc-dddd-e1e1e1e1e1e1" -RoleDefinitionId "b1b1b1b1-cccc-dddd-eeee-f2f2f2f2f2f2" -SubjectId "c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3" -AssignmentState "Active" -Type "UserAdd"
   description: |-
     This example creates a role assignment request activating the Admin Role.
   summary: ""
@@ -58,7 +58,7 @@ examples:
     $schedule.StartDateTime = $start.ToString('yyyy-MM-ddTHH:mm:ss.fffZ')
     $schedule.endDateTime = $end.ToString('yyyy-MM-ddTHH:mm:ss.fffZ')
 
-    Open-AzureADMSPrivilegedRoleAssignmentRequest -ProviderId AzureResources -Schedule $schedule -ResourceId "e5e7d29d-5465-45ac-885f-4716a5ee74b5" -RoleDefinitionId "9f8c1837-f885-4dfd-9a75-990f9222b21d" -SubjectId "a25004a3-eceb-4ad4-b4aa-9485356bc55b" -AssignmentState "Active" -Type "UserRemove"
+    Open-AzureADMSPrivilegedRoleAssignmentRequest -ProviderId AzureResources -Schedule $schedule -ResourceId "a0a0a0a0-bbbb-cccc-dddd-e1e1e1e1e1e1" -RoleDefinitionId "b1b1b1b1-cccc-dddd-eeee-f2f2f2f2f2f2" -SubjectId "c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3" -AssignmentState "Active" -Type "UserRemove"
   description: |-
     This example creates a role assignment request disabling the Admin Role.
   summary: ""

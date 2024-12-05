@@ -60,7 +60,7 @@ New-AzureADMSPermissionGrantConditionSet -PolicyId "test1" -ConditionSetType "in
 
 ### Example 3: Create a permission grant condition set in an existing policy that is excluded
 ```
-New-AzureADMSPermissionGrantConditionSet -PolicyId "test1" -ConditionSetType "excludes" -PermissionType "delegated" -Permissions @("8b590330-0eb2-45d0-baca-a00ecf7e7b87", "dac1c8fa-e6e4-47b8-a128-599660b8cd5c", "f6db0cc3-88cd-4c74-a374-3d8c7cc4c50b") -ResourceApplication "ec8d61c9-1cb2-4edb-afb0-bcda85645555" -PermissionClassification "low" -ClientApplicationsFromVerifiedPublisherOnly $true -ClientApplicationIds @("4a6c40ea-edc1-4202-8620-dd4060ee6583", "17a961bd-e743-4e6f-8097-d7e6612999a7") -ClientApplicationTenantIds @("17a961bd-e743-4e6f-8097-d7e6612999a8", "17a961bd-e743-4e6f-8097-d7e6612999a9", "17a961bd-e743-4e6f-8097-d7e6612999a0") -ClientApplicationPublisherIds @("verifiedpublishermpnid")
+New-AzureADMSPermissionGrantConditionSet -PolicyId "test1" -ConditionSetType "excludes" -PermissionType "delegated" -Permissions @("8b590330-0eb2-45d0-baca-a00ecf7e7b87", "dac1c8fa-e6e4-47b8-a128-599660b8cd5c", "f6db0cc3-88cd-4c74-a374-3d8c7cc4c50b") -ResourceApplication "ec8d61c9-1cb2-4edb-afb0-bcda85645555" -PermissionClassification "low" -ClientApplicationsFromVerifiedPublisherOnly $true -ClientApplicationIds @("00001111-aaaa-2222-bbbb-3333cccc4444", "11112222-bbbb-3333-cccc-4444dddd5555") -ClientApplicationTenantIds @("aaaabbbb-0000-cccc-1111-dddd2222eeee", "bbbbcccc-1111-dddd-2222-eeee3333ffff", "ccccdddd-2222-eeee-3333-ffff4444aaaa") -ClientApplicationPublisherIds @("verifiedpublishermpnid")
 
 			Id                                          : 0f81cce0-a766-4db6-a7e2-4e5f10f6abf8
 			PermissionType                              : delegated
@@ -68,8 +68,8 @@ New-AzureADMSPermissionGrantConditionSet -PolicyId "test1" -ConditionSetType "ex
 			ResourceApplication                         : ec8d61c9-1cb2-4edb-afb0-bcda85645555
 			Permissions                                 : {8b590330-0eb2-45d0-baca-a00ecf7e7b87, dac1c8fa-e6e4-47b8-a128-599660b8cd5c, 
 														  f6db0cc3-88cd-4c74-a374-3d8c7cc4c50b}
-			ClientApplicationIds                        : {4a6c40ea-edc1-4202-8620-dd4060ee6583, 17a961bd-e743-4e6f-8097-d7e6612999a7}
-			ClientApplicationTenantIds                  : {17a961bd-e743-4e6f-8097-d7e6612999a8, 17a961bd-e743-4e6f-8097-d7e6612999a9, 17a961bd-e743-4e6f-8097-d7e6612999a0}
+			ClientApplicationIds                        : {00001111-aaaa-2222-bbbb-3333cccc4444, 11112222-bbbb-3333-cccc-4444dddd5555}
+			ClientApplicationTenantIds                  : {aaaabbbb-0000-cccc-1111-dddd2222eeee, bbbbcccc-1111-dddd-2222-eeee3333ffff, ccccdddd-2222-eeee-3333-ffff4444aaaa}
 			ClientApplicationPublisherIds               : {verifiedpublishermpnid}
 			ClientApplicationsFromVerifiedPublisherOnly : True
 ```
@@ -253,4 +253,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-AzureADMSPermissionGrantConditionSet]()
 
 [Remove-AzureADMSPermissionGrantConditionSet]()
-
