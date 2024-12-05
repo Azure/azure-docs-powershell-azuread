@@ -28,14 +28,14 @@ Conditional access policies are custom rules that define an access scenario.
 
 ### Example 1: Update an ip named location policy in Azure AD by PolicyId.
 ```
-PS C:\> Set-AzureADMSNamedLocationPolicy -PolicyId 1aaaaaa1-2bb2-3cc3-4dd4-5eeeeeeeeee5 -OdataType "#microsoft.graph.ipNamedLocation" -IsTrusted $false
+PS C:\> Set-AzureADMSNamedLocationPolicy -PolicyId 6b5e999b-0ba8-4186-a106-e0296c1c4358 -OdataType "#microsoft.graph.ipNamedLocation" -IsTrusted $false
 ```
 
 This command updates an ip named location policy in Azure AD by PolicyId.
 
 ### Example 2: Update a country or region named location policy in Azure AD by PolicyId.
 ```
-PS C:\> Set-AzureADMSNamedLocationPolicy -PolicyId 2bbbbbb2-3cc3-4dd4-5ee5-6ffffffffff6 -OdataType "#microsoft.graph.countryNamedLocation" -IncludeUnknownCountriesAndRegions $true
+PS C:\> Set-AzureADMSNamedLocationPolicy -PolicyId 76fdfd4d-bd80-4c1e-8fd4-6abf49d121fe -OdataType "#microsoft.graph.countryNamedLocation" -IncludeUnknownCountriesAndRegions $true
 ```
 
 This command updates a country or region named location policy in Azure AD by PolicyId.
