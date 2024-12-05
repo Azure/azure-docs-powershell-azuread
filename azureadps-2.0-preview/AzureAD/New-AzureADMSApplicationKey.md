@@ -24,7 +24,7 @@ Adds a new key to an application.
 
 ### Example 1: Add a key credential to an application
 ```
-PS C:\>New-AzureADMSApplicationKey -ObjectId 14a3f1ac-46a7-4d00-b1ca-0b2b84f033c2 -KeyCredential @{ key=[System.Convert]::FromBase64String("{base64cert}") } -PasswordCredential @{ displayname = "mypassword" } -Proof "{token}"
+PS C:\>New-AzureADMSApplicationKey -ObjectId aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb -KeyCredential @{ key=[System.Convert]::FromBase64String("{base64cert}") } -PasswordCredential @{ displayname = "mypassword" } -Proof "{token}"
 ```
 
 This command adds a key credential the specified application.
@@ -111,4 +111,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [Remove-AzureADMSApplicationKey]()
-

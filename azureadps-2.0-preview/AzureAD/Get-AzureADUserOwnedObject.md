@@ -26,7 +26,7 @@ The **Get-AzureADUserOwnedObject** cmdlet gets objects owned by a user in Azure 
 
 ### Example 1: Get objects owned by a user
 ```
-PS C:\>Get-AzureADUserOwnedObject -ObjectId "df19e8e6-2ad7-453e-87f5-037f6529ae16"
+PS C:\>Get-AzureADUserOwnedObject -ObjectId "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb"
 
 ObjectId                             ObjectType
 --------                             ----------
