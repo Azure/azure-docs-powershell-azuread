@@ -24,7 +24,7 @@ The New-AzureADMSRoleAssignment cmdlet creates an Azure Active Directory (Azure 
 
 ### Example 1
 ```powershell
-PS C:\> New-AzureADMSRoleAssignment -RoleDefinitionId 62e90356-69f5-4237-9190-012177145e10 -PrincipalId aaaaaaaa-bbbb-cccc-1111-222222222222 -ResourceScope '/'
+PS C:\> New-AzureADMSRoleAssignment -RoleDefinitionId f2ef992c-3afb-46b9-b7cf-a126ee74c451 -PrincipalId aaaaaaaa-bbbb-cccc-1111-222222222222 -ResourceScope '/'
 ```
 
 This command creates a new role assignment.

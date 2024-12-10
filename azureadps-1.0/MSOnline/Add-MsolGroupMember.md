@@ -27,7 +27,7 @@ The new members can be either users or other security groups.
 
 ### Example 1: Add a user to a security group
 ```
-PS C:\> Add-MsolGroupMember -GroupObjectId 62f684d7-9ab1-4abc-a543-2257e085bdc6 -GroupMemberType User -GroupMemberObjectId bbb55777-d5aa-499d-abbf-353d4523049f
+PS C:\> Add-MsolGroupMember -GroupObjectId aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb -GroupMemberType User -GroupMemberObjectId bbbbbbbb-1111-2222-3333-cccccccccccc
 ```
 
 This command adds a user to a security group.

@@ -23,7 +23,7 @@ The Remove-AzureADMSRoleDefinition cmdlet removes a role definition from Azure A
 
 ### Example 1
 ```powershell
-PS C:\> Remove-AzureADMSRoleDefinition -Id 62e90894-69f5-4237-9190-012177145e10
+PS C:\> Remove-AzureADMSRoleDefinition -Id f2ef992c-3afb-46b9-b7cf-a126ee74c451
 ```
 
 This command removes the specified role definition from AzureAD.

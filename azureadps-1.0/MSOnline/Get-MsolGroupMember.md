@@ -34,7 +34,7 @@ The members can be either users or groups.
 
 ### Example 1: Get all members of a group
 ```
-PS C:\> Get-MsolGroupMember -GroupObjectId 74d7b44e-6811-4250-bffe-8292e3b0b689
+PS C:\> Get-MsolGroupMember -GroupObjectId aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb
 ```
 
 This command retrieves all members of the specified group.
