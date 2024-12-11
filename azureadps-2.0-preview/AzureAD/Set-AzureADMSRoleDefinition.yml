@@ -21,7 +21,7 @@ syntaxes:
 examples:
 - title: Example 1
   code: |-
-    PS C:\> Set-AzureADMSRoleDefinition -ID c466024e-f789-4409-a897-d220916814b1 -DisplayName 'UpdatedDisplayName'
+    PS C:\> Set-AzureADMSRoleDefinition -ID f2ef992c-3afb-46b9-b7cf-a126ee74c451 -DisplayName 'UpdatedDisplayName'
   description: |-
     This command updates the specified role definition in Azure AD.
   summary: ""

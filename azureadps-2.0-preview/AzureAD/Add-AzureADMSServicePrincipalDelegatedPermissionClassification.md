@@ -24,7 +24,7 @@ The Add-AzureADMSServicePrincipalDelegatedPermissionClassification cmdlet create
 
 ### Example 1: Create Delegated Permission Classification
 ```
-PS C:\> Add-AzureADMSServicePrincipalDelegatedPermissionClassification -ServicePrincipalId "95f56359-0165-4f80-bffb-c89d06cf2c6f" -PermissionId "205e70e5-aba6-4c52-a976-6d2d46c48043" -Classification Low -PermissionName "Sites.Read.All"
+PS C:\> Add-AzureADMSServicePrincipalDelegatedPermissionClassification -ServicePrincipalId "aaaaaaaa-bbbb-cccc-1111-222222222222" -PermissionId "205e70e5-aba6-4c52-a976-6d2d46c48043" -Classification Low -PermissionName "Sites.Read.All"
 
 Classification : Low
 Id             : 5XBeIKarUkypdm0tRsSAQwE

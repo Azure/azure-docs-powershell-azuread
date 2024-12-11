@@ -31,7 +31,7 @@ The Get-AzureADMSServicePrincipalDelegatedPermissionClassification cmdlet retrie
 
 ### Example 1: Get a list of delegated permission classifications
 ```
-PS C:\> Get-AzureADMSServicePrincipalDelegatedPermissionClassification -ServicePrincipalId "95f56359-0165-4f80-bffb-c89d06cf2c6f"
+PS C:\> Get-AzureADMSServicePrincipalDelegatedPermissionClassification -ServicePrincipalId "aaaaaaaa-bbbb-cccc-1111-222222222222"
 
 Classification : Low
 Id             : 5XBeIKarUkypdm0tRsSAQwE
@@ -48,7 +48,7 @@ This command retrieves all delegated permission classifications from the service
 
 ### Example 2: Get a delegated permission classifications
 ```
-PS C:\> Get-AzureADMSServicePrincipalDelegatedPermissionClassification -ServicePrincipalId "95f56359-0165-4f80-bffb-c89d06cf2c6f" -Id "5XBeIKarUkypdm0tRsSAQwE"
+PS C:\> Get-AzureADMSServicePrincipalDelegatedPermissionClassification -ServicePrincipalId "aaaaaaaa-bbbb-cccc-1111-222222222222" -Id "5XBeIKarUkypdm0tRsSAQwE"
 
 Classification : Low
 Id             : 5XBeIKarUkypdm0tRsSAQwE
@@ -60,7 +60,7 @@ This command retrieves the delegated permission classification by Id from the se
 
 ### Example 3: Get a delegated permission classification with filter
 ```
-PS C:\> Get-AzureADMSServicePrincipalDelegatedPermissionClassification -ServicePrincipalId "95f56359-0165-4f80-bffb-c89d06cf2c6f" -Filter "PermissionName eq 'Sites.Read.All'"
+PS C:\> Get-AzureADMSServicePrincipalDelegatedPermissionClassification -ServicePrincipalId "aaaaaaaa-bbbb-cccc-1111-222222222222" -Filter "PermissionName eq 'Sites.Read.All'"
 
 Classification : Low
 Id             : 5XBeIKarUkypdm0tRsSAQwE

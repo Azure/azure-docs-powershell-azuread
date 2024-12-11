@@ -24,7 +24,7 @@ The Remove-AzureADMSServicePrincipalDelegatedPermissionClassification cmdlet del
 
 ### Example 1: Remove a delegated permission classifications
 ```
-PS C:\> Remove-AzureADMSServicePrincipalDelegatedPermissionClassification -ServicePrincipalId "95f56359-0165-4f80-bffb-c89d06cf2c6f" -Id "5XBeIKarUkypdm0tRsSAQwE"
+PS C:\> Remove-AzureADMSServicePrincipalDelegatedPermissionClassification -ServicePrincipalId "aaaaaaaa-bbbb-cccc-1111-222222222222" -Id "5XBeIKarUkypdm0tRsSAQwE"
 ```
 
 This command delete the delegated permission classification by Id from the service principal.

@@ -26,7 +26,7 @@ The Set-AzureADMSRoleDefinition cmdlet sets a role definition in Azure Active Di
 
 ### Example 1
 ```powershell
-PS C:\> Set-AzureADMSRoleDefinition -ID c466024e-f789-4409-a897-d220916814b1 -DisplayName 'UpdatedDisplayName'
+PS C:\> Set-AzureADMSRoleDefinition -ID f2ef992c-3afb-46b9-b7cf-a126ee74c451 -DisplayName 'UpdatedDisplayName'
 ```
 
 This command updates the specified role definition in Azure AD.
