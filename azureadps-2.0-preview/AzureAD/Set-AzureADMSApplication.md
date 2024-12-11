@@ -49,7 +49,7 @@ PS C:\>Set-AzureADMSApplication -ObjectId aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb `
           -OptionalClaims @{ IdToken = [PSCustomObject]@{ Name = "claimName"; Source = "claimSource" } } `
           -ParentalControlSettings @{ LegalAgeGroupRule = "Block" } `
           -PublicClient @{ RedirectUris = "https://mynewapp.contoso.com/" } `
-          -RequiredResourceAccess @{ ResourceAppId = "31111111-1111-1111-1111-111111111111"; ResourceAccess = [PSCustomObject]@{ Type = "Scope" } } `
+          -RequiredResourceAccess @{ ResourceAppId = "00001111-aaaa-2222-bbbb-3333cccc4444"; ResourceAccess = [PSCustomObject]@{ Type = "Scope" } } `
           -SignInAudience AzureADandPersonalMicrosoftAccount `
           -Tags "mytag" `
           -TokenEncryptionKeyId "aaaaaaaa-0b0b-1c1c-2d2d-333333333333" `

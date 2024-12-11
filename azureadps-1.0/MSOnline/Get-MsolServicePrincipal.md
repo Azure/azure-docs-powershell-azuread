@@ -61,7 +61,7 @@ This is an exact match of the **appClass** portion of the service principal name
 
 ### Example 3: Get a service principal
 ```
-PS C:\> Get-MsolServicePrincipal -AppPrincipalId 5e964d2f-e384-4292-ae55-dd24c89cc53b
+PS C:\> Get-MsolServicePrincipal -AppPrincipalId aaaaaaaa-bbbb-cccc-1111-222222222222
 ```
 
 This command gets a service principal that has a specific application principal ID.

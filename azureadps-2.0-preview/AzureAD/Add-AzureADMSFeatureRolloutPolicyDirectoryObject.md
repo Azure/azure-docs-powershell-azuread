@@ -26,7 +26,7 @@ with Seamless Single Sign-On or not, or whether Passthrough auth or not).
 
 ### Example 1: Adds a group to the cloud authentication roll-out policy in Azure AD.
 ```
-PS C:\> Add-AzureADMSFeatureRolloutPolicyDirectoryObject -Id "a03b6d9e-6654-46e6-8d0a-8ed83c675ca9" -RefObjectId "0a1068c0-dbb6-4537-9db3-b48f3e31dd76"
+PS C:\> Add-AzureADMSFeatureRolloutPolicyDirectoryObject -Id "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb" -RefObjectId "bbbbbbbb-1111-2222-3333-cccccccccccc"
 ```
 
 This command adds a group to the cloud authentication roll-out policy in Azure AD.
