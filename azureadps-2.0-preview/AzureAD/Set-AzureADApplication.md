@@ -1,7 +1,7 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
 Module Name: AzureADPreview
-ms.custom: iamfeature=PowerShell
+ms.custom: iamfeature=PowerShell, sfi-ropc-nochange
 ms.reviewer: stevemutungi
 online version:
 schema: 2.0.0

@@ -3,6 +3,7 @@ external help file: Microsoft.Open.MS.GraphV10.PowerShell.dll-Help.xml
 Module Name: AzureAD
 online version:
 schema: 2.0.0
+ms.custom: sfi-ropc-nochange
 ---
 
 # New-AzureADMSApplication

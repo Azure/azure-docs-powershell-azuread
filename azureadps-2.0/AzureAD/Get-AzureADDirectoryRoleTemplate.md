@@ -3,6 +3,7 @@ external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
 Module Name: AzureAD
 online version:
 schema: 2.0.0
+ms.custom: sfi-ga-nochange
 ---
 
 # Get-AzureADDirectoryRoleTemplate

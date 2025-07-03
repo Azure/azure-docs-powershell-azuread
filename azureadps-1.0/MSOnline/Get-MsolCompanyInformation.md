@@ -4,7 +4,7 @@ online version:
 schema: 2.0.0
 ms.assetid: BC3EA621-0115-4312-B856-02AC82DB9F4E
 ms.reviewer: stevemutungi
-ms.custom: iamfeature=PowerShell
+ms.custom: iamfeature=PowerShell, sfi-ga-nochange
 ---
 
 # Get-MsolCompanyInformation
