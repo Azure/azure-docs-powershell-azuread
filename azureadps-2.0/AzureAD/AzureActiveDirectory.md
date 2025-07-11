@@ -1,22 +1,20 @@
 ---
 Module Name: AzureAD
 Module Guid: b433e830-b479-4f7f-9c80-9cc6c28e1b51
-Download Help Link: {{Please enter FwLink manually}}
-Help Version: {{Please enter version of help manually (X.X.X.X) format}}
 Locale: en-US
 ms.assetid: 7D9D9507-ADE5-45BD-97F8-0CCCDA3D3B58
 ms.reviewer: stevemutungi
 ms.custom: iamfeature=PowerShell
 ---
 
-# Azure Active Directory PowerShell for Graph module
+# AzureAD Module
+
 ## Description
 
 >[!IMPORTANT]
 > Azure AD and MSOnline PowerShell modules are deprecated as of March 30, 2024. To learn more, read the [deprecation update](https://techcommunity.microsoft.com/t5/microsoft-entra-blog/important-update-deprecation-of-azure-ad-powershell-and-msonline/ba-p/4094536)). After this date, support for these modules are limited to migration assistance to Microsoft Graph PowerShell SDK and security fixes. The deprecated modules will continue to function through March, 30 2025.
 >
 > We recommend migrating to [Microsoft Graph PowerShell](/powershell/microsoftgraph/overview) to interact with Microsoft Entra ID (formerly Azure AD). For common migration questions, refer to the [Migration FAQ](/powershell/azure/active-directory/migration-faq). *Note:* Versions 1.0.x of MSOnline may experience disruption after June 30, 2024.
-
 
 The Azure Active Directory PowerShell for Graph module can be downloaded and installed from the [PowerShell Gallery](https://www.powershellgallery.com/packages/AzureAD/). The gallery uses the PowerShellGet module. The PowerShellGet module requires PowerShell 3.0 or newer and requires one of the following operating systems:
 
@@ -28,14 +26,13 @@ The Azure Active Directory PowerShell for Graph module can be downloaded and ins
 - Windows Server 2012 R2
 - Windows Server 2008 R2 SP1
 
-
 PowerShellGet also requires .NET Framework 4.5 or above. You can install .NET Framework 4.5 or above from [here](https://www.microsoft.com/en-us/download/details.aspx?id=30653). 
 
 For more detailed info on installation of the AzureAD cmdlets please see: [Azure Active Directory PowerShell for Graph](https://docs.microsoft.com/en-us/powershell/azure/active-directory/install-adv2).
 
 These are the cmdlets in the Azure Active Directory PowerShell for Graph module.
 
-## Administrative Units
+## AzureAD Cmdlets
 
 ### [Add-AzureADAdministrativeUnitMember](Add-AzureADAdministrativeUnitMember.md)
 Adds an administrative unit member.
@@ -67,15 +64,11 @@ Removes a scoped role membership.
 ### [Set-AzureADAdministrativeUnit](Set-AzureADAdministrativeUnit.md)
 Updates an administrative unit.
 
-
-## Applications
-
 ### [Add-AzureADApplicationOwner](Add-AzureADApplicationOwner.md)
 Adds an owner to an application.
 
 ### [Add-AzureADApplicationPolicy](Add-AzureADApplicationPolicy.md)
 Adds an application policy.
-
 
 ### [Get-AzureADApplication](Get-AzureADApplication.md)
 Gets an application.
@@ -140,9 +133,6 @@ Updates an application.
 ### [Set-AzureADApplicationLogo](Set-AzureADApplicationLogo.md)
 Sets the logo for an Application
 
-
-## Devices
-
 ### [Add-AzureADDeviceRegisteredOwner](Add-AzureADDeviceRegisteredOwner.md)
 Adds a registered owner for a device.
 
@@ -176,9 +166,6 @@ Removes a registered user from a device.
 ### [Set-AzureADDevice](Set-AzureADDevice.md)
 Updates a device.
 
-
-## Directory Roles
-
 ### [Add-AzureADDirectoryRoleMember](Add-AzureADDirectoryRoleMember.md)
 Adds a member to a directory role.
 
@@ -196,9 +183,6 @@ Gets directory role templates.
 
 ### [Remove-AzureADDirectoryRoleMember](Remove-AzureADDirectoryRoleMember.md)
 Removes a member of a directory role.
-
-
-## Groups
 
 ### [Add-AzureADGroupMember](Add-AzureADGroupMember.md)
 Adds a member to a group.
@@ -262,9 +246,6 @@ Updates a specific group in Azure Active Directory
 
 ### [Set-AzureADMSGroup](Set-AzureADMSGroup.md)
 Changes attribute values on an Azure AD group.
-
-
-## Service Principals
 
 ### [Add-AzureADServicePrincipalOwner](Add-AzureADServicePrincipalOwner.md)
 Adds an owner to a service principal.
@@ -332,9 +313,6 @@ Removes a password credential from a service principal.
 ### [Set-AzureADServicePrincipal](Set-AzureADServicePrincipal.md)
 Updates a service principal.
 
-
-## Domains
-
 ### [Confirm-AzureADDomain](Confirm-AzureADDomain.md)
 Validate the ownership of a domain.
 
@@ -359,15 +337,11 @@ Removes a domain.
 ### [Set-AzureADDomain](Set-AzureADDomain.md)
 Updates a domain.
 
-## Connect your PowerShell session
-
 ### [Connect-AzureAD](Connect-AzureAD.md)
 Connects with an authenticated account to use Active Directory cmdlet requests.
 
 ### [Disconnect-AzureAD](Disconnect-AzureAD.md)
 Disconnects the current session from an Azure Active Directory tenant.
-
-## Contacts
 
 ### [Get-AzureADContact](Get-AzureADContact.md)
 Gets a contact from Azure Active Directory.
@@ -390,12 +364,8 @@ Removes a contact.
 ### [Remove-AzureADContactManager](Remove-AzureADContactManager.md)
 Removes a contact's manager.
 
-## Contracts
-
 ### [Get-AzureADContract](Get-AzureADContract.md)
 Gets a contract.
-
-## Directory Settings
 
 ### [Get-AzureADDirectorySetting](Get-AzureADDirectorySetting.md)
 Gets a directory setting.
@@ -412,22 +382,14 @@ Deletes a directory setting in Azure Active Directory.
 ### [Set-AzureADDirectorySetting](Set-AzureADDirectorySetting.md)
 Updates a directory setting in Azure Active Directory.
 
-## Extension Properties
-
 ### [Get-AzureADExtensionProperty](Get-AzureADExtensionProperty.md)
 Gets  extension properties registered with Azure AD.
-
-## OAuth2PermissionGrant
 
 ### [Get-AzureADOAuth2PermissionGrant](Get-AzureADOAuth2PermissionGrant.md)
 Gets OAuth2PermissionGrant entities.
 
 ### [Remove-AzureADOAuth2PermissionGrant](Remove-AzureADOAuth2PermissionGrant.md)
 Removes an oAuth2PermissionGrant.
-
-
-
-## Directory Objects
 
 ### [Get-AzureADObjectByObjectId](Get-AzureADObjectByObjectId.md)
 Retrieves the object(s) specified by the objectIds parameter 
@@ -444,9 +406,6 @@ Deletes settings in Azure Active Directory.
 ### [Set-AzureADObjectSetting](Set-AzureADObjectSetting.md)
 Updates object settings.
 
-
-## Policies
-
 ### [Get-AzureADPolicy](Get-AzureADPolicy.md)
 Gets a policy.
 
@@ -462,22 +421,14 @@ Removes a policy.
 ### [Set-AzureADPolicy](Set-AzureADPolicy.md)
 Updates a policy.
 
-
-## Licenses
-
 ### [Get-AzureADSubscribedSku](Get-AzureADSubscribedSku.md)
 Gets subscribed SKUs to Microsoft services.
-
-## Tenant information
 
 ### [Get-AzureADTenantDetail](Get-AzureADTenantDetail.md)
 Gets the details of a tenant.
 
 ### [Set-AzureADTenantDetail](Set-AzureADTenantDetail.md)
 Set contact details for a tenant
-
-
-## Certificates
 
 ### [Get-AzureADTrustedCertificateAuthority](Get-AzureADTrustedCertificateAuthority.md)
 Gets the trusted certificate authority.
@@ -490,10 +441,6 @@ Removes a trusted certificate authority.
 
 ### [Set-AzureADTrustedCertificateAuthority](Set-AzureADTrustedCertificateAuthority.md)
 Updates a trusted certificate authority.
-
-
-
-## Users
 
 ### [Get-AzureADUser](Get-AzureADUser.md)
 Gets a user.
