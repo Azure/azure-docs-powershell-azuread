@@ -1,0 +1,16 @@
+{
+    "azureadps-2.0": {
+        "serviceMap": "mapping/groupMapping-2.0.json",
+        "packageRoot": "azureadps-2.0",
+        "conceptualToc": "docs-conceptual/azureadps-2.0/toc.yml",
+        "conceptualTocUrl": "/powershell/azure/active-directory/toc.json",
+        "referenceTocUrl": "/powershell/module/active-directory/toc.json"
+    },
+    "azureadps-2.0-preview": {
+        "serviceMap": "mapping/groupMapping-2.0-preview.json",
+        "packageRoot": "azureadps-2.0-preview",
+        "conceptualToc": "docs-conceptual/azureadps-2.0-preview/toc.yml",
+        "conceptualTocUrl": "/powershell/azure/active-directory/toc.json",
+        "referenceTocUrl": "/powershell/module/active-directory/toc.json"
+    }
+}
