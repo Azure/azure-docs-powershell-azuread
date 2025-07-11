@@ -50,7 +50,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Specifies the ID of a settings object. 
+Specifies the ID of a settings object.
 
 ```yaml
 Type: String
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetType
-Specifies the target type. 
+Specifies the target type.
 
 ```yaml
 Type: String
@@ -112,13 +112,13 @@ Accept wildcard characters: False
 ### CommonParameters
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
-## NOTES
-
-See the [migration guide for Get-AzureADObjectSetting](./migrate/Get-AzureADObjectSetting.md) to the Microsoft Graph PowerShell.
-
 ## INPUTS
 
 ## OUTPUTS
+
+## NOTES
+
+See the [migration guide for Get-AzureADObjectSetting](./migrate/Get-AzureADObjectSetting.md) to the Microsoft Graph PowerShell.
 
 ## RELATED LINKS
 
@@ -127,4 +127,3 @@ See the [migration guide for Get-AzureADObjectSetting](./migrate/Get-AzureADObje
 [Remove-AzureADObjectSetting](Remove-AzureADObjectSetting.md)
 
 [Set-AzureADObjectSetting](Set-AzureADObjectSetting.md)
-
