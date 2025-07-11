@@ -70,7 +70,7 @@
     }
   ],
   "monikerPath": [
-    "mapping/MAML2Yaml/monikerMapping.json"
+    "mapping/monikerMapping.json"
   ],
   "need_generate_pdf_url_template": false,
   "dest": "_site",

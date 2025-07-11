@@ -1,5 +1,6 @@
 ---
 external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
+Module Name: AzureAD
 online version: 
 schema: 2.0.0
 ---
