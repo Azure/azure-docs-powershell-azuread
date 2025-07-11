@@ -98,7 +98,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADUserManager]()
+[Get-AzureADUserManager](Get-AzureADUserManager.md)
 
-[Set-AzureADUserManager]()
+[Set-AzureADUserManager](Set-AzureADUserManager.md)
 

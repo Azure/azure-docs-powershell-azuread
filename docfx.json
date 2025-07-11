@@ -1,153 +1,117 @@
 {
-  "build": {
-    "content": [
-      {
-        "files": [
-          "toc.yml"
+    "build": {
+        "content": [
+            {
+                "files": [
+                    "toc.yml"
+                ],
+                "src": "azureadps-2.0",
+                "version": "azureadps-2.0",
+                "dest": "module/active-directory"
+            },
+            {
+                "files": [
+                    "**/*.yml",
+                    "AzureAD/migrate/*.md"
+                ],
+                "src": "azureadps-2.0",
+                "version": "azureadps-2.0",
+                "exclude": [
+                    "docs-conceptual/**"
+                ],
+                "dest": "module"
+            },
+            {
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "src": "docs-conceptual/azureadps-2.0",
+                "version": "azureadps-2.0",
+                "dest": "azure/active-directory"
+            },
+            {
+                "files": [
+                    "toc.yml"
+                ],
+                "src": "azureadps-2.0-preview",
+                "version": "azureadps-2.0-preview",
+                "dest": "module/active-directory"
+            },
+            {
+                "files": [
+                    "**/*.yml",
+                    "AzureAD/migrate/*.md"
+                ],
+                "src": "azureadps-2.0-preview",
+                "version": "azureadps-2.0-preview",
+                "exclude": [
+                    "docs-conceptual/**"
+                ],
+                "dest": "module"
+            },
+            {
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "src": "docs-conceptual/azureadps-2.0-preview",
+                "version": "azureadps-2.0-preview",
+                "dest": "azure/active-directory"
+            }
         ],
-        "src": "azureadps-1.0",
-        "version": "azureadps-1.0",
-        "dest": "module/active-directory"
-      },
-      {
-        "files": [
-          "**/*.yml"
-        ],
-        "src": "azureadps-1.0",
-        "version": "azureadps-1.0",
-        "exclude": [
-          "docs-conceptual/**"
-        ],
-        "dest": "module"
-      },
-      {
-        "files": [
-          "**/*.yml",
-          "**/*.md"
-        ],
-        "src": "docs-conceptual/azureadps-1.0",
-        "version": "azureadps-1.0",
-        "dest": "azure/active-directory"
-      },
-      {
-        "files": [
-          "toc.yml"
-        ],
-        "src": "azureadps-2.0",
-        "version": "azureadps-2.0",
-        "dest": "module/active-directory"
-      },
-      {
-        "files": [
-          "**/*.yml",
-          "AzureAD/migrate/*.md"
-        ],
-        "src": "azureadps-2.0",
-        "version": "azureadps-2.0",
-        "exclude": [
-          "docs-conceptual/**"
-        ],
-        "dest": "module"
-      },
-      {
-        "files": [
-          "**/*.yml",
-          "**/*.md"
-        ],
-        "src": "docs-conceptual/azureadps-2.0",
-        "version": "azureadps-2.0",
-        "dest": "azure/active-directory"
-      },
-      {
-        "files": [
-          "toc.yml"
-        ],
-        "src": "azureadps-2.0-preview",
-        "version": "azureadps-2.0-preview",
-        "dest": "module/active-directory"
-      },
-      {
-        "files": [
-          "**/*.yml",
-          "AzureAD/migrate/*.md"
-        ],
-        "src": "azureadps-2.0-preview",
-        "version": "azureadps-2.0-preview",
-        "exclude": [
-          "docs-conceptual/**"
-        ],
-        "dest": "module"
-      },
-      {
-        "files": [
-          "**/*.yml",
-          "**/*.md"
-        ],
-        "src": "docs-conceptual/azureadps-2.0-preview",
-        "version": "azureadps-2.0-preview",
-        "dest": "azure/active-directory"
-      }
-    ],
-    "versions": {
-      "azureadps-1.0": {
-        "dest": "azureadps-1.0"
-      },
-      "azureadps-2.0": {
-        "dest": "azureadps-2.0"
-      },
-      "azureadps-2.0-preview": {
-        "dest": "azureadps-2.0-preview"
-      }
-    },
-    "filemetadata": {
-      "ms.author": {
-        "azureadps-1.0/**/*.yml": "adamed",
-        "azureadps-2.0/**/*.yml": "adamed",
-        "azureadps-2.0-preview/**/*.yml": "adamed",
-        "docs-conceptual/**/*.md": "adamed"
-      },
-      "author": {
-        "azureadps-1.0/**/*.yml": "adamed",
-        "azureadps-2.0/**/*.yml": "adamed",
-        "azureadps-2.0-preview/**/*.yml": "adamed",
-        "docs-conceptual/**/*.md": "adamed"
-      },
-      "ms.manager": {
-        "azureadps-1.0/**/*.yml": "kbrint",
-        "azureadps-2.0/**/*.yml": "kbrint",
-        "azureadps-2.0-preview/**/*.yml": "kbrint",
-        "docs-conceptual/**/*.md": "kbrint"
-      },
-       "ms.topic": {
-        "azureadps-1.0/**/*.yml": "reference",
-        "azureadps-2.0/**/*.yml": "reference",
-        "azureadps-2.0-preview/**/*.yml": "reference",
-        "docs-conceptual/**/*.md": "conceptual"
-      },
-      "ms.service": {
-        "azureadps-1.0/**/*.yml": "azure-active-directory",
-        "azureadps-2.0/**/*.yml": "azure-active-directory",
-        "azureadps-2.0-preview/**/*.yml": "azure-active-directory",
-        "docs-conceptual/**/*.md": "azure-active-directory"
-      }
-    },
-    "globalMetadata": {
-      "feedback_system": "Standard",
-      "ROBOTS": "NOINDEX",
-      "showPowerShellPicker": "true",
-      "apiPlatform": "powershell",
-      "uhfHeaderId": "Azure",
-      "brand": "azure",
-      "searchScope": [
-        "Azure"
-      ],
-      "breadcrumb_path": "/powershell/bread/toc.json",
-      "ms.devlang": "powershell",
-      "products": [
-        "https://authoring-docs-microsoft.poolparty.biz/devrel/b1cfdec6-b0c3-4209-818c-736879856e0e",
-        "https://authoring-docs-microsoft.poolparty.biz/devrel/8bce367e-2e90-4b56-9ed5-5e4e9f3a2dc3"
-      ]
-    },
-    "dest": "azureps-azuread"
-  }
+        "versions": {
+            "azureadps-2.0": {
+                "dest": "azureadps-2.0"
+            },
+            "azureadps-2.0-preview": {
+                "dest": "azureadps-2.0-preview"
+            }
+        },
+        "filemetadata": {
+            "ms.author": {
+                "azureadps-2.0/**/*.yml": "adamed",
+                "azureadps-2.0-preview/**/*.yml": "adamed",
+                "docs-conceptual/**/*.md": "adamed"
+            },
+            "author": {
+                "azureadps-2.0/**/*.yml": "adamed",
+                "azureadps-2.0-preview/**/*.yml": "adamed",
+                "docs-conceptual/**/*.md": "adamed"
+            },
+            "ms.manager": {
+                "azureadps-2.0/**/*.yml": "kbrint",
+                "azureadps-2.0-preview/**/*.yml": "kbrint",
+                "docs-conceptual/**/*.md": "kbrint"
+            },
+            "ms.topic": {
+                "azureadps-2.0/**/*.yml": "reference",
+                "azureadps-2.0-preview/**/*.yml": "reference",
+                "docs-conceptual/**/*.md": "conceptual"
+            },
+            "ms.service": {
+                "azureadps-2.0/**/*.yml": "azure-active-directory",
+                "azureadps-2.0-preview/**/*.yml": "azure-active-directory",
+                "docs-conceptual/**/*.md": "azure-active-directory"
+            }
+        },
+        "globalMetadata": {
+            "feedback_system": "Standard",
+            "ROBOTS": "NOINDEX",
+            "showPowerShellPicker": "true",
+            "apiPlatform": "powershell",
+            "uhfHeaderId": "Azure",
+            "brand": "azure",
+            "searchScope": [
+                "Azure"
+            ],
+            "breadcrumb_path": "/powershell/bread/toc.json",
+            "ms.devlang": "powershell",
+            "products": [
+                "https://authoring-docs-microsoft.poolparty.biz/devrel/b1cfdec6-b0c3-4209-818c-736879856e0e",
+                "https://authoring-docs-microsoft.poolparty.biz/devrel/8bce367e-2e90-4b56-9ed5-5e4e9f3a2dc3"
+            ]
+        },
+        "dest": "azureps-azuread"
+    }
 }

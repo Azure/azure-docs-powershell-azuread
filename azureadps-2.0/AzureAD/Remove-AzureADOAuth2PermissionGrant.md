@@ -103,7 +103,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADOAuth2PermissionGrant]()
+[Get-AzureADOAuth2PermissionGrant](Get-AzureADOAuth2PermissionGrant.md)
 
-[Get-AzureADServicePrincipal]()
+[Get-AzureADServicePrincipal](Get-AzureADServicePrincipal.md)
 

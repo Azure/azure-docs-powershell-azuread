@@ -73,5 +73,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 ## RELATED LINKS
 
-[Remove-AzureADMSFeatureRolloutPolicyDirectoryObject]()
+[Remove-AzureADMSFeatureRolloutPolicyDirectoryObject](Remove-AzureADMSFeatureRolloutPolicyDirectoryObject.md)
 

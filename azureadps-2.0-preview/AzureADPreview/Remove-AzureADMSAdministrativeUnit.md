@@ -94,7 +94,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADMSAdministrativeUnit]()
+[Get-AzureADMSAdministrativeUnit](Get-AzureADMSAdministrativeUnit.md)
 
-[Set-AzureADMSAdministrativeUnit]()
+[Set-AzureADMSAdministrativeUnit](Set-AzureADMSAdministrativeUnit.md)
 

@@ -152,6 +152,6 @@ System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, Pub
 
 ## RELATED LINKS
 
-[New-AzureADMSRoleAssignment]()
+[New-AzureADMSRoleAssignment](New-AzureADMSRoleAssignment.md)
 
-[Remove-AzureADMSRoleAssignment]()
+[Remove-AzureADMSRoleAssignment](Remove-AzureADMSRoleAssignment.md)

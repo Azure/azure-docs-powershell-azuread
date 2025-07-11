@@ -110,4 +110,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Remove-AzureADMSApplicationKey]()
+[Remove-AzureADMSApplicationKey](Remove-AzureADMSApplicationKey.md)

@@ -72,4 +72,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[New-AzureADMSApplicationPassword]()
+[New-AzureADMSApplicationPassword](New-AzureADMSApplicationPassword.md)

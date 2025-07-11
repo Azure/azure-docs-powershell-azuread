@@ -61,11 +61,11 @@ We recommend that you do not use this cmdlet in a production environment.
 
 ## RELATED LINKS
 
-[Get-AzureADMSGroup]()
+[Get-AzureADMSGroup](Get-AzureADMSGroup.md)
 
-[New-AzureADMSGroup]()
+[New-AzureADMSGroup](New-AzureADMSGroup.md)
 
-[Set-AzureADMSGroup]()
+[Set-AzureADMSGroup](Set-AzureADMSGroup.md)
 
 [Using attributes to create advanced rules](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/)
 

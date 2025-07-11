@@ -215,10 +215,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADApplication]()
+[Get-AzureADApplication](Get-AzureADApplication.md)
 
-[Get-AzureADApplicationKeyCredential]()
+[Get-AzureADApplicationKeyCredential](Get-AzureADApplicationKeyCredential.md)
 
-[Remove-AzureADApplicationKeyCredential]()
+[Remove-AzureADApplicationKeyCredential](Remove-AzureADApplicationKeyCredential.md)
 
 [This cmdlet uses the ADAL library in Azure Active Directory. To learn more about ADAL, please follow this link:](http://www.cloudidentity.com/blog/2013/09/12/active-directory-authentication-library-adal-v1-for-net-general-availability/)

@@ -105,8 +105,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[New-AzureADMSPermissionGrantConditionSet]()
+[New-AzureADMSPermissionGrantConditionSet](New-AzureADMSPermissionGrantConditionSet.md)
 
-[Set-AzureADMSPermissionGrantConditionSet]()
+[Set-AzureADMSPermissionGrantConditionSet](Set-AzureADMSPermissionGrantConditionSet.md)
 
-[Remove-AzureADMSPermissionGrantConditionSet]()
+[Remove-AzureADMSPermissionGrantConditionSet](Remove-AzureADMSPermissionGrantConditionSet.md)

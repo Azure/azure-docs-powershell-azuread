@@ -151,9 +151,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 ## RELATED LINKS
 
-[New-AzureADMSFeatureRolloutPolicy]()
+[New-AzureADMSFeatureRolloutPolicy](New-AzureADMSFeatureRolloutPolicy.md)
 
-[Get-AzureADMSFeatureRolloutPolicy]()
+[Get-AzureADMSFeatureRolloutPolicy](Get-AzureADMSFeatureRolloutPolicy.md)
 
-[Remove-AzureADMSFeatureRolloutPolicy]()
+[Remove-AzureADMSFeatureRolloutPolicy](Remove-AzureADMSFeatureRolloutPolicy.md)
 

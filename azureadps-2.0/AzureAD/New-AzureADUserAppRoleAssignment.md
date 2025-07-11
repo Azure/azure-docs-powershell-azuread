@@ -180,5 +180,5 @@ See the [migration guide for New-AzureADUserAppRoleAssignment](./migrate/New-Azu
 
 [Get-AzureADUserAppRoleAssignment](Get-AzureADUserAppRoleAssignment.md)
 
-[Remove-AzureADUserAppRoleAssignment]()
+[Remove-AzureADUserAppRoleAssignment](Remove-AzureADUserAppRoleAssignment.md)
 

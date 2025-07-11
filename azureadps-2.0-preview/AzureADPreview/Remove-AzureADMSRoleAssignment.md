@@ -60,6 +60,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADMSRoleAssignment]()
+[Get-AzureADMSRoleAssignment](Get-AzureADMSRoleAssignment.md)
 
-[New-AzureADMSRoleAssignment]()
+[New-AzureADMSRoleAssignment](New-AzureADMSRoleAssignment.md)

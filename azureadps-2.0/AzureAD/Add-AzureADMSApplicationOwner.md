@@ -72,6 +72,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADMSApplicationOwner]()
+[Get-AzureADMSApplicationOwner](Get-AzureADMSApplicationOwner.md)
 
-[Remove-AzureADMSApplicationOwner]()
+[Remove-AzureADMSApplicationOwner](Remove-AzureADMSApplicationOwner.md)

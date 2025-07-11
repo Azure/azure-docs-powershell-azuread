@@ -56,5 +56,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Set-AzureADMSApplicationVerifiedPublisher]()
+[Set-AzureADMSApplicationVerifiedPublisher](Set-AzureADMSApplicationVerifiedPublisher.md)
 
