@@ -1,0 +1,350 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Gets users from Azure Active Directory.
+module: MSOnline
+notes: ""
+outputs:
+- name: <xref href="Microsoft.Online.Administration.User" data-throw-if-not-resolved="False" />
+  description: |-
+    This cmdlet returns user objects, which include the following information:
+
+    * AlternateEmailAddresses. Alternate email address of the user (external to Azure Active Directory).
+
+    * BlockCredential. Whether or not the user is able to sign in.
+
+    * City. The user's city.
+
+    * Country. The user's country or region.
+
+    * Department. The user's department.
+
+    * DisplayName. The user's display name.
+
+    * Errors. An array of errors.
+    These are validation errors that may result in loss of services.
+
+    * Fax. The user's fax number.
+
+    * FirstName. The user's first name.
+
+    * ImmutableID. Only returned for federated users.
+    This is the ID that is required to be federated with Azure Active Directory.
+
+    * isBlackBerryUser. Returns whether or not the user has a BlackBerry device.
+
+    * isLicensed. Whether or not the user has any licenses assigned.
+
+    * LastDirSyncTime. The date and time of the last directory synchronization (only returned from users synced with Azure Active Directory through Active Directory synchronization).
+
+    * LastPasswordChangeTimestamp. The most recent time at which a password change for the user was registered in Azure Active Directory.
+
+    * LastName. The user's last name.
+
+    * LicenseReconciliationNeeded. Whether or not the user currently has a mailbox without a license.
+    In this case, the user should be licensed with 30 days to avoid losing their mailbox.
+
+    * Licenses. A list of the user's licenses.
+
+    * LiveID. The user's unique login ID.
+
+    * MobilePhone. The user's mobile phone number.
+
+    * ObjectId. The user's unique ID.
+
+    * Office. The user's office number.
+
+    * OverallProvisioningStatus. Whether or not the user has been provisioned for their services.
+
+    * PasswordNeverExpires. Whether the user's password should be forced to change every 90 days.
+
+    * PhoneNumber. The user's phone number.
+
+    * PostalCode. The user's postal code.
+
+    * PreferredDataLocation. The user's preferred data location.
+
+    * PreferredLanguage. The user's preferred language.
+
+    * ProxyAddresses. The proxy addresses associated with this user.
+
+    * State. The user's state.
+
+    * StreetAddress. The user's street address.
+
+    * StrongPasswordRequired. Whether the user is required to set a strong password when they change their password.
+    Strong passwords are recommended.
+
+    * Title. The user's title.
+
+    * UsageLocation. The country or region where the services are consumed by the user.
+    This must be a two letter country or region code.
+
+    * UserPrincipalName. The user ID of the user.
+
+    * ValidationStatus. Whether or not the user has any errors.
+links:
+- text: New-MsolUser
+  href: ./New-MsolUser.yml
+- text: Remove-MsolUser
+  href: ./Remove-MsolUser.yml
+- text: Restore-MsolUser
+  href: ./Restore-MsolUser.yml
+- text: Set-MsolUser
+  href: ./Set-MsolUser.yml
+syntaxes:
+- >-
+  Get-MsolUser [-ReturnDeletedUsers] [-City <String>] [-Country <String>] [-Department <String>]
+
+   [-DomainName <String>] [-EnabledFilter <UserEnabledFilter>] [-State <String>] [-Synchronized]
+
+   [-Title <String>] [-HasErrorsOnly] [-LicenseReconciliationNeededOnly] [-UnlicensedUsersOnly]
+
+   [-UsageLocation <String>] [-SearchString <String>] [-MaxResults <Int32>] [-TenantId <Guid>]
+
+   [<CommonParameters>]
+- Get-MsolUser -ObjectId <Guid> [-ReturnDeletedUsers] [-TenantId <Guid>] [<CommonParameters>]
+- Get-MsolUser [-ReturnDeletedUsers] -UserPrincipalName <String> [-TenantId <Guid>] [<CommonParameters>]
+- >-
+  Get-MsolUser [-ReturnDeletedUsers] [-City <String>] [-Country <String>] [-Department <String>]
+
+   [-DomainName <String>] [-EnabledFilter <UserEnabledFilter>] [-State <String>] [-Synchronized]
+
+   [-Title <String>] [-HasErrorsOnly] [-LicenseReconciliationNeededOnly] [-UnlicensedUsersOnly]
+
+   [-UsageLocation <String>] [-SearchString <String>] [-All] [-TenantId <Guid>] [<CommonParameters>]
+examples:
+- title: 'Example 1: Get all users'
+  code: |-
+    PS C:\> Get-MsolUser
+  description: |-
+    This command retrieves all users in the company.
+    It displays up to the default value of 500 results.
+  summary: ""
+- title: 'Example 2: Get enabled users'
+  code: |-
+    PS C:\> Get-MsolUser -EnabledFilter EnabledOnly -MaxResults 2000
+  description: |-
+    This command gets up to 2000 enabled users.
+  summary: ""
+- title: 'Example 3: Get a user by UPN'
+  code: |-
+    PS C:\> Get-MsolUser -UserPrincipalName "davidchew@contoso.com"
+  description: |-
+    This command retrieves the user with the UPN davidchew@contoso.com.
+  summary: ""
+- title: 'Example 4: Get a user by object ID'
+  code: |-
+    PS C:\> Get-MsolUser -ObjectId aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb
+  description: |-
+    This command retrieves a user that has the specified object ID.
+  summary: ""
+- title: 'Example 5: Get users by search String'
+  code: |-
+    PS C:\> Get-MsolUser -SearchString "David"
+  description: |-
+    This command retrieves a list of users with David in the display name or email address.
+  summary: ""
+- title: 'Example 6: Get preferred data location of a user'
+  code: |-
+    PS C:\> Get-MsolUser -UserPrincipalName "davidchew@contoso.onmicrosoft.com" | Select PreferredDataLocation
+  description: |-
+    This command returns the preferred data location of a user.
+  summary: ""
+parameters:
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: All
+  isRequired: true
+  description: |+
+    Indicates that this cmdlet returns all results.
+    Do not specify together with the _MaxResults_ parameter.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: City
+  description: |+
+    Specifies the city to filter results on.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Country
+  description: |+
+    Specifies the country or region to filter results on.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Department
+  description: |+
+    Specifies the department to filter results on.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: DomainName
+  description: |+
+    Specifies the domain to filter results on.
+    This must be a verified domain for the company.
+    All users with an email address, primary or secondary, on this domain is returned.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="UserEnabledFilter" data-throw-if-not-resolved="False" />
+  name: EnabledFilter
+  description: |+
+    Specifies the filter for enabled or disabled users.
+    Valid values are All, EnabledOnly, and DisabledOnly.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: HasErrorsOnly
+  description: |+
+    Inidates that this cmdlet returns only users that have validation errors.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: LicenseReconciliationNeededOnly
+  description: |+
+    Indicates that this cmdlet filter for only users that require license reconciliation.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: MaxResults
+  description: |+
+    Specifies the maximum number of results that this cmdlet returns.
+    The default value is 500.
+
+  defaultValue: "500"
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Guid" data-throw-if-not-resolved="False" />
+  name: ObjectId
+  isRequired: true
+  description: |+
+    Specifies the unique object ID of the user to get.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: ReturnDeletedUsers
+  description: |+
+    Indicates that this cmdlet returns only users in the recycling bin.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: SearchString
+  description: |+
+    Specifies a string to match email address or display name starting with this string.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: State
+  description: |+
+    Specifies the filter for the state of the user.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Synchronized
+  description: |+
+    Indicates that this cmdlet returns only users who are synchronized through Azure Active Directory Sync.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Guid" data-throw-if-not-resolved="False" />
+  name: TenantId
+  description: |+
+    Specifies the unique ID of the tenant on which to perform the operation.
+    The default value is the tenant of the current user.
+    This parameter applies only to partner users.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Title
+  description: |+
+    Speicifies the filter for the title of the user.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: UnlicensedUsersOnly
+  description: |+
+    Indicates that this cmdlet returns only users who are not assigned a license.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: UsageLocation
+  description: |+
+    Specifies the filter for the country or region where the services are consumed by the user.
+    Specify a two-letter country or region code.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: UserPrincipalName
+  isRequired: true
+  description: |+
+    Speicifies the user ID of the user to retrieve.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: MSOnline.Get-MsolUser
+name: Get-MsolUser
+description: |-
+  The **Get-MsolUser** cmdlet gets an individual user or list of users.
+  Specify the _ObjectId_ or _UserPrincipalName_ parameter to get a specific user.
+metadata:
+  external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
+  online version: ""
+  schema: 2.0.0
+  ms.assetid: CED5BB55-E2BA-4400-9777-6589B6B29355
+  ms.reviewer: stevemutungi
+  ms.custom: iamfeature=PowerShell

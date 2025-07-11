@@ -1,0 +1,104 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Gets a device from Active Directory.
+module: AzureADPreview
+notes: ""
+links:
+- text: New-AzureADDevice
+  href: ./New-AzureADDevice.yml
+- text: Remove-AzureADDevice
+  href: ./Remove-AzureADDevice.yml
+- text: Set-AzureADDevice
+  href: ./Set-AzureADDevice.yml
+syntaxes:
+- Get-AzureADDevice [-All <Boolean>] [-Top <Int32>] [-Filter <String>] [<CommonParameters>]
+- Get-AzureADDevice [-SearchString <String>] [-All <Boolean>] [<CommonParameters>]
+- Get-AzureADDevice -ObjectId <String> [-All <Boolean>] [<CommonParameters>]
+examples:
+- title: 'Example 1: Get a device by ID'
+  code: |-
+    PS C:\>Get-AzureADDevice -ObjectId "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb"
+
+    ObjectId                             DeviceId                             DisplayName
+    --------                             --------                             -----------
+    aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb 48445467-033c-42ca-8e38-8d181db1d49c bastias_WindowsPhone_5/1/2016_12:53 PM
+  description: |-
+    This command gets the specified device.
+  summary: ""
+- title: 'Example 2: Get all devices'
+  code: |-
+    PS C:\>Get-AzureADDevice
+
+    ObjectId                             DeviceId                             DisplayName
+    --------                             --------                             -----------
+    aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb 48445467-033c-42ca-8e38-8d181db1d49c bastias_WindowsPhone_5/1/2016_12:53 PM
+    bbbbbbbb-1111-2222-3333-cccccccccccc7 aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb New Device
+    cccccccc-2222-3333-4444-dddddddddddd 293872f6-c006-4e6a-8629-07847c5ab078 New Device
+  description: |-
+    This command gets all available devices.
+  summary: ""
+parameters:
+- type: <xref href="Boolean" data-throw-if-not-resolved="False" />
+  name: All
+  description: |+
+    If true, return all devices. If false, return the number of objects specified by the Top parameter
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Filter
+  description: |+
+    Specifies the oData v3.0 filter statement. This parameter controls which objects are returned.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ObjectId
+  isRequired: true
+  description: |+
+    Specifies the ID of a device in Azure AD.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: SearchString
+  description: |+
+    Specifies a search string.
+
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Top
+  description: |+
+    Specifies the maximum number of records to return.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: AzureADPreview.Get-AzureADDevice
+name: Get-AzureADDevice
+description: |-
+  The **Get-AzureADDevice** cmdlet gets a device from Azure Active Directory (AD).
+metadata:
+  external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+  Module Name: AzureADPreview
+  ms.assetid: E5E17FE9-67C1-463F-BC06-B3B6883D99AE
+  ms.custom: iamfeature=PowerShell
+  ms.reviewer: stevemutungi
+  online version: ""
+  schema: 2.0.0

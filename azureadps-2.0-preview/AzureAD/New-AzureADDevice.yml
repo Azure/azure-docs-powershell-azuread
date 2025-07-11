@@ -1,0 +1,186 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Creates a device.
+module: AzureADPreview
+notes: ""
+links:
+- text: Get-AzureADDevice
+  href: ./Get-AzureADDevice.yml
+- text: Remove-AzureADDevice
+  href: ./Remove-AzureADDevice.yml
+- text: Set-AzureADDevice
+  href: ./Set-AzureADDevice.yml
+syntaxes:
+- >-
+  New-AzureADDevice -AccountEnabled <Boolean>
+
+   -AlternativeSecurityIds <System.Collections.Generic.List`1[Microsoft.Open.AzureAD.Model.AlternativeSecurityId]>
+
+   [-ApproximateLastLogonTimeStamp <DateTime>] -DeviceId <String> [-DeviceMetadata <String>]
+
+   [-DeviceObjectVersion <Int32>] -DeviceOSType <String> -DeviceOSVersion <String>
+
+   [-DevicePhysicalIds <System.Collections.Generic.List`1[System.String]>] [-DeviceTrustType <String>]
+
+   -DisplayName <String> [-IsCompliant <Boolean>] [-IsManaged <Boolean>] [-ProfileType <String>]
+
+   [-SystemLabels <System.Collections.Generic.List`1[System.String]>] [<CommonParameters>]
+examples:
+- title: 'Example 1: Create a device'
+  code: |-
+    PS C:\>New-AzureADDevice -AccountEnabled $true -DisplayName "My new device" -AlternativeSecurityIds $altsecid -DeviceId $guid -DeviceOSType "OS/2" -DeviceOSVersion "9.3"
+
+    ObjectId                             DeviceId                             DisplayName
+    --------                             --------                             -----------
+    99a1915d-298f-42d1-93ae-71646b85e2fa 5547679b-809d-4e2c-9820-3c4401a573a8 My new device
+  description: |-
+    This command creates a new device.
+  summary: ""
+parameters:
+- type: <xref href="Boolean" data-throw-if-not-resolved="False" />
+  name: AccountEnabled
+  isRequired: true
+  description: |+
+    Indicates whether the account is enabled.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="System.Collections.Generic.List`1" data-throw-if-not-resolved="False" /><span>[</span><xref href="Microsoft.Open.AzureAD.Model.AlternativeSecurityId" data-throw-if-not-resolved="False" /><span>]</span>
+  name: AlternativeSecurityIds
+  isRequired: true
+  description: ""
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: ApproximateLastLogonTimeStamp
+  description: ""
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: DeviceId
+  isRequired: true
+  description: |+
+    Specifies the ID of the device.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: DeviceMetadata
+  description: |+
+    The metadata for this device
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: DeviceObjectVersion
+  description: |+
+    Specifies the object version of the device.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: DeviceOSType
+  isRequired: true
+  description: |+
+    Specifies the operating system type of the new device.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: DeviceOSVersion
+  isRequired: true
+  description: |+
+    Specifies the operating system version of the new device.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="System.Collections.Generic.List`1" data-throw-if-not-resolved="False" /><span>[</span><xref href="System.String" data-throw-if-not-resolved="False" /><span>]</span>
+  name: DevicePhysicalIds
+  description: ""
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: DeviceTrustType
+  description: |+
+    The trust type for this device
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: DisplayName
+  isRequired: true
+  description: |+
+    Specifies the display name of the new device.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Boolean" data-throw-if-not-resolved="False" />
+  name: IsCompliant
+  description: |+
+    true if the device complies with Mobile Device Management (MDM) policies; otherwise, false.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Boolean" data-throw-if-not-resolved="False" />
+  name: IsManaged
+  description: |+
+    true if the device is managed by a Mobile Device Management (MDM) app such as Intune; otherwise, false
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ProfileType
+  description: |+
+    {{ Fill ProfileType Description }}
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="System.Collections.Generic.List`1" data-throw-if-not-resolved="False" /><span>[</span><xref href="System.String" data-throw-if-not-resolved="False" /><span>]</span>
+  name: SystemLabels
+  description: |+
+    {{ Fill SystemLabels Description }}
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: AzureADPreview.New-AzureADDevice
+name: New-AzureADDevice
+description: |-
+  The **New-AzureADDevice** cmdlet creates a device in Azure Active Directory (AD).
+metadata:
+  external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+  Module Name: AzureADPreview
+  ms.assetid: 0DF2C468-53D8-4BC5-AFC8-7E8EDF38C347
+  ms.custom: iamfeature=PowerShell
+  ms.reviewer: stevemutungi
+  online version: ""
+  schema: 2.0.0

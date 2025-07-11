@@ -1,0 +1,66 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Removes a service principal.
+module: AzureADPreview
+notes: ""
+links:
+- text: Get-AzureADServicePrincipal
+  href: ./Get-AzureADServicePrincipal.yml
+- text: New-AzureADServicePrincipal
+  href: ./New-AzureADServicePrincipal.yml
+- text: Set-AzureADServicePrincipal
+  href: ./Set-AzureADServicePrincipal.yml
+syntaxes:
+- >-
+  Remove-AzureADServicePrincipal -ObjectId <String> [-InformationAction <ActionPreference>]
+
+   [-InformationVariable <String>] [<CommonParameters>]
+parameters:
+- type: <xref href="ActionPreference" data-throw-if-not-resolved="False" />
+  name: InformationAction
+  description: |+
+    Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
+
+    - Continue
+    - Ignore
+    - Inquire
+    - SilentlyContinue
+    - Stop
+    - Suspend
+
+  defaultValue: None
+  position: Named
+  aliases: infa
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: InformationVariable
+  description: |+
+    Specifies an information variable.
+
+  defaultValue: None
+  position: Named
+  aliases: iv
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ObjectId
+  isRequired: true
+  description: |+
+    Specifies the ID of a service principal in Azure AD.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: AzureADPreview.Remove-AzureADServicePrincipal
+name: Remove-AzureADServicePrincipal
+description: |-
+  The **Remove-AzureADServicePrincipal** cmdlet removes a service principal in Azure Active Directory (AD).
+metadata:
+  external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+  Module Name: AzureADPreview
+  ms.assetid: 2354DE41-1B2A-4CEE-A3F6-59A6FB28563A
+  ms.custom: iamfeature=PowerShell
+  ms.reviewer: stevemutungi
+  online version: ""
+  schema: 2.0.0

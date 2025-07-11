@@ -1,0 +1,72 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Removes a contact's manager.
+module: AzureADPreview
+notes: ""
+links:
+- text: Get-AzureADContactManager
+  href: ./Get-AzureADContactManager.yml
+syntaxes:
+- >-
+  Remove-AzureADContactManager -ObjectId <String> [-InformationAction <ActionPreference>]
+
+   [-InformationVariable <String>] [<CommonParameters>]
+examples:
+- title: 'Example 1: Remove the manager from a contact'
+  code: |-
+    PS C:\> $Contact = Get-AzureADContact -Top 1
+    PS C:\> Remove-AzureADContactManager -ObjectId $Contact.ObjectId
+  description: |-
+    The first command gets a contact by using the [Get-AzureADContact](./Get-AzureADContact.yml) cmdlet, and then stores it in the $Contact variable.
+
+    The second command removes the manager from the contact in $Contact.
+  summary: ""
+parameters:
+- type: <xref href="ActionPreference" data-throw-if-not-resolved="False" />
+  name: InformationAction
+  description: |+
+    Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
+
+    - Continue
+    - Ignore
+    - Inquire
+    - SilentlyContinue
+    - Stop
+    - Suspend
+
+  defaultValue: None
+  position: Named
+  aliases: infa
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: InformationVariable
+  description: |+
+    Specifies an information variable.
+
+  defaultValue: None
+  position: Named
+  aliases: iv
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ObjectId
+  isRequired: true
+  description: |+
+    Specifies the object ID of a contact in Azure AD.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: AzureADPreview.Remove-AzureADContactManager
+name: Remove-AzureADContactManager
+description: |-
+  The **Remove-AzureADContactManager** cmdlet removes a contact's manager in Azure Active Directory (AD).
+metadata:
+  external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+  Module Name: AzureADPreview
+  ms.assetid: CB0C4658-FF1F-46D4-AD62-8C2FA7E72BCA
+  ms.custom: iamfeature=PowerShell
+  ms.reviewer: stevemutungi
+  online version: ""
+  schema: 2.0.0

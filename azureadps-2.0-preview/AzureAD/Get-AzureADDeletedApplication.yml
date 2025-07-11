@@ -1,0 +1,89 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Retrieves the list of previously deleted applications
+module: AzureADPreview
+notes: ""
+inputs:
+- name: <xref href="System.String" data-throw-if-not-resolved="False" />
+  description: |-
+    System.Nullable`1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+    System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+outputs:
+- name: <xref href="System.Object" data-throw-if-not-resolved="False" />
+  description: ""
+syntaxes:
+- Get-AzureADDeletedApplication [-All <Boolean>] [-Top <Int32>] [-Filter <String>] [<CommonParameters>]
+- Get-AzureADDeletedApplication [-SearchString <String>] [-All <Boolean>] [<CommonParameters>]
+examples:
+- title: Example 1
+  code: |-
+    PS C:\WINDOWS\system32> Get-AzureADApplication
+
+    ObjectId                             AppId                                DisplayName
+    --------                             -----                                -----------
+    aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb 00001111-aaaa-2222-bbbb-3333cccc4444 PowerShellGraphAPI
+    bbbbbbbb-1111-2222-3333-cccccccccccc 11112222-bbbb-3333-cccc-4444dddd5555 WingTips
+    cccccccc-2222-3333-4444-dddddddddddd 22223333-cccc-4444-dddd-5555eeee6666 AzurePopulator
+
+
+    PS C:\WINDOWS\system32> Remove-AzureADApplication -ObjectId aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb
+    PS C:\WINDOWS\system32> Get-AzureADDeletedApplication
+
+    ObjectId                             AppId                                DisplayName
+    --------                             -----                                -----------
+    aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb 00001111-aaaa-2222-bbbb-3333cccc4444 PowerShellGraphAPI
+  description: |-
+    This example shows how an existing application was deleted and how the G-AzureADDeletedApplication cmdlet retrieves the application from the list of deleted applications
+  summary: ""
+parameters:
+- type: <xref href="Boolean" data-throw-if-not-resolved="False" />
+  name: All
+  description: |+
+    If true, return all deleted applications. If false, return the number of objects specified by the Top parameter
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Filter
+  description: |+
+    Retrieve only those deleted applications that satisfy the filter
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: SearchString
+  description: |+
+    Retrieve only those applications that satisfy the -SearchString value
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Top
+  description: |+
+    The maximum number of applications returned by this cmdlet. the default value is 100.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: AzureADPreview.Get-AzureADDeletedApplication
+name: Get-AzureADDeletedApplication
+description: |-
+  Retrieves the list of previously deleted applications
+metadata:
+  external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+  Module Name: AzureADPreview
+  ms.custom: iamfeature=PowerShell
+  ms.reviewer: stevemutungi
+  online version: ""
+  schema: 2.0.0

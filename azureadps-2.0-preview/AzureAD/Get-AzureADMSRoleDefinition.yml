@@ -1,0 +1,172 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Gets information about role definitions in Azure AD.
+module: AzureADPreview
+notes: ""
+inputs:
+- name: <xref href="System.String" data-throw-if-not-resolved="False" />
+  description: |-
+    System.Nullable`1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+    System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+outputs:
+- name: <xref href="System.Object" data-throw-if-not-resolved="False" />
+  description: ""
+syntaxes:
+- Get-AzureADMSRoleDefinition [-All <Boolean>] [-Top <Int32>] [-Filter <String>] [<CommonParameters>]
+- Get-AzureADMSRoleDefinition [-SearchString <String>] [-All <Boolean>] [<CommonParameters>]
+- Get-AzureADMSRoleDefinition -Id <String> [-All <Boolean>] [<CommonParameters>]
+examples:
+- title: Example 1
+  code: |-
+    PS C:\> Get-AzureADMSRoleDefinition
+
+    Id              : 690e93e9-da28-4b25-9d0d-2f0b4e6b2ff9
+    OdataType       :
+    Description     : SampleRoleDefinition1.
+    DisplayName     : SampleRoleDef
+    IsBuiltIn       : False
+    ResourceScopes  : {/}
+    IsEnabled       : True
+    RolePermissions : {class RolePermission {
+                      AllowedResourceActions:
+                      microsoft.directory/applications/create
+                        Condition:
+                      }
+                      }
+    Id              : 1a327991-10cb-4266-877a-998fb4df78ec
+    OdataType       :
+    Description     :
+    DisplayName     : SampleRoleDefinition2.
+    IsBuiltIn       : False
+    ResourceScopes  : {/}
+    IsEnabled       : True
+    RolePermissions : {class RolePermission {
+                      AllowedResourceActions:
+                      microsoft.directory/applications/create
+                        Condition:
+                      }
+                      }
+    TemplateId      : f2ef992c-3afb-46b9-b7cf-a126ee74c451
+    Version         :
+  description: ""
+  summary: ""
+- title: Example 2
+  code: |-
+    PS C:\> Get-AzureADMSRoleDefinition -Id 1a327991-10cb-4266-877a-998fb4df78ec
+
+    Id              : 1a327991-10cb-4266-877a-998fb4df78ec
+    OdataType       :
+    Description     :
+    DisplayName     : SampleRoleDefinition2.
+    IsBuiltIn       : False
+    ResourceScopes  : {/}
+    IsEnabled       : True
+    RolePermissions : {class RolePermission {
+                      AllowedResourceActions:
+                      microsoft.directory/applications/create
+                        Condition:
+                      }
+                      }
+    TemplateId      : f2ef992c-3afb-46b9-b7cf-a126ee74c451
+    Version         :
+  description: ""
+  summary: ""
+- title: Example 3
+  code: |-
+    PS C:\> Get-AzureADMSRoleDefinition -Filter "startswith(displayName, 'Sample')"
+
+    Id              : 690e93e9-da28-4b25-9d0d-2f0b4e6b2ff9
+    OdataType       :
+    Description     : SampleRoleDefinition1.
+    DisplayName     : SampleRoleDef
+    IsBuiltIn       : False
+    ResourceScopes  : {/}
+    IsEnabled       : True
+    RolePermissions : {class RolePermission {
+                      AllowedResourceActions:
+                      microsoft.directory/applications/create
+                        Condition:
+                      }
+                      }
+    Id              : 1a327991-10cb-4266-877a-998fb4df78ec
+    OdataType       :
+    Description     :
+    DisplayName     : SampleRoleDefinition2.
+    IsBuiltIn       : False
+    ResourceScopes  : {/}
+    IsEnabled       : True
+    RolePermissions : {class RolePermission {
+                      AllowedResourceActions:
+                      microsoft.directory/applications/create
+                        Condition:
+                      }
+                      }
+    TemplateId      : f2ef992c-3afb-46b9-b7cf-a126ee74c451
+    Version         :
+  description: ""
+  summary: ""
+parameters:
+- type: <xref href="Boolean" data-throw-if-not-resolved="False" />
+  name: All
+  description: |+
+    If true, return all role definitions.
+    If false, return the number of objects specified by the Top parameter
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Filter
+  description: |+
+    Specifies an oData v3.0 filter string to match a set of role definitions.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  isRequired: true
+  description: |+
+    Specifies the ID of the role definition that this cmdlet gets.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: SearchString
+  description: |+
+    Specifies a search string. 
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Top
+  description: |+
+    Specifies the maximum number of records that this cmldet gets.
+    The default value is 100.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: AzureADPreview.Get-AzureADMSRoleDefinition
+name: Get-AzureADMSRoleDefinition
+description: |-
+  The Get-AzureADMSRoleDefinition cmdlet gets information about role definitions in Azure Active Directory (Azure AD).
+  To get a role definition, specify the Id parameter. 
+  Specify the SearchString or Filter parameter to find particular role definition.
+metadata:
+  external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
+  Module Name: AzureADPreview
+  online version: ""
+  schema: 2.0.0

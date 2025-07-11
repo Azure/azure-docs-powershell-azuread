@@ -1,0 +1,103 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Sets the Azure Active Directory device registration service settings.
+module: MSOnline
+notes: ""
+links:
+- text: Get-MsolDeviceRegistrationServicePolicy
+  href: ./Get-MsolDeviceRegistrationServicePolicy.yml
+syntaxes:
+- >-
+  Set-MsolDeviceRegistrationServicePolicy [-AllowedToAzureAdJoin <Scope>] [-AllowedToWorkplaceJoin <Scope>]
+
+   [-MaximumDevicesPerUser <Int32>] [-RequireMultiFactorAuth <Boolean>] [<CommonParameters>]
+examples:
+- title: 'Example 1: Set the maximum number of devices for a user'
+  code: |-
+    PS C:\> Set-MsolDeviceRegistrationServicePolicy -MaximumDevicesPerUser 50
+  description: |-
+    This command sets the maximum number of devices a user can have in Azure Active Directory.
+  summary: ""
+- title: 'Example 2: Enforce that a user use a second method of authentication'
+  code: |-
+    PS C:\> Set-MsolDeviceRegistrationServicePolicy -RequireMultiFactorAuth $True
+  description: |-
+    This command enforces users that are adding devices from the internet first use a second method of authentication.
+  summary: ""
+- title: 'Example 3: Allow all users to workplace join devices'
+  code: |-
+    PS C:\> Set-MsolDeviceRegistrationServicePolicy -AllowedToWorkplaceJoin All
+  description: |-
+    This command allows all the users to workplace join devices.
+  summary: ""
+- title: 'Example 4: Disallow all users to workplace join devices'
+  code: |-
+    PS C:\> Set-MsolDeviceRegistrationServicePolicy -AllowedToWorkplaceJoin None
+  description: |-
+    This command disallows any of the users to workplace join devices.
+  summary: ""
+- title: 'Example 5: Allow all users to Azure Active Directory join devices'
+  code: |-
+    PS C:\> Set-MsolDeviceRegistrationServicePolicy -AllowedToAzureAdJoin All
+  description: |-
+    This command allows all the users to Azure Active Directory join devices.
+  summary: ""
+parameters:
+- type: <xref href="Scope" data-throw-if-not-resolved="False" />
+  name: AllowedToAzureAdJoin
+  description: |+
+    Specifies what users or group is allowed to join their devices to Azure Active Directory.
+    When this value is set to All, all users are allowed to Azure Active Directory join devices.
+    When this value is set to None, no one is allowed to Azure Active Directory join devices.
+    When this value is set to Selected, you may specify what users or groups are allowed to Azure Active Directory join devices.
+
+    The acceptable values for this parameter are:
+
+    - All
+    - None
+    - Selected
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Scope" data-throw-if-not-resolved="False" />
+  name: AllowedToWorkplaceJoin
+  description: |+
+    Specifies whether user is allowed to join their personal devices to their company.
+    When set to All, ALL users are allowed to workplace join devices.
+    When set to None, no one is allowed to workplace join devices.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: MaximumDevicesPerUser
+  description: |+
+    Specifies the maximum number of devices a user can have in Azure Active Directory.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Boolean" data-throw-if-not-resolved="False" />
+  name: RequireMultiFactorAuth
+  description: |+
+    Indicates whether users that add devices from the internet must first use a second method of authentication.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: MSOnline.Set-MsolDeviceRegistrationServicePolicy
+name: Set-MsolDeviceRegistrationServicePolicy
+description: |-
+  The **Set-MsolDeviceRegistrationServicePolicy** cmdlet sets the Azure Active Directory device registration service settings.
+metadata:
+  external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
+  online version: ""
+  schema: 2.0.0
+  ms.assetid: 3DF291FC-2A4E-4493-8C1E-BFE2977B5F15
+  ms.reviewer: stevemutungi
+  ms.custom: iamfeature=PowerShell

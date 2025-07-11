@@ -1,0 +1,67 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Removes a group from Azure Active Directory.
+module: MSOnline
+notes: ""
+links:
+- text: Get-MsolGroup
+  href: ./Get-MsolGroup.yml
+- text: New-MsolGroup
+  href: ./New-MsolGroup.yml
+- text: Set-MsolGroup
+  href: ./Set-MsolGroup.yml
+syntaxes:
+- Remove-MsolGroup -ObjectId <Guid> [-Force] [-TenantId <Guid>] [<CommonParameters>]
+examples:
+- title: 'Example 1: Remove a security group'
+  code: |-
+    PS C:\> $GroupId = Get-MsolGroup -SearchString "MyGroup"
+    PS C:\> Remove-MsolGroup -objectid $GroupId
+  description: |-
+    The first command gets the security group that matches the string MyGroup, and then stores it in the $GroupId variable.
+    The second command removes the group in $GroupId.
+  summary: ""
+parameters:
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Force
+  description: |+
+    Indicates that this cmdlet does not prompt you for confirmation.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Guid" data-throw-if-not-resolved="False" />
+  name: ObjectId
+  isRequired: true
+  description: |+
+    Specifies the unique object ID of the group to remove.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Guid" data-throw-if-not-resolved="False" />
+  name: TenantId
+  description: |+
+    Specifies the unique ID of the tenant on which to perform the operation.
+    The default value is the tenant of the current user.
+    This parameter applies only to partner users.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: MSOnline.Remove-MsolGroup
+name: Remove-MsolGroup
+description: |-
+  The **Remove-MsolGroup cmdlet** deletes a group from Azure Active Directory.
+metadata:
+  external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
+  online version: ""
+  schema: 2.0.0
+  ms.assetid: E748C8B0-B3F1-4BF5-8296-C2C2E8C54FB0
+  ms.reviewer: stevemutungi
+  ms.custom: iamfeature=PowerShell

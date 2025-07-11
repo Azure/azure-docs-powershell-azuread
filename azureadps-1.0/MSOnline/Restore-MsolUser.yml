@@ -1,0 +1,113 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Restores a deleted user.
+module: MSOnline
+notes: ""
+links:
+- text: Get-MsolUser
+  href: ./Get-MsolUser.yml
+- text: New-MsolUser
+  href: ./New-MsolUser.yml
+- text: Remove-MsolUser
+  href: ./Remove-MsolUser.yml
+- text: Set-MsolUser
+  href: ./Set-MsolUser.yml
+syntaxes:
+- >-
+  Restore-MsolUser -ObjectId <Guid> [-AutoReconcileProxyConflicts] [-NewUserPrincipalName <String>]
+
+   [-TenantId <Guid>] [<CommonParameters>]
+- >-
+  Restore-MsolUser [-AutoReconcileProxyConflicts] [-NewUserPrincipalName <String>] -UserPrincipalName <String>
+
+   [-TenantId <Guid>] [<CommonParameters>]
+examples:
+- title: 'Example 1: Restore a user'
+  code: |-
+    PS C:\> Restore-MsolUser -UserPrincipalName "davidchew@contoso.com"
+  description: |-
+    This command restores the user "davidchew@contoso.com" from the Deleted users container to the Active users container.
+  summary: ""
+- title: 'Example 2: Restore a user and remove conflicts'
+  code: |-
+    PS C:\> Restore-MsolUser -UserPrincipalName "davidchew@contoso.com" -AutoReconcileProxyConflicts
+  description: |-
+    This command restores the user davidchew@contoso.com from the Deleted users container to the Active users container, removing any conflicting proxy addresses.
+    Use this option if restore fails due to proxy conflicts.
+  summary: ""
+- title: 'Example 3: Restore a user'
+  code: |-
+    PS C:\> Restore-MsolUser -UserPrincipalName "davidchew@contoso.com" -NewUserPrincipalName "davidchew02@contoso.com"
+  description: |-
+    This command restores the user davidchew@contoso.com from the Deleted users container to the Active users container as davidchew02@contoso.com.
+    Use this option if restore fails due to a user principal name conflict.
+  summary: ""
+parameters:
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: AutoReconcileProxyConflicts
+  description: |+
+    Indicates that any proxy addresses that cause conflicts are removed for the user.
+    Specify this parameter if one or more of the proxy addresses of the user is also used for another active user.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: NewUserPrincipalName
+  description: |+
+    Specifies a new user principal name to use when restoring the user.
+    Specify this parameter if the original user principal name of the user is in use by another active user.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Guid" data-throw-if-not-resolved="False" />
+  name: ObjectId
+  isRequired: true
+  description: |+
+    Specifies the unique Object ID of the user to restore.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Guid" data-throw-if-not-resolved="False" />
+  name: TenantId
+  description: |+
+    Specifies the unique ID of the tenant on which to perform the operation.
+    The default value is the tenant of the current user.
+    This parameter applies only to partner users.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: UserPrincipalName
+  isRequired: true
+  description: |+
+    Specifies the user ID of the user to restore.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: MSOnline.Restore-MsolUser
+name: Restore-MsolUser
+description: |-
+  The **Restore-MsolUser** cmdlet restores a user that is in the Deleted users view to its original state.
+  Deleted users remain in the Deleted users view for 30 days.
+metadata:
+  external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
+  online version: ""
+  schema: 2.0.0
+  ms.assetid: 74BD0C15-D7F3-40CE-8D53-4C6C8E3BAA5F
+  ms.reviewer: stevemutungi
+  ms.custom: iamfeature=PowerShell

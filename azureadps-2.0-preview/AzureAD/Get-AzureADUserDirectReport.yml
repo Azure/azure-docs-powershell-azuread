@@ -1,0 +1,62 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Get the user's direct reports.
+module: AzureADPreview
+notes: ""
+syntaxes:
+- Get-AzureADUserDirectReport -ObjectId <String> [-All <Boolean>] [-Top <Int32>] [<CommonParameters>]
+examples:
+- title: "Example 1: Get a user's direct reports"
+  code: |-
+    PS C:\>Get-AzureADUserDirectReport -ObjectId "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb"
+
+    ObjectId                             ObjectType
+    --------                             ----------
+    5e8b0f4d-2cd4-4e17-9467-b0f6a5c0c4d0 User
+  description: |-
+    This command gets the direct report for the specified user.
+  summary: ""
+parameters:
+- type: <xref href="Boolean" data-throw-if-not-resolved="False" />
+  name: All
+  description: |+
+    If true, return all direct reports for this user. If false, return the number of objects specified by the Top parameter
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ObjectId
+  isRequired: true
+  description: |+
+    Specifies the ID of a user in Azure Active Directory (UPN or ObjectId)
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Top
+  description: |+
+    Specifies the maximum number of records to return.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: AzureADPreview.Get-AzureADUserDirectReport
+name: Get-AzureADUserDirectReport
+description: |-
+  The **Get-AzureADUserDirectReport** cmdlet gets the direct reports for a user in Azure Active Directory (AD).
+metadata:
+  external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+  Module Name: AzureADPreview
+  ms.assetid: 3B08911A-85D4-4E91-B288-69D77C3F39C5
+  ms.custom: iamfeature=PowerShell
+  ms.reviewer: stevemutungi
+  online version: ""
+  schema: 2.0.0

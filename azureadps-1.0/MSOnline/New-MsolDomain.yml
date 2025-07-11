@@ -1,0 +1,91 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Add a domain to Azure Active Directory.
+module: MSOnline
+notes: ""
+outputs:
+- name: <xref href="Microsoft.Online.Administration.Domain" data-throw-if-not-resolved="False" />
+  description: |-
+    This cmdlet returns the details about the new domain.
+links:
+- text: Confirm-MsolDomain
+  href: ./Confirm-MsolDomain.yml
+- text: Get-MsolDomain
+  href: ./Get-MsolDomain.yml
+- text: New-MsolFederatedDomain
+  href: ./New-MsolFederatedDomain.yml
+- text: Remove-MsolDomain
+  href: ./Remove-MsolDomain.yml
+- text: Set-MsolDomain
+  href: ./Set-MsolDomain.yml
+syntaxes:
+- >-
+  New-MsolDomain [-Name <String>] [-Authentication <DomainAuthenticationType>]
+
+   [-VerificationMethod <DomainVerificationMethod>] [-TenantId <Guid>] [<CommonParameters>]
+examples:
+- title: 'Example 1: Create a domain'
+  code: |-
+    PS C:\> New-MsolDomain -Name "contoso.com"
+  description: |-
+    This command creates a domain named contoso.com.
+    You must verify the domain before it can be used.
+  summary: ""
+parameters:
+- type: <xref href="DomainAuthenticationType" data-throw-if-not-resolved="False" />
+  name: Authentication
+  description: |+
+    Specifies the authentication type of the domain.
+    Valid values are: managed and federated.
+    All users created in this domain have this authentication type.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Name
+  description: |+
+    Specifies the fully qualified domain name of the domain.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Guid" data-throw-if-not-resolved="False" />
+  name: TenantId
+  description: |+
+    Specifies the unique ID of the tenant on which to perform the operation.
+    The default value is the tenant of the current user.
+    This parameter applies only to partner users.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DomainVerificationMethod" data-throw-if-not-resolved="False" />
+  name: VerificationMethod
+  description: |+
+    Specifies the verification method for the domain.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: MSOnline.New-MsolDomain
+name: New-MsolDomain
+description: |-
+  The **New-MsolDomain** cmdlet adds a domain to Azure Active Directory.
+  This cmdlet can create domains with managed or federated identities.
+  To ensure proper setup, use the [New-MsolFederatedDomain](./New-MsolFederatedDomain.yml) cmdlet for federated domains.
+metadata:
+  external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
+  online version: ""
+  schema: 2.0.0
+  ms.assetid: 013C6697-E78E-4882-840B-CC0595C452DA
+  ms.reviewer: stevemutungi
+  ms.custom: iamfeature=PowerShell

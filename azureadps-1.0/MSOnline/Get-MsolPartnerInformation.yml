@@ -1,0 +1,55 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Gets company-level information for partners.
+module: MSOnline
+notes: ""
+outputs:
+- name: <xref href=" " data-throw-if-not-resolved="False" />
+  description: |-
+    This cmdlet returns the following company level information:
+
+    * CompanyType. The type of this company (can be partner or regular tenant).
+
+    * DapEnabled. Whether the partner has delegated admin privileges.
+
+    * PartnerCompanyName. The name of the company.
+
+    * PartnerSupportTelephones. Support Telephone numbers for the partner.
+
+    * PartnerSupportEmails. Support E-Mail address for the partner.
+
+    * PartnerCommerceUrl. URL for the partner's commerce web site.
+
+    * PartnerSupportUrl. URL for the Partner's support website.
+
+    * PartnerHelpUrl. URL for the partner's help web site.
+links:
+- text: Set-MsolPartnerInformation
+  href: ./Set-MsolPartnerInformation.yml
+syntaxes:
+- Get-MsolPartnerInformation [-TenantId <Guid>] [<CommonParameters>]
+parameters:
+- type: <xref href="Guid" data-throw-if-not-resolved="False" />
+  name: TenantId
+  description: |+
+    Specifies the unique ID of the tenant on which to perform the operation.
+    The default value is the tenant of the current user.
+    This parameter applies only to partner users.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: MSOnline.Get-MsolPartnerInformation
+name: Get-MsolPartnerInformation
+description: |-
+  The **Get-MsolPartnerInformation** cmdlet gets partner-specific information.
+  This cmdlet should only be used for partner tenants.
+metadata:
+  external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
+  online version: ""
+  schema: 2.0.0
+  ms.assetid: C304F948-A8BB-4E5E-97B0-EB9B84025AD5
+  ms.reviewer: stevemutungi
+  ms.custom: iamfeature=PowerShell

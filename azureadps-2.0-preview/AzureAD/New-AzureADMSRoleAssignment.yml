@@ -1,0 +1,63 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Creates an Azure AD role assignment.
+module: AzureADPreview
+notes: ""
+inputs:
+- name: <xref href="None" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="System.Object" data-throw-if-not-resolved="False" />
+  description: ""
+syntaxes:
+- >-
+  New-AzureADMSRoleAssignment -RoleDefinitionId <String> -PrincipalId <String> -ResourceScope <String>
+
+   [<CommonParameters>]
+examples:
+- title: Example 1
+  code: |-
+    PS C:\> New-AzureADMSRoleAssignment -RoleDefinitionId f2ef992c-3afb-46b9-b7cf-a126ee74c451 -PrincipalId aaaaaaaa-bbbb-cccc-1111-222222222222 -ResourceScope '/'
+  description: |-
+    This command creates a new role assignment.
+  summary: ""
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: PrincipalId
+  isRequired: true
+  description: |+
+    Specifies the principal for role assignment.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ResourceScope
+  isRequired: true
+  description: |+
+    Specifies the resource scope for role assignment.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: RoleDefinitionId
+  isRequired: true
+  description: |+
+    Specifies the role definition for role assignment.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: AzureADPreview.New-AzureADMSRoleAssignment
+name: New-AzureADMSRoleAssignment
+description: |-
+  The New-AzureADMSRoleAssignment cmdlet creates an Azure Active Directory (Azure AD) role assignment.
+metadata:
+  external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
+  Module Name: AzureADPreview
+  online version: ""
+  schema: 2.0.0

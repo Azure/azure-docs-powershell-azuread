@@ -1,0 +1,82 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Activates an existing directory role in Azure Active Directory.
+module: AzureAD
+notes: ""
+syntaxes:
+- >-
+  Enable-AzureADDirectoryRole [-InformationAction <ActionPreference>] [-InformationVariable <String>]
+
+   [-RoleTemplateId <String>] [<CommonParameters>]
+examples:
+- title: 'Example 1: Enable a directory role'
+  code: |-
+    # Retrieve the Template Role object for the Guest Inviter role 
+    $InviterRole = Get-AzureADDirectoryRoleTemplate | Where-Object {$_.DisplayName -eq "Guest Inviter"}
+
+    # Inspect the $Inviter variable to make sure we found the correct template role
+    $InviterRole
+
+    ObjectId                             DisplayName   Description
+    --------                             -----------   -----------
+    95e79109-95c0-4d8e-aee3-d01accf2d47b Guest Inviter Guest Inviter has access to invite guest users.
+
+    # Enable the Inviter Role
+    Enable-AzureADDirectoryRole -RoleTemplateId $InviterRole.ObjectId
+
+    ObjectId                             DisplayName   Description
+    --------                             -----------   -----------
+    03618579-3c16-4765-9539-86d9163ee3d9 Guest Inviter Guest Inviter has access to invite guest users.
+  description: |-
+    The first command gets an inviter role that has the display name Guest Inviter by using the Get-AzureADDirectoryRoleTemplate (./Get-AzureADDirectoryRoleTemplate.md)cmdlet. 
+    The command stores Guest Inviter in the $InviterRole variable.
+
+    The second command displays the contents of $InviterRole.
+
+    The final command enables the directory role in $InviterRole.
+  summary: ""
+parameters:
+- type: <xref href="ActionPreference" data-throw-if-not-resolved="False" />
+  name: InformationAction
+  description: |+
+    Specifies how this cmdlet responds to an information event.
+    The acceptable values for this parameter are:
+
+    - Continue
+    - Ignore
+    - Inquire
+    - SilentlyContinue
+    - Stop
+    - Suspend
+
+  defaultValue: None
+  position: Named
+  aliases: infa
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: InformationVariable
+  description: |+
+    Specifies a variable in which to store an information event message.
+
+  defaultValue: None
+  position: Named
+  aliases: iv
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: RoleTemplateId
+  description: |+
+    The ID of the Role template to enable
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: AzureAD.Enable-AzureADDirectoryRole
+name: Enable-AzureADDirectoryRole
+description: |-
+  The Enable-AzureADDirectoryRole cmdlet activates an existing directory role in Azure Active Directory.
+metadata:
+  external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+  Module Name: AzureAD
+  online version: ""
+  schema: 2.0.0

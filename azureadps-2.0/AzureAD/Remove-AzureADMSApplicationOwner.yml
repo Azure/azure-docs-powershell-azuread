@@ -1,0 +1,49 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Removes an owner from an application object.
+module: AzureAD
+notes: ""
+inputs:
+- name: <xref href="string" data-throw-if-not-resolved="False" />
+  description: ""
+syntaxes:
+- Remove-AzureADMSApplicationOwner -ObjectId <String> -OwnerId <String> [<CommonParameters>]
+examples:
+- title: 'Example 1: Remove an owner from an application'
+  code: |-
+    PS C:\>Remove-AzureADMSApplicationOwner -ObjectId "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb" -OwnerId "bbbbbbbb-1111-2222-3333-cccccccccccc"
+  description: |-
+    This command removes the owner from the specified application.
+  summary: ""
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ObjectId
+  isRequired: true
+  description: |+
+    Specifies the ID of an application in Azure AD.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: OwnerId
+  isRequired: true
+  description: |+
+    Specifies the ID of the owner.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: AzureAD.Remove-AzureADMSApplicationOwner
+name: Remove-AzureADMSApplicationOwner
+description: |-
+  Removes an owner from an application object.
+metadata:
+  external help file: Microsoft.Open.MS.GraphV10.PowerShell.dll-Help.xml
+  Module Name: AzureAD
+  online version: ""
+  schema: 2.0.0

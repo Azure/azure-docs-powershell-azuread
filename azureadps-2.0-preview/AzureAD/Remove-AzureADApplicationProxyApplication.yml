@@ -1,0 +1,58 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Deletes an Application Proxy application.
+module: AzureADPreview
+notes: ""
+syntaxes:
+- >-
+  Remove-AzureADApplicationProxyApplication -ObjectId <String> [-RemoveADApplication <Boolean>]
+
+   [<CommonParameters>]
+examples:
+- title: Example 1
+  code: |-
+    PS C:\> Remove-AzureADApplicationProxyApplication -ObjectId aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb
+  description: |-
+    Example 1: Remove a Proxy Application
+  summary: ""
+- title: Example 2
+  code: |-
+    PS C:\> Remove-AzureADApplicationProxyApplication -ObjectId bbbbbbbb-1111-2222-3333-cccccccccccc -RemoveADApplication $true
+  description: |-
+    Example 2: Remove a Proxy Application, and remove it from Azure AD completely
+  summary: ""
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ObjectId
+  isRequired: true
+  description: |+
+    The unique application Id of the application.
+    This can be found using the Get-AzureADApplication command.
+    You can also find this in the Azure Portal by navigating to AAD, Enterprise Applications, All Applications, Select your application, go to the properties tab, and use the ObjectId on that page.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Boolean" data-throw-if-not-resolved="False" />
+  name: RemoveADApplication
+  description: |+
+    This allows you to delete application completely.
+    When this is false (default), Application Proxy properties are removed from the application but the application still exists.
+    If this is true, the application is completely removed from Azure AD.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: AzureADPreview.Remove-AzureADApplicationProxyApplication
+name: Remove-AzureADApplicationProxyApplication
+description: |-
+  The Remove-AzureADApplicationProxyApplication cmdlet removes Application Proxy configurations from a specific application in Azure Active Directory, and can delete the application completely if specified.
+metadata:
+  external help file: Microsoft.Open.MS.GraphBeta.PowerShell.Custom.dll-Help.xml
+  Module Name: AzureADPreview
+  online version: ""
+  schema: 2.0.0

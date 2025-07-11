@@ -1,0 +1,126 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Gets administrative units from Azure Active Directory.
+module: MSOnline
+notes: ""
+links:
+- text: New-MsolAdministrativeUnit
+  href: ./New-MsolAdministrativeUnit.yml
+- text: Remove-MsolAdministrativeUnit
+  href: ./Remove-MsolAdministrativeUnit.yml
+- text: Set-MsolAdministrativeUnit
+  href: ./Set-MsolAdministrativeUnit.yml
+syntaxes:
+- >-
+  Get-MsolAdministrativeUnit [-UserObjectId <Guid>] [-UserPrincipalName <String>] [-SearchString <String>]
+
+   [-MaxResults <Int32>] [-TenantId <Guid>] [<CommonParameters>]
+- Get-MsolAdministrativeUnit -ObjectId <Guid> [-TenantId <Guid>] [<CommonParameters>]
+- >-
+  Get-MsolAdministrativeUnit [-UserObjectId <Guid>] [-UserPrincipalName <String>] [-SearchString <String>] [-All]
+
+   [-TenantId <Guid>] [<CommonParameters>]
+examples:
+- title: 'Example 1: Get all administrative units'
+  code: |-
+    PS C:\> Get-MsolAdministrativeUnit
+  description: |-
+    This command gets all of the administrative units in the tenant of the currently authenticated user.
+  summary: ""
+- title: 'Example 2: Get an administrative unit by name'
+  code: |-
+    PS C:\> Get-MsolAdministrativeUnit -SearchString "West Coast"
+  description: |-
+    This command get the administrative unit called West Coast.
+  summary: ""
+- title: 'Example 3: Get an administrative unit by user principal name'
+  code: |-
+    Get-MsolAdministrativeUnit -UserPrincipalName "pattifuller@contoso.com"
+  description: |-
+    This command gets the administrative units in which pattifuller@contoso.com is a member.
+  summary: ""
+parameters:
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: All
+  isRequired: true
+  description: |+
+    Indicates that this cmdlet returns all results that it finds.
+    Do not specify this parameter and the _MaxResults_ parameter.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: MaxResults
+  description: |+
+    Specifies the maximum number of results that this cmdlet returns.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Guid" data-throw-if-not-resolved="False" />
+  name: ObjectId
+  isRequired: true
+  description: |+
+    Specifies the unique ID of an administrative unit to return.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: SearchString
+  description: |+
+    Specifies a string.
+    This cmdlet returns administrative units that have a display name that start with this string.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Guid" data-throw-if-not-resolved="False" />
+  name: TenantId
+  description: |+
+    Specifies the unique ID of the tenant on which to perform the operation.
+    The default value is the tenant of the current user.
+    This parameter applies only to partner users.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Guid" data-throw-if-not-resolved="False" />
+  name: UserObjectId
+  description: |+
+    Specifies the unique ID of a user.
+    This cmdlet returns administrative units to which this user belongs.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: UserPrincipalName
+  description: |+
+    Specifies a user principal name.
+    This cmdlet returns administrative units to which this user belongs.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: MSOnline.Get-MsolAdministrativeUnit
+name: Get-MsolAdministrativeUnit
+description: |-
+  The **Get-MsolAdministrativeUnit** cmdlet gets administrative units from Azure Active Directory.
+metadata:
+  external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
+  online version: ""
+  schema: 2.0.0
+  ms.assetid: 87C2C236-9B82-45D1-BD68-6B118033064C
+  ms.reviewer: stevemutungi
+  ms.custom: iamfeature=PowerShell

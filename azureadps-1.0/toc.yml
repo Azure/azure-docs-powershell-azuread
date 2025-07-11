@@ -1,0 +1,200 @@
+items:
+- name: Reference
+  items:
+  - name: MSOnline
+    href: MSOnline/index.yml#msonline
+    items:
+    - name: Add-MsolAdministrativeUnitMember
+      uid: MSOnline.Add-MsolAdministrativeUnitMember
+    - name: Add-MsolForeignGroupToRole
+      uid: MSOnline.Add-MsolForeignGroupToRole
+    - name: Add-MsolGroupMember
+      uid: MSOnline.Add-MsolGroupMember
+    - name: Add-MsolRoleMember
+      uid: MSOnline.Add-MsolRoleMember
+    - name: Add-MsolScopedRoleMember
+      uid: MSOnline.Add-MsolScopedRoleMember
+    - name: Confirm-MsolDomain
+      uid: MSOnline.Confirm-MsolDomain
+    - name: Confirm-MsolEmailVerifiedDomain
+      uid: MSOnline.Confirm-MsolEmailVerifiedDomain
+    - name: Connect-MsolService
+      uid: MSOnline.Connect-MsolService
+    - name: Convert-MsolDomainToFederated
+      uid: MSOnline.Convert-MsolDomainToFederated
+    - name: Convert-MsolDomainToStandard
+      uid: MSOnline.Convert-MsolDomainToStandard
+    - name: Convert-MsolFederatedUser
+      uid: MSOnline.Convert-MsolFederatedUser
+    - name: Disable-MsolDevice
+      uid: MSOnline.Disable-MsolDevice
+    - name: Enable-MsolDevice
+      uid: MSOnline.Enable-MsolDevice
+    - name: Get-MsolAccountSku
+      uid: MSOnline.Get-MsolAccountSku
+    - name: Get-MsolAdministrativeUnit
+      uid: MSOnline.Get-MsolAdministrativeUnit
+    - name: Get-MsolAdministrativeUnitMember
+      uid: MSOnline.Get-MsolAdministrativeUnitMember
+    - name: Get-MsolCompanyAllowedDataLocation
+      uid: MSOnline.Get-MsolCompanyAllowedDataLocation
+    - name: Get-MsolCompanyInformation
+      uid: MSOnline.Get-MsolCompanyInformation
+    - name: Get-MsolContact
+      uid: MSOnline.Get-MsolContact
+    - name: Get-MsolDevice
+      uid: MSOnline.Get-MsolDevice
+    - name: Get-MsolDeviceRegistrationServicePolicy
+      uid: MSOnline.Get-MsolDeviceRegistrationServicePolicy
+    - name: Get-MsolDirSyncConfiguration
+      uid: MSOnline.Get-MsolDirSyncConfiguration
+    - name: Get-MsolDirSyncFeatures
+      uid: MSOnline.Get-MsolDirSyncFeatures
+    - name: Get-MsolDirSyncProvisioningError
+      uid: MSOnline.Get-MsolDirSyncProvisioningError
+    - name: Get-MsolDomain
+      uid: MSOnline.Get-MsolDomain
+    - name: Get-MsolDomainFederationSettings
+      uid: MSOnline.Get-MsolDomainFederationSettings
+    - name: Get-MsolDomainVerificationDns
+      uid: MSOnline.Get-MsolDomainVerificationDns
+    - name: Get-MsolFederationProperty
+      uid: MSOnline.Get-MsolFederationProperty
+    - name: Get-MsolGroup
+      uid: MSOnline.Get-MsolGroup
+    - name: Get-MsolGroupMember
+      uid: MSOnline.Get-MsolGroupMember
+    - name: Get-MsolHasObjectsWithDirSyncProvisioningErrors
+      uid: MSOnline.Get-MsolHasObjectsWithDirSyncProvisioningErrors
+    - name: Get-MsolPartnerContract
+      uid: MSOnline.Get-MsolPartnerContract
+    - name: Get-MsolPartnerInformation
+      uid: MSOnline.Get-MsolPartnerInformation
+    - name: Get-MsolPasswordPolicy
+      uid: MSOnline.Get-MsolPasswordPolicy
+    - name: Get-MsolRole
+      uid: MSOnline.Get-MsolRole
+    - name: Get-MsolRoleMember
+      uid: MSOnline.Get-MsolRoleMember
+    - name: Get-MsolScopedRoleMember
+      uid: MSOnline.Get-MsolScopedRoleMember
+    - name: Get-MsolServicePrincipal
+      uid: MSOnline.Get-MsolServicePrincipal
+    - name: Get-MsolServicePrincipalCredential
+      uid: MSOnline.Get-MsolServicePrincipalCredential
+    - name: Get-MsolSubscription
+      uid: MSOnline.Get-MsolSubscription
+    - name: Get-MsolUser
+      uid: MSOnline.Get-MsolUser
+    - name: Get-MsolUserByStrongAuthentication
+      uid: MSOnline.Get-MsolUserByStrongAuthentication
+    - name: Get-MsolUserRole
+      uid: MSOnline.Get-MsolUserRole
+    - name: New-MsolAdministrativeUnit
+      uid: MSOnline.New-MsolAdministrativeUnit
+    - name: New-MsolDomain
+      uid: MSOnline.New-MsolDomain
+    - name: New-MsolFederatedDomain
+      uid: MSOnline.New-MsolFederatedDomain
+    - name: New-MsolGroup
+      uid: MSOnline.New-MsolGroup
+    - name: New-MsolLicenseOptions
+      uid: MSOnline.New-MsolLicenseOptions
+    - name: New-MsolServicePrincipal
+      uid: MSOnline.New-MsolServicePrincipal
+    - name: New-MsolServicePrincipalAddresses
+      uid: MSOnline.New-MsolServicePrincipalAddresses
+    - name: New-MsolServicePrincipalCredential
+      uid: MSOnline.New-MsolServicePrincipalCredential
+    - name: New-MsolUser
+      uid: MSOnline.New-MsolUser
+    - name: New-MsolWellKnownGroup
+      uid: MSOnline.New-MsolWellKnownGroup
+    - name: Redo-MsolProvisionContact
+      uid: MSOnline.Redo-MsolProvisionContact
+    - name: Redo-MsolProvisionGroup
+      uid: MSOnline.Redo-MsolProvisionGroup
+    - name: Redo-MsolProvisionUser
+      uid: MSOnline.Redo-MsolProvisionUser
+    - name: Remove-MsolAdministrativeUnit
+      uid: MSOnline.Remove-MsolAdministrativeUnit
+    - name: Remove-MsolAdministrativeUnitMember
+      uid: MSOnline.Remove-MsolAdministrativeUnitMember
+    - name: Remove-MsolApplicationPassword
+      uid: MSOnline.Remove-MsolApplicationPassword
+    - name: Remove-MsolContact
+      uid: MSOnline.Remove-MsolContact
+    - name: Remove-MsolDevice
+      uid: MSOnline.Remove-MsolDevice
+    - name: Remove-MsolDomain
+      uid: MSOnline.Remove-MsolDomain
+    - name: Remove-MsolFederatedDomain
+      uid: MSOnline.Remove-MsolFederatedDomain
+    - name: Remove-MsolForeignGroupFromRole
+      uid: MSOnline.Remove-MsolForeignGroupFromRole
+    - name: Remove-MsolGroup
+      uid: MSOnline.Remove-MsolGroup
+    - name: Remove-MsolGroupMember
+      uid: MSOnline.Remove-MsolGroupMember
+    - name: Remove-MsolRoleMember
+      uid: MSOnline.Remove-MsolRoleMember
+    - name: Remove-MsolScopedRoleMember
+      uid: MSOnline.Remove-MsolScopedRoleMember
+    - name: Remove-MsolServicePrincipal
+      uid: MSOnline.Remove-MsolServicePrincipal
+    - name: Remove-MsolServicePrincipalCredential
+      uid: MSOnline.Remove-MsolServicePrincipalCredential
+    - name: Remove-MsolUser
+      uid: MSOnline.Remove-MsolUser
+    - name: Reset-MsolStrongAuthenticationMethodByUpn
+      uid: MSOnline.Reset-MsolStrongAuthenticationMethodByUpn
+    - name: Restore-MsolUser
+      uid: MSOnline.Restore-MsolUser
+    - name: Set-MsolADFSContext
+      uid: MSOnline.Set-MsolADFSContext
+    - name: Set-MsolAdministrativeUnit
+      uid: MSOnline.Set-MsolAdministrativeUnit
+    - name: Set-MsolCompanyAllowedDataLocation
+      uid: MSOnline.Set-MsolCompanyAllowedDataLocation
+    - name: Set-MsolCompanyContactInformation
+      uid: MSOnline.Set-MsolCompanyContactInformation
+    - name: Set-MsolCompanyMultiNationalEnabled
+      uid: MSOnline.Set-MsolCompanyMultiNationalEnabled
+    - name: Set-MsolCompanySecurityComplianceContactInformation
+      uid: MSOnline.Set-MsolCompanySecurityComplianceContactInformation
+    - name: Set-MsolCompanySettings
+      uid: MSOnline.Set-MsolCompanySettings
+    - name: Set-MsolDeviceRegistrationServicePolicy
+      uid: MSOnline.Set-MsolDeviceRegistrationServicePolicy
+    - name: Set-MsolDirSyncConfiguration
+      uid: MSOnline.Set-MsolDirSyncConfiguration
+    - name: Set-MsolDirSyncEnabled
+      uid: MSOnline.Set-MsolDirSyncEnabled
+    - name: Set-MsolDirSyncFeature
+      uid: MSOnline.Set-MsolDirSyncFeature
+    - name: Set-MsolDomain
+      uid: MSOnline.Set-MsolDomain
+    - name: Set-MsolDomainAuthentication
+      uid: MSOnline.Set-MsolDomainAuthentication
+    - name: Set-MsolDomainFederationSettings
+      uid: MSOnline.Set-MsolDomainFederationSettings
+    - name: Set-MsolGroup
+      uid: MSOnline.Set-MsolGroup
+    - name: Set-MsolPartnerInformation
+      uid: MSOnline.Set-MsolPartnerInformation
+    - name: Set-MsolPasswordPolicy
+      uid: MSOnline.Set-MsolPasswordPolicy
+    - name: Set-MsolServicePrincipal
+      uid: MSOnline.Set-MsolServicePrincipal
+    - name: Set-MsolUser
+      uid: MSOnline.Set-MsolUser
+    - name: Set-MsolUserLicense
+      uid: MSOnline.Set-MsolUserLicense
+    - name: Set-MsolUserPassword
+      uid: MSOnline.Set-MsolUserPassword
+    - name: Set-MsolUserPrincipalName
+      uid: MSOnline.Set-MsolUserPrincipalName
+    - name: Update-MsolFederatedDomain
+      uid: MSOnline.Update-MsolFederatedDomain
+metadata:
+  universal_conceptual_toc: /powershell/azure/active-directory/toc.json

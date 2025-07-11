@@ -1,0 +1,84 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Removes an application extension property.
+module: AzureADPreview
+notes: ""
+links:
+- text: Get-AzureADApplicationExtensionProperty
+  href: ./Get-AzureADApplicationExtensionProperty.yml
+- text: New-AzureADApplicationExtensionProperty
+  href: ./New-AzureADApplicationExtensionProperty.yml
+syntaxes:
+- >-
+  Remove-AzureADApplicationExtensionProperty -ObjectId <String> -ExtensionPropertyId <String>
+
+   [-InformationAction <ActionPreference>] [-InformationVariable <String>] [<CommonParameters>]
+examples:
+- title: 'Example 1: Remove an extension property'
+  code: |-
+    PS C:\> Remove-AzureADApplicationExtensionProperty -ObjectId "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb" -ExtensionPropertyId "344ed560-f8e7-410e-ab9f-c79df5c36"
+  description: |-
+    This command removes the extension property that has the specified ID from an application in Azure Active Directory.
+  summary: ""
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ExtensionPropertyId
+  isRequired: true
+  description: |+
+    Specifies the unique ID of the extension property to remove.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="ActionPreference" data-throw-if-not-resolved="False" />
+  name: InformationAction
+  description: |+
+    Specifies how this cmdlet responds to an information event.
+
+    The acceptable values for this parameter are:
+
+    - Continue
+    - Ignore
+    - Inquire
+    - SilentlyContinue
+    - Stop
+    - Suspend
+
+  defaultValue: None
+  position: Named
+  aliases: infa
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: InformationVariable
+  description: |+
+    Specifies an information variable.
+
+  defaultValue: None
+  position: Named
+  aliases: iv
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ObjectId
+  isRequired: true
+  description: |+
+    Specifies the unique ID of an application in Azure Active Directory.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: AzureADPreview.Remove-AzureADApplicationExtensionProperty
+name: Remove-AzureADApplicationExtensionProperty
+description: |-
+  The **Remove-AzureADApplicationExtensionProperty** cmdlet removes an application extension property for an object in Azure Active Directory.
+metadata:
+  external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+  Module Name: AzureADPreview
+  ms.assetid: 441B9A03-B06D-4B67-91F2-09CB78C11330
+  ms.custom: iamfeature=PowerShell
+  ms.reviewer: stevemutungi
+  online version: ""
+  schema: 2.0.0

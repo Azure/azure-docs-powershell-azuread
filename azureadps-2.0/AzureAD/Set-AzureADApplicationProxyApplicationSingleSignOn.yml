@@ -1,0 +1,89 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  The Set-AzureADApplicationProxyApplicationSingleSignOn cmdlet allows you to set and modify single sign-on (SSO) settings for an application configured for Application Proxy in Azure Active Directory.
+module: AzureAD
+notes: ""
+inputs:
+- name: <xref href="System.String" data-throw-if-not-resolved="False" />
+  description: |-
+    System.Nullable\`1\[\[Microsoft.Open.MSGraph.Model.OnPremisesPublishingSingleSignOnObject+SingleSignOnModeEnum, Microsoft.Open.MS.GraphV10.Client, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null\]\] System.Nullable\`1\[\[Microsoft.Open.MSGraph.Model.OnPremisesPublishingKerberosSignOnSettingsObject+KerberosSignOnMappingAttributeTypeEnum, Microsoft.Open.MS.GraphV10.Client, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null\]\]
+outputs:
+- name: <xref href="System.Object" data-throw-if-not-resolved="False" />
+  description: ""
+syntaxes:
+- >-
+  Set-AzureADApplicationProxyApplicationSingleSignOn -ObjectId <String> -SingleSignOnMode <SingleSignOnModeEnum>
+
+   [-KerberosInternalApplicationServicePrincipalName <String>]
+
+   [-KerberosDelegatedLoginIdentity <KerberosSignOnMappingAttributeTypeEnum>] [<CommonParameters>]
+examples:
+- title: Example 1
+  code: |-
+    PS C:\> Set-AzureADApplicationProxyApplicationSingleSignOn -ObjectId aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb -SingleSignOnMode OnPremisesKerberos -KerberosInternalApplicationServicePrincipalName "http/www.adventure-works.com" -KerberosDelegatedLoginIdentity OnPremisesUserPrincipalName
+  description: |-
+    Example 1: Assign an application to use Kerberos Constrained Delegation, and specify required parameters.
+  summary: ""
+- title: Example 2
+  code: |-
+    PS C:\> Set-AzureADApplicationProxyApplicationSingleSignOn -ObjectId aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb -SingleSignOnMode None
+  description: |-
+    Example 2: Remove SSO from an application
+  summary: ""
+parameters:
+- type: <xref href="KerberosSignOnMappingAttributeTypeEnum" data-throw-if-not-resolved="False" />
+  name: KerberosDelegatedLoginIdentity
+  description: |+
+    The identity that the Connector can use on behalf of your users to authenticate.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: UserPrincipalName, OnPremisesUserPrincipalName, UserPrincipalUsername, OnPremisesUserPrincipalUsername, OnPremisesSAMAccountName
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: KerberosInternalApplicationServicePrincipalName
+  description: |+
+    The internal application SPN of the application server.
+    This SPN needs to be in the list of services to which the Connector can present delegated credentials.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ObjectId
+  isRequired: true
+  description: |+
+    The unique application Id of the application that needs different SSO settings.
+    This can be found using the Get-AzureADApplication command.
+    You can also find this in the Azure Portal by navigating to AAD, Enterprise Applications, All Applications, Select your application, go to the properties tab, and use the ObjectId on that page.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SingleSignOnModeEnum" data-throw-if-not-resolved="False" />
+  name: SingleSignOnMode
+  isRequired: true
+  description: |+
+    Choose the type of SSO you would like the application to use.
+    Please note that only three SSO settings are supported in powershell, for more options, please use the Azure Portal.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: None, OnPremisesKerberos, HeaderBased
+uid: AzureAD.Set-AzureADApplicationProxyApplicationSingleSignOn
+name: Set-AzureADApplicationProxyApplicationSingleSignOn
+description: |-
+  The Set-AzureADApplicationProxyApplicationSingleSignOn cmdlet allows you to set and modify single sign-on (SSO) settings for an application configured for Application Proxy in Azure Active Directory.
+  This is limited to setting No SSO, Kerberos Constrained Delegation (for applications using Integrated Windows Authentication), and Header-based SSO.
+metadata:
+  external help file: Microsoft.Open.MS.GraphV10.PowerShell.Custom.dll-Help.xml
+  Module Name: AzureAD
+  online version: ""
+  schema: 2.0.0

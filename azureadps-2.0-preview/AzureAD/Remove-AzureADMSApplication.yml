@@ -1,0 +1,38 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Deletes an application object.
+module: AzureADPreview
+notes: ""
+inputs:
+- name: <xref href="string" data-throw-if-not-resolved="False" />
+  description: ""
+syntaxes:
+- Remove-AzureADMSApplication -ObjectId <String> [<CommonParameters>]
+examples:
+- title: 'Example 1: Remove an application'
+  code: |-
+    PS C:\>Remove-AzureADMSApplication -ObjectId "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb"
+  description: |-
+    This command removes the specified application.
+  summary: ""
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ObjectId
+  isRequired: true
+  description: |+
+    The unique identifier of the object specific Azure Active Directory object
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: AzureADPreview.Remove-AzureADMSApplication
+name: Remove-AzureADMSApplication
+description: |-
+  Deletes an application object identified by objectId.
+metadata:
+  external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
+  Module Name: AzureADPreview
+  online version: ""
+  schema: 2.0.0

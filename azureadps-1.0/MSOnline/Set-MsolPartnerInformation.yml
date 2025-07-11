@@ -1,0 +1,128 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Sets company information for partners.
+module: MSOnline
+notes: ""
+links:
+- text: Get-MsolPartnerInformation
+  href: ./Get-MsolPartnerInformation.yml
+syntaxes:
+- >-
+  Set-MsolPartnerInformation [-ObjectId <Guid>] [-CompanyType <CompanyType>] [-PartnerCompanyName <String>]
+
+   [-PartnerSupportTelephones <String[]>] [-PartnerSupportEmails <String[]>] [-PartnerCommerceUrl <String>]
+
+   [-PartnerSupportUrl <String>] [-PartnerHelpUrl <String>] [-TenantId <Guid>] [<CommonParameters>]
+examples:
+- title: 'Example 1: Update the help URL'
+  code: |-
+    PS C:\> Set-MsolPartnerInformation -PartnerHelpUrl "http://www.help.contoso.com"
+  description: |-
+    This command updates the help URL for this partner.
+  summary: ""
+parameters:
+- type: <xref href="CompanyType" data-throw-if-not-resolved="False" />
+  name: CompanyType
+  description: |+
+    Specifies the partner's company type.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Guid" data-throw-if-not-resolved="False" />
+  name: ObjectId
+  description: |+
+    Specifies the unique object ID of the partner.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: PartnerCommerceUrl
+  description: |+
+    Specifies the URL for the partner's commerce website.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: PartnerCompanyName
+  description: |+
+    Specifies the partner's company name.
+
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: PartnerHelpUrl
+  description: |+
+    Specifies the URL for the partner's Help website.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: PartnerSupportEmails
+  description: |+
+    Specifies the support email address for the partner.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: PartnerSupportTelephones
+  description: |+
+    Specifies the support telephone numbers for the partner.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: PartnerSupportUrl
+  description: |+
+    Specifies the URL for the partner's support website.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Guid" data-throw-if-not-resolved="False" />
+  name: TenantId
+  description: |+
+    Specifies the unique ID of the tenant on which to perform the operation.
+    The default value is the tenant of the current user.
+    This parameter applies only to partner users.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: MSOnline.Set-MsolPartnerInformation
+name: Set-MsolPartnerInformation
+description: |-
+  The **Set-MsolPartnerInformation** cmdlet is used by partners to set partner-specific properties.
+  These properties can be viewed by all tenants that the partner has access to.
+metadata:
+  external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
+  online version: ""
+  schema: 2.0.0
+  ms.assetid: 089BACA3-BA23-479B-BA92-06280F96AC48
+  ms.reviewer: stevemutungi
+  ms.custom: iamfeature=PowerShell

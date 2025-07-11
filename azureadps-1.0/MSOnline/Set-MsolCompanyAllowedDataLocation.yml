@@ -1,0 +1,101 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Sets an allowed data location for a service type for a company in Azure Active Directory.
+module: MSOnline
+notes: ""
+links:
+- text: Get-MsolCompanyAllowedDataLocation
+  href: ./Get-MsolCompanyAllowedDataLocation.yml
+syntaxes:
+- >-
+  Set-MsolCompanyAllowedDataLocation -ServiceType <String> -Location <String> [-IsDefault <Boolean>]
+
+   [-InitialDomain <String>] [-Overwrite <Boolean>] [-TenantId <Guid>] [<CommonParameters>]
+examples:
+- title: 'Example 1: Set an allowed data location'
+  code: |-
+    PS C:\> Set-MsolCompanyAllowedDataLocation -ServiceType "MicrosoftCommunicationsOnline" -Location "EUR"
+  description: |-
+    This command attempts to set an allowed data location for the **MicrosoftCommunicationsOnline** service type for Europe for a company.
+    The **MicrosoftCommunicationsOnline** service type is also known as Skype for Business.
+  summary: ""
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: InitialDomain
+  description: |+
+    Specifies the initial MOERA domain to reserve for SharePoint service provisioning purpose.
+    In v1, specify a valid DNS domain fully qualified domain name.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Boolean" data-throw-if-not-resolved="False" />
+  name: IsDefault
+  description: |+
+    Specifies whether the location is the default allowed data location for the given service type.
+    There is exactly one default allowed data location per service type.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Location
+  isRequired: true
+  description: |+
+    Specifies the allowed data location of a service type.
+    This value must match one of the current supported data locations by the service type.
+    Otherwise, this cmdlet returns an error.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Boolean" data-throw-if-not-resolved="False" />
+  name: Overwrite
+  description: |+
+    Indicates whether to overwrite an existing allowed data location if one already exists for the same {ServiceType, Location} pair for the company.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ServiceType
+  isRequired: true
+  description: |+
+    Specifies the service type of the allowed data location to set.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Guid" data-throw-if-not-resolved="False" />
+  name: TenantId
+  description: |+
+    Specifies the unique ID of the tenant on which to perform the operation.
+    The default value is the tenant of the current user.
+    This parameter applies only to partner users.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: MSOnline.Set-MsolCompanyAllowedDataLocation
+name: Set-MsolCompanyAllowedDataLocation
+description: |-
+  The **Set-MsolCompanyAllowedDataLocation** cmdlet attempts to set an allowed data location or update an existing allowed data location for a service type for a company in v1.
+metadata:
+  external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
+  online version: ""
+  schema: 2.0.0
+  ms.assetid: 326AC6B3-327F-4A2C-9018-C969949606A0
+  ms.reviewer: stevemutungi
+  ms.custom: iamfeature=PowerShell

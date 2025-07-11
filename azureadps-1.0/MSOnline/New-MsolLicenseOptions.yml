@@ -1,0 +1,55 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Creates a License Options object.
+module: MSOnline
+notes: ""
+links:
+- text: New-MsolUser
+  href: ./New-MsolUser.yml
+- text: Set-MsolUserLicense
+  href: ./Set-MsolUserLicense.yml
+syntaxes:
+- >-
+  New-MsolLicenseOptions -AccountSkuId <String>
+
+   [-DisabledPlans <System.Collections.Generic.List`1[System.String]>] [<CommonParameters>]
+examples:
+- title: 'Example 1: Create license options object'
+  code: |-
+    PS C:\> New-MsolLicenseOptions -AccountSkuId Contoso:BPOS_STANDARD -DisabledPlans EXCHANGE_STANDARD
+  description: |-
+    This command creates a license options object.
+    This object can be used for the license options parameter in the [New-MsolUser](./New-MsolUser.yml) or [Set-MsolUserLicense](./Set-MsolUserLicense.yml) cmdlets.
+  summary: ""
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: AccountSkuId
+  isRequired: true
+  description: |+
+    Specifies the license, or account SKU ID, for these options.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="System.Collections.Generic.List`1" data-throw-if-not-resolved="False" /><span>[</span><xref href="System.String" data-throw-if-not-resolved="False" /><span>]</span>
+  name: DisabledPlans
+  description: |+
+    Specifies a list of service plans to disable when assigning this license to the user.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: MSOnline.New-MsolLicenseOptions
+name: New-MsolLicenseOptions
+description: |-
+  The **New-MsolLicenseOptions** cmdlet creates a License Options object.
+  This cmdlet disables specific service plans when assigning a user a license using the [Set-MsolUserLicense](./Set-MsolUserLicense.yml) cmdlet.
+metadata:
+  external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
+  online version: ""
+  schema: 2.0.0
+  ms.assetid: 8D9F4A29-671A-468A-9B20-B985DF1B4EC2
+  ms.reviewer: stevemutungi
+  ms.custom: iamfeature=PowerShell

@@ -1,0 +1,83 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Converts the domain from using single sign-on to using standard authentication.
+module: MSOnline
+notes: ""
+links:
+- text: Convert-MsolDomainToFederated
+  href: ./Convert-MsolDomainToFederated.yml
+syntaxes:
+- >-
+  Convert-MsolDomainToStandard -PasswordFile <String> -SkipUserConversion <Boolean> -DomainName <String>
+
+   [-WhatIf] [-Confirm] [<CommonParameters>]
+parameters:
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the command.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: DomainName
+  isRequired: true
+  description: |+
+    Specifies the domain name to convert from single sign-on to standard authentication.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: PasswordFile
+  isRequired: true
+  description: |+
+    Specifies the file where converted users' user names and temporary passwords are recorded.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Boolean" data-throw-if-not-resolved="False" />
+  name: SkipUserConversion
+  isRequired: true
+  description: |+
+    Specifies whether users are not converted as part of the operation.
+    You can run the cmdlet again to convert users at a later date.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: MSOnline.Convert-MsolDomainToStandard
+name: Convert-MsolDomainToStandard
+description: |-
+  The **Convert-MsolDomainToStandard** cmdlet converts the specified domain from single sign-on (also known as identity federation) to standard authentication.
+  Single sign-on is also known as identity federation.
+
+  This process also removes the relying party trust settings in the Active Directory Federation Services 2.0 server and Microsoft Online.
+
+  After the conversion, this cmdlet converts all existing users from single sign-on to standard authentication.
+  Any existing user who was configured for single sign-on gets a new temporary password as part of the conversion process.
+  Each converted user name and new temporary password is recorded in a file for reference by the administrator.
+  The administrator can then distribute the new temporary password to each converted user to enable the user to sign in to Microsoft Online Services.
+metadata:
+  external help file: Microsoft.Online.Identity.Federation.PowerShell.dll-Help.xml
+  online version: ""
+  schema: 2.0.0
+  ms.assetid: 959CE65E-2BC3-466D-A1E2-B9B01D9AD0EE
+  ms.reviewer: stevemutungi
+  ms.custom: iamfeature=PowerShell

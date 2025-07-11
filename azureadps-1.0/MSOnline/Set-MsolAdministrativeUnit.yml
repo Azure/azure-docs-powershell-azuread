@@ -1,0 +1,83 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Updates the properties of an administrative unit.
+module: MSOnline
+notes: ""
+links:
+- text: Get-MsolAdministrativeUnit
+  href: ./Get-MsolAdministrativeUnit.yml
+- text: New-MsolAdministrativeUnit
+  href: ./New-MsolAdministrativeUnit.yml
+- text: Remove-MsolAdministrativeUnit
+  href: ./Remove-MsolAdministrativeUnit.yml
+syntaxes:
+- >-
+  Set-MsolAdministrativeUnit [-ObjectId <Guid>] [-DisplayName <String>] [-Description <String>]
+
+   [-TenantId <Guid>] [<CommonParameters>]
+examples:
+- title: 'Example 1: Modify a description of an administrative unit'
+  code: |-
+    PS C:\> $AdministrativeUnit = Get-MsolAdministrativeUnit -SearchString "West Coast"
+    PS C:\> Set-MsolAdministrativeUnit -Description "West Coast region" -ObjectID $AdministrativeUnit.ObjectId
+  description: |-
+    The first command gets an administrative unit that matches a search string by using the [Get-MsolAdministrativeUnit](./Get-MsolAdministrativeUnit.yml) cmdlet.
+    The command stores the administrative unit in the $AdministrativeUnit variable.
+
+    The second command assigns the description value of West Coast region.
+    The command specifies the administrative unit by using the object ID of $AdministrativeUnit.
+  summary: ""
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Description
+  description: |+
+    Specifies a description for the administrative unit.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: DisplayName
+  description: |+
+    Specifies a display name for the administrative unit.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Guid" data-throw-if-not-resolved="False" />
+  name: ObjectId
+  description: |+
+    Specifies the unique ID of the administrative unit to update.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Guid" data-throw-if-not-resolved="False" />
+  name: TenantId
+  description: |+
+    Specifies the unique ID of the tenant on which to perform the operation.
+    The default value is the tenant of the current user.
+    This parameter applies only to partner users.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: MSOnline.Set-MsolAdministrativeUnit
+name: Set-MsolAdministrativeUnit
+description: |-
+  The **Set-MsolAdministrativeUnit** cmdlet updates the properties of an administrative unit.
+metadata:
+  external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
+  online version: ""
+  schema: 2.0.0
+  ms.assetid: 287EDFB6-E2D4-417A-B8B2-29D6EFD9F1E7
+  ms.reviewer: stevemutungi
+  ms.custom: iamfeature=PowerShell

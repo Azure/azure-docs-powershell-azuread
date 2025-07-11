@@ -1,0 +1,41 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Removes a role definition.
+module: AzureADPreview
+notes: ""
+inputs:
+- name: <xref href="System.String" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="System.Object" data-throw-if-not-resolved="False" />
+  description: ""
+syntaxes:
+- Remove-AzureADMSRoleDefinition -Id <String> [<CommonParameters>]
+examples:
+- title: Example 1
+  code: |-
+    PS C:\> Remove-AzureADMSRoleDefinition -Id f2ef992c-3afb-46b9-b7cf-a126ee74c451
+  description: |-
+    This command removes the specified role definition from AzureAD.
+  summary: ""
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  isRequired: true
+  description: |+
+    Spevifies the id for the role definition.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: AzureADPreview.Remove-AzureADMSRoleDefinition
+name: Remove-AzureADMSRoleDefinition
+description: |-
+  The Remove-AzureADMSRoleDefinition cmdlet removes a role definition from Azure Active Directory (AD).
+metadata:
+  external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
+  Module Name: AzureADPreview
+  online version: ""
+  schema: 2.0.0

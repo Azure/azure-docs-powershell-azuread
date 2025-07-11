@@ -1,0 +1,77 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Gets members of a directory role.
+module: AzureADPreview
+notes: ""
+links:
+- text: Add-AzureADDirectoryRoleMember
+  href: ./Add-AzureADDirectoryRoleMember.yml
+- text: Remove-AzureADDirectoryRoleMember
+  href: ./Remove-AzureADDirectoryRoleMember.yml
+syntaxes:
+- >-
+  Get-AzureADDirectoryRoleMember -ObjectId <String> [-InformationAction <ActionPreference>]
+
+   [-InformationVariable <String>] [<CommonParameters>]
+examples:
+- title: 'Example 1: Get members by role ID'
+  code: |-
+    PS C:\>Get-AzureADDirectoryRoleMember -ObjectId "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb"
+
+    ObjectId                             ObjectType
+    --------                             ----------
+    aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb User
+    bbbbbbbb-1111-2222-3333-cccccccccccc User
+    cccccccc-2222-3333-4444-dddddddddddd User
+  description: |-
+    This command gets the members of the specified role.
+  summary: ""
+parameters:
+- type: <xref href="ActionPreference" data-throw-if-not-resolved="False" />
+  name: InformationAction
+  description: |+
+    Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
+
+    - Continue
+    - Ignore
+    - Inquire
+    - SilentlyContinue
+    - Stop
+    - Suspend
+
+  defaultValue: None
+  position: Named
+  aliases: infa
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: InformationVariable
+  description: |+
+    Specifies an information variable.
+
+  defaultValue: None
+  position: Named
+  aliases: iv
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ObjectId
+  isRequired: true
+  description: |+
+    Specifies the ID of a directory role in Azure AD.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: AzureADPreview.Get-AzureADDirectoryRoleMember
+name: Get-AzureADDirectoryRoleMember
+description: |-
+  The **Get-AzureADDirectoryRoleMember** cmdlet gets the members of a directory role in Azure Active Directory (AD).
+metadata:
+  external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+  Module Name: AzureADPreview
+  ms.assetid: DD253761-F1BB-4EF1-B0CB-586C0040DECE
+  ms.custom: iamfeature=PowerShell
+  ms.reviewer: stevemutungi
+  online version: ""
+  schema: 2.0.0

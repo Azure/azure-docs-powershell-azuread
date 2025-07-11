@@ -1,0 +1,43 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  This cmdlet retrieves the objects that are referenced by a given domain name
+module: AzureADPreview
+notes: ""
+inputs:
+- name: <xref href="System.String" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="System.Object" data-throw-if-not-resolved="False" />
+  description: ""
+syntaxes:
+- Get-AzureADDomainNameReference -Name <String> [<CommonParameters>]
+examples:
+- title: Example 1
+  code: |-
+    PS C:\WINDOWS\system32> Get-AzureADDomainNameReference -Name drumkit.onmicrosoft.com
+  description: |-
+    This example shows how to retrieve the domain name reference objects for a domain that is specified through the -Name parameter
+  summary: ""
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Name
+  isRequired: true
+  description: |+
+    The name of the domain name for which the referenced objects are retrieved
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: AzureADPreview.Get-AzureADDomainNameReference
+name: Get-AzureADDomainNameReference
+description: |-
+  This cmdlet retrieves the objects that are referenced by a given domain name
+metadata:
+  external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+  Module Name: AzureADPreview
+  ms.custom: iamfeature=PowerShell
+  ms.reviewer: stevemutungi
+  online version: ""
+  schema: 2.0.0

@@ -1,0 +1,40 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  This cmdlet retrieves the device configuration object
+module: AzureADPreview
+notes: ""
+inputs:
+- name: <xref href="None" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="System.Object" data-throw-if-not-resolved="False" />
+  description: ""
+syntaxes:
+- Get-AzureADDeviceConfiguration [<CommonParameters>]
+examples:
+- title: Example 1
+  code: |-
+    PS C:\WINDOWS\system32> Get-AzureADDeviceConfiguration | fl
+
+
+    DeletionTimeStamp                   :
+    ObjectId                            : aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb
+    ObjectType                          : DeviceConfiguration
+    PublicIssuerCertificates            : {}
+    CloudPublicIssuerCertificates       : {}
+    RegistrationQuota                   : 20
+    MaximumRegistrationInactivityPeriod : 90
+  description: |-
+    This example shows the formatted list for the device configuration record that is retrieved by the cmdlet
+  summary: ""
+uid: AzureADPreview.Get-AzureADDeviceConfiguration
+name: Get-AzureADDeviceConfiguration
+description: |-
+  This cmdlet retrieves the device configuration object
+metadata:
+  external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+  Module Name: AzureADPreview
+  ms.custom: iamfeature=PowerShell
+  ms.reviewer: stevemutungi
+  online version: ""
+  schema: 2.0.0

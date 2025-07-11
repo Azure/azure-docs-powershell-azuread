@@ -1,0 +1,145 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Sets company-level configuration settings.
+module: MSOnline
+notes: ""
+links:
+- text: Get-MsolCompanyInformation
+  href: ./Get-MsolCompanyInformation.yml
+syntaxes:
+- >-
+  Set-MsolCompanySettings [-SelfServePasswordResetEnabled <Boolean>]
+
+   [-UsersPermissionToCreateGroupsEnabled <Boolean>] [-UsersPermissionToCreateLOBAppsEnabled <Boolean>]
+
+   [-UsersPermissionToReadOtherUsersEnabled <Boolean>] [-UsersPermissionToUserConsentToAppEnabled <Boolean>]
+
+   [-DefaultUsageLocation <String>] [-AllowAdHocSubscriptions <Boolean>] [-AllowEmailVerifiedUsers <Boolean>]
+
+   [-TenantId <Guid>] [<CommonParameters>]
+examples:
+- title: 'Example 1: Turns on the self-serve password reset feature'
+  code: |-
+    PS C:\> Set-MsolCompanySettings -SelfServePasswordResetEnabled $True
+  description: |-
+    This command turns on the self-serve password reset feature for all administrators in the company.
+  summary: ""
+parameters:
+- type: <xref href="Boolean" data-throw-if-not-resolved="False" />
+  name: AllowAdHocSubscriptions
+  description: |+
+    Indicates whether to allow users to sign up for email based subscriptions.
+    This setting is applied company-wide.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Boolean" data-throw-if-not-resolved="False" />
+  name: AllowEmailVerifiedUsers
+  description: |+
+    Indicates whether users can join the tenant by email validation.
+    To join, the user must have an email address in a domain which matches one of the verified domains in the tenant.
+    This setting is applied company-wide for all domains in the tenant.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: DefaultUsageLocation
+  description: |+
+    When assigning licenses to Microsoft products this value will be applied to the User.UsageLocation attribute if none is present.
+    If the default value is $Null then the location value for the tenant is used.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Boolean" data-throw-if-not-resolved="False" />
+  name: SelfServePasswordResetEnabled
+  description: |+
+    Indicates whether to allow the use of the self-service password reset feature for all administrators in the company.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Guid" data-throw-if-not-resolved="False" />
+  name: TenantId
+  description: |+
+    Specifies the unique ID of the tenant on which to perform the operation.
+    The default value is the tenant of the current user.
+    This parameter applies only to partner users.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Boolean" data-throw-if-not-resolved="False" />
+  name: UsersPermissionToCreateGroupsEnabled
+  description: |+
+    Indicates whether to allow users to create security groups.
+    This setting is applied company-wide.  Set to $False to disable users' ability to create security groups. 
+
+    > [!NOTE]
+    > For information on how to allow users to create Office 365 groups, please see [Azure Active Directory Cmdlets for Configuring Group Settings](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-accessmanagement-groups-settings-cmdlets)
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Boolean" data-throw-if-not-resolved="False" />
+  name: UsersPermissionToCreateLOBAppsEnabled
+  description: |+
+    Indicates whether to allow users to create new applications.
+    This setting is applied company-wide.
+    Set to False to disable users' ability to create new applications for their organization.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Boolean" data-throw-if-not-resolved="False" />
+  name: UsersPermissionToReadOtherUsersEnabled
+  description: |+
+    Indicates whether to allow users to view the profile info of other users in their company.
+    This setting is applied company-wide.
+    Set to $False to disable users' ability to use the Azure AD module for Windows PowerShell to access user information for their organization.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Boolean" data-throw-if-not-resolved="False" />
+  name: UsersPermissionToUserConsentToAppEnabled
+  description: |+
+    Indicates whether to allow users to consent to apps that require access to their cloud user data, such as directory user profile or Office 365 mail and OneDrive for business.
+    This setting is applied company-wide.
+    Set to $False to disable users' ability to grant consent to applications.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: MSOnline.Set-MsolCompanySettings
+name: Set-MsolCompanySettings
+description: |-
+  The **Set-MsolCompanySettings** cmdlet is used to set company-level configuration settings.
+  Use [Get-MsolCompanyInformation](./Get-MsolCompanyInformation.yml) to read the current values of these settings.
+metadata:
+  external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
+  online version: ""
+  schema: 2.0.0
+  ms.assetid: A41324CE-63FC-4802-8589-344C52732E49
+  ms.reviewer: stevemutungi
+  ms.custom: iamfeature=PowerShell

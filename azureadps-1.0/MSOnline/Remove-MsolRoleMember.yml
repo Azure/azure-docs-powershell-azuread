@@ -1,0 +1,104 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Removes a member from an administrator role.
+module: MSOnline
+notes: ""
+links:
+- text: Add-MsolRoleMember
+  href: ./Add-MsolRoleMember.yml
+- text: Get-MsolRoleMember
+  href: ./Get-MsolRoleMember.yml
+syntaxes:
+- >-
+  Remove-MsolRoleMember -RoleObjectId <Guid> [-RoleMemberType <RoleMemberType>] [-RoleMemberObjectId <Guid>]
+
+   [-RoleMemberEmailAddress <String>] [-TenantId <Guid>] [<CommonParameters>]
+- >-
+  Remove-MsolRoleMember [-RoleMemberType <RoleMemberType>] [-RoleMemberObjectId <Guid>]
+
+   [-RoleMemberEmailAddress <String>] -RoleName <String> [-TenantId <Guid>] [<CommonParameters>]
+examples:
+- title: 'Example 1: Remove a member from an administrator role'
+  code: |-
+    PS C:\> Remove-MsolRoleMember -RoleName "Company Administrator" -RoleMemberType User -RoleMemberEmailAddress "elisadaugherty@contoso.com"
+  description: |-
+    This command removes elisadaugherty@contoso.com from the Company Administrator role.
+  summary: ""
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: RoleMemberEmailAddress
+  description: |+
+    Specifies the member remove add.
+    Specify either the _RoleMemberEmailAddress_ or _RoleMemberObjectId_ parameter.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Guid" data-throw-if-not-resolved="False" />
+  name: RoleMemberObjectId
+  description: |+
+    Specifies the unique object ID of the member to remove.
+    Specify either _RoleMemberEmailAddress_ or _RoleMemberObjectId_.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="RoleMemberType" data-throw-if-not-resolved="False" />
+  name: RoleMemberType
+  description: |+
+    Specifies the type of role of the member to remove.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: RoleName
+  isRequired: true
+  description: |+
+    Specifies the name of the role from which to remove members.
+    Specify either the _RoleName_ or _RoleObjectId_ parameter.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Guid" data-throw-if-not-resolved="False" />
+  name: RoleObjectId
+  isRequired: true
+  description: |+
+    Specifies the unique ID of the role from which to remove members.
+    Specify either _RoleName_ or _RoleObjectId_.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Guid" data-throw-if-not-resolved="False" />
+  name: TenantId
+  description: |+
+    Specifies the unique ID of the tenant on which to perform the operation.
+    The default value is the tenant of the current user.
+    This parameter applies only to partner users.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: MSOnline.Remove-MsolRoleMember
+name: Remove-MsolRoleMember
+description: |-
+  The **Remove-MsolRoleMember** cmdlet removes a user from an administrator role.
+metadata:
+  external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
+  online version: ""
+  schema: 2.0.0
+  ms.assetid: 54F95D25-05CB-4AC9-A11A-4BF3E734CA4F
+  ms.reviewer: stevemutungi
+  ms.custom: iamfeature=PowerShell

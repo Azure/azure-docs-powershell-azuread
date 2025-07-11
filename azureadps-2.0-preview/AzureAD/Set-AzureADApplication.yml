@@ -1,0 +1,391 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Updates an application.
+module: AzureADPreview
+notes: ""
+syntaxes:
+- >-
+  Set-AzureADApplication -ObjectId <String>
+
+   [-AddIns <System.Collections.Generic.List`1[Microsoft.Open.AzureAD.Model.AddIn]>]
+
+   [-AllowGuestsSignIn <Boolean>] [-AllowPassthroughUsers <Boolean>] [-AppLogoUrl <String>]
+
+   [-AppRoles <System.Collections.Generic.List`1[Microsoft.Open.AzureAD.Model.AppRole]>]
+
+   [-AvailableToOtherTenants <Boolean>] [-DisplayName <String>] [-ErrorUrl <String>]
+
+   [-GroupMembershipClaims <String>] [-Homepage <String>]
+
+   [-IdentifierUris <System.Collections.Generic.List`1[System.String]>] [-InformationalUrls <InformationalUrl>]
+
+   [-IsDeviceOnlyAuthSupported <Boolean>] [-IsDisabled <Boolean>]
+
+   [-KeyCredentials <System.Collections.Generic.List`1[Microsoft.Open.AzureAD.Model.KeyCredential]>]
+
+   [-KnownClientApplications <System.Collections.Generic.List`1[System.String]>] [-LogoutUrl <String>]
+
+   [-Oauth2AllowImplicitFlow <Boolean>] [-Oauth2AllowUrlPathMatching <Boolean>]
+
+   [-Oauth2Permissions <System.Collections.Generic.List`1[Microsoft.Open.AzureAD.Model.OAuth2Permission]>]
+
+   [-Oauth2RequirePostResponse <Boolean>] [-OrgRestrictions <System.Collections.Generic.List`1[System.String]>]
+
+   [-OptionalClaims <OptionalClaims>] [-ParentalControlSettings <ParentalControlSettings>]
+
+   [-PasswordCredentials <System.Collections.Generic.List`1[Microsoft.Open.AzureAD.Model.PasswordCredential]>]
+
+   [-PreAuthorizedApplications <System.Collections.Generic.List`1[Microsoft.Open.AzureAD.Model.PreAuthorizedApplication]>]
+
+   [-PublicClient <Boolean>] [-PublisherDomain <String>] [-RecordConsentConditions <String>]
+
+   [-ReplyUrls <System.Collections.Generic.List`1[System.String]>]
+
+   [-RequiredResourceAccess <System.Collections.Generic.List`1[Microsoft.Open.AzureAD.Model.RequiredResourceAccess]>]
+
+   [-SamlMetadataUrl <String>] [-SignInAudience <String>] [-WwwHomepage <String>] [<CommonParameters>]
+examples:
+- title: 'Example 1: Update an application'
+  code: |-
+    PS C:\>Set-AzureADApplication -ObjectId "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb" -DisplayName "New Name"
+  description: |-
+    This command updates the specified application.
+  summary: ""
+parameters:
+- type: <xref href="System.Collections.Generic.List`1" data-throw-if-not-resolved="False" /><span>[</span><xref href="Microsoft.Open.AzureAD.Model.AddIn" data-throw-if-not-resolved="False" /><span>]</span>
+  name: AddIns
+  description: |+
+    Defines custom behavior that a consuming service can use to call an app in specific contexts.
+    For example, applications that can render file streams may set the addIns property for its "FileHandler" functionality.
+    This will let services like Office 365 call the application in the context of a document the user is working on.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Boolean" data-throw-if-not-resolved="False" />
+  name: AllowGuestsSignIn
+  description: |+
+    {{ Fill AllowGuestsSignIn Description }}
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Boolean" data-throw-if-not-resolved="False" />
+  name: AllowPassthroughUsers
+  description: |+
+    {{ Fill AllowPassthroughUsers Description }}
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: AppLogoUrl
+  description: |+
+    {{ Fill AppLogoUrl Description }}
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="System.Collections.Generic.List`1" data-throw-if-not-resolved="False" /><span>[</span><xref href="Microsoft.Open.AzureAD.Model.AppRole" data-throw-if-not-resolved="False" /><span>]</span>
+  name: AppRoles
+  description: |+
+    The collection of application roles that an application may declare.
+    These roles can be assigned to users, groups or service principals.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Boolean" data-throw-if-not-resolved="False" />
+  name: AvailableToOtherTenants
+  description: |+
+    True if the application is shared with other tenants; otherwise, false.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: DisplayName
+  description: |+
+    Specifies the display name.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ErrorUrl
+  description: |+
+    Specifies an error URL.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: GroupMembershipClaims
+  description: |+
+    A bitmask that configures the "groups" claim issued in a user or OAuth 2.0 access token that the application expects.
+    The bitmask values are: 0: None, 1: Security groups and Azure AD roles, 2: Reserved, and 4: Reserved.
+    Setting the bitmask to 7 will get all of the security groups, distribution groups, and Azure AD directory roles that the signed-in user is a member of.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Homepage
+  description: |+
+    Specifies the home page.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="System.Collections.Generic.List`1" data-throw-if-not-resolved="False" /><span>[</span><xref href="System.String" data-throw-if-not-resolved="False" /><span>]</span>
+  name: IdentifierUris
+  description: |+
+    Specifies identifier URIs.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="InformationalUrl" data-throw-if-not-resolved="False" />
+  name: InformationalUrls
+  description: |+
+    {{ Fill InformationalUrls Description }}
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Boolean" data-throw-if-not-resolved="False" />
+  name: IsDeviceOnlyAuthSupported
+  description: |+
+    {{ Fill IsDeviceOnlyAuthSupported Description }}
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Boolean" data-throw-if-not-resolved="False" />
+  name: IsDisabled
+  description: |+
+    {{ Fill IsDisabled Description }}
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="System.Collections.Generic.List`1" data-throw-if-not-resolved="False" /><span>[</span><xref href="Microsoft.Open.AzureAD.Model.KeyCredential" data-throw-if-not-resolved="False" /><span>]</span>
+  name: KeyCredentials
+  description: |+
+    Specifies key credentials.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="System.Collections.Generic.List`1" data-throw-if-not-resolved="False" /><span>[</span><xref href="System.String" data-throw-if-not-resolved="False" /><span>]</span>
+  name: KnownClientApplications
+  description: |+
+    Specifies known client applications.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: LogoutUrl
+  description: |+
+    Specifies the logout URL.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Boolean" data-throw-if-not-resolved="False" />
+  name: Oauth2AllowImplicitFlow
+  description: |+
+    Specifies whether this web application can request OAuth2.0 implicit flow tokens.
+    The default is false.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Boolean" data-throw-if-not-resolved="False" />
+  name: Oauth2AllowUrlPathMatching
+  description: |+
+    Specifies whether, as part of OAuth 2.0 token requests, Azure AD will allow path matching of the redirect URI against the application's replyUrls.
+    The default is false.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="System.Collections.Generic.List`1" data-throw-if-not-resolved="False" /><span>[</span><xref href="Microsoft.Open.AzureAD.Model.OAuth2Permission" data-throw-if-not-resolved="False" /><span>]</span>
+  name: Oauth2Permissions
+  description: |+
+    The collection of OAuth 2.0 permission scopes that the web API (resource) application exposes to client applications.
+    These permission scopes may be granted to client applications during consent.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Boolean" data-throw-if-not-resolved="False" />
+  name: Oauth2RequirePostResponse
+  description: |+
+    {{Fill Oauth2RequirePostResponse Description}}
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ObjectId
+  isRequired: true
+  description: |+
+    Specifies the ID of an application in Azure AD.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="OptionalClaims" data-throw-if-not-resolved="False" />
+  name: OptionalClaims
+  description: |+
+    {{ Fill OptionalClaims Description }}
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="System.Collections.Generic.List`1" data-throw-if-not-resolved="False" /><span>[</span><xref href="System.String" data-throw-if-not-resolved="False" /><span>]</span>
+  name: OrgRestrictions
+  description: |+
+    {{ Fill OrgRestrictions Description }}
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="ParentalControlSettings" data-throw-if-not-resolved="False" />
+  name: ParentalControlSettings
+  description: |+
+    {{ Fill ParentalControlSettings Description }}
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="System.Collections.Generic.List`1" data-throw-if-not-resolved="False" /><span>[</span><xref href="Microsoft.Open.AzureAD.Model.PasswordCredential" data-throw-if-not-resolved="False" /><span>]</span>
+  name: PasswordCredentials
+  description: |+
+    Specifies password credentials.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="System.Collections.Generic.List`1" data-throw-if-not-resolved="False" /><span>[</span><xref href="Microsoft.Open.AzureAD.Model.PreAuthorizedApplication" data-throw-if-not-resolved="False" /><span>]</span>
+  name: PreAuthorizedApplications
+  description: |+
+    {{ Fill PreAuthorizedApplications Description }}
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Boolean" data-throw-if-not-resolved="False" />
+  name: PublicClient
+  description: |+
+    Specifies whether this application is a public client (such as an installed application running on a mobile device).
+    Default is false.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: PublisherDomain
+  description: |+
+    {{ Fill PublisherDomain Description }}
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: RecordConsentConditions
+  description: |+
+    Do not use.
+    May be removed in future versions
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="System.Collections.Generic.List`1" data-throw-if-not-resolved="False" /><span>[</span><xref href="System.String" data-throw-if-not-resolved="False" /><span>]</span>
+  name: ReplyUrls
+  description: |+
+    Specifies the URLs that user tokens are sent to for sign in, or the redirect URIs that OAuth 2.0 authorization codes and access tokens are sent to.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="System.Collections.Generic.List`1" data-throw-if-not-resolved="False" /><span>[</span><xref href="Microsoft.Open.AzureAD.Model.RequiredResourceAccess" data-throw-if-not-resolved="False" /><span>]</span>
+  name: RequiredResourceAccess
+  description: |+
+    @{Text=}
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: SamlMetadataUrl
+  description: |+
+    @{Text=}
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: SignInAudience
+  description: |+
+    {{ Fill SignInAudience Description }}
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: WwwHomepage
+  description: |+
+    {{ Fill WwwHomepage Description }}
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: AzureADPreview.Set-AzureADApplication
+name: Set-AzureADApplication
+description: ""
+metadata:
+  external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+  Module Name: AzureADPreview
+  ms.custom: iamfeature=PowerShell
+  ms.reviewer: stevemutungi
+  online version: ""
+  schema: 2.0.0

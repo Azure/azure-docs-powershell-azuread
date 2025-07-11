@@ -1,0 +1,43 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  This cmdlet is used to permanently delete a previously deleted directory object
+module: AzureADPreview
+notes: ""
+inputs:
+- name: <xref href="System.String" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="System.Object" data-throw-if-not-resolved="False" />
+  description: ""
+syntaxes:
+- Remove-AzureADMSDeletedDirectoryObject -Id <String> [<CommonParameters>]
+examples:
+- title: Example 1
+  code: |-
+    Remove-AzureADMSDeletedDirectoryObject -Id aa644285-eb75-4389-885e-7233f096984c
+  description: |-
+    This example shows how to permanently delete a previously deleted directory object with Id = aa644285-eb75-4389-885e-7233f096984c
+  summary: ""
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  isRequired: true
+  description: |+
+    The Id of the directory object that is permanently deleted
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: AzureADPreview.Remove-AzureADMSDeletedDirectoryObject
+name: Remove-AzureADMSDeletedDirectoryObject
+description: |-
+  This cmdlet is used to permanently delete a previously deleted directory object. When a directory object is permanently deleted it can no longer be restored.
+metadata:
+  external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
+  Module Name: AzureADPreview
+  ms.custom: iamfeature=PowerShell
+  ms.reviewer: stevemutungi
+  online version: ""
+  schema: 2.0.0

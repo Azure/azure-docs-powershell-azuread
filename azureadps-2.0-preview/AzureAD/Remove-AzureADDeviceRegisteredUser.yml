@@ -1,0 +1,63 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Removes a registered user from a device.
+module: AzureADPreview
+notes: ""
+links:
+- text: Add-AzureADDeviceRegisteredUser
+  href: ./Add-AzureADDeviceRegisteredUser.yml
+- text: Get-AzureADDeviceRegisteredUser
+  href: ./Get-AzureADDeviceRegisteredUser.yml
+syntaxes:
+- Remove-AzureADDeviceRegisteredUser -ObjectId <String> -UserId <String> [<CommonParameters>]
+examples:
+- title: 'Example 1: Remove a registered user from a device'
+  code: |-
+    PS C:\> $Device = Get-AzureADDevice -Top 1
+    PS C:\> $User = Get-AzureADDeviceRegisteredUser -ObjectId $Device.ObjectId
+    PS C:\> Remove-AzureADDeviceRegisteredOwner -ObjectId $Device.ObjectId -OwnerId $Owner.ObjectId
+  description: |-
+    The first command gets a device by using the [Get-AzureADDevice](./Get-AzureADDevice.yml) cmdlet, and then stores it in the $Device variable.
+
+    The second command gets the registered user for the device in $Device by using the [Get-AzureADDeviceRegisteredUser](./Get-AzureADDeviceRegisteredUser.yml) cmdlet.
+    The command stores it in the $User variable.
+
+    The final command removes the user in $User from the device in $Device.
+  summary: ""
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ObjectId
+  isRequired: true
+  description: |+
+    Specifies the ID of an object.
+
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: UserId
+  isRequired: true
+  description: |+
+    Specifies the ID of a user.
+
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: AzureADPreview.Remove-AzureADDeviceRegisteredUser
+name: Remove-AzureADDeviceRegisteredUser
+description: |-
+  The **Remove-AzureADDeviceRegisteredUser** cmdlet removes a registered user from an Azure Active Directory device.
+metadata:
+  external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+  Module Name: AzureADPreview
+  ms.assetid: 18A501C7-DFDE-4F4D-A82C-6AA855EB5C33
+  ms.custom: iamfeature=PowerShell
+  ms.reviewer: stevemutungi
+  online version: ""
+  schema: 2.0.0

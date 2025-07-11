@@ -1,0 +1,72 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Updates an existing attribute set.
+module: AzureADPreview
+notes: ""
+inputs:
+- name: <xref href="System.String" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="System.Object" data-throw-if-not-resolved="False" />
+  description: ""
+syntaxes:
+- >-
+  Set-AzureADMSAttributeSet -Id <String> [-Description <String>] [-MaxAttributesPerSet <Int32>]
+
+   [<CommonParameters>]
+examples:
+- title: Example 1
+  code: |-
+    Set-AzureADMSAttributeSet -Id "Engineering" -Description "Attributes for cloud engineering team"
+  description: |-
+    Update an attribute set.
+
+    - Attribute set: `Engineering`
+  summary: ""
+- title: Example 2
+  code: |-
+    Set-AzureADMSAttributeSet -Id "Engineering" -MaxAttributesPerSet 20
+  description: |-
+    Update an attribute set.
+
+    - Attribute set: `Engineering`
+  summary: ""
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Description
+  description: |+
+    Description of the attribute set.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  isRequired: true
+  description: |+
+    Name of the attribute set.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: MaxAttributesPerSet
+  description: |+
+    Maximum number of custom security attributes that can be defined in the attribute set.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: AzureADPreview.Set-AzureADMSAttributeSet
+name: Set-AzureADMSAttributeSet
+description: |-
+  Updates an Azure Active Directory (Azure AD) attribute set object identified by ID.
+metadata:
+  external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
+  Module Name: AzureADPreview
+  online version: ""
+  schema: 2.0.0
