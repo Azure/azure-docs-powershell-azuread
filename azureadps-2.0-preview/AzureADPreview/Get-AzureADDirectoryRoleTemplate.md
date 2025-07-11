@@ -2,7 +2,7 @@
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
 Module Name: AzureADPreview
 ms.assetid: 186B4EE1-A85A-45C0-B480-ABB4FBEF9AE0
-ms.custom: iamfeature=PowerShell
+ms.custom: iamfeature=PowerShell, sfi-ga-nochange
 ms.reviewer: stevemutungi
 online version:
 schema: 2.0.0
