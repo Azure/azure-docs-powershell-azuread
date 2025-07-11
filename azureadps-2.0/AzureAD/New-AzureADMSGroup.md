@@ -187,6 +187,13 @@ Accept wildcard characters: False
 ### CommonParameters
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
+## INPUTS
+
+### None
+## OUTPUTS
+
+### System.Object
+
 ## NOTES
 
 See the [migration guide for New-AzureADMSGroup](./migrate/New-AzureADMSGroup.md) to the Microsoft Graph PowerShell.
@@ -194,13 +201,6 @@ See the [migration guide for New-AzureADMSGroup](./migrate/New-AzureADMSGroup.md
 This cmdlet is currently in Public Preview.
 While a cmdlet is in Public Preview, we may make changes to the cmdlet which could have unexpected effects.
 We recommend that you do not use this cmdlet in a production environment.
-
-## INPUTS
-
-### None
-## OUTPUTS
-
-### System.Object
 
 ## RELATED LINKS
 

@@ -63,10 +63,6 @@ Accept wildcard characters: False
 ### CommonParameters
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
-## NOTES
-
-See the [migration guide for Get-AzureADMSGroupLifecyclePolicy](./migrate/Get-AzureADMSGroupLifecyclePolicy.md) to the Microsoft Graph PowerShell.
-
 ## INPUTS
 
 ### System.String
@@ -75,5 +71,9 @@ System.Nullable\`1\[\[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral
 ## OUTPUTS
 
 ### System.Object
+
+## NOTES
+
+See the [migration guide for Get-AzureADMSGroupLifecyclePolicy](./migrate/Get-AzureADMSGroupLifecyclePolicy.md) to the Microsoft Graph PowerShell.
 
 ## RELATED LINKS
