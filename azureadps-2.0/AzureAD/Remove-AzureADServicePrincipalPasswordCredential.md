@@ -110,7 +110,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADServicePrincipalPasswordCredential]()
+[Get-AzureADServicePrincipalPasswordCredential](Get-AzureADServicePrincipalPasswordCredential.md)
 
-[New-AzureADServicePrincipalPasswordCredential]()
+[New-AzureADServicePrincipalPasswordCredential](New-AzureADServicePrincipalPasswordCredential.md)
 

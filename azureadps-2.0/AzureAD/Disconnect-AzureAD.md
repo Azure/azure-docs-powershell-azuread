@@ -112,5 +112,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Connect-AzureAD]()
+[Connect-AzureAD](Connect-AzureAD.md)
 

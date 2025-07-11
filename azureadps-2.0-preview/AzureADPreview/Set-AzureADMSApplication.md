@@ -3,6 +3,7 @@ external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
 Module Name: AzureADPreview
 online version:
 schema: 2.0.0
+ms.custom: sfi-ropc-nochange
 ---
 
 # Set-AzureADMSApplication
@@ -440,8 +441,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADMSApplication]()
+[Get-AzureADMSApplication](Get-AzureADMSApplication.md)
 
-[New-AzureADMSApplication]()
+[New-AzureADMSApplication](New-AzureADMSApplication.md)
 
-[Remove-AzureADMSApplication]()
+[Remove-AzureADMSApplication](Remove-AzureADMSApplication.md)

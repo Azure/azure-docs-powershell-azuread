@@ -60,8 +60,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADMSRoleDefinition]()
+[Get-AzureADMSRoleDefinition](Get-AzureADMSRoleDefinition.md)
 
-[New-AzureADMSRoleDefinition]()
+[New-AzureADMSRoleDefinition](New-AzureADMSRoleDefinition.md)
 
-[Set-AzureADMSRoleDefinition]()
+[Set-AzureADMSRoleDefinition](Set-AzureADMSRoleDefinition.md)

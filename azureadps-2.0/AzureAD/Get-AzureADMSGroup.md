@@ -181,14 +181,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 This cmdlet uses the MSGraph instead of the AzureAD Graph. Commands that use the MSGraph are in the format of \*-ADMS\*. For more information on the naming convention see [New enhancements to the #AzureAD PowerShell 2.0 preview. Manage dynamic groups and more!](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/new-enhancements-to-the-azuread-powershell-2-0-preview-manage/ba-p/245153)
 
-## NOTES
-
-See the [migration guide for Get-AzureADMSGroup](./migrate/Get-AzureADMSGroup.md) to the Microsoft Graph PowerShell.
-
-This cmdlet is currently in Public Preview.
-While a cmdlet is in Public Preview, we may make changes to the cmdlet which could have unexpected effects.
-We recommend that you do not use this cmdlet in a production environment.
-
 ## INPUTS
 
 ### System.String
@@ -197,6 +189,14 @@ System.Nullable\`1\[\[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, 
 ## OUTPUTS
 
 ### System.Object
+
+## NOTES
+
+See the [migration guide for Get-AzureADMSGroup](./migrate/Get-AzureADMSGroup.md) to the Microsoft Graph PowerShell.
+
+This cmdlet is currently in Public Preview.
+While a cmdlet is in Public Preview, we may make changes to the cmdlet which could have unexpected effects.
+We recommend that you do not use this cmdlet in a production environment.
 
 ## RELATED LINKS
 

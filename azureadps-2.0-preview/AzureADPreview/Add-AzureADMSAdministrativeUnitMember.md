@@ -71,7 +71,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADMSAdministrativeUnitMember]()
+[Get-AzureADMSAdministrativeUnitMember](Get-AzureADMSAdministrativeUnitMember.md)
 
-[Remove-AzureADMSAdministrativeUnitMember]()
+[Remove-AzureADMSAdministrativeUnitMember](Remove-AzureADMSAdministrativeUnitMember.md)
 

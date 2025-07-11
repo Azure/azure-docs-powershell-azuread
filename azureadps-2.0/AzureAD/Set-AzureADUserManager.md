@@ -110,6 +110,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADUserManager]()
+[Get-AzureADUserManager](Get-AzureADUserManager.md)
 
-[Remove-AzureADUserManager]()
+[Remove-AzureADUserManager](Remove-AzureADUserManager.md)

@@ -170,6 +170,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADApplicationPasswordCredential]()
+[Get-AzureADApplicationPasswordCredential](Get-AzureADApplicationPasswordCredential.md)
 
-[Remove-AzureADApplicationPasswordCredential]()
+[Remove-AzureADApplicationPasswordCredential](Remove-AzureADApplicationPasswordCredential.md)

@@ -1,7 +1,7 @@
 ---
 external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
 Module Name: AzureADPreview
-ms.custom: iamfeature=PowerShell
+ms.custom: iamfeature=PowerShell, sfi-ropc-nochange
 ms.reviewer: stevemutungi
 online version:
 schema: 2.0.0
@@ -596,8 +596,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADApplication]()
+[Get-AzureADApplication](Get-AzureADApplication.md)
 
-[New-AzureADApplication]()
+[New-AzureADApplication](New-AzureADApplication.md)
 
-[Remove-AzureADApplication]()
+[Remove-AzureADApplication](Remove-AzureADApplication.md)

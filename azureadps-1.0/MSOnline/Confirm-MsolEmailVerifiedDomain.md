@@ -5,7 +5,7 @@ online version:
 schema: 2.0.0
 ms.assetid: F4F91C75-9E62-4855-A82F-3DF87FC33C4F
 ms.reviewer: stevemutungi
-ms.custom: iamfeature=PowerShell
+ms.custom: iamfeature=PowerShell, sfi-ga-nochange
 ---
 
 # Confirm-MsolEmailVerifiedDomain

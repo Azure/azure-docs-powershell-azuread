@@ -602,9 +602,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADUser]()
+[Get-AzureADUser](Get-AzureADUser.md)
 
-[Remove-AzureADUser]()
+[Remove-AzureADUser](Remove-AzureADUser.md)
 
-[Set-AzureADUser]()
+[Set-AzureADUser](Set-AzureADUser.md)
 

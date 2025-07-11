@@ -57,8 +57,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADMSApplication]()
+[Get-AzureADMSApplication](Get-AzureADMSApplication.md)
 
-[New-AzureADMSApplication]()
+[New-AzureADMSApplication](New-AzureADMSApplication.md)
 
-[Set-AzureADMSApplication]()
+[Set-AzureADMSApplication](Set-AzureADMSApplication.md)

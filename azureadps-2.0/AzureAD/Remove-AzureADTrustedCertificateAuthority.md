@@ -96,9 +96,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADTrustedCertificateAuthority]()
+[Get-AzureADTrustedCertificateAuthority](Get-AzureADTrustedCertificateAuthority.md)
 
-[New-AzureADTrustedCertificateAuthority]()
+[New-AzureADTrustedCertificateAuthority](New-AzureADTrustedCertificateAuthority.md)
 
-[Set-AzureADTrustedCertificateAuthority]()
+[Set-AzureADTrustedCertificateAuthority](Set-AzureADTrustedCertificateAuthority.md)
 

@@ -110,7 +110,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Add-AzureADApplicationPolicy]()
+[Add-AzureADApplicationPolicy](Add-AzureADApplicationPolicy.md)
 
-[Get-AzureADApplicationPolicy]()
+[Get-AzureADApplicationPolicy](Get-AzureADApplicationPolicy.md)
 

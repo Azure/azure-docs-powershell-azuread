@@ -60,5 +60,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Set-AzureADMSAuthorizationPolicy]()
+[Set-AzureADMSAuthorizationPolicy](Set-AzureADMSAuthorizationPolicy.md)
 
