@@ -73,9 +73,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADUser]()
+[Get-AzureADUser](Get-AzureADUser.md)
 
-[Remove-AzureADUserExtension]()
+[Remove-AzureADUserExtension](Remove-AzureADUserExtension.md)
 
-[Set-AzureADUserExtension]()
+[Set-AzureADUserExtension](Set-AzureADUserExtension.md)
 

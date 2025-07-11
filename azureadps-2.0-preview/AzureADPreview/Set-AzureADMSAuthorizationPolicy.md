@@ -148,5 +148,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADMSAuthorizationPolicy]()
+[Get-AzureADMSAuthorizationPolicy](Get-AzureADMSAuthorizationPolicy.md)
 

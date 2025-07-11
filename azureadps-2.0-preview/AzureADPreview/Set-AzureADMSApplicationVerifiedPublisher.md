@@ -75,5 +75,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Remove-AzureADMSApplicationVerifiedPublisher]()
+[Remove-AzureADMSApplicationVerifiedPublisher](Remove-AzureADMSApplicationVerifiedPublisher.md)
 

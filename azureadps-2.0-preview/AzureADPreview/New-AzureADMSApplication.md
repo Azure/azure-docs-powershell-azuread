@@ -535,14 +535,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADMSApplication]()
+[Get-AzureADMSApplication](Get-AzureADMSApplication.md)
 
-[Remove-AzureADMSApplication]()
+[Remove-AzureADMSApplication](Remove-AzureADMSApplication.md)
 
-[Set-AzureADMSApplication]()
+[Set-AzureADMSApplication](Set-AzureADMSApplication.md)
 
-[Get-AzureADMSApplication]()
+[Get-AzureADMSApplication](Get-AzureADMSApplication.md)
 
-[Remove-AzureADMSApplication]()
+[Remove-AzureADMSApplication](Remove-AzureADMSApplication.md)
 
-[Set-AzureADMSApplication]()
+[Set-AzureADMSApplication](Set-AzureADMSApplication.md)

@@ -124,11 +124,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[New-AzureADTrustedCertificateAuthority]()
+[New-AzureADTrustedCertificateAuthority](New-AzureADTrustedCertificateAuthority.md)
 
-[Remove-AzureADTrustedCertificateAuthority]()
+[Remove-AzureADTrustedCertificateAuthority](Remove-AzureADTrustedCertificateAuthority.md)
 
-[Set-AzureADTrustedCertificateAuthority]()
+[Set-AzureADTrustedCertificateAuthority](Set-AzureADTrustedCertificateAuthority.md)
 
 [Online help and examples for working with certificate authority](https://azure.microsoft.com/en-us/documentation/articles/active-directory-certificate-based-authentication-ios/)
 

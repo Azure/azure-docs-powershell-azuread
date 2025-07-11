@@ -172,8 +172,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 ## RELATED LINKS
 
-[Get-AzureADMSNamedLocationPolicy]()
+[Get-AzureADMSNamedLocationPolicy](Get-AzureADMSNamedLocationPolicy.md)
 
-[New-AzureADMSNamedLocationPolicy]()
+[New-AzureADMSNamedLocationPolicy](New-AzureADMSNamedLocationPolicy.md)
 
-[Remove-AzureADMSNamedLocationPolicy]()
+[Remove-AzureADMSNamedLocationPolicy](Remove-AzureADMSNamedLocationPolicy.md)

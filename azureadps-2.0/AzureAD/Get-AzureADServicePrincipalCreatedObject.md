@@ -92,5 +92,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADServicePrincipal]()
+[Get-AzureADServicePrincipal](Get-AzureADServicePrincipal.md)
 

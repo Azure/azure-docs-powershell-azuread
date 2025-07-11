@@ -111,9 +111,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[New-AzureADMSAdministrativeUnit]()
+[New-AzureADMSAdministrativeUnit](New-AzureADMSAdministrativeUnit.md)
 
-[Remove-AzureADMSAdministrativeUnit]()
+[Remove-AzureADMSAdministrativeUnit](Remove-AzureADMSAdministrativeUnit.md)
 
-[Set-AzureADMSAdministrativeUnit]()
+[Set-AzureADMSAdministrativeUnit](Set-AzureADMSAdministrativeUnit.md)
 

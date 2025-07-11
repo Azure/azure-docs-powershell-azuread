@@ -93,7 +93,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADUserExtension]()
+[Get-AzureADUserExtension](Get-AzureADUserExtension.md)
 
-[Set-AzureADUserExtension]()
+[Set-AzureADUserExtension](Set-AzureADUserExtension.md)
 

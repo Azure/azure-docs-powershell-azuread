@@ -596,8 +596,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADApplication]()
+[Get-AzureADApplication](Get-AzureADApplication.md)
 
-[New-AzureADApplication]()
+[New-AzureADApplication](New-AzureADApplication.md)
 
-[Remove-AzureADApplication]()
+[Remove-AzureADApplication](Remove-AzureADApplication.md)

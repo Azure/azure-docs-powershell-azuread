@@ -108,6 +108,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADMSScopedRoleMembership]()
+[Get-AzureADMSScopedRoleMembership](Get-AzureADMSScopedRoleMembership.md)
 
-[Remove-AzureADMSScopedRoleMembership]()
+[Remove-AzureADMSScopedRoleMembership](Remove-AzureADMSScopedRoleMembership.md)

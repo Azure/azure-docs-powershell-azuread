@@ -118,9 +118,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADApplication]()
+[Get-AzureADApplication](Get-AzureADApplication.md)
 
-[Get-AzureADApplicationPasswordCredential]()
+[Get-AzureADApplicationPasswordCredential](Get-AzureADApplicationPasswordCredential.md)
 
-[Remove-AzureADApplicationPasswordCredential]()
+[Remove-AzureADApplicationPasswordCredential](Remove-AzureADApplicationPasswordCredential.md)
 

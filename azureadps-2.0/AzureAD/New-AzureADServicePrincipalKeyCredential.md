@@ -186,7 +186,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADServicePrincipalKeyCredential]()
+[Get-AzureADServicePrincipalKeyCredential](Get-AzureADServicePrincipalKeyCredential.md)
 
-[Remove-AzureADServicePrincipalKeyCredential]()
+[Remove-AzureADServicePrincipalKeyCredential](Remove-AzureADServicePrincipalKeyCredential.md)
 

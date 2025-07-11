@@ -47,11 +47,29 @@ Adds a member to a group.
 ### [Add-AzureADGroupOwner](Add-AzureADGroupOwner.md)
 Adds an owner to a group.
 
+### [Add-AzureADMSAdministrativeUnitMember](Add-AzureADMSAdministrativeUnitMember.md)
+Adds an administrative unit member.
+
+### [Add-AzureADMSApplicationOwner](Add-AzureADMSApplicationOwner.md)
+Adds an owner for an application object.
+
+### [Add-AzureADMScustomSecurityAttributeDefinitionAllowedValues](Add-AzureADMScustomSecurityAttributeDefinitionAllowedValues.md)
+Adds a predefined value for a custom security attribute definition.
+
+### [Add-AzureADMSFeatureRolloutPolicyDirectoryObject](Add-AzureADMSFeatureRolloutPolicyDirectoryObject.md)
+Allows an admin to add a group to the cloud authentication roll-out policy in Azure AD. Users in this group will start authenticating to the cloud per policy.
+
 ### [Add-AzureADMSLifecyclePolicyGroup](Add-AzureADMSLifecyclePolicyGroup.md)
 Adds a group to a lifecycle policy
 
 ### [Add-AzureADMSPrivilegedResource](Add-AzureADMSPrivilegedResource.md)
 Use this API to add a new azure AD MS privileged resource.
+
+### [Add-AzureADMSScopedRoleMembership](Add-AzureADMSScopedRoleMembership.md)
+Adds a scoped role membership to an administrative unit.
+
+### [Add-AzureADMSServicePrincipalDelegatedPermissionClassification](Add-AzureADMSServicePrincipalDelegatedPermissionClassification.md)
+Add a classification for a delegated permission.
 
 ### [Add-AzureADScopedRoleMembership](Add-AzureADScopedRoleMembership.md)
 Adds a scoped role membership to an administrative unit.
@@ -105,7 +123,7 @@ Gets the password credential for an application.
 Gets an application policy.
 
 ### [Get-AzureADApplicationProxyApplication](Get-AzureADApplicationProxyApplication.md)
-The Get-AzureADApplicationProxyApplication cmdlet retrieves an application configured for Application Proxy in Azure Active Directory. 
+The Get-AzureADApplicationProxyApplication cmdlet retrieves an application configured for Application Proxy in Azure Active Directory.
 
 ### [Get-AzureADApplicationProxyApplicationConnectorGroup](Get-AzureADApplicationProxyApplicationConnectorGroup.md)
 The Get-AzureADApplicationProxyApplicationConnectorGroup cmdlet retrieves the connector group assigned for a specific application.
@@ -114,13 +132,13 @@ The Get-AzureADApplicationProxyApplicationConnectorGroup cmdlet retrieves the co
 The Get-AzureADApplicationProxyApplicationConnector cmdlet a list of all connectors, or if specified, details of a specific connector.
 
 ### [Get-AzureADApplicationProxyConnectorGroup](Get-AzureADApplicationProxyConnectorGroup.md)
-The Get-AzureADApplicationProxyConnectorGroup cmdlet retrieves a list of all connector groups, or if specified, details of a specific connector group. 
+The Get-AzureADApplicationProxyConnectorGroup cmdlet retrieves a list of all connector groups, or if specified, details of a specific connector group.
 
 ### [Get-AzureADApplicationProxyConnectorGroupMembers](Get-AzureADApplicationProxyConnectorGroupMembers.md)
-The Get-AzureADApplicationProxyConnectorGroupMembers gets all the Application Proxy connectors associated with the given connector group. 
+The Get-AzureADApplicationProxyConnectorGroupMembers gets all the Application Proxy connectors associated with the given connector group.
 
 ### [Get-AzureADApplicationProxyConnectorMemberOf](Get-AzureADApplicationProxyConnectorMemberOf.md)
-The Get-AzureADApplicationProxyConnectorMemberOf command gets the ConnectorGroup that the specified Connector is a member of. 
+The Get-AzureADApplicationProxyConnectorMemberOf command gets the ConnectorGroup that the specified Connector is a member of.
 
 ### [Get-AzureADApplicationServiceEndpoint](Get-AzureADApplicationServiceEndpoint.md)
 Retrieve the service endpoint of an application
@@ -135,7 +153,7 @@ Get signin summary by last number of days
 Get directory audit logs
 
 ### [Get-AzureADAuditSignInLogs](Get-AzureADAuditSignInLogs.md)
-Get audit logs of signins
+Get audit logs of sign ins.
 
 ### [Get-AzureADContact](Get-AzureADContact.md)
 Gets a contact from Azure Active Directory.
@@ -192,7 +210,7 @@ Gets a directory setting template.
 Gets a domain.
 
 ### [Get-AzureADDomainNameReference](Get-AzureADDomainNameReference.md)
-This cmdlet retrieves the objects that are referenced by a given domain name 
+This cmdlet retrieves the objects that are referenced by a given domain name
 
 ### [Get-AzureADDomainServiceConfigurationRecord](Get-AzureADDomainServiceConfigurationRecord.md)
 Gets the domain's service configuration records from the serviceConfigurationRecords navigation property.
@@ -218,11 +236,47 @@ Gets a member of a group.
 ### [Get-AzureADGroupOwner](Get-AzureADGroupOwner.md)
 Gets an owner of a group.
 
+### [Get-AzureADMSAdministrativeUnit](Get-AzureADMSAdministrativeUnit.md)
+Gets an administrative unit.
+
+### [Get-AzureADMSAdministrativeUnitMember](Get-AzureADMSAdministrativeUnitMember.md)
+Gets a member of an administrative unit.
+
+### [Get-AzureADMSApplication](Get-AzureADMSApplication.md)
+Retrieves the list of applications within the organization.
+
+### [Get-AzureADMSApplicationExtensionProperty](Get-AzureADMSApplicationExtensionProperty.md)
+Retrieves the list of extension properties on an application object.
+
+### [Get-AzureADMSApplicationOwner](Get-AzureADMSApplicationOwner.md)
+Retrieves the list of owners for an application object.
+
+### [Get-AzureADMSApplicationTemplate](Get-AzureADMSApplicationTemplate.md)
+Retrieve a list of applicationTemplate objects
+
+### [Get-AzureADMSAttributeSet](Get-AzureADMSAttributeSet.md)
+Gets a list of attribute sets.
+
+### [Get-AzureADMSAuthorizationPolicy](Get-AzureADMSAuthorizationPolicy.md)
+Gets an authorization policy.
+
+### [Get-AzureADMSConditionalAccessPolicy](Get-AzureADMSConditionalAccessPolicy.md)
+Gets an Azure Active Directory conditional access policy.
+
+### [Get-AzureADMSCustomSecurityAttributeDefinition](Get-AzureADMSCustomSecurityAttributeDefinition.md)
+Gets a list of custom security attribute definitions.
+
+### [Get-AzureADMSCustomSecurityAttributeDefinitionAllowedValue](Get-AzureADMSCustomSecurityAttributeDefinitionAllowedValue.md)
+Gets the predefined value for a custom security attribute definition.
+
 ### [Get-AzureADMSDeletedDirectoryObject](Get-AzureADMSDeletedDirectoryObject.md)
 This cmdlet is used to retrieve a soft deleted directory object from the directory
 
 ### [Get-AzureADMSDeletedGroup](Get-AzureADMSDeletedGroup.md)
-This cmdlet is used to retrieve the soft deleted groups in a directory. 
+This cmdlet is used to retrieve the soft deleted groups in a directory.
+
+### [Get-AzureADMSFeatureRolloutPolicy](Get-AzureADMSFeatureRolloutPolicy.md)
+Gets the policy for cloud authentication roll-out in Azure Active Directory.
 
 ### [Get-AzureADMSGroup](Get-AzureADMSGroup.md)
 Gets information about groups in Azure AD.
@@ -230,11 +284,26 @@ Gets information about groups in Azure AD.
 ### [Get-AzureADMSGroupLifecyclePolicy](Get-AzureADMSGroupLifecyclePolicy.md)
 Retrieves the properties and relationships of a groupLifecyclePolicies object in Azure Active Directory
 
+### [Get-AzureADMSGroupPermissionGrant](Get-AzureADMSGroupPermissionGrant.md)
+Retrieves a list of permission grants that have been consented for this group.
+
 ### [Get-AzureADMSIdentityProvider](Get-AzureADMSIdentityProvider.md)
 This cmdlet is used to retrieve the configured identity providers in the directory.
 
 ### [Get-AzureADMSLifecyclePolicyGroup](Get-AzureADMSLifecyclePolicyGroup.md)
 Retrieves the lifecycle policy object to which a group belongs.
+
+### [Get-AzureADMSNamedLocationPolicy](Get-AzureADMSNamedLocationPolicy.md)
+Gets an Azure Active Directory named location policy.
+
+### [Get-AzureADMSPasswordSingleSignOnCredential](Get-AzureADMSPasswordSingleSignOnCredential.md)
+Gets the password SSO credentials
+
+### [Get-AzureADMSPermissionGrantConditionSet](Get-AzureADMSPermissionGrantConditionSet.md)
+Get an Azure Active Directory permission grant condition set by id.
+
+### [Get-AzureADMSPermissionGrantPolicy](Get-AzureADMSPermissionGrantPolicy.md)
+Gets a permission grant policy.
 
 ### [Get-AzureADMSPrivilegedResource](Get-AzureADMSPrivilegedResource.md)
 Get azure AD MS privileged resource
@@ -257,14 +326,26 @@ Gets information about role assignments in Azure AD.
 ### [Get-AzureADMSRoleDefinition](Get-AzureADMSRoleDefinition.md)
 Gets information about role definitions in Azure AD.
 
+### [Get-AzureADMSScopedRoleMembership](Get-AzureADMSScopedRoleMembership.md)
+Gets a scoped role membership from an administrative unit.
+
+### [Get-AzureADMSServicePrincipal](Get-AzureADMSServicePrincipal.md)
+Gets a service principal.
+
+### [Get-AzureADMSServicePrincipalDelegatedPermissionClassification](Get-AzureADMSServicePrincipalDelegatedPermissionClassification.md)
+Retreive the delegated permission classification objects on a service principal.
+
 ### [Get-AzureADMSTrustFrameworkPolicy](Get-AzureADMSTrustFrameworkPolicy.md)
 This cmdlet is used to retrieve the created trust framework policies (custom policies) in the directory.
+
+### [Get-AzureADMSUser](Get-AzureADMSUser.md)
+Gets a user.
 
 ### [Get-AzureADOAuth2PermissionGrant](Get-AzureADOAuth2PermissionGrant.md)
 Gets **OAuth2PermissionGrant** entities.
 
 ### [Get-AzureADObjectByObjectId](Get-AzureADObjectByObjectId.md)
-Retrieves the object(s) specified by the objectIds parameter 
+Retrieves the object(s) specified by the objectIds parameter
 
 ### [Get-AzureADObjectSetting](Get-AzureADObjectSetting.md)
 Gets an object setting.
@@ -273,7 +354,13 @@ Gets an object setting.
 Gets a policy.
 
 ### [Get-AzureADPolicyAppliedObject](Get-AzureADPolicyAppliedObject.md)
+{{Placeholder}}
 
+### [Get-AzureADPrivilegedRole](Get-AzureADPrivilegedRole.md)
+{{ Fill in the Synopsis }}
+
+### [Get-AzureADPrivilegedRoleAssignment](Get-AzureADPrivilegedRoleAssignment.md)
+{{ Fill in the Synopsis }}
 
 ### [Get-AzureADScopedRoleMembership](Get-AzureADScopedRoleMembership.md)
 Gets a scoped role membership from an administrative unit.
@@ -309,7 +396,7 @@ Get the owner of a service principal.
 Get credentials for a service principal.
 
 ### [Get-AzureADServicePrincipalPolicy](Get-AzureADServicePrincipalPolicy.md)
-
+{{Placeholder}}
 
 ### [Get-AzureADSubscribedSku](Get-AzureADSubscribedSku.md)
 Gets subscribed SKUs to Microsoft services.
@@ -381,7 +468,7 @@ Creates a password credential for an application.
 The New-AzureADApplicationProxyApplication cmdlet creates a new application configured for Application Proxy in Azure Active Directory.
 
 ### [New-AzureADApplicationProxyConnectorGroup](New-AzureADApplicationProxyConnectorGroup.md)
-The New-AzureADApplicationProxyConnectorGroup cmdlet creates a new Application Proxy Connector group. 
+The New-AzureADApplicationProxyConnectorGroup cmdlet creates a new Application Proxy Connector group.
 
 ### [New-AzureADDevice](New-AzureADDevice.md)
 Creates a device.
@@ -401,6 +488,39 @@ Creates a group.
 ### [New-AzureADGroupAppRoleAssignment](New-AzureADGroupAppRoleAssignment.md)
 Assign a group of users to an application role.
 
+### [New-AzureADMSAdministrativeUnit](New-AzureADMSAdministrativeUnit.md)
+Creates an administrative unit.
+
+### [New-AzureADMSAdministrativeUnitMember](New-AzureADMSAdministrativeUnitMember.md)
+Create a new object as a member of the administrativeUnit. Currently only group objects are supported.
+
+### [New-AzureADMSApplication](New-AzureADMSApplication.md)
+Creates (registers) a new application object.
+
+### [New-AzureADMSApplicationExtensionProperty](New-AzureADMSApplicationExtensionProperty.md)
+Creates an extension property on an application object.
+
+### [New-AzureADMSApplicationFromApplicationTemplate](New-AzureADMSApplicationFromApplicationTemplate.md)
+Instantiates an application
+
+### [New-AzureADMSApplicationKey](New-AzureADMSApplicationKey.md)
+Adds a new key to an application.
+
+### [New-AzureADMSApplicationPassword](New-AzureADMSApplicationPassword.md)
+Adds a strong password to an application.
+
+### [New-AzureADMSAttributeSet](New-AzureADMSAttributeSet.md)
+Adds a new attribute set.
+
+### [New-AzureADMSConditionalAccessPolicy](New-AzureADMSConditionalAccessPolicy.md)
+Creates a new conditional access policy in Azure Active Directory.
+
+### [New-AzureADMSCustomSecurityAttributeDefinition](New-AzureADMSCustomSecurityAttributeDefinition.md)
+Adds a new custom security attribute definition.
+
+### [New-AzureADMSFeatureRolloutPolicy](New-AzureADMSFeatureRolloutPolicy.md)
+Allows an admin to create the policy for cloud authentication roll-out in Azure AD.
+
 ### [New-AzureADMSGroup](New-AzureADMSGroup.md)
 Creates an Azure AD group.
 
@@ -411,7 +531,19 @@ Creates a new groupLifecyclePolicy
 This cmdlet is used to configure a new identity provider in the directory.
 
 ### [New-AzureADMSInvitation](New-AzureADMSInvitation.md)
-This cmdlet is used to invite a new external user to your directory
+This cmdlet is used to invite a new external user to your directory.
+
+### [New-AzureADMSNamedLocationPolicy](New-AzureADMSNamedLocationPolicy.md)
+Creates a new named location policy in Azure Active Directory.
+
+### [New-AzureADMSPasswordSingleSignOnCredential](New-AzureADMSPasswordSingleSignOnCredential.md)
+Creates the password SSO credentials
+
+### [New-AzureADMSPermissionGrantConditionSet](New-AzureADMSPermissionGrantConditionSet.md)
+Create a new Azure Active Directory permission grant condition set in a given policy.
+
+### [New-AzureADMSPermissionGrantPolicy](New-AzureADMSPermissionGrantPolicy.md)
+Creates a permission grant policy.
 
 ### [New-AzureADMSRoleAssignment](New-AzureADMSRoleAssignment.md)
 Creates an Azure AD role assignment.
@@ -427,6 +559,9 @@ Creates a settings object.
 
 ### [New-AzureADPolicy](New-AzureADPolicy.md)
 Creates a policy.
+
+### [New-AzureADPrivilegedRoleAssignment](New-AzureADPrivilegedRoleAssignment.md)
+{{ Fill in the Synopsis }}
 
 ### [New-AzureADServiceAppRoleAssignment](New-AzureADServiceAppRoleAssignment.md)
 Assigns a service principal to an application role.
@@ -480,10 +615,10 @@ Removes an application policy.
 Deletes an Application Proxy application.
 
 ### [Remove-AzureADApplicationProxyApplicationConnectorGroup](Remove-AzureADApplicationProxyApplicationConnectorGroup.md)
-The Remove-AzureADApplicationProxyApplicationConnectorGroup cmdlet sets the connector group assigned for the specified application to 'Default' and removes the current assignment. 
+The Remove-AzureADApplicationProxyApplicationConnectorGroup cmdlet sets the connector group assigned for the specified application to 'Default' and removes the current assignment.
 
 ### [Remove-AzureADApplicationProxyConnectorGroup](Remove-AzureADApplicationProxyConnectorGroup.md)
-The Remove-AzureADApplicationProxyApplicationConnectorGroup cmdlet deletes an Application Proxy Connector group. 
+The Remove-AzureADApplicationProxyApplicationConnectorGroup cmdlet deletes an Application Proxy Connector group.
 
 ### [Remove-AzureADContact](Remove-AzureADContact.md)
 Removes a contact.
@@ -527,8 +662,41 @@ Removes a member from a group.
 ### [Remove-AzureADGroupOwner](Remove-AzureADGroupOwner.md)
 Removes an owner from a group.
 
+### [Remove-AzureADMSAdministrativeUnit](Remove-AzureADMSAdministrativeUnit.md)
+Removes an administrative unit.
+
+### [Remove-AzureADMSAdministrativeUnitMember](Remove-AzureADMSAdministrativeUnitMember.md)
+Removes an administrative unit member.
+
+### [Remove-AzureADMSApplication](Remove-AzureADMSApplication.md)
+Deletes an application object.
+
+### [Remove-AzureADMSApplicationExtensionProperty](Remove-AzureADMSApplicationExtensionProperty.md)
+Deletes an extension property from an application object.
+
+### [Remove-AzureADMSApplicationKey](Remove-AzureADMSApplicationKey.md)
+Removes a key from an application.
+
+### [Remove-AzureADMSApplicationOwner](Remove-AzureADMSApplicationOwner.md)
+Removes an owner from an application object.
+
+### [Remove-AzureADMSApplicationPassword](Remove-AzureADMSApplicationPassword.md)
+Remove a password from an application.
+
+### [Remove-AzureADMSApplicationVerifiedPublisher](Remove-AzureADMSApplicationVerifiedPublisher.md)
+Removes the verified publisher from an application.
+
+### [Remove-AzureADMSConditionalAccessPolicy](Remove-AzureADMSConditionalAccessPolicy.md)
+Deletes a conditional access policy in Azure Active Directory by Id.
+
 ### [Remove-AzureADMSDeletedDirectoryObject](Remove-AzureADMSDeletedDirectoryObject.md)
 This cmdlet is used to permanently delete a previously deleted directory object
+
+### [Remove-AzureADMSFeatureRolloutPolicy](Remove-AzureADMSFeatureRolloutPolicy.md)
+Allows an admin to remove the policy for cloud authentication roll-out in Azure AD.
+
+### [Remove-AzureADMSFeatureRolloutPolicyDirectoryObject](Remove-AzureADMSFeatureRolloutPolicyDirectoryObject.md)
+Allows an admin to remove a group from the cloud authentication rollout policy in Azure AD. Users in this group will revert back to the authenticating using the global policy (in most cases this will be federation).
 
 ### [Remove-AzureADMSGroup](Remove-AzureADMSGroup.md)
 Removes an Azure AD group.
@@ -542,11 +710,29 @@ This cmdlet is used to delete an identity provider in the directory.
 ### [Remove-AzureADMSLifecyclePolicyGroup](Remove-AzureADMSLifecyclePolicyGroup.md)
 Removes a group from a lifecycle policy
 
+### [Remove-AzureADMSNamedLocationPolicy](Remove-AzureADMSNamedLocationPolicy.md)
+Deletes an Azure Active Directory named location policy by PolicyId.
+
+### [Remove-AzureADMSPasswordSingleSignOnCredential](Remove-AzureADMSPasswordSingleSignOnCredential.md)
+Removes the password SSO credentials
+
+### [Remove-AzureADMSPermissionGrantConditionSet](Remove-AzureADMSPermissionGrantConditionSet.md)
+Delete an Azure Active Directory permission grant condition set by id
+
+### [Remove-AzureADMSPermissionGrantPolicy](Remove-AzureADMSPermissionGrantPolicy.md)
+Removes a permission grant policy.
+
 ### [Remove-AzureADMSRoleAssignment](Remove-AzureADMSRoleAssignment.md)
 Removes a role assignment.
 
 ### [Remove-AzureADMSRoleDefinition](Remove-AzureADMSRoleDefinition.md)
 Removes a role definition.
+
+### [Remove-AzureADMSScopedRoleMembership](Remove-AzureADMSScopedRoleMembership.md)
+Removes a scoped role membership.
+
+### [Remove-AzureADMSServicePrincipalDelegatedPermissionClassification](Remove-AzureADMSServicePrincipalDelegatedPermissionClassification.md)
+Remove delegated permission classification.
 
 ### [Remove-AzureADMSTrustFrameworkPolicy](Remove-AzureADMSTrustFrameworkPolicy.md)
 This cmdlet is used to delete a trust framework policy (custom policy) in the directory.
@@ -579,7 +765,7 @@ Removes an owner from a service principal.
 Removes a password credential from a service principal.
 
 ### [Remove-AzureADServicePrincipalPolicy](Remove-AzureADServicePrincipalPolicy.md)
-
+{{Placeholder}}
 
 ### [Remove-AzureADTrustedCertificateAuthority](Remove-AzureADTrustedCertificateAuthority.md)
 Removes a trusted certificate authority.
@@ -606,10 +792,10 @@ Restores a previously deleted application
 This cmdlet is used to restore a previously deleted object.
 
 ### [Revoke-AzureADSignedInUserAllRefreshToken](Revoke-AzureADSignedInUserAllRefreshToken.md)
-Invalidates the refresh tokens issued to applications for the current user. 
+Invalidates the refresh tokens issued to applications for the current user.
 
 ### [Revoke-AzureADUserAllRefreshToken](Revoke-AzureADUserAllRefreshToken.md)
-Invalidates the refresh tokens issued to applications for a user. 
+Invalidates the refresh tokens issued to applications for a user.
 
 ### [Select-AzureADGroupIdsContactIsMemberOf](Select-AzureADGroupIdsContactIsMemberOf.md)
 Get groups in which a contact is a member.
@@ -639,8 +825,7 @@ The Set-AzureADApplicationProxyApplication allows you to modify and set configur
 The Set-AzureADApplicationProxyApplicationConnectorGroup cmdlet assigns the given connector group to a specified application.
 
 ### [Set-AzureADApplicationProxyApplicationCustomDomainCertificate](Set-AzureADApplicationProxyApplicationCustomDomainCertificate.md)
-The Set-AzureADApplicationProxyApplicationCustomDomainCertificate cmdlet assigns a certificate to an application configured for Application Proxy in Azure Active Directory (AD).
-This will upload the certificate and allow the application to use Custom Domains.
+The Set-AzureADApplicationProxyApplicationCustomDomainCertificate cmdlet assigns a certificate to an application configured for Application Proxy in Azure Active Directory (AD). This will upload the certificate and allow the application to use Custom Domains.
 
 ### [Set-AzureADApplicationProxyApplicationSingleSignOn](Set-AzureADApplicationProxyApplicationSingleSignOn.md)
 The Set-AzureADApplicationProxyApplicationSingleSignOn cmdlet allows you to set and modify single sign-on (SSO) settings for an application configured for Application Proxy in Azure Active Directory.
@@ -649,7 +834,7 @@ The Set-AzureADApplicationProxyApplicationSingleSignOn cmdlet allows you to set 
 The Set-AzureADApplicationProxyConnector cmdlet allows reassignment of the connector to another connector group.
 
 ### [Set-AzureADApplicationProxyConnectorGroup](Set-AzureADApplicationProxyConnectorGroup.md)
-The Set-AzureADApplicationProxyConnectorGroup cmdlet allows you to change the name of a given Application Proxy connector group. 
+The Set-AzureADApplicationProxyConnectorGroup cmdlet allows you to change the name of a given Application Proxy connector group.
 
 ### [Set-AzureADDevice](Set-AzureADDevice.md)
 Updates a device.
@@ -663,6 +848,36 @@ Updates a domain.
 ### [Set-AzureADGroup](Set-AzureADGroup.md)
 Updates a specific group in Azure Active Directory
 
+### [Set-AzureADMSAdministrativeUnit](Set-AzureADMSAdministrativeUnit.md)
+Updates an administrative unit.
+
+### [Set-AzureADMSApplication](Set-AzureADMSApplication.md)
+Updates the properties of an application object.
+
+### [Set-AzureADMSApplicationLogo](Set-AzureADMSApplicationLogo.md)
+Sets the logo for an application object.
+
+### [Set-AzureADMSApplicationVerifiedPublisher](Set-AzureADMSApplicationVerifiedPublisher.md)
+Sets the verified publisher of an application to a verified Microsoft Partner Network (MPN) identifier.
+
+### [Set-AzureADMSAttributeSet](Set-AzureADMSAttributeSet.md)
+Updates an existing attribute set.
+
+### [Set-AzureADMSAuthorizationPolicy](Set-AzureADMSAuthorizationPolicy.md)
+Updates an authorization policy.
+
+### [Set-AzureADMSConditionalAccessPolicy](Set-AzureADMSConditionalAccessPolicy.md)
+Updates a conditional access policy in Azure Active Directory by Id.
+
+### [Set-AzureADMSCustomSecurityAttributeDefinition](Set-AzureADMSCustomSecurityAttributeDefinition.md)
+Updates an existing custom security attribute definition.
+
+### [Set-AzureADMSCustomSecurityAttributeDefinitionAllowedValue](Set-AzureADMSCustomSecurityAttributeDefinitionAllowedValue.md)
+Updates an existing custom security attribute definition predefined value.
+
+### [Set-AzureADMSFeatureRolloutPolicy](Set-AzureADMSFeatureRolloutPolicy.md)
+Allows an admin to modify the policy for cloud authentication roll-out in Azure AD.
+
 ### [Set-AzureADMSGroup](Set-AzureADMSGroup.md)
 {{Fill in the Synopsis}}
 
@@ -671,6 +886,18 @@ Updates a specific group Lifecycle Policy in Azure Active Directory
 
 ### [Set-AzureADMSIdentityProvider](Set-AzureADMSIdentityProvider.md)
 This cmdlet is used to update the properties of an existing identity provider configured in the directory.
+
+### [Set-AzureADMSNamedLocationPolicy](Set-AzureADMSNamedLocationPolicy.md)
+Updates a named location policy in Azure Active Directory by PolicyId.
+
+### [Set-AzureADMSPasswordSingleSignOnCredential](Set-AzureADMSPasswordSingleSignOnCredential.md)
+Sets the password SSO credentials
+
+### [Set-AzureADMSPermissionGrantConditionSet](Set-AzureADMSPermissionGrantConditionSet.md)
+Update an existing Azure Active Directory permission grant condition set.
+
+### [Set-AzureADMSPermissionGrantPolicy](Set-AzureADMSPermissionGrantPolicy.md)
+Updates a permission grant policy.
 
 ### [Set-AzureADMSPrivilegedRoleAssignmentRequest](Set-AzureADMSPrivilegedRoleAssignmentRequest.md)
 Update a role assignment request
@@ -681,8 +908,14 @@ Update role setting
 ### [Set-AzureADMSRoleDefinition](Set-AzureADMSRoleDefinition.md)
 Update a role definition.
 
+### [Set-AzureADMSServicePrincipal](Set-AzureADMSServicePrincipal.md)
+Updates a service principal.
+
 ### [Set-AzureADMSTrustFrameworkPolicy](Set-AzureADMSTrustFrameworkPolicy.md)
 This cmdlet is used to update a trust framework policy (custom policy) in the directory.
+
+### [Set-AzureADMSUser](Set-AzureADMSUser.md)
+Updates a user.
 
 ### [Set-AzureADObjectSetting](Set-AzureADObjectSetting.md)
 Updates object settings.
@@ -719,29 +952,3 @@ Set the thumbnail photo for a user
 
 ### [Update-AzureADSignedInUserPassword](Update-AzureADSignedInUserPassword.md)
 Updates the password for the signed-in user.
-
-### [Add-AzureADMSFeatureRolloutPolicyDirectoryObject](Add-AzureADMSFeatureRolloutPolicyDirectoryObject.md)
-Allows an admin to add a group to the cloud authentication roll-out policy in Azure AD. Users in this group will start authenticating to the cloud per policy. 
-
-### [Get-AzureADMSFeatureRolloutPolicy][Get-AzureADMSFeatureRolloutPolicy.md]
-Gets the policy for cloud authentication roll-out in Azure Active Directory. 
-
-### [New-AzureADMSFeatureRolloutPolicy](New-AzureADMSFeatureRolloutPolicy.md)
-Allows an admin to create the policy for cloud authentication roll-out in Azure AD. 
-
-### [Remove-AzureADMSFeatureRolloutPolicy](Remove-AzureADMSFeatureRolloutPolicy.md)
-Allows an admin to remove the policy for cloud authentication roll-out in Azure AD. 
-
-### [Remove-AzureADMSFeatureRolloutPolicyDirectoryObject](Remove-AzureADMSFeatureRolloutPolicyDirectoryObject.md)
-Allows an admin to remove a group from the cloud authentication rollout policy in Azure AD. Users in this group will revert back to the authenticating using the global policy (in most cases this will be federation). 
-
-### [Set-AzureADMSFeatureRolloutPolicy](Set-AzureADMSFeatureRolloutPolicy.md)
-Allows an admin to modify the policy for cloud authentication roll-out in Azure AD. 
-
-### [Get-AzureADMSAuthorizationPolicy](Get-AzureADMSAuthorizationPolicy.md)
-Gets an authorization policy.
-
-### [Set-AzureADMSAuthorizationPolicy](Set-AzureADMSAuthorizationPolicy.md)
-Sets an authorization policy.
-
-

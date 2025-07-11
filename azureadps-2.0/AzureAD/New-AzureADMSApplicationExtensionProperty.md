@@ -110,6 +110,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-AzureADMSApplicationExtensionProperty]()
+[Get-AzureADMSApplicationExtensionProperty](Get-AzureADMSApplicationExtensionProperty.md)
 
-[Remove-AzureADMSApplicationExtensionProperty]()
+[Remove-AzureADMSApplicationExtensionProperty](Remove-AzureADMSApplicationExtensionProperty.md)

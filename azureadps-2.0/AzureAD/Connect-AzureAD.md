@@ -383,4 +383,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Disconnect-AzureAD]()
+[Disconnect-AzureAD](Disconnect-AzureAD.md)

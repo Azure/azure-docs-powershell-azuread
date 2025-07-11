@@ -74,7 +74,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Add-AzureADMSScopedRoleMembership]()
+[Add-AzureADMSScopedRoleMembership](Add-AzureADMSScopedRoleMembership.md)
 
-[Remove-AzureADMSScopedRoleMembership]()
+[Remove-AzureADMSScopedRoleMembership](Remove-AzureADMSScopedRoleMembership.md)
 

@@ -517,8 +517,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[New-AzureADMSApplication]()
+[New-AzureADMSApplication](New-AzureADMSApplication.md)
 
-[Remove-AzureADMSApplication]()
+[Remove-AzureADMSApplication](Remove-AzureADMSApplication.md)
 
-[Set-AzureADMSApplication]()
+[Set-AzureADMSApplication](Set-AzureADMSApplication.md)

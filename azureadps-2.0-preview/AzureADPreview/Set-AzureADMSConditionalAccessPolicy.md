@@ -155,8 +155,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 ## RELATED LINKS
 
-[Get-AzureADMSConditionalAccessPolicy]()
+[Get-AzureADMSConditionalAccessPolicy](Get-AzureADMSConditionalAccessPolicy.md)
 
-[New-AzureADMSConditionalAccessPolicy]()
+[New-AzureADMSConditionalAccessPolicy](New-AzureADMSConditionalAccessPolicy.md)
 
-[Remove-AzureADMSConditionalAccessPolicy]()
+[Remove-AzureADMSConditionalAccessPolicy](Remove-AzureADMSConditionalAccessPolicy.md)
