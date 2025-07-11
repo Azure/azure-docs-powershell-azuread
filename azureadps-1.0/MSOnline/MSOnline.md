@@ -1,8 +1,6 @@
 ---
 Module Name: MSOnline
 Module Guid: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
-Download Help Link: {{Please enter FwLink manually}}
-Help Version: {{Please enter version of help manually (X.X.X.X) format}}
 Locale: en-US
 ms.assetid: BB86A603-6CD9-4299-89B8-30A2B4A011A0
 ms.reviewer: stevemutungi
@@ -10,6 +8,7 @@ ms.custom: iamfeature=PowerShell
 ---
 
 # MSOnline Module
+
 ## Description
 
 >[!IMPORTANT]
@@ -21,7 +20,8 @@ For more detail info on installation of the AzureAD cmdlets please see: [Azure A
 
 This topic displays help topics for the Azure Active Directory MSOnline module.
 
-## AzureActiveDirectory Cmdlets
+## MSOnline Cmdlets
+
 ### [Add-MsolAdministrativeUnitMember](./Add-MsolAdministrativeUnitMember.md)
 Adds a member to an administrative unit.
 
@@ -436,19 +436,3 @@ Changes the user ID for a user.
 
 ### [Update-MsolFederatedDomain](./Update-MsolFederatedDomain.md)
 Updates the settings in both the Active Directory Federation Services 2.0 server and Microsoft Online.
-
-## Additional Resources
-
-There are several other places you can get more information and help.
-These include the following:
-
-* [Azure Active Directory Forum](http://aka.ms/aadforum)
-* [Azure AD Community Information Center](http://aka.ms/aadcommunity)
-* [Azure Active Directory Community scripts](http://aka.ms/aadscripts)
-* [Microsoft Azure Active Directory PowerShell Module Version Release History](http://social.technet.microsoft.com/wiki/contents/articles/28552.microsoft-azure-active-directory-powershell-module-version-release-history.aspx)
-
-## See Also
-
-[Administering your Azure AD directory](https://msdn.microsoft.com/library/azure/hh967611(v=azure.98).aspx)
-
-[Install Windows PowerShell for directory synchronization](https://msdn.microsoft.com/library/azure/jj151828(v=azure.98).aspx)
