@@ -1,0 +1,191 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Gets an individual device, or a list of devices.
+module: MSOnline
+notes: ""
+outputs:
+- name: <xref href="Microsoft.Online.Administration.Device" data-throw-if-not-resolved="False" />
+  description: |-
+    This cmdlet returns device objects, which include the following information: 
+
+    - AccountEnabled: The device's status: enabled or disabled. 
+    - ObjectId: The device's unique ID. 
+    - DeviceId: The device's device ID. 
+    - DisplayName: The device's display name. 
+    - DeviceObjectVersion: The device's object version number. 
+    - DeviceOSType: The device operating system type. 
+    - DeviceOSVersion: The device operating system version number. 
+    - DeviceTrustType: The device trust type.
+    The value could be one of the following: Workplace Joined, AzureAD Joined, Domain Joined. 
+    - DeviceTrustLevel: The device trust level.
+    The value could be one of the following: Authenticated, Compliant, Managed. 
+    - DevicePhysicalIds: The device physical Ids. 
+    - ApproximateLastLogonTimestamp: The last logon timestamp using this device. 
+    - AlternativeSecurityIds: The device alternative security Ids. 
+    - DirSyncEnabled: If the device is enabled with DirSync. 
+    - LastDirSyncTime: The last timestamp the device was synchronized by DirSync. 
+    - RegisteredOwners: The device's registered owner. 
+    - GraphDeviceObject: The device object returned from graph API.
+links:
+- text: Disable-MsolDevice
+  href: ./Disable-MsolDevice.yml
+- text: Enable-MsolDevice
+  href: ./Enable-MsolDevice.yml
+- text: Remove-MsolDevice
+  href: ./Remove-MsolDevice.yml
+syntaxes:
+- Get-MsolDevice -Name <String> [<CommonParameters>]
+- Get-MsolDevice [-All] [-ReturnRegisteredOwners] [<CommonParameters>]
+- Get-MsolDevice -DeviceId <Guid> [<CommonParameters>]
+- Get-MsolDevice -All -LogonTimeBefore <DateTime> [<CommonParameters>]
+- Get-MsolDevice -ObjectId <Guid> [<CommonParameters>]
+- Get-MsolDevice -RegisteredOwnerUpn <String> [<CommonParameters>]
+- Get-MsolDevice -All -IncludeSystemManagedDevices [<CommonParameters>]
+examples:
+- title: 'Example 1: Get a device object'
+  code: |-
+    PS C:\>Get-MsolDevice -Name "NIC0123"
+  description: |-
+    This command gets a device object that is named NIC0123.
+  summary: ""
+- title: 'Example 2: Get a list of device objects'
+  code: |-
+    PS C:\>Get-MsolDevice -All
+  description: |-
+    This command gets a list of device objects.
+    Since the *ReturnRegisteredOwners* parameter is not used, the device object does not contain the **registeredOwners** property.
+  summary: ""
+- title: 'Example 3: Get a list of device objects that contains the registeredOwners property'
+  code: |-
+    PS C:\>Get-MsolDevice -All -ReturnRegisteredOwners
+  description: |-
+    This command gets a list of device objects.
+    Since the *ReturnRegisteredOwners* parameter is used, the device object contains the **registeredOwners** property.
+  summary: ""
+- title: 'Example 4: Get a device by device ID'
+  code: |-
+    PS C:\>Get-MsolDevice -DeviceId "1aa200c4-bdfb-42b5-9a1e-5f1bafbe4274"
+  description: |-
+    This command gets a device with the corresponding device ID.
+  summary: ""
+- title: 'Example 5: Get a device object by object ID'
+  code: |-
+    PS C:\>Get-MsolDevice -ObjectId "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb"
+  description: |-
+    This command gets a device with the corresponding object ID.
+  summary: ""
+- title: 'Example 6: Get devices registered by UPN'
+  code: |-
+    PS C:\>Get-MsolDevice -RegisteredOwnerUpn "pattifuller@contoso.com"
+  description: |-
+    This command gets all the devices registered by the user with the UPN named pattifuller@contoso.com.
+  summary: ""
+- title: 'Example 7: Get device by activity (logon) timestamp'
+  code: |-
+    PS C:\>Get-MsolDevice -All -LogonTimeBefore 'January 1, 2017 12:00:00 AM'
+  description: |-
+    Ths command gets all the devices with the ApproximateLastLogonTimestamp before January 1, 2017
+  summary: ""
+- title: 'Example 8: Get devices and include system managed devices'
+  code: |-
+    PS C:\>Get-MsolDevice -All -IncludeSystemManagedDevices
+  description: |-
+    This command gets all devices and includes auto-pilot devices and other devices that are used with Intune (e.g. EAS)
+  summary: ""
+parameters:
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: All
+  isRequired: true
+  description: |+
+    Indicates that this cmdlet returns all results.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Guid" data-throw-if-not-resolved="False" />
+  name: DeviceId
+  isRequired: true
+  description: |+
+    Specifies the device ID of the device that this cmdlet gets.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParamater" data-throw-if-not-resolved="False" />
+  name: IncludeSystemManagedDevices
+  isRequired: true
+  description: |+
+    Indicates that this cmdlet includes devices that are managed by the system such as auto-pilot.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: LogonTimeBefore
+  isRequired: true
+  description: |+
+    Specified the date (UTC) used to filter the device list by.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Name
+  isRequired: true
+  description: |+
+    Specifies the display name of the device that this cmdlet gets.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Guid" data-throw-if-not-resolved="False" />
+  name: ObjectId
+  isRequired: true
+  description: |+
+    Specifies the unique object ID of the device that this cmdlet gets.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: RegisteredOwnerUpn
+  isRequired: true
+  description: |+
+    Specifies the user object that is the registered owner of the device.
+    You need to provide the user principal name (UPN) or *ObjectId*, or pass an instance of a **Microsoft.Online.Administration.User** object that contains the user's UPN or ObjectId.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: ReturnRegisteredOwners
+  description: |+
+    Indicates that this cmdlet returns the device's **registeredOwners** property.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: MSOnline.Get-MsolDevice
+name: Get-MsolDevice
+description: |-
+  The **Get-MsolDevice** cmdlet gets an individual device, or a list of devices.
+metadata:
+  external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
+  online version: ""
+  schema: 2.0.0
+  ms.assetid: B11640A7-18C4-475A-B6BE-D16957C4F58C
+  ms.reviewer: stevemutungi
+  ms.custom: iamfeature=PowerShell

@@ -1,0 +1,38 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Removes the verified publisher from an application.
+module: AzureADPreview
+notes: ""
+inputs:
+- name: <xref href="string" data-throw-if-not-resolved="False" />
+  description: ""
+syntaxes:
+- Remove-AzureADMSApplicationVerifiedPublisher -AppObjectId <String> [<CommonParameters>]
+examples:
+- title: 'Example 1: Remove the verified publisher from an application.'
+  code: |-
+    $appObjId = 'ad6c71a5-e48f-4320-bb59-92642a2d8d9f'
+              Remove-AzureADMSApplicationVerifiedPublisher -AppObjectId $appObjId
+  description: ""
+  summary: ""
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: AppObjectId
+  isRequired: true
+  description: |+
+    The unique identifier of an Azure Active Directory Application object.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: AzureADPreview.Remove-AzureADMSApplicationVerifiedPublisher
+name: Remove-AzureADMSApplicationVerifiedPublisher
+description: |-
+  Removes the verified publisher from an application.
+metadata:
+  external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
+  Module Name: AzureADPreview
+  online version: ""
+  schema: 2.0.0

@@ -1,0 +1,78 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Get directory audit logs
+module: AzureADPreview
+notes: ""
+syntaxes:
+- Get-AzureADAuditDirectoryLogs [-All <Boolean>] [-Top <Int32>] [-Filter <String>] [<CommonParameters>]
+examples:
+- title: 'Example 1: Get audit logs after a certain date'
+  code: |-
+    PS C:\>Get-AzureADAuditDirectoryLogs -Filter "activityDateTime gt 2019-03-20"
+  description: |-
+    This command gets all audit logs on or after 3/20/2019
+  summary: ""
+- title: 'Example 2: Get audit logs initiated by a user or application'
+  code: |-
+    PS C:\>Get-AzureADAuditDirectoryLogs -Filter "initiatedBy/user/userPrincipalName eq 'JNiyomugabo@Contoso.com'"
+    PS C:\>Get-AzureADAuditDirectoryLogs -Filter "initiatedBy/user/displayName eq 'Jean Niyomugabo'"
+    PS C:\>Get-AzureADAuditDirectoryLogs -Filter "initiatedBy/app/appId eq 'de8bc8b5-d9f9-48b1-a8ad-b748da725064'"
+    PS C:\>Get-AzureADAuditDirectoryLogs -Filter "initiatedBy/app/displayName eq 'myApp'"
+  description: |-
+    These commands are different ways to get all audit logs for a certain user or application
+  summary: ""
+- title: 'Example 3: Get audit logs containing a given target resource'
+  code: |-
+    PS C:\>Get-AzureADAuditDirectoryLogs -Filter "targetResources/any(tr:tr/displayName eq 'Active Directory Example')"
+    PS C:\>Get-AzureADAuditDirectoryLogs -Filter "targetResources/any(tr:tr/type eq 'ServicePrincipal')"
+  description: |-
+    These commands show how to get audit logs by target resource display name or type
+  summary: ""
+- title: 'Example 4: Get all audit logs with a given result'
+  code: |-
+    PS C:\>Get-AzureADAuditDirectoryLogs -Filter "result eq 'success'"
+    PS C:\>Get-AzureADAuditDirectoryLogs -Filter "result eq 'failure'" -All $true
+  description: |-
+    These commands show how to get audit logs by result
+  summary: ""
+parameters:
+- type: <xref href="Boolean" data-throw-if-not-resolved="False" />
+  name: All
+  description: |+
+    Boolean to express that return all results from the server for the specific query
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Filter
+  description: |+
+    The oData v3.0 filter statement. 
+    Controls which objects are returned.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Top
+  description: |+
+    The maximum number of records to return.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: AzureADPreview.Get-AzureADAuditDirectoryLogs
+name: Get-AzureADAuditDirectoryLogs
+description: |-
+  The Get-AzureADAuditDirectoryLogs cmdlet gets an Azure Active Directory audit log.
+metadata:
+  external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
+  Module Name: AzureADPreview
+  online version: ""
+  schema: 2.0.0Get

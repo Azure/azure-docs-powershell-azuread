@@ -1,0 +1,390 @@
+### YamlMime:PowershellModule
+children:
+- title: Administrative Units
+  cmdlets:
+  - AzureADPreview.Add-AzureADAdministrativeUnitMember
+  - AzureADPreview.Add-AzureADMSAdministrativeUnitMember
+  - AzureADPreview.Add-AzureADMSScopedRoleMembership
+  - AzureADPreview.Add-AzureADScopedRoleMembership
+  - AzureADPreview.Get-AzureADAdministrativeUnit
+  - AzureADPreview.Get-AzureADAdministrativeUnitMember
+  - AzureADPreview.Get-AzureADMSAdministrativeUnit
+  - AzureADPreview.Get-AzureADMSAdministrativeUnitMember
+  - AzureADPreview.Get-AzureADMSGroupPermissionGrant
+  - AzureADPreview.Get-AzureADMSScopedRoleMembership
+  - AzureADPreview.Get-AzureADScopedRoleMembership
+  - AzureADPreview.New-AzureADAdministrativeUnit
+  - AzureADPreview.New-AzureADMSAdministrativeUnit
+  - AzureADPreview.New-AzureADMSAdministrativeUnitMember
+  - AzureADPreview.Remove-AzureADAdministrativeUnit
+  - AzureADPreview.Remove-AzureADAdministrativeUnitMember
+  - AzureADPreview.Remove-AzureADMSAdministrativeUnit
+  - AzureADPreview.Remove-AzureADMSAdministrativeUnitMember
+  - AzureADPreview.Remove-AzureADMSScopedRoleMembership
+  - AzureADPreview.Remove-AzureADScopedRoleMembership
+  - AzureADPreview.Set-AzureADAdministrativeUnit
+  - AzureADPreview.Set-AzureADMSAdministrativeUnit
+- title: Application
+  cmdlets:
+  - AzureADPreview.Add-AzureADMSApplicationOwner
+  - AzureADPreview.Get-AzureADMSApplication
+  - AzureADPreview.Get-AzureADMSApplicationExtensionProperty
+  - AzureADPreview.Get-AzureADMSApplicationOwner
+  - AzureADPreview.New-AzureADMSApplication
+  - AzureADPreview.New-AzureADMSApplicationExtensionProperty
+  - AzureADPreview.New-AzureADMSApplicationKey
+  - AzureADPreview.New-AzureADMSApplicationPassword
+  - AzureADPreview.Remove-AzureADMSApplication
+  - AzureADPreview.Remove-AzureADMSApplicationExtensionProperty
+  - AzureADPreview.Remove-AzureADMSApplicationKey
+  - AzureADPreview.Remove-AzureADMSApplicationOwner
+  - AzureADPreview.Remove-AzureADMSApplicationPassword
+  - AzureADPreview.Set-AzureADMSApplication
+  - AzureADPreview.Set-AzureADMSApplicationLogo
+- title: Application Proxy Application Management
+  cmdlets:
+  - AzureADPreview.Get-AzureADApplicationProxyApplication
+  - AzureADPreview.Get-AzureADApplicationProxyApplicationConnectorGroup
+  - AzureADPreview.New-AzureADApplicationProxyApplication
+  - AzureADPreview.Remove-AzureADApplicationProxyApplication
+  - AzureADPreview.Remove-AzureADApplicationProxyApplicationConnectorGroup
+  - AzureADPreview.Set-AzureADApplicationProxyApplication
+  - AzureADPreview.Set-AzureADApplicationProxyApplicationCustomDomainCertificate
+  - AzureADPreview.Set-AzureADApplicationProxyApplicationSingleSignOn
+- title: Application Proxy Connector Management
+  cmdlets:
+  - AzureADPreview.Get-AzureADApplicationProxyConnector
+  - AzureADPreview.Get-AzureADApplicationProxyConnectorGroup
+  - AzureADPreview.Get-AzureADApplicationProxyConnectorGroupMembers
+  - AzureADPreview.Get-AzureADApplicationProxyConnectorMemberOf
+  - AzureADPreview.New-AzureADApplicationProxyConnectorGroup
+  - AzureADPreview.Remove-AzureADApplicationProxyConnectorGroup
+  - AzureADPreview.Set-AzureADApplicationProxyApplicationConnectorGroup
+  - AzureADPreview.Set-AzureADApplicationProxyConnector
+  - AzureADPreview.Set-AzureADApplicationProxyConnectorGroup
+- title: Applications
+  cmdlets:
+  - AzureADPreview.Add-AzureADApplicationOwner
+  - AzureADPreview.Add-AzureADApplicationPolicy
+  - AzureADPreview.Get-AzureADApplication
+  - AzureADPreview.Get-AzureADApplicationExtensionProperty
+  - AzureADPreview.Get-AzureADApplicationKeyCredential
+  - AzureADPreview.Get-AzureADApplicationLogo
+  - AzureADPreview.Get-AzureADApplicationOwner
+  - AzureADPreview.Get-AzureADApplicationPasswordCredential
+  - AzureADPreview.Get-AzureADApplicationPolicy
+  - AzureADPreview.Get-AzureADApplicationServiceEndpoint
+  - AzureADPreview.Get-AzureADDeletedApplication
+  - AzureADPreview.New-AzureADApplication
+  - AzureADPreview.New-AzureADApplicationExtensionProperty
+  - AzureADPreview.New-AzureADApplicationKeyCredential
+  - AzureADPreview.New-AzureADApplicationPasswordCredential
+  - AzureADPreview.Remove-AzureADApplication
+  - AzureADPreview.Remove-AzureADApplicationExtensionProperty
+  - AzureADPreview.Remove-AzureADApplicationKeyCredential
+  - AzureADPreview.Remove-AzureADApplicationOwner
+  - AzureADPreview.Remove-AzureADApplicationPasswordCredential
+  - AzureADPreview.Remove-AzureADMSApplicationVerifiedPublisher
+  - AzureADPreview.Set-AzureADApplication
+  - AzureADPreview.Set-AzureADApplicationLogo
+  - AzureADPreview.Set-AzureADMSApplicationVerifiedPublisher
+- title: AzureADPreview
+  cmdlets:
+  - AzureADPreview.Add-AzureADMSServicePrincipalDelegatedPermissionClassification
+  - AzureADPreview.Get-AzureADApplicationSignInDetailedSummary
+  - AzureADPreview.Get-AzureADApplicationSignInSummary
+  - AzureADPreview.Get-AzureADExternalDomainFederation
+  - AzureADPreview.Get-AzureADMSApplicationTemplate
+  - AzureADPreview.Get-AzureADMSConditionalAccessPolicy
+  - AzureADPreview.Get-AzureADMSNamedLocationPolicy
+  - AzureADPreview.Get-AzureADMSPasswordSingleSignOnCredential
+  - AzureADPreview.Get-AzureADMSPermissionGrantConditionSet
+  - AzureADPreview.Get-AzureADMSPermissionGrantPolicy
+  - AzureADPreview.Get-AzureADMSServicePrincipalDelegatedPermissionClassification
+  - AzureADPreview.Get-AzureADPrivilegedRole
+  - AzureADPreview.Get-AzureADPrivilegedRoleAssignment
+  - AzureADPreview.Get-CrossCloudVerificationCode
+  - AzureADPreview.New-AzureADExternalDomainFederation
+  - AzureADPreview.New-AzureADMSApplicationFromApplicationTemplate
+  - AzureADPreview.New-AzureADMSConditionalAccessPolicy
+  - AzureADPreview.New-AzureADMSNamedLocationPolicy
+  - AzureADPreview.New-AzureADMSPasswordSingleSignOnCredential
+  - AzureADPreview.New-AzureADMSPermissionGrantConditionSet
+  - AzureADPreview.New-AzureADMSPermissionGrantPolicy
+  - AzureADPreview.New-AzureADPrivilegedRoleAssignment
+  - AzureADPreview.Remove-AzureADApplicationPolicy
+  - AzureADPreview.Remove-AzureADDeletedApplication
+  - AzureADPreview.Remove-AzureADExternalDomainFederation
+  - AzureADPreview.Remove-AzureADMSConditionalAccessPolicy
+  - AzureADPreview.Remove-AzureADMSNamedLocationPolicy
+  - AzureADPreview.Remove-AzureADMSPasswordSingleSignOnCredential
+  - AzureADPreview.Remove-AzureADMSPermissionGrantConditionSet
+  - AzureADPreview.Remove-AzureADMSPermissionGrantPolicy
+  - AzureADPreview.Remove-AzureADMSServicePrincipalDelegatedPermissionClassification
+  - AzureADPreview.Remove-AzureADServicePrincipalPolicy
+  - AzureADPreview.Set-AzureADMSConditionalAccessPolicy
+  - AzureADPreview.Set-AzureADMSNamedLocationPolicy
+  - AzureADPreview.Set-AzureADMSPasswordSingleSignOnCredential
+  - AzureADPreview.Set-AzureADMSPermissionGrantConditionSet
+  - AzureADPreview.Set-AzureADMSPermissionGrantPolicy
+- title: Certificate Authorities
+  cmdlets:
+  - AzureADPreview.Get-AzureADTrustedCertificateAuthority
+  - AzureADPreview.New-AzureADTrustedCertificateAuthority
+  - AzureADPreview.Remove-AzureADTrustedCertificateAuthority
+  - AzureADPreview.Set-AzureADTrustedCertificateAuthority
+- title: Connect to your directory
+  cmdlets:
+  - AzureADPreview.Connect-AzureAD
+  - AzureADPreview.Disconnect-AzureAD
+  - AzureADPreview.Get-AzureADCurrentSessionInfo
+- title: Contacts
+  cmdlets:
+  - AzureADPreview.Get-AzureADContact
+  - AzureADPreview.Get-AzureADContactDirectReport
+  - AzureADPreview.Get-AzureADContactManager
+  - AzureADPreview.Get-AzureADContactMembership
+  - AzureADPreview.Get-AzureADContactThumbnailPhoto
+  - AzureADPreview.Remove-AzureADContact
+  - AzureADPreview.Remove-AzureADContactManager
+  - AzureADPreview.Select-AzureADGroupIdsContactIsMemberOf
+- title: Contracts
+  cmdlets:
+  - AzureADPreview.Get-AzureADContract
+- title: Custom Security Attributes
+  cmdlets:
+  - AzureADPreview.Add-AzureADMScustomSecurityAttributeDefinitionAllowedValues
+  - AzureADPreview.Get-AzureADMSAttributeSet
+  - AzureADPreview.Get-AzureADMSCustomSecurityAttributeDefinition
+  - AzureADPreview.Get-AzureADMSCustomSecurityAttributeDefinitionAllowedValue
+  - AzureADPreview.New-AzureADMSAttributeSet
+  - AzureADPreview.New-AzureADMSCustomSecurityAttributeDefinition
+  - AzureADPreview.Set-AzureADMSAttributeSet
+  - AzureADPreview.Set-AzureADMSCustomSecurityAttributeDefinition
+  - AzureADPreview.Set-AzureADMSCustomSecurityAttributeDefinitionAllowedValue
+- title: Deleted Objects
+  cmdlets:
+  - AzureADPreview.Get-AzureADMSDeletedDirectoryObject
+  - AzureADPreview.Get-AzureADMSDeletedGroup
+  - AzureADPreview.Remove-AzureADMSDeletedDirectoryObject
+  - AzureADPreview.Restore-AzureADDeletedApplication
+  - AzureADPreview.Restore-AzureADMSDeletedDirectoryObject
+- title: Devices
+  cmdlets:
+  - AzureADPreview.Add-AzureADDeviceRegisteredOwner
+  - AzureADPreview.Add-AzureADDeviceRegisteredUser
+  - AzureADPreview.Get-AzureADDevice
+  - AzureADPreview.Get-AzureADDeviceConfiguration
+  - AzureADPreview.Get-AzureADDeviceRegisteredOwner
+  - AzureADPreview.Get-AzureADDeviceRegisteredUser
+  - AzureADPreview.New-AzureADDevice
+  - AzureADPreview.Remove-AzureADDevice
+  - AzureADPreview.Remove-AzureADDeviceRegisteredOwner
+  - AzureADPreview.Remove-AzureADDeviceRegisteredUser
+  - AzureADPreview.Set-AzureADDevice
+- title: Directory
+  cmdlets:
+  - AzureADPreview.Get-AzureADSubscribedSku
+  - AzureADPreview.Get-AzureADTenantDetail
+  - AzureADPreview.Set-AzureADTenantDetail
+- title: Directory Auditing
+  cmdlets:
+  - AzureADPreview.Get-AzureADAuditDirectoryLogs
+  - AzureADPreview.Get-AzureADAuditSignInLogs
+- title: Directory Objects
+  cmdlets:
+  - AzureADPreview.Get-AzureADObjectByObjectId
+- title: Directory Roles
+  cmdlets:
+  - AzureADPreview.Add-AzureADDirectoryRoleMember
+  - AzureADPreview.Enable-AzureADDirectoryRole
+  - AzureADPreview.Get-AzureADDirectoryRole
+  - AzureADPreview.Get-AzureADDirectoryRoleMember
+  - AzureADPreview.Get-AzureADDirectoryRoleTemplate
+  - AzureADPreview.Remove-AzureADDirectoryRoleMember
+- title: Directory Settings
+  cmdlets:
+  - AzureADPreview.Get-AzureADDirectorySetting
+  - AzureADPreview.Get-AzureADDirectorySettingTemplate
+  - AzureADPreview.New-AzureADDirectorySetting
+  - AzureADPreview.Remove-AzureADDirectorySetting
+  - AzureADPreview.Set-AzureADDirectorySetting
+- title: Domains
+  cmdlets:
+  - AzureADPreview.Confirm-AzureADDomain
+  - AzureADPreview.Get-AzureADDomain
+  - AzureADPreview.Get-AzureADDomainNameReference
+  - AzureADPreview.Get-AzureADDomainServiceConfigurationRecord
+  - AzureADPreview.Get-AzureADDomainVerificationDnsRecord
+  - AzureADPreview.New-AzureADDomain
+  - AzureADPreview.Remove-AzureADDomain
+  - AzureADPreview.Set-AzureADDomain
+- title: Extension Properties
+  cmdlets:
+  - AzureADPreview.Get-AzureADExtensionProperty
+- title: Groups
+  cmdlets:
+  - AzureADPreview.Add-AzureADGroupMember
+  - AzureADPreview.Add-AzureADGroupOwner
+  - AzureADPreview.Add-AzureADMSLifecyclePolicyGroup
+  - AzureADPreview.Get-AzureADGroup
+  - AzureADPreview.Get-AzureADGroupAppRoleAssignment
+  - AzureADPreview.Get-AzureADGroupMember
+  - AzureADPreview.Get-AzureADGroupOwner
+  - AzureADPreview.Get-AzureADMSGroup
+  - AzureADPreview.Get-AzureADMSGroupLifecyclePolicy
+  - AzureADPreview.Get-AzureADMSLifecyclePolicyGroup
+  - AzureADPreview.New-AzureADGroup
+  - AzureADPreview.New-AzureADGroupAppRoleAssignment
+  - AzureADPreview.New-AzureADMSGroup
+  - AzureADPreview.New-AzureADMSGroupLifecyclePolicy
+  - AzureADPreview.Remove-AzureADGroup
+  - AzureADPreview.Remove-AzureADGroupAppRoleAssignment
+  - AzureADPreview.Remove-AzureADGroupMember
+  - AzureADPreview.Remove-AzureADGroupOwner
+  - AzureADPreview.Remove-AzureADMSGroup
+  - AzureADPreview.Remove-AzureADMSGroupLifecyclePolicy
+  - AzureADPreview.Remove-AzureADMSLifecyclePolicyGroup
+  - AzureADPreview.Reset-AzureADMSLifeCycleGroup
+  - AzureADPreview.Select-AzureADGroupIdsGroupIsMemberOf
+  - AzureADPreview.Set-AzureADGroup
+  - AzureADPreview.Set-AzureADMSGroup
+  - AzureADPreview.Set-AzureADMSGroupLifecyclePolicy
+- title: Identity Provider Management
+  cmdlets:
+  - AzureADPreview.Get-AzureADMSIdentityProvider
+  - AzureADPreview.New-AzureADMSIdentityProvider
+  - AzureADPreview.Remove-AzureADMSIdentityProvider
+  - AzureADPreview.Set-AzureADMSIdentityProvider
+- title: OAuth2
+  cmdlets:
+  - AzureADPreview.Get-AzureADOAuth2PermissionGrant
+  - AzureADPreview.Remove-AzureADOAuth2PermissionGrant
+- title: Object Settings
+  cmdlets:
+  - AzureADPreview.Get-AzureADObjectSetting
+  - AzureADPreview.New-AzureADObjectSetting
+  - AzureADPreview.Remove-AzureADObjectSetting
+  - AzureADPreview.Set-AzureADObjectSetting
+- title: Policies
+  cmdlets:
+  - AzureADPreview.Get-AzureADMSAuthorizationPolicy
+  - AzureADPreview.Get-AzureADPolicy
+  - AzureADPreview.Get-AzureADPolicyAppliedObject
+  - AzureADPreview.New-AzureADPolicy
+  - AzureADPreview.Remove-AzureADPolicy
+  - AzureADPreview.Set-AzureADMSAuthorizationPolicy
+  - AzureADPreview.Set-AzureADPolicy
+- title: Privileged Role Management
+  cmdlets:
+  - AzureADPreview.Add-AzureADMSPrivilegedResource
+  - AzureADPreview.Close-AzureADMSPrivilegedRoleAssignmentRequest
+  - AzureADPreview.Get-AzureADMSPrivilegedResource
+  - AzureADPreview.Get-AzureADMSPrivilegedRoleAssignment
+  - AzureADPreview.Get-AzureADMSPrivilegedRoleAssignmentRequest
+  - AzureADPreview.Get-AzureADMSPrivilegedRoleDefinition
+  - AzureADPreview.Get-AzureADMSPrivilegedRoleSetting
+  - AzureADPreview.Open-AzureADMSPrivilegedRoleAssignmentRequest
+  - AzureADPreview.Set-AzureADMSPrivilegedRoleAssignmentRequest
+  - AzureADPreview.Set-AzureADMSPrivilegedRoleSetting
+- title: Role Management
+  cmdlets:
+  - AzureADPreview.Get-AzureADMSRoleAssignment
+  - AzureADPreview.Get-AzureADMSRoleDefinition
+  - AzureADPreview.New-AzureADMSRoleAssignment
+  - AzureADPreview.New-AzureADMSRoleDefinition
+  - AzureADPreview.Remove-AzureADMSRoleAssignment
+  - AzureADPreview.Remove-AzureADMSRoleDefinition
+  - AzureADPreview.Set-AzureADMSRoleDefinition
+- title: Service Principals
+  cmdlets:
+  - AzureADPreview.Add-AzureADServicePrincipalOwner
+  - AzureADPreview.Add-AzureADServicePrincipalPolicy
+  - AzureADPreview.Get-AzureADMSServicePrincipal
+  - AzureADPreview.Get-AzureADServiceAppRoleAssignedTo
+  - AzureADPreview.Get-AzureADServiceAppRoleAssignment
+  - AzureADPreview.Get-AzureADServicePrincipal
+  - AzureADPreview.Get-AzureADServicePrincipalCreatedObject
+  - AzureADPreview.Get-AzureADServicePrincipalKeyCredential
+  - AzureADPreview.Get-AzureADServicePrincipalMembership
+  - AzureADPreview.Get-AzureADServicePrincipalOAuth2PermissionGrant
+  - AzureADPreview.Get-AzureADServicePrincipalOwnedObject
+  - AzureADPreview.Get-AzureADServicePrincipalOwner
+  - AzureADPreview.Get-AzureADServicePrincipalPasswordCredential
+  - AzureADPreview.Get-AzureADServicePrincipalPolicy
+  - AzureADPreview.New-AzureADServiceAppRoleAssignment
+  - AzureADPreview.New-AzureADServicePrincipal
+  - AzureADPreview.New-AzureADServicePrincipalKeyCredential
+  - AzureADPreview.New-AzureADServicePrincipalPasswordCredential
+  - AzureADPreview.Remove-AzureADServiceAppRoleAssignment
+  - AzureADPreview.Remove-AzureADServicePrincipal
+  - AzureADPreview.Remove-AzureADServicePrincipalKeyCredential
+  - AzureADPreview.Remove-AzureADServicePrincipalOwner
+  - AzureADPreview.Remove-AzureADServicePrincipalPasswordCredential
+  - AzureADPreview.Select-AzureADGroupIdsServicePrincipalIsMemberOf
+  - AzureADPreview.Set-AzureADMSServicePrincipal
+  - AzureADPreview.Set-AzureADServicePrincipal
+- title: Staged Rollout
+  cmdlets:
+  - AzureADPreview.Add-AzureADMSFeatureRolloutPolicyDirectoryObject
+  - AzureADPreview.Get-AzureADMSFeatureRolloutPolicy
+  - AzureADPreview.New-AzureADMSFeatureRolloutPolicy
+  - AzureADPreview.Remove-AzureADMSFeatureRolloutPolicy
+  - AzureADPreview.Remove-AzureADMSFeatureRolloutPolicyDirectoryObject
+  - AzureADPreview.Set-AzureADMSFeatureRolloutPolicy
+- title: Trust Framework Policy Management
+  cmdlets:
+  - AzureADPreview.Get-AzureADMSTrustFrameworkPolicy
+  - AzureADPreview.New-AzureADMSTrustFrameworkPolicy
+  - AzureADPreview.Remove-AzureADMSTrustFrameworkPolicy
+  - AzureADPreview.Set-AzureADMSTrustFrameworkPolicy
+- title: Users
+  cmdlets:
+  - AzureADPreview.Get-AzureADMSUser
+  - AzureADPreview.Get-AzureADUser
+  - AzureADPreview.Get-AzureADUserAppRoleAssignment
+  - AzureADPreview.Get-AzureADUserCreatedObject
+  - AzureADPreview.Get-AzureADUserDirectReport
+  - AzureADPreview.Get-AzureADUserExtension
+  - AzureADPreview.Get-AzureADUserLicenseDetail
+  - AzureADPreview.Get-AzureADUserManager
+  - AzureADPreview.Get-AzureADUserMembership
+  - AzureADPreview.Get-AzureADUserOAuth2PermissionGrant
+  - AzureADPreview.Get-AzureADUserOwnedDevice
+  - AzureADPreview.Get-AzureADUserOwnedObject
+  - AzureADPreview.Get-AzureADUserRegisteredDevice
+  - AzureADPreview.Get-AzureADUserThumbnailPhoto
+  - AzureADPreview.New-AzureADMSInvitation
+  - AzureADPreview.New-AzureADUser
+  - AzureADPreview.New-AzureADUserAppRoleAssignment
+  - AzureADPreview.Remove-AzureADUser
+  - AzureADPreview.Remove-AzureADUserAppRoleAssignment
+  - AzureADPreview.Remove-AzureADUserExtension
+  - AzureADPreview.Remove-AzureADUserManager
+  - AzureADPreview.Revoke-AzureADSignedInUserAllRefreshToken
+  - AzureADPreview.Revoke-AzureADUserAllRefreshToken
+  - AzureADPreview.Select-AzureADGroupIdsUserIsMemberOf
+  - AzureADPreview.Set-AzureADMSUser
+  - AzureADPreview.Set-AzureADUser
+  - AzureADPreview.Set-AzureADUserExtension
+  - AzureADPreview.Set-AzureADUserLicense
+  - AzureADPreview.Set-AzureADUserManager
+  - AzureADPreview.Set-AzureADUserPassword
+  - AzureADPreview.Set-AzureADUserThumbnailPhoto
+  - AzureADPreview.Update-AzureADSignedInUserPassword
+uid: AzureADPreview
+name: AzureADPreview
+description: |-
+  The Azure Active Directory PowerShell for Graph Preview module can be downloaded and installed from the PowerShell Gallery, www.powershellgallery.com. The gallery uses the PowerShellGet module. The PowerShellGet module requires PowerShell 3.0 or newer and requires one of the following operating systems:
+
+  Windows 10 Windows 8.1 Pro Windows 8.1 Enterprise Windows 7 SP1 Windows Server 2016 TP5 Windows Server 2012 R2 Windows Server 2008 R2 SP1
+
+  PowerShellGet also requires .NET Framework 4.5 or above. You can install .NET Framework 4.5 or above from here. For more information, please refer to this link For more detailed info on installation of the AzureAD cmdlets please see: Azure Active Directory PowerShell for Graph.
+
+  These are the cmdlets in the Azure Active Directory PowerShell for Graph Preview module.
+metadata:
+  Module Name: AzureADPreview
+  Module Guid: b433e830-b479-4f7f-9c80-9cc6c28e1b51
+  Download Help Link: '{{Please enter FwLink manually}}'
+  Help Version: '{{Please enter version of help manually (X.X.X.X) format}}'
+  Locale: en-US

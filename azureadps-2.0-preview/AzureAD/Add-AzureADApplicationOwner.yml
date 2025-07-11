@@ -1,0 +1,83 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Adds an owner to an application.
+module: AzureADPreview
+notes: ""
+links:
+- text: Get-AzureADApplicationOwner
+  href: ./Get-AzureADApplicationOwner.yml
+- text: Remove-AzureADApplicationOwner
+  href: ./Remove-AzureADApplicationOwner.yml
+syntaxes:
+- >-
+  Add-AzureADApplicationOwner -ObjectId <String> -RefObjectId <String> [-InformationAction <ActionPreference>]
+
+   [-InformationVariable <String>] [<CommonParameters>]
+examples:
+- title: 'Example 1: Add an owner to an application'
+  code: |-
+    PS C:\>Add-AzureADApplicationOwner -ObjectId aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb -RefObjectId bbbbbbbb-1111-2222-3333-cccccccccccc
+  description: |-
+    This command adds an owner to an application.
+  summary: ""
+parameters:
+- type: <xref href="ActionPreference" data-throw-if-not-resolved="False" />
+  name: InformationAction
+  description: |+
+    Specifies how this cmdlet responds to an information event.
+    The acceptable values for this parameter are:
+    * Continue
+    * Ignore
+    * Inquire
+    * SilentlyContinue
+    * Stop
+    * Suspend
+
+  defaultValue: None
+  position: Named
+  aliases: infa
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: InformationVariable
+  description: |+
+    Specifies a variable in which to store an information event message.
+
+
+  defaultValue: None
+  position: Named
+  aliases: iv
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ObjectId
+  isRequired: true
+  description: |+
+    Specifies the ID of an application in Azure Active Directory.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: RefObjectId
+  isRequired: true
+  description: |+
+    Specifies the ID of the Active Directory object to assign as owner/manager/member.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: AzureADPreview.Add-AzureADApplicationOwner
+name: Add-AzureADApplicationOwner
+description: |-
+  The **Add-AzureADApplicationOwner** cmdlet adds an owner to an Azure Active Directory application.
+metadata:
+  external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+  Module Name: AzureADPreview
+  ms.assetid: 27EA6A45-9227-4E87-AC85-0A6C4B2AE620
+  ms.custom: iamfeature=PowerShell
+  ms.reviewer: stevemutungi
+  online version: ""
+  schema: 2.0.0

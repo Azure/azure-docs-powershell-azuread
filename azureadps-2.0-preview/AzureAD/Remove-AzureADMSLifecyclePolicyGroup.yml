@@ -1,0 +1,51 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Removes a group from a lifecycle policy
+module: AzureADPreview
+notes: ""
+inputs:
+- name: <xref href="System.String" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="System.Object" data-throw-if-not-resolved="False" />
+  description: ""
+syntaxes:
+- Remove-AzureADMSLifecyclePolicyGroup -Id <String> -GroupId <String> [<CommonParameters>]
+examples:
+- title: Example 1
+  code: |-
+    PS C:\> Remove-AzureADMSLifecyclePolicyGroup -Id b4c908b0-3595-4add-91b4-c5400b31b57b -groupId cffd97bd-6b91-4c4e-b553-6918a320211c
+  description: |-
+    This command removes a group from a lifecycle policy in Azure Active Directory
+  summary: ""
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: GroupId
+  isRequired: true
+  description: |+
+    Specifies the ID of a group in Azure Active Directory.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  isRequired: true
+  description: |+
+    Specifies the ID of the lifecycle policy object in Azure Active Directory.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: AzureADPreview.Remove-AzureADMSLifecyclePolicyGroup
+name: Remove-AzureADMSLifecyclePolicyGroup
+description: |-
+  The Remove-AzureADMSLifecyclePolicyGroup cmdlet removes a group from a lifecycle policy in Azure Active Directory
+metadata:
+  external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
+  Module Name: AzureADPreview
+  online version: ""
+  schema: 2.0.0

@@ -1,0 +1,74 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Gets a member of a group.
+module: AzureAD
+notes: ""
+syntaxes:
+- Get-AzureADGroupMember -ObjectId <String> [-All <Boolean>] [-Top <Int32>] [<CommonParameters>]
+examples:
+- title: 'Example 1: Get a group member by ID'
+  code: |-
+    PS C:\>Get-AzureADGroupMember -ObjectId "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb"
+
+    ObjectId                             ObjectType
+    --------                             ----------
+    0a1068c0-dbb6-4537-9db3-b48f3e31dd76 User
+  description: ""
+  summary: ""
+- title: 'Example 2: Get all members within a group by group ID'
+  code: |-
+    PS C:\> Get-AzureADGroupMember -ObjectId "bbbbbbbb-1111-2222-3333-cccccccccccc" -All $true
+
+    ObjectId                             ObjectType
+    --------                             ----------
+    0a1068c0-dbb6-4537-9db3-b48f3e31dd76 User
+    0a1068c0-dbb6-4537-9db3-b48f3e31dd76 User
+    0a1068c0-dbb6-4537-9db3-b48f3e31dd76 Group
+  description: ""
+  summary: ""
+parameters:
+- type: <xref href="Boolean" data-throw-if-not-resolved="False" />
+  name: All
+  description: |+
+    If true:
+    	Return all group members.
+    	
+    If false: 
+    	Return the number of objects specified by the Top parameter. 
+    	If the top parameter is not specified, return the first 100 group members.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ObjectId
+  isRequired: true
+  description: |+
+    Specifies the ID of a group in Azure AD.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Top
+  description: |+
+    Specifies the maximum number of records to return.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: AzureAD.Get-AzureADGroupMember
+name: Get-AzureADGroupMember
+description: |-
+  The Get-AzureADGroupMember cmdlet gets a member of a group in Azure Active Directory (AD).
+metadata:
+  external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+  Module Name: AzureAD
+  online version: ""
+  schema: 2.0.0

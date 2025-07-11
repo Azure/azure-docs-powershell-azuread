@@ -1,0 +1,118 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Adds a new custom security attribute definition.
+module: AzureADPreview
+notes: ""
+inputs:
+- name: <xref href="None" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="System.Object" data-throw-if-not-resolved="False" />
+  description: ""
+syntaxes:
+- >-
+  New-AzureADMSCustomSecurityAttributeDefinition -AttributeSet <String> [-Description <String>]
+
+   -IsCollection <Boolean> -IsSearchable <Boolean> -Name <String> -Status <String> -Type <String>
+
+   -UsePreDefinedValuesOnly <Boolean> [<CommonParameters>]
+examples:
+- title: Example
+  code: |-
+    New-AzureADMSCustomSecurityAttributeDefinition -AttributeSet "Engineering" -Name "ProjectDate" -Description "Target completion date" -Type "String" -Status "Available" -IsCollection $false -IsSearchable $true -UsePreDefinedValuesOnly $true
+  description: |-
+    Add a custom security attribute definition.
+
+    - Attribute set: `Engineering`
+    - Attribute: `ProjectDate`
+    - Attribute data type: String
+  summary: ""
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: AttributeSet
+  isRequired: true
+  description: |+
+    Name of the attribute set in Azure AD.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Description
+  description: |+
+    Description for the custom security attribute definition.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Boolean" data-throw-if-not-resolved="False" />
+  name: IsCollection
+  isRequired: true
+  description: |+
+    Indicates whether multiple values can be assigned to the custom security attribute.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Boolean" data-throw-if-not-resolved="False" />
+  name: IsSearchable
+  isRequired: true
+  description: |+
+    Indicates whether custom security attribute values will be indexed for searching on objects that are assigned attribute values.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Name
+  isRequired: true
+  description: |+
+    Name of the custom security attribute. Must be unique within an attribute set.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Status
+  isRequired: true
+  description: |+
+    Specifies whether the custom security attribute is active or deactivated. Acceptable values are 'Available' and 'Deprecated'.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Type
+  isRequired: true
+  description: |+
+    Specifies the data type of the attribute.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Boolean" data-throw-if-not-resolved="False" />
+  name: UsePreDefinedValuesOnly
+  isRequired: true
+  description: |+
+    Indicates whether only predefined values can be assigned to the custom security attribute. If set to false, free-form values are allowed.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: AzureADPreview.New-AzureADMSCustomSecurityAttributeDefinition
+name: New-AzureADMSCustomSecurityAttributeDefinition
+description: |-
+  Adds a new Azure Active Directory (Azure AD) custom security attribute definition object.
+metadata:
+  external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
+  Module Name: AzureADPreview
+  online version: ""
+  schema: 2.0.0

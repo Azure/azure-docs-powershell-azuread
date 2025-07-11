@@ -1,0 +1,66 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Gets a member of an administrative unit.
+module: AzureADPreview
+notes: ""
+links:
+- text: Add-AzureADAdministrativeUnitMember
+  href: ./Add-AzureADAdministrativeUnitMember.yml
+- text: Remove-AzureADAdministrativeUnitMember
+  href: ./Remove-AzureADAdministrativeUnitMember.yml
+syntaxes:
+- >-
+  Get-AzureADAdministrativeUnitMember -ObjectId <String> [-InformationAction <ActionPreference>]
+
+   [-InformationVariable <String>] [<CommonParameters>]
+parameters:
+- type: <xref href="ActionPreference" data-throw-if-not-resolved="False" />
+  name: InformationAction
+  description: |+
+    Specifies how this cmdlet responds to an information event.
+    The acceptable values for this parameter are:
+    * Continue
+    * Ignore
+    * Inquire
+    * SilentlyContinue
+    * Stop
+    * Suspend
+
+
+  defaultValue: None
+  position: Named
+  aliases: infa
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: InformationVariable
+  description: |+
+    Specifies a variable in which to store an information event message.
+
+
+  defaultValue: None
+  position: Named
+  aliases: iv
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ObjectId
+  isRequired: true
+  description: |+
+    Specifies the ID of an administrative unit in Azure Active Directory.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: AzureADPreview.Get-AzureADAdministrativeUnitMember
+name: Get-AzureADAdministrativeUnitMember
+description: |-
+  The **Get-AzureADAdministrativeUnitMember** cmdlet gets a member of an Active Directory administrative unit.
+metadata:
+  external help file: Microsoft.Open.AzureADBeta.Graph.PowerShell.dll-Help.xml
+  Module Name: AzureADPreview
+  ms.assetid: C05871A7-998C-48AC-BCEB-4CD916E86767
+  ms.custom: iamfeature=PowerShell
+  ms.reviewer: stevemutungi
+  online version: ""
+  schema: 2.0.0

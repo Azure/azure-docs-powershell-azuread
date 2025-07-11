@@ -1,0 +1,72 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Deletes an administrative unit from Azure Active Directory.
+module: MSOnline
+notes: ""
+links:
+- text: Get-MsolAdministrativeUnit
+  href: ./Get-MsolAdministrativeUnit.yml
+- text: New-MsolAdministrativeUnit
+  href: ./New-MsolAdministrativeUnit.yml
+- text: Set-MsolAdministrativeUnit
+  href: ./Set-MsolAdministrativeUnit.yml
+syntaxes:
+- Remove-MsolAdministrativeUnit -ObjectId <Guid> [-Force] [-TenantId <Guid>] [<CommonParameters>]
+examples:
+- title: 'Example 1: Remove an administrative unit'
+  code: |-
+    PS C:\> $AdministrativeUnit = Get-MsolAdministrativeUnit -SearchString "West Coast"
+    PS C:\> Remove-MsolAdministrativeUnit -ObjectId $AdministrativeUnit.ObjectId -Force
+  description: |-
+    The first command gets an administrative unit that matches a search string by using the [Get-MsolAdministrativeUnit](./Get-MsolAdministrativeUnit.yml) cmdlet.
+    The command stores the administrative unit in the $AdministrativeUnit variable.
+
+    The second command deletes the administrative unit.
+    The command specifies the administrative unit by using the object ID of $AdministrativeUnit.
+    The command specifies the _Force_ parameter.
+    It does not prompt for comfirmation.
+  summary: ""
+parameters:
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Force
+  description: |+
+    Indicates that this cmdlet does not prompt you for confirmation.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Guid" data-throw-if-not-resolved="False" />
+  name: ObjectId
+  isRequired: true
+  description: |+
+    Specifies the unique ID of the administrative unit to remove.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Guid" data-throw-if-not-resolved="False" />
+  name: TenantId
+  description: |+
+    Specifies the unique ID of the tenant on which to perform the operation.
+    The default value is the tenant of the current user.
+    This parameter applies only to partner users.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: MSOnline.Remove-MsolAdministrativeUnit
+name: Remove-MsolAdministrativeUnit
+description: |-
+  The **Remove-MsolAdministrativeUnit** cmdlet deletes an administrative unit from Azure Active Directory.
+metadata:
+  external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
+  online version: ""
+  schema: 2.0.0
+  ms.assetid: BA22F11F-5010-421E-A9A9-680C9EA014B4
+  ms.reviewer: stevemutungi
+  ms.custom: iamfeature=PowerShell

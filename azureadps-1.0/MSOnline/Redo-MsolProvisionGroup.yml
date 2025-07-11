@@ -1,0 +1,47 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Retries the provisioning of a group object in Azure Active Directory.
+module: MSOnline
+notes: ""
+links:
+- text: Redo-MsolProvisionContact
+  href: ./Redo-MsolProvisionContact.yml
+- text: Redo-MsolProvisionUser
+  href: ./Redo-MsolProvisionUser.yml
+syntaxes:
+- Redo-MsolProvisionGroup -ObjectId <Guid> [-TenantId <Guid>] [<CommonParameters>]
+parameters:
+- type: <xref href="Guid" data-throw-if-not-resolved="False" />
+  name: ObjectId
+  isRequired: true
+  description: |+
+    Specifies the unique object ID associated with the group object on which to retry provisioning.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Guid" data-throw-if-not-resolved="False" />
+  name: TenantId
+  description: |+
+    Specifies the unique ID of the tenant on which to perform the operation.
+    The default value is the tenant of the current user.
+    This parameter applies only to partner users.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: MSOnline.Redo-MsolProvisionGroup
+name: Redo-MsolProvisionGroup
+description: |-
+  The **Redo-MsolProvisionGroup** cmdlet retries the provisioning of a group object in Azure Active Directory when a previous attempt to create the group object resulted in a validation error.
+metadata:
+  external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
+  online version: ""
+  schema: 2.0.0
+  ms.assetid: 06BF30D6-67C6-4368-B42F-EE842FCF6C81
+  ms.reviewer: stevemutungi
+  ms.custom: iamfeature=PowerShell

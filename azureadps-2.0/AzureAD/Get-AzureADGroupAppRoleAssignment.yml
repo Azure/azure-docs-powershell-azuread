@@ -1,0 +1,60 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Gets a group application role assignment.
+module: AzureAD
+notes: ""
+syntaxes:
+- Get-AzureADGroupAppRoleAssignment -ObjectId <String> [-All <Boolean>] [-Top <Int32>] [<CommonParameters>]
+examples:
+- title: 'Example 1: Retrieve application role assignments of a group'
+  code: |-
+    $GroupId = (Get-AzureADGroup -Top 1).ObjectId
+    Get-AzureADGroupAppRoleAssignment -ObjectId $GroupId
+  description: |-
+    The first command gets the object ID of a group by using the [Get-AzureADGroup](./Get-AzureADGroup.yml) cmdlet.
+    The command stores the ID in the $GroupId variable.
+
+    The second command gets the application role assignments of the group in $GroupId.
+  summary: ""
+parameters:
+- type: <xref href="Boolean" data-throw-if-not-resolved="False" />
+  name: All
+  description: |+
+    If true, return all application role assignments.
+    If false, return the number of objects specified by the Top parameter
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ObjectId
+  isRequired: true
+  description: |+
+    Specifies the ID of a group in Azure AD.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Top
+  description: |+
+    Specifies the maximum number of records to return.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: AzureAD.Get-AzureADGroupAppRoleAssignment
+name: Get-AzureADGroupAppRoleAssignment
+description: |-
+  The Get-AzureADGroupAppRoleAssignment cmdlet gets a group application role assignment in Azure Active Directory (AD).
+metadata:
+  external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+  Module Name: AzureAD
+  online version: ""
+  schema: 2.0.0

@@ -1,0 +1,188 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Update an existing Azure Active Directory permission grant condition set.
+module: AzureADPreview
+notes: ""
+inputs:
+- name: <xref href="string" data-throw-if-not-resolved="False" />
+  description: ""
+- name: <xref href="string" data-throw-if-not-resolved="False" />
+  description: ""
+- name: <xref href="string" data-throw-if-not-resolved="False" />
+  description: ""
+syntaxes:
+- >-
+  Set-AzureADMSPermissionGrantConditionSet -PolicyId <String> -ConditionSetType <String> -Id <String>
+
+   [-PermissionType <String>] [-PermissionClassification <String>] [-ResourceApplication <String>]
+
+   [-Permissions <System.Collections.Generic.List`1[System.String]>]
+
+   [-ClientApplicationIds <System.Collections.Generic.List`1[System.String]>]
+
+   [-ClientApplicationTenantIds <System.Collections.Generic.List`1[System.String]>]
+
+   [-ClientApplicationPublisherIds <System.Collections.Generic.List`1[System.String]>]
+
+   [-ClientApplicationsFromVerifiedPublisherOnly <Boolean>] [<CommonParameters>]
+examples:
+- title: 'Example 1: Update a permission grant condition set to includes permissions that has been classified as low.'
+  code: |-
+    1. Get exisiting permission grant policy by that need to be updated.
+    		
+    		$permissionGrantConditionSet =Get-AzureADMSPermissionGrantConditionSet -PolicyId "test1" -ConditionSetType "includes" -Id "0f81cce0-a766-4db6-a7e2-4e5f10f6abf8"
+
+    			Id                                          : 0f81cce0-a766-4db6-a7e2-4e5f10f6abf8
+    			PermissionType                              : delegated
+    			PermissionClassification                    : all
+    			ResourceApplication                         : ec8d61c9-1cb2-4edb-afb0-bcda85645555
+    			Permissions                                 : {8b590330-0eb2-45d0-baca-a00ecf7e7b87, dac1c8fa-e6e4-47b8-a128-599660b8cd5c, 
+    														  f6db0cc3-88cd-4c74-a374-3d8c7cc4c50b}
+    			ClientApplicationIds                        : {00001111-aaaa-2222-bbbb-3333cccc4444, 11112222-bbbb-3333-cccc-4444dddd5555}
+    			ClientApplicationTenantIds                  : {aaaabbbb-0000-cccc-1111-dddd2222eeee, bbbbcccc-1111-dddd-2222-eeee3333ffff, 
+    														  ccccdddd-2222-eeee-3333-ffff4444aaaa}
+    			ClientApplicationPublisherIds               : {verifiedpublishermpnid}
+    			ClientApplicationsFromVerifiedPublisherOnly : True
+    			
+    		2. Update PermissionClassification 
+    		
+    		Set-AzureADMSPermissionGrantConditionSet -PolicyId "test1" -ConditionSetType "includes" -Id $permissionGrantConditionSet.Id -PermissionClassification low
+
+    			Id                                          : 0f81cce0-a766-4db6-a7e2-4e5f10f6abf8
+    			PermissionType                              : delegated
+    			PermissionClassification                    : low
+    			ResourceApplication                         : ec8d61c9-1cb2-4edb-afb0-bcda85645555
+    			Permissions                                 : {8b590330-0eb2-45d0-baca-a00ecf7e7b87, dac1c8fa-e6e4-47b8-a128-599660b8cd5c, 
+    														  f6db0cc3-88cd-4c74-a374-3d8c7cc4c50b}
+    			ClientApplicationIds                        : {00001111-aaaa-2222-bbbb-3333cccc4444, 11112222-bbbb-3333-cccc-4444dddd5555}
+    			ClientApplicationTenantIds                  : {aaaabbbb-0000-cccc-1111-dddd2222eeee, bbbbcccc-1111-dddd-2222-eeee3333ffff, 
+    														  ccccdddd-2222-eeee-3333-ffff4444aaaa}
+    			ClientApplicationPublisherIds               : {verifiedpublishermpnid}
+    			ClientApplicationsFromVerifiedPublisherOnly : True
+  description: ""
+  summary: ""
+- title: 'Example 2: Update a permission grant condition set'
+  code: |-
+    PS C:\>Set-AzureADMSPermissionGrantConditionSet -PolicyId "policy1" -ConditionSetType "includes" -Id "00001111-aaaa-2222-bbbb-3333cccc4444" -PermissionType "Delegated" -PermissionClassification "Low" -ResourceApplication "d9d40050-c784-4b56-a06d-477542a1cafc" -Permissions @("29bf4ca5-913e-427d-8a68-5890af945109") -ClientApplicationIds @("All") -ClientApplicationTenantIds @("All") -ClientApplicationPublisherIds @("All") -ClientApplicationsFromVerifiedPublisherOnly $true
+  description: ""
+  summary: ""
+parameters:
+- type: <xref href="System.Collections.Generic.List`1" data-throw-if-not-resolved="False" /><span>[</span><xref href="System.String" data-throw-if-not-resolved="False" /><span>]</span>
+  name: ClientApplicationIds
+  description: |+
+    The set of client application ids to scope consent operation down to.
+    It could be @("All") or a list of client application Ids.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="System.Collections.Generic.List`1" data-throw-if-not-resolved="False" /><span>[</span><xref href="System.String" data-throw-if-not-resolved="False" /><span>]</span>
+  name: ClientApplicationPublisherIds
+  description: |+
+    The set of client applications publisher ids to scope consent operation down to.
+    It could be @("All") or a list of client application publisher ids.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Boolean" data-throw-if-not-resolved="False" />
+  name: ClientApplicationsFromVerifiedPublisherOnly
+  description: |+
+    A value indicates whether to only includes client applications from verified publishers.
+
+  defaultValue: "False"
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="System.Collections.Generic.List`1" data-throw-if-not-resolved="False" /><span>[</span><xref href="System.String" data-throw-if-not-resolved="False" /><span>]</span>
+  name: ClientApplicationTenantIds
+  description: |+
+    The set of client application tenant ids to scope consent operation down to.
+    It could be @("All") or a list of client application tenant ids.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ConditionSetType
+  isRequired: true
+  description: |+
+    The value indicates whether the condition sets are included in the policy or excluded.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  isRequired: true
+  description: |+
+    The unique identifier of an Azure Active Directory permission grant condition set object.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: PermissionClassification
+  description: |+
+    Specific classification (all, low, medium, high) to scope consent operation down to.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="System.Collections.Generic.List`1" data-throw-if-not-resolved="False" /><span>[</span><xref href="System.String" data-throw-if-not-resolved="False" /><span>]</span>
+  name: Permissions
+  description: |+
+    The identifier of the resource application to scope consent operation down to.
+    It could be @("All") or a list of permission ids.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: PermissionType
+  description: |+
+    Specific type of permissions (application, delegated) to scope consent operation down to.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: PolicyId
+  isRequired: true
+  description: |+
+    The unique identifier of an Azure Active Directory permission grant policy object.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ResourceApplication
+  description: |+
+    The identifier of the resource application to scope consent operation down to.
+    It could be "Any" or a specific resource application id.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: AzureADPreview.Set-AzureADMSPermissionGrantConditionSet
+name: Set-AzureADMSPermissionGrantConditionSet
+description: |-
+  Updates an Azure Active Directory permission grant condition set object identified by id.
+metadata:
+  external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
+  Module Name: AzureADPreview
+  online version: ""
+  schema: 2.0.0

@@ -1,0 +1,67 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Converts the domain from using standard authentication to using single sign-on.
+module: MSOnline
+notes: ""
+links:
+- text: Convert-MsolDomainToStandard
+  href: ./Convert-MsolDomainToStandard.yml
+syntaxes:
+- >-
+  Convert-MsolDomainToFederated [-SupportMultipleDomain] -DomainName <String> [-WhatIf] [-Confirm]
+
+   [<CommonParameters>]
+parameters:
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the command.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: DomainName
+  isRequired: true
+  description: |+
+    Specifies the name of the domain to convert to single sign-on.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: SupportMultipleDomain
+  description: ""
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: MSOnline.Convert-MsolDomainToFederated
+name: Convert-MsolDomainToFederated
+description: |-
+  The **Convert-MSOLDomainToFederated** cmdlet converts the specified domain from standard authentication to single sign-on.
+  This includes configuring the relying party trust settings between the Active Directory Federation Services 2.0 server and Microsoft Online.
+  Single sign-on is also known as identity federation.
+
+  As part of converting a domain from standard authentication to single sign-on, each user must also be converted.
+  This conversion happens automatically the next time a user signs in.
+  No action is required by the administrator.
+metadata:
+  external help file: Microsoft.Online.Identity.Federation.PowerShell.dll-help.xml
+  online version: ""
+  schema: 2.0.0
+  ms.assetid: 165F509D-D91E-4BE5-AF22-72112C1C3AB7
+  ms.reviewer: stevemutungi
+  ms.custom: iamfeature=PowerShell

@@ -1,0 +1,41 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  The Remove-AzureADApplicationProxyApplicationConnectorGroup cmdlet deletes an Application Proxy Connector group.
+module: AzureADPreview
+notes: ""
+inputs:
+- name: <xref href="System.String" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="System.Object" data-throw-if-not-resolved="False" />
+  description: ""
+syntaxes:
+- Remove-AzureADApplicationProxyConnectorGroup -Id <String> [<CommonParameters>]
+examples:
+- title: Example 1
+  code: |-
+    PS C:\> Remove-AzureADApplicationProxyApplicationConnectorGroup -ObjectId aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb
+  description: |-
+    Example 1: Remove a specific Connector Group
+  summary: ""
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  isRequired: true
+  description: |+
+    The Id of the Connector group to delete. You can find this value by running the Get-AzureADApplicationProxyConnectorGroup command. 
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: AzureADPreview.Remove-AzureADApplicationProxyConnectorGroup
+name: Remove-AzureADApplicationProxyConnectorGroup
+description: |-
+  The Remove-AzureADApplicationProxyConnectorGroup cmdlet deletes an Application Proxy Connector Group. It can only be used on an empty connector group, with no connectors assigned.
+metadata:
+  external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
+  Module Name: AzureADPreview
+  online version: ""
+  schema: 2.0.0

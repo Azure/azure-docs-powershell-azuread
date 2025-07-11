@@ -1,0 +1,66 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Get an externalDomainFederation by external domain name.
+module: AzureADPreview
+notes: ""
+syntaxes:
+- Get-AzureADExternalDomainFederation [-All <Boolean>] [-Top <Int32>] [-Filter <String>] [<CommonParameters>]
+- Get-AzureADExternalDomainFederation -ExternalDomainName <String> [-All <Boolean>] [<CommonParameters>]
+examples:
+- title: 'Example 1: Gets an external domain federation setting for a given external domain.'
+  code: |-
+    Get-AzureADExternalFederationDomain -ExternalDomainName "test.com"
+  description: |-
+    This command gets an external domain federation setting.
+  summary: ""
+parameters:
+- type: <xref href="Boolean" data-throw-if-not-resolved="False" />
+  name: All
+  description: |+
+    Boolean to express that return all results from the server for the specific query
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ExternalDomainName
+  isRequired: true
+  description: |+
+    The unique identifer of an externalDomainFederation in Azure Active Directory
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Filter
+  description: |+
+    The oData v3.0 filter statement. 
+    Controls which objects are returned.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Top
+  description: |+
+    The maximum number of records to return.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: AzureADPreview.Get-AzureADExternalDomainFederation
+name: Get-AzureADExternalDomainFederation
+description: ""
+metadata:
+  external help file: Microsoft.Open.AzureADBeta.Graph.PowerShell.dll-Help.xml
+  Module Name: AzureADPreview
+  online version: ""
+  schema: 2.0.0

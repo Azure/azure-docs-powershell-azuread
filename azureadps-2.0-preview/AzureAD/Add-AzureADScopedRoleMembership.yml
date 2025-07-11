@@ -1,0 +1,74 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Adds a scoped role membership to an administrative unit.
+module: AzureADPreview
+notes: ""
+links:
+- text: Get-AzureADScopedRoleMembership
+  href: ./Get-AzureADScopedRoleMembership.yml
+- text: Remove-AzureADScopedRoleMembership
+  href: ./Remove-AzureADScopedRoleMembership.yml
+syntaxes:
+- >-
+  Add-AzureADScopedRoleMembership -ObjectId <String> [-AdministrativeUnitObjectId <String>]
+
+   [-RoleObjectId <String>] [-RoleMemberInfo <RoleMemberInfo>] [<CommonParameters>]
+examples:
+- title: Example 1
+  code: |-
+    $User = Get-AzureADUser -SearchString "The user that will be an admin on this unit"
+    	$Role = Get-AzureADDirectoryRole | Where-Object -Property DisplayName -EQ -Value "User Account Administrator"
+    	$Unit = Get-AzureADAdministrativeUnit | Where-Object -Property DisplayName -Eq -Value "<The display name of the unit"
+    	$RoleMember = New-Object -TypeName Microsoft.Open.AzureAD.Model.RoleMemberInfo
+    	$RoleMember.ObjectId = $User.ObjectID
+    	Add-AzureADScopedRoleMembership -ObjectId $unit.ObjectId -RoleObjectId $Role.ObjectId -RoleMemberInfo $RoleMember
+  description: "This cmdlet returns the Scope role membership object:\r\n \r\n\r\n	AdministrativeUnitObjectId           RoleObjectId\r\n	--------------------------           ------------\r\n	c9ab56cc-e349-4237-856e-cab03157a91e 526b7173-5a6e-49dc-88ec-b677a9093709"
+  summary: ""
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: AdministrativeUnitObjectId
+  description: |+
+    Specifies the ID of an administrative unit.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ObjectId
+  isRequired: true
+  description: ""
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="RoleMemberInfo" data-throw-if-not-resolved="False" />
+  name: RoleMemberInfo
+  description: |+
+    Specifies a **RoleMemberInfo** object. 
+
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: RoleObjectId
+  description: ""
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: AzureADPreview.Add-AzureADScopedRoleMembership
+name: Add-AzureADScopedRoleMembership
+description: |-
+  The Add-AzureADScopedRoleMembership cmdlet adds a scoped role membership to an administrative unit.
+metadata:
+  external help file: Microsoft.Open.AzureADBeta.Graph.PowerShell.dll-Help.xml
+  Module Name: AzureADPreview
+  ms.assetid: B505822C-4BAA-4EC5-BB0A-128C093930C6
+  ms.custom: iamfeature=PowerShell
+  ms.reviewer: stevemutungi
+  online version: ""
+  schema: 2.0.0

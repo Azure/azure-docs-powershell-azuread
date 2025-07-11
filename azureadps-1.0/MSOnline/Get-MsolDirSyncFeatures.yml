@@ -1,0 +1,73 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Gets the status of identity synchronization features for a tenant.
+module: MSOnline
+notes: ""
+links:
+- text: Get-MsolDirSyncConfiguration
+  href: ./Get-MsolDirSyncConfiguration.yml
+- text: Get-MsolDirSyncProvisioningError
+  href: ./Get-MsolDirSyncProvisioningError.yml
+syntaxes:
+- Get-MsolDirSyncFeatures [-Feature <String>] [-TenantId <Guid>] [<CommonParameters>]
+examples:
+- title: 'Example 1: Get a list of all possible synchronization features'
+  code: |-
+    PS C:\>Get-MsolDirSyncFeatures
+  description: |-
+    This command gets a list of all possible directory synchronization features and whether they are enabled or disabled.
+  summary: ""
+- title: 'Example 2: Get a list of all possibleCheck whether the password PasswordSync synchronization features is enabledCheck whether the password is enabled'
+  code: |-
+    PS C:\>Get-MsolDirSyncFeatures -Feature PasswordSync
+  description: |-
+    This command checks whether the password synchronization feature is enabled for the tenant.
+  summary: ""
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Feature
+  description: |+
+    Specifies the directory synchronization feature that this cmdlet gets the status of.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Guid" data-throw-if-not-resolved="False" />
+  name: TenantId
+  description: |+
+    Specifies the unique ID of the tenant to perform the operation on.
+    If you do not specify this parameter the cmdlet will use the ID of the current user.
+    This parameter is only applicable to partner users.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: MSOnline.Get-MsolDirSyncFeatures
+name: Get-MsolDirSyncFeatures
+description: |-
+  The **Get-MsolDirSyncFeatures** cmdlet gets the status of identity synchronization features for a tenant.
+
+  Synchronization features that can be used with this cmdlet include the following:
+
+  - DeviceWriteback
+  - DirectoryExtensions
+  - DuplicateProxyAddressResiliency
+  - DuplicateUPNResiliency
+  - EnableSoftMatchOnUpn
+  - PasswordSync
+  - SynchronizeUpnForManagedUsers
+  - UnifiedGroupWriteback
+  - UserWriteback
+
+  You can run this cmdlet without any feature being specified, in which case it will return a list of all enabled or disabled features.
+metadata:
+  external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
+  online version: ""
+  schema: 2.0.0
+  ms.assetid: F2ED75F9-4313-418D-8B3A-EED1DE39B9DB
+  ms.reviewer: stevemutungi
+  ms.custom: iamfeature=PowerShell

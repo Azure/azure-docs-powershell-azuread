@@ -1,0 +1,68 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Get a contact membership.
+module: AzureADPreview
+notes: ""
+links:
+- text: Get-AzureADContact
+  href: ./Get-AzureADContact.yml
+syntaxes:
+- Get-AzureADContactMembership -ObjectId <String> [-All <Boolean>] [-Top <Int32>] [<CommonParameters>]
+examples:
+- title: 'Example 1: Get the memberships of a contact'
+  code: |-
+    PS C:\> $Contact = Get-AzureADContact -Top 1
+    PS C:\> Get-AzureADContactMembership -ObjectId $Contact.ObjectId
+
+    ObjectId                             ObjectType
+    --------                             ----------
+    0015df25-808e-4715-9c24-a6929c25c201 Group
+  description: |-
+    The first command gets a contact by using the [Get-AzureADContact](./Get-AzureADContact.yml) cmdlet, and then stores it in the $Contact variable.
+
+    The second command gets the memberships for $Contact.
+  summary: ""
+parameters:
+- type: <xref href="Boolean" data-throw-if-not-resolved="False" />
+  name: All
+  description: |+
+    If true, return all memberships. If false, return the number of objects specified by the Top parameter
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ObjectId
+  isRequired: true
+  description: |+
+    Specifies the ID of a contact in Azure Active Directory.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Top
+  description: |+
+    Specifies the maximum number of records to return.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: AzureADPreview.Get-AzureADContactMembership
+name: Get-AzureADContactMembership
+description: |-
+  The **Get-AzureADContactMembership** cmdlet gets a contact membership in Azure Active Directory.
+metadata:
+  external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml
+  Module Name: AzureADPreview
+  ms.assetid: DB181096-FF93-4C1E-9E08-884E8162DAB7
+  ms.custom: iamfeature=PowerShell
+  ms.reviewer: stevemutungi
+  online version: ""
+  schema: 2.0.0

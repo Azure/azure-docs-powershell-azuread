@@ -1,0 +1,66 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Updates a trusted certificate authority.
+module: AzureADPreview
+notes: ""
+links:
+- text: Get-AzureADTrustedCertificateAuthority
+  href: ./Get-AzureADTrustedCertificateAuthority.yml
+- text: New-AzureADTrustedCertificateAuthority
+  href: ./New-AzureADTrustedCertificateAuthority.yml
+- text: Remove-AzureADTrustedCertificateAuthority
+  href: ./Remove-AzureADTrustedCertificateAuthority.yml
+syntaxes:
+- >-
+  Set-AzureADTrustedCertificateAuthority -CertificateAuthorityInformation <CertificateAuthorityInformation>
+
+   [-InformationAction <ActionPreference>] [-InformationVariable <String>] [<CommonParameters>]
+parameters:
+- type: <xref href="CertificateAuthorityInformation" data-throw-if-not-resolved="False" />
+  name: CertificateAuthorityInformation
+  isRequired: true
+  description: |+
+    Specifies a **CertificateAuthorityInformation** object.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="ActionPreference" data-throw-if-not-resolved="False" />
+  name: InformationAction
+  description: |+
+    Specifies how this cmdlet responds to an information event. The acceptable values for this parameter are:
+
+    - Continue
+    - Ignore
+    - Inquire
+    - SilentlyContinue
+    - Stop
+    - Suspend
+
+  defaultValue: None
+  position: Named
+  aliases: infa
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: InformationVariable
+  description: |+
+    Specifies an information variable.
+
+  defaultValue: None
+  position: Named
+  aliases: iv
+  parameterValueGroup: ""
+uid: AzureADPreview.Set-AzureADTrustedCertificateAuthority
+name: Set-AzureADTrustedCertificateAuthority
+description: |-
+  The **Set-AzureADTrustedCertificateAuthority** cmdlet updates a trusted certificate authority in Azure Active Directory (AD).
+metadata:
+  external help file: Microsoft.Open.AzureAD16.Graph.PowerShell.Custom.dll-Help.xml
+  Module Name: AzureADPreview
+  ms.assetid: E3628C6F-0F08-49DF-8A48-35E8FF4ABB65
+  ms.custom: iamfeature=PowerShell
+  ms.reviewer: stevemutungi
+  online version: ""
+  schema: 2.0.0

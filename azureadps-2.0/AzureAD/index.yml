@@ -1,0 +1,305 @@
+### YamlMime:PowershellModule
+children:
+- title: Administrative Units
+  cmdlets:
+  - AzureAD.Add-AzureADMSAdministrativeUnitMember
+  - AzureAD.Add-AzureADMSScopedRoleMembership
+  - AzureAD.Get-AzureADMSAdministrativeUnit
+  - AzureAD.Get-AzureADMSAdministrativeUnitMember
+  - AzureAD.Get-AzureADMSScopedRoleMembership
+  - AzureAD.New-AzureADMSAdministrativeUnit
+  - AzureAD.Remove-AzureADMSAdministrativeUnit
+  - AzureAD.Remove-AzureADMSAdministrativeUnitMember
+  - AzureAD.Remove-AzureADMSScopedRoleMembership
+- title: Application Proxy Application Management
+  cmdlets:
+  - AzureAD.Get-AzureADApplicationProxyApplication
+  - AzureAD.Get-AzureADApplicationProxyApplicationConnectorGroup
+  - AzureAD.New-AzureADApplicationProxyApplication
+  - AzureAD.Remove-AzureADApplicationProxyApplication
+  - AzureAD.Remove-AzureADApplicationProxyApplicationConnectorGroup
+  - AzureAD.Set-AzureADApplicationProxyApplication
+  - AzureAD.Set-AzureADApplicationProxyApplicationCustomDomainCertificate
+  - AzureAD.Set-AzureADApplicationProxyApplicationSingleSignOn
+- title: Application Proxy Connector Management
+  cmdlets:
+  - AzureAD.Get-AzureADApplicationProxyConnector
+  - AzureAD.Get-AzureADApplicationProxyConnectorGroup
+  - AzureAD.Get-AzureADApplicationProxyConnectorGroupMembers
+  - AzureAD.Get-AzureADApplicationProxyConnectorMemberOf
+  - AzureAD.New-AzureADApplicationProxyConnectorGroup
+  - AzureAD.Remove-AzureADApplicationProxyConnectorGroup
+  - AzureAD.Set-AzureADApplicationProxyApplicationConnectorGroup
+  - AzureAD.Set-AzureADApplicationProxyConnector
+  - AzureAD.Set-AzureADApplicationProxyConnectorGroup
+- title: Applications
+  cmdlets:
+  - AzureAD.Add-AzureADApplicationOwner
+  - AzureAD.Get-AzureADApplication
+  - AzureAD.Get-AzureADApplicationExtensionProperty
+  - AzureAD.Get-AzureADApplicationKeyCredential
+  - AzureAD.Get-AzureADApplicationLogo
+  - AzureAD.Get-AzureADApplicationOwner
+  - AzureAD.Get-AzureADApplicationPasswordCredential
+  - AzureAD.Get-AzureADApplicationServiceEndpoint
+  - AzureAD.Get-AzureADDeletedApplication
+  - AzureAD.New-AzureADApplication
+  - AzureAD.New-AzureADApplicationExtensionProperty
+  - AzureAD.New-AzureADApplicationKeyCredential
+  - AzureAD.New-AzureADApplicationPasswordCredential
+  - AzureAD.Remove-AzureADApplication
+  - AzureAD.Remove-AzureADApplicationExtensionProperty
+  - AzureAD.Remove-AzureADApplicationKeyCredential
+  - AzureAD.Remove-AzureADApplicationOwner
+  - AzureAD.Remove-AzureADApplicationPasswordCredential
+  - AzureAD.Set-AzureADApplication
+  - AzureAD.Set-AzureADApplicationLogo
+- title: AzureAD
+  cmdlets:
+  - AzureAD.Add-AzureADMSApplicationOwner
+  - AzureAD.Add-AzureADMSServicePrincipalDelegatedPermissionClassification
+  - AzureAD.Get-AzureADApplicationProxyConnectorGroupMember
+  - AzureAD.Get-AzureADCurrentSessionInfo
+  - AzureAD.Get-AzureADMSApplication
+  - AzureAD.Get-AzureADMSApplicationExtensionProperty
+  - AzureAD.Get-AzureADMSApplicationOwner
+  - AzureAD.Get-AzureADMSConditionalAccessPolicy
+  - AzureAD.Get-AzureADMSDeletedDirectoryObject
+  - AzureAD.Get-AzureADMSDeletedGroup
+  - AzureAD.Get-AzureADMSIdentityProvider
+  - AzureAD.Get-AzureADMSNamedLocationPolicy
+  - AzureAD.Get-AzureADMSPermissionGrantConditionSet
+  - AzureAD.Get-AzureADMSPermissionGrantPolicy
+  - AzureAD.Get-AzureADMSServicePrincipalDelegatedPermissionClassification
+  - AzureAD.Get-CrossCloudVerificationCode
+  - AzureAD.New-AzureADMSApplication
+  - AzureAD.New-AzureADMSApplicationExtensionProperty
+  - AzureAD.New-AzureADMSApplicationKey
+  - AzureAD.New-AzureADMSApplicationPassword
+  - AzureAD.New-AzureADMSConditionalAccessPolicy
+  - AzureAD.New-AzureADMSIdentityProvider
+  - AzureAD.New-AzureADMSNamedLocationPolicy
+  - AzureAD.New-AzureADMSPermissionGrantConditionSet
+  - AzureAD.New-AzureADMSPermissionGrantPolicy
+  - AzureAD.Remove-AzureADDeletedApplication
+  - AzureAD.Remove-AzureADMSApplication
+  - AzureAD.Remove-AzureADMSApplicationExtensionProperty
+  - AzureAD.Remove-AzureADMSApplicationKey
+  - AzureAD.Remove-AzureADMSApplicationOwner
+  - AzureAD.Remove-AzureADMSApplicationPassword
+  - AzureAD.Remove-AzureADMSApplicationVerifiedPublisher
+  - AzureAD.Remove-AzureADMSConditionalAccessPolicy
+  - AzureAD.Remove-AzureADMSDeletedDirectoryObject
+  - AzureAD.Remove-AzureADMSIdentityProvider
+  - AzureAD.Remove-AzureADMSNamedLocationPolicy
+  - AzureAD.Remove-AzureADMSPermissionGrantConditionSet
+  - AzureAD.Remove-AzureADMSPermissionGrantPolicy
+  - AzureAD.Remove-AzureADMSServicePrincipalDelegatedPermissionClassification
+  - AzureAD.Restore-AzureADMSDeletedDirectoryObject
+  - AzureAD.Set-AzureADMSAdministrativeUnit
+  - AzureAD.Set-AzureADMSApplication
+  - AzureAD.Set-AzureADMSApplicationLogo
+  - AzureAD.Set-AzureADMSApplicationVerifiedPublisher
+  - AzureAD.Set-AzureADMSConditionalAccessPolicy
+  - AzureAD.Set-AzureADMSIdentityProvider
+  - AzureAD.Set-AzureADMSNamedLocationPolicy
+  - AzureAD.Set-AzureADMSPermissionGrantConditionSet
+  - AzureAD.Set-AzureADMSPermissionGrantPolicy
+- title: Certificate Authorities
+  cmdlets:
+  - AzureAD.Get-AzureADTrustedCertificateAuthority
+  - AzureAD.New-AzureADTrustedCertificateAuthority
+  - AzureAD.Remove-AzureADTrustedCertificateAuthority
+  - AzureAD.Set-AzureADTrustedCertificateAuthority
+- title: Connect to your directory
+  cmdlets:
+  - AzureAD.Connect-AzureAD
+  - AzureAD.Disconnect-AzureAD
+- title: Contacts
+  cmdlets:
+  - AzureAD.Get-AzureADContact
+  - AzureAD.Get-AzureADContactDirectReport
+  - AzureAD.Get-AzureADContactManager
+  - AzureAD.Get-AzureADContactMembership
+  - AzureAD.Get-AzureADContactThumbnailPhoto
+  - AzureAD.Remove-AzureADContact
+  - AzureAD.Remove-AzureADContactManager
+  - AzureAD.Select-AzureADGroupIdsContactIsMemberOf
+- title: Contracts
+  cmdlets:
+  - AzureAD.Get-AzureADContract
+- title: Deleted Objects
+  cmdlets:
+  - AzureAD.Restore-AzureADDeletedApplication
+- title: Devices
+  cmdlets:
+  - AzureAD.Add-AzureADDeviceRegisteredOwner
+  - AzureAD.Add-AzureADDeviceRegisteredUser
+  - AzureAD.Get-AzureADDevice
+  - AzureAD.Get-AzureADDeviceConfiguration
+  - AzureAD.Get-AzureADDeviceRegisteredOwner
+  - AzureAD.Get-AzureADDeviceRegisteredUser
+  - AzureAD.New-AzureADDevice
+  - AzureAD.Remove-AzureADDevice
+  - AzureAD.Remove-AzureADDeviceRegisteredOwner
+  - AzureAD.Remove-AzureADDeviceRegisteredUser
+  - AzureAD.Set-AzureADDevice
+- title: Directory
+  cmdlets:
+  - AzureAD.Get-AzureADSubscribedSku
+  - AzureAD.Get-AzureADTenantDetail
+  - AzureAD.Set-AzureADTenantDetail
+- title: Directory Objects
+  cmdlets:
+  - AzureAD.Get-AzureADObjectByObjectId
+- title: Directory Roles
+  cmdlets:
+  - AzureAD.Add-AzureADDirectoryRoleMember
+  - AzureAD.Enable-AzureADDirectoryRole
+  - AzureAD.Get-AzureADDirectoryRole
+  - AzureAD.Get-AzureADDirectoryRoleMember
+  - AzureAD.Get-AzureADDirectoryRoleTemplate
+  - AzureAD.Get-AzureADMSRoleAssignment
+  - AzureAD.Get-AzureADMSRoleDefinition
+  - AzureAD.New-AzureADMSRoleAssignment
+  - AzureAD.New-AzureADMSRoleDefinition
+  - AzureAD.Remove-AzureADDirectoryRoleMember
+  - AzureAD.Remove-AzureADMSRoleAssignment
+  - AzureAD.Remove-AzureADMSRoleDefinition
+  - AzureAD.Set-AzureADMSRoleDefinition
+- title: Domains
+  cmdlets:
+  - AzureAD.Confirm-AzureADDomain
+  - AzureAD.Get-AzureADDomain
+  - AzureAD.Get-AzureADDomainNameReference
+  - AzureAD.Get-AzureADDomainServiceConfigurationRecord
+  - AzureAD.Get-AzureADDomainVerificationDnsRecord
+  - AzureAD.New-AzureADDomain
+  - AzureAD.Remove-AzureADDomain
+  - AzureAD.Set-AzureADDomain
+- title: Extension Properties
+  cmdlets:
+  - AzureAD.Get-AzureADExtensionProperty
+- title: Groups
+  cmdlets:
+  - AzureAD.Add-AzureADGroupMember
+  - AzureAD.Add-AzureADGroupOwner
+  - AzureAD.Add-AzureADMSLifecyclePolicyGroup
+  - AzureAD.Get-AzureADGroup
+  - AzureAD.Get-AzureADGroupAppRoleAssignment
+  - AzureAD.Get-AzureADGroupMember
+  - AzureAD.Get-AzureADGroupOwner
+  - AzureAD.Get-AzureADMSGroup
+  - AzureAD.Get-AzureADMSGroupLifecyclePolicy
+  - AzureAD.Get-AzureADMSLifecyclePolicyGroup
+  - AzureAD.New-AzureADGroup
+  - AzureAD.New-AzureADGroupAppRoleAssignment
+  - AzureAD.New-AzureADMSGroup
+  - AzureAD.New-AzureADMSGroupLifecyclePolicy
+  - AzureAD.Remove-AzureADGroup
+  - AzureAD.Remove-AzureADGroupAppRoleAssignment
+  - AzureAD.Remove-AzureADGroupMember
+  - AzureAD.Remove-AzureADGroupOwner
+  - AzureAD.Remove-AzureADMSGroup
+  - AzureAD.Remove-AzureADMSGroupLifecyclePolicy
+  - AzureAD.Remove-AzureADMSLifecyclePolicyGroup
+  - AzureAD.Reset-AzureADMSLifeCycleGroup
+  - AzureAD.Select-AzureADGroupIdsGroupIsMemberOf
+  - AzureAD.Set-AzureADGroup
+  - AzureAD.Set-AzureADMSGroup
+  - AzureAD.Set-AzureADMSGroupLifecyclePolicy
+- title: OAuth2
+  cmdlets:
+  - AzureAD.Get-AzureADOAuth2PermissionGrant
+  - AzureAD.Remove-AzureADOAuth2PermissionGrant
+- title: Policies
+  cmdlets:
+  - AzureAD.Get-AzureADMSAuthorizationPolicy
+  - AzureAD.Set-AzureADMSAuthorizationPolicy
+- title: Service Principals
+  cmdlets:
+  - AzureAD.Add-AzureADServicePrincipalOwner
+  - AzureAD.Get-AzureADServiceAppRoleAssignedTo
+  - AzureAD.Get-AzureADServiceAppRoleAssignment
+  - AzureAD.Get-AzureADServicePrincipal
+  - AzureAD.Get-AzureADServicePrincipalCreatedObject
+  - AzureAD.Get-AzureADServicePrincipalKeyCredential
+  - AzureAD.Get-AzureADServicePrincipalMembership
+  - AzureAD.Get-AzureADServicePrincipalOAuth2PermissionGrant
+  - AzureAD.Get-AzureADServicePrincipalOwnedObject
+  - AzureAD.Get-AzureADServicePrincipalOwner
+  - AzureAD.Get-AzureADServicePrincipalPasswordCredential
+  - AzureAD.New-AzureADServiceAppRoleAssignment
+  - AzureAD.New-AzureADServicePrincipal
+  - AzureAD.New-AzureADServicePrincipalKeyCredential
+  - AzureAD.New-AzureADServicePrincipalPasswordCredential
+  - AzureAD.Remove-AzureADServiceAppRoleAssignment
+  - AzureAD.Remove-AzureADServicePrincipal
+  - AzureAD.Remove-AzureADServicePrincipalKeyCredential
+  - AzureAD.Remove-AzureADServicePrincipalOwner
+  - AzureAD.Remove-AzureADServicePrincipalPasswordCredential
+  - AzureAD.Select-AzureADGroupIdsServicePrincipalIsMemberOf
+  - AzureAD.Set-AzureADServicePrincipal
+- title: Users
+  cmdlets:
+  - AzureAD.Get-AzureADUser
+  - AzureAD.Get-AzureADUserAppRoleAssignment
+  - AzureAD.Get-AzureADUserCreatedObject
+  - AzureAD.Get-AzureADUserDirectReport
+  - AzureAD.Get-AzureADUserExtension
+  - AzureAD.Get-AzureADUserLicenseDetail
+  - AzureAD.Get-AzureADUserManager
+  - AzureAD.Get-AzureADUserMembership
+  - AzureAD.Get-AzureADUserOAuth2PermissionGrant
+  - AzureAD.Get-AzureADUserOwnedDevice
+  - AzureAD.Get-AzureADUserOwnedObject
+  - AzureAD.Get-AzureADUserRegisteredDevice
+  - AzureAD.Get-AzureADUserThumbnailPhoto
+  - AzureAD.New-AzureADMSInvitation
+  - AzureAD.New-AzureADUser
+  - AzureAD.New-AzureADUserAppRoleAssignment
+  - AzureAD.Remove-AzureADUser
+  - AzureAD.Remove-AzureADUserAppRoleAssignment
+  - AzureAD.Remove-AzureADUserExtension
+  - AzureAD.Remove-AzureADUserManager
+  - AzureAD.Revoke-AzureADSignedInUserAllRefreshToken
+  - AzureAD.Revoke-AzureADUserAllRefreshToken
+  - AzureAD.Select-AzureADGroupIdsUserIsMemberOf
+  - AzureAD.Set-AzureADUser
+  - AzureAD.Set-AzureADUserExtension
+  - AzureAD.Set-AzureADUserLicense
+  - AzureAD.Set-AzureADUserManager
+  - AzureAD.Set-AzureADUserPassword
+  - AzureAD.Set-AzureADUserThumbnailPhoto
+  - AzureAD.Update-AzureADSignedInUserPassword
+uid: AzureAD
+name: AzureAD
+description: |-
+  >[!IMPORTANT]
+  > Azure AD PowerShell is planned for deprecation. For more details on the deprecation plans, see the [deprecation update](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/azure-ad-change-management-simplified/ba-p/2967456). You can start trying [Microsoft Graph PowerShell](/powershell/microsoftgraph/overview) to interact with Azure AD as you would in Azure AD PowerShell. In addition, Microsoft Graph PowerShell allows you access to all Microsoft Graph APIs and is available on PowerShell 7. For answers to frequent migration queries, see the [migration FAQ](../../docs-conceptual/azureadps-2.0/migration-faq.yml).
+
+  The Azure Active Directory PowerShell for Graph module can be downloaded and installed from the [PowerShell Gallery](https://www.powershellgallery.com/packages/AzureAD/). The gallery uses the PowerShellGet module. The PowerShellGet module requires PowerShell 3.0 or newer and requires one of the following operating systems:
+
+  - Windows 10
+  - Windows 8.1 Pro
+  - Windows 8.1 Enterprise
+  - Windows 7 SP1
+  - Windows Server 2016 TP5
+  - Windows Server 2012 R2
+  - Windows Server 2008 R2 SP1
+
+
+  PowerShellGet also requires .NET Framework 4.5 or above. You can install .NET Framework 4.5 or above from [here](https://www.microsoft.com/en-us/download/details.aspx?id=30653). 
+
+  For more detailed info on installation of the AzureAD cmdlets please see: [Azure Active Directory PowerShell for Graph](https://docs.microsoft.com/en-us/powershell/azure/active-directory/install-adv2).
+
+  These are the cmdlets in the Azure Active Directory PowerShell for Graph module.
+metadata:
+  Module Name: AzureAD
+  Module Guid: b433e830-b479-4f7f-9c80-9cc6c28e1b51
+  Download Help Link: '{{Please enter FwLink manually}}'
+  Help Version: '{{Please enter version of help manually (X.X.X.X) format}}'
+  Locale: en-US
+  ms.assetid: 7D9D9507-ADE5-45BD-97F8-0CCCDA3D3B58
+  ms.reviewer: stevemutungi
+  ms.custom: iamfeature=PowerShell

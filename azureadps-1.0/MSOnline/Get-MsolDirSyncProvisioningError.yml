@@ -1,0 +1,161 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Checks for objects with synchronization provisioning errors in a tenant.
+module: MSOnline
+notes: ""
+links:
+- text: Get-MsolHasObjectsWithDirSyncProvisioningErrors
+  href: ./Get-MsolHasObjectsWithDirSyncProvisioningErrors.yml
+syntaxes:
+- >-
+  Get-MsolDirSyncProvisioningError [-ErrorCategory <String>] [-PropertyName <String>] [-PropertyValue <String>]
+
+   [-SearchString <String>] [-SortField <SortField>] [-SortDirection <SortDirection>] [-MaxResults <Int32>]
+
+   [-TenantId <Guid>] [<CommonParameters>]
+- >-
+  Get-MsolDirSyncProvisioningError [-ErrorCategory <String>] [-PropertyName <String>] [-PropertyValue <String>]
+
+   [-SearchString <String>] [-SortField <SortField>] [-SortDirection <SortDirection>] [-All] [-TenantId <Guid>]
+
+   [<CommonParameters>]
+examples:
+- title: 'Example 1: Get all objects with provisioning errors'
+  code: |-
+    PS C:\>Get-MsolDirSyncProvisioningError -ErrorCategory PropertyConflict
+  description: |-
+    This command gets all objects with DirSyncProvisioningErrors due to a PropertyConflict in the tenant.
+  summary: ""
+- title: 'Example 2: Get all objects with provisioning errors using the UserPrincipalName attribute'
+  code: |-
+    PS C:\>Get-MsolDirSyncProvisioningError -ErrorCategory PropertyConflict -PropertyName UserPrincipalName
+  description: |-
+    This command gets all objects with DirSyncProvisioningErrors due to a PropertyConflict on the UserPrincipalName attribute.
+  summary: ""
+- title: 'Example 3: Get provisioning errors by property value'
+  code: |-
+    PS C:\>Get-MsolDirSyncProvisioningError -ErrorCategory PropertyConflict -PropertyName UserPrincipalName -PropertyValue "User@contoso.com"
+  description: |-
+    This command gets all objects with DirSyncProvisioningErrors due to a PropertyConflict on the UserPrincipalName attribute with the property value of User@contoso.com.
+  summary: ""
+- title: 'Example 4: Get provisioning errors by search string'
+  code: |-
+    PS C:\>Get-MsolDirSyncProvisioningError -ErrorCategory PropertyConflict -SearchString "PattiFul"
+  description: |-
+    This command gets all objects with DirSyncProvisioningErrors with a PropertyConflict that uses the display name attribute starting with PattiFul.
+  summary: ""
+- title: 'Example 56: Get a maximum number of provisioning errors5'
+  code: |-
+    PS C:\>Get-MsolDirSyncProvisioningError -ErrorCategory PropertyConflict -MaxResults 5
+  description: |-
+    This command gets a maximum of five objects with DirSyncProvisioningErrors.
+  summary: ""
+parameters:
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: All
+  isRequired: true
+  description: |+
+    Indicates that this cmdlet returns all provisioning errors.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ErrorCategory
+  description: |+
+    Specifies the error category of the provisioning errors.
+    PropertyConflict is the only supported value and must be included.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: MaxResults
+  description: |+
+    Specifies the maximum number of results that this cmdlet returns.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: PropertyName
+  description: |+
+    Specifies the property name of the tenant.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: PropertyValue
+  description: |+
+    Specifies the property value for which this cmdlet searches the provisioning errors.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: SearchString
+  description: |+
+    Specifies a search string in which this cmdlet searches the list of provisioning errors.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SortDirection" data-throw-if-not-resolved="False" />
+  name: SortDirection
+  description: |+
+    Specifies the sort direction of the provisioning errors.
+    The acceptable values for this parameter are:
+
+    - Ascending
+    - Descending
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SortField" data-throw-if-not-resolved="False" />
+  name: SortField
+  description: |+
+    Specifies the name field of the results that this cmdlet sorts by.
+    The acceptable values for this parameter are:
+
+    - DisplayName
+    - UserPrincipleName
+    - None
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Guid" data-throw-if-not-resolved="False" />
+  name: TenantId
+  description: |+
+    Specifies the unique ID of the tenant to perform the operation on.
+    If you do not specify this parameter the cmdlet will use the ID of the current user.
+    This parameter is only applicable to partner users.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: MSOnline.Get-MsolDirSyncProvisioningError
+name: Get-MsolDirSyncProvisioningError
+description: |-
+  The **Get-MsolDirSyncProvisioningError** cmdlet checks for objects with synchronization provisioning errors in a tenant.
+
+  All parameter arguments for this cmdlet are case sensitive.
+metadata:
+  external help file: Microsoft.Online.Administration.Automation.PSModule.dll-Help.xml
+  online version: ""
+  schema: 2.0.0
+  ms.assetid: FF8B1BBA-6FF1-4739-A554-B83079EA4FEC
+  ms.reviewer: stevemutungi
+  ms.custom: iamfeature=PowerShell

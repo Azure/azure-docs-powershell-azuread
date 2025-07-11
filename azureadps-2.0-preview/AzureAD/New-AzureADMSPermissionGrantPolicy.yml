@@ -1,0 +1,53 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Creates a permission grant policy.
+module: AzureADPreview
+notes: ""
+syntaxes:
+- >-
+  New-AzureADMSPermissionGrantPolicy [-Description <String>] [-DisplayName <String>] [-Id <String>]
+
+   [<CommonParameters>]
+examples:
+- title: 'Example 1: Create a permission grant policy'
+  code: |-
+    PS C:\> New-AzureADMSPermissionGrantPolicy -Id "my_new_permission_grant_policy_id"  -DisplayName "MyNewPermissionGrantPolicy" -Description "My new permission grant policy"
+  description: ""
+  summary: ""
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Description
+  description: |+
+    Specifies the description for the permission grant policy.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: DisplayName
+  description: |+
+    Specifies the display name for the permission grant policy.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  description: |+
+    Specifies the unique identifier of the permission grant policy.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: AzureADPreview.New-AzureADMSPermissionGrantPolicy
+name: New-AzureADMSPermissionGrantPolicy
+description: |-
+  The New-AzureADMSPermissionGrantPolicy cmdlet creates an Azure Active Directory permission grant policy.
+metadata:
+  external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
+  Module Name: AzureADPreview
+  online version: ""
+  schema: 2.0.0

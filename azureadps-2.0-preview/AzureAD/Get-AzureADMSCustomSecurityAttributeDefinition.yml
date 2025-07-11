@@ -1,0 +1,51 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Gets a list of custom security attribute definitions.
+module: AzureADPreview
+notes: ""
+inputs:
+- name: <xref href="System.String" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="System.Object" data-throw-if-not-resolved="False" />
+  description: ""
+syntaxes:
+- Get-AzureADMSCustomSecurityAttributeDefinition [<CommonParameters>]
+- Get-AzureADMSCustomSecurityAttributeDefinition -Id <String> [<CommonParameters>]
+examples:
+- title: Example 1
+  code: |-
+    Get-AzureADMSCustomSecurityAttributeDefinition
+  description: |-
+    Get all custom security attribute definitions.
+  summary: ""
+- title: Example 2
+  code: |-
+    Get-AzureADMSCustomSecurityAttributeDefinition -Id "Engineering_ProjectDate"
+  description: |-
+    Get a custom security attribute definition.
+
+    - Attribute set: `Engineering`
+    - Attribute: `ProjectDate`
+  summary: ""
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  isRequired: true
+  description: |+
+    The unique identifier of an Azure AD custom security attribute definition object.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: AzureADPreview.Get-AzureADMSCustomSecurityAttributeDefinition
+name: Get-AzureADMSCustomSecurityAttributeDefinition
+description: |-
+  Gets a list of Azure Active Directory (Azure AD) custom security attribute definitions.
+metadata:
+  external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
+  Module Name: AzureADPreview
+  online version: ""
+  schema: 2.0.0
