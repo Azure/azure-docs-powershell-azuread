@@ -80,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetObjectId
-Specifies the object ID of the target. 
+Specifies the object ID of the target.
 
 ```yaml
 Type: String
@@ -112,13 +112,13 @@ Accept wildcard characters: False
 ### CommonParameters
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
-## NOTES
-
-See the [migration guide for Remove-AzureADObjectSetting](./migrate/Remove-AzureADObjectSetting.md) to the Microsoft Graph PowerShell.
-
 ## INPUTS
 
 ## OUTPUTS
+
+## NOTES
+
+See the [migration guide for Remove-AzureADObjectSetting](./migrate/Remove-AzureADObjectSetting.md) to the Microsoft Graph PowerShell.
 
 ## RELATED LINKS
 
@@ -127,5 +127,3 @@ See the [migration guide for Remove-AzureADObjectSetting](./migrate/Remove-Azure
 [New-AzureADObjectSetting](New-AzureADObjectSetting.md)
 
 [Set-AzureADObjectSetting](Set-AzureADObjectSetting.md)
-
-
