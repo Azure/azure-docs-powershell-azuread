@@ -41,7 +41,7 @@
             {
                 "files": [
                     "**/*.yml",
-                    "AzureAD/migrate/*.md"
+                    "AzureADPreview/migrate/*.md"
                 ],
                 "src": "azureadps-2.0-preview",
                 "version": "azureadps-2.0-preview",
