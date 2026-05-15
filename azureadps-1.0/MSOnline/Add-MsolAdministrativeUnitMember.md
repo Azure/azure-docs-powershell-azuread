@@ -11,7 +11,7 @@ ms.custom: iamfeature=PowerShell
 # Add-MsolAdministrativeUnitMember
 
 ## SYNOPSIS
-Adds a member to an administrative unit.
+Adds a member to an administrative unit. test pr
 
 ## SYNTAX
 
