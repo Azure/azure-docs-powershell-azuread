@@ -142,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeviceOSVersion
-Specifies the operating sytem version.
+Specifies the operating system version.
 
 ```yaml
 Type: String
