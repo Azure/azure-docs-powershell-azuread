@@ -2,7 +2,7 @@
 title: New-AzureADMSNamedLocationPolicy
 description: This article provides migration details from New-AzureADMSNamedLocationPolicy command to Microsoft Graph PowerShell.
 
-ms.service: azure-active-directory
+ms.service: entra-id
 ms.topic: reference
 ms.date: 12/28/2023
 ms.author: eunicewaweru

@@ -2,7 +2,7 @@
 title: New-AzureADMSRoleAssignment
 description: This article provides migration details from New-AzureADMSRoleAssignment command to Microsoft Graph PowerShell.
 
-ms.service: azure-active-directory
+ms.service: entra-id
 ms.topic: reference
 ms.date: 01/20/2024
 ms.author: eunicewaweru

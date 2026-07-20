@@ -2,7 +2,7 @@
 title: Remove-AzureADServicePrincipal
 description: This article provides migration details from Remove-AzureADServicePrincipal command to Microsoft Graph PowerShell.
 
-ms.service: azure-active-directory
+ms.service: entra-id
 ms.topic: reference
 ms.date: 12/19/2023
 ms.author: eunicewaweru

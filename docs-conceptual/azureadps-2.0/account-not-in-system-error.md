@@ -4,7 +4,7 @@ description: How to solve "Account not in system" errors.
 services: active-directory
 documentationcenter: ''
 
-ms.service: azure-active-directory
+ms.service: entra-id
 ms.workload: identity
 ms.tgt_pltfrm: na
 ms.devlang: powershell

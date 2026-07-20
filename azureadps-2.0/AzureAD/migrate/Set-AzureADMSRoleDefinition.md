@@ -2,7 +2,7 @@
 title: Set-AzureADMSRoleDefinition
 description: This article provides migration details from Set-AzureADMSRoleDefinition command to Microsoft Graph PowerShell.
 
-ms.service: azure-active-directory
+ms.service: entra-id
 ms.topic: reference
 ms.date: 11/18/2023
 ms.author: eunicewaweru
