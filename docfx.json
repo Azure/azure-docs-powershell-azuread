@@ -90,9 +90,9 @@
                 "docs-conceptual/**/*.md": "conceptual"
             },
             "ms.service": {
-                "azureadps-2.0/**/*.yml": "azure-active-directory",
-                "azureadps-2.0-preview/**/*.yml": "azure-active-directory",
-                "docs-conceptual/**/*.md": "azure-active-directory"
+                "azureadps-2.0/**/*.yml": "entra-id",
+                "azureadps-2.0-preview/**/*.yml": "entra-id",
+                "docs-conceptual/**/*.md": "entra-id"
             }
         },
         "globalMetadata": {
