@@ -2,7 +2,7 @@
 title: Get-AzureADApplicationLogo
 description: This article provides migration details from Get-AzureADApplicationLogo command to Microsoft Graph PowerShell.
 
-ms.service: azure-active-directory
+ms.service: entra-id
 ms.topic: reference
 ms.date: 01/12/2024
 ms.author: eunicewaweru

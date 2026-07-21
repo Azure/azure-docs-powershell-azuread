@@ -2,7 +2,7 @@
 title: Remove-AzureADMSLifecyclePolicyGroup
 description: This article provides migration details from Remove-AzureADMSLifecyclePolicyGroup command to Microsoft Graph PowerShell.
 
-ms.service: azure-active-directory
+ms.service: entra-id
 ms.topic: reference
 ms.date: 12/17/2023
 ms.author: eunicewaweru

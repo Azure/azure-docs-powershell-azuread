@@ -2,7 +2,7 @@
 services: active-directory
 documentationcenter: ''
 title: 'Install previous version'
-ms.service: azure-active-directory
+ms.service: entra-id
 ms.workload: identity
 ms.tgt_pltfrm: na
 ms.devlang: powershell

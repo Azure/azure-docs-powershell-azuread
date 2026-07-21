@@ -2,7 +2,7 @@
 title: Set-AzureADMSAuthorizationPolicy
 description: This article provides migration details from Set-AzureADMSAuthorizationPolicy command to Microsoft Graph PowerShell.
 
-ms.service: azure-active-directory
+ms.service: entra-id
 ms.topic: reference
 ms.date: 01/19/2024
 ms.author: eunicewaweru

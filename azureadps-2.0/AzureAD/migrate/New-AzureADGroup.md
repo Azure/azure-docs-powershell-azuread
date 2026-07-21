@@ -2,7 +2,7 @@
 title: New-AzureADGroup
 description: This article provides migration details from New-AzureADGroup command to Microsoft Graph PowerShell.
 
-ms.service: azure-active-directory
+ms.service: entra-id
 ms.topic: reference
 ms.date: 12/13/2023
 ms.author: eunicewaweru

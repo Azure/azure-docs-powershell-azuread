@@ -7,7 +7,7 @@ author: msewaweru
 manager: CelesteDG
 editor: ''
 ms.devlang: powershell
-ms.service: azure-active-directory
+ms.service: entra-id
 ms.topic: reference
 ms.tgt_pltfrm: na
 ms.workload: identity
